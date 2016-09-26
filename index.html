@@ -60,9 +60,9 @@
                     <li>
                         <a class="page-scroll" href="#acknowlegements">Acknowlegements</a>
                     </li>
-					<li>
-						<a class="page-scroll" href="#acknowlegements">Feedback</a>
-					</li>
+          <li>
+            <a class="page-scroll" href="#acknowlegements">Feedback</a>
+          </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -94,30 +94,30 @@
             <div class="col-lg-12">
 
                 <h2>About BIDS</h2>
-				<p>Neuroimaging experiments result in complicated data that can be arranged in many different ways. So far there is no consensus how to organize and share data obtained in neuroimaging experiments. Even two researchers working in the same lab can opt to arrange their data in a different way. Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data or rewriting scripts expecting certain structure. Here we describe a simple and easy to adopt way of organizing neuroimaging and behavioral data. By using this standard you will benefit in the following ways:
-				<ul>
-					<li>It will be easy for another researcher to work on your data. To understand the organization of the files and their format you will only need to refer them to this document. This is especially important if you are running your own lab and anticipate more than one person working on the same data over time. By using BIDS you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.</li>
-					<li>There is a growing number of data analysis software packages that can understand data organized according to BIDS.</li>
-					<li>Databases such as <a href="http://openfmri.org">OpenfMRI.org</a>, <a href="http://www.loris.ca">LORIS</a>, <a href="https://portal.mrn.org">COINS</a>, <a href="https://central.xnat.org/">XNAT</a>, <a href="https://scitran.github.io/">SciTran</a> and others will accept and export datasets organized according to BIDS. If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.</li>
-					<li>There are <a href="https://github.com/Squishymedia/bids-validator">validation tools</a> (also available <a href="http://incf.github.io/bids-validator/">online</a>) that can check your dataset integrity and let you easily spot missing values.</li>
+        <p>Neuroimaging experiments result in complicated data that can be arranged in many different ways. So far there is no consensus how to organize and share data obtained in neuroimaging experiments. Even two researchers working in the same lab can opt to arrange their data in a different way. Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data or rewriting scripts expecting certain structure. Here we describe a simple and easy to adopt way of organizing neuroimaging and behavioral data. By using this standard you will benefit in the following ways:
+        <ul>
+          <li>It will be easy for another researcher to work on your data. To understand the organization of the files and their format you will only need to refer them to this document. This is especially important if you are running your own lab and anticipate more than one person working on the same data over time. By using BIDS you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.</li>
+          <li>There is a growing number of data analysis software packages that can understand data organized according to BIDS.</li>
+          <li>Databases such as <a href="http://openfmri.org">OpenfMRI.org</a>, <a href="http://www.loris.ca">LORIS</a>, <a href="https://portal.mrn.org">COINS</a>, <a href="https://central.xnat.org/">XNAT</a>, <a href="https://scitran.github.io/">SciTran</a> and others will accept and export datasets organized according to BIDS. If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.</li>
+          <li>There are <a href="https://github.com/Squishymedia/bids-validator">validation tools</a> (also available <a href="http://incf.github.io/bids-validator/">online</a>) that can check your dataset integrity and let you easily spot missing values.</li>
           <li>We provide <a href="https://github.com/INCF/openfmri2bids">tools to convert OpenfMRI style organized data to BIDS</a></li>
-				</ul></p>
-				<p>BIDS is heavily inspired by the format used internally by <a href="http://openfmri.org">OpenfMRI.org</a>. While working on BIDS we consulted many neuroscientists to make sure it covers most common experiments, but at the same time is intuitive and easy to adopt. The specification is intentionally based simple file formats and folder structures to reflect current lab practices and make it accessible to wide range of scientists coming from different backgrounds.</p>
+        </ul></p>
+        <p>BIDS is heavily inspired by the format used internally by <a href="http://openfmri.org">OpenfMRI.org</a>. While working on BIDS we consulted many neuroscientists to make sure it covers most common experiments, but at the same time is intuitive and easy to adopt. The specification is intentionally based simple file formats and folder structures to reflect current lab practices and make it accessible to wide range of scientists coming from different backgrounds.</p>
         <p>Software currently supporting BIDS:</p>
-				<ul>
-					<li><a href="http://preprocessed-connectomes-project.org/quality-assessment-protocol/">QAP</a> (quality assesment)</li>
+        <ul>
+          <li><a href="http://preprocessed-connectomes-project.org/quality-assessment-protocol/">QAP</a> (quality assesment)</li>
           <li><a href="http://mriqc.readthedocs.org/">MRIQC</a> (quality assesment)</li>
           <li><a href="https://github.com/poldracklab/preprocessing-workflow">FMRIPREP</a> (preprocessing workflow)</li>
-					<li><a href="https://github.com/rhodricusack/automaticanalysis">Automatic Analysis</a> (fMRI processing toolbox)</li>
+          <li><a href="https://github.com/rhodricusack/automaticanalysis">Automatic Analysis</a> (fMRI processing toolbox)</li>
           <li><a href="https://github.com/INCF/openfmri2bids">OpenfMRI2BIDS</a> (converter)</li>
           <li><a href="https://github.com/INCF/BIDS2ISATab">BIDS2ISATab</a> (converter)</li>
           <li><a href="https://github.com/neurolabusc/dcm2niix">DCM2NIIx</a> (converter)</li>
           <li><a href="https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer">DICM2NII</a> (converter)</li>
           <li><a href="http://openfmri.org">OpenfMRI</a> (repository)</li>
           <li><a href="https://github.com/INCF/bidsutils/tree/master/BIDSto3col">BIDSto3col</a> (converter)</li>
-					<li><a href="https://github.com/INCF/BIDS2NDA">BIDS2NDA</a> (converter)</li>
-				</ul>
-				<p>Another good introduction to the BIDS standard can be found in the <a href="http://www.nature.com/articles/sdata201644">paper published in Nature Scientific Data</a>.</p>
+          <li><a href="https://github.com/INCF/BIDS2NDA">BIDS2NDA</a> (converter)</li>
+        </ul>
+        <p>Another good introduction to the BIDS standard can be found in the <a href="http://www.nature.com/articles/sdata201644">paper published in Nature Scientific Data</a>.</p>
 
             </div>
         </div>
@@ -157,6 +157,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>We need your feedback!</h2>
                 <p>There are many different experiments and data types used in cognitive and clinical neuroimaging. Help us make BIDS better by commenting on the draft specification</p>
+                <a href="bids_spec1.0.1-rc1.pdf" class="btn btn-default btn-lg">Download BIDS 1.0.1 Release Condidate 1</a>
                 <a href="https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit?usp=sharing" class="btn btn-default btn-lg">Comment on the BIDS draft</a><br /><br />
                 <a href="https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/edit?usp=sharing" class="btn btn-default btn-lg">Comment on the MEG extension</a><br /><br />
                 <a href="https://groups.google.com/forum/#!forum/bids-discussion" class="btn btn-default btn-lg">Subscribe to the mailing list</a>
