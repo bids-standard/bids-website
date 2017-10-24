@@ -50,7 +50,7 @@ A member of the development team will review your changes to confirm that they c
 ## Recognizing contributions
 
 BIDS follows the [all-contributors][link_allcontributors] specification, so we welcome and recognize all contributions from documentation to testing to code development.
-You can see a list of current contributors in our [README][link_readme].
+You can see a list of current contributors in our [specification][link_bids_spec].
 
 ## Thank you!
 
@@ -67,7 +67,6 @@ You're awesome. :wave::smiley:
 [link_labels]: https://github.com/INCF/BIDS/labels
 [link_fork]: https://help.github.com/articles/fork-a-repo/
 [link_requests]: https://github.com/INCF/BIDS/labels/requests
-[link_readme]: https://github.com/INCF/BIDS/blob/gh-pages/README.md
 [link_helpwanted]: https://github.com/INCF/BIDS/labels/help%20wanted
 [link_code_of_conduct]: http://www.brainhack.org/code-of-conduct.html
 [link_stemmrolemodels]: https://github.com/KirstieJane/STEMMRoleModels
@@ -79,3 +78,4 @@ You're awesome. :wave::smiley:
 [link_branches]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [link_react]: https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments
 [link_signupinstructions]: https://help.github.com/articles/signing-up-for-a-new-github-account
+[link_bids_spec]: https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit#heading=h.hds2i7ii7hjo
