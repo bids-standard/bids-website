@@ -208,15 +208,15 @@ Files for a particular participant can exist only at participant level directory
 
 Example 1: Two JSON files at same level that are applicable for NIfTI file. 
 
-      sub-01/
+sub-01/
 
 ses-test/
 
-	sub-test_task-overtverbgeneration_bold.json
+		sub-test_task-overtverbgeneration_bold.json
 
 sub-test_task-overtverbgeneration_run-02_bold.json
 
-	anat/
+		anat/
 
 sub-01_ses-test_T1w.nii.gz
 
