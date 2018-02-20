@@ -105,8 +105,9 @@
         <p>BIDS is heavily inspired by the format used internally by <a href="http://openfmri.org">OpenfMRI.org</a>. While working on BIDS we consulted many neuroscientists to make sure it covers most common experiments, but at the same time is intuitive and easy to adopt. The specification is intentionally based simple file formats and folder structures to reflect current lab practices and make it accessible to wide range of scientists coming from different backgrounds.</p>
         <p>Software currently supporting BIDS:</p>
         <ul>
-          <li><a href="http://bids-apps.neuroimaging.io">BIDS Apps</a> (a growing set of portable containerized data processing pipelines that understand BIDS datasets)</li>
-          <li>Converters</li><ul>
+         <li><a href="http://bids-apps.neuroimaging.io">BIDS Apps</a> (a growing set of portable containerized data processing pipelines that understand BIDS datasets)</li>
+         <li>Converters</li>
+         <ul>
           <li><a href="https://github.com/nih-fmrif/BIDS-tools">AFNI BIDS-tools</a></li>
           <li><a href="https://github.com/INCF/BIDS2ISATab">BIDS2ISATab</a></li>
           <li><a href="https://github.com/INCF/bidsutils/tree/master/BIDSto3col">BIDSto3col</a></li>
@@ -116,25 +117,32 @@
           <li><a href="https://github.com/cbedetti/Dcm2Bids">Dcm2Bids</a></li>
           <li><a href="https://github.com/neurolabusc/dcm2niix">DCM2NIIx</a></li>
           <li><a href="https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer">DICM2NII</a></li>
-          <li><a href="https://github.com/nipy/heudiconv">heudiconv</a></li>
+          <li><a href="https://github.com/nipy/heudiconv">HeuDiConv</a></li>
           <li><a href="https://github.com/INCF/openfmri2bids">OpenfMRI2BIDS</a></li>
-	  <li><a href="https://github.com/lwallace23/bids2xar">bids2xar (for XNAT import)</a></li>
-	  <li><a href="https://github.com/kamillipi/2bids">XNAT2BIDS</a></li>
-	  <li><a href="https://github.com/mslw/horos-bids-output">Horos (Osirix) export plugin</a></li></ul>
-          <li>Institution specific data management/conversion tools</li><ul>
-	  <li><a href="https://github.com/robertoostenveld/bids/">BIDS Tools from the Donders Institute</a></li>
-          <li><a href="https://github.com/khanlab/autobids">Autobids from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute</a></li></ul>
-          <li>Other Tools</li><ul>
+          <li><a href="https://github.com/ReproNim/reproin">ReproIn</a> (HeuDiConv-based turnkey solution)</li>
+          <li><a href="https://github.com/lwallace23/bids2xar">bids2xar</a> (for XNAT import)</li>
+          <li><a href="https://github.com/kamillipi/2bids">XNAT2BIDS</a></li>
+          <li><a href="https://github.com/mslw/horos-bids-output">Horos (Osirix) export plugin</a></li>
+         </ul>
+         <li>Institution specific data management/conversion tools</li>
+         <ul>
+          <li><a href="https://github.com/robertoostenveld/bids/">BIDS Tools from the Donders Institute</a></li>
+          <li><a href="https://github.com/khanlab/autobids">Autobids from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute</a></li>
+         </ul>
+         <li>Other Tools</li>
+         <ul>
           <li><a href="https://github.com/rhodricusack/automaticanalysis">Automatic Analysis</a> (fMRI processing toolbox)</li>
           <li><a href="http://neuroimage.usc.edu/brainstorm/">Brainstorm</a> (MEG/EEG analysis package)</li>
           <li><a href="http://fcp-indi.github.io/">C-PAC</a> (Configurable Pipeline for the Analysing Connectomes)</li>
           <li><a href="https://github.com/poldracklab/preprocessing-workflow">FMRIPREP</a> (preprocessing workflow)</li>
           <li><a href="http://openneuro.org">OpenNeuro</a> (repository)</li>
-          </ul>
-          <li>Quality Assessment</li><ul>
+          <li><a href="https://github.com/INCF/pybids">PyBIDS</a> (Python module to harmonize access and manipulation)</li>
+         </ul>
+         <li>Quality Assessment</li>
+         <ul>
           <li><a href="http://mriqc.readthedocs.org/">MRIQC</a></li>
           <li><a href="http://preprocessed-connectomes-project.org/quality-assessment-protocol/">QAP</a> </li>
-        </ul>
+         </ul>
         <br>
         <p>A good introduction to the BIDS standard can be found in the <a href="http://www.nature.com/articles/sdata201644">paper published in Nature Scientific Data</a>.<br>
         A description of how to build containerized apps supporting BIDS inputs can be found in the <a href="http://doi.org/10.1371/journal.pcbi.1005209">paper published in PLOS Computational Biology</a>.</p>
