@@ -32,21 +32,6 @@
       gtag('config', 'UA-339450-12');
     </script>
 
-    <script>
-    /**
-    * Function that tracks a click on an outbound link in Analytics.
-    * This function takes a valid URL string as an argument, and uses that URL string
-    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-    * using 'navigator.sendBeacon' in browser that support it.
-    */
-    var trackOutboundLink = function(url) {
-       ga('send', 'event', 'outbound', 'click', url, {
-         'transport': 'beacon',
-         'hitCallback': function(){document.location = url;}
-       });
-    }
-    </script>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -200,7 +185,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>The BIDS specification (1.1.0)</h2>
                     <p>The BIDS specification is available as a PDF download</p>
-                    <a href="bids_spec1.1.0.pdf" class="btn btn-default btn-lg" onclick="trackOutboundLink('ids_spec1.1.0.pdf'); return false;">Download BIDS specification</a>
+                    <a href="bids_spec1.1.0.pdf" class="btn btn-default btn-lg">Download BIDS specification</a>
                 </div>
             </div>
         </div>
@@ -230,7 +215,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Get involved in making BIDS better</h2>
                 <p>Found a typo or want to clarify a particular description? <br />Add your modification directly to the appropriate Google Document</p>
-                <a href="https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit?usp=sharing" class="btn btn-default btn-lg" onclick="trackOutboundLink('https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit?usp=sharing'); return false;">BIDS draft</a><br /><br />
+                <a href="https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit?usp=sharing" class="btn btn-default btn-lg">BIDS draft</a><br /><br />
                 <a href="https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0/edit?usp=drive_web" class="btn btn-default btn-lg">PET extension</a><br /><br />
                 <a href="https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4/edit" class="btn btn-default btn-lg">Derivatives extension</a><br /><br />
                 <a href="https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M/edit?usp=sharing" class="btn btn-default btn-lg">Model extension</a><br /><br />
