@@ -62,12 +62,12 @@ You're awesome. :wave::smiley:
 
 
 [link_github]: https://github.com/
-[link_bids]: https://github.com/INCF/BIDS
-[link_issues]: https://github.com/INCF/BIDS/issues
-[link_labels]: https://github.com/INCF/BIDS/labels
+[link_bids]: https://github.com/bids-standard/bids-website
+[link_issues]: https://github.com/bids-standard/bids-website/issues
+[link_labels]: https://github.com/bids-standard/bids-website/labels
 [link_fork]: https://help.github.com/articles/fork-a-repo/
-[link_requests]: https://github.com/INCF/BIDS/labels/requests
-[link_helpwanted]: https://github.com/INCF/BIDS/labels/help%20wanted
+[link_requests]: https://github.com/bids-standard/bids-website/labels/requests
+[link_helpwanted]: https://github.com/bids-standard/bids-website/labels/help%20wanted
 [link_code_of_conduct]: http://www.brainhack.org/code-of-conduct.html
 [link_stemmrolemodels]: https://github.com/KirstieJane/STEMMRoleModels
 [link_updateupstreamwiki]: https://help.github.com/articles/syncing-a-fork/
