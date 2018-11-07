@@ -143,8 +143,8 @@
           <li>It will be easy for another researcher to work on your data. To understand the organization of the files and their format you will only need to refer them to this document. This is especially important if you are running your own lab and anticipate more than one person working on the same data over time. By using BIDS you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.</li>
           <li>There is a growing number of <a href="#software">data analysis software packages</a> that can understand data organized according to BIDS.</li>
           <li>Databases such as <a href="http://openfmri.org">OpenfMRI.org</a>, <a href="http://www.loris.ca">LORIS</a>, <a href="https://portal.mrn.org">COINS</a>, <a href="https://central.xnat.org/">XNAT</a>, <a href="https://scitran.github.io/">SciTran</a> and others will accept and export datasets organized according to BIDS. If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.</li>
-          <li>There are <a href="https://github.com/Squishymedia/bids-validator">validation tools</a> (also available <a href="http://incf.github.io/bids-validator/">online</a>) that can check your dataset integrity and let you easily spot missing values.</li>
-          <li>We provide <a href="https://github.com/INCF/openfmri2bids">tools to convert OpenfMRI style organized data to BIDS</a></li>
+          <li>There are <a href="https://github.com/Squishymedia/bids-validator">validation tools</a> (also available <a href="http://bids-standard.github.io/bids-validator/">online</a>) that can check your dataset integrity and let you easily spot missing values.</li>
+          <li>We provide <a href="https://github.com/bids-standard/openfmri2bids">tools to convert OpenfMRI style organized data to BIDS</a></li>
         </ul></p>
         <p id="software">Software currently supporting BIDS:</p>
         <ul>
@@ -152,25 +152,26 @@
          <li>Converters</li>
          <ul>
           <li><a href="https://github.com/nih-fmrif/BIDS-tools">AFNI BIDS-tools</a></li>
-          <li><a href="https://github.com/INCF/BIDS2ISATab">BIDS2ISATab</a></li>
-          <li><a href="https://github.com/INCF/bidsutils/tree/master/BIDSto3col">BIDSto3col</a></li>
-          <li><a href="https://github.com/INCF/BIDS2NDA">BIDS2NDA</a></li>
+          <li><a href="https://github.com/bids-standard/BIDS2ISATab">BIDS2ISATab</a></li>
+          <li><a href="https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col">BIDSto3col</a></li>
+          <li><a href="https://github.com/bids-standard/BIDS2NDA">BIDS2NDA</a></li>
           <li><a href="https://github.com/jmtyszka/bidskit">bidskit</a></li>
-          <li><a href="https://github.com/dangom/dac2bids">dac2bids</a></li>
           <li><a href="https://github.com/cbedetti/Dcm2Bids">Dcm2Bids</a></li>
           <li><a href="https://github.com/neurolabusc/dcm2niix">DCM2NIIx</a></li>
           <li><a href="https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer">DICM2NII</a></li>
           <li><a href="https://github.com/nipy/heudiconv">HeuDiConv</a></li>
-          <li><a href="https://github.com/INCF/openfmri2bids">OpenfMRI2BIDS</a></li>
+          <li><a href="https://github.com/bids-standard/openfmri2bids">OpenfMRI2BIDS</a></li>
           <li><a href="https://github.com/ReproNim/reproin">ReproIn</a> (HeuDiConv-based turnkey solution)</li>
           <li><a href="https://github.com/lwallace23/bids2xar">bids2xar</a> (for XNAT import)</li>
           <li><a href="https://github.com/kamillipi/2bids">XNAT2BIDS</a></li>
           <li><a href="https://github.com/mslw/horos-bids-output">Horos (Osirix) export plugin</a></li>
           <li><a href="https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/NIDM2BIDSMRI.py">BIDS2NIDM</a></li>
+          <li><a href="https://github.com/Donders-Institute/bidscoin">BIDScoin</a>
+      	  <li><a href="http://mne-tools.github.io/mne-bids/">MNE-BIDS</a> (MEG/EEG/iEEG)</li>
          </ul>
          <li>Institution specific data management/conversion tools</li>
          <ul>
-          <li><a href="https://github.com/robertoostenveld/bids/">BIDS Tools from the Donders Institute</a></li>
+          <li><a href="https://github.com/dangom/dac2bids">dac2bids</a></li>Conversion tool for the Donders Institute 
           <li><a href="https://github.com/khanlab/autobids">Autobids from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute</a></li>
          </ul>
          <li>Other Tools</li>
@@ -180,7 +181,7 @@
           <li><a href="http://fcp-indi.github.io/">C-PAC</a> (Configurable Pipeline for the Analysing Connectomes)</li>
           <li><a href="https://github.com/poldracklab/preprocessing-workflow">FMRIPREP</a> (preprocessing workflow)</li>
           <li><a href="http://openneuro.org">OpenNeuro</a> (repository)</li>
-          <li><a href="https://github.com/INCF/pybids">PyBIDS</a> (Python module to harmonize access and manipulation)</li>
+          <li><a href="https://github.com/bids-standard/pybids">PyBIDS</a> (Python module to harmonize access and manipulation)</li>
          </ul>
          <li>Quality Assessment</li>
          <ul>
@@ -215,12 +216,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
 				    <h2>Getting started</h2>
 					<p>Read the Starter Kit</p>
-					<a href="https://github.com/INCF/bids-starter-kit" class="btn btn-default btn-lg">BIDS Starter Kit</a><br /><br /><br />
+					<a href="https://github.com/INCF/bids-starter-kit" class="btn btn-default btn-lg" onclick="trackOutboundLink('https://github.com/INCF/bids-starter-kit'); return false;">BIDS Starter Kit</a><br /><br /><br />
 					<p>Learn from examples</p>
-                    <a href="https://openneuro.org/public/datasets" class="btn btn-default btn-lg">Full Datasets in OpenNeuro.org</a><br /><br />
-                    <a href="https://github.com/INCF/BIDS-examples" class="btn btn-default btn-lg">Stripped down datasets on GitHub.org</a><br /><br /><br />
+                    <a href="https://openneuro.org/public/datasets" class="btn btn-default btn-lg" onclick="trackOutboundLink('https://openneuro.org/public/datasets'); return false;">Full Datasets in OpenNeuro.org</a><br /><br />
+                    <a href="https://github.com/bids-standard/bids-examples" class="btn btn-default btn-lg" onclick="trackOutboundLink('https://github.com/bids-standard/bids-examples'); return false;">Stripped down datasets on GitHub.org</a><br /><br /><br />
 					<p>Confused? Need help?</p>
-                    <a href="https://neurostars.org/tags/bids" class="btn btn-default btn-lg">Post a question on NeuroStars.org</a><br />
+                    <a href="https://neurostars.org/tags/bids" class="btn btn-default btn-lg" onclick="trackOutboundLink('https://neurostars.org/tags/bids'); return false;">Post a question on NeuroStars.org</a><br />
                 </div>
             </div>
         </div>
@@ -232,16 +233,27 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Get involved in making BIDS better</h2>
                 <p>Found a typo or want to clarify a particular description? <br />Add your modification directly to the appropriate Google Document</p>
-                <a href="https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit?usp=sharing" class="btn btn-default btn-lg" onclick="trackOutboundLink('https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit?usp=sharing'); return false;">BIDS draft</a><br /><br />
-                <a href="https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0/edit?usp=drive_web" class="btn btn-default btn-lg">PET extension</a><br /><br />
-                <a href="https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4/edit" class="btn btn-default btn-lg">Derivatives extension</a><br /><br />
-                <a href="https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M/edit?usp=sharing" class="btn btn-default btn-lg">Model extension</a><br /><br />
-		<a href="https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE/edit?usp=sharing" class="btn btn-default btn-lg">EEG extension</a><br /><br />
-		<a href="https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY/edit" class="btn btn-default btn-lg">iEEG extension</a><br /><br />
-		<a href="https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw/edit" class="btn btn-default btn-lg">Eye Tracking extension</a><br /><br />
+		<a href="https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit" class="btn btn-default btn-lg">BIDS draft</a><br /><br />
+		<a href="https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M/edit" class="btn btn-default btn-lg">Extension Proposal 2 - Models specification</a><br /><br />
+		<a href="https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4/edit" class="btn btn-default btn-lg">Extension Proposal 3 - Common derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c/edit" class="btn btn-default btn-lg">Extension Proposal 5 - Arterial spin labeling</a><br /><br />
+		<a href="https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE/edit" class="btn btn-default btn-lg">Extension Proposal 6 - Electroencephalography</a><br /><br />
+		<a href="https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0/edit" class="btn btn-default btn-lg">Extension Proposal 9 - Positron Emission Tomography</a><br /><br />
+		<a href="https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY/edit" class="btn btn-default btn-lg">Extension Proposal 10 - intracranial Electroencephalography</a><br /><br />
+		<a href="https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y/edit" class="btn btn-default btn-lg">Extension Proposal 11 - The structural preprocessing derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/16CvBwVMAs0IMhdoKmlmcm3W8254dQmNARo-7HhE-lJU/edit" class="btn btn-default btn-lg">Extension Proposal 12 - The functional preprocessing derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/1qBNQimDx6CuvHjbDvuFyBIrf2WRFUOJ-u50canWjjaw/edit" class="btn btn-default btn-lg">Extension Proposal 13 - The resting state fMRI derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE/edit" class="btn btn-default btn-lg">Extension Proposal 14 - Spaces and Mappings</a><br /><br />
+		<a href="https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE/edit" class="btn btn-default btn-lg">Extension Proposal 15 - Mapping file</a><br /><br />
+		<a href="https://docs.google.com/document/d/1cQYBvToU7tUEtWMLMwXUCB_T8gebCotE1OczUpMYW60/edit" class="btn btn-default btn-lg">Extension Proposal 16 - The diffusion weighted imaging derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA/edit" class="btn btn-default btn-lg">Extension Proposal 17 - Generic BIDS connectivity data schema</a><br /><br />
+		<a href="https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw/edit" class="btn btn-default btn-lg">Extension Proposal 20 - Eye Tracking</a><br /><br />
+		<a href="https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/edit" class="btn btn-default btn-lg">Extension Proposal 21 - Common Electrophysiological derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/1yzsd1J9GT-aA0DWhdlgNr5LCu6_gvbjLyfvYq2FuxlY/edit" class="btn btn-default btn-lg">Extension Proposal 22 - PET preprocessing derivatives</a><br /><br />
+		<a href="https://docs.google.com/document/d/19Y4O9TiOtHi95Hj6-VV6GWrosIzX1-o_chpUrcbGmWY/edit" class="btn btn-default btn-lg">Extension Proposal 23 - MRSI derivatives</a><br /><br />
 		<p>Want to add a new field or discuss a larger improvement? <br />Post your suggestion on the mailing list</p>
                 <a href="https://groups.google.com/forum/#!forum/bids-discussion" class="btn btn-default btn-lg">The BIDS mailing list</a><br /><br />
-		
+
 <iframe id="forum_embed"
   src="javascript:void(0)"
   scrolling="no"
@@ -256,11 +268,11 @@
      + '&showsearch=true&showpopout=true&showtabs=false'
      + '&parenturl=' + encodeURIComponent(window.location.href);
 </script> <br /><br />
-		    
+
 		    <p>Want to extend BIDS to a new modality or set of data types? <br />Draft a BIDS Extension Proposal (BEP) following the BIDS Contributor Guide</p>
 		<a href="https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4/edit" class="btn btn-default btn-lg">BIDS Contributor Guide</a><br /><br />
                 <p>Please adhere to our Code of Conduct <br />Thank you for your contributions!</p>
-		<a href="https://github.com/INCF/BIDS/blob/gh-pages/CODE_OF_CONDUCT.md" class="btn btn-default btn-lg">BIDS Code of Conduct</a>
+		<a href="https://github.com/bids-standard/bids-website/blob/gh-pages/CODE_OF_CONDUCT.md" class="btn btn-default btn-lg">BIDS Code of Conduct</a>
 
 		</div>
 </div>
@@ -270,7 +282,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Acknowledgements</h2>
-                <p>This work has been supported by the <a href="http://incf.org/">International Neuroinformatics Coordinating Facility</a> and the <a href="http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force">Neuroimaging Data Sharing Task Force</a>.</p>
+                <p>This work has been supported by the <a href="http://bids-standard.org/">International Neuroinformatics Coordinating Facility</a> and the <a href="http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force">Neuroimaging Data Sharing Task Force</a>.</p>
             </div>
         </div>
     </section>

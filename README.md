@@ -27,6 +27,6 @@ A list of all current BIDS contributors is available [here][link_bids_spec].
 [link_bootstrap]: http://getbootstrap.com
 [link_font_awesome]: http://fontawesome.io/
 [link_get_involved]: http://bids.neuroimaging.io/#get_involved
-[link_contributing]: https://github.com/INCF/BIDS/blob/gh-pages/CONTRIBUTING.md
+[link_contributing]: https://github.com/bids-standard/bids-website/blob/gh-pages/CONTRIBUTING.md
 [link_all-contributors]: https://github.com/kentcdodds/all-contributors#emoji-key
 [link_bids_spec]: https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit#heading=h.hds2i7ii7hjo
