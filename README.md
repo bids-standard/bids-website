@@ -20,7 +20,7 @@ If you'd like to contribute to the website, please see our [contributing guideli
 ## Contributors
 
 This project follows the [all-contributors][link_all-contributors] specification.
-A list of all current BIDS contributors is available [here][link_bids_spec].
+A list of all current BIDS contributors is available [here][link_contributor-list].
 
 
 [link_bids]: http://bids.neuroimaging.io
@@ -29,4 +29,4 @@ A list of all current BIDS contributors is available [here][link_bids_spec].
 [link_get_involved]: http://bids.neuroimaging.io/#get_involved
 [link_contributing]: https://github.com/bids-standard/bids-website/blob/gh-pages/CONTRIBUTING.md
 [link_all-contributors]: https://github.com/kentcdodds/all-contributors#emoji-key
-[link_bids_spec]: https://docs.google.com/document/d/1HFUkAEE-pB-angVcYe6pf_-fVf4sCpOHKesUvfb8Grc/edit#heading=h.hds2i7ii7hjo
+[link_contributor-list]: https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html
