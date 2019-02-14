@@ -40,12 +40,16 @@
     * using 'navigator.sendBeacon' in browser that support it.
     */
     var trackOutboundLink = function(url) {
-      gtag('event', 'click', {
-        'event_category': 'outbound',
-        'event_label': url,
-        'transport_type': 'beacon',
-        'event_callback': function(){document.location = url;}
-      });
+      if(window.gtag && gtag.loaded) {
+        gtag('event', 'click', {
+             'event_category': 'outbound',
+             'event_label': url,
+             'transport_type': 'beacon',
+             'event_callback': function(){document.location = url;}
+        });
+      } else {
+        document.location = url;
+      }
     }
     </script>
 
