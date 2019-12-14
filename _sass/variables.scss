@@ -1,23 +1,35 @@
+// Grey scales: neutral is in the middle, 4 levels lighter, and 4 levels darker
+$l4: #ffffff;
+$l3 :#dddddd;
+$l2 :#bbbbbb;
+$l1 :#999999;
+$n0 :#7f7f7f;
+$d1 :#666666;
+$d2 :#444444;
+$d3 :#222222;
+$d4 :#000000;
+
 // Breakpoints
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-$header-heading-color: #fff !default;
-$header-bg-color: #159957 !default;
-$header-bg-color-secondary: #155799 !default;
+$header-heading-color: $l4 !default;
+$header-bg-color: $d4 !default;
+$header-bg-color-secondary: $d4 !default;
 
 // Text
-$section-headings-color: #159957 !default;
-$body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
-$blockquote-text-color: #819198 !default;
+$section-headings-color: $l2 !default;
+$body-bg-color: $d4 !default;
+$body-text-color: $l1 !default;
+$body-link-color: $l3 !default;
+$blockquote-text-color: $l2 !default;
 
 // Code
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
+$code-bg-color: $d4 !default;
+$code-text-color: $l1 !default;
 
 // Borders
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
+$border-color: $l1 !default;
+$table-border-color: $l1 !default;
+$hr-border-color: $l1 !default;

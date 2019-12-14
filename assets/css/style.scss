@@ -2,3 +2,24 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+/**
+ * The following are modifications to the initial Cayman theme
+ */
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+.page-header
+{
+    background-image: url("/assets/img/hemispheres_850x325.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+body {
+    background-color: $body-bg-color;
+}
