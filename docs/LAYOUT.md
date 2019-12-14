@@ -1,4 +1,4 @@
-# Formatting and layout using MarkDown
+# MarkDown formatting
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
