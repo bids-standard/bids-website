@@ -5,7 +5,7 @@ theme: jekyll-theme-cayman
 # the base hostname & protocol for your site, e.g. http://example.com
 url: ""
 
-# the subpath where the site content is hosted, including images and style sheets 
+# the subpath where the site content is hosted, including images and style sheets
 # this should be "bids-website" if you host it under your own github account
 baseurl: "/bids-website"
 
@@ -46,6 +46,5 @@ exclude:
   - docs
   - old_website
   - README.md
-  - LICENSE
   - Gemfile*
   - jekyll-theme-cayman.gemspec
