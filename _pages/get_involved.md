@@ -3,7 +3,12 @@
 
 # Get involved in making BIDS better
 
-You can contribute to the BIDS specification by opening [Issues](https://github.com/bids-standard/bids-specification/issues) and propose changes via [Pull Requests](https://github.com/bids-standard/bids-specification/pulls).
+The easiest way to contribute to BIDS is to ask questions you have about the specification on [Neurostars](https://neurostars.org.)
+If your question has a [bids tag](https://neurostars.org/search?q=tags%3Abids) it will be much easier for others to find the answer.
+
+You can also get involved by _answering_ questions on [Neurostars](https://neurostars.org/search?q=tags%3Abids)!
+
+You can contribute to the BIDS specification by opening [Issues](https://github.com/bids-standard/bids-specification/issues) and propose changes via [Pull Requests](https://github.com/bids-standard/bids-specification/pulls) on [GitHub](https://github.com/bids-standard/bids-specification).
 
 To make improvements to the website that you are reading right now, you can also open an [Issue](https://github.com/bids-standard/bids-website/issues) and propose changes via [Pull Requests](https://github.com/bids-standard/bids-website/pulls).
 
