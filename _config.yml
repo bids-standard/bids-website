@@ -12,7 +12,6 @@ baseurl: "/bids-website"
 show_menu: true
 show_footer: false
 google_analytics: false
-show_menu: true
 
 excerpt_separator: <!--more-->
 

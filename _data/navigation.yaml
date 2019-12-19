@@ -2,6 +2,8 @@
 menu:
   - title: ABOUT
     url: ./index
+  - title: NEWS
+    url: ./news
   - title: BENEFITS
     url: ./benefits
   - title: THE SPECIFICATION
