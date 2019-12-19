@@ -1,11 +1,7 @@
 ---
 ---
 
-{% if site.github %}
-$baseurl: "{{ site.github }}";
-{% else %}
-$baseurl: "{{ site.baseurl }}";
-{% endif %}
+$baseurl: "{{  site.github }}";
 
 @import 'jekyll-theme-cayman';
 @import 'custom';
