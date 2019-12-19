@@ -1,32 +1,15 @@
-# bids.neuroimaging.io
+# BIDS website
 
-This is the repository for the Brain Imaging Data Structure (BIDS) website, [bids.neuroimaging.io][link_bids].
+This is the repository for the Brain Imaging Data Structure (BIDS) website that is hosted at <https://bids.neuroimaging.io>.
 
-## About BIDS
+## Contributing to the BIDS website
 
-BIDS is a simple and intuitive way to organize and describe your neuroimaging and behavioral data.
-This website provides guidance on the BIDS specification, example datasets implementing BIDS standards, and existing tools for working with BIDS datasets.
+The website is hosted [here](https://bids.neuroimaging.io). To contribute, please submit an [issue](https://github.com/bids-standard/bids-website/issues) or send a [pull request](https://github.com/bids-standard/bids-website/pulls) in this repository.
 
-## About the website
+The more static website pages are located in `_pages`, the blog posts that are listed in a reverse chronological order (i.e., the newest content on top) are located in `_posts`.
 
-Built using [Bootstrap][link_bootstrap] and [Font Awesome][link_font_awesome].
+Please see the `docs` directory for the technical documentation for this website.
 
-## Getting involved
+## Contributing to the BIDS specification
 
-If you are interested in helping to develop BIDS standards, please [get involved][link_get_involved]!
-
-If you'd like to contribute to the website, please see our [contributing guidelines][link_contributing].
-
-## Contributors
-
-This project follows the [all-contributors][link_all-contributors] specification.
-A list of all current BIDS contributors is available [here][link_contributor-list].
-
-
-[link_bids]: http://bids.neuroimaging.io
-[link_bootstrap]: http://getbootstrap.com
-[link_font_awesome]: http://fontawesome.io/
-[link_get_involved]: http://bids.neuroimaging.io/#get_involved
-[link_contributing]: https://github.com/bids-standard/bids-website/blob/gh-pages/CONTRIBUTING.md
-[link_all-contributors]: https://github.com/kentcdodds/all-contributors#emoji-key
-[link_contributor-list]: https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html
+The specification is hosted [here](http://bids-specification.readthedocs.io/). To contribute, please submit an [issue](https://github.com/bids-standard/bids-specification/issues) or send a [pull request](https://github.com/bids-standard/bids-specification/pulls) on the [bids-specification](https://github.com/bids-standard/bids-specification) repository.
