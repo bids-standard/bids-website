@@ -9,7 +9,7 @@ url: ""
 # this should be "bids-website" if you host it under your own github account
 baseurl: "/bids-website"
 
-show_downloads: false
+show_menu: true
 show_footer: false
 google_analytics: false
 show_menu: true
