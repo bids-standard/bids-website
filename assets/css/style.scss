@@ -1,7 +1,7 @@
 ---
 ---
 
-$baseurl: "https://bids.neuroimaging.io";
+$baseurl: "{{ site.baseurl }}";
 
 @import 'jekyll-theme-cayman';
 @import 'custom';

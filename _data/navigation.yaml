@@ -1,14 +1,16 @@
 
 menu:
   - title: ABOUT
-    url: ./index
+    url: /index.html
+  - title: NEWS
+    url: /news.html
   - title: BENEFITS
-    url: ./benefits
+    url: /benefits.html
   - title: THE SPECIFICATION
-    url: ./specification
+    url: /specification.html
   - title: GETTING STARTED
-    url: ./getting_started
+    url: /getting_started.html
   - title: GET INVOLVED
-    url: ./get_involved
+    url: /get_involved.html
   - title: ACKNOWLEDGMENTS
-    url: ./acknowledgements
+    url: /acknowledgements.html
