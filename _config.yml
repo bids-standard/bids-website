@@ -2,12 +2,8 @@ title: Brain Imaging Data Structure
 description: A simple and intuitive way to organize and describe your neuroimaging and behavioral data.
 theme: jekyll-theme-cayman
 
-# the base hostname & protocol for your site, e.g. http://example.com
-url: ""
-
-# the subpath where the site content is hosted, including images and style sheets
-# this should be "bids-website" if you host it under your own github account
-baseurl: "/bids-website"
+url: "https://bids.neuroimaging.io"
+baseurl: "/"
 
 show_menu: true
 show_footer: false
