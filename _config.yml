@@ -3,7 +3,7 @@ description: A simple and intuitive way to organize and describe your neuroimagi
 theme: jekyll-theme-cayman
 
 url: "https://bids.neuroimaging.io"
-baseurl: ""
+baseurl: "/"
 
 show_menu: true
 show_footer: false
