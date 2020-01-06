@@ -13,7 +13,9 @@ We think the Brain Imaging Data Structure, the standard and its community, are a
 
 In this blog post, each of the steering group members have explained a little about their current work, why they wanted to join the steering group, and where they hope we'll go in the new year.
 
-### Guiomar Niso <img src="_posts\assets-2019-12-31\GuiomarNiso.png" alt="Head shot of Guiomar Niso" width="250" align="right" hspace="20"/>
+<!--more-->
+
+### Guiomar Niso <img src="/assets/img/2019-12-31/GuiomarNiso.png" alt="Head shot of Guiomar Niso" width="250" align="right" hspace="20"/>
 
 *Tell us a little about your current research focus and experience.*
 
@@ -54,7 +56,7 @@ I am very passionate about extending the BIDS to new modalities and developing d
 I would also love to promote the implementation of BIDS apps for different goals (e.g. prepossessing, analyzing pipelines, etc) so they can be easily run and integrated into automated platforms.
 There are so many encouraging plans for next year!
 
-### Melanie Ganz <img src="_posts\assets-2019-12-31\MelanieGanz.png" alt="Head shot of Melanie Ganz" width="250" align="right" hspace="20"/>
+### Melanie Ganz <img src="/assets/img/2019-12-31/MelanieGanz.png" alt="Head shot of Melanie Ganz" width="250" align="right" hspace="20"/>
 
 *Tell us a little about your current research focus and experience.*
 
@@ -85,7 +87,7 @@ For example, compared to the MRI community the PET community needs to reinvent i
 To this end I am actively involved in organizing a data sharing/BIDS workshop at NRM2020 and to get more PET researchers interested in contributing to and using BIDS.
 As a steering group member, I want to identify further imaging modalities/derivatives in the need of standardization and get them started on the road to BIDS and support them with embracing BIDS.
 
-### Robert Oostenveld <img src="_posts\assets-2019-12-31\RobertOostenveld.jpg" alt="Head shot of Robert Oostenveld" width="250" align="right" hspace="20"/>
+### Robert Oostenveld <img src="/assets/img/2019-12-31/RobertOostenveld.jpg" alt="Head shot of Robert Oostenveld" width="250" align="right" hspace="20"/>
 
 *Tell us a little about your current research focus and experience.*
 
@@ -120,7 +122,7 @@ The number of stakeholders that either rely on BIDS for their data or for their 
 I hope that we can improve communication to maintain a considerate, robust and consensus-based development model of the specification.
 Furthermore, I hope that we can extend BIDS with more raw data types, like eye-tracking, NIRS, PET, genetics, and more behavioral measures, and that we can establish a strategy for documenting and sharing processed data.
 
-### Russell Poldrack <img src="_posts\assets-2019-12-31\RussellPoldrack.jpg" alt="Head shot of Russell Poldrack" width="250" align="right" hspace="20"/>
+### Russell Poldrack <img src="/assets/img/2019-12-31/RussellPoldrack.jpg" alt="Head shot of Russell Poldrack" width="250" align="right" hspace="20"/>
 
 *Tell us a little about your current research focus and experience.*
 
@@ -150,7 +152,7 @@ So far that has worked well for BIDS, but I would love to see more support from 
 
 I hope that we can continue a smooth transition to shared governance of the project, and continue to engage a more inclusive group of researchers in the project.
 
-### Kirstie Whitaker <img src="_posts\assets-2019-12-31\KirstieWhitaker.jpg" alt="Head shot of Kirstie Whitaker" width="250" align="right" hspace="20"/>
+### Kirstie Whitaker <img src="/assets/img/2019-12-31/KirstieWhitaker.jpg" alt="Head shot of Kirstie Whitaker" width="250" align="right" hspace="20"/>
 
 *Tell us a little about your current research focus and experience.*
 
