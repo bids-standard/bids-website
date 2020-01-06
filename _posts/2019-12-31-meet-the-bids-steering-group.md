@@ -17,7 +17,7 @@ In this blog post, each of the steering group members have explained a little ab
 
 *Tell us a little about your current research focus and experience.*
 
-I'm an AXA Postdoctoral fellow at Universidad Politécnica de Ma/drid.
+I'm an AXA Postdoctoral fellow at Universidad Politécnica de Madrid.
 My research focuses on understanding brain dynamics to improve clinical applications and ultimately people's lives.
 I study brain activity in healthy and pathological conditions (e.g. epilepsy, Alzheimer's Disease, blindness, pain) with M/EEG.
 I pioneered The OMEGA, the first open repository fully dedicated to magnetoencephalography (MEG) and I contribute to the development of open software packages aimed to analyze neurophysiological signals, such as Brainstorm or Hermes.
