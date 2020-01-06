@@ -187,7 +187,7 @@ So probably a clearer dissemination system to keep people updated on what's goin
 ### Thank you from the BIDS Steering Group
 
 Thank you to [everyone who stood for election](https://docs.google.com/document/d/1yb6j3a90serWbtab7ukSMyecs16sGfYTSGftH-4ArvA/edit) to this inaugural year of the BIDS steering group.
-It is a great strength of the community that so many people are committed to the development, maintenance and adoption of the Brin Imaging Data Structure.
+It is a great strength of the community that so many people are committed to the development, maintenance and adoption of the Brain Imaging Data Structure.
 
 We are proud to shepherd this community into 2020, and beyond.
 
