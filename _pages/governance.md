@@ -5,29 +5,29 @@
 
 Table of Contents
 
-[1. Introduction](#1-Introduction)
+[1. Introduction](#1-introduction)
 
-[2. Background](#2-Background)
-- [A. Project Summary](#a-Project-Summary)
-- [B. BIDS Mission Statement](#b-BIDS-Mission-Statement)
+[2. Background](#2-background)
+- [A. Project Summary](#a-project-summary)
+- [B. BIDS Mission Statement](#b-bids-mission-statement)
 
-[3. Leadership Structure](#3-Leadership-Structure)
+[3. Leadership Structure](#3-leadership-structure)
 
 [4. Governance of the standardization
-process](#4-Governance-of-the-standardization-process)
+process](#4-governance-of-the-standardization-process)
 - [A. Principles for open standards
-development](#a-Principles-for-open-standards-development)
+development](#a-principles-for-open-standards-development)
 - [B. Standard decision making process
-overview](#b-Standard-decision-making-process-overview)
+overview](#b-standard-decision-making-process-overview)
 
-[X. Appendix](#x-Appendix)
+[X. Appendix](#x-appendix)
 - [A. BEP Procedure: Key definitions](#a-bep-procedure-key-definitions)
 - [B. Voting Procedure](#b-voting-procedure)
 - [C. Governance ratification and BIDS Steering Group
 initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initialization)
-- [D. License](#d-License)
-- [E. Help](#e-Help)
-- [F. Acknowledgements](#f-Acknowledgements)
+- [D. License](#d-license)
+- [E. Help](#e-help)
+- [F. Acknowledgements](#f-acknowledgements)
 
 
 ## 1. Introduction
