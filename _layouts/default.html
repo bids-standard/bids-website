@@ -38,6 +38,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <!-- Add anchors to all headings, see https://www.bryanbraun.com/anchorjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.js"></script>
+
+
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/favicon/apple-icon-57x57.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/favicon/apple-icon-60x60.png' | relative_url }}">
@@ -108,6 +112,12 @@
     {% endif %}
 
   </main>
+
+  <!-- Add anchors before the closing body tag, see https://www.bryanbraun.com/anchorjs -->
+  <script>
+    anchors.options.visible = 'always';
+    anchors.add();
+  </script>
 </body>
 
 </html>
