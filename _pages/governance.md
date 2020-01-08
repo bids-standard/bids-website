@@ -30,7 +30,7 @@ initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initializatio
 - [F. Acknowledgements](#f-Acknowledgements)
 
 
-### 1. Introduction
+## 1. Introduction
 
 This document, *Brain Imaging Data Structure (BIDS): Governance and
 Decision Making*, intends to describe the BIDS mission, its principles,
@@ -39,9 +39,9 @@ development process, and to define the different groups and roles. BIDS
 is a community-built and maintained standard. The goal of this document
 is to clearly describe how BIDS is maintained and grown.
 
-### 2. Background
+## 2. Background
 
-#### A. Project Summary
+### A. Project Summary
 
 The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neuroimaging data in a filesystem hierarchy and of the
@@ -92,7 +92,7 @@ structure as BIDS, although the contributor and user base may largely
 overlap.
 
 
-#### B. BIDS Mission Statement
+### B. BIDS Mission Statement
 
 The goal of BIDS is to make neuroimaging data more accessible,
 shareable, and usable by researchers. To achieve this goal, BIDS seeks
@@ -108,7 +108,7 @@ and models (inspired by the pareto principle).
 the creation of the specification is critical for the success of the
 project.
 
-### 3. Leadership structure
+## 3. Leadership structure
 
 To achieve the goals of widespread adoption of the standard while
 growing to adapt to its community of members, BIDS is led by a series of
@@ -229,9 +229,9 @@ The current BEP Working Groups and their leads can be found in the
 section on [BIDS Extension
 Proposals](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals) in the BIDS specification.
 
-### 4. Governance of the standardization process
+## 4. Governance of the standardization process
 
-#### A. Principles for open standards development
+### A. Principles for open standards development
 
 The BIDS approach to standards development follows the principles of the
 [Modern Paradigm for
@@ -249,7 +249,7 @@ OpenStand:
 4. Availability
 5. Voluntary adoption
 
-#### B. Standard decision making process overview
+### B. Standard decision making process overview
 
 The foundation of BIDS decision making is listening to all members of
 the BIDS Community and striving to achieve consensus on each level of
@@ -286,9 +286,9 @@ The Steering Group evaluates:
   - Validator updated to include the Proposed BEP specification
   - Final review of the integration into the BIDS standard
 
-### X. Appendix
+## X. Appendix
 
-#### A. BEP Procedure: Key definitions
+### A. BEP Procedure: Key definitions
 
 **BIDS Specification** - This is the [BIDS
 specification](https://bids-specification.readthedocs.io/en/stable/).
@@ -326,7 +326,7 @@ edition of the BIDS standard specification.
 **Merged BEP** - A Proposed BEP that has been reviewed and approved by
 the Steering Group and merged into the BIDS standard.
 
-#### B. Voting Procedure
+### B. Voting Procedure
 
 The BIDS Steering Group is elected by a vote of the BIDS Contributors
 Group. At the discretion of the BIDS Steering Group, additional
@@ -352,7 +352,7 @@ determined by a simple majority. Voters may abstain on any ballot item.
 A vote will be considered valid if at least 20% of the Contributors
 submit votes.
 
-#### C. Governance ratification and BIDS Steering Group initialization
+### C. Governance ratification and BIDS Steering Group initialization
 
 In order to establish a governance procedure at the same time as a
 governing body, certain variations in the normal order are required.
@@ -383,7 +383,7 @@ to wit, “Elections will be managed through a 3rd party platform that
 allows restricting votes to a specific set of email addresses while
 maintaining the anonymity of the votes.
 
-#### D. License
+### D. License
 
 To the extent possible under the law, the authors have waived all
 copyright and related or neighboring rights to the BIDS project
@@ -391,7 +391,7 @@ governance and decision-making document, as per the [CC0 public domain
 dedication /
 license](https://creativecommons.org/publicdomain/zero/1.0/).
 
-#### E. Help
+### E. Help
 
 The [bids.neuroimaging.io](http://bids.neuroimaging.io/) website
 contains links to all the BIDS informational and help materials.
@@ -421,7 +421,7 @@ community survey results.
 All BIDS community members are required to follow the [BIDS code of
 conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). Please contact Franklin Feingold at ffein@stanford.edu if you have any concerns or would like to report a violation.
 
-#### F. Acknowledgements
+### F. Acknowledgements
 This document draws heavily from the [Modern Paradigm for
 Standards](https://open-stand.org/about-us/principles/) and from other
 open-source governance documents including:
