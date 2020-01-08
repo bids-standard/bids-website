@@ -406,8 +406,9 @@ We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids) so that others can search
 them and benefit from the answers, but if you do not feel comfortable
 asking your question publicly please email either Franklin Feingold at
-ffein@stanford.edu or Stefan Appelhoff at appelhoff@mpib-berlin.mpg.de.
-They will repost an anonymised/general version of your question on
+<ffein@stanford.edu> or Stefan Appelhoff at
+<appelhoff@mpib-berlin.mpg.de>. They will repost an anonymised/general
+version of your question on
 [NeuroStars](https://neurostars.org/tags/bids) and answer it there.
 
 There are several resources that can help a new user get started.
@@ -419,7 +420,7 @@ blog](http://reproducibility.stanford.edu/blog/) provides tutorials and
 community survey results.
 
 All BIDS community members are required to follow the [BIDS code of
-conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). Please contact Franklin Feingold at ffein@stanford.edu if you have any concerns or would like to report a violation.
+conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). Please contact Franklin Feingold at <ffein@stanford.edu> if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgements
 This document draws heavily from the [Modern Paradigm for
