@@ -425,14 +425,14 @@ conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF
 This document draws heavily from the [Modern Paradigm for
 Standards](https://open-stand.org/about-us/principles/) and from other
 open-source governance documents including:
-- https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html
-- https://www.ieee.org/about/corporate/governance/index.html
-- https://www.apache.org/foundation/governance/
-- https://www.niso.org/what-we-do/creating-NISO-standards
-- https://predictablynoisy.com/rust-governance
-- https://www.seedsforchange.org.uk/consensus
-- https://en.wikipedia.org/wiki/Internet_governance
-- https://www.icann.org/resources/pages/governance/guidelines-en
-- https://github.com/bids-standard/bids-specification/pull/104
-- https://randyfay.com/content/drupals-governance
-- https://www.drupal.org/governance
+- <https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html>
+- <https://www.ieee.org/about/corporate/governance/index.html>
+- <https://www.apache.org/foundation/governance/>
+- <https://www.niso.org/what-we-do/creating-NISO-standards>
+- <https://predictablynoisy.com/rust-governance>
+- <https://www.seedsforchange.org.uk/consensus>
+- <https://en.wikipedia.org/wiki/Internet_governance>
+- <https://www.icann.org/resources/pages/governance/guidelines-en>
+- <https://github.com/bids-standard/bids-specification/pull/104>
+- <https://randyfay.com/content/drupals-governance>
+- <https://www.drupal.org/governance>
