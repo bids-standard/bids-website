@@ -118,9 +118,10 @@ The following figure illustrates the structure of the groups described
 in this document. The specific organization and responsibilities of
 these groups are laid out in detail, below.
 
-![leadership_figure](governance_figure.jpg "Leadership Structure")
+![leadership_figure](./assets/img/governance_figure.jpg "Leadership
+Structure")  
 
-##### **BIDS Steering Group**
+### BIDS Steering Group
 
 The BIDS Steering Group is responsible for approving and advancing BEPs
 through the BIDS standard process, as well as more general decisions
@@ -150,7 +151,7 @@ Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF
 The Steering Group may delegate tasks as needed to fulfill its
 responsibilities.
 
-##### **BEP Working Group**
+### BEP Working Group
 
 A BEP Working Group is established for every BIDS Extension Proposal
 (BEP). Each working group will have 1-3 group-appointed leader(s),
@@ -162,14 +163,14 @@ work, following the BIDS governance standards laid out in section 4 of
 this document and the BIDS [Code of
 Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). The BEP Working Group work is completed when their BEP has become a Merged BEP.
 
-##### **BEP Leads Group**
+### BEP Leads Group
 
 The BEP Leads Group consists of the BEP Leads of the BEP Working Groups.
 This Working Group intends to ensure potential integrations and
 collaborations across BEPs are realized and consistency across the BIDS
 standard.
 
-##### **BIDS Maintainers Group**
+### BIDS Maintainers Group
 
 This group is responsible for maintaining the [BIDS specification on
 GitHub](https://github.com/bids-standard/bids-specification). The Lead
@@ -181,7 +182,7 @@ by a majority vote of current maintainers.
 
 This group submits monthly status summaries to the Steering Group.
 
-##### **BIDS Contributors Group**
+### BIDS Contributors Group
 
 This group consists of individuals who have contributed to the BIDS
 community. Group members are identified on the [BIDS
@@ -191,13 +192,13 @@ Members of the BIDS Contributors Group are encouraged to support the
 BIDS specification by supporting the members of the Maintainers Group in
 their responsibilities.
 
-##### **BIDS Advisory Group**
+### BIDS Advisory Group
 
 This group contains previous BEP Working Group Leads.
 The purpose of this group is to provide advice and guidance to the BIDS
 Steering Group and the BEP Leads Group.
 
-##### **Other working/interest Groups**
+### Other working/interest Groups
 
 A working/interest group can be established under the approval of the
 BIDS Steering Group. This is typically but not limited to being formed
@@ -215,7 +216,7 @@ Group](https://groups.google.com/forum/#!forum/bids-discussion), and
 [Twitter](https://twitter.com/BIDSstandard). This proposal will state
 what their group aims and goals are.
 
-##### **BIDS Community**
+### BIDS Community
 
 Along with members of the preceding groups, this group comprises broadly
 any individual who has used or has interest in using BIDS. All members
