@@ -71,8 +71,8 @@
 <body>
 
   <header class="page-header" role="banner">
-    <h1 class="project-name">{{ site.title }}</h1>
-    <h2 class="project-tagline">{{ site.description }}</h2>
+    <div class="project-name">{{ site.title }}</div>
+    <div class="project-tagline">{{ site.description }}</div>
 
     <div class="container">
       <nav class="navbar navbar-inverse">
@@ -115,7 +115,7 @@
 
   <!-- Add anchors before the closing body tag, see https://www.bryanbraun.com/anchorjs -->
   <script>
-    anchors.options.visible = 'always';
+    anchors.options.visible = 'touch';
     anchors.add('h1');
     anchors.add('h2');
     anchors.add('h3');
