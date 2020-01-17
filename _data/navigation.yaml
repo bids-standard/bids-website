@@ -1,0 +1,18 @@
+
+menu:
+  - title: ABOUT
+    url: /index
+  - title: NEWS
+    url: /news
+  - title: BENEFITS
+    url: /benefits
+  - title: THE SPECIFICATION
+    url: /specification
+  - title: GETTING STARTED
+    url: /getting_started
+  - title: GET INVOLVED
+    url: /get_involved
+  - title: GOVERNANCE
+    url: /governance
+  - title: ACKNOWLEDGMENTS
+    url: /acknowledgements
