@@ -13,9 +13,10 @@ jobs:
                     bundle
 
             - run:
-                name: build
+                name: build and output to _site
                 command: |
                     bundle exec jekyll build --baseurl /0/home/circleci/project/_site
 
             - store_artifacts:
                 path: ~/project/_site
+                destination: html
