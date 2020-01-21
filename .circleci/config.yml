@@ -1,0 +1,21 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: circleci/ruby:stretch
+        steps:
+            - checkout
+
+            - run:
+                name: install
+                command: |
+                    gem install jekyll bundler
+                    bundle
+
+            - run:
+                name: build
+                command: |
+                    bundle exec jekyll build --baseurl /0/home/circleci/project/_site
+
+            - store_artifacts:
+                path: ~/project/_site
