@@ -86,7 +86,7 @@ the main body of the specification.
 | [BEP008](https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM) | Magnetoencephalography (MEG)               | Guiomar Niso                                      |
 | [BEP010](https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY) | intracranial Electroencephalograpgy (iEEG) | Chris Holdgraf, Dora Hermes                       |
 
-As an extension matures, there are cases when the BEP becomes a tool rather than merged into the main body of the specification. Below is a table of BEPs that have become tools. 
+Some proposals that set out to extend the BIDS specification have instead become tools for handling BIDS. See the table below.
 
 | Extension label                                                                           | Title        | Moderators/leads                               | Tool name                                               |
 |-------------------------------------------------------------------------------------------|--------------|------------------------------------------------|---------------------------------------------------------|
