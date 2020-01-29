@@ -49,6 +49,9 @@ You can also contribute to ongoing BIDS Extension Proposals. Below is a
 table of currently-active BEPs. The "Extension label" column provides a
 direct link to the documentation.
 
+Note that all of the extension ideas that are not backwards compatible and thus
+will have to wait for BIDS 2.0 are listed
+[here](https://docs.google.com/document/d/1LEgsMiisGDe1Gv-hBp1EcLmoz7AlKj6VYULUgDD3Zdw).
 
 | Extension label                                                                           | Title                                                                                                      | Moderators/ leads                                             | Summary                                                                                                                                                                                                                                   | Blocking point(s)                                                                      |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
@@ -91,8 +94,3 @@ Some proposals that set out to extend the BIDS specification have instead become
 | Extension label                                                                           | Title        | Moderators/leads                               | Tool name                                               |
 |-------------------------------------------------------------------------------------------|--------------|------------------------------------------------|---------------------------------------------------------|
 | [BEP015](https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE) | Mapping file | Eric Earl, Camille Maumet, and Vasudev Raguram | [File mapper](https://github.com/DCAN-Labs/file-mapper) |
-
-
-All of the extension ideas that are not backwards compatible and thus
-will have to wait for BIDS 2.0 are listed
-[here](https://docs.google.com/document/d/1LEgsMiisGDe1Gv-hBp1EcLmoz7AlKj6VYULUgDD3Zdw).
