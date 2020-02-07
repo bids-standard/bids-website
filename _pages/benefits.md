@@ -42,8 +42,9 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 ## Institution specific data management/conversion tools
 
 - [dac2bids](https://github.com/dangom/dac2bids)
-- [Autobids from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute](https://github.com/khanlab/autobids)
+- [Autobids](https://github.com/khanlab/autobids) from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute
 - [Biscuit](https://github.com/Macquarie-MEG-Research/Biscuit)
+- [BiDirect_BIDS_Converter](https://github.com/wulms/BiDirect_BIDS_Converter) from the Institute of epidemiology and social medicine, University of Münster
 
 ## Quality Assessment
 
