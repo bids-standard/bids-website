@@ -10,6 +10,8 @@ The [BIDS Steering Group]({% post_url 2019-12-31-meet-the-bids-steering-group %}
 
 Inspired by [town hall meetings](https://en.wikipedia.org/wiki/Town_hall_meeting) and the OHBM General Assembly and Feedback Forum, these online events are a space for members of the BIDS community to meet the steering group and to discuss BIDS strategy and vision.
 
+<!--more-->
+
 You can ask questions in real time during one of the calls, or send us your questions in advance at [this google form](https://forms.gle/uLtkbnZbKZwxPb2w8).
 
 The steering group might have answers for some of the questions, but our focus during the two calls will be to listen to the needs and priorities of the BIDS community.
