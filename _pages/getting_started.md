@@ -3,7 +3,7 @@
 
 # Getting started
 
-Read the [BIDS Starter Kit](https://github.com/bids-standard/bids-starter-kit).
+Read the [BIDS Starter Kit](https://github.com/bids-standard/bids-starter-kit) and check out the [tutorials](https://github.com/bids-standard/bids-starter-kit/wiki/Tutorials) there.
 
 # Learn from examples
 
