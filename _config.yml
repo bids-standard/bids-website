@@ -15,6 +15,9 @@ collections:
   pages:
     output: true
     permalink: /:path
+  bep_collection:
+    output: true
+    permalink: /:name
 
 defaults:
   -
@@ -31,6 +34,9 @@ defaults:
     values:
       layout: "default"
       toc: false
+
+plugins:
+  - jekyll-redirect-from
 
 include:
   - _pages
