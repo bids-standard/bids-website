@@ -12,21 +12,21 @@ Attended: Franklin Feingold, Melanie Ganz, Guiomar Niso, Robert Oostenveld, Kirs
 ### Executive Summary
 
 We discussed the channels through which to share updates to the BIDS specification.
-An issue was opened to start crowdsourcing and collecting this information.
-We will be using this to share the release of v1.2.2 and to request the final rounds of feedback on the Genetic information extension.
+[An issue](https://github.com/bids-standard/bids-specification/issues/415) was opened to start crowdsourcing and collecting this information.
+We will be using this list of channels to share the release of v1.2.2 and to request the final rounds of feedback on the Genetic information extension.
 
-We discussed generating an example slide deck that  community members can  use (or pick from) when they want to present BIDS.
+We discussed generating an example slide deck that community members can  use (or pick from) when they want to present BIDS.
 
 We discussed considerations for when to open a repository under the BIDS standard organization on GitHub.
-There should be multiple people committed to the repository (otherwise it is better of under the personal GitHub account), the maintainers should be clearly identifiable (e.g. as a CODEOWNERS file at top level), there should be a code of conduct in the repo that is consistent with that of the BIDS specification, and (as a consequence of the code of conduct) the repository should welcome contributions from others.
+Previously, community members have opened repositories under our BIDS standard organization.
+We want to codify guidelines to govern this.
+The plan is that there should be multiple people committed to the repository (otherwise it is better of under the personal GitHub account), the maintainers should be clearly identifiable (e.g. as a CODEOWNERS file at top level), there should be a code of conduct in the repo that is consistent with that of the BIDS specification, and (as a consequence of the code of conduct) the repository should welcome contributions from others.
 
-We want to host another community forum (but not too frequent) and potentially a starter kit/demo in the Open Science Room at OHBM.
+We want to host another [Community Forum](https://bids.neuroimaging.io/2020/01/02/announcement-community-forum-events.html) (but not too frequent) and potentially a starter kit/demo in the Open Science Room at OHBM.
 
-Regarding issue [#407](https://github.com/bids-standard/bids-specification/pull/407), we consider Zenodo to be a suitable  the location to store historical specification pdfs, also for future versions.
+Regarding discussions on where to host our historical specification pdfs (please refer to issue [#407](https://github.com/bids-standard/bids-specification/pull/407)), we consider Zenodo to be a suitable  the location to store our specification pdfs.
 
 ### Action Items
-
-
 
 | Action Item |
 | -------- |
@@ -40,7 +40,7 @@ Regarding issue [#407](https://github.com/bids-standard/bids-specification/pull/
 ### Minutes
 
 Discussed channels to share BIDS related information: FreeSurfer, FSL, SPM, BIDS website-news
-Items to share: 1.2.2 release, Genetic information
+Items to share: 1.2.2 release, BEP018: Genetic information
 Genetic information - do final call before merging into standard
 Aggregating a public sheet
 
