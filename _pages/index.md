@@ -11,7 +11,7 @@ With the Brain  Imaging Data Structure (BIDS), we describe a simple and easy to 
 
 ![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-white_1000x477.png){: .center-image }
 
-BIDS is heavily inspired by the format used internally by the OpenfMRI repository (now known as [OpenNeuro.org](http://openneuro.org)).
+BIDS was heavily inspired by the format used internally by the OpenfMRI repository that is now known as [OpenNeuro](https://openneuro.org).
 While working on BIDS we consulted many neuroscientists to make sure it covers most common experiments, but at the same time is intuitive and easy to adopt.
 The specification is intentionally based on simple file formats and folder structures to reflect current lab practices and make it accessible to a wide range of scientists coming from different backgrounds.
 
@@ -21,7 +21,7 @@ BIDS is developed by the community for the community and everybody can [become a
 
 ## Specification vs. Ecosystem
 
-Since the inception of BIDS as a specification on how to organize neuroimaging data, a large ecosystem of tools and ressources has evolved around BIDS.
+Since the inception of the BIDS specification that documents how to organize neuroimaging data, a large ecosystem of tools and ressources has evolved around BIDS.
 
 A few of the key elements of this ecosystem are the [BIDS-validator](https://github.com/bids-standard/bids-validator), to automatically check datasets for adherence to the specification, [OpenNeuro](https://openneuro.org/), as a database for BIDS formatted datasets, and [BIDS-Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets.
 
@@ -31,7 +31,7 @@ With the ongoing development of new tools and ressources it is important to keep
 
 ## Further Information
 
-- Find a good introduction to the BIDS standard in the [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644).
+- Good introductions to the BIDS standard can be found in the initial [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644), as well as in the follow up papers on specific modalities: [MEG](https://www.nature.com/articles/sdata2018110), [EEG](https://www.nature.com/articles/s41597-019-0104-8), and [iEEG](https://www.nature.com/articles/s41597-019-0105-7).
 
 - Look through some of the community's [presentations on BIDS](https://osf.io/yn93h/).
 
