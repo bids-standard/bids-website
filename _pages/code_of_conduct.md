@@ -43,7 +43,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version].
+This Code of Conduct is adapted from the [Contributor Covenant][homepage]{:target="_blank"}, version 1.4, available at [http://contributor-covenant.org/version/1/4][version]{:target="_blank"}.
 
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
