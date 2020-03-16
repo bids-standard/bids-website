@@ -47,14 +47,14 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neuroimaging data in a filesystem hierarchy and of the
 metadata associated with the imaging data. The current edition of the
 standard is available in
-[HTML](https://bids-specification.readthedocs.io/en/stable/) with all
+[HTML](https://bids-specification.readthedocs.io/en/stable/){:target="_blank"} with all
 the previous editions available since October 2018 (listed in the
-[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website) as PDFs.
+[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html){:target="_blank"}). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website){:target="_blank"} as PDFs.
 The development edition is available in
-[HTML](https://bids-specification.readthedocs.io/en/latest/). The
+[HTML](https://bids-specification.readthedocs.io/en/latest/){:target="_blank"}. The
 specification is based in a [GitHub
-repository](https://github.com/bids-standard/bids-specification) and
-rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
+repository](https://github.com/bids-standard/bids-specification){:target="_blank"} and
+rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/){:target="_blank"}.
 
 We strive for community consensus in decision making.
 This governing model and decision making procedure was developed through
@@ -73,27 +73,27 @@ sharing and analysis. The project is multifaceted, and depends on
 contributors for: specification development and maintenance, [BIDS
 Extension Proposals
 (BEPs)](/get_involved), software tools, [starter
-kits](https://github.com/bids-standard/bids-starter-kit),
-[examples](https://github.com/bids-standard/bids-examples), and general
+kits](https://github.com/bids-standard/bids-starter-kit){:target="_blank"},
+[examples](https://github.com/bids-standard/bids-examples){:target="_blank"}, and general
 discussions. The relevant discussions are located in our [Google
-Group](https://groups.google.com/forum/#!forum/bids-discussion), [GitHub
-organization](https://github.com/bids-standard), and public Google
-Documents (typically associated with an [xtension
+Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, [GitHub
+organization](https://github.com/bids-standard){:target="_blank"}, and public Google
+Documents (typically associated with an [extension
 proposal](/get_involved)).
 
 A key component of the BIDS initiative is the collection of associated
 software tools and platforms that facilitate the validation and ease the
 use of BIDS-formatted datasets. BIDS converters (e.g.,
-[HeuDiConv](https://github.com/nipy/heudiconv)) enable the streamlined
+[HeuDiConv](https://github.com/nipy/heudiconv){:target="_blank"}) enable the streamlined
 conversion of raw imaging files (e.g., DICOMs) into a BIDS dataset, the
-[BIDS validator](http://bids-standard.github.io/bids-validator/) allows
+[BIDS validator](http://bids-standard.github.io/bids-validator/){:target="_blank"} allows
 users to confirm that a given dataset complies with the current edition
-of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
-Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
+of the standard, the [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"}
+Python and [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"}
 libraries allow querying and manipulating BIDS-compliant datasets,
-[BIDS-Apps](https://bids-apps.neuroimaging.io/) for running portable
+[BIDS-Apps](https://bids-apps.neuroimaging.io/){:target="_blank"} for running portable
 pipelines on validated BIDS datasets, and platforms like
-[OpenNeuro](https://openneuro.org/) store and serve BIDS datasets. Note
+[OpenNeuro](https://openneuro.org/){:target="_blank"} store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance
 structure as BIDS, although the contributor and user base may largely
 overlap.
@@ -153,7 +153,7 @@ BIDS roles at the same time, e.g. BEP Working Group chair.
 
 The BIDS Steering Group is the authority of last resort in addressing
 conflicts among groups and alleged violations of the [Code of
-Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).
+Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}.
 
 The Steering Group may delegate tasks as needed to fulfill its
 responsibilities.
@@ -168,7 +168,7 @@ interest. This can be either an unspecified modality or derivative.
 The BEP Lead and Working Group will determine how they organize their
 work, following the BIDS governance standards laid out in section 4 of
 this document and the BIDS [Code of
-Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). The BEP Working Group work is completed when their BEP has become a Merged BEP.
+Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}. The BEP Working Group work is completed when their BEP has become a Merged BEP.
 
 ### BEP Leads Group
 
@@ -180,10 +180,10 @@ standard.
 ### BIDS Maintainers Group
 
 This group is responsible for maintaining the [BIDS specification on
-GitHub](https://github.com/bids-standard/bids-specification). The Lead
+GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}. The Lead
 Maintainer and the Maintainers Group will determine how they organize
 their work, detailed in the [BIDS Maintainers
-guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIjbk4Pfo/edit) and in accordance with the BIDS Code of Conduct. The maintainers guide is subject to Steering Group approval and amendment.
+guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIjbk4Pfo/edit){:target="_blank"} and in accordance with the BIDS Code of Conduct. The maintainers guide is subject to Steering Group approval and amendment.
 BIDS contributors may self-nominate to become maintainers, with approval
 by a majority vote of current maintainers.
 
@@ -193,7 +193,7 @@ This group submits monthly status summaries to the Steering Group.
 
 This group consists of individuals who have contributed to the BIDS
 community. Group members are identified on the [BIDS
-contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html) list, a list that is intended to be inclusive of all forms of engagement with the BIDS community, and that contributors are encouraged to update on the [specification wiki](https://github.com/bids-standard/bids-specification/wiki/Contributors). Engagement can range from writing copy text in the specification to providing feedback on projects such as the [BIDS starter kit](https://github.com/bids-standard/bids-starter-kit).
+contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html){:target="_blank"} list, a list that is intended to be inclusive of all forms of engagement with the BIDS community, and that contributors are encouraged to update on the [specification wiki](https://github.com/bids-standard/bids-specification/wiki/Contributors){:target="_blank"}. Engagement can range from writing copy text in the specification to providing feedback on projects such as the [BIDS starter kit](https://github.com/bids-standard/bids-starter-kit){:target="_blank"}.
 
 Members of the BIDS Contributors Group are encouraged to support the
 BIDS specification by supporting the members of the Maintainers Group in
@@ -218,9 +218,9 @@ their proposal.
 The working/interest group formation is formalized through an open
 letter via a “read-only” Google Document addressed to the BIDS Steering
 Group. The open letter will be posted on: the [BIDS-Specification
-GitHub](https://github.com/bids-standard/bids-specification), [Google
-Group](https://groups.google.com/forum/#!forum/bids-discussion), and
-[Twitter](https://twitter.com/BIDSstandard). This proposal will state
+GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}, [Google
+Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, and
+[Twitter](https://twitter.com/BIDSstandard){:target="_blank"}. This proposal will state
 what their group aims and goals are.
 
 ### BIDS Community
@@ -229,13 +229,13 @@ Along with members of the preceding groups, this group comprises broadly
 any individual who has used or has interest in using BIDS. All members
 are invited, and encouraged to join the BIDS Contributor Group by
 supporting the project in one of the many ways listed in the ["All
-Contributors" emoji key](https://allcontributors.org/docs/en/emoji-key).
+Contributors" emoji key](https://allcontributors.org/docs/en/emoji-key){:target="_blank"}.
 All community members are welcome to join BEP Working Groups and other
 working and interest groups.
 
 The current BEP Working Groups and their leads can be found in the
 section on [BIDS Extension
-Proposals](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals) in the BIDS specification.
+Proposals](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals){:target="_blank"} in the BIDS specification.
 
 ## 4. Governance of the standardization process
 
@@ -243,7 +243,7 @@ Proposals](https://bids-specification.readthedocs.io/en/stable/06-extensions.htm
 
 The BIDS approach to standards development follows the principles of the
 [Modern Paradigm for
-Standards](https://open-stand.org/about-us/principles/) developed by
+Standards](https://open-stand.org/about-us/principles/){:target="_blank"} developed by
 OpenStand:
 
 1. Respectful cooperation between standards organizations
@@ -279,7 +279,7 @@ the BIDS channels
 
 Upon a successful Draft BEP review, the BEP will be converted from a
 google document to a markdown file and entered as a pull request on the
-[BIDS standard](https://github.com/bids-standard/bids-specification).
+[BIDS standard](https://github.com/bids-standard/bids-specification){:target="_blank"}.
 This will enable further community feedback on the Proposed BEP. Tools
 may begin integrating the Proposed BEP specification.
 
@@ -299,14 +299,14 @@ The Steering Group evaluates:
 ### A. BEP Procedure: Key definitions
 
 **BIDS Specification** - This is the [BIDS
-specification](https://bids-specification.readthedocs.io/en/stable/).
+specification](https://bids-specification.readthedocs.io/en/stable/){:target="_blank"}.
 This covers the current raw data organization for brain MRI, MEG, EEG,
 and iEEG.
 
 **BIDS Extension Proposal (BEP)** - A proposal that intends to extend
 BIDS into an unspecified modality or derivative. A BEP is typically led
 by 1-3 individuals with several contributors. The [list of
-BEPs](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals) can be found in the specification.
+BEPs](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals){:target="_blank"} can be found in the specification.
 
 **Draft BEP** - The in-progress document, typically in a Google Doc, of
 a BEP. This is dynamic and is grown and maintained at the discretion of
@@ -324,7 +324,7 @@ Proposed BEP.
 BEP, it becomes a specific addition and/or modification of BIDS, in the
 form of a Proposed BEP. At this time, the Proposed BEP will take the
 form of a pull request on the [BIDS GitHub
-repository](https://github.com/bids-standard/bids-specification).
+repository](https://github.com/bids-standard/bids-specification){:target="_blank"}.
 
 **Proposed BEP review** - This review is performed by the BIDS Steering
 Group on the Proposed BEP. The review aims to ensure the community input
@@ -397,51 +397,52 @@ To the extent possible under the law, the authors have waived all
 copyright and related or neighboring rights to the BIDS project
 governance and decision-making document, as per the [CC0 public domain
 dedication /
-license](https://creativecommons.org/publicdomain/zero/1.0/).
+license](https://creativecommons.org/publicdomain/zero/1.0/){:target="_blank"}.
 
 ### E. Help
 
-The [bids.neuroimaging.io](http://bids.neuroimaging.io/) website
+The [bids.neuroimaging.io](http://bids.neuroimaging.io/){:target="_blank"} website
 contains links to all the BIDS informational and help materials.
 
 We encourage questions and discussion  on [NeuroStars, under the "bids"
-tag](https://neurostars.org/tags/bids), via the [BIDS mailing
-list](https://groups.google.com/forum/#!forum/bids-discussion), or in
-[GitHub issues](https://github.com/bids-standard/) within the
+tag](https://neurostars.org/tags/bids){:target="_blank"}, via the [BIDS mailing
+list](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, or in
+[GitHub issues](https://github.com/bids-standard/){:target="_blank"} within the
 appropriate repository.
 
 We prefer questions to be asked via
-[NeuroStars](https://neurostars.org/tags/bids) so that others can search
+[NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} so that others can search
 them and benefit from the answers, but if you do not feel comfortable
 asking your question publicly please email either Franklin Feingold at
 <ffein@stanford.edu> or Stefan Appelhoff at
 <appelhoff@mpib-berlin.mpg.de>. They will repost an anonymised/general
 version of your question on
-[NeuroStars](https://neurostars.org/tags/bids) and answer it there.
+[NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} and answer it there.
 
 There are several resources that can help a new user get started.
 We have a [starter kit GitHub
-repository](https://github.com/bids-standard/bids-starter-kit) that has
+repository](https://github.com/bids-standard/bids-starter-kit){:target="_blank"} that has
 example BIDS file structures, wikis, and tutorials, and the [Stanford
 Center for Reproducible Neuroscience
-blog](http://reproducibility.stanford.edu/blog/) provides tutorials and
+blog](http://reproducibility.stanford.edu/blog/){:target="_blank"} provides tutorials and
 community survey results.
 
 All BIDS community members are required to follow the [BIDS code of
-conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). Please contact Franklin Feingold at <ffein@stanford.edu> if you have any concerns or would like to report a violation.
+conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}. Please contact Franklin Feingold at <ffein@stanford.edu> if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgements
 This document draws heavily from the [Modern Paradigm for
-Standards](https://open-stand.org/about-us/principles/) and from other
+Standards](https://open-stand.org/about-us/principles/){:target="_blank"} and from other
 open-source governance documents including:
-- <https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html>
-- <https://www.ieee.org/about/corporate/governance/index.html>
-- <https://www.apache.org/foundation/governance/>
-- <https://www.niso.org/what-we-do/creating-NISO-standards>
-- <https://predictablynoisy.com/rust-governance>
-- <https://www.seedsforchange.org.uk/consensus>
-- <https://en.wikipedia.org/wiki/Internet_governance>
-- <https://www.icann.org/resources/pages/governance/guidelines-en>
-- <https://github.com/bids-standard/bids-specification/pull/104>
-- <https://randyfay.com/content/drupals-governance>
-- <https://www.drupal.org/governance>
+
+- [https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html](https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html){:target="_blank"}
+- [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html){:target="_blank"}
+- [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/){:target="_blank"}
+- [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards){:target="_blank"}
+- [https://predictablynoisy.com/rust-governance](https://predictablynoisy.com/rust-governance){:target="_blank"}
+- [https://www.seedsforchange.org.uk/consensus](https://www.seedsforchange.org.uk/consensus){:target="_blank"}
+- [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance){:target="_blank"}
+- [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en){:target="_blank"}
+- [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104){:target="_blank"}
+- [https://randyfay.com/content/drupals-governance](https://randyfay.com/content/drupals-governance){:target="_blank"}
+- [https://www.drupal.org/governance](https://www.drupal.org/governance){:target="_blank"}
