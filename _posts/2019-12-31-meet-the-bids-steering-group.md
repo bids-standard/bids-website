@@ -6,7 +6,7 @@ display: true
 
 ## Meet the BIDS Steering Group
 
-In October 2019, the BIDS community [voted](https://github.com/bids-standard/bids-specification/issues/355) to ratify a new governance structure and to [elect five members](https://drive.google.com/file/d/1mv_fOjeQbpAu6fVPKnTerXp-it6F59wi/view) to oversee the development and adoption of the standard.
+In October 2019, the BIDS community [voted](https://github.com/bids-standard/bids-specification/issues/355){:target="_blank"} to ratify a new governance structure and to [elect five members](https://drive.google.com/file/d/1mv_fOjeQbpAu6fVPKnTerXp-it6F59wi/view){:target="_blank"} to oversee the development and adoption of the standard.
 
 Each member of the steering group has their own priorities, but we share a common ambition: to help neuroimaging research more open, interoperable and efficient.
 We think the Brain Imaging Data Structure, the standard and its community, are a key pathway to achieve this goal.
@@ -23,14 +23,14 @@ I'm an AXA Postdoctoral fellow at Universidad Politécnica de Madrid.
 My research focuses on understanding brain dynamics to improve clinical applications and ultimately people's lives.
 I study brain activity in healthy and pathological conditions (e.g. epilepsy, Alzheimer's Disease, blindness, pain) with M/EEG.
 I pioneered The OMEGA, the first open repository fully dedicated to magnetoencephalography (MEG) and I contribute to the development of open software packages aimed to analyze neurophysiological signals, such as Brainstorm or Hermes.
-In the BIDS community I led the international effort to develop the [MEG-BIDS extension](https://doi.org/10.1038/sdata.2018.110).
+In the BIDS community I led the international effort to develop the [MEG-BIDS extension](https://doi.org/10.1038/sdata.2018.110){:target="_blank"}.
 
 *How did you get involved in BIDS?*
 
 While working on The OMEGA repository with Sylvain Baillet at the Montreal Neurological Institute, we realized how difficult it was to organize the MEG data and metadata in a common way due to the lack of standards in the field.
 Together with my colleague Jeremy Moreau we were planning to implement an organization scheme based on json files, when we discovered the BIDS, so we decided to join forces!
 Thanks to the incredible help of Chris Gorgolewski and the super responsive MEG community we finally managed to get the BIDS extended to MEG in 2018.
-It was a big hit, the first BIDS specification for neurophysiological signals, which settled the base for the future [EEG](https://doi.org/10.1038/s41597-019-0104-8) and [iEEG](https://doi.org/10.1038/s41597-019-0105-7) BIDS extensions.
+It was a big hit, the first BIDS specification for neurophysiological signals, which settled the base for the future [EEG](https://doi.org/10.1038/s41597-019-0104-8){:target="_blank"} and [iEEG](https://doi.org/10.1038/s41597-019-0105-7){:target="_blank"} BIDS extensions.
 
 *Why did you choose to run for election to the steering group?*
 
@@ -68,7 +68,7 @@ My research interests include the application of image processing, computer visi
 In 2016, the NeuroReceptor Mapping conference (NRM2016) in Boston hosted a panel discussion regarding positron emission tomography (PET) data sharing.
 The audience unanimously supported a motion to establish a working group that would propose guidelines for data sharing. Following this, in fall 2017 I attended NeuroHackWeek in Seattle and met Chris Gorgolewski.
 Chris had been called in by the PET community to help with data standardization and with adopting a PET BIDS extension.
-When he heard that I am interested in data sharing and working with PET and was actually located in one of the biggest PET labs worldwide, he asked me if I could help with the development of the [PET BIDS extension (BEP0009)](https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0/edit).
+When he heard that I am interested in data sharing and working with PET and was actually located in one of the biggest PET labs worldwide, he asked me if I could help with the development of the [PET BIDS extension (BEP0009)](https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0/edit){:target="_blank"}.
 
 *Why did you choose to run for election to the steering group?*
 
@@ -83,7 +83,7 @@ Adoption can be in terms of standardizing analysis workflows to be BIDS compatib
 *What are you hoping to achieve in the next year?*
 
 My main focus will be on outreach to the communities that are not yet heavily involved in BIDS.
-For example, compared to the MRI community the PET community needs to reinvent itself and embrace data sharing as recently has been [pointed out in a major PET journal](https://doi.org/10.1007/s00259-019-04541-y).
+For example, compared to the MRI community the PET community needs to reinvent itself and embrace data sharing as recently has been [pointed out in a major PET journal](https://doi.org/10.1007/s00259-019-04541-y){:target="_blank"}.
 To this end I am actively involved in organizing a data sharing/BIDS workshop at NRM2020 and to get more PET researchers interested in contributing to and using BIDS.
 As a steering group member, I want to identify further imaging modalities/derivatives in the need of standardization and get them started on the road to BIDS and support them with embracing BIDS.
 
@@ -128,14 +128,14 @@ Furthermore, I hope that we can extend BIDS with more raw data types, like eye-t
 
 I am a professor of psychology at Stanford.
 My main basic research interests are focused on the brain systems involved in decision making and executive function, primarily using fMRI.
-In the last decade I've become increasingly interested in meta-scientific topics focused on reproducibility and transparency, including involvement in a number of data sharing initiatives including [OpenNeuro](https://openneuro.org/), [NeuroVault](https://neurovault.org/), and [NeuroSynth](https://neurosynth.org/).
+In the last decade I've become increasingly interested in meta-scientific topics focused on reproducibility and transparency, including involvement in a number of data sharing initiatives including [OpenNeuro](https://openneuro.org/){:target="_blank"}, [NeuroVault](https://neurovault.org/){:target="_blank"}, and [NeuroSynth](https://neurosynth.org/){:target="_blank"}.
 
 *How did you get involved in BIDS?*
 
 I was involved in BIDS from its inception.
 BIDS grew out of an earlier organizational scheme that we had developed for the OpenFMRI project, but its shortcomings were evident, and we wanted to develop a standard that would address a much broader range of needs across the neuroimaging community.
 I worked closely with Chris Gorgolewski in the development of the first draft of the standard, and have remained involved (though not deeply in the technical trenches) as the standard has blossomed.
-I've been particularly interested and involved in the [BIDS Derivatives](https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4/edit) standards.
+I've been particularly interested and involved in the [BIDS Derivatives](https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4/){:target="_blank"} standards.
 
 *Why did you choose to run for election to the steering group?*
 
@@ -163,8 +163,8 @@ So now I work to incentivise reproducible research and contributions into open s
 *How did you get involved in BIDS?*
 
 I really love the goal of BIDS - life would be so much easier if everyone's data and code were interoperable with each other - but I found the specification itself really difficult to follow.
-So in 2018 I mentored Patrick Park - a Google Summer of Code student - to develop the [BIDS Starter Kit](https://github.com/bids-standard/bids-starter-kit).
-Our goal was to demysify some of the jargon ([what even *is* a json file?](https://github.com/bids-standard/bids-starter-kit/wiki/Metadata-file-formats#json-files)) and make it easier for folks to get started. I'm also one of the lead developers of the [BEP001 extension](https://github.com/bids-standard/bep001) which is working to include quantitative MRI sequences in the specification.
+So in 2018 I mentored Patrick Park - a Google Summer of Code student - to develop the [BIDS Starter Kit](https://github.com/bids-standard/bids-starter-kit){:target="_blank"}.
+Our goal was to demysify some of the jargon ([what even *is* a json file?](https://github.com/bids-standard/bids-starter-kit/wiki/Metadata-file-formats#json-files){:target="_blank"}) and make it easier for folks to get started. I'm also one of the lead developers of the [BEP001 extension](https://github.com/bids-standard/bep001){:target="_blank"} which is working to include quantitative MRI sequences in the specification.
 
 *Why did you choose to run for election to the steering group?*
 
@@ -188,7 +188,7 @@ So probably a clearer dissemination system to keep people updated on what's goin
 
 ### Thank you from the BIDS Steering Group
 
-Thank you to [everyone who stood for election](https://docs.google.com/document/d/1yb6j3a90serWbtab7ukSMyecs16sGfYTSGftH-4ArvA/edit) to this inaugural year of the BIDS steering group.
+Thank you to [everyone who stood for election](https://docs.google.com/document/d/1yb6j3a90serWbtab7ukSMyecs16sGfYTSGftH-4ArvA/){:target="_blank"} to this inaugural year of the BIDS steering group.
 It is a great strength of the community that so many people are committed to the development, maintenance and adoption of the Brain Imaging Data Structure.
 
 We are proud to shepherd this community into 2020, and beyond.
