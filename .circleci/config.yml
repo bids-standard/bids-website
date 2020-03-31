@@ -1,21 +1,39 @@
 version: 2
 jobs:
+
+    lint:
+        docker:
+            - image: node:8.10.0
+        steps:
+            - checkout
+            - run:
+                name: install linter
+                command: |
+                    npm i -g remark-cli remark-preset-lint-recommended
+            - run:
+                name: lint the markdown files
+                command: |
+                    remark .
+
     build:
         docker:
             - image: circleci/ruby:stretch
         steps:
             - checkout
-
             - run:
-                name: install
+                name: install bundler and run it
                 command: |
                     gem install jekyll bundler
                     bundle
-
             - run:
-                name: build
+                name: build the website
                 command: |
                     bundle exec jekyll build --baseurl /0/home/circleci/project/_site
-
             - store_artifacts:
                 path: ~/project/_site
+
+workflows:
+    lint_and_build:
+        jobs:
+            - lint
+            - build
