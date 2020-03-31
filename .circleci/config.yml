@@ -9,11 +9,11 @@ jobs:
             - run:
                 name: install linter
                 command: |
-                    npm i -g remark-cli remark-preset-lint-recommended
+                    npm install `cat npm-requirements.txt`
             - run:
                 name: lint the markdown files
                 command: |
-                    remark .
+                    remark . --frail
 
     build:
         docker:
