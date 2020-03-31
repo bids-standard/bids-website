@@ -13,7 +13,7 @@ jobs:
             - run:
                 name: lint the markdown files
                 command: |
-                    remark . --frail
+                    remark ./_pages ./_posts --frail
 
     build:
         docker:
