@@ -6,7 +6,7 @@ display: true
 
 ## Join the first BIDS Community Forum events in January 2020
 
-The [BIDS Steering Group]({% post_url 2019-12-31-meet-the-bids-steering-group %}) are excited to announce two **Community Forums**!
+The [BIDS Steering Group](https://bids.neuroimaging.io/2019/12/31/meet-the-bids-steering-group.html) are excited to announce two **Community Forums**!
 
 Inspired by [town hall meetings](https://en.wikipedia.org/wiki/Town_hall_meeting){:target="_blank"} and the OHBM General Assembly and Feedback Forum, these online events are a space for members of the BIDS community to meet the steering group and to discuss BIDS strategy and vision.
 

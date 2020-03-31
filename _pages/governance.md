@@ -289,10 +289,11 @@ The definition of "representative" will differ depending on the scope of
 the extension and will be reviewed as part of the steering group's final
 approval.
 - BIDS Steering Group final approval.
+
 The Steering Group evaluates:
-  - Sufficiency of community feedback for the scope of the extension
-  - Validator updated to include the Proposed BEP specification
-  - Final review of the integration into the BIDS standard
+- Sufficiency of community feedback for the scope of the extension
+- Validator updated to include the Proposed BEP specification
+- Final review of the integration into the BIDS standard
 
 ## X. Appendix
 
@@ -414,9 +415,9 @@ We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} so that others can search
 them and benefit from the answers, but if you do not feel comfortable
 asking your question publicly please email either Franklin Feingold at
-<ffein@stanford.edu> or Stefan Appelhoff at
-<appelhoff@mpib-berlin.mpg.de>. They will repost an anonymised/general
-version of your question on
+[ffein@stanford.edu](mailto:ffein@stanford.edu) or Stefan Appelhoff at
+[appelhoff@mpib-berlin.mpg.de](mailto:appelhoff@mpib-berlin.mpg.de). They will
+repost an anonymised/general version of your question on
 [NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} and answer it there.
 
 There are several resources that can help a new user get started.
@@ -428,7 +429,7 @@ blog](http://reproducibility.stanford.edu/blog/){:target="_blank"} provides tuto
 community survey results.
 
 All BIDS community members are required to follow the [BIDS code of
-conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}. Please contact Franklin Feingold at <ffein@stanford.edu> if you have any concerns or would like to report a violation.
+conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}. Please contact Franklin Feingold at [ffein@stanford.edu](mailto:ffein@stanford.edu) if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgements
 This document draws heavily from the [Modern Paradigm for
