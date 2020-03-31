@@ -31,11 +31,13 @@ Regarding discussions on where to host our historical specification pdfs (please
 
 ### Action Items
 
-- Codify rules for making a repo under BIDS standard
-- Share meeting executive summary, minutes, and action items on website
-- KW item: getting time in OSR for BIDS community forum and starter kit
-- Compile list of channels to share BIDS related information on
-- Send v1.2.2 release and genetic information call to distribution list
+| Action Item |
+| -------- |
+| Codify rules for making a repo under BIDS standard |
+| Share meeting executive summary, minutes, and action items on website |
+| KW item: getting time in OSR for BIDS community forum and starter kit |
+| Compile list of channels to share BIDS related information on |
+| Send v1.2.2 release and genetic information call to distribution list |
 
 ### Minutes
 
