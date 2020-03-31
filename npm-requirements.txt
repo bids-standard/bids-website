@@ -1,0 +1,2 @@
+remark-cli
+remark-preset-lint-recommended
