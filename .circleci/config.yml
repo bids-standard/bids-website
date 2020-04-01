@@ -13,7 +13,9 @@ jobs:
             - run:
                 name: lint the markdown files
                 command: |
-                    remark ./_pages ./_posts --frail
+                    remark --version
+                    cat .remarkrc
+                    remark _pages _posts --frail --rc-path .remarkrc
 
     build:
         docker:
