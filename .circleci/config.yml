@@ -23,11 +23,18 @@ jobs:
             - image: circleci/ruby:stretch
         steps:
             - checkout
+
+            # Restore gem cache to speed up installations
+            - restore_cache:
+                keys:
+                  - gem-cache-0-{{ checksum "./Gemfile" }}
+
             - run:
                 name: install bundler and run it
                 command: |
                     gem install jekyll bundler
-                    bundle
+                    bundle install --path vendor/bundle
+
             - run:
                 name: build the website
                 command: |
@@ -36,3 +43,9 @@ jobs:
             - store_artifacts:
                 path: _site
                 destination: _site
+
+            # Store gem cache
+            - save_cache:
+                key: gem-cache-0-{{ checksum "./Gemfile" }}
+                paths:
+                  - vendor/bundle
