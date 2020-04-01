@@ -31,12 +31,8 @@ jobs:
             - run:
                 name: build the website
                 command: |
-                    bundle exec jekyll build --baseurl /0/home/circleci/project/_site
-            - store_artifacts:
-                path: ~/project/_site
+                    bundle exec jekyll build
 
-workflows:
-    lint_and_build:
-        jobs:
-            - lint
-            - build
+            - store_artifacts:
+                path: _site
+                destination: _site
