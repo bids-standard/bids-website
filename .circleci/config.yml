@@ -38,7 +38,7 @@ jobs:
             - run:
                 name: build the website
                 command: |
-                    bundle exec jekyll build
+                    bundle exec jekyll build --baseurl /0/_site
 
             - store_artifacts:
                 path: _site
