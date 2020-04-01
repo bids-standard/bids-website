@@ -15,9 +15,9 @@ jobs:
                 name: lint the markdown files
                 # for defining .remarkrc, see https://github.com/remarkjs/remark-lint#configuring-remark-lint
                 command: |
-                    remark --version
+                    ./node_modules/.bin/remark --version
                     cat .remarkrc
-                    remark _pages _posts --frail --rc-path .remarkrc
+                    ./node_modules/.bin/remark _pages _posts --frail --rc-path .remarkrc
 
     build:
         docker:
