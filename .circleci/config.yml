@@ -9,8 +9,7 @@ jobs:
             - run:
                 name: install linter
                 command: |
-                    npm init -y
-                    npm install --save `cat npm-requirements.txt`
+                    npm install `cat npm-requirements.txt`
             - run:
                 name: lint the markdown files
                 # for defining .remarkrc, see https://github.com/remarkjs/remark-lint#configuring-remark-lint
