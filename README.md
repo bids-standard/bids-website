@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/bids-standard/bids-website.svg?style=shield)](https://circleci.com/gh/bids-standard/bids-website)
+
 # BIDS website
 
 This is the repository for the Brain Imaging Data Structure (BIDS) website that is hosted at <https://bids.neuroimaging.io>.
@@ -16,7 +18,4 @@ The specification is hosted [here](http://bids-specification.readthedocs.io/). T
 
 ## Asking questions about BIDS
 
-If you have questions how to apply BIDS to your dataset, how to use a shared BIDS dataset, or about tools to convert and/or handle BIDS datasets, please see the [getting started](https://bids.neuroimaging.io/getting_started.html) page. 
-
-
-
+If you have questions how to apply BIDS to your dataset, how to use a shared BIDS dataset, or about tools to convert and/or handle BIDS datasets, please see the [getting started](https://bids.neuroimaging.io/getting_started.html) page.
