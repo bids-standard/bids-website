@@ -12,10 +12,11 @@ jobs:
                     npm install --save `cat npm-requirements.txt`
             - run:
                 name: lint the markdown files
+                # for defining .rmarkrc, see https://github.com/remarkjs/remark-lint#configuring-remark-lint
                 command: |
-                    remark --version
+                    npm run remark --version
                     cat .remarkrc
-                    remark _pages _posts --frail --rc-path .remarkrc
+                    npm run remark _pages _posts --frail --rc-path .remarkrc
 
     build:
         docker:
