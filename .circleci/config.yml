@@ -9,7 +9,7 @@ jobs:
             - run:
                 name: install linter
                 command: |
-                    npm install -g `cat npm-requirements.txt`
+                    sudo npm install --global `cat npm-requirements.txt`
             - run:
                 name: lint the markdown files
                 command: |
