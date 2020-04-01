@@ -3,7 +3,7 @@ jobs:
 
     lint:
         docker:
-            - image: node:8.10.0
+            - image: circleci/node:stretch
         steps:
             - checkout
             - run:
