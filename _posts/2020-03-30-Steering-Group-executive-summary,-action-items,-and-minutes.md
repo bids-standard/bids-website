@@ -16,7 +16,7 @@ We discussed how to move forward with implementing the author lists on [Zenodo](
 
 We clarified the format and points for the monthly Maintainers update. This should be less than 1 page and keep a high level view of BIDS. The executive summary must include: achievements, struggles, next month aims, blockers or steering group help. The update may also link to issues with a 1 sentence narrative. Keeping in mind the purpose of the update from the Steering Group’s perspective: knowing the hard parts or blockers and capture the work needed to maintain BIDS.
 
-We invited the [ASL BEP](https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c/edit#heading=h.prrzvwchfio6){:target="_blank"} leads to the next Steering Group meeting.
+We invited the [ASL BEP](https://bids.neuroimaging.io/bep005){:target="_blank"} leads to the next Steering Group meeting.
 
 ### Action Items
 
