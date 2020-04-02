@@ -60,3 +60,4 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [FMRIPREP](https://github.com/poldracklab/preprocessing-workflow){:target="_blank"} (preprocessing workflow)
 - [OpenNeuro](http://openneuro.org){:target="_blank"} (repository)
 - [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"} (Python module to harmonize access and manipulation)
+- [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"} (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
