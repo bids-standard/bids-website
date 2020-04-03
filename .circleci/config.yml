@@ -30,13 +30,13 @@ jobs:
                   - gem-cache-0-{{ checksum "./Gemfile" }}
 
             - run:
-                name: install bundler and run it
+                name: install
                 command: |
                     gem install jekyll bundler
                     bundle install --path vendor/bundle
 
             - run:
-                name: build the website
+                name: build
                 command: |
                     bundle exec jekyll build --baseurl /0/_site
 
@@ -49,3 +49,9 @@ jobs:
                 key: gem-cache-0-{{ checksum "./Gemfile" }}
                 paths:
                   - vendor/bundle
+
+workflows:
+    lint_and_build:
+        jobs:
+            - lint
+            - build
