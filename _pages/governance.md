@@ -307,7 +307,7 @@ and iEEG.
 **BIDS Extension Proposal (BEP)** - A proposal that intends to extend
 BIDS into an unspecified modality or derivative. A BEP is typically led
 by 1-3 individuals with several contributors. The [list of
-BEPs](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals){:target="_blank"} can be found in the specification.
+BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification){:target="_blank"} can be found elsewhere on this website.
 
 **Draft BEP** - The in-progress document, typically in a Google Doc, of
 a BEP. This is dynamic and is grown and maintained at the discretion of
