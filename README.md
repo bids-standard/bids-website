@@ -16,7 +16,7 @@ Please see the `docs` directory for the technical documentation for this website
 
 ## Contributing to the BIDS specification
 
-The specification is hosted on [https://bids-specification.rtfd.io](https://bids-specification.rtfd.io). To contribute to the specification, please submit an [issue](https://github.com/bids-standard/bids-specification/issues) or send a [pull request](https://github.com/bids-standard/bids-specification/pulls) on the [bids-specification](https://github.com/bids-standard/bids-specification) repository.
+The specification is hosted on [https://bids-specification.readthedocs.io](https://bids-specification.rtfd.io). To contribute to the specification, please submit an [issue](https://github.com/bids-standard/bids-specification/issues) or send a [pull request](https://github.com/bids-standard/bids-specification/pulls) on the [bids-specification](https://github.com/bids-standard/bids-specification) repository.
 
 ## Asking questions about BIDS
 
