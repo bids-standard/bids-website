@@ -38,7 +38,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [BIDScoin](https://github.com/Donders-Institute/bidscoin){:target="_blank"}
 - [MNE-BIDS](http://mne-tools.github.io/mne-bids/){:target="_blank"} (MEG/EEG/iEEG)
 - [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php){:target="_blank"} with [plugin](https://github.com/arnodelorme/bids-matlab-tools){:target="_blank"} (MEG/EEG analysis package)
-- [BrkRaw](https://github.com/brkraw/bruker){:target="_blank"} (for a preclinical Bruker MRI scanner)
+- [BrkRaw](https://brkraw.github.io/docs/gs_bids.html){:target="_blank"} (for a preclinical Bruker MRI scanner)
 
 ## Institution specific data management/conversion tools
 
