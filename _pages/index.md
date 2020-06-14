@@ -21,13 +21,13 @@ BIDS is developed by the community for the community and everybody can [become a
 
 ## Specification vs. Ecosystem
 
-Since the inception of the BIDS specification that documents how to organize neuroimaging data, a large ecosystem of tools and ressources has evolved around BIDS.
+Since the inception of the BIDS specification that documents how to organize neuroimaging data, a large ecosystem of tools and resources has evolved around BIDS.
 
 A few of the key elements of this ecosystem are the [BIDS-validator](https://github.com/bids-standard/bids-validator){:target="_blank"}, to automatically check datasets for adherence to the specification, [OpenNeuro](https://openneuro.org/){:target="_blank"}, as a database for BIDS formatted datasets, and [BIDS-Apps](https://doi.org/10.1371/journal.pcbi.1005209){:target="_blank"}, a collection of portable neuroimaging pipelines that understand BIDS datasets.
 
 A non-exhaustive list of further tools can be found in the [Benefits](https://bids.neuroimaging.io/benefits.html) section.
 
-With the ongoing development of new tools and ressources it is important to keep in mind that the BIDS specification remains the standard according to which the entire ecosystem must adhere.
+With the ongoing development of new tools and resources it is important to keep in mind that the BIDS specification remains the standard according to which the entire ecosystem must adhere.
 
 ## Further Information
 
