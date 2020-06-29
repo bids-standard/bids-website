@@ -10,7 +10,9 @@ BIDS is joining the [BrainHack Mattermost](https://mattermost.brainhack.org/){:t
 
 <!--more-->
 
-We are proud to announce our home for hosting BIDS organization instant messaging: the [BrainHack Mattermost platform](https://mattermost.brainhack.org/){:target:"_blank"}! We have listed below our current set of BIDS channels. We will be establishing several BIDS channels related to: BEP development, community discussions, and more! Check it out and create your own channel! Please be sure the channel name contains `bids` in the title to increase findability.
+We are proud to announce our home for hosting BIDS organization instant messaging: the [BrainHack Mattermost platform](https://mattermost.brainhack.org/){:target:"_blank"}! In the past few years, several BIDS channels have independently been created on Mattermost by the community. The Steering Group and Maintainers Group have choosen to recognize the BrainHack Mattermost as a member of our organizations's official communication suite. This platform will live alongside our other official communication channels: NeuroStars (forum for support questions), mailing list (announcements), and GitHub repositiories (bug reports + feature requests). 
+
+We have listed below our current set of BIDS channels. We will be establishing several BIDS channels related to: BEP development, community discussions, and more! Check it out and create your own channel! Please be sure the channel name contains `bids` in the title to increase findability.
 
 [Mattermost](https://mattermost.com/){:target:"_blank"} is an open-source alternative to Slack. The user interface and experience is very similar to that on Slack. One may join a channel, make a channel, or private message.
 
