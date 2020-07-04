@@ -26,15 +26,15 @@ We went over our BIDS presentations occurring in the [Open Science Room](https:/
 ### Minutes
 
 - Discussed using the BrainHack Mattermost platform for our instant messaging solution
-    - The BrainHack Mattermost is inclusive and open
-    - Better than alternatives 
-    - Mattermost is open source
+  - The BrainHack Mattermost is inclusive and open
+  - Better than alternatives 
+  - Mattermost is open source
 - BIDS events occurring during OHBM
-    - Directly by us: Town Hall, GN lighting talk, MG PET session
-    - Several talks and posters being presented by the larger community
+  - Directly by us: Town Hall, GN lighting talk, MG PET session
+  - Several talks and posters being presented by the larger community
         - Good to have a post capturing this
 - Tools are being developed, but light on documentation
-    - Emphasis the need for documentation
+  - Emphasis the need for documentation
 
 
 
