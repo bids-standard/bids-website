@@ -35,6 +35,3 @@ We went over our BIDS presentations occurring in the [Open Science Room](https:/
         - Good to have a post capturing this
 - Tools are being developed, but light on documentation
   - Emphasis the need for documentation
-
-
-
