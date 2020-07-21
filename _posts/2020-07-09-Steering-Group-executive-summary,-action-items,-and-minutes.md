@@ -24,12 +24,12 @@ We were joined by Franco Pestilli to discuss his potential BIDS grant. We went o
 ### Minutes
 
 - Discussed Franco Pestilli's grant
-    - Provided insights and suggestions for enhancements
-        - Thinking about the scope and framing of the proposal
-    - Evaluated similar community initiatives
+  - Provided insights and suggestions for enhancements
+    - Thinking about the scope and framing of the proposal
+  - Evaluated similar community initiatives
 - We can establish a process for future BIDS grant writers 
-    - Letting the BIDS team know of their intention
-    - Discover potential overlaps in proposals or collaborations
-    - Correspond relevant BIDS metrics
-    - GN and FF are compiling a BIDS grant writing kit
+  - Letting the BIDS team know of their intention
+  - Discover potential overlaps in proposals or collaborations
+  - Correspond relevant BIDS metrics
+  - GN and FF are compiling a BIDS grant writing kit
 - Discussed support for other organizations adopting BIDS for their organizational strategy
