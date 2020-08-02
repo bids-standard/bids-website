@@ -43,14 +43,14 @@ Proposals (BEPs), which are community-driven processes.
 Do you want to extend BIDS to a new modality or set of data types?
 Please draft a BIDS Extension Proposal (BEP) following the [BIDS
 Extension Proposals
-Guide](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4){:target="_blank"}.  
+Guide](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4){:target="_blank"}.
 
 You can also contribute to ongoing BIDS Extension Proposals. Below is a
 table of currently-active BEPs. The "Extension label" column provides a
-direct link to the documentation. 
+direct link to the documentation.
 
 Please find our [latest BEP update](https://docs.google.com/presentation/d/10-zmgs6L0RBhiN-aLgRWCJT_fjrGi6LL5SgoeUvRbmU/edit#slide=id.p){:target:"_blank"}
-presented in the [Open Science Room](https://ohbm.github.io/osr2020/){:target:"_blank"} at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3267&pageid=1){:target:"_blank"}. 
+presented in the [Open Science Room](https://ohbm.github.io/osr2020/){:target:"_blank"} at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3267&pageid=1){:target:"_blank"}.
 
 Note that all of the extension ideas that are not backwards compatible and thus
 will have to wait for BIDS 2.0 are listed
@@ -81,6 +81,8 @@ will have to wait for BIDS 2.0 are listed
 | [BEP028](https://bids.neuroimaging.io/bep028){:target:"_blank"} | Provenance                                                                                                 | Satra Ghosh and Camille Maumet                                | new BEP, actively looking for contributors and community input.                                                                                                                                                                           | None.                                                                                  |
 | [BEP029](https://bids.neuroimaging.io/bep029){:target:"_blank"} | Virtual and physical motion data                                                                           | Sein Jeung and Julius Welzel                                  | new BEP, actively looking for contributors and community input.                                                                                                                                                                           | None.                                                                                  |
 | [BEP030](https://bids.neuroimaging.io/bep030){:target:"_blank"} | Near Infrared Spectroscopy (NIRS)                                                                          | Robert Luke and Luca Pollonini                                | new BEP, actively looking for contributors and community input.                                                                                                                                                                           | None.                                                                                  |
+| [BEP031](https://bids.neuroimaging.io/bep031){:target:"_blank"} | Microscopy                                                                                                 | Marie-Hélène Bourget and Julien Cohen-Adad                    | new BEP, actively looking for contributors and community input.                                                                                                                                                                           | None.                                                                                  |
+
 
 When an extension reaches maturity it is merged into the main body of
 the specification.  Below is a table of BEPs that have been merged in
