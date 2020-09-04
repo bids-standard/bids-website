@@ -83,6 +83,7 @@ will have to wait for BIDS 2.0 are listed
 | [BEP030](https://bids.neuroimaging.io/bep030){:target:"_blank"} | Near Infrared Spectroscopy (NIRS)                                                                          | Robert Luke and Luca Pollonini                                   | new BEP, actively looking for contributors and community input.                                                                                                                                                                           | None.                                                                                  |
 | [BEP031](https://bids.neuroimaging.io/bep031){:target:"_blank"} | Microscopy                                                                                                 | Marie-Hélène Bourget and Julien Cohen-Adad                       | new BEP, actively looking for contributors and community input.                                                                                                                                                                           | None.                                                                                  |
 
+### Completed BEPs
 
 When an extension reaches maturity it is merged into the main body of
 the specification.  Below is a table of BEPs that have been merged in
