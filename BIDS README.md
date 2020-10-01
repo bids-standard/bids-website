@@ -2,13 +2,13 @@
 
 <img src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_black_transparent_background_crop.png?raw=true" alt="bids-logo" width="600"/>
 
-# BIDS website
+## BIDS website
 
 This is the repository for the Brain Imaging Data Structure (BIDS) website that is hosted at <https://bids.neuroimaging.io>.
 
 ## Contributing to the BIDS website
 
-To contribute to the website, please submit an [issue](https://github.com/bids-standard/bids-website/issues) or send a [pull request](https://github.com/bids-standard/bids-website/pulls) to this repository.
+To contribute to this website, please submit an [issue](https://github.com/bids-standard/bids-website/issues) or send a [pull request](https://github.com/bids-standard/bids-website/pulls) to this repository.
 
 The more static website pages are located in `_pages`, the blog posts that are listed in a reverse chronological order (i.e., the newest content on top) are located in `_posts`.
 
