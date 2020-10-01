@@ -7,6 +7,7 @@
 This is the repository for the Brain Imaging Data Structure (BIDS) website that is hosted at <https://bids.neuroimaging.io>.
 
 ## Contributing to the BIDS website
+Its just amazing to see !!
 
 To contribute to the website, please submit an [issue](https://github.com/bids-standard/bids-website/issues) or send a [pull request](https://github.com/bids-standard/bids-website/pulls) to this repository.
 
