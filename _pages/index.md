@@ -35,8 +35,10 @@ With the ongoing development of new tools and resources it is important to keep 
 
 - Look through some of the community's [presentations on BIDS](https://osf.io/yn93h/){:target="_blank"}.
 
-- We have constructed a [grant writing kit](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit) to assist grant writers putting together BIDS related grant proposals.
+- We have constructed a [grant writing kit](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit){:target="_blank"} to assist grant writers putting together BIDS related grant proposals.
 
 - Take a look at how the community [uses BIDS](https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4){:target="_blank"}.
+
+- We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020){:target="_blank"}. Please find our [associated application](./BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf){:target="_blank"}.
 
 - Sign up to receive occasional [updates by email](https://docs.google.com/forms/d/1ZLi5qRTuX11KGK7qIidSdZvznFoXAqr2wh6003okv-0/){:target="_blank"} and follow BIDS on [Twitter](https://twitter.com/BIDSstandard?ref_src=twsrc%5Etfw){:target="_blank"}.
