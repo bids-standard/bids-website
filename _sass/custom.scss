@@ -22,6 +22,16 @@ body {
   background-color: $body-bg-color;
 }
 
+.main-content,
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: lightgray;
+}
+
 h1 {
   font-size: 2.2rem;
 }
@@ -39,4 +49,9 @@ h5 {
 }
 h6 {
   font-size: 0.6rem;
+}
+
+a,
+a:hover, a:focus {
+  color: #69b3ff;
 }
