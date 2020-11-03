@@ -62,3 +62,4 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [OpenNeuro](http://openneuro.org){:target="_blank"} (repository)
 - [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"} (Python module to harmonize access and manipulation)
 - [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"} (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
+- [GUI dataset description generator](https://github.com/tolik-g/BIDS){:target="_blank"} (GUI form that generates dataset_description.json)
