@@ -92,10 +92,10 @@ the main body of the specification.
 | Extension label                                                 | Title                                      | Moderators/leads                                  |
 | --------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------- |
 | [BEP003](https://bids.neuroimaging.io/bep003){:target:"_blank"} | Common Derivatives                         | Chris Markiewicz                                  |
-| [BEP006](https://bids.neuroimaging.io/bep006){:target:"_blank"} | Electroencephalograpgy (EEG)               | Cyril Pernet, Stefan Appelhoff, Robert Oostenveld |
+| [BEP006](https://bids.neuroimaging.io/bep006){:target:"_blank"} | Electroencephalography (EEG)               | Cyril Pernet, Stefan Appelhoff, Robert Oostenveld |
 | [BEP007](https://bids.neuroimaging.io/bep007){:target:"_blank"} | Hierarchical Event Descriptor (HED) Tags   | Chris Gorgolewski                                 |
 | [BEP008](https://bids.neuroimaging.io/bep008){:target:"_blank"} | Magnetoencephalography (MEG)               | Guiomar Niso                                      |
-| [BEP010](https://bids.neuroimaging.io/bep010){:target:"_blank"} | intracranial Electroencephalograpgy (iEEG) | Chris Holdgraf, Dora Hermes                       |
+| [BEP010](https://bids.neuroimaging.io/bep010){:target:"_blank"} | intracranial Electroencephalography (iEEG) | Chris Holdgraf, Dora Hermes                       |
 | [BEP018](https://bids.neuroimaging.io/bep018){:target:"_blank"} | Genetic information                        | Cyril R Pernet, Clara Moreau, Thomas Nichols      |
 
 Some proposals that set out to extend the BIDS specification have instead become tools for handling BIDS. See the table below.
