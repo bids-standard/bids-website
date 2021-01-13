@@ -54,7 +54,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 
 ## Other Tools
 
-- [Automatic Analysis](https://github.com/rhodricusack/automaticanalysis){:target="_blank"} (fMRI processing toolbox)
+- [Automatic Analysis](https://github.com/automaticanalysis/automaticanalysis){:target="_blank"} (multimodal MATLAB toolbox processing fMRI, DTI/DKI, and M/EEG)
 - [BIDSHandler](https://github.com/Macquarie-MEG-Research/BIDSHandler){:target="_blank"} (Python module allowing complete manipulation of BIDS data)
 - [Brainstorm](http://neuroimage.usc.edu/brainstorm/){:target="_blank"} (MEG/EEG analysis package)
 - [C-PAC](http://fcp-indi.github.io/){:target="_blank"} (Configurable Pipeline for the Analysing Connectomes)
