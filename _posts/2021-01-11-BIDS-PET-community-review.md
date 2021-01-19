@@ -4,11 +4,13 @@ author: Melanie Ganz, Martin Norgaard, and Franklin Feingold
 display: true
 ---
 
-# BIDS-PET request for comments - closes on Friday (Jan. 22nd)
+# BIDS-PET request for comments - closes on Friday (Feb. 12)
 
 The BIDS community is preparing to merge the PET (Positron Emission Tomography) extension.
 
 <!--more-->
+
+1/19 PET community review update: We have extended the community review period to Friday, February 12 at 11:59pm (pacific time).
 
 We are happy to announce that the Positron emission tomography BIDS extension is finally nearing it’s completion. Hence, we are seeking final community feedback for the PET BIDS standard. We are looking for feedback on GitHub and specifically to the [BIDS-PET extension proposal](https://github.com/bids-standard/bids-specification/pull/633){:target="_blank"}. We have also developed an extension for the [validator](https://github.com/bids-standard/bids-validator/pull/1088){:target="_blank"} and added [PET examples into BIDS examples](https://github.com/bids-standard/bids-examples/tree/bep009_pet){:target="_blank"}.
 
