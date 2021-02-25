@@ -18,6 +18,9 @@ collections:
   bep_collection:
     output: true
     permalink: /:name
+  redirects:
+    output: true
+    permalink: /:name
 
 defaults:
   -
