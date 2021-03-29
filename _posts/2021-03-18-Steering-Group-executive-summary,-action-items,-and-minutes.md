@@ -29,7 +29,7 @@ N/A
 - Enhancement to the website
   - Rethink what we are trying to convey
 - OHBM: Hold BIDS Town Hall again this year in the Open Science Room
-- Process to depreciate tools
+- Process to promote and depricate tools
   - Classes: converters, Apps, libraries (more bids-adjacent)
   - Sorting a little differently
     - Maybe by modality
