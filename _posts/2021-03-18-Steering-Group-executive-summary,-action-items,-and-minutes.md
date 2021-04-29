@@ -34,4 +34,4 @@ N/A
   - Sorting a little differently
     - Maybe by modality
 - BIDS previous slideshows from the community
-  - [https://www.slideshare.net/search/slideshow?searchfrom=header&q=bids+neuroimaging&ud=any&ft=all&lang=**&sort=](https://www.slideshare.net/search/slideshow?searchfrom=header&q=bids+neuroimaging&ud=any&ft=all&lang=**&sort=){:target="_blank"}
+  - [slideshare search](https://www.slideshare.net/search/slideshow?searchfrom=header&q=bids+neuroimaging&ud=any&ft=all&lang=**&sort=){:target="_blank"}
