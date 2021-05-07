@@ -6,7 +6,7 @@ url: "https://bids.neuroimaging.io"
 baseurl: "/"
 
 show_menu: true
-show_footer: false
+show_footer: true
 google_analytics: false
 
 excerpt_separator: <!--more-->
