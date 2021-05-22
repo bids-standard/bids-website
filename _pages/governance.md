@@ -160,40 +160,7 @@ responsibilities.
 
 The current members of the Steering group are:
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/guiomar">
-        <img src="https://github.com/guiomar.png?size=100" alt=""/>
-        <br><sub><b>Guiomar Niso</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/melanieganz">
-        <img src="https://github.com/melanieganz.png?size=100" alt=""/>
-        <br><sub><b>Melanie Ganz</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/robertoostenveld">
-        <img src="https://github.com/robertoostenveld.png?size=100" alt=""/>
-        <br><sub><b>Robert Oostenveld</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/poldrack">
-        <img src="https://github.com/poldrack.png?size=100" alt=""/>
-        <br><sub><b>Russell Poldrack</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/KirstieJane">
-        <img src="https://github.com/KirstieJane.png?size=100" alt=""/>
-        <br><sub><b>Kirstie Whitaker</b></sub><br>
-      </a>
-    </td>        
-  </tr>
-</table>         
+{% include members_table.html members=site.data.steering %}         
 
 ### BEP Working Group
 
@@ -228,46 +195,7 @@ This group submits monthly status summaries to the Steering Group.
 
 The current members of the Maintainers group are:
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/sappelhoff">
-        <img src="https://github.com/sappelhoff.png?size=100" alt=""/>
-        <br><sub><b>Stefan Appelhoff</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/effigies">
-        <img src="https://github.com/effigies.png?size=100" alt=""/>
-        <br><sub><b>Chris Markiewicz</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/franklin-feingold">
-        <img src="https://github.com/franklin-feingold.png?size=100" alt=""/>
-        <br><sub><b>Franklin Feingold</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/tsalo">
-        <img src="https://github.com/tsalo.png?size=100" alt=""/>
-        <br><sub><b>Taylor Salo</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Remi-Gau">
-        <img src="https://github.com/Remi-Gau.png?size=100" alt=""/>
-        <br><sub><b>Rémi Gau</b></sub><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/rwblair">
-        <img src="https://github.com/rwblair.png?size=100" alt=""/>
-        <br><sub><b>Ross Blair</b></sub><br>
-      </a>
-    </td>         
-  </tr>
-</table>  
+{% include members_table.html members=site.data.maintainers %}
 
 If you need to contact the maintainers on a specific topic you can use the following emails:
 

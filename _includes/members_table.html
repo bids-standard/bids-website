@@ -1,0 +1,25 @@
+<section>
+  {% for group in include.members %}
+
+  <table>
+    <tr>
+      {% for person in group.members %}
+      <td style="text-align: center; vertical-align: middle">
+        <a href="https://github.com/{{ person.git }}">
+          <img
+            src="https://github.com/{{ person.git }}.png?size=100"
+            width="100px;"
+            alt=""
+          />
+          <br /><sub><b>{{ person.name }}</b></sub
+          ><br />
+        </a>
+      </td>
+      {% endfor %}
+    </tr>
+  </table>
+
+  <br />
+
+  {% endfor %}
+</section>
