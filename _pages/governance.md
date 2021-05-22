@@ -279,7 +279,13 @@ If you need to contact the maintainers on a specific topic you can use the follo
 
 This group consists of individuals who have contributed to the BIDS
 community. Group members are identified on the [BIDS
-contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html){:target="_blank"} list, a list that is intended to be inclusive of all forms of engagement with the BIDS community, and that contributors are encouraged to update on the [specification wiki](https://github.com/bids-standard/bids-specification/wiki/Contributors){:target="_blank"}. Engagement can range from writing copy text in the specification to providing feedback on projects such as the [BIDS starter kit](https://github.com/bids-standard/bids-starter-kit){:target="_blank"}.
+contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html){:target="_blank"} list, 
+a list that is intended to be inclusive of all forms of engagement with the BIDS community, 
+and that contributors are encouraged to update on the 
+[specification wiki](https://github.com/bids-standard/bids-specification/wiki/Contributors){:target="_blank"}. 
+Engagement can range from writing copy text in the specification 
+to providing feedback on projects such as the 
+[BIDS starter kit](https://github.com/bids-standard/bids-starter-kit){:target="_blank"}.
 
 Members of the BIDS Contributors Group are encouraged to support the
 BIDS specification by supporting the members of the Maintainers Group in
@@ -321,7 +327,8 @@ working and interest groups.
 
 The current BEP Working Groups and their leads can be found in the
 section on [BIDS Extension
-Proposals](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals){:target="_blank"} in the BIDS specification.
+Proposals](https://bids-specification.readthedocs.io/en/stable/06-extensions.html#bids-extension-proposals){:target="_blank"} 
+in the BIDS specification.
 
 ## 4. Governance of the standardization process
 
@@ -393,7 +400,8 @@ and iEEG.
 **BIDS Extension Proposal (BEP)** - A proposal that intends to extend
 BIDS into an unspecified modality or derivative. A BEP is typically led
 by 1-3 individuals with several contributors. The [list of
-BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification){:target="_blank"} can be found elsewhere on this website.
+BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification){:target="_blank"} 
+can be found elsewhere on this website.
 
 **Draft BEP** - The in-progress document, typically in a Google Doc, of
 a BEP. This is dynamic and is grown and maintained at the discretion of
@@ -515,9 +523,12 @@ blog](http://reproducibility.stanford.edu/blog/){:target="_blank"} provides tuto
 community survey results.
 
 All BIDS community members are required to follow the [BIDS code of
-conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}. Please contact Franklin Feingold at [ffein@stanford.edu](mailto:ffein@stanford.edu) if you have any concerns or would like to report a violation.
+conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}. 
+Please contact Franklin Feingold at [ffein@stanford.edu](mailto:ffein@stanford.edu) 
+if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgements
+
 This document draws heavily from the [Modern Paradigm for
 Standards](https://open-stand.org/about-us/principles/){:target="_blank"} and from other
 open-source governance documents including:
