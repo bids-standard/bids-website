@@ -1,0 +1,23 @@
+# - group: maintainers
+#   members:
+#     - name:
+#       git:
+#       affiliation:
+#       twitter:
+#       researchgate:
+#       homepage:
+#       city:
+#       bio:
+
+- group: steering
+  members:
+    - name: "Guiomar Niso"
+      git: "guiomar"
+    - name: "Melanie Ganz"
+      git: "melanieganz"
+    - name: "Robert Oostenveld"
+      git: "robertoostenveld"
+    - name: "Russell Poldrack"
+      git: "poldrack"
+    - name: "Kirstie Whitaker"
+      git: "KirstieJane"
