@@ -30,7 +30,7 @@ your local organisation, or [build a BIDS
 App](https://bids-apps.neuroimaging.io/){:target="_blank"}!
 
 The only requirement is that everyone who contributes adheres to our
-[BIDS Code of Conduct](code_of_conduct){:target="_blank"}.
+[BIDS Code of Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}.
 
 Thank you for your contributions!
 

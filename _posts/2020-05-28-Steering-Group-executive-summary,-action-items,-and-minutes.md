@@ -12,7 +12,7 @@ Date: Thursday May 28, 2020
 
 ### Executive Summary
 
-We discussed and approved the timeline for merging [BIDS common derivatives](https://github.com/bids-standard/bids-specification/pull/265){:target="_blank"} into the specification. The [ReadTheDocs rendering](https://bids-specification.readthedocs.io/en/common-derivatives/){:target="_blank"} of the extension made reviewing much easier. Reviewing this pull request raised the need for our own tutorial on how to comment on a pull request. We will be enhancing the current BEP process by asking for the BEP to be a clean version when it is submitted as a pull request.
+We discussed and approved the timeline for merging [BIDS common derivatives](https://github.com/bids-standard/bids-specification/pull/265){:target="_blank"} into the specification. The ReadTheDocs rendering of the extension made reviewing much easier. Reviewing this pull request raised the need for our own tutorial on how to comment on a pull request. We will be enhancing the current BEP process by asking for the BEP to be a clean version when it is submitted as a pull request.
 
 Briefly, we discussed our plan to host a town hall at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageID=3958&activateFull=true){:target="_blank"} in the [Open Science Room](https://ohbm.github.io/osr2020/){:target="_blank"}. We will be providing a BIDS status update and hearing feedback from the community.
 
