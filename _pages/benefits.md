@@ -34,7 +34,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [bids2xar](https://github.com/lwallace23/bids2xar){:target="_blank"} (for XNAT import)
 - [XNAT2BIDS](https://github.com/kamillipi/2bids){:target="_blank"}
 - [Horos (Osirix) export plugin](https://github.com/mslw/horos-bids-output){:target="_blank"}
-- [BIDS2NIDM](https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/NIDM2BIDSMRI.py){:target="_blank"}
+- [BIDS2NIDM](https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py){:target="_blank"}
 - [BIDScoin](https://github.com/Donders-Institute/bidscoin){:target="_blank"}
 - [MNE-BIDS](http://mne-tools.github.io/mne-bids/){:target="_blank"} (MEG/EEG/iEEG)
 - [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php){:target="_blank"} with [plugin](https://github.com/arnodelorme/bids-matlab-tools){:target="_blank"} (MEG/EEG analysis package)
