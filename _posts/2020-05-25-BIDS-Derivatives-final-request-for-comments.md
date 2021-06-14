@@ -6,7 +6,9 @@ display: true
 
 # BIDS Derivatives final request for comments
 
-The BIDS community is preparing to merge the Common Derivatives extension. The updated draft is available for review at [https://bids-specification.readthedocs.io/en/common-derivatives/](https://bids-specification.readthedocs.io/en/common-derivatives/){:target="_blank"} , and comments and suggestions may be submitted on GitHub at [https://github.com/bids-standard/bids-specification/pull/265](https://github.com/bids-standard/bids-specification/pull/265){:target="_blank"} .
+The BIDS community is preparing to merge the Common Derivatives extension. ~~The updated draft is available for review at X, and comments and suggestions may be submitted on GitHub at [https://github.com/bids-standard/bids-specification/pull/265](https://github.com/bids-standard/bids-specification/pull/265){:target="_blank"}~~.
+
+UPDATE 2021-06-14: The draft is no longer accessible. You can instead look at the [stable version](https://bids-specification.readthedocs.io/en/stable/05-derivatives/01-introduction.html){:target="_blank"}
 
 <!--more-->
 
