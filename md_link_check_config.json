@@ -2,6 +2,12 @@
     "ignorePatterns": [
       {
         "pattern": "^https://github.com"
+      },
+      {
+        "pattern": "^./"
+      },
+      {
+        "pattern": "^/get_involved$"
       }
     ],
     "timeout": "20s",
