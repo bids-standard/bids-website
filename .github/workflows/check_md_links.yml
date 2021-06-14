@@ -16,5 +16,5 @@ jobs:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
         config-file: 'md_link_check_config.json'
-        folder-path: '_bep_collection', '_data', '_includes', '_layouts', '_pages', '_posts', '_redirects', '_sass_', 'assets', 'BIDS-materials', 'docs', 'script'
-        file-path: './README.md,
+        folder-path: '_bep_collection, _data, _includes, _layouts, _pages, _posts, _redirects, _sass_, assets, BIDS-materials, docs, script'
+        file-path: './README.md'
