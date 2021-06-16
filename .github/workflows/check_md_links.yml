@@ -2,9 +2,9 @@ name: Check Markdown links
 
 on:
   push:
-    branches: [ master ]
+    branches: [ gh-pages ]
   pull_request:
-    branches: [ master ]
+    branches: [ gh-pages ]
 
 jobs:
   markdown-link-check:
