@@ -14,4 +14,5 @@ Building the website on your local computer is done using:
 
     bundle exec jekyll serve --incremental --livereload
 
-You can now use your browser to go to <http://localhost:4000> to see the website. It will automatically be rebuilt and updated if you make changes.
+You can now use your browser to go to `http://localhost:4000` to see the website.
+It will automatically be rebuilt and updated if you make changes.
