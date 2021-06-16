@@ -1,4 +1,6 @@
 [![CircleCI](https://circleci.com/gh/bids-standard/bids-website.svg?style=shield)](https://circleci.com/gh/bids-standard/bids-website)
+[![Check Markdown links](https://github.com/bids-standard/bids-website/actions/workflows/check_md_links.yml/badge.svg)](https://github.com/bids-standard/bids-website/actions/workflows/check_md_links.yml)
+
 
 <img src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_black_transparent_background_crop.png?raw=true" alt="bids-logo" width="600"/>
 
