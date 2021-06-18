@@ -3,6 +3,8 @@
 
 # Governance and Decision Making
 
+To achieve the goals of widespread adoption of the standard while growing to adapt to its community of members, BIDS is led by a series of groups presented below. 
+
 Table of Contents
 
 [1. Introduction](#1-introduction)
