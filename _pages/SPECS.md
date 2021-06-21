@@ -1,60 +1,21 @@
 ---
 ---
 
-# Get involved in making BIDS better
+# The BIDS specification
 
-The easiest way to contribute to BIDS is to ask questions you have about
-the specification on [Neurostars](https://neurostars.org){:target="_blank"}. If your
-question has a [bids tag](https://neurostars.org/search?q=tags%3Abids){:target="_blank"}
-it will be much easier for others to find the answer.
+The Brain Imaging Data Structure specification can be [browsed online](https://bids-specification.readthedocs.io/en/stable/){:target="_blank"} or [downloaded as PDF](https://doi.org/10.5281/zenodo.3686061).
 
-You can also get involved by _answering_ questions on
-[Neurostars](https://neurostars.org/search?q=tags%3Abids){:target="_blank"}!
+[//]: # (Insert figure: screen capture of BIDS specs linked to website)
 
-You can contribute to the BIDS specification by opening
-[Issues](https://github.com/bids-standard/bids-specification/issues){:target="_blank"} and
-propose changes via [Pull
-Requests](https://github.com/bids-standard/bids-specification/pulls){:target="_blank"} on
-[GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}.
 
-To make improvements to the website that you are reading right now, you
-can also open an
-[Issue](https://github.com/bids-standard/bids-website/issues){:target="_blank"} and
-propose changes via [Pull
-Requests](https://github.com/bids-standard/bids-website/pulls){:target="_blank"} at its
-[GitHub repository](https://github.com/bids-standard/bids-website){:target="_blank"}.
 
-There are so many ways to help us build this community.
-You could help someone else learn the benefits of BIDS, give a talk in
-your local organisation, or [build a BIDS
-App](https://bids-apps.neuroimaging.io/){:target="_blank"}!
+# BIDS Extension Proposals
 
-The only requirement is that everyone who contributes adheres to our
-[BIDS Code of Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}.
+To contribute a new BIDS Extension Proposal (BEP) see [guidelines section](https://bids.neuroimaging.io/collab.html) Extending the BIDS specification section).
 
-Thank you for your contributions!
-
-## Extending the BIDS specification
-
-The BIDS specification can be extended in a backwards compatible way and
-will evolve over time. These are accomplished with BIDS Extension
-Proposals (BEPs), which are community-driven processes.
-
-Do you want to extend BIDS to a new modality or set of data types?
-Please draft a BIDS Extension Proposal (BEP) following the [BIDS
-Extension Proposals
-Guide](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4){:target="_blank"}.
-
-You can also contribute to ongoing BIDS Extension Proposals. Below is a
-table of currently-active BEPs. The "Extension label" column provides a
-direct link to the documentation.
-
-Please find our [latest BEP update](https://docs.google.com/presentation/d/10-zmgs6L0RBhiN-aLgRWCJT_fjrGi6LL5SgoeUvRbmU/edit#slide=id.p){:target:"_blank"}
-presented in the [Open Science Room](https://ohbm.github.io/osr2020/){:target:"_blank"} at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3267&pageid=1){:target:"_blank"}.
-
-Note that all of the extension ideas that are not backwards compatible and thus
-will have to wait for BIDS 2.0 are listed
+Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed
 [here](https://docs.google.com/document/d/1LEgsMiisGDe1Gv-hBp1EcLmoz7AlKj6VYULUgDD3Zdw){:target="_blank"}.
+
 
 | Extension label                                                 | Title                                                                                                      | Moderators/ leads                                                | Summary                                                                                                                                                                                                                                   | Blocking point(s)                                                                      |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |

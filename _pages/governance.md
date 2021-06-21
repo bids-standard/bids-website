@@ -3,6 +3,8 @@
 
 # Governance and Decision Making
 
+To achieve the goals of widespread adoption of the standard while growing to adapt to its community of members, BIDS is led by a series of groups presented below. 
+
 Table of Contents
 
 [1. Introduction](#1-introduction)
@@ -125,8 +127,7 @@ The following figure illustrates the structure of the groups described
 in this document. The specific organization and responsibilities of
 these groups are laid out in detail, below.
 
-![leadership_figure](./assets/img/governance_figure.jpg "Leadership
-Structure")
+![leadership_figure](./assets/img/BIDS_Organizational_Design.png "BIDS Organizational Design")
 
 ### BIDS Steering Group
 
