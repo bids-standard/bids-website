@@ -1,7 +1,7 @@
 ---
 ---
 
-[//]: # (Insert figure: BIDS logo (BIG))
+![bids_logo](./assets/img/logo_transparent-black_647x232.png "BIDS Logo")
 
 BIDS: The Brain Imaging Data Structure
 [//]: # (This letters should be big, I don't know how you can change fontsize for a specific paragraph)
