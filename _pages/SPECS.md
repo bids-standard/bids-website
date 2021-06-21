@@ -5,13 +5,13 @@
 
 The Brain Imaging Data Structure specification can be [browsed online](https://bids-specification.readthedocs.io/en/stable/){:target="_blank"} or [downloaded as PDF](https://doi.org/10.5281/zenodo.3686061).
 
-[//]: # (Insert figure: screen capture of BIDS specs linkd to website)
+[//]: # (Insert figure: screen capture of BIDS specs linked to website)
 
 
 
 # BIDS Extension Proposals
 
-To contribute a new BIDS Extension Proposal (BEP) see [guidelinessection](LINK TO COLLAB/Extending the BIDS specification section).
+To contribute a new BIDS Extension Proposal (BEP) see [guidelines section](https://bids.neuroimaging.io/collab.html) Extending the BIDS specification section).
 
 Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed
 [here](https://docs.google.com/document/d/1LEgsMiisGDe1Gv-hBp1EcLmoz7AlKj6VYULUgDD3Zdw){:target="_blank"}.
