@@ -38,6 +38,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [BIDScoin](https://github.com/Donders-Institute/bidscoin){:target="_blank"}
 - [MNE-BIDS](http://mne-tools.github.io/mne-bids/){:target="_blank"} (MEG/EEG/iEEG)
 - [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php){:target="_blank"} with [plugin](https://github.com/arnodelorme/bids-matlab-tools){:target="_blank"} (MEG/EEG analysis package)
+- FieldTrip [data2bids](https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m){:target="_blank"} with [examples](https://www.fieldtriptoolbox.org/example/bids/){:target="_blank"} for different data types
 - [BrkRaw](https://brkraw.github.io/docs/gs_bids.html){:target="_blank"} (for a preclinical Bruker MRI scanner)
 - [Clinica](https://aramislab.paris.inria.fr/clinica/docs/public/latest/){:target="_blank"}
 
