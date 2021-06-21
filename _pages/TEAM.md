@@ -16,8 +16,7 @@ Our organizational design is driven by three principles: Sustainability, Robustn
 
 To achieve the goals of widespread adoption of the standard while growing to adapt to its community of members, BIDS is led by a series of groups presented below. See more at: [BIDSGovernance](LINK).
 
-![leadership_figure](./assets/img/BIDS_Organizational_Design.png "Leadership
-Structure")
+![leadership_figure](./assets/img/BIDS_Organizational_Design.png "BIDS Organizational Design")
 [//]: # (Include figure: organizational design)
 
 ## BIDS Steering Group
