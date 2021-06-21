@@ -16,9 +16,6 @@ Our organizational design is driven by three principles: Sustainability, Robustn
 
 To achieve the goals of widespread adoption of the standard while growing to adapt to its community of members, BIDS is led by a series of groups presented below. See more at: [BIDSGovernance](LINK).
 
-![leadership_figure](./assets/img/BIDS_Organizational_Design.png "BIDS Organizational Design")
-[//]: # (Include figure: organizational design)
-
 ## BIDS Steering Group
 
 The BIDS Steering Group is responsible for approving and advancing BEPs
@@ -50,6 +47,8 @@ If you need to contact the maintainers on a specific topic you can use the follo
 - youtube account ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
 
 See periodical [BIDS Maintainers reports](LINK TO FILES)
+
+![leadership_figure](./assets/img/BIDS_Organizational_Design.png "BIDS Organizational Design")
 
 ## Awesome contributors
 
