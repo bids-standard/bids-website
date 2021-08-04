@@ -48,7 +48,6 @@ include:
 exclude:
   - script
   - docs
-  - old_website
   - README.md
   - Gemfile*
   - jekyll-theme-cayman.gemspec
