@@ -3,7 +3,7 @@ jobs:
 
     lint:
         docker:
-            - image: circleci/node:stretch
+            - image: cimg/node:lts
         steps:
             - checkout
             - run:
@@ -20,7 +20,7 @@ jobs:
 
     build:
         docker:
-            - image: circleci/ruby:stretch
+            - image: cimg/ruby:3.0
         steps:
             - checkout
 
@@ -30,15 +30,21 @@ jobs:
                   - gem-cache-0-{{ checksum "./Gemfile" }}
 
             - run:
+                name: check versions
+                command: |
+                    gem --version
+                    bundle --version
+
+            - run:
                 name: install
                 command: |
-                    gem install jekyll bundler
-                    bundle install --path vendor/bundle
+                    bundle config set --local path 'vendor/bundle'
+                    bundle install
 
             - run:
                 name: build
                 command: |
-                    bundle exec jekyll build --baseurl /0/_site
+                    bundle exec jekyll build --baseurl /0/_site --verbose
 
             - store_artifacts:
                 path: _site
