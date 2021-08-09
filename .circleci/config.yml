@@ -30,9 +30,14 @@ jobs:
                   - gem-cache-0-{{ checksum "./Gemfile" }}
 
             - run:
+                name: check versions
+                command: |
+                    gem --version
+                    bundle --version
+
+            - run:
                 name: install
                 command: |
-                    gem install jekyll bundler
                     bundle config set --local path 'vendor/bundle'
                     bundle install
 

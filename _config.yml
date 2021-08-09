@@ -46,8 +46,6 @@ include:
   - _posts
 
 exclude:
-  - script
-  - docs
   - README.md
   - Gemfile*
-  - jekyll-theme-cayman.gemspec
+  - [vendor]
