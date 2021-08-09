@@ -48,4 +48,4 @@ include:
 exclude:
   - README.md
   - Gemfile*
-  - [vendor]
+  - vendor
