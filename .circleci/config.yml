@@ -3,7 +3,7 @@ jobs:
 
     lint:
         docker:
-            - image: circleci/node:stretch
+            - image: cimg/node:lts
         steps:
             - checkout
             - run:
@@ -20,7 +20,7 @@ jobs:
 
     build:
         docker:
-            - image: circleci/ruby:stretch
+            - image: cimg/ruby:3.0
         steps:
             - checkout
 
@@ -33,7 +33,8 @@ jobs:
                 name: install
                 command: |
                     gem install jekyll bundler
-                    bundle install --path vendor/bundle
+                    bundle config set --local path 'vendor/bundle'
+                    bundle install
 
             - run:
                 name: build
