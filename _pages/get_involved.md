@@ -49,8 +49,8 @@ You can also contribute to ongoing BIDS Extension Proposals. Below is a
 table of currently-active BEPs. The "Extension label" column provides a
 direct link to the documentation.
 
-Please find our [latest BEP update](https://docs.google.com/presentation/d/10-zmgs6L0RBhiN-aLgRWCJT_fjrGi6LL5SgoeUvRbmU/edit#slide=id.p){:target:"_blank"}
-presented in the [Open Science Room](https://ohbm.github.io/osr2020/){:target:"_blank"} at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3267&pageid=1){:target:"_blank"}.
+Please find our [latest BEP update](https://docs.google.com/presentation/d/1uvxJaGgrk58HBWRqLzJTwHjpJKFLGM7YTiNvGwvjMOA/edit?usp=sharing){:target:"_blank"}
+presented in the [Open Science Room](https://ohbm.sparkle.space/in/opensciencesig){:target:"_blank"} at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4041){:target:"_blank"}.
 
 Note that all of the extension ideas that are not backwards compatible and thus
 will have to wait for BIDS 2.0 are listed
