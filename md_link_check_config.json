@@ -7,10 +7,10 @@
         "pattern": "^./"
       },
       {
-        "pattern": "^/drupalget_involved$"
+        "pattern": "^/get_involved$"
       },
       {
-        "pattern": "^/drupal$"
+        "pattern": "^/https://www.drupal.org"
       }      
     ],
     "timeout": "20s",
