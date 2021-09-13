@@ -83,7 +83,7 @@ Adoption can be in terms of standardizing analysis workflows to be BIDS compatib
 *What are you hoping to achieve in the next year?*
 
 My main focus will be on outreach to the communities that are not yet heavily involved in BIDS.
-For example, compared to the MRI community the PET community needs to reinvent itself and embrace data sharing as recently has been [pointed out in a major PET journal](https://doi.org/10.1007/s00259-019-04541-y){:target="_blank"}.
+For example, compared to the MRI community the PET community needs to reinvent itself and embrace data sharing as recently has been [pointed out in a major PET journal](https://link.springer.com/article/10.1007%2Fs00259-019-04541-y){:target="_blank"}.
 To this end I am actively involved in organizing a data sharing/BIDS workshop at NRM2020 and to get more PET researchers interested in contributing to and using BIDS.
 As a steering group member, I want to identify further imaging modalities/derivatives in the need of standardization and get them started on the road to BIDS and support them with embracing BIDS.
 
