@@ -1,7 +1,7 @@
 ---
 ---
 
-# Getting started
+# Get started
 
 Read the [BIDS Starter Kit](https://github.com/bids-standard/bids-starter-kit){:target="_blank"} and check out the [tutorials](https://github.com/bids-standard/bids-starter-kit/wiki/Tutorials){:target="_blank"} there.
 
