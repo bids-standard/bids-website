@@ -10,7 +10,7 @@
         "pattern": "^/get_involved$"
       },
       {
-        "pattern": "^/https://www.drupal.org/governance"
+        "pattern": "drupal\.org\/governance"
       }      
     ],
     "timeout": "20s",
