@@ -9,6 +9,8 @@ show_menu: true
 show_footer: true
 google_analytics: false
 
+election_banner: true
+
 excerpt_separator: <!--more-->
 
 collections:

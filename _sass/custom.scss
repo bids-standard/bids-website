@@ -14,6 +14,21 @@
   background-size: 50%;
 }
 
+.election-banner {
+  border: 10px solid $border-color;
+  width: 66%;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+
+  p {
+    padding: 0 0 0 5%;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
 .site-footer {
   text-align: center;
 }
