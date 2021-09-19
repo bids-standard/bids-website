@@ -1,0 +1,49 @@
+<style>
+  table {
+    font-size: 14px;
+  }
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+
+<section>
+  {% for group in include.members %}
+
+  <h3 style="padding: 1rem">{{ group.name }}</h3>
+
+  <table style="width: 120%; margin-right: 0%; margin-left: 0%">
+    <tr>
+      <td>Name</td>
+      <td>Data type</td>
+      <td>Expected input</td>
+      <td>Language</td>
+      <td>Graphic interface</td>
+      <td>Documentation</td>
+      <td>Comment</td>
+    </tr>
+
+    {% for converter in group.members %}
+    <tr>
+      <td>
+        <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
+      </td>
+      <td>{{ converter.data_types }}</td>
+      <td>{{ converter.expected_input }}</td>
+      <td>{{ converter.language }}</td>
+      <td>{{ converter.GUI }}</td>
+      <td>
+        {% if converter.documentation %}
+        <a href="{{ converter.documentation }} " target="_blank">doc</a>
+        {% endif %}
+      </td>
+      <td>{{ converter.comment }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <br />
+
+  {% endfor %}
+</section>

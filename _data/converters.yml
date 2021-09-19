@@ -1,0 +1,233 @@
+# template
+#     - name:
+#       url:
+#       data_types:
+#       expected_input:
+#       language:
+#       documentation:
+#       comment:
+#       GUI: false
+
+- group:
+  name: generic converters
+  members:
+    - name: AFNI BIDS-tools
+      url: "https://github.com/nih-fmrif/BIDS-tools"
+      data_types: MRI
+      expected_input: BIDS # not sure about that one
+      language: shell, python
+      comment:
+        Scripts, tools, and documents on creating, parsing, and working with
+        BIDS-structured data sets.
+
+    - name: BIDS2ISATab # does not seem to be a source to raw converter
+      url: https://github.com/bids-standard/BIDS2ISATab
+      data_types:
+      expected_input: BIDS
+      language: python
+      comment: Extract ISA-Tab compatible metadata from BIDS
+
+    - name: BIDSto3col # does not seem to be a source to raw converter
+      url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
+      data_types: TSV
+      expected_input: BIDS
+      language: shell, python
+      comment:
+        Reads BidsTSV and then creates 3 column event files, one per event type
+        if a "trial_type" column is found.
+
+    - name: BIDS2NDA # does not seem to be a source to raw converter
+      url: https://github.com/bids-standard/BIDS2NDA
+      data_types:
+      expected_input: BIDS
+      language: python
+      comment: Extract NIHM Data Archive compatible metadata from BIDS
+
+    - name: bidsify
+      url: https://github.com/NILAB-UvA/bidsify
+      data_types: MRI
+      expected_input: DICOM, PAR/REC
+      language: python, docker
+      comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
+
+    - name: bidskit
+      url: https://github.com/jmtyszka/bidskit
+      data_types: MRI
+      expected_input: DICOM
+      language: python, docker
+      comment:
+        Utility functions for working with DICOM and BIDS neuroimaging data.
+      documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
+
+    - name: Data2Bids
+      url: https://github.com/SIMEXP/Data2Bids
+      data_types: MRI
+      expected_input: not DICOM
+      language: python, docker
+      comment:
+        converts fmri files from extension supported by nibabel into NIfTI and
+        convert them to BIDS
+
+    - name: Dcm2Bids
+      url: https://github.com/cbedetti/Dcm2Bids
+      data_types: MRI
+      expected_input: DICOM
+      language: python, docker
+      comment: reorganises NIfTI files using dcm2niix into BIDS
+      documentation: https://unfmontreal.github.io/Dcm2Bids/
+
+    - name: DCM2NIIx # not a BIDS converter
+      url: https://github.com/neurolabusc/dcm2niix
+      data_types: DICOM, PAR/REC
+      expected_input:
+      language:
+        C++ (compiled versions available from <a
+        href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
+      comment:
+        "dcm2nii DICOM to NIfTI converter: <br> <b>not a BIDS converter</b>"
+
+    - name: DICM2NII
+      url: https://github.com/xiangruili/dicm2nii
+      data_types: DICOM
+      expected_input: DICOM
+      language: Matlab
+      comment:
+        "dcm2nii DICOM to NIfTI converter: <br> <b>not a BIDS converter</b>"
+
+    - name: HeuDiConv
+      url: https://github.com/nipy/heudiconv
+      data_types: MRI
+      expected_input: DICOM
+      language: python, docker
+      comment:
+        https://heudiconv.readthedocs.io/ A flexible DICOM converter for
+        organizing brain imaging data into structured directory layouts
+
+    - name: OpenfMRI2BIDS
+      url: https://github.com/bids-standard/openfmri2bids
+      data_types: MRI # not sure
+      expected_input:
+      language:
+      comment: Convert OpenfMRI dataset to BIDS
+
+    - name: ReproIn
+      url: https://github.com/ReproNim/reproin
+      data_types: MRI
+      expected_input:
+      language: docker
+      comment:
+        "HeuDiConv-based turnkey solution: a setup for automatic generation of
+        shareable, version-controlled BIDS datasets from MR scanners."
+
+    - name: bids2xar - for XNAT import
+      url: https://github.com/lwallace23/bids2xar
+      data_types: MRI # not sure
+      expected_input: BIDS
+      language: python
+      comment: Convert BIDS data set into XNAT XAR bundles
+
+    - name: XNAT2BIDS
+      url: https://github.com/kamillipi/2bids
+      data_types: MRI # not sure
+      expected_input:
+      language: shell
+      comment:
+        Simple xnat pipeline to convert DICOM scans to BIDS-compatible output
+        (nii+json).
+
+    - name: Horos (Osirix) export plugin
+      url: https://github.com/mslw/horos-bids-output
+      data_types:
+      expected_input:
+      language: objective C
+      comment: Horos plugin for BIDS output.
+      GUI: yes
+
+    - name: BIDS2NIDM
+      url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
+      data_types:
+      expected_input: BIDS
+      language: python
+      comment:
+        This program will convert a NIDM-Experiment RDF document to a BIDS
+        dataset.
+
+    - name: BIDScoin
+      url: https://github.com/Donders-Institute/bidscoin
+      data_types: MRI, phsyiological, behavioral, PET
+      expected_input: DICOM, PAR/REC, physiological, PET
+      language: python
+      documentation: https://bidscoin.readthedocs.io/en/stable/
+      comment: BIDScoin converts your source-level neuroimaging data to BIDS
+      GUI: yes
+
+    - name: BIDSme
+      url: https://github.com/nbeliy/bidsme  
+      data_types: MRI, EEG
+      expected_input: DICOM, Nifti, Brain Vision
+      language: python
+      comment:
+    
+
+    - name: MNE-BIDS
+      url: http://mne-tools.github.io/mne-bids/
+      data_types: MEG, EEG, iEEG
+      expected_input:
+      language: python
+      comment:
+        MNE-BIDS is a Python package that allows you to read and write
+        BIDS-compatible datasets with the help of MNE-Python.
+
+    - name: EEGLAB
+      url: https://sccn.ucsd.edu/eeglab/index.php
+      data_types: MEG, EEG
+      expected_input: EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files
+      language: matlab
+      comment:
+        "<a href='https://github.com/arnodelorme/bids-matlab-tools'>See
+        plugins</a>"
+
+    - name: FieldTrip - data2bids
+      url: https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m
+      data_types: EEG, MEG, iEEG, behavioral
+      expected_input:
+      language: matlab
+      documentation: https://www.fieldtriptoolbox.org/example/bids/
+      comment:
+        "<a href='https://www.fieldtriptoolbox.org/example/bids/'>See
+        examples</a> for different data types"
+
+    - name: BrkRaw
+      url: https://brkraw.github.io/docs/gs_bids.html
+      data_types: MRI
+      expected_input: Bruker MRI scanner data
+      language: python
+      GUI: yes
+      comment: For a preclinical Bruker MRI scanner
+
+    - name: Clinica
+      url: https://github.com/aramis-lab/clinica/
+      data_types:
+      expected_input: data from ADNI, AIBL, NIFD, OASIS, OASIS-3
+      language: python
+      comment:
+      documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
+#   name: institution specific
+#   members:
+#     - name: dac2bids
+#       url: https://github.com/dangom/dac2bids
+
+#     - name: Autobids
+#       url: https://github.com/khanlab/autobids
+#       comment:
+#         from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s
+#         Robarts Research Institute
+
+#     - name: Biscuit
+#       url: https://github.com/Macquarie-MEG-Research/Biscuit
+
+#     - name: BiDirect_BIDS_Converter
+#       url: https://github.com/wulms/BiDirect_BIDS_Converter
+#       comment:
+#         from the Institute of epidemiology and social medicine, University of
+#         Münster
