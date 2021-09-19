@@ -24,15 +24,26 @@
   margin-right: 20%;
   text-align: center;
 
-  h2{
+  h2, h3{
     padding-bottom : 1rem;
   }
 
+  iframe{
+    padding-top : 1rem;
+  }
+
   p {
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
     text-align: center;
     font-size: 18px;
+  }
+
+  button{
+    color: #000000;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 20px;
   }
 }
 
