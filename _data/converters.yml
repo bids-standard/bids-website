@@ -49,9 +49,10 @@
       data_types: MRI
       expected_input: DICOM
       language: python, docker
+      documentation: https://heudiconv.readthedocs.io/
       comment:
-        https://heudiconv.readthedocs.io/ A flexible DICOM converter for
-        organizing brain imaging data into structured directory layouts
+        A flexible DICOM converter for organizing brain imaging data into
+        structured directory layouts
 
     - name: OpenfMRI2BIDS
       url: https://github.com/bids-standard/openfmri2bids
