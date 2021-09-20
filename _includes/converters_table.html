@@ -2,6 +2,7 @@
   table {
     font-size: 14px;
   }
+  th,
   td {
     text-align: center;
     vertical-align: middle;
@@ -17,13 +18,13 @@
 
   <table style="width: 120%; margin-right: 0%; margin-left: 0%">
     <tr>
-      <td>Name</td>
-      <td>Data type</td>
-      <td>Expected input</td>
-      <td>Language</td>
-      <td>Graphic interface</td>
-      <td>Documentation</td>
-      <td>Comment</td>
+      <th>Name</th>
+      <th>Data type</th>
+      <th>Expected input</th>
+      <th>Language</th>
+      <th>Graphic interface</th>
+      <th>Documentation</th>
+      <th>Comment</th>
     </tr>
 
     {% for converter in group.members %}
