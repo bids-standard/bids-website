@@ -1,0 +1,47 @@
+# template
+#     - name:
+#       url: URL to repo
+#       data_types: MRI, EEG, MEG, iEEG, events
+#       expected_input: DICOM, PAR/REC, tsv
+#       language: python, matlab, docker
+#       documentation: URL to documentation
+#       comment:
+#       GUI: false
+
+- group:
+  name: EEG, MEG, iEEG converters
+  members:
+    - name: BIDSme
+      url: https://github.com/nbeliy/bidsme
+      data_types: MRI, EEG
+      expected_input: DICOM, Nifti, Brain Vision
+      language: python
+      comment:
+
+    - name: MNE-BIDS
+      url: http://mne-tools.github.io/mne-bids/
+      data_types: MEG, EEG, iEEG
+      expected_input:
+      language: python
+      comment:
+        MNE-BIDS is a Python package that allows you to read and write
+        BIDS-compatible datasets with the help of MNE-Python.
+
+    - name: EEGLAB
+      url: https://sccn.ucsd.edu/eeglab/index.php
+      data_types: MEG, EEG
+      expected_input: EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files
+      language: matlab
+      comment:
+        "<a href='https://github.com/arnodelorme/bids-matlab-tools'>See
+        plugins</a>"
+
+    - name: FieldTrip - data2bids
+      url: https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m
+      data_types: EEG, MEG, iEEG, behavioral
+      expected_input:
+      language: matlab
+      documentation: https://www.fieldtriptoolbox.org/example/bids/
+      comment:
+        "<a href='https://www.fieldtriptoolbox.org/example/bids/'>See
+        examples</a> for different data types"

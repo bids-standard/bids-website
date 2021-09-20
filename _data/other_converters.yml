@@ -1,0 +1,31 @@
+# template
+#     - name:
+#       url: URL to repo
+#       data_types: MRI, EEG, MEG, iEEG, events
+#       expected_input: DICOM, PAR/REC, tsv
+#       language: python, matlab, docker
+#       documentation: URL to documentation
+#       comment:
+#       GUI: false
+
+- group:
+  name: Other converters
+  comment:
+    Not BIDS converters but are common tools that have been used by other BIDS
+    converters.
+  members:
+    - name: DCM2NIIx
+      url: https://github.com/neurolabusc/dcm2niix
+      data_types: DICOM, PAR/REC
+      expected_input:
+      language:
+        C++ (compiled versions available from <a
+        href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
+      comment: "dcm2nii DICOM to NIfTI converter"
+
+    - name: DICM2NII
+      url: https://github.com/xiangruili/dicm2nii
+      data_types: DICOM
+      expected_input: DICOM
+      language: Matlab
+      comment: "dcm2nii DICOM to NIfTI converter"
