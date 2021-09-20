@@ -20,4 +20,4 @@ The specification is hosted on [https://bids-specification.readthedocs.io](https
 
 ## Asking questions about BIDS
 
-If you have questions how to apply BIDS to your dataset, how to use a shared BIDS dataset, or about tools to convert and/or handle BIDS datasets, please see the [getting started](https://bids.neuroimaging.io/getting_started.html) page.
+If you have questions how to apply BIDS to your dataset, how to use a shared BIDS dataset, or about tools to convert and/or handle BIDS datasets, please see the [getting started](https://bids.neuroimaging.io/get_started.html) page.
