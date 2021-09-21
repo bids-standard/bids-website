@@ -45,3 +45,12 @@
       comment:
         "<a href='https://www.fieldtriptoolbox.org/example/bids/'>See
         examples</a> for different data types"
+
+    - name: Biscuit
+      url: https://github.com/Macquarie-MEG-Research/Biscuit
+      data_types: MEG
+      expected_input:
+      language: python
+      documentation: https://macquarie-meg-research.github.io/Biscuit/
+      comment: GUI for easy MEG to BIDS conversion
+      GUI: true

@@ -22,11 +22,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 
 {% include converters_table.html members=site.data.MEEG_converters %}
 
-{% include converters_table.html members=site.data.institution_converters %}
-
 {% include converters_table.html members=site.data.from_BIDS_converters %}
-
-{% include converters_table.html members=site.data.other_converters %}
 
 ## Quality Assessment
 

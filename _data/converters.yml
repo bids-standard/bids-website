@@ -125,3 +125,33 @@
       language: python
       comment:
       documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
+
+    - name: dac2bids
+      url: https://github.com/dangom/dac2bids
+      data_types: MRI
+      expected_input: DICOM
+      language: python
+      comment: Create a BIDS structure for a DICOM folder.
+
+    - name: Autobids
+      url: https://github.com/khanlab/autobids
+      data_types: MRI
+      expected_input: DICOM
+      comment:
+        Automated Dicom to BIDS and pipelines using compute canada.  From the
+        Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts
+        Research Institute
+
+    - name: BiDirect_BIDS_Converter
+      url: https://github.com/wulms/BiDirect_BIDS_Converter
+      comment:
+        "Converts MRI data from DICOM to BIDS in three user-interactions (csv
+        editings). Your input: A folder containing your participants DICOMS.
+        Your output: A BIDS specification dataset, that passes the
+        BIDS-Validator. from the Institute of epidemiology and social medicine,
+        University of Münster"
+      data_types: MRI
+      expected_input: DICOM
+      language: R
+      documentation: https://github.com/wulms/BiDirect_BIDS_Converter/wiki/Tutorial
+      GUI: false
