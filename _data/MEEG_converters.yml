@@ -54,3 +54,13 @@
       documentation: https://macquarie-meg-research.github.io/Biscuit/
       comment: GUI for easy MEG to BIDS conversion
       GUI: true
+
+    - name: sovabids
+      url: https://github.com/yjmantilla/sovabids
+      data_types: EEG
+      expected_input:
+      language: python
+      documentation: https://sovabids.readthedocs.io/en/latest/
+      comment:
+        A python package for the automatic conversion of EEG datasets to the
+        BIDS standard, with a focus on making the most out of metadata.
