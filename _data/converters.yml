@@ -70,13 +70,6 @@
         "HeuDiConv-based turnkey solution: a setup for automatic generation of
         shareable, version-controlled BIDS datasets from MR scanners."
 
-    - name: bids2xar - for XNAT import
-      url: https://github.com/lwallace23/bids2xar
-      data_types: MRI # not sure
-      expected_input: BIDS
-      language: python
-      comment: Convert BIDS data set into XNAT XAR bundles
-
     - name: XNAT2BIDS
       url: https://github.com/kamillipi/2bids
       data_types: MRI # not sure
