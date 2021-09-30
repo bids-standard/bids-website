@@ -19,9 +19,11 @@
       comment:
 
     - name: MNE-BIDS
-      url: http://mne-tools.github.io/mne-bids/
+      url: https://mne.tools/mne-bids/
       data_types: MEG, EEG, iEEG
       expected_input:
+        Either raw MEG, EEG, or iEEG data for conversion,
+        or a BIDS dataset for reading
       language: python
       comment:
         MNE-BIDS is a Python package that allows you to read and write
