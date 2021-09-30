@@ -53,8 +53,8 @@ Please find our [latest BEP update](https://docs.google.com/presentation/d/1uvxJ
 presented in the [Open Science Room](https://ohbm.sparkle.space/in/opensciencesig){:target:"_blank"} at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4041){:target:"_blank"}.
 
 Note that all of the extension ideas that are not backwards compatible and thus
-will have to wait for BIDS 2.0 are listed
-[here](https://docs.google.com/document/d/1LEgsMiisGDe1Gv-hBp1EcLmoz7AlKj6VYULUgDD3Zdw){:target="_blank"}.
+will have to wait for BIDS 2.0 are listed on the
+[Issues page of the bids-2-devel GitHub repository](https://github.com/bids-standard/bids-2-devel/issues){:target="_blank"}.
 
 | Extension label                                                 | Title                                                                                                      | Moderators/ leads                                                | Summary                                                                                                                                                                                                                                   | Blocking point(s)                                                                      |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
