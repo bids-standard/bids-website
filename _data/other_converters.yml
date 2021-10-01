@@ -7,6 +7,7 @@
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
+#       updated: Date of last update either last release or substantial commit 
 
 - group:
   name: Other converters
@@ -22,6 +23,7 @@
         C++ (compiled versions available from <a
         href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
       comment: "dcm2nii DICOM to NIfTI converter"
+      updated: 2021-06-01
 
     - name: DICM2NII
       url: https://github.com/xiangruili/dicm2nii
@@ -29,3 +31,4 @@
       expected_input: DICOM
       language: Matlab
       comment: "dcm2nii DICOM to NIfTI converter"
+      updated: 2021-09-24

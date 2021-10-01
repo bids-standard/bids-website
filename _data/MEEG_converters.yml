@@ -7,6 +7,8 @@
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
+#       updated: Date of last update either last release or substantial commit  
+
 
 - group:
   name: EEG, MEG, iEEG converters
@@ -17,6 +19,7 @@
       expected_input: DICOM, Nifti, Brain Vision
       language: python
       comment:
+      updated: 2021-08-18
 
     - name: MNE-BIDS
       url: https://mne.tools/mne-bids/
@@ -28,6 +31,7 @@
       comment:
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
+      updated: 2021-09-18
 
     - name: EEGLAB
       url: https://sccn.ucsd.edu/eeglab/index.php
@@ -37,6 +41,7 @@
       comment:
         "<a href='https://github.com/arnodelorme/bids-matlab-tools'>See
         plugins</a>"
+      updated: 2021-09-29
 
     - name: FieldTrip - data2bids
       url: https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m
@@ -47,6 +52,7 @@
       comment:
         "<a href='https://www.fieldtriptoolbox.org/example/bids/'>See
         examples</a> for different data types"
+      updated: 2021-09-15
 
     - name: Biscuit
       url: https://github.com/Macquarie-MEG-Research/Biscuit
@@ -56,6 +62,7 @@
       documentation: https://macquarie-meg-research.github.io/Biscuit/
       comment: GUI for easy MEG to BIDS conversion
       GUI: true
+      updated: 2019-02-27
 
     - name: sovabids
       url: https://github.com/yjmantilla/sovabids
@@ -66,3 +73,4 @@
       comment:
         A python package for the automatic conversion of EEG datasets to the
         BIDS standard, with a focus on making the most out of metadata.
+      updated: 2021-08-23

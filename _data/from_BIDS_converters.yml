@@ -7,6 +7,8 @@
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
+#       updated: Date of last update either last release or substantial commit 
+
 
 - group:
   name: "'From BIDS' converters"
@@ -20,6 +22,7 @@
       expected_input: BIDS
       language: python
       comment: Extract ISA-Tab compatible metadata from BIDS
+      updated: 2016-10-08
 
     - name: BIDSto3col
       url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
@@ -29,6 +32,7 @@
       comment:
         Reads BidsTSV and then creates 3 column event files, one per event type
         if a "trial_type" column is found.
+      updated: 2016-11-04
 
     - name: BIDS2NDA
       url: https://github.com/bids-standard/BIDS2NDA
@@ -36,6 +40,7 @@
       expected_input: BIDS
       language: python
       comment: Extract NIHM Data Archive compatible metadata from BIDS
+      updated: 2020-10-03
 
     - name: bids2xar - for XNAT import
       url: https://github.com/lwallace23/bids2xar
@@ -43,6 +48,7 @@
       expected_input: BIDS
       language: python
       comment: Convert BIDS data set into XNAT XAR bundles
+      updated: 2017-09-01
 
     - name: BIDS2NIDM
       url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
@@ -52,6 +58,7 @@
       comment:
         This program will convert a NIDM-Experiment RDF document to a BIDS
         dataset.
+      updated: 2021-09-16
 
     - name: AFNI BIDS-tools
       url: "https://github.com/nih-fmrif/BIDS-tools"
@@ -61,3 +68,4 @@
       comment:
         ARCHIVED - Scripts, tools, and documents on creating, parsing, and
         working with BIDS-structured data sets.
+      updated: 2019-10-30
