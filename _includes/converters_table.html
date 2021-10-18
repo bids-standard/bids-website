@@ -1,10 +1,13 @@
 <style>
   section {
-    width: 130%;
-    margin-left: -30%;
+    width: 140%;
+    margin-left: -40%;
   }
   table {
     font-size: 100%;
+  }
+  table ul {
+    padding-left: 5%;
   }
   th,
   td {
@@ -30,6 +33,7 @@
       <th>Data type</th>
       <th>Expected input</th>
       <th>Language</th>
+      <th>Distribution</th>
       <th>Graphic interface</th>
       <th>Documentation</th>
       <th>Comment</th>
@@ -44,6 +48,15 @@
       <td>{{ converter.data_types }}</td>
       <td>{{ converter.expected_input }}</td>
       <td>{{ converter.language }}</td>
+      <td>
+        <ul>
+          {% for entry in converter.distribution %}
+          <li>
+            <a href="{{ entry.name }}" target="_blank">{{ entry.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </td>
       <td>{{ converter.GUI }}</td>
       <td>
         {% if converter.documentation %}

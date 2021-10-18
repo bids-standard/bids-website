@@ -1,7 +1,7 @@
 # template
 #     - name:
 #       url: URL to repo
-#       updated: Date of last update either last release or substantial commit 
+#       updated: Date of last update either last release or substantial commit
 #       data_types: MRI, EEG, MEG, iEEG, events
 #       expected_input: DICOM, PAR/REC, tsv
 #       language: python, matlab, docker
@@ -28,7 +28,7 @@
       comment:
         Utility functions for working with DICOM and BIDS neuroimaging data.
       documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
-      updated:  2019-11-27
+      updated: 2019-11-27
 
     - name: Data2Bids
       url: https://github.com/SIMEXP/Data2Bids
@@ -38,7 +38,7 @@
       comment:
         converts MRI files from extension supported by nibabel into NIfTI and
         convert them to BIDS
-      updated:  2019-07-03
+      updated: 2019-07-03
 
     - name: Dcm2Bids
       url: https://github.com/cbedetti/Dcm2Bids
@@ -53,7 +53,10 @@
       url: https://github.com/nipy/heudiconv
       data_types: MRI
       expected_input: DICOM
-      language: python, docker
+      language: python
+      distribution:
+        - name: dockerhub
+          url: https://hub.docker.com/r/nipy/heudiconv/tags/
       documentation: https://heudiconv.readthedocs.io/
       comment:
         A flexible DICOM converter for organizing brain imaging data into
@@ -96,7 +99,6 @@
       comment: Horos plugin for BIDS output.
       updated: 2018-08-10
       GUI: yes
-
 
     - name: BIDScoin
       url: https://github.com/Donders-Institute/bidscoin
@@ -186,7 +188,4 @@
       documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
       language: matlab
       updated: 2021-09-13
-      GUI: 
-
-      
-
+      GUI:
