@@ -5,6 +5,11 @@
 #       expected_input: DICOM, PAR/REC, tsv
 #       language: python, matlab, docker
 #       documentation: URL to documentation
+#       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 #       comment:
 #       GUI: false
 #       updated: Date of last update either last release or substantial commit 
@@ -19,6 +24,9 @@
     data_types: MRI, phsyiological, behavioral, PET
     expected_input: DICOM, PAR/REC, physiological, PET
     language: python
+    distribution:
+        - name: pypi
+          url: https://pypi.org/project/bidscoin
     documentation: https://bidscoin.readthedocs.io/en/stable/
     comment: BIDScoin converts your source-level neuroimaging data to BIDS
     updated: 2021-09-29
@@ -29,6 +37,9 @@
     data_types: phsyiological
     expected_input: Acqknowledge, Labchart
     language: python
+#       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
     documentation: https://phys2bids.readthedocs.io/en/latest/
     comment: Python3 library to format physiological files in BIDS. 
     updated: 2021-06-18

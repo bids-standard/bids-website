@@ -4,6 +4,11 @@
 #       updated: Date of last update either last release or substantial commit
 #       data_types: MRI, EEG, MEG, iEEG, events
 #       expected_input: DICOM, PAR/REC, tsv
+#       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 #       language: python, matlab, docker
 #       documentation: URL to documentation
 #       comment:
@@ -19,6 +24,11 @@
       language: python, docker
       comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
       updated: 2019-01-23
+      #       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 
     - name: bidskit
       url: https://github.com/jmtyszka/bidskit
@@ -29,6 +39,11 @@
         Utility functions for working with DICOM and BIDS neuroimaging data.
       documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
       updated: 2019-11-27
+      #       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 
     - name: Data2Bids
       url: https://github.com/SIMEXP/Data2Bids
@@ -39,6 +54,11 @@
         converts MRI files from extension supported by nibabel into NIfTI and
         convert them to BIDS
       updated: 2019-07-03
+      #       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 
     - name: Dcm2Bids
       url: https://github.com/cbedetti/Dcm2Bids
@@ -48,6 +68,11 @@
       comment: converts DICOM files using dcm2niix into BIDS
       documentation: https://unfmontreal.github.io/Dcm2Bids/
       updated: 2021-02-27
+      #       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 
     - name: HeuDiConv
       url: https://github.com/nipy/heudiconv
@@ -80,6 +105,11 @@
         "HeuDiConv-based turnkey solution: a setup for automatic generation of
         shareable, version-controlled BIDS datasets from MR scanners."
       updated: 2021-08-03
+      #       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 
     - name: XNAT2BIDS
       url: https://github.com/kamillipi/2bids
@@ -105,6 +135,9 @@
       data_types: MRI, phsyiological, behavioral, PET
       expected_input: DICOM, PAR/REC, physiological, PET
       language: python
+      distribution:
+          - name: pypi
+            url: https://pypi.org/project/bidscoin
       documentation: https://bidscoin.readthedocs.io/en/stable/
       comment: BIDScoin converts your source-level neuroimaging data to BIDS
       updated: 2021-09-29

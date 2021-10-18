@@ -5,6 +5,11 @@
 #       expected_input: DICOM, PAR/REC, tsv
 #       language: python, matlab, docker
 #       documentation: URL to documentation
+#       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
 #       comment:
 #       GUI: false
 #       updated: Date of last update either last release or substantial commit  
@@ -29,6 +34,9 @@
         Either raw MEG, EEG, or iEEG data for conversion,
         or a BIDS dataset for reading
       language: python
+#       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
       comment:
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
