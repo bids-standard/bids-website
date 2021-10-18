@@ -18,6 +18,7 @@
       data_types: MRI, EEG
       expected_input: DICOM, Nifti, Brain Vision
       language: python
+      documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
       comment:
       updated: 2021-08-18
 
@@ -46,12 +47,11 @@
     - name: FieldTrip - data2bids
       url: https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m
       data_types: EEG, MEG, iEEG, behavioral
-      expected_input:
+      expected_input: |
+        EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files, CTF, 
+        Presentation log file
       language: matlab
       documentation: https://www.fieldtriptoolbox.org/example/bids/
-      comment:
-        "<a href='https://www.fieldtriptoolbox.org/example/bids/'>See
-        examples</a> for different data types"
       updated: 2021-09-15
 
     - name: Biscuit
