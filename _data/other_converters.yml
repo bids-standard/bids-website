@@ -10,11 +10,20 @@
 #       updated: Date of last update either last release or substantial commit 
 
 - group:
-  name: Other converters
+  name: Miscellaneous
   comment:
-    Not BIDS converters but are common tools that have been used by other BIDS
+    Not exactly BIDS converters but are common tools that can used by other BIDS
     converters.
   members:
+
+    - name: convert-eprime
+      url: https://github.com/tsalo/convert-eprime
+      data_types: behavioral
+      expected_input: E-Prime log files
+      language: python
+      comment: Python functions to convert E-Prime files to csvs. Not currently being developed.
+      updated: 2020-05-18
+
     - name: DCM2NIIx
       url: https://github.com/neurolabusc/dcm2niix
       data_types: DICOM, PAR/REC

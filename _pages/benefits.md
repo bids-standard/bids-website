@@ -24,6 +24,10 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 
 {% include converters_table.html members=site.data.from_BIDS_converters %}
 
+{% include converters_table.html members=site.data.physio_converters %}
+
+{% include converters_table.html members=site.data.other_converters %}
+
 ## Quality Assessment
 
 - [MRIQC](http://mriqc.readthedocs.org/){:target="_blank"}

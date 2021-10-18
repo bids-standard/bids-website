@@ -14,7 +14,8 @@
   name: "'From BIDS' converters"
   comment:
     Converters that take a BIDS dataset as input to convert it into something
-    else.
+    else. Not mentioned here are the many softwares that can import a BIDS data
+    as data structure they are more familiar with.
   members:
     - name: BIDS2ISATab
       url: https://github.com/bids-standard/BIDS2ISATab

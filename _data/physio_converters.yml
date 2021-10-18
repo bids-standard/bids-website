@@ -1,0 +1,34 @@
+# template
+#     - name:
+#       url: URL to repo
+#       data_types: MRI, EEG, MEG, iEEG, events
+#       expected_input: DICOM, PAR/REC, tsv
+#       language: python, matlab, docker
+#       documentation: URL to documentation
+#       comment:
+#       GUI: false
+#       updated: Date of last update either last release or substantial commit 
+
+- group:
+  name: Physiological data converters
+  comment:
+
+  members:
+  - name: BIDScoin
+    url: https://github.com/Donders-Institute/bidscoin
+    data_types: MRI, phsyiological, behavioral, PET
+    expected_input: DICOM, PAR/REC, physiological, PET
+    language: python
+    documentation: https://bidscoin.readthedocs.io/en/stable/
+    comment: BIDScoin converts your source-level neuroimaging data to BIDS
+    updated: 2021-09-29
+    GUI: yes
+
+  - name: phys2bids
+    url: https://github.com/physiopy/phys2bids
+    data_types: phsyiological
+    expected_input: Acqknowledge, Labchart
+    language: python
+    documentation: https://phys2bids.readthedocs.io/en/latest/
+    comment: Python3 library to format physiological files in BIDS. 
+    updated: 2021-06-18

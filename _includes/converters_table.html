@@ -1,11 +1,19 @@
 <style>
+  section {
+    width: 130%;
+    margin-left: -30%;
+  }
   table {
-    font-size: 14px;
+    font-size: 100%;
   }
   th,
   td {
     text-align: center;
     vertical-align: middle;
+  }
+  .comment {
+    text-align: justify;
+    font-size: 90%;
   }
 </style>
 
@@ -42,7 +50,7 @@
         <a href="{{ converter.documentation }} " target="_blank">doc</a>
         {% endif %}
       </td>
-      <td>{{ converter.comment }}</td>
+      <td class="comment">{{ converter.comment }}</td>
       <!--Displaying only the year of the latest update as the _data dates are only manually updated at this point.-->
       <td>{{ converter.updated | date: "%Y" }}</td>
     </tr>
