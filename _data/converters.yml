@@ -112,6 +112,7 @@
       url: https://github.com/nbeliy/bidsme
       data_types: MRI, EEG
       expected_input: DICOM, Nifti, Brain Vision
+      documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
       language: python
       comment:
       updated: 2021-08-18
@@ -166,3 +167,28 @@
       documentation: https://github.com/wulms/BiDirect_BIDS_Converter/wiki/Tutorial
       updated: 2021-07-25
       GUI: false
+
+    - name: BIDS-converter
+      url: https://github.com/openneuropet/BIDS-converter
+      comment: |
+        Helps you convert your PET data! raw PET scanner files (e.g. ecat, dicom) 
+        and additional side file like .e.g excel sheets.
+      data_types: PET
+      expected_input: DICOM, ECAT
+      language: matlab, python
+      updated: 2021-10-16
+      GUI: false
+
+    - name: Explore ASL
+      url: https://github.com/ExploreASL/ExploreASL
+      comment: |
+        Convert DICOM and NIFTI data to the ASL-BIDS format.
+      data_types: ASL
+      expected_input: DICOM, Nifti
+      documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
+      language: matlab
+      updated: 2021-09-13
+      GUI: 
+
+      
+
