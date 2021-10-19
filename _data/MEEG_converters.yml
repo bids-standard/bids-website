@@ -54,10 +54,9 @@
 
     - name: FieldTrip - data2bids
       url: https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m
-      data_types: EEG, MEG, iEEG, behavioral
+      data_types: EEG, MEG, iEEG, behavioral, MRI (anat and func)
       expected_input: |
-        EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files, CTF, 
-        Presentation log file
+        any EEG or MEG file format, NBS Presentation logfiles, DICOM, nifti
       language: MATLAB
       documentation: https://www.fieldtriptoolbox.org/example/bids/
       updated: 2021-09-15
