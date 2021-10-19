@@ -9,10 +9,11 @@
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: python, matlab, docker
+#       language: Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
+
 
 - group:
   name: MRI and PET converters
@@ -21,7 +22,7 @@
       url: https://github.com/NILAB-UvA/bidsify
       data_types: MRI
       expected_input: DICOM, PAR/REC
-      language: python, docker
+      language: Python, docker
       comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
       updated: 2019-01-23
       #       distribution:
@@ -34,7 +35,7 @@
       url: https://github.com/jmtyszka/bidskit
       data_types: MRI
       expected_input: DICOM
-      language: python, docker
+      language: Python, docker
       comment:
         Utility functions for working with DICOM and BIDS neuroimaging data.
       documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
@@ -49,7 +50,7 @@
       url: https://github.com/SIMEXP/Data2Bids
       data_types: MRI
       expected_input: not DICOM
-      language: python, docker
+      language: Python, docker
       comment:
         converts MRI files from extension supported by nibabel into NIfTI and
         convert them to BIDS
@@ -64,7 +65,7 @@
       url: https://github.com/cbedetti/Dcm2Bids
       data_types: MRI
       expected_input: DICOM
-      language: python, docker
+      language: Python, docker
       comment: converts DICOM files using dcm2niix into BIDS
       documentation: https://unfmontreal.github.io/Dcm2Bids/
       updated: 2021-02-27
@@ -78,7 +79,7 @@
       url: https://github.com/nipy/heudiconv
       data_types: MRI
       expected_input: DICOM
-      language: python
+      language: Python
       distribution:
         - name: dockerhub
           url: https://hub.docker.com/r/nipy/heudiconv/tags/
@@ -100,7 +101,7 @@
       url: https://github.com/ReproNim/reproin
       data_types: MRI
       expected_input:
-      language: python, docker
+      language: Python, docker
       comment:
         "HeuDiConv-based turnkey solution: a setup for automatic generation of
         shareable, version-controlled BIDS datasets from MR scanners."
@@ -134,7 +135,7 @@
       url: https://github.com/Donders-Institute/bidscoin
       data_types: MRI, phsyiological, behavioral, PET
       expected_input: DICOM, PAR/REC, physiological, PET
-      language: python
+      language: Python
       distribution:
           - name: pypi
             url: https://pypi.org/project/bidscoin
@@ -148,7 +149,7 @@
       data_types: MRI, EEG
       expected_input: DICOM, Nifti, Brain Vision
       documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
-      language: python
+      language: Python
       comment:
       updated: 2021-08-18
 
@@ -156,7 +157,7 @@
       url: https://brkraw.github.io/docs/gs_bids.html
       data_types: MRI
       expected_input: Bruker MRI scanner data
-      language: python
+      language: Python
       GUI: yes
       comment: For a preclinical Bruker MRI scanner
       updated: 2021-08-24
@@ -165,7 +166,7 @@
       url: https://github.com/aramis-lab/clinica/
       data_types:
       expected_input: data from ADNI, AIBL, NIFD, OASIS, OASIS-3
-      language: python
+      language: Python
       comment:
       updated: 2021-09-30
       documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
@@ -174,7 +175,7 @@
       url: https://github.com/dangom/dac2bids
       data_types: MRI
       expected_input: DICOM
-      language: python
+      language: Python
       comment: Create a BIDS structure for a DICOM folder.
       updated: 2017-11-16
 
@@ -208,7 +209,7 @@
         and additional side file like .e.g excel sheets.
       data_types: PET
       expected_input: DICOM, ECAT
-      language: matlab, python
+      language: MATLAB, Python
       updated: 2021-10-16
       GUI: false
 
@@ -219,6 +220,6 @@
       data_types: ASL
       expected_input: DICOM, Nifti
       documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
-      language: matlab
+      language: MATLAB
       updated: 2021-09-13
       GUI:

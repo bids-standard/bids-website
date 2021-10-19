@@ -3,7 +3,7 @@
 #       url: URL to repo
 #       data_types: MRI, EEG, MEG, iEEG, events
 #       expected_input: DICOM, PAR/REC, tsv
-#       language: python, matlab, docker
+#       language: Python, MATLAB, docker
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
@@ -20,7 +20,7 @@
       url: https://github.com/tsalo/convert-eprime
       data_types: behavioral
       expected_input: E-Prime log files
-      language: python
+      language: Python
       comment: Python functions to convert E-Prime files to csvs. Not currently being developed.
       updated: 2020-05-18
 
@@ -38,6 +38,6 @@
       url: https://github.com/xiangruili/dicm2nii
       data_types: DICOM
       expected_input: DICOM
-      language: Matlab
+      language: MATLAB
       comment: "dcm2nii DICOM to NIfTI converter"
       updated: 2021-09-24

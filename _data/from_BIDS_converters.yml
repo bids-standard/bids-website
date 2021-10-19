@@ -3,7 +3,7 @@
 #       url: URL to repo
 #       data_types: MRI, EEG, MEG, iEEG, events
 #       expected_input: DICOM, PAR/REC, tsv
-#       language: python, matlab, docker
+#       language: Python, MATLAB, docker
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
@@ -21,7 +21,7 @@
       url: https://github.com/bids-standard/BIDS2ISATab
       data_types:
       expected_input: BIDS
-      language: python
+      language: Python
       comment: Extract ISA-Tab compatible metadata from BIDS
       updated: 2016-10-08
 
@@ -29,7 +29,7 @@
       url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
       data_types: TSV
       expected_input: BIDS
-      language: shell, python
+      language: shell, Python
       comment:
         Reads BidsTSV and then creates 3 column event files, one per event type
         if a "trial_type" column is found.
@@ -39,7 +39,7 @@
       url: https://github.com/bids-standard/BIDS2NDA
       data_types:
       expected_input: BIDS
-      language: python
+      language: Python
       comment: Extract NIHM Data Archive compatible metadata from BIDS
       updated: 2020-10-03
 
@@ -47,7 +47,7 @@
       url: https://github.com/lwallace23/bids2xar
       data_types: MRI # not sure
       expected_input: BIDS
-      language: python
+      language: Python
       comment: Convert BIDS data set into XNAT XAR bundles
       updated: 2017-09-01
 
@@ -55,7 +55,7 @@
       url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
       data_types:
       expected_input: BIDS
-      language: python
+      language: Python
       comment:
         This program will convert a NIDM-Experiment RDF document to a BIDS
         dataset.
@@ -65,7 +65,7 @@
       url: "https://github.com/nih-fmrif/BIDS-tools"
       data_types: MRI
       expected_input: BIDS # not sure about that one
-      language: shell, python
+      language: shell, Python
       comment:
         ARCHIVED - Scripts, tools, and documents on creating, parsing, and
         working with BIDS-structured data sets.

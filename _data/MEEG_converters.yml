@@ -3,7 +3,7 @@
 #       url: URL to repo
 #       data_types: MRI, EEG, MEG, iEEG, events
 #       expected_input: DICOM, PAR/REC, tsv
-#       language: python, matlab, docker
+#       language: Python, MATLAB, docker
 #       documentation: URL to documentation
 #       distribution:
 #           - name: pypi
@@ -22,7 +22,7 @@
       url: https://github.com/nbeliy/bidsme
       data_types: MRI, EEG
       expected_input: DICOM, Nifti, Brain Vision
-      language: python
+      language: Python
       documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
       comment:
       updated: 2021-08-18
@@ -33,7 +33,7 @@
       expected_input:
         Either raw MEG, EEG, or iEEG data for conversion,
         or a BIDS dataset for reading
-      language: python
+      language: Python
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
@@ -46,9 +46,9 @@
       url: https://sccn.ucsd.edu/eeglab/index.php
       data_types: MEG, EEG
       expected_input: EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files
-      language: matlab
+      language: MATLAB
       comment:
-        "<a href='https://github.com/arnodelorme/bids-matlab-tools'>See
+        "<a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See
         plugins</a>"
       updated: 2021-09-29
 
@@ -58,7 +58,7 @@
       expected_input: |
         EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files, CTF, 
         Presentation log file
-      language: matlab
+      language: MATLAB
       documentation: https://www.fieldtriptoolbox.org/example/bids/
       updated: 2021-09-15
 
@@ -66,7 +66,7 @@
       url: https://github.com/Macquarie-MEG-Research/Biscuit
       data_types: MEG
       expected_input:
-      language: python
+      language: Python
       documentation: https://macquarie-meg-research.github.io/Biscuit/
       comment: GUI for easy MEG to BIDS conversion
       GUI: true
@@ -76,9 +76,9 @@
       url: https://github.com/yjmantilla/sovabids
       data_types: EEG
       expected_input:
-      language: python
+      language: Python
       documentation: https://sovabids.readthedocs.io/en/latest/
       comment:
-        A python package for the automatic conversion of EEG datasets to the
+        A Python package for the automatic conversion of EEG datasets to the
         BIDS standard, with a focus on making the most out of metadata.
       updated: 2021-08-23
