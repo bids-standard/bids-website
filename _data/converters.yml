@@ -2,7 +2,7 @@
 #     - name:
 #       url: URL to repo
 #       updated: Date of last update either last release or substantial commit
-#       data_types: MRI, EEG, MEG, iEEG, events
+#       data_types: MRI, EEG, MEG, iEEG, events, physio
 #       expected_input: DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi

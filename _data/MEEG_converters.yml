@@ -1,18 +1,18 @@
 # template
 #     - name:
 #       url: URL to repo
-#       data_types: MRI, EEG, MEG, iEEG, events
+#       updated: Date of last update either last release or substantial commit
+#       data_types: EEG, MEG, iEEG, events
 #       expected_input: DICOM, PAR/REC, tsv
-#       language: Python, MATLAB, docker
-#       documentation: URL to documentation
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
+#       language: Python, MATLAB
+#       documentation: URL to documentation
 #       comment:
 #       GUI: false
-#       updated: Date of last update either last release or substantial commit  
 
 
 - group:
