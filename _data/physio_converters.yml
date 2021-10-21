@@ -37,9 +37,9 @@
     data_types: phsyiological
     expected_input: Acqknowledge, Labchart
     language: Python
-#       distribution:
-#           - name: pypi
-#             url: https://pypi.org/project/???
+    distribution:
+        - name: pypi
+          url: https://pypi.org/project/phys2bids
     documentation: https://phys2bids.readthedocs.io/en/latest/
     comment: Python3 library to format physiological files in BIDS. 
     updated: 2021-06-18

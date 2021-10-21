@@ -61,13 +61,13 @@
       data_types:
       expected_input: BIDS
       language: Python
-      comment:
+      comment: |
         This program will convert a NIDM-Experiment RDF document to a BIDS
         dataset.
       updated: 2021-09-16
 
     - name: AFNI BIDS-tools
-      url: "https://github.com/nih-fmrif/BIDS-tools"
+      url: https://github.com/nih-fmrif/BIDS-tools
       data_types: MRI
       expected_input: BIDS # not sure about that one
       language: shell, Python

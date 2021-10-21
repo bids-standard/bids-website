@@ -34,9 +34,9 @@
         Either raw MEG, EEG, or iEEG data for conversion,
         or a BIDS dataset for reading
       language: Python
-#       distribution:
-#           - name: pypi
-#             url: https://pypi.org/project/???
+      distribution:
+          - name: pypi
+            url: https://pypi.org/project/mne-bids
       comment:
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
