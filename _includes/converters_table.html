@@ -1,36 +1,11 @@
-<style>
-  section {
-    width: 140%;
-    margin-left: -40%;
-  }
-  table {
-    font-size: 100%;
-  }
-  table ul {
-    padding-left: 15%;
-  }
-  th,
-  td {
-    text-align: center;
-    vertical-align: middle;
-  }
-  .distribution {
-    text-align: justify;
-  }
-  .comment {
-    text-align: justify;
-    font-size: 90%;
-  }
-</style>
-
-<section>
+<section class="converters">
   {% for group in include.members %}
 
-  <h3 style="padding: 1rem">{{ group.name }}</h3>
+  <h3>{{ group.name }}</h3>
 
   <p>{{ group.comment }}</p>
 
-  <table style="width: 120%; margin-right: 0%; margin-left: 0%">
+  <table>
     <tr>
       <th>Name</th>
       <th>Data type</th>
@@ -51,7 +26,7 @@
       <td>{{ converter.data_types }}</td>
       <td>{{ converter.expected_input }}</td>
       <td>{{ converter.language }}</td>
-      <td class="comment">
+      <td class="distribution">
         <ul>
           {% for entry in converter.distribution %}
           <li>
