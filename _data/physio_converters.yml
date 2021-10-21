@@ -31,6 +31,7 @@
     comment: BIDScoin converts your source-level neuroimaging data to BIDS
     updated: 2021-09-29
     GUI: yes
+    license: GPL-3
 
   - name: phys2bids
     url: https://github.com/physiopy/phys2bids
@@ -43,3 +44,5 @@
     documentation: https://phys2bids.readthedocs.io/en/latest/
     comment: Python3 library to format physiological files in BIDS. 
     updated: 2021-06-18
+    license: Apache-2.0
+

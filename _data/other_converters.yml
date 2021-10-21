@@ -20,14 +20,16 @@
     Not exactly BIDS converters but are common tools that can used by other BIDS
     converters.
   members:
-
     - name: convert-eprime
       url: https://github.com/tsalo/convert-eprime
       data_types: behavioral
       expected_input: E-Prime log files
       language: Python
-      comment: Python functions to convert E-Prime files to csvs. Not currently being developed.
+      comment:
+        Python functions to convert E-Prime files to csvs. Not currently being
+        developed.
       updated: 2020-05-18
+      license: MIT
 
     - name: DCM2NIIx
       url: https://github.com/neurolabusc/dcm2niix
@@ -46,3 +48,4 @@
       language: MATLAB
       comment: "dcm2nii DICOM to NIfTI converter"
       updated: 2021-09-24
+      license: BSD-2

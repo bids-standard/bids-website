@@ -29,6 +29,7 @@
       language: Python
       comment: Extract ISA-Tab compatible metadata from BIDS
       updated: 2016-10-08
+      icense: Apache-2.0      
 
     - name: BIDSto3col
       url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
@@ -47,6 +48,7 @@
       language: Python
       comment: Extract NIHM Data Archive compatible metadata from BIDS
       updated: 2020-10-03
+      license: Apache-2.0      
 
     - name: bids2xar - for XNAT import
       url: https://github.com/lwallace23/bids2xar

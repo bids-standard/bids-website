@@ -26,6 +26,7 @@
       documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
       comment:
       updated: 2021-08-18
+      license: GPL-2.0
 
     - name: MNE-BIDS
       url: https://mne.tools/mne-bids/
@@ -41,6 +42,7 @@
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
       updated: 2021-09-18
+      license: BSD-3.0      
 
     - name: EEGLAB
       url: https://sccn.ucsd.edu/eeglab/index.php
@@ -60,6 +62,8 @@
       language: MATLAB
       documentation: https://www.fieldtriptoolbox.org/example/bids/
       updated: 2021-09-15
+      license: GPL-3.0      
+      
 
     - name: Biscuit
       url: https://github.com/Macquarie-MEG-Research/Biscuit
@@ -70,6 +74,7 @@
       comment: GUI for easy MEG to BIDS conversion
       GUI: true
       updated: 2019-02-27
+      license: MIT      
 
     - name: sovabids
       url: https://github.com/yjmantilla/sovabids

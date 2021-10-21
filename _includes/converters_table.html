@@ -12,9 +12,10 @@
       <th>Expected input</th>
       <th>Language</th>
       <th>Distribution</th>
-      <th>Graphic interface</th>
+      <th>GUI</th>
       <th>Documentation</th>
       <th>Comment</th>
+      <th>License</th>
       <th>Updated</th>
     </tr>
 
@@ -43,6 +44,7 @@
       </td>
       <td class="comment">{{ converter.comment }}</td>
       <!--Displaying only the year of the latest update as the _data dates are only manually updated at this point.-->
+      <td>{{ converter.license }}</td>
       <td>{{ converter.updated | date: "%Y" }}</td>
     </tr>
     {% endfor %}
