@@ -18,36 +18,15 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 
 ## Converters
 
-- [AFNI BIDS-tools](https://github.com/nih-fmrif/BIDS-tools){:target="_blank"}
-- [BIDS2ISATab](https://github.com/bids-standard/BIDS2ISATab){:target="_blank"}
-- [BIDSto3col](https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col){:target="_blank"}
-- [BIDS2NDA](https://github.com/bids-standard/BIDS2NDA){:target="_blank"}
-- [bidsify](https://github.com/NILAB-UvA/bidsify){:target="_blank"}
-- [bidskit](https://github.com/jmtyszka/bidskit){:target="_blank"}
-- [Data2Bids](https://github.com/SIMEXP/Data2Bids){:target="_blank"}
-- [Dcm2Bids](https://github.com/cbedetti/Dcm2Bids){:target="_blank"}
-- [DCM2NIIx](https://github.com/neurolabusc/dcm2niix){:target="_blank"}
-- [DICM2NII](https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer){:target="_blank"}
-- [HeuDiConv](https://github.com/nipy/heudiconv){:target="_blank"}
-- [OpenfMRI2BIDS](https://github.com/bids-standard/openfmri2bids){:target="_blank"}
-- [ReproIn](https://github.com/ReproNim/reproin) (HeuDiConv-based turnkey solution){:target="_blank"}
-- [bids2xar](https://github.com/lwallace23/bids2xar){:target="_blank"} (for XNAT import)
-- [XNAT2BIDS](https://github.com/kamillipi/2bids){:target="_blank"}
-- [Horos (Osirix) export plugin](https://github.com/mslw/horos-bids-output){:target="_blank"}
-- [BIDS2NIDM](https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py){:target="_blank"}
-- [BIDScoin](https://github.com/Donders-Institute/bidscoin){:target="_blank"}
-- [MNE-BIDS](http://mne-tools.github.io/mne-bids/){:target="_blank"} (MEG/EEG/iEEG)
-- [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php){:target="_blank"} with [plugin](https://github.com/arnodelorme/bids-matlab-tools){:target="_blank"} (MEG/EEG analysis package)
-- FieldTrip [data2bids](https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m){:target="_blank"} with [examples](https://www.fieldtriptoolbox.org/example/bids/){:target="_blank"} for different data types
-- [BrkRaw](https://brkraw.github.io/docs/gs_bids.html){:target="_blank"} (for a preclinical Bruker MRI scanner)
-- [Clinica](https://aramislab.paris.inria.fr/clinica/docs/public/latest/){:target="_blank"}
+{% include converters_table.html members=site.data.converters %}
 
-## Institution specific data management/conversion tools
+{% include converters_table.html members=site.data.MEEG_converters %}
 
-- [dac2bids](https://github.com/dangom/dac2bids){:target="_blank"}
-- [Autobids](https://github.com/khanlab/autobids){:target="_blank"} from the Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute
-- [Biscuit](https://github.com/Macquarie-MEG-Research/Biscuit){:target="_blank"}
-- [BiDirect_BIDS_Converter](https://github.com/wulms/BiDirect_BIDS_Converter){:target="_blank"} from the Institute of epidemiology and social medicine, University of Münster
+{% include converters_table.html members=site.data.from_BIDS_converters %}
+
+{% include converters_table.html members=site.data.physio_converters %}
+
+{% include converters_table.html members=site.data.other_converters %}
 
 ## Quality Assessment
 

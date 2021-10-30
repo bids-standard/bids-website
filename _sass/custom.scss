@@ -1,6 +1,42 @@
 /**
  * The following are modifications to the initial Cayman theme
- */
+**/
+
+.converters{
+
+  width: 140%;
+  margin-left: -40%;
+
+  h3 {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 100%;
+    width: 120%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+  th,
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .distribution {
+    text-align: justify;
+    ul {
+      padding-left: 15%;
+    }
+  }
+  
+  .comment {
+    text-align: justify;
+    font-size: 90%;
+  }
+
+}
 
 .center-image {
   margin: 0 auto;
