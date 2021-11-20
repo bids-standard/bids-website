@@ -12,7 +12,7 @@ Date: Thursday October 22, 2020
 
 ### Executive Summary
 
-We began the meeting by converging on the plan for merging in the [PET BEP](https://github.com/bids-standard/bids-specification/pull/633){:target="_blank"}. We touched upon the [recognizing credit on manuscripts](https://github.com/bids-standard/bids-specification/issues/627){:target="_blank"} conversation. This will be returned to next meeting. 
+We began the meeting by converging on the plan for merging in the [PET BEP](https://github.com/bids-standard/bids-specification/pull/633){:target="_blank"}. We touched upon the [recognizing credit on manuscripts](https://github.com/bids-standard/bids-specification/issues/627){:target="_blank"} conversation. This will be returned to next meeting.
 
 The majority of the meeting we were joined by Jon Cohen and Tal Yarkoni of the Model Description Framework project. The Model Description Framework seeks to develop a common modeling format to describe a computational model. The goal is to enhance the reproducibility and disseminability of computational models. This will also improve the accessibility to more complex and sophisticated models.
 
@@ -32,19 +32,19 @@ The majority of the meeting we were joined by Jon Cohen and Tal Yarkoni of the M
   - Corporate authorship?
 
 We were joined by Jon Cohen and Tal Yarkoni to discuss their Model Description Framework project
-- Primarily focused computational models 
+- Primarily focused computational models
 - The idea is to have a common format to describe a model
-- Enhance reproducibility and disseminability 
+- Enhance reproducibility and disseminability
 - Models could be represented at json objects
 - MDF team will be interested to survey the BIDS community (in the future)
 - Wants to provide access to more complex and sophisticated models
 - Utilize open data with open models -> Reproducibility
 - No domain specificity - driven by use cases
-- Reaching out to clinicians 
+- Reaching out to clinicians
   - Computational psychiatry
   - Basic sciences -> Clinical sciences mapping
-- Experiment standardization 
-  - Mapping the imaging context with the modeling parameters 
+- Experiment standardization
+  - Mapping the imaging context with the modeling parameters
   - Perhaps a BEP can address
 
 

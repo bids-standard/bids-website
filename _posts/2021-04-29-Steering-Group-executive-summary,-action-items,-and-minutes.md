@@ -12,7 +12,7 @@ Date: Thursday, April 29, 2021
 
 ### Executive Summary
 
-The Steering Group began the meeting by discussing a new potential BEP and meeting with BEP lead to learn more. We covered how BIDS suggested authorship can look like and how to convey this information to BEP leads. The monthly Maintainers report could be transformed to convey more information to the BIDS community through the [bids-discussion list](https://groups.google.com/g/bids-discussion){:target="_blank"}. The website is under development with passes currently ongoing to enhance. In the future, we could reach out to imaging acquisition companies to further adopt BIDS in their systems. 
+The Steering Group began the meeting by discussing a new potential BEP and meeting with BEP lead to learn more. We covered how BIDS suggested authorship can look like and how to convey this information to BEP leads. The monthly Maintainers report could be transformed to convey more information to the BIDS community through the [bids-discussion list](https://groups.google.com/g/bids-discussion){:target="_blank"}. The website is under development with passes currently ongoing to enhance. In the future, we could reach out to imaging acquisition companies to further adopt BIDS in their systems.
 
 ### Action items
 
@@ -23,8 +23,8 @@ The Steering Group began the meeting by discussing a new potential BEP and meeti
 
 ### Minutes
 
-- [PET-BIDS released](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/09-positron-emission-tomography.html){:target="_blank"}! 
-- [DWI preprint](https://arxiv.org/abs/2103.14485?context=eess.IV){:target="_blank"} 
+- [PET-BIDS released](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/09-positron-emission-tomography.html){:target="_blank"}!
+- [DWI preprint](https://arxiv.org/abs/2103.14485?context=eess.IV){:target="_blank"}
   - Very modality dependent
   - Wait and see
 - BIDS authorship
@@ -35,7 +35,7 @@ The Steering Group began the meeting by discussing a new potential BEP and meeti
   - Important components: what are we working on and the obstacles we are facing
   - Reports are informative
   - Active discussions could be shared on the bids-discussion list
-  - Monthly basis 
+  - Monthly basis
 - BIDS website
   - Contribution ability for the platform affects decision?
     - Should be on GitHub because we are a community project

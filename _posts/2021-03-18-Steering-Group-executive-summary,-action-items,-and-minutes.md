@@ -12,7 +12,7 @@ Date: Thursday March 18, 2021
 
 ### Executive Summary
 
-The Steering Group spent the first part of this meeting discussing project sustainability. Then, we discussed our plans for OHBM. We’ll hold another Town Hall and use OHBM to broadcast our Steering Group election taking place in the Fall. 
+The Steering Group spent the first part of this meeting discussing project sustainability. Then, we discussed our plans for OHBM. We’ll hold another Town Hall and use OHBM to broadcast our Steering Group election taking place in the Fall.
 
 ### Action items
 
@@ -21,7 +21,7 @@ N/A
 ### Minutes
 
 - PET validator extension is nearing completion
-- Project sustainability 
+- Project sustainability
 - Potential Maintainer’s Group enhancement
   - BEP representative that liaisons with the Maintainers
 - Use OHBM to do a callout for the next Steering Group member

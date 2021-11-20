@@ -12,7 +12,7 @@ Date: Thursday August 10, 2020
 
 ### Executive Summary
 
-We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/){:target="_blank"}, from the [NIDM](http://nidm.nidash.org/){:target="_blank"} and [ReproNim](https://www.repronim.org/){:target="_blank"} groups. We learned more about their NIDM project and specific subprojects using BIDS. One such project is [NIDM-terms](https://github.com/incf-nidash/nidm-terms){:target="_blank"}. This project seeks to capture our BIDS terminology and devise a way to make it easier to manage them and query datasets based on those terms. One use case can be utilizing this collection as a resource for BEPs to interact with as they are discussing new terms to add to the specification. This can also be helpful to users wanting to learn more about our BIDS terms present in the specification. Another beneficial aspect of this project is the ability to annotate datasets. 
+We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/){:target="_blank"}, from the [NIDM](http://nidm.nidash.org/){:target="_blank"} and [ReproNim](https://www.repronim.org/){:target="_blank"} groups. We learned more about their NIDM project and specific subprojects using BIDS. One such project is [NIDM-terms](https://github.com/incf-nidash/nidm-terms){:target="_blank"}. This project seeks to capture our BIDS terminology and devise a way to make it easier to manage them and query datasets based on those terms. One use case can be utilizing this collection as a resource for BEPs to interact with as they are discussing new terms to add to the specification. This can also be helpful to users wanting to learn more about our BIDS terms present in the specification. Another beneficial aspect of this project is the ability to annotate datasets.
 
 ### Action items
 
@@ -22,7 +22,7 @@ We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people
 
 ### Minutes
 
-We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/){:target="_blank"}, to discuss the [NIDM](http://nidm.nidash.org/){:target="_blank"} and [ReproNim](https://www.repronim.org/){:target="_blank"} initiatives. 
+We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/){:target="_blank"}, to discuss the [NIDM](http://nidm.nidash.org/){:target="_blank"} and [ReproNim](https://www.repronim.org/){:target="_blank"} initiatives.
 - [NIDM-terms](https://github.com/incf-nidash/nidm-terms){:target="_blank"} is a community-driven ontology
 - `isAbout` field used quite a bit
 - Extracting terms from the BIDS-Specification and created jsonld representation
