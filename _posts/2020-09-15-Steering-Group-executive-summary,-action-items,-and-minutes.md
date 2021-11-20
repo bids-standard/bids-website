@@ -12,7 +12,7 @@ Date: Tuesday September 15, 2020
 
 ### Executive Summary
 
-We discussed the progress of a few different BEPs. It has been seen that guiding specification development by examples is quite beneficial. We talked through our process for getting a BEP merged into the standard. 
+We discussed the progress of a few different BEPs. It has been seen that guiding specification development by examples is quite beneficial. We talked through our process for getting a BEP merged into the standard.
 
 ### Action items
 

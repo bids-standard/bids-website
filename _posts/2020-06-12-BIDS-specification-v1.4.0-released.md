@@ -6,13 +6,13 @@ display: true
 
 # BIDS-Specification v1.4.0 released
 
-The BIDS community is proud to announce the release of BIDS v1.4.0. BIDS now supports the  common principles for describing derivative datasets. 
+The BIDS community is proud to announce the release of BIDS v1.4.0. BIDS now supports the  common principles for describing derivative datasets.
 
-Derivatives are the outputs of preprocessing pipelines, capturing data and meta-data sufficient for a researcher to understand and (critically) reuse those outputs in subsequent pipelines. 
+Derivatives are the outputs of preprocessing pipelines, capturing data and meta-data sufficient for a researcher to understand and (critically) reuse those outputs in subsequent pipelines.
 
 <!--more-->
 
-Common principles for derivative datasets: 
+Common principles for derivative datasets:
 
 - Derivative datasets describe the contents of the dataset, the methods by which it was generated, and the original dataset(s) that were used to generate it. This metadata is mandatory at the dataset level and optional at the file level.
 - Derivative files must be distinguishable from raw files. A generic description (desc-) entity allows this if no other entity applies.
@@ -32,6 +32,6 @@ In July 2018, [a survey](http://reproducibility.stanford.edu/bids-processed-data
 
 In July 2019, a [“Common Derivatives” proposal](https://github.com/bids-standard/bids-specification/pull/265){:target="_blank"} was re-introduced establishing more general principles, to be followed by subsequent modality-specific and non-imaging proposals. Common Derivatives entered final review in May 2020 and were released as part of BIDS 1.4.0 in June 2020.
 
-Releasing the common principles for derivative datasets will enable further progress into our modality specific derivative initiatives such as, [electopsychological](https://github.com/bids-standard/bep021){:target="_blank"}, PET, and [diffusion MRI](https://github.com/bids-standard/bids-bep016){:target="_blank"}. Our immediate attention will shift to focus on specifying anatomical and functional derivatives (Look out for the pull requests soon!). [BEP 028 (provenance)](https://github.com/bids-standard/bids-specification/pull/487){:target="_blank"} is a closely related effort that we hope to see progress quickly as well! 
+Releasing the common principles for derivative datasets will enable further progress into our modality specific derivative initiatives such as, [electopsychological](https://github.com/bids-standard/bep021){:target="_blank"}, PET, and [diffusion MRI](https://github.com/bids-standard/bids-bep016){:target="_blank"}. Our immediate attention will shift to focus on specifying anatomical and functional derivatives (Look out for the pull requests soon!). [BEP 028 (provenance)](https://github.com/bids-standard/bids-specification/pull/487){:target="_blank"} is a closely related effort that we hope to see progress quickly as well!
 
 We would like to thank our incredible community of contributors and members that helped push this extension over the finish line!

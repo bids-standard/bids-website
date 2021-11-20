@@ -17,7 +17,7 @@ This platform will live alongside our other official communication channels:
 -  NeuroStars (forum for support questions)
 -  mailing list (announcements)
 -  Twitter (community news)
--  and GitHub repositories (bug reports + feature requests). 
+-  and GitHub repositories (bug reports + feature requests).
 
 We have listed below our current set of BIDS channels. We will be establishing several BIDS channels related to: BEP development, community discussions, and more! Check it out and create your own channel! Please be sure the channel name contains `bids` in the title to increase findability.
 
@@ -25,7 +25,12 @@ We have listed below our current set of BIDS channels. We will be establishing s
 
 To find our `BIDS` channels, please navigate to Mattermost and click `More...` at the bottom of the `PUBLIC CHANNELS` section. A prompt will pop up enabling you to search for our `BIDS` related channels. If you have any issues, please message Franklin on Mattermost: `@franklin_`.
 
-The [BrainHack project](https://www.brainhack.org/){:target:"_blank"} seeks to bridge the neuroscience and data science communities through hackathons and unconferences. To do this, they convene unique conferences comprised of researchers from around the world with diverse backgrounds and interests to develop our next generation of open source software for neuroscience. These workshops consist of educational activities, along with plenty of development time. If you are interested in learning more please visit [their website](https://www.brainhack.org/){:target:"_blank"}, check out [their paper](https://academic-oup-com.stanford.idm.oclc.org/gigascience/article/5/1/s13742-016-0121-x/2720978){:target:"_blank"}, and take a look at a [step by step guide](https://thewinnower.com/papers/5577-a-step-by-step-guide-for-organizing-open-collaborative-brainhack-events){:target:"_blank"} for organizing a BrainHack yourself. 
+The [BrainHack project](https://www.brainhack.org/){:target:"_blank"} seeks to bridge the neuroscience and data science communities through hackathons and unconferences.
+To do this, they convene unique conferences comprised of researchers from around the world with diverse backgrounds and interests to develop our next generation of open source software for neuroscience.
+These workshops consist of educational activities, along with plenty of development time.
+If you are interested in learning more please visit [their website](https://www.brainhack.org/){:target:"_blank"},
+check out [their paper](https://academic-oup-com.stanford.idm.oclc.org/gigascience/article/5/1/s13742-016-0121-x/2720978){:target:"_blank"},
+and take a look at a [step by step guide](https://winnower-production.s3.amazonaws.com/papers/5577/v1/pdf/5577-a-step-by-step-guide-for-organizing-open-collaborative-brainhack-events.pdf){:target:"_blank"} for organizing a BrainHack yourself.
 
 We look forward to seeing you on Mattermost!
 

@@ -47,14 +47,14 @@ The majority of this meeting we were joined by Melissa Kline of the [Psych-DS](h
   - While keeping Psych-DS flexible for the many different use cases
   - Do not have many keywords - this is not the purpose of Psych-DS
     - Prefer to point to existing ontologies
-- Want to give some sort of BIDS + Psych-DS compatible recommendations 
-- Looking for a volunteer to write validator 
+- Want to give some sort of BIDS + Psych-DS compatible recommendations
+- Looking for a volunteer to write validator
 - Psych-DS group is pushing toward v1.0.0
   - By design is to help simple graduate students (minimal technical experience)
 - Psych-DS needs to work in the common computing environment: R
   - Have a browser and command-line validator
 - Privacy is a high concern
-  - Psych-DS may share metadata 
+  - Psych-DS may share metadata
   - Could separate the metadata from the data
     - There is a use for metadata stores pointing to DUA’s for the data
   - Community is unsure of what they can and cannot share
