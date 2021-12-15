@@ -162,6 +162,10 @@ The current members of the Steering group are:
 
 {% include members_table.html members=site.data.steering %}
 
+Past members of the Steering group are:
+
+{% include members_table.html members=site.data.past_steering %}
+
 ### BEP Working Group
 
 A BEP Working Group is established for every BIDS Extension Proposal
