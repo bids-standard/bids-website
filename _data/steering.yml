@@ -19,5 +19,10 @@
       git: "robertoostenveld"
     - name: "Russell Poldrack"
       git: "poldrack"
+    - name: "Ariel Rokem"
+      git: "arokem"
+
+- group: past members
+  members:
     - name: "Kirstie Whitaker"
       git: "KirstieJane"

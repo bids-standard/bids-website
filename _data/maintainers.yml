@@ -24,4 +24,6 @@
     - name: "Ross Blair"
       git: "rwblair"
     - name: "Anthony Galassi"
-      git: "bendhouseart"      
+      git: "bendhouseart"
+    - name: "Eric Earl"
+      git: "ericearl"
