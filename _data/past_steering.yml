@@ -1,0 +1,15 @@
+# - group: maintainers
+#   members:
+#     - name:
+#       git:
+#       affiliation:
+#       twitter:
+#       researchgate:
+#       homepage:
+#       city:
+#       bio:
+
+- group: past_steering
+  members:
+    - name: "Kirstie Whitaker"
+      git: "KirstieJane"

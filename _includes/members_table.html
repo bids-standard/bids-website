@@ -1,25 +1,33 @@
 <section>
-  {% for group in include.members %}
 
-  <table>
-    <tr>
-      {% for person in group.members %}
-      <td style="text-align: center; vertical-align: middle">
-        <a href="https://github.com/{{ person.git }}">
-          <img
-            src="https://github.com/{{ person.git }}.png?size=100"
-            width="100px;"
-            alt=""
-          />
-          <br /><sub><b>{{ person.name }}</b></sub
-          ><br />
-        </a>
-      </td>
-      {% endfor %}
-    </tr>
-  </table>
+  <!-- See the tablerow liquid syntax for more info-->
+  <!-- https://shopify.github.io/liquid/tags/iteration/ -->
 
-  <br />
+  <div align="center">
 
-  {% endfor %}
+    {% for group in include.members %}
+
+      <table style="margin: 1rem">
+
+          {% tablerow person in group.members cols:4 %}
+          
+            <a href="https://github.com/{{ person.git }}">
+              <img
+                src="https://github.com/{{ person.git }}.png?size=150"
+                width="150px;"
+                alt="{{ person.name }}"
+              />
+              <br />
+              <sub><b>{{ person.name }}</b></sub>
+              <br />
+            </a>
+
+          {% endtablerow %}
+
+      </table>
+
+    {% endfor %}
+
+  </div>
+
 </section>
