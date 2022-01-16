@@ -40,7 +40,7 @@
       comment:
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
-      updated: 2021-09-18
+      updated: 2022-01-13
       license: BSD-3.0
 
     - name: EEGLAB
