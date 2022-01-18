@@ -213,7 +213,7 @@
     - name: BIDS-converter
       url: https://github.com/openneuropet/BIDS-converter
       comment: |
-        Helps you convert your PET data! raw PET scanner files (for example ecat, dicom) 
+        Helps you convert your PET data! raw PET scanner files (for example ecat, dicom)
         and additional side file like excel sheets.
       data_types: PET
       expected_input: DICOM, ECAT
@@ -231,3 +231,11 @@
       documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
       language: MATLAB
       updated: 2021-09-13
+
+    - name: SAMRI
+      url: https://github.com/IBT-FMI/SAMRI
+      updated: 2021-11-08
+      data_types: small-animal MRI
+      language: Python, shell
+      documentation: https://doi.org/10.3389/fninf.2020.00005
+      GUI: false
