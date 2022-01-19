@@ -234,8 +234,14 @@
 
     - name: SAMRI
       url: https://github.com/IBT-FMI/SAMRI
+      comment: |
+        Full stack Small Animal MRI data analysis package, including the `bru2bids`
+        repositing pipeline, which can convert Bruker archives to the BIDS format.
+        From the ETH and University of Zurich, with collaboration from MIT and
+        Dartmouth College.
       updated: 2021-11-08
       data_types: small-animal MRI
+      expected_input: Bruker ParaVision, NIfTI
       language: Python, shell
       documentation: https://doi.org/10.3389/fninf.2020.00005
       GUI: false
