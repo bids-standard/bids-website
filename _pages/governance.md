@@ -73,7 +73,7 @@ sharing and analysis. The project is multifaceted, and depends on
 contributors for: specification development and maintenance, [BIDS
 Extension Proposals
 (BEPs)](/get_involved), software tools, [starter
-kits](https://github.com/bids-standard/bids-starter-kit){:target="_blank"},
+kits](https://bids-standard.github.io/bids-starter-kit/){:target="_blank"},
 [examples](https://github.com/bids-standard/bids-examples){:target="_blank"}, and general
 discussions. The relevant discussions are located in our [Google
 Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, [GitHub
@@ -217,7 +217,7 @@ and that contributors are encouraged to update on the
 [specification wiki](https://github.com/bids-standard/bids-specification/wiki/Contributors){:target="_blank"}.
 Engagement can range from writing copy text in the specification
 to providing feedback on projects such as the
-[BIDS starter kit](https://github.com/bids-standard/bids-starter-kit){:target="_blank"}.
+[BIDS starter kit](https://bids-standard.github.io/bids-starter-kit/){:target="_blank"}.
 
 Members of the BIDS Contributors Group are encouraged to support the
 BIDS specification by supporting the members of the Maintainers Group in
@@ -448,7 +448,7 @@ repost an anonymised/general version of your question on
 
 There are several resources that can help a new user get started.
 We have a [starter kit GitHub
-repository](https://github.com/bids-standard/bids-starter-kit){:target="_blank"} that has
+repository](https://bids-standard.github.io/bids-starter-kit/){:target="_blank"} that has
 example BIDS file structures, wikis, and tutorials, and the [Stanford
 Center for Reproducible Neuroscience
 blog](http://reproducibility.stanford.edu/blog/){:target="_blank"} provides tutorials and
