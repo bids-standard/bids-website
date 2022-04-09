@@ -245,3 +245,16 @@
       language: Python, shell
       documentation: https://doi.org/10.3389/fninf.2020.00005
       GUI: false
+
+    - name: BIDSconvertR
+      url: https://github.com/wulms/bidsconvertr
+      comment: |
+        The goal of BIDSconvertR is to provide a workflow, which is able to:
+        (i) convert DICOM data to NIfTI data using dcm2niix
+        (ii) structure this data according to the BIDS specification
+        (iii) provide a data overview in a shareable html dashboard
+        (iv) provide the papayaWidget viewer for inspecting the images
+      updated: 2022-04-09
+      data_types: MRI
+      expected_input: DICOM
+      language: R
