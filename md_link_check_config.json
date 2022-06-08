@@ -4,6 +4,12 @@
         "pattern": "^https://github.com"
       },
       {
+        "pattern": "^https://docs.github.com/.*"
+      },
+      {
+        "pattern": "^https://guides.github.com/.*"
+      },
+      {
         "pattern": "^./"
       },
       {
