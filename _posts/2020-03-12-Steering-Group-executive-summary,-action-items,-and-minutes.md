@@ -21,9 +21,13 @@ We will be using the resulting list of communication channels to share the relea
 We discussed generating an example slide deck that community members can  use (or pick from) when they want to present BIDS.
 
 We discussed considerations for when to open a repository under the BIDS standard organization on GitHub.
-Previously, community members have opened repositories under the BIDS [GitHub organization](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations){:target="_blank"} named [`bids-standard`](https://github.com/bids-standard){:target="_blank"}.
+Previously, community members have opened repositories under the BIDS
+[GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations){:target="_blank"}
+named [`bids-standard`](https://github.com/bids-standard){:target="_blank"}.
 We want to codify guidelines to govern this.
-The plan is that there should be multiple people committed to the repository (otherwise it is better under the personal GitHub account), the maintainers should be clearly identifiable (e.g., as a [CODEOWNERS file](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#about-code-owners){:target="_blank"} at the top level), there should be a code of conduct in the repository that is consistent with that of the BIDS specification, and (as a consequence of the code of conduct) the repository should welcome contributions from others.
+The plan is that there should be multiple people committed to the repository (otherwise it is better under the personal GitHub account), the maintainers should be clearly identifiable (e.g., as a
+[CODEOWNERS file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#about-code-owners){:target="_blank"}
+at the top level), there should be a code of conduct in the repository that is consistent with that of the BIDS specification, and (as a consequence of the code of conduct) the repository should welcome contributions from others.
 
 We want to host another [Community Forum](https://bids.neuroimaging.io/2020/01/02/announcement-community-forum-events.html){:target="_blank"} (but not too frequent) and potentially a starter kit/demo in the Open Science Room at [OHBM](https://www.humanbrainmapping.org){:target="_blank"}.
 
