@@ -27,7 +27,7 @@ This was a joint meeting between the Steering and Maintainers Group. We began th
   - Releasing ASL and most of BEP001
 - Crediting:
   - Maintainership counts as "substantial contributions to the conception of the work" (one of [ICMJE](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html){:target="_blank"} criteria).
-  - Look at [https://casrai.org/credit/](https://casrai.org/credit/){:target="_blank"} for authorship roles
+  - Look at [https://credit.niso.org/](https://credit.niso.org/){:target="_blank"} for authorship roles
     - Roles that are applicable: data curation and software
     - Resources potentially too
   - Include recommended (but not required) text for including Steering/Maintainers as coauthors and description of roles. Requiring credit goes against open values of standard.
@@ -36,5 +36,5 @@ This was a joint meeting between the Steering and Maintainers Group. We began th
   - Add columns to Maintainers table with start date and end date, and self-selection on whether to include on papers if authors think the ex-Maintainer contributed.
   - Authorship credit could be equal among our groups. BEP leads can make the decision.
   - Preference may be a BIDS Maintainers consortia author
-    - [Credit taxonomy](https://casrai.org/credit/){:target="_blank"} could address and report specific contributions
+    - [Credit taxonomy](https://credit.niso.org/){:target="_blank"} could address and report specific contributions
   - To help avoid confusion regarding how to add a corporate author, we may provide a few examples of how it can be done

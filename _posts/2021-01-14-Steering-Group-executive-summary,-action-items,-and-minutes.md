@@ -12,7 +12,7 @@ Date: Thursday January 14, 2021
 
 ### Executive Summary
 
-This meeting was primarily spent discussing our approach for crediting the Steering and Maintainers Group in BEP manuscripts. We will be using the [credit taxonomy](https://casrai.org/credit/){:target="_blank"} for helping to recognize contributors. These guidelines can be added to the [BEP lead guidelines](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4/edit){:target="_blank"}. We want to give our community members the opportunity to be credited for their contributions to a BEP.
+This meeting was primarily spent discussing our approach for crediting the Steering and Maintainers Group in BEP manuscripts. We will be using the [credit taxonomy](https://credit.niso.org/){:target="_blank"} for helping to recognize contributors. These guidelines can be added to the [BEP lead guidelines](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4/edit){:target="_blank"}. We want to give our community members the opportunity to be credited for their contributions to a BEP.
 
 ### Action items
 
@@ -28,7 +28,7 @@ This meeting was primarily spent discussing our approach for crediting the Steer
 - Crediting Steering and Maintainer groups
   - Separate Steering and Maintainer group entities
     - Forward thinking and very inclusive
-    - [Credit taxonomy](https://casrai.org/credit/){:target="_blank"}
+    - [Credit taxonomy](https://credit.niso.org/){:target="_blank"}
       - Articulating why they are authors
     - Individual or groups
     - Argument against consortium level authorship
