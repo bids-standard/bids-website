@@ -440,7 +440,7 @@ We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} so that others can search
 them and benefit from the answers, but if you do not feel comfortable
 asking your question publicly please feel free to email the BIDS maintainers at
-[bids-maintenance@gmail.com](mailto:bids-maintenance@gmail.com). They will
+[bids.maintenance+question@gmail.com](mailto:bids.maintenance+question@gmail.com). They will
 repost an anonymised/general version of your question on
 [NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} and answer it there.
 
@@ -454,7 +454,7 @@ community survey results.
 
 All BIDS community members are required to follow the
 [BIDS code of conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}.
-Please contact the BIDS maintainers at [bids-maintenance@gmail.com](mailto:bids-maintenance@gmail.com)
+Please contact the BIDS maintainers at [bids.maintenance+coc@gmail.com](mailto:bids.maintenance+coc@gmail.com)
 if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgements
