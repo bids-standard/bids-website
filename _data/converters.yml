@@ -196,20 +196,6 @@
         Research Institute.
       updated: 2021-05-06
 
-    - name: BiDirect_BIDS_Converter
-      url: https://github.com/wulms/BiDirect_BIDS_Converter
-      comment: |
-        Converts MRI data from DICOM to BIDS in three user-interactions (csv
-        editings). From the Institute of epidemiology and social medicine,
-        University of Münster.
-      data_types: MRI
-      expected_input: DICOM
-      language: R
-      documentation: https://github.com/wulms/BiDirect_BIDS_Converter/wiki/Tutorial
-      updated: 2021-07-25
-      GUI: false
-      license: GPL-3.0
-
     - name: BIDS-converter
       url: https://github.com/openneuropet/BIDS-converter
       comment: |
@@ -249,12 +235,15 @@
     - name: BIDSconvertR
       url: https://github.com/wulms/bidsconvertr
       comment: |
-        The goal of BIDSconvertR is to provide a workflow, which is able to:
+        The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
+        It conists of the following steps:
         (i) convert DICOM data to NIfTI data using dcm2niix
         (ii) structure this data according to the BIDS specification
-        (iii) provide a data overview in a shareable html dashboard
-        (iv) provide the papayaWidget viewer for inspecting the images
-      updated: 2022-04-09
+        (iii) provide the papayaWidget viewer for inspecting the images
+      updated: 2022-07-28
       data_types: MRI
       expected_input: DICOM
       language: R
+      documentation: https://bidsconvertr.github.io/
+      GUI: true
+      license: GPL-3.0
