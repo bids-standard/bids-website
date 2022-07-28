@@ -194,16 +194,22 @@ guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIj
 BIDS contributors may self-nominate to become maintainers, with approval
 by a majority vote of current maintainers.
 
-This group submits monthly status summaries to the Steering Group.
+This group submits
+[monthly status summaries](https://github.com/bids-standard/bids-specification/wiki/BIDS-Maintainers-Documents#bids-maintainers-reports){:target="_blank"}
+to the Steering Group.
 
 The current members of the Maintainers group are:
 
 {% include members_table.html members=site.data.maintainers %}
 
+Past members of the Maintainers group are:
+
+{% include members_table.html members=site.data.past_maintainers %}
+
 If you need to contact the maintainers on a specific topic you can use the following emails:
 
-- bids-website and domain ( [Franklin Feingold](mailto:bids.maintenance+website@gmail.com) )
-- twitter account ( [Franklin Feingold](mailto:bids.maintenance+twitter@gmail.com) )
+- bids-website and domain ( [Stefan Appelhoff](mailto:bids.maintenance+website@gmail.com) )
+- twitter account ( [Stefan Appelhoff](mailto:bids.maintenance+twitter@gmail.com) )
 - youtube account ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
 
 ### BIDS Contributors Group
