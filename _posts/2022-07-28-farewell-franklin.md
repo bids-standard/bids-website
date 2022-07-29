@@ -12,7 +12,7 @@ Date: Thursday, July 28, 2022
 
 <!--more-->
 
-In the past three years, Franklin has dedicated lots of his energy towards making BIDS a thriving project.
+In the past four and a half years, Franklin has dedicated lots of his energy towards making BIDS a thriving project.
 With his focus on the BIDS community, Franklin has played played a major role in several key developments.
 From helping to draft the BIDS governance in 2019 to leading and organizing the
 [biweekly maintainers meetings](https://github.com/bids-standard/bids-specification/wiki/BIDS-Maintainers-Documents#bids-maintainers-meeting-notes){:target="_blank"}
