@@ -470,7 +470,7 @@ This document draws heavily from the
 and from other open-source governance documents including:
 
 - [https://numpy.org/doc/stable/dev/governance/index.html](https://numpy.org/doc/stable/dev/governance/index.html){:target="_blank"}
-- [https://docs.scipy.org/doc/scipy/dev/governance/governance.html](https://docs.scipy.org/doc/scipy/dev/governance/governance.html){:target="_blank"}
+- [https://docs.scipy.org/doc/scipy/dev/governance.html](https://docs.scipy.org/doc/scipy/dev/governance.html){:target="_blank"}
 - [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html){:target="_blank"}
 - [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/){:target="_blank"}
 - [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards){:target="_blank"}
