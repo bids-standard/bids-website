@@ -29,7 +29,6 @@ initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initializatio
 - [E. Help](#e-help)
 - [F. Acknowledgements](#f-acknowledgements)
 
-
 ## 1. Introduction
 
 This document, *Brain Imaging Data Structure (BIDS): Governance and
@@ -63,23 +62,24 @@ computing field.
 
 The project is a community-driven effort.
 BIDS, originally OBIDS, was initiated during an INCF sponsored data
-sharing working group meeting (January 2015) at Stanford University. It
-was subsequently spearheaded and maintained by Chris Gorgolewski. The
-project is currently managed and maintained by Franklin Feingold, Stefan
-Appelhoff, and the Poldrack Lab at Stanford. BIDS has advanced under the
-direction and effort of contributors, the community of researchers that
-appreciate the value of standardizing neuroimaging data to facilitate
-sharing and analysis. The project is multifaceted, and depends on
-contributors for: specification development and maintenance, [BIDS
-Extension Proposals
-(BEPs)](/get_involved), software tools, [starter
-kits](https://bids-standard.github.io/bids-starter-kit/){:target="_blank"},
-[examples](https://github.com/bids-standard/bids-examples){:target="_blank"}, and general
-discussions. The relevant discussions are located in our [Google
-Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, [GitHub
-organization](https://github.com/bids-standard){:target="_blank"}, and public Google
-Documents (typically associated with an [extension
-proposal](/get_involved)).
+sharing working group meeting (January 2015) at Stanford University.
+It was subsequently spearheaded and maintained by Chris Gorgolewski.
+In the transitional period after Chris Gorgolewski's departure in early 2019
+and before the community's acceptance of the present governance in late 2019,
+the project was managed and maintained by Franklin Feingold, Stefan Appelhoff, and the Poldrack Lab at Stanford.
+BIDS has advanced under the direction and effort of its contributors,
+the community of researchers that appreciate the value of standardizing neuroimaging data to facilitate sharing and analysis.
+The project is multifaceted and depends on contributors for:
+specification development and maintenance,
+[BIDS Extension Proposals (BEPs)](/get_involved),
+software tools,
+[starter kits](https://bids-standard.github.io/bids-starter-kit/){:target="_blank"},
+[examples](https://github.com/bids-standard/bids-examples){:target="_blank"},
+and general discussions.
+The relevant discussions are located in our
+[Google Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"},
+[GitHub organization](https://github.com/bids-standard){:target="_blank"},
+and public Google Documents (typically associated with an [extension proposal](/get_involved)).
 
 A key component of the BIDS initiative is the collection of associated
 software tools and platforms that facilitate the validation and ease the
@@ -97,7 +97,6 @@ pipelines on validated BIDS datasets, and platforms like
 that the associated software does not fall under the same governance
 structure as BIDS, although the contributor and user base may largely
 overlap.
-
 
 ### B. BIDS Mission Statement
 
@@ -195,16 +194,22 @@ guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIj
 BIDS contributors may self-nominate to become maintainers, with approval
 by a majority vote of current maintainers.
 
-This group submits monthly status summaries to the Steering Group.
+This group submits
+[monthly status summaries](https://github.com/bids-standard/bids-specification/wiki/BIDS-Maintainers-Documents#bids-maintainers-reports){:target="_blank"}
+to the Steering Group.
 
 The current members of the Maintainers group are:
 
 {% include members_table.html members=site.data.maintainers %}
 
+Past members of the Maintainers group are:
+
+{% include members_table.html members=site.data.past_maintainers %}
+
 If you need to contact the maintainers on a specific topic you can use the following emails:
 
-- bids-website and domain ( [Franklin Feingold](mailto:bids.maintenance+website@gmail.com) )
-- twitter account ( [Franklin Feingold](mailto:bids.maintenance+twitter@gmail.com) )
+- bids-website and domain ( [Stefan Appelhoff](mailto:bids.maintenance+website@gmail.com) )
+- twitter account ( [Stefan Appelhoff](mailto:bids.maintenance+twitter@gmail.com) )
 - youtube account ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
 
 ### BIDS Contributors Group
@@ -440,9 +445,8 @@ appropriate repository.
 We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} so that others can search
 them and benefit from the answers, but if you do not feel comfortable
-asking your question publicly please email either Franklin Feingold at
-[ffein@stanford.edu](mailto:ffein@stanford.edu) or Stefan Appelhoff at
-[appelhoff@mpib-berlin.mpg.de](mailto:appelhoff@mpib-berlin.mpg.de). They will
+asking your question publicly please feel free to email the BIDS maintainers at
+[bids.maintenance+question@gmail.com](mailto:bids.maintenance+question@gmail.com). They will
 repost an anonymised/general version of your question on
 [NeuroStars](https://neurostars.org/tags/bids){:target="_blank"} and answer it there.
 
@@ -454,16 +458,16 @@ Center for Reproducible Neuroscience
 blog](http://reproducibility.stanford.edu/blog/){:target="_blank"} provides tutorials and
 community survey results.
 
-All BIDS community members are required to follow the [BIDS code of
-conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}.
-Please contact Franklin Feingold at [ffein@stanford.edu](mailto:ffein@stanford.edu)
+All BIDS community members are required to follow the
+[BIDS code of conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md){:target="_blank"}.
+Please contact the BIDS maintainers at [bids.maintenance+coc@gmail.com](mailto:bids.maintenance+coc@gmail.com)
 if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgements
 
-This document draws heavily from the [Modern Paradigm for
-Standards](https://open-stand.org/about-us/principles/){:target="_blank"} and from other
-open-source governance documents including:
+This document draws heavily from the
+[Modern Paradigm for Standards](https://open-stand.org/about-us/principles/){:target="_blank"}
+and from other open-source governance documents including:
 
 - [https://numpy.org/doc/stable/dev/governance/index.html](https://numpy.org/doc/stable/dev/governance/index.html){:target="_blank"}
 - [https://docs.scipy.org/doc/scipy/dev/governance/governance.html](https://docs.scipy.org/doc/scipy/dev/governance/governance.html){:target="_blank"}
