@@ -22,6 +22,10 @@
       {
         "pattern": "^https://doi.org\/"
       }
+      ,
+      {
+        "pattern": "^https://link.springer.com\/article\/.*"
+      }
     ],
     "timeout": "20s",
     "retryOn429": true
