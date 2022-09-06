@@ -34,14 +34,18 @@
         Either raw MEG, EEG, or iEEG data for conversion, or a BIDS dataset for
         reading
       language: Python
+      documentation: https://mne.tools/mne-bids
       distribution:
         - name: pypi
           url: https://pypi.org/project/mne-bids
+        - name: conda-forge
+          url: https://anaconda.org/conda-forge/mne-bids/
       comment:
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
-      updated: 2022-01-13
-      license: BSD-3.0
+      GUI: false
+      updated: 2022-09-04
+      license: BSD-3-Clause
 
     - name: EEGLAB
       url: https://sccn.ucsd.edu/eeglab/index.php
