@@ -56,30 +56,58 @@
   padding-bottom : 1rem;
 
   border: 10px solid #aa0000;
-  margin-left: 20%;
-  margin-right: 20%;
   text-align: center;
 
-  h2, h3{
+  margin-left: 20%;
+  margin-right: 20%;
+
+  p, h2, h3{
     padding-bottom : 1rem;
-  }
-
-  iframe{
-    padding-top : 1rem;
-  }
-
-  p {
     padding-right: 5%;
     padding-left: 5%;
     text-align: center;
-    font-size: 18px;
   }
+
+  @include medium {
+    border: 5px solid #aa0000;
+    margin-left: 5%;
+    margin-right: 5%;
+    p {
+      text-align: justify;
+    }
+  }
+
+  @include small {
+    border: 5px solid #aa0000;
+    margin-left: 5%;
+    margin-right: 5%;
+    p {
+      text-align: justify;
+    }
+  }  
+
 
   button{
     color: #000000;
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 20px;
+  }  
+
+  .iframe-container{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 56.25%; 
+    height: 0;
+
+    iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
