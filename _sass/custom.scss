@@ -2,38 +2,56 @@
  * The following are modifications to the initial Cayman theme
 **/
 
-.converters{
+@mixin tablesmall {
+  @media screen and (max-width: 1340px) {
+    @content;
+  }
+}
 
-  width: 140%;
-  margin-left: -40%;
+.converters{
 
   h3 {
     padding: 1rem;
   }
 
-  table {
-    font-size: 100%;
-    width: 120%;
-    margin-right: 0%;
-    margin-left: 0%;
-  }
+  .table-container {
 
-  th,
-  td {
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .distribution {
-    text-align: justify;
-    ul {
-      padding-left: 15%;
-    }
-  }
-  
-  .comment {
-    text-align: justify;
     font-size: 90%;
+
+    overflow: auto;
+    padding: 0;
+
+    width: 160%;
+    margin-left: -30%;
+
+    @include tablesmall  {
+      width: 100%;
+      margin-left: 0%;
+    } 
+
+    table {
+      margin-right: 0%;
+      padding: 0;
+    }   
+
+    th,
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .distribution {
+      text-align: justify;
+      ul {
+        padding-left: 15%;
+      }
+    }
+    
+    .comment {
+      text-align: justify;
+      font-size: 90%;
+    }
+
   }
 
 }
@@ -51,15 +69,16 @@
 }
 
 .election-banner {
-  
-  margin-top : 1rem;
-  padding-bottom : 1rem;
 
   border: 10px solid #aa0000;
-  text-align: center;
-
+  
+  padding-bottom : 1rem;
+  
+  margin-top : 1rem;
   margin-left: 20%;
   margin-right: 20%;
+  
+  text-align: center;
 
   p, h2, h3{
     padding-bottom : 1rem;
@@ -85,7 +104,6 @@
       text-align: justify;
     }
   }  
-
 
   button{
     color: #000000;

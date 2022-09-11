@@ -5,50 +5,54 @@
 
   <p>{{ group.comment }}</p>
 
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Data type</th>
-      <th>Expected input</th>
-      <th>Language</th>
-      <th>Distribution</th>
-      <th>GUI</th>
-      <th>Documentation</th>
-      <th>Comment</th>
-      <th>License</th>
-      <th>Updated</th>
-    </tr>
+  <div class="table-container">
 
-    {% for converter in group.members %}
-    <tr>
-      <td>
-        <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
-      </td>
-      <td>{{ converter.data_types }}</td>
-      <td>{{ converter.expected_input }}</td>
-      <td>{{ converter.language }}</td>
-      <td class="distribution">
-        <ul>
-          {% for entry in converter.distribution %}
-          <li>
-            <a href="{{ entry.name }}" target="_blank">{{ entry.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </td>
-      <td>{{ converter.GUI }}</td>
-      <td>
-        {% if converter.documentation %}
-        <a href="{{ converter.documentation }} " target="_blank">doc</a>
-        {% endif %}
-      </td>
-      <td class="comment">{{ converter.comment }}</td>
-      <!--Displaying only the year of the latest update as the _data dates are only manually updated at this point.-->
-      <td>{{ converter.license }}</td>
-      <td>{{ converter.updated | date: "%Y" }}</td>
-    </tr>
-    {% endfor %}
-  </table>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Data type</th>
+        <th>Expected input</th>
+        <th>Language</th>
+        <th>Distribution</th>
+        <th>GUI</th>
+        <th>Documentation</th>
+        <th>Comment</th>
+        <th>License</th>
+        <th>Updated</th>
+      </tr>
+
+      {% for converter in group.members %}
+      <tr>
+        <td>
+          <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
+        </td>
+        <td>{{ converter.data_types }}</td>
+        <td>{{ converter.expected_input }}</td>
+        <td>{{ converter.language }}</td>
+        <td class="distribution">
+          <ul>
+            {% for entry in converter.distribution %}
+            <li>
+              <a href="{{ entry.name }}" target="_blank">{{ entry.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </td>
+        <td>{{ converter.GUI }}</td>
+        <td>
+          {% if converter.documentation %}
+          <a href="{{ converter.documentation }} " target="_blank">doc</a>
+          {% endif %}
+        </td>
+        <td class="comment">{{ converter.comment }}</td>
+        <!--Displaying only the year of the latest update as the _data dates are only manually updated at this point.-->
+        <td>{{ converter.license }}</td>
+        <td>{{ converter.updated | date: "%Y" }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </div>
 
   <br />
 
