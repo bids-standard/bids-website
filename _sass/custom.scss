@@ -2,38 +2,56 @@
  * The following are modifications to the initial Cayman theme
 **/
 
-.converters{
+@mixin tablesmall {
+  @media screen and (max-width: 1340px) {
+    @content;
+  }
+}
 
-  width: 140%;
-  margin-left: -40%;
+.converters{
 
   h3 {
     padding: 1rem;
   }
 
-  table {
-    font-size: 100%;
-    width: 120%;
-    margin-right: 0%;
-    margin-left: 0%;
-  }
+  .table-container {
 
-  th,
-  td {
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .distribution {
-    text-align: justify;
-    ul {
-      padding-left: 15%;
-    }
-  }
-  
-  .comment {
-    text-align: justify;
     font-size: 90%;
+
+    overflow: auto;
+    padding: 0;
+
+    width: 160%;
+    margin-left: -30%;
+
+    @include tablesmall  {
+      width: 100%;
+      margin-left: 0%;
+    } 
+
+    table {
+      margin-right: 0%;
+      padding: 0;
+    }   
+
+    th,
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .distribution {
+      text-align: justify;
+      ul {
+        padding-left: 15%;
+      }
+    }
+    
+    .comment {
+      text-align: justify;
+      font-size: 90%;
+    }
+
   }
 
 }
@@ -51,35 +69,63 @@
 }
 
 .election-banner {
-  
-  margin-top : 1rem;
-  padding-bottom : 1rem;
 
   border: 10px solid #aa0000;
+  
+  padding-bottom : 1rem;
+  
+  margin-top : 1rem;
   margin-left: 20%;
   margin-right: 20%;
+  
   text-align: center;
 
-  h2, h3{
+  p, h2, h3{
     padding-bottom : 1rem;
-  }
-
-  iframe{
-    padding-top : 1rem;
-  }
-
-  p {
     padding-right: 5%;
     padding-left: 5%;
     text-align: center;
-    font-size: 18px;
   }
+
+  @include medium {
+    border: 5px solid #aa0000;
+    margin-left: 5%;
+    margin-right: 5%;
+    p {
+      text-align: justify;
+    }
+  }
+
+  @include small {
+    border: 5px solid #aa0000;
+    margin-left: 5%;
+    margin-right: 5%;
+    p {
+      text-align: justify;
+    }
+  }  
 
   button{
     color: #000000;
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 20px;
+  }  
+
+  .iframe-container{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 56.25%; 
+    height: 0;
+
+    iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
