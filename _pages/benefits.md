@@ -44,3 +44,5 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"} (Python module to harmonize access and manipulation)
 - [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"} (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
 - [GUI dataset description generator](https://github.com/tolik-g/BIDS){:target="_blank"} (GUI form that generates dataset_description.json)
+- [cuBIDS](https://pypi.org/project/cubids/){:target="_blank"} a python package designed to facilitate reproducible curation of neuroimaging BIDS datasets. 
+- [bids2cite](https://github.com/Remi-Gau/bids2cite){:target="_blank"} a python package to interactively update `dataset_decription.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
