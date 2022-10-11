@@ -1,0 +1,130 @@
+# template
+# - number:
+#   label:
+#   title:
+#   leads:
+#   update:
+#   blocking:
+
+- number: "002"
+  title: The BIDS Models Specification
+  leads:
+    - name: Tal Yarkoni
+    - name: Chris Markiewcz
+  update: |
+    Reworked structure:
+    - list of steps is now a directed graph, 
+    - [Model zoo](https://github.com/bids-standard/model-zoo){:target:'_blank'}, 
+    - Abstracted transformations, to ease interoperability of implementations.
+  blocking: Stat Models released v1.0.0-rc1 in June 2021 - Please review!
+
+- number: "004"
+  title: Susceptibility Weighted Imaging (SWI)
+  leads:
+  update: Looking for a new leader.
+  blocking: Looking for a new leader.
+
+- number: "011"
+  title: The structural preprocessing derivatives
+  leads:
+    - name: Viviana Siless
+  update: |
+    Opened [pull request](https://github.com/bids-standard/bids-specification/pull/518){:target:"_blank"}. 
+
+    Features:
+    - surfaces, 
+    - scalar maps on surfaces
+    - morphometrics. 
+
+    Need to conform with final Common Derivatives and gather community feedback.
+  blocking: |
+    Blocked by BIDS-validator extending and PyBIDS implementation for common
+    derivatives
+
+- number: "012"
+  title: The functional preprocessing derivatives
+  leads:
+    - name: Chris Markiewicz
+  update: |
+    Opened the [pull request](https://github.com/bids-standard/bids-specification/pull/519){:target:"_blank"}. 
+    
+    Features:
+    - Derivative images (mean, ALFF, ReHo, etc.), 
+    - Time series (confounds, decompositions, etc.) 
+  blocking: Blocked by BIDS-validator extending and PyBIDS implementation
+
+- number: "013"
+  title: The resting state fMRI derivatives
+  leads:
+    - name: Steven Giavasis
+  update: Merged into BEP012.
+  blocking: None
+
+- number: "014"
+  title: The affine transformations and nonlinear field warps
+  leads:
+    - name: Oscar Esteban
+  update: |  
+   Creating file format (X5) to store spatial transforms. 
+
+   [There is a software prototype - NiTransforms](https://osf.io/8aq7b/){:target:"_blank"} demonstrates implementation of this BEP. NiTransforms has been tested and integrated to work within fMRIPrep 
+  blocking: In progress.
+
+- number: "016"
+  title: The diffusion weighted imaging derivatives
+  leads:
+    - name: Franco Pestilli
+    - name: Oscar Esteban
+  update: |
+    - Being discussed [here](https://github.com/bids-standard/bids-bep016){:target:"_blank"}. 
+    - Coordinating with BEP017.  
+    - Diffusion-weighted model description merged, but must comply to [this](https://github.com/bids-standard/bids-bep016/issues/7){:target:"_blank"}. 
+    - Upcoming integration across DWI, Tractography, Tractometry, and Connectivity (from fMRI and DWI)   
+  blocking: None
+
+- number: "017"
+  title: Generic BIDS connectivity data schema
+  leads:
+    - name: Eugene Duff
+  update: |
+    - [Current state](https://bids.neuroimaging.io/bep017){:target:"_blank}. 
+    - Intended as a meeting point for minimal harmonisation of connectivity-based formats across modalities. 
+    - Seeking use cases spanning modalities and input defining connectivity based formats 
+  blocking: None
+
+- number: "019"
+  title: DICOM Metadata
+  leads:
+    - name: Satrajit Ghosh
+  update:
+  blocking:
+
+- number: "020"
+  title: Eye Tracking including Gaze Position and Pupil Size
+  leads:
+    - name: Dejan Draschkow
+  update:
+  blocking:
+
+- number: "021"
+  title: 
+  leads:
+    - name:
+  update:
+  blocking:
+# [BEP021
+# [BEP022
+# [BEP023
+# [BEP024
+# [BEP025
+# [BEP026
+# [BEP027
+# [BEP028
+# [BEP029
+# [BEP030
+# [BEP032
+# [BEP033
+# [BEP034
+# [BEP035
+# [BEP036
+# [BEP037

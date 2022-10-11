@@ -1,0 +1,43 @@
+<section class="converters">
+  <br />
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Extension</th>
+        <th>Title</th>
+        <th>Lead(s)</th>
+        <th>Last update</th>
+        <th>Blocking point(s)</th>
+      </tr>
+
+      {% assign beps = include.beps %} {% for bep in beps %} {% assign number =
+      bep.number %}
+      <tr>
+        <td>
+          <a href="{{ site.url }}/bep{{ number }}" target="_blank"
+            >BEP{{ number }}</a
+          >
+        </td>
+        <td>
+          <p>{{ bep.title }}</p>
+        </td>
+        <td>
+          <ul class="distribution">
+            {% for person in bep.leads %}
+            <li>{{ person.name }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+        <td class="distribution" style="width: 25%">
+          <p>{{ bep.update | markdownify }}</p>
+        </td>
+        <td class="distribution" style="width: 25%">
+          <p>{{ bep.blocking | markdownify }}</p>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <br />
+</section>

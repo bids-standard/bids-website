@@ -16,8 +16,6 @@
 
   .table-container {
 
-    font-size: 90%;
-
     overflow: auto;
     padding: 0;
 
@@ -41,15 +39,14 @@
     }
 
     .distribution {
-      text-align: justify;
+      text-align: left;
       ul {
-        padding-left: 15%;
+        padding-left: 8%;
       }
     }
     
     .comment {
       text-align: justify;
-      font-size: 90%;
     }
 
   }
