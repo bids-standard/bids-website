@@ -6,13 +6,13 @@ menu:
   - title: BENEFITS
     url: /benefits.html
     sublinks:
-      - title: benefits
+      - title: Benefits
         url: /benefits.html#benefits
-      - title: software
+      - title: Software
         url: /benefits.html#software-currently-supporting-bids 
-      - title: MRI and pet converters
+      - title: MRI and PET Converters
         url: /benefits.html#mri-and-pet-converters   
-      - title: MEEG converters
+      - title: MEEG Converters
         url: /benefits.html#eeg-meg-ieeg-converters    
   - title: SPECIFICATION
     url: /specification.html
