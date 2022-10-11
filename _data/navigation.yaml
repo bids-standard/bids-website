@@ -1,4 +1,3 @@
-
 menu:
   - title: ABOUT
     url: /index.html
@@ -6,6 +5,15 @@ menu:
     url: /news.html
   - title: BENEFITS
     url: /benefits.html
+    sublinks:
+      - title: benefits
+        url: /benefits.html#benefits
+      - title: software
+        url: /benefits.html#software-currently-supporting-bids 
+      - title: MRI and pet converters
+        url: /benefits.html#mri-and-pet-converters   
+      - title: MEEG converters
+        url: /benefits.html#eeg-meg-ieeg-converters    
   - title: SPECIFICATION
     url: /specification.html
   - title: GET STARTED
