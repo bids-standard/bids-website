@@ -1,6 +1,6 @@
 # template
 # - number:
-#   label:
+#     - name:
 #   title:
 #   leads:
 #   update:
@@ -47,10 +47,10 @@
     - name: Chris Markiewicz
   update: |
     Opened the [pull request](https://github.com/bids-standard/bids-specification/pull/519){:target:"_blank"}. 
-    
+
     Features:
     - Derivative images (mean, ALFF, ReHo, etc.), 
-    - Time series (confounds, decompositions, etc.) 
+    - Time series (confounds, decompositions, etc.)
   blocking: Blocked by BIDS-validator extending and PyBIDS implementation
 
 - number: "013"
@@ -64,10 +64,11 @@
   title: The affine transformations and nonlinear field warps
   leads:
     - name: Oscar Esteban
-  update: |  
-   Creating file format (X5) to store spatial transforms. 
+  update: |
+    Creating file format (X5) to store spatial transforms. 
 
-   [There is a software prototype - NiTransforms](https://osf.io/8aq7b/){:target:"_blank"} demonstrates implementation of this BEP. NiTransforms has been tested and integrated to work within fMRIPrep 
+    [There is a software prototype - NiTransforms](https://osf.io/8aq7b/){:target:"_blank"} demonstrates implementation of this BEP. 
+    NiTransforms has been tested and integrated to work within fMRIPrep
   blocking: In progress.
 
 - number: "016"
@@ -79,7 +80,7 @@
     - Being discussed [here](https://github.com/bids-standard/bids-bep016){:target:"_blank"}. 
     - Coordinating with BEP017.  
     - Diffusion-weighted model description merged, but must comply to [this](https://github.com/bids-standard/bids-bep016/issues/7){:target:"_blank"}. 
-    - Upcoming integration across DWI, Tractography, Tractometry, and Connectivity (from fMRI and DWI)   
+    - Upcoming integration across DWI, Tractography, Tractometry, and Connectivity (from fMRI and DWI)
   blocking: None
 
 - number: "017"
@@ -89,37 +90,121 @@
   update: |
     - [Current state](https://bids.neuroimaging.io/bep017){:target:"_blank}. 
     - Intended as a meeting point for minimal harmonisation of connectivity-based formats across modalities. 
-    - Seeking use cases spanning modalities and input defining connectivity based formats 
+    - Seeking use cases spanning modalities and input defining connectivity based formats
   blocking: None
 
 - number: "019"
   title: DICOM Metadata
   leads:
     - name: Satrajit Ghosh
-  update:
-  blocking:
+  update: Not active. Could be a NIDM extension rather than in BIDS.
+  blocking: None
 
 - number: "020"
   title: Eye Tracking including Gaze Position and Pupil Size
   leads:
     - name: Dejan Draschkow
-  update:
-  blocking:
+  update: |
+    BEP close to PR submission, examples and validator under development. 
+    Seeking additional BEP lead to help incoporate into standard contact [dejan](mailto:dejan.draschow@psy.ox.ac.uk) to get involved.
+  blocking: None
 
 - number: "021"
-  title: 
+  title: Common Electrophysiological Derivatives
+  leads:
+    - name: Stefan Appelhoff
+    - name: Arnaud Delorme
+    - name: Dora Hermes
+    - name: Mainak Jas
+    - name: Guiomar Niso
+    - name: Robert Oostenveld
+    - name: Cyril Pernet
+  update: |
+    Discussion [here](https://github.com/bids-standard/bep021){:target:"_blank"} UCSD to include head models with BIDS EEG data. 
+    Developments of BIDS M/EEG pipelines will trigger discussion on storing derived data.
+  blocking: Mostly on hold.
+
+- number: "022"
+  title: Magnetic Resonance Spectroscopy (MRS)
+  leads:
+    - name:  Mark Mikkelsen
+    - name: William Clarke
+    - name: Martin Wilson
+  update: |
+    Group discussions [here](https://forum.mrshub.org/t/bids-for-spectroscopy/83){:target:"_blank"} 
+    and [here](https://forum.mrshub.org/t/nifti-mrs-discussion-thread/443){:target:"_blank"}. 
+    Developed NifTI standard for MRS data - presented abstract at ISMRM; manuscript in preparation. 
+  blocking: None
+
+- number: "023"
+  title: PET Preprocessing derivatives                                                                              
+  leads:
+    - name: Martin Noergaard
+    - name: Graham Searle
+    - name: Melanie Ganz 
+  update: | 
+    Work in progress following BEP009 incorporation into spec. 
+    Coord. kickoff scheduled Sept. 2021 to capture various experimental designs 
+    and needs for preprocessing and pharmacokinetic modeling. 
+    Focused on staying aligned with derivatives for MRI (structural, functional, ASL, diffusion) 
+  blocking: Progressing and soliciting input from senior PET experts. 
+
+- number: "024"
+  title: Computed Tomography scan (CT)
+  leads:
+    - name: Hugo Boniface                                                    
+  update: Lead seeking more contributors and experts.
+  blocking: None
+
+- number: "025"
+  title: Medical Imaging Data structure (MIDS)
+  leads:
+    - name: Jose Manuel 
+    - name: Saborit Torres
+    - name: Maria de la Iglesia Vayá         
+  update: |
+    Enhancing [BEP025 preprint](https://arxiv.org/abs/2010.00434){:target:"_blank"}. 
+    Provided [automated tool](https://github.com/BIMCV-CSUSP/MIDS){:target:"_blank"} 
+    to convert projects uploaded to XNAT platforms to BIDS/MIDS. 
+    Example datasets: [Massive Image Data Anatomy Spine](https://bimcv.cipf.es/bimcv-projects/project-midas/){:target:"_blank"}, 
+    [BIMCV-COVID19+](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/){:target:"_blank"}, 
+    and [BIMCV-COVID19-](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/#1590859488150-148be708-c3f3){:target:"_blank"}. 
+    Included Kaggle Challenge [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection/overview){:target:"_blank"} 
+  blocking: None
+
+- number: "026"
+  title: Microelectrode Recordings                                                                                  
   leads:
     - name:
-  update:
-  blocking:
-# [BEP021
-# [BEP022
-# [BEP023
-# [BEP024
-# [BEP025
-# [BEP026
-# [BEP027
-# [BEP028
+  update: BEP is open to new leadership, see also [BEP032 (animal electrophys)](https://bids.neuroimaging.io/bep032){:target:"_blank"} 
+  blocking: Searching for a new leader. 
+
+- number: "027"
+  title: BIDS Applications 2.0  
+  leads:
+    - name: Chris Markiewicz 
+    - name: Greg Kiar                                   |
+  update: |
+    Focusing on: command-line conventions, I/O interface descriptors, 
+    and common behavior (for example, exit codes for failure modes); 
+    relies upon the Boutiques standard. 
+    Re-conception of BIDS Apps
+  blocking: None
+
+- number: "028"
+  title:  Provenance
+  leads:
+    - name: Satra Ghosh 
+    - name: Camille Maumet
+  update: |
+    BEP aims to provide a description of data manipulation 
+    and transformations steps related to a BIDS data element via BIDS structured sidecar JSON-LD files. 
+    Can be used to describe provenance at different levels of granularity. 
+    Discussions held in [this repository](https://github.com/bids-standard/BEP028_BIDSprov){:target:"_blank"}. 
+    A set of [examples](https://github.com/bids-standard/BEP028_BIDSprov/tree/master/examples){:target:"_blank"} 
+    and [user stories](https://github.com/bids-standard/BEP028_BIDSprov/issues/48){:target:"_blank"} are being refined.
+  blocking: None
+
 # [BEP029
 # [BEP030
 # [BEP032
