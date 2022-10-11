@@ -96,8 +96,15 @@
   background-image: url($baseurl+"/assets/img/hemispheres_850x325.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 50%;
-  padding-bottom: 10px;
+  padding-bottom: 75px;
+  padding-top: 15px;
+  background-size: 40%;
+  @include medium {
+    background-size: 80%;
+  }
+  @include small {
+    background-size: 90%;
+  }  
 }
 
 .election-banner {
