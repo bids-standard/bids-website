@@ -74,28 +74,7 @@
     <div class="project-name">{{ site.title }}</div>
     <div class="project-tagline">{{ site.description }}</div>
 
-    <div class="container">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              {% for item in site.data.navigation.menu %}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }} </span></a>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    {% include navbar.html %}
 
     {% include steering_group_election_section.html %}
 
