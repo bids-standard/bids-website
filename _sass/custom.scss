@@ -8,6 +8,37 @@
   }
 }
 
+.dropdown{
+
+  background-color: $d3;
+  border-top: 1px solid $d3;
+
+  .dropdown-menu{
+    background-color: $d3;
+    border: 1px solid;
+    border-top: black;
+    border-bottom: $d2;
+    border-right: $d2;
+    border-left: $d2;
+    border-radius: 5px;
+    ul li {
+      background-color: $d3;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    li a {
+      color: $l1;
+    }
+
+    li a:hover {
+      color: $l4;
+      background-color: $d2;
+    }
+  }
+}
+
 .converters{
 
   h3 {
@@ -66,6 +97,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 50%;
+  padding-bottom: 10px;
 }
 
 .election-banner {
