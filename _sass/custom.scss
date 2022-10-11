@@ -40,14 +40,34 @@
 
     .distribution {
       text-align: left;
+      p {
+        margin: 0;
+        margin-top: 5px;
+      }
       ul {
-        padding-left: 8%;
+        margin: 0;
         li {
-          p{ margin: 0; }
+          margin: 0;
+          padding: 0;
+          margin-top: 2px;
         }
 
       }
     }
+
+    .leads {
+      text-align: left;
+      width:15%;
+      padding: 0;
+      margin: 0;
+      p{margin: 0;}
+      }
+
+    .bep-title {
+        text-align: left;
+        width: 15%
+    }
+
 
     .comment {
       text-align: justify;

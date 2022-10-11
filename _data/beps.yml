@@ -218,7 +218,13 @@
   leads:
     - name: Robert Luke
     - name: Luca Pollonini
-  update: BEP presented at the society for fNIRS conference. Have developed SNRIF data format. Opened as [pull request](https://forum.mrshub.org/t/nifti-mrs-discussion-thread/443){:target:"_blank"}. Primarily for continuous wave NIRS (CW-NIRS), but want to ensure not to preclude future extensions. Examples and validator efforts in progress. Inviting colleagues from time- and frequency-domain fNIRS to review proposal.
+  update: |
+    - BEP presented at the society for fNIRS conference.
+    - Have developed SNRIF data format.
+    - Opened as [pull request](https://forum.mrshub.org/t/nifti-mrs-discussion-thread/443){:target:"_blank"}.
+    - Primarily for continuous wave NIRS (CW-NIRS), but want to ensure not to preclude future extensions.
+    - Examples and validator efforts in progress.
+    - Inviting colleagues from time- and frequency-domain fNIRS to review proposal.
   blocking: None
 
 - number: "032"
