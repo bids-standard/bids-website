@@ -196,8 +196,8 @@
         Research Institute.
       updated: 2021-05-06
 
-    - name: BIDS-converter
-      url: https://github.com/openneuropet/BIDS-converter
+    - name: PET2BIDS
+      url: https://github.com/openneuropet/PET2BIDS
       comment: |
         Helps you convert your PET data! raw PET scanner files (for example ecat, dicom)
         and additional side file like excel sheets.
