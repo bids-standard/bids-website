@@ -6,6 +6,12 @@ display: true
 
 # BIDS 1.8.0
 
+BIDS version 1.8.0 is released!
+
+Date: Saturday, October 29, 2022
+
+<!--more-->
+
 We are excited to announce the release of BIDS version 1.8.0!
 This release includes near infrared spectroscopy (NIRS) as a newly supported modality.
 The new release version can be found at:
