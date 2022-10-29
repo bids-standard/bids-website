@@ -77,6 +77,7 @@ can be found in the BIDS [specification](https://bids-specification.readthedocs.
 | [BEP009](https://bids.neuroimaging.io/bep009){:target:"_blank"} | Positron Emission Tomography (PET)         | Melanie Ganz                                                         |
 | [BEP010](https://bids.neuroimaging.io/bep010){:target:"_blank"} | intracranial Electroencephalography (iEEG) | Chris Holdgraf and Dora Hermes                                       |
 | [BEP018](https://bids.neuroimaging.io/bep018){:target:"_blank"} | Genetic information                        | Cyril R Pernet, Clara Moreau, and Thomas Nichols                     |
+| [BEP030](https://bids.neuroimaging.io/bep030){:target:"_blank"} | Near Infrared Spectroscopy (NIRS)          | Robert Luke and Luca Pollonini                                       |
 | [BEP031](https://bids.neuroimaging.io/bep031){:target:"_blank"} | Microscopy                                 | Marie-Hélène Bourget and Julien Cohen-Adad                           |
 
 <br>
