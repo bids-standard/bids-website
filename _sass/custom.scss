@@ -22,59 +22,50 @@
     width: 160%;
     margin-left: -30%;
 
+    text-align: left;
+
+    margin-right: 0%;
+    padding: 0;
+    vertical-align: middle;    
+
     @include tablesmall  {
       width: 100%;
       margin-left: 0%;
     }
 
     table {
-      margin-right: 0%;
-      padding: 0;
-    }
 
-    th,
-    td {
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .distribution {
-      text-align: left;
-      p {
-        margin: 0;
-        margin-top: 5px;
+      .bep-title {
+        width: 15%;
+        p{
+          text-align: left;
+          white-space: wrap;
+        };
       }
-      ul {
+
+      .leads {
+        width:15%;
+        padding: 0;
         margin: 0;
-        li {
+        p{margin: 0;}
+      }
+
+      .distribution {
+        p {
           margin: 0;
-          padding: 0;
-          margin-top: 2px;
+          margin-top: 5px;
         }
-
+        ul {
+          margin: 0;
+          li {
+            margin: 0;
+            padding: 0;
+            margin-top: 2px;
+          }
+        }
       }
     }
-
-    .leads {
-      text-align: left;
-      width:15%;
-      padding: 0;
-      margin: 0;
-      p{margin: 0;}
-      }
-
-    .bep-title {
-        text-align: left;
-        width: 15%
-    }
-
-
-    .comment {
-      text-align: justify;
-    }
-
   }
-
 }
 
 .center-image {
