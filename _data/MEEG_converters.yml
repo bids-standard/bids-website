@@ -42,9 +42,12 @@
         - MEG
         - EEG
         - iEEG
+        - NIRS
       expected_input:
-        - Either raw MEG
-        - EEG or iEEG data for conversion
+        - raw MEG for BIDS conversion
+        - raw EEG for BIDS conversion
+        - raw iEEG for BIDS conversion
+        - raw NIRS for BIDS conversion
         - BIDS dataset for reading
       language: 
          -  Python
