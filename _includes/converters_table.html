@@ -26,9 +26,27 @@
         <td>
           <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
         </td>
-        <td>{{ converter.data_types }}</td>
-        <td>{{ converter.expected_input }}</td>
-        <td>{{ converter.language }}</td>
+        <td class="distribution">
+          <ul>
+            {% for type in converter.data_types %}
+              <li> {{ type }} </li>
+            {% endfor %}   
+          </ul>        
+        </td>
+        <td class="distribution">
+          <ul>
+            {% for input in converter.expected_input %}
+              <li> {{ input }} </li>
+            {% endfor %}          
+          </ul>
+        </td>
+        <td class="distribution">
+          <ul>
+            {% for lang in converter.language %}
+              <li> {{ lang }} </li>
+            {% endfor %}
+          </ul>
+        </td>
         <td class="distribution">
           <ul>
             {% for entry in converter.distribution %}

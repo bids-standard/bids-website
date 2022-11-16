@@ -81,6 +81,10 @@
         p{margin: 0;}
       }
 
+      .comment {
+        width:25%
+      }      
+
       .distribution {
         p {
           margin: 0;
@@ -88,6 +92,7 @@
         }
         ul {
           margin: 0;
+          padding-left: 15px;
           li {
             margin: 0;
             padding: 0;
