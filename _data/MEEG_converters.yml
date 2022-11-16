@@ -2,14 +2,17 @@
 #     - name:
 #       url: URL to repo
 #       updated: Date of last update either last release or substantial commit
-#       data_types: EEG, MEG, iEEG, events
-#       expected_input: DICOM, PAR/REC, tsv
+#       data_types: 
+#       - EEG, MEG, iEEG, events
+#       expected_input: 
+#       -  DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: Python, MATLAB
+#       language: 
+#        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
@@ -19,9 +22,15 @@
   members:
     - name: BIDSme
       url: https://github.com/nbeliy/bidsme
-      data_types: MRI, EEG
-      expected_input: DICOM, Nifti, Brain Vision
-      language: Python
+      data_types: 
+        - MRI
+        - EEG
+      expected_input: 
+        - DICOM
+        - Nifti
+        - Brain Vision
+      language: 
+        - Python
       documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
       comment:
       updated: 2021-08-18
@@ -29,11 +38,16 @@
 
     - name: MNE-BIDS
       url: https://mne.tools/mne-bids/
-      data_types: MEG, EEG, iEEG
+      data_types: 
+        - MEG
+        - EEG
+        - iEEG
       expected_input:
-        Either raw MEG, EEG, or iEEG data for conversion, or a BIDS dataset for
-        reading
-      language: Python
+        - Either raw MEG
+        - EEG or iEEG data for conversion
+        - BIDS dataset for reading
+      language: 
+         -  Python
       documentation: https://mne.tools/mne-bids
       distribution:
         - name: pypi
@@ -49,9 +63,16 @@
 
     - name: EEGLAB
       url: https://sccn.ucsd.edu/eeglab/index.php
-      data_types: MEG, EEG
-      expected_input: EDF, BDF, Brain Vision Exchange Format, EEGLAB .set files
-      language: MATLAB
+      data_types: 
+        - MEG
+        - EEG
+      expected_input: 
+        - EDF
+        - BDF
+        - Brain Vision Exchange Format
+        - EEGLAB .set files
+      language: 
+        - MATLAB
       comment:
         "<a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See
         plugins</a>"
@@ -59,19 +80,30 @@
 
     - name: FieldTrip - data2bids
       url: https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m
-      data_types: EEG, MEG, iEEG, behavioral, MRI (anat and func)
-      expected_input: |
-        any EEG or MEG file format, NBS Presentation logfiles, DICOM, nifti
-      language: MATLAB
+      data_types: 
+        - EEG
+        - MEG
+        - iEEG
+        - behavioral
+        - MRI (anat and func)
+      expected_input: 
+        - any EEG or MEG file format
+        - NBS Presentation logfiles 
+        - DICOM 
+        - nifti
+      language: 
+        - MATLAB
       documentation: https://www.fieldtriptoolbox.org/example/bids/
       updated: 2021-09-15
       license: GPL-3.0
 
     - name: Biscuit
       url: https://github.com/Macquarie-MEG-Research/Biscuit
-      data_types: MEG
+      data_types: 
+        - MEG
       expected_input:
-      language: Python
+      language: 
+        - Python
       documentation: https://macquarie-meg-research.github.io/Biscuit/
       comment: GUI for easy MEG to BIDS conversion
       GUI: true
@@ -80,9 +112,11 @@
 
     - name: sovabids
       url: https://github.com/yjmantilla/sovabids
-      data_types: EEG
+      data_types: 
+        - EEG
       expected_input:
-      language: Python
+      language: 
+        - Python
       documentation: https://sovabids.readthedocs.io/en/latest/
       comment:
         A Python package for the automatic conversion of EEG datasets to the
@@ -91,9 +125,12 @@
 
     - name: EEG2BIDS
       url: https://github.com/aces/EEG2BIDS
-      data_types: EEG
+      data_types: 
+        - EEG
       expected_input:
-      language: Javascript, Python
+      language: 
+        - Javascript
+        - Python
       documentation:
       comment:
         A tool for converting raw EEG and iEEG data into the BIDS standard data
