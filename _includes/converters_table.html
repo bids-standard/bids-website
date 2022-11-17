@@ -10,7 +10,6 @@
     <table>
       <tr>
         <th>Name</th>
-        <th>Data type</th>
         <th>Expected input</th>
         <th>Language</th>
         <th>Distribution</th>
@@ -25,13 +24,6 @@
       <tr>
         <td>
           <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
-        </td>
-        <td class="distribution">
-          <ul>
-            {% for type in converter.data_types %}
-              <li> {{ type }} </li>
-            {% endfor %}   
-          </ul>        
         </td>
         <td class="distribution">
           <ul>
