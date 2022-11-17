@@ -13,7 +13,6 @@
         <th>Expected input</th>
         <th>Language</th>
         <th>Distribution</th>
-        <th>GUI</th>
         <th>Documentation</th>
         <th>Comment</th>
         <th>License</th>
@@ -48,15 +47,12 @@
             {% endfor %}
           </ul>
         </td>
-        <td>{{ converter.GUI }}</td>
         <td>
           {% if converter.documentation %}
           <a href="{{ converter.documentation }} " target="_blank">doc</a>
           {% endif %}
         </td>
         <td class="comment">{{ converter.comment }}</td>
-        <!--Displaying only the year of the latest update as the _data dates are only manually updated at this point.-->
-        <td>{{ converter.license }}</td>
         <td>{{ converter.updated | date: "%Y" }}</td>
       </tr>
       {% endfor %}
