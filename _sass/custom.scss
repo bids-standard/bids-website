@@ -50,13 +50,15 @@
     overflow: auto;
     padding: 0;
 
-    width: 160%;
-    margin-left: -30%;
+    width: 120%;
+
+    margin-left: -10%;
+    margin-right: 0%;
+    
+    padding: 0;
 
     text-align: left;
 
-    margin-right: 0%;
-    padding: 0;
     vertical-align: middle;    
 
     @include tablesmall  {

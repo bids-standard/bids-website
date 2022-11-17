@@ -13,9 +13,7 @@
         <th>Expected input</th>
         <th>Language</th>
         <th>Distribution</th>
-        <th>Documentation</th>
         <th>Comment</th>
-        <th>License</th>
         <th>Updated</th>
       </tr>
 
@@ -47,13 +45,14 @@
             {% endfor %}
           </ul>
         </td>
-        <td>
-          {% if converter.documentation %}
-          <a href="{{ converter.documentation }} " target="_blank">doc</a>
-          {% endif %}
-        </td>
         <td class="comment">{{ converter.comment }}</td>
-        <td>{{ converter.updated | date: "%Y" }}</td>
+        <td>
+          <p style = "display: flex; justify-content: center; align-items: center">
+            <img  alt="GitHub last commit" 
+                  src="https://img.shields.io/github/last-commit/{{ converter.url | replace: "https://github.com/", "" }}?style=for-the-badge">
+          </p>
+        </td>
+        
       </tr>
       {% endfor %}
     </table>
