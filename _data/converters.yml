@@ -33,7 +33,7 @@
       updated: 2019-01-23
       distribution:
         - name: pypi
-          url: https://pypi.org/project/bidsify/
+          url: https://pypi.org/project/bidsify
         - name: dockerhub
           url: https://hub.docker.com/r/lukassnoek/bidsify
 
@@ -70,7 +70,7 @@
       updated: 2019-07-03
       distribution:
         - name: pypi
-          url: https://pypi.org/project/data2bids/
+          url: https://pypi.org/project/data2bids
       license: MIT
 
     - name: Dcm2Bids
@@ -103,7 +103,7 @@
         - name: pypi
           url: https://pypi.org/project/heudiconv
         - name: dockerhub
-          url: https://hub.docker.com/r/nipy/heudiconv/tags/
+          url: https://hub.docker.com/r/nipy/heudiconv
       documentation: https://heudiconv.readthedocs.io/
       comment: |
         A flexible DICOM converter for organizing brain imaging data into

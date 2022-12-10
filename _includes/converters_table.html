@@ -22,35 +22,54 @@
         <td>
           <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
         </td>
-        <td class="distribution">
+        <td class="converter-ul">
           <ul>
             {% for input in converter.expected_input %}
               <li> {{ input }} </li>
             {% endfor %}          
           </ul>
         </td>
-        <td class="distribution">
+        <td class="converter-ul">
           <ul>
             {% for lang in converter.language %}
               <li> {{ lang }} </li>
             {% endfor %}
           </ul>
         </td>
-        <td class="distribution">
-          <ul>
+        <td>
+          <div class="distribution">
             {% for entry in converter.distribution %}
-            <li>
-              <a href="{{ entry.name }}" target="_blank">{{ entry.name }}</a>
-            </li>
+                {% if entry.name == "pypi" %}
+                  <a href="{{ entry.url }}">
+                    <img src="https://badge.fury.io/py/{{ entry.url | replace: "https://pypi.org/project/", "" }}.svg" 
+                         alt="PyPI version" 
+                         height="20">
+                  </a>
+                {% elsif entry.name == "dockerhub" %} 
+                  <a href="{{ entry.url }}">
+                    <img src="https://img.shields.io/docker/pulls/{{ entry.url | replace: "https://hub.docker.com/r/", "" }}.svg" 
+                         alt="dockerhub pulls" 
+                         height="20">
+                  </a>    
+                  {% elsif entry.name == "conda-forge" %} 
+                  <a href="{{ entry.url }}">
+                    <img src="{{ entry.url }}badges/latest_release_date.svg  " 
+                         alt="conda forge" 
+                         height="20">
+                  </a>                             
+                {% else %} 
+                  <a href="{{ entry.url }}" target="_blank">{{ entry.name }}
+                  </a>
+                {% endif %}
             {% endfor %}
-          </ul>
+          </div>
         </td>
         <td class="comment">{{ converter.comment }}</td>
         <td>
-          <p class="shield-badge">
+          <div class="shield-badge">
             <img  alt="GitHub last commit" 
                   src="https://img.shields.io/github/last-commit/{{ converter.url | replace: "https://github.com/", "" }}?style=plastic">
-          </p>
+          </div>
         </td>
         
       </tr>
