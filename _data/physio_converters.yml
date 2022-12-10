@@ -50,7 +50,7 @@
     data_types: 
         - phsyiological
     expected_input:
-        - Acqknowledge,
+        - Acqknowledge
         - Labchart
     language: 
         - Python

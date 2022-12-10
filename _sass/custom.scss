@@ -87,6 +87,13 @@
         width:25%
       }      
 
+      .shield-badge{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        width: 175px
+      }
+
       .distribution {
         p {
           margin: 0;

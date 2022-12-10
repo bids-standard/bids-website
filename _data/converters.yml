@@ -212,7 +212,7 @@
       license: GPL-3.0
 
     - name: Clinica
-      url: https://github.com/aramis-lab/clinica/
+      url: https://github.com/aramis-lab/clinica
       data_types:
       expected_input: 
         - ADNI
