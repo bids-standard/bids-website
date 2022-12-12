@@ -1,7 +1,6 @@
 # template
 #     - name:
 #       url: URL to repo
-#       updated: Date of last update either last release or substantial commit
 #       data_types: 
 #       - MRI, EEG, MEG, iEEG, events
 #       expected_input: 
@@ -34,7 +33,6 @@
       comment:
         Python functions to convert E-Prime files to csvs. Not currently being
         developed.
-      updated: 2020-05-18
       license: MIT
 
     - name: DCM2NIIx
@@ -47,7 +45,7 @@
         C++ (compiled versions available from <a
         href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
       comment: "dcm2nii DICOM to NIfTI converter"
-      updated: 2021-06-01
+
 
     - name: DICM2NII
       url: https://github.com/xiangruili/dicm2nii
@@ -58,5 +56,4 @@
       language: 
         - MATLAB
       comment: "dcm2nii DICOM to NIfTI converter"
-      updated: 2021-09-24
       license: BSD-2

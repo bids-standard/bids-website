@@ -1,7 +1,7 @@
 # template
 #     - name:
 #       url: URL to repo
-#       updated: Date of last update either last release or substantial commit
+#       
 #       data_types: 
 #        - MRI, EEG, MEG, iEEG, events, physio
 #       expected_input: 
@@ -30,7 +30,6 @@
       language: 
          -  Python
       comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
-      updated: 2019-01-23
       distribution:
         - name: pypi
           url: https://pypi.org/project/bidsify
@@ -48,7 +47,6 @@
       comment:
         Utility functions for working with DICOM and BIDS neuroimaging data.
       documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
-      updated: 2019-11-27
       distribution:
         - name: pypi
           url: https://pypi.org/project/bidskit
@@ -67,7 +65,6 @@
       comment: |
         Converts MRI files from extension supported by nibabel into NIfTI and
         convert them to BIDS
-      updated: 2019-07-03
       distribution:
         - name: pypi
           url: https://pypi.org/project/data2bids
@@ -83,7 +80,6 @@
         - Python
       comment: converts DICOM files using dcm2niix into BIDS
       documentation: https://unfmontreal.github.io/Dcm2Bids/
-      updated: 2021-02-27
       distribution:
         - name: pypi
           url: https://pypi.org/project/Dcm2Bids
@@ -108,7 +104,6 @@
       comment: |
         A flexible DICOM converter for organizing brain imaging data into
         structured directory layouts
-      updated: 2021-09-16
       license: Apache 2.0
 
     - name: OpenfMRI2BIDS
@@ -118,7 +113,6 @@
       expected_input:
       language:
       comment: Convert OpenfMRI dataset to BIDS
-      updated: 2018-07-20
 
     - name: ReproIn
       url: https://github.com/ReproNim/reproin
@@ -130,7 +124,6 @@
       comment:
         "HeuDiConv-based turnkey solution: a setup for automatic generation of
         shareable, version-controlled BIDS datasets from MR scanners."
-      updated: 2021-08-03
       distribution:
         - name: dockerhub
           url: https://hub.docker.com/r/repronim/reproin
@@ -146,7 +139,6 @@
       comment: |
         Simple xnat pipeline to convert DICOM scans to BIDS-compatible output
         (nii+json).
-      updated: 2018-07-20
 
     - name: Horos (Osirix) export plugin
       url: https://github.com/mslw/horos-bids-output
@@ -155,7 +147,6 @@
       language: 
         - objective C
       comment: Horos plugin for BIDS output.
-      updated: 2018-08-10
       GUI: yes
       license: GPL-3.0
 
@@ -178,7 +169,6 @@
           url: https://pypi.org/project/bidscoin
       documentation: https://bidscoin.readthedocs.io/en/stable/
       comment: BIDScoin converts your source-level neuroimaging data to BIDS
-      updated: 2021-09-29
       GUI: yes
       license: GPL-3.0
 
@@ -195,7 +185,6 @@
       language: 
          -  Python
       comment:
-      updated: 2021-08-18
       license: GPL-2.0
 
     - name: BrkRaw
@@ -208,7 +197,6 @@
         - Python
       GUI: yes
       comment: For a preclinical Bruker MRI scanner
-      updated: 2021-08-24
       license: GPL-3.0
 
     - name: Clinica
@@ -223,7 +211,6 @@
       language: 
         - Python
       comment:
-      updated: 2021-09-30
       documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
       license: MIT
 
@@ -236,7 +223,6 @@
       language: 
         - Python
       comment: Create a BIDS structure for a DICOM folder.
-      updated: 2017-11-16
 
     - name: Autobids
       url: https://github.com/khanlab/autobids
@@ -248,7 +234,6 @@
         Automated Dicom to BIDS and pipelines using compute canada. From the
         Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts
         Research Institute.
-      updated: 2021-05-06
 
     - name: PET2BIDS
       url: https://github.com/openneuropet/PET2BIDS
@@ -263,7 +248,6 @@
       language: 
         - MATLAB
         - Python
-      updated: 2021-10-16
       GUI: false
       license: MIT
 
@@ -279,7 +263,6 @@
       documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
       language: 
          -  MATLAB
-      updated: 2021-09-13
 
     - name: SAMRI
       url: https://github.com/IBT-FMI/SAMRI
@@ -288,7 +271,6 @@
         repositing pipeline, which can convert Bruker archives to the BIDS format.
         From the ETH and University of Zurich, with collaboration from MIT and
         Dartmouth College.
-      updated: 2021-11-08
       data_types: 
         - small-animal MRI
       expected_input: 
@@ -308,7 +290,6 @@
         (i) convert DICOM data to NIfTI data using dcm2niix
         (ii) structure this data according to the BIDS specification
         (iii) provide the papayaWidget viewer for inspecting the images
-      updated: 2022-07-28
       data_types: 
         - MRI
       expected_input: 
