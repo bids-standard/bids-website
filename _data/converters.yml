@@ -68,6 +68,7 @@
       language: 
        -  Python
       GUI: true    
+      license: GPL-3.0      
 
     - name: Data2Bids
       url: https://github.com/SIMEXP/Data2Bids
