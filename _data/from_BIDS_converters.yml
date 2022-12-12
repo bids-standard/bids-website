@@ -2,14 +2,17 @@
 #     - name:
 #       url: URL to repo
 #       updated: Date of last update either last release or substantial commit
-#       data_types: MRI, EEG, MEG, iEEG, events
-#       expected_input: DICOM, PAR/REC, tsv
+#       data_types: 
+#       - MRI, EEG, MEG, iEEG, events
+#       expected_input: 
+#       -  DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: Python, MATLAB
+#       language: 
+#        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
@@ -25,17 +28,23 @@
     - name: BIDS2ISATab
       url: https://github.com/bids-standard/BIDS2ISATab
       data_types:
-      expected_input: BIDS
-      language: Python
+      expected_input: 
+        -  BIDS
+      language: 
+        - Python
       comment: Extract ISA-Tab compatible metadata from BIDS
       updated: 2016-10-08
       icense: Apache-2.0      
 
     - name: BIDSto3col
       url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
-      data_types: TSV
-      expected_input: BIDS
-      language: shell, Python
+      data_types: 
+        - TSV
+      expected_input: 
+        - BIDS
+      language: 
+        - shell
+        - Python
       comment:
         Reads BidsTSV and then creates 3 column event files, one per event type
         if a "trial_type" column is found.
@@ -44,25 +53,32 @@
     - name: BIDS2NDA
       url: https://github.com/bids-standard/BIDS2NDA
       data_types:
-      expected_input: BIDS
-      language: Python
+      expected_input: 
+        - BIDS
+      language: 
+        - Python
       comment: Extract NIHM Data Archive compatible metadata from BIDS
       updated: 2020-10-03
       license: Apache-2.0      
 
     - name: bids2xar - for XNAT import
       url: https://github.com/lwallace23/bids2xar
-      data_types: MRI # not sure
-      expected_input: BIDS
-      language: Python
+      data_types: 
+        - MRI # not sure
+      expected_input: 
+        - BIDS
+      language: 
+        - Python
       comment: Convert BIDS data set into XNAT XAR bundles
       updated: 2017-09-01
 
     - name: BIDS2NIDM
       url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
       data_types:
-      expected_input: BIDS
-      language: Python
+      expected_input: 
+        -  BIDS
+      language: 
+        - Python
       comment: |
         This program will convert a NIDM-Experiment RDF document to a BIDS
         dataset.
@@ -70,9 +86,13 @@
 
     - name: AFNI BIDS-tools
       url: https://github.com/nih-fmrif/BIDS-tools
-      data_types: MRI
-      expected_input: BIDS # not sure about that one
-      language: shell, Python
+      data_types: 
+        - MRI
+      expected_input: 
+        - BIDS # not sure about that one
+      language: 
+        - shell
+        - Python
       comment:
         ARCHIVED - Scripts, tools, and documents on creating, parsing, and
         working with BIDS-structured data sets.

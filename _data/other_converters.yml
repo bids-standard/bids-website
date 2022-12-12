@@ -2,14 +2,17 @@
 #     - name:
 #       url: URL to repo
 #       updated: Date of last update either last release or substantial commit
-#       data_types: MRI, EEG, MEG, iEEG, events
-#       expected_input: DICOM, PAR/REC, tsv
+#       data_types: 
+#       - MRI, EEG, MEG, iEEG, events
+#       expected_input: 
+#        -  DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: Python, MATLAB
+#       language: 
+#        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
@@ -22,9 +25,12 @@
   members:
     - name: convert-eprime
       url: https://github.com/tsalo/convert-eprime
-      data_types: behavioral
-      expected_input: E-Prime log files
-      language: Python
+      data_types: 
+        - behavioral
+      expected_input: 
+        - E-Prime log files
+      language: 
+        - Python
       comment:
         Python functions to convert E-Prime files to csvs. Not currently being
         developed.
@@ -33,7 +39,9 @@
 
     - name: DCM2NIIx
       url: https://github.com/neurolabusc/dcm2niix
-      data_types: DICOM, PAR/REC
+      data_types: 
+        - DICOM
+        - PAR/REC
       expected_input:
       language:
         C++ (compiled versions available from <a
@@ -43,9 +51,12 @@
 
     - name: DICM2NII
       url: https://github.com/xiangruili/dicm2nii
-      data_types: DICOM
-      expected_input: DICOM
-      language: MATLAB
+      data_types: 
+        - DICOM
+      expected_input: 
+        - DICOM
+      language: 
+        - MATLAB
       comment: "dcm2nii DICOM to NIfTI converter"
       updated: 2021-09-24
       license: BSD-2
