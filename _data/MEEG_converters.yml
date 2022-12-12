@@ -1,7 +1,6 @@
 # template
 #     - name:
 #       url: URL to repo
-#       updated: Date of last update either last release or substantial commit
 #       data_types: 
 #       - EEG, MEG, iEEG, events
 #       expected_input: 
@@ -33,7 +32,6 @@
         - Python
       documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
       comment:
-      updated: 2021-08-18
       license: GPL-2.0
 
     - name: MNE-BIDS
@@ -61,7 +59,6 @@
         MNE-BIDS is a Python package that allows you to read and write
         BIDS-compatible datasets with the help of MNE-Python.
       GUI: false
-      updated: 2022-09-04
       license: BSD-3-Clause
 
     - name: EEGLAB
@@ -79,7 +76,7 @@
       comment:
         "<a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See
         plugins</a>"
-      updated: 2021-09-29
+
 
     - name: FieldTrip - data2bids
       url: https://github.com/fieldtrip/fieldtrip
@@ -97,7 +94,6 @@
       language: 
         - MATLAB
       documentation: https://www.fieldtriptoolbox.org/example/bids/
-      updated: 2021-09-15
       license: GPL-3.0
 
     - name: Biscuit
@@ -110,7 +106,6 @@
       documentation: https://macquarie-meg-research.github.io/Biscuit/
       comment: GUI for easy MEG to BIDS conversion
       GUI: true
-      updated: 2019-02-27
       license: MIT
 
     - name: sovabids
@@ -124,7 +119,7 @@
       comment:
         A Python package for the automatic conversion of EEG datasets to the
         BIDS standard, with a focus on making the most out of metadata.
-      updated: 2021-08-23
+
 
     - name: EEG2BIDS
       url: https://github.com/aces/EEG2BIDS
@@ -139,4 +134,4 @@
         A tool for converting raw EEG and iEEG data into the BIDS standard data
         structure, prepared for LORIS (Longitudinal Online Research and Imaging
         System).
-      updated: 2021-10-29
+

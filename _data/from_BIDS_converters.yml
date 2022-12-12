@@ -1,7 +1,6 @@
 # template
 #     - name:
 #       url: URL to repo
-#       updated: Date of last update either last release or substantial commit
 #       data_types: 
 #       - MRI, EEG, MEG, iEEG, events
 #       expected_input: 
@@ -33,8 +32,7 @@
       language: 
         - Python
       comment: Extract ISA-Tab compatible metadata from BIDS
-      updated: 2016-10-08
-      icense: Apache-2.0      
+      license: Apache-2.0      
 
     - name: BIDSto3col
       url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
@@ -48,7 +46,7 @@
       comment:
         Reads BidsTSV and then creates 3 column event files, one per event type
         if a "trial_type" column is found.
-      updated: 2016-11-04
+
 
     - name: BIDS2NDA
       url: https://github.com/bids-standard/BIDS2NDA
@@ -58,7 +56,6 @@
       language: 
         - Python
       comment: Extract NIHM Data Archive compatible metadata from BIDS
-      updated: 2020-10-03
       license: Apache-2.0      
 
     - name: bids2xar - for XNAT import
@@ -70,7 +67,7 @@
       language: 
         - Python
       comment: Convert BIDS data set into XNAT XAR bundles
-      updated: 2017-09-01
+
 
     - name: BIDS2NIDM
       url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
@@ -82,7 +79,7 @@
       comment: |
         This program will convert a NIDM-Experiment RDF document to a BIDS
         dataset.
-      updated: 2021-09-16
+
 
     - name: AFNI BIDS-tools
       url: https://github.com/nih-fmrif/BIDS-tools
@@ -96,4 +93,4 @@
       comment:
         ARCHIVED - Scripts, tools, and documents on creating, parsing, and
         working with BIDS-structured data sets.
-      updated: 2019-10-30
+
