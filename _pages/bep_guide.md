@@ -1,3 +1,6 @@
+---
+---
+
 # BIDS Extension Proposals: A Guide
 
 ## Why contribute to BIDS?
@@ -29,7 +32,7 @@
   files should be identifiable by their names even if removed from the folder
   structure.
 
-# When and how to start a BIDS Extension Proposal?
+## When and how to start a BIDS Extension Proposal?
 
 - Small contributions (typos, rephrasing of a description, adding a single new
   metadata field) can be just added as a
@@ -75,12 +78,14 @@
       [BIDS Validator](https://github.com/bids-standard/bids-validator)
       incorporating the extension.
 
+<div style="display: flex; gap: 10px; justify-content:center">
+<img src="assets/img/bep_process.png" width="50%">
+</div>
 
-![alt_text](images/image1.png "image_tooltip")
 
-# Advice for extending BIDS
+## Advice for extending BIDS
 
-## Limit flexibility, consider tool developers
+### Limit flexibility, consider tool developers
 
 One of the aims of BIDS is to make reusing data easier. This means that when
 proposing an extension you need to put yourself in the shoes of someone who will
@@ -98,20 +103,20 @@ iEEG-BIDS and EEG-BIDS
 to find out about most common formats and selected only a few formats based on
 usage and their openness.
 
-## Get the community involved
+### Get the community involved
 
 Try to reach out to colleagues working with the type of data you are trying to
 add support for. The more eyes you will get on your extension the better it will
 get.
 
-## Be consistent with the main specification
+### Be consistent with the main specification
 
 The main specification follows some general rules. For example, see the
 [rules on participant labels](https://bids-specification.readthedocs.io/en/stable/02-common-principles.html#participant-names-and-other-labels).
 
 Try not to deviate from those conventions in your extension.
 
-## Avoid backward incompatible changes
+### Avoid backward incompatible changes
 
 BIDS is already incorporated in many tools - proposing a change that will render
 already released BIDS datasets not BIDS compliant will cause a lot of confusion
@@ -122,7 +127,7 @@ Having said that, one day we will have to break backwards compatibility. If you
 have an idea for a backward incompatible change please add it as an issue to the
 [BIDS 2.0 GitHub repository](https://github.com/bids-standard/bids-2-devel).
 
-## Use existing and common practices/formats
+### Use existing and common practices/formats
 
 It’s likely that certain data types are commonly stored in a particular way in
 your subfield. If this is the case try adopting this way unless it makes your
@@ -131,15 +136,15 @@ adoption is the
 [bvec/bval file format](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html#required-gradient-orientation-information)
 for storing diffusion metadata.
 
-## Try to link with other existing standards and ontologies
+### Try to link with other existing standards and ontologies
 
 There are many standardization attempts out there. When proposing your extension
 consider gathering inspiration and directly linking to other standards. A good
 example of this is linking metadata fields to corresponding DICOM tags.
 
-# Common pitfalls
+## Common pitfalls
 
-## Relying on merging the extension on a set timeline
+### Relying on merging the extension on a set timeline
 
 We have found that it is very difficult to predict how long a BIDS extension
 will take to merge into the standard. One challenge that has occurred in the
@@ -149,7 +154,7 @@ for graduation. We do not recommend yoking contributions to the BIDS community
 uncertainty around domain specific community engagement, feedback from the BIDS
 maintainers and broader developer community, and responding to those reviews.
 
-## Not considering domain- or field-specific guidelines
+### Not considering domain- or field-specific guidelines
 
 In many neuroscience fields there have been past developments and efforts to
 implement standards, either formally or informally; where possible BIDS
@@ -157,7 +162,7 @@ extension proposals should embrace these rather than trying to come up with
 alternative standards. The BIDS extension proposal should therefore inventorize
 and review past and existing work that may be relevant to the BEP.
 
-## Not building up a user community to support the BEP
+### Not building up a user community to support the BEP
 
 Merging BIDS extension proposals only happens following a community review. It
 is therefore helpful to get the stakeholders on board early on (i.e., while
@@ -167,12 +172,12 @@ the core team has representatives from 3 different labs, preferably also with a
 mix of more junior and more senior contributors. You may also consider
 requesting explicit support letters from external labs.
 
-# How to turn on email notifications about suggestions and comments for Google Documents
+### How to turn on email notifications about suggestions and comments for Google Documents
 
 1. Open the document you want to turn on the notifications for
 
-![alt_text](images/image2.png "image_tooltip")
-
-![alt_text](images/image3.png "image_tooltip")
-
-![alt_text](images/image4.png "image_tooltip")
+<div style="display: flex; gap: 10px; justify-content:center">
+<img src="assets/img/notifications_1.png" width="50%">
+<img src="assets/img/notifications_2.png" width="50%">
+<img src="assets/img/notifications_3.png" width="50%">
+</div>

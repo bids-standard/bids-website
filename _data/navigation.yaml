@@ -20,6 +20,15 @@ menu:
     url: /get_started.html
   - title: GET INVOLVED
     url: /get_involved.html
+    sublinks:
+      - title: Get Involved
+        url: /get_involved.html#get-involved-in-making-bids-better
+      - title: BIDS extension proposals
+        url: /get_involved.html#extending-the-bids-specification 
+      - title: "BIDS Extension Proposal: a guide"
+        url: /bep_guide.html
+      - title: "BIDS Extension Proposal: submission process"
+        url: /bep_submission_process.html        
   - title: GOVERNANCE
     url: /governance.html
   - title: ACKNOWLEDGMENTS
