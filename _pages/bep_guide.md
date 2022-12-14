@@ -9,20 +9,7 @@
   scratch.
 - You can interact with and get to know other experts in the field.
 - A more substantial extension can lead to standalone publications, as evidenced
-  by abundant examples:
-  - MEG:
-    [https://www.nature.com/articles/sdata2018110](https://www.nature.com/articles/sdata2018110)
-  - EEG:
-    [https://www.nature.com/articles/s41597-019-0104-8](https://www.nature.com/articles/s41597-019-0104-8)
-  - iEEG:
-    [https://www.nature.com/articles/s41597-019-0105-7](https://www.nature.com/articles/s41597-019-0105-7)
-  - Genetics:
-    [https://doi.org/10.1093/gigascience/giaa104](https://doi.org/10.1093/gigascience/giaa104)
-  - PET:
-    [https://doi.org/10.1177/0271678X20905433](https://doi.org/10.1177/0271678X20905433)
-  - Microscopy:
-    [https://doi.org/10.3389/fnins.2022.871228](https://doi.org/10.3389/fnins.2022.871228)
-
+  by [abundant examples](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids).
 ## Overarching principles in the design of BIDS
 
 - Folder structure must be not only machine-readable but also easy to interpret
@@ -174,9 +161,7 @@ requesting explicit support letters from external labs.
 
 ### How to turn on email notifications about suggestions and comments for Google Documents
 
-1. Open the document you want to turn on the notifications for
-
-<div style="display: flex; gap: 10px; justify-content:center">
+<div style="display: flex; gap: 10px; align-items:center; flex-direction: column">
 <img src="assets/img/notifications_1.png" width="50%">
 <img src="assets/img/notifications_2.png" width="50%">
 <img src="assets/img/notifications_3.png" width="50%">
