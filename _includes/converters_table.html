@@ -10,14 +10,10 @@
     <table>
       <tr>
         <th>Name</th>
-        <th>Data type</th>
         <th>Expected input</th>
         <th>Language</th>
         <th>Distribution</th>
-        <th>GUI</th>
-        <th>Documentation</th>
         <th>Comment</th>
-        <th>License</th>
         <th>Updated</th>
       </tr>
 
@@ -26,28 +22,56 @@
         <td>
           <a href="{{ converter.url }}" target="_blank">{{ converter.name }}</a>
         </td>
-        <td>{{ converter.data_types }}</td>
-        <td>{{ converter.expected_input }}</td>
-        <td>{{ converter.language }}</td>
-        <td class="distribution">
+        <td class="converter-ul">
           <ul>
-            {% for entry in converter.distribution %}
-            <li>
-              <a href="{{ entry.name }}" target="_blank">{{ entry.name }}</a>
-            </li>
+            {% for input in converter.expected_input %}
+              <li> {{ input }} </li>
+            {% endfor %}          
+          </ul>
+        </td>
+        <td class="converter-ul">
+          <ul>
+            {% for lang in converter.language %}
+              <li> {{ lang }} </li>
             {% endfor %}
           </ul>
         </td>
-        <td>{{ converter.GUI }}</td>
         <td>
-          {% if converter.documentation %}
-          <a href="{{ converter.documentation }} " target="_blank">doc</a>
-          {% endif %}
+          <div class="distribution">
+            {% for entry in converter.distribution %}
+                {% if entry.name == "pypi" %}
+                  <a href="{{ entry.url }}">
+                    <img src="https://badge.fury.io/py/{{ entry.url | replace: "https://pypi.org/project/", "" }}.svg" 
+                         alt="PyPI version" 
+                         height="20">
+                  </a>
+                {% elsif entry.name == "dockerhub" %} 
+                  <a href="{{ entry.url }}">
+                    <img src="https://img.shields.io/docker/pulls/{{ entry.url | replace: "https://hub.docker.com/r/", "" }}.svg" 
+                         alt="dockerhub pulls" 
+                         height="20">
+                  </a>    
+                  {% elsif entry.name == "conda-forge" %} 
+                  <a href="{{ entry.url }}">
+                    <img src="{{ entry.url }}badges/version.svg  " 
+                         alt="conda forge" 
+                         height="20">
+                  </a>                             
+                {% else %} 
+                  <a href="{{ entry.url }}" target="_blank">{{ entry.name }}
+                  </a>
+                {% endif %}
+            {% endfor %}
+          </div>
         </td>
         <td class="comment">{{ converter.comment }}</td>
-        <!--Displaying only the year of the latest update as the _data dates are only manually updated at this point.-->
-        <td>{{ converter.license }}</td>
-        <td>{{ converter.updated | date: "%Y" }}</td>
+        <td>
+          <div class="shield-badge">
+            <img  alt="GitHub last commit" 
+                  src="https://img.shields.io/github/last-commit/{{ converter.url | replace: "https://github.com/", "" }}?style=plastic">
+          </div>
+        </td>
+        
       </tr>
       {% endfor %}
     </table>

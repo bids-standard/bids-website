@@ -47,44 +47,97 @@
 
   .table-container {
 
-    font-size: 90%;
-
     overflow: auto;
     padding: 0;
 
-    width: 160%;
-    margin-left: -30%;
+    width: 120%;
+
+    margin-left: -10%;
+    margin-right: 0%;
+    
+    padding: 0;
+
+    text-align: left;
+
+    vertical-align: middle;    
 
     @include tablesmall  {
       width: 100%;
       margin-left: 0%;
-    } 
+    }
 
     table {
-      margin-right: 0%;
-      padding: 0;
-    }   
 
-    th,
-    td {
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .distribution {
-      text-align: justify;
-      ul {
-        padding-left: 15%;
+      .bep-title {
+        width: 15%;
+        p{
+          text-align: left;
+          white-space: wrap;
+        };
       }
-    }
-    
-    .comment {
-      text-align: justify;
-      font-size: 90%;
-    }
 
+      .leads {
+        width:15%;
+        padding: 0;
+        margin: 0;
+        p{margin: 0;}
+      }
+
+      .comment {
+        width:25%
+      }      
+
+      .shield-badge{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 180px
+      }
+
+      .distribution {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap: 5px;
+        width: 160px
+      }      
+
+      .converter-ul {
+        p {
+          margin: 0;
+          margin-top: 5px;
+        }
+        ul {
+          margin: 0;
+          padding-left: 15px;
+          li {
+            margin: 0;
+            padding: 0;
+            margin-top: 2px;
+          }
+        }
+      }      
+
+      .bep-comment {
+        p {
+          margin: 0;
+          margin-top: 5px;
+        }
+        ul {
+          margin: 0;
+          padding-left: 15px;
+          li {
+            margin: 0;
+            padding: 0;
+            margin-top: 2px;
+          }
+        }
+      }
+
+    }
   }
-
 }
 
 .center-image {
@@ -110,13 +163,13 @@
 .election-banner {
 
   border: 10px solid #aa0000;
-  
+
   padding-bottom : 1rem;
-  
+
   margin-top : 1rem;
   margin-left: 20%;
   margin-right: 20%;
-  
+
   text-align: center;
 
   p, h2, h3{
@@ -142,20 +195,20 @@
     p {
       text-align: justify;
     }
-  }  
+  }
 
   button{
     color: #000000;
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 20px;
-  }  
+  }
 
   .iframe-container{
     position: relative;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
 
     iframe{

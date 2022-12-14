@@ -1,15 +1,17 @@
 # template
 #     - name:
 #       url: URL to repo
-#       updated: Date of last update either last release or substantial commit
-#       data_types: physio
-#       expected_input: DICOM, PAR/REC, tsv
+#       data_types: 
+#         - physio
+#       expected_input:
+#         -  DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: Python, MATLAB
+#       language: 
+#        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
 #       GUI: false
@@ -17,32 +19,42 @@
 - group:
   name: Physiological data converters
   comment:
-
   members:
   - name: BIDScoin
     url: https://github.com/Donders-Institute/bidscoin
-    data_types: MRI, phsyiological, behavioral, PET
-    expected_input: DICOM, PAR/REC, physiological, PET
-    language: Python
+    data_types: 
+        - MRI
+        - phsyiological
+        - behavioral
+        - PET
+    expected_input:
+        - DICOM
+        - PAR/REC
+        - physiological
+        - PET
+    language: 
+        - Python
     distribution:
         - name: pypi
           url: https://pypi.org/project/bidscoin
     documentation: https://bidscoin.readthedocs.io/en/stable/
     comment: BIDScoin converts your source-level neuroimaging data to BIDS
-    updated: 2021-09-29
     GUI: yes
     license: GPL-3
 
   - name: phys2bids
     url: https://github.com/physiopy/phys2bids
-    data_types: phsyiological
-    expected_input: Acqknowledge, Labchart
-    language: Python
+    data_types: 
+        - phsyiological
+    expected_input:
+        - Acqknowledge
+        - Labchart
+    language: 
+        - Python
     distribution:
         - name: pypi
           url: https://pypi.org/project/phys2bids
     documentation: https://phys2bids.readthedocs.io/en/latest/
     comment: Python3 library to format physiological files in BIDS. 
-    updated: 2021-06-18
     license: Apache-2.0
 
