@@ -28,6 +28,7 @@ initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initializatio
 - [D. License](#d-license)
 - [E. Help](#e-help)
 - [F. Acknowledgements](#f-acknowledgements)
+- [G. Election data and code](#g-election-data-and-code)
 
 ## 1. Introduction
 
@@ -481,3 +482,8 @@ and from other open-source governance documents including:
 - [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104){:target="_blank"}
 - [https://randyfay.com/content/drupals-governance](https://randyfay.com/content/drupals-governance){:target="_blank"}
 - [https://www.drupal.org/governance](https://www.drupal.org/governance){:target="_blank"}
+
+### G. Election data and code
+
+Anonymous data from BIDS elections is stored in a dedicated repository on GitHub:
+[https://github.com/bids-standard/bids-elections](https://github.com/bids-standard/bids-elections){:target="_blank"}
