@@ -10,7 +10,7 @@
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
-#             url: https://hub.docker.com/??
+#             url: https://hub.docker.com/r/??
 #       language: 
 #        -  Python, MATLAB
 #       documentation: URL to documentation
@@ -53,6 +53,20 @@
         - name: dockerhub
           url: https://hub.docker.com/r/jmtyszka/bidskit
       license: MIT
+
+    - name: BMAT
+      url: https://github.com/ColinVDB/BMAT
+      data_types: 
+       - MRI
+      expected_input: 
+      -  DICOM
+      distribution:
+          - name: dockerhub
+            url: https://hub.docker.com/r/colinvdb/bmat-dcm2niix
+      language: 
+       -  Python
+      GUI: true    
+      license: GPL-3.0      
 
     - name: Data2Bids
       url: https://github.com/SIMEXP/Data2Bids
