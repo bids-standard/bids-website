@@ -64,14 +64,19 @@
         - computational model
       expected_input: 
         - |
-          "network and coordinate files expected_input:
-          - CSV/TSV/DAT/Numpy 
-          - arrays/HDF5, 
-          - zip folders, 
-          - and code files in MATLAB/Python/R"
+          network and coordinate files expected_input:
+          <ul>
+            <li>CSV/TSV/DAT/Numpy</li>
+            <li>arrays/HDF5,</li>
+            <li>zip folders,</li>
+            <li>and code files in MATLAB/Python/R</li>
+          </ul>
       language: 
         - Python
       comment: |
-        "GUI to easily convert simulation results to BIDS format,
-        according to [BEP 34](https://bids.neuroimaging.io/bep034)."
+        GUI to easily convert simulation results to BIDS format,
+        according to
+        <a herf="https://bids.neuroimaging.io/bep034" target="_blank">
+          BEP 34
+        </a>.
       license: MIT
