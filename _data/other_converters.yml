@@ -61,10 +61,17 @@
     - name: sim2bids
       url: https://github.com/dissagaliyeva/sim2bids
       data_types: 
-        - ???
+        - computational model
       expected_input: 
-        - network and coordinate files in CSV/TSV/DAT/Numpy arrays/HDF5, zip folders, and code files in MATLAB/Python/R
+        - |
+          "network and coordinate files expected_input:
+          - CSV/TSV/DAT/Numpy 
+          - arrays/HDF5, 
+          - zip folders, 
+          - and code files in MATLAB/Python/R"
       language: 
         - Python
-      comment: "GUI to easily convert simulation results to BIDS format."
+      comment: |
+        "GUI to easily convert simulation results to BIDS format,
+        according to [BEP 34](https://bids.neuroimaging.io/bep034)."
       license: MIT
