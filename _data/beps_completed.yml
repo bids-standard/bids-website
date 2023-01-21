@@ -14,14 +14,6 @@
   content:
     - raw
 
-- number: "001"
-  title: Quantitative MRI (qMRI)
-  leads:
-    - name: Gilles de Hollander
-    - name: Kirstie Whitaker
-  content:
-    - raw
-
 - number: "003"
   title: Common Derivatives
   leads:
