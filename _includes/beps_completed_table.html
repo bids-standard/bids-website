@@ -17,20 +17,20 @@
             >BEP{{ number }}</a
           >
         </td>
-        <td class="bep-title">
+        <td class="completed-bep-title">
           <p>{{ bep.title }}</p>
         </td>
-        <td class="leads" style="width:15%">
+        <td class="completed-bep-content">
           <ul>
-          {% for x in bep.content %}
+            {% for x in bep.content %}
             <li>{{ x | markdownify }}</li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </td>
-        <td class="leads" style="width:15%">
+        <td class="completed-bep-leads">
           <ul>
             {% for person in bep.leads %}
-              <li>{{ person.name | markdownify }}</li>
+            <li>{{ person.name | markdownify }}</li>
             {% endfor %}
           </ul>
         </td>

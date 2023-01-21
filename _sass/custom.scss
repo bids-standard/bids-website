@@ -54,12 +54,12 @@
 
     margin-left: -10%;
     margin-right: 0%;
-    
+
     padding: 0;
 
     text-align: left;
 
-    vertical-align: middle;    
+    vertical-align: middle;
 
     @include tablesmall  {
       width: 100%;
@@ -69,17 +69,15 @@
     table {
 
       .bep-title {
-        width: 25%;
+        width: 22%;
         p{
           text-align: left;
           white-space: wrap;
         };
       }
 
-      .leads {
-        width:15%;
-        padding: 0;
-        margin: 0;
+      .bep-content {
+        width:10%;
         ul {
           margin: 0;
           padding-left: 15px;
@@ -91,28 +89,20 @@
         }
       }
 
-      .comment {
-        width:25%
-      }      
-
-      .shield-badge{
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        width: 180px
+      .bep-leads {
+        width:15%;
+        ul {
+          margin: 0;
+          padding-left: 15px;
+          li {
+            margin: 0;
+            padding: 0;
+            margin-top: 2px;
+          }
+        }
       }
 
-      .distribution {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        gap: 5px;
-        width: 160px
-      }      
-
-      .converter-ul {
+      .bep-comment {
         p {
           margin: 0;
           margin-top: 5px;
@@ -126,9 +116,30 @@
             margin-top: 2px;
           }
         }
-      }      
+      }
 
-      .bep-comment {
+      .comment {
+        width:25%
+      }
+
+      .shield-badge{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 180px
+      }
+
+      .distribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap: 5px;
+        width: 160px
+      }
+
+      .converter-ul {
         p {
           margin: 0;
           margin-top: 5px;
@@ -165,7 +176,7 @@
   }
   @include small {
     background-size: 90%;
-  }  
+  }
 }
 
 .election-banner {
