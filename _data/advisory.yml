@@ -5,7 +5,7 @@
 #   leads:
     - name: Gilles de Hollander
     - name: Kirstie Whitaker
-      git: "KirstieJane"
+      git: KirstieJane
 
 # - title: Common Derivatives
 #   leads:
@@ -16,12 +16,14 @@
 #   leads:
     - name: Henk-Jan Mutsaerts
     - name: Patricia Clement
+      git: patsycle
     - name: Jan Petr
     - name: Marco Castellaro
 
 # - title: Electroencephalography (EEG)
 #   leads:
     - name: Cyril Pernet
+      git:  CPernet
     - name: Stefan Appelhoff
       git:  sappelhoff
     - name: Robert Oostenveld
@@ -30,30 +32,39 @@
 # - title: Hierarchical Event Descriptor (HED) Tags
 #   leads:
     - name: Chris Gorgolewski
-
+      git:  chrisgorgo
 # - title: Positron Emission Tomography (PET)
 #   leads:
     - name: Melanie Ganz
-      git: "melanieganz"
+      git: melanieganz
 
 # - title: intracranial Electroencephalography (iEEG)
 #   leads:
     - name: Chris Holdgraf
+      git: choldgraf
     - name: Dora Hermes
+      git:  dorahermes
+
 
 # - title: Genetic information
 #   leads:
-    - name: Cyril R Pernet
-      git:  CPernet
+
+    # alread in eeg
+    # - name: Cyril R Pernet
+    #   git:  CPernet
+
     - name: Clara Moreau
     - name: Thomas Nichols
+      git: nicholst
 
 # - title: Near Infrared Spectroscopy (NIRS)
 #   leads:
     - name: Robert Luke
+      git: rob-luke
     - name: Luca Pollonini
 
 # - title: Microscopy
 #   leads:
     - name: Marie-Hélène Bourget
+      git: mariehbourget
     - name: Julien Cohen-Adad
