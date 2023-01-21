@@ -66,6 +66,8 @@ Below is a table of BEPs that have been merged.
 The references of the final publication for those BEPS
 can be found in the BIDS [specification](https://bids-specification.readthedocs.io/en/latest/01-introduction.html#datatype-specific-publications).
 
+{% include beps_completed_table.html beps=site.data.beps_completed %}
+
 | Extension label                                                 | Title                                      | Moderators/leads                                                     |
 | --------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------- |
 | [BEP001](https://bids.neuroimaging.io/bep001){:target:"_blank"} | Quantitative MRI (qMRI)                    | Gilles de Hollander and Kirstie Whitaker                             |

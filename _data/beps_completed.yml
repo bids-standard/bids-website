@@ -1,0 +1,96 @@
+# template
+# - number:
+#   title:
+#   leads:
+#     - name:
+#   content:
+#     - raw
+
+- number: "001"
+  title: Quantitative MRI (qMRI)
+  leads:
+    - name: Gilles de Hollander
+    - name: Kirstie Whitaker
+  content:
+    - raw
+
+- number: "001"
+  title: Quantitative MRI (qMRI)
+  leads:
+    - name: Gilles de Hollander
+    - name: Kirstie Whitaker
+  content:
+    - raw
+
+- number: "003"
+  title: Common Derivatives
+  leads:
+    - name: Chris Markiewicz
+  content:
+    - derivative
+
+- number: "005"
+  title: Arterial Spin Labeling (ASL)
+  leads:
+    - name: Henk-Jan Mutsaerts
+    - name: Patricia Clement
+    - name: Jan Petr
+    - name: Marco Castellaro
+  content:
+    - raw
+
+- number: "006"
+  title: Electroencephalography (EEG)
+  leads:
+    - name: Cyril Pernet
+    - name: Stefan Appelhoff
+    - name: Robert Oostenveld
+  content:
+    - raw
+
+- number: "007"
+  title: Hierarchical Event Descriptor (HED) Tags
+  leads:
+    - name: Chris Gorgolewski
+  content:
+    - raw
+
+- number: "008"
+  title: Positron Emission Tomography (PET)
+  leads:
+    - name: Melanie Ganz
+  content:
+    - raw
+
+- number: "010"
+  title: intracranial Electroencephalography (iEEG)
+  leads:
+    - name: Chris Holdgraf
+    - name: Dora Hermes
+  content:
+    - raw
+
+- number: "018"
+  title: Genetic information
+  leads:
+    - name: Cyril R Pernet
+    - name: Clara Moreau
+    - name: Thomas Nichols
+  content:
+    - raw
+
+- number: "030"
+  title: Near Infrared Spectroscopy (NIRS)
+  leads:
+    - name: Robert Luke
+    - name: Luca Pollonini
+  content:
+    - raw
+
+- number: "031"
+  title: Microscopy
+  leads:
+    - name: Marie-Hélène Bourget
+    - name: Julien Cohen-Adad
+  content:
+    - raw
