@@ -5,9 +5,9 @@
       <tr>
         <th>Extension</th>
         <th>Title</th>
+        <th>Content</th>
         <th>Lead(s)</th>
         <th>Last update</th>
-        <th>Blocking point(s)</th>
       </tr>
 
       {% assign beps = include.beps %} {% for bep in beps %} {% assign number =
@@ -21,6 +21,9 @@
         <td class="bep-title">
           <p>{{ bep.title }}</p>
         </td>
+        <td class="bep-comment">
+          <p>{{ bep.content | markdownify }}</p>
+        </td>        
         <td class="leads" style="width:15%">
           <ul>
             {% for person in bep.leads %}
@@ -30,9 +33,6 @@
         </td>
         <td class="bep-comment">
           <p>{{ bep.update | markdownify }}</p>
-        </td>
-        <td class="bep-comment">
-          <p>{{ bep.blocking | markdownify }}</p>
         </td>
       </tr>
       {% endfor %}
