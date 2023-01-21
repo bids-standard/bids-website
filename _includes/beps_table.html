@@ -21,8 +21,12 @@
         <td class="bep-title">
           <p>{{ bep.title }}</p>
         </td>
-        <td class="bep-comment">
-          <p>{{ bep.content | markdownify }}</p>
+        <td>
+          <ul>
+          {% for x in bep.content %}
+            <li>{{ x | markdownify }}</li>
+          {% endfor %}          
+          </ul>
         </td>        
         <td class="leads" style="width:15%">
           <ul>
