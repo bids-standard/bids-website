@@ -4,6 +4,7 @@
 # - title: Quantitative MRI (qMRI)
 #   leads:
     - name: Gilles de Hollander
+      git: Gilles86
     - name: Kirstie Whitaker
       git: KirstieJane
 
@@ -15,10 +16,13 @@
 # - title: Arterial Spin Labeling (ASL)
 #   leads:
     - name: Henk-Jan Mutsaerts
+      git: HenkMutsaerts
     - name: Patricia Clement
       git: patsycle
     - name: Jan Petr
+      git: jan-petr
     - name: Marco Castellaro
+      git: marcocastellaro
 
 # - title: Electroencephalography (EEG)
 #   leads:
@@ -62,9 +66,11 @@
     - name: Robert Luke
       git: rob-luke
     - name: Luca Pollonini
+      git:  lpollonini
 
 # - title: Microscopy
 #   leads:
     - name: Marie-Hélène Bourget
       git: mariehbourget
     - name: Julien Cohen-Adad
+      git: jcohenadad
