@@ -7,7 +7,7 @@
 #   blocking:
 
 - number: "002"
-  title: The BIDS Models Specification
+  title: BIDS Models Specification
   leads:
     - name: Tal Yarkoni
     - name: Chris Markiewcz
@@ -16,16 +16,20 @@
     - list of steps is now a directed graph,
     - [Model zoo](https://github.com/bids-standard/model-zoo){:target:'_blank'},
     - Abstracted transformations, to ease interoperability of implementations.
+  content:
+    - file format
   blocking: Stat Models released v1.0.0-rc1 in June 2021 - Please review!
 
 - number: "004"
   title: Susceptibility Weighted Imaging (SWI)
   leads:
   update: Looking for a new leader.
+  content:
+    - raw
   blocking: Looking for a new leader.
 
 - number: "011"
-  title: The structural preprocessing derivatives
+  title: Structural preprocessing derivatives
   leads:
     - name: Viviana Siless
   update: |
@@ -37,12 +41,14 @@
     - morphometrics.
 
     Need to conform with final Common Derivatives and gather community feedback.
+  content:
+    - derivative
   blocking: |
     Blocked by BIDS-validator extending and PyBIDS implementation for common
     derivatives
 
 - number: "012"
-  title: The functional preprocessing derivatives
+  title: Functional preprocessing derivatives
   leads:
     - name: Chris Markiewicz
   update: |
@@ -51,17 +57,21 @@
     Features:
     - Derivative images (mean, ALFF, ReHo, etc.),
     - Time series (confounds, decompositions, etc.)
+  content:
+    - derivative
   blocking: Blocked by BIDS-validator extending and PyBIDS implementation
 
 - number: "013"
-  title: The resting state fMRI derivatives
+  title: Resting state fMRI derivatives
   leads:
     - name: Steven Giavasis
   update: Merged into BEP012.
+  content:
+    - derivative
   blocking: None
 
 - number: "014"
-  title: The affine transformations and nonlinear field warps
+  title: Affine transformations and nonlinear field warps
   leads:
     - name: Oscar Esteban
   update: |
@@ -69,10 +79,12 @@
 
     - [There is a software prototype - NiTransforms](https://osf.io/8aq7b/){:target:"_blank"} demonstrates implementation of this BEP.
     NiTransforms has been tested and integrated to work within fMRIPrep
+  content:
+    - derivative
   blocking: In progress.
 
 - number: "016"
-  title: The diffusion weighted imaging derivatives
+  title: Diffusion weighted imaging derivatives
   leads:
     - name: Franco Pestilli
     - name: Oscar Esteban
@@ -81,6 +93,8 @@
     - Coordinating with BEP017.
     - Diffusion-weighted model description merged, but must comply to [this](https://github.com/bids-standard/bids-bep016/issues/7){:target:"_blank"}.
     - Upcoming integration across DWI, Tractography, Tractometry, and Connectivity (from fMRI and DWI)
+  content:
+    - derivative
   blocking: None
 
 - number: "017"
@@ -91,6 +105,8 @@
     - [Current state](https://bids.neuroimaging.io/bep017){:target:"_blank}.
     - Intended as a meeting point for minimal harmonisation of connectivity-based formats across modalities.
     - Seeking use cases spanning modalities and input defining connectivity based formats
+  content:
+    - derivative
   blocking: None
 
 - number: "019"
@@ -98,6 +114,8 @@
   leads:
     - name: Satrajit Ghosh
   update: Not active. Could be a NIDM extension rather than in BIDS.
+  content:
+    - metadata
   blocking: None
 
 - number: "020"
@@ -107,6 +125,8 @@
   update: |
     - BEP close to PR submission, examples and validator under development.
     - Seeking additional BEP lead to help incoporate into standard contact [dejan](mailto:dejan.draschow@psy.ox.ac.uk) to get involved.
+  content:
+    - raw
   blocking: None
 
 - number: "021"
@@ -122,6 +142,8 @@
   update: |
     - Discussion [here](https://github.com/bids-standard/bep021){:target:"_blank"} UCSD to include head models with BIDS EEG data.
     - Developments of BIDS M/EEG pipelines will trigger discussion on storing derived data.
+  content:
+    - derivative
   blocking: Mostly on hold.
 
 - number: "022"
@@ -134,6 +156,8 @@
     - Group discussions [here](https://forum.mrshub.org/t/bids-for-spectroscopy/83){:target:"_blank"}
     and [here](https://forum.mrshub.org/t/nifti-mrs-discussion-thread/443){:target:"_blank"}.
     - Developed NifTI standard for MRS data - presented abstract at ISMRM; manuscript in preparation.
+  content:
+    - raw
   blocking: None
 
 - number: "023"
@@ -147,6 +171,8 @@
     - Coord. kickoff scheduled Sept. 2021 to capture various experimental designs
       and needs for preprocessing and pharmacokinetic modeling.
     - Focused on staying aligned with derivatives for MRI (structural, functional, ASL, diffusion)
+  content:
+    - derivative
   blocking: Progressing and soliciting input from senior PET experts.
 
 - number: "024"
@@ -154,6 +180,8 @@
   leads:
     - name: Hugo Boniface
   update: Lead seeking more contributors and experts.
+  content:
+    - raw
   blocking: None
 
 - number: "025"
@@ -170,6 +198,8 @@
     [BIMCV-COVID19+](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/){:target:"_blank"},
     and [BIMCV-COVID19-](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/#1590859488150-148be708-c3f3){:target:"_blank"}.
     - Included Kaggle Challenge [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection/overview){:target:"_blank"}
+  content:
+    - raw
   blocking: None
 
 - number: "026"
@@ -177,6 +207,8 @@
   leads:
     - name:
   update: BEP is open to new leadership, see also [BEP032 (animal electrophys)](https://bids.neuroimaging.io/bep032){:target:"_blank"}
+  content:
+    - raw
   blocking: Searching for a new leader.
 
 - number: "027"
@@ -189,6 +221,8 @@
       and common behavior (for example, exit codes for failure modes);
       relies upon the Boutiques standard.
     - Re-conception of BIDS Apps
+  content:
+    - metadata
   blocking: None
 
 - number: "028"
@@ -203,6 +237,8 @@
     - Discussions held in [this repository](https://github.com/bids-standard/BEP028_BIDSprov){:target:"_blank"}.
     - A set of [examples](https://github.com/bids-standard/BEP028_BIDSprov/tree/master/examples){:target:"_blank"}
     and [user stories](https://github.com/bids-standard/BEP028_BIDSprov/issues/48){:target:"_blank"} are being refined.
+  content:
+    - metadata
   blocking: None
 
 - number: "029"
@@ -211,6 +247,8 @@
     - name: Sein Jeung
     - name: Julius Welzel
   update: BEP is developing and starting to finalize as discussions concerning example datasets are completed.
+  content:
+    - raw
   blocking: None
 
 - number: "032"
@@ -228,6 +266,8 @@
     - Supporting early stage interaction with: [ProbeInterface & SpikeInterface](https://github.com/SpikeInterface){:target:"_blank"},
     [AnDO](https://github.com/INT-NIT/AnDO){:target:"_blank"},
     interoperability with NWB and NIX data/metadata formats.
+  content:
+    - raw
   blocking: None
 
 - number: "033"
@@ -243,6 +283,8 @@
     - Comments may be submitted directly on the document.
     - Generating example datasets [here](https://github.com/JAgho/MISP_plot/tree/main){:target:"_blank"}
     and determining best practice w/ vendors to record data in-sequence
+  content:
+    - raw
   blocking: None
 
 - number: "034"
@@ -253,6 +295,9 @@
   update: |
     BEP Computational Models: PR open for review and discussion
     [here](https://github.com/bids-standard/bids-specification/pull/850)
+  content:
+    - derivative
+    - metadata
   blocking: None
 
 - number: "035"
@@ -265,6 +310,8 @@
     - BEP revised: now collecting further comments and community feedback.
     - Collaborators with mega-analysis experience or with actual example use-cases
       (planned/ongoing/finished mega analyses) welcome!
+  content:
+    - derivative
   blocking: None
 
 - number: "036"
@@ -277,6 +324,8 @@
     - Poster presentation at OHBM 2022.
     - Now collecting community comments and feedback.
     - All collaborators are welcome.
+  content:
+    - raw
   blocking: More reviews and discussions are necessary.
 
 - number: "037"
@@ -287,4 +336,6 @@
     - name: "[Carlo Miniussi](mailto:carlo.miniussi@unitn.it)"
     - name: "[Marta Bortoletto](mailto:marta.bortoletto@cognitiveneuroscience.it)"
   update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
   blocking: None

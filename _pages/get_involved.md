@@ -66,19 +66,7 @@ Below is a table of BEPs that have been merged.
 The references of the final publication for those BEPS
 can be found in the BIDS [specification](https://bids-specification.readthedocs.io/en/latest/01-introduction.html#datatype-specific-publications).
 
-| Extension label                                                 | Title                                      | Moderators/leads                                                     |
-| --------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------- |
-| [BEP001](https://bids.neuroimaging.io/bep001){:target:"_blank"} | Quantitative MRI (qMRI)                    | Gilles de Hollander and Kirstie Whitaker                             |
-| [BEP003](https://bids.neuroimaging.io/bep003){:target:"_blank"} | Common Derivatives                         | Chris Markiewicz                                                     |
-| [BEP005](https://bids.neuroimaging.io/bep005){:target:"_blank"} | Arterial Spin Labeling (ASL)               | Henk-Jan Mutsaerts, Patricia Clement, Jan Petr, and Marco Castellaro |
-| [BEP006](https://bids.neuroimaging.io/bep006){:target:"_blank"} | Electroencephalography (EEG)               | Cyril Pernet, Stefan Appelhoff, and Robert Oostenveld                |
-| [BEP007](https://bids.neuroimaging.io/bep007){:target:"_blank"} | Hierarchical Event Descriptor (HED) Tags   | Chris Gorgolewski                                                    |
-| [BEP008](https://bids.neuroimaging.io/bep008){:target:"_blank"} | Magnetoencephalography (MEG)               | Guiomar Niso                                                         |
-| [BEP009](https://bids.neuroimaging.io/bep009){:target:"_blank"} | Positron Emission Tomography (PET)         | Melanie Ganz                                                         |
-| [BEP010](https://bids.neuroimaging.io/bep010){:target:"_blank"} | intracranial Electroencephalography (iEEG) | Chris Holdgraf and Dora Hermes                                       |
-| [BEP018](https://bids.neuroimaging.io/bep018){:target:"_blank"} | Genetic information                        | Cyril R Pernet, Clara Moreau, and Thomas Nichols                     |
-| [BEP030](https://bids.neuroimaging.io/bep030){:target:"_blank"} | Near Infrared Spectroscopy (NIRS)          | Robert Luke and Luca Pollonini                                       |
-| [BEP031](https://bids.neuroimaging.io/bep031){:target:"_blank"} | Microscopy                                 | Marie-Hélène Bourget and Julien Cohen-Adad                           |
+{% include beps_completed_table.html beps=site.data.beps_completed %}
 
 <br>
 
