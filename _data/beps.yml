@@ -7,7 +7,7 @@
 #   blocking:
 
 - number: "002"
-  title: The BIDS Models Specification
+  title: BIDS Models Specification
   leads:
     - name: Tal Yarkoni
     - name: Chris Markiewcz
@@ -29,7 +29,7 @@
   blocking: Looking for a new leader.
 
 - number: "011"
-  title: The structural preprocessing derivatives
+  title: Structural preprocessing derivatives
   leads:
     - name: Viviana Siless
   update: |
@@ -48,7 +48,7 @@
     derivatives
 
 - number: "012"
-  title: The functional preprocessing derivatives
+  title: Functional preprocessing derivatives
   leads:
     - name: Chris Markiewicz
   update: |
@@ -62,7 +62,7 @@
   blocking: Blocked by BIDS-validator extending and PyBIDS implementation
 
 - number: "013"
-  title: The resting state fMRI derivatives
+  title: Resting state fMRI derivatives
   leads:
     - name: Steven Giavasis
   update: Merged into BEP012.
@@ -71,7 +71,7 @@
   blocking: None
 
 - number: "014"
-  title: The affine transformations and nonlinear field warps
+  title: Affine transformations and nonlinear field warps
   leads:
     - name: Oscar Esteban
   update: |
@@ -84,7 +84,7 @@
   blocking: In progress.
 
 - number: "016"
-  title: The diffusion weighted imaging derivatives
+  title: Diffusion weighted imaging derivatives
   leads:
     - name: Franco Pestilli
     - name: Oscar Esteban
