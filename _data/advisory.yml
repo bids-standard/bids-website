@@ -1,0 +1,59 @@
+- group: steering
+  members:
+
+# - title: Quantitative MRI (qMRI)
+#   leads:
+    - name: Gilles de Hollander
+    - name: Kirstie Whitaker
+      git: "KirstieJane"
+
+# - title: Common Derivatives
+#   leads:
+    - name: Chris Markiewicz
+      git: effigies
+
+# - title: Arterial Spin Labeling (ASL)
+#   leads:
+    - name: Henk-Jan Mutsaerts
+    - name: Patricia Clement
+    - name: Jan Petr
+    - name: Marco Castellaro
+
+# - title: Electroencephalography (EEG)
+#   leads:
+    - name: Cyril Pernet
+    - name: Stefan Appelhoff
+      git:  sappelhoff
+    - name: Robert Oostenveld
+      git:  robertoostenveld
+
+# - title: Hierarchical Event Descriptor (HED) Tags
+#   leads:
+    - name: Chris Gorgolewski
+
+# - title: Positron Emission Tomography (PET)
+#   leads:
+    - name: Melanie Ganz
+      git: "melanieganz"
+
+# - title: intracranial Electroencephalography (iEEG)
+#   leads:
+    - name: Chris Holdgraf
+    - name: Dora Hermes
+
+# - title: Genetic information
+#   leads:
+    - name: Cyril R Pernet
+      git:  CPernet
+    - name: Clara Moreau
+    - name: Thomas Nichols
+
+# - title: Near Infrared Spectroscopy (NIRS)
+#   leads:
+    - name: Robert Luke
+    - name: Luca Pollonini
+
+# - title: Microscopy
+#   leads:
+    - name: Marie-Hélène Bourget
+    - name: Julien Cohen-Adad

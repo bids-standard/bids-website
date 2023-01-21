@@ -235,6 +235,8 @@ This group contains previous BEP Working Group Leads.
 The purpose of this group is to provide advice and guidance to the BIDS
 Steering Group and the BEP Leads Group.
 
+{% include members_table.html members=site.data.advisory %}
+
 ### Other working/interest Groups
 
 A working/interest group can be established under the approval of the
