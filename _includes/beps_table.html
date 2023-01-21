@@ -21,14 +21,14 @@
         <td class="bep-title">
           <p>{{ bep.title }}</p>
         </td>
-        <td class="bep-leads">
+        <td class="bep-content">
           <ul>
             {% for x in bep.content %}
             <li>{{ x | markdownify }}</li>
             {% endfor %}
           </ul>
         </td>
-        <td class="bep-content">
+        <td class="bep-leads">
           <ul>
             {% for person in bep.leads %}
             <li>{{ person.name | markdownify }}</li>

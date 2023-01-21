@@ -68,6 +68,10 @@
 
     table {
 
+      .bep-number {
+        width: 10%;
+      }
+
       .bep-title {
         width: 22%;
         p{
@@ -77,7 +81,7 @@
       }
 
       .bep-content {
-        width:8%;
+        width:10%;
         ul {
           margin: 0;
           padding-left: 15px;
