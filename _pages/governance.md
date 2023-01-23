@@ -475,7 +475,7 @@ and from other open-source governance documents including:
 - [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html){:target="_blank"}
 - [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/){:target="_blank"}
 - [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards){:target="_blank"}
-- [https://predictablynoisy.com/rust-governance](https://predictablynoisy.com/rust-governance){:target="_blank"}
+- [https://chrisholdgraf.com/blog/2018/rust_governance/](https://chrisholdgraf.com/blog/2018/rust_governance/){:target="_blank"}
 - [https://www.seedsforchange.org.uk/consensus](https://www.seedsforchange.org.uk/consensus){:target="_blank"}
 - [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance){:target="_blank"}
 - [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en){:target="_blank"}
