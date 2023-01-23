@@ -151,7 +151,7 @@ and review past and existing work that may be relevant to the BEP.
 
 ### Not considering DICOM fields
 
-Many of the modalities we use have an associated standard, like DICOM for instance. While BIDS is not specifically about data format, many metadata information are stored in data files and there is rarely a good reason for using a different name than one from other established standards. In using DICOM it is reasonable to [check what DICOM has already developed](https://www.dicomstandard.org/) and see if there is overlap. In a similar fashion, when relevant, we recommend having a `source/` folder in example datasets including DICOM files (empty data but with a header, removing any personal data tags if taken from "real" data).
+Many of the modalities we use have an associated standard, like DICOM for instance. While BIDS is not specifically about data format, many metadata information are stored in data files and there is rarely a good reason for using a different name than one from other established standards. In using DICOM it is reasonable to [check what DICOM has already developed](https://www.dicomstandard.org/) and see if there is overlap. In a similar fashion, when relevant, we recommend having a `sourcedata/` folder in example datasets including DICOM files (empty data but with a header, removing any personal data tags if taken from "real" data).
 
 ### Not building up a user community to support the BEP
 
