@@ -210,8 +210,9 @@ Past members of the Maintainers group are:
 If you need to contact the maintainers on a specific topic you can use the following emails:
 
 - bids-website and domain ( [Stefan Appelhoff](mailto:bids.maintenance+website@gmail.com) )
-- twitter account ( [Stefan Appelhoff](mailto:bids.maintenance+twitter@gmail.com) )
-- youtube account ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
+- [Twitter account](https://twitter.com/bidsstandard){:target="_blank"} ( [Stefan Appelhoff](mailto:bids.maintenance+twitter@gmail.com) )
+- [Mastodon account](https://fosstodon.org/@bidsstandard){:target="_blank"} ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
+- [Youtube account](https://www.youtube.com/@brainimagingdatastructure6721){:target="_blank"} ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
 
 ### BIDS Contributors Group
 
