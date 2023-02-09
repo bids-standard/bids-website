@@ -38,9 +38,9 @@ Thank you for your contributions!
 The BIDS specification can be extended in a backwards compatible way and will evolve over time.
 These are accomplished with BIDS Extension Proposals (BEPs), which are community-driven processes.
 
-Do you want to extend BIDS to a new modality or set of data types?
-Please draft a BIDS Extension Proposal (BEP) following the
-[BIDS Extension Proposals Guide](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4){:target="_blank"}.
+Do you want to learn more about extending BIDS to a new modality or set of data types?
+Read the [Guide](https://bids-extensions.readthedocs.io/en/latest/guide/){:target="_blank"}
+and follow the [Submission Process](https://bids-extensions.readthedocs.io/en/latest/submission/){:target="_blank"}.
 
 You can also contribute to ongoing BIDS Extension Proposals.
 Below is a table of currently-active BEPs.
