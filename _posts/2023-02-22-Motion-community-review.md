@@ -4,7 +4,7 @@ author: Stefan Appelhoff
 display: true
 ---
 
-# BIDS community review for BEP030: Near Infrared Spectroscopy
+# BIDS community review for BEP029: Motion
 
 The BIDS community is preparing to merge the BIDS Extension Proposal 29 (BEP029) for Motion data.
 
