@@ -49,6 +49,7 @@
     expected_input:
         - Acqknowledge
         - Labchart
+        - GE physiological files
     language: 
         - Python
     distribution:
