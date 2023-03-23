@@ -14,7 +14,7 @@ Date: Thursday, September 1, 2022
 
 The updated draft is available for review at:
 
-[https://bids-specification.readthedocs.io/en/bep030/04-modality-specific-files/11-functional-near-infrared-spectroscopy.html](https://bids-specification.readthedocs.io/en/bep030/04-modality-specific-files/11-functional-near-infrared-spectroscopy.html){:target="_blank"}
+[https://bids-specification.readthedocs.io/en/latest/modality-specific-files/near-infrared-spectroscopy.html](https://bids-specification.readthedocs.io/en/latest/modality-specific-files/near-infrared-spectroscopy.html){:target="_blank"}
 
 Note that the content of that HTML page may change as suggestions are accepted during the review process.
 Comments and suggestions may be submitted on GitHub at:
