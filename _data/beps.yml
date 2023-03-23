@@ -339,3 +339,15 @@
   content:
     - raw
   blocking: None
+
+- number: "038"
+  title: Atlases
+  leads:
+    - name: "[James Kent](mailto:jamesdkent21@gmail.com)"
+    - name: "[Peer Herholz](mailto:herholz.peer@gmail.com)"
+    - name: "[Eugene Duff](mailto:eugene.duff@paediatrics.ox.ac.uk)"
+    - name: "[Anthony Galassi](mailto:anthony.galassi@nih.gov)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
+  blocking: None
