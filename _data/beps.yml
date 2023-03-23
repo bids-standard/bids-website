@@ -351,3 +351,16 @@
   content:
     - raw
   blocking: None
+
+- number: "039"
+  title: Dimensionality reduction-based networks
+  leads:
+    - name: "[Arianna Sala](mailto:arianna.sala@uliege.be)"
+    - name: "[Anibal Heinsfeld](mailto:anibalsolon@utexas.edu)"
+    - name: "[Cyrus Eierud](mailto:ceierud@gsu.edu)"
+    - name: "[Franco Pestilli](mailto:pestilli@utexas.edu)"
+    - name: "[Peer Herholz](mailto:herholz.peer@gmail.com)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
+  blocking: None
