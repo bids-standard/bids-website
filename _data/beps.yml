@@ -364,3 +364,14 @@
   content:
     - raw
   blocking: None
+
+- number: "040"
+  title: Functional Ultrasound (fUS)
+  leads:
+    - name: "[Jean-Charles Mariani](mailto:jean-charles.mariani@cri-paris.org)"
+    - name: "[Samuel Diebolt](mailto:samuel.diebolt@iconeus.com)"
+    - name: "[Thomas Deffieux](mailto:thomas.deffieux@inserm.fr)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
+  blocking: None
