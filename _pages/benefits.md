@@ -31,6 +31,8 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 ## Other Tools
 
 - [BIDSHandler](https://github.com/Macquarie-MEG-Research/BIDSHandler){:target="_blank"} (Python module allowing complete manipulation of BIDS data)
+- [bids-cfood](https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood)
+  a module to handle BIDS dataset for the caosDB data crawler.
 - [bids2cite](https://github.com/Remi-Gau/bids2cite){:target="_blank"} a python package to interactively update `dataset_decription.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
 - [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"} (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
 - [Brainstorm](http://neuroimage.usc.edu/brainstorm/){:target="_blank"} (MEG/EEG analysis package)
