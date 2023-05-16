@@ -12,6 +12,7 @@ NSF grant OAC-1760950.
 
 Additionally, BIDS Contributors are able to support maintenance and further development of the standard thanks to support from 
 NIH BRAIN Initiative grant(s) (MH002977, MH117179, MH126699),
+NIH Grant MH109682,
 and Novo Nordisk NNF20OC0063277.
 
 
