@@ -39,6 +39,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [clpipe](https://clpipe.readthedocs.io/en/latest/index.html){:target="_blank"} streamlined processing pipeline for MRI data centered around BIDS.
 - [cuBIDS](https://pypi.org/project/cubids/){:target="_blank"} a python package designed to facilitate reproducible curation of neuroimaging BIDS datasets.
 - [GUI dataset description generator](https://github.com/tolik-g/BIDS){:target="_blank"} (GUI form that generates dataset_description.json)
+- [lead DBS](https://www.lead-dbs.org/) A toolbox facilitating Deep Brain Stimulation electrode reconstructions and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
 - [OpenNeuro](http://openneuro.org){:target="_blank"} (repository)
 - [PRFmodel](https://github.com/vistalab/PRFmodel){:target="_blank"} a set of tools to fit the fit population receptor field models to BIDS datasets.
 - [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"} (Python module to harmonize access and manipulation)
