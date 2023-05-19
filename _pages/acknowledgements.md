@@ -18,7 +18,7 @@ Laura and John Arnold Foundation |
 [NIMH 1ZIAMH002977-01](https://reporter.nih.gov/project-details/10489085) |  OpenNeuroPET project contributed various enhancements and fixes 
 [NIMH 5R01MH126699-02](https://reporter.nih.gov/project-details/10460628) | Brain Connectivity BEP
 [NIMH MH109682](https://reporter.nih.gov/project-details/9982125) | NeuroScout
-Novo Nordisk NNF20OC0063277 | 
+Novo Nordisk Foundation NNF20OC0063277 | 
 [NIMH 1RF1MH126700-01A1](https://reporter.nih.gov/project-details/10480619) | Hierarchical Event Descriptors (HED)
 
 ![INCF-badge](./assets/img/incf-badge_281x210.png){: .center-image }
