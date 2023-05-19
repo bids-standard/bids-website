@@ -2,10 +2,9 @@
 name: BEP update reminder
 
 on:
-  pull_request:
-    branches: ['*']
   schedule:
-  - cron: 0,10,20,30,40,50 * * * *
+  # 1rst of may and november
+  - cron: 0 0 1 5,11 *
   workflow_dispatch:
 
 jobs:
@@ -13,6 +12,9 @@ jobs:
   bep_update_reminder:
 
     runs-on: ubuntu-latest
+
+    # only trigger update on upstream repo
+    if: github.repository_owner == 'bids-standard'
 
     steps:
     - name: open issue
