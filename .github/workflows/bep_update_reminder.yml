@@ -1,0 +1,26 @@
+---
+name: test latest image
+
+on:
+  pull_request:
+    branches: ['*']
+  schedule:
+  - cron: 0,10,20,30,40,50 * * * *
+  workflow_dispatch:
+
+jobs:
+
+  test_latest_image:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: open issue
+      uses: rishabhgupta/git-action-issue@v2
+      id: Issue
+      with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: BEP update reminder
+          body: "Ask BEP leads for an update on the BEPs."
+    - run: |
+        echo ${{ steps.issue.outputs.issue }}
