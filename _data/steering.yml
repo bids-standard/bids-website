@@ -20,4 +20,4 @@
     - name: "Cyril Pernet"
       git: "CPernet"
     - name: "Yaroslav Halchenko"
-      git: "yarikoptic"            
+      git: "yarikoptic"

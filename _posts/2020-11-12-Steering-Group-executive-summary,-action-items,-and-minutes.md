@@ -60,4 +60,3 @@ The majority of this meeting we were joined by Melissa Kline of the [Psych-DS](h
   - Community is unsure of what they can and cannot share
 - Appetite for specific instructions to do Open Science
 - Psych-DS may not be BIDS compliant, but does not block capability
-
