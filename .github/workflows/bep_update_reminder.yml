@@ -1,5 +1,5 @@
 ---
-name: test latest image
+name: BEP update reminder
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  test_latest_image:
+  bep_update_reminder:
 
     runs-on: ubuntu-latest
 
