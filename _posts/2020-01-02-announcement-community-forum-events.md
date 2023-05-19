@@ -21,7 +21,7 @@ If these events go well, we'll aim to repeat them on a regular basis through the
 
 ### Connection details
 
-We have scheduled two BIDS Community Forums to accomodate as many time zones as possible.
+We have scheduled two BIDS Community Forums to accommodate as many time zones as possible.
 
 Although you don't have to (you can just show up!), please [RSVP at this eventbrite](https://www.eventbrite.com/e/bids-community-forum-tickets-86207425731?aff=bidswebsite){:target="_blank"} invitation to help us predict who will be in attendance.
 

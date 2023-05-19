@@ -124,7 +124,7 @@
     - name: Dejan Draschkow
   update: |
     - BEP close to PR submission, examples and validator under development.
-    - Seeking additional BEP lead to help incoporate into standard contact [dejan](mailto:dejan.draschow@psy.ox.ac.uk) to get involved.
+    - Seeking additional BEP lead to help incorporate into standard contact [dejan](mailto:dejan.draschow@psy.ox.ac.uk) to get involved.
   content:
     - raw
   blocking: None

@@ -54,7 +54,7 @@ This was a joint meeting between the Steering Group and Maintainers Group to go 
   - Pushing the [Starter Kit repository](https://github.com/bids-standard/bids-starter-kit){:target="_blank"}
 
 - [Enhancing our definition of a Maintainer](https://github.com/bids-standard/bids-specification/pull/467){:target="_blank"}
-  - Adding a speciality or domain expert responsibility to the role
+  - Adding a specialty or domain expert responsibility to the role
     - Workshopping the semantics
     - Gives more clarity and specificity to the responsibilities of the role
   - The goal is to nurture more diverse contributions and build in more resilience and sustainability into the organization

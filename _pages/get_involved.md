@@ -25,7 +25,7 @@ and propose changes via Pull Requests at the
 [BIDS website GitHub repository](https://github.com/bids-standard/bids-website){:target="_blank"}.
 
 There are so many ways to help us build this community.
-You could help someone else learn the benefits of BIDS, give a talk in your local organisation, or
+You could help someone else learn the benefits of BIDS, give a talk in your local organization, or
 [build a BIDS App](https://bids-apps.neuroimaging.io/){:target="_blank"}!
 
 The only requirement is that everyone who contributes adheres to our
