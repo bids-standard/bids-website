@@ -1,17 +1,17 @@
 # template
 #     - name:
 #       url: URL to repo
-#       
-#       data_types: 
+#
+#       data_types:
 #        - MRI, EEG, MEG, iEEG, events, physio
-#       expected_input: 
+#       expected_input:
 #       -  DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/r/??
-#       language: 
+#       language:
 #        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
@@ -22,12 +22,12 @@
   members:
     - name: bidsify
       url: https://github.com/NILAB-UvA/bidsify
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
-        - DICOM 
+      expected_input:
+        - DICOM
         - PAR/REC
-      language: 
+      language:
          -  Python
       comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
       distribution:
@@ -38,11 +38,11 @@
 
     - name: bidskit
       url: https://github.com/jmtyszka/bidskit
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - DICOM
-      language: 
+      language:
         - Python
       comment:
         Utility functions for working with DICOM and BIDS neuroimaging data.
@@ -56,25 +56,25 @@
 
     - name: BMAT
       url: https://github.com/ColinVDB/BMAT
-      data_types: 
+      data_types:
        - MRI
-      expected_input: 
+      expected_input:
       -  DICOM
       distribution:
           - name: dockerhub
             url: https://hub.docker.com/r/colinvdb/bmat-dcm2niix
-      language: 
+      language:
        -  Python
-      GUI: true    
-      license: GPL-3.0      
+      GUI: true
+      license: GPL-3.0
 
     - name: Data2Bids
       url: https://github.com/SIMEXP/Data2Bids
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - not DICOM
-      language: 
+      language:
         - Python
       comment: |
         Converts MRI files from extension supported by nibabel into NIfTI and
@@ -86,11 +86,11 @@
 
     - name: Dcm2Bids
       url: https://github.com/cbedetti/Dcm2Bids
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - DICOM
-      language: 
+      language:
         - Python
       comment: converts DICOM files using dcm2niix into BIDS
       documentation: https://unfmontreal.github.io/Dcm2Bids/
@@ -103,11 +103,11 @@
 
     - name: HeuDiConv
       url: https://github.com/nipy/heudiconv
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - DICOM
-      language: 
+      language:
         - Python
       distribution:
         - name: pypi
@@ -122,7 +122,7 @@
 
     - name: OpenfMRI2BIDS
       url: https://github.com/bids-standard/openfmri2bids
-      data_types: 
+      data_types:
         - MRI # not sure
       expected_input:
       language:
@@ -130,10 +130,10 @@
 
     - name: ReproIn
       url: https://github.com/ReproNim/reproin
-      data_types: 
+      data_types:
         - MRI
       expected_input:
-      language: 
+      language:
         - Python
       comment:
         "HeuDiConv-based turnkey solution: a setup for automatic generation of
@@ -145,10 +145,10 @@
 
     - name: XNAT2BIDS
       url: https://github.com/kamillipi/2bids
-      data_types: 
+      data_types:
         - MRI # not sure
       expected_input:
-      language: 
+      language:
         - shell
       comment: |
         Simple xnat pipeline to convert DICOM scans to BIDS-compatible output
@@ -158,7 +158,7 @@
       url: https://github.com/mslw/horos-bids-output
       data_types:
       expected_input:
-      language: 
+      language:
         - objective C
       comment: Horos plugin for BIDS output.
       GUI: yes
@@ -166,17 +166,17 @@
 
     - name: BIDScoin
       url: https://github.com/Donders-Institute/bidscoin
-      data_types: 
+      data_types:
         - MRI
         - phsyiological
         - behavioral
         - PET
-      expected_input: 
+      expected_input:
         - DICOM
-        - PAR/REC 
+        - PAR/REC
         - physiological
         - PET
-      language: 
+      language:
         - Python
       distribution:
         - name: pypi
@@ -188,26 +188,26 @@
 
     - name: BIDSme
       url: https://github.com/nbeliy/bidsme
-      data_types: 
-        - MRI 
+      data_types:
+        - MRI
         - EEG
-      expected_input: 
-        - DICOM 
+      expected_input:
+        - DICOM
         - Nifti
         - Brain Vision
       documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
-      language: 
+      language:
          -  Python
       comment:
       license: GPL-2.0
 
     - name: BrkRaw
       url: https://github.com/BrkRaw/brkraw
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - Bruker MRI scanner data
-      language: 
+      language:
         - Python
       GUI: yes
       comment: For a preclinical Bruker MRI scanner
@@ -216,13 +216,13 @@
     - name: Clinica
       url: https://github.com/aramis-lab/clinica
       data_types:
-      expected_input: 
+      expected_input:
         - ADNI
         - AIBL
         - NIFD
         - OASIS
         - OASIS-3
-      language: 
+      language:
         - Python
       comment:
       documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
@@ -230,23 +230,23 @@
 
     - name: dac2bids
       url: https://github.com/dangom/dac2bids
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - DICOM
-      language: 
+      language:
         - Python
       comment: Create a BIDS structure for a DICOM folder.
 
     - name: Autobids
       url: https://github.com/khanlab/autobids
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - DICOM
       comment: |
         Automated Dicom to BIDS and pipelines using compute canada. From the
-        Centre for Functional and Metabolic Mapping (CFMM) at Western’s Robarts
+        Center for Functional and Metabolic Mapping (CFMM) at Western’s Robarts
         Research Institute.
 
     - name: PET2BIDS
@@ -254,12 +254,12 @@
       comment: |
         Helps you convert your PET data! raw PET scanner files (for example ecat, dicom)
         and additional side file like excel sheets.
-      data_types: 
+      data_types:
         - PET
-      expected_input: 
+      expected_input:
         - DICOM
         - ECAT
-      language: 
+      language:
         - MATLAB
         - Python
       GUI: false
@@ -269,13 +269,13 @@
       url: https://github.com/ExploreASL/ExploreASL
       comment: |
         Convert DICOM and NIFTI data to the ASL-BIDS format.
-      data_types: 
+      data_types:
         - ASL
-      expected_input: 
+      expected_input:
         - DICOM
         - Nifti
       documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
-      language: 
+      language:
          -  MATLAB
 
     - name: SAMRI
@@ -285,12 +285,12 @@
         repositing pipeline, which can convert Bruker archives to the BIDS format.
         From the ETH and University of Zurich, with collaboration from MIT and
         Dartmouth College.
-      data_types: 
+      data_types:
         - small-animal MRI
-      expected_input: 
+      expected_input:
         - Bruker ParaVision
         - NIfTI
-      language: 
+      language:
         - Python
         - shell
       documentation: https://doi.org/10.3389/fninf.2020.00005
@@ -304,11 +304,11 @@
         (i) convert DICOM data to NIfTI data using dcm2niix
         (ii) structure this data according to the BIDS specification
         (iii) provide the papayaWidget viewer for inspecting the images
-      data_types: 
+      data_types:
         - MRI
-      expected_input: 
+      expected_input:
         - DICOM
-      language: 
+      language:
         - R
       documentation: https://bidsconvertr.github.io/
       GUI: true

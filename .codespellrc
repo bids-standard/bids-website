@@ -1,0 +1,4 @@
+[codespell]
+skip = .git,Gemfile.lock,_sass,_site
+ignore-words-list = foo,bar,baz
+builtin = clear,rare,en-GB_to_en-US

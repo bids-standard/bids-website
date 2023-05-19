@@ -1,16 +1,16 @@
 # template
 #     - name:
 #       url: URL to repo
-#       data_types: 
+#       data_types:
 #       - MRI, EEG, MEG, iEEG, events
-#       expected_input: 
+#       expected_input:
 #        -  DICOM, PAR/REC, tsv
 #       distribution:
 #           - name: pypi
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: 
+#       language:
 #        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
@@ -24,11 +24,11 @@
   members:
     - name: convert-eprime
       url: https://github.com/tsalo/convert-eprime
-      data_types: 
+      data_types:
         - behavioral
-      expected_input: 
+      expected_input:
         - E-Prime log files
-      language: 
+      language:
         - Python
       comment:
         Python functions to convert E-Prime files to csvs. Not currently being
@@ -37,7 +37,7 @@
 
     - name: DCM2NIIx
       url: https://github.com/neurolabusc/dcm2niix
-      data_types: 
+      data_types:
         - DICOM
         - PAR/REC
       expected_input:
@@ -49,20 +49,20 @@
 
     - name: DICM2NII
       url: https://github.com/xiangruili/dicm2nii
-      data_types: 
+      data_types:
         - DICOM
-      expected_input: 
+      expected_input:
         - DICOM
-      language: 
+      language:
         - MATLAB
       comment: "dcm2nii DICOM to NIfTI converter"
       license: BSD-2
 
     - name: sim2bids
       url: https://github.com/dissagaliyeva/sim2bids
-      data_types: 
+      data_types:
         - computational model
-      expected_input: 
+      expected_input:
         - |
           network and coordinate files expected_input:
           <ul>
@@ -71,7 +71,7 @@
             <li>zip folders,</li>
             <li>and code files in MATLAB/Python/R</li>
           </ul>
-      language: 
+      language:
         - Python
       comment: |
         GUI to easily convert simulation results to BIDS format,

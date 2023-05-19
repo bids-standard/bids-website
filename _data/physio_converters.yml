@@ -1,7 +1,7 @@
 # template
 #     - name:
 #       url: URL to repo
-#       data_types: 
+#       data_types:
 #         - physio
 #       expected_input:
 #         -  DICOM, PAR/REC, tsv
@@ -10,7 +10,7 @@
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/???
-#       language: 
+#       language:
 #        -  Python, MATLAB
 #       documentation: URL to documentation
 #       comment:
@@ -22,7 +22,7 @@
   members:
   - name: BIDScoin
     url: https://github.com/Donders-Institute/bidscoin
-    data_types: 
+    data_types:
         - MRI
         - phsyiological
         - behavioral
@@ -32,7 +32,7 @@
         - PAR/REC
         - physiological
         - PET
-    language: 
+    language:
         - Python
     distribution:
         - name: pypi
@@ -44,18 +44,17 @@
 
   - name: phys2bids
     url: https://github.com/physiopy/phys2bids
-    data_types: 
+    data_types:
         - phsyiological
     expected_input:
         - Acqknowledge
         - Labchart
         - GE physiological files
-    language: 
+    language:
         - Python
     distribution:
         - name: pypi
           url: https://pypi.org/project/phys2bids
     documentation: https://phys2bids.readthedocs.io/en/latest/
-    comment: Python3 library to format physiological files in BIDS. 
+    comment: Python3 library to format physiological files in BIDS.
     license: Apache-2.0
-

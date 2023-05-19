@@ -106,8 +106,8 @@ Following the publication of the MEG extension, it was only natural to remain in
 *Why did you choose to run for election to the steering group?*
 
 Besides developing MEG/EEG methods and tools, I am involved in the research infrastructure and in the data management of our institute at large, which covers many different experimental research questions with different scanners and and experimental set-ups.
-It is obvious that brain data from imaging methods and electrophysiology needs to be properly managed, but I also find it important that details of cognitive experiments - which often involve multiple behavioural modalities - can be properly documented and shared.
-Structural and resting state data are important and interesting, but documenting and sharing data acquired in relation to cognition and behaviour raises the complexity even further.
+It is obvious that brain data from imaging methods and electrophysiology needs to be properly managed, but I also find it important that details of cognitive experiments - which often involve multiple behavioral modalities - can be properly documented and shared.
+Structural and resting state data are important and interesting, but documenting and sharing data acquired in relation to cognition and behavior raises the complexity even further.
 
 *What does success look like for BIDS, in your opinion?*
 
@@ -177,7 +177,7 @@ I wanted to join the steering group to see BIDS meet its potential to make the l
 
 Success in my eyes would be that everyone collecting data never had to think about how to save their files.
 From the minute the data came off the scanner, it would be in a well documented directory structure that was the same as everyone else's.
-In addition, all those researchers would have access to well documented open source tools to help them explore and summarise the scans they had acquired.
+In addition, all those researchers would have access to well documented open source tools to help them explore and summarize the scans they had acquired.
 Ultimately, I want people working on brain imaging data to be focused on thinking about (and implementing) interesting research questions, not how to find stray typos in the data file names.
 
 *What are you hoping to achieve in the next year?*

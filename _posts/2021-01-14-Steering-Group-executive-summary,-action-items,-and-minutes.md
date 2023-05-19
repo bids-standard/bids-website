@@ -34,7 +34,7 @@ This meeting was primarily spent discussing our approach for crediting the Steer
     - Argument against consortium level authorship
       - Consortium will be dynamic
       - Value in having the names listed rather than a consortium listed
-        - If individual doesn’t feel comfortable can be moved to acknowledgements
+        - If individual doesn’t feel comfortable can be moved to acknowledgments
     - Following the [vancouver guidelines](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html){:target="_blank"}
       - Data collection, analysis, preprocess, manuscript prep
     - Problem is colleagues are not invited to contribute to manuscript

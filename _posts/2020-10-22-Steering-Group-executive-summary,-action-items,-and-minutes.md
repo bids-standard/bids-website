@@ -46,6 +46,3 @@ We were joined by Jon Cohen and Tal Yarkoni to discuss their Model Description F
 - Experiment standardization
   - Mapping the imaging context with the modeling parameters
   - Perhaps a BEP can address
-
-
-
