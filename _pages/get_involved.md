@@ -75,5 +75,5 @@ See the table below.
 
 | Extension label                                                 | Title                          | Moderators/leads                               | Outcome                                                                   |
 | --------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| [BEP012](https://bids.neuroimaging.io/bep012){:target:"_blank"} | Resting state fMRI derivatives | Steven Giavasis                                | Merged into BEP012                                                        |
+| [BEP013](https://bids.neuroimaging.io/bep013){:target:"_blank"} | Resting state fMRI derivatives | Steven Giavasis                                | Merged into BEP012                                                        |
 | [BEP015](https://bids.neuroimaging.io/bep015){:target:"_blank"} | Mapping file                   | Eric Earl, Camille Maumet, and Vasudev Raguram | [File mapper](https://github.com/DCAN-Labs/file-mapper){:target:"_blank"} |
