@@ -16,9 +16,6 @@
       "pattern": "drupal.org\/governance"
     },
     {
-      "pattern": "^https://winnower.*"
-    },
-    {
       "pattern": "^https://doi.org\/"
     },
     {
