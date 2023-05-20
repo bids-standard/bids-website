@@ -10,6 +10,7 @@ Date: Thursday, August 12, 2021
 
 <!--more-->
 
+
 <table>
  <thead>
   <tr class="header">
@@ -155,6 +156,13 @@ Date: Thursday, August 12, 2021
    </td>
   </tr>
  </tbody>
+</table>
+
+
+
+
+
+
 
 Items for next time:
 

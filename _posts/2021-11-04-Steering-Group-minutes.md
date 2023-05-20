@@ -10,6 +10,7 @@ Date: Thursday, November 4, 2021
 
 <!--more-->
 
+
 <table>
  <thead>
   <tr class="header">
@@ -22,6 +23,40 @@ Date: Thursday, November 4, 2021
   </tr>
  </thead>
  <tbody>
+  <tr class="odd">
+   <td>
+    <p>
+     Next meeting: December 14 at 8:30am PT / 5:30pm CET
+    </p>
+    <ul>
+     <li>
+      <blockquote>
+       <p>
+        Last meeting of the year
+       </p>
+      </blockquote>
+      <ul>
+       <li>
+        <blockquote>
+         <p>
+          Canceled November 25 and December 16
+         </p>
+        </blockquote>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <blockquote>
+       <p>
+        Starting back up on January 6 at 6am PT / 3pm CET
+       </p>
+      </blockquote>
+     </li>
+    </ul>
+   </td>
+   <td>
+   </td>
+  </tr>
   <tr class="even">
    <td>
     BEP31: Microscopy community review kicking off on November 8 and closing November 19
@@ -32,6 +67,63 @@ Date: Thursday, November 4, 2021
       https://github.com/bids-standard/bids-specification/pull/881
      </span>
     </a>
+   </td>
+  </tr>
+  <tr class="odd">
+   <td>
+    <p>
+     BIDS Steering Group elections
+    </p>
+    <ul>
+     <li>
+      <blockquote>
+       <p>
+        Update
+       </p>
+      </blockquote>
+      <ul>
+       <li>
+        <blockquote>
+         <p>
+          Minor irregularities such as ballots that are rank 1 for 1st person rank 2 for 2nd and so on
+         </p>
+        </blockquote>
+       </li>
+       <li>
+        <blockquote>
+         <p>
+          Analyzing for more irregularities
+         </p>
+        </blockquote>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <blockquote>
+       <p>
+        Have surpassed quorum
+       </p>
+      </blockquote>
+     </li>
+     <li>
+      <blockquote>
+       <p>
+        98 votes casted with Matthew Cieslak in the lead by 14 votes (32 first place votes)
+       </p>
+      </blockquote>
+      <ul>
+       <li>
+        <blockquote>
+         <p>
+          Valid as of 10:45pm PT on November 3
+         </p>
+        </blockquote>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </td>
+   <td>
    </td>
   </tr>
   <tr class="even">
@@ -92,6 +184,11 @@ Date: Thursday, November 4, 2021
     (continued) Writing up BIDS usage survey into blog post
    </td>
    <td>
+    <a href="https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit">
+     <span class="underline">
+      https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit
+     </span>
+    </a>
    </td>
   </tr>
   <tr class="odd">
@@ -178,3 +275,10 @@ Date: Thursday, November 4, 2021
    </td>
   </tr>
  </tbody>
+</table>
+
+
+
+
+
+(2nd half)

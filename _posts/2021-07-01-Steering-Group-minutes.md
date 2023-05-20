@@ -10,6 +10,7 @@ Date: Thursday, July 1, 2021
 
 <!--more-->
 
+
 <table>
  <thead>
   <tr class="header">
@@ -161,24 +162,33 @@ Date: Thursday, July 1, 2021
    </td>
   </tr>
  </tbody>
+</table>
+
+
+
+
+
+
 
 **Executive summary**
 
-After a discussion we decided that Kirstie will rotate out now, but then Russ
-should probably rotate out next, maybe together with Melanie, to ensure the
-balance of the remaining members. This way it's very likely that we can keep an
-MRI representative in the steering group which is a requirement.
+After a discussion we decided that Kirstie will rotate out now, but then
+Russ should probably rotate out next, maybe together with Melanie, to
+ensure the balance of the remaining members. This way it's very likely
+that we can keep an MRI representative in the steering group which is a
+requirement.
 
-Wrt election proceedings we may have people put up a 200 word criteria on how
-they complement the current steering group in terms of e.g. modality, gender,
-geographic location, seniority, etc. Maybe add this to the governance document
-by adding something regarding not only ensuring diversity wrt modality but also
-diversity.
+Wrt election proceedings we may have people put up a 200 word criteria
+on how they complement the current steering group in terms of e.g.
+modality, gender, geographic location, seniority, etc. Maybe add this to
+the governance document by adding something regarding not only ensuring
+diversity wrt modality but also diversity.
 
-Regarding resilience wrt Franklin\'s maintainer job, since he needs to step out
-a bit, maybe we can together with the empty steering group slot advertise for
-two more communication type of maintainers. Robert suggests to maybe reach out
-and go for people to spend their PhD duty hours on for example being BIDS
-maintainer. Kirstie proposes writing up a clear role description, accompanied
-with suggestions on how to justify time to supervisors. Promote to the broader
-community before relying on steering committee to find maintainers.
+Regarding resilience wrt Franklin\'s maintainer job, since he needs to
+step out a bit, maybe we can together with the empty steering group slot
+advertise for two more communication type of maintainers. Robert
+suggests to maybe reach out and go for people to spend their PhD duty
+hours on for example being BIDS maintainer. Kirstie proposes writing up
+a clear role description, accompanied with suggestions on how to justify
+time to supervisors. Promote to the broader community before relying on
+steering committee to find maintainers.

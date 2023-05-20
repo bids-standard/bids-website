@@ -1,4 +1,12 @@
-"""rename files to YYYY-MM-DD-Steering-Group-minutes.md"""
+"""
+- rename files to YYYY-MM-DD-Steering-Group-minutes.*
+- prettifies the html files
+- process the markdown files by:
+    - adding the front matter
+    - removing the lines that are not relevant
+    - using the html version of the tables instead of the markdown version
+      because the pandoc version of the markdown tables is not very good
+"""
 from rich import print
 from pathlib import Path
 import datetime
@@ -60,6 +68,7 @@ def sanitize_md(input_folder):
             write_line = False
 
             for line in text:
+                # skip lines that are not relevant
                 if any(
                     x in line
                     for x in [
@@ -74,6 +83,7 @@ def sanitize_md(input_folder):
                 ):
                     continue
 
+                # skip lines that are markdown tables
                 if any(line.startswith(x) for x in ["|", "+-", "+="]):
                     continue
 
@@ -85,6 +95,7 @@ def sanitize_md(input_folder):
                     line = line.replace("\n", "")
                     f.write(f"{line}, {year}\n")
                     f.write("\n<!--more-->\n\n\n")
+                    # add the table in html format for better rendering
                     print_table_from_html(file, f)
 
 
@@ -112,6 +123,7 @@ def print_table_from_html(input_file: Path, output_file):
                 if "<table>" in line:
                     print_line = True
                 if "</table>" in line:
+                    output_file.write(line)
                     print_line = False
                 if print_line:
                     output_file.write(line)
