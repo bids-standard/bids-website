@@ -10,7 +10,7 @@
       "pattern": "^/get_involved$"
     },
     {
-      "pattern": "^https://twitter.com/[BIDSbids]standard.*"
+      "pattern": "^https://twitter.com/[BIDSbids]*standard.*"
     },
     {
       "pattern": "drupal.org\/governance"
