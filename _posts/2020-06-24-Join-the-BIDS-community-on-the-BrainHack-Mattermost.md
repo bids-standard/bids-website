@@ -30,7 +30,7 @@ To do this, they convene unique conferences comprised of researchers from around
 These workshops consist of educational activities, along with plenty of development time.
 If you are interested in learning more please visit [their website](https://www.brainhack.org/){:target:"_blank"},
 check out [their paper](https://academic-oup-com.stanford.idm.oclc.org/gigascience/article/5/1/s13742-016-0121-x/2720978){:target:"_blank"},
-and take a look at a [step by step guide](https://winnower-production.s3.amazonaws.com/papers/5577/v1/pdf/5577-a-step-by-step-guide-for-organizing-open-collaborative-brainhack-events.pdf){:target:"_blank"} for organizing a BrainHack yourself.
+and take a look at a [step by step guide](https://web.archive.org/web/20170713075111/https://thewinnower.com/papers/5577-a-step-by-step-guide-for-organizing-open-collaborative-brainhack-events){:target:"_blank"} for organizing a BrainHack yourself.
 
 We look forward to seeing you on Mattermost!
 
