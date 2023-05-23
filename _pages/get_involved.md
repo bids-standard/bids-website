@@ -70,9 +70,10 @@ can be found in the BIDS [specification](https://bids-specification.readthedocs.
 
 <br>
 
-Some proposals that set out to extend the BIDS specification have instead become tools for handling BIDS.
+Some proposals that set out to extend the BIDS specification have instead become tools for handling BIDS or have been merged into other BEPs.
 See the table below.
 
-| Extension label                                                 | Title        | Moderators/leads                               | Tool name                                                                 |
-| --------------------------------------------------------------- | ------------ | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| [BEP015](https://bids.neuroimaging.io/bep015){:target:"_blank"} | Mapping file | Eric Earl, Camille Maumet, and Vasudev Raguram | [File mapper](https://github.com/DCAN-Labs/file-mapper){:target:"_blank"} |
+| Extension label                                                 | Title                          | Moderators/leads                               | Outcome                                                                   |
+| --------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- | ------------------------------------------------------------------------- |
+| [BEP013](https://bids.neuroimaging.io/bep013){:target:"_blank"} | Resting state fMRI derivatives | Steven Giavasis                                | Merged into BEP012                                                        |
+| [BEP015](https://bids.neuroimaging.io/bep015){:target:"_blank"} | Mapping file                   | Eric Earl, Camille Maumet, and Vasudev Raguram | [File mapper](https://github.com/DCAN-Labs/file-mapper){:target:"_blank"} |

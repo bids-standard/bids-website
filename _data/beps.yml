@@ -61,15 +61,6 @@
     - derivative
   blocking: Blocked by BIDS-validator extending and PyBIDS implementation
 
-- number: "013"
-  title: Resting state fMRI derivatives
-  leads:
-    - name: Steven Giavasis
-  update: Merged into BEP012.
-  content:
-    - derivative
-  blocking: None
-
 - number: "014"
   title: Affine transformations and nonlinear field warps
   leads:
