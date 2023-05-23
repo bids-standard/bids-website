@@ -29,7 +29,6 @@ def prettify_html(input_folder):
         with open(file, "w") as f:
             f.write(pretty_html)
 
-
 MONTH_MAPPING = {"Oct": "October"}
 
 def rename_files(input_folder):
@@ -72,7 +71,6 @@ def rename_files(input_folder):
                     hmtl_file.rename(Path(new_name).with_suffix(".html"))
 
                 break
-
 
 def sanitize_md(input_folder):
     for file in input_folder.glob("*.md"):
