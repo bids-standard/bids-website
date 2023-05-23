@@ -81,11 +81,6 @@ Date: Thursday, July 1, 2021
     (ongoing) BIDS usage survey
    </td>
    <td>
-    <a href="https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit">
-     <span class="underline">
-      https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit
-     </span>
-    </a>
    </td>
   </tr>
   <tr class="even">
@@ -165,12 +160,7 @@ Date: Thursday, July 1, 2021
 </table>
 
 
-
-
-
-
-
-**Executive summary**
+## Executive summary
 
 After a discussion we decided that Kirstie will rotate out now, but then
 Russ should probably rotate out next, maybe together with Melanie, to

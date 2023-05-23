@@ -10,7 +10,6 @@ Date: Thursday, November 4, 2021
 
 <!--more-->
 
-
 <table>
  <thead>
   <tr class="header">
@@ -105,22 +104,6 @@ Date: Thursday, November 4, 2021
        </p>
       </blockquote>
      </li>
-     <li>
-      <blockquote>
-       <p>
-        98 votes casted with Matthew Cieslak in the lead by 14 votes (32 first place votes)
-       </p>
-      </blockquote>
-      <ul>
-       <li>
-        <blockquote>
-         <p>
-          Valid as of 10:45pm PT on November 3
-         </p>
-        </blockquote>
-       </li>
-      </ul>
-     </li>
     </ul>
    </td>
    <td>
@@ -184,11 +167,6 @@ Date: Thursday, November 4, 2021
     (continued) Writing up BIDS usage survey into blog post
    </td>
    <td>
-    <a href="https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit">
-     <span class="underline">
-      https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit
-     </span>
-    </a>
    </td>
   </tr>
   <tr class="odd">
@@ -276,9 +254,5 @@ Date: Thursday, November 4, 2021
   </tr>
  </tbody>
 </table>
-
-
-
-
 
 (2nd half)

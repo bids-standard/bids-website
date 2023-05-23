@@ -148,17 +148,6 @@ Date: Thursday, June 10, 2021
       </span>
      </a>
     </p>
-    <p>
-     BIDS Town Hall zoom room:
-     <a href="https://stanford.zoom.us/j/92333032762?pwd=aW9lbDlJUGNneCtTMG05dEFBV1hqZz09">
-      <span class="underline">
-       https://stanford.zoom.us/j/92333032762?pwd=aW9lbDlJUGNneCtTMG05dEFBV1hqZz09
-      </span>
-     </a>
-    </p>
-    <p>
-     Password: 450420
-    </p>
    </td>
   </tr>
   <tr class="even">

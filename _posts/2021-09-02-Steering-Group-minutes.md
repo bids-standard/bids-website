@@ -10,7 +10,6 @@ Date: Thursday, September 2, 2021
 
 <!--more-->
 
-
 <table>
  <thead>
   <tr class="header">
@@ -96,11 +95,6 @@ Date: Thursday, September 2, 2021
     Writing up BIDS usage survey into blog post
    </td>
    <td>
-    <a href="https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit">
-     <span class="underline">
-      https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit
-     </span>
-    </a>
    </td>
   </tr>
   <tr class="even">
