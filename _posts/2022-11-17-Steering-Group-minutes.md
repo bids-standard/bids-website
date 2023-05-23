@@ -309,11 +309,6 @@ Date: Thursday, November 17th, 2022
 
 
 
-
-
-**Present:** Guiomar, Robert, Russ, Ariel, Melanie, Cyril, Yaroslav,
-Kimberly, Remi
-
 **Guest:** BEP37
 
 Extension leads/moderators:
@@ -343,8 +338,3 @@ Extension co-moderators:
 
 
 Next week visitors: TBD on slack - we will meet 15 minutes early
-
-Just for fun to remember this day:
-
-![](media/image1.png){width="6.267716535433071in"
-height="5.569444444444445in"}
