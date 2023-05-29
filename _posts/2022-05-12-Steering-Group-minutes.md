@@ -34,13 +34,6 @@ Date: Thursday, May 12, 2022
    <td>
     Inheritance principle changes
    </td>
-   <td>
-    <a href="https://bidsstandard.slack.com/archives/CQ78S2E23/p1648146833155359">
-     <span class="underline">
-      https://bidsstandard.slack.com/archives/CQ78S2E23/p1648146833155359
-     </span>
-    </a>
-   </td>
   </tr>
   <tr class="odd">
    <td>
@@ -58,14 +51,6 @@ Date: Thursday, May 12, 2022
     </ul>
    </td>
    <td>
-    <p>
-     Proposals:
-     <a href="https://docs.google.com/document/d/163z77Des9IAgZWnqhHWDJOfD3Q4uL0BAIp-Qfs-CAHQ/edit?usp=sharing">
-      <span class="underline">
-       BIDS Specification Redesign
-      </span>
-     </a>
-    </p>
     <p>
      <a href="https://github.com/bids-standard/bids-specification/issues/255">
       <span class="underline">

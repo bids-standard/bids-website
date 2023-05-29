@@ -178,15 +178,6 @@ Date: Thursday, July 14, 2022
    </td>
    <td>
     <p>
-     Proposals:
-     <a href="https://docs.google.com/document/d/163z77Des9IAgZWnqhHWDJOfD3Q4uL0BAIp-Qfs-CAHQ/edit?usp=sharing">
-      <span class="underline">
-       BIDS Specification Redesign
-      </span>
-     </a>
-     (proposal at top of page)
-    </p>
-    <p>
      <a href="https://github.com/bids-standard/bids-specification/issues/255">
       <span class="underline">
        https://github.com/bids-standard/bids-specification/issues/255

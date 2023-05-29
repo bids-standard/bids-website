@@ -53,11 +53,6 @@ Date: Thursday, June 2, 2022
     Inheritance principle changes
    </td>
    <td>
-    <a href="https://bidsstandard.slack.com/archives/CQ78S2E23/p1648146833155359">
-     <span class="underline">
-      https://bidsstandard.slack.com/archives/CQ78S2E23/p1648146833155359
-     </span>
-    </a>
    </td>
   </tr>
   <tr class="even">

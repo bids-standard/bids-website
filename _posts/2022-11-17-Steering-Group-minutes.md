@@ -49,31 +49,6 @@ Date: Thursday, November 17th, 2022
     </p>
    </td>
    <td>
-    <p>
-     Steering Group agendas:
-     <a href="https://drive.google.com/drive/folders/13sXuYZ_hZWUobdpRx5WuiGrZd6k7jEk_">
-      <span class="underline">
-       https://drive.google.com/drive/folders/13sXuYZ_hZWUobdpRx5WuiGrZd6k7jEk_
-      </span>
-     </a>
-    </p>
-    <p>
-     Other SG documents:
-     <a href="https://drive.google.com/drive/folders/1afNWTxsKc82mD0zEwlm5GdodcNRmogp4">
-      <span class="underline">
-       https://drive.google.com/drive/folders/1afNWTxsKc82mD0zEwlm5GdodcNRmogp4
-      </span>
-     </a>
-    </p>
-    <p>
-     Maintainers G Drive:
-     <br/>
-     <a href="https://drive.google.com/drive/folders/1qCx4Zopmz7IyLpi8KdrSqIdfpb-bELsV?usp=sharing">
-      <span class="underline">
-       https://drive.google.com/drive/folders/1qCx4Zopmz7IyLpi8KdrSqIdfpb-bELsV?usp=sharing
-      </span>
-     </a>
-    </p>
    </td>
   </tr>
   <tr class="odd">
@@ -198,13 +173,6 @@ Date: Thursday, November 17th, 2022
     Writing up BIDS usage survey into blog post
    </td>
    <td>
-    <p>
-     <a href="https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit">
-      <span class="underline">
-       https://docs.google.com/forms/d/1i723em9FJEtc_hj2uxES9QHiF4EIAaJUBw9pmypkbvU/edit
-      </span>
-     </a>
-    </p>
     <p>
      Some of the analysis code:
     </p>
