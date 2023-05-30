@@ -48,6 +48,13 @@
     - raw
 
 - number: "008"
+  title: Magnetoencephalography (MEG)
+  leads:
+    - name: Guiomar Niso
+  content:
+    - raw
+
+- number: "009"
   title: Positron Emission Tomography (PET)
   leads:
     - name: Melanie Ganz

@@ -1,7 +1,7 @@
 ---
 ---
 
-# Acknowledgements
+# Acknowledgments
 
 This work has been done by the community of [individual contributors](https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html). Their work was
 supported by the

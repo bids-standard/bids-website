@@ -61,15 +61,6 @@
     - derivative
   blocking: Blocked by BIDS-validator extending and PyBIDS implementation
 
-- number: "013"
-  title: Resting state fMRI derivatives
-  leads:
-    - name: Steven Giavasis
-  update: Merged into BEP012.
-  content:
-    - derivative
-  blocking: None
-
 - number: "014"
   title: Affine transformations and nonlinear field warps
   leads:
@@ -124,7 +115,7 @@
     - name: Dejan Draschkow
   update: |
     - BEP close to PR submission, examples and validator under development.
-    - Seeking additional BEP lead to help incoporate into standard contact [dejan](mailto:dejan.draschow@psy.ox.ac.uk) to get involved.
+    - Seeking additional BEP lead to help incorporate into standard contact [dejan](mailto:dejan.draschow@psy.ox.ac.uk) to get involved.
   content:
     - raw
   blocking: None
@@ -335,6 +326,42 @@
     - name: "[Vittorio Iacovella](mailto:vittorio.iacovella@unitn.it)"
     - name: "[Carlo Miniussi](mailto:carlo.miniussi@unitn.it)"
     - name: "[Marta Bortoletto](mailto:marta.bortoletto@cognitiveneuroscience.it)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
+  blocking: None
+
+- number: "038"
+  title: Atlases
+  leads:
+    - name: "[James Kent](mailto:jamesdkent21@gmail.com)"
+    - name: "[Peer Herholz](mailto:herholz.peer@gmail.com)"
+    - name: "[Eugene Duff](mailto:eugene.duff@paediatrics.ox.ac.uk)"
+    - name: "[Anthony Galassi](mailto:anthony.galassi@nih.gov)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
+  blocking: None
+
+- number: "039"
+  title: Dimensionality reduction-based networks
+  leads:
+    - name: "[Arianna Sala](mailto:arianna.sala@uliege.be)"
+    - name: "[Anibal Heinsfeld](mailto:anibalsolon@utexas.edu)"
+    - name: "[Cyrus Eierud](mailto:ceierud@gsu.edu)"
+    - name: "[Franco Pestilli](mailto:pestilli@utexas.edu)"
+    - name: "[Peer Herholz](mailto:herholz.peer@gmail.com)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - raw
+  blocking: None
+
+- number: "040"
+  title: Functional Ultrasound (fUS)
+  leads:
+    - name: "[Jean-Charles Mariani](mailto:jean-charles.mariani@cri-paris.org)"
+    - name: "[Samuel Diebolt](mailto:samuel.diebolt@iconeus.com)"
+    - name: "[Thomas Deffieux](mailto:thomas.deffieux@inserm.fr)"
   update: New BEP, collecting community comments and feedback. All collaborators are welcome.
   content:
     - raw

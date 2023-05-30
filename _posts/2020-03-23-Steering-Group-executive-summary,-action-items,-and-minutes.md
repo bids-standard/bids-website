@@ -41,7 +41,7 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
   - A [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGjTA-U_1LECRsbuBQ9X7kdi34aEdxTMoWCwwkEgou-qpb4A/viewform){:target="_blank"} with an accompanying [blog post](https://bids.neuroimaging.io/2020/03/20/engage-with-the-bids-ecosystem.html){:target="_blank"} was drafted to evaluate how the community would like to engage with each other, what barriers may exist that makes engaging more challenging, and ways that we can engage colleagues that do not know about BIDS.
   - Points to consider when designing the infrastructure to support BIDS slides
     - An important feature is that the BIDS slides will be a living and breathing document shared via Google slides.
-    - Google slides gives us the ability to: version control, seamless updating capability, and persistant links.
+    - Google slides gives us the ability to: version control, seamless updating capability, and persistent links.
     - Discussed preserving and separating the core presentation from the derived versions. Ensuring the references of where they have been used.
       -  Event link or other event details
 

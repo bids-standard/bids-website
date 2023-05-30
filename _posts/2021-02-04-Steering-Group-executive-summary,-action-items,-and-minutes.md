@@ -57,4 +57,3 @@ The Steering Group was joined by [BEP20: Eye Tracking](https://bids.neuroimaging
   - Coordinating with [BEP29: Virtual and physical motion](https://bids.neuroimaging.io/bep029){:target="_blank"}
   - Meeting with relevant stakeholders
 - Balancing the validation with practical implementation
-

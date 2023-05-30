@@ -18,9 +18,9 @@
 
             {% if item.sublinks %}
               <li class="dropdown">
-                <a  class="dropdown-toggle" data-toggle="dropdown" 
-                    role="button" aria-haspopup="true" 
-                    href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" 
+                <a  class="dropdown-toggle" data-toggle="dropdown"
+                    role="button" aria-haspopup="true"
+                    href="{{ site.url }}{{ site.baseurl }}{{ link.url }}"
                     aria-expanded="false">{{ item.title }} <span class="caret"></span>
                 </a>
 
@@ -40,7 +40,7 @@
 
             {% else %}
               <li class="nav-item">
-                <a class="nav-link" 
+                <a class="nav-link"
                   href="{{ item.url | relative_url }}">{{ item.title }} </span></a>
               </li>
 
@@ -49,7 +49,7 @@
           {% endfor %}
         </ul>
       </div>
-      
+
     </div>
 
   </nav>

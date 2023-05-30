@@ -27,4 +27,3 @@ body:
   - type: textarea
     attributes:
       label: Describe what you expected.
-
