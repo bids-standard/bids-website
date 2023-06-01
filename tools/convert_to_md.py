@@ -29,29 +29,48 @@ def prettify_html(input_folder):
         with open(file, "w") as f:
             f.write(pretty_html)
 
+MONTH_MAPPING = {"Oct": "October"}
 
 def rename_files(input_folder):
+    print("Renaming files".upper())
+
     for file in input_folder.glob("*.md"):
+
+        print(f" Processing {file}")
+
         with open(file, "r") as f:
             text = f.readlines()
 
         for line in text:
+
             if "Date" in line:
+
                 line = line.replace("\n", "")
+
                 year = str(file.name).split("_")[0]
+
                 if len(year) > 4:
                     year = str(file.name).split("-")[0]
+
                 month, day = line.split(" ")[2:]
+
+                day = day.replace("th", "")
+
+                if month in MONTH_MAPPING:
+                    month = MONTH_MAPPING[month]
                 mnum = datetime.datetime.strptime(month, "%B").month
+
                 new_name = f"{year}-{mnum:02d}-{int(day):02d}-Steering-Group-minutes.md"
-                print(file)
-                print(new_name)
+
+                print(f"  {file} --> {new_name}")
                 file.rename(new_name)
+
                 hmtl_file = file.with_suffix(".html")
                 if hmtl_file.exists():
+                    print(f"  {hmtl_file} --> {Path(new_name).with_suffix('.html')}")
                     hmtl_file.rename(Path(new_name).with_suffix(".html"))
-                break
 
+                break
 
 def sanitize_md(input_folder):
     for file in input_folder.glob("*.md"):
