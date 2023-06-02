@@ -42,4 +42,12 @@ With the ongoing development of new tools and resources it is important to keep 
 
 - We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020){:target="_blank"}. Please find our [associated application](./BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf){:target="_blank"}.
 
-- Sign up to receive occasional [updates by email](https://docs.google.com/forms/d/1ZLi5qRTuX11KGK7qIidSdZvznFoXAqr2wh6003okv-0/){:target="_blank"} and follow BIDS on [Twitter](https://twitter.com/BIDSstandard?ref_src=twsrc%5Etfw){:target="_blank"}.
+## Communication channels
+
+If you are interested in receiving occasional updates around BIDS,
+feel free to join one of the communication channels that we use regularly:
+
+- The `bids-discussions` Google Group for [updates via email](https://groups.google.com/g/bids-discussion){:target="_blank"}
+- Follow BIDS on [Twitter](https://twitter.com/BIDSstandard?ref_src=twsrc%5Etfw){:target="_blank"}
+- Join the [Brainhack Mattermost](https://mattermost.brainhack.org/) for a number of BIDS-related channels
+- Have a look at the [Neurostars forum with the BIDS tag](https://neurostars.org/tag/bids)

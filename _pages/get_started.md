@@ -9,7 +9,7 @@ If you have converted a dataset, use the [BIDS validator](https://bids-standard.
 
 # Learn from examples
 
-You can find full datasets on [OpenNeuro.org](https://openneuro.org/public/datasets){:target="_blank"} and stripped down example datasets on [GitHub.org](https://github.com/bids-standard/bids-examples){:target="_blank"}.
+You can find full datasets on [OpenNeuro.org](https://openneuro.org/public/datasets){:target="_blank"} and stripped down example datasets in the [bids-examples repository](https://github.com/bids-standard/bids-examples){:target="_blank"} on GitHub.
 
 # Confused? Need help?
 

@@ -48,9 +48,7 @@ The "Extension label" column provides a direct link to the documentation.
 
 Please find our
 [latest BEP update](https://docs.google.com/presentation/d/1uvxJaGgrk58HBWRqLzJTwHjpJKFLGM7YTiNvGwvjMOA/edit?usp=sharing){:target:"_blank"}
-presented in the
-[Open Science Room](https://ohbm.sparkle.space/in/opensciencesig){:target:"_blank"}
-at
+presented in the Open Science Room at
 [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4041){:target:"_blank"}.
 
 Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed on the
