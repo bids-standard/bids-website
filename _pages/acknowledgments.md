@@ -6,7 +6,7 @@
 This work has been done by the community of [individual contributors](https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html). Their work was
 supported by the
 
-Funding Source | Target
+Support source | Description of the contributions 
 ----- | -----
 [International Neuroinformatics Coordinating Facility](https://www.incf.org/){:target="_blank"} | [Neuroimaging Data Sharing Task Force](https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force){:target="_blank"} collated initial group of people to push pilot BIDS development and promotion
 Laura and John Arnold Foundation |
