@@ -308,4 +308,4 @@ Date: Thursday, January 27, 2022
 
 Franco:
 
-[[https://github.com/bids-standard/bids-specification/pull/487]{.underline}](https://github.com/bids-standard/bids-specification/pull/487)
+[https://github.com/bids-standard/bids-specification/pull/487](https://github.com/bids-standard/bids-specification/pull/487)
