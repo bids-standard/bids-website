@@ -23,6 +23,9 @@
     },
     {
       "pattern": "^https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force"
+    },
+    {
+      "pattern": "^https://data.donders.ru.nl/collections"
     }
   ],
   "timeout": "20s",
