@@ -4,3 +4,5 @@ Gemfile.lock
 _site/*
 .DS_Store
 .sass-cache
+tools/inputs
+tools/*.html

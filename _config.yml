@@ -51,3 +51,4 @@ exclude:
   - README.md
   - Gemfile*
   - vendor
+  - tools

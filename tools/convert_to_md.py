@@ -54,7 +54,7 @@ def rename_files(input_folder):
 
                 month, day = line.split(" ")[2:]
 
-                day = day.replace("th", "")
+                day = day.replace("th", "").replace("rd", "").replace("nd", "").replace("st", "")
 
                 if month in MONTH_MAPPING:
                     month = MONTH_MAPPING[month]

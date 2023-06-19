@@ -358,6 +358,6 @@ Date: Thursday, December 8th, 2022
 
 
 
-**Guest:** Martin Szinte, lead for [[BEP020: Eye tracking including gaze
+**Guest:** Martin Szinte, lead for [BEP020: Eye tracking including gaze
 position and pupil
-size]{.underline}](https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw/edit?usp=sharing)
+size](https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw/edit?usp=sharing)

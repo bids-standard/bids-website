@@ -282,27 +282,27 @@ Date: Thursday, November 17th, 2022
 Extension leads/moderators:
 
 -   Giacomo Bertazzoli
-    > \<[[giacomo.bertazzoli\@unitn.it]{.underline}](mailto:giacomo.bertazzoli@unitn.it)\>,
+    > \<[giacomo.bertazzoli\@unitn.it](mailto:giacomo.bertazzoli@unitn.it)\>,
 
 -   Vittorio Iacovella
-    > \<[[vittorio.iacovella\@unitn.it]{.underline}](mailto:vittorio.iacovella@unitn.it)\>,
+    > \<[vittorio.iacovella\@unitn.it](mailto:vittorio.iacovella@unitn.it)\>,
 
 -   Carlo Miniussi
-    > \<[[carlo.miniussi\@unitn.it]{.underline}](mailto:carlo.miniussi@unitn.it)\>,
+    > \<[carlo.miniussi\@unitn.it](mailto:carlo.miniussi@unitn.it)\>,
 
 -   Marta Bortoletto
-    > \<[[marta.bortoletto\@cognitiveneuroscience.it]{.underline}](mailto:marta.bortoletto@cognitiveneuroscience.it)\>.
+    > \<[marta.bortoletto\@cognitiveneuroscience.it](mailto:marta.bortoletto@cognitiveneuroscience.it)\>.
 
 Extension co-moderators:
 
 -   Martina Bulgari
-    > \<[[martina.bulgari\@cognitiveneuroscience.it]{.underline}](mailto:martina.bulgari@cognitiveneuroscience.it)\>,
+    > \<[martina.bulgari\@cognitiveneuroscience.it](mailto:martina.bulgari@cognitiveneuroscience.it)\>,
 
 -   Eleonora Marcantoni
-    > \<[[eleonoramarcantoni\@gmail.com]{.underline}](mailto:eleonoramarcantoni@gmail.com)\>,
+    > \<[eleonoramarcantoni\@gmail.com](mailto:eleonoramarcantoni@gmail.com)\>,
 
 -   Giacomo Guidali
-    > \<[[giacomo.guidali\@cognitiveneuroscience.it]{.underline}](mailto:giacomo.guidali@cognitiveneuroscience.it)\>.
+    > \<[giacomo.guidali\@cognitiveneuroscience.it](mailto:giacomo.guidali@cognitiveneuroscience.it)\>.
 
 
 Next week visitors: TBD on slack - we will meet 15 minutes early
