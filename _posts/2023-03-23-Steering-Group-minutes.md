@@ -133,7 +133,7 @@ Concern:
 -   How does this apply to more general data modalities? Like mEEG,
     SPECT - more use cases beyond dMRI would be helpful
 -   "BIDS-like derivatives in other modalities:
-    [https://data.donders.ru.nl/collections/di/dccn/DSC\_3031000.00\_191?0\#results](https://data.donders.ru.nl/collections/di/dccn/DSC_3031000.00_191?0#results), see also
+    [https://data.donders.ru.nl/collections/di/dccn/DSC\_3031000.00\_191?0](https://data.donders.ru.nl/collections/di/dccn/DSC_3031000.00_191?0), see also
     [https://github.com/Donders-Institute/infant-cluster-effectsize](https://github.com/Donders-Institute/infant-cluster-effectsize)
     (for the scripts that generate the result)
 -   Other ideas: tarballs instead of directories, HDF5 files instead of
