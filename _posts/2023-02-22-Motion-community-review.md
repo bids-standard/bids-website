@@ -14,7 +14,7 @@ Date: Wednesday, February 22, 2023
 
 The updated draft is available for review at:
 
-[https://bids-specification--981.org.readthedocs.build/en/981/modality-specific-files/motion.html](https://bids-specification--981.org.readthedocs.build/en/981/modality-specific-files/motion.html){:target="_blank"}
+[https://bids-specification.readthedocs.io/en/latest/modality-specific-files/motion.html](https://bids-specification.readthedocs.io/en/latest/modality-specific-files/motion.html){:target="_blank"}
 
 Note that the content of that HTML page may change as suggestions are accepted during the review process.
 
