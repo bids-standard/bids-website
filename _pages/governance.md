@@ -220,8 +220,8 @@ This group consists of individuals who have contributed to the BIDS
 community. Group members are identified on the [BIDS
 contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html){:target="_blank"} list,
 a list that is intended to be inclusive of all forms of engagement with the BIDS community,
-and that contributors are encouraged to update on the
-[specification wiki](https://github.com/bids-standard/bids-specification/wiki/Contributors){:target="_blank"}.
+and that contributors are encouraged to update via the
+[specification wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors){:target="_blank"}.
 Engagement can range from writing copy text in the specification
 to providing feedback on projects such as the
 [BIDS starter kit](https://bids-standard.github.io/bids-starter-kit/){:target="_blank"}.
