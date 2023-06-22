@@ -247,7 +247,7 @@ not necessarily dissolve after some duration or event, unless stated in
 their proposal.
 
 The working/interest group formation is formalized through an open
-letter via a “read-only” Google Document addressed to the BIDS Steering
+letter via a "read-only" Google Document addressed to the BIDS Steering
 Group. The open letter will be posted on: the [BIDS-Specification
 GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}, [Google
 Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, and
@@ -421,9 +421,11 @@ except to identify a situation in which many more votes are collected
 than valid email addresses. If the situation arises that the legitimacy
 of the vote is called into question, then the email addresses will be
 used to hold a special election under the terms laid out in Appendix B,
-to with, “Elections will be managed through a 3rd party platform that
-allows restricting votes to a specific set of email addresses while
-maintaining the anonymity of the votes.
+according to which,
+
+> Elections will be managed through a 3rd party platform that
+> allows restricting votes to a specific set of email addresses while
+> maintaining the anonymity of the votes.
 
 ### D. License
 
