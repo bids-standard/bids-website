@@ -22,6 +22,9 @@
       "pattern": "^https://link.springer.com\/article\/.*"
     },
     {
+      "pattern": "^https://github.com/bids-standard/usage_survey/.*"
+    },
+    {
       "pattern": "^https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force"
     }
   ],
