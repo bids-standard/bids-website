@@ -34,7 +34,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [bids-cfood](https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood)
   a module to handle BIDS dataset for the caosDB data crawler.
 - [bids2cite](https://github.com/Remi-Gau/bids2cite){:target="_blank"} a python package
-  to interactively update `dataset_decription.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
+  to interactively update `dataset_description.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
 - [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"}
   (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
 - [BIDS-pydantic](https://pypi.org/project/BIDS-pydantic/) pulls a specified version of the BIDS schema
