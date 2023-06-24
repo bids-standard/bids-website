@@ -51,7 +51,7 @@ A description of how to build containerized apps supporting BIDS inputs can be f
   and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
 - [OpenNeuro](http://openneuro.org){:target="_blank"} (repository)
 - [PRFmodel](https://github.com/vistalab/PRFmodel){:target="_blank"} a set of tools
-  to fit the fit population receptor field models to BIDS datasets.
+  to fit population receptive field models to BIDS datasets.
 - [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"} (Python module to harmonize access and manipulation)
 - [rbids](https://github.com/mathesong/rbids) aims to make BIDS datasets more easily accessible for packages written in R.
 - [spm_2_bids](https://github.com/cpp-lln-lab/spm_2_bids){:target="_blank"} a tool convert SPM preprocessed output
