@@ -38,8 +38,8 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"}
   (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
 - [BIDS-pydantic](https://pypi.org/project/BIDS-pydantic/) pulls a specified version of the BIDS schema
-  and creates corresponding pydantic models, which will provide BIDS data
-  validation using python type annotations (see also [BIDS-pydantic-models](https://pypi.org/project/BIDS-pydantic-models/)).
+  and creates corresponding Pydantic models, which will provide BIDS data
+  validation using Python type annotations (see also [BIDS-pydantic-models](https://pypi.org/project/BIDS-pydantic-models/)).
 - [Brainstorm](http://neuroimage.usc.edu/brainstorm/){:target="_blank"} (MEG/EEG analysis package)
 - [clpipe](https://clpipe.readthedocs.io/en/latest/index.html){:target="_blank"}
   streamlined processing pipeline for MRI data centered around BIDS.
