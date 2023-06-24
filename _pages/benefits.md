@@ -33,14 +33,26 @@ A description of how to build containerized apps supporting BIDS inputs can be f
 - [BIDSHandler](https://github.com/Macquarie-MEG-Research/BIDSHandler){:target="_blank"} (Python module allowing complete manipulation of BIDS data)
 - [bids-cfood](https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood)
   a module to handle BIDS dataset for the caosDB data crawler.
-- [bids2cite](https://github.com/Remi-Gau/bids2cite){:target="_blank"} a python package to interactively update `dataset_decription.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
-- [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"} (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
+- [bids2cite](https://github.com/Remi-Gau/bids2cite){:target="_blank"} a python package
+  to interactively update `dataset_description.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
+- [bids-matlab](https://github.com/bids-standard/bids-matlab){:target="_blank"}
+  (MATLAB/Octave tools to interact with datasets conforming to the BIDS format)
+- [BIDS-pydantic](https://pypi.org/project/BIDS-pydantic/) pulls a specified version of the BIDS schema
+  and creates corresponding Pydantic models, which will provide BIDS data
+  validation using Python type annotations (see also [BIDS-pydantic-models](https://pypi.org/project/BIDS-pydantic-models/)).
 - [Brainstorm](http://neuroimage.usc.edu/brainstorm/){:target="_blank"} (MEG/EEG analysis package)
-- [clpipe](https://clpipe.readthedocs.io/en/latest/index.html){:target="_blank"} streamlined processing pipeline for MRI data centered around BIDS.
-- [cuBIDS](https://pypi.org/project/cubids/){:target="_blank"} a python package designed to facilitate reproducible curation of neuroimaging BIDS datasets.
-- [GUI dataset description generator](https://github.com/tolik-g/BIDS){:target="_blank"} (GUI form that generates dataset_description.json)
-- [Lead-DBS](https://www.lead-dbs.org/) A toolbox facilitating Deep Brain Stimulation electrode reconstructions and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
+- [clpipe](https://clpipe.readthedocs.io/en/latest/index.html){:target="_blank"}
+  streamlined processing pipeline for MRI data centered around BIDS.
+- [cuBIDS](https://pypi.org/project/cubids/){:target="_blank"}
+  a Python package designed to facilitate reproducible curation of neuroimaging BIDS datasets.
+- [GUI dataset description generator](https://github.com/tolik-g/BIDS){:target="_blank"}
+  (GUI form that generates dataset_description.json)
+- [Lead-DBS](https://www.lead-dbs.org/) A toolbox facilitating Deep Brain Stimulation electrode reconstructions
+  and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
 - [OpenNeuro](http://openneuro.org){:target="_blank"} (repository)
-- [PRFmodel](https://github.com/vistalab/PRFmodel){:target="_blank"} a set of tools to fit the fit population receptor field models to BIDS datasets.
+- [PRFmodel](https://github.com/vistalab/PRFmodel){:target="_blank"} a set of tools
+  to fit population receptive field models to BIDS datasets.
 - [PyBIDS](https://github.com/bids-standard/pybids){:target="_blank"} (Python module to harmonize access and manipulation)
-- [spm_2_bids](https://github.com/cpp-lln-lab/spm_2_bids){:target="_blank"} a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012){:target="_blank"})
+- [rbids](https://github.com/mathesong/rbids) aims to make BIDS datasets more easily accessible for packages written in R.
+- [spm_2_bids](https://github.com/cpp-lln-lab/spm_2_bids){:target="_blank"} a tool convert SPM preprocessed output
+  to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012){:target="_blank"})
