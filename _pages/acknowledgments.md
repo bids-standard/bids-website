@@ -20,5 +20,6 @@ Laura and John Arnold Foundation |
 [NIMH MH109682](https://reporter.nih.gov/project-details/9982125) | NeuroScout
 Novo Nordisk Foundation NNF20OC0063277 | 
 [NIMH 1RF1MH126700-01A1](https://reporter.nih.gov/project-details/10480619) | Hierarchical Event Descriptors (HED)
+[NIBIB 1R01EB020740](https://reporter.nih.gov/project-details/9053094) | Nipype
 
 ![INCF-badge](./assets/img/incf-badge_281x210.png){: .center-image }
