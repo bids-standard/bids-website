@@ -68,10 +68,16 @@ can be found in the BIDS [specification](https://bids-specification.readthedocs.
 
 <br>
 
-Some proposals that set out to extend the BIDS specification have instead become tools for handling BIDS or have been merged into other BEPs.
-See the table below.
+Some proposals that set out to extend the BIDS specification have instead lead to other outcomes such as:
 
-| Extension label                                                 | Title                          | Moderators/leads                               | Outcome                                                                   |
-| --------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| [BEP013](https://bids.neuroimaging.io/bep013){:target:"_blank"} | Resting state fMRI derivatives | Steven Giavasis                                | Merged into BEP012                                                        |
-| [BEP015](https://bids.neuroimaging.io/bep015){:target:"_blank"} | Mapping file                   | Eric Earl, Camille Maumet, and Vasudev Raguram | [File mapper](https://github.com/DCAN-Labs/file-mapper){:target:"_blank"} |
+- becoming tools for handling BIDS
+- having been merged into other BEPs
+- having been withdrawn
+
+See the table below:
+
+| Extension label                                                 | Title                                 | Moderators/leads                                          | Outcome                                                                                              |
+| --------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [BEP013](https://bids.neuroimaging.io/bep013){:target:"_blank"} | Resting state fMRI derivatives        | Steven Giavasis                                           | Merged into BEP012                                                                                   |
+| [BEP015](https://bids.neuroimaging.io/bep015){:target:"_blank"} | Mapping file                          | Eric Earl, Camille Maumet, and Vasudev Raguram            | [File mapper](https://github.com/DCAN-Labs/file-mapper){:target:"_blank"}                            |
+| [BEP025](https://bids.neuroimaging.io/bep025){:target:"_blank"} | Medical Imaging Data structure (MIDS) | Jose Manuel, Saborit Torres, and Maria de la Iglesia Vayá | Dropped for consideration; smaller parts are potentially to be included into BIDS outside of the BEP |

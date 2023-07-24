@@ -175,24 +175,6 @@
     - raw
   blocking: None
 
-- number: "025"
-  title: Medical Imaging Data structure (MIDS)
-  leads:
-    - name: Jose Manuel
-    - name: Saborit Torres
-    - name: Maria de la Iglesia Vayá
-  update: |
-    - Enhancing [BEP025 preprint](https://arxiv.org/abs/2010.00434){:target:"_blank"}.
-    - Provided [automated tool](https://github.com/BIMCV-CSUSP/MIDS){:target:"_blank"}
-      to convert projects uploaded to XNAT platforms to BIDS/MIDS.
-    - Example datasets: [Massive Image Data Anatomy Spine](https://bimcv.cipf.es/bimcv-projects/project-midas/){:target:"_blank"},
-    [BIMCV-COVID19+](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/){:target:"_blank"},
-    and [BIMCV-COVID19-](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/#1590859488150-148be708-c3f3){:target:"_blank"}.
-    - Included Kaggle Challenge [SIIM-FISABIO-RSNA COVID-19 Detection](https://www.kaggle.com/c/siim-covid19-detection/overview){:target:"_blank"}
-  content:
-    - raw
-  blocking: None
-
 - number: "026"
   title: Microelectrode Recordings
   leads:
