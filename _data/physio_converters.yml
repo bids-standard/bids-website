@@ -58,3 +58,20 @@
     documentation: https://phys2bids.readthedocs.io/en/latest/
     comment: Python3 library to format physiological files in BIDS.
     license: Apache-2.0
+
+  - name: bidsphysio
+    url: https://github.com/cbinyu/bidsphysio
+    data_types:
+      - physiological
+    expected_input:
+      -  CMRR, AcqKnowledge, Siemens PMU
+    distribution:
+        - name: pypi
+          url: https://pypi.org/project/bidsphysio/
+        - name: dockerhub
+          url: https://hub.docker.com/r/cbinyu/bidsphysio/
+    language:
+     -  Python
+    documentation: URL to documentation
+    comment: Converts physio data (CMRR, AcqKnowledge, Siemens PMU) to BIDS physiological recording
+    GUI: false
