@@ -300,7 +300,7 @@
       url: https://github.com/wulms/bidsconvertr
       comment: |
         The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
-        It conists of the following steps:
+        It consists of the following steps:
         (i) convert DICOM data to NIfTI data using dcm2niix
         (ii) structure this data according to the BIDS specification
         (iii) provide the papayaWidget viewer for inspecting the images
