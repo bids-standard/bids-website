@@ -6,20 +6,6 @@
 #   update:
 #   blocking:
 
-- number: "002"
-  title: BIDS Models Specification
-  leads:
-    - name: Tal Yarkoni
-    - name: Chris Markiewcz
-  update: |
-    Reworked structure:
-    - list of steps is now a directed graph,
-    - [Model zoo](https://github.com/bids-standard/model-zoo){:target:'_blank'},
-    - Abstracted transformations, to ease interoperability of implementations.
-  content:
-    - file format
-  blocking: Stat Models released v1.0.0-rc1 in June 2021 - Please review!
-
 - number: "004"
   title: Susceptibility Weighted Imaging (SWI)
   leads:
