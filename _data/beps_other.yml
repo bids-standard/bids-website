@@ -40,6 +40,14 @@
     - raw
   outcome: "Became the [File mapper](https://github.com/DCAN-Labs/file-mapper)."
 
+- number: "019"
+  title: DICOM Metadata
+  leads:
+    - name: Satrajit Ghosh
+  content:
+    - metadata
+  outcome: Closed in favor of possible direct support of DICOM within BIDS (see this [issue](https://github.com/bids-standard/bids-specification/issues/1552) and this [pull request](https://github.com/bids-standard/bids-specification/pull/1551)).
+
 - number: "025"
   title: Medical Imaging Data structure (MIDS)
   leads:

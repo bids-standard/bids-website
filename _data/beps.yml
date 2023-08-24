@@ -86,15 +86,6 @@
     - derivative
   blocking: None
 
-- number: "019"
-  title: DICOM Metadata
-  leads:
-    - name: Satrajit Ghosh
-  update: Not active. Could be a NIDM extension rather than in BIDS.
-  content:
-    - metadata
-  blocking: None
-
 - number: "020"
   title: Eye Tracking including Gaze Position and Pupil Size
   leads:
