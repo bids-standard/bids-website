@@ -297,7 +297,7 @@
       GUI: false
 
     - name: BIDSconvertR
-      url: https://github.com/wulms/bidsconvertr
+      url: https://github.com/bidsconvertr/bidsconvertr
       comment: |
         The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
         It consists of the following steps:
