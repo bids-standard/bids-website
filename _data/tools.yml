@@ -144,4 +144,4 @@
   language:
     - MATLAB
     - Octave
-  description: a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012)
+  description: a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
