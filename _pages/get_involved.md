@@ -68,10 +68,12 @@ can be found in the BIDS [specification](https://bids-specification.readthedocs.
 
 <br>
 
-Some proposals that set out to extend the BIDS specification have instead become tools for handling BIDS or have been merged into other BEPs.
-See the table below.
+Some proposals that set out to extend the BIDS specification have instead lead to other outcomes such as:
 
-| Extension label                                                 | Title                          | Moderators/leads                               | Outcome                                                                   |
-| --------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| [BEP013](https://bids.neuroimaging.io/bep013){:target:"_blank"} | Resting state fMRI derivatives | Steven Giavasis                                | Merged into BEP012                                                        |
-| [BEP015](https://bids.neuroimaging.io/bep015){:target:"_blank"} | Mapping file                   | Eric Earl, Camille Maumet, and Vasudev Raguram | [File mapper](https://github.com/DCAN-Labs/file-mapper){:target:"_blank"} |
+- becoming tools for handling BIDS
+- having been merged into other BEPs
+- having been dropped from consideration
+
+See the table below:
+
+{% include beps_others_table.html beps=site.data.beps_other %}

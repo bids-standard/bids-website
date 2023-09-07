@@ -228,6 +228,16 @@
       documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
       license: MIT
 
+    - name: niix2bids
+      url: https://github.com/benoitberanger/niix2bids
+      data_types:
+      expected_input:
+        - Nifti converted from DICOM using dcm2niix
+      language:
+        - Python
+      comment: Use this package as a command line to organize your Nifti dataset into BIDS.
+      license: GPL-3.0
+
     - name: dac2bids
       url: https://github.com/dangom/dac2bids
       data_types:
@@ -297,10 +307,10 @@
       GUI: false
 
     - name: BIDSconvertR
-      url: https://github.com/wulms/bidsconvertr
+      url: https://github.com/bidsconvertr/bidsconvertr
       comment: |
         The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
-        It conists of the following steps:
+        It consists of the following steps:
         (i) convert DICOM data to NIfTI data using dcm2niix
         (ii) structure this data according to the BIDS specification
         (iii) provide the papayaWidget viewer for inspecting the images
