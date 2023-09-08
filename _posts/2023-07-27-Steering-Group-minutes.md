@@ -6,7 +6,7 @@ display: true
 
 # Steering Group minutes 2023/07/27
 
-.-Date: Thursday, July 27th, 2023
+Date: Thursday, July 27th, 2023
 
 <!--more-->
 
@@ -301,6 +301,6 @@ BIDS Meeting Notes:
     -   Possible contacts:
         > [[https://www.internationalbraininitiative.org/data-standards-and-sharing-working-group]{.underline}](https://www.internationalbraininitiative.org/data-standards-and-sharing-working-group)
 
-    -   
+    -
 
 -   How should the application strategy change from previous years?
