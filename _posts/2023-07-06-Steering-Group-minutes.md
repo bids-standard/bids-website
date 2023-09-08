@@ -93,30 +93,9 @@ Date: Thursday, July 6th, 2023
     </p>
    </td>
   </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="even">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
  </tbody>
 </table>
 
-
-
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
 
 **Present:** Ariel Rokem, Cyril Pernet, Yaroslav Halchenko, Eric Earl
 

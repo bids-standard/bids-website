@@ -90,30 +90,9 @@ Date: Thursday, July 27th, 2023
     </ul>
    </td>
   </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="even">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
  </tbody>
 </table>
 
-
-
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
 
 **Present:** Yaroslav Halchenko, Ariel Rokem, Anthony Galassi, Kimberly
 Ray
@@ -267,24 +246,6 @@ BIDS Meeting Notes:
       </p>
      </li>
     </ul>
-   </td>
-  </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="even">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
    </td>
   </tr>
  </tbody>

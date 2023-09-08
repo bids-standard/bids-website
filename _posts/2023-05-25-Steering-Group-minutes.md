@@ -61,36 +61,11 @@ Date: Thursday, May 25th, 2023
     </p>
    </td>
   </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="even">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="even">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
  </tbody>
 </table>
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
 
 **Present:** Cyril Pernet, Ariel Rokem, Guiomar Niso, Yaroslav
 Halchenko, Stefan Appelhoff, Kimberly Ray

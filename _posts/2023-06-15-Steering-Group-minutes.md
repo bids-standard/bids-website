@@ -136,7 +136,6 @@ Date: Thursday, June 15th, 2023
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
 
 **Present:** Guiomar Niso, Robert Oostenveld, Kim Ray, Yaroslav
 Halchenko, Cyril Pernet, Taylor Salo

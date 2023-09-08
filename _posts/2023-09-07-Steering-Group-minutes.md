@@ -103,34 +103,8 @@ Date: Thursday, Sept 7th, 2023
     </a>
    </td>
   </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-    <ul>
-     <li>
-     </li>
-    </ul>
-   </td>
-  </tr>
-  <tr class="even">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr class="odd">
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
  </tbody>
 </table>
-
-
-
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
 
 **Present:** Robert Oostenveld, Stefan Appelhoff, Kimberly Ray, Ariel
 Rokem, Yaroslav Halchenko, Cyril Pernet

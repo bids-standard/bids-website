@@ -185,9 +185,6 @@ Date: Thursday, August 17th, 2023
 </table>
 
 
-
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
-
 **Present:** Ariel Rokem, Guiomar Niso, Robert Oostenveld, Yarsloav
 Halchenko, Remi Gau, Kim Ray
 
