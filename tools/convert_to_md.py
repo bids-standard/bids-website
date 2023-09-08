@@ -16,7 +16,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from rich import print
 
-MONTH_MAPPING = {"Oct": "October"}
+MONTH_MAPPING = {"Oct": "October", "Sept": "September"}
 INPUT_FOLDER = Path(__file__).parent
 
 
@@ -39,6 +39,10 @@ def rename_files(input_folder):
     print("Renaming files".upper())
 
     for file in input_folder.glob("*.md"):
+
+        if str(file).endswith("README.md"):
+            continue
+
         print(f" Processing {file}")
 
         with open(file, "r") as f:
@@ -82,6 +86,10 @@ def rename_files(input_folder):
 def sanitize_md(input_folder):
     """Clean up the markdown files."""
     for file in input_folder.glob("*.md"):
+
+        if str(file).endswith("README.md"):
+            continue
+
         year = str(file.name).split("-")[0]
         month = str(file.name).split("-")[1]
         day = str(file.name).split("-")[2]
