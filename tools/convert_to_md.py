@@ -1,4 +1,7 @@
-"""
+"""Converting Steering Group meeting minutes to markdown.
+
+This script does the following:
+
 - rename files to YYYY-MM-DD-Steering-Group-minutes.*
 - prettifies the html files
 - process the markdown files by:
@@ -7,17 +10,18 @@
     - using the html version of the tables instead of the markdown version
       because the pandoc version of the markdown tables is not very good
 """
-from rich import print
-from pathlib import Path
 import datetime
-
-input_folder = Path(__file__).parent
-
+from pathlib import Path
 
 from bs4 import BeautifulSoup
+from rich import print
+
+MONTH_MAPPING = {"Oct": "October", "Sept": "September"}
+INPUT_FOLDER = Path(__file__).parent
 
 
 def prettify_html(input_folder):
+    """Make html prettier."""
     for file in input_folder.glob("*.html"):
         # Read the HTML file
         with open(file, "r") as f:
@@ -29,12 +33,15 @@ def prettify_html(input_folder):
         with open(file, "w") as f:
             f.write(pretty_html)
 
-MONTH_MAPPING = {"Oct": "October"}
 
 def rename_files(input_folder):
+    """Rename steering group meeting files with the date."""
     print("Renaming files".upper())
 
     for file in input_folder.glob("*.md"):
+
+        if str(file).endswith("README.md"):
+            continue
 
         print(f" Processing {file}")
 
@@ -42,9 +49,7 @@ def rename_files(input_folder):
             text = f.readlines()
 
         for line in text:
-
             if "Date" in line:
-
                 line = line.replace("\n", "")
 
                 year = str(file.name).split("_")[0]
@@ -54,7 +59,12 @@ def rename_files(input_folder):
 
                 month, day = line.split(" ")[2:]
 
-                day = day.replace("th", "").replace("rd", "").replace("nd", "").replace("st", "")
+                day = (
+                    day.replace("th", "")
+                    .replace("rd", "")
+                    .replace("nd", "")
+                    .replace("st", "")
+                )
 
                 if month in MONTH_MAPPING:
                     month = MONTH_MAPPING[month]
@@ -72,8 +82,14 @@ def rename_files(input_folder):
 
                 break
 
+
 def sanitize_md(input_folder):
+    """Clean up the markdown files."""
     for file in input_folder.glob("*.md"):
+
+        if str(file).endswith("README.md"):
+            continue
+
         year = str(file.name).split("-")[0]
         month = str(file.name).split("-")[1]
         day = str(file.name).split("-")[2]
@@ -119,6 +135,7 @@ def sanitize_md(input_folder):
 
 
 def add_front_matter_and_title(f, year, month, day):
+    """Add the markdown header."""
     f.write(
         f"""---
 title: Steering Group minutes
@@ -133,6 +150,7 @@ display: true
 
 
 def print_table_from_html(input_file: Path, output_file):
+    """Print a table."""
     html_file = input_file.with_suffix(".html")
     if html_file.exists():
         with open(html_file, "r") as f:
@@ -149,9 +167,9 @@ def print_table_from_html(input_file: Path, output_file):
 
 
 def main():
-    rename_files(input_folder)
-    prettify_html(input_folder)
-    sanitize_md(input_folder)
+    rename_files(INPUT_FOLDER)
+    prettify_html(INPUT_FOLDER)
+    sanitize_md(INPUT_FOLDER)
 
 
 if __name__ == "__main__":

@@ -5,6 +5,8 @@
 #
 # from https://github.com/llbbl/scripts/blob/main/util/convert_all_word_files.sh
 
+set -eu
+
 YEAR="2023"
 
 # save current working directory to variable
