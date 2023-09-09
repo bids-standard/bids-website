@@ -96,55 +96,53 @@ Date: Thursday, July 6th, 2023
  </tbody>
 </table>
 
+<br>
 
 **Present:** Ariel Rokem, Cyril Pernet, Yaroslav Halchenko, Eric Earl
 
 **Guest:** n/a
 
+## NOTES
 
-BIDS Meeting Notes:
-
-**Derivatives output - internal review before release**
+### Derivatives output - internal review before release
 
 -   Wanting to change the atlas BEP - this is more of a space we use to
-    > segment different tissues.
+    segment different tissues.
 
 -   Suggestion to change the "Atlas" naming to "Parcellation"
 
     -   Do we need to introduce a new term? We could stick with p-seg
-        > (probabilistic) and d-seg (deterministic)
+        (probabilistic) and d-seg (deterministic)
 
 -   Should we add this Derivatives output to the website?
 
     -   Where should it go? Create a PR or multiple PRs?
 
 -   Suggestion: integrate the BIDS derivatives guidelines piecemeal into
-    > the BID general derivatives spec
+    the BID general derivatives spec
 
     -   Maybe not the BEPs table info - table could go to the BIDs
-        > extensions
+        extensions
 
-**Imaging Neuroscience Response regarding BIDS 'badge'**
+### Imaging Neuroscience Response regarding BIDS 'badge'
 
 -   Turn the conversation around
 
     -   Example: include a checklist (or guidelines) for reviewers to
-        > ensure BIDS is compliant
+        ensure BIDS is compliant
 
     -   Ask for how the BIDS community/steering co. can be helpful to
-        > improve BIDS review process
+        improve BIDS review process
 
     -   This could be comparable to Nature's code review
-
-    -   
 
 -   Ariel will reply to Steve Smith with this suggestion
 
     -   Suggestions: If Imaging neuroscience is amenable, then we could
-        > also post the guidelines on the BIDS website for wider use and
-        > adoption of these reviewer guidelines.
+        also post the guidelines on the BIDS website for wider use and
+        adoption of these reviewer guidelines.
 
-**BIDS impact**
+### BIDS impact
 
 Zotero collection for tracking BIDS related publications, BEPs, etc:
 [[https://www.zotero.org/groups/5111637/bids]{.underline}](https://www.zotero.org/groups/5111637/bids)
@@ -178,11 +176,9 @@ need to be updated:
 
 For visualizing our metrics, we have put together 2 dashboards:
 
-1.  [[the
-    > website]{.underline}](https://datastudio.google.com/u/0/reporting/eab164ba-9f98-46e8-bee8-1f4f5328dc6e/page/V5leB)
+1.  [the website](https://datastudio.google.com/u/0/reporting/eab164ba-9f98-46e8-bee8-1f4f5328dc6e/page/V5leB)
 
-2.  [[the
-    > specification]{.underline}](https://datastudio.google.com/u/0/reporting/57bf46f1-034c-4d8b-9fe2-3a2243e469c5/page/w1leB)
+2.  [the specification](https://datastudio.google.com/u/0/reporting/ 57bf46f1-034c-4d8b-9fe2-3a2243e469c5/page/w1leB)
 
 Ask BEP025 for update on BIDS website?
 

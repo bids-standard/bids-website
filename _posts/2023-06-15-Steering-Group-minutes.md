@@ -134,16 +134,14 @@ Date: Thursday, June 15th, 2023
  </tbody>
 </table>
 
-
-
+<br>
 
 **Present:** Guiomar Niso, Robert Oostenveld, Kim Ray, Yaroslav
 Halchenko, Cyril Pernet, Taylor Salo
 
 **Guest:** n/a
 
-
-BIDS Meeting Notes:
+## NOTES
 
 DICOM working group 16 meeting:
 
@@ -153,50 +151,48 @@ DICOMworking group 16 works with MRI - they are a good point of contact.
 
 See slides in the agenda for information Yaroslav presented
 
-> They recommended to contact working group 6 which may be a more
-> general group for additional meta-data fields
->
-> They seem receptive but they are a large working group
->
-> ACTION ITEMS:
+They recommended to contact working group 6 which may be a more
+general group for additional meta-data fields
+
+They seem receptive but they are a large working group
+
+ACTION ITEMS:
 
 -   contact phillips rep to identify what information is missing from
-    > DICOMS?
+    DICOMS?
 
 -   Collect an initiative to collect sample dicoms (phantoms) to
-    > identify what meta-data is needed for BIDS that is not currently
-    > provided
+    identify what meta-data is needed for BIDS that is not currently
+    provided
 
 -   Who should we contact (DICOM working group, manufacturer?) to
-    > address deficient information in DICOMS? - DICOM working groups
-    > dont use Github, they need email requests.
+    address deficient information in DICOMS? - DICOM working groups
+    dont use Github, they need email requests.
 
 -   The method of reporting the findings from the pilot study should be
-    > reusable and accessible (i.e. not an email, create an issue in
-    > BIDS so that it can be referred to later).
+    reusable and accessible (i.e. not an email, create an issue in
+    BIDS so that it can be referred to later).
 
     -   We could create a github issue for each email to DICOM or other
-        > recipients
+        recipients
 
 Imaging Neuroscience Response from Steve Smith
 
 -   Steve says that the BIDS compliance is up the the reviewers
 
     -   So then should we educate the reviewers on how to ensure that a
-        > brain dataset is BIDS compliant?
-
-    -   
+        brain dataset is BIDS compliant?
 
 -   Can we respond with a solution to help the reviewers
 
     -   Have authors provide a certificate of BIDS compliance from a
-        > BIDS validator
+        BIDS validator
 
     -   Provide instructions for the average Imaging Neuroscience
-        > reviewer
+        reviewer
 
 -   Develop instructions for reviewers as a starting point? (also
-    > include on the BIDS website)
+    include on the BIDS website)
 
     -   Getting started for:
 
@@ -211,21 +207,21 @@ Imaging Neuroscience Response from Steve Smith
         -   Institute directors
 
     -   Should this be in the form of a
-        > [[Checklist]{.underline}](https://www.nmind.org/standards-checklist/)
-        > . Filed
-        > [[standards-checklist/issues/28]{.underline}](https://github.com/nmind/standards-checklist/issues/28)
-        > (also relating to COBIDAS and their app)
+        [Checklist](https://www.nmind.org/standards-checklist/)
+        . Filed
+        [standards-checklist/issues/2](https://github.com/nmind/standards-checklist/issues/28)
+        (also relating to COBIDAS and their app)
 
-**BIDS Derivatives Meeting in Copenhagen**
+### BIDS Derivatives Meeting in Copenhagen
 
 Is there a virtual option?
 
 Main few talks will be available.
 
-**OHBM BIDS Town Hall**
+### OHBM BIDS Town Hall
 
 We could have used one of the times that was not being utilized by the
-OS-SIG. [[Kimberly Ray]{.underline}](mailto:kimray@utexas.edu) will
+OS-SIG. [Kimberly Ray](mailto:kimray@utexas.edu) will
 follow up on this with BIDS maintainers and OS-SIG schedule. RIght now
 we are potentially taking a space that others could have used to discuss
 research/science.

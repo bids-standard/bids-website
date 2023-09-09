@@ -64,16 +64,14 @@ Date: Thursday, May 25th, 2023
  </tbody>
 </table>
 
-
-
+<br>
 
 **Present:** Cyril Pernet, Ariel Rokem, Guiomar Niso, Yaroslav
 Halchenko, Stefan Appelhoff, Kimberly Ray
 
 **Guest:** Guy Jones
 
-
-BIDS Meeting Notes:
+## NOTES
 
 **Guest Guy Jones: discuss adding badges to the BIDS compliant datasets
 on Scientific Data Journal website.**
@@ -82,7 +80,7 @@ Guy's Feedback:
 
 May not have a badge in a classic sense, but possible a notification on
 a set of
-[**[collections]{.underline}**](https://www.nature.com/sdata/collections)
+[collections](https://www.nature.com/sdata/collections)
 
 All this requires is a list of compliant dois that could be added to a
 group
@@ -146,7 +144,7 @@ Potentially reach out to someone on their [[editorial
 board]{.underline}](https://janeway.imaging-neuroscience.org/editorialteam/)
 - possible Thomas Yeo, Damian Fair
 
-**NSF POSE WORKSHOP**
+### NSF POSE WORKSHOP
 
 A funding mechanism for conferences and workshops. (note: Proposals
 under \$100k are reviewed internally)
@@ -168,7 +166,7 @@ Are there cross sectional topics that could be considered? E.g. other
 modalities, or repositories, provenance. what other standards are out
 there? Physics, astronomy, CERN
 
-**BIDS workshop prep questions**
+### BIDS workshop prep questions
 
 Goal of the questions is to help focus the upcoming workshop, identify
 areas of agreement.

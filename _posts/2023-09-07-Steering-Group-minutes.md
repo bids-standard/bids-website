@@ -106,18 +106,16 @@ Date: Thursday, Sept 7th, 2023
  </tbody>
 </table>
 
+<br>
+
 **Present:** Robert Oostenveld, Stefan Appelhoff, Kimberly Ray, Ariel
 Rokem, Yaroslav Halchenko, Cyril Pernet
 
 **Guest:** Renzo Huber
 
+## NOTES
 
-Templates for letters:
-[[https://drive.google.com/drive/folders/1ljPEhXoNPD8lMukV0WYr-yo\_v6J7zaQy?usp=drive\_link]{.underline}](https://drive.google.com/drive/folders/1ljPEhXoNPD8lMukV0WYr-yo_v6J7zaQy?usp=drive_link)
-
-BIDS Meeting Notes:
-
-**[Special Guest]{.underline}**
+**Special Guest**
 
 Renzo: Editor in charge of special initiatives at Aperture
 
@@ -176,20 +174,20 @@ be many cases that does not support BIDS
 Renzo: We could ask the Reviewers to confirm BIDS. And general data
 sharing requirement could be added to the Aperture guidelines
 
-[[Aperture Author Guidelines for Data
-Submissions]{.underline}](https://docs.google.com/document/d/1oy8OhHb9_vk2zVYXXjMSD5XGnL-2P0-LieMv0Y3N8KU/edit)
+[Aperture Author Guidelines for Data
+Submissions](https://docs.google.com/document/d/1oy8OhHb9_vk2zVYXXjMSD5XGnL-2P0-LieMv0Y3N8KU/edit)
 
 Renzo: he will bring up the option of badges, or tags, and the
 discussion to Peter B and Mallar C at their next Aperture meeting.
 
-Possible future directions could be similar to [[Behavior Research
-Methods]{.underline}](https://www.springer.com/journal/13428/submission-guidelines#Instructions%20for%20Authors_Open%20Practices)'
+Possible future directions could be similar to [Behavior Research
+Methods](https://www.springer.com/journal/13428/submission-guidelines#Instructions%20for%20Authors_Open%20Practices)
 
-**BIDS2.0**
+### BIDS2.0
 
 Not many updates to discuss since the last meeting.
 
-**Stefan Maintainers:**
+### Stefan Maintainers
 
 Is the March 2024 Maintainers meeting going to happen?
 
@@ -199,8 +197,9 @@ this.
 Kim will create a table of support items that will need to be covered
 for each meeting while she is away on maternity leave.
 
-Spatial Derivatives:
-[[https://github.com/bids-standard/bids-specification/issues/1602]{.underline}](https://github.com/bids-standard/bids-specification/issues/1602)
+### Spatial Derivatives
+
+[https://github.com/bids-standard/bids-specification/issues/1602](https://github.com/bids-standard/bids-specification/issues/1602)
 
 There has not been much feedback since the Copenhagen meeting.
 
