@@ -42,8 +42,7 @@
         - PAR/REC
       expected_input:
       language:
-        C++ (compiled versions available from <a
-        href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
+        - C++ (compiled versions available from <ahref="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
       comment: "dcm2nii DICOM to NIfTI converter"
 
 
