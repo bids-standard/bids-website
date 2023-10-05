@@ -325,3 +325,12 @@
   content:
     - raw
   blocking: None
+
+- number: "041"
+  title: Statistical Model Derivatives
+  leads:
+    - name: "[Taylor Salo](mailto:salot@pennmedicine.upenn.edu)"
+  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  content:
+    - derivative
+  blocking: None
