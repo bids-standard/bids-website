@@ -1,4 +1,4 @@
-- group: steering
+- group: advisory
   members:
 
 # - title: Quantitative MRI (qMRI)
@@ -35,8 +35,8 @@
 
 # - title: Hierarchical Event Descriptor (HED) Tags
 #   leads:
-    - name: Chris Gorgolewski
-      git:  chrisgorgo
+    - name: Kay Robbins
+      git: vislab
 # - title: Positron Emission Tomography (PET)
 #   leads:
     - name: Melanie Ganz
