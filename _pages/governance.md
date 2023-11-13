@@ -490,3 +490,15 @@ and from other open-source governance documents including:
 
 Anonymous data from BIDS elections is stored in a dedicated repository on GitHub:
 [https://github.com/bids-standard/bids-elections](https://github.com/bids-standard/bids-elections){:target="_blank"}
+
+### H. Governance amendment procedure
+
+A group of BIDS contributors may at any time form a [working
+group](#other-workinginterest-groups) to propose amendments to the governance.
+These amendments will be first reviewed by the steering group before being
+submitted to a community review.
+At the end of the community review each amendment is submitted to a vote of BIDS
+contributors.
+The voting procedure is similar to the one described for the election of
+Steering group members in [Appendix B](#b-voting-procedure).
+Amendments are accepted if they gather more than two-thirds of the expressed votes.
