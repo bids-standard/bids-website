@@ -16,9 +16,9 @@ We are pleased to announce that the newest members of the BIDS Steering Group ar
 
 Dora and Camille have been elected to a term lasting from 2024-2026, and are replacing outgoing members Guiomar Nise and Robert Oostenveld.
 
-Additionally, three amendments to the governance document have been approved and will be added to the BIDS website (https://bids.neuroimaging.io/governance.html) in the coming week.
+Additionally, three amendments to the governance document have been approved and will be added to the [BIDS website](https://bids.neuroimaging.io/governance.html){:target:"_blank"} in the coming week.
 
-The results of the election may be viewed at https://www.rcv123.org/results/qkAoDSKtNyGv6nSMCVZvCM/.
+The results of the election may be viewed at [https://www.rcv123.org/results/qkAoDSKtNyGv6nSMCVZvCM/](https://www.rcv123.org/results/qkAoDSKtNyGv6nSMCVZvCM/){:target:"_blank"}.
 
 Thanks to all contributors for your participation, and congratulations to Dora and Camille!
 
