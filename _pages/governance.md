@@ -231,11 +231,11 @@ BIDS specification by supporting the members of the Maintainers Group in
 their responsibilities.
 
 An *Active Contributor* is defined as a contributor that is reachable via
-the email address they provided to the BIDS maintainers team,
+the email address they provided to the BIDS Maintainers team,
 and responds to correspondence by the BIDS group
-(for example, maintainers/steering group or the BIDS community at large).
+(for example, Maintainers/Steering Group or the BIDS community at large).
 Contributors may explicitly opt in or out of activity at any time.
-The maintainers group is responsible for providing transparent procedures for
+The Maintainers Group is responsible for providing transparent procedures for
 contributors to opt in/out as well as providing procedures for
 removing non-responsive members from the list of active contributors.
 In case of no response,
