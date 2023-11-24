@@ -16,7 +16,7 @@ Laura and John Arnold Foundation |
 [NIMH 2P41EB019936](https://reporter.nih.gov/project-details/10334133) | ReproNim project contributed various enhancements and fixes
 [NIMH MH117179](https://reporter.nih.gov/project-details/10145071) | OpenNeuro archive contributed various enhancements and fixes
 [NIMH 1ZIAMH002977-01](https://reporter.nih.gov/project-details/10489085) |  OpenNeuroPET project contributed various enhancements and fixes 
-[NIMH 5R01MH126699-02](https://reporter.nih.gov/project-details/10460628) | Brain Connectivity BEP
+[NIMH 5R01MH126699-02](https://reporter.nih.gov/project-details/10460628) | [Brain Connectivity Project](https://pestillilab.github.io/bids-connectivity/)
 [NIMH MH109682](https://reporter.nih.gov/project-details/9982125) | NeuroScout
 Novo Nordisk Foundation NNF20OC0063277 | 
 [NIMH 1RF1MH126700-01A1](https://reporter.nih.gov/project-details/10480619) | Hierarchical Event Descriptors (HED)
