@@ -191,16 +191,6 @@
     - metadata
   blocking: None
 
-- number: "029"
-  title: Virtual and physical motion data
-  leads:
-    - name: Sein Jeung
-    - name: Julius Welzel
-  update: BEP is developing and starting to finalize as discussions concerning example datasets are completed.
-  content:
-    - raw
-  blocking: None
-
 - number: "032"
   title:  Animal electrophysiology
   leads:
