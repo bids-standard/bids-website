@@ -230,6 +230,18 @@ Members of the BIDS Contributors Group are encouraged to support the
 BIDS specification by supporting the members of the Maintainers Group in
 their responsibilities.
 
+An *Active Contributor* is defined as a contributor that is reachable via
+the email address they provided to the BIDS Maintainers team,
+and responds to correspondence by the BIDS group
+(for example, Maintainers/Steering Group or the BIDS community at large).
+Contributors may explicitly opt in or out of activity at any time.
+The Maintainers Group is responsible for providing transparent procedures for
+contributors to opt in/out as well as providing procedures for
+removing non-responsive members from the list of active contributors.
+In case of no response,
+a grace period of two years is in place before a formerly active contributor
+loses their "active" status.
+
 ### BIDS Advisory Group
 
 This group contains previous BEP Working Group Leads.
@@ -370,10 +382,11 @@ the Steering Group and merged into the BIDS standard.
 
 ### B. Voting Procedure
 
-The BIDS Steering Group is elected by a vote of the BIDS Contributors
-Group. At the discretion of the BIDS Steering Group, additional
-elections may be called and propositions may be put before the community
-in the course of a Steering Group election.
+The BIDS Steering Group is elected by a vote of the active BIDS Contributors
+Group.
+At the discretion of the BIDS Steering Group,
+additional elections may be called and propositions may be put before
+the community in the course of a Steering Group election.
 
 Elections will be managed through a 3rd party platform that allows
 restricting votes to a specific set of email addresses while maintaining
