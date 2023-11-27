@@ -7,7 +7,7 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
-      - id: check-added-large-files
+      # - id: check-added-large-files
       - id: check-case-conflict
 
   - repo: https://github.com/codespell-project/codespell
@@ -15,3 +15,10 @@ repos:
     hooks:
       - id: codespell
         args: ["--config=.codespellrc"]
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+    - id: black
+      name: black
+      args: [--config, pyproject.toml, --verbose]

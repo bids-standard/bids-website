@@ -13,15 +13,6 @@
 #   content:
 #     - raw
 
-- number: "002"
-  title: BIDS Models Specification
-  leads:
-    - name: Tal Yarkoni
-    - name: Chris Markiewcz
-  content:
-    - file format
-  outcome: "Became an [independent specification with validator](https://bids-standard.github.io/stats-models/) to execute statistical models, with minimal configuration and intervention required from the user."
-
 - number: "013"
   title: Resting state fMRI derivatives
   leads:
@@ -47,6 +38,9 @@
   content:
     - metadata
   outcome: Closed in favor of possible direct support of DICOM within BIDS (see this [issue](https://github.com/bids-standard/bids-specification/issues/1552) and this [pull request](https://github.com/bids-standard/bids-specification/pull/1551)).
+  google_doc_created: 2017-10
+  pull_request_created:
+  pull_request_merged:
 
 - number: "025"
   title: Medical Imaging Data structure (MIDS)

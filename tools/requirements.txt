@@ -1,1 +1,5 @@
 beautifulsoup4
+plotly
+ruamel.yaml
+pandas
+pyzotero
