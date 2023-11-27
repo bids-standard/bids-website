@@ -47,6 +47,9 @@ With the ongoing development of new tools and resources it is important to keep 
 If you are interested in receiving occasional updates around BIDS, feel free to join one of the communication channels that we use regularly:
 
 - The `bids-discussions` Google Group for [updates via email](https://groups.google.com/g/bids-discussion){:target="_blank"}
-- Follow BIDS on [Twitter](https://twitter.com/BIDSstandard?ref_src=twsrc%5Etfw){:target="_blank"}
+- Follow BIDS on:
+  - [x](https://x.com/BIDSstandard?ref_src=twsrc%5Etfw){:target="_blank"}
+  - [Mastodon](https://fosstodon.org/@bidsstandard/){:target="_blank"}
+  - [Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/){:target="_blank"}
 - Join the [Brainhack Mattermost](https://mattermost.brainhack.org/) for a number of BIDS-related channels
 - Have a look at the [Neurostars forum with the BIDS tag](https://neurostars.org/tag/bids)
