@@ -78,6 +78,14 @@
   content:
     - raw
 
+- number: "029"
+  title: Virtual and physical motion data
+  leads:
+    - name: Sein Jeung
+    - name: Julius Welzel
+  content:
+    - raw
+
 - number: "030"
   title: Near Infrared Spectroscopy (NIRS)
   leads:
@@ -94,10 +102,3 @@
   content:
     - raw
 
-- number: "029"
-  title: Virtual and physical motion data
-  leads:
-    - name: Sein Jeung
-    - name: Julius Welzel
-  content:
-    - raw
