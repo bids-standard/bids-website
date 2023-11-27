@@ -141,6 +141,13 @@
     - website
   description: Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
 
+- name: nipopy
+  url: https://github.com/neurodatascience/nipoppy
+  documentation: https://neurobagel.org/nipoppy/overview/
+  language:
+    - Python
+  description: Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
+
 - name: OpenNeuro
   url: http://openneuro.org
   description: A free and open platform for validating and sharing BIDS-compliant data.
