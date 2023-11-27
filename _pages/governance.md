@@ -244,9 +244,18 @@ loses their "active" status.
 
 ### BIDS Advisory Group
 
-This group contains previous BEP Working Group Leads.
-The purpose of this group is to provide advice and guidance to the BIDS
-Steering Group and the BEP Leads Group.
+The purpose of this group is to provide advice and guidance to the BIDS Steering
+Group and the BEP Leads Group.
+When a BEP is merged into the specification,
+the leads of this BEP working group automatically join the advisory group.
+Members are encouraged to participate for at least 2 years following
+the merge of their BEP.
+If an advisory group member decides to leave the advisory group,
+they should inform the steering group in advance and are responsible to help:
+
+* provide a list of possible replacement candidates from the BIDS community
+  with a similar level of expertise to theirs, and
+* assist the steering and maintainers in choosing a suitable replacement.
 
 ### Other working/interest Groups
 
