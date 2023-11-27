@@ -17,3 +17,7 @@
       git: "melanieganz"
     - name: "Russell Poldrack"
       git: "poldrack"
+    - name: "Guiomar Niso"
+      git: "guiomar"
+    - name: "Robert Oostenveld"
+      git: "robertoostenveld"
