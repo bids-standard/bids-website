@@ -131,14 +131,6 @@
   pull_request_created: 2022-01
   pull_request_merged: 2023-03
 
-- number: "029"
-  title: Virtual and physical motion data
-  leads:
-    - name: Sein Jeung
-    - name: Julius Welzel
-  content:
-    - raw
-
 - number: "030"
   title: Near Infrared Spectroscopy (NIRS)
   leads:
