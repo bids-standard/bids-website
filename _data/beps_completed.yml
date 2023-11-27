@@ -93,3 +93,11 @@
     - name: Julien Cohen-Adad
   content:
     - raw
+
+- number: "029"
+  title: Virtual and physical motion data
+  leads:
+    - name: Sein Jeung
+    - name: Julius Welzel
+  content:
+    - raw
