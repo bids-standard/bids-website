@@ -71,12 +71,21 @@
       url: https://pypi.org/project/bsmschema/
   description: Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
 
-- name: Hierarchical event descriptors annotation tools
+- name: Hierarchical Event Descriptors (HED) online tools
   url: https://hedtools.org/hed
-  documentation: https://www.hedtags.org/
+  documentation: https://www.hed-resources.org
   language:
     - wesbite
-  description: The HED tools provide utilities to annotate and validate events files.
+  description: Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
+
+- name: Hierarchical Event Descriptors (HED) python tools
+  url: https://github.com/hed-standard/hed-python
+  documentation: https://www.hed-resources.org
+  language: python
+  distribution:
+    - name: pypi
+      url: https://pypi.org/project/hedtools/
+  description: HED libraries supporting schema development as well as annotation, validation, and analysis.
 
 - name: Brainstorm
   url: http://neuroimage.usc.edu/brainstorm/
