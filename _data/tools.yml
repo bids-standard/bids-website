@@ -61,6 +61,23 @@
     - R
   description: Working with Brain Imaging Data Structure in R
 
+- name: bids stats model
+  url: https://pypi.org/project/bsmschema/
+  documentation: https://bids-standard.github.io/stats-models/index.html
+  language:
+    - python
+  distribution:
+    - name: pypi
+      url: https://pypi.org/project/bsmschema/
+  description: Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
+
+- name: Hierarchical event descriptors annotation tools
+  url: https://hedtools.org/hed
+  documentation: https://www.hedtags.org/
+  language:
+    - wesbite
+  description: The HED tools provide utilities to annotate and validate events files.
+
 - name: Brainstorm
   url: http://neuroimage.usc.edu/brainstorm/
   language:
@@ -84,6 +101,12 @@
     - name: pypi
       url: https://pypi.org/project/cubids/
 
+- name: File mapper
+  url: https://github.com/DCAN-Labs/file-mapper
+  language:
+    - python
+  description: An easy tool to copy/move/symlink files from one directory to the other! Can be used to "convert" dataset to be BIDS compliant.
+
 - name: GUI dataset description generator
   url: https://github.com/tolik-g/BIDS
   documentation:
@@ -103,6 +126,20 @@
   language:
     - Python
   description: collection of tools for converting magnetoencephalography (MEG) data into BIDS format, as well as some helper functions for creating the folders and metadata needed for a BIDS dataset.
+
+- name: neurobagel annotate
+  url: https://annotate.neurobagel.org/
+  documentation: https://neurobagel.org/data_prep/
+  language:
+    - website
+  description: This tool allows you to create a machine readable data dictionary in .json format for a tabular phenotypic file in .tsv format ("Data table").
+
+- name: neurobagel query
+  url: https://query.neurobagel.org/
+  documentation: https://neurobagel.org/query_tool/
+  language:
+    - website
+  description: Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
 
 - name: OpenNeuro
   url: http://openneuro.org
