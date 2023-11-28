@@ -323,3 +323,30 @@
       documentation: https://bidsconvertr.github.io/
       GUI: true
       license: GPL-3.0
+
+    - name: ezBIDS
+      url: https://github.com/brainlife/ezbids
+      data_types:
+        - MRI
+        - ASL
+        - events
+      expected_input:
+        - DICOM
+        - NIfTI/JSON
+        - events (tsv, csv, txt, out, xlsx)
+      language:
+        - Vue
+        - TypeScript
+        - Javascript
+        - Python
+        - shell
+      documentation: https://brainlife.io/docs/using_ezBIDS/
+      comment: |
+        A web-based BIDS conversion tool with four unique features:
+        (1) No installation or programming requirements.
+        (2) Handling of both imaging and task events data and metadata.
+        (3) Semi-automated inference and guidance for adherence to BIDS.
+        (4) Multiple data management options, including download BIDS data
+        to local system, or transfer to OpenNeuro.org or to brainlife.io.
+      GUI: true
+      license: MIT
