@@ -13,13 +13,33 @@
     - name: Kirstie Whitaker
   content:
     - raw
+  google_doc_created: 2017-02
+  pull_request_created: 2020-06
+  pull_request_merged: 2021-02
+
+- number: "002"
+  title: BIDS Models Specification
+  leads:
+    - name: Tal Yarkoni
+    - name: Chris Markiewcz
+  content:
+    - file format
+  outcome: "Became an [independent specification with validator](https://bids-standard.github.io/stats-models/) to execute statistical models, with minimal configuration and intervention required from the user."
+  google_doc_created: 2016-09
+  pull_request_created: 2018-10
+  pull_request_merged: 2023-08
 
 - number: "003"
   title: Common Derivatives
   leads:
     - name: Chris Markiewicz
+  former_leads:
+    - name: Chris Gorgolewski
   content:
     - derivative
+  google_doc_created: 2016-02
+  pull_request_created: 2018-12
+  pull_request_merged: 2020-06
 
 - number: "005"
   title: Arterial Spin Labeling (ASL)
@@ -30,6 +50,9 @@
     - name: Marco Castellaro
   content:
     - raw
+  google_doc_created: 2017-05
+  pull_request_created: 2020-10
+  pull_request_merged: 2021-02
 
 - number: "006"
   title: Electroencephalography (EEG)
@@ -39,6 +62,9 @@
     - name: Robert Oostenveld
   content:
     - raw
+  google_doc_created: 2017-06
+  pull_request_created: 2018-12
+  pull_request_merged: 2019-03
 
 - number: "007"
   title: Hierarchical Event Descriptor (HED) Tags
@@ -46,6 +72,9 @@
     - name: Chris Gorgolewski
   content:
     - raw
+  google_doc_created: 2017-07
+  pull_request_created: # only ever existed as a google doc
+  pull_request_merged: 2018-04
 
 - number: "008"
   title: Magnetoencephalography (MEG)
@@ -53,6 +82,9 @@
     - name: Guiomar Niso
   content:
     - raw
+  google_doc_created: 2016-03
+  pull_request_created: # only ever existed as a google doc
+  pull_request_merged: 2018-04
 
 - number: "009"
   title: Positron Emission Tomography (PET)
@@ -60,6 +92,9 @@
     - name: Melanie Ganz
   content:
     - raw
+  google_doc_created: 2016-03
+  pull_request_created: 2020-10
+  pull_request_merged: 2021-04
 
 - number: "010"
   title: intracranial Electroencephalography (iEEG)
@@ -68,6 +103,9 @@
     - name: Dora Hermes
   content:
     - raw
+  google_doc_created: 2017-04
+  pull_request_created: 2018-12
+  pull_request_merged: 2019-03
 
 - number: "018"
   title: Genetic information
@@ -77,6 +115,9 @@
     - name: Thomas Nichols
   content:
     - raw
+  google_doc_created: 2017-09
+  pull_request_created: 2019-07
+  pull_request_merged: 2020-04
 
 - number: "029"
   title: Virtual and physical motion data
@@ -85,6 +126,10 @@
     - name: Julius Welzel
   content:
     - raw
+  blocking: None
+  google_doc_created: 2019-11
+  pull_request_created: 2022-01
+  pull_request_merged: 2023-03
 
 - number: "030"
   title: Near Infrared Spectroscopy (NIRS)
@@ -93,6 +138,9 @@
     - name: Luca Pollonini
   content:
     - raw
+  google_doc_created: 2020-04
+  pull_request_created: 2021-05
+  pull_request_merged: 2022-10
 
 - number: "031"
   title: Microscopy
@@ -101,4 +149,6 @@
     - name: Julien Cohen-Adad
   content:
     - raw
-
+  google_doc_created: 2020-06
+  pull_request_created: 2021-09
+  pull_request_merged: 2022-02

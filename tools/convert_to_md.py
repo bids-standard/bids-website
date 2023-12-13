@@ -39,10 +39,6 @@ def rename_files(input_folder):
     print("Renaming files".upper())
 
     for file in input_folder.glob("*.md"):
-
-        if str(file).endswith("README.md"):
-            continue
-
         print(f" Processing {file}")
 
         with open(file, "r") as f:
@@ -59,12 +55,7 @@ def rename_files(input_folder):
 
                 month, day = line.split(" ")[2:]
 
-                day = (
-                    day.replace("th", "")
-                    .replace("rd", "")
-                    .replace("nd", "")
-                    .replace("st", "")
-                )
+                day = day.replace("th", "").replace("rd", "").replace("nd", "").replace("st", "")
 
                 if month in MONTH_MAPPING:
                     month = MONTH_MAPPING[month]
@@ -86,7 +77,6 @@ def rename_files(input_folder):
 def sanitize_md(input_folder):
     """Clean up the markdown files."""
     for file in input_folder.glob("*.md"):
-
         if str(file).endswith("README.md"):
             continue
 

@@ -85,13 +85,13 @@
 
   </main>
 
-  {% if site.show_footer %}
   <footer class="site-footer">
+    {% if site.show_footer %}
     <div class="container">
       Edit <a href="https://github.com/bids-standard/bids-website/blob/gh-pages/{{ page.path }}">this page on GitHub</a>.
     </div>
+    {% endif %}
   </footer>
-  {% endif %}
 
   <!-- Add anchors before the closing body tag, see https://www.bryanbraun.com/anchorjs -->
   <script>
@@ -102,6 +102,18 @@
     anchors.add('h4');
     anchors.add('h5');
     anchors.add('h6');
+  </script>
+
+  <!-- adapted from https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/ -->
+  <script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      mermaid.initialize({
+        startOnLoad:true,
+        theme: "dark",
+      });
+      window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    });
   </script>
 
   {% include tracking.html %}
