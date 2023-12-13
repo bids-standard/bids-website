@@ -197,23 +197,6 @@
   pull_request_created:
   pull_request_merged:
 
-- number: "027"
-  title: BIDS Applications 2.0
-  leads:
-    - name: Chris Markiewicz
-    - name: Greg Kiar
-  update: |
-    - Focusing on: command-line conventions, I/O interface descriptors,
-      and common behavior (for example, exit codes for failure modes);
-      relies upon the Boutiques standard.
-    - Re-conception of BIDS Apps
-  content:
-    - metadata
-  blocking: None
-  google_doc_created: 2019-05
-  pull_request_created:
-  pull_request_merged:
-
 - number: "028"
   title:  Provenance
   leads:

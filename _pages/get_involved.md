@@ -79,7 +79,7 @@ gantt
             Google doc    :2016-09, 2018-10
             Pull request  :2018-10, 2023-08
     section BEP003
-            Google doc    :2018-10, 2018-12
+            Google doc    :2016-02, 2018-12
             Pull request  :2018-12, 2020-06
     section BEP005
             Google doc    :2017-05, 2020-10
@@ -100,6 +100,9 @@ gantt
     section BEP018
             Google doc    :2017-09, 2019-07
             Pull request  :2019-07, 2020-04
+    section BEP027
+            Google doc    :2019-05, 2023-09
+            Pull request  :2023-09, 2023-12
     section BEP029
             Google doc    :2019-11, 2022-01
             Pull request  :2022-01, 2023-03
