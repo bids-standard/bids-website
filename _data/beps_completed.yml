@@ -119,6 +119,17 @@
   pull_request_created: 2019-07
   pull_request_merged: 2020-04
 
+- number: "027"
+  title: BIDS Applications 2.0
+  leads:
+    - name: Chris Markiewicz
+    - name: Greg Kiar
+  content:
+    - metadata
+  google_doc_created: 2019-05
+  pull_request_created: 2023-09
+  pull_request_merged: 2023-12
+
 - number: "029"
   title: Virtual and physical motion data
   leads:
