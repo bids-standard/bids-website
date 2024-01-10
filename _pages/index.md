@@ -48,7 +48,7 @@ If you are interested in receiving occasional updates around BIDS, feel free to 
 
 - The `bids-discussions` Google Group for [updates via email](https://groups.google.com/g/bids-discussion){:target="_blank"}
 - Follow BIDS on:
-  - [x](https://x.com/BIDSstandard?ref_src=twsrc%5Etfw){:target="_blank"}
+  - [x](https://x.com/BIDSstandard){:target="_blank"}
   - [Mastodon](https://fosstodon.org/@bidsstandard/){:target="_blank"}
   - [Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/){:target="_blank"}
 - Join the [Brainhack Mattermost](https://mattermost.brainhack.org/) for a number of BIDS-related channels
