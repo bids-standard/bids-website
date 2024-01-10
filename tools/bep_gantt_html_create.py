@@ -1,4 +1,4 @@
-"""Creates a gant chart for the completed BEPs.
+"""Creates a Gantt chart for the completed BEPs.
 
 Also include a timeline of the main BIDS events.
 """
@@ -10,7 +10,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import ruamel.yaml as yaml
+from ruamel.yaml import YAML
 from pyzotero import zotero
 
 INCLUDE_PATCHES = False
@@ -31,7 +31,8 @@ def create_bep_timeline() -> type[go.Figure]:
     completd_beps = data_dir() / "beps_completed.yml"
 
     with open(completd_beps, "r") as f:
-        data = yaml.safe_load(f)
+        yaml = YAML(typ="safe", pure=True)
+        data = yaml.load(f)
 
     df = []
 
@@ -140,9 +141,9 @@ def add_publications_to_timeline(fig: go.Figure) -> type[go.Figure]:
     dois = []
     dates = []
     for item in items:
-        titles.append(item["data"].get("title"))
-        dois.append(item["data"]["DOI"])
-        dates.append(item["data"]["date"])
+        titles.append(item["data"].get("title", "n/a"))
+        dois.append(item["data"].get("DOI", "n/a"))
+        dates.append(item["data"].get("date", "n/a"))
 
     fig.add_trace(
         go.Scatter(
@@ -191,6 +192,7 @@ def main():
     fig.show()
 
     # save as html
+    # NOTE: This file is ignored in git (see .gitignore)
     fig.write_html(root_dir() / "_pages" / "bids_timeline.html")
 
 

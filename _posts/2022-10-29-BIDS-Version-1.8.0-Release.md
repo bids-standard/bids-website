@@ -20,6 +20,6 @@ along with the complete changelog:
 [https://bids-specification.readthedocs.io/en/v1.8.0/CHANGES.html](https://bids-specification.readthedocs.io/en/v1.8.0/CHANGES.html){:target="_blank"}
 
 See also the corresponding tweet-thread:
-[https://twitter.com/BIDSstandard/status/1586327298608955392](https://twitter.com/BIDSstandard/status/1586327298608955392){:target="_blank"}
+[https://x.com/BIDSstandard/status/1586327298608955392](https://x.com/BIDSstandard/status/1586327298608955392){:target="_blank"}
 
 A huge thanks to all contributors involved!

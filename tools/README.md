@@ -16,3 +16,15 @@ This README file describes the tools under the `/tools` directory of the bids-we
 1. From the command line, navigate to `tools`, and then run `make all`
 1. Clean up, check the newly added files, commit
 
+## Update the Gantt chart of completed BEPs
+
+There are two ways of creating Gantt charts for a BIDS timeline.
+First install all Python requirements under `tools/requirements.txt`.
+Then, use one of the following two methods:
+
+1. `python -u tools/bep_gantt_html_create` creates a file: `_pages/bids_timeline.html` that you can inspect in your browser.
+   This file depends on the `tools/timeline.csv` data, which you should keep up to date.
+1. `python -u tools/bep_gantt_mermaid_insert` directly inserts code for a "mermaid" Gantt chart into the Get Involved page of the website.
+   You can inspect how that chart looks by building the website using Jekyll and serving locally.
+   This code depends on data from the files `beps_completed.yml` files in the `_data` directory.
+   You should keep that file up to date.

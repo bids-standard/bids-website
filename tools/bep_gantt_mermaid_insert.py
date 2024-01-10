@@ -1,10 +1,10 @@
-"""Creates a gant chart for the completed BEPs"""
+"""Creates a Gantt chart for the completed BEPs"""
 from __future__ import annotations
 
 from pathlib import Path
 
 import pandas as pd
-import ruamel.yaml as yaml
+from ruamel.yaml import YAML
 from rich import print
 
 
@@ -30,7 +30,8 @@ def get_bep_timeline() -> pd.DataFrame:
     completd_beps = data_dir() / "beps_completed.yml"
 
     with open(completd_beps, "r") as f:
-        data = yaml.safe_load(f)
+        yaml = YAML(typ="safe", pure=True)
+        data = yaml.load(f)
 
     df = []
 

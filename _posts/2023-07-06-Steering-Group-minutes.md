@@ -149,8 +149,7 @@ Zotero collection for tracking BIDS related publications, BEPs, etc:
 
 The BIDS grant writing kit could be updated
 
-There is also a github for this:
-[[https://github.com/Remi-Gau/bids\_citations/blob/main/dashboard.md]{.underline}](https://github.com/Remi-Gau/bids_citations/blob/main/dashboard.md)
+See also this [GitHub repo](https://github.com/bids-standard/grant_writing_kit/blob/main/README.md#dashboards)
 
 This info should also be displayed on the BIDS.io website
 
@@ -163,7 +162,7 @@ Suggested to include grant writing boilerplate info about BIDS stats
 Add rationale at the beginning of both the [[BIDS grant writing
 kit]{.underline}](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit#heading=h.pb4yuopfe1pt)
 and [[Remi's github
-dashboard]{.underline}](https://github.com/Remi-Gau/bids_citations/blob/main/dashboard.md)
+dashboard]{.underline}](https://github.com/bids-standard/grant_writing_kit/blob/main/README.md#dashboards)
 
 Is the BIDS granting writing kit meant to support building the BIDS
 community or for users to mention BIDS in their grants.
