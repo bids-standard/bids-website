@@ -7,3 +7,5 @@ __pycache__
 .sass-cache
 tools/inputs
 tools/*.html
+env/
+_pages/bids_timeline.html
