@@ -16,3 +16,4 @@ This README file describes the tools under the `/tools` directory of the bids-we
 1. From the command line, navigate to `tools`, and then run `make all`
 1. Clean up, check the newly added files, commit
 
+## Update the Gantt chart of completed BEPs
