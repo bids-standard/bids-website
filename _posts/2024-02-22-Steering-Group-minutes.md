@@ -86,7 +86,7 @@ Online Presence Working Group: Working Document
   </tr>
   <tr class="header">
    <th>
-    BEP guidelines updating (Camille &amp; R�mi)
+    BEP guidelines updating (Camille &amp; Remi)
    </th>
    <th>
     <a href="https://github.com/bids-standard/bids-extensions/pull/28">
@@ -115,7 +115,7 @@ Online Presence Working Group: Working Document
   **Topic**                         **Relevant Links and to do**
   --------------------------------- -------------------------------------------------------------------------------------------------------------------------------------
   BEP for dimensionality            Peer Herholz
-  reduction-based networks          
+  reduction-based networks
 
   Avoiding BEP being stuck          Issue with Atlas BEP - circulate the idea of revising BEP development - one point missing in those discussions is how to get unstuck
                                     if conflict (CP: item voting is my favourite option, we just need the mechanism for it - like we do to elect this group)
@@ -127,13 +127,13 @@ Online Presence Working Group: Working Document
   Updates on plan for website       [[BIDS Online Presence Working Group: Working
                                     Document]{.underline}](https://docs.google.com/document/d/1miuxSWHcSq0CQ-aufe8Ho0IJpJOirUogCd2HNOi5FHY/edit#heading=h.li30raxumiv7)
 
-  BIDS 2.0 going forward!           
+  BIDS 2.0 going forward!
 
   BEP guidelines updating (Camille  [[https://github.com/bids-standard/bids-extensions/pull/28]{.underline}](https://github.com/bids-standard/bids-extensions/pull/28)
-  & Rémi)                           
+  & Rémi)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## BIDS Meeting Notes 
+## BIDS Meeting Notes
 
 ### Plan for website
 

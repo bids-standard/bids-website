@@ -120,7 +120,7 @@ updates needed
      </li>
      <li>
       <p>
-       Give “certifications”/badges for different levels of
+       Give certifications/badges for different levels of
 experience
       </p>
      </li>
@@ -216,7 +216,7 @@ Yaroslav Halchenko, RÃ©mi Gau
 **Guest:**
 
 
-## BIDS Meeting Notes 
+## BIDS Meeting Notes
 
 ### April maintainers meeting in Seattle
 
