@@ -24,7 +24,7 @@ def prettify_html(input_folder):
     """Make html prettier."""
     for file in input_folder.glob("*.html"):
         # Read the HTML file
-        with open(file, "r") as f:
+        with open(file, "r", encoding="utf8") as f:
             html = f.read()
         # Create BeautifulSoup object
         soup = BeautifulSoup(html, "html.parser")
