@@ -37,10 +37,14 @@
 #   leads:
     - name: Kay Robbins
       git: vislab
+    - name: Dung Truong
+      git: dungscout96
 # - title: Positron Emission Tomography (PET)
 #   leads:
     - name: Melanie Ganz
       git: melanieganz
+    - name: Martin Nørgaard
+      git: mnoergaard
 
 # - title: intracranial Electroencephalography (iEEG)
 #   leads:
