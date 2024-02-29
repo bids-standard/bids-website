@@ -7,6 +7,8 @@
 #       FURTHERMORE, THE LEADS LISTED HERE NEED NOT HAVE BEEN THE ORIGINAL BEP LEADS.
 #       RATHER, THEY MAY BE REPLACEMENTS OF THE ORIGINAL BEP LEADS WHO DID NO LONGER
 #       WANT TO BE PART OF THE BIDS ADVISORY GROUP.
+#
+#       LEADS WHO ARE INVOLVED IN SEVERAL BEPS ARE ONLY LISTED ONCE
 
 # - title: BEP001 Quantitative MRI (qMRI)
 #   leads:
@@ -16,7 +18,9 @@
       git: KirstieJane
 
 # - title: BEP002 BIDS Models Specification
-#   not included for now, as not merged into BIDS specification
+#   leads:
+    - name: Tal Yarkoni
+      git: tyarkoni
 
 # - title: BEP003 Common Derivatives
 #   leads:
@@ -77,12 +81,8 @@
 
 # - title: BEP018 Genetic information
 #   leads:
-
-    # alread in eeg
-    # - name: Cyril R Pernet
-    #   git: CPernet
-
     - name: Clara Moreau
+      git: claramoreau9
     - name: Thomas Nichols
       git: nicholst
 
@@ -93,7 +93,9 @@
 #   not included for now, as not merged into BIDS specification
 
 # - title: BEP027 BIDS Applications 2.0
-#   not included for now, as not merged into BIDS specification
+#   leads:
+    - name: Greg Kiar
+      git: gkiar
 
 # - title: BEP029 Virtual and physical motion data
 #   leads:
