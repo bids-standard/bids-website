@@ -53,16 +53,16 @@ Date: Thursday, October 19th, 2023
      TOSI Prize:
     </p>
     <p>
-     � Who�ll be going?
+     - Who'll be going?
     </p>
     <p>
-     � Any presentation needed?
+     - Any presentation needed?
     </p>
     <p>
-     � Where to transfer the funding?
+     - Where to transfer the funding?
     </p>
     <p>
-     � �
+     ...
     </p>
    </th>
    <th>
