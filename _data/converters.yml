@@ -176,6 +176,7 @@
         - PAR/REC
         - physiological
         - PET
+        - Nifti
       language:
         - Python
       distribution:
