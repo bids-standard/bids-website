@@ -111,28 +111,6 @@ Online Presence Working Group: Working Document
 
 **Guest:** Peer Herholz
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Topic**                         **Relevant Links and to do**
-  --------------------------------- -------------------------------------------------------------------------------------------------------------------------------------
-  BEP for dimensionality            Peer Herholz
-  reduction-based networks
-
-  Avoiding BEP being stuck          Issue with Atlas BEP - circulate the idea of revising BEP development - one point missing in those discussions is how to get unstuck
-                                    if conflict (CP: item voting is my favourite option, we just need the mechanism for it - like we do to elect this group)
-
-  Cooperation with DICOM standard   YOH pointed David Clunie to our [[DICOMs deficits
-                                    table]{.underline}](https://docs.google.com/spreadsheets/u/0/d/1wcal4qi2z14bSKm7lTuqyzb3FdvmCDfXHl0iMhIFeaE/edit), he forwarded to
-                                    WG-16 to consider at the next meeting.
-
-  Updates on plan for website       [[BIDS Online Presence Working Group: Working
-                                    Document]{.underline}](https://docs.google.com/document/d/1miuxSWHcSq0CQ-aufe8Ho0IJpJOirUogCd2HNOi5FHY/edit#heading=h.li30raxumiv7)
-
-  BIDS 2.0 going forward!
-
-  BEP guidelines updating (Camille  [[https://github.com/bids-standard/bids-extensions/pull/28]{.underline}](https://github.com/bids-standard/bids-extensions/pull/28)
-  & Rémi)
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ## BIDS Meeting Notes
 
 ### Plan for website
