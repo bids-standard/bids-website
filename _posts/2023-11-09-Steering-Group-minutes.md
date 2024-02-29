@@ -34,7 +34,7 @@ Date: Thursday, November 9th, 2023
     Consolidation: we have so many people that struggle converting with
 the available converter tools and the starter kit documentation. Those
 people are our stakeholders and could use better support. E.g. extending
-the starter kit, office hours, …
+the starter kit, office hours, ...
    </th>
    <th>
    </th>

@@ -132,7 +132,7 @@ Date: Thursday, August 17th, 2023
      <li>
       <blockquote>
        <p>
-        Attempt to centralize list of converters, tools, BEPs…
+        Attempt to centralize list of converters, tools, BEPs, ...
         <a href="https://github.com/bids-standard/awesome-bids">
          <span class="underline">
           https://github.com/bids-standard/awesome-bids
