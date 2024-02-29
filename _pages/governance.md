@@ -207,12 +207,8 @@ Past members of the Maintainers group are:
 
 {% include members_table.html members=site.data.past_maintainers %}
 
-If you need to contact the maintainers on a specific topic you can use the following emails:
-
-- bids-website and domain ( [Stefan Appelhoff](mailto:bids.maintenance+website@gmail.com) )
-- [Twitter account](https://x.com/bidsstandard){:target="_blank"} ( [Stefan Appelhoff](mailto:bids.maintenance+twitter@gmail.com) )
-- [Mastodon account](https://fosstodon.org/@bidsstandard){:target="_blank"} ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
-- [Youtube account](https://www.youtube.com/@brainimagingdatastructure6721){:target="_blank"} ( [Rémi Gau](mailto:bids.maintenance+youtube@gmail.com) )
+If you need to contact the maintainers on a specific topic you can use the following email: `bids.maintenance@gmail.com`.
+However, you may receive a more timely response when pinging them on one of the GitHub repositories using the tag `@bids-standard/maintainers`.
 
 ### BIDS Contributors Group
 
@@ -269,11 +265,11 @@ their proposal.
 
 The working/interest group formation is formalized through an open
 letter via a "read-only" Google Document addressed to the BIDS Steering
-Group. The open letter will be posted on: the [BIDS-Specification
-GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}, [Google
-Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"}, and
-[Twitter](https://x.com/BIDSstandard){:target="_blank"}. This proposal will state
-what their group aims and goals are.
+Group. The open letter will be posted on:
+the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification){:target="_blank"},
+[Google Group](https://groups.google.com/forum/#!forum/bids-discussion){:target="_blank"},
+and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>){:target="_blank"}.
+This proposal will state what their group aims and goals are.
 
 ### BIDS Community
 
