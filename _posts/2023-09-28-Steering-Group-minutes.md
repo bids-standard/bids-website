@@ -43,7 +43,7 @@ Date: Thursday, Sept 28th, 2023
   </tr>
   <tr class="header">
    <th>
-    The Neuro – Irv and Helga Cooper Foundation Open Science Prize
+    The Neuro - Irv and Helga Cooper Foundation Open Science Prize
 submission
    </th>
    <th>
@@ -131,7 +131,7 @@ submission
   </tr>
   <tr class="odd">
    <th>
-    Camille’s email BIDS-Prov BEP028
+    Camille's email BIDS-Prov BEP028
    </th>
    <th>
     <a href="https://github.com/bids-standard/bids-specification/pull/487">
