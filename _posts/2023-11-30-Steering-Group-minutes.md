@@ -108,34 +108,11 @@ https://www.ericholscher.com/roadmap/
  </tbody>
 </table>
 
-
-
 [[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
 
 **Present:** Guio, Robert, Cyril, Camille, Ariel, Dora, Ross
 
 **Guest:** none
-
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Topic**                         **Relevant Links**
-  --------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Welcome new steering group        
-  members!                          
-
-  Finalize OHBM submissions         [[https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit?usp=sharing]{.underline}](https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit?usp=sharing)
-                                    \-- change again of people, no multiple submissions, Dora/Camille not going
-
-  Aperture Neuro further steps      [[https://apertureneuro.org/for-authors]{.underline}](https://apertureneuro.org/for-authors) , see
-                                    [[https://github.com/bids-standard/bids-website/issues/359]{.underline}](https://github.com/bids-standard/bids-website/issues/359)
-
-  Update on TOSI prize funds        
-
-  BIDS history timeline             [[BIDS history timeline]{.underline}](https://docs.google.com/presentation/d/1rY-ByN45tWVxV6gpAz541cPvLXwL4itbu8Pwu_V4qtw/edit#slide=id.p)
-
-  Website                           Maybe spend some cash with https://www.ericholscher.com/roadmap/
-
-                                    
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 BIDS Meeting Notes:
 

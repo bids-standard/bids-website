@@ -53,16 +53,16 @@ Date: Thursday, October 19th, 2023
      TOSI Prize:
     </p>
     <p>
-     – Who’ll be going?
+     ï¿½ Whoï¿½ll be going?
     </p>
     <p>
-     – Any presentation needed?
+     ï¿½ Any presentation needed?
     </p>
     <p>
-     – Where to transfer the funding?
+     ï¿½ Where to transfer the funding?
     </p>
     <p>
-     – …
+     ï¿½ ï¿½
     </p>
    </th>
    <th>
@@ -138,7 +138,7 @@ Date: Thursday, October 19th, 2023
   </tr>
   <tr class="header">
    <th>
-    Steering Group Election &amp; Governance Amendments
+    Steering Group Election and Governance Amendments
    </th>
    <th>
     <a href="https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit">
@@ -202,7 +202,7 @@ Roundtable (Town Hall) proposal:
 Symposium proposal:
 [[https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg]{.underline}](https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg)
 
-### Seattle meeting proposed attendee list (PLEASE ADD PEOPLE): 
+### Seattle meeting proposed attendee list (PLEASE ADD PEOPLE):
 
 People
 
