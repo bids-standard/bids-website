@@ -54,7 +54,6 @@
     - name: Dora Hermes
       git:  dorahermes
 
-
 # - title: Genetic information
 #   leads:
 
@@ -79,3 +78,10 @@
       git: mariehbourget
     - name: Julien Cohen-Adad
       git: jcohenadad
+
+# - title: Motion
+#   leads:
+    - name: Sein Jeung
+      git: sjeung
+    - name: Julius Welzel
+      git: jwelzel
