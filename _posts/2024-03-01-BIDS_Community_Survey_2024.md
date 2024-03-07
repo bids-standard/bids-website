@@ -10,4 +10,4 @@ The BIDS [Maintainers](https://bids.neuroimaging.io/governance.html#bids-maintai
 
 Survey: [bit.ly/bidssurvey2024](https://bit.ly/bidssurvey2024)
 
-![A QR code for the BIDS community survey](../assets/img/bit.ly_bidssurvey2024.jpeg)
+![A QR code for the BIDS community survey](../assets/img/bit.ly_bidssurvey2024.jpeg){: width="250" }
