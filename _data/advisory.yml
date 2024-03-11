@@ -102,7 +102,7 @@
     - name: Sein Jeung
       git: sjeung
     - name: Julius Welzel
-      git: jwelzel
+      git: JuliusWelzel
 
 # - title: BEP030 Near Infrared Spectroscopy (NIRS)
 #   leads:
