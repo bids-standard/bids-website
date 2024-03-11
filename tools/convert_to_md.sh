@@ -7,7 +7,7 @@
 
 set -eu
 
-YEAR="2023"
+YEAR="2024"
 
 # save current working directory to variable
 cwd=$(pwd)/inputs/${YEAR}
