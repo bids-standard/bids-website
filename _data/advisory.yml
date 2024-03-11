@@ -8,7 +8,8 @@
 #       RATHER, THEY MAY BE REPLACEMENTS OF THE ORIGINAL BEP LEADS WHO DID NO LONGER
 #       WANT TO BE PART OF THE BIDS ADVISORY GROUP.
 #
-#       LEADS WHO ARE INVOLVED IN SEVERAL BEPS ARE ONLY LISTED ONCE
+#       LEADS WHO ARE INVOLVED IN SEVERAL BEPS ARE ONLY LISTED ONCE, BUT THE "OTHER_BEPS"
+#       ATTRIBUTE MAY TRACK THEIR INVOLVEMENT IN OTHER BEPS.
 
 # - title: BEP001 Quantitative MRI (qMRI)
 #   leads:
@@ -26,6 +27,7 @@
 #   leads:
     - name: Chris Markiewicz
       git: effigies
+      other_beps: ["BEP002", "BEP027"]
 
 # - title: BEP005 Arterial Spin Labeling (ASL)
 #   leads:
@@ -42,6 +44,7 @@
 #   leads:
     - name: Cyril Pernet
       git: CPernet
+      other_beps: ["BEP018"]      
     - name: Stefan Appelhoff
       git: sappelhoff
     - name: Robert Oostenveld
