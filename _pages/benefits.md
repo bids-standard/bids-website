@@ -12,13 +12,30 @@ By using this standard you will benefit in the following ways:
 
 ## Converters
 
+Tools which convert data to/from BIDS : 
+* [Data converters](###data-converters)
+* [MEEG converters](###meeg-converters)
+* [from BIDS converters](###from-bids-converters)
+* [Physio converters](###physio-converters)
+* [Other converters](###other-converters)
+
+### Data converters
+
 {% include converters_table.html members=site.data.converters %}
+
+### MEEG converters
 
 {% include converters_table.html members=site.data.MEEG_converters %}
 
+### from BIDS converters
+
 {% include converters_table.html members=site.data.from_BIDS_converters %}
 
+### Physio converters
+
 {% include converters_table.html members=site.data.physio_converters %}
+
+### Other converters
 
 {% include converters_table.html members=site.data.other_converters %}
 
