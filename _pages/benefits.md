@@ -13,11 +13,11 @@ By using this standard you will benefit in the following ways:
 ## Converters
 
 Tools which convert data to/from BIDS : 
-* [Data converters](###data-converters)
-* [MEEG converters](###meeg-converters)
-* [from BIDS converters](###from-bids-converters)
-* [Physio converters](###physio-converters)
-* [Other converters](###other-converters)
+* [Data converters](#data-converters)
+* [MEEG converters](#meeg-converters)
+* [from BIDS converters](#from-bids-converters)
+* [Physio converters](#physio-converters)
+* [Other converters](#other-converters)
 
 ### Data converters
 
