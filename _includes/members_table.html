@@ -13,7 +13,11 @@
 
             <a href="https://github.com/{{ person.git }}">
               <img
-                src="https://github.com/{{ person.git }}.png?size=150"
+                {% if person.picture %}
+                  src="{{ person.picture }}"
+                {% else %}
+                  src="https://github.com/{{ person.git }}.png?size=150"
+                {% endif %}
                 width="150px;"
                 alt="{{ person.name }}"
               />
