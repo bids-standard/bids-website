@@ -253,6 +253,8 @@ they should inform the steering group in advance and are responsible to help:
   with a similar level of expertise to theirs, and
 * assist the steering and maintainers in choosing a suitable replacement.
 
+{% include members_table.html members=site.data.advisory %}
+
 ### Other working/interest Groups
 
 A working/interest group can be established under the approval of the
