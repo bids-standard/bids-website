@@ -327,7 +327,7 @@ the BIDS channels
 - Use cases and examples clearly illustrated
 
 Upon a successful Draft BEP review, the BEP will be converted from a
-google document to a markdown file and entered as a pull request on the
+Google document to a pull request for the
 [BIDS standard](https://github.com/bids-standard/bids-specification){:target="_blank"}.
 This will enable further community feedback on the Proposed BEP. Tools
 may begin integrating the Proposed BEP specification.
