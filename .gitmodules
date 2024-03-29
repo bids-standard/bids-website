@@ -10,3 +10,7 @@
 	path = docs/grant
 	url = https://github.com/bids-standard/grant_writing_kit
 	datalad-url = https://github.com/bids-standard/grant_writing_kit
+[submodule "docs/extensions"]
+	path = docs/extensions
+	url = https://github.com/bids-standard/bids-extensions
+	datalad-url = https://github.com/bids-standard/bids-extensions
