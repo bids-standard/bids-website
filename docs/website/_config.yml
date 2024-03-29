@@ -1,0 +1,54 @@
+title: Brain Imaging Data Structure
+description: A simple and intuitive way to organize and describe your neuroimaging and behavioral data.
+theme: jekyll-theme-cayman
+
+url: "https://bids.neuroimaging.io"
+baseurl: "/"
+
+show_menu: true
+show_footer: true
+google_analytics: false
+
+election_banner: false
+
+excerpt_separator: <!--more-->
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+  bep_collection:
+    output: true
+    permalink: /:name
+  redirects:
+    output: true
+    permalink: /:name
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      toc: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      toc: false
+
+plugins:
+  - jekyll-redirect-from
+
+include:
+  - _pages
+  - _posts
+
+exclude:
+  - README.md
+  - Gemfile*
+  - vendor
+  - tools

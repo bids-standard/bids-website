@@ -1,0 +1,81 @@
+# template
+#     - name:
+#       url: URL to repo
+#       data_types:
+#       - MRI, EEG, MEG, iEEG, events
+#       expected_input:
+#        -  DICOM, PAR/REC, tsv
+#       distribution:
+#           - name: pypi
+#             url: https://pypi.org/project/???
+#           - name: dockerhub
+#             url: https://hub.docker.com/???
+#       language:
+#        -  Python, MATLAB
+#       documentation: URL to documentation
+#       comment:
+#       GUI: false
+
+- group:
+  name: Miscellaneous
+  comment:
+    Not exactly BIDS converters but are common tools that can used by other BIDS
+    converters.
+  members:
+    - name: convert-eprime
+      url: https://github.com/tsalo/convert-eprime
+      data_types:
+        - behavioral
+      expected_input:
+        - E-Prime log files
+      language:
+        - Python
+      comment:
+        Python functions to convert E-Prime files to csvs. Not currently being
+        developed.
+      license: MIT
+
+    - name: DCM2NIIx
+      url: https://github.com/neurolabusc/dcm2niix
+      data_types:
+        - DICOM
+        - PAR/REC
+      expected_input:
+      language:
+        - C++ (compiled versions available from <ahref="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
+      comment: "dcm2nii DICOM to NIfTI converter"
+
+
+    - name: DICM2NII
+      url: https://github.com/xiangruili/dicm2nii
+      data_types:
+        - DICOM
+      expected_input:
+        - DICOM
+      language:
+        - MATLAB
+      comment: "dcm2nii DICOM to NIfTI converter"
+      license: BSD-2
+
+    - name: sim2bids
+      url: https://github.com/dissagaliyeva/sim2bids
+      data_types:
+        - computational model
+      expected_input:
+        - |
+          network and coordinate files expected_input:
+          <ul>
+            <li>CSV/TSV/DAT/Numpy</li>
+            <li>arrays/HDF5,</li>
+            <li>zip folders,</li>
+            <li>and code files in MATLAB/Python/R</li>
+          </ul>
+      language:
+        - Python
+      comment: |
+        GUI to easily convert simulation results to BIDS format,
+        according to
+        <a herf="https://bids.neuroimaging.io/bep034" target="_blank">
+          BEP 34
+        </a>.
+      license: MIT

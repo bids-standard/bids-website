@@ -1,0 +1,11 @@
+.jekyll-cache/*
+.jekyll-metadata
+Gemfile.lock
+_site/*
+.DS_Store
+__pycache__
+.sass-cache
+tools/inputs
+tools/*.html
+env/
+_pages/bids_timeline.html

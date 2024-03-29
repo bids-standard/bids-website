@@ -1,0 +1,109 @@
+---
+site_name: BIDS Extension Proposals
+repo_url: https://github.com/bids-standard/bids-extensions/
+
+plugins:
+-   search
+
+docs_dir: docs
+
+nav:
+-   About: index.md
+-   Specification: website/_pages/specification.md
+-   Benefits: website/_pages/benefits.md
+-   Get involved: website/_pages/get_involved.md
+-   Get started: website/_pages/get_started.md
+-   Governance: website/_pages/governance.md
+-   News: website/_pages/news.md
+-   Acknowledgments: website/_pages/acknowledgments.md
+-   Impact: grant/README.md
+-   Starter-kit:
+    -   favicon:olders and files:
+        -   folders: starter_kit/src/folders_and_files/folders.md
+        -   files: starter_kit/src/folders_and_files/files.md
+        -   metadata: starter_kit/src/folders_and_files/metadata.md
+        -   derivatives: starter_kit/src/folders_and_files/derivatives
+    -   tutorials:
+        -   annotation: starter_kit/src/tutorials/annotation.md
+        -   ieeg: starter_kit/src/tutorials/ieeg.md
+        -   asl: starter_kit/src/tutorials/asl.md
+        -   pet: starter_kit/src/tutorials/pet.md
+        -   mri: starter_kit/src/tutorials/mri.md
+        -   tutorials: starter_kit/src/tutorials/tutorials.md
+    -   resources:
+        -   dataset_examples: starter_kit/src/dataset_examples.md
+        -   talks: starter_kit/src/talks.md
+        -   publications: starter_kit/src/publications.md
+        -   dependencies: starter_kit/src/dependencies.md
+        -   links: starter_kit/src/links.md
+    -   others:
+        -   FAQ: starter_kit/src/FAQ.md
+        -   validator: starter_kit/src/validator.md
+        -   glossary: starter_kit/src/glossary.md
+        -   contact: starter_kit/src/contact.md
+-   BIDS apps:
+    -   about: apps/about.md
+    -   dashboard: apps/apps.md
+    -   FAQ: apps/faq.md
+    -   BIDS app specification:
+        - scope: execution/src/scope.md
+        - specification: execution/src/specification.md
+        - user interface: execution/src/ui.md
+        - inputs: execution/src/inputs.md
+        - outputs: execution/src/outputs.md
+        - examples: execution/src/examples.md
+        - contributors: execution/src/CONTRIBUTING.md
+        - release notes: execution/src/CHANGELOG.md
+-   BIDS stas model:
+        - about: stats_models/specification/index.md
+        - motivations: stats_models/specification/motivation.md
+        - walkthrough: 
+            - intro: stats_models/specification/walkthrough-intro.md
+            - part-1: stats_models/specification/walkthrough-1.md
+            - part-2: stats_models/specification/walkthrough-2.md
+        - integration: stats_models/specification/integration.md
+        - json_101: stats_models/specification/json_101.md
+        - legacy: stats_models/specification/legacy.md
+        - specification: 
+            - reference: stats_models/specification/reference.md
+            - spec: stats_models/specification/spec.md
+        - examples and resources: 
+            - zoo: stats_models/specification/model-zoo.md
+            - default model: stats_models/specification/default_model.md
+
+
+theme:
+    name: material
+    favicon: assets/favicon/favicon.ico
+    logo: assets/img/logo.png
+    features:
+    -   navigation.sections
+    -   content.action.edit
+    icon:
+        repo: fontawesome/brands/github
+        edit: material/pencil
+    palette:
+    -   media: (prefers-color-scheme)
+        toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+    -   media: '(prefers-color-scheme: light)'
+        scheme: default
+        toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+    -   media: '(prefers-color-scheme: dark)'
+        scheme: slate
+        toggle:
+            icon: material/brightness-4
+            name: Switch to system preference
+
+edit_uri: https://github.com/bids-standard/bids-extensions/edit/main/docs/
+
+
+markdown_extensions:
+-   toc:
+        anchorlink: true
+-   pymdownx.superfences
+-   pymdownx.details
+-   admonition

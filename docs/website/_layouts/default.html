@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Brain Imaging Data Structure</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Brain Imaging Data Structure",
+      "url": "http://bids.neuroimaging.io",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Brain_Imaging_Data_Structure",
+        "https://x.com/BIDSstandard"
+      ]
+    }
+  </script>
+
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+  {% endif %}
+
+  {% seo %}
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Add anchors to all headings, see https://www.bryanbraun.com/anchorjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.js"></script>
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/favicon/apple-icon-57x57.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/favicon/apple-icon-60x60.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/favicon/apple-icon-72x72.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/favicon/apple-icon-76x76.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ '/assets/favicon/apple-icon-114x114.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/favicon/apple-icon-120x120.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/assets/favicon/apple-icon-144x144.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/favicon/apple-icon-152x152.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-icon-180x180.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/favicon/android-icon-192x192.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/favicon/favicon-96x96.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/favicon/manifest.json' | relative_url }}">
+  <meta name="msapplication-TileImage" content="{{ '/assets/favicon/ms-icon-144x144.png' | relative_url }}">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <header class="page-header" role="banner">
+    <div class="project-name">{{ site.title }}</div>
+    <div class="project-tagline">{{ site.description }}</div>
+
+    {% include navbar.html %}
+
+    {% include steering_group_election_section.html %}
+
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    {{ content }}
+
+  </main>
+
+  <footer class="site-footer">
+    {% if site.show_footer %}
+    <div class="container">
+      Edit <a href="https://github.com/bids-standard/bids-website/blob/gh-pages/{{ page.path }}">this page on GitHub</a>.
+    </div>
+    {% endif %}
+  </footer>
+
+  <!-- Add anchors before the closing body tag, see https://www.bryanbraun.com/anchorjs -->
+  <script>
+    anchors.options.visible = 'touch';
+    anchors.add('h1');
+    anchors.add('h2');
+    anchors.add('h3');
+    anchors.add('h4');
+    anchors.add('h5');
+    anchors.add('h6');
+  </script>
+
+  <!-- adapted from https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/ -->
+  <script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      mermaid.initialize({
+        startOnLoad:true,
+        theme: "dark",
+      });
+      window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    });
+  </script>
+
+  {% include tracking.html %}
+
+</body>
+
+</html>
