@@ -18,3 +18,7 @@
 	path = docs/execution
 	url = https://github.com/bids-standard/execution-spec
 	datalad-url = https://github.com/bids-standard/execution-spec
+[submodule "docs/apps"]
+	path = docs/apps
+	url = https://github.com/bids-apps/bids-apps.github.io
+	datalad-url = https://github.com/bids-apps/bids-apps.github.io
