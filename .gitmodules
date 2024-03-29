@@ -1,0 +1,4 @@
+[submodule "docs/stater_kit"]
+	path = docs/stater_kit
+	url = https://github.com/bids-standard/bids-starter-kit.git
+	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
