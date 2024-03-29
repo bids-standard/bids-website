@@ -6,3 +6,7 @@
 	path = docs/stats_models
 	url = https://github.com/bids-standard/stats-models
 	datalad-url = https://github.com/bids-standard/stats-models
+[submodule "docs/grant"]
+	path = docs/grant
+	url = https://github.com/bids-standard/grant_writing_kit
+	datalad-url = https://github.com/bids-standard/grant_writing_kit
