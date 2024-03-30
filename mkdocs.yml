@@ -18,7 +18,7 @@ nav:
 -   Acknowledgments: website/_pages/acknowledgments.md
 -   Impact: grant/README.md
 -   Starter-kit:
-    -   favicon:olders and files:
+    -   folders and files:
         -   folders: starter_kit/src/folders_and_files/folders.md
         -   files: starter_kit/src/folders_and_files/files.md
         -   metadata: starter_kit/src/folders_and_files/metadata.md
