@@ -198,3 +198,9 @@
     - MATLAB
     - Octave
   description: a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
+
+- name: psychopy-bids
+  url: https://gitlab.com/psygraz/psychopy-bids/
+  language:
+    - python
+  description: A psychopy plugin to help easily output `events.tsv` and `beh.tsv` files when running experiments with psychopy.
