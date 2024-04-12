@@ -6,6 +6,9 @@ build:
     tools:
         python: '3.11'
 
+submodules:
+    include: all
+
 mkdocs:
     configuration: mkdocs.yml
 
