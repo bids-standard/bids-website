@@ -1,5 +1,5 @@
 ---
-site_name: BIDS Extension Proposals
+site_name: The brain imaging data structure
 repo_url: https://github.com/bids-standard/bids-extensions/
 
 plugins:
@@ -7,22 +7,48 @@ plugins:
 
 docs_dir: docs
 
+exclude_docs: |
+    website/_posts/
+    website/_redirects/
+    website/_bep_collection/
+    website/_pages/news
+    website/templates/
+    website/news/
+    README.md
+    starter_kit/questions/
+    starter_kit/.faq/
+    starter_kit/reports/
+    .github
+
 nav:
 -   About: index.md
--   Specification: website/_pages/specification.md
--   Benefits: website/_pages/benefits.md
--   Get involved: website/_pages/get_involved.md
--   Get started: website/_pages/get_started.md
--   Governance: website/_pages/governance.md
--   News: website/_pages/news.md
--   Acknowledgments: website/_pages/acknowledgments.md
+-   Website:
+    -   Specification: website/_pages/specification.md
+    -   Benefits: website/_pages/benefits.md
+    -   Get involved: website/_pages/get_involved.md
+    -   Get started: website/_pages/get_started.md
+    -   Governance: website/_pages/governance.md
+    -   Acknowledgments: website/_pages/acknowledgments.md
 -   Impact: grant/README.md
+-   BIDS extensions:
+        - intro: extensions/docs/index.md
+        - general_guidelines: extensions/docs/general_guidelines.md     
+        - guide: extensions/docs/guide.md
+        - submission: extensions/docs/submission.md
+        - FAQ: extensions/docs/faq.md
+-   BIDS schema:        
+        - schema: extensions/docs/schema.md
+        - how it workrs: extensions/docs/how-the-schema-works.md
+        - metadata: extensions/docs/schema_meta.md
+        - objects: extensions/docs/schema_objects.md
+        - rules: extensions/docs/schema_rules.md
 -   Starter-kit:
-    -   folders and files:
+    -   landing page: starter_kit/src/index.md
+    -   folders and files: 
         -   folders: starter_kit/src/folders_and_files/folders.md
         -   files: starter_kit/src/folders_and_files/files.md
         -   metadata: starter_kit/src/folders_and_files/metadata.md
-        -   derivatives: starter_kit/src/folders_and_files/derivatives
+        -   derivatives: starter_kit/src/folders_and_files/derivatives.md
     -   tutorials:
         -   annotation: starter_kit/src/tutorials/annotation.md
         -   ieeg: starter_kit/src/tutorials/ieeg.md
@@ -43,9 +69,11 @@ nav:
         -   contact: starter_kit/src/contact.md
 -   BIDS apps:
     -   about: apps/about.md
+    -   about: apps/tutorial.md
     -   dashboard: apps/apps.md
-    -   FAQ: apps/faq.md
+    -   FAQ: apps/dev_faq.md
     -   BIDS app specification:
+        - intro: execution/src/index.md
         - scope: execution/src/scope.md
         - specification: execution/src/specification.md
         - user interface: execution/src/ui.md
@@ -79,6 +107,12 @@ theme:
     features:
     -   navigation.sections
     -   content.action.edit
+    -   navigation.tabs
+    -   navigation.tabs.sticky
+    -   navigation.expand  
+    -   navigation.path   
+    - toc.follow
+    - navigation.top             
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil
@@ -104,6 +138,10 @@ edit_uri: https://github.com/bids-standard/bids-extensions/edit/main/docs/
 markdown_extensions:
 -   toc:
         anchorlink: true
--   pymdownx.superfences
 -   pymdownx.details
 -   admonition
+-   pymdownx.superfences:
+        custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format

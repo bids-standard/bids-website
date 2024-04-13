@@ -1,1 +1,2 @@
 mkdocs-material
+mkdocs>=1.5.0
