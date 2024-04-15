@@ -4,7 +4,6 @@ repo_url: https://github.com/bids-standard/in_darkness_bind_them
 
 plugins:
 -   search
--   optimize
 
 docs_dir: docs
 
@@ -148,8 +147,6 @@ markdown_extensions:
             class: mermaid
             format: !%21python/name:pymdownx.superfences.fence_code_format
 
-
-
 extra_javascript:
-#   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+-   https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
 -   javascripts/tablesort.js
