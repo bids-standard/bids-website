@@ -1,5 +1,6 @@
 ---
-title: "BIDS Community Survey 2024"
+slug: "BIDS Community Survey 2024"
+date: 2024-03-01
 author: BIDS Maintainers
 display: true
 ---
