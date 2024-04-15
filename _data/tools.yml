@@ -203,4 +203,4 @@
   url: https://gitlab.com/psygraz/psychopy-bids/
   language:
     - python
-  description: A psychopy plugin to help easily output `events.tsv` and `beh.tsv` files when running experiments with psychopy.
+  description: A psychopy plugin to help easily output a BIDS dataset, including `events.tsv` and `beh.tsv` files when running experiments with psychopy.
