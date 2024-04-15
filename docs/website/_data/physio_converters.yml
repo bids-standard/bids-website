@@ -1,3 +1,4 @@
+---
 # template
 #     - name:
 #       url: URL to repo
@@ -16,62 +17,62 @@
 #       comment:
 #       GUI: false
 
-- group:
-  name: Physiological data converters
-  comment:
-  members:
-  - name: BIDScoin
-    url: https://github.com/Donders-Institute/bidscoin
-    data_types:
-        - MRI
-        - phsyiological
-        - behavioral
-        - PET
-    expected_input:
-        - DICOM
-        - PAR/REC
-        - physiological
-        - PET
-    language:
-        - Python
-    distribution:
-        - name: pypi
-          url: https://pypi.org/project/bidscoin
-    documentation: https://bidscoin.readthedocs.io/en/stable/
-    comment: BIDScoin converts your source-level neuroimaging data to BIDS
-    GUI: yes
-    license: GPL-3
+-   group:
+    name: Physiological data converters
+    comment:
+    members:
+    -   name: BIDScoin
+        url: https://github.com/Donders-Institute/bidscoin
+        data_types:
+        -   MRI
+        -   phsyiological
+        -   behavioral
+        -   PET
+        expected_input:
+        -   DICOM
+        -   PAR/REC
+        -   physiological
+        -   PET
+        language:
+        -   Python
+        distribution:
+        -   name: pypi
+            url: https://pypi.org/project/bidscoin
+        documentation: https://bidscoin.readthedocs.io/en/stable/
+        comment: BIDScoin converts your source-level neuroimaging data to BIDS
+        GUI: yes
+        license: GPL-3
 
-  - name: phys2bids
-    url: https://github.com/physiopy/phys2bids
-    data_types:
-        - phsyiological
-    expected_input:
-        - Acqknowledge
-        - Labchart
-        - GE physiological files
-    language:
-        - Python
-    distribution:
-        - name: pypi
-          url: https://pypi.org/project/phys2bids
-    documentation: https://phys2bids.readthedocs.io/en/latest/
-    comment: Python3 library to format physiological files in BIDS.
-    license: Apache-2.0
+    -   name: phys2bids
+        url: https://github.com/physiopy/phys2bids
+        data_types:
+        -   phsyiological
+        expected_input:
+        -   Acqknowledge
+        -   Labchart
+        -   GE physiological files
+        language:
+        -   Python
+        distribution:
+        -   name: pypi
+            url: https://pypi.org/project/phys2bids
+        documentation: https://phys2bids.readthedocs.io/en/latest/
+        comment: Python3 library to format physiological files in BIDS.
+        license: Apache-2.0
 
-  - name: bidsphysio
-    url: https://github.com/cbinyu/bidsphysio
-    data_types:
-      - physiological
-    expected_input:
-      -  CMRR, AcqKnowledge, Siemens PMU
-    distribution:
-        - name: pypi
-          url: https://pypi.org/project/bidsphysio/
-        - name: dockerhub
-          url: https://hub.docker.com/r/cbinyu/bidsphysio/
-    language:
-     -  Python
-    documentation:
-    comment: Converts physio data (CMRR, AcqKnowledge, Siemens PMU) to BIDS physiological recording
-    GUI: false
+    -   name: bidsphysio
+        url: https://github.com/cbinyu/bidsphysio
+        data_types:
+        -   physiological
+        expected_input:
+        -   CMRR, AcqKnowledge, Siemens PMU
+        distribution:
+        -   name: pypi
+            url: https://pypi.org/project/bidsphysio/
+        -   name: dockerhub
+            url: https://hub.docker.com/r/cbinyu/bidsphysio/
+        language:
+        -   Python
+        documentation:
+        comment: Converts physio data (CMRR, AcqKnowledge, Siemens PMU) to BIDS physiological recording
+        GUI: false

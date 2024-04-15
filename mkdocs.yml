@@ -1,9 +1,10 @@
 ---
 site_name: The brain imaging data structure
-repo_url: https://github.com/bids-standard/bids-extensions/
+repo_url: https://github.com/bids-standard/in_darkness_bind_them
 
 plugins:
 -   search
+-   optimize
 
 docs_dir: docs
 
@@ -31,20 +32,20 @@ nav:
     -   Acknowledgments: website/_pages/acknowledgments.md
 -   Impact: grant/README.md
 -   BIDS extensions:
-        - intro: extensions/docs/index.md
-        - general_guidelines: extensions/docs/general_guidelines.md     
-        - guide: extensions/docs/guide.md
-        - submission: extensions/docs/submission.md
-        - FAQ: extensions/docs/faq.md
--   BIDS schema:        
-        - schema: extensions/docs/schema.md
-        - how it workrs: extensions/docs/how-the-schema-works.md
-        - metadata: extensions/docs/schema_meta.md
-        - objects: extensions/docs/schema_objects.md
-        - rules: extensions/docs/schema_rules.md
+    -   intro: extensions/docs/index.md
+    -   general_guidelines: extensions/docs/general_guidelines.md
+    -   guide: extensions/docs/guide.md
+    -   submission: extensions/docs/submission.md
+    -   FAQ: extensions/docs/faq.md
+-   BIDS schema:
+    -   schema: extensions/docs/schema.md
+    -   how it workrs: extensions/docs/how-the-schema-works.md
+    -   metadata: extensions/docs/schema_meta.md
+    -   objects: extensions/docs/schema_objects.md
+    -   rules: extensions/docs/schema_rules.md
 -   Starter-kit:
     -   landing page: starter_kit/src/index.md
-    -   folders and files: 
+    -   folders and files:
         -   folders: starter_kit/src/folders_and_files/folders.md
         -   files: starter_kit/src/folders_and_files/files.md
         -   metadata: starter_kit/src/folders_and_files/metadata.md
@@ -73,31 +74,31 @@ nav:
     -   dashboard: apps/apps.md
     -   FAQ: apps/dev_faq.md
     -   BIDS app specification:
-        - intro: execution/src/index.md
-        - scope: execution/src/scope.md
-        - specification: execution/src/specification.md
-        - user interface: execution/src/ui.md
-        - inputs: execution/src/inputs.md
-        - outputs: execution/src/outputs.md
-        - examples: execution/src/examples.md
-        - contributors: execution/src/CONTRIBUTING.md
-        - release notes: execution/src/CHANGELOG.md
+        -   intro: execution/src/index.md
+        -   scope: execution/src/scope.md
+        -   specification: execution/src/specification.md
+        -   user interface: execution/src/ui.md
+        -   inputs: execution/src/inputs.md
+        -   outputs: execution/src/outputs.md
+        -   examples: execution/src/examples.md
+        -   contributors: execution/src/CONTRIBUTING.md
+        -   release notes: execution/src/CHANGELOG.md
 -   BIDS stas model:
-        - about: stats_models/specification/index.md
-        - motivations: stats_models/specification/motivation.md
-        - walkthrough: 
-            - intro: stats_models/specification/walkthrough-intro.md
-            - part-1: stats_models/specification/walkthrough-1.md
-            - part-2: stats_models/specification/walkthrough-2.md
-        - integration: stats_models/specification/integration.md
-        - json_101: stats_models/specification/json_101.md
-        - legacy: stats_models/specification/legacy.md
-        - specification: 
-            - reference: stats_models/specification/reference.md
-            - spec: stats_models/specification/spec.md
-        - examples and resources: 
-            - zoo: stats_models/specification/model-zoo.md
-            - default model: stats_models/specification/default_model.md
+    -   about: stats_models/specification/index.md
+    -   motivations: stats_models/specification/motivation.md
+    -   walkthrough:
+        -   intro: stats_models/specification/walkthrough-intro.md
+        -   part-1: stats_models/specification/walkthrough-1.md
+        -   part-2: stats_models/specification/walkthrough-2.md
+    -   integration: stats_models/specification/integration.md
+    -   json_101: stats_models/specification/json_101.md
+    -   legacy: stats_models/specification/legacy.md
+    -   specification:
+        -   reference: stats_models/specification/reference.md
+        -   spec: stats_models/specification/spec.md
+    -   examples and resources:
+        -   zoo: stats_models/specification/model-zoo.md
+        -   default model: stats_models/specification/default_model.md
 
 
 theme:
@@ -105,14 +106,15 @@ theme:
     favicon: assets/favicon/favicon.ico
     logo: starter_kit/src/images/logo.png
     features:
-    -   navigation.sections
     -   content.action.edit
+    -   navigation.expand
+    -   navigation.instant
+    -   navigation.path
+    -   navigation.sections
     -   navigation.tabs
     -   navigation.tabs.sticky
-    -   navigation.expand  
-    -   navigation.path   
+    -   navigation.top
     -   toc.follow
-    -   navigation.top             
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil
@@ -134,14 +136,20 @@ theme:
 
 edit_uri: https://github.com/bids-standard/bids-extensions/edit/main/docs/
 
-
 markdown_extensions:
+-   tables
 -   toc:
         anchorlink: true
 -   pymdownx.details
 -   admonition
 -   pymdownx.superfences:
         custom_fences:
-            - name: mermaid
-              class: mermaid
-              format: !!python/name:pymdownx.superfences.fence_code_format
+        -   name: mermaid
+            class: mermaid
+            format: !%21python/name:pymdownx.superfences.fence_code_format
+
+
+
+extra_javascript:
+#   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+-   javascripts/tablesort.js

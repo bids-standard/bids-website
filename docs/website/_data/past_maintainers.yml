@@ -1,3 +1,4 @@
+---
 # - group: maintainers
 #   members:
 #     - name:
@@ -9,7 +10,7 @@
 #       city:
 #       bio:
 
-- group: past_maintainers
-  members:
-    - name: "Franklin Feingold"
-      git: "franklin-feingold"
+-   group: past_maintainers
+    members:
+    -   name: Franklin Feingold
+        git: franklin-feingold
