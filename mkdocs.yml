@@ -1,6 +1,7 @@
 ---
 site_name: The brain imaging data structure
 repo_url: https://github.com/bids-standard/in_darkness_bind_them
+site_url: https://in-darkness-bind-them.readthedocs.io/en/latest
 
 plugins:
 -   search
@@ -19,18 +20,18 @@ plugins:
 docs_dir: docs
 
 exclude_docs: |
-    website/_posts/
-    website/_redirects/
+    .github
+    README.md
+    specification/src/
+    starter_kit/.faq/
+    starter_kit/questions/
+    starter_kit/reports/
     website/_bep_collection/
     website/_pages/news
+    website/_posts/
+    website/_pages/news.md
+    website/_redirects/
     website/templates/
-    website/news/
-    README.md
-    starter_kit/questions/
-    starter_kit/.faq/
-    starter_kit/reports/
-    .github
-    specification/src/
 
 
 nav:
