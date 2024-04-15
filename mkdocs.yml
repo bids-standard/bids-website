@@ -19,6 +19,8 @@ exclude_docs: |
     starter_kit/.faq/
     starter_kit/reports/
     .github
+    docs/specification/src/
+
 
 nav:
 -   About: index.md
@@ -38,10 +40,11 @@ nav:
     -   FAQ: extensions/docs/faq.md
 -   BIDS schema:
     -   schema: extensions/docs/schema.md
-    -   how it workrs: extensions/docs/how-the-schema-works.md
+    -   how it works: extensions/docs/how-the-schema-works.md
     -   metadata: extensions/docs/schema_meta.md
     -   objects: extensions/docs/schema_objects.md
     -   rules: extensions/docs/schema_rules.md
+    -   details: specification/tools/schemacode/docs/description.md
 -   Starter-kit:
     -   landing page: starter_kit/src/index.md
     -   folders and files:
