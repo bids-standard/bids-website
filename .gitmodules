@@ -35,3 +35,6 @@
 	datalad-url = https://github.com/bids-standard/variable-transform.git
 [submodule "docs/website"]
 	datalad-url = https://github.com/bids-standard/bids-website.git
+[submodule "docs/website"]
+	path = docs/website
+	url = https://github.com/bids-standard/bids-website.git
