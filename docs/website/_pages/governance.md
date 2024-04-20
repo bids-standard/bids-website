@@ -253,6 +253,8 @@ they should inform the steering group in advance and are responsible to help:
   with a similar level of expertise to theirs, and
 * assist the steering and maintainers in choosing a suitable replacement.
 
+{% include members_table.html members=site.data.advisory %}
+
 ### Other working/interest Groups
 
 A working/interest group can be established under the approval of the
@@ -327,7 +329,7 @@ the BIDS channels
 - Use cases and examples clearly illustrated
 
 Upon a successful Draft BEP review, the BEP will be converted from a
-google document to a markdown file and entered as a pull request on the
+Google document to a pull request for the
 [BIDS standard](https://github.com/bids-standard/bids-specification){:target="_blank"}.
 This will enable further community feedback on the Proposed BEP. Tools
 may begin integrating the Proposed BEP specification.

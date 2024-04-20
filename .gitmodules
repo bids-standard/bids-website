@@ -33,3 +33,5 @@
 	path = docs/variable-transform
 	url = https://github.com/bids-standard/variable-transform.git
 	datalad-url = https://github.com/bids-standard/variable-transform.git
+[submodule "docs/website"]
+	datalad-url = https://github.com/bids-standard/bids-website.git

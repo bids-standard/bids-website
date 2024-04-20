@@ -184,7 +184,7 @@ It is aimed at software, but we have plenty of that. Now it just closed
 2 days ago.
 
 Yarik offered to pick up the prize on 30 Nov. He probably will have to
-give a ~~talk~~speech!
+give a ~~talk~~speach!
 
 Funds -- Ariel (or maybe split to Cyril to have part in America and part
 in Europe) // other must be spent on salary support for each of the

@@ -1,4 +1,3 @@
----
 # template
 #     - name:
 #       url: URL to repo
@@ -17,114 +16,122 @@
 #       comment:
 #       GUI: false
 
--   group:
-    name: EEG, MEG, iEEG converters
-    members:
-    -   name: BIDSme
-        url: https://github.com/nbeliy/bidsme
-        data_types:
-        -   MRI
-        -   EEG
-        expected_input:
-        -   DICOM
-        -   Nifti
-        -   Brain Vision
-        language:
-        -   Python
-        documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
-        comment:
-        license: GPL-2.0
+- group:
+  name: EEG, MEG, iEEG converters
+  members:
+    - name: BIDSme
+      url: https://github.com/nbeliy/bidsme
+      data_types:
+        - MRI
+        - EEG
+      expected_input:
+        - DICOM
+        - Nifti
+        - Brain Vision
+      language:
+        - Python
+      documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
+      comment:
+      license: GPL-2.0
 
-    -   name: MNE-BIDS
-        url: https://github.com/mne-tools/mne-bids
-        data_types:
-        -   MEG
-        -   EEG
-        -   iEEG
-        -   NIRS
-        expected_input:
-        -   raw MEG for BIDS conversion
-        -   raw EEG for BIDS conversion
-        -   raw iEEG for BIDS conversion
-        -   raw NIRS for BIDS conversion
-        -   BIDS dataset for reading
-        language:
-        -   Python
-        documentation: https://mne.tools/mne-bids
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/mne-bids
-        -   name: conda-forge
-            url: https://anaconda.org/conda-forge/mne-bids/
-        comment: MNE-BIDS is a Python package that allows you to read and write BIDS-compatible datasets with the help of MNE-Python.
-        GUI: false
-        license: BSD-3-Clause
+    - name: MNE-BIDS
+      url: https://github.com/mne-tools/mne-bids
+      data_types:
+        - MEG
+        - EEG
+        - iEEG
+        - NIRS
+      expected_input:
+        - raw MEG for BIDS conversion
+        - raw EEG for BIDS conversion
+        - raw iEEG for BIDS conversion
+        - raw NIRS for BIDS conversion
+        - BIDS dataset for reading
+      language:
+         -  Python
+      documentation: https://mne.tools/mne-bids
+      distribution:
+        - name: pypi
+          url: https://pypi.org/project/mne-bids
+        - name: conda-forge
+          url: https://anaconda.org/conda-forge/mne-bids/
+      comment:
+        MNE-BIDS is a Python package that allows you to read and write
+        BIDS-compatible datasets with the help of MNE-Python.
+      GUI: false
+      license: BSD-3-Clause
 
-    -   name: EEGLAB
-        url: https://github.com/sccn/eeglab
-        data_types:
-        -   MEG
-        -   EEG
-        expected_input:
-        -   EDF
-        -   BDF
-        -   Brain Vision Exchange Format
-        -   EEGLAB .set files
-        language:
-        -   MATLAB
-        documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
-        comment: <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
-
-
-    -   name: FieldTrip - data2bids
-        url: https://github.com/fieldtrip/fieldtrip
-        data_types:
-        -   EEG
-        -   MEG
-        -   iEEG
-        -   behavioral
-        -   MRI (anat and func)
-        expected_input:
-        -   any EEG or MEG file format
-        -   NBS Presentation logfiles
-        -   DICOM
-        -   nifti
-        language:
-        -   MATLAB
-        documentation: https://www.fieldtriptoolbox.org/example/bids/
-        license: GPL-3.0
-
-    -   name: Biscuit
-        url: https://github.com/Macquarie-MEG-Research/Biscuit
-        data_types:
-        -   MEG
-        expected_input:
-        language:
-        -   Python
-        documentation: https://macquarie-meg-research.github.io/Biscuit/
-        comment: GUI for easy MEG to BIDS conversion
-        GUI: true
-        license: MIT
-
-    -   name: sovabids
-        url: https://github.com/yjmantilla/sovabids
-        data_types:
-        -   EEG
-        expected_input:
-        language:
-        -   Python
-        documentation: https://sovabids.readthedocs.io/en/latest/
-        comment: A Python package for the automatic conversion of EEG datasets to the BIDS standard, with a focus on making the most out of metadata.
+    - name: EEGLAB
+      url: https://github.com/sccn/eeglab
+      data_types:
+        - MEG
+        - EEG
+      expected_input:
+        - EDF
+        - BDF
+        - Brain Vision Exchange Format
+        - EEGLAB .set files
+      language:
+        - MATLAB
+      documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
+      comment:
+        "<a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See
+        plugins</a>"
 
 
-    -   name: EEG2BIDS
-        url: https://github.com/aces/EEG2BIDS
-        data_types:
-        -   EEG
-        expected_input:
-        language:
-        -   Javascript
-        -   Python
-        documentation:
-        comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and
-            Imaging System).
+    - name: FieldTrip - data2bids
+      url: https://github.com/fieldtrip/fieldtrip
+      data_types:
+        - EEG
+        - MEG
+        - iEEG
+        - behavioral
+        - MRI (anat and func)
+      expected_input:
+        - any EEG or MEG file format
+        - NBS Presentation logfiles
+        - DICOM
+        - nifti
+      language:
+        - MATLAB
+      documentation: https://www.fieldtriptoolbox.org/example/bids/
+      license: GPL-3.0
+
+    - name: Biscuit
+      url: https://github.com/Macquarie-MEG-Research/Biscuit
+      data_types:
+        - MEG
+      expected_input:
+      language:
+        - Python
+      documentation: https://macquarie-meg-research.github.io/Biscuit/
+      comment: GUI for easy MEG to BIDS conversion
+      GUI: true
+      license: MIT
+
+    - name: sovabids
+      url: https://github.com/yjmantilla/sovabids
+      data_types:
+        - EEG
+      expected_input:
+      language:
+        - Python
+      documentation: https://sovabids.readthedocs.io/en/latest/
+      comment:
+        A Python package for the automatic conversion of EEG datasets to the
+        BIDS standard, with a focus on making the most out of metadata.
+
+
+    - name: EEG2BIDS
+      url: https://github.com/aces/EEG2BIDS
+      data_types:
+        - EEG
+      expected_input:
+      language:
+        - Javascript
+        - Python
+      documentation:
+      comment:
+        A tool for converting raw EEG and iEEG data into the BIDS standard data
+        structure, prepared for LORIS (Longitudinal Online Research and Imaging
+        System).

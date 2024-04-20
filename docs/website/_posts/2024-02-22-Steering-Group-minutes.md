@@ -44,7 +44,7 @@ Date: Thursday, February 22nd, 2024
    <th>
     Issue with Atlas BEP - circulate the idea of revising BEP
 development - one point missing in those discussions is how to get
-unstuck if conflict (CP: item voting is my favorite option, we just
+unstuck if conflict (CP: item voting is my favourite option, we just
 need the mechanism for it - like we do to elect this group)
    </th>
   </tr>

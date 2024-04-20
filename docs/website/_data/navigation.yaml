@@ -1,27 +1,26 @@
----
 menu:
--   title: ABOUT
+  - title: ABOUT
     url: /index.html
--   title: NEWS
+  - title: NEWS
     url: /news.html
--   title: BENEFITS
+  - title: BENEFITS
     url: /benefits.html
     sublinks:
-    -   title: Benefits
+      - title: Benefits
         url: /benefits.html#benefits
-    -   title: Software
+      - title: Software
         url: /benefits.html#software-currently-supporting-bids
-    -   title: MRI and PET Converters
+      - title: MRI and PET Converters
         url: /benefits.html#mri-and-pet-converters
-    -   title: MEEG Converters
+      - title: MEEG Converters
         url: /benefits.html#eeg-meg-ieeg-converters
--   title: SPECIFICATION
+  - title: SPECIFICATION
     url: /specification.html
--   title: GET STARTED
+  - title: GET STARTED
     url: /get_started.html
--   title: GET INVOLVED
+  - title: GET INVOLVED
     url: /get_involved.html
--   title: GOVERNANCE
+  - title: GOVERNANCE
     url: /governance.html
--   title: ACKNOWLEDGMENTS
+  - title: ACKNOWLEDGMENTS
     url: /acknowledgments.html

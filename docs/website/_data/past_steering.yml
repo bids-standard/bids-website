@@ -1,4 +1,3 @@
----
 # - group: maintainers
 #   members:
 #     - name:
@@ -10,15 +9,15 @@
 #       city:
 #       bio:
 
--   group: past_steering
-    members:
-    -   name: Kirstie Whitaker
-        git: KirstieJane
-    -   name: Melanie Ganz
-        git: melanieganz
-    -   name: Russell Poldrack
-        git: poldrack
-    -   name: Guiomar Niso
-        git: guiomar
-    -   name: Robert Oostenveld
-        git: robertoostenveld
+- group: past_steering
+  members:
+    - name: "Kirstie Whitaker"
+      git: "KirstieJane"
+    - name: "Melanie Ganz"
+      git: "melanieganz"
+    - name: "Russell Poldrack"
+      git: "poldrack"
+    - name: "Guiomar Niso"
+      git: "guiomar"
+    - name: "Robert Oostenveld"
+      git: "robertoostenveld"

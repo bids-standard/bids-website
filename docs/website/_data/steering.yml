@@ -1,4 +1,3 @@
----
 # - group: maintainers
 #   members:
 #     - name:
@@ -10,15 +9,15 @@
 #       city:
 #       bio:
 
--   group: steering
-    members:
-    -   name: Ariel Rokem
-        git: arokem
-    -   name: Cyril Pernet
-        git: CPernet
-    -   name: Yaroslav Halchenko
-        git: yarikoptic
-    -   name: Camille Maumet
-        git: cmaumet
-    -   name: Dora Hermes
-        git: dorahermes
+- group: steering
+  members:
+    - name: "Ariel Rokem"
+      git: "arokem"
+    - name: "Cyril Pernet"
+      git: "CPernet"
+    - name: "Yaroslav Halchenko"
+      git: "yarikoptic"
+    - name: "Camille Maumet"
+      git: "cmaumet"
+    - name: "Dora Hermes"
+      git: "dorahermes"
