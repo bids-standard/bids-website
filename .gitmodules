@@ -37,3 +37,7 @@
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
+[submodule "docs/examples"]
+	path = docs/examples
+	url = https://github.com/bids-standard/bids-examples
+	datalad-url = https://github.com/bids-standard/bids-examples
