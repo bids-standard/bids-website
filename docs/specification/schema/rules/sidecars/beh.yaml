@@ -1,0 +1,25 @@
+#
+# Groups of related metadata fields
+#
+# Assumptions: never need disjunction of selectors
+# Assumptions: top-to-bottom overrides is sufficient logic
+
+---
+# Metadata for either beh or events files
+BEHTaskInformation:
+  selectors:
+    - intersects([suffix], ["beh", "events"])
+  fields:
+    TaskName: recommended
+    Instructions: recommended
+    TaskDescription: recommended
+    CogAtlasID: recommended
+    CogPOID: recommended
+
+BEHInstitutionInformation:
+  selectors:
+    - intersects([suffix], ["beh", "events"])
+  fields:
+    InstitutionName: recommended
+    InstitutionAddress: recommended
+    InstitutionalDepartmentName: recommended

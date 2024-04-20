@@ -21,8 +21,6 @@ docs_dir: docs
 
 exclude_docs: |
     .github
-    README.md
-    specification/src/
     starter_kit/.faq/
     starter_kit/questions/
     starter_kit/reports/
@@ -32,7 +30,19 @@ exclude_docs: |
     website/_pages/news.md
     website/_redirects/
     website/templates/
-    specification/pdf_build_src
+    apps/README.md
+    execution/README.md
+    execution/BIDS_logo/README.md
+    extensions/README.md    
+    starter_kit/README.md
+    starter_kit/matlabCode/general/README.md
+    starter_kit/src/CODE_OF_CONDUCT.md    
+    starter_kit/src/tutorials/media/README.md
+    starter_kit/src/CONTRIBUTING.md     
+    stats_models/README.md
+    stats_models/bsmschema/README.md
+    website/README.md
+    website/tools/README.md    
 
 nav:
 -   About: index.md
@@ -44,7 +54,7 @@ nav:
         -   metadata: extensions/docs/schema_meta.md
         -   objects: extensions/docs/schema_objects.md
         -   rules: extensions/docs/schema_rules.md
-        -   details: specification/tools/schemacode/docs/description.md
+        -   details: specification/schema/description.md
     -   BIDS stas model:
         -   about: stats_models/specification/index.md
         -   motivations: stats_models/specification/motivation.md
@@ -97,6 +107,7 @@ nav:
         -   spec: specification/CONTRIBUTING.md
         -   bids apps spec: execution/src/CONTRIBUTING.md
         -   starter_kit: starter_kit/CONTRIBUTING.md
+       
 -   Extensions:
     -   Get involved: website/_pages/get_involved.md
     -   intro: extensions/docs/index.md

@@ -1,0 +1,64 @@
+---
+SubjectRelativeIntendedForString:
+  selectors:
+    - datatype != "ieeg"
+    - type(sidecar.IntendedFor) == "string"
+  checks:
+    - exists(sidecar.IntendedFor, "bids-uri") + exists(sidecar.IntendedFor, "subject") == 1
+
+SubjectRelativeIntendedForArray:
+  selectors:
+    - datatype != "ieeg"
+    - type(sidecar.IntendedFor) == "array"
+  checks:
+    - exists(sidecar.IntendedFor, "bids-uri") + exists(sidecar.IntendedFor, "subject") == length(sidecar.IntendedFor)
+
+DatasetRelativeIntendedForString:
+  selectors:
+    - datatype == "ieeg"
+    - type(sidecar.IntendedFor) == "string"
+  checks:
+    - exists(sidecar.IntendedFor, "bids-uri") + exists(sidecar.IntendedFor, "dataset") == 1
+
+DatasetRelativeIntendedForArray:
+  selectors:
+    - datatype == "ieeg"
+    - type(sidecar.IntendedFor) == "array"
+  checks:
+    - exists(sidecar.IntendedFor, "bids-uri") + exists(sidecar.IntendedFor, "dataset") == length(sidecar.IntendedFor)
+
+AssociatedEmptyRoomString:
+  selectors:
+    - datatype == "meg"
+    - type(sidecar.AssociatedEmptyRoom) == "string"
+  checks:
+    - exists(sidecar.AssociatedEmptyRoom, "bids-uri") + exists(sidecar.AssociatedEmptyRoom, "dataset") == 1
+
+AssociatedEmptyRoomArray:
+  selectors:
+    - datatype == "meg"
+    - type(sidecar.AssociatedEmptyRoom) == "array"
+  checks:
+    - |
+      exists(sidecar.AssociatedEmptyRoom, "bids-uri") + exists(sidecar.AssociatedEmptyRoom, "dataset")
+      == length(sidecar.AssociatedEmptyRoom)
+
+Sources:
+  selectors:
+    - dataset.dataset_description.DatasetType == "derivatives"
+    - type(sidecar.Sources) != "null"
+  checks:
+    - exists(sidecar.Sources, "bids-uri") + exists(sidecar.Sources, "dataset") == length(sidecar.Sources)
+
+## Verifying the existence of SpatialReferences is out-of-scope for schema validation
+## The ability to use any URI leaves this field too open-ended for effective validation, and the
+## object of key/URI pairs is worse.
+##
+## 2024.04.18 CJM & RWB
+#
+# SpatialReferencesString:
+#   selectors:
+#     - dataset.dataset_description.DatasetType == "derivatives"
+#     - type(sidecar.SpatialReference) == "string"
+#   checks:
+#     - exists(sidecar.SpatialReference, "bids-uri") + exists(sidecar.SpatialReference, "dataset") == 1

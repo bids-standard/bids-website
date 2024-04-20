@@ -1,0 +1,33 @@
+#
+# Groups of related metadata fields
+#
+# Assumptions: never need disjunction of selectors
+# Assumptions: top-to-bottom overrides is sufficient logic
+
+---
+# Anatomy imaging data
+
+MRIAnatomyCommonMetadataFields:
+  selectors:
+    - datatype == "anat"
+    - match(extension, "^\.nii(\.gz)?$")
+  fields:
+    ContrastBolusIngredient: optional
+    RepetitionTimeExcitation: optional
+    RepetitionTimePreparation: optional
+
+TaskMetadata:
+  selectors:
+    - datatype == "anat"
+    - entity.task != null
+    - match(extension, "^\.nii(\.gz)?$")
+  fields:
+    TaskName:
+      level: recommended
+      level_addendum: if `task` entity is present
+    TaskDescription:
+      level: recommended
+      level_addendum: if `task` entity is present
+    Instructions:
+      level: recommended
+      level_addendum: if `task` entity is present
