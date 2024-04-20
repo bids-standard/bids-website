@@ -210,7 +210,7 @@ BIDS Meeting Notes:
 
     -   We should ask individuals involved with larger projects to write
         on behalf of impact for their respective organizations (
-        DANDI, IBI, NIH, etc)
+        DANDI, IBI, NIH, and so on)
 
     -   Ariel will lead the submission, the remaining BIDS steering
         group will be the additional applicants

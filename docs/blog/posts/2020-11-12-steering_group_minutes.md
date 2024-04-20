@@ -40,7 +40,7 @@ The majority of this meeting we were joined by Melissa Kline of the [Psych-DS](h
 - Seeking agreement on metadata terms
   - Have a schema to validate against
 - Data practices can be a framework to move forward
-  - Convert common raw data formats (e.g Qualtrics) to the standard Psych-DS format
+  - Convert common raw data formats (for example Qualtrics) to the standard Psych-DS format
     - 1st step is writing converters to get to Psych-DS
 - If a dataset is Psych-DS compliant we can make certain assumptions about the data
 - Push to have recommended and required keywords

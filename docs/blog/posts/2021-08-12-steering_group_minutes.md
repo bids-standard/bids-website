@@ -66,7 +66,7 @@ Date: Thursday, August 12, 2021
      </li>
     </ul>
     <p>
-     KW will be rotated out - will be invited back to give advice on specific topics (e.g. community development)
+     KW will be rotated out - will be invited back to give advice on specific topics (for example community development)
     </p>
     <p>
      From the governing structure:

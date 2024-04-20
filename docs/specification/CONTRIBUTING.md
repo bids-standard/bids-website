@@ -155,7 +155,7 @@ Some others need to fixed manually:
 
 - Do not use Latin abbreviations like `"e.g"`, `"i.e"`, `"etc"` that can be confusing
   to some readers and try to replace them by common English equivalents such as
-  `"for example"`, `"that is"`, `"and so on"`.
+  `"for example"`, `"that is"`, `"etc"`.
 
 The BIDS specification is written in American English.
 

@@ -107,7 +107,7 @@ Date: Thursday, March 23rd, 2023
 "Model" / "Resultset" directory proposal derivatives [pull
 request](https://github.com/bids-standard/bids-specification/pull/1280)
 
-New proposal of models (e.g. dti models) where derivatives may be
+New proposal of models (for example dti models) where derivatives may be
 created from this model thus creating parameters and derivatives of a
 model that have overlapping meta-data.
 

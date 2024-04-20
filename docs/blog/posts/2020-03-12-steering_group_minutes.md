@@ -25,7 +25,7 @@ Previously, community members have opened repositories under the BIDS
 [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations)
 named [`bids-standard`](https://github.com/bids-standard).
 We want to codify guidelines to govern this.
-The plan is that there should be multiple people committed to the repository (otherwise it is better under the personal GitHub account), the maintainers should be clearly identifiable (e.g., as a
+The plan is that there should be multiple people committed to the repository (otherwise it is better under the personal GitHub account), the maintainers should be clearly identifiable (for example, as a
 [CODEOWNERS file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#about-code-owners)
 at the top level), there should be a code of conduct in the repository that is consistent with that of the BIDS specification, and (as a consequence of the code of conduct) the repository should welcome contributions from others.
 

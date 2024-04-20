@@ -50,7 +50,7 @@ Date: Thursday, July 27th, 2023
      “Thanks for this - hopefully we all agree that using BIDS is a good idea where practical, and should be encouraged.
     </p>
     <p>
-     The best thing would be for BIDS (committee etc) to encourage authors to be very clear and explicit (eg in Methods text) when BIDS has been used, just as with the many other important aspects of the methodology used in a given paper. At Imaging Neuroscience we would have no problem at all in authors being clear about their use of BIDS. We couldn't have a "front page badge" because that would risk an overwhelming number of similar requests, but I think the important thing is to explicitly mention use of BIDS in the main text."
+     The best thing would be for BIDS (committee and so on) to encourage authors to be very clear and explicit (eg in Methods text) when BIDS has been used, just as with the many other important aspects of the methodology used in a given paper. At Imaging Neuroscience we would have no problem at all in authors being clear about their use of BIDS. We couldn't have a "front page badge" because that would risk an overwhelming number of similar requests, but I think the important thing is to explicitly mention use of BIDS in the main text."
     </p>
    </td>
   </tr>
@@ -137,7 +137,7 @@ Ray
 
 -   How can we take advantage of ontologies in this version?
 
--   How can new enhancements allow more flexibility for BIDS? E.g. use of dashes in file names
+-   How can new enhancements allow more flexibility for BIDS? for example use of dashes in file names
 
 -   Work on the schema may facilitate or inhibit the transition to BIDS 2.0
 

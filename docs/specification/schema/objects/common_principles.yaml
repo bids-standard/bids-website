@@ -22,7 +22,7 @@ data_type:
 
         3.  `fmap` (field inhomogeneity mapping data such as field maps)
 
-        4.  `anat` (structural imaging such as T1, T2, PD, and so on)
+        4.  `anat` (structural imaging such as T1, T2, PD, etc)
 
         5.  `perf` (perfusion)
 

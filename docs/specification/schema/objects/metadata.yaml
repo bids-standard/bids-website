@@ -512,8 +512,8 @@ ContrastBolusIngredient:
     # TODO: Add definitions for these values. (perhaps don't specify)
     - UNKNOWN
     - NONE
-DCOffsetCorrection:
-  name: DCOffsetCorrection
+DCOffsetcorrection:
+  name: DCOffsetcorrection
   display_name: DC Offset Correction
   description: |
     A description of the method (if any) used to correct for a DC offset.

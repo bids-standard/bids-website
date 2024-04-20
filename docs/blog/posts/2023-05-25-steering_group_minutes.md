@@ -45,7 +45,7 @@ Date: Thursday, May 25th, 2023
    </td>
    <td>
     <p>
-     1. What is your vision for derivatives? (a vision is the non technical expression of what you want it to do, e.g. I can see output X being reused across labs for Y or output X can be easily reused by ML experts)
+     1. What is your vision for derivatives? (a vision is the non technical expression of what you want it to do, for example I can see output X being reused across labs for Y or output X can be easily reused by ML experts)
     </p>
     <p>
      2. There is 2 views on derivatives: A. it should store the outcome of a pipeline + share code B. it should document every steps, and thus store every step.
@@ -118,7 +118,7 @@ certificate of compliance. This could be an option (check box) during
 the manuscript submission period. This could be the easiest, but may not
 be a perfect solution because it\'s based on the user.
 
-For other data modalities (e.g. genetics, etc), typically the journal
+For other data modalities (for example genetics, and so on), typically the journal
 just encourages it to be shared on a repository. There are not many
 efforts like BIDS, for standards themselves.
 
@@ -162,7 +162,7 @@ Could this be a line of funding for BEPS? - the goal is not
 neuro-focused, BIDS has good practices to share, but a proposal would
 need to be interdisciplinary.
 
-Are there cross sectional topics that could be considered? E.g. other
+Are there cross sectional topics that could be considered? for example other
 modalities, or repositories, provenance. what other standards are out
 there? Physics, astronomy, CERN
 

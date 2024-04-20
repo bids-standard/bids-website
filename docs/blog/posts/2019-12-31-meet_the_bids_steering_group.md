@@ -21,7 +21,7 @@ In this blog post, each of the steering group members have explained a little ab
 
 I'm an AXA Postdoctoral fellow at Universidad Politécnica de Madrid.
 My research focuses on understanding brain dynamics to improve clinical applications and ultimately people's lives.
-I study brain activity in healthy and pathological conditions (e.g. epilepsy, Alzheimer's Disease, blindness, pain) with M/EEG.
+I study brain activity in healthy and pathological conditions (for example epilepsy, Alzheimer's Disease, blindness, pain) with M/EEG.
 I pioneered The OMEGA, the first open repository fully dedicated to magnetoencephalography (MEG) and I contribute to the development of open software packages aimed to analyze neurophysiological signals, such as Brainstorm or Hermes.
 In the BIDS community I led the international effort to develop the [MEG-BIDS extension](https://doi.org/10.1038/sdata.2018.110).
 
@@ -53,7 +53,7 @@ I come from telecommunications engineering and I see the analogy with the indisp
 I want to work to make the neuroscientific community aware of the importance of using a common standard, like the BIDS, to organize data, highlighting its impact in data sharing, multimodal integration and reproducibility.
 This will provide a boost in the neuroscientific field. We will put efforts to foster community participation, looking for accessibility and inclusion.
 I am very passionate about extending the BIDS to new modalities and developing derivatives for all of them, which is the next coherent step after the raw data is organized.
-I would also love to promote the implementation of BIDS apps for different goals (e.g. prepossessing, analyzing pipelines, etc) so they can be easily run and integrated into automated platforms.
+I would also love to promote the implementation of BIDS apps for different goals (for example prepossessing, analyzing pipelines, and so on) so they can be easily run and integrated into automated platforms.
 There are so many encouraging plans for next year!
 
 ### Melanie Ganz <img src="/assets/img/2019-12-31/MelanieGanz.png" alt="Head shot of Melanie Ganz" width="250" align="right" hspace="20"/>

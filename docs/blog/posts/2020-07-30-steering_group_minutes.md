@@ -23,7 +23,7 @@ We held a joint meeting between the Steering Group and Maintainers Group. We fin
 ### Minutes
 
 Joint meeting between the Steering Group and Maintainers Group
-- Discussed approaches to collaborating with other organizations (e.g. EBrains)
+- Discussed approaches to collaborating with other organizations (for example EBrains)
 - Approved Histology as [BEP031](https://bids.neuroimaging.io/bep031)
   - Think through how the validation may look because this modality is different than our currently supported ones
   - Be clear what success looks like with the BEP team

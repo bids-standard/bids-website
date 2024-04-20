@@ -118,7 +118,7 @@ Date: Thursday, December 8th, 2022
      <li>
       <blockquote>
        <p>
-        Can we get an automatic email or status update if a google doc is updated, i.e. make it externally visible that it is active (just like we aim for with tools)?
+        Can we get an automatic email or status update if a google doc is updated, meaning make it externally visible that it is active (just like we aim for with tools)?
        </p>
       </blockquote>
      </li>

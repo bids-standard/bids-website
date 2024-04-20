@@ -50,7 +50,7 @@ Date: Thursday, July 6th, 2023
      “Thanks for this - hopefully we all agree that using BIDS is a good idea where practical, and should be encouraged.
     </p>
     <p>
-     The best thing would be for BIDS (committee etc) to encourage authors to be very clear and explicit (eg in Methods text) when BIDS has been used, just as with the many other important aspects of the methodology used in a given paper. At Imaging Neuroscience we would have no problem at all in authors being clear about their use of BIDS. We couldn't have a "front page badge" because that would risk an overwhelming number of similar requests, but I think the important thing is to explicitly mention use of BIDS in the main text.
+     The best thing would be for BIDS (committee and so on) to encourage authors to be very clear and explicit (eg in Methods text) when BIDS has been used, just as with the many other important aspects of the methodology used in a given paper. At Imaging Neuroscience we would have no problem at all in authors being clear about their use of BIDS. We couldn't have a "front page badge" because that would risk an overwhelming number of similar requests, but I think the important thing is to explicitly mention use of BIDS in the main text.
     </p>
     <p>
      “
@@ -144,7 +144,7 @@ Date: Thursday, July 6th, 2023
 
 ### BIDS impact
 
-Zotero collection for tracking BIDS related publications, BEPs, etc:
+Zotero collection for tracking BIDS related publications, BEPs, and so on:
 [[https://www.zotero.org/groups/5111637/bids]{.underline}](https://www.zotero.org/groups/5111637/bids)
 
 The BIDS grant writing kit could be updated

@@ -184,7 +184,7 @@ BIDS validator can tell users how many files are in the .bidsignore
 **Website:**
 
 Could use some of the funds to improve the website. At least
-conceptually. Could use a freelancer? E.g., from upwork?
+conceptually. Could use a freelancer? for example, from upwork?
 
 Need to think about different "persona": casual users, data
 users/consumers, content contributors.

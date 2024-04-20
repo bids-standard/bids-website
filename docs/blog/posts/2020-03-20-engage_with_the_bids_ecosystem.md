@@ -11,7 +11,7 @@ Tell us the best way for you to participate within our global community.
 <!--more-->
 
 The BIDS Steering group has identified and prioritized enhancing our community engagement and communication across our vast ecosystem.
-This covers how the Steering Group and associated teams (e.g. Maintainers and BEPs) correspond with the BIDS community and the broader brain research field.
+This covers how the Steering Group and associated teams (for example Maintainers and BEPs) correspond with the BIDS community and the broader brain research field.
 The Steering Group is interested in learning how you may want to be engaged with BIDS and how we can effectively reach out to the broader brain research community for feedback.
 To do this, we constructed a [very short survey](https://forms.gle/8nBgsHrZNYmBV3Ze8) (direct link below).
 

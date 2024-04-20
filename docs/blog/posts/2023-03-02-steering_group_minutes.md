@@ -85,7 +85,7 @@ Inside the specification - where does the Atlas BEP fit?
 -   Could be part of BEP 17 connectivity matrices, or statistical
     models, as well as others
 
--   Should align with other BEPs (e.g. provenance BEP)
+-   Should align with other BEPs (for example provenance BEP)
 
 -   It's been proposed to have an atlas directory by Peer's working
     group, but agrees that the atlas can be applicable in different

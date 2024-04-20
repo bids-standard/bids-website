@@ -296,7 +296,7 @@ Date: Tuesday, December 14, 2021
      </li>
     </ul>
     <p>
-     ––&gt; Try to meet with Remi etc to converge with the website
+     ––&gt; Try to meet with Remi and so on to converge with the website
     </p>
    </td>
    <td>

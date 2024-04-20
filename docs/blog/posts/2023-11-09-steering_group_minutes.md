@@ -33,7 +33,7 @@ Date: Thursday, November 9th, 2023
    <th>
     Consolidation: we have so many people that struggle converting with
 the available converter tools and the starter kit documentation. Those
-people are our stakeholders and could use better support. E.g. extending
+people are our stakeholders and could use better support. for example extending
 the starter kit, office hours, ...
    </th>
    <th>
@@ -139,7 +139,7 @@ available.
 
 Yarik will give the prize acceptance talk at the Open Science symposium
 on 30 Nov. Try to give a take home message to influential people in the
-audience (for future funding etc). Look at the application pitch for
+audience (for future funding and so on). Look at the application pitch for
 some figure.
 
 Ariel is confident that half of the money that UW receives can be

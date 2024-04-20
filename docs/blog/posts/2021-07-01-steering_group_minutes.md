@@ -169,8 +169,8 @@ that we can keep an MRI representative in the steering group which is a
 requirement.
 
 Wrt election proceedings we may have people put up a 200 word criteria
-on how they complement the current steering group in terms of e.g.
-modality, gender, geographic location, seniority, etc. Maybe add this to
+on how they complement the current steering group in terms of for example
+modality, gender, geographic location, seniority, and so on. Maybe add this to
 the governance document by adding something regarding not only ensuring
 diversity wrt modality but also diversity.
 

@@ -366,7 +366,7 @@ details (to entry level users).\
 Shows unit testing for converting/translating metadata, requires test
 datasets and correct outputs
 
-Terminology differs e.g. between Siemens and Philips
+Terminology differs for example between Siemens and Philips
 
 -   PET example where dicom standards were not used for BIDS
 
