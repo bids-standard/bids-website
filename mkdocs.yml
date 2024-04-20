@@ -32,35 +32,80 @@ exclude_docs: |
     website/_pages/news.md
     website/_redirects/
     website/templates/
-
+    specification/pdf_build_src
 
 nav:
 -   About: index.md
--   Website:
-    -   Specification: website/_pages/specification.md
-    -   Benefits: website/_pages/benefits.md
-    -   Get involved: website/_pages/get_involved.md
-    -   Get started: website/_pages/get_started.md
-    -   Governance: website/_pages/governance.md
+-   Standards:
+    -   BIDS Specification: website/_pages/specification.md
+    -   BIDS schema:
+        -   schema: extensions/docs/schema.md
+        -   how it works: extensions/docs/how-the-schema-works.md
+        -   metadata: extensions/docs/schema_meta.md
+        -   objects: extensions/docs/schema_objects.md
+        -   rules: extensions/docs/schema_rules.md
+        -   details: specification/tools/schemacode/docs/description.md
+    -   BIDS stas model:
+        -   about: stats_models/specification/index.md
+        -   motivations: stats_models/specification/motivation.md
+        -   walkthrough:
+            -   intro: stats_models/specification/walkthrough-intro.md
+            -   part-1: stats_models/specification/walkthrough-1.md
+            -   part-2: stats_models/specification/walkthrough-2.md
+        -   integration: stats_models/specification/integration.md
+        -   json_101: stats_models/specification/json_101.md
+        -   legacy: stats_models/specification/legacy.md
+        -   specification:
+            -   reference: stats_models/specification/reference.md
+            -   spec: stats_models/specification/spec.md
+        -   examples and resources:
+            -   zoo: stats_models/specification/model-zoo.md
+            -   default model: stats_models/specification/default_model.md
+        -   variable transforms:
+            -   intro: variable-transform/README.md
+            -   compute: variable-transform/spec/compute.md
+            -   munge: variable-transform/spec/munge.md
+    -   BIDS app specification:
+        -   intro: execution/src/index.md
+        -   scope: execution/src/scope.md
+        -   specification: execution/src/specification.md
+        -   user interface: execution/src/ui.md
+        -   inputs: execution/src/inputs.md
+        -   outputs: execution/src/outputs.md
+        -   examples: execution/src/examples.md
+        -   release notes: execution/src/CHANGELOG.md
     -   Acknowledgments: website/_pages/acknowledgments.md
--   Impact: grant/README.md
--   News:
-    - blog/index.md
--   BIDS extensions:
+    -   Impact: grant/README.md
+-   Tools:    
+    -   Benefits: website/_pages/benefits.md
+    -   BIDS apps:
+        -   about: apps/about.md
+        -   about: apps/tutorial.md
+        -   dashboard: apps/apps.md
+-   Datasets:
+    -   dataset_examples: starter_kit/src/dataset_examples.md
+-   Community:
+    -   Governance: website/_pages/governance.md
+    -   Code of conduct: 
+        -   specification: specification/CODE_OF_CONDUCT.md
+        -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
+        -   website: website/_pages/code_of_conduct.md
+    -   contributing:
+        -   apps: apps/CONTRIBUTING.md
+        -   grant: grant/CONTRIBUTING.md
+        -   wesbite: website/CONTRIBUTING.md
+        -   spec: specification/CONTRIBUTING.md
+        -   bids apps spec: execution/src/CONTRIBUTING.md
+        -   starter_kit: starter_kit/CONTRIBUTING.md
+-   Extensions:
+    -   Get involved: website/_pages/get_involved.md
     -   intro: extensions/docs/index.md
     -   general_guidelines: extensions/docs/general_guidelines.md
     -   guide: extensions/docs/guide.md
     -   submission: extensions/docs/submission.md
-    -   FAQ: extensions/docs/faq.md
     -   macros: specification/macros_doc.md
--   BIDS schema:
-    -   schema: extensions/docs/schema.md
-    -   how it works: extensions/docs/how-the-schema-works.md
-    -   metadata: extensions/docs/schema_meta.md
-    -   objects: extensions/docs/schema_objects.md
-    -   rules: extensions/docs/schema_rules.md
-    -   details: specification/tools/schemacode/docs/description.md
--   Starter-kit:
+-   Getting started:
+    -   Get started: website/_pages/get_started.md
     -   landing page: starter_kit/src/index.md
     -   folders and files:
         -   folders: starter_kit/src/folders_and_files/folders.md
@@ -75,51 +120,20 @@ nav:
         -   mri: starter_kit/src/tutorials/mri.md
         -   tutorials: starter_kit/src/tutorials/tutorials.md
     -   resources:
-        -   dataset_examples: starter_kit/src/dataset_examples.md
         -   talks: starter_kit/src/talks.md
         -   publications: starter_kit/src/publications.md
         -   dependencies: starter_kit/src/dependencies.md
         -   links: starter_kit/src/links.md
     -   others:
-        -   FAQ: starter_kit/src/FAQ.md
         -   validator: starter_kit/src/validator.md
         -   glossary: starter_kit/src/glossary.md
-        -   contact: starter_kit/src/contact.md
--   BIDS apps:
-    -   about: apps/about.md
-    -   about: apps/tutorial.md
-    -   dashboard: apps/apps.md
-    -   FAQ: apps/dev_faq.md
-    -   BIDS app specification:
-        -   intro: execution/src/index.md
-        -   scope: execution/src/scope.md
-        -   specification: execution/src/specification.md
-        -   user interface: execution/src/ui.md
-        -   inputs: execution/src/inputs.md
-        -   outputs: execution/src/outputs.md
-        -   examples: execution/src/examples.md
-        -   contributors: execution/src/CONTRIBUTING.md
-        -   release notes: execution/src/CHANGELOG.md
--   BIDS stas model:
-    -   about: stats_models/specification/index.md
-    -   motivations: stats_models/specification/motivation.md
-    -   walkthrough:
-        -   intro: stats_models/specification/walkthrough-intro.md
-        -   part-1: stats_models/specification/walkthrough-1.md
-        -   part-2: stats_models/specification/walkthrough-2.md
-    -   integration: stats_models/specification/integration.md
-    -   json_101: stats_models/specification/json_101.md
-    -   legacy: stats_models/specification/legacy.md
-    -   specification:
-        -   reference: stats_models/specification/reference.md
-        -   spec: stats_models/specification/spec.md
-    -   examples and resources:
-        -   zoo: stats_models/specification/model-zoo.md
-        -   default model: stats_models/specification/default_model.md
-    -   variable transforms:
-        -   intro: variable-transform/README.md
-        -   compute: variable-transform/spec/compute.md
-        -   munge: variable-transform/spec/munge.md
+-   FAQ:
+    -   general: starter_kit/src/FAQ.md
+    -   extensions: extensions/docs/faq.md
+    -   bids apps: apps/dev_faq.md
+-   Blog:
+    - blog/index.md
+-   Contact: starter_kit/src/contact.md
 
 theme:
     name: material

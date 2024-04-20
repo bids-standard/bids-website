@@ -1,4 +1,0 @@
-[codespell]
-skip = .git,Gemfile.lock,_sass,_site,tools/convert_to_md.py,_pages/bids_timeline.html
-ignore-words-list = foo,bar,baz
-builtin = clear,rare,en-GB_to_en-US

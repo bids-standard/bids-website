@@ -1,9 +1,0 @@
-<div>
-  <ul>
-    {% assign tools = include.tools %}
-    {% for tool_ in tools %}
-    {% assign name = tool_.name %}
-      <li><b><a href="{{ tool_.url }}" target="_blank">{{ tool_.name }}</a>:</b>{{ tool_.description | markdownify }}</li>
-    {% endfor %}
-  </ul>
-</div>
