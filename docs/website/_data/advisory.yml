@@ -44,7 +44,7 @@
 #   leads:
     - name: Cyril Pernet
       git: CPernet
-      other_beps: ["BEP018"]
+      other_beps: ["BEP018"]      
     - name: Stefan Appelhoff
       git: sappelhoff
     - name: Robert Oostenveld

@@ -158,7 +158,7 @@ Github project is established with many ideas but there aren\'t many
         there are at least 20 different file formats for
         electrophysiology data
 
--
+-   
 
 **Open Science Prize!**
 
@@ -174,12 +174,12 @@ Github project is established with many ideas but there aren\'t many
 -   \$55k CAD will be split with U Washington and Cyril (sub-contract
     with xx Institution) so funds will be in both US and Europe
 
--
+-   
 
 ```{=html}
 <!-- -->
 ```
--
+-   
 
 **BIDS Steering Committee Theme for the year: Improve adoption**
 
@@ -211,12 +211,12 @@ Github project is established with many ideas but there aren\'t many
 
         -   Had questions, but could not find answers
 
-        -
+        -   
 
     -   [[Yaroslav Halchenko]{.underline}](mailto:yarikoptic@gmail.com)
         will create a pull request on github:
         [[https://github.com/bids-standard/bids-starter-kit/pull/376]{.underline}](https://github.com/bids-standard/bids-starter-kit/pull/376)
 
-    -
+    -   
 
-    -
+    -   

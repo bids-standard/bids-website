@@ -362,14 +362,15 @@
         - Python
       documentation: https://github.com/mercure-imaging/mercure-dcm2bids
       comment: |
-        A containerized app that can be used to perform BIDS conversion of
-        DICOM studies sent directly to mercure from a scanner or PACS. mercure
-        is an open-source DICOM orchestration platform that can integrate
-        containerized apps into clinical workflows. It has a graphical user
-        interface making it easy to setup and manage BIDS configurations for
+        A containerized app that can be used to perform BIDS conversion of 
+        DICOM studies sent directly to mercure from a scanner or PACS. mercure 
+        is an open-source DICOM orchestration platform that can integrate 
+        containerized apps into clinical workflows. It has a graphical user 
+        interface making it easy to setup and manage BIDS configurations for 
         multiple protocols. The Dcm2Bids tool is used for conversion.
       distribution:
         - name: dockerhub
-          url: https://hub.docker.com/r/mercureimaging/mercure-dcm2bids
+          url: https://hub.docker.com/r/mercureimaging/mercure-dcm2bids 
       GUI: true
       license: GPL-3.0
+
