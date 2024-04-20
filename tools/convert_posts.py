@@ -1,7 +1,7 @@
 from pathlib import Path
 from rich import print
 
-root = Path(__file__).parents[1] 
+root = Path(__file__).parents[1]
 
 input_folder = root / "docs" / "website" / "_posts"
 output_folder = root / "docs" / "blog" / "posts"
@@ -20,12 +20,12 @@ for file in input_folder.glob("*.md"):
     title = title.replace(",", "")
     title = title.replace("_executive_summary", "")
     title = title.replace("_action_items_and", "")
-    
+
     print(output_folder / f"{year}-{month}-{day}_{title}.md")
 
     with open(file, 'r') as f:
         content = f.readlines()
-    
+
     with open(output_folder / f"{year}-{month}-{day}-{title}", 'w') as f:
         is_frontmatter = False
         frontmatter_done = False
@@ -41,7 +41,7 @@ for file in input_folder.glob("*.md"):
                     f.write(line)
                     f.write(f"date: {year}-{month}-{day}\n")
                     continue
-                else: 
+                else:
                     is_frontmatter = False
                     frontmatter_done = True
                     f.write(line)
@@ -59,7 +59,7 @@ for file in input_folder.glob("*.md"):
                 f.write(line)
                 continue
 
-    print("\n")            
+    print("\n")
 
 
 # ---

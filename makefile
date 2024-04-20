@@ -8,7 +8,7 @@ update_from_spec:
 	cp specification/macros_doc.md docs/specification/macros_doc.md
 	cp -r specification/commenting_images docs/specification/
 
-update_from_examples:	
+update_from_examples:
 	rm -fr docs/examples
 	mkdir -p docs/examples
 	cp -r examples/README.md docs/examples/README.md

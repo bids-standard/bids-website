@@ -1,5 +1,6 @@
 ---
-layout: index
+hide:
+  - navigation
 ---
 
 # About BIDS
@@ -41,15 +42,3 @@ With the ongoing development of new tools and resources it is important to keep 
 - We have constructed a [grant writing kit](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit) to assist you in putting together BIDS-related grant proposals.
 
 - We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020). Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
-
-## Communication channels
-
-If you are interested in receiving occasional updates around BIDS, feel free to join one of the communication channels that we use regularly:
-
-- The `bids-discussions` Google Group for [updates via email](https://groups.google.com/g/bids-discussion)
-- Follow BIDS on:
-  - [x](https://x.com/BIDSstandard)
-  - [Mastodon](https://fosstodon.org/@bidsstandard/)
-  - [Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/)
-- Join the [Brainhack Mattermost](https://mattermost.brainhack.org/) for a number of BIDS-related channels
-- Have a look at the [Neurostars forum with the BIDS tag](https://neurostars.org/tag/bids)

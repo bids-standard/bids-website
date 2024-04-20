@@ -33,16 +33,17 @@ exclude_docs: |
     apps/README.md
     execution/README.md
     execution/BIDS_logo/README.md
-    extensions/README.md    
+    extensions/README.md
     starter_kit/README.md
     starter_kit/matlabCode/general/README.md
-    starter_kit/src/CODE_OF_CONDUCT.md    
+    starter_kit/src/CODE_OF_CONDUCT.md
     starter_kit/src/tutorials/media/README.md
-    starter_kit/src/CONTRIBUTING.md     
+    starter_kit/src/CONTRIBUTING.md
     stats_models/README.md
     stats_models/bsmschema/README.md
+    stats_models/specification/walkthrough-2.md
     website/README.md
-    website/tools/README.md    
+    website/tools/README.md
 
 nav:
 -   About: index.md
@@ -54,16 +55,14 @@ nav:
         -   metadata: extensions/docs/schema_meta.md
         -   objects: extensions/docs/schema_objects.md
         -   rules: extensions/docs/schema_rules.md
-        -   details: specification/schema/description.md
+        -   details: specification/schema/README.md
     -   BIDS stas model:
         -   about: stats_models/specification/index.md
         -   motivations: stats_models/specification/motivation.md
         -   walkthrough:
             -   intro: stats_models/specification/walkthrough-intro.md
             -   part-1: stats_models/specification/walkthrough-1.md
-            -   part-2: stats_models/specification/walkthrough-2.md
         -   integration: stats_models/specification/integration.md
-        -   json_101: stats_models/specification/json_101.md
         -   legacy: stats_models/specification/legacy.md
         -   specification:
             -   reference: stats_models/specification/reference.md
@@ -86,35 +85,6 @@ nav:
         -   release notes: execution/src/CHANGELOG.md
     -   Acknowledgments: website/_pages/acknowledgments.md
     -   Impact: grant/README.md
--   Tools:    
-    -   Benefits: website/_pages/benefits.md
-    -   BIDS apps:
-        -   about: apps/about.md
-        -   about: apps/tutorial.md
-        -   dashboard: apps/apps.md
--   Datasets:
-    -   dataset_examples: starter_kit/src/dataset_examples.md
--   Community:
-    -   Governance: website/_pages/governance.md
-    -   Code of conduct: 
-        -   specification: specification/CODE_OF_CONDUCT.md
-        -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
-        -   website: website/_pages/code_of_conduct.md
-    -   contributing:
-        -   apps: apps/CONTRIBUTING.md
-        -   grant: grant/CONTRIBUTING.md
-        -   wesbite: website/CONTRIBUTING.md
-        -   spec: specification/CONTRIBUTING.md
-        -   bids apps spec: execution/src/CONTRIBUTING.md
-        -   starter_kit: starter_kit/CONTRIBUTING.md
-       
--   Extensions:
-    -   Get involved: website/_pages/get_involved.md
-    -   intro: extensions/docs/index.md
-    -   general_guidelines: extensions/docs/general_guidelines.md
-    -   guide: extensions/docs/guide.md
-    -   submission: extensions/docs/submission.md
-    -   macros: specification/macros_doc.md
 -   Getting started:
     -   Get started: website/_pages/get_started.md
     -   landing page: starter_kit/src/index.md
@@ -122,6 +92,7 @@ nav:
         -   folders: starter_kit/src/folders_and_files/folders.md
         -   files: starter_kit/src/folders_and_files/files.md
         -   metadata: starter_kit/src/folders_and_files/metadata.md
+        -   json_101: stats_models/specification/json_101.md
         -   derivatives: starter_kit/src/folders_and_files/derivatives.md
     -   tutorials:
         -   annotation: starter_kit/src/tutorials/annotation.md
@@ -138,6 +109,35 @@ nav:
     -   others:
         -   validator: starter_kit/src/validator.md
         -   glossary: starter_kit/src/glossary.md
+-   Datasets:
+    -   dataset_examples: starter_kit/src/dataset_examples.md
+    -   examples: examples/README.md
+-   Tools:
+    -   Benefits: website/_pages/benefits.md
+    -   BIDS apps:
+        -   about: apps/about.md
+        -   about: apps/tutorial.md
+        -   dashboard: apps/apps.md
+-   Extensions:
+    -   Get involved: website/_pages/get_involved.md
+    -   intro: extensions/docs/index.md
+    -   general_guidelines: extensions/docs/general_guidelines.md
+    -   guide: extensions/docs/guide.md
+    -   submission: extensions/docs/submission.md
+    -   macros: specification/macros_doc.md
+-   Community:
+    -   Governance: website/_pages/governance.md
+    -   Code of conduct:
+        -   specification: specification/CODE_OF_CONDUCT.md
+        -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
+        -   website: website/_pages/code_of_conduct.md
+    -   contributing:
+        -   apps: apps/CONTRIBUTING.md
+        -   grant: grant/CONTRIBUTING.md
+        -   wesbite: website/CONTRIBUTING.md
+        -   spec: specification/CONTRIBUTING.md
+        -   bids apps spec: execution/src/CONTRIBUTING.md
+        -   starter_kit: starter_kit/CONTRIBUTING.md
 -   FAQ:
     -   general: starter_kit/src/FAQ.md
     -   extensions: extensions/docs/faq.md
@@ -153,7 +153,6 @@ theme:
     features:
     -   content.action.edit
     -   header.autohide
-    -   navigation.expand
     -   navigation.footer
     -   navigation.instant
     -   navigation.path

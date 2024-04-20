@@ -19,6 +19,8 @@ repos:
     hooks:
     -   id: codespell
         args: [--config=.codespellrc]
+        exclude:
+            docs/examples/README.md
 # -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
 #     rev: 0.2.3
 #     hooks:
