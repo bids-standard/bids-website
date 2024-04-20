@@ -46,48 +46,48 @@ exclude_docs: |
     website/tools/README.md
 
 nav:
--   About: index.md
+-   index.md
 -   Standards:
-    -   BIDS Specification: website/_pages/specification.md
+    -   website/_pages/specification.md
     -   BIDS schema:
-        -   schema: extensions/docs/schema.md
-        -   how it works: extensions/docs/how-the-schema-works.md
-        -   metadata: extensions/docs/schema_meta.md
-        -   objects: extensions/docs/schema_objects.md
-        -   rules: extensions/docs/schema_rules.md
-        -   details: specification/schema/README.md
-    -   BIDS stas model:
-        -   about: stats_models/specification/index.md
+        -   extensions/docs/schema.md
+        -   how it works:
+            -   extensions/docs/how-the-schema-works.md
+            -   metadata: extensions/docs/schema_meta.md
+            -   objects: extensions/docs/schema_objects.md
+            -   rules: extensions/docs/schema_rules.md
+        -   details:
+            -   specification/schema/README.md
+    -   BIDS stats model:
+        -   stats_models/specification/index.md
         -   motivations: stats_models/specification/motivation.md
         -   walkthrough:
-            -   intro: stats_models/specification/walkthrough-intro.md
+            -   stats_models/specification/walkthrough-intro.md
             -   part-1: stats_models/specification/walkthrough-1.md
         -   integration: stats_models/specification/integration.md
         -   legacy: stats_models/specification/legacy.md
         -   specification:
+            -   stats_models/specification/spec.md
             -   reference: stats_models/specification/reference.md
-            -   spec: stats_models/specification/spec.md
         -   examples and resources:
-            -   zoo: stats_models/specification/model-zoo.md
+            -   stats_models/specification/model-zoo.md
             -   default model: stats_models/specification/default_model.md
         -   variable transforms:
-            -   intro: variable-transform/README.md
+            -   variable-transform/README.md
             -   compute: variable-transform/spec/compute.md
             -   munge: variable-transform/spec/munge.md
     -   BIDS app specification:
-        -   intro: execution/src/index.md
+        -   execution/src/index.md
         -   scope: execution/src/scope.md
-        -   specification: execution/src/specification.md
-        -   user interface: execution/src/ui.md
-        -   inputs: execution/src/inputs.md
-        -   outputs: execution/src/outputs.md
-        -   examples: execution/src/examples.md
-        -   release notes: execution/src/CHANGELOG.md
-    -   Acknowledgments: website/_pages/acknowledgments.md
-    -   Impact: grant/README.md
+        -   specification:
+            -   execution/src/specification.md
+            -   user interface: execution/src/ui.md
+            -   inputs: execution/src/inputs.md
+            -   outputs: execution/src/outputs.md
+            -   examples: execution/src/examples.md
+            -   release notes: execution/src/CHANGELOG.md
 -   Getting started:
-    -   Get started: website/_pages/get_started.md
-    -   landing page: starter_kit/src/index.md
+    -   starter_kit/src/index.md
     -   folders and files:
         -   folders: starter_kit/src/folders_and_files/folders.md
         -   files: starter_kit/src/folders_and_files/files.md
@@ -95,31 +95,31 @@ nav:
         -   json_101: stats_models/specification/json_101.md
         -   derivatives: starter_kit/src/folders_and_files/derivatives.md
     -   tutorials:
+        -   starter_kit/src/tutorials/tutorials.md
+        -   conversion:
+            -   asl: starter_kit/src/tutorials/asl.md
+            -   ieeg: starter_kit/src/tutorials/ieeg.md
+            -   mri: starter_kit/src/tutorials/mri.md
+            -   pet: starter_kit/src/tutorials/pet.md
         -   annotation: starter_kit/src/tutorials/annotation.md
-        -   ieeg: starter_kit/src/tutorials/ieeg.md
-        -   asl: starter_kit/src/tutorials/asl.md
-        -   pet: starter_kit/src/tutorials/pet.md
-        -   mri: starter_kit/src/tutorials/mri.md
-        -   tutorials: starter_kit/src/tutorials/tutorials.md
     -   resources:
+        -   starter_kit/src/links.md
         -   talks: starter_kit/src/talks.md
         -   publications: starter_kit/src/publications.md
         -   dependencies: starter_kit/src/dependencies.md
-        -   links: starter_kit/src/links.md
-    -   others:
-        -   validator: starter_kit/src/validator.md
         -   glossary: starter_kit/src/glossary.md
 -   Datasets:
-    -   dataset_examples: starter_kit/src/dataset_examples.md
+    -   starter_kit/src/dataset_examples.md
     -   examples: examples/README.md
 -   Tools:
-    -   Benefits: website/_pages/benefits.md
+    -   website/_pages/benefits.md
+    -   Validator: starter_kit/src/validator.md
     -   BIDS apps:
-        -   about: apps/about.md
-        -   about: apps/tutorial.md
+        -   apps/about.md
+        -   tutorial: apps/tutorial.md
         -   dashboard: apps/apps.md
 -   Extensions:
-    -   Get involved: website/_pages/get_involved.md
+    -   website/_pages/get_involved.md
     -   intro: extensions/docs/index.md
     -   general_guidelines: extensions/docs/general_guidelines.md
     -   guide: extensions/docs/guide.md
@@ -144,6 +144,8 @@ nav:
     -   bids apps: apps/dev_faq.md
 -   Blog:
     -   blog/index.md
+-   Impact:
+    -   grant/README.md
 -   Contact: starter_kit/src/contact.md
 
 theme:
@@ -154,6 +156,7 @@ theme:
     -   content.action.edit
     -   header.autohide
     -   navigation.footer
+    -   navigation.indexes
     -   navigation.instant
     -   navigation.path
     -   navigation.sections
