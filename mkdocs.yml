@@ -14,8 +14,8 @@ plugins:
         date_from_meta:
             as_creation: date
         categories:
-            - categories
-            - tags
+        -   categories
+        -   tags
 
 docs_dir: docs
 
@@ -143,7 +143,7 @@ nav:
     -   extensions: extensions/docs/faq.md
     -   bids apps: apps/dev_faq.md
 -   Blog:
-    - blog/index.md
+    -   blog/index.md
 -   Contact: starter_kit/src/contact.md
 
 theme:
@@ -204,15 +204,15 @@ extra_javascript:
 copyright: Copyright &copy; BIDS Contributors - <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
 
 extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/BIDSstandard/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@bidsstandard
-    - icon: fontawesome/brands/google
-      link: https://groups.google.com/g/bids-discussion
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/bidsstandard/
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw
+    generator: false
+    social:
+    -   icon: fontawesome/brands/x-twitter
+        link: https://x.com/BIDSstandard/
+    -   icon: fontawesome/brands/mastodon
+        link: https://fosstodon.org/@bidsstandard
+    -   icon: fontawesome/brands/google
+        link: https://groups.google.com/g/bids-discussion
+    -   icon: fontawesome/brands/instagram
+        link: https://www.instagram.com/bidsstandard/
+    -   icon: fontawesome/brands/youtube
+        link: https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw

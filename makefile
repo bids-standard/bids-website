@@ -1,3 +1,5 @@
+update: update_from_spec update_from_examples
+
 update_from_spec:
 	rm -fr docs/specification
 	mkdir -p docs/specification/

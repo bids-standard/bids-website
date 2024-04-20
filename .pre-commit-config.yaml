@@ -8,7 +8,15 @@ repos:
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
-    # -   id: check-yaml
+        exclude: |
+            (?x)^(
+                docs/examples/README.md
+            )$
+    -   id: check-yaml
+        exclude: |
+            (?x)^(
+                mkdocs.yml
+            )$
     -   id: check-json
     -   id: check-added-large-files
     -   id: check-case-conflict
@@ -19,10 +27,17 @@ repos:
     hooks:
     -   id: codespell
         args: [--config=.codespellrc]
-        exclude:
-            docs/examples/README.md
-# -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-#     rev: 0.2.3
-#     hooks:
-#     -   id: yamlfmt
-#         args: [--mapping, '4', --sequence, '4', --offset, '0']
+        exclude: |
+            (?x)^(
+                docs/specification/.*
+            )$
+-   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    rev: 0.2.3
+    hooks:
+    -   id: yamlfmt
+        args: [--mapping, '4', --sequence, '4', --offset, '0']
+        exclude: |
+            (?x)^(
+                docs/specification/.*
+                | mkdocs.yml
+            )$
