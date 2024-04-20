@@ -25,10 +25,6 @@
 [submodule "docs/starter_kit"]
 	path = docs/starter_kit
 	url = https://github.com/bids-standard/bids-starter-kit.git
-[submodule "docs/specification"]
-	path = docs/specification
-	url = https://github.com/bids-standard/bids-specification.git
-	datalad-url = https://github.com/bids-standard/bids-specification.git
 [submodule "docs/variable-transform"]
 	path = docs/variable-transform
 	url = https://github.com/bids-standard/variable-transform.git
@@ -38,3 +34,6 @@
 [submodule "docs/website"]
 	path = docs/website
 	url = https://github.com/bids-standard/bids-website.git
+[submodule "specification"]
+	path = specification
+	url = https://github.com/bids-standard/bids-specification.git
