@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/05/25
 
-Date: Thursday, May 25th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -133,15 +133,15 @@ not been altered.
 
 Add a list of BIDS ignore files:
 
-> [[https://github.com/bids-standard/bids-validator/issues/1676]{.underline}](https://github.com/bids-standard/bids-validator/issues/1676)
+> [[https://github.com/bids-standard/bids-validator/issues/1676]](https://github.com/bids-standard/bids-validator/issues/1676)
 >
-> [[https://github.com/bids-standard/bids-validator/issues/1677]{.underline}](https://github.com/bids-standard/bids-validator/issues/1677)
+> [[https://github.com/bids-standard/bids-validator/issues/1677]](https://github.com/bids-standard/bids-validator/issues/1677)
 
 Should we reach out to the new **Imaging Neuroscience** journal while
 they are still developing their platform?
 
 Potentially reach out to someone on their [[editorial
-board]{.underline}](https://janeway.imaging-neuroscience.org/editorialteam/)
+board]](https://janeway.imaging-neuroscience.org/editorialteam/)
 - possible Thomas Yeo, Damian Fair
 
 ### NSF POSE WORKSHOP

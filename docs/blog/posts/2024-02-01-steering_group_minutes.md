@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2024/02/01
 
-Date: Thursday, February 1st, 2024
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -208,7 +208,7 @@ Round table
 
 
 
-[[https://washington.zoom.us/my/arokem]{.underline}](https://washington.zoom.us/my/arokem)
+[[https://washington.zoom.us/my/arokem]](https://washington.zoom.us/my/arokem)
 
 **Present:** Cyril Pernet, Kimberly Ray, Ariel Rokem, Camille Maumet,
 Yaroslav Halchenko, Rémi Gau
@@ -228,7 +228,7 @@ Yaroslav Halchenko, Rémi Gau
 
 -   Scope: For maintainers and / or BEP?
 
--   ACTION: [[arokem@gmail.com]{.underline}](mailto:arokem@gmail.com)
+-   ACTION: [[arokem@gmail.com]](mailto:arokem@gmail.com)
     contact maintainers to know what type of meetings and would be most
     useful for them
 
@@ -238,13 +238,13 @@ Yaroslav Halchenko, Rémi Gau
     progress and ongoing goals for the steering group?
 
 -   Important docs: We got an
-    [[onboarding]{.underline}](https://drive.google.com/drive/folders/1yx6VWptjdv1JOe0Ybpb48iMB0bCoG_Ae?usp=drive_link)folder
+    [[onboarding]](https://drive.google.com/drive/folders/1yx6VWptjdv1JOe0Ybpb48iMB0bCoG_Ae?usp=drive_link)folder
     for maintainers (probably overlap with onboarding steering) in the
     google drive and a [[BIDS accounts and
-    onboarding]{.underline}](https://docs.google.com/document/d/1vxUglvS_mfqIpHOFUtxYAb79zQTYMYhajc7pQfSqSl0/edit)
+    onboarding]](https://docs.google.com/document/d/1vxUglvS_mfqIpHOFUtxYAb79zQTYMYhajc7pQfSqSl0/edit)
 
 -   The google drive is where everything lives, Remi has a
-    [[CONTENT]{.underline}](https://docs.google.com/document/d/1kNcuI-phF_N40m0Kuo9PTTD0K7atz5FOvxhYtQCR1ms/edit#heading=h.cr010sb0buzg)
+    [[CONTENT]](https://docs.google.com/document/d/1kNcuI-phF_N40m0Kuo9PTTD0K7atz5FOvxhYtQCR1ms/edit#heading=h.cr010sb0buzg)
     file to help browse the google drive
 
 -   What?
@@ -270,7 +270,7 @@ Yaroslav Halchenko, Rémi Gau
 -   Could probably be PR?
 
 -   In any case, we should point them to the bids BEP guidelines:
-    [[https://bids-extensions.readthedocs.io/en/latest/guide/#when-and-how-to-start-a-bids-extension-proposal]{.underline}](https://bids-extensions.readthedocs.io/en/latest/guide/#when-and-how-to-start-a-bids-extension-proposal)
+    [[https://bids-extensions.readthedocs.io/en/latest/guide/#when-and-how-to-start-a-bids-extension-proposal]](https://bids-extensions.readthedocs.io/en/latest/guide/#when-and-how-to-start-a-bids-extension-proposal)
 
     -   BEP guidelines may require too high of a level of understanding
         of BIDS for a novice user
@@ -292,10 +292,10 @@ Yaroslav Halchenko, Rémi Gau
 -   Goal is to make BIDS more accessible and increase impact
 
 -   Similar to data carpentries:
-    [[https://carpentries.org/become-instructor/]{.underline}](https://carpentries.org/become-instructor/)
+    [[https://carpentries.org/become-instructor/]](https://carpentries.org/become-instructor/)
 
 -   Repronim fellowship:
-    [[https://www.repronim.org/fellowship]{.underline}](https://www.repronim.org/fellowship)
+    [[https://www.repronim.org/fellowship]](https://www.repronim.org/fellowship)
 
     -   This is more geared to help fellows create material for their
         own training
@@ -308,15 +308,15 @@ Yaroslav Halchenko, Rémi Gau
 
 -   Data carpentry BIDS "courses" in the carpentry incubator (**for
     users not trainers**):
-    [[https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055]{.underline}](https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055)
+    [[https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055]](https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055)
 
 -   Lighter version of an ambassador program:
-    [[https://www.softwareheritage.org/ambassadors/#becoming-an-ambassador]{.underline}](https://www.softwareheritage.org/ambassadors/#becoming-an-ambassador)
+    [[https://www.softwareheritage.org/ambassadors/#becoming-an-ambassador]](https://www.softwareheritage.org/ambassadors/#becoming-an-ambassador)
 
 -   Carpentries instructor certification:
-    [[https://carpentries.org/become-instructor/]{.underline}](https://carpentries.org/become-instructor/),
+    [[https://carpentries.org/become-instructor/]](https://carpentries.org/become-instructor/),
     and materials we can use/adapt:
-    [[https://carpentries.github.io/instructor-training/]{.underline}](https://carpentries.github.io/instructor-training/)
+    [[https://carpentries.github.io/instructor-training/]](https://carpentries.github.io/instructor-training/)
 
 ### OHBM
 

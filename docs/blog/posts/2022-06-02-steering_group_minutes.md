@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2022/06/02
 
-Date: Thursday, June 2, 2022
 
-<!--more-->
+
+
+
 
 
 <table>

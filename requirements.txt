@@ -3,3 +3,4 @@ mkdocs-rss-plugin
 mkdocs-macros-plugin
 Jinja2
 ruamel.yaml
+faqtory

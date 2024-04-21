@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2021/08/12
 
-Date: Thursday, August 12, 2021
 
-<!--more-->
+
+
+
 
 <table>
  <thead>

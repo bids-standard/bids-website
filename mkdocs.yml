@@ -28,6 +28,8 @@ exclude_docs: |
     website/_bep_collection/
     website/_pages/news
     website/_posts/
+    website/_pages/acknowledgments.md
+    website/_pages/get_started.md
     website/_pages/news.md
     website/_redirects/
     website/templates/
@@ -117,7 +119,10 @@ nav:
     -   Validator: starter_kit/src/validator.md
     -   Converters:
         -   website/_pages/benefits.md
-        - MRI: converters/mri.md
+        - MRI and PET: converters/mri_pet.md
+        - MEEG: converters/meeg.md
+        - physio: converters/physio.md
+        - other: converters/other.md
     -   BIDS apps:
         -   apps/about.md
         -   tutorial: apps/tutorial.md
@@ -173,6 +178,7 @@ theme:
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil
+        annotation: material/arrow-right-circle
     palette:
     -   media: (prefers-color-scheme)
         toggle:
@@ -202,6 +208,8 @@ markdown_extensions:
         -   name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
+- attr_list
+- md_in_html
 
 extra_javascript:
 -   https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js

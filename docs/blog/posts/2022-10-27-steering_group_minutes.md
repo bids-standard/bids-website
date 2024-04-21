@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2022/10/27
 
-Date: Thursday, Oct 27, 2022
 
-<!--more-->
+
+
+
 
 
 Kim Ray joins for the first time

@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/09/28
 
-Date: Thursday, Sept 28th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -155,7 +155,7 @@ submission
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
+[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Cyril Pernet, Ariel Rokem, Chris Markiewicz, Robert
 Oostenveld, Guiomar Niso, Yaroslav Halchenko
@@ -170,7 +170,7 @@ Meeting Notes:
 Remaining 2023 agendas are listed in the steering group
 
 Sign up sheet is
-[[here]{.underline}](https://docs.google.com/spreadsheets/d/1Ys52kgOebRxGPYSvowTcmaZhph8rZ0_kflFQ6jtRUU4/edit#gid=0)
+[[here]](https://docs.google.com/spreadsheets/d/1Ys52kgOebRxGPYSvowTcmaZhph8rZ0_kflFQ6jtRUU4/edit#gid=0)
 for assuming Kim's role in meeting management: Guiomar, Robert and Ariel
 take turns at the next three meetings. We won't meet on 21 Dec.
 
@@ -265,7 +265,7 @@ take turns at the next three meetings. We won't meet on 21 Dec.
 
 -   Robert will invite the leads of the NIBS BEP (non invasive brain
     stimulation,
-    [[BEP037]{.underline}](https://bids.neuroimaging.io/bep037)) to ask
+    [[BEP037]](https://bids.neuroimaging.io/bep037)) to ask
     whether they want to attend the next or next-next BIDS meeting.
 
 **More generally: BIDS advisory group (i.e., BEP leads) engagement**

@@ -3,8 +3,6 @@ hide:
   - navigation
 ---
 
-# About BIDS
-
 Neuroimaging experiments result in complex data that can be arranged in many different ways.
 For a long time, there was no consensus how to organize and share data obtained in neuroimaging experiments.
 Even two researchers working in the same lab could opt to arrange their data in a different way.

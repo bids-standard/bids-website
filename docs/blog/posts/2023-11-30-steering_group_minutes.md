@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/11/30
 
-Date: Thursday, November 30th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -108,7 +108,7 @@ https://www.ericholscher.com/roadmap/
  </tbody>
 </table>
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
+[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Guio, Robert, Cyril, Camille, Ariel, Dora, Ross
 
@@ -124,7 +124,7 @@ discussed at the BIDS Steering Group meeting.
 We have implemented a few of the suggestions that were discussed:
 
 -\> The [[author
-guidelines]{.underline}](https://urldefense.com/v3/__https://apertureneuro.org/for-authors__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdBKU8W3m$)
+guidelines]](https://urldefense.com/v3/__https://apertureneuro.org/for-authors__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdBKU8W3m$)
 now explicitly state that we recommend people to share their data in
 BIDS. This needs to be mentioned in the manuscript with the respective
 BIDS validator version. This is optional, though. If authors share their
@@ -135,7 +135,7 @@ alone.
 -\> We recommend authors to include BIDS as one of the key-words. This
 means that manuscripts can be sorted based on this flag. This then also
 extends to 'tags' in URLs: as
-[[https://apertureneuro.org/articles?tag=BIDS]{.underline}](https://urldefense.com/v3/__https://apertureneuro.org/articles?tag=BIDS__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdF3Fwu2O$).
+[[https://apertureneuro.org/articles?tag=BIDS]](https://urldefense.com/v3/__https://apertureneuro.org/articles?tag=BIDS__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdF3Fwu2O$).
 
 This feature is new for articles that are being typesetter via a
 Apertures new vendor. Thus, there are no articles with this tag yet.
@@ -153,12 +153,12 @@ Aperture Neuro followup:
 We can use Aperture Neuro as an example: How can journal editors
 contribute to the BIDS ecosystem? This will give us a good basis for
 further conversations with other journal editors. See
-[[https://github.com/bids-standard/bids-website/issues/359]{.underline}](https://github.com/bids-standard/bids-website/issues/359)
+[[https://github.com/bids-standard/bids-website/issues/359]](https://github.com/bids-standard/bids-website/issues/359)
 
 """
 
 -   For data documentation, it is advised to use the BIDS format
-    ([[https://bids.neuroimaging.io/]{.underline}](https://bids.neuroimaging.io/)).
+    ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
     It is recommended that the authors check the respective box in the
     submission form. It is recommended that authors use 'BIDS' as one of
     the key-words of the manuscript. And it is recommended that authors
@@ -194,12 +194,12 @@ approach for rewriting/updating documentation. She said the INCF had
 used them with good success but finding and managing the technical
 writer can be tricky.
 
-[[https://developers.google.com/season-of-docs]{.underline}](https://developers.google.com/season-of-docs)
+[[https://developers.google.com/season-of-docs]](https://developers.google.com/season-of-docs)
 
 [[Timeline for Google Season of Docs
-2023]{.underline}](https://developers.google.com/season-of-docs/docs/timeline)
+2023]](https://developers.google.com/season-of-docs/docs/timeline)
 
-[[https://developers.google.com/season-of-docs/docs/2019/participants/project-incf-1]{.underline}](https://developers.google.com/season-of-docs/docs/2019/participants/project-incf-1)
+[[https://developers.google.com/season-of-docs/docs/2019/participants/project-incf-1]](https://developers.google.com/season-of-docs/docs/2019/participants/project-incf-1)
 
-[[https://www.ericholscher.com/roadmap/]{.underline}](https://www.ericholscher.com/roadmap/)
+[[https://www.ericholscher.com/roadmap/]](https://www.ericholscher.com/roadmap/)
 he is the developer of ReadTheDocs and offers consultancy for 2,500 USD.

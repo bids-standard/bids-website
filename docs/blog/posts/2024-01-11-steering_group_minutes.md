@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2024/01/11
 
-Date: Thursday, January 11th, 2024
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -109,7 +109,7 @@ Date: Thursday, January 11th, 2024
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
+[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Dora Hermes, Kimberly Ray, Ariel Rokem, Cyril Pernet,
 Camille Maumet, Yaroslav Halchenko, Stefan Appelhoff
@@ -135,7 +135,7 @@ Github project is established with many ideas but there aren\'t many
 \'takers' on completing the suggested items.
 
 -   Creating a more flexible hierarchy for BIDS
-    ([[https://github.com/bids-standard/bids-2-devel/issues/54]{.underline}](https://github.com/bids-standard/bids-2-devel/issues/54)
+    ([[https://github.com/bids-standard/bids-2-devel/issues/54]](https://github.com/bids-standard/bids-2-devel/issues/54)
     )
 
 -   What are the most important items that should be attended to?
@@ -213,9 +213,9 @@ Github project is established with many ideas but there aren\'t many
 
         -
 
-    -   [[Yaroslav Halchenko]{.underline}](mailto:yarikoptic@gmail.com)
+    -   [[Yaroslav Halchenko]](mailto:yarikoptic@gmail.com)
         will create a pull request on github:
-        [[https://github.com/bids-standard/bids-starter-kit/pull/376]{.underline}](https://github.com/bids-standard/bids-starter-kit/pull/376)
+        [[https://github.com/bids-standard/bids-starter-kit/pull/376]](https://github.com/bids-standard/bids-starter-kit/pull/376)
 
     -
 

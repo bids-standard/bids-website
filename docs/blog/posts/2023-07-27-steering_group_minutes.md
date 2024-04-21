@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/07/27
 
-Date: Thursday, July 27th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -144,7 +144,7 @@ Ray
 -   How/When do we know when BIDS 2.0 is ready?
 
 -   Anthony says that the [[schema is
-    complete]{.underline}](https://imgflip.com/i/7txwm7)
+    complete]](https://imgflip.com/i/7txwm7)
 
 -   New BIDS issue for BIDS 2.0 specification & [project board](https://github.com/orgs/bids-standard/projects/10/views/1?layout=board).
 

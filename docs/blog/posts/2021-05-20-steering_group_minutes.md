@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2021/05/20
 
-Date: Thursday, May 20, 2021
 
-<!--more-->
+
+
+
 
 
 <table>

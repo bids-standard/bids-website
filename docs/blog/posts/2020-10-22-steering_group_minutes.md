@@ -4,11 +4,11 @@ slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 ---
 
-# Steering Group executive summary, action items, and minutes
 
-Date: Thursday October 22, 2020
 
-<!--more-->
+
+
+
 
 ### Executive Summary
 

@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/06/15
 
-Date: Thursday, June 15th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>

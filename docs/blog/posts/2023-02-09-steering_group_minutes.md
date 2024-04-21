@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/02/09
 
-Date: Thursday, February 9th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>

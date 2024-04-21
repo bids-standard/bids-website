@@ -14,3 +14,6 @@ update_from_examples:
 	rm -fr docs/examples
 	mkdir -p docs/examples
 	cp -r examples/README.md docs/examples/README.md
+
+update_faq: update_bep_list
+	faqtory build

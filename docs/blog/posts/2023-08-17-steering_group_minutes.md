@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/08/17
 
-Date: Thursday, August 17th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -206,7 +206,7 @@ BIDS Meeting Notes:
 
         -   Damien Fair, Peter Bandettini, EBrains? (Maurizio Corbetta, Katrin Amunts), Simon Eickhoff
 
-        -   [[https://docs.google.com/spreadsheets/d/1gYfP1C84e1\_81HPIGBbXl8v\_Z3b43uCLGHBa0RhtnOM/edit\#gid=0]{.underline}](https://docs.google.com/spreadsheets/d/1gYfP1C84e1_81HPIGBbXl8v_Z3b43uCLGHBa0RhtnOM/edit#gid=0)
+        -   [[https://docs.google.com/spreadsheets/d/1gYfP1C84e1\_81HPIGBbXl8v\_Z3b43uCLGHBa0RhtnOM/edit\#gid=0]](https://docs.google.com/spreadsheets/d/1gYfP1C84e1_81HPIGBbXl8v_Z3b43uCLGHBa0RhtnOM/edit#gid=0)
 
     -   We should ask individuals involved with larger projects to write
         on behalf of impact for their respective organizations (

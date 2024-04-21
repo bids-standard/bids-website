@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/10/19
 
-Date: Thursday, October 19th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -169,7 +169,7 @@ governance amendment
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
+[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Guiomar, Ariel, Robert, (Cyril, Yaroslav)
 
@@ -179,7 +179,7 @@ governance amendment
 BIDS Meeting Notes:
 
 Next year we should be in time for the [[Chan-Zuckerberg funding
-scheme]{.underline}](https://chanzuckerberg.com/science/science-funding/).
+scheme]](https://chanzuckerberg.com/science/science-funding/).
 It is aimed at software, but we have plenty of that. Now it just closed
 2 days ago.
 
@@ -197,10 +197,10 @@ funds? I could check if I could "subcontract/consult" them out to those
 through Dartmouth.
 
 Roundtable (Town Hall) proposal:
-[[https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit]{.underline}](https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit)
+[[https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit]](https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit)
 
 Symposium proposal:
-[[https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg]{.underline}](https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg)
+[[https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg]](https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg)
 
 ### Seattle meeting proposed attendee list (PLEASE ADD PEOPLE):
 

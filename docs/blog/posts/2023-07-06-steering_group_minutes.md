@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/07/06
 
-Date: Thursday, July 6th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -145,7 +145,7 @@ Date: Thursday, July 6th, 2023
 ### BIDS impact
 
 Zotero collection for tracking BIDS related publications, BEPs, and so on:
-[[https://www.zotero.org/groups/5111637/bids]{.underline}](https://www.zotero.org/groups/5111637/bids)
+[[https://www.zotero.org/groups/5111637/bids]](https://www.zotero.org/groups/5111637/bids)
 
 The BIDS grant writing kit could be updated
 
@@ -160,9 +160,9 @@ Overall great feedback for this initial draft -
 Suggested to include grant writing boilerplate info about BIDS stats
 
 Add rationale at the beginning of both the [[BIDS grant writing
-kit]{.underline}](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit#heading=h.pb4yuopfe1pt)
+kit]](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit#heading=h.pb4yuopfe1pt)
 and [[Remi's github
-dashboard]{.underline}](https://github.com/bids-standard/grant_writing_kit/blob/main/README.md#dashboards)
+dashboard]](https://github.com/bids-standard/grant_writing_kit/blob/main/README.md#dashboards)
 
 Is the BIDS granting writing kit meant to support building the BIDS
 community or for users to mention BIDS in their grants.
@@ -170,7 +170,7 @@ community or for users to mention BIDS in their grants.
 Where can we document the various grants that have been inspired by
 BIDS? Can we also include a link to the funding proposal\
 Google Analytics on [[Grant writing
-kit]{.underline}](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit)
+kit]](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit)
 need to be updated:
 
 For visualizing our metrics, we have put together 2 dashboards:

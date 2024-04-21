@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2022/12/08
 
-Date: Thursday, December 8th, 2022
 
-<!--more-->
+
+
+
 
 
 <table>

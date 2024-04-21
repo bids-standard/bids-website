@@ -13,9 +13,9 @@ TEMPLATES_DIR = ROOT / "templates"
 WEBSITE_DATA_DIR = ROOT / "docs" / "website" / "_data"
 
 
-def generate_converter_table():
+def generate_converter_table(file):
 
-    input_file = WEBSITE_DATA_DIR / "converters.yml"
+    input_file = WEBSITE_DATA_DIR / file
 
     content = yaml.load(input_file)
 
@@ -26,13 +26,16 @@ def generate_converter_table():
         trim_blocks=True,
     )
 
-    template = env.get_template("converters_table.jinja")
+    template = env.get_template("converters_table_md.jinja")
 
     return template.render(include=content[0])
 
 
 def main():
-    generate_converter_table()
+    generate_converter_table(file="converters.yml")
+    generate_converter_table(file="physio_converters.yml")
+    generate_converter_table(file="other_converters.yml")
+    generate_converter_table(file="MEEG_converters.yml")
 
 
 if __name__ == "__main__":

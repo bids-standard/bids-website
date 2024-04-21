@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2024/02/22
 
-Date: Thursday, February 22nd, 2024
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -103,7 +103,7 @@ Online Presence Working Group: Working Document
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
+[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Yarik, Kim, Ariel, Cyril, Eric, Christine, Camille
 
@@ -135,21 +135,21 @@ Online Presence Working Group: Working Document
 
 BEP39 for dimensionality reduction-based networks
 
-[[https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45]{.underline}](https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45)
+[[https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45]](https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45)
 
 -   May need to introduce new terminology (something akin to an
     \'index', param-mixing, param-components, something akin to
     \'model')
 
     -   Eric suggests instead of \'index' potentially like
-        [[\*\_aslcontext.tsv]{.underline}](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+        [[\*\_aslcontext.tsv]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
-        -   [[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]{.underline}](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+        -   [[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
     -   \<modality\>map : discussion determined *modality* is a suffix
 
         -   Related discussion
-            [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]{.underline}](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
+            [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
 
     -   \'model-ICA_description.json' : suggestion to rename file as
         \'dataset_dscription.json' and include \'DatasetType: model" and
@@ -160,7 +160,7 @@ BEP39 for dimensionality reduction-based networks
 
 -   Interoperability : BIDS-Prov
 
-    -   [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]{.underline}](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
+    -   [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
 
     -   Software parameters is similar to BIDS-prov's Parameters
         description (what is the specific file?)

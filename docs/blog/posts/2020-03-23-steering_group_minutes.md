@@ -4,13 +4,13 @@ slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 ---
 
-# Steering Group executive summary, action items, and minutes
 
-Date: Thursday March 5, 2020
+
+
 
 Attended: Franklin Feingold, Melanie Ganz, Guiomar Niso, Robert Oostenveld
 
-<!--more-->
+
 
 ### Executive Summary
 

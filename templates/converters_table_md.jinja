@@ -1,0 +1,13 @@
+# {{ include.name }}
+
+{{ include.comment }}
+
+| Name  | Expected input | Language | Distribution | Updated |
+| :---: | :------------  | :------  | :----------  | :-----: |
+{% for converter in include.members %}
+{% set converter_url = converter.url %}
+{% if converter.documentation %}
+  {% set converter_url = converter.documentation %}
+{% endif %}
+| [{{ converter.name }}]( {{ converter_url }} "{{ converter.comment | replace("\n", " ") }}" ) | <ul> {% for input in converter.expected_input %} <li> {{ input }} </li> {% endfor %} </ul> | <ul> {% for lang in converter.language %} <li> {{ lang }} </li> {% endfor %} </ul> | {% for entry in converter.distribution %} {% if entry.name == "pypi" %} [![PyPI version](https://badge.fury.io/py/{{ entry.url | replace("https://pypi.org/project/", "") }}.svg)]({{ entry.url }}) <br> {% elif entry.name == "dockerhub" %} [![dockerhub pulls](https://img.shields.io/docker/pulls/{{ entry.url | replace("https://hub.docker.com/r/", "")}}.svg)]({{ entry.url }}) <br> {% elif entry.name == "conda-forge" %} [![conda forge]({{ entry.url }}badges/version.svg)]({{ entry.url }}) <br> {% else %} [entry.name](entry.url) <br> {% endif %} {% endfor %} | !["GitHub last commit"](https://img.shields.io/github/last-commit/{{ converter.url | replace("https://github.com/", "") }}?style=plastic) |
+{% endfor %}

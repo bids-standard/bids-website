@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2023/11/09
 
-Date: Thursday, November 9th, 2023
 
-<!--more-->
+
+
+
 
 
 <table>
@@ -124,7 +124,7 @@ history timeline
 
 
 
-[[https://utexas.zoom.us/my/kimray]{.underline}](https://utexas.zoom.us/my/kimray)
+[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:**
 
@@ -154,9 +154,9 @@ free-format. Christine volunteered to be one of the speakers, which is
 very welcome for a more diverse representation.
 
 [[OHBM Round
-table]{.underline}](https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit)
+table]](https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit)
 
-[[BIDS_Symposium_OHBM_2024]{.underline}](https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit?pli=1#heading=h.vapm8s87pxc2)
+[[BIDS_Symposium_OHBM_2024]](https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit?pli=1#heading=h.vapm8s87pxc2)
 
 We should invite the Chinese and Korean chapters of OHBM to join (or
 have a representative join) in the round table meeting. ACTIO POINT:

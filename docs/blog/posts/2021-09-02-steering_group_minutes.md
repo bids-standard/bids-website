@@ -4,11 +4,11 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-# Steering Group minutes 2021/09/02
 
-Date: Thursday, September 2, 2021
 
-<!--more-->
+
+
+
 
 <table>
  <thead>
