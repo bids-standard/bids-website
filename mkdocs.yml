@@ -8,7 +8,6 @@ plugins:
 -   tags
 -   social
 -   blog
-    # post_url_format: "{date}/{slug}"
 -   rss:
         match_path: blog/posts/.*
         date_from_meta:
@@ -16,6 +15,8 @@ plugins:
         categories:
         -   categories
         -   tags
+-   macros:
+        module_name: macros/main
 
 docs_dir: docs
 
@@ -114,6 +115,9 @@ nav:
 -   Tools:
     -   website/_pages/benefits.md
     -   Validator: starter_kit/src/validator.md
+    -   Converters:
+        -   website/_pages/benefits.md
+        - MRI: converters/mri.md
     -   BIDS apps:
         -   apps/about.md
         -   tutorial: apps/tutorial.md

@@ -1,0 +1,21 @@
+# For PEP8 error codes see
+# http://pep8.readthedocs.org/en/latest/intro.html#error-codes
+
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+	env,
+	venv
+
+--select = D,E,F,W,C90,CFQ
+--extend-select=B950
+
+max-line-length = 79
+
+; ignore =
+; per-file-ignores =
+
+# for compatibility with black
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#flake8
+extend-ignore = E203, E501

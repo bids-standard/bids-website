@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from rich import print
 
 root = Path(__file__).parents[1]
@@ -23,16 +24,20 @@ for file in input_folder.glob("*.md"):
 
     print(output_folder / f"{year}-{month}-{day}_{title}.md")
 
-    with open(file, 'r') as f:
+    with open(file, "r") as f:
         content = f.readlines()
 
-    with open(output_folder / f"{year}-{month}-{day}-{title}", 'w') as f:
+    with open(output_folder / f"{year}-{month}-{day}-{title}", "w") as f:
         is_frontmatter = False
         frontmatter_done = False
         for line in content:
 
             if frontmatter_done:
-                f.write(line.replace('{:target:"_blank"}', "").replace('{:target="_blank"}', ""))
+                f.write(
+                    line.replace('{:target:"_blank"}', "").replace(
+                        '{:target="_blank"}', ""
+                    )
+                )
                 continue
 
             if line.startswith("---"):

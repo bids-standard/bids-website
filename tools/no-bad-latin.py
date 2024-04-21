@@ -99,7 +99,16 @@ def read_and_check_files(files):
                   containing the offending line.
     """
     failing_files = {}
-    bad_latin = [" i.e.", " i.e ", " ie ", " e.g.", " e.g", " e.t.c.", " etc", " et cetera"]
+    bad_latin = [
+        " i.e.",
+        " i.e ",
+        " ie ",
+        " e.g.",
+        " e.g",
+        " e.t.c.",
+        " etc",
+        " et cetera",
+    ]
 
     for filename in files:
         if os.path.basename(filename) in IGNORE_LIST:
@@ -129,7 +138,7 @@ def read_and_check_files(files):
     return failing_files
 
 
-def get_all_files(directory=os.path.join(ABSOLUTE_HERE, "docs")):
+def get_all_files(directory=None):
     """Get a list of files to be checked. Ignores images, javascript, css files.
 
     Keyword Arguments:
@@ -138,6 +147,8 @@ def get_all_files(directory=os.path.join(ABSOLUTE_HERE, "docs")):
     Returns:
         {list} -- List of files to check
     """
+    if directory is None:
+        directory = os.path.join(ABSOLUTE_HERE, "docs")
     files = []
     for rootdir, _, filenames in os.walk(directory):
         for filename in filenames:

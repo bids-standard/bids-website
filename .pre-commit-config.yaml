@@ -22,6 +22,7 @@ repos:
     -   id: check-case-conflict
     -   id: check-merge-conflict
     -   id: mixed-line-ending
+
 -   repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
@@ -31,6 +32,8 @@ repos:
             (?x)^(
                 docs/specification/.*
             )$
+
+
 -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: 0.2.3
     hooks:
@@ -41,3 +44,33 @@ repos:
                 docs/specification/.*
                 | mkdocs.yml
             )$
+
+
+
+-   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.13.0
+    hooks:
+    -   id: pretty-format-toml
+        args: [--autofix, --indent, '4']
+
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.4.0
+    hooks:
+    -   id: black
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+    -   id: codespell
+
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
+        args: [--config, .flake8, --verbose, tools]
+        additional_dependencies: [flake8-bugbear]
