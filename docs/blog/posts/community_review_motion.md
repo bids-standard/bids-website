@@ -2,15 +2,13 @@
 date: 2023-02-22
 slug: "BIDS community review for BEP029: Motion"
 author: Stefan Appelhoff
+categories:
+  - community review
 ---
-
-
 
 The BIDS community is preparing to merge the BIDS Extension Proposal 29 (BEP029) for Motion data.
 
-
-
-
+<!-- more -->
 
 The updated draft is available for review at:
 
@@ -31,7 +29,3 @@ Afterwards, the BEP will be merged into the BIDS specification, followed by a 5-
 For more details on the release protocol, please see:
 
 [https://github.com/bids-standard/bids-specification/blob/master/Release_Protocol.md](https://github.com/bids-standard/bids-specification/blob/master/Release_Protocol.md)
-
-We look forward to hearing your feedback!
-
-The BIDS maintainers

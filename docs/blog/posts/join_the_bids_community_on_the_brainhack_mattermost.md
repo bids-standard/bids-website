@@ -4,11 +4,9 @@ slug: Join the BIDS community on the BrainHack Mattermost
 author: Franklin Feingold
 ---
 
-
-
 BIDS is joining the [BrainHack Mattermost](https://mattermost.brainhack.org/)!
 
-
+<!-- more -->
 
 We are proud to announce our home for hosting BIDS organization instant messaging: the [BrainHack Mattermost platform](https://mattermost.brainhack.org/)! In the past few years, several BIDS channels have independently been created on Mattermost by the community.
 The Steering Group and Maintainers Group have chosen to recognize the BrainHack Mattermost as a member of our organizations's official communication suite.

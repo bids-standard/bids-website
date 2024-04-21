@@ -6,21 +6,21 @@ author: Franklin Feingold and Taylor Salo
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 This was a joint meeting between the Steering and Maintainers Group. We began this meeting by discussing the status of the [ASL BEP](https://github.com/bids-standard/bids-specification/pull/669). This BEP has completed the community review and the Maintainers are preparing to incorporate the extension into the standard. We found large portions of [BEP001](https://github.com/bids-standard/bids-specification/pulls?q=is%3Apr+bep001) will also go into the next release. We spent the majority of our meeting discussing how we can provide guidance to BEP leads regarding [crediting the Steering and Maintainers group](https://github.com/bids-standard/bids-specification/issues/627). We evaluated several different potential approaches.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
 | BEP lead guidance document regarding how to credit contributions |
 
-### Minutes
+## Minutes
 
 - [ASL BEP](https://github.com/bids-standard/bids-specification/pull/669) and next release:
   - Whether to merge ASL BEP before holidays will be left up to Maintainers.

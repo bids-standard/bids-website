@@ -4,9 +4,9 @@ slug: Meet the BIDS Steering Group
 author: Kirstie Whitaker
 ---
 
-## Meet the BIDS Steering Group
-
 In October 2019, the BIDS community [voted](https://github.com/bids-standard/bids-specification/issues/355) to ratify a new governance structure and to [elect five members](https://drive.google.com/file/d/1mv_fOjeQbpAu6fVPKnTerXp-it6F59wi/view) to oversee the development and adoption of the standard.
+
+<!-- more -->
 
 Each member of the steering group has their own priorities, but we share a common ambition: to help neuroimaging research more open, interoperable and efficient.
 We think the Brain Imaging Data Structure, the standard and its community, are a key pathway to achieve this goal.

@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
-
-
-
+<!-- more -->
 
 <table>
  <colgroup>
@@ -122,14 +117,9 @@ history timeline
  </tbody>
 </table>
 
-
-
-[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
-
 **Present:**
 
 **Guest:** no guest planned
-
 
 BIDS Meeting Notes:
 

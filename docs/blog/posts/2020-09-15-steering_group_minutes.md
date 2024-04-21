@@ -7,21 +7,21 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
-
-### Executive Summary
+## Executive Summary
 
 We discussed the progress of a few different BEPs. It has been seen that guiding specification development by examples is quite beneficial. We talked through our process for getting a BEP merged into the standard.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
 | Add grant writing kit to website    |
 | News piece introducing our organizational design |
 
-### Minutes
+## Minutes
 
 - Motion and fNIRs BEPs moving along
   - Examples are quite helpful

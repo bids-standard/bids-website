@@ -7,7 +7,8 @@ plugins:
 -   search
 -   tags
 -   social
--   blog
+-   blog:
+        archive_pagination_per_page: 20
 -   rss:
         match_path: blog/posts/.*
         date_from_meta:
@@ -89,6 +90,32 @@ nav:
             -   outputs: execution/src/outputs.md
             -   examples: execution/src/examples.md
             -   release notes: execution/src/CHANGELOG.md
+-   Tools:
+    -   website/_pages/benefits.md
+    -   Validator: starter_kit/src/validator.md
+    -   Converters:
+        -   website/_pages/benefits.md
+        - MRI and PET: converters/mri_pet.md
+        - MEEG: converters/meeg.md
+        - physio: converters/physio.md
+        - other: converters/other.md
+    -   BIDS apps:
+        -   apps/about.md
+        -   tutorial: apps/tutorial.md
+        -   dashboard: apps/apps.md
+-   Collaboration:
+    -   Governance: website/_pages/governance.md
+    -   Code of conduct:
+        -   specification: specification/CODE_OF_CONDUCT.md
+        -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
+        -   website: website/_pages/code_of_conduct.md
+    -   contributing:
+        -   apps: apps/CONTRIBUTING.md
+        -   grant: grant/CONTRIBUTING.md
+        -   wesbite: website/CONTRIBUTING.md
+        -   spec: specification/CONTRIBUTING.md
+        -   bids apps spec: execution/src/CONTRIBUTING.md
+        -   starter_kit: starter_kit/CONTRIBUTING.md
 -   Getting started:
     -   starter_kit/src/index.md
     -   folders and files:
@@ -114,19 +141,6 @@ nav:
 -   Datasets:
     -   starter_kit/src/dataset_examples.md
     -   examples: examples/README.md
--   Tools:
-    -   website/_pages/benefits.md
-    -   Validator: starter_kit/src/validator.md
-    -   Converters:
-        -   website/_pages/benefits.md
-        - MRI and PET: converters/mri_pet.md
-        - MEEG: converters/meeg.md
-        - physio: converters/physio.md
-        - other: converters/other.md
-    -   BIDS apps:
-        -   apps/about.md
-        -   tutorial: apps/tutorial.md
-        -   dashboard: apps/apps.md
 -   Extensions:
     -   website/_pages/get_involved.md
     -   intro: extensions/docs/index.md
@@ -134,19 +148,6 @@ nav:
     -   guide: extensions/docs/guide.md
     -   submission: extensions/docs/submission.md
     -   macros: specification/macros_doc.md
--   Community:
-    -   Governance: website/_pages/governance.md
-    -   Code of conduct:
-        -   specification: specification/CODE_OF_CONDUCT.md
-        -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
-        -   website: website/_pages/code_of_conduct.md
-    -   contributing:
-        -   apps: apps/CONTRIBUTING.md
-        -   grant: grant/CONTRIBUTING.md
-        -   wesbite: website/CONTRIBUTING.md
-        -   spec: specification/CONTRIBUTING.md
-        -   bids apps spec: execution/src/CONTRIBUTING.md
-        -   starter_kit: starter_kit/CONTRIBUTING.md
 -   FAQ:
     -   general: starter_kit/src/FAQ.md
     -   extensions: extensions/docs/faq.md

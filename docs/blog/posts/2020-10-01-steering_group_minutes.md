@@ -5,16 +5,16 @@ author: Franklin Feingold
 ---
 
 
+<!-- more -->
 
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 Maintainers group confirmed with the ASL BEP team the timeline for submitting and merging in their specification. A plan is being generated for merging in the PET BEP. A discussion was started on [recommendations for crediting the Steering and Maintainers Group in manuscripts](https://github.com/bids-standard/bids-specification/issues/627). This conversation will be continued at the next meeting.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
@@ -22,7 +22,7 @@ Maintainers group confirmed with the ASL BEP team the timeline for submitting an
 | Establish schedule for reviewing and approving PET BEP |
 | [Revisit credit conversation](https://github.com/bids-standard/bids-specification/issues/627) |
 
-### Minutes
+## Minutes
 
 - Established timetable for reviewing and approving BIDS-ASL
 - Generating BIDS-PET timeline for reviewing and approving

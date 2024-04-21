@@ -6,23 +6,23 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We began this meeting by discussing the current progress of the [ASL BEP](https://github.com/bids-standard/bids-specification/pull/669). There are a few items the BIDS Maintainers are working with the BEP leads to resolve. We hope to complete this work and continue the progress of incorporating this BEP into the standard. We decided to push the conversation on [crediting BIDS in manuscripts](https://github.com/bids-standard/bids-specification/issues/627) to our next meeting.
 
 The majority of this meeting we were joined by Melissa Kline of the [Psych-DS](https://github.com/psych-ds/psych-DS) project. The Psych-DS project seeks to standardize behavioral experiments. Psych-DS is quite flexible and can adapt to many different use cases. One key recommendation they have is to compose well structured tsv files. A challenge they have faced is thinking through the directory structure due to the heterogeneity present in behavioral studies. They do not have many keywords and intend to stick to that approach. They would prefer to link to existing ontologies.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
 | N/A |
 
-### Minutes
+## Minutes
 
 - Reviewed [BIDS ASL](https://github.com/bids-standard/bids-specification/pull/669) progress
   - Few more things to iron out

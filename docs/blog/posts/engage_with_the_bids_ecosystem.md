@@ -4,11 +4,9 @@ slug: Engage with the BIDS ecosystem
 author: Franklin Feingold
 ---
 
-
-
 Tell us the best way for you to participate within our global community.
 
-
+<!-- more -->
 
 The BIDS Steering group has identified and prioritized enhancing our community engagement and communication across our vast ecosystem.
 This covers how the Steering Group and associated teams (for example Maintainers and BEPs) correspond with the BIDS community and the broader brain research field.

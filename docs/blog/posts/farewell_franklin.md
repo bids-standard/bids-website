@@ -4,13 +4,9 @@ slug: Farewell to Franklin
 author: Stefan Appelhoff
 ---
 
-
-
 Franklin leaves the BIDS maintainers team to move on to new adventures.
 
-
-
-
+<!-- more -->
 
 In the past four and a half years, Franklin has dedicated lots of his energy towards making BIDS a thriving project.
 With his focus on the BIDS community, Franklin has played played a major role in several key developments.

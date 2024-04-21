@@ -4,15 +4,14 @@ slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 ---
 
-
-
+<!-- more -->
 
 
 Attended: Franklin Feingold, Melanie Ganz, Guiomar Niso, Robert Oostenveld
 
 
 
-### Executive Summary
+## Executive Summary
 
 We reviewed the action items from the previous two meetings. We discussed the framework for the BIDS community slides and how this information can be formatted and designed for future extensions and derived versions. We will draft an approach for organizing BIDS related meetings to pilot at NRM and OHBM in June.
 
@@ -22,7 +21,7 @@ The attending members of the Steering Group gave approval for moving forward wit
 
 The Steering Group gave direction on handling author lists on Zenodo - make it a single author: “BIDS Contributors Group” as defined in the [governance document](https://docs.google.com/document/d/1R-J2lL9V_wIkYhye4zH-feyl4P4J8NyO40rIYyY141o/edit).
 
-### Action Items
+## Action Items
 
 | Action Item |
 | -------- |
@@ -35,7 +34,7 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 | Codify rules for making a repository under the BIDS standard GitHub organization |
 | Share Steering Meeting: executive summary, action items, and minutes to bids-website |
 
-### Minutes
+## Minutes
 
 - Reviewed [previous meeting action items](https://bids.neuroimaging.io/2020/03/12/Steering-Group-executive-summary,-action-items,-and-minutes.html#action-items)
   - A [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGjTA-U_1LECRsbuBQ9X7kdi34aEdxTMoWCwwkEgou-qpb4A/viewform) with an accompanying [blog post](https://bids.neuroimaging.io/2020/03/20/engage-with-the-bids-ecosystem.html) was drafted to evaluate how the community would like to engage with each other, what barriers may exist that makes engaging more challenging, and ways that we can engage colleagues that do not know about BIDS.

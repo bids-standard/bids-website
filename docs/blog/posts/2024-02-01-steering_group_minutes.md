@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
-
-
-
+<!-- more -->
 
 <table>
  <colgroup>
@@ -206,9 +201,6 @@ Round table
  </tbody>
 </table>
 
-
-
-[[https://washington.zoom.us/my/arokem]](https://washington.zoom.us/my/arokem)
 
 **Present:** Cyril Pernet, Kimberly Ray, Ariel Rokem, Camille Maumet,
 Yaroslav Halchenko, Rémi Gau

@@ -2,9 +2,11 @@
 date: 2020-03-12
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
+categories:
+  - steering group minutes
 ---
 
-
+<!-- more -->
 
 
 
@@ -12,7 +14,7 @@ Attended: Franklin Feingold, Melanie Ganz, Guiomar Niso, Robert Oostenveld, Kirs
 
 
 
-### Executive Summary
+## Executive Summary
 
 We discussed the channels through which to share updates to the BIDS specification.
 [A GitHub issue](https://github.com/bids-standard/bids-specification/issues/415) was opened to start crowdsourcing and collecting this information.
@@ -33,7 +35,7 @@ We want to host another [Community Forum](https://bids.neuroimaging.io/2020/01/0
 
 Regarding discussions on where to host our historical specification pdfs (please refer to issue [#407](https://github.com/bids-standard/bids-specification/pull/407)), we consider [Zenodo](https://zenodo.org/) to be a suitable location to store our specification pdfs.
 
-### Action Items
+## Action Items
 
 | Action Item |
 | -------- |
@@ -43,7 +45,7 @@ Regarding discussions on where to host our historical specification pdfs (please
 | Compile list of channels to share BIDS related information on |
 | Send v1.2.2 release and genetic information call to distribution list |
 
-### Minutes
+## Minutes
 
 - Discussed channels to share BIDS related information
   - FreeSurfer, FSL, SPM, BIDS website-news

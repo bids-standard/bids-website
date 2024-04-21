@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
-
-
-
+<!-- more -->
 
 <table>
  <colgroup>
@@ -107,9 +102,6 @@ author: anonymous
  </tbody>
 </table>
 
-
-
-[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Dora Hermes, Kimberly Ray, Ariel Rokem, Cyril Pernet,
 Camille Maumet, Yaroslav Halchenko, Stefan Appelhoff

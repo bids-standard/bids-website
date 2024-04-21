@@ -5,16 +5,16 @@ author: Franklin Feingold
 ---
 
 
+<!-- more -->
 
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 The Steering Group met to discuss the latest updates on the [PET extension](https://github.com/bids-standard/bids-specification/pull/633). The extension is getting closer to completion. We spent the majority of the meeting with the [BEP031: Microscopy](https://docs.google.com/document/d/1Nlu6QVQrbOQtdtcRarsONbX5SrOubXWBvkV37LRRqrc/edit) leads. They introduced the motivation and scale of the effort. There appears to be adjacent ongoing initiatives that could be good to be aligned with. It could be beneficial to introduce a species metadata entity to tease apart the incorporation of the methodology from the species.The BEP031 leads will meet with the [Maintainers Group](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group) to further discuss their lingering questions.
 
-### Action items
+## Action Items
 
 
 
@@ -23,7 +23,7 @@ The Steering Group met to discuss the latest updates on the [PET extension](http
 | Schedule BEP031 to meet with Maintainers     |
 
 
-### Minutes
+## Minutes
 
 - Developing the [PET extension of the BIDS-validator](https://github.com/bids-standard/bids-validator/tree/bep_009)
 

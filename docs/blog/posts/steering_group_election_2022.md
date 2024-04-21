@@ -2,15 +2,13 @@
 date: 2022-11-07
 slug: BIDS Steering Group election 2022 result
 author: BIDS Maintainers
+categories:
+  - election
 ---
-
-
 
 We are excited to announce the results of the BIDS Steering Group election.
 
-
-
-
+<!-- more -->
 
 We are pleased to announce that the newest members of the BIDS Steering Group are Cyril Pernet and Yaroslav Halchenko!
 

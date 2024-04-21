@@ -6,24 +6,24 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We discussed and decided on utilizing the [BrainHack Mattermost platform](https://mattermost.brainhack.org/) for our instant messaging solution. This fits nicely into where our community has been informally organized.
 
 We went over our BIDS presentations occurring in the [Open Science Room](https://ohbm.github.io/osr2020/schedule/) at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageID=3885). We are sharing on the website [all the BIDS presentations and posters](https://bids.neuroimaging.io/2020/06/19/BIDS-OHBM-OSR-2020.html) happening at OHBM. There are many BIDS-aware tools being developed, but an emphasis should be put on generating the associated documentation.
 
-### Action Items
+## Action Items
 
 | Action items |
 | -------- |
 | [Website post announcing our intention of joining the BrainHack Mattermost](https://bids.neuroimaging.io/2020/06/24/Join-the-BIDS-community-on-the-BrainHack-Mattermost.html)   |
 | [Website post listing the BIDS sessions and posters at OHBM](https://bids.neuroimaging.io/2020/06/19/BIDS-OHBM-OSR-2020.html) |
 
-### Minutes
+## Minutes
 
 - Discussed using the BrainHack Mattermost platform for our instant messaging solution
   - The BrainHack Mattermost is inclusive and open

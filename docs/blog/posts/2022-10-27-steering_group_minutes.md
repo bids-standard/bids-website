@@ -8,7 +8,7 @@ author: anonymous
 
 
 
-
+<!-- more -->
 
 
 Kim Ray joins for the first time

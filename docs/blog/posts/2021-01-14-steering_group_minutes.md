@@ -6,15 +6,15 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 This meeting was primarily spent discussing our approach for crediting the Steering and Maintainers Group in BEP manuscripts. We will be using the [credit taxonomy](https://credit.niso.org/) for helping to recognize contributors. These guidelines can be added to the [BEP lead guidelines](https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4/edit). We want to give our community members the opportunity to be credited for their contributions to a BEP.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
@@ -22,7 +22,7 @@ This meeting was primarily spent discussing our approach for crediting the Steer
 | BIDS website news article for the ultimate consent form |
 | BEP updates sent to BEP leads |
 
-### Minutes
+## Minutes
 
 - PET community review can be extended
 - Crediting Steering and Maintainer groups

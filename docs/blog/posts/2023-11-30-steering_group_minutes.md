@@ -5,7 +5,7 @@ author: anonymous
 ---
 
 
-
+<!-- more -->
 
 
 
@@ -107,8 +107,6 @@ https://www.ericholscher.com/roadmap/
  <tbody>
  </tbody>
 </table>
-
-[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Guio, Robert, Cyril, Camille, Ariel, Dora, Ross
 

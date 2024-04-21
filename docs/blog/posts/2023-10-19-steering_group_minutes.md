@@ -7,7 +7,7 @@ author: anonymous
 
 
 
-
+<!-- more -->
 
 
 
@@ -166,10 +166,6 @@ governance amendment
  <tbody>
  </tbody>
 </table>
-
-
-
-[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Guiomar, Ariel, Robert, (Cyril, Yaroslav)
 

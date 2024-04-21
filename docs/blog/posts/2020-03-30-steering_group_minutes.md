@@ -5,12 +5,12 @@ author: Franklin Feingold
 ---
 
 
+<!-- more -->
 
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We discussed how to move forward with implementing the author lists on [Zenodo](https://zenodo.org/record/3686062) from our pdf specification. We want to provide guidance on how we landed on our decision: a single author “BIDS Contributing Group”. This will be opened as a proposal with a request for comments (RFC) on the [BIDS-Specification repository](https://github.com/bids-standard/bids-specification). This is important to deploy with the community’s approval. This may give way for a stronger contributor tracking system.
 
@@ -18,7 +18,7 @@ We clarified the format and points for the monthly Maintainers update. This shou
 
 We invited the [ASL BEP](https://bids.neuroimaging.io/bep005) leads to the next Steering Group meeting.
 
-### Action Items
+## Action Items
 
 
 
@@ -31,7 +31,7 @@ We invited the [ASL BEP](https://bids.neuroimaging.io/bep005) leads to the next 
 | Initialize google slides to start iterating on our BIDS community slides |
 | Email ASL BEP leads to invite to Steering Group meeting |
 
-### Minutes
+## Minutes
 
 - We discussed the author lists on Zenodo for our specification pdfs.
   - Strike the difference between authorship on BIDS publications versus on Zenodo. Provide a guidance that is respectful and appreciative to our BIDS contributors.

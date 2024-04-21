@@ -5,12 +5,12 @@ author: Franklin Feingold
 ---
 
 
+<!-- more -->
 
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We held a joint Steering Group - Maintainers Group meeting to primarily present and discuss recent Maintenance activities. It is crucial to provide opportunities for these two groups to come closer together.
 
@@ -20,7 +20,7 @@ We accepted three new BEPs: [Provenance](https://bids.neuroimaging.io/bep028), [
 
 We will be enhancing our [definition of a Maintainer](https://github.com/bids-standard/bids-specification/pull/467) to include a domain they are responsible for maintaining. This will enable more pathways into the Maintainers Group while promoting more diverse contributions. It will additionally build in more resilience and sustainability into our community. This will further clarify the Maintainers role and give more specific responsibilities to a Maintainer. These domains will be proposed and accepted within the Maintainers Group.
 
-### Action Items
+## Action Items
 
 | Action item |
 | ------------------------ |
@@ -28,7 +28,7 @@ We will be enhancing our [definition of a Maintainer](https://github.com/bids-st
 | Draft Zenodo author list proposal |
 | Add new BEPs to website |
 
-### Minutes
+## Minutes
 
 This was a joint meeting between the Steering Group and Maintainers Group to go over recent BIDS Maintenance activities and bring these two groups closer together.
 - [Zenodo author lists](https://github.com/bids-standard/bids-specification/issues/66)

@@ -4,13 +4,9 @@ slug: BIDS Town Hall 2021 (with slidedeck update)
 author: Franklin Feingold
 ---
 
-
-
 Are you interested in learning more about how the BIDS initiative is developing?
 
-
-
-
+<!-- more -->
 
 Post event edit: Please find the [Town Hall slidedeck](../../assets/BIDS-materials/BIDS_Town_Hall%20-OSR_2021.pdf) within the `BIDS_materials` folder.
 

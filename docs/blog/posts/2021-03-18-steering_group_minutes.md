@@ -7,18 +7,18 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
-
-### Executive Summary
+## Executive Summary
 
 The Steering Group spent the first part of this meeting discussing project sustainability. Then, we discussed our plans for OHBM. We’ll hold another Town Hall and use OHBM to broadcast our Steering Group election taking place in the Fall.
 
-### Action items
+## Action Items
 
 N/A
 
-### Minutes
+## Minutes
 
 - PET validator extension is nearing completion
 - Project sustainability

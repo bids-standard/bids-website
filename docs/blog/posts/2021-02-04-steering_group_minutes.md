@@ -6,19 +6,19 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 The Steering Group met to discuss the latest BEP updates. [ASL](https://github.com/bids-standard/bids-specification/pull/669) and [qMRI](https://github.com/bids-standard/bids-specification/pull/690) are close to being released with PET following soon after. We spent the majority of the meeting with the leads from [BEP20: Eye Tracking](https://bids.neuroimaging.io/bep020). They are progressing nicely and starting to finalize their specification. They are having their Eye Tracking community review prior to escalating up to the BIDS community. They are reaching a consensus within their community. This extension will help BIDS continue to extend into more diverse windows into the brain and further unlock more multimodal studies.
 
-### Action items
+## Action Items
 
 N/A
 
-### Minutes
+## Minutes
 
 
 - [ASL specification](https://github.com/bids-standard/bids-specification/pull/669), examples, and validator are ready for release

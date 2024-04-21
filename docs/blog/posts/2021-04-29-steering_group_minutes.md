@@ -5,23 +5,23 @@ author: Franklin Feingold
 ---
 
 
+<!-- more -->
 
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 The Steering Group began the meeting by discussing a new potential BEP and meeting with BEP lead to learn more. We covered how BIDS suggested authorship can look like and how to convey this information to BEP leads. The monthly Maintainers report could be transformed to convey more information to the BIDS community through the [bids-discussion list](https://groups.google.com/g/bids-discussion). The website is under development with passes currently ongoing to enhance. In the future, we could reach out to imaging acquisition companies to further adopt BIDS in their systems.
 
-### Action items
+## Action Items
 
 | Action item |
 | -------- |
 | Enhance BEP submission guidelines with verbiage about paper writing      |
 
 
-### Minutes
+## Minutes
 
 - [PET-BIDS released](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/09-positron-emission-tomography.html)!
 - [DWI preprint](https://arxiv.org/abs/2103.14485?context=eess.IV)

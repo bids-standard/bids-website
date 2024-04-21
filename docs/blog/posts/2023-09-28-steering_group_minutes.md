@@ -8,7 +8,7 @@ author: anonymous
 
 
 
-
+<!-- more -->
 
 
 <table>
@@ -153,9 +153,6 @@ submission
  </tbody>
 </table>
 
-
-
-[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Cyril Pernet, Ariel Rokem, Chris Markiewicz, Robert
 Oostenveld, Guiomar Niso, Yaroslav Halchenko

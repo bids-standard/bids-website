@@ -4,8 +4,6 @@ slug: "BIDS Community Survey 2024"
 author: BIDS Maintainers
 ---
 
-
-
 The BIDS [Maintainers](https://bids.neuroimaging.io/governance.html#bids-maintainers-group)
 and [Steering Group](https://bids.neuroimaging.io/governance.html#bids-steering-group)
 invite you to fill out the 2024 BIDS Community Survey from now until **April 3, 2024**.

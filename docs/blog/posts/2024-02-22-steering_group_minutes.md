@@ -2,14 +2,11 @@
 date: 2024-02-22
 slug: Steering Group minutes
 author: anonymous
+categories:
+  - steering group minutes
 ---
 
-
-
-
-
-
-
+<!-- more -->
 
 <table>
  <colgroup>
@@ -101,9 +98,6 @@ Online Presence Working Group: Working Document
  </tbody>
 </table>
 
-
-
-[[https://utexas.zoom.us/my/kimray]](https://utexas.zoom.us/my/kimray)
 
 **Present:** Yarik, Kim, Ariel, Cyril, Eric, Christine, Camille
 

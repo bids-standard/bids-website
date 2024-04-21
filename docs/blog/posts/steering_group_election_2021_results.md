@@ -2,13 +2,13 @@
 date: 2021-11-18
 slug: BIDS Steering Group election 2021 result
 author: Franklin Feingold
+categories:
+  - election
 ---
-
-
 
 We are excited to announce the results of the BIDS Steering Group election.
 
-
+<!-- more -->
 
 The election was fierce this year with many excellent candidates!
 

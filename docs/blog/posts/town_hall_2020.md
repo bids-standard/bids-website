@@ -4,11 +4,9 @@ slug: BIDS at OHBM 2020
 author: Franklin Feingold
 ---
 
-
-
 Check out the wide range of ways BIDS is being implemented throughout the field!
 
-
+<!-- more -->
 
 ## Posters at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageID=3885)
 

@@ -6,21 +6,21 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/), from the [NIDM](http://nidm.nidash.org/) and [ReproNim](https://www.repronim.org/) groups. We learned more about their NIDM project and specific subprojects using BIDS. One such project is [NIDM-terms](https://github.com/incf-nidash/nidm-terms). This project seeks to capture our BIDS terminology and devise a way to make it easier to manage them and query datasets based on those terms. One use case can be utilizing this collection as a resource for BEPs to interact with as they are discussing new terms to add to the specification. This can also be helpful to users wanting to learn more about our BIDS terms present in the specification. Another beneficial aspect of this project is the ability to annotate datasets.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
 | N/A    |
 
-### Minutes
+## Minutes
 
 We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/), to discuss the [NIDM](http://nidm.nidash.org/) and [ReproNim](https://www.repronim.org/) initiatives.
 - [NIDM-terms](https://github.com/incf-nidash/nidm-terms) is a community-driven ontology

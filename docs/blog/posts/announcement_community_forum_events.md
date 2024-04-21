@@ -8,11 +8,11 @@ author: Kirstie Whitaker
 
 The [BIDS Steering Group](https://bids.neuroimaging.io/2019/12/31/meet-the-bids-steering-group.html) are excited to announce two **Community Forums**!
 
+<!-- more -->
+
 Inspired by [town hall meetings](https://en.wikipedia.org/wiki/Town_hall_meeting) and the OHBM General Assembly and Feedback Forum, these online events are a space for members of the BIDS community to meet the steering group and to discuss BIDS strategy and vision.
 
 UPDATE: We have shared recordings of the [first](https://www.youtube.com/watch?v=aBG1kl6iJeE&t=6s) and [second](https://www.youtube.com/watch?v=23OySb5kbtM) Community Forum meetings.
-
-
 
 You can ask questions in real time during one of the calls, or send us your questions in advance at [this google form](https://forms.gle/uLtkbnZbKZwxPb2w8).
 
@@ -29,13 +29,11 @@ Although you don't have to (you can just show up!), please [RSVP at this eventbr
 
 * When: January 14, 2020
 * Time: 6am PST / 9am EST / 2pm GMT / 3pm CEST (Get your local time [here](https://arewemeetingyet.com/Los%20Angeles/2020-01-14/06:00/BIDS%20Community%20Forum%201))
-* Where: [https://stanford.zoom.us/j/274375082](https://stanford.zoom.us/j/274375082)
 
 #### Community Forum #2
 
 * When: January 16, 2020
 * Time: 12noon PST / 3pm EST / 8pm GMT / 9pm CEST (Get your local time [here](https://arewemeetingyet.com/Los%20Angeles/2020-01-16/12:00/BIDS%20Community%20Forum%202))
-* Where: [https://stanford.zoom.us/j/955643944](https://stanford.zoom.us/j/955643944).
 
 If you have any questions please feel free to email Franklin ([ffein@stanford.edu](mailto:ffein@stanford.edu))
 

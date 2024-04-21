@@ -5,24 +5,24 @@ author: Franklin Feingold
 ---
 
 
+<!-- more -->
 
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We began the meeting by converging on the plan for merging in the [PET BEP](https://github.com/bids-standard/bids-specification/pull/633). We touched upon the [recognizing credit on manuscripts](https://github.com/bids-standard/bids-specification/issues/627) conversation. This will be returned to next meeting.
 
 The majority of the meeting we were joined by Jon Cohen and Tal Yarkoni of the Model Description Framework project. The Model Description Framework seeks to develop a common modeling format to describe a computational model. The goal is to enhance the reproducibility and disseminability of computational models. This will also improve the accessibility to more complex and sophisticated models.
 
-### Action items
+## Action Items
 
 | Action items |
 | -------- |
 | Look further into corporate authorship |
 
-### Minutes
+## Minutes
 
 - Agreed upon PET schedule for community review
 - Revisited authorship discussion

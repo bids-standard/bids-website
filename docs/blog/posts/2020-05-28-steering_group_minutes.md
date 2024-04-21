@@ -6,17 +6,17 @@ author: Franklin Feingold
 
 
 
+<!-- more -->
 
 
 
-
-### Executive Summary
+## Executive Summary
 
 We discussed and approved the timeline for merging [BIDS common derivatives](https://github.com/bids-standard/bids-specification/pull/265) into the specification. The ReadTheDocs rendering of the extension made reviewing much easier. Reviewing this pull request raised the need for our own tutorial on how to comment on a pull request. We will be enhancing the current BEP process by asking for the BEP to be a clean version when it is submitted as a pull request.
 
 Briefly, we discussed our plan to host a town hall at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageID=3958&activateFull=true) in the [Open Science Room](https://ohbm.github.io/osr2020/). We will be providing a BIDS status update and hearing feedback from the community.
 
-### Action Items
+## Action Items
 
 | Action items |
 | -------- |
@@ -25,7 +25,7 @@ Briefly, we discussed our plan to host a town hall at [OHBM](https://www.humanbr
 | Email BEP leads - updates for OHBM |
 | Investigate messaging platforms |
 
-### Minutes
+## Minutes
 
 - Discussed BIDS-Common Derivatives
   - Timeline approved
