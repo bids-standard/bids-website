@@ -41,7 +41,7 @@ author: anonymous
       https://docs.google.com/document/d/1sYXI_uUmkMMZg4OqYRSOCRkb66IZ_qQJbvI-nP3Z024/edit?usp=sharing
      </u>
     </a>
-    -- change again of people, no multiple submissions, Dora/Camille not
+   -   - change again of people, no multiple submissions, Dora/Camille not
 going
    </th>
   </tr>
@@ -150,7 +150,7 @@ further conversations with other journal editors. See
 
 """
 
-- For data documentation, it is advised to use the BIDS format
+-   For data documentation, it is advised to use the BIDS format
   ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
   It is recommended that the authors check the respective box in the
   submission form. It is recommended that authors use 'BIDS' as one of

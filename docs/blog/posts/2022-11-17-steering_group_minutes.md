@@ -274,32 +274,32 @@ author: anonymous
 
 Extension leads/moderators:
 
-- Giacomo Bertazzoli
+-   Giacomo Bertazzoli
 
 > \<[giacomo.bertazzoli\@unitn.it](mailto:giacomo.bertazzoli@unitn.it)\>,
 
-- Vittorio Iacovella
+-   Vittorio Iacovella
 
 > \<[vittorio.iacovella\@unitn.it](mailto:vittorio.iacovella@unitn.it)\>,
 
-- Carlo Miniussi
+-   Carlo Miniussi
 
 > \<[carlo.miniussi\@unitn.it](mailto:carlo.miniussi@unitn.it)\>,
 
-- Marta Bortoletto
+-   Marta Bortoletto
   > \<[marta.bortoletto\@cognitiveneuroscience.it](mailto:marta.bortoletto@cognitiveneuroscience.it)\>.
 
 Extension co-moderators:
 
-- Martina Bulgari
+-   Martina Bulgari
 
 > \<[martina.bulgari\@cognitiveneuroscience.it](mailto:martina.bulgari@cognitiveneuroscience.it)\>,
 
-- Eleonora Marcantoni
+-   Eleonora Marcantoni
 
 > \<[eleonoramarcantoni\@gmail.com](mailto:eleonoramarcantoni@gmail.com)\>,
 
-- Giacomo Guidali
+-   Giacomo Guidali
   > \<[giacomo.guidali\@cognitiveneuroscience.it](mailto:giacomo.guidali@cognitiveneuroscience.it)\>.
 
 Next week visitors: TBD on slack - we will meet 15 minutes early

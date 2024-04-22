@@ -3,7 +3,7 @@ date: 2020-10-01
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -22,6 +22,6 @@ Maintainers group confirmed with the ASL BEP team the timeline for submitting an
 
 ## Minutes
 
-- Established timetable for reviewing and approving BIDS-ASL
-- Generating BIDS-PET timeline for reviewing and approving
-- Revisit conversation regarding [how to credit Steering and Maintainers groups](https://github.com/bids-standard/bids-specification/issues/627)
+-   Established timetable for reviewing and approving BIDS-ASL
+-   Generating BIDS-PET timeline for reviewing and approving
+-   Revisit conversation regarding [how to credit Steering and Maintainers groups](https://github.com/bids-standard/bids-specification/issues/627)

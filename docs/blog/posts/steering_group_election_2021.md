@@ -3,7 +3,7 @@ date: 2021-09-20
 slug: BIDS Steering Group election 2021
 author: Franklin Feingold
 categories:
-  - election
+-   election
 ---
 
 We are excited to announce the nomination period for electing a new Steering Group member! The nomination period will close on Friday, October 1st at 11:59pm (Pacific time).

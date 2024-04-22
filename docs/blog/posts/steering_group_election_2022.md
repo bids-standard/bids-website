@@ -3,7 +3,7 @@ date: 2022-11-07
 slug: BIDS Steering Group election 2022 result
 author: BIDS Maintainers
 categories:
-  - election
+-   election
 ---
 
 We are excited to announce the results of the BIDS Steering Group election.

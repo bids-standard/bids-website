@@ -3,7 +3,7 @@ date: 2023-07-06
 slug: Steering Group minutes
 author: anonymous
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -103,39 +103,39 @@ categories:
 
 ### Derivatives output - internal review before release
 
-- Wanting to change the atlas BEP - this is more of a space we use to
+-   Wanting to change the atlas BEP - this is more of a space we use to
   segment different tissues.
 
-- Suggestion to change the "Atlas" naming to "Parcellation"
+-   Suggestion to change the "Atlas" naming to "Parcellation"
 
-- Do we need to introduce a new term? We could stick with p-seg
+-   Do we need to introduce a new term? We could stick with p-seg
   (probabilistic) and d-seg (deterministic)
 
-- Should we add this Derivatives output to the website?
+-   Should we add this Derivatives output to the website?
 
-- Where should it go? Create a PR or multiple PRs?
+-   Where should it go? Create a PR or multiple PRs?
 
-- Suggestion: integrate the BIDS derivatives guidelines piecemeal into
+-   Suggestion: integrate the BIDS derivatives guidelines piecemeal into
   the BID general derivatives spec
 
-- Maybe not the BEPs table info - table could go to the BIDs
+-   Maybe not the BEPs table info - table could go to the BIDs
   extensions
 
 ### Imaging Neuroscience Response regarding BIDS 'badge'
 
-- Turn the conversation around
+-   Turn the conversation around
 
-- Example: include a checklist (or guidelines) for reviewers to
+-   Example: include a checklist (or guidelines) for reviewers to
   ensure BIDS is compliant
 
-- Ask for how the BIDS community/steering co. can be helpful to
+-   Ask for how the BIDS community/steering co. can be helpful to
   improve BIDS review process
 
-- This could be comparable to Nature's code review
+-   This could be comparable to Nature's code review
 
-- Ariel will reply to Steve Smith with this suggestion
+-   Ariel will reply to Steve Smith with this suggestion
 
-- Suggestions: If Imaging neuroscience is amenable, then we could
+-   Suggestions: If Imaging neuroscience is amenable, then we could
   also post the guidelines on the BIDS website for wider use and
   adoption of these reviewer guidelines.
 

@@ -138,7 +138,7 @@ they are still developing their platform?
 Potentially reach out to someone on their [[editorial
 board]](https://janeway.imaging-neuroscience.org/editorialteam/)
 
-- possible Thomas Yeo, Damian Fair
+-   possible Thomas Yeo, Damian Fair
 
 ### NSF POSE WORKSHOP
 

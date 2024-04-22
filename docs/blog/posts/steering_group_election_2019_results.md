@@ -3,7 +3,7 @@ date: 2019-10-22
 slug: BIDS Steering Group election and Governance results
 author: Franklin Feingold
 categories:
-  - election
+-   election
 ---
 
 We are excited to announce the winning slate of the BIDS election is the Guiomar Niso chaired slate with Melanie Ganz, Robert Oostenveld, Russ Poldrack, and Kirstie Whitaker! Congratulations to them and thank you to all the slates and voters for making this a successful election!

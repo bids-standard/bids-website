@@ -3,7 +3,7 @@ date: 2020-11-02
 slug: BIDS-ASL community review
 author: Franklin Feingold
 categories:
-  - community review
+-   community review
 ---
 
 The BIDS community is preparing to merge the ASL (Arterial Spin Labeling) extension.

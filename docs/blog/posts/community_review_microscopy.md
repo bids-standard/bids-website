@@ -3,7 +3,7 @@ date: 2021-11-08
 slug: BIDS-Microscopy community review
 author: Franklin Feingold
 categories:
-  - community review
+-   community review
 ---
 
 The BIDS community is preparing to merge the Microscopy extension and are opening up this extension proposal to community review.

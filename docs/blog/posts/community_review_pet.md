@@ -3,7 +3,7 @@ date: 2021-01-11
 slug: BIDS-PET community review
 author: Melanie Ganz, Martin Norgaard, and Franklin Feingold
 categories:
-  - community review
+-   community review
 ---
 
 The BIDS community is preparing to merge the PET (Positron Emission Tomography) extension.

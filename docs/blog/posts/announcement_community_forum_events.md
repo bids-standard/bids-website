@@ -27,13 +27,13 @@ Although you don't have to (you can just show up!), please [RSVP at this eventbr
 
 #### Community Forum #1
 
-- When: January 14, 2020
-- Time: 6am PST / 9am EST / 2pm GMT / 3pm CEST (Get your local time [here](https://arewemeetingyet.com/Los%20Angeles/2020-01-14/06:00/BIDS%20Community%20Forum%201))
+-   When: January 14, 2020
+-   Time: 6am PST / 9am EST / 2pm GMT / 3pm CEST (Get your local time [here](https://arewemeetingyet.com/Los%20Angeles/2020-01-14/06:00/BIDS%20Community%20Forum%201))
 
 #### Community Forum #2
 
-- When: January 16, 2020
-- Time: 12noon PST / 3pm EST / 8pm GMT / 9pm CEST (Get your local time [here](https://arewemeetingyet.com/Los%20Angeles/2020-01-16/12:00/BIDS%20Community%20Forum%202))
+-   When: January 16, 2020
+-   Time: 12noon PST / 3pm EST / 8pm GMT / 9pm CEST (Get your local time [here](https://arewemeetingyet.com/Los%20Angeles/2020-01-16/12:00/BIDS%20Community%20Forum%202))
 
 If you have any questions please feel free to email Franklin ([ffein@stanford.edu](mailto:ffein@stanford.edu))
 

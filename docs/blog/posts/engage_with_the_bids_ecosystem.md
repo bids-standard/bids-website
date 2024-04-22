@@ -21,5 +21,5 @@ If you are interested in staying informed on BIDS news please sign up for [our m
 
 Please share the links widely. You don’t need to be a contributor to BIDS to help us out:
 
-- Survey link: [https://forms.gle/8nBgsHrZNYmBV3Ze8](https://forms.gle/8nBgsHrZNYmBV3Ze8)
-- BIDS mailing list link: [https://forms.gle/snPqLJvmh6wRCQWt8](https://forms.gle/snPqLJvmh6wRCQWt8)
+-   Survey link: [https://forms.gle/8nBgsHrZNYmBV3Ze8](https://forms.gle/8nBgsHrZNYmBV3Ze8)
+-   BIDS mailing list link: [https://forms.gle/snPqLJvmh6wRCQWt8](https://forms.gle/snPqLJvmh6wRCQWt8)

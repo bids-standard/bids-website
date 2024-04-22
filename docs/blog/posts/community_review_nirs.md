@@ -3,7 +3,7 @@ date: 2022-09-01
 slug: "BIDS community review for BEP030: Near Infrared Spectroscopy"
 author: Stefan Appelhoff
 categories:
-  - community review
+-   community review
 ---
 
 The BIDS community is preparing to merge the BIDS Extension Proposal 30 (BEP030) for Near Infrared Spectroscopy (NIRS).

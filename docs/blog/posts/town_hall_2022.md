@@ -3,7 +3,7 @@ date: 2022-06-14
 slug: BIDS Town Hall 2022
 author: Franklin Feingold
 categories:
-  - town hall
+-   town hall
 ---
 
 Are you interested in learning more about how the BIDS initiative is developing or sharing your feedback with the BIDS team?

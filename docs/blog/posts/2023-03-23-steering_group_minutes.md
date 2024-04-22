@@ -108,52 +108,52 @@ model that have overlapping meta-data.
 
 Proposed Solution:
 
-- add a 'results' directory that contains the files of the model with
+-   add a 'results' directory that contains the files of the model with
   metadata describing those files. Is it okay to add an additional
   nested directory like this?
 
-- MFP (model fit parameter) and MDP (model derived parameter) suffixes
+-   MFP (model fit parameter) and MDP (model derived parameter) suffixes
 
 Concern:
 
-- this appears to be very dwi specific, should the suffixes be dwi
+-   this appears to be very dwi specific, should the suffixes be dwi
   specific?
-- Why is datatype not under model label in the [pull
+-   Why is datatype not under model label in the [pull
   request](https://github.com/bids-standard/bids-specification/pull/1280)
   example?
-- Is the proposed organization of data aligned with user community? -
+-   Is the proposed organization of data aligned with user community? -
   should we request input from community to determine where these
   results should be stored
-- [https://github.com/bids-standard/bids-specification/issues/751\#issuecomment-820800800](https://github.com/bids-standard/bids-specification/issues/751#issuecomment-820800800)
-- How does this apply to more general data modalities? Like mEEG,
+-   [https://github.com/bids-standard/bids-specification/issues/751\#issuecomment-820800800](https://github.com/bids-standard/bids-specification/issues/751#issuecomment-820800800)
+-   How does this apply to more general data modalities? Like mEEG,
   SPECT - more use cases beyond dMRI would be helpful
-- "BIDS-like derivatives in other modalities:
+-   "BIDS-like derivatives in other modalities:
   [https://data.donders.ru.nl/collections/di/dccn/DSC_3031000.00_191?0](https://data.donders.ru.nl/collections/di/dccn/DSC_3031000.00_191?0), see also
   [https://github.com/Donders-Institute/infant-cluster-effectsize](https://github.com/Donders-Institute/infant-cluster-effectsize)
   (for the scripts that generate the result)
-- Other ideas: tarballs instead of directories, HDF5 files instead of
+-   Other ideas: tarballs instead of directories, HDF5 files instead of
   directories.
 
 BIDS Derivatives Retreat
 
-- For general derivatives group (not just pet)
-- See link for more information
+-   For general derivatives group (not just pet)
+-   See link for more information
 
 Summary of the PET-BIDS derivatives meeting
 
-- Meeting happened 2 weeks ago (March 10th)
-- Mostly an onboarding meeting for the importance and relevance of
+-   Meeting happened 2 weeks ago (March 10th)
+-   Mostly an onboarding meeting for the importance and relevance of
   PET-BIDS derivatives
-- Raw PET data is now part of BIDS, now the second half of the white
+-   Raw PET data is now part of BIDS, now the second half of the white
   paper will address the derivatives aspect of PET
-- The PET users are more clinically oriented, more diverse user
+-   The PET users are more clinically oriented, more diverse user
   groups, less agreement within the community in data standards
-- The community is between two ideas: a more restrictive approach with
+-   The community is between two ideas: a more restrictive approach with
   data types allowed, or free datatypes with detailed provenance
 
 Meeting with the DICOM team
 
-- We need to formalize our current state of affairs, see which terms
+-   We need to formalize our current state of affairs, see which terms
   align/ dont align
-- We need to follow up on email from Kim on Feb 14 asking to present
+-   We need to follow up on email from Kim on Feb 14 asking to present
   at a dicom committee meeting.

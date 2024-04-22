@@ -3,7 +3,7 @@ date: 2020-04-16
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -24,16 +24,16 @@ We were joined in this meeting by the BIDS-ASL BEP leads. We spent the majority 
 
 This meeting was primarily focused on meeting with the [BIDS-ASL](https://bids.neuroimaging.io/bep005) BEP leads to discuss their BEP and getting it over the finish line
 
-- The ASL specification was initially pushed by physicists in the [ISMRM](https://www.ismrm.org/) community
-- A few challenges toward specifying was evaluating differing sequence and scaling
-- In conversations with dcm2niix team to support ASL scaling information
-- MG and BIDS-ASL will talk further - overlap with the PET BEP
-- Thinking through ASL standardization vs data sharing and curation
-- Recommending simple and easy fields to fill in
-- Think about sending a letter from the BIDS community to imaging vendors to strive toward standardizing file formats
-- Where possible, use the same words or description of a previously specified field
-- Strive toward interoperability across modalities
-- ASLcontext file similar to the sidecar json
-- ASL nearly prepared to open their pull requests
-- Appetite to start working through ASL Derivatives
-- Maintainers are invited to the next meeting
+-   The ASL specification was initially pushed by physicists in the [ISMRM](https://www.ismrm.org/) community
+-   A few challenges toward specifying was evaluating differing sequence and scaling
+-   In conversations with dcm2niix team to support ASL scaling information
+-   MG and BIDS-ASL will talk further - overlap with the PET BEP
+-   Thinking through ASL standardization vs data sharing and curation
+-   Recommending simple and easy fields to fill in
+-   Think about sending a letter from the BIDS community to imaging vendors to strive toward standardizing file formats
+-   Where possible, use the same words or description of a previously specified field
+-   Strive toward interoperability across modalities
+-   ASLcontext file similar to the sidecar json
+-   ASL nearly prepared to open their pull requests
+-   Appetite to start working through ASL Derivatives
+-   Maintainers are invited to the next meeting

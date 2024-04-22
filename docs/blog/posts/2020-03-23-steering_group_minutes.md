@@ -3,7 +3,7 @@ date: 2020-03-23
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -35,10 +35,10 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 
 ## Minutes
 
-- Reviewed [previous meeting action items](https://bids.neuroimaging.io/2020/03/12/Steering-Group-executive-summary,-action-items,-and-minutes.html#action-items)
+-   Reviewed [previous meeting action items](https://bids.neuroimaging.io/2020/03/12/Steering-Group-executive-summary,-action-items,-and-minutes.html#action-items)
 
-- A [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGjTA-U_1LECRsbuBQ9X7kdi34aEdxTMoWCwwkEgou-qpb4A/viewform) with an accompanying [blog post](https://bids.neuroimaging.io/2020/03/20/engage-with-the-bids-ecosystem.html) was drafted to evaluate how the community would like to engage with each other, what barriers may exist that makes engaging more challenging, and ways that we can engage colleagues that do not know about BIDS.
-- Points to consider when designing the infrastructure to support BIDS slides
+-   A [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGjTA-U_1LECRsbuBQ9X7kdi34aEdxTMoWCwwkEgou-qpb4A/viewform) with an accompanying [blog post](https://bids.neuroimaging.io/2020/03/20/engage-with-the-bids-ecosystem.html) was drafted to evaluate how the community would like to engage with each other, what barriers may exist that makes engaging more challenging, and ways that we can engage colleagues that do not know about BIDS.
+-   Points to consider when designing the infrastructure to support BIDS slides
 
   -An important feature is that the BIDS slides will be a living and breathing document shared via Google slides.
   -Google slides gives us the ability to: version control, seamless updating capability, and persistent links.
@@ -51,19 +51,19 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 
   -Compiling a [list of channels](https://docs.google.com/spreadsheets/d/16SAGK3zG93WM2EWuoZDcRIC7ygPc5b7PDNGpFyC3obA/edit#gid=0) to share BIDS news. Currently for version releases and community feedback calls on BEPs.
 
-- Attending Steering Group members gave approval to move forward with finalizing the [Genetic Information extension](https://github.com/bids-standard/bids-specification/pull/395) and merging into the specification. This will trigger a [v1.3.0 release](https://github.com/bids-standard/bids-specification/pull/435) (according to our [release guidelines](https://github.com/bids-standard/bids-specification/blob/master/Release_Guideline.md)).
+-   Attending Steering Group members gave approval to move forward with finalizing the [Genetic Information extension](https://github.com/bids-standard/bids-specification/pull/395) and merging into the specification. This will trigger a [v1.3.0 release](https://github.com/bids-standard/bids-specification/pull/435) (according to our [release guidelines](https://github.com/bids-standard/bids-specification/blob/master/Release_Guideline.md)).
 
-- For future BEPs, they will submit their examples to [BIDS-examples](https://github.com/bids-standard/bids-examples) for review by the Steering Group and confirm the [validator](https://github.com/bids-standard/bids-validator) has been extended properly. The BEP leads can leave it as a draft PR. It was determined that opening the PR from a branch of the [BIDS specification repository](https://github.com/bids-standard/bids-specification) should be done allowing us to render the extension via ReadTheDocs.
+-   For future BEPs, they will submit their examples to [BIDS-examples](https://github.com/bids-standard/bids-examples) for review by the Steering Group and confirm the [validator](https://github.com/bids-standard/bids-validator) has been extended properly. The BEP leads can leave it as a draft PR. It was determined that opening the PR from a branch of the [BIDS specification repository](https://github.com/bids-standard/bids-specification) should be done allowing us to render the extension via ReadTheDocs.
   -Genetic Information was in the BEP lead's fork of BIDS-examples (after the meeting a [PR was opened](https://github.com/bids-standard/bids-examples/pull/178)).
 
-- Regarding the [Zenodo authorship](https://github.com/bids-standard/bids-specification/issues/66) discussion, the Steering Group considered for the list to either be first/last+alphabetical order in the middle or a single authored “[BIDS Contributors Group](https://bids.neuroimaging.io/governance.html#bids-contributors-group)”.
+-   Regarding the [Zenodo authorship](https://github.com/bids-standard/bids-specification/issues/66) discussion, the Steering Group considered for the list to either be first/last+alphabetical order in the middle or a single authored “[BIDS Contributors Group](https://bids.neuroimaging.io/governance.html#bids-contributors-group)”.
 
-- Decision toward “BIDS Contributors Group” similar to how ADNI does it.
+-   Decision toward “BIDS Contributors Group” similar to how ADNI does it.
 
-- The Steering Group discussed where to share non-BIDS related information.
+-   The Steering Group discussed where to share non-BIDS related information.
 
-- The consensus was to share on the [bids-discussion](https://groups.google.com/forum/#!forum/bids-discussion) Google group channel.
+-   The consensus was to share on the [bids-discussion](https://groups.google.com/forum/#!forum/bids-discussion) Google group channel.
 
-- We brainstormed what may be the related initiatives to keep aware of. FF contacted INCF to see if they have information regarding this. Please see the [INCF blog](https://www.incf.org/blogs-list).
+-   We brainstormed what may be the related initiatives to keep aware of. FF contacted INCF to see if they have information regarding this. Please see the [INCF blog](https://www.incf.org/blogs-list).
 
-- The Steering Group discussed the format for the BIDS Maintainers monthly update. This will be submitted to Slack and added to the next agenda. This will be implemented starting with the March update and will not be retroactive.
+-   The Steering Group discussed the format for the BIDS Maintainers monthly update. This will be submitted to Slack and added to the next agenda. This will be implemented starting with the March update and will not be retroactive.

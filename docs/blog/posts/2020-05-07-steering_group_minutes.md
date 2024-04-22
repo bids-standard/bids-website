@@ -3,7 +3,7 @@ date: 2020-05-07
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -30,34 +30,34 @@ We will be enhancing our [definition of a Maintainer](https://github.com/bids-st
 
 This was a joint meeting between the Steering Group and Maintainers Group to go over recent BIDS Maintenance activities and bring these two groups closer together.
 
-- [Zenodo author lists](https://github.com/bids-standard/bids-specification/issues/66)
-- Recognizing diverse contributions
+-   [Zenodo author lists](https://github.com/bids-standard/bids-specification/issues/66)
+-   Recognizing diverse contributions
   -Author: sustained substantial contributions, regularly answering questions
   -Contributor is more flexible
-- Alphabetical order and the author list can only be added to not removed
-- Proposal to add an author’s and contributor’s page to the appendix of the specification
+-   Alphabetical order and the author list can only be added to not removed
+-   Proposal to add an author’s and contributor’s page to the appendix of the specification
 
-- Add more details of the specific contribution to BIDS
+-   Add more details of the specific contribution to BIDS
   -Can be up to a paragraph narrative
-- The goal is to list and give more credit to contributors
-- This can also be hosted on GitHub
+-   The goal is to list and give more credit to contributors
+-   This can also be hosted on GitHub
   -Perhaps GitHub Wiki
 
-- Accepted BEPs
+-   Accepted BEPs
 
-- [BEP028: Provenance](https://bids.neuroimaging.io/bep028)
-- [BEP029: Virtual and physical motion data](https://bids.neuroimaging.io/bep029)
-- [BEP030: Near-Infrared Spectroscopy](https://bids.neuroimaging.io/bep030)
-- Steering Group review consists primarily of ensuring it is within scope and not duplicating efforts
-- BEPs need to signal they have gotten community buy-in
+-   [BEP028: Provenance](https://bids.neuroimaging.io/bep028)
+-   [BEP029: Virtual and physical motion data](https://bids.neuroimaging.io/bep029)
+-   [BEP030: Near-Infrared Spectroscopy](https://bids.neuroimaging.io/bep030)
+-   Steering Group review consists primarily of ensuring it is within scope and not duplicating efforts
+-   BEPs need to signal they have gotten community buy-in
 
-- MG potentially hosting a PET virtual workshop around OHBM
+-   MG potentially hosting a PET virtual workshop around OHBM
 
-- Pushing the [Starter Kit repository](https://github.com/bids-standard/bids-starter-kit)
+-   Pushing the [Starter Kit repository](https://github.com/bids-standard/bids-starter-kit)
 
-- [Enhancing our definition of a Maintainer](https://github.com/bids-standard/bids-specification/pull/467)
-- Adding a specialty or domain expert responsibility to the role
+-   [Enhancing our definition of a Maintainer](https://github.com/bids-standard/bids-specification/pull/467)
+-   Adding a specialty or domain expert responsibility to the role
   -Workshopping the semantics
   -Gives more clarity and specificity to the responsibilities of the role
-- The goal is to nurture more diverse contributions and build in more resilience and sustainability into the organization
-- This will be managed by the Maintainers Group
+-   The goal is to nurture more diverse contributions and build in more resilience and sustainability into the organization
+-   This will be managed by the Maintainers Group

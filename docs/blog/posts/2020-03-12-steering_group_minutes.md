@@ -3,7 +3,7 @@ date: 2020-03-12
 slug: Steering Group minutes
 author: Franklin Feingold
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -43,26 +43,26 @@ Regarding discussions on where to host our historical specification pdfs (please
 
 ## Minutes
 
-- Discussed channels to share BIDS related information
-- FreeSurfer, FSL, SPM, BIDS website-news
-- Items to share
-- 1.2.2 release
-- [BEP018: Genetic information](https://github.com/bids-standard/bids-specification/pull/395)
+-   Discussed channels to share BIDS related information
+-   FreeSurfer, FSL, SPM, BIDS website-news
+-   Items to share
+-   1.2.2 release
+-   [BEP018: Genetic information](https://github.com/bids-standard/bids-specification/pull/395)
   -Do final call before merging into the standard
-- Making the standard slide deck
-- make it longer and presenter can slim down as needed
-- Making repositories in BIDS standard
-- BEP leads in control of their repository
-- Follow our [code of conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md) and [governance document](https://docs.google.com/document/d/1R-J2lL9V_wIkYhye4zH-feyl4P4J8NyO40rIYyY141o/)
-- Keeping it reasonable lenient
-- Within README for repository
-- identify at least 2-3 owners/maintainers of the repository
-- Set a BIDS community forum and starter kit training in Open Science Room at OHBM
-- Starter kit - running demos showing power of getting data into the BIDS ecosystem
-- Zenodo for storing historical pdfs
-- Pdfs need to be discoverable and persistent
-- Add to previous language to BIDS website specification tab
-- add a line pointing to Zenodo
-- Add to release process
-- adding pdf build to zenodo
-- BIDS website start drop down menus extension
+-   Making the standard slide deck
+-   make it longer and presenter can slim down as needed
+-   Making repositories in BIDS standard
+-   BEP leads in control of their repository
+-   Follow our [code of conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md) and [governance document](https://docs.google.com/document/d/1R-J2lL9V_wIkYhye4zH-feyl4P4J8NyO40rIYyY141o/)
+-   Keeping it reasonable lenient
+-   Within README for repository
+-   identify at least 2-3 owners/maintainers of the repository
+-   Set a BIDS community forum and starter kit training in Open Science Room at OHBM
+-   Starter kit - running demos showing power of getting data into the BIDS ecosystem
+-   Zenodo for storing historical pdfs
+-   Pdfs need to be discoverable and persistent
+-   Add to previous language to BIDS website specification tab
+-   add a line pointing to Zenodo
+-   Add to release process
+-   adding pdf build to zenodo
+-   BIDS website start drop down menus extension
