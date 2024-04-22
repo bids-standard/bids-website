@@ -1,0 +1,5 @@
+| Extension  | Title | Content | Lead(s) | Last update |
+| :--------: | :---- | :-----  | :-----  | :---------- |
+{% for bep in include %}
+| [BEP{% bep.number %}](https://bids.neuroimaging.io/bep{% bep.number %}) | {% bep.title %} | {% bep.content %} | {% bep.leads %} | {% bep.update  %} |
+{% endfor %}

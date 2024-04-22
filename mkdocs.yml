@@ -41,6 +41,7 @@ exclude_docs: |
     website/_bep_collection/
     website/_pages/governance.md
     website/_pages/specification.md
+    website/_pages/get_involved.md
 
 nav:
 -   index.md
@@ -136,7 +137,8 @@ nav:
     -   starter_kit/src/dataset_examples.md
     -   examples: examples/README.md
 -   Extensions:
-    -   website/_pages/get_involved.md
+    -   bep/index.md
+    -   BEPs: bep/bep.md
     -   intro: extensions/docs/index.md
     -   general_guidelines: extensions/docs/general_guidelines.md
     -   guide: extensions/docs/guide.md
