@@ -32,16 +32,16 @@ This was a joint meeting between the Steering Group and Maintainers Group to go 
 
 -   [Zenodo author lists](https://github.com/bids-standard/bids-specification/issues/66)
 -   Recognizing diverse contributions
-  -Author: sustained substantial contributions, regularly answering questions
-  -Contributor is more flexible
+    -   Author: sustained substantial contributions, regularly answering questions
+    -   Contributor is more flexible
 -   Alphabetical order and the author list can only be added to not removed
 -   Proposal to add an author’s and contributor’s page to the appendix of the specification
 
 -   Add more details of the specific contribution to BIDS
-  -Can be up to a paragraph narrative
+    -   Can be up to a paragraph narrative
 -   The goal is to list and give more credit to contributors
 -   This can also be hosted on GitHub
-  -Perhaps GitHub Wiki
+    -   Perhaps GitHub Wiki
 
 -   Accepted BEPs
 
@@ -57,7 +57,7 @@ This was a joint meeting between the Steering Group and Maintainers Group to go 
 
 -   [Enhancing our definition of a Maintainer](https://github.com/bids-standard/bids-specification/pull/467)
 -   Adding a specialty or domain expert responsibility to the role
-  -Workshopping the semantics
-  -Gives more clarity and specificity to the responsibilities of the role
+    -   Workshopping the semantics
+    -   Gives more clarity and specificity to the responsibilities of the role
 -   The goal is to nurture more diverse contributions and build in more resilience and sustainability into the organization
 -   This will be managed by the Maintainers Group

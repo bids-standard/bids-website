@@ -109,20 +109,14 @@ Online Presence Working Group: Working Document
 ### Plan for website
 
 -   Eric is chairing the BIDS Online Presence Working Group
-
 -   Eric owes the open letter to the Steering Group
-
 -   May use google season of docs (need to sign up for the program,
   starts April 2nd for applications)
-
 -   Will reach out to INCF to reconnect as the admin for google
   season of docs
-
 -   Mentors identified: Eric, Christine, and Remi (outlined in doc
   linked in agenda)
-
 -   Eric will reach out to the group to schedule a follow up meeting.
-
 -   Yaroslav reminded the group that he has \$5k CAD to compensate for
   work on this project
 
@@ -133,7 +127,6 @@ BEP39 for dimensionality reduction-based networks
 -   May need to introduce new terminology (something akin to an
   \'index', param-mixing, param-components, something akin to
   \'model')
-
 -   Eric suggests instead of \'index' potentially like
   [[\*\_aslcontext.tsv]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
@@ -141,21 +134,17 @@ BEP39 for dimensionality reduction-based networks
 
 -   \<modality\>map : discussion determined _modality_ is a suffix
 
-       -Related discussion
+       -  Related discussion
 
   [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
 
 -   \'model-ICA_description.json' : suggestion to rename file as
   \'dataset_dscription.json' and include \'DatasetType: model" and
   model-ICA_mfp.json similarly to \'task-xxx_bold.json
-
 -   Current state is to build up and extend \'spatiotemporal
   decompositions' introduced in BEP 012
-
 -   Interoperability : BIDS-Prov
-
 -   [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
-
 -   Software parameters is similar to BIDS-prov's Parameters
   description (what is the specific file?)
 
@@ -170,9 +159,9 @@ elected.
 How would we want to implement something like this while addressing
 concerns of FAIRness?
 
-2\. BEP leader determines how to move forward.
+2. BEP leader determines how to move forward.
 
-**3. Could a technical committee make these decisions? (maintainers +
+3. Could a technical committee make these decisions? (maintainers +
 steering group) - if there is quorum possibility to vote one way or the
 other**
 

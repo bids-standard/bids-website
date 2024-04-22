@@ -48,7 +48,7 @@ Regarding discussions on where to host our historical specification pdfs (please
 -   Items to share
 -   1.2.2 release
 -   [BEP018: Genetic information](https://github.com/bids-standard/bids-specification/pull/395)
-  -Do final call before merging into the standard
+    -   Do final call before merging into the standard
 -   Making the standard slide deck
 -   make it longer and presenter can slim down as needed
 -   Making repositories in BIDS standard

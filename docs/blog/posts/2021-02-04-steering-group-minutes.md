@@ -31,16 +31,16 @@ The Steering Group was joined by [BEP20: Eye Tracking](https://bids.neuroimaging
 -   BEP status
 -   Most people are receptive to the BEP
 -   There was a preprint released that is related to the BEP effort
-  -BEP leads reached out and received good feedback from the authors
-  -The preprint was a bit more high-level, but is compatible with the BEP
-  -Preprint focused on how to report Eye Tracking in a paper rather than how to organize and share the data
+    -   BEP leads reached out and received good feedback from the authors
+    -   The preprint was a bit more high-level, but is compatible with the BEP
+    -   Preprint focused on how to report Eye Tracking in a paper rather than how to organize and share the data
 -   The community is sharing data
 -   BEP does have a constrained scope with a clear goal
 -   Core aspect: position of the area and recording that along with the stimuli map
 -   BIDS is an interoperable standard
 -   Community focused to wrap BEP into BIDS
 -   Some colleagues have had trouble getting over the Brain Imaging part of BIDS
-  -Could be an impediment to adoption
+    -   Could be an impediment to adoption
 -   BIDS is a practical implementation, would rather be in BIDS
 -   Eye Tracking with EEG, MEG, and/or MRI is becoming more common
 -   We can use the existing infrastructure to continue unlocking multimodal studies

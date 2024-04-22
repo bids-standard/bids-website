@@ -36,11 +36,11 @@ The Steering Group began the meeting by discussing a new potential BEP and meeti
 -   Monthly basis
 -   BIDS website
 -   Contribution ability for the platform affects decision?
-  -Should be on GitHub because we are a community project
+    -   Should be on GitHub because we are a community project
 -   Documents are in markdown
 -   Maintain a staging and production to enable the capability of previewing prior to release
 -   Tease apart rendering from layout
-  -Focus on layout then on content
-  -Layout and information design directly influence user journey
+    -   Focus on layout then on content
+    -   Layout and information design directly influence user journey
 -   The problem is how the information is conveyed
 -   Include guidelines for how contributions are done on the website

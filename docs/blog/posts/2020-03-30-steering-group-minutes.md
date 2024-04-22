@@ -40,10 +40,10 @@ We invited the [ASL BEP](https://bids.neuroimaging.io/bep005) leads to the next 
 
 -   Less than 1page, high level, 1 sentence for an issue (as needed)
 -   Update covers action of the last month: achievements, struggles, next month outlook, and blocking items.
-  -The blocking items may be most important for Steering Group to be aware of.
-  -Link to the issues on GitHub
+    -   The blocking items may be most important for Steering Group to be aware of.
+    -   Link to the issues on GitHub
 -   This update will provide strong historical perspective
-  -Keep in mind the purpose of the update: The Steering Group wants to capture the work performed to maintain BIDS and what are the hard parts/blockers of the project.
+    -   Keep in mind the purpose of the update: The Steering Group wants to capture the work performed to maintain BIDS and what are the hard parts/blockers of the project.
 
 -   Addressing issues related to lowering the barriers to contribute to BIDS.
 

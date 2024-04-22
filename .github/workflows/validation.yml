@@ -35,7 +35,6 @@ jobs:
                 python no-bad-latin.py
             working-directory: tools
 
-
     # Markdown formatting
     remark:
         runs-on: ubuntu-latest
@@ -44,7 +43,5 @@ jobs:
         -   uses: actions/setup-node@v4
             with:
                 node-version: 14
-        -   name: Install dependencies
-            run: npm install `cat npm-requirements.txt`
-        -   name: Run style checks
-            run: npx remark docs/**/*.md --frail --rc-path .remarkrc
+        -   name: Run markdown style checks
+            run: make remark

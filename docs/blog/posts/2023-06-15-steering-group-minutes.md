@@ -191,15 +191,15 @@ Imaging Neuroscience Response from Steve Smith
 
 -   Getting started for:
 
-  -Users
+    -   Users
 
-  -tools developers,
+    -   tools developers,
 
-  -reviewers,
+    -   reviewers,
 
-  -funding agencies
+    -   funding agencies
 
-  -Institute directors
+    -   Institute directors
 
 -   Should this be in the form of a
   [Checklist](https://www.nmind.org/standards-checklist/)

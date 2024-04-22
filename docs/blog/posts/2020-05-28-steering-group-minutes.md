@@ -29,11 +29,11 @@ Briefly, we discussed our plan to host a town hall at [OHBM](https://www.humanbr
 -   Timeline approved
 -   Very helpful having the RTD rendering
 -   Review perspective taken by RO
-  -Could I make it?
-  -Could I explain it to someone else?
+    -   Could I make it?
+    -   Could I explain it to someone else?
 -   GitHub can look very complicated
 -   Barrier to contributing?
-  -Generate guide for how to comment on a PR
+    -   Generate guide for how to comment on a PR
 -   Proposals for future BEPs submissions
 -   The final proposal is clean of comments
 -   Clear direction for review and what to look at

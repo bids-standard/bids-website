@@ -191,13 +191,13 @@ Github project is established with many ideas but there aren\'t many
 
 -   Create a pull request for this survey:
 
-  -Are they aware of BIDS?
+    -   Are they aware of BIDS?
 
-  -Was it hard to convert data?
+    -   Was it hard to convert data?
 
-  -Do you use data that do not yet fit within BIDS?
+    -   Do you use data that do not yet fit within BIDS?
 
-  -Had questions, but could not find answers
+    -   Had questions, but could not find answers
 
 -
 

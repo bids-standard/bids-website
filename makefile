@@ -27,4 +27,4 @@ package.json:
 	npm install `cat npm-requirements.txt`
 
 remark: package.json
-	npx remark .faq ./docs/index.md ./docs/blog ./docs/tools
+	npx remark .faq ./docs/index.md ./docs/blog ./docs/tools --rc-path .remarkrc

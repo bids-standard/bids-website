@@ -33,19 +33,19 @@ The majority of this meeting we were joined by Melissa Kline of the [Psych-DS](h
 -   Initiative was borne out of the ManyBabies project
 -   During SIPS began the standardization of behavioral data using BIDS as the model
 -   Psych-DS goal is to nudge people toward using a standard
-  -Well structured tsv’s are recommended
+    -   Well structured tsv’s are recommended
 -   Challenge has been thinking through how the file structure can look. Behavioral studies are more heterogeneous than imaging studies - very little consensus among the community
 -   This will make implementing an inheritance principle more difficult
 -   Seeking agreement on metadata terms
 -   Have a schema to validate against
 -   Data practices can be a framework to move forward
 -   Convert common raw data formats (for example Qualtrics) to the standard Psych-DS format
-  -1st step is writing converters to get to Psych-DS
+    -   1st step is writing converters to get to Psych-DS
 -   If a dataset is Psych-DS compliant we can make certain assumptions about the data
 -   Push to have recommended and required keywords
 -   While keeping Psych-DS flexible for the many different use cases
 -   Do not have many keywords - this is not the purpose of Psych-DS
-  -Prefer to point to existing ontologies
+    -   Prefer to point to existing ontologies
 -   Want to give some sort of BIDS + Psych-DS compatible recommendations
 -   Looking for a volunteer to write validator
 -   Psych-DS group is pushing toward v1.0.0
@@ -55,7 +55,7 @@ The majority of this meeting we were joined by Melissa Kline of the [Psych-DS](h
 -   Privacy is a high concern
 -   Psych-DS may share metadata
 -   Could separate the metadata from the data
-  -There is a use for metadata stores pointing to DUA’s for the data
+    -   There is a use for metadata stores pointing to DUA’s for the data
 -   Community is unsure of what they can and cannot share
 -   Appetite for specific instructions to do Open Science
 -   Psych-DS may not be BIDS compliant, but does not block capability

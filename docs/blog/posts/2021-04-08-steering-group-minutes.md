@@ -20,7 +20,7 @@ N/A
 
 -   Lessons learned from incorporating multiple BEPs at the same time
 -   Enhance the expectation management to BEP leads
-  -Potentially update BEP template
+    -   Potentially update BEP template
 -   Nudge BEP leads toward modular PRs
 -   BIDS website: evaluate needs and does it convey the needs of a user
 -   Focus on colleagues not part of the BIDS community

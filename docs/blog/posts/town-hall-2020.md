@@ -10,11 +10,11 @@ Check out the wide range of ways BIDS is being implemented throughout the field!
 
 ## Posters at [OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageID=3885)
 
-#### Category: Modeling and Analysis Methods
+### Category: Modeling and Analysis Methods
 
 Poster 1340: Confounder: A BIDS app for assessing the influence of experimental confounds in task-based GLM model presented by Suzanne Witt
 
-#### Category: Neuroinformatics and Data Sharing
+### Category: Neuroinformatics and Data Sharing
 
 Poster 1895: BIDS Derivatives - Standardization of Processing Results in Brain Imaging presented presented by Chris Markiewicz
 

@@ -30,6 +30,7 @@ N/A
 -   Process to promote and deprecate tools
 -   Classes: converters, Apps, libraries (more bids-adjacent)
 -   Sorting a little differently
-  -Maybe by modality
+    -   Maybe by modality
+
 -   BIDS previous slideshows from the community
 -   [slideshare search](https://www.slideshare.net/search/slideshow?searchfrom=header&q=bids+neuroimaging&ud=any&ft=all&lang=**&sort=)

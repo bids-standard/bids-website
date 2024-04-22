@@ -26,11 +26,11 @@ This was a joint meeting between the Steering and Maintainers Group. We began th
 -   Crediting:
 -   Maintainership counts as "substantial contributions to the conception of the work" (one of [ICMJE](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) criteria).
 -   Look at [https://credit.niso.org/](https://credit.niso.org/) for authorship roles
-  -Roles that are applicable: data curation and software
-  -Resources potentially too
+    -   Roles that are applicable: data curation and software
+    -   Resources potentially too
 -   Include recommended (but not required) text for including Steering/Maintainers as coauthors and description of roles. Requiring credit goes against open values of standard.
-  -Split Steering group and Maintainer group descriptions/recommendations given different levels of engagement.
-  -Generally will be Steering Group + Maintainers or just Maintainers.
+    -   Split Steering group and Maintainer group descriptions/recommendations given different levels of engagement.
+    -   Generally will be Steering Group + Maintainers or just Maintainers.
 -   Add columns to Maintainers table with start date and end date, and self-selection on whether to include on papers if authors think the ex-Maintainer contributed.
 -   Authorship credit could be equal among our groups. BEP leads can make the decision.
 -   Preference may be a BIDS Maintainers consortia author -[Credit taxonomy](https://credit.niso.org/) could address and report specific contributions
