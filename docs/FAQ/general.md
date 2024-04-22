@@ -220,7 +220,8 @@ A list of extensions proposals can be found below.
 Guidelines for contributing to these extensions or starting your own can be found
 in the [BIDS Extension Proposals Guide](https://bids-extensions.readthedocs.io/en/latest/).
 
-If only part of your data is covered under BIDS, an option to allow additional files
+If only part of your data is covered under BIDS,
+an option to allow additional files
 currently not covered in BIDS to pass the validator is
 the [.bidsignore](https://github.com/bids-standard/bids-validator/blob/master/bids-validator/README.md) file,
 which works just like [.gitignore](https://git-scm.com/docs/gitignore).
@@ -246,6 +247,7 @@ but this gives a little extra flexibility.
 - BEP038: [Atlases](https://bids.neuroimaging.io/bep038)
 - BEP039: [Dimensionality reduction-based networks](https://bids.neuroimaging.io/bep039)
 - BEP040: [Functional Ultrasound (fUS)](https://bids.neuroimaging.io/bep040)
+
 ### derivative
 
 - BEP011: [Structural preprocessing derivatives](https://bids.neuroimaging.io/bep011)
@@ -260,10 +262,9 @@ but this gives a little extra flexibility.
 - BEP041: [Statistical Model Derivatives](https://bids.neuroimaging.io/bep041)
 -
 ### metadata
+
 - BEP028: [Provenance](https://bids.neuroimaging.io/bep028)
 - BEP034: [Computational modeling](https://bids.neuroimaging.io/bep034)
--
-### file format
 
 ## What does [this word] mean?
 

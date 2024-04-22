@@ -32,7 +32,7 @@ minimalist example of a BIDS App consisting of a Dockerfile and a simple entry
 point script (written in this case in Python) accepting the standard BIDS Apps
 command line arguments.
 
-## What the kinds of analysis levels (`participant` and `group`) mean?
+## What do the analysis levels (`participant` and `group`) mean?
 
 Generally, `participant` means individual level analysis (for instance: single
 subject) The group level analysis can be thought of as the second step, where
@@ -42,13 +42,13 @@ For example, generating statistic maps of each subject's brain could be
 considered `participant`, while generating the average of these maps across the
 dataset could be considered `group`.
 
-## Where can I can data to test my BIDS app
+## Where can I can data to test my app
 
 For both lightweight and full datasets to test your BIDS App, you can choose
 from one of these
 [example datasets](https://bids-standard.github.io/bids-starter-kit/dataset_examples.html)
 
-## Which container should I use to start building my BIDS App?
+## Which container should I use to start building my app?
 
 The only minimum requirements of a BIDS App's container is its ability to run
 your pipeline. So for example, if your App is mostly Python based it should be
