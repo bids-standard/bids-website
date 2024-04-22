@@ -6,7 +6,7 @@
     ["lint-no-duplicate-headings", false],
     ["lint-list-item-indent", "tab-size"],
     ["lint-emphasis-marker", "consistent"],
-    ["lint-maximum-line-length", 250],
+    ["lint-maximum-line-length", 500],
     ["lint-maximum-heading-length", false],
     ["lint-no-shortcut-reference-link", false],
     ["remark-lint-unordered-list-marker-style", "-"],
