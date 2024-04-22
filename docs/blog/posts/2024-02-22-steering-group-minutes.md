@@ -153,8 +153,9 @@ BEP39 for dimensionality reduction-based networks
 Should there be a mechanism for addressing conflicts that halt BEP
 progress?
 
-Suggestion: 1. a voting system similar to how the steering group is
-elected.
+Suggestion:
+
+1. a voting system similar to how the steering group is elected.
 
 How would we want to implement something like this while addressing
 concerns of FAIRness?

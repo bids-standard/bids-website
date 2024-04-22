@@ -16,6 +16,6 @@ To virtually attend, please register on the [open science room website](https://
 
 For those attending OHBM in-person - See you there!
 
-Please feel free to reach out to Franklin (ffein@stanford.edu) with any questions.
+Please feel free to reach out to Franklin with any questions.
 
 See you then!

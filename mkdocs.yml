@@ -7,8 +7,7 @@ plugins:
 -   search
 -   tags
 -   social
--   blog:
-        archive_pagination_per_page: 20
+-   blog
 -   rss:
         match_path: blog/posts/.*
         date_from_meta:
@@ -43,7 +42,7 @@ exclude_docs: |
 nav:
 -   index.md
 -   Standards:
-    -   website/_pages/specification.md
+    -   standards/index.md
     -   BIDS schema:
         -   extensions/docs/schema.md
         -   how it works:
@@ -96,7 +95,7 @@ nav:
         -   dashboard: apps/apps.md
     -   Others: tools/others.md
 -   Collaboration:
-    -   Governance: website/_pages/governance.md
+    -   Governance: collaboration/index.md
     -   Code of conduct:
         -   specification: specification/CODE_OF_CONDUCT.md
         -   starter_kit: starter_kit/CODE_OF_CONDUCT.md

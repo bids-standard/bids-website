@@ -1,0 +1,16 @@
+---
+# - group: maintainers
+#   members:
+#     - name:
+#       git:
+#       affiliation:
+#       twitter:
+#       researchgate:
+#       homepage:
+#       city:
+#       bio:
+
+-   group: past_maintainers
+    members:
+    -   name: Franklin Feingold
+        git: franklin-feingold

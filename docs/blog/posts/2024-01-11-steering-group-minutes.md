@@ -129,82 +129,56 @@ Github project is established with many ideas but there aren\'t many
   )
 
 -   What are the most important items that should be attended to?
-
 -   Long term goal should be to make BIDS adoption easier, will a 2.0
-  version create more confusion between versions or how can we make
-  BIDS 2.0 improve adoption from community
+    version create more confusion between versions or how can we make
+    BIDS 2.0 improve adoption from community
 
 -   While presenting 2.0 we would like to accent that to be
-  developed in 2.0 features would help ?
+    developed in 2.0 features would help ?
 
 -   Revisiting how BIDS is defined beyond MRI may be a path to improving
-  adoption within the neuroscience community. Meaning BIDS started with
-  MRI and some of the BIDS spec might be more complicated than could
-  have been if we had focused on all modalities from the start.
+    adoption within the neuroscience community. Meaning BIDS started with
+    MRI and some of the BIDS spec might be more complicated than could
+    have been if we had focused on all modalities from the start.
 
 -   iEEG, MEG,\... -
-
 -   Perhaps a tool for automatic BIDS conversions would help, but
-  there are at least 20 different file formats for
-  electrophysiology data
+    there are at least 20 different file formats for
+    electrophysiology data
 
 -   **Open Science Prize!**
-
 -   What should we do with the physical prize? We could 3D print
-  replicate the model to share among the maintainers/steering
-  committee.
+    replicate the model to share among the maintainers/steering
+    committee.
 
 -   What to do with the prize money?
-
 -   How do we receive the money? - \$5k CAD per person or \$55k CAD
-  to be spent as needed for BIDS
+    to be spent as needed for BIDS
 
 -   \$55k CAD will be split with U Washington and Cyril (sub-contract
-  with xx Institution) so funds will be in both US and Europe
+    with xx Institution) so funds will be in both US and Europe
 
--
-
-```{=html}
-<!-- -->
-```
 
 -   **BIDS Steering Committee Theme for the year: Improve adoption**
-
 -   Web presence (already in process - meeting established for Jan 12th)
-
 -   Training and dissemination
-
--   How do we poll non-BIDS users to understand barriers to BIDS
-  adoption?
+-   How do we poll non-BIDS users to understand barriers to BIDS adoption?
 
    -   Big consortia (OHBM, SfN, INCF, \...)
-
    -   People who have adopted BIDS but not fully
-
    -   Openneuro bidsignore files
-
    -   Should we target specific regions such as Asia which has
 
   historically provided few contributions to BIDS
 
 -   First steps: create and agree on a survey for non-BIDS users
-
 -   Create a pull request for this survey:
 
     -   Are they aware of BIDS?
-
     -   Was it hard to convert data?
-
     -   Do you use data that do not yet fit within BIDS?
-
     -   Had questions, but could not find answers
 
--
-
 -   [[Yaroslav Halchenko]](mailto:yarikoptic@gmail.com)
-  will create a pull request on github:
-  [[https://github.com/bids-standard/bids-starter-kit/pull/376]](https://github.com/bids-standard/bids-starter-kit/pull/376)
-
--
-
--
+    will create a pull request on github:
+    [[https://github.com/bids-standard/bids-starter-kit/pull/376]](https://github.com/bids-standard/bids-starter-kit/pull/376)
