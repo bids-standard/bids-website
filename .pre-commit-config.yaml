@@ -27,12 +27,8 @@ repos:
     rev: v2.2.6
     hooks:
     -   id: codespell
-        args: [--config=.codespellrc]
-        exclude: |
-            (?x)^(
-                docs/specification/.*
-            )$
-
+        args: [--toml, pyproject.toml]
+        additional_dependencies: [tomli]
 
 -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: 0.2.3

@@ -91,18 +91,19 @@ nav:
             -   examples: execution/src/examples.md
             -   release notes: execution/src/CHANGELOG.md
 -   Tools:
-    -   website/_pages/benefits.md
+    -   tools/index.md
     -   Validator: starter_kit/src/validator.md
     -   Converters:
-        -   website/_pages/benefits.md
-        - MRI and PET: converters/mri_pet.md
-        - MEEG: converters/meeg.md
-        - physio: converters/physio.md
-        - other: converters/other.md
+        - tools/converters/index.md
+        - MRI and PET: tools/converters/mri_pet.md
+        - MEEG: tools/converters/meeg.md
+        - physio: tools/converters/physio.md
+        - others: tools/converters/others.md
     -   BIDS apps:
         -   apps/about.md
         -   tutorial: apps/tutorial.md
         -   dashboard: apps/apps.md
+    -   Others: tools/others.md
 -   Collaboration:
     -   Governance: website/_pages/governance.md
     -   Code of conduct:

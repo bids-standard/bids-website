@@ -10,32 +10,36 @@ ROOT = Path(__file__).parents[1]
 
 TEMPLATES_DIR = ROOT / "templates"
 
-WEBSITE_DATA_DIR = ROOT / "docs" / "website" / "_data"
+WEBSITE_DATA_DIR = ROOT / "data"
 
 
-def generate_converter_table(file):
-
-    input_file = WEBSITE_DATA_DIR / file
-
-    content = yaml.load(input_file)
-
-    env = Environment(
+def return_jinja_env():
+    return Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
         autoescape=select_autoescape(),
         lstrip_blocks=True,
         trim_blocks=True,
     )
 
-    template = env.get_template("converters_table_md.jinja")
 
+def generate_converter_table(file):
+    input_file = WEBSITE_DATA_DIR / file
+    content = yaml.load(input_file)
+    env = return_jinja_env()
+    template = env.get_template("converters_table_md.jinja")
     return template.render(include=content[0])
 
 
+def generate_tools_table(file):
+    input_file = WEBSITE_DATA_DIR / file
+    content = yaml.load(input_file)
+    env = return_jinja_env()
+    template = env.get_template("tools_table_md.jinja")
+    return template.render(include=content)
+
+
 def main():
-    generate_converter_table(file="converters.yml")
-    generate_converter_table(file="physio_converters.yml")
-    generate_converter_table(file="other_converters.yml")
-    generate_converter_table(file="MEEG_converters.yml")
+    print(generate_tools_table(file="tools.yml"))
 
 
 if __name__ == "__main__":

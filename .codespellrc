@@ -1,4 +1,0 @@
-[codespell]
-skip = .git,env,venv
-builtin = clear,rare,en-GB_to_en-US
-ignore-words-list = nd,manuel,ALS,TE,Acknowledgements

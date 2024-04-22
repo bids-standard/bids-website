@@ -1,0 +1,4 @@
+---
+-   name: OpenNeuro
+    url: http://openneuro.org
+    description: A free and open platform for validating and sharing BIDS-compliant data.

@@ -2,8 +2,8 @@
 line-length = 79
 
 [tool.codespell]
-# ignore-words =
-skip = ".git"
+ignore-words-list = "nd,manuel,ALS,TE,Acknowledgements,"
+skip = ".git,env,specification,starter_kit,examples,grant,apps,execution,pyproject.toml"
 
 [tool.isort]
 combine_as_imports = true
