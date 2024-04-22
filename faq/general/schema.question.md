@@ -8,8 +8,8 @@ It is (by and large) the BIDS Specification, but written in a declarative form.
 
 The BIDS schema is available in two machine readable formats:
 
-- as a set of [YAML](https://en.wikipedia.org/wiki/YAML) files in the [BIDS specification repository](https://github.com/bids-standard/bids-specification/src/schema)
-- as a [single json file](https://bids-specification.readthedocs.io/en/stable/schema.json)
+-   as a set of [YAML](https://en.wikipedia.org/wiki/YAML) files in the [BIDS specification repository](https://github.com/bids-standard/bids-specification/src/schema)
+-   as a [single json file](https://bids-specification.readthedocs.io/en/stable/schema.json)
 
 A light-weight introduction to the schema can be found [here](https://bids-extensions.readthedocs.io/en/latest/schema/).
 

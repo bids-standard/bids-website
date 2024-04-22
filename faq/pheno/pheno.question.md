@@ -5,7 +5,7 @@ title: "How can I store subject phenotypic data?"
 In the phenotype folder, according to the details provided for
 [phenotypes](https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data):
 
-```
+```text
 bids-root
     phenotype
 ```

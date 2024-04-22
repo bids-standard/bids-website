@@ -23,10 +23,8 @@ There are several options to do that
 
 Otherwise you can also use:
 
--   [Fieldtrip](http://www.fieldtriptoolbox.org/faq/how_can_i_anonymize_an_anatomical_mri/)
-    under matlab can do it.
--   SPM8 and SPM12: when in the batch editor go to:
-    `SPM menu --> Util --> Deface`
+-   [Fieldtrip](http://www.fieldtriptoolbox.org/faq/how_can_i_anonymize_an_anatomical_mri/) under matlab can do it.
+-   SPM8 and SPM12: when in the batch editor go to: `SPM menu --> Util --> Deface`
 
 <hr>
 

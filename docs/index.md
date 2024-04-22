@@ -1,6 +1,6 @@
 ---
 hide:
-  - navigation
+-   navigation
 ---
 
 Neuroimaging experiments result in complex data that can be arranged in many different ways.
@@ -33,45 +33,40 @@ With the ongoing development of new tools and resources it is important to keep 
 
 By using this standard you will benefit in the following ways:
 
-- It will be easy for another researcher to work on your data. To understand the organization of the files and their format you will only need to refer them to this document. This is especially important if you are running your own lab and anticipate more than one person working on the same data over time. By using BIDS you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.
-- There is a growing number of [data analysis software packages](#software) that can understand data organized according to BIDS.
-- Databases such as [OpenNeuro.org](http://openneuro.org), [LORIS](http://www.loris.ca), [COINS](https://coins.trendscenter.org), [XNAT](https://central.xnat.org/), [SciTran](https://scitran.github.io/), and others will accept and export datasets organized according to BIDS. If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.
-- There are [validation tools](https://github.com/bids-standard/bids-validator) (also available [online](http://bids-standard.github.io/bids-validator/)) that can check your dataset integrity and let you easily spot missing values.
+-   It will be easy for another researcher to work on your data. To understand the organization of the files and their format you will only need to refer them to this document. This is especially important if you are running your own lab and anticipate more than one person working on the same data over time. By using BIDS you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.
+-   There is a growing number of [data analysis software packages](#software) that can understand data organized according to BIDS.
+-   Databases such as [OpenNeuro.org](http://openneuro.org), [LORIS](http://www.loris.ca), [COINS](https://coins.trendscenter.org), [XNAT](https://central.xnat.org/), [SciTran](https://scitran.github.io/), and others will accept and export datasets organized according to BIDS. If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.
+-   There are [validation tools](https://github.com/bids-standard/bids-validator) (also available [online](http://bids-standard.github.io/bids-validator/)) that can check your dataset integrity and let you easily spot missing values.
 
 ## Further Information
 
-- Good introductions to the BIDS standard can be found in the initial [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644), as well as in the follow up papers on specific modalities: [MEG](https://www.nature.com/articles/sdata2018110), [EEG](https://www.nature.com/articles/s41597-019-0104-8), [iEEG](https://www.nature.com/articles/s41597-019-0105-7), [genetics](https://doi.org/10.1093/gigascience/giaa104), [PET](https://doi.org/10.1038/s41597-022-01164-1), [microscopy](https://doi.org/10.3389/fnins.2022.871228), and [qMRI](https://doi.org/10.1038/s41597-022-01571-4).
-
-- Look through some of the community's [presentations on BIDS](https://osf.io/yn93h/).
-
-- Take a look at how the community [uses BIDS](https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4).
-
-- We have constructed a [grant writing kit](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit) to assist you in putting together BIDS-related grant proposals.
-
-- We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020). Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
-
+-   Good introductions to the BIDS standard can be found in the initial [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644), as well as in the follow up papers on specific modalities: [MEG](https://www.nature.com/articles/sdata2018110), [EEG](https://www.nature.com/articles/s41597-019-0104-8), [iEEG](https://www.nature.com/articles/s41597-019-0105-7), [genetics](https://doi.org/10.1093/gigascience/giaa104), [PET](https://doi.org/10.1038/s41597-022-01164-1), [microscopy](https://doi.org/10.3389/fnins.2022.871228), and [qMRI](https://doi.org/10.1038/s41597-022-01571-4).
+-   Look through some of the community's [presentations on BIDS](https://osf.io/yn93h/).
+-   Take a look at how the community [uses BIDS](https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4).
+-   We have constructed a [grant writing kit](https://docs.google.com/document/d/1Q7JTOvUqt05YQfnbvGoP1SZQy_CGkNEVcsVZeS4D5_o/edit) to assist you in putting together BIDS-related grant proposals.
+-   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020). Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
 
 ## Acknowledgments
 
 This work has been done by the community of [individual contributors](https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html). Their work was
 supported by the
 
-| Support source | Description of the contributions |
-| ----- | -----|
-| [International Neuroinformatics Coordinating Facility](https://www.incf.org/) | [Neuroimaging Data Sharing Task Force](https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force) collated initial group of people to push pilot BIDS development and promotion|
-| Laura and John Arnold Foundation | |
-| [NIMH R24MH114705](https://reporter.nih.gov/project-details/9411944) | BIDS common derivatives BEP |
-| [NSF OAC-1760950](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1760950) | |
-| [NIMH 1R24MH117295](https://reporter.nih.gov/project-details/9795271) | DANDI archive contributed development of Microscopy BEP|
-| [NIMH 2P41EB019936](https://reporter.nih.gov/project-details/10334133) | ReproNim project contributed various enhancements and fixes|
-| [NIMH MH117179](https://reporter.nih.gov/project-details/10145071) | OpenNeuro archive contributed various enhancements and fixes|
-| [NIMH 1ZIAMH002977-01](https://reporter.nih.gov/project-details/10489085) |  OpenNeuroPET project contributed various enhancements and fixes |
-| [NIMH 5R01MH126699-02](https://reporter.nih.gov/project-details/10460628) | [Brain Connectivity Project](https://pestillilab.github.io/bids-connectivity/)|
-| [NIMH MH109682](https://reporter.nih.gov/project-details/9982125) | NeuroScout|
-| Novo Nordisk Foundation NNF20OC0063277 | |
-| [NIMH 1RF1MH126700-01A1](https://reporter.nih.gov/project-details/10480619) | Hierarchical Event Descriptors (HED)|
-| [NIBIB 1R01EB020740](https://reporter.nih.gov/project-details/9053094) | Nipype|
-| [The Neuro-Irv and Helga Cooper Foundation](https://www.mcgill.ca/neuro/open-science/open-science-awards-and-prizes/neuro-irv-and-helga-cooper-foundation-open-science-prizes) | 2023 International Open Science Prize|
+| Support source                                                                                                                                                                 | Description of the contributions                                                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [International Neuroinformatics Coordinating Facility](https://www.incf.org/)                                                                                                  | [Neuroimaging Data Sharing Task Force](https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force) collated initial group of people to push pilot BIDS development and promotion |
+| Laura and John Arnold Foundation                                                                                                                                               |                                                                                                                                                                                                                                   |
+| [NIMH R24MH114705](https://reporter.nih.gov/project-details/9411944)                                                                                                           | BIDS common derivatives BEP                                                                                                                                                                                                       |
+| [NSF OAC-1760950](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1760950)                                                                                                    |                                                                                                                                                                                                                                   |
+| [NIMH 1R24MH117295](https://reporter.nih.gov/project-details/9795271)                                                                                                          | DANDI archive contributed development of Microscopy BEP                                                                                                                                                                           |
+| [NIMH 2P41EB019936](https://reporter.nih.gov/project-details/10334133)                                                                                                         | ReproNim project contributed various enhancements and fixes                                                                                                                                                                       |
+| [NIMH MH117179](https://reporter.nih.gov/project-details/10145071)                                                                                                             | OpenNeuro archive contributed various enhancements and fixes                                                                                                                                                                      |
+| [NIMH 1ZIAMH002977-01](https://reporter.nih.gov/project-details/10489085)                                                                                                      | OpenNeuroPET project contributed various enhancements and fixes                                                                                                                                                                   |
+| [NIMH 5R01MH126699-02](https://reporter.nih.gov/project-details/10460628)                                                                                                      | [Brain Connectivity Project](https://pestillilab.github.io/bids-connectivity/)                                                                                                                                                    |
+| [NIMH MH109682](https://reporter.nih.gov/project-details/9982125)                                                                                                              | NeuroScout                                                                                                                                                                                                                        |
+| Novo Nordisk Foundation NNF20OC0063277                                                                                                                                         |                                                                                                                                                                                                                                   |
+| [NIMH 1RF1MH126700-01A1](https://reporter.nih.gov/project-details/10480619)                                                                                                    | Hierarchical Event Descriptors (HED)                                                                                                                                                                                              |
+| [NIBIB 1R01EB020740](https://reporter.nih.gov/project-details/9053094)                                                                                                         | Nipype                                                                                                                                                                                                                            |
+| [The Neuro-Irv and Helga Cooper Foundation](https://www.mcgill.ca/neuro/open-science/open-science-awards-and-prizes/neuro-irv-and-helga-cooper-foundation-open-science-prizes) | 2023 International Open Science Prize                                                                                                                                                                                             |
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <a href="https://www.incf.org/"><img src="./assets/img/incf-badge_281x210.png" alt="INCF-badge" height=120></a>

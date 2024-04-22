@@ -22,3 +22,9 @@ update_faq:
 	cd faq/pheno && faqtory build
 	cd faq/bep && faqtory build
 	cd faq/apps && faqtory build
+
+package.json:
+	npm install `cat npm-requirements.txt`
+
+remark: package.json
+	npx remark .faq ./docs/index.md ./docs/blog ./docs/tools

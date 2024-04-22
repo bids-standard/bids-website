@@ -3,7 +3,7 @@ date: 2023-07-06
 slug: Steering Group minutes
 author: anonymous
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 

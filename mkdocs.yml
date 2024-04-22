@@ -86,7 +86,7 @@ nav:
     -   Validator: starter_kit/src/validator.md
     -   Converters:
         - tools/converters/index.md
-        - MRI and PET: tools/converters/mri_pet.md
+        - MRI and PET: tools/converters/mri-pet.md
         - MEEG: tools/converters/meeg.md
         - physio: tools/converters/physio.md
         - others: tools/converters/others.md

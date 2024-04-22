@@ -3,7 +3,7 @@ date: 2020-03-12
 slug: Steering Group minutes
 author: Franklin Feingold
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 <!-- more -->

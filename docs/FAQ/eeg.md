@@ -13,12 +13,13 @@ and hardware filters that were applied
 during the collection or processing of the data.
 Generally, there are two accepted formats for that:
 
-1. a string containing `"n/a"`, to show that no filter was used or the
-   information on the filter is not available.
-2. a json object containing one object per filter. This filter-specific object
-   contains key-value pairs to describe filter parameters. As per BIDS, all
-   frequencies SHOULD be in Hz. For example a single hardware filter could be
-   specified as:
+1.  a string containing `"n/a"`, to show that no filter was used
+    or the information on the filter is not available.
+
+1.  a json object containing one object per filter. This filter-specific object
+    contains key-value pairs to describe filter parameters. As per BIDS, all
+    frequencies SHOULD be in Hz. For example a single hardware filter could be
+    specified as:
 
 ```json
 "HardwareFilters": {"HighpassFilter": {"CutoffFrequency": 0.1}}

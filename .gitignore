@@ -1,4 +1,13 @@
-venv/
+venv
+env
+
+.tox
+
 *.DS_Store
+
 .cache
+
 __pycache__
+
+node_modules
+package*json

@@ -1,6 +1,6 @@
 ---
 hide:
-  - toc
+-   toc
 ---
 
 {{ MACROS___generate_converter_table(file="from_BIDS_converters.yml") }}

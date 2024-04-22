@@ -1,6 +1,5 @@
 ---
 title: "I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?"
-reference:
 ---
 
 (faq_session)=
