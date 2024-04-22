@@ -1,5 +1,5 @@
 ---
-title: "Where can I can data to test my BIDS app"
+title: "Where can I can data to test my app"
 ---
 
 For both lightweight and full datasets to test your BIDS App, you can choose

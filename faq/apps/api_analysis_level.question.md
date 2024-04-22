@@ -1,5 +1,5 @@
 ---
-title: "What the kinds of analysis levels (`participant` and `group`) mean?"
+title: "What do the analysis levels (`participant` and `group`) mean?"
 ---
 
 Generally, `participant` means individual level analysis (for instance: single

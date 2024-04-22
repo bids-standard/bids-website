@@ -9,7 +9,8 @@ A list of extensions proposals can be found below.
 Guidelines for contributing to these extensions or starting your own can be found
 in the [BIDS Extension Proposals Guide](https://bids-extensions.readthedocs.io/en/latest/).
 
-If only part of your data is covered under BIDS, an option to allow additional files
+If only part of your data is covered under BIDS,
+an option to allow additional files
 currently not covered in BIDS to pass the validator is
 the [.bidsignore](https://github.com/bids-standard/bids-validator/blob/master/bids-validator/README.md) file,
 which works just like [.gitignore](https://git-scm.com/docs/gitignore).

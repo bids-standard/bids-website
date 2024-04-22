@@ -3,7 +3,8 @@ title: "How to format Hardware and Software filter fields in a .json?"
 ---
 
 In the modality specific sidecar file `_eeg.json`, we can specify the software
-and hardware filters that were applied during the collection or processing of the data.
+and hardware filters that were applied
+during the collection or processing of the data.
 Generally, there are two accepted formats for that:
 
 1. a string containing `"n/a"`, to show that no filter was used or the
@@ -17,6 +18,6 @@ Generally, there are two accepted formats for that:
 "HardwareFilters": {"HighpassFilter": {"CutoffFrequency": 0.1}}
 ```
 
-For a formatted example on how to deal with this in the BIDS context, please see
-this
+For a formatted example on how to deal with this in the BIDS context,
+please see this
 [template](https://github.com/bids-standard/bids-starter-kit/blob/main/templates/sub-01/ses-01/eeg/sub-01_ses-01_task-FilterExample_eeg.json).

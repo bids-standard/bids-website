@@ -1,5 +1,5 @@
 ---
-title: "Which container should I use to start building my BIDS App?"
+title: "Which container should I use to start building my app?"
 ---
 
 The only minimum requirements of a BIDS App's container is its ability to run
