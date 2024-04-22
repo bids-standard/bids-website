@@ -33,3 +33,4 @@ def define_env(env):
         macros.generate_converter_table, "MACROS___generate_converter_table"
     )
     env.macro(macros.generate_tools_table, "MACROS___generate_tools_table")
+    env.macro(macros.generate_members_table, "MACROS___generate_members_table")

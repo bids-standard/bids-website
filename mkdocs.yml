@@ -22,22 +22,25 @@ docs_dir: docs
 
 exclude_docs: |
     .github
-    starter_kit/reports/
-    website/_bep_collection/
     apps/README.md
+    apps/dev_faq.md
     execution/README.md
     execution/BIDS_logo/README.md
     extensions/README.md
+    extensions/docs/faq.md
     starter_kit/README.md
     starter_kit/matlabCode/general/README.md
     starter_kit/src/CODE_OF_CONDUCT.md
+    starter_kit/reports/
     starter_kit/src/tutorials/media/README.md
+    starter_kit/src/FAQ.md
     starter_kit/src/CONTRIBUTING.md
     stats_models/README.md
     stats_models/bsmschema/README.md
     stats_models/specification/walkthrough-2.md
-    website/README.md
-    website/tools/README.md
+    website/_bep_collection/
+    website/_pages/governance.md
+    website/_pages/specification.md
 
 nav:
 -   index.md
@@ -95,7 +98,7 @@ nav:
         -   dashboard: apps/apps.md
     -   Others: tools/others.md
 -   Collaboration:
-    -   Governance: collaboration/index.md
+    -   Governance: collaboration/governance.md
     -   Code of conduct:
         -   specification: specification/CODE_OF_CONDUCT.md
         -   starter_kit: starter_kit/CODE_OF_CONDUCT.md

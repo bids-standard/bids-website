@@ -1,32 +1,5 @@
 # Governance and Decision Making
 
-Table of Contents
-
-[1. Introduction](#1-introduction)
-
-[2. Background](#2-background)
-- [A. Project Summary](#a-project-summary)
-- [B. BIDS Mission Statement](#b-bids-mission-statement)
-
-[3. Leadership Structure](#3-leadership-structure)
-
-[4. Governance of the standardization
-process](#4-governance-of-the-standardization-process)
-- [A. Principles for open standards
-development](#a-principles-for-open-standards-development)
-- [B. Standard decision making process
-overview](#b-standard-decision-making-process-overview)
-
-[X. Appendix](#x-appendix)
-- [A. BEP Procedure: Key definitions](#a-bep-procedure-key-definitions)
-- [B. Voting Procedure](#b-voting-procedure)
-- [C. Governance ratification and BIDS Steering Group
-initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initialization)
-- [D. License](#d-license)
-- [E. Help](#e-help)
-- [F. Acknowledgments](#f-acknowledgements)
-- [G. Election data and code](#g-election-data-and-code)
-
 ## 1. Introduction
 
 This document, *Brain Imaging Data Structure (BIDS): Governance and
@@ -104,26 +77,25 @@ to develop a simple and intuitive way to organize and describe
 neuroimaging and associated data. BIDS has three foundational
 principles:
 
-1. To minimize complexity and facilitate adoption, reuse existing
-methods and technologies whenever possible.
-2. Tackle 80% of the most commonly used neuroimaging data, derivatives,
-and models (inspired by the pareto principle).
-3. Adoption by the global neuroimaging community and their input during
-the creation of the specification is critical for the success of the
-project.
+1.  To minimize complexity and facilitate adoption, reuse existing
+    methods and technologies whenever possible.
+
+1.  Tackle 80% of the most commonly used neuroimaging data, derivatives,
+    and models (inspired by the pareto principle).
+
+1.  Adoption by the global neuroimaging community and their input during
+   the creation of the specification is critical for the success of the project.
 
 ## 3. Leadership structure
 
 To achieve the goals of widespread adoption of the standard while
-growing to adapt to its community of members, BIDS is led by a series of
-groups.
+growing to adapt to its community of members, BIDS is led by a series of groups.
 
 The following figure illustrates the structure of the groups described
 in this document. The specific organization and responsibilities of
 these groups are laid out in detail, below.
 
-![leadership_figure](../../assets/img/governance_figure.jpg "Leadership
-Structure")
+![leadership_figure](../assets/img/governance_figure.jpg "Leadership Structure")
 
 ### BIDS Steering Group
 
@@ -157,11 +129,11 @@ responsibilities.
 
 The current members of the Steering group are:
 
-{% include members_table.html members=site.data.steering %}
+{{ MACROS___generate_members_table(file="steering.yml") }}
 
 Past members of the Steering group are:
 
-{% include members_table.html members=site.data.past_steering %}
+{{ MACROS___generate_members_table(file="past_steering.yml") }}
 
 ### BEP Working Group
 
@@ -198,11 +170,11 @@ to the Steering Group.
 
 The current members of the Maintainers group are:
 
-{% include members_table.html members=site.data.maintainers %}
+{{ MACROS___generate_members_table(file="maintainers.yml") }}
 
 Past members of the Maintainers group are:
 
-{% include members_table.html members=site.data.past_maintainers %}
+{{ MACROS___generate_members_table(file="past_maintainers.yml") }}
 
 If you need to contact the maintainers on a specific topic you can use the following email: `bids.maintenance@gmail.com`.
 However, you may receive a more timely response when pinging them on one of the GitHub repositories using the tag `@bids-standard/maintainers`.
@@ -246,11 +218,12 @@ the merge of their BEP.
 If an advisory group member decides to leave the advisory group,
 they should inform the steering group in advance and are responsible to help:
 
-* provide a list of possible replacement candidates from the BIDS community
-  with a similar level of expertise to theirs, and
-* assist the steering and maintainers in choosing a suitable replacement.
+-   provide a list of possible replacement candidates from the BIDS community
+    with a similar level of expertise to theirs, and
 
-{% include members_table.html members=site.data.advisory %}
+-   assist the steering and maintainers in choosing a suitable replacement.
+
+{{ MACROS___generate_members_table(file="advisory.yml") }}
 
 ### Other working/interest Groups
 
@@ -294,16 +267,20 @@ The BIDS approach to standards development follows the principles of the
 Standards](https://open-stand.org/about-us/principles/) developed by
 OpenStand:
 
-1. Respectful cooperation between standards organizations
-2. Adherence to fundamental principles of standards development:
-  a. Due Process
-  b. Broad Consensus
-  c. Transparency
-  d. Balance
-  e. Openness
-3. Collective empowerment
-4. Availability
-5. Voluntary adoption
+1.  Respectful cooperation between standards organizations
+
+1.  Adherence to fundamental principles of standards development:
+    a.  Due Process
+    b.  Broad Consensus
+    c.  Transparency
+    d.  Balance
+    e.  Openness
+
+1.  Collective empowerment
+
+1.  Availability
+
+1.  Voluntary adoption
 
 ### B. Standard decision making process overview
 
@@ -312,18 +289,18 @@ the BIDS Community and striving to achieve consensus on each level of
 the BIDS standard process.
 
 The criteria for forming a new BEP Working Group:
-- Statement of intent with defined scope, deliverables, and use cases
-- Statement of intent accepted by the BIDS Steering Group
+
+-   Statement of intent with defined scope, deliverables, and use cases
+-   Statement of intent accepted by the BIDS Steering Group
 
 The criteria of the BIDS Steering Group evaluation for elevating a Draft
 BEP to a Proposed BEP:
-- Integrates into the current edition of the standard and is consistent
-with the BIDS Mission Statement
-- Clearly defines a filename template and field names
-- At least 10 business days of community feedback publicly posted across
-the BIDS channels
-- Consensus reached among the Working Group
-- Use cases and examples clearly illustrated
+
+-   Integrates into the current edition of the standard and is consistent with the BIDS Mission Statement
+-   Clearly defines a filename template and field names
+-   At least 10 business days of community feedback publicly posted across the BIDS channels
+-   Consensus reached among the Working Group
+-   Use cases and examples clearly illustrated
 
 Upon a successful Draft BEP review, the BEP will be converted from a
 Google document to a pull request for the
@@ -332,16 +309,18 @@ This will enable further community feedback on the Proposed BEP. Tools
 may begin integrating the Proposed BEP specification.
 
 The criteria for merging a Proposed BEP into the BIDS Standard:
-- Proposal positively reviewed by representative community members.
-The definition of "representative" will differ depending on the scope of
-the extension and will be reviewed as part of the steering group's final
-approval.
-- BIDS Steering Group final approval.
+
+-   Proposal positively reviewed by representative community members.
+    The definition of "representative" will differ depending on the scope of
+    the extension and will be reviewed as part of the steering group's final approval.
+
+-   BIDS Steering Group final approval.
 
 The Steering Group evaluates:
-- Sufficiency of community feedback for the scope of the extension
-- Validator updated to include the Proposed BEP specification
-- Final review of the integration into the BIDS standard
+
+-   Sufficiency of community feedback for the scope of the extension
+-   Validator updated to include the Proposed BEP specification
+-   Final review of the integration into the BIDS standard
 
 ## X. Appendix
 
@@ -490,18 +469,18 @@ This document draws heavily from the
 [Modern Paradigm for Standards](https://open-stand.org/about-us/principles/)
 and from other open-source governance documents including:
 
-- [https://numpy.org/doc/stable/dev/governance/index.html](https://numpy.org/doc/stable/dev/governance/index.html)
-- [https://docs.scipy.org/doc/scipy/dev/governance.html](https://docs.scipy.org/doc/scipy/dev/governance.html)
-- [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html)
-- [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/)
-- [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards)
-- [https://chrisholdgraf.com/blog/2018/rust_governance/](https://chrisholdgraf.com/blog/2018/rust_governance/)
-- [https://www.seedsforchange.org.uk/consensus](https://www.seedsforchange.org.uk/consensus)
-- [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance)
-- [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en)
-- [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104)
-- [https://randyfay.com/content/drupals-governance](https://randyfay.com/content/drupals-governance)
-- [https://www.drupal.org/governance](https://www.drupal.org/governance)
+-   [https://numpy.org/doc/stable/dev/governance/index.html](https://numpy.org/doc/stable/dev/governance/index.html)
+-   [https://docs.scipy.org/doc/scipy/dev/governance.html](https://docs.scipy.org/doc/scipy/dev/governance.html)
+-   [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html)
+-   [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/)
+-   [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards)
+-   [https://chrisholdgraf.com/blog/2018/rust_governance/](https://chrisholdgraf.com/blog/2018/rust_governance/)
+-   [https://www.seedsforchange.org.uk/consensus](https://www.seedsforchange.org.uk/consensus)
+-   [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance)
+-   [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en)
+-   [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104)
+-   [https://randyfay.com/content/drupals-governance](https://randyfay.com/content/drupals-governance)
+-   [https://www.drupal.org/governance](https://www.drupal.org/governance)
 
 ### G. Election data and code
 

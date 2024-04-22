@@ -38,8 +38,16 @@ def generate_tools_table(file):
     return template.render(include=content)
 
 
+def generate_members_table(file):
+    input_file = WEBSITE_DATA_DIR / file
+    content = yaml.load(input_file)
+    env = return_jinja_env()
+    template = env.get_template("members_table_html.jinja")
+    return template.render(include=content[0])
+
+
 def main():
-    print(generate_tools_table(file="tools.yml"))
+    print(generate_members_table(file="steering.yml"))
 
 
 if __name__ == "__main__":

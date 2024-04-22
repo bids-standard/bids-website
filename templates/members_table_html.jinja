@@ -1,0 +1,19 @@
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+    {% for person in include.members %}
+    <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+      <a href="https://github.com/{{ person.git }}">
+        <img
+          {% if person.picture %}
+            src="{{ person.picture }}"
+          {% else %}
+            src="https://github.com/{{ person.git }}.png?size=150"
+          {% endif %}
+          width="150px;"
+          alt="{{ person.name }}"
+        />
+        <br>
+        <sub><b>{{ person.name }}</b></sub>
+      </a>
+    </div>
+    {% endfor %}
+  </div>

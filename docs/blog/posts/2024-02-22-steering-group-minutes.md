@@ -130,23 +130,23 @@ BEP39 for dimensionality reduction-based networks
 -   Eric suggests instead of \'index' potentially like
   [[\*\_aslcontext.tsv]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
-   -   [[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+    -   [[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
 -   \<modality\>map : discussion determined _modality_ is a suffix
 
-       -  Related discussion
+      -  Related discussion
 
   [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
 
 -   \'model-ICA_description.json' : suggestion to rename file as
-  \'dataset_dscription.json' and include \'DatasetType: model" and
-  model-ICA_mfp.json similarly to \'task-xxx_bold.json
--   Current state is to build up and extend \'spatiotemporal
-  decompositions' introduced in BEP 012
+    \'dataset_dscription.json' and include \'DatasetType: model" and
+    model-ICA_mfp.json similarly to \'task-xxx_bold.json
+
+-   Current state is to build up and extend \'spatiotemporal decompositions' introduced in BEP 012
 -   Interoperability : BIDS-Prov
 -   [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
 -   Software parameters is similar to BIDS-prov's Parameters
-  description (what is the specific file?)
+    description (what is the specific file?)
 
 ### Stalled BEPS
 
@@ -157,8 +157,7 @@ Suggestion:
 
 1. a voting system similar to how the steering group is elected.
 
-How would we want to implement something like this while addressing
-concerns of FAIRness?
+How would we want to implement something like this while addressing concerns of FAIRness?
 
 2. BEP leader determines how to move forward.
 

@@ -211,9 +211,13 @@ Yaroslav Halchenko, Rémi Gau
 ### April maintainers meeting in Seattle
 
 -   Christine and Eric are pinging people to see if they want / can come
+
 -   Maintainers need to be re-pinged
+
 -   Meeting can support about 20-25 attendees
+
 -   Scope: For maintainers and / or BEP?
+
 -   ACTION: [[arokem@gmail.com]](mailto:arokem@gmail.com)
     contact maintainers to know what type of meetings and would be most
     useful for them

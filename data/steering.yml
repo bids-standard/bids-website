@@ -1,14 +1,14 @@
 ---
-# - group: maintainers
-#   members:
-#     - name:
-#       git:
-#       affiliation:
-#       twitter:
-#       researchgate:
-#       homepage:
-#       city:
-#       bio:
+# group: maintainers
+# members:
+#   - name:
+#     git:
+#     affiliation:
+#     twitter:
+#     researchgate:
+#     homepage:
+#     city:
+#     bio:
 
 -   group: steering
     members:
