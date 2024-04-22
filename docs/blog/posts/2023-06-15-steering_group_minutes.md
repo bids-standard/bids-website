@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
 <!-- more -->
-
-
-
 
 <table>
  <thead>
@@ -158,59 +153,59 @@ They seem receptive but they are a large working group
 
 ACTION ITEMS:
 
--   contact phillips rep to identify what information is missing from
-    DICOMS?
+- contact phillips rep to identify what information is missing from
+  DICOMS?
 
--   Collect an initiative to collect sample dicoms (phantoms) to
-    identify what meta-data is needed for BIDS that is not currently
-    provided
+- Collect an initiative to collect sample dicoms (phantoms) to
+  identify what meta-data is needed for BIDS that is not currently
+  provided
 
--   Who should we contact (DICOM working group, manufacturer?) to
-    address deficient information in DICOMS? - DICOM working groups
-    dont use Github, they need email requests.
+- Who should we contact (DICOM working group, manufacturer?) to
+  address deficient information in DICOMS? - DICOM working groups
+  dont use Github, they need email requests.
 
--   The method of reporting the findings from the pilot study should be
-    reusable and accessible (i.e. not an email, create an issue in
-    BIDS so that it can be referred to later).
+- The method of reporting the findings from the pilot study should be
+  reusable and accessible (i.e. not an email, create an issue in
+  BIDS so that it can be referred to later).
 
-    -   We could create a github issue for each email to DICOM or other
-        recipients
+- We could create a github issue for each email to DICOM or other
+  recipients
 
 Imaging Neuroscience Response from Steve Smith
 
--   Steve says that the BIDS compliance is up the the reviewers
+- Steve says that the BIDS compliance is up the the reviewers
 
-    -   So then should we educate the reviewers on how to ensure that a
-        brain dataset is BIDS compliant?
+- So then should we educate the reviewers on how to ensure that a
+  brain dataset is BIDS compliant?
 
--   Can we respond with a solution to help the reviewers
+- Can we respond with a solution to help the reviewers
 
-    -   Have authors provide a certificate of BIDS compliance from a
-        BIDS validator
+- Have authors provide a certificate of BIDS compliance from a
+  BIDS validator
 
-    -   Provide instructions for the average Imaging Neuroscience
-        reviewer
+- Provide instructions for the average Imaging Neuroscience
+  reviewer
 
--   Develop instructions for reviewers as a starting point? (also
-    include on the BIDS website)
+- Develop instructions for reviewers as a starting point? (also
+  include on the BIDS website)
 
-    -   Getting started for:
+- Getting started for:
 
-        -   Users
+  -Users
 
-        -   tools developers,
+  -tools developers,
 
-        -   reviewers,
+  -reviewers,
 
-        -   funding agencies
+  -funding agencies
 
-        -   Institute directors
+  -Institute directors
 
-    -   Should this be in the form of a
-        [Checklist](https://www.nmind.org/standards-checklist/)
-        . Filed
-        [standards-checklist/issues/2](https://github.com/nmind/standards-checklist/issues/28)
-        (also relating to COBIDAS and their app)
+- Should this be in the form of a
+  [Checklist](https://www.nmind.org/standards-checklist/)
+  . Filed
+  [standards-checklist/issues/2](https://github.com/nmind/standards-checklist/issues/28)
+  (also relating to COBIDAS and their app)
 
 ### BIDS Derivatives Meeting in Copenhagen
 

@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
-
 <!-- more -->
-
 
 <table>
  <thead>
@@ -355,8 +350,6 @@ author: anonymous
   </tr>
  </tbody>
 </table>
-
-
 
 **Guest:** Martin Szinte, lead for [BEP020: Eye tracking including gaze
 position and pupil

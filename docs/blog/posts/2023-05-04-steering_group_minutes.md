@@ -3,13 +3,8 @@ date: 2023-05-04
 slug: Steering Group minutes
 author: anonymous
 categories:
--   steering group minutes
+  - steering group minutes
 ---
-
-
-
-
-
 
 <!-- more -->
 
@@ -110,8 +105,9 @@ correspondence
 
 Yaroslav schema:
 [2022-tx-big-neuroscience.html](http://datasets.datalad.org/centerforopenneuroscience/talks/2022-tx-big-neuroscience.html#/3/2/1)
+
 - being proposed improved as
-[bids-starter-kit/pull/294](https://github.com/bids-standard/bids-starter-kit/pull/294)
+  [bids-starter-kit/pull/294](https://github.com/bids-standard/bids-starter-kit/pull/294)
 
 Cyril\'s dicom2bids in pet:
 [dicom2bids.json](https://github.com/openneuropet/PET2BIDS/blob/main/metadata/dicom2bids.json)

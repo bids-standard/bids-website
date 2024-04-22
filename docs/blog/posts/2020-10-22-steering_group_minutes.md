@@ -3,14 +3,10 @@ date: 2020-10-22
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 categories:
--   steering group minutes
+  - steering group minutes
 ---
 
-
 <!-- more -->
-
-
-
 
 ## Executive Summary
 
@@ -20,20 +16,21 @@ The majority of the meeting we were joined by Jon Cohen and Tal Yarkoni of the M
 
 ## Action Items
 
-| Action items |
-| -------- |
+| Action items                           |
+| -------------------------------------- |
 | Look further into corporate authorship |
 
 ## Minutes
 
 - Agreed upon PET schedule for community review
 - Revisited authorship discussion
-  - Collection entity with entire membership included in the single entity
-  - Perhaps 1 representative from each group
-  - Set procedure to get sign off from each group
-  - Corporate authorship?
+- Collection entity with entire membership included in the single entity
+- Perhaps 1 representative from each group
+- Set procedure to get sign off from each group
+- Corporate authorship?
 
 We were joined by Jon Cohen and Tal Yarkoni to discuss their Model Description Framework project
+
 - Primarily focused computational models
 - The idea is to have a common format to describe a model
 - Enhance reproducibility and disseminability
@@ -43,8 +40,8 @@ We were joined by Jon Cohen and Tal Yarkoni to discuss their Model Description F
 - Utilize open data with open models -> Reproducibility
 - No domain specificity - driven by use cases
 - Reaching out to clinicians
-  - Computational psychiatry
-  - Basic sciences -> Clinical sciences mapping
+- Computational psychiatry
+- Basic sciences -> Clinical sciences mapping
 - Experiment standardization
-  - Mapping the imaging context with the modeling parameters
-  - Perhaps a BEP can address
+- Mapping the imaging context with the modeling parameters
+- Perhaps a BEP can address

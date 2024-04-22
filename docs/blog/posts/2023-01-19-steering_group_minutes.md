@@ -4,11 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
 <!-- more -->
-
-
 
 <table>
  <thead>
@@ -348,7 +344,6 @@ author: anonymous
  </tbody>
 </table>
 
-
 ## Notes
 
 **Present:** Robert Oostenveld, Guiomar Niso, Eric Earl (visiting
@@ -367,23 +362,23 @@ datasets and correct outputs
 
 Terminology differs for example between Siemens and Philips
 
--   PET example where dicom standards were not used for BIDS
+- PET example where dicom standards were not used for BIDS
 
--   [http://www.oneukrainian.com/tmp/DICOMfields.txt](http://www.oneukrainian.com/tmp/DICOMfields.txt)
-    has rough grep for descriptions of DICOMs fields matching. Some
-    match some not.
+- [http://www.oneukrainian.com/tmp/DICOMfields.txt](http://www.oneukrainian.com/tmp/DICOMfields.txt)
+  has rough grep for descriptions of DICOMs fields matching. Some
+  match some not.
 
 Suggests possibly reaching out to the tool experts/manufacturers to
 better implement BEPs from start to end.
 
--   Liaisons have been responsive on neurostars (Phillip Clinical
-    Scientists UK Matthew Clemence \[github drmclem\] Mayo Sandeep
-    Ganji \[github sandeepganji\])
+- Liaisons have been responsive on neurostars (Phillip Clinical
+  Scientists UK Matthew Clemence \[github drmclem\] Mayo Sandeep
+  Ganji \[github sandeepganji\])
 
 We have a statement to align BIDS with current standards and
 vocabularies
 
--   Yarik could not locate it...
+- Yarik could not locate it...
 
 SOLUTION:
 
@@ -393,19 +388,19 @@ Reach out to developers for more input on BEPs before they are approved
 
 Provide empty header files for examples of data
 
--   Would be great to have example datasets with sourcedata/ and code/
-    and README.md provided to describe HOW data was
-    converted/translated
+- Would be great to have example datasets with sourcedata/ and code/
+  and README.md provided to describe HOW data was
+  converted/translated
 
 Additional expectations for BEPS before they are approved
 
--   advise each BEP to reach out to manufacturers to make them aware of
-    the standardization ongoing, see the BEP, possibly provide
-    feedback and even may be align metadata/terminology
+- advise each BEP to reach out to manufacturers to make them aware of
+  the standardization ongoing, see the BEP, possibly provide
+  feedback and even may be align metadata/terminology
 
 Consider/formalize a common principle to choose DICOM fields naming in
 favor of adding new names.
 
-[Ariels's PR](https://github.com/bids-standard/usage\_survey/blob/main/2021/BIDS\_usage\_survey\_results.md)
+[Ariels's PR](https://github.com/bids-standard/usage_survey/blob/main/2021/BIDS_usage_survey_results.md)
 
 Guio : Lets plan for BIDS Townhall in OpenScience Room - OHBM

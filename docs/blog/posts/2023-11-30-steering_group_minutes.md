@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
 <!-- more -->
-
-
-
-
 
 <table>
  <colgroup>
@@ -155,13 +150,13 @@ further conversations with other journal editors. See
 
 """
 
--   For data documentation, it is advised to use the BIDS format
-    ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
-    It is recommended that the authors check the respective box in the
-    submission form. It is recommended that authors use 'BIDS' as one of
-    the key-words of the manuscript. And it is recommended that authors
-    mention the version of the BIDS validator that was used to ensure
-    BIDS compatibility.
+- For data documentation, it is advised to use the BIDS format
+  ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
+  It is recommended that the authors check the respective box in the
+  submission form. It is recommended that authors use 'BIDS' as one of
+  the key-words of the manuscript. And it is recommended that authors
+  mention the version of the BIDS validator that was used to ensure
+  BIDS compatibility.
 
 """
 

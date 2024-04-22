@@ -168,40 +168,40 @@ consolidated.
 
 Here is a list to get started with:
 
--   bids.neuroimaging.io (to go under bids-standard.org)
+- bids.neuroimaging.io (to go under bids-standard.org)
 
--   apps.neuroimaging.io
+- apps.neuroimaging.io
 
--   Starter kit
+- Starter kit
 
--   Specification (now on RTD)
+- Specification (now on RTD)
 
--   Extension guidelines (now on RTD)
+- Extension guidelines (now on RTD)
 
--   Awesome BIDS list
+- Awesome BIDS list
 
--   Governance documents that are now as a google doc
+- Governance documents that are now as a google doc
 
--   ...
+- ...
 
 Things not to merge but to link
 
--   Google docs with draft BEPs
+- Google docs with draft BEPs
 
--   Github organization, issues and workflow
+- Github organization, issues and workflow
 
--   Support channels (google group, neurostars)
+- Support channels (google group, neurostars)
 
--   Announcement channels (mattermost, twitter)
+- Announcement channels (mattermost, twitter)
 
--   Merchandize
+- Merchandize
 
--   ...
+- ...
 
 Things that are not for public display
 
--   Maintainers folder on Google Drive
+- Maintainers folder on Google Drive
 
--   Slack
+- Slack
 
--   Meeting notes (at least some are not for public display)
+- Meeting notes (at least some are not for public display)

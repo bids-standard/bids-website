@@ -3,15 +3,10 @@ date: 2022-05-12
 slug: Steering Group minutes
 author: anonymous
 categories:
--   steering group minutes
+  - steering group minutes
 ---
 
-
-
 <!-- more -->
-
-
-
 
 <table>
  <thead>

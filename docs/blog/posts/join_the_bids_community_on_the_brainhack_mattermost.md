@@ -12,10 +12,10 @@ We are proud to announce our home for hosting BIDS organization instant messagin
 The Steering Group and Maintainers Group have chosen to recognize the BrainHack Mattermost as a member of our organizations's official communication suite.
 This platform will live alongside our other official communication channels:
 
--   NeuroStars (forum for support questions)
--   mailing list (announcements)
--   Twitter (community news)
--   and GitHub repositories (bug reports + feature requests).
+- NeuroStars (forum for support questions)
+- mailing list (announcements)
+- Twitter (community news)
+- and GitHub repositories (bug reports + feature requests).
 
 We have listed below our current set of BIDS channels. We will be establishing several BIDS channels related to: BEP development, community discussions, and more! Check it out and create your own channel! Please be sure the channel name contains `bids` in the title to increase findability.
 
@@ -33,10 +33,11 @@ and take a look at a [step by step guide](https://web.archive.org/web/2017071307
 We look forward to seeing you on Mattermost!
 
 Current BIDS channels on Mattermost:
--   `bids_derivatives`: conversations around BIDS-Derivatives
--   `bids_eeg`: conversations around bids and eeg data
--   `bids_ieeg`: conversations around bids and ieeg data
--   `bids_meg`: conversations around bids and meg data
--   `bids-starter-kit`: conversations around the [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit)
--   `help_desk-bids`: getting help converting to BIDS
--   `help_desk-bids-apps`: getting help with BIDS-Apps
+
+- `bids_derivatives`: conversations around BIDS-Derivatives
+- `bids_eeg`: conversations around bids and eeg data
+- `bids_ieeg`: conversations around bids and ieeg data
+- `bids_meg`: conversations around bids and meg data
+- `bids-starter-kit`: conversations around the [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit)
+- `help_desk-bids`: getting help converting to BIDS
+- `help_desk-bids-apps`: getting help with BIDS-Apps

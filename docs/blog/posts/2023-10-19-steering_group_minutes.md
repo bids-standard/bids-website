@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
 <!-- more -->
-
-
 
 <table>
  <colgroup>
@@ -170,7 +165,6 @@ governance amendment
 **Present:** Guiomar, Ariel, Robert, (Cyril, Yaroslav)
 
 **Guest:** Giacomo Bertazzoli, Marta Bortoletto, Vittorio Iacovella
-
 
 BIDS Meeting Notes:
 

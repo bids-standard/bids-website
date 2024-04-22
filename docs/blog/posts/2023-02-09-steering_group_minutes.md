@@ -4,11 +4,6 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
-
-
 <!-- more -->
 
 <table>
@@ -246,6 +241,7 @@ However it still needs to be implemented in the BIDS validator and
 examples. See issues below:
 
 Outstanding, but WIP:
+
 - [https://github.com/bids-standard/bids-validator/pull/1578](https://github.com/bids-standard/bids-validator/pull/1578)
 - [https://github.com/bids-standard/bids-validator/issues/1564](https://github.com/bids-standard/bids-validator/issues/1564)
 
@@ -263,17 +259,17 @@ examples to improve BEPS
 Stefan:
 
 - Amendment 1 - every BEP lead will join the BIDS advisory group
-forever (not ideal), proposed to allow individuals to leave the
-advisory group after 2 years and asked to suggest a replacement.
+  forever (not ideal), proposed to allow individuals to leave the
+  advisory group after 2 years and asked to suggest a replacement.
 - Amendment 2 - we don\'t currently have a process to change the BIDS
-governance, some solutions have been put forth:
-[https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ\_yD3JiwSQ8kCjVXorg6U/edit](https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit)
+  governance, some solutions have been put forth:
+  [https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit](https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit)
 - Amendment 3 - BIDS contributors - governance states that all
-contributors are equal, but this needs to be amended because many
-contributors at some point are no longer active and this creates issues
-when minimum % of votes are required for certain elections. WIP for
-current and new wording - maintainers are working on this and the
-steering group can comment and give feedback.
+  contributors are equal, but this needs to be amended because many
+  contributors at some point are no longer active and this creates issues
+  when minimum % of votes are required for certain elections. WIP for
+  current and new wording - maintainers are working on this and the
+  steering group can comment and give feedback.
 
 GUIO: Suggestion to include a list of Advisory Group members.
 

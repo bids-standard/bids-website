@@ -4,11 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
 <!-- more -->
-
-
 
 <table>
  <thead>

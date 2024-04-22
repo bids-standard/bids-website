@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
 <!-- more -->
-
-
-
 
 <table>
  <thead>
@@ -145,73 +140,79 @@ author: anonymous
  </tbody>
 </table>
 
-
 ## NOTES
 
 Github pull request - [bids-specification 1441](https://github.com/bids-standard/bids-specification/pull/1441)
 and [bids-specification 1457](https://github.com/bids-standard/bids-specification/pull/1457)
--   The requesters want to change from number to integer, it was likely
-    in a previous version but not in the current.
--   The sample is not defined, this could be defined in the json -
--   This should be fine then
+
+- The requesters want to change from number to integer, it was likely
+  in a previous version but not in the current.
+- The sample is not defined, this could be defined in the json -
+- This should be fine then
 
 Github pull request: Formalize how channel types are shared between
 modalities that use channels.tsv files. [bids-specification 436](https://github.com/bids-standard/bids-specification/issues/1436)
 
 Github pull request: ENH: Array data in .tsv cells - [bids-specification 1446](https://github.com/bids-standard/bids-specification/issues/1446)
--   We might need an example of nesting
--   80/20 rules may need to apply here where we define rules for
-    examples that occur 80% of the time.
--   Why not just repeat the rows for each channel? Example: the onset
-    time for multiple channels could be listed across multiple rows
-    instead of condescending them into a single row/entry (Ariel will
-    suggest this in the pull request)
+
+- We might need an example of nesting
+- 80/20 rules may need to apply here where we define rules for
+  examples that occur 80% of the time.
+- Why not just repeat the rows for each channel? Example: the onset
+  time for multiple channels could be listed across multiple rows
+  instead of condescending them into a single row/entry (Ariel will
+  suggest this in the pull request)
 
 Github pull request: [DISCUSSION] acknowledge contributors in DOIed
 specs on Zenodo - [bids-specification 66](https://github.com/bids-standard/bids-specification/issues/66)
--   What rule should be used for author order on zenodo DOI?
--   Proposal: use a random number generator for each new push of authors
-    to keep order 'fair' for all, possibly include an alphabetical
-    list on the BIDS website for ease of author identification
--   **Final decision: alphabetical is simple and standard, order does
-    not imply importance, PR is fine.**
--   Clarify it explicitly in the text
+
+- What rule should be used for author order on zenodo DOI?
+- Proposal: use a random number generator for each new push of authors
+  to keep order 'fair' for all, possibly include an alphabetical
+  list on the BIDS website for ease of author identification
+- **Final decision: alphabetical is simple and standard, order does
+  not imply importance, PR is fine.**
+- Clarify it explicitly in the text
 
 Journals including badges to indicate BIDS compliant dataset:
--   Aperture is agreeable, their website is under development
--   Suggestions: next journal to approach could be **scientific data**
-    given their familiarity with BIDS.
--   Action: email the Scientific Data editor in chief from the BIDS
-    Steering Committee
--   Question standardization of implementation across journals?
-    -   Guio will provide and example draft
--   Question: who/what will identify BIDS compliant datasets?
-    -   BIDS validator can, however users can include many \#BIDS IGNORE
-        files
-    -   Either the validator will need to output bidsignore info or
-        reviewers/editors will need to check the bidsignore files
-        themselves.
+
+- Aperture is agreeable, their website is under development
+- Suggestions: next journal to approach could be **scientific data**
+  given their familiarity with BIDS.
+- Action: email the Scientific Data editor in chief from the BIDS
+  Steering Committee
+- Question standardization of implementation across journals?
+- Guio will provide and example draft
+- Question: who/what will identify BIDS compliant datasets?
+- BIDS validator can, however users can include many \#BIDS IGNORE
+  files
+- Either the validator will need to output bidsignore info or
+  reviewers/editors will need to check the bidsignore files
+  themselves.
 
 OHBM best practice committee
--   Cyril: John Pyles has circulated the OHBM doc of BIDS 2- reviewing
-    of the proposal?
-    -   This will be reviewed by individuals external from BIDS
-    -   There will be multiple versions , not all versions need to be
-        reviewed
--   'What is BIDS' should be presented to the community, who should lead
-    this presentation?
-    -   Experts from each field?
+
+- Cyril: John Pyles has circulated the OHBM doc of BIDS 2- reviewing
+  of the proposal?
+- This will be reviewed by individuals external from BIDS
+- There will be multiple versions , not all versions need to be
+  reviewed
+- 'What is BIDS' should be presented to the community, who should lead
+  this presentation?
+- Experts from each field?
 
 Was there a podcast ([OHBM Neurosalience](https://www.youtube.com/playlist?list=PLg2e4R8SdhpdIMG7Tb9WAEZA6HRnx8Vsb))
 where Peter Bandettini suggested someone talk about BIDS?
--   Originated in October 2022, sounds like a good opportunity for more
-    exposure, Cyril will reply to the email thread
+
+- Originated in October 2022, sounds like a good opportunity for more
+  exposure, Cyril will reply to the email thread
 
 Next Meeting Guest:
--   possibly JB Poline regarding a new tool (could be posted as an issue
-    on github?)
--   Maintainers met with the functional ultrasound group but they are
-    likely too premature for this meeting.
+
+- possibly JB Poline regarding a new tool (could be posted as an issue
+  on github?)
+- Maintainers met with the functional ultrasound group but they are
+  likely too premature for this meeting.
 
 Cyril: the BIDS retreat is looking for additional funding to increase
 the support for the meeting. Who should be additionally invited?

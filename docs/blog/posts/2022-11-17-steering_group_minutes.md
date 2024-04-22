@@ -4,12 +4,7 @@ slug: Steering Group minutes
 author: anonymous
 ---
 
-
-
-
 <!-- more -->
-
-
 
 <table>
  <thead>
@@ -275,34 +270,36 @@ author: anonymous
  </tbody>
 </table>
 
-
-
 **Guest:** BEP37
 
 Extension leads/moderators:
 
--   Giacomo Bertazzoli
-    > \<[giacomo.bertazzoli\@unitn.it](mailto:giacomo.bertazzoli@unitn.it)\>,
+- Giacomo Bertazzoli
 
--   Vittorio Iacovella
-    > \<[vittorio.iacovella\@unitn.it](mailto:vittorio.iacovella@unitn.it)\>,
+> \<[giacomo.bertazzoli\@unitn.it](mailto:giacomo.bertazzoli@unitn.it)\>,
 
--   Carlo Miniussi
-    > \<[carlo.miniussi\@unitn.it](mailto:carlo.miniussi@unitn.it)\>,
+- Vittorio Iacovella
 
--   Marta Bortoletto
-    > \<[marta.bortoletto\@cognitiveneuroscience.it](mailto:marta.bortoletto@cognitiveneuroscience.it)\>.
+> \<[vittorio.iacovella\@unitn.it](mailto:vittorio.iacovella@unitn.it)\>,
+
+- Carlo Miniussi
+
+> \<[carlo.miniussi\@unitn.it](mailto:carlo.miniussi@unitn.it)\>,
+
+- Marta Bortoletto
+  > \<[marta.bortoletto\@cognitiveneuroscience.it](mailto:marta.bortoletto@cognitiveneuroscience.it)\>.
 
 Extension co-moderators:
 
--   Martina Bulgari
-    > \<[martina.bulgari\@cognitiveneuroscience.it](mailto:martina.bulgari@cognitiveneuroscience.it)\>,
+- Martina Bulgari
 
--   Eleonora Marcantoni
-    > \<[eleonoramarcantoni\@gmail.com](mailto:eleonoramarcantoni@gmail.com)\>,
+> \<[martina.bulgari\@cognitiveneuroscience.it](mailto:martina.bulgari@cognitiveneuroscience.it)\>,
 
--   Giacomo Guidali
-    > \<[giacomo.guidali\@cognitiveneuroscience.it](mailto:giacomo.guidali@cognitiveneuroscience.it)\>.
+- Eleonora Marcantoni
 
+> \<[eleonoramarcantoni\@gmail.com](mailto:eleonoramarcantoni@gmail.com)\>,
+
+- Giacomo Guidali
+  > \<[giacomo.guidali\@cognitiveneuroscience.it](mailto:giacomo.guidali@cognitiveneuroscience.it)\>.
 
 Next week visitors: TBD on slack - we will meet 15 minutes early

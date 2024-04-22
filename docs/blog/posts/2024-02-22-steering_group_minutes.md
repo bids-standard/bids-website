@@ -3,7 +3,7 @@ date: 2024-02-22
 slug: Steering Group minutes
 author: anonymous
 categories:
--   steering group minutes
+  - steering group minutes
 ---
 
 <!-- more -->
@@ -98,7 +98,6 @@ Online Presence Working Group: Working Document
  </tbody>
 </table>
 
-
 **Present:** Yarik, Kim, Ariel, Cyril, Eric, Christine, Camille
 
 **Apologies:** Dora
@@ -109,55 +108,56 @@ Online Presence Working Group: Working Document
 
 ### Plan for website
 
--   Eric is chairing the BIDS Online Presence Working Group
+- Eric is chairing the BIDS Online Presence Working Group
 
-    -   Eric owes the open letter to the Steering Group
+- Eric owes the open letter to the Steering Group
 
--   May use google season of docs (need to sign up for the program,
-    starts April 2nd for applications)
+- May use google season of docs (need to sign up for the program,
+  starts April 2nd for applications)
 
-    -   Will reach out to INCF to reconnect as the admin for google
-        season of docs
+- Will reach out to INCF to reconnect as the admin for google
+  season of docs
 
-    -   Mentors identified: Eric, Christine, and Remi (outlined in doc
-        linked in agenda)
+- Mentors identified: Eric, Christine, and Remi (outlined in doc
+  linked in agenda)
 
--   Eric will reach out to the group to schedule a follow up meeting.
+- Eric will reach out to the group to schedule a follow up meeting.
 
--   Yaroslav reminded the group that he has \$5k CAD to compensate for
-    work on this project
+- Yaroslav reminded the group that he has \$5k CAD to compensate for
+  work on this project
 
 BEP39 for dimensionality reduction-based networks
 
 [[https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45]](https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45)
 
--   May need to introduce new terminology (something akin to an
-    \'index', param-mixing, param-components, something akin to
-    \'model')
+- May need to introduce new terminology (something akin to an
+  \'index', param-mixing, param-components, something akin to
+  \'model')
 
-    -   Eric suggests instead of \'index' potentially like
-        [[\*\_aslcontext.tsv]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+- Eric suggests instead of \'index' potentially like
+  [[\*\_aslcontext.tsv]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
-        -   [[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+         -[[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
-    -   \<modality\>map : discussion determined *modality* is a suffix
+- \<modality\>map : discussion determined _modality_ is a suffix
 
-        -   Related discussion
-            [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
+       -Related discussion
 
-    -   \'model-ICA_description.json' : suggestion to rename file as
-        \'dataset_dscription.json' and include \'DatasetType: model" and
-        model-ICA_mfp.json similarly to \'task-xxx_bold.json
+  [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
 
--   Current state is to build up and extend \'spatiotemporal
-    decompositions' introduced in BEP 012
+- \'model-ICA_description.json' : suggestion to rename file as
+  \'dataset_dscription.json' and include \'DatasetType: model" and
+  model-ICA_mfp.json similarly to \'task-xxx_bold.json
 
--   Interoperability : BIDS-Prov
+- Current state is to build up and extend \'spatiotemporal
+  decompositions' introduced in BEP 012
 
-    -   [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
+- Interoperability : BIDS-Prov
 
-    -   Software parameters is similar to BIDS-prov's Parameters
-        description (what is the specific file?)
+- [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
+
+- Software parameters is similar to BIDS-prov's Parameters
+  description (what is the specific file?)
 
 ### Stalled BEPS
 

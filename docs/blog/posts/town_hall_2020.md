@@ -78,7 +78,7 @@ Poster 1984: OmniiBIDS: Automatic Conversion of Structured NIfTI Datasets to BID
 
 [The Positron Emission Tomography Brain imaging Data structure (PET-BIDS) extension: A new standard for sharing PET data](https://github.com/ohbm/osr2020/issues/57) presented by Melanie Ganz
 
-#### *To be scheduled*
+#### _To be scheduled_
 
 #### Open Workflows demos
 

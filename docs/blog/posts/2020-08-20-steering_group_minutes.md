@@ -3,14 +3,10 @@ date: 2020-08-20
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
 categories:
--   steering group minutes
+  - steering group minutes
 ---
 
-
-
 <!-- more -->
-
-
 
 ## Executive Summary
 
@@ -19,21 +15,22 @@ We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people
 ## Action Items
 
 | Action items |
-| -------- |
-| N/A    |
+| ------------ |
+| N/A          |
 
 ## Minutes
 
 We were joined by [Dave Keator](https://faculty.sites.uci.edu/davidkeator/people/), to discuss the [NIDM](http://nidm.nidash.org/) and [ReproNim](https://www.repronim.org/) initiatives.
+
 - [NIDM-terms](https://github.com/incf-nidash/nidm-terms) is a community-driven ontology
 - `isAbout` field used quite a bit
 - Extracting terms from the BIDS-Specification and created jsonld representation
-  - Use case: A BEP can consult this list to ensure no terms are being reused
-  - Potentially working with our BIDS-schema
-    - Related to the [yaml conversion of our entity table](https://github.com/bids-standard/bids-specification/pull/475)
+- Use case: A BEP can consult this list to ensure no terms are being reused
+- Potentially working with our BIDS-schema
+  -Related to the [yaml conversion of our entity table](https://github.com/bids-standard/bids-specification/pull/475)
 - Determining approaches for integrating this into our processes
-  - Developing tool to work with: adding existing/new terminology, add dataset annotations
-  - Potentially adding new terms through a GUI application
+- Developing tool to work with: adding existing/new terminology, add dataset annotations
+- Potentially adding new terms through a GUI application
 - Tracking terms and providing definitions
-  - Nice to know how a term is being used and can see how others interpret
+- Nice to know how a term is being used and can see how others interpret
 - Easier the better!
