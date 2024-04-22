@@ -1,7 +1,9 @@
 ---
-title: Steering Group executive summary, action items, and minutes
+slug: Steering Group executive summary, action items, and minutes
+date:
 author:
-display: true
+categories:
+  - steering group minutes
 ---
 
 # Steering Group minutes

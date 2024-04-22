@@ -23,17 +23,8 @@ docs_dir: docs
 
 exclude_docs: |
     .github
-    starter_kit/.faq/
-    starter_kit/questions/
     starter_kit/reports/
     website/_bep_collection/
-    website/_pages/news
-    website/_posts/
-    website/_pages/acknowledgments.md
-    website/_pages/get_started.md
-    website/_pages/news.md
-    website/_redirects/
-    website/templates/
     apps/README.md
     execution/README.md
     execution/BIDS_logo/README.md
@@ -150,9 +141,13 @@ nav:
     -   submission: extensions/docs/submission.md
     -   macros: specification/macros_doc.md
 -   FAQ:
-    -   general: starter_kit/src/FAQ.md
-    -   extensions: extensions/docs/faq.md
-    -   bids apps: apps/dev_faq.md
+    -   FAQ/index.md
+    -   general: FAQ/general.md
+    -   eeg: FAQ/eeg.md
+    -   mri: FAQ/mri.md
+    -   phenotype: FAQ/pheno.md
+    -   bids extensions: FAQ/bep.md
+    -   bids apps: FAQ/apps.md
 -   Blog:
     -   blog/index.md
 -   Impact:
@@ -210,8 +205,11 @@ markdown_extensions:
         -   name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
-- attr_list
-- md_in_html
+-   attr_list
+-   md_in_html
+-   pymdownx.emoji:
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
 
 extra_javascript:
 -   https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js

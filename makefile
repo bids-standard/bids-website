@@ -15,5 +15,10 @@ update_from_examples:
 	mkdir -p docs/examples
 	cp -r examples/README.md docs/examples/README.md
 
-update_faq: update_bep_list
-	faqtory build
+update_faq:
+	cd faq/general && faqtory build
+	cd faq/eeg && faqtory build
+	cd faq/mri && faqtory build
+	cd faq/pheno && faqtory build
+	cd faq/bep && faqtory build
+	cd faq/apps && faqtory build

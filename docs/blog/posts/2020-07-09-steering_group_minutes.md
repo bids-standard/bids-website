@@ -2,6 +2,8 @@
 date: 2020-07-09
 slug: Steering Group executive summary, action items, and minutes
 author: Franklin Feingold
+categories:
+  - steering group minutes
 ---
 
 
