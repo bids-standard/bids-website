@@ -1,0 +1,66 @@
+---
+# - source:
+#   url:
+#   contribution:
+
+-   source: NIMH R24MH114705
+    url: https://reporter.nih.gov/project-details/9411944
+    contribution: BIDS common derivatives BEP
+
+-   source: NSF OAC-1760950
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1760950"
+    contribution: ' '
+
+-   source: NIMH 1R24MH117295
+    url: https://reporter.nih.gov/project-details/9795271
+    contribution: DANDI archive contributed development of Microscopy BEP
+
+-   source: NIMH 2P41EB019936
+    url: https://reporter.nih.gov/project-details/10334133
+    contribution: ReproNim project contributed various enhancements and fixes
+
+-   source: NIMH MH117179
+    url: https://reporter.nih.gov/project-details/10145071
+    contribution: OpenNeuro archive contributed various enhancements and fixes
+
+-   source: NIMH 1ZIAMH002977-01
+    uyl: https://reporter.nih.gov/project-details/10489085
+    contribution: OpenNeuroPET project contributed various enhancements and fixes
+
+-   source: NIMH 5R01MH126699-02
+    url: https://reporter.nih.gov/project-details/10460628
+    contribution: '[Brain Connectivity Project](https://pestillilab.github.io/bids-connectivity/)'
+
+-   source: NIMH MH109682
+    url: https://reporter.nih.gov/project-details/9982125
+    contribution: NeuroScout
+
+-   source: Novo Nordisk Foundation NNF20OC0063277
+    url:
+    contribution:
+
+-   source: NIH R01MH109682
+    url:
+    contribution: BIDS Stats Models
+
+-   source: NIMH 1RF1MH126700-01A1
+    url: https://reporter.nih.gov/project-details/10480619
+    contribution: Hierarchical Event Descriptors (HED)
+
+-   source: NIBIB 1R01EB020740
+    url: https://reporter.nih.gov/project-details/9053094
+    contribution: Nipype
+
+-   source: The Neuro-Irv and Helga Cooper Foundation
+    url: https://www.mcgill.ca/neuro/open-science/open-science-awards-and-prizes/neuro-irv-and-helga-cooper-foundation-open-science-prizes
+    contribution: 2023 International Open Science Prize
+
+-   source: International Neuroinformatics Coordinating Facility
+    url: https://www.incf.org/
+    contribution: '[Neuroimaging Data Sharing Task Force](https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force)
+        collated initial group of people to push pilot BIDS development and promotion.'
+
+-   source: Laura and John Arnold Foundation
+    url: https://www.incf.org/
+    contribution: '[Neuroimaging Data Sharing Task Force](https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force)
+        collated initial group of people to push pilot BIDS development and promotion.'

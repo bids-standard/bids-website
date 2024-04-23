@@ -1,9 +1,21 @@
-{% if site.election_banner %}
+{% extends "base.html" %}
 
-<section>
+{% block announce %}
+<div>
+  <style>
+    .announcement {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 0;
+      margin: 0
+    }
+  </style>
+  <div class="announcement">
 
-  <div class="election-banner">
+    <h2><b>THIS SITE IS UNDER DEVELOPMENT</b><br></h2>
 
+<!--
     <h2>BIDS steering group election</h2>
 
     <button>
@@ -20,7 +32,7 @@
 
     <p>
       This year, we are seeking candidates who will replace
-      <b>Russ Poldrack</b> and <b>Melanie Ganz</b>.
+      <b>???</b> and <b>???</b>.
     </p>
 
     <p>
@@ -44,12 +56,8 @@
         allowfullscreen>
       </iframe>
     </div>
+-->
 
   </div>
-
-</section>
-
-{% endif %}
-
-</p>
-<p>
+</div>
+{% endblock %}

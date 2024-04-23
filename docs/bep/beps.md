@@ -1,16 +1,18 @@
-You can also contribute to ongoing BIDS Extension Proposals.
-Below is a table of currently-active BEPs.
-The "Extension label" column provides a direct link to the documentation.
+---
+hide:
+-   toc
+---
 
-Please find our
-[latest BEP update](https://docs.google.com/presentation/d/1uvxJaGgrk58HBWRqLzJTwHjpJKFLGM7YTiNvGwvjMOA/edit?usp=sharing){:target:"_blank"}
-presented in the Open Science Room at
-[OHBM](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4041){:target:"_blank"}.
+# BIDS extension proposals
+
+You can contribute to ongoing BIDS Extension Proposals (BEPs).
+
+Below is a table of currently-active BEPs.
 
 Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed on the
 [Issues page of the bids-2-devel GitHub repository](https://github.com/bids-standard/bids-2-devel/issues).
 
-{% include beps_table.html beps=site.data.beps %}
+{{ MACROS___generate_beps_table(file="beps.yml") }}
 
 ### Completed BEPs
 
@@ -71,6 +73,8 @@ gantt
 ```
 <!-- MERMAID GANTT CHART ENDS -->
 
+{{ MACROS___generate_beps_table(file="beps_completed.yml", type="completed") }}
+
 <br>
 
 Some proposals that set out to extend the BIDS specification have instead lead to other outcomes such as:
@@ -80,3 +84,5 @@ Some proposals that set out to extend the BIDS specification have instead lead t
 - having been dropped from consideration
 
 See the table below:
+
+{{ MACROS___generate_beps_table(file="beps_other.yml", type="other") }}

@@ -1,5 +1,5 @@
 ---
-# List BEP that were not merged into the specifications but instead lead to other outcomes:
+# List BEP that were not merged into the specifications but instead lead to other status:
 #
 # - becoming tools for handling BIDS
 # - having been merged into other BEPs
@@ -20,7 +20,8 @@
     -   name: Steven Giavasis
     content:
     -   raw
-    outcome: Merged into BEP012
+    status:
+    -   Merged into BEP012
 
 -   number: '015'
     title: Mapping file
@@ -30,7 +31,8 @@
     -   name: Vasudev Raguram
     content:
     -   raw
-    outcome: Became the [File mapper](https://github.com/DCAN-Labs/file-mapper).
+    status:
+    -   Became the [File mapper](https://github.com/DCAN-Labs/file-mapper).
 
 -   number: '019'
     title: DICOM Metadata
@@ -38,7 +40,8 @@
     -   name: Satrajit Ghosh
     content:
     -   metadata
-    outcome: Closed in favor of possible direct support of DICOM within BIDS (see this [issue](https://github.com/bids-standard/bids-specification/issues/1552)
+    status:
+    -   Closed in favor of possible direct support of DICOM within BIDS (see this [issue](https://github.com/bids-standard/bids-specification/issues/1552)
         and this [pull request](https://github.com/bids-standard/bids-specification/pull/1551)).
     google_doc_created: 2017-10
     pull_request_created:
@@ -52,4 +55,5 @@
     -   name: Maria de la Iglesia Vayá
     content:
     -   raw
-    outcome: Dropped from consideration; smaller parts are potentially to be included into BIDS outside of the BEP
+    status:
+    -   Dropped from consideration; smaller parts are potentially to be included into BIDS outside of the BEP

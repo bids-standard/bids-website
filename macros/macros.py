@@ -13,7 +13,7 @@ TEMPLATES_DIR = ROOT / "templates"
 WEBSITE_DATA_DIR = ROOT / "data"
 
 
-def return_jinja_env():
+def return_jinja_env() -> Environment:
     return Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
         autoescape=select_autoescape(),
@@ -22,7 +22,7 @@ def return_jinja_env():
     )
 
 
-def generate_converter_table(file):
+def generate_converter_table(file: str) -> str:
     input_file = WEBSITE_DATA_DIR / file
     content = yaml.load(input_file)
     env = return_jinja_env()
@@ -30,7 +30,7 @@ def generate_converter_table(file):
     return template.render(include=content[0])
 
 
-def generate_tools_table(file):
+def generate_tools_table(file: str) -> str:
     input_file = WEBSITE_DATA_DIR / file
     content = yaml.load(input_file)
     env = return_jinja_env()
@@ -38,7 +38,7 @@ def generate_tools_table(file):
     return template.render(include=content)
 
 
-def generate_members_table(file):
+def generate_members_table(file: str) -> str:
     input_file = WEBSITE_DATA_DIR / file
     content = yaml.load(input_file)
     env = return_jinja_env()
@@ -46,13 +46,20 @@ def generate_members_table(file):
     return template.render(include=content[0])
 
 
-def generate_beps_table(file):
+def generate_beps_table(file: str, type: str | None = None) -> str:
     input_file = WEBSITE_DATA_DIR / file
     content = yaml.load(input_file)
-    print(content[0])
     env = return_jinja_env()
     template = env.get_template("beps_table_md.jinja")
-    return template.render(include=content[0])
+    return template.render(include=content, type=type)
+
+
+def generate_grants_table():
+    input_file = WEBSITE_DATA_DIR / "grants.yml"
+    content = yaml.load(input_file)
+    env = return_jinja_env()
+    template = env.get_template("grants_table_md.jinja")
+    return template.render(include=content, type=type)
 
 
 def main():

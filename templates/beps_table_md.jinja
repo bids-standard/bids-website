@@ -1,5 +1,13 @@
+{% if type == "completed" %}
+| Extension  | Title | Content | Lead(s) |
+| :--------: | :---- | :-----  | :-----  |
+{% elif type == "other" %}
+| Extension  | Title | Content | Lead(s) | Outcome |
+| :--------: | :---- | :-----  | :-----  | :------ |
+{% else %}
 | Extension  | Title | Content | Lead(s) | Last update |
 | :--------: | :---- | :-----  | :-----  | :---------- |
+{% endif %}
 {% for bep in include %}
-| [BEP{% bep.number %}](https://bids.neuroimaging.io/bep{% bep.number %}) | {% bep.title %} | {% bep.content %} | {% bep.leads %} | {% bep.update  %} |
+| [BEP {{ bep.number }}](https://bids.neuroimaging.io/bep{{ bep.number }}) | {{ bep.title }} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {{ person.name }} <br>{% endfor %}  | {% for item in bep.status %} {{ item }} <br>{% endfor %} |
 {% endfor %}

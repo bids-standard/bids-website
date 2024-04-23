@@ -103,7 +103,6 @@ nav:
     -   Code of conduct:
         -   specification: specification/CODE_OF_CONDUCT.md
         -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
-        -   website: website/_pages/code_of_conduct.md
     -   contributing:
         -   apps: apps/CONTRIBUTING.md
         -   grant: grant/CONTRIBUTING.md
@@ -138,7 +137,7 @@ nav:
     -   examples: examples/README.md
 -   Extensions:
     -   bep/index.md
-    -   BEPs: bep/bep.md
+    -   BEPs: bep/beps.md
     -   intro: extensions/docs/index.md
     -   general_guidelines: extensions/docs/general_guidelines.md
     -   guide: extensions/docs/guide.md
@@ -160,10 +159,14 @@ nav:
 
 theme:
     name: material
+    custom_dir: docs/overrides
     favicon: assets/favicon/favicon.ico
     logo: starter_kit/src/images/logo.png
     features:
+    -   announce.dismiss
     -   content.action.edit
+    -   content.tooltips
+    -   footnotes
     -   header.autohide
     -   navigation.footer
     -   navigation.indexes
@@ -199,26 +202,32 @@ theme:
 edit_uri: https://github.com/bids-standard/bids-extensions/edit/main/docs/
 
 markdown_extensions:
--   tables
--   toc:
-        anchorlink: true
--   pymdownx.details
+-   abbr
 -   admonition
+-   attr_list
+-   md_in_html
+-   pymdownx.details
+-   pymdownx.emoji:
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+-   pymdownx.snippets:
+        auto_append:
+        - includes/abbreviations.md
 -   pymdownx.superfences:
         custom_fences:
         -   name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
--   attr_list
--   md_in_html
--   pymdownx.emoji:
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
+-   tables
+-   toc:
+        anchorlink: true
 
 extra_javascript:
 -   https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
 -   javascripts/tablesort.js
 
+watch:
+-   includes
 
 copyright: Copyright &copy; BIDS Contributors - <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
 

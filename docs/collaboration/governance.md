@@ -2,12 +2,12 @@
 
 ## 1. Introduction
 
-This document, *Brain Imaging Data Structure (BIDS): Governance and
-Decision Making*, intends to describe the BIDS mission, its principles,
-its scope, the leadership structure, governance over the standard
-development process, and to define the different groups and roles. BIDS
-is a community-built and maintained standard. The goal of this document
-is to clearly describe how BIDS is maintained and grown.
+This document, *Brain Imaging Data Structure (BIDS): Governance and Decision Making*,
+intends to describe the BIDS mission, its principles,
+its scope, the leadership structure, governance over the standard development process,
+and to define the different groups and roles.
+BIDS is a community-built and maintained standard.
+The goal of this document is to clearly describe how BIDS is maintained and grown.
 
 ## 2. Background
 
@@ -15,21 +15,19 @@ is to clearly describe how BIDS is maintained and grown.
 
 The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neuroimaging data in a filesystem hierarchy and of the
-metadata associated with the imaging data. The current edition of the
-standard is available in
+metadata associated with the imaging data.
+The current edition of the standard is available in
 [HTML](https://bids-specification.readthedocs.io/en/stable/) with all
 the previous editions available since October 2018 (listed in the
 [Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website) as PDFs.
 The development edition is available in
-[HTML](https://bids-specification.readthedocs.io/en/latest/). The
-specification is based in a [GitHub
-repository](https://github.com/bids-standard/bids-specification) and
-rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
+[HTML](https://bids-specification.readthedocs.io/en/latest/).
+The specification is based in a [GitHub repository](https://github.com/bids-standard/bids-specification)
+and rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
 
 We strive for community consensus in decision making.
 This governing model and decision making procedure was developed through
-the review of several governance models across the informatics and
-computing field.
+the review of several governance models across the informatics and computing field.
 
 The project is a community-driven effort.
 BIDS, originally OBIDS, was initiated during an INCF sponsored data
@@ -42,7 +40,7 @@ BIDS has advanced under the direction and effort of its contributors,
 the community of researchers that appreciate the value of standardizing neuroimaging data to facilitate sharing and analysis.
 The project is multifaceted and depends on contributors for:
 specification development and maintenance,
-[BIDS Extension Proposals (BEPs)](../bep/bep.md),
+[BIDS Extension Proposals (BEPs)](../bep/beps.md),
 software tools,
 [starter kits](https://bids-standard.github.io/bids-starter-kit/),
 [examples](https://github.com/bids-standard/bids-examples),
@@ -50,7 +48,7 @@ and general discussions.
 The relevant discussions are located in our
 [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
 [GitHub organization](https://github.com/bids-standard),
-and public Google Documents (typically associated with an [extension proposal](../bep/bep.md)).
+and public Google Documents (typically associated with an [extension proposal](../bep/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
 software tools and platforms that facilitate the validation and ease the
@@ -124,8 +122,7 @@ The BIDS Steering Group is the authority of last resort in addressing
 conflicts among groups and alleged violations of the [Code of
 Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).
 
-The Steering Group may delegate tasks as needed to fulfill its
-responsibilities.
+The Steering Group may delegate tasks as needed to fulfill its responsibilities.
 
 The current members of the Steering group are:
 
