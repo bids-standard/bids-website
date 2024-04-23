@@ -1,0 +1,24 @@
+{#  Table for the apps #}
+
+| Name  | Input datatypes | Use raw | Use derivatives | Status latest | Number docker pulls | Image size |
+| :---- | :-------------- | :------ | :-------------- | :------------ | :------------------ | :--------- |
+{% for app in include.apps if app.status == "active" %}
+  {% set branch = "master" %}
+  {% if app.branch %}
+    {% set branch = app.branch %}
+  {% endif %}
+  {% set _, name = app.gh.split('/') %}
+| [{{ name }}](https://github.com/{{ app.gh }} "{{ app.description | replace("\n", " ") }}") | {% for dt in app.datatype %} {{ dt }} <br> {% endfor %} | {% if "raw" in app.ds_type %} yes :white_check_mark: {% else %} no :no_entry_sign: {% endif %} | {% if "derivative" in app.ds_type %} yes :white_check_mark: {% else %} no :no_entry_sign: {% endif %} | {% if app.ci == "gh" %} [![](https://github.com/{{ app.gh }}/actions/workflows/{{ app.workflow }}.yml/badge.svg?branch={{ branch }})](https://github.com/{{ app.gh }}/actions/workflows/{{ app.workflow }}.yml) {% elif app.ci == "travis" %} [![](https://app.travis-ci.com/{{ app.gh }}.svg?branch={{ branch }})](https://app.travis-ci.com/{{ app.gh }}) {% elif app.ci == "none" %} ![](https://img.shields.io/badge/CI-unavailable-lightgrey) {% else %} [![](https://circleci.com/gh/{{ app.gh }}.svg?style=shield)](https://circleci.com/gh/{{ app.gh }}/tree/{{ branch }}) {% endif %} | [![Number of Docker Pulls](https://img.shields.io/docker/pulls/{{ app.dh|lower }})](https://hub.docker.com/r/{{ app.dh|lower }}) | ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/{{ app.dh|lower }}) |
+{% endfor %}
+
+
+| Name  | Status unstable | Updated | Number issues |
+| :---- | :-------------- | :------ | :------------ |
+{% for app in include.apps if app.status == "active" %}
+  {% set branch = "master" %}
+  {% if app.branch %}
+    {% set branch = app.branch %}
+  {% endif %}
+  {% set _, name = app.gh.split('/') %}
+| [{{ name }}](https://github.com/{{ app.gh }} "{{ app.description | replace("\n", " ") }}") | Status unstable | ![GitHub last commit](https://img.shields.io/github/last-commit/{{ app.gh }}?style=plastic) | [![Number of open issues on github](https://img.shields.io/github/issues-raw/{{ app.gh }})](https://github.com/{{ app.gh }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug) |
+{% endfor %}

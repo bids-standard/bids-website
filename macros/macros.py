@@ -59,11 +59,19 @@ def generate_grants_table():
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("grants_table_md.jinja")
+    return template.render(include=content)
+
+
+def generate_apps_table():
+    input_file = ROOT / "docs" / "apps" / "_config.yml"
+    content = yaml.load(input_file)
+    env = return_jinja_env()
+    template = env.get_template("apps_table_md.jinja")
     return template.render(include=content, type=type)
 
 
 def main():
-    print(generate_beps_table(file="beps.yml"))
+    print(generate_apps_table())
 
 
 if __name__ == "__main__":

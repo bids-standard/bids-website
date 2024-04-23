@@ -23,6 +23,7 @@ docs_dir: docs
 exclude_docs: |
     .github
     apps/README.md
+    apps/apps.md
     apps/dev_faq.md
     execution/README.md
     execution/BIDS_logo/README.md
@@ -96,7 +97,7 @@ nav:
     -   BIDS apps:
         -   apps/about.md
         -   tutorial: apps/tutorial.md
-        -   dashboard: apps/apps.md
+        -   dashboard: tools/apps/dashboard.md
     -   Others: tools/others.md
 -   Collaboration:
     -   Governance: collaboration/governance.md

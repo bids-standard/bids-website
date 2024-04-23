@@ -1,4 +1,5 @@
 from .macros import (
+    generate_apps_table,
     generate_beps_table,
     generate_converter_table,
     generate_grants_table,
@@ -14,4 +15,5 @@ __all__ = [
     "generate_members_table",
     "generate_beps_table",
     "generate_grants_table",
+    "generate_apps_table",
 ]
