@@ -243,6 +243,8 @@ extra:
         link: https://x.com/BIDSstandard/
     -   icon: fontawesome/brands/mastodon
         link: https://fosstodon.org/@bidsstandard
+    -   icon: simple/bluesky
+        link: https://bsky.app/profile/bidsstandard.bsky.social/
     -   icon: fontawesome/brands/google
         link: https://groups.google.com/g/bids-discussion
     -   icon: fontawesome/brands/instagram

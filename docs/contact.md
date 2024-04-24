@@ -58,6 +58,7 @@ Some example questions that have already been answered include:
     -   [:simple-mastodon: Mastodon](https://fosstodon.org/@bidsstandard/)
     -   [:simple-x: Twitter/ X](https://x.com/BIDSstandard)
     -   [:simple-youtube: YouTube](https://www.youtube.com/embed/-c4PUhTwmz4)
+    -   [:simple-instagram: Instagram](https://www.instagram.com/bidsstandard)
     -   Listen to our [podcast](https://anchor.fm/bids-maintenance)
 
     If you are interested in receiving occasional updates around BIDS,
