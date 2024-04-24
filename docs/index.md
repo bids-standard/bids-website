@@ -24,7 +24,16 @@ to reflect current lab practices and make it accessible to a wide range of scien
 
 ## BIDS is a community effort
 
-BIDS is developed by the community for the community and everybody can [become a part of the community](https://bids.neuroimaging.io/get_involved.html).
+BIDS is developed by the community for the community
+and everybody can [become a part of the community](https://bids.neuroimaging.io/get_involved.html).
+
+The most important part of BIDS are the users:
+if more people use it, more data will be shared and the more powerful it will become.
+
+<strong>We want to make it easy to learn</strong> and more adopted.
+
+Since BIDS is platform independent
+and still an adapting, growing tool, the greater the community, the better it will be.
 
 ## Specification vs. Ecosystem
 
@@ -32,7 +41,7 @@ Since the inception of the BIDS specification that documents how to organize neu
 a large ecosystem of tools and resources has evolved around BIDS.
 
 A few of the key elements of this ecosystem are the [BIDS specification](http://bids-specification.readthedocs.io/)
-with the nitty-gritty details, the [BIDS starter kit](https://bids-standard.github.io/bids-starter-kit/)
+with the nitty-gritty details, the [starter kit](./bids-starter-kit/src/index.md)
 with a simple explanation how to work with it, the [BIDS validator](https://github.com/bids-standard/bids-validator)
 to automatically check datasets for adherence to the specification, [BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209),
 a collection of portable neuroimaging pipelines that understand BIDS datasets, and [OpenNeuro](https://openneuro.org/),
@@ -44,7 +53,40 @@ With the ongoing development of new tools and resources it is important to keep 
 that the [BIDS specification](http://bids-specification.readthedocs.io/) remains
 the standard according to which the entire ecosystem must adhere.
 
+## Philosophy
+
+Another part is that BIDS is striving to not reinventing other standards and metadata ontologies but reuse them:
+
+![BIDS-minder](./assets/img/BIDS-minder.svg)
+
 ## Benefits
+
+<div class="grid cards" markdown>
+
+-   :material-account-group:{ .lg .middle } **For the public good**
+
+    ---
+
+    -   Lowers scientific waste
+    -   Gives opportunity to less-funded researchers
+    -   Improves efficiency
+    -   Spurs innovation
+
+-   :recycle:{ .lg .middle } **For yourself**
+
+    ---
+
+    -   You are likely the future user of the data and data analysis pipelines you’ve developed
+
+    -   Enables and simplifies collaboration
+
+    -   Reviewers and funding agencies like to see reproducible results
+
+    -   Open-science based funding opportunities and awards available
+        (for instance: OHBM Replication Award, Mozilla Open Science Fellowship,
+        Google Summer of Code, and so on.)
+
+</div>
 
 By using this standard you will benefit in the following ways:
 

@@ -27,4 +27,4 @@ package.json:
 	npm install `cat npm-requirements.txt`
 
 remark: package.json
-	npx remark .faq ./docs/index.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/FAQ ./docs/grant/README.md ./docs/standards --rc-path .remarkrc
+	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/FAQ ./docs/standards --rc-path .remarkrc

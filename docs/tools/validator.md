@@ -14,45 +14,43 @@ Instructions to install and use these versions can be found
 within the [quickstart guide](https://github.com/bids-standard/bids-validator)
 at the BIDS Validator repository.
 
-**Data Privacy and Confidentiality**
+## Data Privacy and Confidentiality
 
 Please note that the web app is entirely browser(not server) based.
 As such, there is no file uploading as part of the validation.
 
 ## Browser Version
 
-1. The BIDS Validator can be found at <http://bids-standard.github.io/bids-validator/>.
-   It requires that you use the Chrome or Firefox browser,
-   since those are the only ones in which you can select a whole folder rather than individual files.
+1.  The BIDS Validator can be found at <http://bids-standard.github.io/bids-validator/>.
+    It requires that you use the Chrome or Firefox browser,
+    since those are the only ones in which you can select a whole folder rather than individual files.
 
-<!-- TODO grab that image and add to the repo -->
+    ![home](../assets/img/YD38eTE.png)
 
-![home](../assets/img/YD38eTE.png)
-
-2. You can then choose the **folder** that you wish to validate
+1.  You can then choose the **folder** that you wish to validate
 
 ### Types of Feedback
 
 !!! failure "Error"
 
-       This response indicates that your dataset is not BIDS compliant.
-       Try following the suggestions listed to make the appropriate corrections.
+    This response indicates that your dataset is not BIDS compliant.
+    Try following the suggestions listed to make the appropriate corrections.
 
-       ![Error](../assets/img//PEz9hbd.png)
+    ![Error](../assets/img//PEz9hbd.png)
 
 !!! warning
 
-       This response indicates that your dataset is BIDS compliant,
-       but there are some non-critical problems
-       (such as optional fields missing, or differences between participants).
+    This response indicates that your dataset is BIDS compliant,
+    but there are some non-critical problems
+    (such as optional fields missing, or differences between participants).
 
-       ![Warning](../assets/img//Gqwc1q9.png)
+    ![Warning](../assets/img//Gqwc1q9.png)
 
 !!! success "Success :rocket:"
 
-       This response indicates that your folder contains a valid BIDS Dataset!
+    This response indicates that your folder contains a valid BIDS Dataset!
 
-       ![Valid](../assets/img/DPFVXOR.png)
+    ![Valid](../assets/img/DPFVXOR.png)
 
 ## Command Line Version
 

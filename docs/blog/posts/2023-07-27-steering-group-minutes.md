@@ -97,11 +97,8 @@ Ray
 ### BIDS Badges
 
 -   Ariel will follow up with Guy Jones
-
 -   Others to reach out to:
-
 -   Renzo Huber @ Aperture - and how can BIDS help Aperture? - Kim will invite them for Sept 7th meeting
-
 -   [Neurolibre](https://github.com/neurolibre/neurolibre) to add a BIDS tag?
 
 ### BIDS Derivatives
@@ -129,18 +126,11 @@ Ray
 ### BIDS 2.0 : (also feedback from the town hall)
 
 -   _Aka BIDS 1.0 with enhancements_
-
 -   How can we take advantage of ontologies in this version?
-
 -   How can new enhancements allow more flexibility for BIDS? for example use of dashes in file names
-
 -   Work on the schema may facilitate or inhibit the transition to BIDS 2.0
-
 -   How/When do we know when BIDS 2.0 is ready?
-
--   Anthony says that the [[schema is
-complete]](https://imgflip.com/i/7txwm7)
-
+-   Anthony says that the [[schema is complete]](https://imgflip.com/i/7txwm7)
 -   New BIDS issue for BIDS 2.0 specification & [project board](https://github.com/orgs/bids-standard/projects/10/views/1?layout=board).
 
 ### Neuro Open Science Prize

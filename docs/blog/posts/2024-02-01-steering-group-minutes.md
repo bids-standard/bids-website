@@ -237,10 +237,15 @@ Yaroslav Halchenko, Rémi Gau
     file to help browse the google drive
 
 -   What?
+
 -   What was achieved by steering in past 2-3 years
+
 -   Current projects in progress in the steering group.
+
 -   A view of typical \"tasks\"/topics the steering is working on.
+
 -   ACTION: Rémi set up a meeting to populate the onboarding docs above
+
 -   ACTION: Kim added bookmark linking the BIDS Maintainers google drive
     in the BIDS steering group slack channel for easier access
 
@@ -251,10 +256,12 @@ Yaroslav Halchenko, Rémi Gau
     not following BEP protocols.
 
 -   Could probably be PR?
+
 -   In any case, we should point them to the bids BEP guidelines:
     [[https://bids-extensions.readthedocs.io/en/latest/guide/#when-and-how-to-start-a-bids-extension-proposal]](https://bids-extensions.readthedocs.io/en/latest/guide/#when-and-how-to-start-a-bids-extension-proposal)
 
 -   BEP guidelines may require too high of a level of understanding of BIDS for a novice user
+
 -   ACTION: Rémi to point to BEP guidelines, mention that it is probably
     not needed to go for a BEP but a PR should be enough. Mention that a
     PR plus example should be enough.
@@ -270,6 +277,7 @@ Yaroslav Halchenko, Rémi Gau
 ### Train the trainers
 
 -   Goal is to make BIDS more accessible and increase impact
+
 -   Similar to data carpentries:
     [[https://carpentries.org/become-instructor/]](https://carpentries.org/become-instructor/)
 
@@ -277,9 +285,13 @@ Yaroslav Halchenko, Rémi Gau
     [[https://www.repronim.org/fellowship]](https://www.repronim.org/fellowship)
 
 -   This is more geared to help fellows create material for their own training
+
 -   List "certified BIDS trainers" on the BIDS website
+
 -   Having a way to "certify" trainers
+
 -   Who will be the (meta)trainer to train the trainers?
+
 -   Data carpentry BIDS "courses" in the carpentry incubator (**for
     users not trainers**):
     [[https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055]](https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055)

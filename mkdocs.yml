@@ -38,6 +38,7 @@ exclude_docs: |
     starter_kit/src/FAQ.md
     starter_kit/src/contact.md
     starter_kit/src/tutorials/media/README.md
+    starter_kit/src/validator.md
     stats_models/README.md
     stats_models/bsmschema/README.md
     stats_models/specification/walkthrough-2.md
@@ -140,18 +141,19 @@ nav:
     -   submission: extensions/docs/submission.md
     -   macros: specification/macros_doc.md
 -   FAQ:
-    -   FAQ/index.md
-    -   general: FAQ/general.md
-    -   eeg: FAQ/eeg.md
-    -   mri: FAQ/mri.md
-    -   phenotype: FAQ/pheno.md
-    -   bids extensions: FAQ/bep.md
-    -   bids apps: FAQ/apps.md
+    -   faq/index.md
+    -   general: faq/general.md
+    -   eeg: faq/eeg.md
+    -   mri: faq/mri.md
+    -   phenotype: faq/pheno.md
+    -   bids extensions: faq/bep.md
+    -   bids apps: faq/apps.md
 -   Blog:
     -   blog/index.md
 -   Impact:
-    -   grant_writing_kit.md
+    -   grant-writing-kit.md
 -   Contact: contact.md
+-   Merch: merch.md
 
 theme:
     name: material

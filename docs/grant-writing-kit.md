@@ -106,7 +106,7 @@ we have over 300 credited contributors.
 
 #### Gender of contributors
 
-Guessed with: https://pypi.org/project/gender-guesser/
+Guessed with [gender-guesser](https://pypi.org/project/gender-guesser/)
 
 -   male: 177
 -   female: 47

@@ -19,14 +19,13 @@ just post what you have so far and we will be able to point you in the right dir
 Some example questions that have already been answered include:
 
 -   [BIDS file naming specifications](https://neurostars.org/t/bids-beginner-convert-data-to-bids-format/1364)
-
 -   [BIDS beginner - convert data to BIDS format](https://neurostars.org/t/bids-beginner-convert-data-to-bids-format/1364)
 
 ---
 
 <div class="grid cards" markdown>
 
--   :simple-mattermost:{ .lg .middle } __Mattermost__
+-   :simple-mattermost:{ .lg .middle } **Mattermost**
 
     ---
 
@@ -34,7 +33,7 @@ Some example questions that have already been answered include:
 
     You can also come chat on the [Brainhack mattermost](https://mattermost.brainhack.org/) on the `~bids_general` channel.
 
--   :simple-google:{ .lg .middle } __Mailing list__
+-   :simple-google:{ .lg .middle } **Mailing list**
 
     ---
 
@@ -43,7 +42,7 @@ Some example questions that have already been answered include:
     We'd love for you to join the mailing list.
     You might find some helpful answers and discussions there.
 
--   :email:{ .lg .middle } __Email__
+-   :email:{ .lg .middle } **Email**
 
     ---
 
@@ -51,20 +50,18 @@ Some example questions that have already been answered include:
 
     If you have very specific questions you can email the BIDS maintainers.
 
-
--   :handshake_tone1_tone5:{ .lg .middle } __Social media__
+-   :handshake_tone1_tone5:{ .lg .middle } **Social media**
 
     ---
 
     -   [:simple-bluesky: Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/)
     -   [:simple-mastodon: Mastodon](https://fosstodon.org/@bidsstandard/)
-    -   [:simple-x: Twitter/ X ](https://x.com/BIDSstandard)
+    -   [:simple-x: Twitter/ X](https://x.com/BIDSstandard)
     -   [:simple-youtube: YouTube](https://www.youtube.com/embed/-c4PUhTwmz4)
     -   Listen to our [podcast](https://anchor.fm/bids-maintenance)
 
     If you are interested in receiving occasional updates around BIDS,
     feel free to join one of the communication channels that we use regularly.
-
 
 </div>
 

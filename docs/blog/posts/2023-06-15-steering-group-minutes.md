@@ -192,13 +192,9 @@ Imaging Neuroscience Response from Steve Smith
 -   Getting started for:
 
     -   Users
-
     -   tools developers,
-
     -   reviewers,
-
     -   funding agencies
-
     -   Institute directors
 
 -   Should this be in the form of a
