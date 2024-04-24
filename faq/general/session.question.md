@@ -2,8 +2,6 @@
 title: "I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?"
 ---
 
-(faq_session)=
-
 No. The `session` level in the BIDS folder hierarchy can be used to group data
 that go "logically" together: this means that you can put in the same `session` folder
 data that were acquired on different days,

@@ -27,18 +27,21 @@ exclude_docs: |
     apps/dev_faq.md
     execution/README.md
     execution/BIDS_logo/README.md
+    execution/src/CONTRIBUTING.md
     extensions/README.md
     extensions/docs/faq.md
     starter_kit/README.md
     starter_kit/matlabCode/general/README.md
-    starter_kit/src/CODE_OF_CONDUCT.md
     starter_kit/reports/
-    starter_kit/src/tutorials/media/README.md
-    starter_kit/src/FAQ.md
+    starter_kit/src/CODE_OF_CONDUCT.md
     starter_kit/src/CONTRIBUTING.md
+    starter_kit/src/FAQ.md
+    starter_kit/src/contact.md
+    starter_kit/src/tutorials/media/README.md
     stats_models/README.md
     stats_models/bsmschema/README.md
     stats_models/specification/walkthrough-2.md
+    website/CONTRIBUTING.md
     website/_bep_collection/
     website/_pages/governance.md
     website/_pages/specification.md
@@ -107,9 +110,7 @@ nav:
     -   contributing:
         -   apps: apps/CONTRIBUTING.md
         -   grant: grant/CONTRIBUTING.md
-        -   wesbite: website/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
-        -   bids apps spec: execution/src/CONTRIBUTING.md
         -   starter_kit: starter_kit/CONTRIBUTING.md
 -   Getting started:
     -   starter_kit/src/index.md
@@ -156,7 +157,7 @@ nav:
     -   blog/index.md
 -   Impact:
     -   grant/README.md
--   Contact: starter_kit/src/contact.md
+-   Contact: contact.md
 
 theme:
     name: material
@@ -190,11 +191,15 @@ theme:
             icon: material/brightness-auto
             name: Switch to light mode
     -   media: '(prefers-color-scheme: light)'
+        primary: light green
+        accent: green
         scheme: default
         toggle:
             icon: material/brightness-7
             name: Switch to dark mode
     -   media: '(prefers-color-scheme: dark)'
+        primary: teal
+        accent: green
         scheme: slate
         toggle:
             icon: material/brightness-4
@@ -226,6 +231,9 @@ markdown_extensions:
 extra_javascript:
 -   https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
 -   javascripts/tablesort.js
+
+extra_css:
+-   stylesheets/extra.css
 
 watch:
 -   includes
