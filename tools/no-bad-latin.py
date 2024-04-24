@@ -14,7 +14,7 @@ import re
 from pull_files import filter_files
 
 ABSOLUTE_HERE = os.path.dirname(os.path.dirname(__file__))
-IGNORE_LIST = ["CHANGES.md", "01-contributors.md", "pregh-changes.md"]
+IGNORE_LIST = []
 
 
 def parse_args():

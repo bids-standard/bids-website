@@ -49,7 +49,7 @@ author: anonymous
      --&gt; what is your view?
     </p>
     <p>
-     --&gt; to help developing BEP derivatives, would it be useful to have a framework/guidelines considering the focus of derivatives i.e. reusage?
+     --&gt; to help developing BEP derivatives, would it be useful to have a framework/guidelines considering the focus of derivatives like reusage?
     </p>
     <p>
      3. Given your involvement in BIDS and derivatives, what is/are the current roadblocks to advance your project?

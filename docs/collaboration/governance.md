@@ -52,9 +52,9 @@ and public Google Documents (typically associated with an [extension proposal](.
 
 A key component of the BIDS initiative is the collection of associated
 software tools and platforms that facilitate the validation and ease the
-use of BIDS-formatted datasets. BIDS converters (e.g.,
-[HeuDiConv](https://github.com/nipy/heudiconv)) enable the streamlined
-conversion of raw imaging files (e.g., DICOMs) into a BIDS dataset, the
+use of BIDS-formatted datasets.
+BIDS converters (for example, [HeuDiConv](https://github.com/nipy/heudiconv)) enable the streamlined
+conversion of raw imaging files (for example, DICOMs) into a BIDS dataset, the
 [BIDS validator](http://bids-standard.github.io/bids-validator/) allows
 users to confirm that a given dataset complies with the current edition
 of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
@@ -107,16 +107,16 @@ Membership on the BIDS Steering Group is through elections by BIDS
 Contributors. BIDS Steering Group terms are 3 years.
 The existing BIDS Steering Group is responsible for filling open
 positions, ensuring that at least two nominees are named for each
-position, that multiple imaging modalities (e.g., MRI, MEG) are
+position, that multiple imaging modalities (for example, MRI, MEG) are
 represented on the final committee, and the different needs for the
-specification (e.g., users vs software developers). Given that the
+specification (for example, users vs software developers). Given that the
 modalities included in BIDS will continue to evolve, we do not recommend
 a precise mechanism for this balance. It is therefore at the discretion
 of the Steering Group to ensure that modalities are appropriately
 represented. The chair is elected by a majority of the BIDS Steering
 Group (3 votes) to serve for a 1 year term. The chair cannot serve two
 consecutive years as chair. BIDS Steering Group members may hold other
-BIDS roles at the same time, e.g. BEP Working Group chair.
+BIDS roles at the same time, for example BEP Working Group chair.
 
 The BIDS Steering Group is the authority of last resort in addressing
 conflicts among groups and alleged violations of the [Code of
@@ -228,7 +228,7 @@ A working/interest group can be established under the approval of the
 BIDS Steering Group. This is typically but not limited to being formed
 for the purpose of advancing the BIDS community, not the standard. Each
 group will appoint 1-2 chairs. Members of these groups can have cross
-appointments in other groups (e.g., BEP Working Group). These groups do
+appointments in other groups (for example, BEP Working Group). These groups do
 not necessarily dissolve after some duration or event, unless stated in
 their proposal.
 

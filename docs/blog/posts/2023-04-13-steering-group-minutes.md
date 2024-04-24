@@ -61,7 +61,7 @@ author: anonymous
        https://bids-specification.readthedocs.io/en/latest/modality-specific-files/task-events.html
       </span>
      </a>
-     sample is not defined, ie custom column, not sure I follow the why in issue 1441 (2)
+     sample is not defined, that is custom column, not sure I follow the why in issue 1441 (2)
     </p>
     <p>
      Issue 1436 -- yes let’s do that, robert also agreed on that (3) seems like there is a consensus
