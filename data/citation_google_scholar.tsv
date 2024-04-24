@@ -1,0 +1,13 @@
+paper	year_2016	year_2017	year_2018	year_2019	year_2020	year_2021	year_2022	year_2023
+Motion-BIDS (Jeung et al. 2023)	0	0	0	0	0	0	0	0
+FNRIS-BIDS (Luke et al. 2023)	0	0	0	0	0	0	0	2
+Microscopy-BIDS (Bourget et al. 2022)	0	0	0	0	0	0	3	7
+ASL-BIDS (Clement et al. 2022)	0	0	0	0	0	2	3	12
+qMRI-BIDS (Karakuzu et al. 2022)	0	0	0	0	0	0	4	6
+PET-BIDS (Norgaard et al. 2022)	0	0	0	0	0	4	10	12
+Genetics (Moreau et al. 2020)	0	0	0	0	0	3	5	1
+iEEG-BIDS (Holdgraf et al. 2019)	0	0	0	5	15	20	34	27
+EEG-BIDS (Pernet et al. 2019)	0	0	1	11	28	58	81	54
+MEG-BIDS (Niso et al. 2018)	0	0	7	20	10	27	37	20
+BIDS Apps (Gorgolewski et al. 2017)	0	20	22	35	30	47	62	43
+BIDS (Gorgolewski et al. 2016)	17	41	61	121	156	236	276	257

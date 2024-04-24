@@ -28,3 +28,37 @@ Then, use one of the following two methods:
    You can inspect how that chart looks by building the website using Jekyll and serving locally.
    This code depends on data from the files `beps_completed.yml` files in the `_data` directory.
    You should keep that file up to date.
+
+## Updating grant writing kit info
+
+### Citation Count
+
+This script queries the [OpenCitations](https://opencitations.net/index/coci) API
+to get the number of papers that cited a list of papers related to the [BIDS](https://bids.neuroimaging.io/) data organization standard.
+
+The resulting citation count is then visualized using [Plotly](https://plotly.com/python/).
+
+### Requirements
+
+To install the required packages, run the following command in your terminal:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+1. Clone the repository to your local machine.
+
+2. Open the `count_citation.py` file and replace `YOUR-OPENCITATIONS-ACCESS-TOKEN` with your OpenCitations access token.
+
+3. Run the script:
+
+```bash
+python count_citation.py
+```
+
+4. The citation count for each paper will be saved in a TSV file named `count_citation.tsv`
+   in the same directory as the script.
+
+5. A bar chart of the citation count will be displayed using your default browser.

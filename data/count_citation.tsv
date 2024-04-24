@@ -1,0 +1,45 @@
+papers	years	nb_citations
+fNIRS-BIDS, the Brain Imaging Data Structure Extended to Functional Near-Infrared Spectroscopy	2023	1
+ASL-BIDS, the brain imaging data structure extension for arterial spin labeling	2023	8
+Guidelines for the content and format of PET brain data in publications and archives	2021	13
+Guidelines for the content and format of PET brain data in publications and archives	2022	10
+Guidelines for the content and format of PET brain data in publications and archives	2020	6
+Guidelines for the content and format of PET brain data in publications and archives	2023	10
+qMRI-BIDS	2023	3
+The genetics-BIDS extension	2021	3
+The genetics-BIDS extension	2022	4
+Microscopy-BIDS	2023	5
+Microscopy-BIDS	2022	2
+PET-BIDS, an extension to the brain imaging data structure for positron emission tomography	2023	7
+PET-BIDS, an extension to the brain imaging data structure for positron emission tomography	2022	5
+MEG-BIDS, the brain imaging data structure extended to magnetoencephalography	2019	19
+MEG-BIDS, the brain imaging data structure extended to magnetoencephalography	2022	23
+MEG-BIDS, the brain imaging data structure extended to magnetoencephalography	2023	12
+MEG-BIDS, the brain imaging data structure extended to magnetoencephalography	2021	23
+MEG-BIDS, the brain imaging data structure extended to magnetoencephalography	2020	8
+MEG-BIDS, the brain imaging data structure extended to magnetoencephalography	2018	3
+iEEG-BIDS, extending the Brain Imaging Data Structure specification to human intracranial electrophysiology	2020	14
+iEEG-BIDS, extending the Brain Imaging Data Structure specification to human intracranial electrophysiology	2019	6
+iEEG-BIDS, extending the Brain Imaging Data Structure specification to human intracranial electrophysiology	2021	18
+iEEG-BIDS, extending the Brain Imaging Data Structure specification to human intracranial electrophysiology	2022	25
+iEEG-BIDS, extending the Brain Imaging Data Structure specification to human intracranial electrophysiology	2023	16
+EEG-BIDS, an extension to the brain imaging data structure for electroencephalography	2021	58
+EEG-BIDS, an extension to the brain imaging data structure for electroencephalography	2020	17
+EEG-BIDS, an extension to the brain imaging data structure for electroencephalography	2019	6
+EEG-BIDS, an extension to the brain imaging data structure for electroencephalography	2022	58
+EEG-BIDS, an extension to the brain imaging data structure for electroencephalography	2023	33
+BIDS apps	2021	36
+BIDS apps	2019	34
+BIDS apps	2020	26
+BIDS apps	2022	49
+BIDS apps	2018	20
+BIDS apps	2017	12
+BIDS apps	2023	20
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2022	215
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2023	146
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2020	129
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2019	88
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2016	13
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2021	184
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2017	33
+The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments	2018	40

@@ -151,7 +151,7 @@ nav:
 -   Blog:
     -   blog/index.md
 -   Impact:
-    -   grant/README.md
+    -   grant_writing_kit.md
 -   Contact: contact.md
 
 theme:
