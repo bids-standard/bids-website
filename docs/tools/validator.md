@@ -27,38 +27,32 @@ As such, there is no file uploading as part of the validation.
 
 <!-- TODO grab that image and add to the repo -->
 
-![home](https://i.imgur.com/YD38eTE.png)
+![home](../assets/img/YD38eTE.png)
 
 2. You can then choose the **folder** that you wish to validate
 
 ### Types of Feedback
 
-#### Error
+!!! failure "Error"
 
-This response indicates that your dataset is not BIDS compliant.
-Try following the suggestions listed to make the appropriate corrections
+       This response indicates that your dataset is not BIDS compliant.
+       Try following the suggestions listed to make the appropriate corrections.
 
-<!-- TODO grab that image and add to the repo -->
+       ![Error](../assets/img//PEz9hbd.png)
 
-![Error](https://i.imgur.com/PEz9hbd.png)
+!!! warning
 
-#### Warning
+       This response indicates that your dataset is BIDS compliant,
+       but there are some non-critical problems
+       (such as optional fields missing, or differences between participants).
 
-This response indicates that your dataset is BIDS compliant,
-but there are some non-critical problems
-(such as optional fields missing, or differences between participants)
+       ![Warning](../assets/img//Gqwc1q9.png)
 
-<!-- TODO grab that image and add to the repo -->
+!!! success "Success :rocket:"
 
-![Warning](https://i.imgur.com/Gqwc1q9.png)
+       This response indicates that your folder contains a valid BIDS Dataset!
 
-#### Success
-
-This response indicates that your folder contains a valid BIDS Dataset!
-
-<!-- TODO grab that image and add to the repo -->
-
-![Valid](https://i.imgur.com/DPFVXOR.png)
+       ![Valid](../assets/img/DPFVXOR.png)
 
 ## Command Line Version
 

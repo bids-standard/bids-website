@@ -38,39 +38,29 @@ We kindly ask you to please **share your grant online** - successful or not.
 This will signal to the rest of the community what avenues we have pursued and
 what our fellow colleagues are planning on doing next. These can be grants that
 directly extend our support into a new domain, grants that help BIDS (for example
-OpenNeuro), or unsuccessful grant applications. For example, please find our
-[NIH-R24 Brain Initiative BIDS-Derivatives grant](https://osf.io/c3dgx/).
+OpenNeuro), or unsuccessful grant applications.
 
-A listing of the previous grants can be found here:
+For example, please find our [NIH-R24 Brain Initiative BIDS-Derivatives grant](https://osf.io/c3dgx/).
 
-https://bids.neuroimaging.io/acknowledgments.html
+A listing of the previous grants can be found [here](./index.md#acknowledgments)
 
 ## dashboards
 
 ### Datasets
 
-![](./images/openneuro_data_growth.png)
+![](./assets/img/openneuro_data_growth.png)
 
 ### Citation Count
 
-BIDS references are centralized in a zotero group:
-https://www.zotero.org/groups/5111637/bids
+BIDS references are centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
 
-You can also find them on this page:
-https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids
+You can also find them [in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
 
-![](./images/newplot.png)
+![](./assets/img/citation_per_year.png)
 
 #### Citation according to google scholar
 
-<!--
-original
-https://docs.google.com/spreadsheets/d/1rz3mQl5qvYBVvqJlWhSg1c9qS09ayG8GmyOqS8JZxWc/edit#gid=0
-
-updated tsv in this folder
--->
-
-![](./images/google_citations.png)
+![](./assets/img/google_citations.png)
 
 ### GitHub stars
 
@@ -133,7 +123,7 @@ Number of authors without affiliation: 171
 
 Number of unkwon affiliations: 19
 
-![](./images/affiliations.png)
+![](./assets/img/affiliations.png)
 
 ### GitHub dependents
 
