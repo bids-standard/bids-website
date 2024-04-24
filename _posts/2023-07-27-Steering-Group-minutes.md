@@ -161,6 +161,6 @@ Ray
     -   [Brainstorm for letters here](https://docs.google.com/spreadsheets/d/1gYfP1C84e1_81HPIGBbXl8v_Z3b43uCLGHBa0RhtnOM/edit#gid=0)
 
     -   Possible contacts:
-        [https://www.internationalbraininitiative.org/data-standards-and-sharing-working-group](https://www.internationalbraininitiative.org/data-standards-and-sharing-working-group)
+        [https://www.internationalbraininitiative.org/data-standards-and-sharing](https://www.internationalbraininitiative.org/data-standards-and-sharing)
 
 -   How should the application strategy change from previous years?
