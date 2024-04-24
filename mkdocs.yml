@@ -33,19 +33,14 @@ exclude_docs: |
     starter_kit/README.md
     starter_kit/matlabCode/general/README.md
     starter_kit/reports/
-    starter_kit/src/CODE_OF_CONDUCT.md
-    starter_kit/src/CONTRIBUTING.md
+    starter_kit/CODE_OF_CONDUCT.md
+    starter_kit/CONTRIBUTING.md
     starter_kit/src/FAQ.md
     starter_kit/src/contact.md
     starter_kit/src/tutorials/media/README.md
     stats_models/README.md
     stats_models/bsmschema/README.md
     stats_models/specification/walkthrough-2.md
-    website/CONTRIBUTING.md
-    website/_bep_collection/
-    website/_pages/governance.md
-    website/_pages/specification.md
-    website/_pages/get_involved.md
 
 nav:
 -   index.md
@@ -90,7 +85,7 @@ nav:
             -   release notes: execution/src/CHANGELOG.md
 -   Tools:
     -   tools/index.md
-    -   Validator: starter_kit/src/validator.md
+    -   Validator: tools/validator.md
     -   Converters:
         - tools/converters/index.md
         - MRI and PET: tools/converters/mri-pet.md
@@ -106,12 +101,12 @@ nav:
     -   Governance: collaboration/governance.md
     -   Code of conduct:
         -   specification: specification/CODE_OF_CONDUCT.md
-        -   starter_kit: starter_kit/CODE_OF_CONDUCT.md
+        -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
     -   contributing:
         -   apps: apps/CONTRIBUTING.md
         -   grant: grant/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
-        -   starter_kit: starter_kit/CONTRIBUTING.md
+        -   starter_kit: starter_kit/src/CONTRIBUTING.md
 -   Getting started:
     -   starter_kit/src/index.md
     -   folders and files:
