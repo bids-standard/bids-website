@@ -104,7 +104,6 @@ nav:
         -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
     -   contributing:
         -   apps: apps/CONTRIBUTING.md
-        -   grant: grant/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
         -   starter_kit: starter_kit/src/CONTRIBUTING.md
 -   Getting started:
