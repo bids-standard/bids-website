@@ -1,7 +1,7 @@
 ---
 site_name: The brain imaging data structure
-repo_url: https://github.com/bids-standard/in_darkness_bind_them
-site_url: https://in-darkness-bind-them.readthedocs.io/en/latest
+repo_url: https://github.com/bids-standard/bids-website.git
+site_url: https://bids-website.readthedocs.io
 
 plugins:
 -   search
@@ -159,7 +159,7 @@ theme:
     name: material
     custom_dir: docs/overrides
     favicon: assets/favicon/favicon.ico
-    logo: starter_kit/src/images/logo.png
+    logo: docs/assets/img/logo.png
     features:
     -   announce.dismiss
     -   content.action.edit
