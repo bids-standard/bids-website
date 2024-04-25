@@ -159,7 +159,7 @@ theme:
     name: material
     custom_dir: docs/overrides
     favicon: assets/favicon/favicon.ico
-    logo: docs/assets/img/logo.png
+    logo: assets/img/logo.png
     features:
     -   announce.dismiss
     -   content.action.edit

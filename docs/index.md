@@ -40,12 +40,12 @@ and still an adapting, growing tool, the greater the community, the better it wi
 Since the inception of the BIDS specification that documents how to organize neuroimaging data,
 a large ecosystem of tools and resources has evolved around BIDS.
 
-A few of the key elements of this ecosystem are the [BIDS specification](http://bids-specification.readthedocs.io/)
-with the nitty-gritty details, the [starter kit](./bids-starter-kit/src/index.md)
-with a simple explanation how to work with it, the [BIDS validator](https://github.com/bids-standard/bids-validator)
-to automatically check datasets for adherence to the specification, [BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209),
-a collection of portable neuroimaging pipelines that understand BIDS datasets, and [OpenNeuro](https://openneuro.org/),
-as a database for BIDS formatted datasets.
+A few of the key elements of this ecosystem are
+the [BIDS specification](http://bids-specification.readthedocs.io/) with the nitty-gritty details,
+the [starter kit](./starter_kit/src/index.md) with a simple explanation how to work with it,
+the [BIDS validator](https://github.com/bids-standard/bids-validator) to automatically check datasets for adherence to the specification,
+[BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
+and [OpenNeuro](https://openneuro.org/) as a database for BIDS formatted datasets.
 
 A non-exhaustive list of further tools can be found in the [Benefits](https://bids.neuroimaging.io/benefits.html) section.
 
@@ -119,7 +119,7 @@ By using this standard you will benefit in the following ways:
 
 -   Take a look at how the community [uses BIDS](https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4).
 
--   We have constructed a [grant writing kit](./grant_writing_kit.md)
+-   We have constructed a [grant writing kit](./grant-writing-kit.md)
     to assist you in putting together BIDS-related grant proposals.
 
 -   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
