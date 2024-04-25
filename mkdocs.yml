@@ -6,15 +6,15 @@ site_url: https://bids-website.readthedocs.io
 plugins:
 -   search
 -   tags
--   social
+# -   social
 -   blog
--   rss:
-        match_path: blog/posts/.*
-        date_from_meta:
-            as_creation: date
-        categories:
-        -   categories
-        -   tags
+# -   rss:
+#         match_path: blog/posts/.*
+#         date_from_meta:
+#             as_creation: date
+#         categories:
+#         -   categories
+#         -   tags
 -   macros:
         module_name: macros/main
 
