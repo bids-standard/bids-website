@@ -126,7 +126,9 @@
         - MRI # not sure
       expected_input:
       language:
-      comment: Convert OpenfMRI dataset to BIDS
+      comment: 
+        Convert OpenfMRI dataset to BIDS. (Possibly deprecated due to openfmri.org moving 
+        to <a href="https://openneuro.org/" target="_blank">openneuro.org</a>).
 
     - name: ReproIn
       url: https://github.com/ReproNim/reproin
@@ -148,6 +150,7 @@
       data_types:
         - MRI # not sure
       expected_input:
+        - DICOM via xnat DB
       language:
         - shell
       comment: |
@@ -158,6 +161,7 @@
       url: https://github.com/mslw/horos-bids-output
       data_types:
       expected_input:
+        - DICOM via Osirix / Horos
       language:
         - objective C
       comment: Horos plugin for BIDS output.
