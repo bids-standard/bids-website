@@ -125,37 +125,35 @@ By using this standard you will benefit in the following ways:
 -   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
     Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
 
-## Acknowledgments
+---
 
-This work has been done by the community of [individual contributors](https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html).
-
-Their work was supported by the following grants.
-
-{{ MACROS___generate_grants_table() }}
-
-<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
-  <div style="margin: 10px">
+<div style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap">
+  <div>
     <a href="https://www.incf.org/">
-      <img src="./assets/img/incf-badge_281x210.png"
-           alt="INCF-badge">
+      <img src="./assets/img/logos/INCF.png"
+           alt="INCF"
+           width=200px>
     </a>
   </div>
-  <div style="margin: 10px">
+  <div>
     <a href="https://summerofcode.withgoogle.com/">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/GSoC.png/220px-GSoC.png"
-           alt="GSOC">
+      <img src="./assets/img/logos/GSoC_220px.png"
+           alt="GSOC"
+           width=200px>
     </a>
   </div>
-  <div style="margin: 10px">
+  <div>
     <a href="http://grantome.com/grant/NIH/R24-MH114705-01">
-      <img src="http://grantome.com/images/funders/NIH.png"
-           alt="NIH", height="500px">
+      <img src="./assets/img/logos/NIH.png"
+           alt="NIH"
+            width=200px>
     </a>
   </div>
-  <div style="margin: 10px">
+  <div>
     <a href="https://www.arnoldventures.org/newsroom/laura-and-john-arnold-foundation-announces-3-8-million-grant-to-stanford-university-to-improve-the-quality-of-neuroscience-research">
-      <img src="https://www.arnoldventures.org/static/img/logo-on-light.svg"
-           alt="Arnold Ventures">
+      <img src="./assets/img/logos/arnold_foundation.png"
+           alt="Arnold Ventures"
+           width=200px>
     </a>
   </div>
 </div>

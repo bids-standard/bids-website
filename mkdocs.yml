@@ -107,6 +107,7 @@ nav:
         -   apps: apps/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
         -   starter_kit: starter_kit/src/CONTRIBUTING.md
+    -   Acknowledgments: collaboration/acknowledgments.md
 -   Getting started:
     -   starter_kit/src/index.md
     -   folders and files:
@@ -159,7 +160,7 @@ theme:
     name: material
     custom_dir: docs/overrides
     favicon: assets/favicon/favicon.ico
-    logo: assets/img/logo.png
+    logo: assets/img/logos/logo.png
     features:
     -   announce.dismiss
     -   content.action.edit
