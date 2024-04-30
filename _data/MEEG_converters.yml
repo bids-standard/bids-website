@@ -75,8 +75,8 @@
         - MATLAB
       documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
       comment:
-        "<a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See
-        plugins</a>"
+        <a href="https://github.com/arnodelorme/bids-MATLAB-tools"  target="_blank">See
+        plugins</a>
 
 
     - name: FieldTrip - data2bids

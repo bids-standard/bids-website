@@ -41,8 +41,9 @@
         - DICOM
         - PAR/REC
       expected_input:
+        - DICOM
       language:
-        - C++ (compiled versions available from <ahref="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
+        - C++ (compiled versions available from <a href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii" target="_blank">NITRC</a>)
       comment: "dcm2nii DICOM to NIfTI converter"
 
 
@@ -74,8 +75,5 @@
         - Python
       comment: |
         GUI to easily convert simulation results to BIDS format,
-        according to
-        <a herf="https://bids.neuroimaging.io/bep034" target="_blank">
-          BEP 34
-        </a>.
+        according to <a href="https://bids.neuroimaging.io/bep034" target="_blank">BEP 34</a>.
       license: MIT
