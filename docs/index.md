@@ -102,7 +102,7 @@ By using this standard you will benefit in the following ways:
 
 -   There are [validation tools](https://github.com/bids-standard/bids-validator) (also available [online](http://bids-standard.github.io/bids-validator/)) that can check your dataset integrity and let you easily spot missing values.
 
-## Further Information
+## Further information
 
 -   Good introductions to the BIDS standard can be found in the initial
    [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644),
