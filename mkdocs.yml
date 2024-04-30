@@ -46,7 +46,8 @@ exclude_docs: |
 nav:
 -   index.md
 -   Standards:
-    -   standards/index.md
+    -   BIDS specification:
+        -   standards/index.md
     -   BIDS schema:
         -   extensions/docs/schema.md
         -   how it works:
