@@ -397,7 +397,7 @@
   leads:
     - name: "[Chris Markiewicz](mailto:markiewicz@stanford.edu)"
     - name: "[Eric Earl](mailto:eric.earl@nih.gov)"
-  update: New BEP, collecting community comments and feedback. All collaborators are welcome.
+  update: For being able to map non-BIDS data as BIDS-compatible. Now collecting community comments and feedback. All collaborators are welcome.
   content:
     - metadata
   blocking: None
