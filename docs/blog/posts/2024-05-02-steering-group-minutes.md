@@ -6,7 +6,7 @@ categories:
 -   steering group minutes
 ---
 
-<!--more-->
+<!-- more -->
 
 <table>
  <thead>
