@@ -47,14 +47,14 @@ def rename_files(input_folder):
 
         for line in text:
             if "Date" in line:
-                line = line.replace("\n", "")
+                line = line.replace("\n", "").replace(",", "")
 
                 year = str(file.name).split("_")[0]
 
                 if len(year) > 4:
                     year = str(file.name).split("-")[0]
 
-                month, day = line.split(" ")[2:]
+                month, day = line.split(" ")[2:4]
 
                 day = (
                     day.replace("th", "")
