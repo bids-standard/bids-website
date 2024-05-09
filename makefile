@@ -1,9 +1,9 @@
-update: update_from_spec update_from_examples
-
-build: update_from_spec update_from_examples update_faq
+update: serve build update_from_spec update_from_examples update_faq remark
 
 serve: build
 	mkdocs serve
+
+build: update_from_spec update_from_examples update_faq
 
 update_from_spec:
 	rm -fr docs/specification
@@ -28,8 +28,8 @@ update_faq:
 	cd faq/bep && faqtory build
 	cd faq/apps && faqtory build
 
+remark: package.json
+	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/faq/inded.md ./docs/standards --rc-path .remarkrc
+
 package.json:
 	npm install `cat npm-requirements.txt`
-
-remark: package.json
-	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/FAQ ./docs/standards --rc-path .remarkrc
