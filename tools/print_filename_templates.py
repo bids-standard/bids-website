@@ -34,21 +34,28 @@ def main():
         for line in lines:
             if line.startswith("<!-- "):
                 for datatype_ in datatypes:
-                    if line.startswith(f"<!-- {datatype_.upper()} TEMPLATE STARTS"):
+                    if line.startswith(
+                        f"<!-- {datatype_.upper()} TEMPLATE STARTS"
+                    ):
                         writing_template = True
                         f.write(line)
                         codeblock = render.make_filename_template(
                             dstype="raw",
                             schema=schema_obj,
-                            src_path=Path("https://bids-specification.readthedocs.io/en/latest/"),
+                            src_path=Path(
+                                "https://bids-specification.readthedocs.io/en/latest/"
+                            ),
                             pdf_format=False,
                             datatypes=[datatype_],
                         )
                         codeblock = codeblock.replace(
-                            "../../..", "https://bids-specification.readthedocs.io/en/latest"
+                            "../../..",
+                            "https://bids-specification.readthedocs.io/en/latest",
                         )
                         f.write(codeblock)
-                    if line.startswith(f"<!-- {datatype_.upper()} TEMPLATE ENDS"):
+                    if line.startswith(
+                        f"<!-- {datatype_.upper()} TEMPLATE ENDS"
+                    ):
                         f.write(line)
                         writing_template = False
 

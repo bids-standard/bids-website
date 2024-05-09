@@ -29,7 +29,7 @@ update_faq:
 	cd faq/apps && faqtory build
 
 remark: package.json
-	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/faq/inded.md ./docs/standards --rc-path .remarkrc
+	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/faq/index.md ./docs/standards --rc-path .remarkrc
 
 package.json:
 	npm install `cat npm-requirements.txt`
