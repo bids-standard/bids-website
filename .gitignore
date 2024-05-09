@@ -12,3 +12,10 @@ __pycache__
 
 node_modules
 package*json
+
+# ignore for now files that are copied from the bids examples and spe
+docs/examples/
+docs/specification/
+
+# ignore FAQ files that generated automatically
+docs/faq/faq*.md

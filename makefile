@@ -1,5 +1,10 @@
 update: update_from_spec update_from_examples
 
+build: update_from_spec update_from_examples update_faq
+
+serve: build
+	mkdocs serve
+
 update_from_spec:
 	rm -fr docs/specification
 	mkdir -p docs/specification/
