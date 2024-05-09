@@ -1,5 +1,5 @@
 ---
-site_name: The brain imaging data structure
+site_name: The Brain Imaging Data Structure (BIDS)
 repo_url: https://github.com/bids-standard/bids-website.git
 site_url: https://bids-website.readthedocs.io
 
@@ -46,7 +46,8 @@ exclude_docs: |
 nav:
 -   index.md
 -   Standards:
-    -   standards/index.md
+    -   BIDS specification:
+        -   standards/index.md
     -   BIDS schema:
         -   extensions/docs/schema.md
         -   how it works:
