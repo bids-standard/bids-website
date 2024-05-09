@@ -144,12 +144,12 @@ nav:
     -   macros: specification/macros_doc.md
 -   FAQ:
     -   faq/index.md
-    -   general: faq/general.md
-    -   eeg: faq/eeg.md
-    -   mri: faq/mri.md
-    -   phenotype: faq/pheno.md
-    -   bids extensions: faq/bep.md
-    -   bids apps: faq/apps.md
+    -   general: faq/faq_general.md
+    -   eeg: faq/faq_eeg.md
+    -   mri: faq/faq_mri.md
+    -   phenotype: faq/faq_pheno.md
+    -   bids extensions: faq/faq_bep.md
+    -   bids apps: faq/faq_apps.md
 -   Blog:
     -   blog/index.md
 -   Impact:
