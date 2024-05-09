@@ -18,9 +18,6 @@
 	path = docs/apps
 	url = https://github.com/bids-apps/bids-apps.github.io
 	datalad-url = https://github.com/bids-apps/bids-apps.github.io
-[submodule "docs/starter_kit"]
-	path = docs/starter_kit
-	url = https://github.com/bids-standard/bids-starter-kit.git
 [submodule "docs/variable-transform"]
 	path = docs/variable-transform
 	url = https://github.com/bids-standard/variable-transform.git
