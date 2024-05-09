@@ -1,5 +1,5 @@
 ---
-site_name: The brain imaging data structure
+site_name: The Brain Imaging Data Structure (BIDS)
 repo_url: https://github.com/bids-standard/bids-website.git
 site_url: https://bids-website.readthedocs.io
 
@@ -44,117 +44,119 @@ exclude_docs: |
   stats_models/specification/walkthrough-2.md
 
 nav:
-  - index.md
-  - Standards:
-      - standards/index.md
-      - BIDS schema:
-          - extensions/docs/schema.md
-          - how it works:
-              - extensions/docs/how-the-schema-works.md
-              - metadata: extensions/docs/schema_meta.md
-              - objects: extensions/docs/schema_objects.md
-              - rules: extensions/docs/schema_rules.md
-          - details:
-              - specification/schema/README.md
-      - BIDS stats model:
-          - stats_models/specification/index.md
-          - motivations: stats_models/specification/motivation.md
-          - walkthrough:
-              - stats_models/specification/walkthrough-intro.md
-              - part-1: stats_models/specification/walkthrough-1.md
-          - integration: stats_models/specification/integration.md
-          - legacy: stats_models/specification/legacy.md
-          - specification:
-              - stats_models/specification/spec.md
-              - reference: stats_models/specification/reference.md
-          - examples and resources:
-              - stats_models/specification/model-zoo.md
-              - default model: stats_models/specification/default_model.md
-          - variable transforms:
-              - variable-transform/README.md
-              - compute: variable-transform/spec/compute.md
-              - munge: variable-transform/spec/munge.md
-      - BIDS app specification:
-          - execution/src/index.md
-          - scope: execution/src/scope.md
-          - specification:
-              - execution/src/specification.md
-              - user interface: execution/src/ui.md
-              - inputs: execution/src/inputs.md
-              - outputs: execution/src/outputs.md
-              - examples: execution/src/examples.md
-              - release notes: execution/src/CHANGELOG.md
-  - Tools:
-      - tools/index.md
-      - Validator: tools/validator.md
-      - Converters:
-          - tools/converters/index.md
-          - MRI and PET: tools/converters/mri-pet.md
-          - MEEG: tools/converters/meeg.md
-          - physio: tools/converters/physio.md
-          - others: tools/converters/others.md
-      - BIDS apps:
-          - apps/about.md
-          - tutorial: apps/tutorial.md
-          - dashboard: tools/apps/dashboard.md
-      - Others: tools/others.md
-  - Collaboration:
-      - Governance: collaboration/governance.md
-      - Code of conduct:
-          - specification: specification/CODE_OF_CONDUCT.md
-          - starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
-      - contributing:
-          - apps: apps/CONTRIBUTING.md
-          - spec: specification/CONTRIBUTING.md
-          - starter_kit: starter_kit/src/CONTRIBUTING.md
-      - Acknowledgments: collaboration/acknowledgments.md
-  - Getting started:
-      - starter_kit/src/index.md
-      - folders and files:
-          - folders: starter_kit/src/folders_and_files/folders.md
-          - files: starter_kit/src/folders_and_files/files.md
-          - metadata: starter_kit/src/folders_and_files/metadata.md
-          - json_101: stats_models/specification/json_101.md
-          - derivatives: starter_kit/src/folders_and_files/derivatives.md
-      - tutorials:
-          - starter_kit/src/tutorials/tutorials.md
-          - conversion:
-              - asl: starter_kit/src/tutorials/asl.md
-              - ieeg: starter_kit/src/tutorials/ieeg.md
-              - mri: starter_kit/src/tutorials/mri.md
-              - pet: starter_kit/src/tutorials/pet.md
-          - annotation: starter_kit/src/tutorials/annotation.md
-      - resources:
-          - starter_kit/src/links.md
-          - talks: starter_kit/src/talks.md
-          - publications: starter_kit/src/publications.md
-          - dependencies: starter_kit/src/dependencies.md
-          - glossary: starter_kit/src/glossary.md
-  - Datasets:
-      - starter_kit/src/dataset_examples.md
-      - examples: examples/README.md
-  - Extensions:
-      - bep/index.md
-      - BEPs: bep/beps.md
-      - intro: extensions/docs/index.md
-      - general_guidelines: extensions/docs/general_guidelines.md
-      - guide: extensions/docs/guide.md
-      - submission: extensions/docs/submission.md
-      - macros: specification/macros_doc.md
-  - FAQ:
-      - faq/index.md
-      - general: faq/faq_general.md
-      - eeg: faq/faq_eeg.md
-      - mri: faq/faq_mri.md
-      - phenotype: faq/faq_pheno.md
-      - bids extensions: faq/faq_bep.md
-      - bids apps: faq/faq_apps.md
-  - Blog:
-      - blog/index.md
-  - Impact:
-      - grant-writing-kit.md
-  - Contact: contact.md
-  - Merch: merch.md
+-   index.md
+-   Standards:
+    -   BIDS specification:
+        -   standards/index.md
+    -   BIDS schema:
+        -   extensions/docs/schema.md
+        -   how it works:
+            -   extensions/docs/how-the-schema-works.md
+            -   metadata: extensions/docs/schema_meta.md
+            -   objects: extensions/docs/schema_objects.md
+            -   rules: extensions/docs/schema_rules.md
+        -   details:
+            -   specification/schema/README.md
+    -   BIDS stats model:
+        -   stats_models/specification/index.md
+        -   motivations: stats_models/specification/motivation.md
+        -   walkthrough:
+            -   stats_models/specification/walkthrough-intro.md
+            -   part-1: stats_models/specification/walkthrough-1.md
+        -   integration: stats_models/specification/integration.md
+        -   legacy: stats_models/specification/legacy.md
+        -   specification:
+            -   stats_models/specification/spec.md
+            -   reference: stats_models/specification/reference.md
+        -   examples and resources:
+            -   stats_models/specification/model-zoo.md
+            -   default model: stats_models/specification/default_model.md
+        -   variable transforms:
+            -   variable-transform/README.md
+            -   compute: variable-transform/spec/compute.md
+            -   munge: variable-transform/spec/munge.md
+    -   BIDS app specification:
+        -   execution/src/index.md
+        -   scope: execution/src/scope.md
+        -   specification:
+            -   execution/src/specification.md
+            -   user interface: execution/src/ui.md
+            -   inputs: execution/src/inputs.md
+            -   outputs: execution/src/outputs.md
+            -   examples: execution/src/examples.md
+            -   release notes: execution/src/CHANGELOG.md
+-   Tools:
+    -   tools/index.md
+    -   Validator: tools/validator.md
+    -   Converters:
+        - tools/converters/index.md
+        - MRI and PET: tools/converters/mri-pet.md
+        - MEEG: tools/converters/meeg.md
+        - physio: tools/converters/physio.md
+        - others: tools/converters/others.md
+    -   BIDS apps:
+        -   apps/about.md
+        -   tutorial: apps/tutorial.md
+        -   dashboard: tools/apps/dashboard.md
+    -   Others: tools/others.md
+-   Collaboration:
+    -   Governance: collaboration/governance.md
+    -   Code of conduct:
+        -   specification: specification/CODE_OF_CONDUCT.md
+        -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
+    -   contributing:
+        -   apps: apps/CONTRIBUTING.md
+        -   spec: specification/CONTRIBUTING.md
+        -   starter_kit: starter_kit/src/CONTRIBUTING.md
+    -   Acknowledgments: collaboration/acknowledgments.md
+-   Getting started:
+    -   starter_kit/src/index.md
+    -   folders and files:
+        -   folders: starter_kit/src/folders_and_files/folders.md
+        -   files: starter_kit/src/folders_and_files/files.md
+        -   metadata: starter_kit/src/folders_and_files/metadata.md
+        -   json_101: stats_models/specification/json_101.md
+        -   derivatives: starter_kit/src/folders_and_files/derivatives.md
+    -   tutorials:
+        -   starter_kit/src/tutorials/tutorials.md
+        -   conversion:
+            -   asl: starter_kit/src/tutorials/asl.md
+            -   ieeg: starter_kit/src/tutorials/ieeg.md
+            -   mri: starter_kit/src/tutorials/mri.md
+            -   pet: starter_kit/src/tutorials/pet.md
+        -   annotation: starter_kit/src/tutorials/annotation.md
+    -   resources:
+        -   starter_kit/src/links.md
+        -   talks: starter_kit/src/talks.md
+        -   publications: starter_kit/src/publications.md
+        -   dependencies: starter_kit/src/dependencies.md
+        -   glossary: starter_kit/src/glossary.md
+-   Datasets:
+    -   starter_kit/src/dataset_examples.md
+    -   examples: examples/README.md
+-   Extensions:
+    -   bep/index.md
+    -   BEPs: bep/beps.md
+    -   intro: extensions/docs/index.md
+    -   general_guidelines: extensions/docs/general_guidelines.md
+    -   guide: extensions/docs/guide.md
+    -   submission: extensions/docs/submission.md
+    -   macros: specification/macros_doc.md
+-   FAQ:
+    -   faq/index.md
+    -   general: faq/general.md
+    -   eeg: faq/eeg.md
+    -   mri: faq/mri.md
+    -   phenotype: faq/pheno.md
+    -   bids extensions: faq/bep.md
+    -   bids apps: faq/apps.md
+-   Blog:
+    -   blog/index.md
+-   Impact:
+    -   grant-writing-kit.md
+-   Contact: contact.md
+-   Merch: merch.md
+
 
 theme:
   name: material
