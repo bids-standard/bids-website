@@ -6,5 +6,9 @@
       "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
       "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
     ],
-    "restructuredtext.pythonRecommendation.disabled": true
+    "restructuredtext.pythonRecommendation.disabled": true,
+    "circleci.persistedProjectSelection": [
+      "gh/bids-standard/in_darkness_bind_them",
+      "gh/bids-standard/bids-website"
+    ]
   }

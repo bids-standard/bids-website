@@ -110,15 +110,11 @@ Online Presence Working Group: Working Document
 
 -   Eric is chairing the BIDS Online Presence Working Group
 -   Eric owes the open letter to the Steering Group
--   May use google season of docs (need to sign up for the program,
-  starts April 2nd for applications)
--   Will reach out to INCF to reconnect as the admin for google
-  season of docs
--   Mentors identified: Eric, Christine, and Remi (outlined in doc
-  linked in agenda)
+-   May use google season of docs (need to sign up for the program, starts April 2nd for applications)
+-   Will reach out to INCF to reconnect as the admin for google season of docs
+-   Mentors identified: Eric, Christine, and Remi (outlined in doc linked in agenda)
 -   Eric will reach out to the group to schedule a follow up meeting.
--   Yaroslav reminded the group that he has \$5k CAD to compensate for
-  work on this project
+-   Yaroslav reminded the group that he has \$5k CAD to compensate for work on this project
 
 BEP39 for dimensionality reduction-based networks
 
