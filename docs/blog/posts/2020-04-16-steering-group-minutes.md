@@ -10,7 +10,11 @@ categories:
 
 ## Executive Summary
 
-We were joined in this meeting by the BIDS-ASL BEP leads. We spent the majority of this meeting discussing the [BIDS-ASL](https://bids.neuroimaging.io/bep005) BEP development approach and status along with any open questions they may have. We see a natural integration between the [ASL](https://bids.neuroimaging.io/bep005) and [PET](https://bids.neuroimaging.io/bep009) BEP projects. While talking to the ASL team we found that our definition of `raw` needs to be refined and made more specific. We want to ensure that fields previously specified remain consistent, when possible. Once the raw ASL specification is merged the group will move forward with derivatives.
+We were joined in this meeting by the BIDS-ASL BEP leads.
+We spent the majority of this meeting discussing the [BIDS-ASL](https://bids.neuroimaging.io/bep005) BEP development approach and status along with any open questions they may have.
+We see a natural integration between the [ASL](https://bids.neuroimaging.io/bep005) and [PET](https://bids.neuroimaging.io/bep009) BEP projects.
+While talking to the ASL team we found that our definition of `raw` needs to be refined and made more specific.
+We want to ensure that fields previously specified remain consistent, when possible. Once the raw ASL specification is merged the group will move forward with derivatives.
 
 ## Action Items
 

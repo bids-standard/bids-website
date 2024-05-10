@@ -198,8 +198,6 @@ categories:
 **Present:** Kim Ray, Camille Maumet, Yarik Halchenko, Ariel Rokem,
 Chris Markiewicz, Dora Hermes
 
-**Apologies:**
-
 **Guest:** Franco Pestilli
 
 ## BIDS Meeting Notes
@@ -243,7 +241,6 @@ YOH
 -   For example: Allen institute has a file naming schema that we might want to adopt/incorporate
 
     -   [[bids-2-devel/issues/60]](https://github.com/bids-standard/bids-2-devel/issues/60)
-
     -   Could help Allen institute merge/adopt BIDS
 
 -   Please add examples to this issue for consideration (issue 62?)
@@ -255,8 +252,7 @@ YOH
 -   The process of obtaining a BEP number is not clearly outlined
 
     -   Maintainers are discussing what explicit process should be outlined
-
-    -   [[https://github.com/bids-standard/bids-extensions/pull/28]](https://github.com/bids-standard/bids-extensions/pull/28)
+    -   [bids-extensions/pull/28](https://github.com/bids-standard/bids-extensions/pull/28)
 
 -   The expectation to 'become familiar' with BIDS before starting a BEP is a 'high bar' to attain
 
@@ -277,9 +273,7 @@ YOH
 -   CM: Current loose guidelines for establishing a BEP
 
     -   Maintainers have a template that they provide to individuals that are interested in creating a BEP, often the maintainers ensure that the BEP lead has contributed to BIDS previously.
-
     -   There has also been some approval by the steering committee
-
     -   Currently, BIDS maintainers are not comfortable with the new expectation that they help 'solve' many BIDS issues/concerns (instead of the community agree on solutions)
 
 -   The committee returns to the idea of having a BEP mentor for each BEP that has BIDS/BEP experience and can help guide the BEP lead through the BEP process

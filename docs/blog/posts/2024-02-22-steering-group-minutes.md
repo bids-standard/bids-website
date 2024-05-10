@@ -120,29 +120,26 @@ BEP39 for dimensionality reduction-based networks
 
 [[https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45]](https://docs.google.com/presentation/d/1SLvZ7um3RQAiDr6KeK8eO_mNoQ0qHl_bzx_gqIS169Y/edit#slide=id.g152266b1f78_0_45)
 
--   May need to introduce new terminology (something akin to an
-  \'index', param-mixing, param-components, something akin to
-  \'model')
--   Eric suggests instead of \'index' potentially like
-  [[\*\_aslcontext.tsv]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+-   May need to introduce new terminology (something akin to an 'index', param-mixing, param-components, something akin to 'model')
 
-    -   [[https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#\_aslcontexttsv-three-possible-cases]](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
+-   Eric suggests instead of \'index' potentially like [_aslcontext.tsv](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
--   \<modality\>map : discussion determined _modality_ is a suffix
+    -   [aslcontexttsv-three-possible-cases](https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html#_aslcontexttsv-three-possible-cases)
 
-      -  Related discussion
+-   <modality>map : discussion determined _modality_ is a suffix
 
-  [[https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273]](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
+    -   Related discussion
+        [bids-2-devel/issues/58#issuecomment-1711758273](https://github.com/bids-standard/bids-2-devel/issues/58#issuecomment-1711758273)
 
--   \'model-ICA_description.json' : suggestion to rename file as
-    \'dataset_dscription.json' and include \'DatasetType: model" and
-    model-ICA_mfp.json similarly to \'task-xxx_bold.json
+-   'model-ICA_description.json' : suggestion to rename file as 'dataset_dscription.json' and include 'DatasetType: model" and model-ICA_mfp.json similarly to 'task-xxx_bold.json
 
 -   Current state is to build up and extend \'spatiotemporal decompositions' introduced in BEP 012
+
 -   Interoperability : BIDS-Prov
--   [[https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77]](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
--   Software parameters is similar to BIDS-prov's Parameters
-    description (what is the specific file?)
+
+-   [BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77](https://github.com/bids-standard/BEP028_BIDSprov/blob/master/examples/from_parsers/spm/spm_default_batch.jsonld#L65-L77)
+
+-   Software parameters is similar to BIDS-prov's Parameters description (what is the specific file?)
 
 ### Stalled BEPS
 
@@ -151,15 +148,14 @@ progress?
 
 Suggestion:
 
-1. a voting system similar to how the steering group is elected.
+1.  a voting system similar to how the steering group is elected.
+    How would we want to implement something like this while addressing concerns of FAIRness?
 
-How would we want to implement something like this while addressing concerns of FAIRness?
+1.  BEP leader determines how to move forward.
 
-2. BEP leader determines how to move forward.
-
-3. Could a technical committee make these decisions? (maintainers +
-steering group) - if there is quorum possibility to vote one way or the
-other**
+1.  Could a technical committee make these decisions? (maintainers +
+    steering group) - if there is quorum possibility to vote one way or the
+    other**
 
 When do we modify the schema to address new ideas?
 

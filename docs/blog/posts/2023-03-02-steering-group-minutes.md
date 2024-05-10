@@ -43,7 +43,7 @@ author: anonymous
 Chris Markiewicz (Maintainer guest), Yaroslav Halchenko, Kim Ray
 (Secretariat)
 
-**Guest: Peer Herholtz**
+**Guest:** Peer Herholtz
 
 Peer Herholtz - Atlas BEPs
 
@@ -59,12 +59,14 @@ how the teams should move forward
 Conclusion:
 
 -   Peer's BEP focuses on storing utilizing writing analyses
+
 -   [flyxiaye](https://github.com/flyxiaye): focuses on
-  how atlases should be characterized, described, and what meta-data is
-  needed to navigate an atlas. (Taylor Salo mentioned this BEP doesn't
-  follow the typical BEP flow, similar to template flow)
--   the two BEPs appear complementary yet distinct. The teams will move
-  forward and collaborate where possible.
+    how atlases should be characterized, described, and what meta-data is
+    needed to navigate an atlas. (Taylor Salo mentioned this BEP doesn't
+    follow the typical BEP flow, similar to template flow)
+
+-   the two BEPs appear complementary yet distinct.
+    The teams will move forward and collaborate where possible.
 
 Comments:
 
@@ -72,26 +74,24 @@ How much are atlas BEPs tools or extensions? If they are tools, then
 perhaps they should be BIDSapps.
 
 -   The goal of Peer's Atlas BEP is to provide a way to include
-  atlas/ROI/template information in derivatives for connectivity
-  analyses
+    atlas/ROI/template information in derivatives for connectivity
+    analyses
 
 Inside the specification - where does the Atlas BEP fit?
 
 -   Could be part of BEP 17 connectivity matrices, or statistical
-  models, as well as others
+    models, as well as others
 
 -   Should align with other BEPs (for example provenance BEP)
 
 -   It's been proposed to have an atlas directory by Peer's working
-  group, but agrees that the atlas can be applicable in different
-  way
+    group, but agrees that the atlas can be applicable in different way
 
 -   RAW is defined by something that is provided by 'hardware',
-  Derivatives is data that's been derived from raw - thus atlases
-  should be in derivatives?
+    Derivatives is data that's been derived from raw - thus atlases
+    should be in derivatives?
 
--   Peer's Atlas BEP currently suggests storing atlases in derivatives
-  or in subject level
+-   Peer's Atlas BEP currently suggests storing atlases in derivatives or in subject level
 
 -   Could atlas be considered as a separate subject?(Guio)
 
@@ -99,8 +99,7 @@ Inside the specification - where does the Atlas BEP fit?
   this need to be stored in BIDS
 
 -   BIDS defines standard templates at:
-  [https://bids-specification.readthedocs.io/en/stable/appendices/coordinate-systems.html\#standard-template-identifiers](https://bids-specification.readthedocs.io/en/stable/appendices/coordinate-systems.html#standard-template-identifiers)
+    [https://bids-specification.readthedocs.io/en/stable/appendices/coordinate-systems.html\#standard-template-identifiers](https://bids-specification.readthedocs.io/en/stable/appendices/coordinate-systems.html#standard-template-identifiers)
 
 -   These things (altases, ROIs) are well defined. They should be
-  formalized in BIDS, but clearly it\'s not yet agreed upon how or
-  where.
+    formalized in BIDS, but clearly it\'s not yet agreed upon how or where.

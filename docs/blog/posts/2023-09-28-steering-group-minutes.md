@@ -151,11 +151,9 @@ submission
 **Present:** Cyril Pernet, Ariel Rokem, Chris Markiewicz, Robert
 Oostenveld, Guiomar Niso, Yaroslav Halchenko
 
-**Guest:**
+### Meeting Notes
 
-Meeting Notes:
-
-**Kim's Maternity leave through the end of the year**
+#### Kim's Maternity leave through the end of the year
 
 Remaining 2023 agendas are listed in the steering group
 
@@ -164,104 +162,75 @@ Sign up sheet is
 for assuming Kim's role in meeting management: Guiomar, Robert and Ariel
 take turns at the next three meetings. We won't meet on 21 Dec.
 
-**Meeting schedule:**
+#### Meeting schedule
 
 -   December 21st. NO MEETING - Kim will remove agenda and calendar.
 
-**Open science Prize:**
+#### Open science Prize
 
 -   Application is complete!
+-   Ariel will update the letters of support in the BIDS drive along with the other application materials
 
--   Ariel will update the letters of support in the BIDS drive along
-  with the other application materials
+#### OHBM content call
 
-**OHBM content call:**
-
--   We should submit a round table request for the BIDS townhall
-  meeting - Cyril will submit this
-
+-   We should submit a round table request for the BIDS townhall meeting - Cyril will submit this
 -   Or should this be part of the Symposium for BIDS?
 
-**Aperture:**
+#### Aperture
 
 -   Kim will follow up on any updates from the Aperture committee
 
-**NSF POSE Q1 2024:**
+#### NSF POSE Q1 2024
 
 -   Ariel's proposal has been funded, there will be an open source
-  software meeting that will happen as a result of this funding. More
-  information to come
+    software meeting that will happen as a result of this funding. More
+    information to come
 
-**BIDS Maintainers Meeting**
+#### BIDS Maintainers Meeting
 
--   April 10-12, 2023 - maintainers has indicated that this is an ideal
-  timeframe for them
+-   April 10-12, 2023 - maintainers has indicated that this is an ideal timeframe for them
 
 -   NSF will only fund within US travel under this mechanism - non-US
-  maintainers will need to find funding to travel US and then the NSF
-  grant can pay for their travel within the US.
+    maintainers will need to find funding to travel US and then the NSF
+    grant can pay for their travel within the US.
 
-```{=html}
-<!-- -->
-```
-
--   **NSF can support travel to the meeting**
-
-```{=html}
-<!-- -->
-```
+##### NSF can support travel to the meeting
 
 -   Are there non-US projects funding BIDS?
-
--   Cyril -
-
--   Can BIDS connectivity project (Franco Pestilli?) support Peer's
-  travel?
-
+-   Can BIDS connectivity project (Franco Pestilli?) support Peer's travel?
 -   Will non-maintainers also attend?
-
 -   Maintainers may identify additional attendees
+-   BEP leads that are ready to be merged may be ideal additional attendees
+-   Ariel will attend a maintainers meeting next week to help plan further.
 
--   BEP leads that are ready to be merged may be ideal additional
-  attendees
-
--   Ariel will attend a maintainers meeting next week to help plan
-  further.
-
-**BIDS-Prov BEP028** (Camille's email Prov)
+#### BIDS-Prov BEP028 (Camille's email Prov)
 
 -   Is their BEP ready to be merged? What are the next steps?
 
 -   This BEP will likely not be merged directly into the BIDS validator;
-  the validator could call to this BEP similar to how it is done for
-  PET data.
+    the validator could call to this BEP similar to how it is done for
+    PET data.
 
 -   Maintainers will work with Camille to determine how to implement the
-  BIDS-Prov BEP
+    BIDS-Prov BEP
 
-**BIDS Spatial Derivatives**
+#### BIDS Spatial Derivatives
 
--   Proposal seems to be converging, there needs to be a vote on how to
-  move forward
-
+-   Proposal seems to be converging, there needs to be a vote on how to move forward
 -   Meant to curb the explosion of Suffixes in file naming
-
--   Next steps: PR to BIDS extensions site for guidance that gets
-  up/down voted?
-
+-   Next steps: PR to BIDS extensions site for guidance that gets up/down voted?
 -   End discussion period, Allow two weeks for a voting period
 
-**Next Meeting Guest?**
+#### Next Meeting Guest?
 
 -   Any BIDS leads?
 
 -   Robert will invite the leads of the NIBS BEP (non invasive brain
-  stimulation,
-  [[BEP037]](https://bids.neuroimaging.io/bep037)) to ask
-  whether they want to attend the next or next-next BIDS meeting.
+    stimulation,
+    [[BEP037]](https://bids.neuroimaging.io/bep037)) to ask
+    whether they want to attend the next or next-next BIDS meeting.
 
-**More generally: BIDS advisory group (i.e., BEP leads) engagement**
+#### More generally: BIDS advisory group (i.e., BEP leads) engagement
 
 -   Start meetings with BEP leads and SG
-
 -   BIDS Townhall format? Additional meeting with lead for discussing

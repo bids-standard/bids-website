@@ -118,8 +118,7 @@ Concern:
 
 -   this appears to be very dwi specific, should the suffixes be dwi
   specific?
--   Why is datatype not under model label in the [pull
-  request](https://github.com/bids-standard/bids-specification/pull/1280)
+-   Why is datatype not under model label in the [pull request](https://github.com/bids-standard/bids-specification/pull/1280)
   example?
 -   Is the proposed organization of data aligned with user community? -
   should we request input from community to determine where these

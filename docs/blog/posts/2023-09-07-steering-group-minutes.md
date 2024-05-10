@@ -110,12 +110,9 @@ Rokem, Yaroslav Halchenko, Cyril Pernet
 
 ## NOTES
 
-**Special Guest**
-
 Renzo: Editor in charge of special initiatives at Aperture
 
-_Peter Banditini's feedback prior to meeting was that implementing BIDS
-into Aperture makes some sense_
+Peter Banditini's feedback prior to meeting was that implementing BIDS into Aperture makes some sense
 
 Use case example: non-BIDS compliant data types? Could this create a new
 opportunity for a BIDS extension proposal?

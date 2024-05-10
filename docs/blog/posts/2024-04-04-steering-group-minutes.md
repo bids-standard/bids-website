@@ -71,8 +71,6 @@ Hermes, Cyril Pernet
 
 **Apologies:** Yaraslaw Halchenko
 
-**Guest:**
-
 ## BIDS Meeting Notes
 
 ### BIDS.org
@@ -84,7 +82,9 @@ Hermes, Cyril Pernet
 ### MATTERmost
 
 -   The BIDS slack group is costly , the maintainers are likely moving mattermost
+
 -   The has been a group created for the steering groups, should they utilize this channel?
+
 -   Stanford & MIT have enterprise accounts for Slack, which could allow for BIDS to have a slack channel under their license.
 
     -   Yarik/Satra might be able to help with this at MIT
@@ -93,7 +93,9 @@ Hermes, Cyril Pernet
 ### BEPs - stalling (related to the BIDS connectivity BEPS)
 
 -   Franco unable to attend meetings
+
 -   Hoping to find a solution for how to keep BEPs moving forward
+
 -   Franco, Yarik, and Ariel will be at the upcoming BIDS maintainers meeting in Seattle, they may try to begin a discussion and proposed solutions
 
     -   Meeting facilities have good zoom capabilities, Dora may join this conversation virtually, others might is possible,

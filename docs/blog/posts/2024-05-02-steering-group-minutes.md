@@ -146,10 +146,6 @@ categories:
 **Present:** Ariel Rokem, Kim Ray, Anthony Galassi, Dora Hermes, Camille
 Maumet, Yaroslav Halchenko, Cyril Pernet
 
-**Apologies:**
-
-**Guest:**
-
 ## BIDS Meeting Notes
 
 ### BIDS Seattle meeting recap
@@ -176,6 +172,7 @@ Maumet, Yaroslav Halchenko, Cyril Pernet
 github project [[bids-standard/projects/10]](https://github.com/orgs/bids-standard/projects/10)
 
 -   Should this get an official BEP?
+
 -   What is the difference between a BEP and a working group? (should this be a working group?)
 
     -   Currently only a single working group for online progress
@@ -183,8 +180,11 @@ github project [[bids-standard/projects/10]](https://github.com/orgs/bids-standa
     -   Yarik organized the "GitHub Team" BIDS 2.0: [[bids-standard/teams/bids-2-0]](https://github.com/orgs/bids-standard/teams/bids-2-0)
 
 -   Would like feedback on projects on github, big issues have been better formalized
+
 -   Yarik will tackle the hierarchy of file names/inheritances
+
 -   Yarik will work on this at the OHBM Brainhack in June 2024, Seoul
+
 -   INCF and SfN abstracts for BIDS 2.0 - please join is you would like to contribute
 
     -   Can we get stickers? They are not allowed at SfN
@@ -248,9 +248,7 @@ github project [[bids-standard/projects/10]](https://github.com/orgs/bids-standa
 -   Needs to address: timelines, voting processes,
 
     -   Anthony supports having a BEP timeline proposed and presented to be voted on at the next BIDS elections.
-
     -   Some form of rules to know, regular check-ins
-
     -   Chris has notes from the Seattle meeting discussion on this topic: [[https://docs.google.com/document/d/10oa3rCNMDOdtprc7\_009uctfkOQqDJJVoK8dipgE6S4/edit\#heading=h.hxv1sz2uaf5f]](https://docs.google.com/document/d/10oa3rCNMDOdtprc7_009uctfkOQqDJJVoK8dipgE6S4/edit#heading=h.hxv1sz2uaf5f)
 
 Next Guest: Franco

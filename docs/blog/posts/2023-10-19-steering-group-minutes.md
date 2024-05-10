@@ -192,7 +192,7 @@ Roundtable (Town Hall) proposal:
 Symposium proposal:
 [[https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg]](https://docs.google.com/document/d/1Uy58ZP0P6D0VkeqDF4bx2unoxR7kokReugWVG94O8AM/edit#heading=h.97ozz5yj15hg)
 
-### Seattle meeting proposed attendee list (PLEASE ADD PEOPLE):
+### Seattle meeting proposed attendee list (PLEASE ADD PEOPLE)
 
 People
 

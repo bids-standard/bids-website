@@ -117,10 +117,6 @@ history timeline
  </tbody>
 </table>
 
-**Present:**
-
-**Guest:** no guest planned
-
 BIDS Meeting Notes:
 
 Ariel will do the TOSI talk 13:30 Eastern US Time. Others from the

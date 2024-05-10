@@ -349,9 +349,9 @@ author: anonymous
 **Present:** Robert Oostenveld, Guiomar Niso, Eric Earl (visiting
 maintainer), Yaroslav Halchenko, Kim Ray
 
-**Guest: invite Chris Rorden**
+**Guest:** Chris Rorden
 
-**NOTES from Chris Rorden:**
+**NOTES** from Chris Rorden
 
 BEPs are done by experts, but implementations are not done by experts
 
@@ -365,18 +365,17 @@ Terminology differs for example between Siemens and Philips
 -   PET example where dicom standards were not used for BIDS
 
 -   [http://www.oneukrainian.com/tmp/DICOMfields.txt](http://www.oneukrainian.com/tmp/DICOMfields.txt)
-  has rough grep for descriptions of DICOMs fields matching. Some
-  match some not.
+    has rough grep for descriptions of DICOMs fields matching. Some
+    match some not.
 
 Suggests possibly reaching out to the tool experts/manufacturers to
 better implement BEPs from start to end.
 
 -   Liaisons have been responsive on neurostars (Phillip Clinical
-  Scientists UK Matthew Clemence \[github drmclem\] Mayo Sandeep
-  Ganji \[github sandeepganji\])
+    Scientists UK Matthew Clemence \[github drmclem\] Mayo Sandeep
+    Ganji \[github sandeepganji\])
 
-We have a statement to align BIDS with current standards and
-vocabularies
+We have a statement to align BIDS with current standards and vocabularies
 
 -   Yarik could not locate it...
 
@@ -389,14 +388,14 @@ Reach out to developers for more input on BEPs before they are approved
 Provide empty header files for examples of data
 
 -   Would be great to have example datasets with sourcedata/ and code/
-  and README.md provided to describe HOW data was
-  converted/translated
+    and README.md provided to describe HOW data was
+    converted/translated
 
 Additional expectations for BEPS before they are approved
 
 -   advise each BEP to reach out to manufacturers to make them aware of
-  the standardization ongoing, see the BEP, possibly provide
-  feedback and even may be align metadata/terminology
+    the standardization ongoing, see the BEP, possibly provide
+    feedback and even may be align metadata/terminology
 
 Consider/formalize a common principle to choose DICOM fields naming in
 favor of adding new names.

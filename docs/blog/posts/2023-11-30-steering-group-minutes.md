@@ -105,76 +105,69 @@ https://www.ericholscher.com/roadmap/
 
 **Present:** Guio, Robert, Cyril, Camille, Ariel, Dora, Ross
 
-**Guest:** none
-
-BIDS Meeting Notes:
+## BIDS Meeting Notes
 
 From Renzo Huber email (November 21st):
 
-"I had reported back to the executive time of Aperture about what we had
-discussed at the BIDS Steering Group meeting.
+!!! note
 
-We have implemented a few of the suggestions that were discussed:
+    I had reported back to the executive time of Aperture about what we had discussed at the BIDS Steering Group meeting.
 
--\> The [[author
-guidelines]](https://urldefense.com/v3/__https://apertureneuro.org/for-authors__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdBKU8W3m$)
-now explicitly state that we recommend people to share their data in
-BIDS. This needs to be mentioned in the manuscript with the respective
-BIDS validator version. This is optional, though. If authors share their
-data without a successful BIDS validation, the reviewers might ask for a
-justification. But the Journal will not exclude the paper based on this
-alone.
+    We have implemented a few of the suggestions that were discussed:
 
--\> We recommend authors to include BIDS as one of the key-words. This
-means that manuscripts can be sorted based on this flag. This then also
-extends to 'tags' in URLs: as
-[[https://apertureneuro.org/articles?tag=BIDS]](https://urldefense.com/v3/__https://apertureneuro.org/articles?tag=BIDS__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdF3Fwu2O$).
+    The [author guidelines](https://urldefense.com/v3/__https://apertureneuro.org/for-authors__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdBKU8W3m$)
+    now explicitly state that we recommend people to share their data in BIDS.
+    This needs to be mentioned in the manuscript with the respective BIDS validator version.
+    This is optional, though.
+    If authors share their data without a successful BIDS validation, the reviewers might ask for a justification.
+    But the Journal will not exclude the paper based on this alone.
 
-This feature is new for articles that are being typesetter via a
-Apertures new vendor. Thus, there are no articles with this tag yet.
+    We recommend authors to include BIDS as one of the key-words.
+    This means that manuscripts can be sorted based on this flag.
+    This then also extends to 'tags' in URLs: as
+    [[https://apertureneuro.org/articles?tag=BIDS]](https://urldefense.com/v3/__https://apertureneuro.org/articles?tag=BIDS__;!!K-Hz7m0Vt54!hYrc_zwV6CSxP10J0AQf_OWGR-doFt3PFZa5wXdfyjjCfaOkc1qp5qGN32AwaXFKD9fv3uoZD2omdF3Fwu2O$).
 
--\> The manuscript submission form has an optional check box asking
-whether shared data are in BIDS.
+    This feature is new for articles that are being typesetter via a
+    Apertures new vendor. Thus, there are no articles with this tag yet.
 
--\> Aperture Neuro (as part of Schlasica journals) does not have the
-flexibility of generating our own header fields in PDFs."
+    The manuscript submission form has an optional check box asking whether shared data are in BIDS.
 
-**Notes:**
+    Aperture Neuro (as part of Schlasica journals) does not have the flexibility of generating our own header fields in PDFs.
 
-Aperture Neuro followup:
+## Notes
+
+### Aperture Neuro followup
 
 We can use Aperture Neuro as an example: How can journal editors
 contribute to the BIDS ecosystem? This will give us a good basis for
 further conversations with other journal editors. See
 [[https://github.com/bids-standard/bids-website/issues/359]](https://github.com/bids-standard/bids-website/issues/359)
 
-"""
+!!! note
 
--   For data documentation, it is advised to use the BIDS format
-  ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
-  It is recommended that the authors check the respective box in the
-  submission form. It is recommended that authors use 'BIDS' as one of
-  the key-words of the manuscript. And it is recommended that authors
-  mention the version of the BIDS validator that was used to ensure
-  BIDS compatibility.
+    For data documentation, it is advised to use the BIDS format
+    ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
+    It is recommended that the authors check the respective box in the
+    submission form. It is recommended that authors use 'BIDS' as one of
+    the key-words of the manuscript. And it is recommended that authors
+    mention the version of the BIDS validator that was used to ensure
+    BIDS compatibility.
 
-"""
+Maybe reach out to Simon Eickhoff for integration into Human Brain Mapping (Cyril will do that).
 
-Maybe reach out to Simon Eickhoff for integration into Human Brain
-Mapping (Cyril will do that).
+Ariel will reply to Renzo to say that we discussed and thank them,
+and mention we will include this in the documentation for BIDS,
+and we will point others to this as an example.
 
-Ariel will reply to Renzo to say that we discussed and thank them, and
-mention we will include this in the documentation for BIDS, and we will
-point others to this as an example.
-
-Instructions for reviewers? Should we write a document that has a
-checklist? Or something like that? Run the validator, of course.
+Instructions for reviewers?
+Should we write a document that has a checklist?
+Or something like that? Run the validator, of course.
 
 BIDS validator can tell users how many files are in the .bidsignore
 
-**TOSI funds:**
+### TOSI funds
 
-**Website:**
+#### Website
 
 Could use some of the funds to improve the website. At least
 conceptually. Could use a freelancer? for example, from upwork?
@@ -189,8 +182,7 @@ writer can be tricky.
 
 [[https://developers.google.com/season-of-docs]](https://developers.google.com/season-of-docs)
 
-[[Timeline for Google Season of Docs
-2023]](https://developers.google.com/season-of-docs/docs/timeline)
+[[Timeline for Google Season of Docs 2023]](https://developers.google.com/season-of-docs/docs/timeline)
 
 [[https://developers.google.com/season-of-docs/docs/2019/participants/project-incf-1]](https://developers.google.com/season-of-docs/docs/2019/participants/project-incf-1)
 

@@ -14,7 +14,7 @@ We are pleased to announce that the newest members of the BIDS Steering Group ar
 
 Cyril and Yaroslav have been elected to a term lasting from 2023-2025, and are replacing outgoing members Russ Poldrack and Melanie Ganz.
 
-The results of the election may be viewed at https://app.rankedvote.co/contests/24735/BIDS-Steering-Group-Election-2022/25602/results.
+The results of the election may be viewed [here](https://app.rankedvote.co/contests/24735/BIDS-Steering-Group-Election-2022/25602/results).
 
 Thanks to all contributors for your participation, and congratulations to Cyril and Yaroslav!
 

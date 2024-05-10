@@ -213,8 +213,7 @@ author: anonymous
 
 ## Notes
 
-Suggestion to add make the [decision making
-rules](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md)
+Suggestion to add make the [decision making rules](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md)
 more visible
 
 Is this a suggestion to make the team more visible or funding, including
@@ -250,26 +249,26 @@ extended, looking for more funding to support travel. Aiming for 20-30
 attendees. Currently some people will have some, limited, or no
 financial support for travel to the meeting.
 
-Considerations: What is the plan for the Program ? Will there be a
-hybrid option?
+Considerations: What is the plan for the Program ? Will there be a hybrid option?
 
-Current suggestions (Cyril), have people come with data and complete
-examples to improve BEPS
+Current suggestions (Cyril), have people come with data and complete examples to improve BEPS
 
 Stefan:
 
 -   Amendment 1 - every BEP lead will join the BIDS advisory group
-  forever (not ideal), proposed to allow individuals to leave the
-  advisory group after 2 years and asked to suggest a replacement.
--   Amendment 2 - we don\'t currently have a process to change the BIDS
-  governance, some solutions have been put forth:
-  [https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit](https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit)
+    forever (not ideal), proposed to allow individuals to leave the
+    advisory group after 2 years and asked to suggest a replacement.
+
+-   Amendment 2 - we don't currently have a process to change the BIDS
+    governance,
+    [some solutions have been put forth](https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit)
+
 -   Amendment 3 - BIDS contributors - governance states that all
-  contributors are equal, but this needs to be amended because many
-  contributors at some point are no longer active and this creates issues
-  when minimum % of votes are required for certain elections. WIP for
-  current and new wording - maintainers are working on this and the
-  steering group can comment and give feedback.
+    contributors are equal, but this needs to be amended because many
+    contributors at some point are no longer active and this creates issues
+    when minimum % of votes are required for certain elections. WIP for
+    current and new wording - maintainers are working on this and the
+    steering group can comment and give feedback.
 
 GUIO: Suggestion to include a list of Advisory Group members.
 
@@ -297,7 +296,7 @@ familiar with issues between DICOM and BIDS).
 
 **ACTION**: email DICOM and present BIDS to them with support form Chris.
 
-DICOM meeting notes - https://www.dicomstandard.org/activity/wgs
+[DICOM meeting notes](https://www.dicomstandard.org/activity/wgs)
 
 Cyril: discussed with aperture on submitting data papers (including a
 logo to indicate the dataset is BIDS compliant). data must be BIDS
@@ -311,5 +310,4 @@ Future Guests? None identified yet.
 
 Non-invasive stimulation - making good progress
 
-Two Atlas BEPS
-https://github.com/bids-standard/bids-specification/issues/1379
+[Two Atlas BEPS](https://github.com/bids-standard/bids-specification/issues/1379)

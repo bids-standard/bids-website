@@ -126,8 +126,7 @@ appropriate representative.
 Topic Suggestion: discuss what's new in BIDS and a high-level overview of
 BIDS.
 
-Related Discussion: **BIDS news**
-(https://bids.neuroimaging.io/news.html) - this could be an additional
+Related Discussion: [BIDS news](https://bids.neuroimaging.io/news.html) - this could be an additional
 avenue for sharing BIDS updates
 
 We should use multiple avenues for sharing BIDS updates/news: podcast,

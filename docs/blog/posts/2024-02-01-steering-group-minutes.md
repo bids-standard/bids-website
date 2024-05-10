@@ -252,6 +252,7 @@ Yaroslav Halchenko, Rémi Gau
 ### OPM BEP proposal
 
 -   Optically Pumped Magnetometer-based Magnetoencephalography (OPM-MEG)
+
 -   Suggestion: contact BEP leaders to address the concerns that it is
     not following BEP protocols.
 

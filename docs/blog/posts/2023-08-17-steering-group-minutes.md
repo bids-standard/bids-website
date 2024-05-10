@@ -188,64 +188,44 @@ Halchenko, Remi Gau, Kim Ray
 
 [Templates for letters](https://drive.google.com/drive/folders/1ljPEhXoNPD8lMukV0WYr-yo_v6J7zaQy?usp=drive_link)
 
-BIDS Meeting Notes:
-
 ### Neuro Open Science Prize
 
 -   Do we have the previous letters of support that were submitted?
 
 -   Who should we ask for letters?
 
--   ~~We need 10 letters~~ - new requirements is to identify 3
-  referees (submitted by sept 10)
+-   ~~We need 10 letters~~ - new requirements is to identify 3 referees (submitted by sept 10)
 
-   -   Damien Fair, Peter Bandettini, EBrains? (Maurizio Corbetta, Katrin Amunts), Simon Eickhoff
-
-   -   [[https://docs.google.com/spreadsheets/d/1gYfP1C84e1\_81HPIGBbXl8v\_Z3b43uCLGHBa0RhtnOM/edit\#gid=0]](https://docs.google.com/spreadsheets/d/1gYfP1C84e1_81HPIGBbXl8v_Z3b43uCLGHBa0RhtnOM/edit#gid=0)
+    -   Damien Fair, Peter Bandettini, EBrains? (Maurizio Corbetta, Katrin Amunts), Simon Eickhoff
+    -   [[https://docs.google.com/spreadsheets/d/1gYfP1C84e1\_81HPIGBbXl8v\_Z3b43uCLGHBa0RhtnOM/edit\#gid=0]](https://docs.google.com/spreadsheets/d/1gYfP1C84e1_81HPIGBbXl8v_Z3b43uCLGHBa0RhtnOM/edit#gid=0)
 
 -   We should ask individuals involved with larger projects to write
-  on behalf of impact for their respective organizations (
-  DANDI, IBI, NIH, and so on)
+    on behalf of impact for their respective organizations (
+    DANDI, IBI, NIH, and so on)
 
 -   Ariel will lead the submission, the remaining BIDS steering
-  group will be the additional applicants
+    group will be the additional applicants
 
 ### BIDS at upcoming INCF training
 
--   Yarik will be presenting at the upcoming INCF training course, how
-  can BIDS be discussed?
-
--   Franco Pestilli will also be presenting on data governance, can he
-  touch on BIDS as well?
+-   Yarik will be presenting at the upcoming INCF training course, how can BIDS be discussed?
+-   Franco Pestilli will also be presenting on data governance, can he touch on BIDS as well?
 
 ### BIDS-Standard.org website
 
--   Russ mentioned he's been supporting the bids-standard.org web
-  address
-
--   Should BIDS migrate over to this new address? (and lose the
-  neuroimaging.io part of the web address)
-
+-   Russ mentioned he's been supporting the bids-standard.org web address
+-   Should BIDS migrate over to this new address? (and lose the neuroimaging.io part of the web address)
 -   Can provide pointers from old website to the new address
-
 -   **Steering Group supports the move!**
 
 ### BIDS at the upcoming SfN
 
--   Yarik will have a booth for DANDI and is happy to also support BIDS
-  at the booth
-
+-   Yarik will have a booth for DANDI and is happy to also support BIDS at the booth
 -   Are the promo materials that could be provided for the booth?
-
 -   Hand outs, banners?
-
--   Is there a Promo video that could be played throughout the
-  meeting?
+-   Is there a Promo video that could be played throughout the meeting?
 
 ### Maintainers Updates - Remi
 
--   Inheritance issue - can several people attend the schema meeting to
-  help tackle this problem?
-
--   Weekly meeting is Thursdays - Kim will at the steering group to the
-  calendar invite.
+-   Inheritance issue - can several people attend the schema meeting to help tackle this problem?
+-   Weekly meeting is Thursdays - Kim will at the steering group to the calendar invite.

@@ -104,18 +104,18 @@ Ray
 ### BIDS Derivatives
 
 -   It\'s currently summer holiday so it may not be a good time to
-  expect feedback, can review next meeting.
+    expect feedback, can review next meeting.
 
 ### Feedback from OHBM
 
 -   After townhall, maintainers meeting expressed excitement about the
-  derivatives meeting. More in-person meet-ups might encourage more
-  progress on various projects
+    derivatives meeting. More in-person meet-ups might encourage more
+    progress on various projects
 
 -   Winter/Spring might be a good timeframe for the next meeting.
 
 -   Could existing funded projects help with this? - perhaps look
-  into a supplement for the BIDS connectivity grant?
+    into a supplement for the BIDS connectivity grant?
 
 -   Adam Thomas at NIMH might have ideas for funding opportunities
 
@@ -138,14 +138,8 @@ Ray
 [Neuro Open Science Prize](https://www.mcgill.ca/neuro/open-science/open-science-awards-and-prizes/neuro-irv-and-helga-cooper-foundation-open-science-prizes)
 
 -   Submissions open August 1st, Due Date Sept 10, 2023
-
 -   Should assemble previous applications
-
 -   Organize letter of support for the application (need at least 10 letters) :
-
 -   [Brainstorm for letters here](https://docs.google.com/spreadsheets/d/1gYfP1C84e1_81HPIGBbXl8v_Z3b43uCLGHBa0RhtnOM/edit#gid=0)
-
--   Possible contacts:
-  [https://www.internationalbraininitiative.org/data-standards-and-sharing](https://www.internationalbraininitiative.org/data-standards-and-sharing)
-
+-   Possible contacts: [https://www.internationalbraininitiative.org/data-standards-and-sharing](https://www.internationalbraininitiative.org/data-standards-and-sharing)
 -   How should the application strategy change from previous years?
