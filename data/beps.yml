@@ -371,29 +371,29 @@
     pull_request_merged:
 
 
-- number: "042"
-  title: Electromyography (EMG)
-  leads:
-    - name: "[Seyed Yahya Shirazi](mailto:shirazi@ieee.org)"
-  status:
-    - New BEP, collecting community comments and feedback. All collaborators are welcome.
-  content:
-    - raw
-  blocking: None
-  google_doc_created: 2023-01
-  pull_request_created:
-  pull_request_merged:
+-   number: '042'
+    title: Electromyography (EMG)
+    leads:
+    -   name: '[Seyed Yahya Shirazi](mailto:shirazi@ieee.org)'
+    status:
+    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
+    content:
+    -   raw
+    blocking: None
+    google_doc_created: 2023-01
+    pull_request_created:
+    pull_request_merged:
 
-- number: "043"
-  title: BIDS Term Mapping
-  leads:
-    - name: "[Chris Markiewicz](mailto:markiewicz@stanford.edu)"
-    - name: "[Eric Earl](mailto:eric.earl@nih.gov)"
-  status:
-    - For being able to map non-BIDS data as BIDS-compatible. Now collecting community comments and feedback. All collaborators are welcome.
-  content:
-    - metadata
-  blocking: None
-  google_doc_created: 2024-03
-  pull_request_created:
-  pull_request_merged:
+-   number: '043'
+    title: BIDS Term Mapping
+    leads:
+    -   name: '[Chris Markiewicz](mailto:markiewicz@stanford.edu)'
+    -   name: '[Eric Earl](mailto:eric.earl@nih.gov)'
+    status:
+    -   For being able to map non-BIDS data as BIDS-compatible. Now collecting community comments and feedback. All collaborators are welcome.
+    content:
+    -   metadata
+    blocking: None
+    google_doc_created: 2024-03
+    pull_request_created:
+    pull_request_merged:
