@@ -42,7 +42,7 @@ OpenNeuro), or unsuccessful grant applications.
 
 For example, please find our [NIH-R24 Brain Initiative BIDS-Derivatives grant](https://osf.io/c3dgx/).
 
-A listing of the previous grants can be found [here](./index.md#acknowledgments)
+A listing of the previous grants can be found [here](./collaboration/acknowledgments.md)
 
 ## dashboards
 

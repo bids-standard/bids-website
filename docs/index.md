@@ -95,7 +95,7 @@ By using this standard you will benefit in the following ways:
     This is especially important if you are running your own lab and anticipate more than one person working on the same data over time.
     By using BIDS you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.
 
--   There is a growing number of [data analysis software packages](#software) that can understand data organized according to BIDS.
+-   There is a growing number of [data analysis software packages](./tools/index.md) that can understand data organized according to BIDS.
 
 -   Databases such as [OpenNeuro.org](http://openneuro.org), [LORIS](http://www.loris.ca), [COINS](https://coins.trendscenter.org), [XNAT](https://central.xnat.org/), [SciTran](https://scitran.github.io/), and others will accept and export datasets organized according to BIDS.
     If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.
