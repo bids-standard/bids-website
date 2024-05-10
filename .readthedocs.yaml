@@ -7,7 +7,7 @@ build:
         python: '3.12'
     jobs:
         pre_build:
-        - make build
+        -   make build
 
 submodules:
     include: all
