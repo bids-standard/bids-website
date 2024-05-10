@@ -96,83 +96,83 @@ user@host:~/bids-examples$ bids-validator sub001
 
 ### Types of Feedback
 
-#### Error
+!!! failure "Error"
 
-As is the case w/ the browser or any version of the validator follow
-the `[ERR]` messages and correct until bids-validator returns 0 errors after running.
+    As is the case w/ the browser or any version of the validator follow
+    the `[ERR]` messages and correct until bids-validator returns 0 errors after running.
 
-```bash
-user@host:~/bids-examples$ bids-validator sub001
+    ```bash
+    user@host:~/bids-examples$ bids-validator sub001
 
-bids-validator@1.7.1
+    bids-validator@1.7.1
 
- 1: [ERR] Invalid JSON file. The file is not formatted according the schema. (code: 55 - JSON_SCHEMA_VALIDATION_ERROR)
-  ./sub-01/ses-baseline/pet/sub-01_ses-baseline_pet.json
-   Evidence:  should have property InjectedRadioactivityUnits when property InjectedRadioactivity is present
-  ./sub-01/ses-baseline/pet/sub-01_ses-baseline_pet.json
-   Evidence:  should have required property 'InjectedMassUnits'
-  ...
-                ...
-  ... and 3 more files having this issue (Use --verbose to see them all).
+    1: [ERR] Invalid JSON file. The file is not formatted according the schema. (code: 55 - JSON_SCHEMA_VALIDATION_ERROR)
+    ./sub-01/ses-baseline/pet/sub-01_ses-baseline_pet.json
+    Evidence:  should have property InjectedRadioactivityUnits when property InjectedRadioactivity is present
+    ./sub-01/ses-baseline/pet/sub-01_ses-baseline_pet.json
+    Evidence:  should have required property 'InjectedMassUnits'
+    ...
+                    ...
+    ... and 3 more files having this issue (Use --verbose to see them all).
 
- Please visit https://neurostars.org/search?q=JSON_SCHEMA_VALIDATION_ERROR for existing conversations about this issue.
-
-
-        Summary:                Available Tasks:        Available Modalities:
-        14 Files, 5.72MB                                T1w
-        1 - Subject                                     pet
-        2 - Sessions                                    events
+    Please visit https://neurostars.org/search?q=JSON_SCHEMA_VALIDATION_ERROR for existing conversations about this issue.
 
 
- If you have any questions, please post on https://neurostars.org/tags/bids.
-```
-
-#### Warning
-
-As stated with the browser version above, one may elect to ignore warnings,
-but the information provided via the validator should help to pinpoint
-where and how to resolve some of these warnings.
-When in doubt consult the [BIDS Spec](https://bids-specification.readthedocs.io/en/latest/)
-
-```bash
-user@host:~/bids-examples$ bids-validator sub001/
-
-bids-validator@1.7.1
-
-1: [WARN] Tabular file contains custom columns not described in a data dictionary (code: 82 - CUSTOM_COLUMN_WITHOUT_DESCRIPTION)
-  ./sub-01/func/sub-01_task-balloonanalogrisktask_run-01_events.tsv
-                ...
-                ...
-... and 38 more files having this issue (Use --verbose to see them all).
-
- Please visit https://neurostars.org/search?q=CUSTOM_COLUMN_WITHOUT_DESCRIPTION for existing conversations about this issue.
+            Summary:                Available Tasks:        Available Modalities:
+            14 Files, 5.72MB                                T1w
+            1 - Subject                                     pet
+            2 - Sessions                                    events
 
 
-        Summary:                   Available Tasks:                Available Modalities:
-        134 Files, 411.53KB        balloon analog risk task        T1w
-        16 - Subjects                                              inplaneT2
-        1 - Session                                                bold
-                                                                   events
+    If you have any questions, please post on https://neurostars.org/tags/bids.
+    ```
+
+!!! warning
+
+    As stated with the browser version above, one may elect to ignore warnings,
+    but the information provided via the validator should help to pinpoint
+    where and how to resolve some of these warnings.
+    When in doubt consult the [BIDS Spec](https://bids-specification.readthedocs.io/en/latest/)
+
+    ```bash
+    user@host:~/bids-examples$ bids-validator sub001/
+
+    bids-validator@1.7.1
+
+    1: [WARN] Tabular file contains custom columns not described in a data dictionary (code: 82 - CUSTOM_COLUMN_WITHOUT_DESCRIPTION)
+    ./sub-01/func/sub-01_task-balloonanalogrisktask_run-01_events.tsv
+                    ...
+                    ...
+    ... and 38 more files having this issue (Use --verbose to see them all).
+
+    Please visit https://neurostars.org/search?q=CUSTOM_COLUMN_WITHOUT_DESCRIPTION for existing conversations about this issue.
 
 
- If you have any questions, please post on https://neurostars.org/tags/bids.
-```
-
-#### Success
-
-Pass go and collect 200 dollars, the data set in question passes validation.
-
-```bash
-user@host:~/bids-examples$ bids-validator sub001
-bids-validator@1.7.1
-
-This dataset appears to be BIDS compatible.
-
-        Summary:                  Available Tasks:        Available Modalities:
-        12 Files, 218.75KB                                T1w
-        1 - Subject                                       pet
-        1 - Session                                       blood
+            Summary:                   Available Tasks:                Available Modalities:
+            134 Files, 411.53KB        balloon analog risk task        T1w
+            16 - Subjects                                              inplaneT2
+            1 - Session                                                bold
+                                                                    events
 
 
- If you have any questions, please post on https://neurostars.org/tags/bids
-```
+    If you have any questions, please post on https://neurostars.org/tags/bids.
+    ```
+
+!!! success "Success :rocket:"
+
+    Pass go and collect 200 dollars, the data set in question passes validation.
+
+    ```bash
+    user@host:~/bids-examples$ bids-validator sub001
+    bids-validator@1.7.1
+
+    This dataset appears to be BIDS compatible.
+
+            Summary:                  Available Tasks:        Available Modalities:
+            12 Files, 218.75KB                                T1w
+            1 - Subject                                       pet
+            1 - Session                                       blood
+
+
+    If you have any questions, please post on https://neurostars.org/tags/bids
+    ```
