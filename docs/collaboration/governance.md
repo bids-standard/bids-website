@@ -476,8 +476,8 @@ and from other open-source governance documents including:
 -   [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance)
 -   [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en)
 -   [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104)
--   [https://randyfay.com/content/drupals-governance](https://randyfay.com/content/drupals-governance)
--   [https://www.drupal.org/governance](https://www.drupal.org/governance)
+-   [Drupal's Governance](https://randyfay.com/content/drupals-governance)
+-   [Drupal community's governance process](https://git.drupalcode.org/project/governance/-/blob/main/README.md)
 
 ### G. Election data and code
 

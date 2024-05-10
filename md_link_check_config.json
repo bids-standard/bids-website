@@ -1,5 +1,17 @@
 {
   "ignorePatterns": [
+    {
+      "pattern": "^https://doi.org\/"
+    },
+    {
+      "pattern": "^https://link.springer.com\/article\/.*"
+    },
+    {
+      "pattern": "^https://github.com/bids-standard/usage_survey/.*"
+    },
+    {
+      "pattern": "^https://x.com/.*"
+    }
   ],
   "timeout": "20s",
   "retryOn429": true
