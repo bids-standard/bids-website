@@ -1,0 +1,6 @@
+mkdocs-material[imaging]
+mkdocs-rss-plugin
+mkdocs-macros-plugin
+mkdocs-redirects
+ruamel.yaml
+faqtory
