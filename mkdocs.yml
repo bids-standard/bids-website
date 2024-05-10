@@ -17,8 +17,19 @@ plugins:
   #         -   tags
   - macros:
       module_name: macros/main
+  - redirects:
+      redirect_maps:
+        "news.md": "blog/index.md"
+        "specification.md": "standards/index.md"
+        "get_started.md": "starter_kit/src/index.md"
+        "get_involved.md": "bep/index.md"
+        "governance.md": "collaboration/governance.md"
+        "acknowledgments.md": "collaboration/acknowledgments.md"
+        "benefits.md": "tools/index.md"
 
 docs_dir: docs
+
+use_directory_urls: false
 
 exclude_docs: |
   .github

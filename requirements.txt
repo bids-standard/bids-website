@@ -1,6 +1,7 @@
 mkdocs-material[imaging]
 mkdocs-rss-plugin
 mkdocs-macros-plugin
+mkdocs-redirects
 Jinja2
 ruamel.yaml
 faqtory
