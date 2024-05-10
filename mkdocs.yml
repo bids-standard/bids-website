@@ -26,6 +26,7 @@ plugins:
         "governance.md": "collaboration/governance.md"
         "acknowledgments.md": "collaboration/acknowledgments.md"
         "benefits.md": "tools/index.md"
+        "merch.md": "https://www.teepublic.com/user/bids"
 
 docs_dir: docs
 
