@@ -121,7 +121,6 @@
 - number: "021"
   title: Common Electrophysiological Derivatives
   leads:
-    - name: Stefan Appelhoff
     - name: Arnaud Delorme
     - name: Dora Hermes
     - name: Mainak Jas
