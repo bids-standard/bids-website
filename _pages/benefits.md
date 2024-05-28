@@ -10,6 +10,20 @@ By using this standard you will benefit in the following ways:
 - Databases such as [OpenNeuro.org](http://openneuro.org){:target="_blank"}, [LORIS](http://www.loris.ca){:target="_blank"}, [COINS](https://coins.trendscenter.org){:target="_blank"}, [XNAT](https://central.xnat.org/){:target="_blank"}, [SciTran](https://scitran.github.io/){:target="_blank"}, and others will accept and export datasets organized according to BIDS. If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using BIDS.
 - There are [validation tools](https://github.com/bids-standard/bids-validator){:target="_blank"} (also available [online](http://bids-standard.github.io/bids-validator/){:target="_blank"}) that can check your dataset integrity and let you easily spot missing values.
 
+## Publishing your dataset
+
+If you are a journal editorand you want to encourage, authors to publish their data as BIDS
+you can include such snippet on your website:
+
+> For data documentation, it is advised to use the BIDS format (https://bids.neuroimaging.io/).
+> It is recommended that the authors check the respective box in the submission form.
+> It is recommended that authors use ‘BIDS’ as one of the key-words of the manuscript.
+> And it is recommended that authors mention the version of the BIDS validator that was used to ensure BIDS compatibility.
+
+### Journals that encourage using BIDS
+
+- aperture: https://apertureneuro.org/for-authors
+
 ## Converters
 
 {% include converters_table.html members=site.data.converters %}
