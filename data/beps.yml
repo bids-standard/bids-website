@@ -104,7 +104,7 @@
 
 -   number: '020'
     title: Eye Tracking including Gaze Position and Pupil Size
-    link: https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw/
+    link: https://github.com/bids-standard/bids-specification/pull/1128
     leads:
     -   name: Dejan Draschkow
     status:
@@ -129,7 +129,7 @@
     -   name: Robert Oostenveld
     -   name: Cyril Pernet
     status:
-    -   Discussion [here](https://github.com/bids-standard/bep021){:target="_blank"}. UCSD to include head models with BIDS EEG data.
+    -   Discussion [here](https://github.com/bids-standard/bep021){:target="_blank"}. PR [draft](https://github.com/bids-standard/bids-specification/pull/1680){:target="_blank"} in progress. UCSD to include head models with BIDS EEG data.
     -   Developments of BIDS M/EEG pipelines will trigger discussion on storing derived data.
     content:
     -   derivative
@@ -140,7 +140,7 @@
 
 -   number: '022'
     title: Magnetic Resonance Spectroscopy (MRS)
-    link: https://docs.google.com/document/d/1pWCb02YNv5W-UZZja24fZrdXLm4X7knXMiZI7E2z7mY/
+    link: https://github.com/bids-standard/bids-specification/pull/1377
     leads:
     -   name: Mark Mikkelsen
     -   name: William Clarke
@@ -262,12 +262,12 @@
 
 -   number: '034'
     title: Computational modeling
-    link: https://docs.google.com/document/d/1NT1ERdL41oz3NibIFRyVQ2iR8xH-dKY-lRCB4eyVeRo/
+    link: https://github.com/bids-standard/bids-specification/pull/967
     leads:
     -   name: Michael Schirner
     -   name: Petra Ritter
     status:
-    -   'BEP Computational Models: PR open for review and discussion [here](https://github.com/bids-standard/bids-specification/pull/850){:target="_blank"}'
+    -   'BEP Computational Models: PR open for review and discussion [here](https://github.com/bids-standard/bids-specification/pull/967){:target="_blank"}'
     content:
     -   derivative
     -   metadata

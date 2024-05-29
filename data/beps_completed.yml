@@ -10,7 +10,7 @@
 
 -   number: '001'
     title: Quantitative MRI (qMRI)
-    link: https://github.com/bids-bep001/bids-specification
+    link: https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html
     leads:
     -   name: Gilles de Hollander
     -   name: Kirstie Whitaker
@@ -21,8 +21,8 @@
     pull_request_merged: 2021-02
 
 -   number: '002'
-    title: BIDS Models Specification
-    link: https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M/
+    title: BIDS Statistical Models Specification
+    link: https://bids-standard.github.io/stats-models/
     leads:
     -   name: Tal Yarkoni
     -   name: Chris Markiewcz
@@ -36,7 +36,7 @@
 
 -   number: '003'
     title: Common Derivatives
-    link: https://github.com/bids-standard/bids-specification/pull/265
+    link: https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html
     leads:
     -   name: Chris Markiewicz
     former_leads:
@@ -49,7 +49,7 @@
 
 -   number: '005'
     title: Arterial Spin Labeling (ASL)
-    link: https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c/
+    link: https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html
     leads:
     -   name: Henk-Jan Mutsaerts
     -   name: Patricia Clement
@@ -63,7 +63,7 @@
 
 -   number: '006'
     title: Electroencephalography (EEG)
-    link: https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/electroencephalography.html
     leads:
     -   name: Cyril Pernet
     -   name: Stefan Appelhoff
@@ -76,7 +76,7 @@
 
 -   number: '007'
     title: Hierarchical Event Descriptor (HED) Tags
-    link: https://docs.google.com/document/d/1gs7USIVO1OApZs3IVo6TeXw9_tfzxhjM2-m--ex4g6o/
+    link: https://bids-specification.readthedocs.io/en/stable/appendices/hed.html
     leads:
     -   name: Chris Gorgolewski
     content:
@@ -87,7 +87,7 @@
 
 -   number: '008'
     title: Magnetoencephalography (MEG)
-    link: https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetoencephalography.html
     leads:
     -   name: Guiomar Niso
     content:
@@ -98,7 +98,7 @@
 
 -   number: '009'
     title: Positron Emission Tomography (PET)
-    link: https://github.com/bids-standard/bids-specification/pull/633
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/positron-emission-tomography.html
     leads:
     -   name: Melanie Ganz
     content:
@@ -109,7 +109,7 @@
 
 -   number: '010'
     title: intracranial Electroencephalography (iEEG)
-    link: https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html
     leads:
     -   name: Chris Holdgraf
     -   name: Dora Hermes
@@ -121,7 +121,7 @@
 
 -   number: '018'
     title: Genetic information
-    link: https://docs.google.com/document/d/1uRkgyzESLKuGjXi98Z97Wh6vt-iLN5nOAb9TG16CjUs/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/genetic-descriptor.html
     leads:
     -   name: Cyril Pernet
     -   name: Clara Moreau
@@ -134,7 +134,7 @@
 
 -   number: '027'
     title: BIDS Applications 2.0
-    link: https://docs.google.com/document/d/104HLZedFtx0TaXEUwd7eyWvJUlc0CcSUtCzwjNgmGxE/
+    link: https://bids-standard.github.io/execution-spec/
     leads:
     -   name: Chris Markiewicz
     -   name: Greg Kiar
@@ -146,7 +146,7 @@
 
 -   number: '029'
     title: Virtual and physical motion data
-    link: https://docs.google.com/document/d/1iaaLKgWjK5pcISD1MVxHKexB3PZWfE2aAC5HF_pCZWo/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/motion.html
     leads:
     -   name: Sein Jeung
     -   name: Julius Welzel
@@ -159,7 +159,7 @@
 
 -   number: '030'
     title: Near Infrared Spectroscopy (NIRS)
-    link: https://docs.google.com/document/d/1FzPt7TVpIAtlhrF9_9b2VBCZOrRXJASEMyHndhDQKl8/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/near-infrared-spectroscopy.html
     leads:
     -   name: Robert Luke
     -   name: Luca Pollonini
@@ -171,7 +171,7 @@
 
 -   number: '031'
     title: Microscopy
-    link: https://docs.google.com/document/d/1Nlu6QVQrbOQtdtcRarsONbX5SrOubXWBvkV37LRRqrc/
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/microscopy.html
     leads:
     -   name: Marie-Hélène Bourget
     -   name: Julien Cohen-Adad
