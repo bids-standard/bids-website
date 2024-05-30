@@ -9,5 +9,5 @@
 | :--------: | :---- | :-----  | :-----  | :---------- |
 {% endif %}
 {% for bep in include %}
-| [BEP {{ bep.number }}](https://bids.neuroimaging.io/bep{{ bep.number }}) | {{ bep.title }} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {{ person.name }} <br>{% endfor %}  | {% for item in bep.status %} {{ item }} <br>{% endfor %} |
+| [BEP {{ bep.number }}]({{ bep.link }}){:target="_blank"} | {{ bep.title }} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {{ person.name }} <br>{% endfor %}  | {% for item in bep.status %} {{ item }} <br>{% endfor %} |
 {% endfor %}
