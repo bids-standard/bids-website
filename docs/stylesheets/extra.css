@@ -36,3 +36,5 @@ p { text-align: justify; }
     width: 100%;
     height: 100%;
 }
+
+.md-footer__inner.md-grid {  display: none; }

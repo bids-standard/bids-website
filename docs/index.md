@@ -2,7 +2,10 @@
 title: BIDS
 hide:
 -   navigation
+-   toc
 ---
+
+
 
 Neuroimaging experiments result in complex data that can be arranged in many different ways.
 For a long time, there was no consensus how to organize and share
@@ -124,6 +127,26 @@ By using this standard you will benefit in the following ways:
 
 -   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
     Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
+
+
+<meta property="og:title" content="BIDS"/>
+
+<script src="https://giscus.app/client.js"
+        data-repo="bids-standard/bids-website"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzODMzNzAyNg=="
+        data-category="General"
+        data-category-id="DIC_kwDOAkj6As4Cft4a"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 
 ---
 

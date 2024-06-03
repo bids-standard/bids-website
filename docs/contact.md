@@ -1,6 +1,8 @@
 ---
 hide:
 -   toc
+-   navigation
+<meta property="og:title" content="contact"/>
 ---
 
 # Contact
@@ -65,6 +67,23 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="bids-standard/bids-website"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzODMzNzAyNg=="
+        data-category="General"
+        data-category-id="DIC_kwDOAkj6As4Cft4a"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <!--
 <div class="iframe-container">
