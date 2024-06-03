@@ -2,7 +2,6 @@
 hide:
 -   toc
 -   navigation
-<meta property="og:title" content="contact"/>
 ---
 
 # Contact
@@ -67,7 +66,7 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
-
+<meta property="og:title" content="contact"/>
 <script src="https://giscus.app/client.js"
         data-repo="bids-standard/bids-website"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzODMzNzAyNg=="
