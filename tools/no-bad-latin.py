@@ -10,11 +10,13 @@
 import argparse
 import os
 import re
+import fnmatch
 
 from pull_files import filter_files
 
 ABSOLUTE_HERE = os.path.dirname(os.path.dirname(__file__))
-IGNORE_LIST = []
+# switch ignore list to unix style glob matching instead of single file name
+IGNORE_LIST = ["*minutes.md", "*blogs/posts/*"]
 
 
 def parse_args():
@@ -111,7 +113,7 @@ def read_and_check_files(files):
     ]
 
     for filename in files:
-        if os.path.basename(filename) in IGNORE_LIST:
+        if True in [fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST]:
             pass
         else:
             try:
