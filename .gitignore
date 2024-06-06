@@ -19,3 +19,9 @@ docs/specification/
 
 # ignore FAQ files that generated automatically
 docs/faq/faq*.md
+
+# ignore bundle folder and ruby version files
+.bundle/
+.ruby-version
+Gemfile.lock
+vendor/

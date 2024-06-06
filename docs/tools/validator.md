@@ -1,3 +1,7 @@
+hide:
+    - toc
+
+
 # BIDS validation
 
 The [BIDS Validator](https://github.com/bids-standard/bids-validator) is a tool
