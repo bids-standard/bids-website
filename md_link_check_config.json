@@ -11,7 +11,11 @@
     },
     {
       "pattern": "^https://x.com/.*"
+    },
+    {
+      "pattern": "^https://www.instagram.com/bidsstandard.*"
     }
+
   ],
   "timeout": "20s",
   "retryOn429": true
