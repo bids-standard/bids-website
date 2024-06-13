@@ -26,7 +26,7 @@ The BEP031 leads will meet with the [Maintainers Group](https://github.com/bids-
 
 ## Minutes
 
--   Developing the [PET extension of the BIDS-validator](https://github.com/bids-standard/bids-validator/tree/bep_009)
+-   Developing the PET extension of the BIDS-validator
 
 The Steering Group spent the rest of the meeting with the [BEP031: Microscopy](https://docs.google.com/document/d/1Nlu6QVQrbOQtdtcRarsONbX5SrOubXWBvkV37LRRqrc/edit) leads
 

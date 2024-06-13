@@ -97,13 +97,6 @@ categories:
        <li>
         <blockquote>
          <p>
-          Some new since last time, e.g.
-         </p>
-        </blockquote>
-       </li>
-       <li>
-        <blockquote>
-         <p>
           <a href="https://github.com/bids-standard/bids-2-devel/issues/65">
            <span class="underline">
             issues/65

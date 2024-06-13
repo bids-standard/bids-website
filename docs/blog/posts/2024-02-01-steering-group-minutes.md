@@ -297,8 +297,7 @@ Yaroslav Halchenko, Rémi Gau
     users not trainers**):
     [[https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055]](https://github.com/bids-standard/bids-starter-kit/issues/136#issue-666838055)
 
--   Lighter version of an ambassador program:
-    [[https://www.softwareheritage.org/ambassadors/#becoming-an-ambassador]](https://www.softwareheritage.org/ambassadors/#becoming-an-ambassador)
+-   Lighter version of an [ambassador program](https://www.softwareheritage.org/ambassadors)
 
 -   Carpentries instructor certification:
     [[https://carpentries.org/become-instructor/]](https://carpentries.org/become-instructor/),
