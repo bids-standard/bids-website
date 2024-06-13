@@ -28,8 +28,6 @@
     -   name: Chris Markiewcz
     content:
     -   file format
-    outcome: Became an [independent specification with validator](https://bids-standard.github.io/stats-models/){:target="_blank"} to execute statistical models, with minimal
-        configuration and intervention required from the user.
     google_doc_created: 2016-09
     pull_request_created: 2018-10
     pull_request_merged: 2023-08
