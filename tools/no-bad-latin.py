@@ -16,7 +16,7 @@ from pull_files import filter_files
 
 ABSOLUTE_HERE = os.path.dirname(os.path.dirname(__file__))
 # switch ignore list to unix style glob matching instead of single file name
-IGNORE_LIST = ["*minutes.md", "*blogs/posts/*"]
+IGNORE_LIST = []
 
 
 def parse_args():
