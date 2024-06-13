@@ -25,3 +25,5 @@ docs/faq/faq*.md
 .ruby-version
 Gemfile.lock
 vendor/
+
+bep_leads.tsv

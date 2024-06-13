@@ -8,9 +8,9 @@
 # https://github.com/alan-turing-institute/the-turing-way/blob/af98c94/tests/no-bad-latin.py
 
 import argparse
+import fnmatch
 import os
 import re
-import fnmatch
 
 from pull_files import filter_files
 
@@ -113,7 +113,9 @@ def read_and_check_files(files):
     ]
 
     for filename in files:
-        if True in [fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST]:
+        if True in [
+            fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST
+        ]:
             pass
         else:
             try:

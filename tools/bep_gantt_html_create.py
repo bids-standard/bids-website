@@ -6,7 +6,6 @@ Also include a timeline of the main BIDS events.
 from __future__ import annotations
 
 from datetime import datetime
-from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
@@ -14,18 +13,12 @@ import plotly.graph_objects as go
 from pyzotero import zotero
 from ruamel.yaml import YAML
 
+from .utils import data_dir, root_dir
+
 INCLUDE_PATCHES = False
 START_DATE = "2014-10"
 DATE_FORMAT = "%Y-%m"
 Y_AXIS_VALUE = ""
-
-
-def root_dir() -> Path:
-    return Path(__file__).parent.parent
-
-
-def data_dir() -> Path:
-    return root_dir() / "_data"
 
 
 def create_bep_timeline() -> type[go.Figure]:
