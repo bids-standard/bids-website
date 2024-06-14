@@ -37,3 +37,6 @@ package.json:
 update_contributors:
 	python tools/transfer_contributors.py
 	npx all-contributors generate
+
+update_datasets_examples:
+	python examples/tools/print_dataset_listing.py docs/datasets/index.md
