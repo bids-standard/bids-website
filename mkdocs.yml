@@ -191,8 +191,7 @@ nav:
         -   dependencies: starter_kit/src/dependencies.md
         -   glossary: starter_kit/src/glossary.md
 -   Datasets:
-    -   starter_kit/src/dataset_examples.md
-    -   examples: examples/README.md
+    -   datasets/index.md
 -   Extensions:
     -   bep/index.md
     -   BEPs: bep/beps.md
