@@ -12,8 +12,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from pyzotero import zotero
 from ruamel.yaml import YAML
-
-from .utils import data_dir, root_dir
+from utils import data_dir, root_dir
 
 INCLUDE_PATCHES = False
 START_DATE = "2014-10"
@@ -189,7 +188,8 @@ def main():
 
     # save as html
     # NOTE: This file is ignored in git (see .gitignore)
-    fig.write_html(root_dir() / "_pages" / "bids_timeline.html")
+    (root_dir() / "tmp").mkdir(exist_ok=True, parents=True)
+    fig.write_html(root_dir() / "tmp" / "bids_timeline.html")
 
 
 if __name__ == "__main__":

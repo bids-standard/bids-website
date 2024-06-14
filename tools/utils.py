@@ -8,7 +8,7 @@ def root_dir():
 
 
 def bids_spec_dir():
-    return root_dir() / "bids-specification"
+    return root_dir() / "specification"
 
 
 def data_dir():
@@ -16,4 +16,4 @@ def data_dir():
 
 
 def figures_dir():
-    return root_dir() / "images"
+    return root_dir() / "docs" / "assets" / "img"

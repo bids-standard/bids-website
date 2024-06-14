@@ -80,6 +80,9 @@ def main():
         hover_name="address",
         projection="natural earth",
     )
+
+    planet_slider_fig.show()
+
     planet_slider_fig.write_image(
         figures_dir() / "affiliations.png", width=800, height=400, scale=2
     )

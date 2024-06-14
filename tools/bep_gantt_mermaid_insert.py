@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd
 from rich import print
 from ruamel.yaml import YAML
+from utils import data_dir, root_dir
 
 INCLUDE_PATCHES = False
 START_DATE = "2014-10"
@@ -14,16 +15,8 @@ DATE_FORMAT = "%Y-%m"
 Y_AXIS_VALUE = ""
 
 
-def root_dir() -> Path:
-    return Path(__file__).parent.parent
-
-
-def data_dir() -> Path:
-    return root_dir() / "_data"
-
-
 def target_file() -> Path:
-    return root_dir() / "_pages" / "get_involved.md"
+    return root_dir() / "docs" / "bep" / "beps.md"
 
 
 def get_bep_timeline() -> pd.DataFrame:

@@ -4,6 +4,7 @@ env
 .tox
 
 *.DS_Store
+tmp
 
 .cache
 site

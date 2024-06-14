@@ -3,7 +3,7 @@ line-length = 79
 
 [tool.codespell]
 ignore-words-list = "nd,manuel,ALS,TE,Acknowledgements,asai"
-skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/affiliations.tsv,docs/collaboration/contributors.md"
+skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/affiliations.tsv,docs/collaboration/contributors.md,data/papers.json"
 
 [tool.isort]
 combine_as_imports = true
