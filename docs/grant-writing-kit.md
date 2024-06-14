@@ -192,20 +192,20 @@ that have implemented BIDS as their organizational structure.
 TODO add automation to update every 6 months
 -->
 
-| tag            |   nb topics |   nb posts |   topics with no reply |   topics with answer |
-|:---------------|------------:|-----------:|-----------------------:|---------------------:|
-| bids           |         716 |       3404 |                    114 |                  211 |
-| bids-validator |          80 |        488 |                      1 |                   28 |
-| pybids         |          29 |        175 |                      3 |                   12 |
-| dcm2bids       |          92 |        529 |                      4 |                   53 |
-| heudiconv      |         102 |        454 |                     17 |                   23 |
-| mriqc          |         141 |        604 |                     32 |                   37 |
-| fmriprep       |        1286 |       7727 |                    145 |                  445 |
-| qsiprep        |         170 |       1063 |                     12 |                   76 |
-| aslprep        |          21 |         74 |                      5 |                    8 |
-| nilearn        |         585 |       2454 |                     90 |                  182 |
-| fitlins        |          19 |        129 |                      2 |                    5 |
-| openneuro      |          95 |        479 |                     15 |                   28 |
+| tag            | nb topics | nb posts | topics with no reply | topics with answer |
+|:---------------|----------:|---------:|---------------------:|-------------------:|
+| bids           |       716 |     3404 |                  114 |                211 |
+| bids-validator |        80 |      488 |                    1 |                 28 |
+| pybids         |        29 |      175 |                    3 |                 12 |
+| dcm2bids       |        92 |      529 |                    4 |                 53 |
+| heudiconv      |       102 |      454 |                   17 |                 23 |
+| mriqc          |       141 |      604 |                   32 |                 37 |
+| fmriprep       |      1286 |     7727 |                  145 |                445 |
+| qsiprep        |       170 |     1063 |                   12 |                 76 |
+| aslprep        |        21 |       74 |                    5 |                  8 |
+| nilearn        |       585 |     2454 |                   90 |                182 |
+| fitlins        |        19 |      129 |                    2 |                  5 |
+| openneuro      |        95 |      479 |                   15 |                 28 |
 
 ### Mailing list volume
 
