@@ -1,9 +1,9 @@
-update: serve build update_from_spec update_from_examples update_faq remark
+update: serve build update_from_spec update_faq remark
 
 serve: build
 	mkdocs serve
 
-build: update_from_spec update_from_examples update_faq
+build: update_from_spec update_faq
 
 update_from_spec:
 	rm -fr docs/specification
@@ -14,11 +14,6 @@ update_from_spec:
 	cp specification/CONTRIBUTING.md docs/specification/CONTRIBUTING.md
 	cp specification/macros_doc.md docs/specification/macros_doc.md
 	cp -r specification/commenting_images docs/specification/
-
-update_from_examples:
-	rm -fr docs/examples
-	mkdir -p docs/examples
-	cp -r examples/README.md docs/examples/README.md
 
 update_faq:
 	cd faq/general && faqtory build

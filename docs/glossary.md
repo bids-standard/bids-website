@@ -1,8 +1,8 @@
 # BIDS jargon busting
 
-<img align="right" width="35%" src="https://imgs.xkcd.com/comics/period_speech.png" alt="XKCD comic 771"/>
+![XKCD comic 771](https://imgs.xkcd.com/comics/period_speech.png)
 
-_Simple definitions for any BIDS related terms_
+## Simple definitions for any BIDS related terms
 
 Make sure to also check the
 [official glossary](https://bids-specification.readthedocs.io/en/latest/99-appendices/14-glossary.html)
@@ -25,8 +25,6 @@ If you are unsure about a term/definition that you are adding, please add it any
 
 ## BIDS Terms
 
-<!-- ### 0-9 -->
-
 ### A
 
 #### acquisition
@@ -37,10 +35,7 @@ One continuous block of a scan.
 
 #### BIDS
 
-Brain Imaging Data Structure - a standardised way to organise your neuroimaging
-data.
-
--   http://bids.neuroimaging.io
+Brain Imaging Data Structure - a standardised way to organise your neuroimaging data.
 
 ### C
 
