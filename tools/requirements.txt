@@ -7,3 +7,5 @@ rich>=10.9.0
 requests>=2.25.1
 requests_mock
 ruamel.yaml
+pygithub
+tqdm

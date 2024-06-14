@@ -3,7 +3,7 @@ hide:
 -   navigation
 ---
 
-# BIDS grant writing kit
+# Impact
 
 This document intends to convey how the BIDS Steering and Maintainers Group can
 support your proposed BIDS grant. In an effort to express the impact of BIDS in
@@ -192,31 +192,20 @@ that have implemented BIDS as their organizational structure.
 TODO add automation to update every 6 months
 -->
 
-| tag                | nb topics | nb posts | topics with no reply | topics with answer |
-| :----------------- | --------: | -------: | -------------------: | -----------------: |
-| bids               |       602 |     2918 |                   91 |                167 |
-| bids-specification |         5 |       22 |                    0 |                  4 |
-| bids-validator     |        69 |      414 |                    1 |                 23 |
-| bids-app           |        18 |       99 |                    2 |                  9 |
-| bidskit            |         4 |       11 |                    2 |                  0 |
-| pybids             |        23 |      132 |                    3 |                 10 |
-| bidsonym           |         1 |        1 |                    1 |                  0 |
-| dcm2bids           |        54 |      276 |                    2 |                 25 |
-| heudiconv          |        77 |      349 |                   12 |                 16 |
-| mriqc              |       127 |      547 |                   28 |                 34 |
-| fmriprep-report    |         8 |       37 |                    0 |                  2 |
-| fmriprep           |       530 |     2792 |                   81 |                145 |
-| dmriprep           |         8 |       13 |                    5 |                  0 |
-| qsiprep            |        86 |      525 |                    7 |                 31 |
-| aslprep            |         7 |       29 |                    1 |                  3 |
-| smriprep           |         2 |        7 |                    0 |                  0 |
-| dtiprep            |         1 |        7 |                    0 |                  1 |
-| nipreps            |         6 |       26 |                    3 |                  2 |
-| niprep             |         1 |        1 |                    1 |                  0 |
-| nilearn            |       474 |     2024 |                   69 |                137 |
-| fitlins            |        15 |       79 |                    2 |                  4 |
-| openneuro          |        79 |      423 |                   10 |                 22 |
-| openneuro-cli      |         1 |        2 |                    0 |                  0 |
+| tag            |   nb topics |   nb posts |   topics with no reply |   topics with answer |
+|:---------------|------------:|-----------:|-----------------------:|---------------------:|
+| bids           |         716 |       3404 |                    114 |                  211 |
+| bids-validator |          80 |        488 |                      1 |                   28 |
+| pybids         |          29 |        175 |                      3 |                   12 |
+| dcm2bids       |          92 |        529 |                      4 |                   53 |
+| heudiconv      |         102 |        454 |                     17 |                   23 |
+| mriqc          |         141 |        604 |                     32 |                   37 |
+| fmriprep       |        1286 |       7727 |                    145 |                  445 |
+| qsiprep        |         170 |       1063 |                     12 |                   76 |
+| aslprep        |          21 |         74 |                      5 |                    8 |
+| nilearn        |         585 |       2454 |                     90 |                  182 |
+| fitlins        |          19 |        129 |                      2 |                    5 |
+| openneuro      |          95 |        479 |                     15 |                   28 |
 
 ### Mailing list volume
 
