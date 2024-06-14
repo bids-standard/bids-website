@@ -33,3 +33,7 @@ remark: package.json
 
 package.json:
 	npm install `cat npm-requirements.txt`
+
+update_contributors:
+	python tools/transfer_contributors.py
+	npx all-contributors generate

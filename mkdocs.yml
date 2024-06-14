@@ -161,10 +161,11 @@ nav:
     -   Code of conduct:
         -   specification: specification/CODE_OF_CONDUCT.md
         -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
-    -   contributing:
+    -   Contributing:
         -   apps: apps/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
         -   starter_kit: starter_kit/src/CONTRIBUTING.md
+    -   Contributors: collaboration/contributors.md
     -   Acknowledgments: collaboration/acknowledgments.md
 -   Getting started:
     -   starter_kit/src/index.md
