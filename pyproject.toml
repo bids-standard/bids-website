@@ -2,7 +2,7 @@
 line-length = 79
 
 [tool.codespell]
-ignore-words-list = "nd,manuel,ALS,TE,Acknowledgements,asai"
+ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te"
 skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/affiliations.tsv,docs/collaboration/contributors.md,data/papers.json"
 
 [tool.isort]

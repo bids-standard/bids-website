@@ -189,7 +189,7 @@ nav:
         -   talks: starter_kit/src/talks.md
         -   publications: starter_kit/src/publications.md
         -   dependencies: starter_kit/src/dependencies.md
-        -   glossary: starter_kit/src/glossary.md
+        -   glossary: glossary.md
 -   Datasets:
     -   datasets/index.md
 -   Extensions:
@@ -211,7 +211,7 @@ nav:
 -   Blog:
     -   blog/index.md
 -   Impact:
-    -   grant-writing-kit.md
+    -   impact.md
 -   Contact: contact.md
 -   Merch: https://www.teepublic.com/user/bids
 
