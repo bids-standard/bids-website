@@ -83,18 +83,24 @@ exclude_docs: |
   apps/README.md
   apps/apps.md
   apps/dev_faq.md
+  examples/README.md
+  examples/tmp.md
   execution/README.md
   execution/BIDS_logo/README.md
   execution/src/CONTRIBUTING.md
   extensions/README.md
   extensions/docs/faq.md
+  starter_kit/src/_build
+  starter_kit/src/folders_and_files/
   starter_kit/README.md
   starter_kit/matlabCode/general/README.md
   starter_kit/reports/
   starter_kit/CODE_OF_CONDUCT.md
   starter_kit/CONTRIBUTING.md
+  starter_kit/src/dataset_examples.md
   starter_kit/src/FAQ.md
   starter_kit/src/contact.md
+  starter_kit/src/glossary.md
   starter_kit/src/tutorials/media/README.md
   starter_kit/src/validator.md
   stats_models/README.md
@@ -171,11 +177,11 @@ nav:
 -   Getting started:
     -   starter_kit/src/index.md
     -   folders and files:
-        -   folders: starter_kit/src/folders_and_files/folders.md
-        -   files: starter_kit/src/folders_and_files/files.md
-        -   metadata: starter_kit/src/folders_and_files/metadata.md
+        -   folders: getting_started/folders_and_files/folders.md
+        -   files: getting_started/folders_and_files/files.md
+        -   metadata: getting_started/folders_and_files/metadata.md
         -   json_101: stats_models/specification/json_101.md
-        -   derivatives: starter_kit/src/folders_and_files/derivatives.md
+        -   derivatives: getting_started/folders_and_files/derivatives.md
     -   tutorials:
         -   starter_kit/src/tutorials/tutorials.md
         -   conversion:

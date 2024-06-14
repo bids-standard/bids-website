@@ -120,7 +120,7 @@ By using this standard you will benefit in the following ways:
 
 -   Take a look at how the community [uses BIDS](https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4).
 
--   We have constructed a [grant writing kit](./grant-writing-kit.md)
+-   We have constructed a [grant writing kit](./impact.md)
     to assist you in putting together BIDS-related grant proposals.
 
 -   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
