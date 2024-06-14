@@ -5,8 +5,6 @@ hide:
 -   toc
 ---
 
-
-
 Neuroimaging experiments result in complex data that can be arranged in many different ways.
 For a long time, there was no consensus how to organize and share
 data obtained in neuroimaging experiments.
@@ -127,7 +125,6 @@ By using this standard you will benefit in the following ways:
 
 -   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
     Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
-
 
 <meta property="og:title" content="BIDS"/>
 
