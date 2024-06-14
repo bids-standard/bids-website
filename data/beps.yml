@@ -21,7 +21,6 @@
     -   name: ' '
         email:
     status:
-    -   Looking for a new leader.
     blocking:
     -   Looking for a new leader.
     google_doc_created: 2017-04
@@ -376,7 +375,8 @@
     -   Poster and demo presentation at OHBM 2023.
     -   'Need to validate not only participants with folders, but also validate those among other major tabular phenotype files: scans.tsv, phenotype/<measurement_tool_name>.tsv,
         participants.tsv'
-    blocking: More reviews and discussions are necessary.
+    blocking:
+    -   More reviews and discussions are necessary.
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
