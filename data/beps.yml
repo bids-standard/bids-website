@@ -2,24 +2,28 @@
 # template
 # - number:
 #   title:
+#   display
 #   link:
 #   leads:
 #     - name:
 #       email
 #   status:
 #   blocking:
+#   pull_request_created:
+#   pull_request_merged:
 
 -   number: '004'
-    title: Susceptibility Weighted Imaging (SWI)
+    title: Susceptibility Weighted Imaging
     link: https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc/
+    content:
+    -   raw
     leads:
     -   name: ' '
         email:
     status:
     -   Looking for a new leader.
-    content:
-    -   raw
-    blocking: Looking for a new leader.
+    blocking:
+    -   Looking for a new leader.
     google_doc_created: 2017-04
     pull_request_created:
     pull_request_merged:
@@ -27,16 +31,17 @@
 -   number: '011'
     title: Structural preprocessing derivatives
     link: https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y/
+    content:
+    -   derivative
     leads:
     -   name: Viviana Siless
         email:
     status:
-    -   Opened [pull request](https://github.com/bids-standard/bids-specification/pull/518){:target="_blank"}.
-    -   Need to conform with final Common Derivatives and gather community feedback.
-    content:
-    -   derivative
+    -   '[HTML preview](https://bids-specification--518.org.readthedocs.build/en/518/05-derivatives/04-structural-derivatives.html)'
+    -   Stability! (We haven't touched it in a bit.)
     blocking:
-    -   Blocked by BIDS-validator extending and PyBIDS implementation for common derivatives.
+    -   Staleness! (We haven't touched it in a bit.)
+    -   Mostly just need to regroup with other BEPs and make sure we're being consistent.
     google_doc_created: 2017-08
     pull_request_created: 2020-06
     pull_request_merged:
@@ -44,15 +49,18 @@
 -   number: '012'
     title: Functional preprocessing derivatives
     link: https://github.com/bids-standard/bids-specification/pull/519
+    content:
+    -   derivative
     leads:
     -   name: Chris Markiewicz
         email: markiewicz@stanford.edu
     status:
-    -   Opened the [pull request](https://github.com/bids-standard/bids-specification/pull/519){:target="_blank"}.
-    -   'Features: Derivative images (mean, ALFF, ReHo, etc.), Time series (confounds, decompositions, etc.)'
-    content:
-    -   derivative
-    blocking: Blocked by BIDS-validator extending and PyBIDS implementation
+    -   Moderate reworking, post-BEP23 meeting. "boldmap" suffix.
+    -   Schema implemented; waiting on full schema validation to merge.
+    -   '[HTML preview](https://bids-specification--519.org.readthedocs.build/en/519/derivatives/functional-derivatives.html)'
+    blocking:
+    -   Overlap with BEP 39 (decompositions).
+    -   Probably just needs dropping from BEP 12, but need to make sure BEP 39 meets the needs served there.
     google_doc_created: 2018-10
     pull_request_created: 2020-06
     pull_request_merged:
@@ -60,16 +68,19 @@
 -   number: '014'
     title: Affine transformations and nonlinear field warps
     link: https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE/
+    content:
+    -   derivative
     leads:
     -   name: Oscar Esteban
         email: phd@oscaresteban.es
     status:
-    -   Creating file format (X5) to store spatial transforms.
-    -   '[There is a software prototype - NiTransforms](https://osf.io/8aq7b/){:target="_blank"} demonstrates implementation of this BEP. '
-    -   NiTransforms has been tested and integrated to work within fMRIPrep
-    content:
-    -   derivative
-    blocking: In progress.
+    -   After the kick-off meeting (2019), progress locked on developing a prototype of a new HDF5-based format (X5)
+    -   Minor bug fixes and features to support more transforms
+    -   'Perspectives: The current draft seems sufficient for storing transforms'
+    -   'Perspectives: X5 has high promises to enable effortless spatial transforms'
+    blocking:
+    -   Bandwidth to finalize development
+    -   'Current blockers: surface transforms & X5 storing'
     google_doc_created: 2017-08
     pull_request_created:
     pull_request_merged:
@@ -77,51 +88,56 @@
 -   number: '016'
     title: Diffusion weighted imaging derivatives
     link: https://github.com/bids-standard/bids-bep016
+    content:
+    -   derivative
     leads:
     -   name: Franco Pestilli
         email: pestilli@utexas.edu
     -   name: Oscar Esteban
         email: phd@oscaresteban.es
     status:
-    -   Being discussed [here](https://github.com/bids-standard/bids-bep016/){:target="_blank"}.
-    -   Coordinating with BEP017.
-    -   Diffusion-weighted model description merged, but must comply to [this](https://github.com/bids-standard/bids-bep016/issues/7){:target="_blank"}.
-    -   Upcoming integration across DWI, Tractography, Tractometry, and Connectivity (from fMRI and DWI)
-    content:
-    -   derivative
-    blocking: None
+    -   identifying outstanding issues/roadblocks
+    blocking:
+    -   description of certain DWI and ICA models
+    -   “model/maps” related definitions & file types
     google_doc_created:
     pull_request_created:
     pull_request_merged:
 
 -   number: '017'
     title: Generic BIDS connectivity data schema
+    display: Connectivity schema
     link: https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA/
+    content:
+    -   derivative
     leads:
     -   name: Eugene Duff
         email: eugene.duff@paediatrics.ox.ac.uk
     status:
-    -   Intended as a meeting point for minimal harmonisation of connectivity-based formats across modalities.
-    -   Seeking use cases spanning modalities and input defining connectivity based formats
-    content:
-    -   derivative
-    blocking: None
+    -   resituating BEP to cover relationship data more generally
+    -   'Perspectives: stress test proposal across different data types'
+    blocking:
+    -   defining precise scope & types of relationships to cover
+    -   several cross-dependencies
     google_doc_created: 2017-05
     pull_request_created:
     pull_request_merged:
 
 -   number: '020'
     title: Eye Tracking including Gaze Position and Pupil Size
+    display: Eye Tracking
     link: https://github.com/bids-standard/bids-specification/pull/1128
+    content:
+    -   raw
     leads:
     -   name: Dejan Draschkow
         email: dejan.draschow@psy.ox.ac.uk
     status:
-    -   BEP close to PR submission, examples and validator under development.
-    -   Seeking additional BEP lead to help incorporate into standard contact Dejan to get involved.
-    content:
-    -   raw
-    blocking: None
+    -   PR almost ready. [HTML preview](https://bids-specification--1128.org.readthedocs.build/en/1128/modality-specific-files/physiological-recordings.html#eye-tracking)
+    -   Eye tracking data is not a new data type.
+    -   'Perspective: Docker/singularity converting tools'
+    -   'Perspective: Example with different modality examples'
+    blocking:
     google_doc_created: 2018-04
     pull_request_created: 2022-06
     pull_request_merged:
@@ -129,6 +145,8 @@
 -   number: '021'
     title: Common Electrophysiological Derivatives
     link: https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/
+    content:
+    -   derivative
     leads:
     -   name: Arnaud Delorme
         email: adelorme@ucsd.edu
@@ -145,19 +163,23 @@
     -   name: Christine Rogers
         email: rogers@bic.mni.mcgill.ca
     status:
-    -   Discussion [here](https://github.com/bids-standard/bep021){:target="_blank"}. PR [draft](https://github.com/bids-standard/bids-specification/pull/1680){:target="_blank"}
-        in progress. UCSD to include head models with BIDS EEG data.
-    -   Developments of BIDS M/EEG pipelines will trigger discussion on storing derived data.
-    content:
-    -   derivative
-    blocking: Mostly on hold.
+    -   'Focus on raw-ish data: channels by time: epoching, filtering, interpolation...'
+    -   'All provenance tracking: outsourced to BEP028 (“provenance”)'
+    -   Re-using existing (raw) data formats where applicable
+    -   'No additional entities or suffixes: focus on “desc” entity'
+    -   Create new “descriptions.tsv” file to accompany and document the “desc” entity
+    -   Working on examples on GitHub
+    -   'Perspectives: Derivatives beyond channels by time data will be discussed at a later point'
+    blocking:
     google_doc_created: 2018-05
     pull_request_created:
     pull_request_merged:
 
 -   number: '022'
-    title: Magnetic Resonance Spectroscopy (MRS)
+    title: Magnetic Resonance Spectroscopy
     link: https://github.com/bids-standard/bids-specification/pull/1377
+    content:
+    -   raw
     leads:
     -   name: Mark Mikkelsen
         email: mam4041@med.cornell.edu
@@ -166,11 +188,10 @@
     -   name: Martin Wilson
         email:
     status:
-    -   Group discussions [here](https://forum.mrshub.org/t/bids-for-spectroscopy/83){:target="_blank"} and [here](https://forum.mrshub.org/t/nifti-mrs-discussion-thread/443){:target="_blank"}.
-    -   Developed NifTI standard for MRS data - presented abstract at ISMRM; manuscript in preparation.
-    content:
-    -   raw
-    blocking: None
+    -   BEP complete
+    -   Pull request ([#1377](https://github.com/bids-standard/bids-specification/pull/1377)) on the GitHub bids-specification repository ([HTML preview](https://bids-specification--1377.org.readthedocs.build/en/1377/modality-specific-files/magnetic-resonance-spectroscopy.html))
+    -   Final review needed to ensure terms align with DICOM MR nomenclature
+    blocking:
     google_doc_created: 2018-05
     pull_request_created: 2023-06
     pull_request_merged:
@@ -178,6 +199,8 @@
 -   number: '023'
     title: PET Preprocessing derivatives
     link: https://docs.google.com/document/d/1yzsd1J9GT-aA0DWhdlgNr5LCu6_gvbjLyfvYq2FuxlY/
+    content:
+    -   derivative
     leads:
     -   name: Martin Noergaard
         email: noergard@stanford.edu
@@ -186,27 +209,30 @@
     -   name: Melanie Ganz
         email: melanie.ganz@nru.dk
     status:
-    -   Work in progress following BEP009 incorporation into spec.
-    -   Coord. kickoff scheduled Sept. 2021 to capture various experimental designs and needs for preprocessing and pharmacokinetic modeling.
-    -   Focused on staying aligned with derivatives for MRI (structural, functional, ASL, diffusion)
-    content:
-    -   derivative
-    blocking: Progressing and soliciting input from senior PET experts.
+    -   Defined all the necessary components to be included in the specification
+    -   Alignment with other modalities obtained at Copenhagen BIDS derivatives meeting
+    -   Example PET derivatives datasets available on github
+    -   'Perspectives: 3rd joint meeting between all PET collaborators in August 2023'
+    -   'Perspectives:  Aim is to finish the specification during the fall of 2023'
+    blocking:
+    -   Need more example datasets (fore example different tracers) with different preprocessing choices to capture as most of the PET community as possible
+    -   Need to finish alignment with other modalities
+    -   Still need to agree on the level of information going into corresponding json files
     google_doc_created: 2018-08
     pull_request_created:
     pull_request_merged:
 
 -   number: '024'
-    title: Computed Tomography scan (CT)
+    title: Computed Tomography scan
     link: https://docs.google.com/document/d/1fqnJZ18x5LJC8jiJ8yvPHUGFzNBZ6gW2kywYrUKWtuo/
+    content:
+    -   raw
     leads:
     -   name: Hugo Boniface
         email: hugoboniface@gmail.com
     status:
     -   Lead seeking more contributors and experts.
-    content:
-    -   raw
-    blocking: None
+    blocking:
     google_doc_created: 2018-11
     pull_request_created:
     pull_request_merged:
@@ -214,14 +240,15 @@
 -   number: '026'
     title: Microelectrode Recordings
     link: https://docs.google.com/document/d/14KC1d5-Lx-7ZSMtwS7pVAAvz-2WR_uoo5FvsNirzqJw/
+    content:
+    -   raw
     leads:
-    -   name:
+    -   name: ' '
         email:
     status:
     -   BEP is open to new leadership, see also [BEP032 (animal electrophys)](https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/){:target="_blank"}
-    content:
-    -   raw
-    blocking: Searching for a new leader.
+    blocking:
+    -   Searching for a new leader.
     google_doc_created: 2018-04
     pull_request_created:
     pull_request_merged:
@@ -229,21 +256,19 @@
 -   number: '028'
     title: Provenance
     link: https://docs.google.com/document/d/1vw3VNDof5cecv2PkFp7Lw_pNUTUo8-m8V4SIdtGJVKs/
+    content:
+    -   metadata
     leads:
     -   name: Satra Ghosh
         email: satra@mit.edu
     -   name: Camille Maumet
         email: camille.maumet@inria.fr
     status:
-    -   BEP aims to provide a description of data manipulation and transformations steps related to a BIDS data element via BIDS structured sidecar JSON-LD
-        files.
-    -   Can be used to describe provenance at different levels of granularity.
-    -   Discussions held in [this repository](https://github.com/bids-standard/BEP028_BIDSprov){:target="_blank"}.
-    -   A set of [examples](https://github.com/bids-standard/BEP028_BIDSprov/tree/master/examples){:target="_blank"} and [user stories](https://github.com/bids-standard/BEP028_BIDSprov/issues/48){:target="_blank"}
-        are being refined.
-    content:
-    -   metadata
-    blocking: None
+    -   '[Specification](https://bids.neuroimaging.io/bep028)'
+    -   '[Set of examples](https://github.com/bids-standard/BEP028_BIDSprov)'
+    -   'Perspectives: Opening up to BIDS community for feedback'
+    -   'Perspectives: Engaging with software developers (in progress w/ SPM, AFNI)'
+    blocking:
     google_doc_created: 2018-08
     pull_request_created:
     pull_request_merged:
@@ -251,27 +276,27 @@
 -   number: '032'
     title: Animal electrophysiology
     link: https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/
+    content:
+    -   raw
     leads:
     -   name: Sylvain Takerkart
         email: sylvain.takerkart@univ-amu.fr
     -   name: Julia Sprenger
         email: julia.sprenger@univ-amu.fr
     status:
-    -   New BEP, collecting comments and community feedback which may be submitted [here](https://github.com/INCF/neuroscience-data-structure/issues){:target="_blank"},
-        directly  to Sylvain & Julia, or [here](https://www.incf.org/sig/incf-working-group-standardized-data){:target="_blank"} during the ~monthly meeting.
-    -   Example datasets [here](https://gin.g-node.org/NeuralEnsemble/BEP032-examples){:target="_blank"}.
-    -   'Supporting early stage interaction with: [ProbeInterface & SpikeInterface](https://github.com/SpikeInterface){:target="_blank"}, [AnDO](https://github.com/INT-NIT/AnDO){:target="_blank"},
-        interoperability with NWB and NIX data/metadata formats.'
-    content:
-    -   raw
-    blocking: None
+    -   supports both in vivo AND in vitro ephys
+    -   getting ready to finalize the last details in the BEP
+    blocking:
+    -   in need for somebody how can help with finalizing/merging"
     google_doc_created: 2020-12
     pull_request_created: 2022-11
     pull_request_merged:
 
 -   number: '033'
-    title: Advanced Diffusion Weighted Imaging (aDWI)
+    title: Advanced Diffusion Weighted Imaging
     link: https://docs.google.com/document/d/1en4ByORlPqwDfZwNOOBTj0GwpYBcS0_2peqreTOvwDU/
+    content:
+    -   raw
     leads:
     -   name: James Gholam
         email: GholamJA@cardiff.ac.uk
@@ -285,9 +310,7 @@
     -   Comments may be submitted directly on the document.
     -   Generating example datasets [here](https://github.com/JAgho/MISP_plot/tree/main){:target="_blank"} and determining best practice with vendors to
         record data in-sequence
-    content:
-    -   raw
-    blocking: None
+    blocking:
     google_doc_created: 2021-04
     pull_request_created:
     pull_request_merged:
@@ -295,24 +318,32 @@
 -   number: '034'
     title: Computational modeling
     link: https://github.com/bids-standard/bids-specification/pull/967
+    content:
+    -   derivative
+    -   metadata
     leads:
     -   name: Michael Schirner
         email: michael.schirner@charite.de
     -   name: Petra Ritter
         email: petra.ritter@charite.de
     status:
-    -   'BEP Computational Models: PR open for review and discussion [here](https://github.com/bids-standard/bids-specification/pull/967){:target="_blank"}'
-    content:
-    -   derivative
-    -   metadata
-    blocking: None
+    -   PR opened (HTML preview)
+    -   sim2bids app created
+    -   easier to bring neural simulation data (especially in The Virtual Brain format) into the proposed BIDS Comp Model format
+    -   'Perspectives: A roadmap that coordinates efforts across BEPs would be appreciated.'
+    blocking:
+    -   BEPs have overlapping concerns (Comp Models, Spaces and mappings, Generic BIDS connectivity schema, time series, Provenance, Atlases)
+    -   need to separate concerns & provide a roadmap for each BEP
     google_doc_created: 2021-02
     pull_request_created: 2021-08
     pull_request_merged:
 
 -   number: '035'
     title: Modular extensions for individual participant data mega-analyses with non-compliant derivatives
+    display: Mega-analyses
     link: https://docs.google.com/document/d/1tFRNumQyIgjXBNC3brFDLO9FaikjL84noxK6Om-Ctik/
+    content:
+    -   derivative
     leads:
     -   name: Giuseppe Gallitto
         email: giuseppe.gallitto@uk-essen.de
@@ -321,11 +352,12 @@
     -   name: Tamas Spisak
         email: tamas.spisak@uni-due.de
     status:
-    -   'BEP revised: now collecting further comments and community feedback.'
-    -   Collaborators with mega-analysis experience or with actual example use-cases (planned/ongoing/finished mega analyses) welcome!
-    content:
-    -   derivative
-    blocking: None
+    -   Modular structure of the BEP revised
+    -   Should better accommodate various use cases while maintaining user-friendliness
+    -   Comments have been collected on the revised version
+    -   'Perspectives: Creating a list of adopters of the BEP: they will be contacted soon.'
+    blocking:
+    -   More comments required to see if the BEP can accommodate specific use cases.
     google_doc_created: 2021-12
     pull_request_created:
     pull_request_merged:
@@ -333,26 +365,27 @@
 -   number: '036'
     title: Phenotypic Data Guidelines
     link: https://docs.google.com/document/d/1WTkfES8L0vItZVyyR68fc-9cO03jS-kCnMnw6602pbc/
+    content:
+    -   raw
     leads:
     -   name: Eric Earl
         email: eric.earl@nih.gov
     -   name: Samuel Guay
         email: samuel.guay@umontreal.ca
     status:
-    -   BEP drafted.
-    -   Poster presentation at OHBM 2022.
-    -   Now collecting community comments and feedback.
-    -   All collaborators are welcome.
-    content:
-    -   raw
+    -   Poster and demo presentation at OHBM 2023.
+    -   'Need to validate not only participants with folders, but also validate those among other major tabular phenotype files: scans.tsv, phenotype/<measurement_tool_name>.tsv,
+        participants.tsv'
     blocking: More reviews and discussions are necessary.
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
 
 -   number: '037'
-    title: Non-Invasive Brain Stimulation (NIBS)
+    title: Non-Invasive Brain Stimulation
     link: https://docs.google.com/document/d/1drYd7kaNbHTcYPR3T_CRDsPcEbFSV7JbJUmhMPeWMqY/
+    content:
+    -   raw
     leads:
     -   name: Giacomo Bertazzoli
         email: giacomo.bertazzoli@unitn.it
@@ -363,10 +396,16 @@
     -   name: Marta Bortoletto
         email: marta.bortoletto@cognitiveneuroscience.it
     status:
-    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   raw
-    blocking: None
+    -   BEP draft (almost) definitive
+    -   High NIBS community engagement
+    -   'Persperctive: Discuss poorly covered cells within the structure'
+    -   'Persperctive: Discuss the pieces of information to be included in sidecar .json files'
+    -   'Persperctive: Start merging of stand-alone parts of the BEP (i.e., neuronavigation)'
+    -   'Persperctive: Collaboration with common NIBS software (BEST toolbox, simNIBS, K-space…)'
+    -   'Persperctive: Apply for funds for pushing forward the BEP'
+    blocking:
+    -   Create real-world examples trying to cover most of the use-cases
+    -   More involvement of non-TMS NIBS (electric and ultrasonic stimulation)
     google_doc_created: 2022-09
     pull_request_created:
     pull_request_merged:
@@ -374,6 +413,8 @@
 -   number: '038'
     title: Atlases
     link: https://docs.google.com/document/d/1RxW4cARr3-EiBEcXjLpSIVidvnUSHE7yJCUY91i5TfM/
+    content:
+    -   raw
     leads:
     -   name: James Kent
         email: jamesdkent21@gmail.com
@@ -384,10 +425,12 @@
     -   name: Anthony Galassi
         email: anthony.galassi@nih.gov
     status:
-    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   raw
-    blocking: None
+    -   new BEP, started September 2022
+    -   good first complete draft of proposal
+    -   'Perspectives: working with modality-specific BEPs to finalize draft'
+    blocking:
+    -   nomenclature regarding what an atlas is and/or should entail
+    -   drastically diverging requirements by different data types
     google_doc_created: 2022-09
     pull_request_created:
     pull_request_merged:
@@ -395,6 +438,8 @@
 -   number: '039'
     title: Dimensionality reduction-based networks
     link: https://docs.google.com/document/d/1GTWsj0MFQedXjOaNk6H0or6IDVFyMAysrJ9I4Zmpz2E/
+    content:
+    -   raw
     leads:
     -   name: Arianna Sala
         email: arianna.sala@uliege.be
@@ -407,17 +452,20 @@
     -   name: Peer Herholz
         email: herholz.peer@gmail.com
     status:
-    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   raw
-    blocking: None
+    -   new BEP, started September 2022
+    -   good first complete draft of proposal
+    blocking:
+    -   “model-” related definitions & file types
+    -   finding overarching metadata across analyses
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
 
 -   number: '040'
-    title: Functional Ultrasound (fUS)
+    title: Functional Ultrasound
     link: https://docs.google.com/document/d/1W3z01mf1E8cfg_OY7ZGqeUeOKv659jCHQBXavtmT-T8/
+    content:
+    -   raw
     leads:
     -   name: Jean-Charles Mariani
         email: jean-charles.mariani@cri-paris.org
@@ -426,10 +474,13 @@
     -   name: Thomas Deffieux
         email: thomas.deffieux@inserm.fr
     status:
-    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   raw
-    blocking: None
+    -   All issues raised on the original BEP have been resolved.
+    -   Regular meetings with contributors scheduled.
+    -   Scanner coordinate system has been proposed to harmonize affine transformations with moving probes.
+    -   'Perspectives: Starting to bidsify existing datasets to stress test the BEP.'
+    -   'Perspectives: timing metadata has been copied from the fMRI-BIDS specification, but evolutions could be discussed to handle non-stable sampling
+        frequencies.'
+    blocking:
     google_doc_created: 2023-03
     pull_request_created:
     pull_request_merged:
@@ -437,30 +488,31 @@
 -   number: '041'
     title: Statistical Model Derivatives
     link: https://docs.google.com/document/d/1KHzp-yk8KXvkUIhtN71WU0m4P4kKT9C1yvI-i9_kNeY/
+    content:
+    -   derivative
     leads:
     -   name: Taylor Salo
         email: salot@pennmedicine.upenn.edu
     status:
-    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   derivative
-    blocking: None
+    -   New BEP, collecting community comments and feedback.
+    -   All collaborators are welcome.
+    blocking:
     google_doc_created: 2022-08
     pull_request_created:
     pull_request_merged:
 
-
 -   number: '042'
-    title: Electromyography (EMG)
+    title: Electromyography
     link: https://docs.google.com/document/d/1G5_Eu2OemcZXS9xOGINPA6SUTaZOml7LBmZCMnUhTXA/
+    content:
+    -   raw
     leads:
     -   name: Seyed Yahya Shirazi
         email: shirazi@ieee.org
     status:
-    -   New BEP, collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   raw
-    blocking: None
+    -   New BEP, collecting community comments and feedback.
+    -   All collaborators are welcome.
+    blocking:
     google_doc_created: 2023-01
     pull_request_created:
     pull_request_merged:
@@ -468,16 +520,18 @@
 -   number: '043'
     title: BIDS Term Mapping
     link: https://docs.google.com/document/d/1LACjc5hFXDpa2l_QddBPR41Vce_gglGv9WeuBB7LsBU/
+    content:
+    -   metadata
     leads:
     -   name: Chris Markiewicz
         email: markiewicz@stanford.edu
     -   name: Eric Earl
         email: eric.earl@nih.gov
     status:
-    -   For being able to map non-BIDS data as BIDS-compatible. Now collecting community comments and feedback. All collaborators are welcome.
-    content:
-    -   metadata
-    blocking: None
+    -   For being able to map non-BIDS data as BIDS-compatible.
+    -   Now collecting community comments and feedback.
+    -   All collaborators are welcome.
+    blocking:
     google_doc_created: 2024-03
     pull_request_created:
     pull_request_merged:

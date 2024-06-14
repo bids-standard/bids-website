@@ -293,6 +293,8 @@ extra_css:
 
 watch:
   - includes
+  - templates
+  - data
 
 copyright:
   Copyright &copy; BIDS Contributors - <a

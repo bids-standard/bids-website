@@ -9,5 +9,5 @@
 | :--------: | :---- | :-----  | :-----  | :---------- |
 {% endif %}
 {% for bep in include %}
-| [BEP {{ bep.number }}]({{ bep.link }}){:target="_blank"} | {{ bep.title }} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {% if person.email %} [{{ person.name }}](mailto:{{ person.email }}) {% else %} {{ person.name }} {% endif %}<br>{% endfor %}  | {% for item in bep.status %} {{ item }} <br>{% endfor %} |
+| [BEP {{ bep.number }}]({{ bep.link }}){:target="_blank"} | {% if bep.display %} {{ bep.display }} {% else %} {{ bep.title }} {% endif %} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {% if person.email %} [{{ person.name }}](mailto:{{ person.email }}) {% else %} {{ person.name }} {% endif %}<br>{% endfor %}  | {% for item in bep.status %} - {{ item }} <br>{% endfor %} |
 {% endfor %}
