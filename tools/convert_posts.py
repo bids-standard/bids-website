@@ -31,10 +31,7 @@ for file in input_folder.glob("*.md"):
     # for line in content:
 
     #     if frontmatter_done:
-    #         f.write(
-    #             line.replace('{:target:"_blank"}', "").replace(
-    #                 '{:target="_blank"}', ""
-    #             )
+    #         f.write(line)
     #         )
     #         continue
 

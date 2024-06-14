@@ -246,7 +246,7 @@
     -   name: ' '
         email:
     status:
-    -   BEP is open to new leadership, see also [BEP032 (animal electrophys)](https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/){:target="_blank"}
+    -   BEP is open to new leadership, see also [BEP032 (animal electrophys)](https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/)
     blocking:
     -   Searching for a new leader.
     google_doc_created: 2018-04
@@ -308,8 +308,7 @@
     -   'New BEP, seeking contributors and collecting community feedback relating to: priority sequences to support, best supported binary structured formats
         (e.g. CBOR? HDF5? MsgPack?).'
     -   Comments may be submitted directly on the document.
-    -   Generating example datasets [here](https://github.com/JAgho/MISP_plot/tree/main){:target="_blank"} and determining best practice with vendors to
-        record data in-sequence
+    -   Generating example datasets [here](https://github.com/JAgho/MISP_plot/tree/main) and determining best practice with vendors to record data in-sequence
     blocking:
     google_doc_created: 2021-04
     pull_request_created:

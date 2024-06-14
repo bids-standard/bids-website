@@ -35,7 +35,7 @@
     content:
     -   raw
     status:
-    -   Became the [File mapper](https://github.com/DCAN-Labs/file-mapper){:target="_blank"}.
+    -   Became the [File mapper](https://github.com/DCAN-Labs/file-mapper).
 
 -   number: '019'
     title: DICOM Metadata
@@ -45,8 +45,8 @@
     content:
     -   metadata
     status:
-    -   Closed in favor of possible direct support of DICOM within BIDS (see this [issue](https://github.com/bids-standard/bids-specification/issues/1552){:target="_blank"}
-        and this [pull request](https://github.com/bids-standard/bids-specification/pull/1551){:target="_blank"}).
+    -   Closed in favor of possible direct support of DICOM within BIDS (see this [issue](https://github.com/bids-standard/bids-specification/issues/1552)
+        and this [pull request](https://github.com/bids-standard/bids-specification/pull/1551)).
     google_doc_created: 2017-10
     pull_request_created:
     pull_request_merged:

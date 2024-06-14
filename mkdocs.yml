@@ -15,6 +15,7 @@ plugins:
   #         categories:
   #         -   categories
   #         -   tags
+  - open-in-new-tab
   - macros:
       module_name: macros/main
   - redirects:
