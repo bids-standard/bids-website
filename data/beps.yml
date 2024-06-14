@@ -142,6 +142,8 @@
         email: r.oostenveld@donders.ru.nl
     -   name: Cyril Pernet
         email: wamcyril@gmail.com
+    -   name: Christine Rogers
+        email: rogers@bic.mni.mcgill.ca
     status:
     -   Discussion [here](https://github.com/bids-standard/bep021){:target="_blank"}. PR [draft](https://github.com/bids-standard/bids-specification/pull/1680){:target="_blank"}
         in progress. UCSD to include head models with BIDS EEG data.
