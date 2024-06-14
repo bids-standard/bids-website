@@ -1,4 +1,5 @@
-"""
+"""Ping the neurostars API.
+
 Pings neurostars discourse API to:
 
 - get all of topics for a list of tags
@@ -29,31 +30,31 @@ API doc: https://docs.discourse.org/
 """
 
 from datetime import datetime
-from pathlib import Path
 from typing import Optional
 
 import pandas as pd
 import requests
 from rich import print
-from utils import return_min_max_date
+from utils import plot_neurostars, return_min_max_date
 
 """
 list of tags
 GET https://neurostars.org/tags.json
 """
 
-OUTPUT_DIR = Path(__file__).parent / "tmp"
 
 verbose = True
 
 # Gets only the first 2 pages of topics if True
 debug = False
 
-# Set a month of interest
-month = 5  # integer, e.g., May = 5
+# Set a month and year of interest
+month = 12  # integer, e.g., May = 5
+year = 2023
 
 
 def tags(debug=False):
+    """Return tags."""
     if debug:
         return ["pybids", "bids-app"]
     else:
@@ -77,7 +78,6 @@ def tags(debug=False):
             "dtiprep",
             "nipreps",
             "niprep",
-            "nilearn",
             "fitlins",
             "openneuro",
             "openneuro-cli",
@@ -85,7 +85,7 @@ def tags(debug=False):
 
 
 def tags_combine():
-    """Not used yet"""
+    """Combine tags."""
     return {
         "nipreps": [
             "fmriprep-report",
@@ -103,12 +103,15 @@ def tags_combine():
 
 
 def print_note(month, year, nb_topics, nb_posts):
+    """Print note."""
     (mindate, maxdate) = return_min_max_date(month, year)
-    print(f"Neurostats stats for the {datetime.now().strftime('%B')} {year}")
+    monthname = datetime(year, month, 1).strftime("%B")
+    print(f"Neurostats stats for {monthname} {year}")
     print(f"{nb_topics} new topics overall over the last 30 days")
     print(f"{nb_posts} new posts overall over the last 30 days")
     print(
-        f"New topics for given tags counted between {mindate.date()} and {maxdate.date()}"
+        f"New topics for given tags counted between {mindate.date()} "
+        f"and {maxdate.date()}"
     )
     print(f"Included queried tags:{tags()}")
     print(
@@ -127,7 +130,6 @@ def shorten_table(summary_tsv):
     - rename some columns
     - keep tags that have new topics or new posts
     """
-
     columns_to_drop = [
         "mean_nb_post_per_topic",
         "percent_no_reply",
@@ -156,15 +158,17 @@ def shorten_table(summary_tsv):
     short_summary = short_summary[mask]
 
     short_summary.to_csv(
-        OUTPUT_DIR / "neurostars_short_summary_stats.tsv", sep="\t", index=True
+        "neurostars_short_summary_stats.tsv", sep="\t", index=True
     )
 
 
 def nb_months_backlog(debug):
+    """Return number of months backlog."""
     return 2 if debug else 11
 
 
 def retrun_nb_posts_and_topics_in_last_30_days():
+    """Return number of posts and topics in last 30 days."""
     url = "https://neurostars.org/about.json"
     response = requests.get(url)
     nb_topics = response.json()["about"]["stats"]["topics_30_days"]
@@ -174,7 +178,7 @@ def retrun_nb_posts_and_topics_in_last_30_days():
 
 
 def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
-    """Return a dataframe of neurostars topics for a given tag
+    """Return a dataframe of neurostars topics for a given tag.
 
     :param tag: neurostars tag
     :type tag: string
@@ -185,7 +189,6 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
     :return: _description_
     :rtype: pandas.DataFrame
     """
-
     base_url = f"https://neurostars.org/tag/{tag}.json"
 
     if verbose:
@@ -231,7 +234,8 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
         for i, topic in enumerate(response.json()["topic_list"]["topics"]):
             if verbose:
                 print(
-                    f"{i}. {topic['created_at']} | {topic['posts_count']} | {topic['title']}"
+                    f"{i}. {topic['created_at']} | "
+                    f"{topic['posts_count']} | {topic['title']}"
                 )
 
             nb_new_posts = return_nb_new_posts_for_topic(topic)
@@ -249,7 +253,7 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
 
 
 def get_posts_for_topic(topic_id: str) -> pd.DataFrame:
-
+    """Get posts for topic."""
     url = f"https://neurostars.org/t/{topic_id}/posts.json"
 
     response = requests.get(url)
@@ -264,14 +268,13 @@ def get_posts_for_topic(topic_id: str) -> pd.DataFrame:
 
 
 def return_nb_new_posts_for_topic(topic: dict) -> int:
-
+    """Return number of new posts for topic."""
     last_posted_at = topic["last_posted_at"]
     last_posted_at.replace("Z", "+00:00")
     last_posted_at = datetime.strptime(
         last_posted_at, "%Y-%m-%dT%H:%M:%S.%f%z"
     )
 
-    year = datetime.now().year
     beginning_month = datetime(year, month, 1).astimezone()
 
     if last_posted_at < beginning_month:
@@ -286,6 +289,7 @@ def return_nb_new_posts_for_topic(topic: dict) -> int:
 def return_nb_posts_since_month(
     df: pd.DataFrame, month: int, year: int
 ) -> int:
+    """Return number of posts since month."""
     (mindate, maxdate) = return_min_max_date(month, year)
     created_at = pd.to_datetime(df["created_at"]).dt.date
     is_newly_created = (created_at > mindate.date()) & (
@@ -295,12 +299,14 @@ def return_nb_posts_since_month(
 
 
 def return_topics_for_month(df: pd.DataFrame, month: int, year: int):
+    """Return topics for month."""
     (mindate, maxdate) = return_min_max_date(month, year)
     created_at = pd.to_datetime(df["created_at"]).dt.date
     return (created_at > mindate.date()) & (created_at < maxdate.date())
 
 
 def return_stats(df: pd.DataFrame, nb_topics: Optional[int] = None) -> dict:
+    """Return stats."""
     if nb_topics is None:
         nb_topics = len(df)
     stats = {
@@ -308,16 +314,16 @@ def return_stats(df: pd.DataFrame, nb_topics: Optional[int] = None) -> dict:
         "no_reply": len(df[df["posts_count"] == 1]),
         "nb_posts": df["posts_count"].sum(),
         "sum_nb_new_posts": df["nb_new_posts"].sum(),
-        "accepted_answer": len(df[df["has_accepted_answer"] == True]),  # noqa
+        "accepted_answer": len(
+            df[df["has_accepted_answer"] == True]  # noqa: E712
+        ),
     }
 
     return stats
 
 
 def main():
-
-    year = datetime.now().year
-
+    """Ping the neurostars API."""
     summary = {
         "tag": [],
         "nb_topics": [],
@@ -340,7 +346,7 @@ def main():
 
         if df is not None:
 
-            df.to_csv(OUTPUT_DIR / f"{tag}.tsv", index=False, sep="\t")
+            df.to_csv(f"{tag}.tsv", index=False, sep="\t")
 
             stats = return_stats(df, nb_topics)
 
@@ -385,8 +391,9 @@ def main():
             monthly_stats = pd.DataFrame.from_dict(monthly_stats)
 
             if tag == "bids":
-                monthly_stats.to_csv(
-                    OUTPUT_DIR / "neurostars_monthly_stats.tsv", sep="\t"
+                monthly_stats.to_csv("neurostars_monthly_stats.tsv", sep="\t")
+                plot_neurostars(
+                    "neurostars_monthly_stats.tsv", print_to_file=True
                 )
 
     summary = pd.DataFrame(data=summary)
@@ -401,23 +408,11 @@ def main():
         axis=1,
     )
 
-    summary.to_csv(
-        OUTPUT_DIR / "neurostars_summary_stats.tsv", sep="\t", index=False
-    )
+    summary.to_csv("neurostars_summary_stats.tsv", sep="\t", index=False)
 
     (nb_topics, nb_posts) = retrun_nb_posts_and_topics_in_last_30_days()
 
     shorten_table("neurostars_summary_stats.tsv")
-
-    df = pd.read_csv(
-        OUTPUT_DIR / "neurostars_short_summary_stats.tsv", sep="\t"
-    )
-    print(df)
-    columns_to_drop = ["new topics", "new posts"]
-    df = df.drop(columns=columns_to_drop)
-    df.to_markdown(
-        OUTPUT_DIR / "neurostars_short_summary_stats.md", index=False
-    )
 
     print_note(month, year, nb_topics, nb_posts)
     print(summary)

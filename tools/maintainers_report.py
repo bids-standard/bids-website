@@ -34,8 +34,10 @@ from utils import plot_information, return_min_max_date
 token = None
 g = Github(login_or_token=token)
 
-# Set a month of interest
-month = 9  # integer, e.g., May = 5
+# Set a month and year of interest
+month = 11  # integer, e.g., May = 5
+year = 2024
+
 user = "bids-standard"
 
 # Set repositories of interest
@@ -57,7 +59,7 @@ def main(repos):
 
     # Parse information
 
-    (mindate, maxdate) = return_min_max_date(month)
+    (mindate, maxdate) = return_min_max_date(month, year=year)
 
     # PRs/issues are ordered newest to oldest by creation date
     # we go through them in order, counting closed and created
