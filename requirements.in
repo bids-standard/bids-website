@@ -7,5 +7,5 @@ pybids
 rich
 ruamel.yaml
 tabulate
-specification/tools/schemacode
--e ./tools
+file:specification/tools/schemacode
+-e file:tools
