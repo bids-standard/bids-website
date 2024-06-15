@@ -24,9 +24,9 @@ Requirements:
 import json
 
 import pandas as pd
+from bids_website.utils import plot_information, return_min_max_date
 from github import Github
 from tqdm import tqdm
-from utils import plot_information, return_min_max_date
 
 # Settings
 # Set a token (or use None)

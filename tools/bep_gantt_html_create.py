@@ -10,9 +10,9 @@ from datetime import datetime
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from bids_website.utils import data_dir, root_dir
 from pyzotero import zotero
 from ruamel.yaml import YAML
-from utils import data_dir, root_dir
 
 INCLUDE_PATCHES = False
 START_DATE = "2014-10"
@@ -21,7 +21,7 @@ Y_AXIS_VALUE = ""
 
 
 def create_bep_timeline() -> type[go.Figure]:
-    completd_beps = data_dir() / "beps_completed.yml"
+    completd_beps = data_dir() / "beps" / "beps_completed.yml"
 
     with open(completd_beps, "r") as f:
         yaml = YAML(typ="safe", pure=True)
@@ -160,7 +160,7 @@ def main():
 
     fig = plot_time_line(fig)
 
-    timeline = pd.read_csv(root_dir() / "tools" / "timeline.csv")
+    timeline = pd.read_csv(data_dir() / "timeline.csv")
     fig = plot_releases(fig, timeline, include_patches=INCLUDE_PATCHES)
 
     # Add events timeline

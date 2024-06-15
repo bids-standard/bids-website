@@ -1,0 +1,47 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+dependencies = [
+    "seaborn>0.13"
+]
+description = "Utility package for bids website"
+name = "bids_website"
+version = "0.1.0"
+
+[project.optional-dependencies]
+# most of those are actually to run several of the scripts
+# but not for the utilities
+dev = [
+    "beautifulsoup4",
+    "gender_guesser",
+    "geopy",
+    "plotly>=5.3.1",
+    "pybids",
+    "pygithub",
+    "pyzotero",
+    "rich>=10.9.0",
+    "requests>=2.25.1",
+    "requests_mock",
+    "ruamel.yaml",
+    "tabulate",
+    "tqdm",
+    "bidsschematools @ {root:uri}/../../specification/tools/schemacode"
+]
+test = [
+    "pytest>=6.0.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["bids_website"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers --showlocals -s -v"
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+junit_family = "xunit2"
+minversion = "6.0"
+xfail_strict = true

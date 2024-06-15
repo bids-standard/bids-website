@@ -1,25 +1,27 @@
-venv
-env
-
-.tox
-
-*.DS_Store
-tmp
-
-.cache
-site
-
-__pycache__
-
-node_modules
-package*json
+# Generated files
+# ignore FAQ files that generated automatically
+docs/faq/faq*.md
+bep_leads.tsv
+output_gh_summary.png
 
 # ignore for now files that are copied from the bids examples and spe
 docs/examples/
 docs/specification/
 
-# ignore FAQ files that generated automatically
-docs/faq/faq*.md
+# fodlers
+*.DS_Store
+tmp
+
+#python
+__pycache__
+venv
+env
+
+.tox
+
+# mkdocs
+.cache
+site
 
 # ignore bundle folder and ruby version files
 .bundle/
@@ -27,4 +29,6 @@ docs/faq/faq*.md
 Gemfile.lock
 vendor/
 
-bep_leads.tsv
+# node
+node_modules
+package*json

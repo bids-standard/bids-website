@@ -23,7 +23,7 @@ def return_jinja_env() -> Environment:
 
 
 def generate_converter_table(file: str) -> str:
-    input_file = WEBSITE_DATA_DIR / file
+    input_file = WEBSITE_DATA_DIR / "tools" / file
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("converters_table_md.jinja")
@@ -31,7 +31,7 @@ def generate_converter_table(file: str) -> str:
 
 
 def generate_tools_table(file: str) -> str:
-    input_file = WEBSITE_DATA_DIR / file
+    input_file = WEBSITE_DATA_DIR / "tools" / file
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("tools_table_md.jinja")
@@ -39,7 +39,7 @@ def generate_tools_table(file: str) -> str:
 
 
 def generate_members_table(file: str) -> str:
-    input_file = WEBSITE_DATA_DIR / file
+    input_file = WEBSITE_DATA_DIR / "people" / file
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("members_table_html.jinja")
@@ -47,7 +47,7 @@ def generate_members_table(file: str) -> str:
 
 
 def generate_beps_table(file: str, type: str | None = None) -> str:
-    input_file = WEBSITE_DATA_DIR / file
+    input_file = WEBSITE_DATA_DIR / "beps" / file
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("beps_table_md.jinja")

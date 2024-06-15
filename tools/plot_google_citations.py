@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 import plotly.express as px
-from utils import data_dir
+from bids_website.utils import data_dir
 
 input_file = data_dir() / "citation_google_scholar.tsv"
 

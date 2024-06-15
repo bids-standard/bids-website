@@ -34,8 +34,8 @@ from typing import Optional
 
 import pandas as pd
 import requests
+from bids_website.utils import plot_neurostars, return_min_max_date
 from rich import print
-from utils import plot_neurostars, return_min_max_date
 
 """
 list of tags

@@ -28,12 +28,12 @@ jobs:
             if: github.event_name == 'push' && github.ref == 'refs/heads/master'
             run: |
                 python no-bad-latin.py
-            working-directory: tools
+            working-directory: tools/ci
         -   name: Run Python script to check for Latin phrases - Pull Request
             if: github.event.pull_request
             run: |
                 python no-bad-latin.py
-            working-directory: tools
+            working-directory: tools/ci
 
     # Markdown formatting
     remark:
