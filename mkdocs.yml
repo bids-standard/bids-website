@@ -146,20 +146,20 @@ nav:
         -   examples and resources:
             -   stats_models/specification/model-zoo.md
             -   default model: stats_models/specification/default_model.md
-        -   variable transforms:
-            -   variable-transform/README.md
-            -   compute: variable-transform/spec/compute.md
-            -   munge: variable-transform/spec/munge.md
+        # -   variable transforms:
+        #     -   variable-transform/README.md
+        #     -   compute: variable-transform/spec/compute.md
+        #     -   munge: variable-transform/spec/munge.md
     -   BIDS app specification:
-        -   standards/execution/src/index.md
-        -   scope: standards/execution/src/scope.md
+        -   standards/execution/index.md
+        -   scope: standards/execution/scope.md
         -   specification:
-            -   standards/execution/src/specification.md
-            -   user interface: standards/execution/src/ui.md
-            -   inputs: standards/execution/src/inputs.md
-            -   outputs: standards/execution/src/outputs.md
-            -   examples: standards/execution/src/examples.md
-            -   release notes: standards/execution/src/CHANGELOG.md
+            -   standards/execution/specification.md
+            -   user interface: standards/execution/ui.md
+            -   inputs: standards/execution/inputs.md
+            -   outputs: standards/execution/outputs.md
+            -   examples: standards/execution/examples.md
+            -   release notes: standards/execution/CHANGELOG.md
         -   contributors: standards/execution/CONTRIBUTING.md
 -   Tools:
     -   tools/index.md
@@ -181,7 +181,6 @@ nav:
         -   apps: apps/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
         -   starter_kit: starter_kit/src/CONTRIBUTING.md
-        -   execution:
     -   Contributors: collaboration/contributors.md
     -   Acknowledgments: collaboration/acknowledgments.md
 -   Getting started:
