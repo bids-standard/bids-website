@@ -114,6 +114,15 @@ exclude_docs: |
   starter_kit/src/glossary.md
   starter_kit/src/tutorials/media/README.md
   starter_kit/src/validator.md
+  starter_kit/src/tutorials/annotation.md
+  starter_kit/src/tutorials/asl.md
+  starter_kit/src/tutorials/ieeg.md
+  starter_kit/src/tutorials/mri.md
+  starter_kit/src/tutorials/pet.md
+  starter_kit/src/tutorials/tutorials.md
+  variable-transform/README.md
+  variable-transform/spec/compute.md
+  variable-transform/spec/munge.md
   stats_models/README.md
   stats_models/bsmschema/README.md
   stats_models/specification/walkthrough-2.md
@@ -160,7 +169,7 @@ nav:
             -   outputs: standards/execution/outputs.md
             -   examples: standards/execution/examples.md
             -   release notes: standards/execution/CHANGELOG.md
-        -   contributors: standards/execution/CONTRIBUTING.md
+        -   contributors: standards/execution/contributors.md
 -   Tools:
     -   tools/index.md
     -   Validator: tools/validator.md
@@ -191,13 +200,13 @@ nav:
         -   metadata: getting_started/folders_and_files/metadata.md
         -   derivatives: getting_started/folders_and_files/derivatives.md
     -   tutorials:
-        -   starter_kit/src/tutorials/tutorials.md
+        -   getting_started/tutorials/index.md
         -   conversion:
-            -   asl: starter_kit/src/tutorials/asl.md
-            -   ieeg: starter_kit/src/tutorials/ieeg.md
-            -   mri: starter_kit/src/tutorials/mri.md
-            -   pet: starter_kit/src/tutorials/pet.md
-        -   annotation: starter_kit/src/tutorials/annotation.md
+            -   asl: getting_started/tutorials/conversion/asl.md
+            -   ieeg: getting_started/tutorials/conversion/ieeg.md
+            -   mri: getting_started/tutorials/conversion/mri.md
+            -   pet: getting_started/tutorials/conversion/pet.md
+        -   annotation: getting_started/tutorials/annotation.md
     -   BIDS apps:
         -   getting_started/apps/index.md
         -   tutorial: getting_started/apps/tutorial.md
