@@ -18,16 +18,13 @@ dev = [
     "gender_guesser",
     "geopy",
     "plotly>=5.3.1",
-    "pybids",
     "pygithub",
     "pyzotero",
     "rich>=10.9.0",
     "requests>=2.25.1",
     "requests_mock",
     "ruamel.yaml",
-    "tabulate",
-    "tqdm",
-    "bidsschematools @ {root:uri}/../../specification/tools/schemacode"
+    "tqdm"
 ]
 test = [
     "pytest>=6.0.0"

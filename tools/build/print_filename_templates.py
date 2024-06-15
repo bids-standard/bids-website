@@ -1,8 +1,11 @@
-# add filename templates to the documentation
+# add filename templates to the docs/getting_started/files.md
 from pathlib import Path
 
 from bidsschematools import render, schema
+from rich import print
+
 from bids_website.utils import root_dir
+
 
 datatypes = [
     "anat",
@@ -21,6 +24,7 @@ datatypes = [
 
 
 def main():
+
     input_file = (
         root_dir()
         / "docs"
@@ -28,6 +32,8 @@ def main():
         / "folders_and_files"
         / "files.md"
     )
+
+    print(f"add filename templates to {input_file}")
 
     schema_obj = schema.load_schema()
 

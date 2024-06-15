@@ -36,11 +36,25 @@ mkdocs serve
 
 ### Requirements
 
+Same automation will work better if you are on unix system and have make.
+
 Same as for the install but you will also need to install `tox`.
 
 ```bash
 pip install tox
 ```
-
 <!-- TODO find minimal version of node and npm -->
 For some quality checks and rare operations, you will need node.js and npm.
+
+## Update all files
+
+```bash
+make update
+```
+
+## Run all formatting / linting tools
+
+```bash
+tox
+make remark
+```

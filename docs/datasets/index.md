@@ -26,7 +26,6 @@ Datasets here are (by and large) publicly available and conform to BIDS.
 
 A 204-subject multimodal (MEG, MRI, fMRI) [dataset](http://data.donders.ru.nl/collections/di/dccn/DSC_3011020.09_236?0) to study language processing.
 
-## BIDS examples with empty raw data files
 
 ### ASL
 
