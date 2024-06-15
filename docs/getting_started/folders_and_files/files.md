@@ -2,26 +2,27 @@
 
 These are the three main types of files you'll find in a BIDS dataset:
 
-1. `.json` files that contain `key: value` metadata
-2. `.tsv` files that contain tables of metadata
-3. Raw data files (for example: `.jpg` files for images or `.nii.gz` files for
-   fMRI data.)
+1.  `.json` files that contain `key: value` metadata
+1.  `.tsv` files that contain tables of metadata
+1.  Raw data files (for example: `.jpg` files for images or `.nii.gz` files for fMRI data.)
 
 BIDS has a standardized way of naming files that tries to implement the
 following principles:
 
 -   Do not include white spaces in file names
     -   They make scripting harder.
+
 -   Use only letters, numbers, hyphens, and underscores.
     -   Some operating systems cannot handle special characters.
+
 -   Do not rely on letter case (`UPPERCASE` and `lowercase`)
     -   For some operating systems `a` is the same as `A`.
+
 -   Use separators and case in a systematic and meaningful way.
     -   [`thisIsCamelCase`](https://en.wikipedia.org/wiki/Camel_case)
     -   [`this_is_snake_case`](https://en.wikipedia.org/wiki/Snake_case)
 
-Source:
-[Datalad RDM course](https://psychoinformatics-de.github.io/rdm-course/02-structuring-data/index.html)
+Source: [Datalad RDM course](https://psychoinformatics-de.github.io/rdm-course/02-structuring-data/index.html)
 
 ## Filename template
 
