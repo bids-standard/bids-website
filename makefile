@@ -43,4 +43,15 @@ lint: remark
 	tox
 
 remark: package.json
-	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/faq/index.md ./docs/standards --rc-path .remarkrc
+	npx remark \
+		faq \
+		./docs/*.md \
+		./docs/bep \
+		./docs/blog \
+		./docs/collaboration \
+		./docs/datasets \
+		./docs/faq/index.md \
+		./docs/getting_started \
+		./docs/standards \
+		./docs/tools \
+		--rc-path .remarkrc
