@@ -25,3 +25,7 @@
 	path = examples
 	url = https://github.com/bids-standard/bids-examples
 	datalad-url = https://github.com/bids-standard/bids-examples
+[submodule "docs/starter-kit"]
+	path = docs/starter-kit
+	url = https://github.com/bids-standard/bids-starter-kit.git
+	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
