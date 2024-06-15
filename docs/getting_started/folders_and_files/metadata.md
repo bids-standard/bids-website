@@ -14,6 +14,9 @@ to help you generate some of those files.
 
 ## JSON Files
 
+JSON stands for JavaScript Object Notation
+and as its name indicates takes its syntax from the JavaScript language.
+
 JSON files are text files that take the following structure:
 
 ```json
@@ -29,13 +32,44 @@ JSON files are text files that take the following structure:
 Note that they can be nested (curly brackets within curly brackets).
 Here are some common ways to read / write these files.
 
-### Online
+### Editing JSON file online
 
-To read/write JSON online, we recommend the following website:
+Working with JSON can be a headache if you do not have the proper tools.
 
-[http://jsoneditoronline.org/](http://jsoneditoronline.org/)
+To get started we suggest playing around with JSON in an online editor,
+to get a feeling for how JSON works.
 
-### Matlab / Octave
+See for example this one: [http://jsoneditoronline.org/](http://jsoneditoronline.org/)
+
+Online editors can also usually tell you if you forgot a comma,
+forgot to close a bracket or something similar.
+And even fix mistakes for you.
+
+![](../../assets/img/autofix.png)
+
+If there is a JSON schema for the JSON file you are working on
+you can also use that schema to validate while editing
+by clicking `Options --> JSON schema --> URL`
+and give it this URL:
+
+https://bids-standard.github.io/stats-models/BIDSStatsModel.json
+
+![](../../assets/img/schema_in_browser.png)
+
+### Editing JSON file on your computer
+
+If you need to edit JSON files on your computer, it will make your life easier
+if you use a modern code editor like:
+
+- [visual studio code](https://code.visualstudio.com/)
+
+Modern code editors can tell you if you have a valid JSON file
+and highlight the lines where you have errors.
+Most of them usually also have code formatting extensions
+that can automatically indent your JSON like
+[Prettier for vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+#### Matlab / Octave
 
 There are many toolboxes in Matlab for reading / writing JSON files.
 
@@ -54,13 +88,13 @@ will use whatever implementation (SPM, JSONio, MATLAB) is available.
 
 The examples below are for the [JSONio library](https://github.com/gllmflndn/JSONio):
 
-#### Reading a `.json` file
+##### Reading a `.json` file
 
 ```matlab
     jsonread([filename])
 ```
 
-#### Writing a `.json` file
+##### Writing a `.json` file
 
 ```matlab
 root_dir = './';
@@ -81,18 +115,26 @@ anat_json.ManufacturersModelName =  'Discovery MR750';
 anat_json.MagneticFieldStrength = 3;
 anat_json.PulseSequence = 'T1 weighted SPGR';
 
-json_options.indent = '    '; % this makes the json look pretier when opened in a txt editor
+json_options.indent = '    '; % this makes the json lThe BIDS statistical models are written in JSON files.
+
+If you have never heard of JSON, this section is for you.
+
+Here we will quickly:
+
+- explain some of the terms that you need to be familiar to work with JSON
+- suggest some tools that you may want to use to make it easier for you to work
+  with JSON.ook pretier when opened in a txt editor
 jsonwrite(loc_json_name,anat_json,json_options)
 ```
 
-### Python
+#### Python
 
 In Python, JSON support is built into the core library,
 meaning you don't need to install anything to read/write JSON files.
 In addition, the structure of JSON is almost identical
 to that of Python dictionaries (assuming you are only storing text / numbers in the dictionary).
 
-#### Reading a `.json` file
+##### Reading a `.json` file
 
 ```python
 
@@ -101,7 +143,7 @@ with open('myfile.json', 'r') as ff:
     data = json.load(ff)
 ```
 
-#### Writing a `.json` file
+##### Writing a `.json` file
 
 ```python
 import json
@@ -110,7 +152,7 @@ with open('my_output_file.json', 'w') as ff:
     json.dump(data, ff)
 ```
 
-### R
+#### R
 
 There is a new package to help intract with BIDS datasets: [bidser](https://github.com/bbuchsbaum/bidser)
 
@@ -120,20 +162,18 @@ Remember to install and call a package before using it.
 
 [jsonlite](https://github.com/jeroen/jsonlite)
 
-#### Installing required package
-
 ```R
     install.packages('jsonlite')
 ```
 
-#### Reading a `.json` file
+##### Reading a `.json` file
 
 ```R
     library(jsonlite)
     data = fromJSON('myfile.json', pretty=TRUE)
 ```
 
-#### Writing a `.json` file
+##### Writing a `.json` file
 
 ```R
     library(jsonlite)
@@ -278,6 +318,155 @@ So in general here are some suggestions on how to name your events:
 -   make sure they contain only letters, numbers, and/or the underscore character
 -   make sure they are must be no longer than currently 63 characters
 ```
+
+### More about JSON
+
+#### JSON terms
+
+The main "building blocks" of JSON you must be familiar with are `Objects` and `Arrays`.
+
+##### Objects
+
+In JSON, objects
+
+- are opened and closes by curly brackets `{ }`
+- are a collection of key–value pairs where:
+  - the keys are strings
+  - the key and the value are separated by a colon `:`
+
+For example, this is an object.
+
+```json
+{ "Key": "value", "Key2": 1 }
+```
+
+As you can see, in JSON strings start and end with double quotes `"`.
+Also note the comma between the key-value pairs but not after the last key-value pair.
+
+##### Arrays
+
+In JSON, arrays are:
+
+- are opened and closes by square brackets `[ ]`
+- an ordered list of zero or more elements, each of which may be of any type (string, number..)
+- elements must be separated by a comma
+
+```json
+["this", "is", 1, "JSON", "array"]
+```
+
+#### A note on Booleans
+
+In JSON boolean values must be typed as lowercase with no quotes:
+
+- `true`
+- `false`
+
+#### JSON "styling"
+
+In JavaScript it is custom to use CamelCase to write code,
+this is why most of keys you will see in JSON are also in CamelCase.
+
+<!-- Add link to camelcase wikipedia -->
+
+For example:
+
+```json
+{ "ThisIsTrue": true, "ThisIsTrue": false }
+```
+
+It is common to indent JSON files to improve readability.
+
+```json
+{
+  "ThisIsTrue": true,
+  "ThisIsTrue": false
+}
+```
+
+Finally, you cannot add comments in JSON files,
+but the BIDS stats model allows you to add a `"Description"` key
+to most objects to give explanations to the reader.
+
+#### Nesting
+
+JSON allows to "nest" objects within objects, to create arrays of objects
+and combine all those elements however deep you want or need.
+
+Just remember to place commas:
+
+- between array elements
+- between key-value pairs
+- unless this is the last element (or key-value pair)
+
+```json
+{
+  "MixedArray": ["This", "is", "one", "array"],
+  "ArrayOfNumbers": [0, 0, 1, 0, 0],
+  "ArrayOfObjects": [
+    {
+      "NestedObject": true,
+      "Content": { "value": 0 }
+    },
+    {
+      "NestedObject": false,
+      "Content": 1
+    }
+  ]
+}
+```
+
+#### JSON schema
+
+If the content of your JSON must follow certain rules, like
+
+> your JSON file must contain a key-value pair
+>
+> - with a key called: "Version"
+> - with a value that must be a number
+
+Then you can specify those rules in what is called a JSON schema.
+
+##### Online
+
+If you are working on a JSON file in the browser like with [http://jsoneditoronline.org/](http://jsoneditoronline.org/),
+and if there is a JSON schema for the JSON file you are working on
+you can also use that schema to validate while editing
+by clicking `Options --> JSON schema --> URL`
+and give it this URL:
+
+https://bids-standard.github.io/stats-models/BIDSStatsModel.json
+
+![](../../assets/img/schema_in_browser.png)
+
+##### On your computer
+
+If you want to validate a JSON file you are editing using a JSON schema
+you can do so by adding the following key-value pair in your BIDS stats model,
+(here using the BIDS stats model schema as an example)
+
+```json
+  "$schema": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json",
+```
+
+For vs-code you can also add this to your settings:
+
+```json
+"json.schemas": [
+    {"fileMatch": [
+            "model-*_smdl.json"
+        ],
+        "url": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json"
+    }
+]
+```
+
+[Source](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings)
+
+Example of JSON syntax error and BIDS stats model schema error in VS code:
+
+![](../../assets/img/vs_code_validation.png)
+
 
 ## TSV files
 

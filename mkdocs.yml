@@ -189,7 +189,6 @@ nav:
         -   folders: getting_started/folders_and_files/folders.md
         -   files: getting_started/folders_and_files/files.md
         -   metadata: getting_started/folders_and_files/metadata.md
-        -   json_101: stats_models/specification/json_101.md
         -   derivatives: getting_started/folders_and_files/derivatives.md
     -   tutorials:
         -   starter_kit/src/tutorials/tutorials.md
@@ -302,6 +301,7 @@ markdown_extensions:
   - tables
   - toc:
       anchorlink: true
+      toc_depth: 4
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
