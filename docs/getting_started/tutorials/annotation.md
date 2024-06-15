@@ -151,16 +151,16 @@ There are several online tools available at
 [HED Tools Online](https://hedtools.org)
 to help you during this process:
 
-1. You can extract a ready-to-fill-in JSON sidecar template
-from a representative `events.tsv` file in your BIDS dataset.
-A step-by-step tutorial for doing this can be found in the
-[Create a JSON template tutorial](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html#create-a-json-template).
+1.  You can extract a ready-to-fill-in JSON sidecar template
+    from a representative `events.tsv` file in your BIDS dataset.
+    A step-by-step tutorial for doing this can be found in the
+    [Create a JSON template tutorial](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html#create-a-json-template).
 
-2. Once you have a template, you can start editing the template directory,
-or you can convert the template to a spreadsheet and edit your
-annotations in Excel or another tool.
-Instructions for doing this are available in the
-[Spreadsheet templates tutorial](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html#spreadsheet-templates).
+1.  Once you have a template, you can start editing the template directory,
+    or you can convert the template to a spreadsheet and edit your
+    annotations in Excel or another tool.
+    Instructions for doing this are available in the
+    [Spreadsheet templates tutorial](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html#spreadsheet-templates).
 
 This process and templates make it convenient to provide basic
 descriptions, as well as HED tags for your dataset events.

@@ -1,18 +1,18 @@
 # ASL data conversion
 
-# Scaling
+## Scaling
 
 This paragraph discusses the specific scaling issues for GE, Philips, and Siemens.
 Beware that these issues are occurring
 at the time of the release of [version 1.5.0](https://bids-specification.readthedocs.io/en/v1.5.0/),
 and might be resolved in the future.
 
-## GE
+### GE
 
 GE applies an RF amplifier factor that should be multiplied
 by the number of signal averages (NSA) as GE sums instead of averages them.
 
-## Philips
+### Philips
 
 Typically, Philips ASL datasets use the standard DICOM rescale tags only
 to rescale data for viewing, whereas private rescale tags are used for scaling
@@ -20,9 +20,9 @@ to acquisition values needed for proper quantification.
 
 The procedure for using both the scaling types is described previously [**reference required**],
 although the authors did not mention that three DICOM fields are typically used for this purpose
-- `(2005, 100e)`
-- `(2005, 110e)`
-- or `(2005, 120e)`.
+-   `(2005, 100e)`
+-   `(2005, 110e)`
+-   or `(2005, 120e)`.
 
 It may also occur that the RescaleSlope `(0028, 1053)` is set to `1`
 and RescaleSlopeOriginal `(2005, 140a)` needs to be used instead.
@@ -32,9 +32,8 @@ in which cases the private slope needs to be applied after running the conversio
 An exception is the [dcm2nii(X)](https://github.com/rordenlab/dcm2niix) software
 that does take private scale slopes into account in most cases.
 The [dcm2nii(X)](https://github.com/rordenlab/dcm2niix) versions released between 2018 and 2019-09-02
-can correctly scale the NIfTI according to the private scale slopes
-- if run with parameter `-p` - and indicates this by setting `UsePhilipsFloatNotDisplayScaling==1`
-in the accompanying json file.
+can correctly scale the NIfTI according to the private scale slopes - if run with parameter `-p` -
+and indicates this by setting `UsePhilipsFloatNotDisplayScaling==1` in the accompanying json file.
 
 Two exceptions apply, [dcm2nii(X)](https://github.com/rordenlab/dcm2niix)
 does not support DICOM tags `(2005, 110e)` and `(2005, 120e)`
@@ -51,12 +50,12 @@ and general caution is recommended when dealing with Philips scale slopes.
 Also, Philips has recently implemented the option to apply these scaling factors upon export.
 The scaling of acquired/reconstructed ASL images may differ between control, label, and M0 images.
 
-## Siemens
+### Siemens
 
 Several implementations of Siemens ASL WIP have a scaling between ASL and M0.
 This can be only modified and obtained at the scanner console and it is set to `10` by default.
 
-### PIXDIM
+## PIXDIM
 
 The so-called PIXDIM error appears to be specific for files with a single repetition,
 more specifically the separately acquired `m0scan`.

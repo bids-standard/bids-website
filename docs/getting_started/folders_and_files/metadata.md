@@ -461,7 +461,6 @@ Example of JSON syntax error and BIDS stats model schema error in VS code:
 
 ![](../../assets/img/vs_code_validation.png)
 
-
 ## TSV files
 
 A Tab-Separate Values (TSV) file is a text file where tab characters (`\t`) separate fields that are in the file.
