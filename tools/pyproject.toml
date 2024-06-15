@@ -11,6 +11,9 @@ name = "bids_website"
 version = "0.1.0"
 
 [project.optional-dependencies]
+ci = [
+    "requests>=2.25.1"
+]
 # most of those are actually to run several of the scripts
 # but not for the utilities
 dev = [
