@@ -23,7 +23,7 @@ dev = [
     "plotly>=5.3.1",
     "pygithub",
     "pyzotero",
-    "rich>=10.9.0",
+    "rich",
     "requests>=2.25.1",
     "requests_mock",
     "ruamel.yaml",

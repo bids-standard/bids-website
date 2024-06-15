@@ -1,10 +1,10 @@
+faqtory
 mkdocs-material[imaging]
 mkdocs-macros-plugin
 mkdocs-open-in-new-tab
 mkdocs-redirects
 mkdocs-rss-plugin
 pybids
-rich
 ruamel.yaml
 tabulate
 file:specification/tools/schemacode
