@@ -90,6 +90,14 @@ exclude_docs: |
   examples/tmp.md
   execution/README.md
   execution/BIDS_logo/README.md
+  execution/src/index.md
+  execution/src/scope.md
+  execution/src/specification.md
+  execution/src/ui.md
+  execution/src/inputs.md
+  execution/src/outputs.md
+  execution/src/examples.md
+  execution/src/CHANGELOG.md
   execution/src/CONTRIBUTING.md
   extensions/README.md
   extensions/docs/faq.md
@@ -143,15 +151,16 @@ nav:
             -   compute: variable-transform/spec/compute.md
             -   munge: variable-transform/spec/munge.md
     -   BIDS app specification:
-        -   execution/src/index.md
-        -   scope: execution/src/scope.md
+        -   standards/execution/src/index.md
+        -   scope: standards/execution/src/scope.md
         -   specification:
-            -   execution/src/specification.md
-            -   user interface: execution/src/ui.md
-            -   inputs: execution/src/inputs.md
-            -   outputs: execution/src/outputs.md
-            -   examples: execution/src/examples.md
-            -   release notes: execution/src/CHANGELOG.md
+            -   standards/execution/src/specification.md
+            -   user interface: standards/execution/src/ui.md
+            -   inputs: standards/execution/src/inputs.md
+            -   outputs: standards/execution/src/outputs.md
+            -   examples: standards/execution/src/examples.md
+            -   release notes: standards/execution/src/CHANGELOG.md
+        -   contributors: standards/execution/CONTRIBUTING.md
 -   Tools:
     -   tools/index.md
     -   Validator: tools/validator.md
@@ -172,6 +181,7 @@ nav:
         -   apps: apps/CONTRIBUTING.md
         -   spec: specification/CONTRIBUTING.md
         -   starter_kit: starter_kit/src/CONTRIBUTING.md
+        -   execution:
     -   Contributors: collaboration/contributors.md
     -   Acknowledgments: collaboration/acknowledgments.md
 -   Getting started:
