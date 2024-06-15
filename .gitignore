@@ -1,14 +1,16 @@
 # Generated files
-# ignore FAQ files that generated automatically
-docs/faq/faq*.md
 bep_leads.tsv
 output_gh_summary.png
+.all-contributorsrc
+
+# ignore FAQ files that generated automatically
+docs/faq/faq*.md
 
 # ignore for now files that are copied from the bids examples and spe
 docs/examples/
 docs/specification/
 
-# fodlers
+# folders
 *.DS_Store
 tmp
 
