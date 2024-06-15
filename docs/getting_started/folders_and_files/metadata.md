@@ -47,21 +47,12 @@ And even fix mistakes for you.
 
 ![](../../assets/img/autofix.png)
 
-If there is a JSON schema for the JSON file you are working on
-you can also use that schema to validate while editing
-by clicking `Options --> JSON schema --> URL`
-and give it this URL:
-
-https://bids-standard.github.io/stats-models/BIDSStatsModel.json
-
-![](../../assets/img/schema_in_browser.png)
-
 ### Editing JSON file on your computer
 
 If you need to edit JSON files on your computer, it will make your life easier
 if you use a modern code editor like:
 
-- [visual studio code](https://code.visualstudio.com/)
+-   [visual studio code](https://code.visualstudio.com/)
 
 Modern code editors can tell you if you have a valid JSON file
 and highlight the lines where you have errors.
@@ -329,10 +320,12 @@ The main "building blocks" of JSON you must be familiar with are `Objects` and `
 
 In JSON, objects
 
-- are opened and closes by curly brackets `{ }`
-- are a collection of key–value pairs where:
-  - the keys are strings
-  - the key and the value are separated by a colon `:`
+-   are opened and closes by curly brackets `{ }`
+
+-   are a collection of key–value pairs where:
+
+    -   the keys are strings
+    -   the key and the value are separated by a colon `:`
 
 For example, this is an object.
 
@@ -347,9 +340,9 @@ Also note the comma between the key-value pairs but not after the last key-value
 
 In JSON, arrays are:
 
-- are opened and closes by square brackets `[ ]`
-- an ordered list of zero or more elements, each of which may be of any type (string, number..)
-- elements must be separated by a comma
+-   are opened and closes by square brackets `[ ]`
+-   an ordered list of zero or more elements, each of which may be of any type (string, number..)
+-   elements must be separated by a comma
 
 ```json
 ["this", "is", 1, "JSON", "array"]
@@ -359,8 +352,8 @@ In JSON, arrays are:
 
 In JSON boolean values must be typed as lowercase with no quotes:
 
-- `true`
-- `false`
+-   `true`
+-   `false`
 
 #### JSON "styling"
 
@@ -395,9 +388,9 @@ and combine all those elements however deep you want or need.
 
 Just remember to place commas:
 
-- between array elements
-- between key-value pairs
-- unless this is the last element (or key-value pair)
+-   between array elements
+-   between key-value pairs
+-   unless this is the last element (or key-value pair)
 
 ```json
 {
@@ -420,10 +413,11 @@ Just remember to place commas:
 
 If the content of your JSON must follow certain rules, like
 
-> your JSON file must contain a key-value pair
->
-> - with a key called: "Version"
-> - with a value that must be a number
+!!! note
+
+    your JSON file must contain a key-value pair
+    -   with a key called: "Version"
+    -   with a value that must be a number
 
 Then you can specify those rules in what is called a JSON schema.
 
@@ -433,9 +427,9 @@ If you are working on a JSON file in the browser like with [http://jsoneditoronl
 and if there is a JSON schema for the JSON file you are working on
 you can also use that schema to validate while editing
 by clicking `Options --> JSON schema --> URL`
-and give it this URL:
+and give it the URL to the schema.
 
-https://bids-standard.github.io/stats-models/BIDSStatsModel.json
+See the example below using the [BIDS stats model schema](https://bids-standard.github.io/stats-models/BIDSStatsModel.json):
 
 ![](../../assets/img/schema_in_browser.png)
 
