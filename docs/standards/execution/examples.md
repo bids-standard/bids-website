@@ -1,8 +1,8 @@
 # Example BIDS App
 
-This section describes a BIDS Application named bids-app that can only operate
-at the participant analysis leveland accepts a numeric seed for a random number
-generator.
+This section describes a BIDS Application named bids-app
+that can only operate at the participant analysis level
+and accepts a numeric seed for a random number generator.
 
 ## Interface descriptor
 
@@ -94,12 +94,11 @@ Two example input definitions follow:
 ### BIDS App compatible example
 
 Before the BIDS Application specification existed there were BIDS Apps.
-Attention has been paid to ensure that BIDS Exec apps can be compatible with
-existing BIDS Apps.
+Attention has been paid to ensure that BIDS Exec apps can be compatible with existing BIDS Apps.
 
-For example, the term participant was widely used in BIDS Apps, whereas subject
-is the preferred term in BIDS. To allow backwards compatibility here you can
-use:
+For example, the term participant was widely used in BIDS Apps,
+whereas subject is the preferred term in BIDS.
+To allow backwards compatibility here you can use:
 
 ```json
 {

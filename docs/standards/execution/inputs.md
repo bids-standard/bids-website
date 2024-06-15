@@ -1,8 +1,8 @@
 # Input specification
 
-Inputs to BIDS apps may be specified as JSON objects that map input ids to
-values. The objects found within the required inputs list have the following
-fields, described fully in
+Inputs to BIDS apps may be specified as JSON objects that map input ids to values.
+The objects found within the required inputs list have the following fields,
+described fully in
 [https://github.com/boutiques/boutiques/blob/0.5.25/schema/README.md#inputs](https://github.com/boutiques/boutiques/blob/0.5.25/schema/README.md#inputs)
 ([source](https://github.com/boutiques/boutiques/blob/0.5.25/tools/python/boutiques/schema/descriptor.schema.json#L247-L448)):
 
@@ -35,10 +35,9 @@ In addition to describing inputs themselves, groups of inputs and their relation
 
 ## Required arguments
 
-BIDS Applications MUST provide the following arguments. Notes that "Argument ID"
-is what is required to exist as the state "id" in the Boutiques descriptor, and
-will be validated, while the example CLI Flag provides a possible way this could
-be expressed in the tool's interface.
+BIDS Applications MUST provide the following arguments.
+Notes that "Argument ID" is what is required to exist as the state "id" in the Boutiques descriptor,
+and will be validated, while the example CLI Flag provides a possible way this could be expressed in the tool's interface.
 
 ### List of custom object properties and roles within the BIDS Application specification
 
@@ -59,30 +58,30 @@ then the following command-line should be valid:
     bids-app InputDataset OutputLocation AnalysisLevel [options]
 ```
 
-In this case, InputDataset is limited to a list of length one. It is worth
-noting that all legacy apps can be supported in this spec, they just need to
-write a descriptor which maps the inputs as they are expected and defined, here,
+In this case, InputDataset is limited to a list of length one.
+It is worth noting that all legacy apps can be supported in this spec,
+they just need to write a descriptor which maps the inputs
+as they are expected and defined, here,
 to their associated values in the original application.
 
 ## Reserved arguments
 
-The ability to filter BIDS entities (for example subject, session, or run) allows for
-the selection of subsets of datasets. To be extensible as new entities are added
-to the BIDS specification, the reserved arguments are defined here as a rule
-which maps to BIDS entities, rather than specifying the moving goalpost of an
-exhaustive list. The arguments may be specified as follows:
+The ability to filter BIDS entities (for example subject, session, or run) allows for the selection of subsets of datasets.
+To be extensible as new entities are added to the BIDS specification,
+the reserved arguments are defined here as a rule which maps to BIDS entities,
+rather than specifying the moving goalpost of an exhaustive list.
 
--   The argument ID SHOULD be in CamelCase, with the form &lt;entity>Label or
-    &lt;entity>Index, depending on whether the associated values are constrained
-    to be alphanumeric or numeric, respectively.
+The arguments may be specified as follows:
 
--   The argument MUST accept values referring to labels/indices, as consistent
-    with the above, in either the form of a list or a file containing a
-    line-delimited list. The items provided SHOULD NOT include the entity label in
-    addition to the labels/indices.
+-   The argument ID SHOULD be in CamelCase, with the form &lt;entity>Label or &lt;entity>Index,
+    depending on whether the associated values are constrained to be alphanumeric or numeric, respectively.
 
-While several examples exist within Table 5, to the following demonstrates how
-the above rules can be applied for the BIDS entity "subject":
+-   The argument MUST accept values referring to labels/indices,
+    as consistent with the above, in either the form of a list or a file containing a line-delimited list.
+    The items provided SHOULD NOT include the entity label in addition to the labels/indices.
+
+While several examples exist within Table 5,
+to the following demonstrates how the above rules can be applied for the BIDS entity "subject":
 
 ID: `SubjectLabel`
 
@@ -103,15 +102,15 @@ Contents of `subject_ids.txt`:
 03
 ```
 
-In all cases where such arguments are defined and applied, only files in the
-BIDS dataset that have a value for the specified entities will be subject to
-filtering. That is, if a file does not have a given entity (for example entity value
-for it is &lt;None>), the file will be included.
+In all cases where such arguments are defined and applied,
+only files in the BIDS dataset that have a value
+for the specified entities will be subject to filtering.
+That is, if a file does not have a given entity (for example entity value for it is &lt;None>), the file will be included.
 
-Applications are not required to support these arguments, but MUST NOT assign
-these arguments to other meanings. To reduce conflicts, BIDS Applications SHOULD
-avoid using this convention except for entities that are anticipated to be
-standardized.
+Applications are not required to support these arguments,
+but MUST NOT assign these arguments to other meanings.
+To reduce conflicts, BIDS Applications SHOULD avoid using this convention
+except for entities that are anticipated to be standardized.
 
 Example of an Interface descriptor: see 4.1.
 
