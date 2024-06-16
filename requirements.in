@@ -1,7 +1,11 @@
-mkdocs-material[imaging]
-mkdocs-rss-plugin
-mkdocs-macros-plugin
-mkdocs-redirects
-ruamel.yaml
 faqtory
+mkdocs-material[imaging]
+mkdocs-macros-plugin
 mkdocs-open-in-new-tab
+mkdocs-redirects
+mkdocs-rss-plugin
+pybids
+ruamel.yaml
+tabulate
+file:specification/tools/schemacode
+-e file:tools

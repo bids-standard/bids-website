@@ -11,12 +11,13 @@ import argparse
 import fnmatch
 import os
 import re
+from pathlib import Path
 
 from pull_files import filter_files
 
-ABSOLUTE_HERE = os.path.dirname(os.path.dirname(__file__))
+ABSOLUTE_HERE = Path(__file__).parents[2]
 # switch ignore list to unix style glob matching instead of single file name
-IGNORE_LIST = []
+IGNORE_LIST = ["**/contributors.md"]
 
 
 def parse_args():
@@ -113,6 +114,7 @@ def read_and_check_files(files):
     ]
 
     for filename in files:
+        print(filename)
         if True in [
             fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST
         ]:
@@ -153,6 +155,7 @@ def get_all_files(directory=None):
     """
     if directory is None:
         directory = os.path.join(ABSOLUTE_HERE, "docs")
+    print(f"Looking for files in {directory}")
     files = []
     for rootdir, _, filenames in os.walk(directory):
         for filename in filenames:

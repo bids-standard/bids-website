@@ -1,7 +1,11 @@
-# add filename templates to the documentation
+# add filename templates to the docs/getting_started/files.md
 from pathlib import Path
 
 from bidsschematools import render, schema
+from rich import print
+
+from bids_website.utils import root_dir
+
 
 datatypes = [
     "anat",
@@ -20,16 +24,23 @@ datatypes = [
 
 
 def main():
-    root = Path(__file__).parent.parent
 
-    input_file = "src/folders_and_files/files.md"
+    input_file = (
+        root_dir()
+        / "docs"
+        / "getting_started"
+        / "folders_and_files"
+        / "files.md"
+    )
+
+    print(f"add filename templates to {input_file}")
 
     schema_obj = schema.load_schema()
 
-    with open(root / input_file, "r") as f:
+    with open(input_file, "r") as f:
         lines = f.readlines()
 
-    with open(root / input_file, "w") as f:
+    with open(input_file, "w") as f:
         writing_template = False
         for line in lines:
             if line.startswith("<!-- "):

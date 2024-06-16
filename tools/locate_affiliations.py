@@ -14,14 +14,16 @@ import re
 import pandas as pd
 import plotly.express as px
 import ruamel.yaml
+from bids_website.utils import bids_spec_dir, data_dir, figures_dir
 from geopy.geocoders import Nominatim
 from rich import print
-from utils import bids_spec_dir, data_dir, figures_dir
+
+yaml = ruamel.yaml.YAML(typ="rt")
 
 
 def main():
     with open(bids_spec_dir() / "CITATION.cff") as f:
-        cff = ruamel.yaml.load(f, Loader=ruamel.yaml.RoundTripLoader)
+        cff = yaml.load(f)
 
     affiliations = [
         author["affiliation"]
@@ -29,7 +31,7 @@ def main():
         if "affiliation" in author
     ]
 
-    output_file = data_dir() / "affiliations.tsv"
+    output_file = data_dir() / "people" / "affiliations.tsv"
     if output_file.exists():
         df = pd.read_csv(output_file, sep="\t")
 

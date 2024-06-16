@@ -1,7 +1,3 @@
-[submodule "docs/stater_kit"]
-	path = docs/stater_kit
-	url = https://github.com/bids-standard/bids-starter-kit.git
-	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
 [submodule "docs/stats_models"]
 	path = docs/stats_models
 	url = https://github.com/bids-standard/stats-models
@@ -29,3 +25,6 @@
 	path = examples
 	url = https://github.com/bids-standard/bids-examples
 	datalad-url = https://github.com/bids-standard/bids-examples
+[submodule "docs/starter_kit"]
+	path = docs/starter_kit
+	url = https://github.com/bids-standard/bids-starter-kit.git

@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from bids_website.utils import data_dir, root_dir
 from rich import print
 from ruamel.yaml import YAML
-from utils import data_dir, root_dir
 
 INCLUDE_PATCHES = False
 START_DATE = "2014-10"
@@ -20,7 +20,7 @@ def target_file() -> Path:
 
 
 def get_bep_timeline() -> pd.DataFrame:
-    completd_beps = data_dir() / "beps_completed.yml"
+    completd_beps = data_dir() / "beps" / "beps_completed.yml"
 
     with open(completd_beps, "r") as f:
         yaml = YAML(typ="safe", pure=True)

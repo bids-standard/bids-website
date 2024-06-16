@@ -81,17 +81,28 @@ use_directory_urls: false
 exclude_docs: |
   .github
   apps/README.md
+  apps/_site/**/*.md
   apps/apps.md
+  apps/about.md
   apps/dev_faq.md
+  apps/tutorial.md
   examples/README.md
   examples/tmp.md
   execution/README.md
   execution/BIDS_logo/README.md
+  execution/src/index.md
+  execution/src/scope.md
+  execution/src/specification.md
+  execution/src/ui.md
+  execution/src/inputs.md
+  execution/src/outputs.md
+  execution/src/examples.md
+  execution/src/CHANGELOG.md
   execution/src/CONTRIBUTING.md
   extensions/README.md
   extensions/docs/faq.md
   starter_kit/src/_build
-  starter_kit/src/folders_and_files/
+  starter_kit/src/folders_and_files
   starter_kit/README.md
   starter_kit/matlabCode/general/README.md
   starter_kit/reports/
@@ -103,6 +114,15 @@ exclude_docs: |
   starter_kit/src/glossary.md
   starter_kit/src/tutorials/media/README.md
   starter_kit/src/validator.md
+  starter_kit/src/tutorials/annotation.md
+  starter_kit/src/tutorials/asl.md
+  starter_kit/src/tutorials/ieeg.md
+  starter_kit/src/tutorials/mri.md
+  starter_kit/src/tutorials/pet.md
+  starter_kit/src/tutorials/tutorials.md
+  variable-transform/README.md
+  variable-transform/spec/compute.md
+  variable-transform/spec/munge.md
   stats_models/README.md
   stats_models/bsmschema/README.md
   stats_models/specification/walkthrough-2.md
@@ -135,20 +155,21 @@ nav:
         -   examples and resources:
             -   stats_models/specification/model-zoo.md
             -   default model: stats_models/specification/default_model.md
-        -   variable transforms:
-            -   variable-transform/README.md
-            -   compute: variable-transform/spec/compute.md
-            -   munge: variable-transform/spec/munge.md
+        # -   variable transforms:
+        #     -   variable-transform/README.md
+        #     -   compute: variable-transform/spec/compute.md
+        #     -   munge: variable-transform/spec/munge.md
     -   BIDS app specification:
-        -   execution/src/index.md
-        -   scope: execution/src/scope.md
+        -   standards/execution/index.md
+        -   scope: standards/execution/scope.md
         -   specification:
-            -   execution/src/specification.md
-            -   user interface: execution/src/ui.md
-            -   inputs: execution/src/inputs.md
-            -   outputs: execution/src/outputs.md
-            -   examples: execution/src/examples.md
-            -   release notes: execution/src/CHANGELOG.md
+            -   standards/execution/specification.md
+            -   user interface: standards/execution/ui.md
+            -   inputs: standards/execution/inputs.md
+            -   outputs: standards/execution/outputs.md
+            -   examples: standards/execution/examples.md
+            -   release notes: standards/execution/CHANGELOG.md
+        -   contributors: standards/execution/contributors.md
 -   Tools:
     -   tools/index.md
     -   Validator: tools/validator.md
@@ -158,10 +179,7 @@ nav:
         - MEEG: tools/converters/meeg.md
         - physio: tools/converters/physio.md
         - others: tools/converters/others.md
-    -   BIDS apps:
-        -   apps/about.md
-        -   tutorial: apps/tutorial.md
-        -   dashboard: tools/apps/dashboard.md
+    -   BIDS apps: tools/apps/dashboard.md
     -   Others: tools/others.md
 -   Collaboration:
     -   Governance: collaboration/governance.md
@@ -180,16 +198,18 @@ nav:
         -   folders: getting_started/folders_and_files/folders.md
         -   files: getting_started/folders_and_files/files.md
         -   metadata: getting_started/folders_and_files/metadata.md
-        -   json_101: stats_models/specification/json_101.md
         -   derivatives: getting_started/folders_and_files/derivatives.md
     -   tutorials:
-        -   starter_kit/src/tutorials/tutorials.md
+        -   getting_started/tutorials/index.md
         -   conversion:
-            -   asl: starter_kit/src/tutorials/asl.md
-            -   ieeg: starter_kit/src/tutorials/ieeg.md
-            -   mri: starter_kit/src/tutorials/mri.md
-            -   pet: starter_kit/src/tutorials/pet.md
-        -   annotation: starter_kit/src/tutorials/annotation.md
+            -   asl: getting_started/tutorials/conversion/asl.md
+            -   ieeg: getting_started/tutorials/conversion/ieeg.md
+            -   mri: getting_started/tutorials/conversion/mri.md
+            -   pet: getting_started/tutorials/conversion/pet.md
+        -   annotation: getting_started/tutorials/annotation.md
+    -   BIDS apps:
+        -   getting_started/apps/index.md
+        -   tutorial: getting_started/apps/tutorial.md
     -   resources:
         -   starter_kit/src/links.md
         -   talks: starter_kit/src/talks.md
@@ -290,6 +310,7 @@ markdown_extensions:
   - tables
   - toc:
       anchorlink: true
+      toc_depth: 4
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js

@@ -37,7 +37,7 @@ categories:
     -   **DH:** The assumption has been that comments could be resolved by the BEP lead, should this be outlined somewhere more clearly?
 
     -   **AR:** We can use prior experience to more clearly outline what is a BEP lead supposed to do based on previous BEP successes and struggles.
-        We should designate where work should be organized (which github accounts for making PRs, google docs etc).
+        We should designate where work should be organized (which github accounts for making PRs, google docs and so on).
 
     -   **FP:** we need to write down the timeline rules, be clear that all BIDS contributions should be kept in the BIDS github.
 
@@ -82,7 +82,7 @@ categories:
 
 -   Keep the BIDS 2.0 slide, Yarik can comment on this.
 
--   They'd like to have estimates on diversity at various levels of BEP leads, contributors (geographically, sex, etc),
+-   They'd like to have estimates on diversity at various levels of BEP leads, contributors (geographically, sex, on so on),
     and they would like to use this as a mechanism to promote/encourage more Asia participants.
     How can we do better to be more inclusive to Asian imagers?
 

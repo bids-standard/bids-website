@@ -12,7 +12,7 @@ import seaborn as sns
 
 
 def root_dir():
-    return Path(__file__).parent.parent.absolute()
+    return Path(__file__).parents[2].absolute()
 
 
 def bids_spec_dir():

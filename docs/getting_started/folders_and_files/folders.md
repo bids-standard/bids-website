@@ -1,13 +1,10 @@
 # Folders
 
-The BIDS format is essentially a way to structure your data / metadata within a
-hierarchy of folders. This makes it easy to browse from a computer, as well as
-to automatically parse a BIDS folder with a program. The BIDS structure makes
-minimal assumptions about the tools needed to interact with the data that's
-inside.
+The BIDS format is essentially a way to structure your data / metadata within a hierarchy of folders.
+This makes it easy to browse from a computer, as well as to automatically parse a BIDS folder with a program.
+The BIDS structure makes minimal assumptions about the tools needed to interact with the data that's inside.
 
-The files in present in BIDS dataset are organized into a hierarchy of folders
-that have specific naming conventions.
+The files in present in BIDS dataset are organized into a hierarchy of folders that have specific naming conventions.
 
 The rest of this page describes how these folders are structured.
 
@@ -15,18 +12,18 @@ The rest of this page describes how these folders are structured.
 
 There are four main levels of the folder hierarchy, these are:
 
-```
+```text
 project/
 └── subject
     └── session
         └── datatype
 ```
 
-With the exception of the top-level `project` folder, all sub-folders have a
-specific structure to their name (described below). Here's an example of how
-this hierarchy looks:
+With the exception of the top-level `project` folder,
+all sub-folders have a specific structure to their name (described below).
+Here's an example of how this hierarchy looks:
 
-```
+```text
 myProject/
 └── sub-01
     └── ses-01
@@ -37,25 +34,22 @@ Here is the folder name structure of each level:
 
 ## project
 
-Can have any name, this should be descriptive for the dataset contained in the
-folder.
+Can have any name, this should be descriptive for the dataset contained in the folder.
 
 ## subject
 
 Structure: `sub-<participant label>`
 
-One folder per subject in this dataset. Labels should be unique for each
-subject.
+One folder per subject in this dataset.
+Labels should be unique for each subject.
 
 ## session
 
 Structure: `ses-<session label>`
 
-In general, a `session` represents a recording session, and subjects will
-stay in the scanner or headset during that session. You might have multiple
-sessions per subject if you collected data from them on several occasions.
-If there is only a single session per subject, this level of the hierarchy
-may be omitted.
+In general, a `session` represents a recording session, and subjects will stay in the scanner or headset during that session.
+You might have multiple sessions per subject if you collected data from them on several occasions.
+If there is only a single session per subject, this level of the hierarchy may be omitted.
 
 For more details, refer to this {ref}`section of the FAQ <faq_session>`.
 
@@ -163,7 +157,7 @@ and within-subjects.
 
 Note that it has one session per subject, so this level is omitted.
 
-```
+```text
 ds001
 ├── dataset_description.json
 ├── participants.tsv

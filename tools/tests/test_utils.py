@@ -1,7 +1,7 @@
 """Testing plotting functions."""
 
 import pandas as pd
-from maintainers_report import plot_information
+from bids_website.utils import plot_information
 
 
 def test_ploting():

@@ -47,6 +47,7 @@ date_output_format = "%-m/%-d/%Y"
 
 
 def get_openneuro_datasets(query=None):
+    print("Getting openneuro datasets...")
     headers = {
         "Accept-Encoding": "gzip, deflate, br",
         "Content-Type": "application/json",

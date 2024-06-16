@@ -1,10 +1,10 @@
 """List the emails of the leader of each BEP."""
 
 import pandas as pd
+from bids_website.utils import data_dir
 from ruamel.yaml import YAML
-from utils import data_dir
 
-beps = data_dir() / "beps.yml"
+beps = data_dir() / "beps" / "beps.yml"
 
 with open(beps, "r") as f:
     yaml = YAML(typ="safe", pure=True)
