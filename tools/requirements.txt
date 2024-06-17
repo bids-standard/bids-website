@@ -1,9 +1,0 @@
-beautifulsoup4
-gender_guesser
-pandas
-plotly>=5.3.1
-pyzotero
-rich>=10.9.0
-requests>=2.25.1
-requests_mock
-ruamel.yaml

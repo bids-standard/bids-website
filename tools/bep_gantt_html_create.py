@@ -6,11 +6,11 @@ Also include a timeline of the main BIDS events.
 from __future__ import annotations
 
 from datetime import datetime
-from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from bids_website.utils import data_dir, root_dir
 from pyzotero import zotero
 from ruamel.yaml import YAML
 
@@ -20,16 +20,8 @@ DATE_FORMAT = "%Y-%m"
 Y_AXIS_VALUE = ""
 
 
-def root_dir() -> Path:
-    return Path(__file__).parent.parent
-
-
-def data_dir() -> Path:
-    return root_dir() / "_data"
-
-
 def create_bep_timeline() -> type[go.Figure]:
-    completd_beps = data_dir() / "beps_completed.yml"
+    completd_beps = data_dir() / "beps" / "beps_completed.yml"
 
     with open(completd_beps, "r") as f:
         yaml = YAML(typ="safe", pure=True)
@@ -168,7 +160,7 @@ def main():
 
     fig = plot_time_line(fig)
 
-    timeline = pd.read_csv(root_dir() / "tools" / "timeline.csv")
+    timeline = pd.read_csv(data_dir() / "timeline.csv")
     fig = plot_releases(fig, timeline, include_patches=INCLUDE_PATCHES)
 
     # Add events timeline
@@ -196,7 +188,8 @@ def main():
 
     # save as html
     # NOTE: This file is ignored in git (see .gitignore)
-    fig.write_html(root_dir() / "_pages" / "bids_timeline.html")
+    (root_dir() / "tmp").mkdir(exist_ok=True, parents=True)
+    fig.write_html(root_dir() / "tmp" / "bids_timeline.html")
 
 
 if __name__ == "__main__":

@@ -6,9 +6,9 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import requests
+from bids_website.utils import data_dir
 from pyzotero import zotero
 from rich import print
-from utils import data_dir
 
 DEBUG = False
 VERBOSE = False

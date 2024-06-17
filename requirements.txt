@@ -4,13 +4,25 @@
 #
 #    pip-compile --strip-extras requirements.in
 #
+-e file:tools
+    # via -r requirements.in
+astor==0.8.1
+    # via formulaic
+attrs==23.2.0
+    # via
+    #   jsonschema
+    #   referencing
 babel==2.15.0
     # via mkdocs-material
+bids-validator==1.14.6
+    # via pybids
+file:specification/tools/schemacode
+    # via -r requirements.in
 cairocffi==1.7.0
     # via cairosvg
 cairosvg==2.7.1
     # via mkdocs-material
-certifi==2024.2.2
+certifi==2024.6.2
     # via requests
 cffi==1.16.0
     # via cairocffi
@@ -18,33 +30,54 @@ charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via
+    #   bidsschematools
     #   faqtory
     #   mkdocs
+    #   pybids
 colorama==0.4.6
     # via mkdocs-material
 commonmark==0.9.1
     # via rich
+contourpy==1.2.1
+    # via matplotlib
 cssselect2==0.7.0
     # via cairosvg
+cycler==0.12.1
+    # via matplotlib
 defusedxml==0.7.1
     # via cairosvg
+docopt==0.6.2
+    # via num2words
 faqtory==1.1.3
     # via -r requirements.in
+fonttools==4.53.0
+    # via matplotlib
+formulaic==0.5.2
+    # via pybids
 ghp-import==2.1.0
     # via mkdocs
 gitdb==4.0.11
     # via gitpython
 gitpython==3.1.43
     # via mkdocs-rss-plugin
+greenlet==3.0.3
+    # via sqlalchemy
 idna==3.7
     # via requests
+interface-meta==1.3.0
+    # via formulaic
 jinja2==3.1.4
     # via
-    #   -r requirements.in
     #   faqtory
     #   mkdocs
     #   mkdocs-macros-plugin
     #   mkdocs-material
+jsonschema==4.22.0
+    # via bidsschematools
+jsonschema-specifications==2023.12.1
+    # via jsonschema
+kiwisolver==1.4.5
+    # via matplotlib
 levenshtein==0.25.1
     # via python-levenshtein
 markdown==3.6
@@ -56,6 +89,8 @@ markupsafe==2.1.5
     # via
     #   jinja2
     #   mkdocs
+matplotlib==3.9.0
+    # via seaborn
 mergedeep==1.3.4
     # via
     #   mkdocs
@@ -64,35 +99,63 @@ mkdocs==1.6.0
     # via
     #   mkdocs-macros-plugin
     #   mkdocs-material
+    #   mkdocs-open-in-new-tab
     #   mkdocs-redirects
     #   mkdocs-rss-plugin
 mkdocs-get-deps==0.2.0
     # via mkdocs
 mkdocs-macros-plugin==1.0.5
     # via -r requirements.in
-mkdocs-material==9.5.21
+mkdocs-material==9.5.26
     # via -r requirements.in
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
+mkdocs-open-in-new-tab==1.0.3
+    # via -r requirements.in
 mkdocs-redirects==1.2.1
     # via -r requirements.in
-mkdocs-rss-plugin==1.12.2
+mkdocs-rss-plugin==1.13.0
     # via -r requirements.in
-packaging==24.0
-    # via mkdocs
+nibabel==5.2.1
+    # via pybids
+num2words==0.5.13
+    # via pybids
+numpy==1.26.4
+    # via
+    #   contourpy
+    #   formulaic
+    #   matplotlib
+    #   nibabel
+    #   pandas
+    #   pybids
+    #   scipy
+    #   seaborn
+packaging==24.1
+    # via
+    #   matplotlib
+    #   mkdocs
+    #   nibabel
 paginate==0.5.6
     # via mkdocs-material
+pandas==2.2.2
+    # via
+    #   formulaic
+    #   pybids
+    #   seaborn
 pathspec==0.12.1
     # via mkdocs
 pillow==10.3.0
     # via
     #   cairosvg
+    #   matplotlib
     #   mkdocs-material
-platformdirs==4.2.1
+platformdirs==4.2.2
     # via mkdocs-get-deps
+pybids==0.16.5
+    # via -r requirements.in
 pycparser==2.22
     # via cffi
-pydantic==1.10.15
+pydantic==1.10.16
     # via faqtory
 pygments==2.18.0
     # via
@@ -100,16 +163,23 @@ pygments==2.18.0
     #   rich
 pymdown-extensions==10.8.1
     # via mkdocs-material
+pyparsing==3.1.2
+    # via matplotlib
 python-dateutil==2.9.0.post0
     # via
     #   ghp-import
+    #   matplotlib
     #   mkdocs-macros-plugin
+    #   pandas
 python-frontmatter==1.1.0
     # via faqtory
 python-levenshtein==0.25.1
     # via thefuzz
+pytz==2024.1
+    # via pandas
 pyyaml==6.0.1
     # via
+    #   bidsschematools
     #   faqtory
     #   mkdocs
     #   mkdocs-get-deps
@@ -119,22 +189,40 @@ pyyaml==6.0.1
     #   pyyaml-env-tag
 pyyaml-env-tag==0.1
     # via mkdocs
-rapidfuzz==3.9.0
+rapidfuzz==3.9.3
     # via levenshtein
-regex==2024.5.10
+referencing==0.35.1
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+regex==2024.5.15
     # via mkdocs-material
-requests==2.31.0
+requests==2.32.3
     # via mkdocs-material
 rich==12.6.0
     # via faqtory
+rpds-py==0.18.1
+    # via
+    #   jsonschema
+    #   referencing
 ruamel-yaml==0.18.6
     # via -r requirements.in
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
+scipy==1.13.1
+    # via
+    #   formulaic
+    #   pybids
+seaborn==0.13.2
+    # via bids-website
 six==1.16.0
     # via python-dateutil
 smmap==5.0.1
     # via gitdb
+sqlalchemy==2.0.30
+    # via pybids
+tabulate==0.9.0
+    # via -r requirements.in
 termcolor==2.4.0
     # via mkdocs-macros-plugin
 thefuzz==0.19.0
@@ -143,13 +231,20 @@ tinycss2==1.3.0
     # via
     #   cairosvg
     #   cssselect2
-typing-extensions==4.11.0
-    # via pydantic
+typing-extensions==4.12.2
+    # via
+    #   formulaic
+    #   pydantic
+    #   sqlalchemy
+tzdata==2024.1
+    # via pandas
 urllib3==2.2.1
     # via requests
-watchdog==4.0.0
+watchdog==4.0.1
     # via mkdocs
 webencodings==0.5.1
     # via
     #   cssselect2
     #   tinycss2
+wrapt==1.16.0
+    # via formulaic

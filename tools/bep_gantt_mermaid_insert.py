@@ -5,6 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from bids_website.utils import data_dir, root_dir
 from rich import print
 from ruamel.yaml import YAML
 
@@ -14,20 +15,12 @@ DATE_FORMAT = "%Y-%m"
 Y_AXIS_VALUE = ""
 
 
-def root_dir() -> Path:
-    return Path(__file__).parent.parent
-
-
-def data_dir() -> Path:
-    return root_dir() / "_data"
-
-
 def target_file() -> Path:
-    return root_dir() / "_pages" / "get_involved.md"
+    return root_dir() / "docs" / "bep" / "beps.md"
 
 
 def get_bep_timeline() -> pd.DataFrame:
-    completd_beps = data_dir() / "beps_completed.yml"
+    completd_beps = data_dir() / "beps" / "beps_completed.yml"
 
     with open(completd_beps, "r") as f:
         yaml = YAML(typ="safe", pure=True)

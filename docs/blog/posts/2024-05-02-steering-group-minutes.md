@@ -65,7 +65,7 @@ categories:
      <li>
       <blockquote>
        <p>
-        Overall PR describing procedures etc:
+        Overall PR describing procedures and others:
         <a href="https://github.com/bids-standard/bids-specification/pull/1775">
          <span class="underline">
           bids-specification/pull/1775
@@ -98,7 +98,7 @@ categories:
      <li>
       <blockquote>
        <p>
-        Yarik (CON) and BrainLife will have “exhibit tables” – could schedule some BIDS related demos/discussions etc
+        Yarik (CON) and BrainLife will have “exhibit tables” – could schedule some BIDS related demos/discussions and so on
        </p>
       </blockquote>
      </li>
@@ -190,7 +190,7 @@ github project [[bids-standard/projects/10]](https://github.com/orgs/bids-standa
     -   Can we get stickers? They are not allowed at SfN
 
     -   A BIDS 'cheat-sheet' could be distributed as an alternative (1 page print out/flyer)
-        including different modalities in BIDS, ongoing BEPs, etc.
+        including different modalities in BIDS, ongoing BEPs, and so on.
 
 ### OHBM
 
@@ -231,7 +231,7 @@ github project [[bids-standard/projects/10]](https://github.com/orgs/bids-standa
 
 -   We need a schema to standardize how metadata in this file should be structured.
 
--   This effort needs to be driven by Neurobagel, HED, etc (not driven by BIDS efforts).
+-   This effort needs to be driven by Neurobagel, HED, and so on (not driven by BIDS efforts).
 
 -   HED is an example of a case where "external" efforts have contributed to BIDS substantially
     and where the effort goes hand-in-glove with BIDS.

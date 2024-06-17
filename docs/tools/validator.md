@@ -1,6 +1,7 @@
+---
 hide:
     - toc
-
+---
 
 # BIDS validation
 

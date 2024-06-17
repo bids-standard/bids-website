@@ -1,11 +1,15 @@
-update: serve build update_from_spec update_from_examples update_faq remark
+all: update
 
-serve: build
+serve: update
 	mkdocs serve
 
-build: update_from_spec update_from_examples update_faq
+update: update_from_spec update_faq update_contributors update_datasets_examples
+
+package.json:
+	npm install `cat npm-requirements.txt`
 
 update_from_spec:
+	@echo "  ----------------------------------  "
 	rm -fr docs/specification
 	mkdir -p docs/specification/
 	mkdir -p docs/specification/schema
@@ -15,12 +19,8 @@ update_from_spec:
 	cp specification/macros_doc.md docs/specification/macros_doc.md
 	cp -r specification/commenting_images docs/specification/
 
-update_from_examples:
-	rm -fr docs/examples
-	mkdir -p docs/examples
-	cp -r examples/README.md docs/examples/README.md
-
 update_faq:
+	@echo "  ----------------------------------  "
 	cd faq/general && faqtory build
 	cd faq/eeg && faqtory build
 	cd faq/mri && faqtory build
@@ -28,8 +28,30 @@ update_faq:
 	cd faq/bep && faqtory build
 	cd faq/apps && faqtory build
 
-remark: package.json
-	npx remark faq ./docs/*.md ./docs/blog ./docs/tools ./docs/collaboration ./docs/faq/index.md ./docs/standards --rc-path .remarkrc
+update_contributors: package.json
+	@echo "  ----------------------------------  "
+	python tools/build/transfer_contributors.py
+	npx all-contributors generate
 
-package.json:
-	npm install `cat npm-requirements.txt`
+update_datasets_examples:
+	@echo "  ----------------------------------  "
+	python examples/tools/print_dataset_listing.py docs/datasets/index.md
+
+# Linting
+
+lint: remark
+	tox
+
+remark: package.json
+	npx remark \
+		faq \
+		./docs/*.md \
+		./docs/bep \
+		./docs/blog \
+		./docs/collaboration \
+		./docs/datasets \
+		./docs/faq/index.md \
+		./docs/getting_started \
+		./docs/standards \
+		./docs/tools \
+		--rc-path .remarkrc

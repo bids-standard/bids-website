@@ -1,0 +1,70 @@
+---
+name: BIDS app submission
+
+# See the json schema to help you create / update this form
+# https://json.schemastore.org/github-issue-forms.json
+
+description: Add your BIDS app to this website
+
+body:
+
+-   type: markdown
+    attributes:
+        value: |
+            - Have you checked our [contributing guide](https://github.com/bids-apps/bids-apps.github.io/blob/master/CONTRIBUTING.md)?
+              It's a helpful resource.
+
+            - Have you checked our [FAQ](https://bids-apps.neuroimaging.io/dev_faq/)?
+
+-   type: textarea
+    attributes:
+        label: Your BIDS app
+        description: |
+            Make sure you provide:
+            - the github username and repository of your app
+            - the dockerhub username and repository of your app
+            - specify if your app uses another CI provider than circlec-ci
+              - if you use github action specify the workflow name and branch
+            - specify if your app takes BIDS raw or/and derivatives as inputs
+            - specify what datatype your app takes as input (anat, func, eeg...)
+
+            More details here:
+
+            https://github.com/bids-apps/bids-apps.github.io/blob/761bcd927ddce83e80e9f898dce1864d9bcb9b04/_config.yml#L64
+
+            For example:
+
+            - gh: "MICA-MNI/micapipe"
+              dh: "micalab/micapipe"
+              ci: "gh"
+              branch: "main"
+              workflow: "test"
+              ds_type:
+                - raw
+              datatype:
+                - func
+
+        value: |
+            - gh: "github_usename/github_repo_name"
+              dh: "dockerhub_usename/dockerhub_repo_name"
+              branch: "main"
+              ds_type:
+                - raw
+              datatype:
+                - func
+
+-   type: checkboxes
+    attributes:
+        label: Submission checklist
+        description: |
+            Make sure that your BIDS app fulfills the following requirements:
+        options:
+        -   label: complies to the BIDS app API
+        -   label: has a system-test workflow set up
+        -   label: test dataset is validated before processing
+
+# TODO
+# - add extra fields /requirements for the BIDS app:
+#   - outputs bids friendly derivatives (filenames follow the entity-label format)
+#   - system test on an openneuro dataset
+#   - has a boutique config

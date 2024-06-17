@@ -11,7 +11,7 @@ A couple of BIDS converters can work with nifti files:
 -   explore asl
 -   data2bids
 
-See the list of converters [here](https://bids.neuroimaging.io/benefits.html#mri-and-pet-converters).
+See the list of converters [here](../tools/converters/index.md).
 
 **However**...
 
