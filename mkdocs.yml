@@ -186,10 +186,13 @@ nav:
     -   Code of conduct:
         -   specification: specification/CODE_OF_CONDUCT.md
         -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
-    -   Contributing:
-        -   apps: apps/CONTRIBUTING.md
-        -   spec: specification/CONTRIBUTING.md
-        -   starter_kit: starter_kit/src/CONTRIBUTING.md
+    # TODO remove those pages from the website
+    # until all the contributing pages have been refactored
+    # see https://github.com/bids-standard/.github/issues/7
+    # -   Contributing:
+    #     -   apps: apps/CONTRIBUTING.md
+    #     -   spec: specification/CONTRIBUTING.md
+    #     -   starter_kit: starter_kit/src/CONTRIBUTING.md
     -   Contributors: collaboration/contributors.md
     -   Acknowledgments: collaboration/acknowledgments.md
 -   Getting started:
