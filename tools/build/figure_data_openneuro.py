@@ -10,7 +10,6 @@ import json
 import os
 from collections import defaultdict
 from datetime import datetime
-from pathlib import Path
 
 import pandas as pd
 import plotly.graph_objs as go
@@ -18,9 +17,11 @@ import requests
 from plotly.subplots import make_subplots
 from rich import print
 
+from bids_website.utils import root_dir, data_dir
+
 UPDATE = False
 
-TMP_DIR = Path(__file__).parent / "tmp"
+TMP_DIR = root_dir() / "tmp"
 TMP_DIR.mkdir(parents=True, exist_ok=True)
 
 scan_dict = {
@@ -369,7 +370,9 @@ def main():
 
     release_dates = df_plotting.index.astype(int)
 
-    df_plotting.to_csv(TMP_DIR / "df.tsv", sep="\t", index=False)
+    df_plotting.to_csv(
+        data_dir() / "openneuro_datasets.tsv", sep="\t", index=False
+    )
 
     # end_year = 24  # set to current year + 1
     # # July 2 is the midpoint of year
@@ -402,10 +405,9 @@ def main():
     )
     fig.update_xaxes(title_text="date")
 
-    # fig.write_html(Path(__file__).parent / ".." / "images" / "openneuro_data_growth.html")
-    fig.write_image(
-        Path(__file__).parent / ".." / "images" / "openneuro_data_growth.png"
-    )
+    fig.update_layout(margin=dict(l=0, r=0, t=40, b=0))
+
+    fig.write_html(TMP_DIR / "openneuro_data_growth.html")
 
 
 if __name__ == "__main__":

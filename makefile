@@ -3,7 +3,7 @@ all: update
 serve: update
 	mkdocs serve
 
-update: update_from_spec update_faq update_contributors update_datasets_examples
+update: update_from_spec update_faq update_contributors update_datasets_examples tmp_figures
 
 package.json:
 	npm install `cat npm-requirements.txt`
@@ -36,6 +36,27 @@ update_contributors: package.json
 update_datasets_examples:
 	@echo "  ----------------------------------  "
 	python examples/tools/print_dataset_listing.py docs/datasets/index.md
+
+
+# Figures
+.PHONY: tmp/affiliations.html tmp/bids_timeline.html tmp/citation_per_year.html tmp/openneuro_data_growth.html
+
+tmp_figures: tmp/affiliations.html tmp/bids_timeline.html tmp/citation_per_year.html tmp/openneuro_data_growth.html
+
+tmp/affiliations.html:
+	python tools/build/figure_affiliations.py
+
+tmp/bids_timeline.html:
+	python tools/build/figure_bep_gantt.py
+
+tmp/citation_per_year.html:
+	python tools/build/figure_citation.py
+
+tmp/openneuro_data_growth.html:
+	python tools/build/figure_data_openneuro.py
+
+
+
 
 # Linting
 

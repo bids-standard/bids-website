@@ -15,7 +15,7 @@ line-length = 79
 
 [tool.codespell]
 ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te"
-skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/affiliations.tsv,docs/collaboration/contributors.md,data/papers.json"
+skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/**.tsv,data/**.json,docs/collaboration/contributors.md"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "tools/utils/_version.py"

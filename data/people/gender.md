@@ -1,0 +1,6 @@
+- male: 177
+- female: 47
+- andy: 6
+- unknown: 80
+- mostly_male: 13
+- mostly_female: 2

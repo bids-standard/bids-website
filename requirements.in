@@ -1,10 +1,14 @@
 faqtory
+gender_guesser
+geopy
 mkdocs-material[imaging]
 mkdocs-macros-plugin
 mkdocs-open-in-new-tab
 mkdocs-redirects
 mkdocs-rss-plugin
+plotly>=5.3.1
 pybids
+rich
 ruamel.yaml
 tabulate
 file:specification/tools/schemacode
