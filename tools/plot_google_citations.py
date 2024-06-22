@@ -25,4 +25,3 @@ fig = px.bar(
     title="Citation count per year",
     labels={"years": "Year", "nb_citations": "Number of citations"},
 )
-fig.show()

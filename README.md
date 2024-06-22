@@ -27,6 +27,12 @@ Install all the dependencies.
 pip install -r requirements.txt
 ```
 
+Generate all the content require for the build.
+
+```bash
+make update
+```
+
 Serve the website with the mkdocs.
 ```bash
 mkdocs serve

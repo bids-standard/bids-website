@@ -94,7 +94,6 @@ def plot_neurostars(file, print_to_file=True):
         sns.despine(fig)
 
         fig.suptitle("Neurostars summary for 'BIDS' tag")
-        fig.show()
 
         if print_to_file:
             fig.savefig("output_neurostars.png", bbox_inches="tight")

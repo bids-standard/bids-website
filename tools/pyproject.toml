@@ -19,7 +19,6 @@ ci = [
 dev = [
     "beautifulsoup4",
     "pygithub",
-    "pyzotero",
     "requests>=2.25.1",
     "requests_mock",
     "tqdm"

@@ -44,18 +44,20 @@ update_datasets_examples:
 tmp_figures: tmp/affiliations.html tmp/bids_timeline.html tmp/citation_per_year.html tmp/openneuro_data_growth.html
 
 tmp/affiliations.html:
+	@echo "  ----------------------------------  "
 	python tools/build/figure_affiliations.py
 
 tmp/bids_timeline.html:
+	@echo "  ----------------------------------  "
 	python tools/build/figure_bep_gantt.py
 
 tmp/citation_per_year.html:
+	@echo "  ----------------------------------  "
 	python tools/build/figure_citation.py
 
 tmp/openneuro_data_growth.html:
+	@echo "  ----------------------------------  "
 	python tools/build/figure_data_openneuro.py
-
-
 
 
 # Linting

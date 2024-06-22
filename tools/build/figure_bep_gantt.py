@@ -190,8 +190,6 @@ def main():
     fig.update_layout(title=dict(font=dict(size=30)))
     fig.update_layout(yaxis=dict(tickfont=dict(size=15)))
 
-    fig.show()
-
     # save as html
     # NOTE: This file is ignored in git (see .gitignore)
     OUTPUT_DIR.mkdir(exist_ok=True, parents=True)

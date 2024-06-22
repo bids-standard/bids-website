@@ -370,6 +370,8 @@ def main():
 
     release_dates = df_plotting.index.astype(int)
 
+    df_plotting["release_dates"] = pd.to_datetime(release_dates)
+
     df_plotting.to_csv(
         data_dir() / "openneuro_datasets.tsv", sep="\t", index=False
     )
