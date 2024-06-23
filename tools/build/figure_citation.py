@@ -23,6 +23,23 @@ def plot_citation_count(df: pd.DataFrame):
     """
     Use Plotly to create a bar chart of the citation count per year stacked by paper.
     """
+    # taken from https://colorbrewer2.org/#type=qualitative&scheme=Paired&n=12
+    cmap = [
+        "#a6cee3",
+        "#1f78b4",
+        "#b2df8a",
+        "#33a02c",
+        "#fb9a99",
+        "#e31a1c",
+        "#fdbf6f",
+        "#ff7f00",
+        "#cab2d6",
+        "#6a3d9a",
+        "#ffff99",
+        "#b15928",
+    ]
+    cmap.reverse()
+
     fig = px.bar(
         df,
         x="years",
@@ -30,7 +47,7 @@ def plot_citation_count(df: pd.DataFrame):
         color="papers",
         title="Citation count per year",
         labels={"years": "Year", "nb_citations": "Number of citations"},
-        color_discrete_sequence=px.colors.qualitative.Alphabet,
+        color_discrete_sequence=cmap,
     )
 
     fig.update_layout(margin=dict(l=0, r=0, t=40, b=0))
