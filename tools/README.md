@@ -49,3 +49,16 @@ The resulting citation count is then visualized using [Plotly](https://plotly.co
    in the same directory as the script.
 
 1. A bar chart of the citation count will be displayed using your default browser.
+
+## Interactive figures
+
+- use plotly to create interactive HTML figures
+
+- HTML figures are not committed and saved in a `tmp` folder in the root of the repo.
+
+- HTML figures and other content that can be updated is "stored" in external files
+  that are injected into markdown files using [snippets](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
+
+```text
+--8<-- "tmp/bids_timeline.html"
+```
