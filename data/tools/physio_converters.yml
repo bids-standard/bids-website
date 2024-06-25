@@ -21,25 +21,6 @@
     name: Physiological data converters
     comment:
     members:
-    -   name: BIDScoin
-        url: https://github.com/Donders-Institute/bidscoin
-        data_types:
-        -   MRI
-        -   phsyiological
-        -   behavioral
-        -   PET
-        expected_input:
-        -   ''
-        language:
-        -   Python
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/bidscoin
-        documentation: https://bidscoin.readthedocs.io/en/stable/
-        comment: BIDScoin converts your source-level neuroimaging data to BIDS
-        GUI: yes
-        license: GPL-3
-
     -   name: phys2bids
         url: https://github.com/physiopy/phys2bids
         data_types:
