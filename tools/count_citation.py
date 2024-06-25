@@ -14,7 +14,9 @@ DEBUG = False
 VERBOSE = True
 MINIMUM_YEAR = 2016
 
-TOKEN_FILE = "/home/remi/Documents/tokens/open_citations_access_token.txt"
+# TODO: switch this to a .env file
+os.environ["OPEN_CITATIONS_ACCESS_TOKEN"] = "/home/remi/Documents/tokens/open_citations_access_token.txt"
+TOKEN_FILE = os.environ.get("OPEN_CITATIONS_ACCESS_TOKEN", "")
 
 OUTPUT_FILE = data_dir() / "count_citation.tsv"
 
