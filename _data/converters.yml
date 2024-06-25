@@ -172,8 +172,7 @@
       url: https://github.com/Donders-Institute/bidscoin
       data_types:
         - MRI
-        - phsyiological
-        - behavioral
+        - physiological
         - PET
       expected_input:
         - DICOM
@@ -187,7 +186,14 @@
         - name: pypi
           url: https://pypi.org/project/bidscoin
       documentation: https://bidscoin.readthedocs.io/en/stable/
-      comment: BIDScoin converts your source-level neuroimaging data to BIDS
+      comment: |
+        BIDScoin is a flexible tool to convert (“coin”) source-level (raw) neuroimaging
+        data sets to BIDS without needing to code anything. It features automatic
+        data discovery based on header as well as filesystem information, and comes with
+        a user-friendly GUI to add missing information and tweak the results. BIDScoin
+        supports multiple source data formats with plugins (e.g. employing dcm2niix,
+        spec2nii or nibabel) and allows customization of the prior knowledge about your
+        data (allowing for fully automatic CLI data conversion if you like).
       GUI: yes
       license: GPL-3.0
 
