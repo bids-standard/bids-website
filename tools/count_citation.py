@@ -8,6 +8,7 @@ import requests
 from bids_website.utils import data_dir
 from pyzotero import zotero
 from rich import print
+import os
 
 DEBUG = False
 VERBOSE = True
