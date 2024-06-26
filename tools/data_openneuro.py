@@ -10,17 +10,15 @@ import json
 import os
 from collections import defaultdict
 from datetime import datetime
-from pathlib import Path
 
 import pandas as pd
-import plotly.graph_objs as go
 import requests
-from plotly.subplots import make_subplots
+from bids_website.utils import data_dir, root_dir
 from rich import print
 
 UPDATE = False
 
-TMP_DIR = Path(__file__).parent / "tmp"
+TMP_DIR = root_dir() / "tmp"
 TMP_DIR.mkdir(parents=True, exist_ok=True)
 
 scan_dict = {
@@ -364,47 +362,12 @@ def main():
         by="ReleaseDate"
     )
 
-    df_plotting["cumsum_datasets"] = df_plotting["n_datasets"].cumsum()
-    df_plotting["cumsum_subjects"] = df_plotting["n_subjects"].cumsum()
-
     release_dates = df_plotting.index.astype(int)
 
-    df_plotting.to_csv(TMP_DIR / "df.tsv", sep="\t", index=False)
+    df_plotting["release_dates"] = pd.to_datetime(release_dates)
 
-    # end_year = 24  # set to current year + 1
-    # # July 2 is the midpoint of year
-    # midyears = pd.to_datetime([f"20{yr}-07-02" for yr in range(18, end_year)]).astype(int)
-    # midyears
-
-    release_datetimes = pd.to_datetime(release_dates)
-
-    fig = make_subplots(specs=[[{"secondary_y": True}]])
-    for col in ["cumsum_datasets", "cumsum_subjects"]:
-        secondary_y = False
-        if col == "cumsum_subjects":
-            secondary_y = True
-
-        fig.add_trace(
-            go.Scatter(
-                name=col.replace("cumsum_", ""),
-                x=release_datetimes,
-                y=df_plotting[col],
-                mode="lines",
-            ),
-            secondary_y=secondary_y,
-        )
-    fig.update_layout(title="Openneuro data growth", hovermode="x")
-    fig.update_yaxes(
-        title_text="Cumulative datasets", secondary_y=False, nticks=10
-    )
-    fig.update_yaxes(
-        title_text="Cumulative subjects", secondary_y=True, nticks=10
-    )
-    fig.update_xaxes(title_text="date")
-
-    # fig.write_html(Path(__file__).parent / ".." / "images" / "openneuro_data_growth.html")
-    fig.write_image(
-        Path(__file__).parent / ".." / "images" / "openneuro_data_growth.png"
+    df_plotting.to_csv(
+        data_dir() / "openneuro_datasets.tsv", sep="\t", index=False
     )
 
 

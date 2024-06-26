@@ -48,19 +48,16 @@ A listing of the previous grants can be found [here](./collaboration/acknowledgm
 
 ### Datasets
 
-![](./assets/img/openneuro_data_growth.png)
+--8<-- "tmp/openneuro_data_growth.html"
+
 
 ### Citation Count
 
-BIDS references are centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
+BIDS references are  centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
 
 You can also find them [in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
 
-![](./assets/img/citation_per_year.png)
-
-#### Citation according to google scholar
-
-![](./assets/img/google_citations.png)
+--8<-- "tmp/citation_per_year.html"
 
 ### GitHub stars
 
@@ -108,22 +105,13 @@ we have over 300 credited contributors.
 
 Guessed with [gender-guesser](https://pypi.org/project/gender-guesser/)
 
--   male: 177
--   female: 47
--   andy: 6
--   unknown: 80
--   mostly_male: 13
--   mostly_female: 2
+--8<-- "data/people/gender.md"
 
 #### Contributors affiliations
 
-Number of known affiliations: 148
+--8<-- "data/people/affiliations.md"
 
-Number of authors without affiliation: 171
-
-Number of unkwon affiliations: 19
-
-![](./assets/img/affiliations.png)
+--8<-- "tmp/affiliations.html"
 
 ### GitHub dependents
 

@@ -7,28 +7,37 @@ from __future__ import annotations
 
 import gender_guesser.detector as gender
 import ruamel.yaml
+from bids_website.utils import bids_spec_dir, data_dir
 
-from tools.utils.utils import bids_spec_dir
+yaml = ruamel.yaml.YAML(typ="rt")
 
-with open(bids_spec_dir() / "CITATION.cff") as f:
-    cff = ruamel.yaml.load(f, Loader=ruamel.yaml.RoundTripLoader)
 
-results = {
-    "male": 0,
-    "female": 0,
-    "andy": 0,
-    "unknown": 0,
-    "mostly_male": 0,
-    "mostly_female": 0,
-}
+def main():
 
-d = gender.Detector()
-for author in cff["authors"]:
-    guess = d.get_gender(author["given-names"])
-    print(f"{author['given-names']}: {guess}")
-    results[guess] += 1
+    with open(bids_spec_dir() / "CITATION.cff") as f:
+        cff = yaml.load(f)
 
-print()
+    results = {
+        "male": 0,
+        "female": 0,
+        "andy": 0,
+        "unknown": 0,
+        "mostly_male": 0,
+        "mostly_female": 0,
+    }
 
-for key in results:
-    print(f"- {key}: {results[key]}")
+    d = gender.Detector()
+    for author in cff["authors"]:
+        guess = d.get_gender(author["given-names"])
+        print(f"{author['given-names']}: {guess}")
+        results[guess] += 1
+
+    output_file = data_dir() / "people" / "gender.md"
+
+    with open(output_file, "w") as f:
+        for key in results:
+            f.write(f"- {key}: {results[key]}\n")
+
+
+if __name__ == "__main__":
+    main()

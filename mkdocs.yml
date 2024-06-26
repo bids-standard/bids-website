@@ -172,20 +172,23 @@ nav:
         -   contributors: standards/execution/contributors.md
 -   Tools:
     -   tools/index.md
-    -   Validator: tools/validator.md
+    -   Validator:
+        - tools/validator.md
     -   Converters:
         - tools/converters/index.md
         - MRI and PET: tools/converters/mri-pet.md
         - MEEG: tools/converters/meeg.md
         - physio: tools/converters/physio.md
         - others: tools/converters/others.md
-    -   BIDS apps: tools/apps/dashboard.md
+    -   BIDS apps: tools/apps/index.md
     -   Others: tools/others.md
 -   Collaboration:
     -   Governance: collaboration/governance.md
-    -   Code of conduct:
-        -   specification: specification/CODE_OF_CONDUCT.md
-        -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
+    -   Code of conduct: specification/CODE_OF_CONDUCT.md
+
+    # TODO have a single code of conduct
+    # -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
+
     # TODO remove those pages from the website
     # until all the contributing pages have been refactored
     # see https://github.com/bids-standard/.github/issues/7
@@ -228,7 +231,7 @@ nav:
     -   general_guidelines: extensions/docs/general_guidelines.md
     -   guide: extensions/docs/guide.md
     -   submission: extensions/docs/submission.md
-    -   macros: specification/macros_doc.md
+    # -   macros: specification/macros_doc.md
 -   FAQ:
     -   faq/index.md
     -   general: faq/faq_general.md

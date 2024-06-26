@@ -4,15 +4,21 @@ import json
 from pathlib import Path
 
 import pandas as pd
-import plotly.express as px
 import requests
 from bids_website.utils import data_dir
 from pyzotero import zotero
 from rich import print
+import os
 
 DEBUG = False
-VERBOSE = False
+VERBOSE = True
 MINIMUM_YEAR = 2016
+
+# TODO: switch this to a .env file
+os.environ["OPEN_CITATIONS_ACCESS_TOKEN"] = "/home/remi/Documents/tokens/open_citations_access_token.txt"
+TOKEN_FILE = os.environ.get("OPEN_CITATIONS_ACCESS_TOKEN", "")
+
+OUTPUT_FILE = data_dir() / "count_citation.tsv"
 
 # requires token from https://opencitations.net/index/coci/api/v1/token
 # saved in token.txt
@@ -29,7 +35,10 @@ def main():
     for item in items:
         if VERBOSE:
             print(item)
-        title = item["data"].get("shortTitle") or item["data"].get("title")
+        title = (
+            item["data"].get("shortTitle")
+            or item["data"].get("title").split(",")[0]
+        )
 
         DOI = item["data"].get("DOI")
         if not DOI:
@@ -41,24 +50,7 @@ def main():
 
     print(papers)
 
-    output_file = data_dir() / "count_citation.tsv"
-
-    df = load_dataframe_from_file(output_file)
-
-    if df.empty:
-        df = query_api(papers)
-        save_dataframe_to_file(df, output_file)
-
-    plot_citation_count(df)
-
-
-def load_dataframe_from_file(file_path: Path) -> pd.DataFrame:
-    """
-    Load DataFrame from file if it exists.
-    """
-    if file_path.exists():
-        return pd.read_csv(file_path, sep="\t")
-    return pd.DataFrame()
+    query_api(papers)
 
 
 def return_citation_count_per_year(citations_doi: str) -> dict[str, int]:
@@ -86,7 +78,12 @@ def return_citation_count_per_year(citations_doi: str) -> dict[str, int]:
                 print(f"  querying: {citation}")
             if metadata := query_for_metadata(citation):
                 year = metadata[0]["year"].split("-")[0]
-                if int(year) < MINIMUM_YEAR:
+                print(year)
+                try:
+                    if int(year) < MINIMUM_YEAR:
+                        continue
+                except:  # noqa
+                    print("skipping")
                     continue
                 if year in citation_count_per_year:
                     citation_count_per_year[year] += 1
@@ -96,7 +93,7 @@ def return_citation_count_per_year(citations_doi: str) -> dict[str, int]:
 
 
 def query_for_metadata(doi: str) -> dict[str, str]:
-    with open("token.txt") as f:
+    with open(TOKEN_FILE) as f:
         token = f.read().strip()
     headers = {"authorization": token}
     api_call = f"https://opencitations.net/index/coci/api/v1/metadata/{doi}"
@@ -128,29 +125,15 @@ def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
                     df["papers"].append(paper_)
                     df["years"].append(int(year))
                     df["nb_citations"].append(citation_count_per_year[year])
+        pd.DataFrame(df).to_csv(OUTPUT_FILE, sep="\t", index=False)
 
     return pd.DataFrame(df)
 
 
 def save_dataframe_to_file(df: pd.DataFrame, file_path: Path):
-    """Save DataFrame to TSV if output file does not exist."""
-    if not df.empty and not file_path.exists():
+    """Save DataFrame to TSV"""
+    if not df.empty:
         df.to_csv(file_path, sep="\t", index=False)
-
-
-def plot_citation_count(df: pd.DataFrame):
-    """
-    Use Plotly to create a bar chart of the citation count per year stacked by paper.
-    """
-    fig = px.bar(
-        df,
-        x="years",
-        y="nb_citations",
-        color="papers",
-        title="Citation count per year",
-        labels={"years": "Year", "nb_citations": "Number of citations"},
-    )
-    fig.show()
 
 
 if __name__ == "__main__":

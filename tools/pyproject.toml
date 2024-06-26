@@ -18,15 +18,9 @@ ci = [
 # but not for the utilities
 dev = [
     "beautifulsoup4",
-    "gender_guesser",
-    "geopy",
-    "plotly>=5.3.1",
     "pygithub",
-    "pyzotero",
-    "rich",
     "requests>=2.25.1",
     "requests_mock",
-    "ruamel.yaml",
     "tqdm"
 ]
 test = [

@@ -19,6 +19,8 @@ START_DATE = "2014-10"
 DATE_FORMAT = "%Y-%m"
 Y_AXIS_VALUE = ""
 
+OUTPUT_DIR = root_dir() / "tmp"
+
 
 def create_bep_timeline() -> type[go.Figure]:
     completd_beps = data_dir() / "beps" / "beps_completed.yml"
@@ -35,7 +37,7 @@ def create_bep_timeline() -> type[go.Figure]:
         StartPR = bep.get("pull_request_created")
         Finish = bep["pull_request_merged"]
 
-        BEP = f"{bep['number']} - {bep['title']}  "
+        BEP = f"{bep['number']}-{bep['display']}"
 
         if StartDoc and StartPR:
             df.append(
@@ -178,18 +180,20 @@ def main():
         ),
     )
 
+    fig.update_yaxes(visible=True, showticklabels=False)
+
+    fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
+
     fig = add_publications_to_timeline(fig)
 
     fig.update_layout(legend_font_size=15)
     fig.update_layout(title=dict(font=dict(size=30)))
     fig.update_layout(yaxis=dict(tickfont=dict(size=15)))
 
-    fig.show()
-
     # save as html
     # NOTE: This file is ignored in git (see .gitignore)
-    (root_dir() / "tmp").mkdir(exist_ok=True, parents=True)
-    fig.write_html(root_dir() / "tmp" / "bids_timeline.html")
+    OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
+    fig.write_html(OUTPUT_DIR / "bids_timeline.html")
 
 
 if __name__ == "__main__":

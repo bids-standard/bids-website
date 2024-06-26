@@ -31,20 +31,22 @@ for app in data["apps"]:
     else:
 
         if not app.get("ci"):
-            image = f"https://circleci.com/gh/{ app['gh'] }.svg?style=shield"
-            link = f"https://circleci.com/gh/{ app['gh'] }/tree/{ branch }"
+            image = f"https://circleci.com/gh/{app['gh']}.svg?style=shield"
+            link = f"https://circleci.com/gh/{app['gh']}/tree/{branch}"
 
         elif app["ci"] == "none":
             image = "https://img.shields.io/badge/CI-none-lightgrey"
             link = None
 
         elif app["ci"] == "travis":
-            image = f"https://app.travis-ci.com/{ app['gh'] }.svg?branch={ branch }"
-            link = f"https://app.travis-ci.com/{ app['gh'] }"
+            image = (
+                f"https://app.travis-ci.com/{app['gh']}.svg?branch={branch}"
+            )
+            link = f"https://app.travis-ci.com/{app['gh']}"
 
         elif app["ci"] == "gh":
-            image = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/badge.svg?branch={ branch }"
-            link = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/"
+            image = f"https://github.com/{app['gh']}/actions/workflows/{app['workflow']}.yml/badge.svg?branch={branch}"
+            link = f"https://github.com/{app['gh']}/actions/workflows/{app['workflow']}.yml/"
 
         else:
             image = "https://img.shields.io/badge/CI-UNKNOWN-darkgrey"
@@ -57,7 +59,7 @@ for app in data["apps"]:
     )
 
     version.append(
-        f"![version tag](https://img.shields.io/github/v/tag/{ app['gh'].lower() }?label=version)"
+        f"![version tag](https://img.shields.io/github/v/tag/{app['gh'].lower()}?label=version)"
     )
 
 df = pd.DataFrame(

@@ -9,7 +9,8 @@
 #     - raw
 
 -   number: '001'
-    title: Quantitative MRI (qMRI)
+    title: Quantitative MRI
+    display: qMRI
     link: https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html
     leads:
     -   name: Gilles de Hollander
@@ -22,6 +23,7 @@
 
 -   number: '002'
     title: BIDS Statistical Models Specification
+    display: stats model
     link: https://bids-standard.github.io/stats-models/
     leads:
     -   name: Tal Yarkoni
@@ -34,6 +36,7 @@
 
 -   number: '003'
     title: Common Derivatives
+    display: Common Der
     link: https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html
     leads:
     -   name: Chris Markiewicz
@@ -46,7 +49,8 @@
     pull_request_merged: 2020-06
 
 -   number: '005'
-    title: Arterial Spin Labeling (ASL)
+    title: Arterial Spin Labeling
+    display: ASL
     link: https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html
     leads:
     -   name: Henk-Jan Mutsaerts
@@ -60,7 +64,8 @@
     pull_request_merged: 2021-02
 
 -   number: '006'
-    title: Electroencephalography (EEG)
+    title: Electroencephalography
+    display: EEG
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/electroencephalography.html
     leads:
     -   name: Cyril Pernet
@@ -73,7 +78,8 @@
     pull_request_merged: 2019-03
 
 -   number: '007'
-    title: Hierarchical Event Descriptor (HED) Tags
+    title: Hierarchical Event Descriptor Tags
+    display: HED
     link: https://bids-specification.readthedocs.io/en/stable/appendices/hed.html
     leads:
     -   name: Chris Gorgolewski
@@ -84,7 +90,8 @@
     pull_request_merged: 2018-04
 
 -   number: '008'
-    title: Magnetoencephalography (MEG)
+    title: Magnetoencephalography
+    display: MEG
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetoencephalography.html
     leads:
     -   name: Guiomar Niso
@@ -95,7 +102,8 @@
     pull_request_merged: 2018-04
 
 -   number: '009'
-    title: Positron Emission Tomography (PET)
+    title: Positron Emission Tomography
+    display: PET
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/positron-emission-tomography.html
     leads:
     -   name: Melanie Ganz
@@ -106,7 +114,8 @@
     pull_request_merged: 2021-04
 
 -   number: '010'
-    title: intracranial Electroencephalography (iEEG)
+    title: intracranial Electroencephalography
+    display: iEEG
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html
     leads:
     -   name: Chris Holdgraf
@@ -119,6 +128,7 @@
 
 -   number: '018'
     title: Genetic information
+    display: Genetic
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/genetic-descriptor.html
     leads:
     -   name: Cyril Pernet
@@ -132,6 +142,7 @@
 
 -   number: '027'
     title: BIDS Applications 2.0
+    display: execution
     link: https://bids-standard.github.io/execution-spec/
     leads:
     -   name: Chris Markiewicz
@@ -144,6 +155,7 @@
 
 -   number: '029'
     title: Virtual and physical motion data
+    display: motion
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/motion.html
     leads:
     -   name: Sein Jeung
@@ -156,7 +168,8 @@
     pull_request_merged: 2023-03
 
 -   number: '030'
-    title: Near Infrared Spectroscopy (NIRS)
+    title: Near Infrared Spectroscopy
+    display: NIRS
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/near-infrared-spectroscopy.html
     leads:
     -   name: Robert Luke
@@ -169,6 +182,7 @@
 
 -   number: '031'
     title: Microscopy
+    display: Microscopy
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/microscopy.html
     leads:
     -   name: Marie-Hélène Bourget
