@@ -43,7 +43,7 @@ a large ecosystem of tools and resources has evolved around BIDS.
 
 A few of the key elements of this ecosystem are
 the [BIDS specification](http://bids-specification.readthedocs.io/) with the nitty-gritty details,
-the [starter kit](./starter_kit/src/index.md) with a simple explanation how to work with it,
+the [starter kit](docs/starter_kit/src/index.md) with a simple explanation how to work with it,
 the [BIDS validator](https://github.com/bids-standard/bids-validator) to automatically check datasets for adherence to the specification,
 [BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
 and [OpenNeuro](https://openneuro.org/) as a database for BIDS formatted datasets.

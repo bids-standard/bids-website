@@ -104,7 +104,9 @@ Related PR link the relevant links: Add explicit wording on DICOM terms
 correspondence
 
 Yaroslav schema:
+<!-- markdown-link-check-disable -->
 [2022-tx-big-neuroscience.html](http://datasets.datalad.org/centerforopenneuroscience/talks/2022-tx-big-neuroscience.html#/3/2/1)
+<!-- markdown-link-check-enable -->
 
 -   being proposed improved as
   [bids-starter-kit/pull/294](https://github.com/bids-standard/bids-starter-kit/pull/294)
