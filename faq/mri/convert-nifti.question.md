@@ -45,6 +45,13 @@ For `func` files you only need `TaskName` and `RepetitionTime`
 and the former you can decide what it is and the latter should be in the Nifti header.
 So you should be OKish there too.
 
+```json
+{
+  "TaskName": "name_of your task",
+  "RepetitionTime": your repetition time value
+}
+```
+
 Obviously you will be missing some metadata that would be required
 for some type of preprocessing (like slice timing info).
 
