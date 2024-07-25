@@ -1,8 +1,3 @@
----
-hide:
--   navigation
----
-
 # Datasets
 
 Here are some links to BIDS compliant data. Sourcedata (pre-BIDS) are sometimes
