@@ -269,7 +269,6 @@ theme:
     - search.suggest
     - search.highlight
     - toc.follow
-    - toc.integrate
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
