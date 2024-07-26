@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -8,14 +9,15 @@ import requests
 from bids_website.utils import data_dir
 from pyzotero import zotero
 from rich import print
-import os
 
 DEBUG = False
 VERBOSE = True
 MINIMUM_YEAR = 2016
 
 # TODO: switch this to a .env file
-os.environ["OPEN_CITATIONS_ACCESS_TOKEN"] = "/home/remi/Documents/tokens/open_citations_access_token.txt"
+os.environ["OPEN_CITATIONS_ACCESS_TOKEN"] = (
+    "/home/remi/Documents/tokens/open_citations_access_token.txt"
+)
 TOKEN_FILE = os.environ.get("OPEN_CITATIONS_ACCESS_TOKEN", "")
 
 OUTPUT_FILE = data_dir() / "count_citation.tsv"
