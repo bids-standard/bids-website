@@ -95,10 +95,10 @@
     -   name: Oscar Esteban
         email: phd@oscaresteban.es
     status:
-    -   identifying outstanding issues/roadblocks
+    -   adapted general spatial derivatives proposal, meaning using <modality>map, like `dwimap`
+    -   decided on using `params-` to denote different file types, for example `param-md` or `param-fa`
+    -   updated meta-data
     blocking:
-    -   description of certain DWI and ICA models
-    -   “model/maps” related definitions & file types
     google_doc_created:
     pull_request_created:
     pull_request_merged:
@@ -113,11 +113,9 @@
     -   name: Eugene Duff
         email: eugene.duff@paediatrics.ox.ac.uk
     status:
-    -   resituating BEP to cover relationship data more generally
-    -   'Perspectives: stress test proposal across different data types'
+    -   specified different formats for dense and sparse matrices
+    -   'proposed arrays in h5 or zarr to cover multi-dimensional matrices (for example: dynamic connectivity)'
     blocking:
-    -   defining precise scope & types of relationships to cover
-    -   several cross-dependencies
     google_doc_created: 2017-05
     pull_request_created:
     pull_request_merged:
@@ -132,10 +130,9 @@
     -   name: Dejan Draschkow
         email: dejan.draschow@psy.ox.ac.uk
     status:
-    -   PR almost ready. [**HTML preview**](https://bids-specification--1128.org.readthedocs.build/en/1128/modality-specific-files/physiological-recordings.html#eye-tracking)
-    -   Eye tracking data is not a new data type.
-    -   'Perspective: Docker/singularity converting tools'
-    -   'Perspective: Example with different modality examples'
+    -   'Revision of physiology and continuous recordings: clarification of current specs and `_stim` files moved into tasks specification'
+    -   Working on an eye tracking data converter
+    -   Generation of BIDS-examples
     blocking:
     google_doc_created: 2018-04
     pull_request_created: 2022-06
@@ -279,16 +276,17 @@
     content:
     -   raw
     leads:
-    -   name: Sylvain Takerkart
-        email: sylvain.takerkart@univ-amu.fr
-    -   name: Julia Sprenger
-        email: julia.sprenger@univ-amu.fr
+    -   name: Yaroslav O. Halchenko
+        email: debian@onerussian.com
+    -   name: Ben Dichter
+        email: ben.dichter@gmail.com
     status:
     -   '[**HTML preview**](https://bids-specification--1705.org.readthedocs.build/en/1705/modality-specific-files/microelectrode-electrophysiology.html)'
-    -   supports both in vivo AND in vitro ephys
-    -   getting ready to finalize the last details in the BEP
+    -   Decided on the new name, modalities, datatypes
+    -   Nearly finalized added metadata
+    -   'Target: finalize & merge PR into the BIDS specs in Fall 2024'
     blocking:
-    -   in need for somebody how can help with finalizing/merging"
+    -   Need to start thinking about derived data (spike sorted)
     google_doc_created: 2020-12
     pull_request_created: 2022-11
     pull_request_merged:
@@ -351,12 +349,10 @@
     -   name: Tamas Spisak
         email: tamas.spisak@uni-due.de
     status:
-    -   Modular structure of the BEP revised
-    -   Should better accommodate various use cases while maintaining user-friendliness
-    -   Comments have been collected on the revised version
-    -   'Perspectives: Creating a list of adopters of the BEP: they will be contacted soon.'
+    -   Meta-data harmonization with a term-mapper goes to BEP043
+    -   'Persperctive: Repeated community review of the simplified proposal'
     blocking:
-    -   More comments required to see if the BEP can accommodate specific use cases.
+    -   Term-mapping is a general feature => complex, modular proposal
     google_doc_created: 2021-12
     pull_request_created:
     pull_request_merged:
@@ -371,10 +367,10 @@
         email: eric.earl@nih.gov
     -   name: Samuel Guay
         email: samuel.guay@umontreal.ca
+    -   name: Sebastian Urchs
+        email: sebastian.urchs@gmail.com
     status:
-    -   Poster and demo presentation at OHBM 2023.
-    -   'Need to validate not only participants with folders, but also validate those among other major tabular phenotype files: scans.tsv, phenotype/<measurement_tool_name>.tsv,
-        participants.tsv'
+    -   Dropping “Segregated” data format in favor of “Aggregated”
     blocking:
     -   More reviews and discussions are necessary.
     google_doc_created: 2021-10
@@ -396,16 +392,10 @@
     -   name: Marta Bortoletto
         email: marta.bortoletto@cognitiveneuroscience.it
     status:
-    -   BEP draft (almost) definitive
-    -   High NIBS community engagement
-    -   'Persperctive: Discuss poorly covered cells within the structure'
-    -   'Persperctive: Discuss the pieces of information to be included in sidecar .json files'
-    -   'Persperctive: Start merging of stand-alone parts of the BEP (i.e., neuronavigation)'
-    -   'Persperctive: Collaboration with common NIBS software (BEST toolbox, simNIBS, K-space…)'
-    -   'Persperctive: Apply for funds for pushing forward the BEP'
+    -   Updated BEP structure that eliminates new `.json` or `.tsv`
+    -   Stimulation parameters and hardware will be integrated in the `events.tsv` and `events.json `
+    -   Details on the sequence of offline/online NIBS treatments will be described in the `scans.tsv/json` and `session.tsv/json`
     blocking:
-    -   Create real-world examples trying to cover most of the use-cases
-    -   More involvement of non-TMS NIBS (electric and ultrasonic stimulation)
     google_doc_created: 2022-09
     pull_request_created:
     pull_request_merged:
@@ -425,12 +415,10 @@
     -   name: Anthony Galassi
         email: anthony.galassi@nih.gov
     status:
-    -   new BEP, started September 2022
-    -   good first complete draft of proposal
-    -   'Perspectives: working with modality-specific BEPs to finalize draft'
+    -   consolidation of different proposals
+    -   atlases defined by template/reference space and modalities
+    -   PR open with example datasets
     blocking:
-    -   nomenclature regarding what an atlas is and/or should entail
-    -   drastically diverging requirements by different data types
     google_doc_created: 2022-09
     pull_request_created:
     pull_request_merged:
@@ -452,11 +440,10 @@
     -   name: Peer Herholz
         email: herholz.peer@gmail.com
     status:
-    -   new BEP, started September 2022
-    -   good first complete draft of proposal
+    -   adapted general spatial derivatives proposal, meaning using `<modality>map`, for example `eegmap` and `boldmap` for spatial components
+    -   decided on `model-` and `items-` as keys to denote the utilized model and component number, if files are 3D, respectively
+    -   updated meta-data and examples
     blocking:
-    -   “model-” related definitions & file types
-    -   finding overarching metadata across analyses
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
@@ -510,8 +497,9 @@
     -   name: Seyed Yahya Shirazi
         email: shirazi@ieee.org
     status:
-    -   New BEP, collecting community comments and feedback.
-    -   All collaborators are welcome.
+    -   Approved on May 2024, inviting collaborators (please join)
+    -   BEP will follow EEG-BIDS with EMG-specific metadata, etc.
+    -   Sensor placement schema being developed in collaboration with Motion-BIDS maintainers
     blocking:
     google_doc_created: 2023-01
     pull_request_created:
