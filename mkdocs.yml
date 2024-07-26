@@ -262,7 +262,6 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - navigation.path
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -270,6 +269,7 @@ theme:
     - search.suggest
     - search.highlight
     - toc.follow
+    - toc.integrate
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil

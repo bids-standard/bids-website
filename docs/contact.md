@@ -1,9 +1,3 @@
----
-hide:
--   toc
--   navigation
----
-
 # Contact
 
 We have lots of different ways of staying in touch!
@@ -66,8 +60,6 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
-
-### Contact Us Directly
 
 <meta property="og:title" content="contact"/>
 <script src="javascripts/giscus.js"></script>
