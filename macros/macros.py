@@ -54,6 +54,14 @@ def generate_beps_table(file: str, type: str | None = None) -> str:
     return template.render(include=content, type=type)
 
 
+def generate_working_groups_table(file: str, status: str | None = None) -> str:
+    input_file = WEBSITE_DATA_DIR / file
+    content = yaml.load(input_file)
+    env = return_jinja_env()
+    template = env.get_template("working_group_table_md.jinja")
+    return template.render(include=content, status=status)
+
+
 def generate_grants_table():
     input_file = WEBSITE_DATA_DIR / "grants.yml"
     content = yaml.load(input_file)
