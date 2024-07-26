@@ -11,6 +11,16 @@
 #     - name: dockerhub
 #       url:
 
+-   name: ancp-bids
+    url: https://github.com/ANCPLabOldenburg/ancp-bids
+    documentation: https://ancpbids.readthedocs.io/en/latest/
+    language:
+    -   python
+    description: A Python package to read/write/query/validate BIDS datasets.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/ancpbids/
+
 -   name: babs
     url: https://github.com/PennLINC/babs
     documentation: https://pennlinc-babs.readthedocs.io/
@@ -27,6 +37,16 @@
     language:
     -   Python
     description: Python module allowing complete manipulation of BIDS data
+
+-   name: bids2table
+    url: https://github.com/childmindresearch/bids2table
+    documentation: https://childmindresearch.github.io/bids2table/bids2table.html
+    language:
+    -   python
+    description: bids2table is a library for efficiently indexing and querying large-scale BIDS neuroimaging datasets and derivatives.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/bids2table/
 
 -   name: bids-cfood
     url: https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood
