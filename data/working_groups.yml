@@ -1,0 +1,75 @@
+---
+# template
+# - title:
+#   goal:
+#   open-letter:
+#   communication-channel:
+#   link:
+#   leads:
+#     - name:
+#       email:
+#     - name:
+#       email:
+#   status:
+#   outcome:
+#       - url:
+#       - url:
+#
+
+# ACTIVE
+
+-   title: BIDS 2.0
+    goal: ???
+    open-letter: TBD
+    communication-channel: TBD
+    link: https://github.com/bids-standard/bids-2-devel
+    leads:
+    -   name: Yaroslav Halchenko
+    -   email: debian@onerussian.com
+    status: active
+
+-   title: Governance amendments
+    goal: Clarification of the BEP process
+    open-letter: TBD
+    communication-channel: TBD
+    link: TBD
+    leads:
+    -   name: Ariel Rokem
+        email: arokem@uw.edu
+    status: active
+
+-   title: Code of conducts amendments
+    goal: Update and uniformizations of the BIDS code of conducts
+    open-letter: TBD
+    communication-channel: TBD
+    link: TBD
+    leads:
+    -   name: Rémi Gau
+        email: remi.gau@gmail.com
+    status: active
+
+-   title: BIDS online presence
+    goal: Streamline online resources based on community feedback
+    open-letter: TBD
+    communication-channel: TBD
+    link: TBD
+    leads:
+    -   name: Eric Earl
+        email: eric.earl@nih.gov
+    -   name: Christine Rogers
+        email: rogers@bic.mni.mcgill.ca
+    status: active
+
+# DISSOLVED
+
+-   title: Governance amendment
+    goal: Update the BIDS governance
+    open-letter: https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit#heading=h.6tz42cdj5asc
+    communication-channel:
+    link: https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit#heading=h.6tz42cdj5asc
+    leads:
+    -   name: Rémi Gau
+        email: remi.gau@gmail.com
+    status: dissolved
+    outcome:
+    -   url: https://github.com/bids-standard/bids-website/pull/346

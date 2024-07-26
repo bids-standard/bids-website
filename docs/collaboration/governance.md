@@ -224,20 +224,21 @@ they should inform the steering group in advance and are responsible to help:
 
 ### Other working/interest Groups
 
-A working/interest group can be established under the approval of the
-BIDS Steering Group. This is typically but not limited to being formed
-for the purpose of advancing the BIDS community, not the standard. Each
-group will appoint 1-2 chairs. Members of these groups can have cross
-appointments in other groups (for example, BEP Working Group). These groups do
-not necessarily dissolve after some duration or event, unless stated in
-their proposal.
+A working/interest group can be established under the approval of the BIDS Steering Group.
+This is typically but not limited to being formed for the purpose of advancing the BIDS community, not the standard.
 
-The working/interest group formation is formalized through an open
-letter via a "read-only" Google Document addressed to the BIDS Steering
-Group. The open letter will be posted on:
-the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
-[Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
-and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
+Each group will appoint 1-2 chairs.
+Members of these groups can have cross appointments in other groups (for example, BEP Working Group).
+These groups do not necessarily dissolve after some duration or event, unless stated in their proposal.
+
+The working/interest group formation is formalized
+through an open letter via a "read-only" Google Document addressed to the BIDS Steering Group.
+The open letter will be posted on:
+
+-   the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
+-   [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
+-   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
+
 This proposal will state what their group aims and goals are.
 
 ### BIDS Community
