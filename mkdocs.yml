@@ -79,9 +79,6 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  .github
-  examples/README.md
-  examples/tmp.md
   execution/README.md
   execution/BIDS_logo/README.md
   execution/src/index.md
@@ -126,9 +123,10 @@ nav:
 -   Blog:
     -   blog/index.md
 -   Standards:
-    -   BIDS specification:
-        -   standards/index.md
-    -   BIDS schema:
+    -   standards/index.md
+    -   BIDS Specification:
+        -   standards/bids_specification/index.md
+    -   BIDS Schema:
         -   extensions/docs/schema.md
         -   how it works:
             -   extensions/docs/how-the-schema-works.md
@@ -137,7 +135,7 @@ nav:
             -   rules: extensions/docs/schema_rules.md
         -   details:
             -   specification/schema/README.md
-    -   BIDS stats model:
+    -   BIDS Stats Model:
         -   stats_models/specification/index.md
         -   motivations: stats_models/specification/motivation.md
         -   walkthrough:
@@ -155,7 +153,7 @@ nav:
         #     -   variable-transform/README.md
         #     -   compute: variable-transform/spec/compute.md
         #     -   munge: variable-transform/spec/munge.md
-    -   BIDS app specification:
+    -   BIDS Apps:
         -   standards/execution/index.md
         -   scope: standards/execution/scope.md
         -   specification:
@@ -169,23 +167,26 @@ nav:
 -   Getting started:
     -   starter_kit/src/index.md
     -   folders and files:
-        -   getting_started/folders_and_files/folders.md
-        -   getting_started/folders_and_files/files.md
-        -   getting_started/folders_and_files/metadata.md
+        -   getting_started/folders_and_files/index.md
         -   getting_started/folders_and_files/derivatives.md
+        -   getting_started/folders_and_files/folders.md
+        -   getting_started/folders_and_files/metadata.md
+        -   getting_started/folders_and_files/files.md
     -   resources:
-        -   starter_kit/src/links.md
-        -   glossary.md
-        -   publications: starter_kit/src/publications.md
+        -   getting_started/resources/index.md
+        -   links: starter_kit/src/links.md
+        -   getting_started/resources/glossary.md
         -   dependencies: starter_kit/src/dependencies.md
+        -   publications: starter_kit/src/publications.md
         -   talks: starter_kit/src/talks.md
     -   BIDS apps:
-        -   getting_started/apps/index.md
-        -   getting_started/apps/tutorial.md
+        -   getting_started/bids_apps/index.md
+        -   getting_started/bids_apps/tutorial.md
     -   tutorials:
         -   getting_started/tutorials/index.md
         -   getting_started/tutorials/annotation.md
         -   conversion:
+            -   getting_started/tutorials/conversion/index.md
             -   getting_started/tutorials/conversion/asl.md
             -   getting_started/tutorials/conversion/ieeg.md
             -   getting_started/tutorials/conversion/mri.md
@@ -212,6 +213,7 @@ nav:
     -   faq/faq_bep.md
     -   faq/faq_apps.md
 -   Collaboration:
+    -   collaboration/index.md
     -   specification/code_of_conduct.md
     -   collaboration/governance.md
     -   collaboration/contributors.md
