@@ -1,7 +1,3 @@
-[submodule "docs/stats_models"]
-	path = docs/stats_models
-	url = https://github.com/bids-standard/stats-models
-	datalad-url = https://github.com/bids-standard/stats-models
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git

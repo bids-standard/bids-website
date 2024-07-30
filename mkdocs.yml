@@ -103,9 +103,9 @@ exclude_docs: |
   getting_started/src/src/tutorials/pet.md
   getting_started/src/src/tutorials/tutorials.md
   standards/bids_stats_model/variable-transform
-  stats_models/README.md
-  stats_models/bsmschema/README.md
-  stats_models/specification/walkthrough-2.md
+  standards/bids_stats_model/src/README.md
+  standards/bids_stats_model/src/bsmschema/README.md
+  standards/bids_stats_model/src/specification/walkthrough-2.md
 
 nav:
 -   About: index.md
@@ -116,19 +116,19 @@ nav:
     -   BIDS Specification:
         -   standards/bids_specification/index.md
     -   BIDS Stats Model:
-        -   stats_models/specification/index.md
-        -   motivations: stats_models/specification/motivation.md
+        -   standards/bids_stats_model/src/specification/index.md
+        -   motivations: standards/bids_stats_model/src/specification/motivation.md
         -   walkthrough:
-            -   stats_models/specification/walkthrough-intro.md
-            -   part-1: stats_models/specification/walkthrough-1.md
-        -   integration: stats_models/specification/integration.md
-        -   legacy: stats_models/specification/legacy.md
+            -   standards/bids_stats_model/src/specification/walkthrough-intro.md
+            -   part-1: standards/bids_stats_model/src/specification/walkthrough-1.md
+        -   integration: standards/bids_stats_model/src/specification/integration.md
+        -   legacy: standards/bids_stats_model/src/specification/legacy.md
         -   specification:
-            -   stats_models/specification/spec.md
-            -   reference: stats_models/specification/reference.md
+            -   standards/bids_stats_model/src/specification/spec.md
+            -   reference: standards/bids_stats_model/src/specification/reference.md
         -   examples and resources:
-            -   stats_models/specification/model-zoo.md
-            -   default model: stats_models/specification/default_model.md
+            -   standards/bids_stats_model/src/specification/model-zoo.md
+            -   default model: standards/bids_stats_model/src/specification/default_model.md
         # -   variable transforms:
         #     -   standards/bids_stats_model/variable-transform/README.md
         #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
