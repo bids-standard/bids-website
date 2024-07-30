@@ -183,7 +183,7 @@ nav:
 -   Tools:
     -   tools/index.md
     -   tools/validator.md
-    -   tools/apps/index.md
+    -   tools/bids_apps.md
     -   tools/others.md
     -   Converters:
         - tools/converters/index.md
