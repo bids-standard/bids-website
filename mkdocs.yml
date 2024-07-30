@@ -90,8 +90,8 @@ exclude_docs: |
   execution/src/examples.md
   execution/src/CHANGELOG.md
   execution/src/CONTRIBUTING.md
-  extensions/README.md
-  extensions/docs/faq.md
+  extensions/src/README.md
+  extensions/src/docs/faq.md
   getting_started/src/src/_build
   getting_started/src/src/folders_and_files
   getting_started/src/README.md
@@ -127,12 +127,12 @@ nav:
     -   BIDS Specification:
         -   standards/bids_specification/index.md
     -   BIDS Schema:
-        -   extensions/docs/schema.md
+        -   extensions/src/docs/schema.md
         -   how it works:
-            -   extensions/docs/how-the-schema-works.md
-            -   metadata: extensions/docs/schema_meta.md
-            -   objects: extensions/docs/schema_objects.md
-            -   rules: extensions/docs/schema_rules.md
+            -   extensions/src/docs/how-the-schema-works.md
+            -   metadata: extensions/src/docs/schema_meta.md
+            -   objects: extensions/src/docs/schema_objects.md
+            -   rules: extensions/src/docs/schema_rules.md
         -   details:
             -   specification/schema/README.md
     -   BIDS Stats Model:
@@ -228,12 +228,12 @@ nav:
     #     -   spec: specification/CONTRIBUTING.md
     #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
 -   Extensions:
-    -   bep/index.md
-    -   intro: extensions/docs/index.md
-    -   bep/beps.md
-    -   general_guidelines: extensions/docs/general_guidelines.md
-    -   guide: extensions/docs/guide.md
-    -   submission: extensions/docs/submission.md
+    -   extensions/index.md
+    -   intro: extensions/src/docs/index.md
+    -   extensions/beps.md
+    -   general_guidelines: extensions/src/docs/general_guidelines.md
+    -   guide: extensions/src/docs/guide.md
+    -   submission: extensions/src/docs/submission.md
     # -   macros: specification/macros_doc.md
 -   Impact:
     -   impact/index.md
@@ -288,7 +288,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-edit_uri: https://github.com/bids-standard/bids-extensions/edit/main/docs/
+edit_uri: https://github.com/bids-standard/bids-extensions/src/edit/main/docs/
 
 markdown_extensions:
   - abbr
