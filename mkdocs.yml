@@ -79,17 +79,6 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  execution/README.md
-  execution/BIDS_logo/README.md
-  execution/src/index.md
-  execution/src/scope.md
-  execution/src/specification.md
-  execution/src/ui.md
-  execution/src/inputs.md
-  execution/src/outputs.md
-  execution/src/examples.md
-  execution/src/CHANGELOG.md
-  execution/src/CONTRIBUTING.md
   extensions/src/README.md
   extensions/src/docs/faq.md
   getting_started/src/src/_build
@@ -156,16 +145,16 @@ nav:
         -   details:
             -   specification/schema/README.md
     -   BIDS Apps:
-        -   standards/execution/index.md
-        -   scope: standards/execution/scope.md
-        -   specification:
-            -   standards/execution/specification.md
-            -   user interface: standards/execution/ui.md
-            -   inputs: standards/execution/inputs.md
-            -   outputs: standards/execution/outputs.md
-            -   examples: standards/execution/examples.md
-            -   release notes: standards/execution/CHANGELOG.md
-        -   contributors: standards/execution/contributors.md
+        -   standards/bids_app_specification/index.md
+        -   standards/bids_app_specification/scope.md
+        -   standards/bids_app_specification/contributors.md
+        -   Specification:
+            -   standards/bids_app_specification/specification/index.md
+            -   examples: standards/bids_app_specification/specification/examples.md
+            -   inputs: standards/bids_app_specification/specification/inputs.md
+            -   outputs: standards/bids_app_specification/specification/outputs.md
+            -   user interface: standards/bids_app_specification/specification/user_interface.md
+            -   release notes: standards/bids_app_specification/specification/release_notes.md
 -   Getting started:
     -   getting_started/src/src/index.md
     -   folders and files:
