@@ -24,7 +24,7 @@ plugins:
         "news.md": "blog/index.md"
         "specification.md": "standards/index.md"
         "get_started.md": "getting_started/src/src/index.md"
-        "get_involved.md": "bep/index.md"
+        "get_involved.md": "extensions/index.md"
         "governance.md": "collaboration/governance.md"
         "acknowledgments.md": "collaboration/acknowledgments.md"
         "benefits.md": "tools/index.md"
