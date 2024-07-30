@@ -23,7 +23,7 @@ plugins:
         # old links from the old wesbite
         "news.md": "blog/index.md"
         "specification.md": "standards/index.md"
-        "get_started.md": "starter_kit/src/index.md"
+        "get_started.md": "getting_started/src/src/index.md"
         "get_involved.md": "bep/index.md"
         "governance.md": "collaboration/governance.md"
         "acknowledgments.md": "collaboration/acknowledgments.md"
@@ -92,25 +92,25 @@ exclude_docs: |
   execution/src/CONTRIBUTING.md
   extensions/README.md
   extensions/docs/faq.md
-  starter_kit/src/_build
-  starter_kit/src/folders_and_files
-  starter_kit/README.md
-  starter_kit/matlabCode/general/README.md
-  starter_kit/reports/
-  starter_kit/CODE_OF_CONDUCT.md
-  starter_kit/CONTRIBUTING.md
-  starter_kit/src/dataset_examples.md
-  starter_kit/src/FAQ.md
-  starter_kit/src/contact.md
-  starter_kit/src/glossary.md
-  starter_kit/src/tutorials/media/README.md
-  starter_kit/src/validator.md
-  starter_kit/src/tutorials/annotation.md
-  starter_kit/src/tutorials/asl.md
-  starter_kit/src/tutorials/ieeg.md
-  starter_kit/src/tutorials/mri.md
-  starter_kit/src/tutorials/pet.md
-  starter_kit/src/tutorials/tutorials.md
+  getting_started/src/src/_build
+  getting_started/src/src/folders_and_files
+  getting_started/src/README.md
+  getting_started/src/matlabCode/general/README.md
+  getting_started/src/reports/
+  getting_started/src/CODE_OF_CONDUCT.md
+  getting_started/src/CONTRIBUTING.md
+  getting_started/src/src/dataset_examples.md
+  getting_started/src/src/FAQ.md
+  getting_started/src/src/contact.md
+  getting_started/src/src/glossary.md
+  getting_started/src/src/tutorials/media/README.md
+  getting_started/src/src/validator.md
+  getting_started/src/src/tutorials/annotation.md
+  getting_started/src/src/tutorials/asl.md
+  getting_started/src/src/tutorials/ieeg.md
+  getting_started/src/src/tutorials/mri.md
+  getting_started/src/src/tutorials/pet.md
+  getting_started/src/src/tutorials/tutorials.md
   variable-transform/README.md
   variable-transform/spec/compute.md
   variable-transform/spec/munge.md
@@ -165,7 +165,7 @@ nav:
             -   release notes: standards/execution/CHANGELOG.md
         -   contributors: standards/execution/contributors.md
 -   Getting started:
-    -   starter_kit/src/index.md
+    -   getting_started/src/src/index.md
     -   folders and files:
         -   getting_started/folders_and_files/index.md
         -   getting_started/folders_and_files/derivatives.md
@@ -174,11 +174,11 @@ nav:
         -   getting_started/folders_and_files/files.md
     -   resources:
         -   getting_started/resources/index.md
-        -   links: starter_kit/src/links.md
+        -   getting_started/src/src/links.md
         -   getting_started/resources/glossary.md
-        -   dependencies: starter_kit/src/dependencies.md
-        -   publications: starter_kit/src/publications.md
-        -   talks: starter_kit/src/talks.md
+        -   getting_started/src/src/dependencies.md
+        -   getting_started/src/src/publications.md
+        -   getting_started/src/src/talks.md
     -   BIDS apps:
         -   getting_started/bids_apps/index.md
         -   getting_started/bids_apps/tutorial.md
@@ -219,14 +219,14 @@ nav:
     -   collaboration/contributors.md
     -   collaboration/acknowledgments.md
     # TODO have a single code of conduct
-    # -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
+    # -   starter_kit: getting_started/src/src/CODE_OF_CONDUCT.md
     # TODO remove those pages from the website
     # until all the contributing pages have been refactored
     # see https://github.com/bids-standard/.github/issues/7
     # -   Contributing:
     #     -   apps: apps/CONTRIBUTING.md
     #     -   spec: specification/CONTRIBUTING.md
-    #     -   starter_kit: starter_kit/src/CONTRIBUTING.md
+    #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
 -   Extensions:
     -   bep/index.md
     -   intro: extensions/docs/index.md
