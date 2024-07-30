@@ -175,56 +175,55 @@ nav:
 -   Getting started:
     -   starter_kit/src/index.md
     -   folders and files:
-        -   folders: getting_started/folders_and_files/folders.md
-        -   files: getting_started/folders_and_files/files.md
-        -   metadata: getting_started/folders_and_files/metadata.md
-        -   derivatives: getting_started/folders_and_files/derivatives.md
-    -   tutorials:
-        -   getting_started/tutorials/index.md
-        -   conversion:
-            -   asl: getting_started/tutorials/conversion/asl.md
-            -   ieeg: getting_started/tutorials/conversion/ieeg.md
-            -   mri: getting_started/tutorials/conversion/mri.md
-            -   pet: getting_started/tutorials/conversion/pet.md
-        -   annotation: getting_started/tutorials/annotation.md
-    -   BIDS apps:
-        -   getting_started/apps/index.md
-        -   tutorial: getting_started/apps/tutorial.md
+        -   getting_started/folders_and_files/folders.md
+        -   getting_started/folders_and_files/files.md
+        -   getting_started/folders_and_files/metadata.md
+        -   getting_started/folders_and_files/derivatives.md
     -   resources:
         -   starter_kit/src/links.md
-        -   talks: starter_kit/src/talks.md
+        -   glossary.md
         -   publications: starter_kit/src/publications.md
         -   dependencies: starter_kit/src/dependencies.md
-        -   glossary: glossary.md
+        -   talks: starter_kit/src/talks.md
+    -   BIDS apps:
+        -   getting_started/apps/index.md
+        -   getting_started/apps/tutorial.md
+    -   tutorials:
+        -   getting_started/tutorials/index.md
+        -   getting_started/tutorials/annotation.md
+        -   conversion:
+            -   getting_started/tutorials/conversion/asl.md
+            -   getting_started/tutorials/conversion/ieeg.md
+            -   getting_started/tutorials/conversion/mri.md
+            -   getting_started/tutorials/conversion/pet.md
 -   Tools:
     -   tools/index.md
-    -   Validator:
-        - tools/validator.md
+    -   tools/validator.md
+    -   tools/apps/index.md
+    -   tools/others.md
     -   Converters:
         - tools/converters/index.md
-        - MRI and PET: tools/converters/mri-pet.md
-        - MEEG: tools/converters/meeg.md
-        - physio: tools/converters/physio.md
-        - others: tools/converters/others.md
-    -   BIDS apps: tools/apps/index.md
-    -   Others: tools/others.md
+        - tools/converters/mri-pet.md
+        - tools/converters/meeg.md
+        - tools/converters/physio.md
+        - tools/converters/others.md
 -   Datasets:
     -   datasets/index.md
 -   FAQ:
     -   faq/index.md
-    -   general: faq/faq_general.md
-    -   eeg: faq/faq_eeg.md
-    -   mri: faq/faq_mri.md
-    -   phenotype: faq/faq_pheno.md
-    -   bids extensions: faq/faq_bep.md
-    -   bids apps: faq/faq_apps.md
+    -   faq/faq_general.md
+    -   faq/faq_eeg.md
+    -   faq/faq_mri.md
+    -   faq/faq_pheno.md
+    -   faq/faq_bep.md
+    -   faq/faq_apps.md
 -   Collaboration:
-    -   Governance: collaboration/governance.md
-    -   Code of conduct: specification/CODE_OF_CONDUCT.md
-
+    -   specification/CODE_OF_CONDUCT.md
+    -   collaboration/governance.md
+    -   collaboration/contributors.md
+    -   collaboration/acknowledgments.md
     # TODO have a single code of conduct
     # -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
-
     # TODO remove those pages from the website
     # until all the contributing pages have been refactored
     # see https://github.com/bids-standard/.github/issues/7
@@ -232,12 +231,10 @@ nav:
     #     -   apps: apps/CONTRIBUTING.md
     #     -   spec: specification/CONTRIBUTING.md
     #     -   starter_kit: starter_kit/src/CONTRIBUTING.md
-    -   Contributors: collaboration/contributors.md
-    -   Acknowledgments: collaboration/acknowledgments.md
 -   Extensions:
     -   bep/index.md
-    -   BEPs: bep/beps.md
     -   intro: extensions/docs/index.md
+    -   bep/beps.md
     -   general_guidelines: extensions/docs/general_guidelines.md
     -   guide: extensions/docs/guide.md
     -   submission: extensions/docs/submission.md
