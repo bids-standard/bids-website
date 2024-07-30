@@ -99,6 +99,8 @@ exclude_docs: |
   getting_started/src/reports/
   getting_started/src/CODE_OF_CONDUCT.md
   getting_started/src/CONTRIBUTING.md
+  getting_started/src/src/CODE_OF_CONDUCT.md
+  getting_started/src/src/CONTRIBUTING.md
   getting_started/src/src/dataset_examples.md
   getting_started/src/src/FAQ.md
   getting_started/src/src/contact.md

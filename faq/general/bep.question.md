@@ -2,12 +2,12 @@
 title: "Is your data type not covered in the current BIDS specification?"
 ---
 
-BIDS extensions proposals [(BEPs)](../bep/beps.md)
+BIDS extensions proposals [(BEPs)](../extensions/beps.md)
 aim to extend the BIDS specification to new data types.
-A list of extensions ongoing and completed proposals can be found [here](../bep/beps.md).
+A list of extensions ongoing and completed proposals can be found [here](../extensions/beps.md).
 
 Guidelines for contributing to these extensions or starting your own can be found
-in the [BIDS Extension Proposals Guide](../extensions/docs/index.md).
+in the [BIDS Extension Proposals Guide](../extensions/src/docs/index.md).
 
 If only part of your data is covered under BIDS,
 an option to allow additional files
