@@ -80,12 +80,6 @@ use_directory_urls: false
 
 exclude_docs: |
   .github
-  apps/README.md
-  apps/_site/**/*.md
-  apps/apps.md
-  apps/about.md
-  apps/dev_faq.md
-  apps/tutorial.md
   examples/README.md
   examples/tmp.md
   execution/README.md
