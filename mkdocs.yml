@@ -151,8 +151,8 @@ nav:
             -   examples: standards/bids_app_specification/specification/examples.md
             -   inputs: standards/bids_app_specification/specification/inputs.md
             -   outputs: standards/bids_app_specification/specification/outputs.md
-            -   user interface: standards/bids_app_specification/specification/user_interface.md
-            -   release notes: standards/bids_app_specification/specification/release_notes.md
+            -   user interface: standards/bids_app_specification/specification/user-interface.md
+            -   release notes: standards/bids_app_specification/specification/release-notes.md
 -   Getting started:
     -   getting_started/src/src/index.md
     -   folders and files:
@@ -183,7 +183,7 @@ nav:
 -   Tools:
     -   tools/index.md
     -   tools/validator.md
-    -   tools/bids_apps.md
+    -   tools/bids-apps.md
     -   tools/others.md
     -   Converters:
         - tools/converters/index.md

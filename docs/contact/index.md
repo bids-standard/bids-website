@@ -67,7 +67,7 @@ Some example questions that have already been answered include:
 
 </div>
 
-### Contact Us Directly
+## Contact Us Directly
 
 <meta property="og:title" content="contact"/>
 <script src="javascripts/giscus.js"></script>

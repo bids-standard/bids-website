@@ -69,12 +69,19 @@ remark: package.json
 	npx remark \
 		faq \
 		./docs/*.md \
-		./docs/bep \
 		./docs/blog \
 		./docs/collaboration \
+		./docs/contact \
 		./docs/datasets \
+		./docs/extensions/index.md \
+		./docs/extensions/beps.md \
 		./docs/faq/index.md \
-		./docs/getting_started \
-		./docs/standards \
+		./docs/getting_started/folders_and_files \
+		./docs/getting_started/resources \
+		./docs/getting_started/tutorials \
+		./docs/impact \
+		./docs/standards/bids_app_specification \
+		./docs/standards/bids_specification \
+		./docs/standards/index.md \
 		./docs/tools \
 		--rc-path .remarkrc
