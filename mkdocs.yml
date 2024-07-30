@@ -102,9 +102,7 @@ exclude_docs: |
   getting_started/src/src/tutorials/mri.md
   getting_started/src/src/tutorials/pet.md
   getting_started/src/src/tutorials/tutorials.md
-  variable-transform/README.md
-  variable-transform/spec/compute.md
-  variable-transform/spec/munge.md
+  standards/bids_stats_model/variable-transform
   stats_models/README.md
   stats_models/bsmschema/README.md
   stats_models/specification/walkthrough-2.md
@@ -132,9 +130,9 @@ nav:
             -   stats_models/specification/model-zoo.md
             -   default model: stats_models/specification/default_model.md
         # -   variable transforms:
-        #     -   variable-transform/README.md
-        #     -   compute: variable-transform/spec/compute.md
-        #     -   munge: variable-transform/spec/munge.md
+        #     -   standards/bids_stats_model/variable-transform/README.md
+        #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
+        #     -   munge: standards/bids_stats_model/variable-transform/spec/munge.md
     -   BIDS Schema:
         -   extensions/src/docs/schema.md
         -   how it works:

@@ -2,10 +2,6 @@
 	path = docs/stats_models
 	url = https://github.com/bids-standard/stats-models
 	datalad-url = https://github.com/bids-standard/stats-models
-[submodule "docs/variable-transform"]
-	path = docs/variable-transform
-	url = https://github.com/bids-standard/variable-transform.git
-	datalad-url = https://github.com/bids-standard/variable-transform.git
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
