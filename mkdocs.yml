@@ -236,7 +236,8 @@ nav:
 -   Impact:
     -   impact.md
 -   Merch: https://www.teepublic.com/user/bids
--   Contact: contact.md
+-   Contact:
+    - contact/index.md
 
 
 theme:
