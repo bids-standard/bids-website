@@ -28,3 +28,7 @@
 	path = data/apps
 	url = https://github.com/bids-apps/bids-apps.github.io
 	datalad-url = https://github.com/bids-apps/bids-apps.github.io
+[submodule "docs/getting_started/src"]
+	path = docs/getting_started/src
+	url = https://github.com/bids-standard/bids-starter-kit.git
+	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
