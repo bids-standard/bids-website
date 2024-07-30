@@ -3,4 +3,4 @@
 
 questions_path: . # Where questions should be stored
 templates_path: ../../templates/faq/ # Path to templates
-output_path: ../../docs/faq/faq_bep.md
+output_path: ../../docs/faq/bids_extensions.md
