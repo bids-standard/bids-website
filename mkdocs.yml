@@ -234,7 +234,7 @@ nav:
     -   submission: extensions/docs/submission.md
     # -   macros: specification/macros_doc.md
 -   Impact:
-    -   impact.md
+    -   impact/index.md
 -   Merch: https://www.teepublic.com/user/bids
 -   Contact:
     - contact/index.md
