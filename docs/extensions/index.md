@@ -1,48 +1,29 @@
-# Get involved in making BIDS better
 
-<u>Neurostars Website</u>
+A Brain Imaging Data Structure (BIDS) Extension Proposal (BEP) is
+  a community-driven process to add a new modality or set of data types to
+  [the BIDS Specification][specification].
 
--   The easiest way to contribute to BIDS is to ask questions you have about the specification on
-    [Neurostars](https://neurostars.org){:target="_blank"}.
+This site provides information about creating and working with the BIDS Extension Proposal (commonly referred to as BEP or in the plural as BEPs).
 
--   If your question has a
-    [bids tag](https://neurostars.org/search?q=tags%3Abids){:target="_blank"}
-    it will be much easier for others to find the answer.
+## BEP Guide
 
--   You can also get involved by _answering_ questions on
-    [Neurostars](https://neurostars.org/search?q=tags%3Abids){:target="_blank"}!
+For information about what is a BEP and how to get started working with a BEP visit [the BEP Guide](guide.md).
 
-<u>Github Issues</u>
+**Check [the specification][specification] and [the list of BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+  before creating a new one. You may find existing or ongoing efforts
+  that already support your use case.
+  Avoid duplicating efforts.**
 
--   You can contribute to the BIDS specification by opening
-    [Issues](https://github.com/bids-standard/bids-specification/issues){:target="_blank"}
-    and proposing changes via
-    [Pull Requests](https://github.com/bids-standard/bids-specification/pulls){:target="_blank"}
-    on
-    [GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}.
+## Submitting a BEP
 
--   To make improvements to the website that you are reading right now, you can also open an
-    [Issue](https://github.com/bids-standard/bids-website/issues){:target="_blank"}
-    and propose changes via Pull Requests at the
-    [BIDS website GitHub repository](https://github.com/bids-standard/bids-website){:target="_blank"}.
+Once you've made progress on your BEP and you are ready to integrate it into the
+  specification visit [the BEP Submission Guide](submission.md).
 
-<u> Become a part of the BIDS Community </u>
+## The BIDS Schema
 
-There are so many ways to help us build this community.
+This site also serves as the main documentation repository for working with the BIDS Schema,
+  which you will need to enable validation of your BEP.
+  For more information about the history of, working with, and
+  translating your BEP into the schema visit [the Schema Guide](schema.md) on this site.
 
--   You could help someone else learn the benefits of BIDS by giving a talk in your local organization
--   Or you could work on [building a BIDS App](https://bids-apps.neuroimaging.io/){:target="_blank"}!
-
-<b>The only requirement is that everyone who contributes adheres to our
-[BIDS Code of Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).</b>
-
-Thank you for your contributions!
-
-## Extending the BIDS specification
-
-The BIDS specification can be extended in a backwards compatible way and will evolve over time.
-These are accomplished with BIDS Extension Proposals (BEPs), which are community-driven processes.
-
-Do you want to learn more about extending BIDS to a new modality or set of data types?
-Read the [Guide](https://bids-extensions.readthedocs.io/en/latest/guide/)
-and follow the [Submission Process](https://bids-extensions.readthedocs.io/en/latest/submission/).
+[specification]: https://bids-specification.readthedocs.io
