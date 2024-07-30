@@ -128,15 +128,6 @@ nav:
     -   standards/index.md
     -   BIDS Specification:
         -   standards/bids_specification/index.md
-    -   BIDS Schema:
-        -   extensions/src/docs/schema.md
-        -   how it works:
-            -   extensions/src/docs/how-the-schema-works.md
-            -   metadata: extensions/src/docs/schema_meta.md
-            -   objects: extensions/src/docs/schema_objects.md
-            -   rules: extensions/src/docs/schema_rules.md
-        -   details:
-            -   specification/schema/README.md
     -   BIDS Stats Model:
         -   stats_models/specification/index.md
         -   motivations: stats_models/specification/motivation.md
@@ -155,6 +146,15 @@ nav:
         #     -   variable-transform/README.md
         #     -   compute: variable-transform/spec/compute.md
         #     -   munge: variable-transform/spec/munge.md
+    -   BIDS Schema:
+        -   extensions/src/docs/schema.md
+        -   how it works:
+            -   extensions/src/docs/how-the-schema-works.md
+            -   metadata: extensions/src/docs/schema_meta.md
+            -   objects: extensions/src/docs/schema_objects.md
+            -   rules: extensions/src/docs/schema_rules.md
+        -   details:
+            -   specification/schema/README.md
     -   BIDS Apps:
         -   standards/execution/index.md
         -   scope: standards/execution/scope.md
