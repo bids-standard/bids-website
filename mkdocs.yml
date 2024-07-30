@@ -206,12 +206,12 @@ nav:
     -   datasets/index.md
 -   FAQ:
     -   faq/index.md
-    -   faq/faq_general.md
-    -   faq/faq_eeg.md
-    -   faq/faq_mri.md
-    -   faq/faq_pheno.md
-    -   faq/faq_bep.md
-    -   faq/faq_apps.md
+    -   faq/general.md
+    -   faq/eeg.md
+    -   faq/mri.md
+    -   faq/phenotype.md
+    -   faq/bids_extensions.md
+    -   faq/bids_apps.md
 -   Collaboration:
     -   collaboration/index.md
     -   specification/code_of_conduct.md

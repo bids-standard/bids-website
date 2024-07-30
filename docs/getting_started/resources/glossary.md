@@ -108,7 +108,7 @@ Example:
 ```
 
 -   You can find more information about `json` files
-    in the [Metadata file formats](./getting_started/folders_and_files/metadata.md#json-files) page.
+    in the [Metadata file formats](../folders_and_files/metadata.md#json-files) page.
 
 ### M
 
@@ -182,7 +182,7 @@ A .tsv file contains a table (like a simple excel spreadsheet) containing text.
 Table values are separated by tabs.
 
 -   You can find more information about `TSV` files
-    in the [Metadata file formats](./getting_started/folders_and_files/metadata.md#tsv-files) page.
+    in the [Metadata file formats](../folders_and_files/metadata.md#tsv-files) page.
 
 ### U
 
