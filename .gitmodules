@@ -29,3 +29,7 @@
 	path = docs/standards/bids_stats_model/src
 	url = https://github.com/bids-standard/stats-models
 	datalad-url = https://github.com/bids-standard/stats-models
+[submodule "data/datasets/examples"]
+	path = data/datasets/examples
+	url = https://github.com/bids-standard/bids-examples
+	datalad-url = https://github.com/bids-standard/bids-examples
