@@ -36,8 +36,8 @@ This specification is a successor to BIDS-Apps,
 which were described in Gorgolewski, et al. 2017 (doi:[10.1371/journal.pcbi.1005209](https://doi.org/10.1371/journal.pcbi.1005209)),
 here referred to as BIDS-Apps 1.0.
 Backwards compatibility with BIDS-Apps 1.0 is not an explicit goal,
-but can be achieved in many cases as is discussed in the section [on backwards-compatibility](./inputs.md#backwards-compatibility).
-A summary of changes from BIDS-Apps 1.0 is included in the [CHANGELOG](./CHANGELOG.md#[0.1.0.dev]).
+but can be achieved in many cases as is discussed in the section [on backwards-compatibility](./specification/inputs.md#backwards-compatibility).
+A summary of changes from BIDS-Apps 1.0 is included in the [release notes](./specification/release_notes.md#[0.1.0.dev]).
 
 This specification is seen as complementary to BIDS-Derivatives,
 which is part of BIDS as of version 1.4.0,
