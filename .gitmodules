@@ -29,3 +29,7 @@
 	path = docs/extensions/src
 	url = https://github.com/bids-standard/bids-extensions
 	datalad-url = https://github.com/bids-standard/bids-extensions
+[submodule "execution-spec"]
+	path = execution-spec
+	url = https://github.com/bids-standard/execution-spec
+	datalad-url = https://github.com/bids-standard/execution-spec
