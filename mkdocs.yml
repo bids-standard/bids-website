@@ -179,8 +179,8 @@ nav:
     -   faq/eeg.md
     -   faq/mri.md
     -   faq/phenotype.md
-    -   faq/bids_extensions.md
-    -   faq/bids_apps.md
+    -   faq/bids-extensions.md
+    -   faq/bids-apps.md
 -   Collaboration:
     -   collaboration/index.md
     -   specification/code_of_conduct.md

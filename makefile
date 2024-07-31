@@ -3,7 +3,7 @@ all: update
 serve: update
 	mkdocs serve
 
-update: update_from_spec update_faq update_contributors update_datasets_examples tmp_figures
+update: update_from_spec update_contributors update_datasets_examples tmp_figures
 
 package.json:
 	npm install `cat npm-requirements.txt`
@@ -18,15 +18,6 @@ update_from_spec:
 	cp specification/CONTRIBUTING.md docs/specification/CONTRIBUTING.md
 	cp specification/macros_doc.md docs/specification/macros_doc.md
 	cp -r specification/commenting_images docs/specification/
-
-update_faq:
-	@echo "  ----------------------------------  "
-	cd faq/general && faqtory build
-	cd faq/eeg && faqtory build
-	cd faq/mri && faqtory build
-	cd faq/pheno && faqtory build
-	cd faq/bep && faqtory build
-	cd faq/apps && faqtory build
 
 update_contributors: package.json
 	@echo "  ----------------------------------  "
@@ -67,7 +58,6 @@ lint: remark
 
 remark: package.json
 	npx remark \
-		faq \
 		./docs/*.md \
 		./docs/blog \
 		./docs/collaboration \
@@ -75,7 +65,7 @@ remark: package.json
 		./docs/datasets \
 		./docs/extensions/index.md \
 		./docs/extensions/beps.md \
-		./docs/faq/index.md \
+		./docs/faq/ \
 		./docs/getting_started/folders_and_files \
 		./docs/getting_started/resources \
 		./docs/getting_started/tutorials \

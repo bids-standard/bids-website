@@ -1,6 +1,0 @@
----
-# FAQtory settings
-
-questions_path: . # Where questions should be stored
-templates_path: ../../templates/faq/ # Path to templates
-output_path: ../../docs/faq/eeg.md
