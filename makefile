@@ -58,7 +58,6 @@ lint: remark
 
 remark: package.json
 	npx remark \
-		faq \
 		./docs/*.md \
 		./docs/blog \
 		./docs/collaboration \
@@ -66,7 +65,7 @@ remark: package.json
 		./docs/datasets \
 		./docs/extensions/index.md \
 		./docs/extensions/beps.md \
-		./docs/faq/index.md \
+		./docs/faq/ \
 		./docs/getting_started/folders_and_files \
 		./docs/getting_started/resources \
 		./docs/getting_started/tutorials \
