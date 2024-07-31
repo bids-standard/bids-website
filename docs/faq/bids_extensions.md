@@ -1,11 +1,3 @@
-<!-- the section below is automatically generated.
-
-If you want to modify the questions:
-- please edit the files in the `faq` folder in the root of the repository.
-- run `update_faq` from the root of the repository.
-
--->
-
 ## Can we introduce new entities / metadata in a BEP?
 
 > We need to introduce an entity to distinguish on-device preprocessing methods

@@ -1,11 +1,3 @@
-<!-- the section below is automatically generated.
-
-If you want to modify the questions:
-- please edit the files in the `faq` folder in the root of the repository.
-- run `update_faq` from the root of the repository.
-
--->
-
 ## Can I add more arguments to the API of my App?
 
 Every BIDS App must use the mandatory arguments mentioned above, but you are

@@ -1,11 +1,3 @@
-<!-- the section below is automatically generated.
-
-If you want to modify the questions:
-- please edit the files in the `faq` folder in the root of the repository.
-- run `update_faq` from the root of the repository.
-
--->
-
 ## I only have nifti files and no dicom. Can I still create a BIDS dataset?
 
 In theory yes, but it is possible that you will be missing some metadata that is required by the BIDS specification.

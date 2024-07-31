@@ -1,11 +1,3 @@
-<!-- the section below is automatically generated.
-
-If you want to modify the questions:
-- please edit the files in the `faq` folder in the root of the repository.
-- run `update_faq` from the root of the repository.
-
--->
-
 ## How can I store subject phenotypic data?
 
 In the phenotype folder, according to the details provided for

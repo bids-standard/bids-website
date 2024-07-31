@@ -1,11 +1,3 @@
-<!-- the section below is automatically generated.
-
-If you want to modify the questions:
-- please edit the files in the `faq` folder in the root of the repository.
-- run `update_faq` from the root of the repository.
-
--->
-
 ## How to format Hardware and Software filter fields in a .json?
 
 In the modality specific sidecar file `_eeg.json`, we can specify the software
