@@ -11,7 +11,7 @@ or rewriting scripts expecting certain structure.
 With the Brain  Imaging Data Structure (BIDS),
 we describe a simple and easy to adopt way of organizing neuroimaging and behavioral data.
 
-![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-white_1000x477.png)
+![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-black_1000x477.png)
 
 BIDS was heavily inspired by the format used internally by the OpenfMRI repository
 that is now known as [OpenNeuro](https://openneuro.org).

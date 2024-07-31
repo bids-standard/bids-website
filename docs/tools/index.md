@@ -7,7 +7,7 @@ to help you go from your sourcedata to have a BIDS dataset.
 
 The [BIDS validator](./validator.md) is there to ensure that your BIDS dataset is valid.
 
-You can use the [BIDS apps](./bids-apps/index.md)
+You can use the [BIDS apps](./bids-apps.md)
 (automated pipelines that can be used as Docker or Apptainer images)
 to process your BIDS datasets.
 
