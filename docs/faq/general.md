@@ -151,7 +151,7 @@ aim to extend the BIDS specification to new data types.
 A list of extensions ongoing and completed proposals can be found [here](../extensions/beps.md).
 
 Guidelines for contributing to these extensions or starting your own can be found
-in the [BIDS Extension Proposals Guide](../extensions/src/docs/index.md).
+in the [BIDS Extension Proposals Guide](../extensions/index.md).
 
 If only part of your data is covered under BIDS,
 an option to allow additional files

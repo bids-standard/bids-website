@@ -86,7 +86,7 @@
         run: optional
     ```
 
-    ![image of template rendered in spec](assets/img/noncontinuous_beh_rendered_template.png)
+    ![image of template rendered in spec](../../assets/img/noncontinuous_beh_rendered_template.png)
 
 ---
 
@@ -109,7 +109,7 @@
         RepetitionTimePreparation: optional
     ```
 
-    ![rendered image of rules.sidecars.anat.MRIAnatomyCommonMetadataFields](assets/img/rules_sidecars_anat_MRIAnatomyCommonMetadataFields.png)
+    ![rendered image of rules.sidecars.anat.MRIAnatomyCommonMetadataFields](../../assets/img/rules_sidecars_anat_MRIAnatomyCommonMetadataFields.png)
 
 ---
 
@@ -137,7 +137,7 @@
         - 'duration'
     ```
 
-    ![rendered image of task events](assets/img/tasks_events_tablular_data_rendered.png)
+    ![rendered image of task events](../../assets/img/tasks_events_tablular_data_rendered.png)
 
 ---
 

@@ -10,8 +10,8 @@ They are called BEPs because they are modeled after
 
 BEPs have grown the specification beyond its original scope of MRI
   to new techniques, and file types and descriptors. A list of completed
-  BEPS can be seen [here](https://bids.neuroimaging.io/get_involved.html#completed-beps) and
-  a list of proposed/ongoing BEPs can be found [here](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+  BEPS can be seen [here](./beps.md#completed-beps) and
+  a list of proposed/ongoing BEPs can be found [here](./beps.md#bids-extension-proposals)
 
 ## Why contribute to BIDS?
 
@@ -49,7 +49,7 @@ Larger contributions that are expected to involve longer and more involved
   for colleagues who do not use GitHub and/or Markdown,
   allowing more people to get involved.
 
-1. Explore [the specification](bids-specification.readthedocs.io)
+1. Explore [the specification][the BIDS specification repository]
    and [the BEP lists](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
    to find existing or ongoing efforts
    that may support what you are trying to add into the BIDS Specification.
@@ -105,7 +105,7 @@ Larger contributions that are expected to involve longer and more involved
       [BIDS Validator repository](https://github.com/bids-standard/bids-validator)
       as well to incorporate the extension.
 
-![bep_process](assets/img/bep_process.png)
+![bep_process](../assets/img/bep_process.png)
 
 ## Advice for extending BIDS
 
@@ -256,11 +256,11 @@ Merging BEPs only happens following a community review. It
 
 ### How to turn on email notifications about suggestions and comments for Google Docs
 
-![notifications_1](assets/img/notifications_1.png)
+![notifications_1](../assets/img/notifications_1.png)
 
-![notifications_2](assets/img/notifications_2.png)
+![notifications_2](../assets/img/notifications_2.png)
 
-![notifications_3](assets/img/notifications_3.png)
+![notifications_3](../assets/img/notifications_3.png)
 
 [the BIDS specification repository]: https://github.com/bids-standard/bids-specification/
 [issues page]: https://github.com/bids-standard/bids-specification/issues

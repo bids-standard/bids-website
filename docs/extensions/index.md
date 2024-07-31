@@ -6,7 +6,7 @@ This site provides information about creating and working with the BIDS Extensio
 
 ## BEP Guide
 
-For information about what is a BEP and how to get started working with a BEP visit [the BEP Guide](guide.md).
+For information about what is a BEP and how to get started working with a BEP visit [the BEP Guide](./general_guidelines.md).
 
 **Check [the specification][specification] and [the list of BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
   before creating a new one. You may find existing or ongoing efforts
@@ -23,6 +23,6 @@ Once you've made progress on your BEP and you are ready to integrate it into the
 This site also serves as the main documentation repository for working with the BIDS Schema,
   which you will need to enable validation of your BEP.
   For more information about the history of, working with, and
-  translating your BEP into the schema visit [the Schema Guide](schema.md) on this site.
+  translating your BEP into the schema visit [the Schema Guide](../standards/schema/index.md) on this site.
 
 [specification]: https://bids-specification.readthedocs.io
