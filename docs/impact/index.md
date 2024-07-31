@@ -1,8 +1,3 @@
----
-hide:
--   navigation
----
-
 # Impact
 
 This document intends to convey how the BIDS Steering and Maintainers Group can

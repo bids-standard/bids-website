@@ -1,8 +1,3 @@
----
-hide:
--   toc
----
-
 # BIDS extension proposals
 
 You can contribute to ongoing BIDS Extension Proposals (BEPs).

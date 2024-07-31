@@ -1,8 +1,5 @@
 ---
 title: BIDS
-hide:
--   navigation
--   toc
 ---
 
 Neuroimaging experiments result in complex data that can be arranged in many different ways.

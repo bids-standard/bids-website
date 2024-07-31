@@ -1,9 +1,3 @@
----
-hide:
--   toc
--   navigation
----
-
 # Contact
 
 We have lots of different ways of staying in touch!

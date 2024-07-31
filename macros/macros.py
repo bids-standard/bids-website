@@ -30,12 +30,12 @@ def generate_converter_table(file: str) -> str:
     return template.render(include=content[0])
 
 
-def generate_tools_table(file: str) -> str:
+def generate_tools_table(file: str, category=None) -> str:
     input_file = WEBSITE_DATA_DIR / "tools" / file
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("tools_table_md.jinja")
-    return template.render(include=content)
+    return template.render(include=content, category=category)
 
 
 def generate_members_table(file: str) -> str:
