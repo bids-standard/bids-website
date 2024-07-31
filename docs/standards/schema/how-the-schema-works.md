@@ -1,7 +1,6 @@
-
 The structure of the BIDS schema as seen from a top-level file view:
 
-```
+```text
 schema
 ├── BIDS_VERSION
 ├── SCHEMA_VERSION
@@ -20,21 +19,27 @@ schema
 
 The BIDS Schema can be be divided into three major components:
 
-1) [Objects](https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects) (`objects.*`)
-    - Definitions of BIDS concepts
-    - Source of definitions rendered in the specification e.g. in the [glossary](https://bids-specification.readthedocs.io/en/stable/glossary.html)
+1.  [Objects](https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects) (`objects.*`)
+    -   Definitions of BIDS concepts
 
-2) [Rules](https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules) (`rules.*`)
-    - Validation rules for entity ordering, sidecar values, and both common and modality specific rules
-    - Source of filename templates and tables describing sidecar fields and TSV Columns
+    -   Source of definitions rendered in the specification
+        e.g. in the [glossary](https://bids-specification.readthedocs.io/en/stable/glossary.html)
 
-3) [Meta](https://github.com/bids-standard/bids-specification/tree/master/src/schema/meta) (`meta.*`)
-    - Defines a "context" object to which rules can be applied
-    - Expandable to definitions, tests, or rules related to the schema itself
+1.  [Rules](https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules) (`rules.*`)
+    -   Validation rules for entity ordering, sidecar values, and both common and modality specific rules
+    -   Source of filename templates and tables describing sidecar fields and TSV Columns
 
->_Note: object dot notation e.g. `rules.checks.*` is used when referencing parts of the schema throughout this document. Bracket notation such as `objects['columns'][*]` is equally valid, but more difficult to read._
->
->_The character: `*`, represents a [glob](https://man7.org/linux/man-pages/man7/glob.7.html) and is used to denote matching any string/object_.
+1.  [Meta](https://github.com/bids-standard/bids-specification/tree/master/src/schema/meta) (`meta.*`)
+    -   Defines a "context" object to which rules can be applied
+    -   Expandable to definitions, tests, or rules related to the schema itself
+
+!!! note
+
+    object dot notation e.g. `rules.checks.*` is used when referencing parts of the schema throughout this document.
+    Bracket notation such as `objects['columns'][*]` is equally valid, but more difficult to read._
+
+    The character: `*`, represents a [glob](https://man7.org/linux/man-pages/man7/glob.7.html)
+    and is used to denote matching any string/object_.
 
 Examples of [Objects](schema_meta.md), [Rules](schema_rules.md), and [Meta](schema_meta.md) are detailed in the aforementioned linked sections.
 

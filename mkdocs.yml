@@ -116,9 +116,9 @@ nav:
         -   standards/schema/index.md
         -   how it works:
             -   standards/schema/how-the-schema-works.md
-            -   metadata: standards/schema/schema_meta.md
-            -   objects: standards/schema/schema_objects.md
-            -   rules: standards/schema/schema_rules.md
+            -   standards/schema/schema-meta.md
+            -   standards/schema/schema-objects.md
+            -   standards/schema/schema-rules.md
     -   BIDS Apps:
         -   standards/bids_app_specification/index.md
         -   standards/bids_app_specification/scope.md
@@ -196,8 +196,8 @@ nav:
 -   Extensions:
     -   extensions/index.md
     -   extensions/beps.md
-    -   extensions/general_guidelines.md
-    -   extensions/specific_guidelines.md
+    -   extensions/general-guidelines.md
+    -   extensions/specific-guidelines.md
     -   extensions/submission.md
     # -   macros: specification/macros_doc.md
 -   Impact:

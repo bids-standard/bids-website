@@ -2,7 +2,7 @@
 
 The Objects portion of the schema contains the following collection of schema files:
 
-```
+```text
 src/schema/objects
 ├── columns.yaml
 ├── common_principles.yaml
