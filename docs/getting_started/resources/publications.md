@@ -1,4 +1,3 @@
-
 See the specification website for the
 [main publications](https://bids-specification.readthedocs.io/en/latest/01-introduction.html#citing-bids)
 related to BIDS and its extensions.

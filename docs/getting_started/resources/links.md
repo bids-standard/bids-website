@@ -1,4 +1,3 @@
-
 ## Converters
 
 If you are looking for tools to convert your data into BIDS, please see the
