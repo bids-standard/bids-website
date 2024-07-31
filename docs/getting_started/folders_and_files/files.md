@@ -1,5 +1,3 @@
-# Filenames
-
 These are the three main types of files you'll find in a BIDS dataset:
 
 1.  `.json` files that contain `key: value` metadata

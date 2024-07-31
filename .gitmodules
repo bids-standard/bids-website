@@ -1,30 +1,31 @@
-[submodule "docs/stats_models"]
-	path = docs/stats_models
-	url = https://github.com/bids-standard/stats-models
-	datalad-url = https://github.com/bids-standard/stats-models
-[submodule "docs/extensions"]
-	path = docs/extensions
-	url = https://github.com/bids-standard/bids-extensions
-	datalad-url = https://github.com/bids-standard/bids-extensions
-[submodule "docs/execution"]
-	path = docs/execution
-	url = https://github.com/bids-standard/execution-spec
-	datalad-url = https://github.com/bids-standard/execution-spec
-[submodule "docs/apps"]
-	path = docs/apps
-	url = https://github.com/bids-apps/bids-apps.github.io
-	datalad-url = https://github.com/bids-apps/bids-apps.github.io
-[submodule "docs/variable-transform"]
-	path = docs/variable-transform
-	url = https://github.com/bids-standard/variable-transform.git
-	datalad-url = https://github.com/bids-standard/variable-transform.git
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
-[submodule "examples"]
-	path = examples
+[submodule "data/apps"]
+	path = data/apps
+	url = https://github.com/bids-apps/bids-apps.github.io
+	datalad-url = https://github.com/bids-apps/bids-apps.github.io
+[submodule "docs/getting_started/src"]
+	path = docs/getting_started/src
+	url = https://github.com/bids-standard/bids-starter-kit.git
+	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
+[submodule "docs/extensions/src"]
+	path = docs/extensions/src
+	url = https://github.com/bids-standard/bids-extensions
+	datalad-url = https://github.com/bids-standard/bids-extensions
+[submodule "execution-spec"]
+	path = execution-spec
+	url = https://github.com/bids-standard/execution-spec
+	datalad-url = https://github.com/bids-standard/execution-spec
+[submodule "docs/standards/bids_stats_model/variable-transform"]
+	path = docs/standards/bids_stats_model/variable-transform
+	url = https://github.com/bids-standard/variable-transform.git
+	datalad-url = https://github.com/bids-standard/variable-transform.git
+[submodule "docs/standards/bids_stats_model/src"]
+	path = docs/standards/bids_stats_model/src
+	url = https://github.com/bids-standard/stats-models
+	datalad-url = https://github.com/bids-standard/stats-models
+[submodule "data/datasets/examples"]
+	path = data/datasets/examples
 	url = https://github.com/bids-standard/bids-examples
 	datalad-url = https://github.com/bids-standard/bids-examples
-[submodule "docs/starter_kit"]
-	path = docs/starter_kit
-	url = https://github.com/bids-standard/bids-starter-kit.git

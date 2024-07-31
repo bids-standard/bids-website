@@ -3,7 +3,7 @@ all: update
 serve: update
 	mkdocs serve
 
-update: update_from_spec update_faq update_contributors update_datasets_examples tmp_figures
+update: update_from_spec update_contributors update_datasets_examples tmp_figures
 
 package.json:
 	npm install `cat npm-requirements.txt`
@@ -14,19 +14,10 @@ update_from_spec:
 	mkdir -p docs/specification/
 	mkdir -p docs/specification/schema
 	cp -r specification/src/schema docs/specification/
-	cp specification/CODE_OF_CONDUCT.md docs/specification/CODE_OF_CONDUCT.md
+	cp specification/CODE_OF_CONDUCT.md docs/specification/code_of_conduct.md
 	cp specification/CONTRIBUTING.md docs/specification/CONTRIBUTING.md
 	cp specification/macros_doc.md docs/specification/macros_doc.md
 	cp -r specification/commenting_images docs/specification/
-
-update_faq:
-	@echo "  ----------------------------------  "
-	cd faq/general && faqtory build
-	cd faq/eeg && faqtory build
-	cd faq/mri && faqtory build
-	cd faq/pheno && faqtory build
-	cd faq/bep && faqtory build
-	cd faq/apps && faqtory build
 
 update_contributors: package.json
 	@echo "  ----------------------------------  "
@@ -35,7 +26,7 @@ update_contributors: package.json
 
 update_datasets_examples:
 	@echo "  ----------------------------------  "
-	python examples/tools/print_dataset_listing.py docs/datasets/index.md
+	python data/datasets/examples/tools/print_dataset_listing.py docs/datasets/index.md
 
 
 # Figures
@@ -67,14 +58,22 @@ lint: remark
 
 remark: package.json
 	npx remark \
-		faq \
 		./docs/*.md \
-		./docs/bep \
 		./docs/blog \
 		./docs/collaboration \
+		./docs/contact \
 		./docs/datasets \
-		./docs/faq/index.md \
-		./docs/getting_started \
-		./docs/standards \
+		./docs/extensions/*md \
+		./docs/faq/ \
+		./docs/getting_started/*.md \
+		./docs/getting_started/bids_apps/**/*.md \
+		./docs/getting_started/folders_and_files/**/*.md \
+		./docs/getting_started/resources/**/*.md \
+		./docs/getting_started/tutorials/**/*.md \
+		./docs/impact \
+		./docs/standards/bids_app_specification \
+		./docs/standards/bids_specification \
+		./docs/standards/schema \
+		./docs/standards/index.md \
 		./docs/tools \
 		--rc-path .remarkrc

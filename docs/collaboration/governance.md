@@ -40,7 +40,7 @@ BIDS has advanced under the direction and effort of its contributors,
 the community of researchers that appreciate the value of standardizing neuroimaging data to facilitate sharing and analysis.
 The project is multifaceted and depends on contributors for:
 specification development and maintenance,
-[BIDS Extension Proposals (BEPs)](../bep/beps.md),
+[BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
 [starter kits](https://bids-standard.github.io/bids-starter-kit/),
 [examples](https://github.com/bids-standard/bids-examples),
@@ -48,7 +48,7 @@ and general discussions.
 The relevant discussions are located in our
 [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
 [GitHub organization](https://github.com/bids-standard),
-and public Google Documents (typically associated with an [extension proposal](../bep/beps.md)).
+and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
 software tools and platforms that facilitate the validation and ease the

@@ -11,7 +11,7 @@ or rewriting scripts expecting certain structure.
 With the Brain  Imaging Data Structure (BIDS),
 we describe a simple and easy to adopt way of organizing neuroimaging and behavioral data.
 
-![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-white_1000x477.png)
+![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-black_1000x477.png)
 
 BIDS was heavily inspired by the format used internally by the OpenfMRI repository
 that is now known as [OpenNeuro](https://openneuro.org).
@@ -41,7 +41,7 @@ a large ecosystem of tools and resources has evolved around BIDS.
 A few of the key elements of this ecosystem are
 the [BIDS specification](http://bids-specification.readthedocs.io/) with the nitty-gritty details,
 <!-- markdown-link-check-disable -->
-the [starter kit](./starter_kit/src/index.md) with a simple explanation how to work with it,
+the [starter kit](./getting_started/index.md) with a simple explanation how to work with it,
 <!-- markdown-link-check-enable -->
 the [BIDS validator](https://github.com/bids-standard/bids-validator) to automatically check datasets for adherence to the specification,
 [BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
@@ -119,7 +119,7 @@ By using this standard you will benefit in the following ways:
 
 -   Take a look at how the community [uses BIDS](https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4).
 
--   We have constructed a [grant writing kit](./impact.md)
+-   We have constructed a [grant writing kit](./impact/index.md)
     to assist you in putting together BIDS-related grant proposals.
 
 -   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
