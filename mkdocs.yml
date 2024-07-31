@@ -262,7 +262,6 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - navigation.path
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -316,7 +315,7 @@ markdown_extensions:
   - tables
   - toc:
       anchorlink: true
-      toc_depth: 4
+      toc_depth: 3
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
