@@ -17,8 +17,9 @@ src/schema/objects
 ```
 
 Objects contain selectors, issues and error messages to raise during validation, descriptors, messages, and units.
-  Every property needed describe a an entity in BIDS contained within an object's contents. We'll take a closer
-  look below at a few specific objects to better introduce the structure that they represent and take on.
+Every property needed describe a an entity in BIDS contained within an object's contents.
+We'll take a closer look below at a few specific objects
+to better introduce the structure that they represent and take on.
 
 ## BIDS terms
 

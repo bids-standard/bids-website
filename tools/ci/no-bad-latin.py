@@ -14,6 +14,7 @@ import re
 from pathlib import Path
 
 from pull_files import filter_files
+from rich import print
 
 ABSOLUTE_HERE = Path(__file__).parents[2]
 # switch ignore list to unix style glob matching instead of single file name

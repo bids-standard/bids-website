@@ -36,21 +36,21 @@ a repeated pattern in generating derivatives within several imaging modalities' 
 
 1.  A reference map that is used to encode spatial features and parameters is required.
     There is an antecedent of this in `BIDS` with BEP23 ([see below](#BEP-23-PET-Derivatives)).
-    In that `BEP`, the proposed naming takes the pattern `_<suffix>ref` (e.g., `_boldref`, `_dwiref`, etc.), and that solution has been suggested as a possibility in [issue #1532](https://github.com/bids-standard/bids-specification/issues/1532) of the spec repository.
+    In that `BEP`, the proposed naming takes the pattern `_<suffix>ref` (for example `_boldref`, `_dwiref`...), and that solution has been suggested as a possibility in [issue #1532](https://github.com/bids-standard/bids-specification/issues/1532) of the spec repository.
 
 1.  We have derived data that are no longer of the same type as the original,
     but for which we would like to keep the notion of the modality from which this was derived
-    while also signaling that it is derived (i.e., `non-raw`).
+    while also signaling that it is derived (that is `non-raw`).
 
 ### Motivation for guidelines
 
 Many users are not equipped to understand fine distinctions between different classes of derivatives
-(e.g., those that are produced by a `model fit and` a `direct computation`).
+(for example, those that are produced by a `model fit and` a `direct computation`).
 
 ### Guidelines
 
 A specific suffix *pattern* is used : `_<suffix>map`, where `<suffix>` is a BIDS suffix used in the `raw` data
-(e.g., `dwi` or `bold`).
+(for example, `dwi` or `bold`).
 For example, the proposed pattern produces the suffices `_dwimap` or `_boldmap`.
 `BEP`s may use this suffix pattern under the conditions specified below
 and MUST specify the extension and metadata that are required with the suffix.
@@ -58,17 +58,19 @@ and MUST specify the extension and metadata that are required with the suffix.
 1.  The file descriptor does fall under one of the generic derivatives descriptors.
 
 1.  No other descriptor exists in the `BIDS` spec.
-    For example, `statmap` cannot be used, because it is already being used, or soon to be, for a [different specification](https://bids-standard.github.io/stats-models/walkthrough-1.html#from-run-outputs-to-subject-inputs).
+    For example, `statmap` cannot be used, because it is already being used, or soon to be,
+    for a [different specification](https://bids-standard.github.io/stats-models/walkthrough-1.html#from-run-outputs-to-subject-inputs).
 
 This suffix pattern provides context through the concatenation of a raw data suffix and the word "`map`"
- which implies that the file still contains spatially contiguous information
- (in contrast to tabular/"tidy" data, with each row representing a brain region, for example).
+which implies that the file still contains spatially contiguous information
+(in contrast to tabular/"tidy" data, with each row representing a brain region, for example).
 
 This pattern is, in principle, generalizable across `BEP`s and derivatives in general:
 
 1.  A data process might have generated primary parameters that are either `3D (x,y,z)` or `4D (x,y,z,v)`.
     These parameters might be of help for further data analysis or data interpretation,
-    and ultimately the data end user. Examples include "statistics" such as mean, std, and so on,
+    and ultimately the data end user.
+    Examples include "statistics" such as mean, std, and so on,
     or model derivatives, such as `DTI FA`.
 
 1.  At the same time, the process might have generated secondary parameters.
