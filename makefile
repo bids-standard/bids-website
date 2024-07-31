@@ -19,15 +19,6 @@ update_from_spec:
 	cp specification/macros_doc.md docs/specification/macros_doc.md
 	cp -r specification/commenting_images docs/specification/
 
-update_faq:
-	@echo "  ----------------------------------  "
-	cd faq/general && faqtory build
-	cd faq/eeg && faqtory build
-	cd faq/mri && faqtory build
-	cd faq/pheno && faqtory build
-	cd faq/bep && faqtory build
-	cd faq/apps && faqtory build
-
 update_contributors: package.json
 	@echo "  ----------------------------------  "
 	python tools/build/transfer_contributors.py

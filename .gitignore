@@ -3,15 +3,6 @@ bep_leads.tsv
 output_gh_summary.png
 .all-contributorsrc
 
-# ignore FAQ files that generated automatically
-docs/faq/bids_apps.md
-docs/faq/bids_extensions.md
-docs/faq/eeg.md
-docs/faq/general.md
-docs/faq/mri.md
-docs/faq/phenotype.md
-
-
 # ignore for now files that are copied from the bids examples and spe
 docs/examples/
 docs/specification/
