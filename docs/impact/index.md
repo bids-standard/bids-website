@@ -142,7 +142,7 @@ their organizational structure.
 ### Website and Specification traffic dashboards
 
 In order to measure the volume of traffic to our
-[website](https://bids.neuroimaging.io/) and the
+website and the
 [ReadTheDocs rendering of the specification](https://bids-specification.readthedocs.io/en/stable/),
 we utilize Google Analytics.
 

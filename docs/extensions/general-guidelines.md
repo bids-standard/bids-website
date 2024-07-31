@@ -45,12 +45,12 @@ for colleagues who do not use GitHub and/or Markdown,
 allowing more people to get involved.
 
 1.  Explore [the specification][the bids specification repository]
-    and [the BEP lists](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+    and [the BEP lists](./beps.md)
     to find existing or ongoing efforts
     that may support what you are trying to add into the BIDS Specification.
     Someone may have already done work for you.
 
-1.  Read the [BIDS governance document](https://bids.neuroimaging.io/governance.html).
+1.  Read the [BIDS governance document](../collaboration/governance.md).
 
 1.  Familiarize yourself with the BIDS community by browsing current issues,
     discussions, and proposed changes on
@@ -66,11 +66,10 @@ allowing more people to get involved.
     **This is an important step before proceeding in order to make sure that
     more consensus arises and more contributors are aware what is happening**.
 
-1.  Communicate with the BIDS maintainers to make your BEP official. This
-    entails registering the BEP with a number on
-    [the BIDS website](https://bids.neuroimaging.io/get_involved.html).
-    To obtain a number for your BEP, follow the previous steps and then [open a
-    new issue](https://github.com/bids-standard/bids-website/issues)
+1.  Communicate with the BIDS maintainers to make your BEP official.
+    This entails registering the BEP with a number on the BIDS website.
+    To obtain a number for your BEP, follow the previous steps
+    and then [open a new issue](https://github.com/bids-standard/bids-website/issues)
     or [submit a pull request](https://github.com/bids-standard/bids-website/pulls) to the
     [website GitHub repository](https://github.com/bids-standard/bids-website/),
     cross-linking to any other already existing issues.

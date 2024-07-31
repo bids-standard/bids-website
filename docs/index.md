@@ -23,7 +23,7 @@ to reflect current lab practices and make it accessible to a wide range of scien
 ## BIDS is a community effort
 
 BIDS is developed by the community for the community
-and everybody can [become a part of the community](https://bids.neuroimaging.io/get_involved.html).
+and everybody can [become a part of the community](./extensions/index.md).
 
 The most important part of BIDS are the users:
 if more people use it, more data will be shared and the more powerful it will become.
@@ -47,7 +47,7 @@ the [BIDS validator](https://github.com/bids-standard/bids-validator) to automat
 [BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
 and [OpenNeuro](https://openneuro.org/) as a database for BIDS formatted datasets.
 
-A non-exhaustive list of further tools can be found in the [Benefits](https://bids.neuroimaging.io/benefits.html) section.
+A non-exhaustive list of further tools can be found in the [tools](./tools/index.md) section.
 
 With the ongoing development of new tools and resources it is important to keep in mind
 that the [BIDS specification](http://bids-specification.readthedocs.io/) remains

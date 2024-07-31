@@ -2,7 +2,7 @@
 
 We strongly recommend you pick a BIDS converter to help you convert your data.
 
-A list of converters can be found [on the BIDS website](https://bids.neuroimaging.io/benefits.html#converters)
+A list of converters can be found [on this website](../../../tools/converters/index.md)
 
 Below is a link to a tutorial for converting data using heudiconv.
 
