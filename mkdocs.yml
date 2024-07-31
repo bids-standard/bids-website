@@ -154,27 +154,27 @@ nav:
             -   user interface: standards/bids_app_specification/specification/user-interface.md
             -   release notes: standards/bids_app_specification/specification/release-notes.md
 -   Getting started:
-    -   getting_started/src/src/index.md
-    -   folders and files:
+    -   getting_started/index.md
+    -   Folders and files:
         -   getting_started/folders_and_files/index.md
-        -   getting_started/folders_and_files/derivatives.md
         -   getting_started/folders_and_files/folders.md
-        -   getting_started/folders_and_files/metadata.md
         -   getting_started/folders_and_files/files.md
-    -   resources:
+        -   getting_started/folders_and_files/metadata.md
+        -   getting_started/folders_and_files/derivatives.md
+    -   Resources:
         -   getting_started/resources/index.md
-        -   getting_started/src/src/links.md
+        -   getting_started/resources/links.md
         -   getting_started/resources/glossary.md
-        -   getting_started/src/src/dependencies.md
-        -   getting_started/src/src/publications.md
-        -   getting_started/src/src/talks.md
+        -   getting_started/resources/dependencies.md
+        -   getting_started/resources/publications.md
+        -   getting_started/resources/talks.md
     -   BIDS apps:
         -   getting_started/bids_apps/index.md
         -   getting_started/bids_apps/tutorial.md
-    -   tutorials:
+    -   Tutorials:
         -   getting_started/tutorials/index.md
         -   getting_started/tutorials/annotation.md
-        -   conversion:
+        -   Conversion:
             -   getting_started/tutorials/conversion/index.md
             -   getting_started/tutorials/conversion/asl.md
             -   getting_started/tutorials/conversion/ieeg.md

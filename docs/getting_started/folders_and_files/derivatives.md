@@ -1,4 +1,3 @@
-# Derivatives
 
 Derivatives are outputs of (pre-)processing pipelines, capturing data
 and meta-data sufficient for a researcher to understand

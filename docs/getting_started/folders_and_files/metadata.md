@@ -1,4 +1,3 @@
-# Metadata and file formats
 
 Metadata are stored in .json and .tsv files.
 

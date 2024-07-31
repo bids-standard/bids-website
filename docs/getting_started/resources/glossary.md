@@ -1,4 +1,3 @@
-# BIDS jargon busting
 
 ![XKCD comic 771](https://imgs.xkcd.com/comics/period_speech.png)
 
