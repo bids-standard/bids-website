@@ -68,7 +68,7 @@ for some type of preprocessing (like slice timing info).
     remember to use pybids
     [path construction tools](https://bids-standard.github.io/pybids/examples/pybids_tutorial.html#path-construction)
     or the
-    [bids matlab equivalent](https://github.com/bids-standard/bids-matlab/blob/master/examples/03_BIDS-Matlab_filenames_and_metadata.ipynb) to make your life easier when constructing bids valid filenames.
+    [bids matlab equivalent](https://github.com/bids-standard/bids-matlab/blob/main/demos/notebooks/BIDS-Matlab_03_filenames_and_metadata.ipynb) to make your life easier when constructing bids valid filenames.
 
 ## What defacing tools can I use?
 

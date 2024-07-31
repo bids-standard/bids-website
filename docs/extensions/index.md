@@ -8,7 +8,7 @@ with the BIDS Extension Proposal (commonly referred to as BEP or in the plural a
 ## BEP Guide
 
 For information about what is a BEP and how to get started working
-with a BEP visit [the BEP Guide](./general_guidelines.md).
+with a BEP visit [the BEP Guide](./general-guidelines.md).
 
 !!! warning
 

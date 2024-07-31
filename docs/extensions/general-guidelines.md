@@ -116,7 +116,7 @@ tool building comes up is in choosing file formats.
 For example, allowing multiple different file formats to be used to represent the same data type is flexible,
 but requires developers to provide support for all of them.
 As an example, iEEG-BIDS and EEG-BIDS
-[surveyed the community](https://bids.berkeley.edu/news/bids-megeegieeg-data-format-survey)
+surveyed the community <!--TODO find links  -->
 to find out about most common formats and selected only a few formats based on usage and their openness.
 
 ### Get the community involved

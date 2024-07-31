@@ -99,6 +99,6 @@ A change now made to a BEP, the spec in general, is now a change made and update
 
 [jsonified_schema]: https://bids-specification.readthedocs.io/en/stable/schema.json
 [schema_readme.md]: https://github.com/bids-standard/bids-specification/blob/master/src/schema/README.md
-[schema_source]: https://github.com/bids-standard/bids-specification/src/schema
+[schema_source]: https://github.com/bids-standard/bids-specification/tree/master/src/schema
 [bidsschematools_pypi]: https://pypi.org/project/bidsschematools/
 [bidsschematools_rtd]: https://bidsschematools.readthedocs.io/en/latest/?badge=latest

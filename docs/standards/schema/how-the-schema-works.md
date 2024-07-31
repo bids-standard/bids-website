@@ -41,7 +41,7 @@ The BIDS Schema can be be divided into three major components:
     The character: `*`, represents a [glob](https://man7.org/linux/man-pages/man7/glob.7.html)
     and is used to denote matching any string/object_.
 
-Examples of [Objects](schema_meta.md), [Rules](schema_rules.md), and [Meta](schema_meta.md) are detailed in the aforementioned linked sections.
+Examples of [Objects](schema-meta.md), [Rules](schema-rules.md), and [Meta](schema-meta.md) are detailed in the aforementioned linked sections.
 
 Examples are hyperlinked to parts of the schema (source code) where applicable, simply click on the blue
 links to reach those parts of the schema.
