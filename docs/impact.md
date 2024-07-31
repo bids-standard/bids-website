@@ -45,7 +45,6 @@ A listing of the previous grants can be found [here](./collaboration/acknowledgm
 
 --8<-- "tmp/openneuro_data_growth.html"
 
-
 ### Citation Count
 
 BIDS references are  centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
