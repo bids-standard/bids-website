@@ -3,7 +3,7 @@ all: update
 serve: update
 	mkdocs serve
 
-update: update_from_spec update_faq update_contributors update_datasets_examples tmp_figures
+update: update_from_spec update_contributors update_datasets_examples tmp_figures
 
 package.json:
 	npm install `cat npm-requirements.txt`
