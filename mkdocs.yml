@@ -23,7 +23,7 @@ plugins:
         # old links from the old wesbite
         "news.md": "blog/index.md"
         "specification.md": "standards/index.md"
-        "get_started.md": "getting_started/src/src/index.md"
+        "get_started.md": "getting_started/index.md"
         "get_involved.md": "extensions/index.md"
         "governance.md": "collaboration/governance.md"
         "acknowledgments.md": "collaboration/acknowledgments.md"
@@ -81,27 +81,7 @@ use_directory_urls: false
 exclude_docs: |
   extensions/src/README.md
   extensions/src/docs/faq.md
-  getting_started/src/src/_build
-  getting_started/src/src/folders_and_files
-  getting_started/src/README.md
-  getting_started/src/matlabCode/general/README.md
-  getting_started/src/reports/
-  getting_started/src/CODE_OF_CONDUCT.md
-  getting_started/src/CONTRIBUTING.md
-  getting_started/src/src/CODE_OF_CONDUCT.md
-  getting_started/src/src/CONTRIBUTING.md
-  getting_started/src/src/dataset_examples.md
-  getting_started/src/src/FAQ.md
-  getting_started/src/src/contact.md
-  getting_started/src/src/glossary.md
-  getting_started/src/src/tutorials/media/README.md
-  getting_started/src/src/validator.md
-  getting_started/src/src/tutorials/annotation.md
-  getting_started/src/src/tutorials/asl.md
-  getting_started/src/src/tutorials/ieeg.md
-  getting_started/src/src/tutorials/mri.md
-  getting_started/src/src/tutorials/pet.md
-  getting_started/src/src/tutorials/tutorials.md
+  getting_started/src
   standards/bids_stats_model/variable-transform
   standards/bids_stats_model/src/README.md
   standards/bids_stats_model/src/bsmschema/README.md
