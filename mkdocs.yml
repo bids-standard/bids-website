@@ -79,8 +79,7 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  extensions/src/README.md
-  extensions/src/docs/faq.md
+  extensions/src/
   getting_started/src
   standards/bids_stats_model/variable-transform
   standards/bids_stats_model/src/README.md
@@ -114,14 +113,12 @@ nav:
         #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
         #     -   munge: standards/bids_stats_model/variable-transform/spec/munge.md
     -   BIDS Schema:
-        -   extensions/src/docs/schema.md
+        -   standards/schema/index.md
         -   how it works:
-            -   extensions/src/docs/how-the-schema-works.md
-            -   metadata: extensions/src/docs/schema_meta.md
-            -   objects: extensions/src/docs/schema_objects.md
-            -   rules: extensions/src/docs/schema_rules.md
-        -   details:
-            -   specification/schema/README.md
+            -   standards/schema/how-the-schema-works.md
+            -   metadata: standards/schema/schema_meta.md
+            -   objects: standards/schema/schema_objects.md
+            -   rules: standards/schema/schema_rules.md
     -   BIDS Apps:
         -   standards/bids_app_specification/index.md
         -   standards/bids_app_specification/scope.md
@@ -198,11 +195,10 @@ nav:
     #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
 -   Extensions:
     -   extensions/index.md
-    -   intro: extensions/src/docs/index.md
     -   extensions/beps.md
-    -   general_guidelines: extensions/src/docs/general_guidelines.md
-    -   guide: extensions/src/docs/guide.md
-    -   submission: extensions/src/docs/submission.md
+    -   extensions/general_guidelines.md
+    -   extensions/specific_guidelines.md
+    -   extensions/submission.md
     # -   macros: specification/macros_doc.md
 -   Impact:
     -   impact/index.md
