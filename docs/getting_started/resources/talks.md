@@ -5,16 +5,17 @@ You can find curated list of talks and slides:
 -   [on this project on OSF](https://osf.io/yn93h/)
 -   [organized by playlist on the BIDS youtube channel](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw/playlists)
 
-```{important}
-If you have prepared or presented anything about BIDS that you would like to share,
-let us know and we will add it to the the project or the relevant playlist on youtube!
+!!! note
 
-Also if you know of other talks or slides that probably should be added, don't hesitate.
-```
+    If you have prepared or presented anything about BIDS that you would like to share,
+    let us know and we will add it to the the project or the relevant playlist on youtube!
 
-**To upload slideshows, please use [slideshare](https://www.slideshare.net/) for
-direct online viewing or [Dropbox](https://www.dropbox.com/) /
-[Google Drive](https://www.google.ca/drive/) for a download link**
+    Also if you know of other talks or slides that probably should be added, don't hesitate.
+
+    To upload slideshows, please use
+    [slideshare](https://www.slideshare.net/) for direct online viewing
+    or [Dropbox](https://www.dropbox.com/) /
+    [Google Drive](https://www.google.ca/drive/) for a download link
 
 ## Other Slideshows and talk
 
