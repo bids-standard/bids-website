@@ -1,4 +1,3 @@
-
 A Brain Imaging Data Structure (BIDS) Extension Proposal (BEP) is
   a community-driven process to add a new modality or set of data types to
   [the BIDS Specification][specification].

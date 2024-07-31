@@ -79,8 +79,7 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  extensions/src/README.md
-  extensions/src/docs/faq.md
+  extensions/src/
   getting_started/src
   standards/bids_stats_model/variable-transform
   standards/bids_stats_model/src/README.md
