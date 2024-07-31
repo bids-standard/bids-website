@@ -12,7 +12,7 @@ with a BEP visit [the BEP Guide](./general-guidelines.md).
 
 !!! warning
 
-    Check [the specification][specification] and [the list of BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+    Check [the specification][specification] and [the list of BEPs](./beps.md)
     before creating a new one. You may find existing or ongoing efforts
     that already support your use case.
     Avoid duplicating efforts.

@@ -1,7 +1,7 @@
 ## Converters
 
 If you are looking for tools to convert your data into BIDS, please see the
-[list of converters on the BIDS website](https://bids.neuroimaging.io/benefits.html#converters)
+[list of converters on the BIDS website](../../tools/converters/index.md)
 
 ## Python tools
 

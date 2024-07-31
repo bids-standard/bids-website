@@ -251,8 +251,7 @@ All community members are welcome to join BEP Working Groups and other
 working and interest groups.
 
 The current BEP Working Groups and their leads can be found in the
-section on [BIDS Extension
-Proposals](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+section on [BIDS Extension Proposals](../extensions/beps.md)
 in the BIDS specification.
 
 ## 4. Governance of the standardization process
@@ -329,9 +328,9 @@ This covers the current raw data organization for brain MRI, MEG, EEG,
 and iEEG.
 
 **BIDS Extension Proposal (BEP)** - A proposal that intends to extend
-BIDS into an unspecified modality or derivative. A BEP is typically led
-by 1-3 individuals with several contributors. The [list of
-BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+BIDS into an unspecified modality or derivative.
+A BEP is typically led by 1-3 individuals with several contributors.
+The [list of BEPs](../extensions/beps.md)
 can be found elsewhere on this website.
 
 **Draft BEP** - The in-progress document, typically in a Google Doc, of
