@@ -92,11 +92,14 @@ allowing more people to get involved.
     converting the proposal to Markdown and submitting a Pull Request at
     [the bids specification repository])
 
-1. Create example datasets. Where possible complete source and target datasets,
-    from across several different vendors, should be supplied along with instructions
-    on how to transform data from source to target. These datasets are vital for
-    the development of resources that will, ultimately, increase the adoption of
+1. Create example datasets. Complete source data (for example dicom/edf/excel) and its
+    corresponding target BIDS datasets, _must be_ supplied along with instructions on how
+    to transform data from source to target. When possible data from multiple vendors,
+    such as Siemens, Philips, or General Electric (in the case of MR) should be included.
+    These datasets are vital for the development of resources that will, ultimately, increase the adoption of
     the BEP following its integration into the BIDS Specification; see [this discussion](https://github.com/bids-standard/bids-specification/issues/1350).
+    BIDS maintainers **are available to assist** in the collection, organization, or at
+    any step in the preparation of these datasets.
 
 1. If necessary, contribute a pull request to the
       [BIDS Validator repository](https://github.com/bids-standard/bids-validator)
