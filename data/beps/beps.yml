@@ -5,7 +5,7 @@
 #   display
 #   link:
 #   leads:
-#     - name:
+#     - family-names:
 #       email
 #   status:
 #   blocking:
@@ -18,7 +18,8 @@
     content:
     -   raw
     leads:
-    -   name: ' '
+    -   given-names: ' '
+        family-names: ' '
         email:
     status:
     blocking:
@@ -33,7 +34,8 @@
     content:
     -   derivative
     leads:
-    -   name: Viviana Siless
+    -   given-names: Viviana
+        family-names: Siless
         email:
     status:
     -   '[**HTML preview**](https://bids-specification--518.org.readthedocs.build/en/518/05-derivatives/04-structural-derivatives.html)'
@@ -51,7 +53,8 @@
     content:
     -   derivative
     leads:
-    -   name: Chris Markiewicz
+    -   given-names: Chris
+        family-names: Markiewicz
         email: markiewicz@stanford.edu
     status:
     -   '[**HTML preview**](https://bids-specification--519.org.readthedocs.build/en/519/derivatives/functional-derivatives.html)'
@@ -70,7 +73,8 @@
     content:
     -   derivative
     leads:
-    -   name: Oscar Esteban
+    -   given-names: Oscar
+        family-names: Esteban
         email: phd@oscaresteban.es
     status:
     -   After the kick-off meeting (2019), progress locked on developing a prototype of a new HDF5-based format (X5)
@@ -90,9 +94,11 @@
     content:
     -   derivative
     leads:
-    -   name: Franco Pestilli
+    -   given-names: Franco
+        family-names: Pestilli
         email: pestilli@utexas.edu
-    -   name: Oscar Esteban
+    -   given-names: Oscar
+        family-names: Esteban
         email: phd@oscaresteban.es
     status:
     -   identifying outstanding issues/roadblocks
@@ -110,7 +116,8 @@
     content:
     -   derivative
     leads:
-    -   name: Eugene Duff
+    -   given-names: Eugene
+        family-names: Duff
         email: eugene.duff@paediatrics.ox.ac.uk
     status:
     -   resituating BEP to cover relationship data more generally
@@ -129,7 +136,8 @@
     content:
     -   raw
     leads:
-    -   name: Dejan Draschkow
+    -   given-names: Dejan
+        family-names: Draschkow
         email: dejan.draschow@psy.ox.ac.uk
     status:
     -   PR almost ready. [**HTML preview**](https://bids-specification--1128.org.readthedocs.build/en/1128/modality-specific-files/physiological-recordings.html#eye-tracking)
@@ -147,19 +155,26 @@
     content:
     -   derivative
     leads:
-    -   name: Arnaud Delorme
+    -   given-names: Arnaud
+        family-names: Delorme
         email: adelorme@ucsd.edu
-    -   name: Dora Hermes
+    -   given-names: Dora
+        family-names: Hermes
         email: dorahermes@gmail.com
-    -   name: Mainak Jas
+    -   given-names: Mainak
+        family-names: Jas
         email: mainakjas@gmail.com
-    -   name: Guiomar Niso
+    -   given-names: Guiomar
+        family-names: Niso
         email: guiomar.niso@ctb.upm.es
-    -   name: Robert Oostenveld
+    -   given-names: Robert
+        family-names: Oostenveld
         email: r.oostenveld@donders.ru.nl
-    -   name: Cyril Pernet
+    -   given-names: Cyril
+        family-names: Pernet
         email: wamcyril@gmail.com
-    -   name: Christine Rogers
+    -   given-names: Christine
+        family-names: Rogers
         email: rogers@bic.mni.mcgill.ca
     status:
     -   '[**HTML preview**](https://bids-specification.readthedocs.io/en/bep021/derivatives/ephys.html)'
@@ -181,11 +196,14 @@
     content:
     -   raw
     leads:
-    -   name: Mark Mikkelsen
+    -   given-names: Mark
+        family-names: Mikkelsen
         email: mam4041@med.cornell.edu
-    -   name: William Clarke
+    -   given-names: William
+        family-names: Clarke
         email:
-    -   name: Martin Wilson
+    -   given-names: Martin
+        family-names: Wilson
         email:
     status:
     -   '[**HTML preview**](https://bids-specification--1377.org.readthedocs.build/en/1377/modality-specific-files/magnetic-resonance-spectroscopy.html)'
@@ -202,11 +220,14 @@
     content:
     -   derivative
     leads:
-    -   name: Martin Noergaard
+    -   given-names: Martin
+        family-names: Noergaard
         email: noergard@stanford.edu
-    -   name: Graham Searle
+    -   given-names: Graham
+        family-names: Searle
         email: Graham.Searle@invicro.co.uk
-    -   name: Melanie Ganz
+    -   given-names: Melanie
+        family-names: Ganz
         email: melanie.ganz@nru.dk
     status:
     -   Defined all the necessary components to be included in the specification
@@ -228,7 +249,8 @@
     content:
     -   raw
     leads:
-    -   name: Hugo Boniface
+    -   given-names: Hugo
+        family-names: Boniface
         email: hugoboniface@gmail.com
     status:
     -   Lead seeking more contributors and experts.
@@ -243,7 +265,8 @@
     content:
     -   raw
     leads:
-    -   name: ' '
+    -   given-names: ' '
+        family-names: ' '
         email:
     status:
     -   BEP is open to new leadership, see also [BEP032 (animal electrophys)](https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/)
@@ -259,9 +282,11 @@
     content:
     -   metadata
     leads:
-    -   name: Satra Ghosh
+    -   given-names: Satra
+        family-names: Ghosh
         email: satra@mit.edu
-    -   name: Camille Maumet
+    -   given-names: Camille
+        family-names: Maumet
         email: camille.maumet@inria.fr
     status:
     -   '[Specification](https://bids.neuroimaging.io/bep028)'
@@ -279,9 +304,11 @@
     content:
     -   raw
     leads:
-    -   name: Sylvain Takerkart
+    -   given-names: Sylvain
+        family-names: Takerkart
         email: sylvain.takerkart@univ-amu.fr
-    -   name: Julia Sprenger
+    -   given-names: Julia
+        family-names: Sprenger
         email: julia.sprenger@univ-amu.fr
     status:
     -   '[**HTML preview**](https://bids-specification--1705.org.readthedocs.build/en/1705/modality-specific-files/microelectrode-electrophysiology.html)'
@@ -299,11 +326,14 @@
     content:
     -   raw
     leads:
-    -   name: James Gholam
+    -   given-names: James
+        family-names: Gholam
         email: GholamJA@cardiff.ac.uk
-    -   name: Leandro Beltrachini
+    -   given-names: Leandro
+        family-names: Beltrachini
         email: BeltrachiniL@cardiff.ac.uk
-    -   name: Filip Szczepankiewicz
+    -   given-names: Filip
+        family-names: Szczepankiewicz
         email: filip.szczepankiewicz@med.lu.se
     status:
     -   'New BEP, seeking contributors and collecting community feedback relating to: priority sequences to support, best supported binary structured formats
@@ -322,9 +352,11 @@
     -   derivative
     -   metadata
     leads:
-    -   name: Michael Schirner
+    -   given-names: Michael
+        family-names: Schirner
         email: michael.schirner@charite.de
-    -   name: Petra Ritter
+    -   given-names: Petra
+        family-names: Ritter
         email: petra.ritter@charite.de
     status:
     -   sim2bids app created
@@ -344,11 +376,14 @@
     content:
     -   derivative
     leads:
-    -   name: Giuseppe Gallitto
+    -   given-names: Giuseppe
+        family-names: Gallitto
         email: giuseppe.gallitto@uk-essen.de
-    -   name: Balint Kincses
+    -   given-names: Balint
+        family-names: Kincses
         email: balint.kincses@uk-essen.de
-    -   name: Tamas Spisak
+    -   given-names: Tamas
+        family-names: Spisak
         email: tamas.spisak@uni-due.de
     status:
     -   Modular structure of the BEP revised
@@ -367,9 +402,11 @@
     content:
     -   raw
     leads:
-    -   name: Eric Earl
+    -   given-names: Eric
+        family-names: Earl
         email: eric.earl@nih.gov
-    -   name: Samuel Guay
+    -   given-names: Samuel
+        family-names: Guay
         email: samuel.guay@umontreal.ca
     status:
     -   Poster and demo presentation at OHBM 2023.
@@ -387,13 +424,17 @@
     content:
     -   raw
     leads:
-    -   name: Giacomo Bertazzoli
+    -   given-names: Giacomo
+        family-names: Bertazzoli
         email: giacomo.bertazzoli@unitn.it
-    -   name: Vittorio Iacovella
+    -   given-names: Vittorio
+        family-names: Iacovella
         email: vittorio.iacovella@unitn.it
-    -   name: Carlo Miniussi
+    -   given-names: Carlo
+        family-names: Miniussi
         email: carlo.miniussi@unitn.it
-    -   name: Marta Bortoletto
+    -   given-names: Marta
+        family-names: Bortoletto
         email: marta.bortoletto@cognitiveneuroscience.it
     status:
     -   BEP draft (almost) definitive
@@ -416,13 +457,17 @@
     content:
     -   raw
     leads:
-    -   name: James Kent
+    -   given-names: James
+        family-names: Kent
         email: jamesdkent21@gmail.com
-    -   name: Peer Herholz
+    -   given-names: Peer
+        family-names: Herholz
         email: herholz.peer@gmail.com
-    -   name: Eugene Duff
+    -   given-names: Eugene
+        family-names: Duff
         email: eugene.duff@paediatrics.ox.ac.uk
-    -   name: Anthony Galassi
+    -   given-names: Anthony
+        family-names: Galassi
         email: anthony.galassi@nih.gov
     status:
     -   new BEP, started September 2022
@@ -441,15 +486,20 @@
     content:
     -   raw
     leads:
-    -   name: Arianna Sala
+    -   given-names: Arianna
+        family-names: Sala
         email: arianna.sala@uliege.be
-    -   name: Anibal Heinsfeld
+    -   given-names: Anibal
+        family-names: Heinsfeld
         email: anibalsolon@utexas.edu
-    -   name: Cyrus Eierud
+    -   given-names: Cyrus
+        family-names: Eierud
         email: ceierud@gsu.edu
-    -   name: Franco Pestilli
+    -   given-names: Franco
+        family-names: Pestilli
         email: pestilli@utexas.edu
-    -   name: Peer Herholz
+    -   given-names: Peer
+        family-names: Herholz
         email: herholz.peer@gmail.com
     status:
     -   new BEP, started September 2022
@@ -467,11 +517,14 @@
     content:
     -   raw
     leads:
-    -   name: Jean-Charles Mariani
+    -   given-names: Jean-Charles
+        family-names: Mariani
         email: jean-charles.mariani@cri-paris.org
-    -   name: Samuel Diebolt
+    -   given-names: Samuel
+        family-names: Diebolt
         email: samuel.diebolt@iconeus.com
-    -   name: Thomas Deffieux
+    -   given-names: Thomas
+        family-names: Deffieux
         email: thomas.deffieux@inserm.fr
     status:
     -   All issues raised on the original BEP have been resolved.
@@ -491,7 +544,8 @@
     content:
     -   derivative
     leads:
-    -   name: Taylor Salo
+    -   given-names: Taylor
+        family-names: Salo
         email: salot@pennmedicine.upenn.edu
     status:
     -   New BEP, collecting community comments and feedback.
@@ -507,7 +561,8 @@
     content:
     -   raw
     leads:
-    -   name: Seyed Yahya Shirazi
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
         email: shirazi@ieee.org
     status:
     -   New BEP, collecting community comments and feedback.
@@ -523,9 +578,11 @@
     content:
     -   metadata
     leads:
-    -   name: Chris Markiewicz
+    -   given-names: Chris
+        family-names: Markiewicz
         email: markiewicz@stanford.edu
-    -   name: Eric Earl
+    -   given-names: Eric
+        family-names: Earl
         email: eric.earl@nih.gov
     status:
     -   For being able to map non-BIDS data as BIDS-compatible.
