@@ -2,7 +2,6 @@
 
 from pathlib import Path
 
-import pandas as pd
 from bids_website.utils import bids_spec_dir, data_dir
 from rich import print
 from ruamel.yaml import YAML
@@ -16,6 +15,10 @@ def load_citation(citation_file: Path) -> dict:
         return yaml.load(input_file)
 
 
+def find_contributor(content: dict, given_names: str, family_names: str):
+    citation
+
+
 citation = load_citation(bids_spec_dir() / "CITATION.cff")
 print(citation)
 
@@ -27,11 +30,22 @@ with open(beps, "r") as f:
 output = {"bep": [], "lead": [], "email": []}
 
 for bep in data:
+    print(f'[blue]{bep["number"]} {bep["title"]}')
     for lead in bep["leads"]:
-        output["bep"].append(f'{bep["number"]} - {bep["title"]}')
-        output["lead"].append(f'{lead["name"]}')
-        output["email"].append(f'{lead["email"]}')
-
-df = pd.DataFrame(output)
-
-df.to_csv("bep_leads.tsv", sep="\t", index=False)
+        status = "[red]NOT FOUND:"
+        if not lead["family-names"].strip():
+            status = "[yellow]SKIP:"
+        else:
+            for contributor in citation["authors"]:
+                if (
+                    "family-names" not in contributor
+                    or "given-names" not in contributor
+                ):
+                    continue
+                if (
+                    lead["family-names"] == contributor["family-names"]
+                    and lead["given-names"] == contributor["given-names"]
+                ):
+                    status = "[green]FOUND:"
+                    break
+        print(f'    {status} {lead["given-names"]} {lead["family-names"]}')

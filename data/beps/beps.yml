@@ -53,7 +53,7 @@
     content:
     -   derivative
     leads:
-    -   given-names: Chris
+    -   given-names: Christopher J.
         family-names: Markiewicz
         email: markiewicz@stanford.edu
     status:
@@ -116,7 +116,7 @@
     content:
     -   derivative
     leads:
-    -   given-names: Eugene
+    -   given-names: Eugene P.
         family-names: Duff
         email: eugene.duff@paediatrics.ox.ac.uk
     status:
@@ -164,8 +164,8 @@
     -   given-names: Mainak
         family-names: Jas
         email: mainakjas@gmail.com
-    -   given-names: Guiomar
-        family-names: Niso
+    -   given-names: Julia
+        family-names: Guiomar Niso Galán
         email: guiomar.niso@ctb.upm.es
     -   given-names: Robert
         family-names: Oostenveld
@@ -227,7 +227,7 @@
         family-names: Searle
         email: Graham.Searle@invicro.co.uk
     -   given-names: Melanie
-        family-names: Ganz
+        family-names: Ganz-Benjaminsen
         email: melanie.ganz@nru.dk
     status:
     -   Defined all the necessary components to be included in the specification
@@ -282,7 +282,7 @@
     content:
     -   metadata
     leads:
-    -   given-names: Satra
+    -   given-names: Satrajit S.
         family-names: Ghosh
         email: satra@mit.edu
     -   given-names: Camille
@@ -402,7 +402,7 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric
+    -   given-names: Eric A.
         family-names: Earl
         email: eric.earl@nih.gov
     -   given-names: Samuel
@@ -463,7 +463,7 @@
     -   given-names: Peer
         family-names: Herholz
         email: herholz.peer@gmail.com
-    -   given-names: Eugene
+    -   given-names: Eugene P.
         family-names: Duff
         email: eugene.duff@paediatrics.ox.ac.uk
     -   given-names: Anthony
@@ -578,10 +578,10 @@
     content:
     -   metadata
     leads:
-    -   given-names: Chris
+    -   given-names: Christopher J.
         family-names: Markiewicz
         email: markiewicz@stanford.edu
-    -   given-names: Eric
+    -   given-names: Eric A.
         family-names: Earl
         email: eric.earl@nih.gov
     status:
