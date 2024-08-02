@@ -92,7 +92,7 @@ allowing more people to get involved.
     converting the proposal to Markdown and submitting a Pull Request at
     [the bids specification repository])
 
-1. Create example datasets. Complete source data (for example DICOM, EDF, Excel, etc.) and its
+1. Create example datasets. Complete source data (for example DICOM, EDF, Excel) and its
     corresponding target BIDS datasets, _must be_ supplied along with instructions on how
     to transform data from source to target. When possible, data from multiple vendors
     such as Siemens, Philips, or General Electric (in the case of MR) should be included.
