@@ -33,6 +33,8 @@ for bep in data:
     print(f'[blue]{bep["number"]} {bep["title"]}')
     for lead in bep["leads"]:
         status = "[red]NOT FOUND:"
+        has_email = False
+        has_github = False
         if not lead["family-names"].strip():
             status = "[yellow]SKIP:"
         else:

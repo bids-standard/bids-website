@@ -5,8 +5,10 @@
 #   display
 #   link:
 #   leads:
-#     - family-names:
-#       email
+# # MUST match given-names and family-names from the bids specification citation.cff
+#   -   given-names: ' '
+#       family-names: ' '
+#       email:
 #   status:
 #   blocking:
 #   pull_request_created:
