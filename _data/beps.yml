@@ -403,3 +403,23 @@
   google_doc_created: 2024-03
   pull_request_created:
   pull_request_merged:
+
+- number: "044"
+  title: Stimuli
+  leads:
+    - name: "[Seyed Yahya Shirazi](mailto:shirazi@ieee.org)"
+    - name: Dora Hermes
+    - name: Yaroslav O. Halchenko
+    - name: Tal Pal Attia
+    - name: Kay Robbins
+    - name: Scott Makeig
+  update: |
+    - To harmonize and make more reusable stimuli content under stimuli/.
+    - Collecting community comments and feedback. All collaborators are welcome.
+    - Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)
+  content:
+    - raw
+  blocking: None
+  google_doc_created: 2023-09-12
+  pull_request_created:
+  pull_request_merged:
