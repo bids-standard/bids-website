@@ -15,7 +15,7 @@ output = {"bep": [], "lead": [], "email": []}
 for bep in data:
     for lead in bep["leads"]:
         output["bep"].append(f'{bep["number"]} - {bep["title"]}')
-        output["lead"].append(f'{lead["name"]}')
+        output["lead"].append(f'{lead["given-names"]} {lead["family-names"]}')
         output["email"].append(f'{lead["email"]}')
 
 df = pd.DataFrame(output)
