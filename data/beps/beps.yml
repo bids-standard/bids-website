@@ -175,27 +175,6 @@
     pull_request_created:
     pull_request_merged:
 
--   number: '022'
-    title: Magnetic Resonance Spectroscopy
-    link: https://github.com/bids-standard/bids-specification/pull/1377
-    content:
-    -   raw
-    leads:
-    -   name: Mark Mikkelsen
-        email: mam4041@med.cornell.edu
-    -   name: William Clarke
-        email:
-    -   name: Martin Wilson
-        email:
-    status:
-    -   '[**HTML preview**](https://bids-specification--1377.org.readthedocs.build/en/1377/modality-specific-files/magnetic-resonance-spectroscopy.html)'
-    -   Pull request ([#1377](https://github.com/bids-standard/bids-specification/pull/1377)) on the GitHub bids-specification repository ([**HTML preview**](https://bids-specification--1377.org.readthedocs.build/en/1377/modality-specific-files/magnetic-resonance-spectroscopy.html))
-    -   Final review needed to ensure terms align with DICOM MR nomenclature
-    blocking:
-    google_doc_created: 2018-05
-    pull_request_created: 2023-06
-    pull_request_merged:
-
 -   number: '023'
     title: PET Preprocessing derivatives
     link: https://docs.google.com/document/d/1yzsd1J9GT-aA0DWhdlgNr5LCu6_gvbjLyfvYq2FuxlY/
