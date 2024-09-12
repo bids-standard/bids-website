@@ -142,6 +142,7 @@
 
 -   number: '022'
     title: Magnetic Resonance Spectroscopy
+    display: MRS
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html
     content:
     -   raw
