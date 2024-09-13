@@ -276,8 +276,8 @@
     content:
     -   raw
     leads:
-    -   name: Yaroslav O. Halchenko
-        email: debian@onerussian.com
+    -   name: Sylvain Takerkart
+        email: sylvain.takerkart@univ-amu.fr
     -   name: Ben Dichter
         email: ben.dichter@gmail.com
     status:
