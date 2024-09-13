@@ -63,7 +63,7 @@ def generate_grants_table():
 
 
 def generate_apps_table():
-    input_file = WEBSITE_DATA_DIR / "apps" / "_config.yml"
+    input_file = WEBSITE_DATA_DIR / "tools" / "apps.yml"
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("apps_table_md.jinja")
