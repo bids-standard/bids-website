@@ -1,0 +1,565 @@
+---
+apps:
+  # template for adding an app
+  # - gh: "github_usename/github_repo_name"
+  #   dh: "dockerhub_usename/dockerhub_repo_name"
+  #   description: "short description of the app"
+  #   status: unmaintained
+  #   ds_type:
+  #     - raw
+  #     - derivative
+  #   datatype:
+  #     - anat
+  #     - func
+  #     - dwi
+  #     - fmap
+  #     - eeg
+  #   ci: Continuous integration service.
+  #       Defaults to "circleci"
+  #       Can be any of:
+  #         - "gh"
+  #         - "travis"
+  #         - "circleci"
+  #         - "none"
+  #   branch: Default branch of the repo. Defaults to "master"
+  #   workflow: Name of the test workflow.
+
+
+  ## --- apps that are part of the bids apps github organization
+  # sorted by status and then alphabetically by app name
+
+  ### --- active apps
+
+-   gh: bids-apps/afni_proc
+    status: active
+    dh: bids/afni_proc
+    ds_type:
+    -   raw
+    datatype:
+    -   func
+    description: prototype AFNI bids app implementing participant level preprocessing with afni_proc.py
+
+-   gh: bids-apps/antsCorticalThickness
+    status: active
+    dh: bids/antscorticalthickness
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: BIDS App for calculating cortical thickness using ANTs
+
+-   gh: bids-apps/baracus
+    status: active
+    dh: bids/baracus
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: Predicts brain age, based on data from Freesurfer 5.3
+
+-   gh: bids-apps/brainiak-srm
+    status: active
+    dh: bids/brainiak-srm
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: This is the BIDS-app version of the Shared Response Model (SRM) of BrainIAK
+
+-   gh: bids-apps/BrainSuite
+    status: active
+    dh: bids/brainsuite
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   dwi
+    -   func
+    description: "BrainSuite's structural, diffusion, and functional MRI processing pipelines with QC functionalities. "
+
+-   gh: bids-apps/BROCCOLI
+    status: active
+    dh: bids/broccoli
+    comment: 'missing test data: https://github.com/bids-apps/BROCCOLI/issues/13'
+    description: BIDS App for BROCCOLI
+
+-   gh: bids-apps/CPAC
+    status: active
+    dh: bids/cpac
+    ds_type:
+    -   raw
+    datatype:
+    -   func
+    description: BIDS Application for the Configurable Pipeline for the Analysis of Connectomes (C-PAC)
+
+-   gh: bids-apps/DPARSF
+    status: active
+    dh: bids/dparsf
+    ds_type:
+    -   raw # ??
+    datatype:
+    -   func
+    description: Docker version of DPARSF, also deployed at OpenNeuro.org
+
+-   gh: bids-apps/example
+    status: active
+    dh: bids/example
+    description: This an example app that can serve as a template.
+
+-   gh: bids-apps/freesurfer
+    status: active
+    dh: bids/freesurfer
+    ds_type:
+    -   raw
+    datatype:
+    -   func
+    description: BIDS app wrapping recon-all from FreeSurfer
+
+-   gh: bids-apps/giga_connectome
+    status: active
+    dh: bids/giga_connectome
+    ci: gh
+    branch: main
+    workflow: test
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: This is a BIDS-App to extract signal from a parcellation with nilearn, typically useful in a context of resting-state data processing.
+
+-   gh: bids-apps/HCPPipelines
+    status: active
+    dh: bids/hcppipelines
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    -   dwi
+    description: A BIDS App for minimal preprocessing using the HCP Pipelines
+
+-   gh: bids-apps/hyperalignment
+    status: active
+    dh: bids/hyperalignment
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Hyperalignment is a functional alignment method that aligns subjects' brain data in a high-dimensional space of voxels/features.
+
+-   gh: bids-apps/MAGeTbrain
+    status: active
+    dh: bids/magetbrain
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description:
+
+-   gh: bids-apps/mindboggle
+    status: active
+    dh: bids/mindboggle
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: Improve the accuracy, precision, and consistency of automated labeling and shape analysis of human brain image data
+
+-   gh: bids-apps/MRtrix3_connectome
+    status: active
+    dh: bids/mrtrix3_connectome
+    ds_type:
+    -   raw
+    -   derivative
+    datatype:
+    -   dwi
+    description: Generate subject connectomes from raw BIDS data & perform inter-subject connection density normalisation, using  the MRtrix3 software package.
+
+-   gh: bids-apps/ndmg
+    status: active
+    dh: bids/ndmg
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   dwi
+    description: BIDS app for NeuroData's MRI to Graphs pipeline
+
+-   gh: bids-apps/nipypelines
+    status: active
+    dh: bids/nipypelines
+    ds_type:
+    -   raw
+    datatype:
+    -   func
+    description: Preprocess functional tasks in a BIDS dataset.
+
+-   gh: bids-apps/oppni
+    status: active
+    dh: bids/oppni
+    ds_type:
+    -   raw
+    datatype:
+    -   func
+    description: runs fast optimization of preprocessing pipelines for BOLD fMRI
+
+-   gh: bids-apps/PyMVPA
+    status: active
+    dh: bids/pymvpa
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: runs MVPA and RSA analysis BIDS bold derivative data
+
+-   gh: bids-apps/QAP
+    status: active
+    dh: bids/qap
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    description: PCP Quality Assessment Protocol
+
+-   gh: bids-apps/rsHRF
+    status: active
+    dh: bids/rshrf
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    comment: does not run on typical fmriprep data
+    description: Resting state HRF estimation from BOLD-fMRI signal
+
+-   gh: bids-apps/SPM
+    status: active
+    dh: bids/spm
+    ds_type:
+    -   raw
+    -   derivative
+    description: BIDS App containing an instance of the SPM software.
+
+-   gh: bids-apps/tracula
+    status: active
+    dh: bids/tracula
+    ds_type:
+    -   raw
+    datatype:
+    -   dwi
+    description: implements Freesurfer's TRACULA (TRActs Constrained by UnderLying Anatomy) tool for cross-sectional as well as longitudinal (multi session)
+        input data.
+
+  ### --- unmaintained apps
+
+-   gh: bids-apps/aa
+    status: unmaintained
+    dh: bids/aa
+    ds_type:
+    -   raw
+    -   derivative
+    description: BIDS App containing an instance of the Automatic Analysis
+
+-   gh: bids-apps/FibreDensityAndCrosssection
+    status: unmaintained
+    dh: bids/fibredensityandcrosssection
+    ds_type:
+    -   mri
+    datatype:
+    -   dmri
+    description:
+
+-   gh: bids-apps/niak
+    status: unmaintained
+    dh: bids/niak
+    description: Pipeline for preprocessing of fMRI and structural MRI scans
+
+-   gh: bids-apps/rs_signal_extract
+    status: unmaintained
+    dh: bids/rs_signal_extract
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: BIDS App for resting state signal extraction using nilearn.
+
+# apps hosted somewhere else
+# sorted alphabetically by DockerHub (dh)
+-   gh: cpp-lln-lab/bidsMReye
+    status: active
+    dh: cpplab/bidsmreye
+    ci: gh
+    branch: main
+    workflow: system_tests
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: BIDS app using deepMReye to decode eye motion for fMRI time series data.
+
+-   gh: cpp-lln-lab/bidspm
+    status: active
+    dh: cpplab/bidspm
+    ci: gh
+    branch: main
+    workflow: tests
+    ds_type:
+    -   raw
+    -   derivative
+    datatype:
+    -   anat
+    -   func
+    description: an SPM centric BIDS app
+
+-   gh: djarecka/fmriprep-fake
+    status: active
+    dh: djarecka/fmriprep_fake
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    ci: none
+    description:
+
+-   gh: khanlab/funcmasker-flex
+    status: active
+    dh: khanlab/funcmasker-flex
+    ci: gh
+    branch: main
+    workflow: test
+    ds_type:
+    -   raw
+    datatype:
+    -   func
+    description: BIDS App for U-net brain masking of fetal bold MRI
+
+-   gh: trendscenter/gift-bids
+    status: active
+    dh: trends/gift-bids
+    ci: none
+    description:
+
+-   gh: khanlab/hippunfold
+    status: active
+    dh: khanlab/hippunfold
+    description: BIDS App for Hippunfold (automated hippocampal unfolding and subfield segmentation)
+
+-   gh: MICA-MNI/micapipe
+    status: active
+    dh: micalab/micapipe
+    ci: none
+    description: micapipe from the Multimodal imaging and connectome analysis lab (https://mica-mni.github.io) at the Montreal Neurological Institute. Read
+        The Docs documentation below
+
+-   gh: nipreps/fmriprep
+    status: active
+    dh: nipreps/fmriprep
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    description: fMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse fMRI data. The transparent workflow dispenses of manual intervention,
+        thereby ensuring the reproducibility of the results.
+
+-   gh: nipreps/dmriprep
+    status: active
+    dh: nipreps/dmriprep
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   dwi
+    description: dMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse dMRI data. The transparent workflow dispenses of manual intervention,
+        thereby ensuring the reproducibility of the results.
+
+-   gh: nipreps/mriqc
+    status: active
+    dh: nipreps/mriqc
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    description: Automated Quality Control and visual reports for Quality Assessment of structural (T1w, T2w) and functional MRI of the brain
+
+-   gh: nipreps/nibabies
+    status: active
+    dh: nipreps/nibabies
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    description: Processing tools for magnetic resonance images of infant brains
+
+-   gh: nipreps/nirodents
+    status: active
+    dh: nipreps/nirodents
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    description:
+
+-   gh: nipreps/smriprep
+    status: active
+    dh: nipreps/smriprep
+    ds_type:
+    -   raw
+    description: Structural MRI PREProcessing (sMRIPrep) workflows for NIPreps (NeuroImaging PREProcessing tools)
+
+-   gh: nipreps/fmripost-aroma
+    status: active
+    dh: nipreps/fmripost-aroma
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Functional MRI postprocessing with ICA-AROMA
+
+-   gh: nipreps/fmripost-phase
+    status: active
+    dh: nipreps/fmripost-phase
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Postprocessing of complex-valued fMRI data
+
+-   gh: nipreps/fmripost-rapidtide
+    status: active
+    dh: nipreps/fmripost-rapidtide
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Functional MRI postprocessing with Rapidtide
+
+-   gh: PeerHerholz/BIDSonym
+    status: active
+    dh: peerherholz/bidsonym
+    ci: travis
+    branch: master
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: a BIDS app for pseudo-anonymization of neuroimaging data
+
+-   gh: PennLINC/aslprep
+    dh: pennlinc/aslprep
+    description: Preprocessing of arterial spin labeling data
+    status: active
+    ds_type:
+    -   raw
+    datatype:
+    -   perf
+    ci: circleci
+    branch: main
+
+-   gh: PennLINC/xcp_d
+    dh: pennlinc/xcp_d
+    description: Post-processing of fMRIPrep, nibabies, HCP, and DCAN BOLD derivatives for functional connectivity analysis
+    status: active
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    ci: circleci
+    branch: main
+
+-   gh: PennLINC/qsiprep
+    status: active
+    dh: pennbbl/qsiprep
+    ds_type:
+    -   raw
+    datatype:
+    -   dwi
+    description: Preprocessing of diffusion MRI
+    ci: circleci
+    branch: master
+
+-   gh: PennLINC/qsirecon
+    status: active
+    dh: pennlinc/qsirecon
+    ds_type:
+    -   derivative
+    datatype:
+    -   dwi
+    description: Reconstruction of preprocessed diffusion MRI
+    ci: circleci
+    branch: main
+
+-   gh: poldracklab/fitlins
+    status: active
+    dh: poldracklab/fitlins
+    branch: dev
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Fit Linear Models to BIDS Datasets
+
+-   gh: reprostat/reproa
+    dh: reprostat/reproa
+    status: active
+    branch: master
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   fmap
+    -   func
+    description: BIDS App containing an instance of the ReproAnalysis (reproa) software (core only) running under Octave with minimum dependencies.
+
+-   gh: connectomicslab/connectomemapper3
+    status: active
+    dh: sebastientourbier/connectomemapper-bidsapp
+    ds_type:
+    -   raw
+    -   derivative
+    datatype:
+    -   anat
+    -   func
+    -   dwi
+    -   eeg
+    description: Connectome Mapper 3 is a BIDS App that implements full anatomical, diffusion, resting/state functional MRI, and recently EEG processing
+        pipelines, from raw T1 / DWI / BOLD , and preprocessed EEG data to multi-resolution brain parcellation with corresponding connection matrices.
+
+-   gh: sebastientourbier/multiscalebrainparcellator
+    status: active
+    dh: sebastientourbier/multiscalebrainparcellator
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: Multi-Scale Brain Parcellator, part of the Connectome Mapping Toolkit (CMTK), is a BIDS App that implements a full anatomical MRI processing
+        pipeline, from raw T1w data to structural brain parcellation at five different scales.
+
+-   gh: Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit
+    status: active
+    dh: sebastientourbier/mialsuperresolutiontoolkit
+    description: The Medical Image Analysis Laboratory Super-Resolution ToolKit (MIALSRTK) consists of a set of C++ and Python processing and workflow tools
+        necessary to perform motion-robust super-resolution fetal MRI reconstruction in the BIDS Apps framework.
+
+-   gh: DCAN-Labs/BIBSnet
+    status: active
+    dh: dcanumn/bibsnet
+    datatype:
+    -   anat
+    description: Utility for creating a nnU-Net anatomical MRI segmentation and mask with a infant brain trained model for the purposes of circumventing
+        JLF within Nibabies.
+
+-   gh: openneuropet/petdeface
+    status: active
+    dh: openneuropet/petdeface
+    datatype:
+    -   pet
+    -   anat
+    description: A nipype implementation of MiDeface used to deface PET and MR data as well as co-register the two modalities.
+    branch: main
+    ci: aws_codebuild
+    badge: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiYzdXV0tYSkQzTVNkcG04cHA2S055UXlKRlZTU1VONThUMVRoZVcwU3l1aHFhdVBlNDNaRGVCYzdWM1Q0WjYzQ1lRU2ZTSHpmSERPWFRkVXVyb3k3RTZBPSIsIml2UGFyYW1ldGVyU3BlYyI6IjRCZFFIQnNGT2lKcDA1VG4iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
