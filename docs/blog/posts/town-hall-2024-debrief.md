@@ -81,7 +81,7 @@ The slides can be found on our [Open-science Framework project](https://osf.io/5
     -   outreach goals:
         -   new users
         -   convert users to contributors
-        -   Areas of Growth: inclusivity, barriers to adoption, etc
+        -   Areas of Growth: inclusivity, barriers to adoption...
 
 BIDS contributors Please update affiliations! <!-- TODO  add link -->
 
