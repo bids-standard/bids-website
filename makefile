@@ -26,7 +26,7 @@ update_contributors: package.json
 
 update_datasets_examples:
 	@echo "  ----------------------------------  "
-	python data/datasets/examples/tools/print_dataset_listing.py docs/datasets/index.md
+	python data/datasets/examples/tools/print_dataset_listing.py docs/datasets/examples.md
 
 
 # Figures
