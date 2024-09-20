@@ -5,10 +5,6 @@
 	path = docs/getting_started/src
 	url = https://github.com/bids-standard/bids-starter-kit.git
 	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
-[submodule "docs/extensions/src"]
-	path = docs/extensions/src
-	url = https://github.com/bids-standard/bids-extensions
-	datalad-url = https://github.com/bids-standard/bids-extensions
 [submodule "execution-spec"]
 	path = execution-spec
 	url = https://github.com/bids-standard/execution-spec
