@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eu
+
+bids_logo=$(dirname $0)/../docs/assets/img/logos/BIDS_logo_black_square_in_circle.png
+
+set -x
+
+$(dirname "$0")/mkqrcode.py -i "$bids_logo" "$@"
