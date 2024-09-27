@@ -252,7 +252,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-edit_uri: https://github.com/bids-standard/bids-website/src/edit/main/docs/
+edit_uri: https://github.com/bids-standard/bids-website/edit/main/docs/
 
 markdown_extensions:
   - abbr
