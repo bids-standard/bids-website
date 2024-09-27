@@ -17,9 +17,11 @@ datatypes = [
     "eeg",
     "ieeg",
     "meg",
-    "pet",
-    "nirs",
+    "micr",
     "motion",
+    "mrs",
+    "nirs",
+    "pet",
 ]
 
 

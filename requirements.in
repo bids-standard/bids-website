@@ -1,5 +1,6 @@
 gender_guesser
 geopy
+markdown-it-py
 mkdocs-material[imaging]
 mkdocs-macros-plugin
 mkdocs-open-in-new-tab

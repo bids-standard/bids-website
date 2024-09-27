@@ -89,12 +89,16 @@ markdown==3.6
     #   mkdocs
     #   mkdocs-material
     #   pymdown-extensions
+markdown-it-py==3.0.0
+    # via -r requirements.in
 markupsafe==2.1.5
     # via
     #   jinja2
     #   mkdocs
 matplotlib==3.9.0
     # via seaborn
+mdurl==0.1.2
+    # via markdown-it-py
 mergedeep==1.3.4
     # via
     #   mkdocs
