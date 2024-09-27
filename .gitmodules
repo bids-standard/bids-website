@@ -1,10 +1,6 @@
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
-[submodule "docs/getting_started/src"]
-	path = docs/getting_started/src
-	url = https://github.com/bids-standard/bids-starter-kit.git
-	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
 [submodule "execution-spec"]
 	path = execution-spec
 	url = https://github.com/bids-standard/execution-spec
