@@ -57,7 +57,7 @@ derivative data.</li>
 
 ## Modalities
 
-### MRI
+### Magnetic Resonance Imaging
 
 #### `anat`: Anatomical MRI
 
@@ -499,7 +499,7 @@ in which case those values are listed in <code>&lt;&gt;</code>, separated by <co
 </details>
 <!-- IEEG TEMPLATE ENDS HERE: do not edit manually -->
 
-### `pet`
+### Positron Emission Tomography
 
 <!-- PET TEMPLATE STARTS HERE: do not edit manually -->
 Template:
@@ -546,7 +546,7 @@ in which case those values are listed in <code>&lt;&gt;</code>, separated by <co
 </details>
 <!-- PET TEMPLATE ENDS HERE: do not edit manually -->
 
-### `nirs`
+### Near Infra-Red Spectroscopy
 
 <!-- NIRS TEMPLATE STARTS HERE: do not edit manually -->
 Template:
@@ -599,7 +599,7 @@ in which case those values are listed in <code>&lt;&gt;</code>, separated by <co
 </details>
 <!-- NIRS TEMPLATE ENDS HERE: do not edit manually -->
 
-### `motion`
+### Motion
 
 <!-- MOTION TEMPLATE STARTS HERE: do not edit manually -->
 Template:
@@ -647,7 +647,7 @@ in which case those values are listed in <code>&lt;&gt;</code>, separated by <co
 <!-- MOTION TEMPLATE ENDS HERE: do not edit manually -->
 
 
-### Magnetic resonance spectroscopy
+### Magnetic Resonance Spectroscopy
 
 <!-- MRS TEMPLATE STARTS HERE: do not edit manually -->
 Template:
