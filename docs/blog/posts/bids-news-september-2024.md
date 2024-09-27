@@ -10,6 +10,8 @@ categories:
 
 The BIDS Maintainers, Steering Group, working groups, and other contributors have been hard at work to bring the community all this news. Read on\!
 
+<!-- more -->
+
 ## BIDS Specification version 1.10.0
 
 The BIDS specification has released a new minor version\! The highlights are:
