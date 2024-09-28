@@ -85,6 +85,9 @@ exclude_docs: |
   standards/bids_stats_model/src/README.md
   standards/bids_stats_model/src/bsmschema/README.md
   standards/bids_stats_model/src/specification/walkthrough-2.md
+  collaboration/bids_github/README.md
+  collaboration/bids_github/SUPPORT.md
+
 
 nav:
 -   About: index.md
@@ -180,20 +183,12 @@ nav:
     -   faq/bids-apps.md
 -   Collaboration:
     -   collaboration/index.md
-    -   specification/code_of_conduct.md
     -   collaboration/governance.md
     -   collaboration/working-groups.md
     -   collaboration/contributors.md
+    -   collaboration/bids_github/CONTRIBUTING.md
+    -   collaboration/bids_github/CODE_OF_CONDUCT.md
     -   collaboration/acknowledgments.md
-    # TODO have a single code of conduct
-    # -   starter_kit: getting_started/src/src/CODE_OF_CONDUCT.md
-    # TODO remove those pages from the website
-    # until all the contributing pages have been refactored
-    # see https://github.com/bids-standard/.github/issues/7
-    # -   Contributing:
-    #     -   apps: apps/CONTRIBUTING.md
-    #     -   spec: specification/CONTRIBUTING.md
-    #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
 -   Extensions:
     -   extensions/index.md
     -   extensions/beps.md
