@@ -3,7 +3,8 @@
 BIDS working groups are typically formed (but not limited to)
 for the purpose of advancing the BIDS community, not the standard.
 
-This could be a to set up and organize a local BIDS chapter, to improve the documentation around BIDS...
+This could be a to set up and organize a local BIDS chapter,
+to improve the documentation around BIDS...
 
 ## Forming a working group
 
