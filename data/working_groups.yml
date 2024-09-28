@@ -1,0 +1,76 @@
+---
+# template
+# - title:
+#   goal:
+#   open_letter:
+#   communication_channel:
+#   url:
+#   chairs:
+#     - name:
+#       email:
+#     - name:
+#       email:
+#   status:
+#   outcome:
+#       - url:
+#       - url:
+#
+
+# ACTIVE
+
+# -   title: BIDS 2.0
+#     goal: Discussions and suggestions of backwards incompatible changes to BIDS
+#     open_letter: TBD
+#     communication_channel: TBD
+#     url: https://github.com/bids-standard/bids-2-devel
+#     chairs:
+#     -   name: Yaroslav Halchenko
+#         email: debian@onerussian.com
+#     status: active
+
+# -   title: Governance amendments
+#     goal: Clarification of the BEP process
+#     open_letter: TBD
+#     communication_channel: TBD
+#     url:
+#     chairs:
+#     -   name:
+#         email: 
+#     status: active
+
+-   title: Code of conducts amendments
+    goal: Update and uniformizations of the BIDS code of conducts
+    open_letter: https://docs.google.com/document/d/1mxtijf1khONdU23phKfMpIwk-RTDQ07eVpJsMHemoLA/edit
+    communication_channel: TBD
+    url: https://docs.google.com/document/d/1Cj9trFifGNqyNtpyEO9FfJLlmDGTbUy5enRAA9rTyH4/edit?usp=sharing
+    chairs:
+    -   name: Ariel Rokem
+        email: arokem@uw.edu
+    -   name: Dora Hermes
+        email: doraharmes@gmail.com
+    status: active
+
+-   title: BIDS online presence
+    goal: Streamline online resources based on community feedback
+    open_letter: https://docs.google.com/document/d/1lN9hu5ufpkkkD41XXWrH_tnEXlKUlJaZNQBYF3OtV9M/edit?usp=sharing
+    communication_channel: TBD
+    url:
+    chairs:
+    -   name: Eric Earl
+        email: eric.earl@nih.gov
+    -   name: Christine Rogers
+        email: rogers@bic.mni.mcgill.ca
+    status: active
+
+# DISSOLVED
+
+-   title: Governance amendment
+    goal: Update the BIDS governance
+    open_letter: https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit#heading=h.6tz42cdj5asc
+    communication_channel:
+    url: https://docs.google.com/document/d/18PpfSgcHckqejTZsRZlEDlJ_yD3JiwSQ8kCjVXorg6U/edit#heading=h.6tz42cdj5asc
+    chairs:
+    -   name: Rémi Gau
+        email: remi.gau@gmail.com
+    status: dissolved
+    outcome: '[Pull request](https://github.com/bids-standard/bids-website/pull/346)'

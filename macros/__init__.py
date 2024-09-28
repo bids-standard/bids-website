@@ -5,6 +5,7 @@ from .macros import (
     generate_grants_table,
     generate_members_table,
     generate_tools_table,
+    generate_working_groups_table,
 )
 from .main import define_env
 
@@ -16,4 +17,5 @@ __all__ = [
     "generate_beps_table",
     "generate_grants_table",
     "generate_apps_table",
+    "generate_working_groups_table",
 ]
