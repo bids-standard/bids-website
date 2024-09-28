@@ -267,11 +267,11 @@ OpenStand:
 1.  Respectful cooperation between standards organizations
 
 1.  Adherence to fundamental principles of standards development:
-    a.  Due Process
-    b.  Broad Consensus
-    c.  Transparency
-    d.  Balance
-    e.  Openness
+    -   Due Process
+    -   Broad Consensus
+    -   Transparency
+    -   Balance
+    -   Openness
 
 1.  Collective empowerment
 
