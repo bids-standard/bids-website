@@ -93,6 +93,15 @@
 # - title: BEP019 DICOM Metadata
 #   not included for now, as not merged into BIDS specification
 
+# - title: BEP022 MRS
+#   leads:
+    -   name: Mark Mikkelsen
+        git: markmikkelsen
+    -   name: William Clarke
+        git: william_clarke
+    -   name: Martin Wilson
+        git: martin_wilson
+    
 # - title: BEP025 Medical Imaging Data Structure (MIDS)
 #   not included for now, as not merged into BIDS specification
 
