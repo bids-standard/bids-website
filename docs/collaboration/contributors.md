@@ -6,6 +6,13 @@ hide:
 
 # Contributors
 
+## Adding yourself as a contributors
+
+To know more about if you can qualify as a BIDS contributor, how to add your name to the list of contributors, and why you should,
+check our [contributing guideline s.s about this](./bids_github/CONTRIBUTING.md#recognizing-contributions).
+
+## List of contributors
+
 Thanks goes to these wonderful people.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
