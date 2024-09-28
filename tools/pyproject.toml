@@ -12,7 +12,8 @@ version = "0.1.0"
 
 [project.optional-dependencies]
 ci = [
-    "requests>=2.25.1"
+    "requests>=2.25.1",
+    "ruamel.yaml"
 ]
 # most of those are actually to run several of the scripts
 # but not for the utilities

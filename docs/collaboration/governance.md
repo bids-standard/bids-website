@@ -40,7 +40,7 @@ BIDS has advanced under the direction and effort of its contributors,
 the community of researchers that appreciate the value of standardizing neuroimaging data to facilitate sharing and analysis.
 The project is multifaceted and depends on contributors for:
 specification development and maintenance,
-[BIDS Extension Proposals (BEPs)](../bep/beps.md),
+[BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
 [starter kits](https://bids-standard.github.io/bids-starter-kit/),
 [examples](https://github.com/bids-standard/bids-examples),
@@ -48,7 +48,7 @@ and general discussions.
 The relevant discussions are located in our
 [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
 [GitHub organization](https://github.com/bids-standard),
-and public Google Documents (typically associated with an [extension proposal](../bep/beps.md)).
+and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
 software tools and platforms that facilitate the validation and ease the
@@ -252,8 +252,7 @@ All community members are welcome to join BEP Working Groups and other
 working and interest groups.
 
 The current BEP Working Groups and their leads can be found in the
-section on [BIDS Extension
-Proposals](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+section on [BIDS Extension Proposals](../extensions/beps.md)
 in the BIDS specification.
 
 ## 4. Governance of the standardization process
@@ -330,9 +329,9 @@ This covers the current raw data organization for brain MRI, MEG, EEG,
 and iEEG.
 
 **BIDS Extension Proposal (BEP)** - A proposal that intends to extend
-BIDS into an unspecified modality or derivative. A BEP is typically led
-by 1-3 individuals with several contributors. The [list of
-BEPs](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
+BIDS into an unspecified modality or derivative.
+A BEP is typically led by 1-3 individuals with several contributors.
+The [list of BEPs](../extensions/beps.md)
 can be found elsewhere on this website.
 
 **Draft BEP** - The in-progress document, typically in a Google Doc, of

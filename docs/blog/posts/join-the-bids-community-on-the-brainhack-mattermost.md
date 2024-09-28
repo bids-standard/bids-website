@@ -19,7 +19,7 @@ This platform will live alongside our other official communication channels:
 
 We have listed below our current set of BIDS channels. We will be establishing several BIDS channels related to: BEP development, community discussions, and more! Check it out and create your own channel! Please be sure the channel name contains `bids` in the title to increase findability.
 
-[Mattermost](https://mattermost.com/) is an open-source alternative to Slack. The user interface and experience is very similar to that on Slack. One may join a channel, make a channel, or private message.
+[Mattermost](https://mattermost.brainhack.org/brainhack/channels/bids_general) is an open-source alternative to Slack. The user interface and experience is very similar to that on Slack. One may join a channel, make a channel, or private message.
 
 To find our `BIDS` channels, please navigate to Mattermost and click `More...` at the bottom of the `PUBLIC CHANNELS` section. A prompt will pop up enabling you to search for our `BIDS` related channels. If you have any issues, please message Franklin on Mattermost: `@franklin_`.
 

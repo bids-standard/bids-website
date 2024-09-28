@@ -1,8 +1,3 @@
----
-hide:
--   navigation
----
-
 # Datasets
 
 Here are some links to BIDS compliant data. Sourcedata (pre-BIDS) are sometimes
@@ -28,7 +23,7 @@ A 204-subject multimodal (MEG, MRI, fMRI) [dataset](http://data.donders.ru.nl/co
 
 <!--lint ignore -->
 
-## Dataset index
+<!-- ADD EXAMPLE LISTING HERE -->
 <!--
 TABLE BELOW IS GENERATED AUTOMATICALLY.
 DO NOT EDIT DIRECTLY.

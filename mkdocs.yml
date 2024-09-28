@@ -23,8 +23,8 @@ plugins:
         # old links from the old wesbite
         "news.md": "blog/index.md"
         "specification.md": "standards/index.md"
-        "get_started.md": "starter_kit/src/index.md"
-        "get_involved.md": "bep/index.md"
+        "get_started.md": "getting_started/index.md"
+        "get_involved.md": "extensions/index.md"
         "governance.md": "collaboration/governance.md"
         "acknowledgments.md": "collaboration/acknowledgments.md"
         "benefits.md": "tools/index.md"
@@ -79,174 +79,133 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  .github
-  apps/README.md
-  apps/_site/**/*.md
-  apps/apps.md
-  apps/about.md
-  apps/dev_faq.md
-  apps/tutorial.md
-  examples/README.md
-  examples/tmp.md
-  execution/README.md
-  execution/BIDS_logo/README.md
-  execution/src/index.md
-  execution/src/scope.md
-  execution/src/specification.md
-  execution/src/ui.md
-  execution/src/inputs.md
-  execution/src/outputs.md
-  execution/src/examples.md
-  execution/src/CHANGELOG.md
-  execution/src/CONTRIBUTING.md
-  extensions/README.md
-  extensions/docs/faq.md
-  starter_kit/src/_build
-  starter_kit/src/folders_and_files
-  starter_kit/README.md
-  starter_kit/matlabCode/general/README.md
-  starter_kit/reports/
-  starter_kit/CODE_OF_CONDUCT.md
-  starter_kit/CONTRIBUTING.md
-  starter_kit/src/dataset_examples.md
-  starter_kit/src/FAQ.md
-  starter_kit/src/contact.md
-  starter_kit/src/glossary.md
-  starter_kit/src/tutorials/media/README.md
-  starter_kit/src/validator.md
-  starter_kit/src/tutorials/annotation.md
-  starter_kit/src/tutorials/asl.md
-  starter_kit/src/tutorials/ieeg.md
-  starter_kit/src/tutorials/mri.md
-  starter_kit/src/tutorials/pet.md
-  starter_kit/src/tutorials/tutorials.md
-  variable-transform/README.md
-  variable-transform/spec/compute.md
-  variable-transform/spec/munge.md
-  stats_models/README.md
-  stats_models/bsmschema/README.md
-  stats_models/specification/walkthrough-2.md
+  extensions/src/
+  getting_started/src
+  standards/bids_stats_model/variable-transform
+  standards/bids_stats_model/src/README.md
+  standards/bids_stats_model/src/bsmschema/README.md
+  standards/bids_stats_model/src/specification/walkthrough-2.md
 
 nav:
--   index.md
+-   About: index.md
+-   Blog:
+    -   blog/index.md
 -   Standards:
-    -   BIDS specification:
-        -   standards/index.md
-    -   BIDS schema:
-        -   extensions/docs/schema.md
-        -   how it works:
-            -   extensions/docs/how-the-schema-works.md
-            -   metadata: extensions/docs/schema_meta.md
-            -   objects: extensions/docs/schema_objects.md
-            -   rules: extensions/docs/schema_rules.md
-        -   details:
-            -   specification/schema/README.md
-    -   BIDS stats model:
-        -   stats_models/specification/index.md
-        -   motivations: stats_models/specification/motivation.md
+    -   standards/index.md
+    -   BIDS Specification:
+        -   standards/bids_specification/index.md
+    -   BIDS Stats Model:
+        -   standards/bids_stats_model/src/specification/index.md
+        -   motivations: standards/bids_stats_model/src/specification/motivation.md
         -   walkthrough:
-            -   stats_models/specification/walkthrough-intro.md
-            -   part-1: stats_models/specification/walkthrough-1.md
-        -   integration: stats_models/specification/integration.md
-        -   legacy: stats_models/specification/legacy.md
+            -   standards/bids_stats_model/src/specification/walkthrough-intro.md
+            -   part-1: standards/bids_stats_model/src/specification/walkthrough-1.md
+        -   integration: standards/bids_stats_model/src/specification/integration.md
+        -   legacy: standards/bids_stats_model/src/specification/legacy.md
         -   specification:
-            -   stats_models/specification/spec.md
-            -   reference: stats_models/specification/reference.md
+            -   standards/bids_stats_model/src/specification/spec.md
+            -   reference: standards/bids_stats_model/src/specification/reference.md
         -   examples and resources:
-            -   stats_models/specification/model-zoo.md
-            -   default model: stats_models/specification/default_model.md
+            -   standards/bids_stats_model/src/specification/model-zoo.md
+            -   default model: standards/bids_stats_model/src/specification/default_model.md
         # -   variable transforms:
-        #     -   variable-transform/README.md
-        #     -   compute: variable-transform/spec/compute.md
-        #     -   munge: variable-transform/spec/munge.md
-    -   BIDS app specification:
-        -   standards/execution/index.md
-        -   scope: standards/execution/scope.md
-        -   specification:
-            -   standards/execution/specification.md
-            -   user interface: standards/execution/ui.md
-            -   inputs: standards/execution/inputs.md
-            -   outputs: standards/execution/outputs.md
-            -   examples: standards/execution/examples.md
-            -   release notes: standards/execution/CHANGELOG.md
-        -   contributors: standards/execution/contributors.md
+        #     -   standards/bids_stats_model/variable-transform/README.md
+        #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
+        #     -   munge: standards/bids_stats_model/variable-transform/spec/munge.md
+    -   BIDS Schema:
+        -   standards/schema/index.md
+        -   how it works:
+            -   standards/schema/how-the-schema-works.md
+            -   standards/schema/schema-meta.md
+            -   standards/schema/schema-objects.md
+            -   standards/schema/schema-rules.md
+    -   BIDS Apps:
+        -   standards/bids_app_specification/index.md
+        -   standards/bids_app_specification/scope.md
+        -   standards/bids_app_specification/contributors.md
+        -   Specification:
+            -   standards/bids_app_specification/specification/index.md
+            -   examples: standards/bids_app_specification/specification/examples.md
+            -   inputs: standards/bids_app_specification/specification/inputs.md
+            -   outputs: standards/bids_app_specification/specification/outputs.md
+            -   user interface: standards/bids_app_specification/specification/user-interface.md
+            -   release notes: standards/bids_app_specification/specification/release-notes.md
+-   Getting started:
+    -   getting_started/index.md
+    -   Folders and files:
+        -   getting_started/folders_and_files/index.md
+        -   getting_started/folders_and_files/folders.md
+        -   getting_started/folders_and_files/files.md
+        -   getting_started/folders_and_files/metadata.md
+        -   getting_started/folders_and_files/derivatives.md
+    -   Resources:
+        -   getting_started/resources/index.md
+        -   getting_started/resources/links.md
+        -   getting_started/resources/glossary.md
+        -   getting_started/resources/dependencies.md
+        -   getting_started/resources/publications.md
+        -   getting_started/resources/talks.md
+    -   BIDS apps:
+        -   getting_started/bids_apps/index.md
+        -   getting_started/bids_apps/tutorial.md
+    -   Tutorials:
+        -   getting_started/tutorials/index.md
+        -   getting_started/tutorials/annotation.md
+        -   Conversion:
+            -   getting_started/tutorials/conversion/index.md
+            -   getting_started/tutorials/conversion/asl.md
+            -   getting_started/tutorials/conversion/ieeg.md
+            -   getting_started/tutorials/conversion/mri.md
+            -   getting_started/tutorials/conversion/pet.md
 -   Tools:
     -   tools/index.md
-    -   Validator:
-        - tools/validator.md
+    -   tools/validator.md
+    -   tools/bids-apps.md
+    -   tools/others.md
     -   Converters:
         - tools/converters/index.md
-        - MRI and PET: tools/converters/mri-pet.md
-        - MEEG: tools/converters/meeg.md
-        - physio: tools/converters/physio.md
-        - others: tools/converters/others.md
-    -   BIDS apps: tools/apps/index.md
-    -   Others: tools/others.md
+        - tools/converters/mri-pet.md
+        - tools/converters/meeg.md
+        - tools/converters/physio.md
+        - tools/converters/others.md
+-   Datasets:
+    -   datasets/index.md
+-   FAQ:
+    -   faq/index.md
+    -   faq/general.md
+    -   faq/eeg.md
+    -   faq/mri.md
+    -   faq/phenotype.md
+    -   faq/bids-extensions.md
+    -   faq/bids-apps.md
 -   Collaboration:
-    -   Governance: collaboration/governance.md
-    -   Working groups: collaboration/working-groups.md
-    -   Code of conduct: specification/CODE_OF_CONDUCT.md
-
+    -   collaboration/index.md
+    -   specification/code_of_conduct.md
+    -   collaboration/governance.md
+    -   collaboration/working-groups.md
+    -   collaboration/contributors.md
+    -   collaboration/acknowledgments.md
     # TODO have a single code of conduct
-    # -   starter_kit: starter_kit/src/CODE_OF_CONDUCT.md
-
+    # -   starter_kit: getting_started/src/src/CODE_OF_CONDUCT.md
     # TODO remove those pages from the website
     # until all the contributing pages have been refactored
     # see https://github.com/bids-standard/.github/issues/7
     # -   Contributing:
     #     -   apps: apps/CONTRIBUTING.md
     #     -   spec: specification/CONTRIBUTING.md
-    #     -   starter_kit: starter_kit/src/CONTRIBUTING.md
-    -   Contributors: collaboration/contributors.md
-    -   Acknowledgments: collaboration/acknowledgments.md
--   Getting started:
-    -   starter_kit/src/index.md
-    -   folders and files:
-        -   folders: getting_started/folders_and_files/folders.md
-        -   files: getting_started/folders_and_files/files.md
-        -   metadata: getting_started/folders_and_files/metadata.md
-        -   derivatives: getting_started/folders_and_files/derivatives.md
-    -   tutorials:
-        -   getting_started/tutorials/index.md
-        -   conversion:
-            -   asl: getting_started/tutorials/conversion/asl.md
-            -   ieeg: getting_started/tutorials/conversion/ieeg.md
-            -   mri: getting_started/tutorials/conversion/mri.md
-            -   pet: getting_started/tutorials/conversion/pet.md
-        -   annotation: getting_started/tutorials/annotation.md
-    -   BIDS apps:
-        -   getting_started/apps/index.md
-        -   tutorial: getting_started/apps/tutorial.md
-    -   resources:
-        -   starter_kit/src/links.md
-        -   talks: starter_kit/src/talks.md
-        -   publications: starter_kit/src/publications.md
-        -   dependencies: starter_kit/src/dependencies.md
-        -   glossary: glossary.md
--   Datasets:
-    -   datasets/index.md
+    #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
 -   Extensions:
-    -   bep/index.md
-    -   BEPs: bep/beps.md
-    -   intro: extensions/docs/index.md
-    -   general_guidelines: extensions/docs/general_guidelines.md
-    -   guide: extensions/docs/guide.md
-    -   submission: extensions/docs/submission.md
+    -   extensions/index.md
+    -   extensions/beps.md
+    -   extensions/general-guidelines.md
+    -   extensions/specific-guidelines.md
+    -   extensions/submission.md
     # -   macros: specification/macros_doc.md
--   FAQ:
-    -   faq/index.md
-    -   general: faq/faq_general.md
-    -   eeg: faq/faq_eeg.md
-    -   mri: faq/faq_mri.md
-    -   phenotype: faq/faq_pheno.md
-    -   bids extensions: faq/faq_bep.md
-    -   bids apps: faq/faq_apps.md
--   Blog:
-    -   blog/index.md
 -   Impact:
-    -   impact.md
--   Contact: contact.md
+    -   impact/index.md
 -   Merch: https://www.teepublic.com/user/bids
+-   Contact:
+    - contact/index.md
 
 
 theme:
@@ -263,7 +222,6 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - navigation.path
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -295,7 +253,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-edit_uri: https://github.com/bids-standard/bids-extensions/edit/main/docs/
+edit_uri: https://github.com/bids-standard/bids-website/edit/main/docs/
 
 markdown_extensions:
   - abbr
@@ -317,7 +275,7 @@ markdown_extensions:
   - tables
   - toc:
       anchorlink: true
-      toc_depth: 4
+      toc_depth: 3
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
