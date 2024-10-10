@@ -22,12 +22,12 @@ def return_jinja_env() -> Environment:
     )
 
 
-def generate_converter_table(file: str) -> str:
+def generate_converter_table(file: str, data_type: str) -> str:
     input_file = WEBSITE_DATA_DIR / "tools" / file
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("converters_table_md.jinja")
-    return template.render(include=content[0])
+    return template.render(include=content[0], data_type=data_type)
 
 
 def generate_tools_table(file: str, category=None) -> str:
