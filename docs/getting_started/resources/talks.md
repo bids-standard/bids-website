@@ -1,6 +1,7 @@
 # Talks and slides
 
-You can find curated list of talks and slides:
+BIDS-related talks and presentations are ongoing. 
+Two great resources for curated lists of talks and slides are:
 
 -   [on this project on OSF](https://osf.io/yn93h/)
 -   [organized by playlist on the BIDS youtube channel](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw/playlists)
