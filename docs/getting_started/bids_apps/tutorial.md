@@ -42,7 +42,7 @@ the docker image will be automatically downloaded from Docker Hub.
 ## Running a BIDS App on a cluster (HPC)
 
 HPC clusters typically require Apptainer/Singularity rather than Docker.
-Apptainer (and later versions of Singularity) contain direct support for [Docker/OCI images](https://apptainer.org/docs/user/latest/docker_and_oci.html).
+Apptainer (and later versions of Singularity) directly support [Docker/OCI images](https://apptainer.org/docs/user/latest/docker_and_oci.html).
 
 ```bash
 apptainer build bids-example-0.0.7.sif docker://bids/example:0.0.7
