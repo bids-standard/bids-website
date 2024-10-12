@@ -1,6 +1,6 @@
 # Talks and slides
 
-BIDS-related talks and presentations are ongoing. 
+BIDS-related talks and presentations are ongoing.
 Two great resources for curated lists of talks and slides are:
 
 -   [on this project on OSF](https://osf.io/yn93h/)

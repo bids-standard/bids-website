@@ -101,7 +101,7 @@
         git: william_clarke
     -   name: Martin Wilson
         git: martin_wilson
-    
+
 # - title: BEP025 Medical Imaging Data Structure (MIDS)
 #   not included for now, as not merged into BIDS specification
 
