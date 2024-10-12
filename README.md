@@ -2,12 +2,12 @@
 [![Check Markdown links](https://github.com/bids-standard/bids-website/actions/workflows/check_md_links.yml/badge.svg?branch=main)](https://github.com/bids-standard/bids-website/actions/workflows/check_md_links.yml)
 [![Validation](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml/badge.svg?branch=main)](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml)
 
-<img 
-    src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_white_transparent_background_crop.png#gh-dark-mode-only" 
-    alt="bids-logo" 
+<img
+    src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_white_transparent_background_crop.png#gh-dark-mode-only"
+    alt="bids-logo"
     width="600"
 />
-<img 
+<img
     src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_black_transparent_background_crop.png#gh-light-mode-only"
     alt="bids-logo"
     width="600"
