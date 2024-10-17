@@ -493,7 +493,7 @@
         data_types:
         -   EEG
         expected_input:
-        -   ???
+        -   EDF, Set : EEG or sEEG
         language:
         -   Javascript
         -   Python
