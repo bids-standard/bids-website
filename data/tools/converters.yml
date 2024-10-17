@@ -498,8 +498,7 @@
         -   Javascript
         -   Python
         documentation: https://github.com/aces/EEG2BIDS
-        comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and
-            Imaging System).
+        comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and Imaging System).
 
 
 # Physiological data converters
