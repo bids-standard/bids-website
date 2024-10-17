@@ -16,8 +16,8 @@ The BIDS Maintainers, Steering Group, working groups, and other contributors hav
 
 The BIDS specification has released a new minor version\! The highlights are:
 
-* Integrating BEP022 for Magnetic Resonance Spectroscopy  
-* Publishing the BIDS schema to [JavaScript Registry](https://jsr.io/@bids/schema)  
+* Integrating BEP022 for Magnetic Resonance Spectroscopy
+* Publishing the BIDS schema to [JavaScript Registry](https://jsr.io/@bids/schema)
 * For the full list of changes, you can read [the changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html#v1100-2024-09-06)
 
 ## Schema-based BIDS validator deployed on validator site
@@ -46,9 +46,9 @@ BIDS continues to be featured in different venues. Our very own maintainer extra
 
 The BEPs carry on to help us all update the standard with new and previously unestablished data types and improvements. If there's a BEP here that affects you, consider getting involved by commenting on open Google Docs or GitHub pull requests or contacting the leads listed in the BEP. Here’s some of our newest BEPs.
 
-* [BEP041](https://bids.neuroimaging.io/bep041): Statistical Model (Taylor Salo)  
-* [BEP042](https://bids.neuroimaging.io/bep042): Electromyography (Seyed Yahya Shirazi)  
-* [BEP043](https://bids.neuroimaging.io/bep043): Term mapping (Chris Markiewicz & Eric Earl)  
+* [BEP041](https://bids.neuroimaging.io/bep041): Statistical Model (Taylor Salo)
+* [BEP042](https://bids.neuroimaging.io/bep042): Electromyography (Seyed Yahya Shirazi)
+* [BEP043](https://bids.neuroimaging.io/bep043): Term mapping (Chris Markiewicz & Eric Earl)
 * [BEP044](https://bids.neuroimaging.io/bep044): Stimuli (Seyed Yahya Shirazi)
 
 Other BEPs are listed on [the BIDS website](https://bids-website.readthedocs.io/en/latest/extensions/beps.html).

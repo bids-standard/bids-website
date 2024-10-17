@@ -1,6 +1,6 @@
 # Contributing
 
-The following list of contributors have donated countless hours to the development of BIDS standards and BIDS Apps. If you would like to get involved and are able to donate time to advancing the BIDS standards, please look into submitting or contributing a current BIDS Extension Proposal [BEPs](/extensions/index.html) or contact one of the contributors below. 
+The following list of contributors have donated countless hours to the development of BIDS standards and BIDS Apps. If you would like to get involved and are able to donate time to advancing the BIDS standards, please look into submitting or contributing a current BIDS Extension Proposal [BEPs](/extensions/index.html) or contact one of the contributors below.
 
 ## Lead Contributors
 
