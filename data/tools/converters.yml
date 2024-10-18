@@ -625,30 +625,6 @@
         comment: Python functions to convert E-Prime files to CSVs. Not currently being developed.
         license: MIT
 
-    -   name: DCM2NIIx
-        url: https://github.com/neurolabusc/dcm2niix
-        data_types:
-        -   MISC
-        -   DICOM
-        -   PAR/REC
-        expected_input:
-        -   ???
-        language:
-        -   C++ (compiled versions available from <ahref="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">NITRC</a>)
-        comment: dcm2nii DICOM to NIfTI converter
-
-    -   name: DICM2NII
-        url: https://github.com/xiangruili/dicm2nii
-        data_types:
-        -   MISC
-        -   DICOM
-        expected_input:
-        -   DICOM
-        language:
-        -   MATLAB
-        comment: dcm2nii DICOM to NIfTI converter
-        license: BSD-2
-
     -   name: sim2bids
         url: https://github.com/dissagaliyeva/sim2bids
         data_types:
