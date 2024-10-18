@@ -28,7 +28,7 @@ BIDS references are centralized in a [zotero group](https://www.zotero.org/group
 
 We strongly recommend you pick a BIDS converter to help you convert your data.
 
-A list of converters can be found [on the BIDS website](../tools/converters/index.md)
+A list of converters can be found [on the BIDS website](../tools/converters.md)
 
 Also look at [the list of tutorials and information about conversions](../getting_started/tutorials/conversion/index.md).
 

@@ -9,7 +9,7 @@ A couple of BIDS converters can work with nifti files:
 -   explore asl
 -   data2bids
 
-See the list of converters [here](../tools/converters/index.md).
+See the list of converters [here](../tools/converters.md).
 
 **However**...
 

@@ -17,9 +17,9 @@
 #       comment:
 #       GUI: false
 
-
-# MRI and PET converters
--   members:
+-   group:
+    name: MRI and PET converters  # <--- get rid of the groups and names. Names will be manually entered in the markdown anyway.
+    members:
     -   name: bidsify
         url: https://github.com/NILAB-UvA/bidsify
         data_types:
@@ -122,7 +122,7 @@
     -   name: OpenfMRI2BIDS
         url: https://github.com/bids-standard/openfmri2bids
         data_types:
-        -   MRI # not sure
+        -   MRI
         expected_input:
         -   openfMRI datasets
         language:
@@ -146,7 +146,7 @@
     -   name: XNAT2BIDS
         url: https://github.com/kamillipi/2bids
         data_types:
-        -   MRI # not sure
+        -   MRI
         expected_input:
         -   DICOM
         language:
@@ -158,7 +158,7 @@
     -   name: Horos (Osirix) export plugin
         url: https://github.com/mslw/horos-bids-output
         data_types:
-        -   MRI # not sure
+        -   MRI
         expected_input:
         -   ???
         language:
@@ -226,7 +226,7 @@
     -   name: Clinica
         url: https://github.com/aramis-lab/clinica
         data_types:
-        -   MRI # not sure
+        -   MRI
         expected_input:
         -   ADNI
         -   AIBL
@@ -242,7 +242,7 @@
     -   name: niix2bids
         url: https://github.com/benoitberanger/niix2bids
         data_types:
-        -   MRI # not sure
+        -   MRI
         expected_input:
         -   Nifti converted from DICOM using dcm2niix
         language:
@@ -311,7 +311,6 @@
             From the ETH and University of Zurich, with collaboration from MIT and
             Dartmouth College.
         data_types:
-        -   small-animal MRI
         -   MRI
         expected_input:
         -   Bruker ParaVision
@@ -390,7 +389,9 @@
         license: GPL-3.0
 
 
-# EEG, MEG, iEEG converters
+-   group:
+    name: EEG, MEG, iEEG converters
+    members:
     -   name: BIDSme
         url: https://github.com/nbeliy/bidsme
         data_types:
@@ -493,16 +494,19 @@
         data_types:
         -   EEG
         expected_input:
-        -   EDF, Set: EEG or sEEG
+        -   ???
         language:
         -   Javascript
         -   Python
-        documentation: https://github.com/aces/EEG2BIDS
+        documentation:
         comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and
             Imaging System).
 
 
-# Physiological data converters
+-   group:
+    name: Physiological data converters
+    comment:
+    members:
     -   name: phys2bids
         url: https://github.com/physiopy/phys2bids
         data_types:
@@ -540,14 +544,15 @@
         GUI: false
 
 
-# 'From BIDS' converters
-# Comment: Converters that take a BIDS dataset as input to convert it into something else.
-# Not mentioned here are the many software that can import a BIDS data as data structure
-# they are more familiar with.
+-   group:
+    name: "'From BIDS' converters"
+    comment: Converters that take a BIDS dataset as input to convert it into something else. Not mentioned here are the many software that can import a
+        BIDS data as data structure they are more familiar with.
+    members:
     -   name: BIDS2ISATab
         url: https://github.com/bids-standard/BIDS2ISATab
         data_types:
-        -   BIDS
+        -   From BIDS
         expected_input:
         -   BIDS
         language:
@@ -558,6 +563,7 @@
     -   name: BIDSto3col
         url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
         data_types:
+        -   From BIDS
         -   TSV
         expected_input:
         -   BIDS
@@ -569,7 +575,7 @@
     -   name: BIDS2NDA
         url: https://github.com/bids-standard/BIDS2NDA
         data_types:
-        -   BIDS
+        -   From BIDS
         expected_input:
         -   BIDS
         language:
@@ -580,6 +586,7 @@
     -   name: bids2xar - for XNAT import
         url: https://github.com/lwallace23/bids2xar
         data_types:
+        -   From BIDS
         -   MRI # not sure
         expected_input:
         -   BIDS
@@ -590,7 +597,7 @@
     -   name: BIDS2NIDM
         url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
         data_types:
-        -   BIDS
+        -   From BIDS
         expected_input:
         -   BIDS
         language:
@@ -602,6 +609,7 @@
     -   name: AFNI BIDS-tools
         url: https://github.com/nih-fmrif/BIDS-tools
         data_types:
+        -   From BIDS
         -   MRI
         expected_input:
         -   BIDS # not sure about that one
@@ -611,12 +619,14 @@
         comment: ARCHIVED - Scripts, tools, and documents on creating, parsing, and working with BIDS-structured data sets.
 
 
-# Miscellaneous
-# Comment: Not exactly BIDS converters but are common tools that can used by other BIDS converters.
+-   group:
+    name: Miscellaneous
+    comment: Not exactly BIDS converters but are common tools that can used by other BIDS converters.
+    members:
     -   name: convert-eprime
         url: https://github.com/tsalo/convert-eprime
         data_types:
-        -   MISC
+        -   other converters
         -   behavioral
         expected_input:
         -   E-Prime log files
@@ -628,7 +638,7 @@
     -   name: DCM2NIIx
         url: https://github.com/neurolabusc/dcm2niix
         data_types:
-        -   MISC
+        -   other converters
         -   DICOM
         -   PAR/REC
         expected_input:
@@ -640,7 +650,7 @@
     -   name: DICM2NII
         url: https://github.com/xiangruili/dicm2nii
         data_types:
-        -   MISC
+        -   other converters
         -   DICOM
         expected_input:
         -   DICOM
@@ -652,7 +662,6 @@
     -   name: sim2bids
         url: https://github.com/dissagaliyeva/sim2bids
         data_types:
-        -   MISC
         -   computational model
         expected_input:
         -   CSV/TSV/DAT/Numpy
