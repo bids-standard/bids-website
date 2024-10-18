@@ -165,12 +165,7 @@ nav:
     -   tools/validator.md
     -   tools/bids-apps.md
     -   tools/others.md
-    -   Converters:
-        - tools/converters/index.md
-        - tools/converters/mri-pet.md
-        - tools/converters/meeg.md
-        - tools/converters/physio.md
-        - tools/converters/others.md
+    -   tools/converters.md
 -   Datasets:
     -   datasets/index.md
 -   FAQ:

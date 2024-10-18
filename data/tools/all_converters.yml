@@ -18,7 +18,7 @@
 #       GUI: false
 
 -   group:
-    name: MRI and PET converters  # <--- get rid of the groups and names. Names will be manually entered in the markdown anyway. 
+    name: MRI and PET converters  # <--- get rid of the groups and names. Names will be manually entered in the markdown anyway.
     members:
     -   name: bidsify
         url: https://github.com/NILAB-UvA/bidsify
@@ -662,7 +662,6 @@
     -   name: sim2bids
         url: https://github.com/dissagaliyeva/sim2bids
         data_types:
-        -   ther converters
         -   computational model
         expected_input:
         -   CSV/TSV/DAT/Numpy
