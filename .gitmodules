@@ -1,10 +1,6 @@
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
-[submodule "execution-spec"]
-	path = execution-spec
-	url = https://github.com/bids-standard/execution-spec
-	datalad-url = https://github.com/bids-standard/execution-spec
 [submodule "data/datasets/examples"]
 	path = data/datasets/examples
 	url = https://github.com/bids-standard/bids-examples
