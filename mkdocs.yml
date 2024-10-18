@@ -79,6 +79,7 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
+  collaboration/bids_github/profile/README.md
   collaboration/bids_github/README.md
   collaboration/bids_github/SUPPORT.md
 

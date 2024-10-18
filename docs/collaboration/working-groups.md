@@ -8,7 +8,7 @@ to improve the documentation around BIDS...
 
 ## Forming a working group
 
-The rules to form a working group are mentioned in the [governance](./governance.md#other-workinginterest-groups).
+The rules to form a working group are mentioned in the [governance](./governance.md#other-working-groups).
 
 A template for the open-letter can be found in [this google doc](https://docs.google.com/document/d/1JfTliUcpyRAGdiZSHObkvZFdkrxPTclQTvolr8ssNHM/edit).
 
