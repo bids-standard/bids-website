@@ -13,7 +13,7 @@ TEMPLATES_DIR = ROOT / "templates"
 
 WEBSITE_DATA_DIR = ROOT / "data"
 
-input_file = WEBSITE_DATA_DIR / "tools" / "converters.yml"
+input_file = WEBSITE_DATA_DIR / "tools" / "tools.yml"
 
 content = yaml.load(input_file)
 

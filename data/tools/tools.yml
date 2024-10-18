@@ -12,6 +12,112 @@
 #     - name: dockerhub
 #       url:
 
+-   name: BIDS-pydantic
+    repo_url: https://github.com/gold-standard-phantoms/bids-pydantic
+    language:
+    -   Python
+    category:
+    description: Pulls a specified version of the BIDS schema and creates corresponding Pydantic models, which will provide BIDS data validation using Python
+        type annotations. See also [BIDS-pydantic-models](https://pypi.org/project/BIDS-pydantic-models/).
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/BIDS-pydantic/
+
+-   name: BIDSHandler
+    repo_url: https://github.com/Macquarie-MEG-Research/BIDSHandler
+    language:
+    -   Python
+    category: index and query
+    description: Library for loading and manipulating BIDS compatible MEG data
+
+-   name: Brainstorm
+    repo_url: https://github.com/brainstorm-tools/brainstorm3
+    documentation: http://neuroimage.usc.edu/brainstorm/
+    language:
+    -   MATLAB
+    category: analysis
+    description: MEG/EEG analysis package
+
+-   name: File mapper
+    repo_url: https://github.com/DCAN-Labs/file-mapper
+    language:
+    -   Python
+    category: file handling
+    description: An easy tool to copy/move/symlink files from one directory to the other! Can be used to "convert" dataset to be BIDS compliant.
+
+-   name: GUI dataset description generator
+    repo_url: https://github.com/tolik-g/BIDS
+    language:
+    -   Python
+    category: file handling
+    description: GUI form that generates `dataset_description.json`
+
+-   name: HALFpipe
+    repo_url: https://github.com/HALFpipe/HALFpipe
+    documentation: https://github.com/HALFpipe/HALFpipe?tab=readme-ov-file#getting-started
+    language:
+    -   Python
+    category: preprocessing and analysis
+    description: wrapper for fmriprep and commong resting-stat and statistical analysis for fMRI
+    distribution:
+    -   name: dockerhub
+        url: https://hub.docker.com/r/halfpipe/halfpipe
+
+-   name: Hierarchical Event Descriptors (HED) Python tools
+    repo_url: https://github.com/hed-standard/hed-Python
+    documentation: https://www.hed-resources.org
+    language:
+    -   Python
+    category: data annotation
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/hedtools/
+    description: HED libraries supporting schema development as well as annotation, validation, and analysis.
+
+-   name: Hierarchical Event Descriptors (HED) online tools
+    url: https://hedtools.org/hed
+    documentation: https://www.hed-resources.org
+    language:
+    -   wesbite
+    category: data annotation
+    description: Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
+
+-   name: Lead-DBS
+    repo_url: https://github.com/netstim/leaddbs
+    documentation: https://www.lead-dbs.org/
+    language:
+    -   MATLAB
+    category: analysis
+    description: A toolbox facilitating Deep Brain Stimulation electrode reconstructions and computer simulations supports BIDS conversion and ingestion
+        of BIDS datasets.
+
+-   name: PRFmodel
+    repo_url: https://github.com/vistalab/PRFmodel
+    documentation: https://github.com/vistalab/PRFmodel/wiki
+    description: a set of tools to fit population receptive field models to BIDS datasets
+    category: analysis
+    distribution:
+    -   name: dockerhub
+        url:
+        -   https://hub.docker.com/r/garikoitz/prfsynth
+        -   https://hub.docker.com/r/garikoitz/prfanalyze-vista
+        -   https://hub.docker.com/r/garikoitz/prfanalyze-afni
+        -   https://hub.docker.com/r/garikoitz/prfanalyze-aprf
+        -   https://hub.docker.com/r/garikoitz/prfanalyze-popeye
+        -   https://hub.docker.com/r/garikoitz/prfreport
+
+-   name: PyBIDS
+    repo_url: https://github.com/bids-standard/pybids
+    documentation: https://bids-standard.github.io/pybids/
+    language:
+    -   Python
+    category: index and query
+    description: Python package to quickly parse / search the components of a BIDS dataset. It also contains functionality for running analyses on your
+        data.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/pybids/
+
 -   name: ancp-bids
     repo_url: https://github.com/ANCPLabOldenburg/ancp-bids
     documentation: https://ancpbids.readthedocs.io/en/latest/
@@ -35,24 +141,16 @@
     -   name: pypi
         url: https://pypi.org/project/babs/
 
--   name: bids2table
-    repo_url: https://github.com/childmindresearch/bids2table
-    documentation: https://childmindresearch.github.io/bids2table/bids2table.html
+-   name: bids stats model
+    repo_url: https://github.com/bids-standard/stats-models
+    documentation: https://bids-standard.github.io/stats-models/index.html
     language:
     -   Python
-    category: index and query
-    description: bids2table is a library for efficiently indexing and querying large-scale BIDS neuroimaging datasets and derivatives.
+    category:
     distribution:
     -   name: pypi
-        url: https://pypi.org/project/bids2table/
-
--   name: bids2cite
-    repo_url: https://github.com/Remi-Gau/bids2cite
-    documentation: https://bids2cite.readthedocs.io/en/latest/
-    language:
-    -   Python
-    category: file handling
-    description: package to interactively update `dataset_description.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
+        url: https://pypi.org/project/bsmschema/
+    description: Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
 
 -   name: bids-cfood
     repo_url: https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood
@@ -70,16 +168,24 @@
     category: index and query
     description: MATLAB/Octave tools to interact with datasets conforming to the BIDS format
 
--   name: BIDS-pydantic
-    repo_url: https://github.com/gold-standard-phantoms/bids-pydantic
+-   name: bids2cite
+    repo_url: https://github.com/Remi-Gau/bids2cite
+    documentation: https://bids2cite.readthedocs.io/en/latest/
     language:
     -   Python
-    category:
-    description: Pulls a specified version of the BIDS schema and creates corresponding Pydantic models, which will provide BIDS data validation using Python
-        type annotations. See also [BIDS-pydantic-models](https://pypi.org/project/BIDS-pydantic-models/).
+    category: file handling
+    description: package to interactively update `dataset_description.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
+
+-   name: bids2table
+    repo_url: https://github.com/childmindresearch/bids2table
+    documentation: https://childmindresearch.github.io/bids2table/bids2table.html
+    language:
+    -   Python
+    category: index and query
+    description: bids2table is a library for efficiently indexing and querying large-scale BIDS neuroimaging datasets and derivatives.
     distribution:
     -   name: pypi
-        url: https://pypi.org/project/BIDS-pydantic/
+        url: https://pypi.org/project/bids2table/
 
 -   name: bidser
     repo_url: https://github.com/bbuchsbaum/bidser
@@ -88,51 +194,6 @@
     -   R
     category: index and query
     description: Working with Brain Imaging Data Structure in R
-
--   name: BIDSHandler
-    repo_url: https://github.com/Macquarie-MEG-Research/BIDSHandler
-    language:
-    -   Python
-    category: index and query
-    description: Library for loading and manipulating BIDS compatible MEG data
-
--   name: bids stats model
-    repo_url: https://github.com/bids-standard/stats-models
-    documentation: https://bids-standard.github.io/stats-models/index.html
-    language:
-    -   Python
-    category:
-    distribution:
-    -   name: pypi
-        url: https://pypi.org/project/bsmschema/
-    description: Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
-
--   name: Brainstorm
-    repo_url: https://github.com/brainstorm-tools/brainstorm3
-    documentation: http://neuroimage.usc.edu/brainstorm/
-    language:
-    -   MATLAB
-    category: analysis
-    description: MEG/EEG analysis package
-
--   name: Hierarchical Event Descriptors (HED) online tools
-    url: https://hedtools.org/hed
-    documentation: https://www.hed-resources.org
-    language:
-    -   wesbite
-    category: data annotation
-    description: Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
-
--   name: Hierarchical Event Descriptors (HED) Python tools
-    repo_url: https://github.com/hed-standard/hed-Python
-    documentation: https://www.hed-resources.org
-    language:
-    -   Python
-    category: data annotation
-    distribution:
-    -   name: pypi
-        url: https://pypi.org/project/hedtools/
-    description: HED libraries supporting schema development as well as annotation, validation, and analysis.
 
 -   name: clpipe
     repo_url: https://github.com/cohenlabUNC/clpipe
@@ -152,29 +213,6 @@
     distribution:
     -   name: pypi
         url: https://pypi.org/project/cubids/
-
--   name: File mapper
-    repo_url: https://github.com/DCAN-Labs/file-mapper
-    language:
-    -   Python
-    category: file handling
-    description: An easy tool to copy/move/symlink files from one directory to the other! Can be used to "convert" dataset to be BIDS compliant.
-
--   name: GUI dataset description generator
-    repo_url: https://github.com/tolik-g/BIDS
-    language:
-    -   Python
-    category: file handling
-    description: GUI form that generates `dataset_description.json`
-
--   name: Lead-DBS
-    repo_url: https://github.com/netstim/leaddbs
-    documentation: https://www.lead-dbs.org/
-    language:
-    -   MATLAB
-    category: analysis
-    description: A toolbox facilitating Deep Brain Stimulation electrode reconstructions and computer simulations supports BIDS conversion and ingestion
-        of BIDS datasets.
 
 -   name: mne-bids
     repo_url: https://github.com/mne-tools/mne-bids
@@ -212,21 +250,6 @@
     category:
     description: Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
 
--   name: PRFmodel
-    repo_url: https://github.com/vistalab/PRFmodel
-    documentation: https://github.com/vistalab/PRFmodel/wiki
-    description: a set of tools to fit population receptive field models to BIDS datasets
-    category: analysis
-    distribution:
-    -   name: dockerhub
-        url:
-        -   https://hub.docker.com/r/garikoitz/prfsynth
-        -   https://hub.docker.com/r/garikoitz/prfanalyze-vista
-        -   https://hub.docker.com/r/garikoitz/prfanalyze-afni
-        -   https://hub.docker.com/r/garikoitz/prfanalyze-aprf
-        -   https://hub.docker.com/r/garikoitz/prfanalyze-popeye
-        -   https://hub.docker.com/r/garikoitz/prfreport
-
 -   name: psychopy-bids
     repo_url: https://gitlab.com/psygraz/psychopy-bids
     documentation: https://psychopy-bids.readthedocs.io/en/latest/
@@ -234,18 +257,6 @@
     -   Python
     category:
     description: A psychopy plugin to help easily output a BIDS dataset, including `events.tsv` and `beh.tsv` files when running experiments with psychopy.
-
--   name: PyBIDS
-    repo_url: https://github.com/bids-standard/pybids
-    documentation: https://bids-standard.github.io/pybids/
-    language:
-    -   Python
-    category: index and query
-    description: Python package to quickly parse / search the components of a BIDS dataset. It also contains functionality for running analyses on your
-        data.
-    distribution:
-    -   name: pypi
-        url: https://pypi.org/project/pybids/
 
 -   name: rbids
     repo_url: https://github.com/mathesong/rbids
