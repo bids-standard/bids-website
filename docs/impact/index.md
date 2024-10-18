@@ -77,7 +77,7 @@ You can also find them [in the specification](https://bids-specification.readthe
 | statistical model | ![PyPI - Downloads](https://img.shields.io/pypi/dm/bsmschema)                                                            |
 
 For the number of docker pulls of the BIDS apps, please check the
-[BIDS app dashboard](https://bids-apps.neuroimaging.io/apps/).
+[BIDS app dashboard](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html).
 
 ### Contributors
 
