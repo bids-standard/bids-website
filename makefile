@@ -76,4 +76,4 @@ remark: package.json
 		./docs/standards/schema \
 		./docs/standards/index.md \
 		./docs/tools \
-		--rc-path .remarkrc
+		--frail --rc-path .remarkrc
