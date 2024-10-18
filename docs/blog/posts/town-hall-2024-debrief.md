@@ -55,9 +55,12 @@ The slides can be found on our [Open-science Framework project](https://osf.io/5
     -   potential BEP: "Peripheral" physiological signals <!-- TODO  add link -->
 
     -   BIDS Connectivity Project Updates
+
         -   7 BEPS
+
         -   **lessons learned**: there is no procedure for addressing and resolving BEP feedback,
             establishing a timeline would help to continue progress
+
         -   **Suggestions**: clarify roles and responsibilities of BEP leads, define timelines for BEP tasks
 
 -   BIDS 2.0 (*Yaroslav Halchenko*)

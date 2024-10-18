@@ -58,22 +58,6 @@ lint: remark
 
 remark: package.json
 	npx remark \
-		./docs/*.md \
-		./docs/blog \
-		./docs/collaboration \
-		./docs/contact \
-		./docs/datasets \
-		./docs/extensions/*md \
-		./docs/faq/ \
-		./docs/getting_started/*.md \
-		./docs/getting_started/bids_apps/**/*.md \
-		./docs/getting_started/folders_and_files/**/*.md \
-		./docs/getting_started/resources/**/*.md \
-		./docs/getting_started/tutorials/**/*.md \
-		./docs/impact \
-		./docs/standards/bids_app_specification \
-		./docs/standards/bids_specification \
-		./docs/standards/schema \
-		./docs/standards/index.md \
-		./docs/tools \
-		--frail --rc-path .remarkrc
+		./docs \
+		--frail \
+		--rc-path .remarkrc
