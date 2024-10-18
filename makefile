@@ -1,7 +1,7 @@
 all: update
 
 serve: update
-	mkdocs serve
+	mkdocs serve -a localhost:8080
 
 update: update_from_spec update_contributors update_datasets_examples tmp_figures
 
@@ -12,12 +12,7 @@ update_from_spec:
 	@echo "  ----------------------------------  "
 	rm -fr docs/specification
 	mkdir -p docs/specification/
-	mkdir -p docs/specification/schema
-	cp -r specification/src/schema docs/specification/
-	cp specification/CODE_OF_CONDUCT.md docs/specification/code_of_conduct.md
-	cp specification/CONTRIBUTING.md docs/specification/CONTRIBUTING.md
 	cp specification/macros_doc.md docs/specification/macros_doc.md
-	cp -r specification/commenting_images docs/specification/
 
 update_contributors: package.json
 	@echo "  ----------------------------------  "

@@ -222,7 +222,7 @@ they should inform the steering group in advance and are responsible to help:
 
 {{ MACROS___generate_members_table(file="advisory.yml") }}
 
-### Other working/interest Groups
+### Other working groups
 
 A working/interest group can be established under the approval of the BIDS Steering Group.
 This is typically but not limited to being formed for the purpose of advancing the BIDS community, not the standard.
@@ -486,8 +486,7 @@ Anonymous data from BIDS elections is stored in a dedicated repository on GitHub
 
 ### H. Governance amendment procedure
 
-A group of BIDS contributors may at any time form a [working
-group](#other-workinginterest-groups) to propose amendments to the governance.
+A group of BIDS contributors may at any time form a [working group](#other-working-groups) to propose amendments to the governance.
 These amendments will be first reviewed by the Steering Group before being
 submitted to a community review.
 At the end of the community review each amendment is submitted to a vote of BIDS
