@@ -2,7 +2,7 @@
 
 There is a rich ecosystem of tools to help you work with BIDS datasets.
 
--   Converters: There are many [converters](./converters/index.md)
+-   Converters: There are many [converters](./converters.md)
     to help you go from your sourcedata to have a BIDS dataset.
 
 -   BIDS Validator: The [BIDS validator](./validator.md) is there
