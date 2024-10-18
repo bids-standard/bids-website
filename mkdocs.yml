@@ -129,6 +129,8 @@ nav:
             -   getting_started/tutorials/conversion/ieeg.md
             -   getting_started/tutorials/conversion/mri.md
             -   getting_started/tutorials/conversion/pet.md
+    -   How to:
+        -   getting_started/how_to/index.md
 -   Tools:
     -   tools/index.md
     -   tools/validator.md
