@@ -160,7 +160,7 @@ Many of the current BEPs have developed useful terms that we recommend here:
 | group-<label>                                        | BEP039                                                                                   | Name of group combining over subjects                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | node-<label>                                         | No BEP (BEP-002 working implementation)                                                  | Name of processing node generating derivative file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | stat-<label>                                         | BEP016 (contemplated but not currently present in proposal), also useful for atlas BEP38 | The theory was that one could like computing the mean value across all values in a time series, or within a DWI shell, or the like. The particular aggregate statistic may not be an adequate descriptor; you could also need eg. the axis along which the aggregate was applied, which elements were or were not included in the aggregate... So it might be too much complexity to hand to a single entity?                                                                                                                                    |
-| meas-<label>                                         | BEP017,BEP23                                                                             | Description of the quantity described by the file when the suffix is insufficient (eg. binding value, relaxation time)                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| meas-<label>                                         | BEP017,BEP23                                                                             | Description of the quantity described by the file when the suffix is insufficient (eg. binding value, relaxation time)
 
 ### Derivatives BEP and provenance
 
@@ -176,25 +176,9 @@ the eventual output files and JSON configurations,
 it's instrumental in capturing provenance
 and identifying what files or information should be retained for optimal reuse in future studies.
 
-> What is provenance?
+!!! Note
 
-Provenance is information about how the dataset was processed.
-
-> What BIDS-Prov (BEP28) is about and which metadata can/should go in my BIDS-derivative BEP?
-
-The important question to ask for each metadata is whether this metadata is important to enable reusability (for consistent interpretation that is relevant for further processing). If so, this metadata must go into the BIDS-derivatives.
-
-> Should I worry that those are already covered by the BIDS-Prov BEP?
-
-No. This information is complementary.
-
-> How do I know if the metadata I want to store should be put in the BIDS-derivatives BEP or in a JSON-LD file?
-
-It will never go in JSON-LD. BIDS-derivatives and BIDS-Prov are superpositions, they are non-overlapping. You don't have to include BIDS-Prov.
-
-> If I don’t use BIDS-Prov how can I describe the data workflow?
-
-A lightweight version is to use a description.tsv file (see common [derivatives](https://bids-specification.readthedocs.io/en/stable/05-derivatives/02-common-data-types.html))
+    See the [FAQ on preovenance](../faq/bids-extensions.md#provenance)
 
 ### Avoid backward incompatible changes
 
@@ -269,14 +253,6 @@ Diversity in the team contributes to the quality of the extension proposal.
 We recommend that the core team has representatives from 3 different labs,
 preferably also with a mix of more junior and more senior contributors.
 You may also consider requesting explicit support letters from external labs.
-
-### How to turn on email notifications about suggestions and comments for Google Docs
-
-![notifications_1](../assets/img/notifications_1.png)
-
-![notifications_2](../assets/img/notifications_2.png)
-
-![notifications_3](../assets/img/notifications_3.png)
 
 [the bids specification repository]: https://github.com/bids-standard/bids-specification/
 [issues page]: https://github.com/bids-standard/bids-specification/issues
