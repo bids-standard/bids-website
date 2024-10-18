@@ -13,8 +13,8 @@ jobs:
         -   uses: actions/checkout@master
         -   uses: gaurav-nelson/github-action-markdown-link-check@v1
             with:
-                use-quiet-mode: no
-                use-verbose-mode: no
+                # use-quiet-mode: no
+                # use-verbose-mode: no
                 config-file: md_link_check_config.json
                 folder-path: docs
                 file-path: ./README.md
