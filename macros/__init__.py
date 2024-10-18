@@ -2,6 +2,7 @@ from .macros import (
     generate_apps_table,
     generate_beps_table,
     generate_converter_table,
+    generate_filename_templates,
     generate_grants_table,
     generate_members_table,
     generate_tools_table,
@@ -18,4 +19,5 @@ __all__ = [
     "generate_grants_table",
     "generate_apps_table",
     "generate_working_groups_table",
+    "generate_filename_templates",
 ]
