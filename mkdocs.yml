@@ -79,15 +79,8 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  extensions/src/
-  getting_started/src
-  standards/bids_stats_model/variable-transform
-  standards/bids_stats_model/src/README.md
-  standards/bids_stats_model/src/bsmschema/README.md
-  standards/bids_stats_model/src/specification/walkthrough-2.md
   collaboration/bids_github/README.md
   collaboration/bids_github/SUPPORT.md
-
 
 nav:
 -   About: index.md
@@ -97,24 +90,6 @@ nav:
     -   standards/index.md
     -   BIDS Specification:
         -   standards/bids_specification/index.md
-    -   BIDS Stats Model:
-        -   standards/bids_stats_model/src/specification/index.md
-        -   motivations: standards/bids_stats_model/src/specification/motivation.md
-        -   walkthrough:
-            -   standards/bids_stats_model/src/specification/walkthrough-intro.md
-            -   part-1: standards/bids_stats_model/src/specification/walkthrough-1.md
-        -   integration: standards/bids_stats_model/src/specification/integration.md
-        -   legacy: standards/bids_stats_model/src/specification/legacy.md
-        -   specification:
-            -   standards/bids_stats_model/src/specification/spec.md
-            -   reference: standards/bids_stats_model/src/specification/reference.md
-        -   examples and resources:
-            -   standards/bids_stats_model/src/specification/model-zoo.md
-            -   default model: standards/bids_stats_model/src/specification/default_model.md
-        # -   variable transforms:
-        #     -   standards/bids_stats_model/variable-transform/README.md
-        #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
-        #     -   munge: standards/bids_stats_model/variable-transform/spec/munge.md
     -   BIDS Schema:
         -   standards/schema/index.md
         -   how it works:
@@ -122,17 +97,10 @@ nav:
             -   standards/schema/schema-meta.md
             -   standards/schema/schema-objects.md
             -   standards/schema/schema-rules.md
+    -   BIDS Stats Model:
+        -   standards/bids_stats_model/index.md
     -   BIDS Apps:
         -   standards/bids_app_specification/index.md
-        -   standards/bids_app_specification/scope.md
-        -   standards/bids_app_specification/contributors.md
-        -   Specification:
-            -   standards/bids_app_specification/specification/index.md
-            -   examples: standards/bids_app_specification/specification/examples.md
-            -   inputs: standards/bids_app_specification/specification/inputs.md
-            -   outputs: standards/bids_app_specification/specification/outputs.md
-            -   user interface: standards/bids_app_specification/specification/user-interface.md
-            -   release notes: standards/bids_app_specification/specification/release-notes.md
 -   Getting started:
     -   getting_started/index.md
     -   Folders and files:
