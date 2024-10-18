@@ -5,6 +5,11 @@
     Make sure to check out the [nipreps wesbite](https://www.nipreps.org/)
     for more information on using and creating BIDS apps.
 
+!!! warning
+
+    If you are developing a BIDS app,
+    make sure to check the [BIDS apps specification](https://bids-standard.github.io/execution-spec/).
+
 ## For users
 
 ### How can I check a version of a container I have available locally?
