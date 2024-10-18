@@ -9,6 +9,6 @@ but current documentation on BIDS standards can be found in the sections below.
 You can find further information for:
 
 -   the [BIDS specification](./bids_specification/index.md)
--   the [BIDS schema]((./schema/index.md))
--   the [BIDS apps specification](./bids_app_specification/index.md)
+-   the [BIDS schema](./schema/index.md)
 -   the [BIDS statistical model specification](.//bids_stats_model/index.md)
+-   the [BIDS apps specification](./bids_app_specification/index.md)
