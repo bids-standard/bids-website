@@ -138,21 +138,6 @@
     comment:
     license: GPL-2.0
 
--   name: BIDSme
-    url: https://github.com/nbeliy/bidsme
-    data_types:
-    -   MRI
-    -   EEG
-    expected_input:
-    -   DICOM
-    -   Nifti
-    -   Brain Vision
-    language:
-    -   Python
-    documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
-    comment:
-    license: GPL-2.0
-
 -   name: BIDSto3col
     url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
     data_types:

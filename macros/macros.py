@@ -79,7 +79,7 @@ def generate_apps_table():
 
 
 def main():
-    print(generate_converter_table(file="converters.yml", data_type="PET"))
+    print(generate_converter_table(file="converters.yml", data_type="EEG"))
 
 
 if __name__ == "__main__":
