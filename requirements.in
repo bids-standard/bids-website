@@ -12,5 +12,5 @@ rich
 ruamel.yaml
 tabulate
 pyzotero
-file:specification/tools/schemacode
+bidsschematools[render]
 -e file:tools

@@ -1,3 +1,5 @@
+# BIDS extensions
+
 ## Can we introduce new entities / metadata in a BEP?
 
 > We need to introduce an entity to distinguish on-device preprocessing methods

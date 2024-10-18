@@ -1,7 +1,9 @@
 from pathlib import Path
 
 import ruamel.yaml
+from bidsschematools import render, schema
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from rich import print
 
 yaml = ruamel.yaml.YAML()
 yaml.indent(mapping=2, sequence=4, offset=2)
@@ -78,8 +80,51 @@ def generate_apps_table():
     return template.render(include=content, type=type)
 
 
+def generate_filename_templates():
+    """Create filename templates for all datatypes of all modalities."""
+
+    schema_obj = schema.load_schema()
+
+    modalities = schema_obj.rules.modalities
+
+    to_render = [
+        {
+            "name": x,
+            "description": schema_obj.objects.modalities[x]["description"],
+            "datatypes": [
+                {
+                    "name": dt,
+                    "filenames": filename_template_for(schema_obj, dt),
+                }
+                for dt in modalities[x]["datatypes"]
+            ],
+        }
+        for x in modalities
+    ]
+
+    env = return_jinja_env()
+    template = env.get_template("filename_templates_md.jinja")
+    return template.render(include=to_render)
+
+
+def filename_template_for(schema_obj, datatype):
+    """Create filename templates for a single datatype."""
+    filenames = render.make_filename_template(
+        dstype="raw",
+        schema=schema_obj,
+        src_path=Path("https://bids-specification.readthedocs.io/en/latest/"),
+        pdf_format=False,
+        datatypes=[datatype],
+    )
+    filenames = filenames.replace(
+        "../../..",
+        "https://bids-specification.readthedocs.io/en/latest",
+    )
+    return filenames
+
+
 def main():
-    print(generate_converter_table(file="converters.yml", data_type="EEG"))
+    print(generate_filename_templates())
 
 
 if __name__ == "__main__":
