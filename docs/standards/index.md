@@ -7,6 +7,7 @@ These standards are intended to be updated and evolve as methods and data types 
 but current documentation on BIDS standards can be found in the sections below.
 
 You can find further information for:
+
 -   the [BIDS specification](./bids_specification/index.md)
 -   the [BIDS schema]((./schema/index.md))
 -   the [BIDS apps specification](./bids_app_specification/index.md)
