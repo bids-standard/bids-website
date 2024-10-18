@@ -41,3 +41,7 @@ def define_env(env):
         macros.generate_working_groups_table,
         "MACROS___generate_working_groups_table",
     )
+    env.macro(
+        macros.generate_filename_templates,
+        "MACROS___generate_filename_templates",
+    )

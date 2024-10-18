@@ -1,3 +1,5 @@
+# MRI
+
 ## I only have nifti files and no dicom. Can I still create a BIDS dataset?
 
 In theory yes, but it is possible that you will be missing some metadata that is required by the BIDS specification.

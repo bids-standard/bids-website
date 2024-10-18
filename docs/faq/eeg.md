@@ -1,3 +1,5 @@
+# EEG
+
 ## How to format Hardware and Software filter fields in a .json?
 
 In the modality specific sidecar file `_eeg.json`, we can specify the software
