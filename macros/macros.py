@@ -27,7 +27,7 @@ def generate_converter_table(file: str, data_type: str) -> str:
     content = yaml.load(input_file)
     env = return_jinja_env()
     template = env.get_template("converters_table_md.jinja")
-    return template.render(include=content[0], data_type=data_type)
+    return template.render(include=content, data_type=data_type)
 
 
 def generate_tools_table(file: str, category=None) -> str:
@@ -79,7 +79,7 @@ def generate_apps_table():
 
 
 def main():
-    print(generate_apps_table())
+    print(generate_converter_table(file="converters.yml", data_type="EEG"))
 
 
 if __name__ == "__main__":
