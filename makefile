@@ -1,7 +1,7 @@
 all: update
 
 serve: update
-	mkdocs serve
+	mkdocs serve -a localhost:8080
 
 update: update_from_spec update_contributors update_datasets_examples tmp_figures
 
