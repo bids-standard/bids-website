@@ -47,7 +47,7 @@ You can find more [about BIDS governance](https://bids-website.readthedocs.io/en
 
 ## Recent venues BIDS presented
 
-BIDS continues to be featured in different venues. Our very own maintainer extraordinaire, Rémi Gau, was recently featured in a yet-to-be-released podcast. The BIDS Town Hall was featured at OHBM again this year in June. For a full recount refer to [this blog post](https://bids-website.readthedocs.io/en/latest/blog/2024/07/01/BIDS%20Town%20Hall%202024%3A%20summary.html).
+BIDS continues to be featured in different venues. Our very own maintainer extraordinaire, Rémi Gau, was recently featured in a yet-to-be-released podcast. The BIDS Town Hall was featured at OHBM again this year in June. For a full recount refer to [this blog post](./town-hall-2024-debrief.md).
 
 ## BIDS Extension Proposals (BEPs)
 

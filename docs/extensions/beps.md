@@ -17,6 +17,10 @@ Below is a table of BEPs that have been merged.
 The references of the final publication for those BEPS
 can be found in the BIDS [specification](https://bids-specification.readthedocs.io/en/latest/01-introduction.html#datatype-specific-publications).
 
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
+
 --8<-- "tmp/bids_timeline.html"
 
 {{ MACROS___generate_beps_table(file="beps_completed.yml", type="completed") }}
