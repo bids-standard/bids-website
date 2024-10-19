@@ -3,7 +3,7 @@ slug: Steering Group executive summary, action items, and minutes
 date:
 author:
 categories:
-  - steering group minutes
+-   steering group minutes
 ---
 
 # Steering Group minutes
@@ -12,15 +12,12 @@ Date:
 
 <!--more-->
 
-### Executive Summary
+## Executive Summary
 
-### Action items
+## Action items
 
 | Action item |
 | ----------- |
 |             |
 
-### Minutes
-
--
--
+## Minutes

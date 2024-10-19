@@ -59,6 +59,10 @@ The resulting citation count is then visualized using [Plotly](https://plotly.co
 - HTML figures and other content that can be updated is "stored" in external files
   that are injected into markdown files using [snippets](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
 
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
+
 ```text
 --8<-- "tmp/bids_timeline.html"
 ```

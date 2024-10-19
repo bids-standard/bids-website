@@ -131,6 +131,8 @@ nav:
             -   getting_started/tutorials/conversion/pet.md
     -   How to:
         -   getting_started/how_to/index.md
+    -   Templates:
+        -   getting_started/templates/index.md
 -   Tools:
     -   tools/index.md
     -   tools/validator.md
@@ -177,6 +179,7 @@ theme:
   features:
     - announce.dismiss
     - content.action.edit
+    - content.code.copy
     - content.tooltips
     - footnotes
     - header.autohide
