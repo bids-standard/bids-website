@@ -38,7 +38,6 @@
     leads:
     -   given-names: Viviana
         family-names: Siless
-        email:
     status:
     -   '[**HTML preview**](https://bids-specification--518.org.readthedocs.build/en/518/05-derivatives/04-structural-derivatives.html)'
     -   Stability! (We haven't touched it in a bit.)
@@ -57,7 +56,6 @@
     leads:
     -   given-names: Christopher J.
         family-names: Markiewicz
-        email: markiewicz@stanford.edu
     status:
     -   '[**HTML preview**](https://bids-specification--519.org.readthedocs.build/en/519/derivatives/functional-derivatives.html)'
     -   Moderate reworking, post-BEP23 meeting. "boldmap" suffix.
@@ -77,7 +75,6 @@
     leads:
     -   given-names: Oscar
         family-names: Esteban
-        email: phd@oscaresteban.es
     status:
     -   After the kick-off meeting (2019), progress locked on developing a prototype of a new HDF5-based format (X5)
     -   Minor bug fixes and features to support more transforms
@@ -98,10 +95,8 @@
     leads:
     -   given-names: Franco
         family-names: Pestilli
-        email: pestilli@utexas.edu
     -   given-names: Oscar
         family-names: Esteban
-        email: phd@oscaresteban.es
     status:
     -   adapted general spatial derivatives proposal, meaning using <modality>map, like `dwimap`
     -   decided on using `params-` to denote different file types, for example `param-md` or `param-fa`
@@ -138,7 +133,6 @@
     leads:
     -   given-names: Dejan
         family-names: Draschkow
-        email: dejan.draschow@psy.ox.ac.uk
     status:
     -   'Revision of physiology and continuous recordings: clarification of current specs and `_stim` files moved into tasks specification'
     -   Working on an eye tracking data converter
@@ -156,22 +150,16 @@
     leads:
     -   given-names: Arnaud
         family-names: Delorme
-        email: adelorme@ucsd.edu
     -   given-names: Dora
         family-names: Hermes
-        email: dorahermes@gmail.com
     -   given-names: Mainak
         family-names: Jas
-        email: mainakjas@gmail.com
     -   given-names: Julia
         family-names: Guiomar Niso Galán
-        email: guiomar.niso@ctb.upm.es
     -   given-names: Robert
         family-names: Oostenveld
-        email: r.oostenveld@donders.ru.nl
     -   given-names: Cyril
         family-names: Pernet
-        email: wamcyril@gmail.com
     -   given-names: Christine
         family-names: Rogers
         email: rogers@bic.mni.mcgill.ca
@@ -197,13 +185,10 @@
     leads:
     -   given-names: Martin
         family-names: Noergaard
-        email: noergard@stanford.edu
     -   given-names: Graham
         family-names: Searle
-        email: Graham.Searle@invicro.co.uk
     -   given-names: Melanie
         family-names: Ganz-Benjaminsen
-        email: melanie.ganz@nru.dk
     status:
     -   Defined all the necessary components to be included in the specification
     -   Alignment with other modalities obtained at Copenhagen BIDS derivatives meeting
@@ -226,7 +211,6 @@
     leads:
     -   given-names: Hugo
         family-names: Boniface
-        email: hugoboniface@gmail.com
     status:
     -   Lead seeking more contributors and experts.
     blocking:
@@ -259,10 +243,8 @@
     leads:
     -   given-names: Satrajit S.
         family-names: Ghosh
-        email: satra@mit.edu
     -   given-names: Camille
         family-names: Maumet
-        email: camille.maumet@inria.fr
     status:
     -   '[Specification](https://bids.neuroimaging.io/bep028)'
     -   '[Set of examples](https://github.com/bids-standard/BEP028_BIDSprov)'
@@ -281,8 +263,7 @@
     leads:
     -   given-names: Sylvain
         family-names: Takerkart
-        email: sylvain.takerkart@univ-amu.fr
-    -   given-names: Ben
+    -   given-names: Benjamin
         family-names: Dichter
         email: ben.dichter@gmail.com
     status:
@@ -304,13 +285,10 @@
     leads:
     -   given-names: James
         family-names: Gholam
-        email: GholamJA@cardiff.ac.uk
     -   given-names: Leandro
         family-names: Beltrachini
-        email: BeltrachiniL@cardiff.ac.uk
     -   given-names: Filip
         family-names: Szczepankiewicz
-        email: filip.szczepankiewicz@med.lu.se
     status:
     -   'New BEP, seeking contributors and collecting community feedback relating to: priority sequences to support, best supported binary structured formats
         (e.g. CBOR? HDF5? MsgPack?).'
@@ -330,10 +308,8 @@
     leads:
     -   given-names: Michael
         family-names: Schirner
-        email: michael.schirner@charite.de
     -   given-names: Petra
         family-names: Ritter
-        email: petra.ritter@charite.de
     status:
     -   sim2bids app created
     -   easier to bring neural simulation data (especially in The Virtual Brain format) into the proposed BIDS Comp Model format
@@ -354,10 +330,8 @@
     leads:
     -   given-names: Giuseppe
         family-names: Gallitto
-        email: giuseppe.gallitto@uk-essen.de
     -   given-names: Balint
         family-names: Kincses
-        email: balint.kincses@uk-essen.de
     -   given-names: Tamas
         family-names: Spisak
         email: tamas.spisak@uni-due.de
@@ -378,12 +352,10 @@
     leads:
     -   given-names: Eric A.
         family-names: Earl
-        email: eric.earl@nih.gov
     -   given-names: Samuel
         family-names: Guay
-        email: samuel.guay@umontreal.ca
-    -   name: Sebastian Urchs
-        email: sebastian.urchs@gmail.com
+    -   given-names: Sebastian
+        family-names: Urchs
     status:
     -   Dropping “Segregated” data format in favor of “Aggregated”
     blocking:
@@ -400,16 +372,12 @@
     leads:
     -   given-names: Giacomo
         family-names: Bertazzoli
-        email: giacomo.bertazzoli@unitn.it
     -   given-names: Vittorio
         family-names: Iacovella
-        email: vittorio.iacovella@unitn.it
     -   given-names: Carlo
         family-names: Miniussi
-        email: carlo.miniussi@unitn.it
     -   given-names: Marta
         family-names: Bortoletto
-        email: marta.bortoletto@cognitiveneuroscience.it
     status:
     -   Updated BEP structure that eliminates new `.json` or `.tsv`
     -   Stimulation parameters and hardware will be integrated in the `events.tsv` and `events.json `
@@ -427,16 +395,13 @@
     leads:
     -   given-names: James
         family-names: Kent
-        email: jamesdkent21@gmail.com
     -   given-names: Peer
         family-names: Herholz
-        email: herholz.peer@gmail.com
     -   given-names: Eugene P.
         family-names: Duff
         email: eugene.duff@paediatrics.ox.ac.uk
     -   given-names: Anthony
         family-names: Galassi
-        email: anthony.galassi@nih.gov
     status:
     -   consolidation of different proposals
     -   atlases defined by template/reference space and modalities
@@ -454,19 +419,15 @@
     leads:
     -   given-names: Arianna
         family-names: Sala
-        email: arianna.sala@uliege.be
     -   given-names: Anibal
-        family-names: Heinsfeld
+        family-names: Sólon
         email: anibalsolon@utexas.edu
     -   given-names: Cyrus
         family-names: Eierud
-        email: ceierud@gsu.edu
     -   given-names: Franco
         family-names: Pestilli
-        email: pestilli@utexas.edu
     -   given-names: Peer
         family-names: Herholz
-        email: herholz.peer@gmail.com
     status:
     -   adapted general spatial derivatives proposal, meaning using `<modality>map`, for example `eegmap` and `boldmap` for spatial components
     -   decided on `model-` and `items-` as keys to denote the utilized model and component number, if files are 3D, respectively
@@ -484,13 +445,10 @@
     leads:
     -   given-names: Jean-Charles
         family-names: Mariani
-        email: jean-charles.mariani@cri-paris.org
     -   given-names: Samuel
         family-names: Diebolt
-        email: samuel.diebolt@iconeus.com
     -   given-names: Thomas
         family-names: Deffieux
-        email: thomas.deffieux@inserm.fr
     status:
     -   All issues raised on the original BEP have been resolved.
     -   Regular meetings with contributors scheduled.
@@ -528,7 +486,6 @@
     leads:
     -   given-names: Seyed Yahya
         family-names: Shirazi
-        email: shirazi@ieee.org
     status:
     -   Approved on May 2024, inviting collaborators (please join)
     -   BEP will follow EEG-BIDS with EMG-specific metadata, etc.
@@ -546,10 +503,8 @@
     leads:
     -   given-names: Christopher J.
         family-names: Markiewicz
-        email: markiewicz@stanford.edu
     -   given-names: Eric A.
         family-names: Earl
-        email: eric.earl@nih.gov
     status:
     -   For being able to map non-BIDS data as BIDS-compatible.
     -   Now collecting community comments and feedback.
@@ -562,12 +517,16 @@
 -   number: '044'
     title: Stimuli
     leads:
-    -   name: Seyed Yahya Shirazi
-        email: shirazi@ieee.org
-    -   name: Dora Hermes
-    -   name: Yaroslav O. Halchenko
-    -   name: Kay Robbins
-    -   name: Scott Makeig
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
+    -   given-names: Dora
+        family-names: Hermes
+    -   given-names: Yaroslav O.
+        family-names: Halchenko
+    -   given-names: Kay
+        family-names: Robbins
+    -   given-names: Scott
+        family-names: Makeig
     update: |
         - To harmonize and make more reusable stimuli content under stimuli/.
         - Collecting community comments and feedback. All collaborators are welcome.

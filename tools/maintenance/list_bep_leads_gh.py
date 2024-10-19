@@ -20,7 +20,6 @@ def find_contributor(content: dict, given_names: str, family_names: str):
 
 
 citation = load_citation(bids_spec_dir() / "CITATION.cff")
-print(citation)
 
 beps = data_dir() / "beps" / "beps.yml"
 
@@ -32,11 +31,25 @@ output = {"bep": [], "lead": [], "email": []}
 for bep in data:
     print(f'[blue]{bep["number"]} {bep["title"]}')
     for lead in bep["leads"]:
+
+        skip = False
+
         status = "[red]NOT FOUND:"
-        has_email = False
+
+        email_in_bids_wesbite = False
+        if "email" in lead:
+            email_in_bids_wesbite = True
+
+        email_in_citation_cff = False
+
         has_github = False
+
+        conflicting_emails = False
+
         if not lead["family-names"].strip():
             status = "[yellow]SKIP:"
+            skip = True
+
         else:
             for contributor in citation["authors"]:
                 if (
@@ -44,10 +57,39 @@ for bep in data:
                     or "given-names" not in contributor
                 ):
                     continue
+
                 if (
                     lead["family-names"] == contributor["family-names"]
                     and lead["given-names"] == contributor["given-names"]
                 ):
                     status = "[green]FOUND:"
+
+                    if "email" in contributor:
+                        email_in_citation_cff = True
+
+                    if (
+                        email_in_bids_wesbite
+                        and email_in_citation_cff
+                        and lead["email"] != contributor["email"]
+                    ):
+                        conflicting_emails = True
+
                     break
+
         print(f'    {status} {lead["given-names"]} {lead["family-names"]}')
+
+        if not skip:
+            if email_in_bids_wesbite:
+                print(
+                    "      [red]email should be in specification/CITATION.cff not in bids-wesbite data."
+                )
+
+            if not email_in_citation_cff:
+                print("      [red]no email in specification/CITATION.cff.")
+
+            if conflicting_emails:
+                print(
+                    "      [red]conflicting emails found:\n",
+                    f"      [red]  - '{contributor['email']}' in specification/CITATION.cff\n"
+                    f"      [red]   - '{lead['email']}' bids-wesbite data.",
+                )
