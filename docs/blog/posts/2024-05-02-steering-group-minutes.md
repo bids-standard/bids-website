@@ -1,6 +1,6 @@
 ---
 date: 2024-05-02
-slug: "Steering Group minutes #71"
+slug: "Steering Group minutes"
 author: anonymous
 categories:
 -   steering group minutes
