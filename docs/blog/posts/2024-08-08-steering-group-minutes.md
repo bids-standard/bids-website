@@ -24,7 +24,8 @@ categories:
 
 ## Neuroinformatics/INCF 20241
 
--  who is going?
+-   who is going?
+
     -   Yaroslav
     -   Anthony Galassi is seeking funding/permission from NIH
     -   Kim will email Helena and Heather to ask about discount for booth (would it include registration)
@@ -57,7 +58,7 @@ New meeting in Boston, not sure that there will be BIDS representation there.
 -   $20 for [Opavote](https://opavote.com/) for election.
     -   steering group supports, Ariel (Yarik as backup) will support financially.
 
-- Somewhat inchoate coordination woes:
+-   Somewhat inchoate coordination woes:
 
     -   "we are seeing more requests, is there a coordinator role already that can respond?
         If not, how should the general inquiries be routed?"
@@ -69,5 +70,4 @@ New meeting in Boston, not sure that there will be BIDS representation there.
 ## BIDS Virtual Meeting?
 
 -   Should BIDS move their annual meeting "roundtable" outside of OHBM?
-
 -   Chris will bring the dicsussion to the Maintainers.
