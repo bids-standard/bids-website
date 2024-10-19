@@ -54,5 +54,6 @@ lint: remark
 remark: package.json
 	npx remark \
 		./docs \
+		./templates \
 		--frail \
 		--rc-path .remarkrc

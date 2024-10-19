@@ -43,6 +43,10 @@ A listing of the previous grants can be found [here](../collaboration/acknowledg
 
 ### Datasets
 
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
+
 --8<-- "tmp/openneuro_data_growth.html"
 
 ### Citation Count
@@ -50,6 +54,10 @@ A listing of the previous grants can be found [here](../collaboration/acknowledg
 BIDS references are  centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
 
 You can also find them [in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
+
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
 
 --8<-- "tmp/citation_per_year.html"
 
@@ -99,11 +107,23 @@ we have over 300 credited contributors.
 
 Guessed with [gender-guesser](https://pypi.org/project/gender-guesser/)
 
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
+
 --8<-- "data/people/gender.md"
 
 #### Contributors affiliations
 
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
+
 --8<-- "data/people/affiliations.md"
+
+<!-- use snippet to include a file
+https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+-->
 
 --8<-- "tmp/affiliations.html"
 
