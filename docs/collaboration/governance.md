@@ -60,7 +60,7 @@ users to confirm that a given dataset complies with the current edition
 of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
 Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
 libraries allow querying and manipulating BIDS-compliant datasets,
-[BIDS-Apps](https://bids-apps.neuroimaging.io/) for running portable
+[BIDS-Apps](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html) for running portable
 pipelines on validated BIDS datasets, and platforms like
 [OpenNeuro](https://openneuro.org/) store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance
@@ -222,22 +222,23 @@ they should inform the steering group in advance and are responsible to help:
 
 {{ MACROS___generate_members_table(file="advisory.yml") }}
 
-### Other working/interest Groups
+### Other working groups
 
-A working/interest group can be established under the approval of the
-BIDS Steering Group. This is typically but not limited to being formed
-for the purpose of advancing the BIDS community, not the standard. Each
-group will appoint 1-2 chairs. Members of these groups can have cross
-appointments in other groups (for example, BEP Working Group). These groups do
-not necessarily dissolve after some duration or event, unless stated in
-their proposal.
+A working/interest group can be established under the approval of the BIDS Steering Group.
+This is typically but not limited to being formed for the purpose of advancing the BIDS community, not the standard.
 
-The working/interest group formation is formalized through an open
-letter via a "read-only" Google Document addressed to the BIDS Steering
-Group. The open letter will be posted on:
-the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
-[Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
-and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
+Each group will appoint 1-2 chairs.
+Members of these groups can have cross appointments in other groups (for example, BEP Working Group).
+These groups do not necessarily dissolve after some duration or event, unless stated in their proposal.
+
+The working/interest group formation is formalized
+through an open letter via a "read-only" Google Document addressed to the BIDS Steering Group.
+The open letter will be posted on:
+
+-   the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
+-   [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
+-   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
+
 This proposal will state what their group aims and goals are.
 
 ### BIDS Community
@@ -266,11 +267,11 @@ OpenStand:
 1.  Respectful cooperation between standards organizations
 
 1.  Adherence to fundamental principles of standards development:
-    a.  Due Process
-    b.  Broad Consensus
-    c.  Transparency
-    d.  Balance
-    e.  Openness
+    -   Due Process
+    -   Broad Consensus
+    -   Transparency
+    -   Balance
+    -   Openness
 
 1.  Collective empowerment
 
@@ -485,8 +486,7 @@ Anonymous data from BIDS elections is stored in a dedicated repository on GitHub
 
 ### H. Governance amendment procedure
 
-A group of BIDS contributors may at any time form a [working
-group](#other-workinginterest-groups) to propose amendments to the governance.
+A group of BIDS contributors may at any time form a [working group](#other-working-groups) to propose amendments to the governance.
 These amendments will be first reviewed by the Steering Group before being
 submitted to a community review.
 At the end of the community review each amendment is submitted to a vote of BIDS

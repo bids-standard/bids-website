@@ -14,8 +14,10 @@
     },
     {
       "pattern": "^https://www.instagram.com/bidsstandard.*"
+    },
+    {
+      "pattern": "^https://direct.mit.edu/imag/pages/editorial-info"
     }
-
   ],
   "timeout": "20s",
   "retryOn429": true

@@ -1,5 +1,6 @@
 gender_guesser
 geopy
+markdown-it-py
 mkdocs-material[imaging]
 mkdocs-macros-plugin
 mkdocs-open-in-new-tab
@@ -11,5 +12,5 @@ rich
 ruamel.yaml
 tabulate
 pyzotero
-file:specification/tools/schemacode
+bidsschematools[render]
 -e file:tools

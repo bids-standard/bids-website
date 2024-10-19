@@ -37,3 +37,11 @@ def define_env(env):
     env.macro(macros.generate_beps_table, "MACROS___generate_beps_table")
     env.macro(macros.generate_grants_table, "MACROS___generate_grants_table")
     env.macro(macros.generate_apps_table, "MACROS___generate_apps_table")
+    env.macro(
+        macros.generate_working_groups_table,
+        "MACROS___generate_working_groups_table",
+    )
+    env.macro(
+        macros.generate_filename_templates,
+        "MACROS___generate_filename_templates",
+    )

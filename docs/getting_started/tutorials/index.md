@@ -1,5 +1,9 @@
 # Tutorials
 
+Many BIDS tutorials have been created by the greater BIDS community and a selection are linked here.
+We aim to add more high-quality tutorials to this list as new tutorials are created and the maintainers become aware of them.
+Let us know about tutorials that are missing from this list by submitting a [request on github](https://github.com/bids-standard/bids-website/issues) to add them to this website.
+
 ## Video tutorials
 
 Check out the
