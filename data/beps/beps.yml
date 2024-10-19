@@ -469,7 +469,6 @@
     leads:
     -   given-names: Taylor
         family-names: Salo
-        email: salot@pennmedicine.upenn.edu
     status:
     -   New BEP, collecting community comments and feedback.
     -   All collaborators are welcome.
