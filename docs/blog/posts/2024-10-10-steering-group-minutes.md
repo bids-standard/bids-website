@@ -31,9 +31,13 @@ categories:
 
 -   What is the election timeline?
     -   Ariel will rotate out
+
     -   Mid-to-late November we will know who will be the next steering group meeting.
+
     -   The new steering group member will likely join in January, and January will be the last meeting for Ariel.
+
     -   AR will not disappear, he still has BIDS funds from the Open science prize that will be used to support future BIDS needs.
+
     -   AR is happy to organize another BIDS meeting similar to the previous Seattle BIDS meeting
         (although it could be held elsewhere as needed).
 
@@ -71,10 +75,9 @@ categories:
 -   KR: will ask Helena/Matthew to join
 
 -   questions to ask:
-    - funding models (membership...)
-    - what does/can INCF support?
-    - what expertise we need?
-
+    -   funding models (membership...)
+    -   what does/can INCF support?
+    -   what expertise we need?
 
 ## OHBM planning
 
