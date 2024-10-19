@@ -26,13 +26,13 @@ Annotations in BIDS can be done at several levels, including the dataset, subjec
 funding, and citation information.
 This file does not provide any actual description of the data.
 
-> You can fill in this blank [dataset description template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/dataset_description.json) or use it as a guide.
+> You can fill in this blank [dataset description template](../templates/index.md#dataset_descriptionjson) or use it as a guide.
 
 ### Dataset description (`README`)
 `README` file is a top-level text file that gives the actual overview of the dataset.
 A comprehensive `README` is essential for users of your data.
 
-> You can edit the [README template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/README.MD) with the vital information needed for others to analyze your dataset.
+> You can edit the [README template](../templates/index.md#readmemd) with the vital information needed for others to analyze your dataset.
 
 ## Subject annotations
 Annotations at the subject level can be done in the `participants.tsv` file,
