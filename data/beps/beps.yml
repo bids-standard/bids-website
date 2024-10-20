@@ -132,6 +132,8 @@
     leads:
     -   given-names: Dejan
         family-names: Draschkow
+    -   given-names: Martin
+        family-names: Szinte
     status:
     -   'Revision of physiology and continuous recordings: clarification of current specs and `_stim` files moved into tasks specification'
     -   Working on an eye tracking data converter
