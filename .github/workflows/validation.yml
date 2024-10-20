@@ -22,7 +22,7 @@ jobs:
         -   name: Install dependencies
             run: python -m pip install -e tools[ci]
         -   name: Check for Latin phrases
-            run: python tools/ci/no-bad-latin.py
+            run: python no-bad-latin.py
             working-directory: tools/ci
 
     # Markdown formatting
@@ -47,7 +47,7 @@ jobs:
         -   name: Install dependencies
             run: python -m pip install -e tools[ci]
         -   name: Check bep lead metadata
-            run: python tools/ci/validate_people.py
+            run: python validate_people.py
             working-directory: tools/ci
 
     # validate bep leads metadata
@@ -61,5 +61,5 @@ jobs:
         -   name: Install dependencies
             run: python -m pip install -e tools[ci]
         -   name: Check bep lead metadata
-            run: python tools/ci/validate_apps.py
+            run: python validate_apps.py
             working-directory: tools/ci
