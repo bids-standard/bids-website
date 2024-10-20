@@ -479,8 +479,8 @@
     content:
     -   raw
     leads:
-    -   given-names: Seyed Yahya
-        family-names: Shirazi
+    -   given-names: Seyed
+        family-names: Yahya Shirazi
     status:
     -   Approved on May 2024, inviting collaborators (please join)
     -   BEP will follow EEG-BIDS with EMG-specific metadata, etc.
@@ -512,8 +512,8 @@
 -   number: '044'
     title: Stimuli
     leads:
-    -   given-names: Seyed Yahya
-        family-names: Shirazi
+    -   given-names: Seyed
+        family-names: Yahya Shirazi
     -   given-names: Dora
         family-names: Hermes
     -   given-names: Yaroslav O.
