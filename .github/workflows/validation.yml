@@ -10,6 +10,10 @@ concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
 
+# Force to use color
+env:
+    FORCE_COLOR: true
+
 jobs:
   # Avoid Latin phrases to improve readability
     latin-phrases:
@@ -65,3 +69,16 @@ jobs:
         -   name: Check bep lead metadata
             run: python validate_apps.py
             working-directory: tools/ci
+
+    # check links
+    link-check:
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   uses: gaurav-nelson/github-action-markdown-link-check@v1
+            with:
+                use-quiet-mode: yes
+                # use-verbose-mode: no
+                config-file: md_link_check_config.json
+                folder-path: docs
+                file-path: ./README.md
