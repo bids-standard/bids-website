@@ -5,10 +5,9 @@
 #   display
 #   link:
 #   leads:
-# # MUST match given-names and family-names from the bids specification citation.cff
+#   # MUST match given-names and family-names from the bids specification citation.cff
 #   -   given-names: ' '
 #       family-names: ' '
-#       email:
 #   status:
 #   blocking:
 #   pull_request_created:
@@ -162,7 +161,6 @@
         family-names: Pernet
     -   given-names: Christine
         family-names: Rogers
-        email: rogers@bic.mni.mcgill.ca
     status:
     -   '[**HTML preview**](https://bids-specification.readthedocs.io/en/bep021/derivatives/ephys.html)'
     -   'Focus on raw-ish data: channels by time: epoching, filtering, interpolation...'
@@ -265,7 +263,6 @@
         family-names: Takerkart
     -   given-names: Benjamin
         family-names: Dichter
-        email: ben.dichter@gmail.com
     status:
     -   '[**HTML preview**](https://bids-specification--1705.org.readthedocs.build/en/1705/modality-specific-files/microelectrode-electrophysiology.html)'
     -   Decided on the new name, modalities, datatypes
@@ -421,7 +418,6 @@
         family-names: Sala
     -   given-names: Anibal
         family-names: Sólon
-        email: anibalsolon@utexas.edu
     -   given-names: Cyrus
         family-names: Eierud
     -   given-names: Franco
