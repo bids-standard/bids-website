@@ -1,19 +1,15 @@
-"""Runs checks for each app."""
+"""Runs checks for each BIDS app."""
 
-from pathlib import Path
 from warnings import warn
 
 import requests
 import ruamel.yaml as yaml
 from bids_website.utils import data_dir
 
-beps = data_dir() / "tools" / "apps.yml"
-
 yaml = yaml.YAML()
 
-root_dir = Path(__file__).parent.parent
-
-data = yaml.load(root_dir / "_config.yml")
+file = data_dir() / "tools" / "apps.yml"
+data = yaml.load(file)
 
 missing_dh = []
 invalid_dh = []

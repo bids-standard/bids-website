@@ -9,6 +9,9 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+from ruamel.yaml import YAML
+
+yaml = YAML(typ="safe", pure=True)
 
 
 def root_dir():
@@ -97,3 +100,28 @@ def plot_neurostars(file, print_to_file=True):
 
         if print_to_file:
             fig.savefig("output_neurostars.png", bbox_inches="tight")
+
+
+def load_citation() -> dict:
+    """Load `CITATION.cff` file."""
+    citation_file = bids_spec_dir() / "CITATION.cff"
+    with citation_file.open("r", encoding="utf8") as input_file:
+        return yaml.load(input_file)
+
+
+def return_contributor_from_citation_cff(
+    citation: dict, person: dict[str, str]
+) -> None | dict:
+    """Return a person from CITATION.cff based on name."""
+    for contributor in citation["authors"]:
+        if (
+            "family-names" not in contributor
+            or "given-names" not in contributor
+        ):
+            continue
+        if (
+            person["family-names"] == contributor["family-names"]
+            and person["given-names"] == contributor["given-names"]
+        ):
+            return contributor
+    return None

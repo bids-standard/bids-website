@@ -13,8 +13,10 @@
     display: qMRI
     link: https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html
     leads:
-    -   name: Gilles de Hollander
-    -   name: Kirstie Whitaker
+    -   given-names: Gilles
+        family-names: de Hollander
+    -   given-names: Kirstie
+        family-names: Whitaker
     content:
     -   raw
     google_doc_created: 2017-02
@@ -26,8 +28,10 @@
     display: stats model
     link: https://bids-standard.github.io/stats-models/
     leads:
-    -   name: Tal Yarkoni
-    -   name: Chris Markiewcz
+    -   given-names: Tal
+        family-names: Yarkoni
+    -   given-names: Christopher J.
+        family-names: Markiewicz
     content:
     -   file format
     google_doc_created: 2016-09
@@ -39,9 +43,11 @@
     display: Common Der
     link: https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html
     leads:
-    -   name: Chris Markiewicz
+    -   given-names: Christopher J.
+        family-names: Markiewicz
     former_leads:
-    -   name: Chris Gorgolewski
+    -   given-names: Chris J.
+        family-names: Gorgolewski
     content:
     -   derivative
     google_doc_created: 2016-02
@@ -53,10 +59,14 @@
     display: ASL
     link: https://bids-specification.readthedocs.io/en/stable/appendices/arterial-spin-labeling.html
     leads:
-    -   name: Henk-Jan Mutsaerts
-    -   name: Patricia Clement
-    -   name: Jan Petr
-    -   name: Marco Castellaro
+    -   given-names: Henk
+        family-names: Mutsaerts
+    -   given-names: Patricia
+        family-names: Clement
+    -   given-names: Jan
+        family-names: Petr
+    -   given-names: Marco
+        family-names: Castellaro
     content:
     -   raw
     google_doc_created: 2017-05
@@ -68,9 +78,12 @@
     display: EEG
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/electroencephalography.html
     leads:
-    -   name: Cyril Pernet
-    -   name: Stefan Appelhoff
-    -   name: Robert Oostenveld
+    -   given-names: Cyril
+        family-names: Pernet
+    -   given-names: Stefan
+        family-names: Appelhoff
+    -   given-names: Robert
+        family-names: Oostenveld
     content:
     -   raw
     google_doc_created: 2017-06
@@ -82,7 +95,8 @@
     display: HED
     link: https://bids-specification.readthedocs.io/en/stable/appendices/hed.html
     leads:
-    -   name: Chris Gorgolewski
+    -   given-names: Chris J.
+        family-names: Gorgolewski
     content:
     -   raw
     google_doc_created: 2017-07
@@ -94,7 +108,8 @@
     display: MEG
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetoencephalography.html
     leads:
-    -   name: Guiomar Niso
+    -   given-names: Julia
+        family-names: Guiomar Niso Galán
     content:
     -   raw
     google_doc_created: 2016-03
@@ -106,7 +121,8 @@
     display: PET
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/positron-emission-tomography.html
     leads:
-    -   name: Melanie Ganz
+    -   given-names: Melanie
+        family-names: Ganz-Benjaminsen
     content:
     -   raw
     google_doc_created: 2016-03
@@ -118,8 +134,10 @@
     display: iEEG
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html
     leads:
-    -   name: Chris Holdgraf
-    -   name: Dora Hermes
+    -   given-names: Chris
+        family-names: Holdgraf
+    -   given-names: Dora
+        family-names: Hermes
     content:
     -   raw
     google_doc_created: 2017-04
@@ -131,9 +149,12 @@
     display: Genetic
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/genetic-descriptor.html
     leads:
-    -   name: Cyril Pernet
-    -   name: Clara Moreau
-    -   name: Thomas Nichols
+    -   given-names: Cyril
+        family-names: Pernet
+    -   given-names: Clara
+        family-names: Moreau
+    -   given-names: Thomas E.
+        family-names: Nichols
     content:
     -   raw
     google_doc_created: 2017-09
@@ -147,9 +168,12 @@
     content:
     -   raw
     leads:
-    -   name: Mark Mikkelsen
-    -   name: William Clarke
-    -   name: Martin Wilson
+    -   given-names: Mark
+        family-names: Mikkelsen
+    -   given-names: William
+        family-names: Clarke
+    -   given-names: Martin
+        family-names: Wilson
     google_doc_created: 2018-05
     pull_request_created: 2023-06
     pull_request_merged: 2024-09
@@ -159,8 +183,10 @@
     display: execution
     link: https://bids-standard.github.io/execution-spec/
     leads:
-    -   name: Chris Markiewicz
-    -   name: Greg Kiar
+    -   given-names: Christopher J.
+        family-names: Markiewicz
+    -   given-names: Gregory
+        family-names: Kiar
     content:
     -   metadata
     google_doc_created: 2019-05
@@ -172,8 +198,10 @@
     display: motion
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/motion.html
     leads:
-    -   name: Sein Jeung
-    -   name: Julius Welzel
+    -   given-names: Sein
+        family-names: Jeung
+    -   given-names: Julius
+        family-names: Welzel
     content:
     -   raw
     blocking: None
@@ -186,8 +214,10 @@
     display: NIRS
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/near-infrared-spectroscopy.html
     leads:
-    -   name: Robert Luke
-    -   name: Luca Pollonini
+    -   given-names: Robert
+        family-names: Luke
+    -   given-names: Luca
+        family-names: Pollonini
     content:
     -   raw
     google_doc_created: 2020-04
@@ -199,8 +229,10 @@
     display: Microscopy
     link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/microscopy.html
     leads:
-    -   name: Marie-Hélène Bourget
-    -   name: Julien Cohen-Adad
+    -   given-names: Marie-Hélène
+        family-names: Bourget
+    -   given-names: Julien
+        family-names: Cohen-Adad
     content:
     -   raw
     google_doc_created: 2020-06
