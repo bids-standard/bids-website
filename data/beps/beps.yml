@@ -333,7 +333,6 @@
         family-names: Kincses
     -   given-names: Tamas
         family-names: Spisak
-        email: tamas.spisak@uni-due.de
     status:
     -   Meta-data harmonization with a term-mapper goes to BEP043
     -   'Persperctive: Repeated community review of the simplified proposal'
