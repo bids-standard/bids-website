@@ -222,7 +222,7 @@
     category: analysis
     description: collection of tools for converting magnetoencephalography (MEG) data into BIDS format, as well as some helper functions for creating the
         folders and metadata needed for a BIDS dataset.
-        
+
 -   name: mne-bids-pipeline
     repo_url: https://github.com/mne-tools/mne-bids-pipeline
     documentation: https://mne.tools/mne-bids-pipeline/stable/index.html
