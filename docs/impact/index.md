@@ -1,47 +1,16 @@
-# Impact
+# BIDS Impact
 
 This document intends to convey how the BIDS Steering and Maintainers Group can
 support your proposed BIDS grant. In an effort to express the impact of BIDS in
 the brain imaging community, we have shared several of our traffic metrics.
 
-## How the BIDS team can help you
-
-If you are in the process of putting together a grant, **please email/message
-the pillar lead** that is most closely associated with your proposed grant so we
-may help support this. Our organization is structured into 3 pillars: standard,
-tools, and collaboration.
-
-The respective leads are:
-
--   Stefan Appelhoff ([stefan.appelhoff@mailbox.org](mailto:stefan.appelhoff@mailbox.org)),
--   Chris Markiewicz ([markiewicz@stanford.edu](mailto:markiewicz@stanford.edu))
-
-Our range of support covers activities such as: meeting with the Steering and
-Maintainers Groups to assisting with connecting you with other BIDS grant
-writers or related initiatives to receiving a letter of support from the
-Steering Group.
-
-Regarding **requesting a letter of support** - please submit a drafted letter of
-support to the collaboration lead (???) so we may review internally.
-
-Please include how you plan on giving back to the BIDS community. The primary
-mechanism is to support a member of your team to become a BIDS Maintainer.
-Letters of support are approved by the Steering Group. This process may take 2-4
-weeks to complete.
-
-We kindly ask you to please **share your grant online** - successful or not.
-This will signal to the rest of the community what avenues we have pursued and
-what our fellow colleagues are planning on doing next. These can be grants that
-directly extend our support into a new domain, grants that help BIDS (for example
-OpenNeuro), or unsuccessful grant applications.
-
-For example, please find our [NIH-R24 Brain Initiative BIDS-Derivatives grant](https://osf.io/c3dgx/).
-
-A listing of the previous grants can be found [here](../collaboration/acknowledgments.md)
-
-## dashboards
+## Measuring BIDS Impact
 
 ### Datasets
+
+Over the past ~7 years, the number of shared datasets available to the public has 
+greatly increased. Adoption of the BIDS standard across datasets can aid in the 
+sharing of data and collaboration of research. 
 
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
@@ -51,9 +20,10 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 ### Citation Count
 
-BIDS references are  centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
-
-You can also find them [in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
+As the adoption of the BIDS standard across datasets has grown, so have citations for 
+BIDS and BIDS apps. To aid in searching for publications relevant to the BIDS standard, 
+we have included some examples of BIDS references that are centralized in a 
+[zotero group](https://www.zotero.org/groups/5111637/bids)
 
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
@@ -84,7 +54,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 | bids-schema       | ![PyPI - Downloads](https://img.shields.io/pypi/dm/bidsschematools)                                                      |
 | statistical model | ![PyPI - Downloads](https://img.shields.io/pypi/dm/bsmschema)                                                            |
 
-For the number of docker pulls of the BIDS apps, please check the
+For the number of docker pulls of specific BIDS apps, please check the
 [BIDS app dashboard](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html).
 
 ### Contributors
@@ -93,6 +63,9 @@ Our list of contributors are captured in our
 [contributor appendix](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html).
 We update the contributor appendix every specification release. As of July 2023,
 we have over 300 credited contributors.
+
+A brief account of contributors per repository, estimated demographics and affiliations 
+of contributors, and Github dependents counts are provided below:
 
 | repository        | all-contributors                                                                                                                  | github                                                                                            |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -144,25 +117,32 @@ github-dependents-info --repo bids-standard/pybids --badgemarkdownfile ./dashboa
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | pybids     | [![](https://img.shields.io/static/v1?label=Used%20by&message=596&color=informational&logo=slickpic)](https://github.com/bids-standard/pybids/network/dependents) |
 
-## Measuring BIDS Impact
+## BIDS History
 
-### Impact summary
+Since its origin, the BIDS standard has revolutionized the way in which neuroimaging
+research is done. The origin of the BIDS standard is commonly traced back to 2014, 
+when a social media post ignited a deeper discussion about a new way of sharing 
+data that would ultimately lead to a set of standards that would improve scientific 
+collaboration efforts. 
 
-Since its origin, the BIDS has revolutionized the way in which neuroimaging
-research is done.
+Following this initial discussion, and on the shoulders of many many volunteer hours 
+by maintainers and the community at large, the BIDS standard has seen significant adoption 
+in the neuroimaging research landscape and continues to expand. A more complete history 
+and discussion about the future of the BIDS landscape can be found in this 
+[recent publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516110/).
 
-~??? users visiting the website, and ~??? users exploring the BIDS
-Specification, over the past ??? months.
+The BIDS standard continues to be adopted by a larger share of the community each year, 
+and we have had ~??? users visiting the BIDS website and ~??? users exploring the BIDS
+Specification over the past ??? months.
 
-Currently, ???
+Currently, there are approximately ???
 [reported](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0)
-centers, institutes and databases around the world that have implemented BIDS as
+centers, institutes, and databases around the world that have implemented BIDS as
 their organizational structure.
 
 ### Website and Specification traffic dashboards
 
-In order to measure the volume of traffic to our
-website and the
+In order to measure the volume of traffic to our website and the
 [ReadTheDocs rendering of the specification](https://bids-specification.readthedocs.io/en/stable/),
 we utilize Google Analytics.
 
@@ -190,6 +170,8 @@ that have implemented BIDS as their organizational structure.
 
 ### Neurostars
 
+We also track the interest and usage of the BIDS standard via discussions on Neurostars 
+to help us estimate trends in usage. Below is a snapshot as of ??? (date).  
 <!--
 TODO add automation to update every 6 months
 -->
@@ -214,6 +196,47 @@ TODO add automation to update every 6 months
 As of July 1, 2020, we have 183 people signed up for our
 [BIDS email list](https://forms.gle/JFo2aEkYbKY4EbmE6) and 412 members on our
 [google group](https://groups.google.com/forum/#!forum/bids-discussion).
+
+
+## How the BIDS team can help you
+
+If you are in the process of putting together a grant, **please email/message
+the pillar lead** that is most closely associated with your proposed grant so we
+may help support this. Our organization is structured into 3 pillars: standard,
+tools, and collaboration.
+
+The respective leads are:
+
+-   Stefan Appelhoff ([stefan.appelhoff@mailbox.org](mailto:stefan.appelhoff@mailbox.org)),
+-   Chris Markiewicz ([markiewicz@stanford.edu](mailto:markiewicz@stanford.edu))
+
+Our range of support covers activities such as: meeting with the Steering and
+Maintainers Groups to assisting with connecting you with other BIDS grant
+writers or related initiatives to receiving a letter of support from the
+Steering Group.
+
+Regarding **requesting a letter of support** - please submit a drafted letter of
+support to the collaboration lead (???) so we may review internally.
+
+Please include how you plan on giving back to the BIDS community. The primary
+mechanism is to support a member of your team to become a BIDS Maintainer.
+Letters of support are approved by the Steering Group. This process may take 2-4
+weeks to complete.
+
+We kindly ask you to please **share your grant online** - successful or not.
+This will signal to the rest of the community what avenues we have pursued and
+what our fellow colleagues are planning on doing next. These can be grants that
+directly extend our support into a new domain, grants that help BIDS (for example
+OpenNeuro), or unsuccessful grant applications.
+
+For example, please find our [NIH-R24 Brain Initiative BIDS-Derivatives grant](https://osf.io/c3dgx/).
+
+A listing of the previous grants can be found [here](../collaboration/acknowledgments.md)
+
+## Citing BIDS in your project 
+You can find information on citing BIDS standards for specific modalities and 
+citing BIDS in general 
+[in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
 
 <!--
 ## Future steps: TODO
