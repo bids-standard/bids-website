@@ -131,14 +131,14 @@ in the neuroimaging research landscape and continues to expand. A more complete 
 and discussion about the future of the BIDS landscape can be found in this 
 [recent publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516110/).
 
-The BIDS standard continues to be adopted by a larger share of the community each year, 
-and we have had ~??? users visiting the BIDS website and ~??? users exploring the BIDS
-Specification over the past ??? months.
+The BIDS standard continues to be adopted by a larger share of the community each year. 
+We have seen a large and growing number of visitors to the BIDS website. A large number of
+BIDS users continue to explore the BIDS Specification and contribute to the community every month. 
 
-Currently, there are approximately ???
-[reported](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0)
-centers, institutes, and databases around the world that have implemented BIDS as
-their organizational structure.
+We also document centers, institutes, and databases around the world that have implemented BIDS as
+their organizational structure. While the list continues to grow, an initial list of centers and the associated
+BIDS initiatives or database can be found 
+[here](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0).
 
 ### Website and Specification traffic dashboards
 
@@ -154,7 +154,8 @@ For visualizing our metrics, we have put together 2 dashboards:
 The default time period is set to the past 6 months. This can be changed by
 adjusting the time period in the upper left corner. Please feel free to use any
 of these figures in your grant! If there are additional statistics not currently
-conveyed, please reach out to (???).
+conveyed, please reach out to or the BIDS maintainters via a GitHub issue, or by email
+ ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)).
 
 ### BIDS usage
 
@@ -201,14 +202,10 @@ As of July 1, 2020, we have 183 people signed up for our
 ## How the BIDS team can help you
 
 If you are in the process of putting together a grant, **please email/message
-the pillar lead** that is most closely associated with your proposed grant so we
-may help support this. Our organization is structured into 3 pillars: standard,
+the pillar lead** that is most closely associated with your proposed grant or the 
+BIDS maintainters email ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) 
+so we may help support this. Our organization is structured into 3 pillars: standard,
 tools, and collaboration.
-
-The respective leads are:
-
--   Stefan Appelhoff ([stefan.appelhoff@mailbox.org](mailto:stefan.appelhoff@mailbox.org)),
--   Chris Markiewicz ([markiewicz@stanford.edu](mailto:markiewicz@stanford.edu))
 
 Our range of support covers activities such as: meeting with the Steering and
 Maintainers Groups to assisting with connecting you with other BIDS grant
@@ -216,7 +213,8 @@ writers or related initiatives to receiving a letter of support from the
 Steering Group.
 
 Regarding **requesting a letter of support** - please submit a drafted letter of
-support to the collaboration lead (???) so we may review internally.
+support to the collaboration lead or the BIDS maintainters email 
+([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) so we may review internally.
 
 Please include how you plan on giving back to the BIDS community. The primary
 mechanism is to support a member of your team to become a BIDS Maintainer.
