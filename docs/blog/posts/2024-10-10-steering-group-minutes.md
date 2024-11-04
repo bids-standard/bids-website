@@ -43,7 +43,7 @@ categories:
 
 ## Revisit Chris' Discusssion
 
--   View previous meeting and discussion notes here: https://hackmd.io/@bids-standard/BJsD-IP6C
+-   View [previous meeting and discussion notes](./2024-09-19-steering-group-minutes.md)
 -   there were many options presented
 -   a chicken and egg situation circles around funding
 -   the fiscal sponsorship sounded like a low barrier option
