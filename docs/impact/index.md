@@ -8,7 +8,7 @@ the brain imaging community, we have shared several of our traffic metrics.
 
 ### Datasets
 
-Over the past ~7 years, the number of shared datasets available to the public has 
+Over the years, the number of shared datasets available to the public has 
 greatly increased. Adoption of the BIDS standard across datasets can aid in the 
 sharing of data and collaboration of research. 
 
