@@ -44,21 +44,21 @@ Development on Google Docs is preferred as this is a low barrier to entry
 for colleagues who do not use GitHub and/or Markdown,
 allowing more people to get involved.
 
-1. Explore [the specification][the bids specification repository]
+1.  Explore [the specification][the bids specification repository]
     and [the BEP lists](./beps.md)
     to find existing or ongoing efforts
     that may support what you are trying to add into the BIDS Specification.
     Someone may have already done work for you.
 
-1. Read the [BIDS governance document](../collaboration/governance.md).
+1.  Read the [BIDS governance document](../collaboration/governance.md).
 
-1. Familiarize yourself with the BIDS community by browsing current issues,
+1.  Familiarize yourself with the BIDS community by browsing current issues,
     discussions, and proposed changes on
     [the bids specification repository].
     Search for issues relating to your feature or BEP idea
     before creating a new issue.
 
-1. Open an initial “issue” on
+1.  Open an initial “issue” on
     [the bids specification repository] issues page
     to gauge interest in your potential BEP, and to collect
     feedback by more community members and
@@ -66,7 +66,7 @@ allowing more people to get involved.
     **This is an important step before proceeding in order to make sure that
     more consensus arises and more contributors are aware what is happening**.
 
-1. Communicate with the BIDS maintainers to make your BEP official.
+1.  Communicate with the BIDS maintainers to make your BEP official.
     This entails registering the BEP with a number on the BIDS website.
     To obtain a number for your BEP, follow the previous steps
     and then [open a new issue](https://github.com/bids-standard/bids-website/issues)
@@ -74,36 +74,38 @@ allowing more people to get involved.
     [website GitHub repository](https://github.com/bids-standard/bids-website/),
     cross-linking to any other already existing issues.
 
-1. Create a draft of your extension by discussing among colleagues. The
+1.  Create a draft of your extension by discussing among colleagues. The
     [BIDS Extension Proposal template](https://docs.google.com/document/d/1W7--Mf3gCCb1mVfhsoRJCAKFhmf2umG1PFkyZ1jEgMw/edit#)
     provides some boilerplate and formatting conventions.
 
-1. List on the draft the contributor(s) leading the effort.
+1.  List on the draft the contributor(s) leading the effort.
 
-1. Share the draft (remember to
+1.  Share the draft (remember to
     [share a link that allows anyone to comment](https://support.google.com/docs/answer/2494822?co=GENIE.Platform%3DDesktop&hl=en))
     with the
     [bids-discussion mailing list](https://groups.google.com/forum/#!forum/bids-discussion)
     and ask for comments.
 
-1. Incorporate the feedback and strive for consensus.
+1.  Incorporate the feedback and strive for consensus.
 
-1. Help to merge the extension into the main specification (this will require
-    converting the proposal to Markdown and submitting a Pull Request at
-    [the bids specification repository])
+1.  Help to merge the extension into the main specification
+    (this will require converting the proposal to Markdown
+    and submitting a Pull Request at [the bids specification repository])
 
-1. Create example datasets. Complete source data (for example DICOM, EDF, Excel) and its
-    corresponding target BIDS datasets, _must be_ supplied along with instructions on how
-    to transform data from source to target. When possible, data from multiple vendors
+1.  Create example datasets. Complete source data (for example DICOM, EDF, Excel) and its
+    corresponding target BIDS datasets,
+    _must be_ supplied along with instructions on how to transform data from source to target.
+    When possible, data from multiple vendors
     such as Siemens, Philips, or General Electric (in the case of MR) should be included.
     These datasets are vital for the development of resources that will, ultimately, increase the adoption of
-    the BEP following its integration into the BIDS Specification; see [this discussion](https://github.com/bids-standard/bids-specification/issues/1350).
+    the BEP following its integration into the BIDS Specification;
+    see [this discussion](https://github.com/bids-standard/bids-specification/issues/1350).
     BIDS maintainers **are available to assist** in the collection, organization, or at
     any step in the preparation of these datasets.
 
-1. If necessary, contribute a pull request to the
-      [BIDS Validator repository](https://github.com/bids-standard/bids-validator)
-      as well to incorporate the extension.
+1.  If necessary, contribute a pull request
+    to the [BIDS Validator repository](https://github.com/bids-standard/bids-validator)
+    as well to incorporate the extension.
 
 ![bep_process](../assets/img/bep_process.png)
 
@@ -141,24 +143,31 @@ Try not to deviate from BIDS conventions in your extension.
 
 A common dictionary (BIDS keys) is what makes BIDS successful,
 it is thus essential to not create many new entities.
-Many of the current BEPs have developed useful terms that we recommend here:
+Many of the current BEPs have developed useful terms that we recommend here.
 
-| Entity                                               | BEP(s)                                                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|------------------------------------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| desc-<label>                                         | BEP003 (merged)                                                                          | Alphanumeric label, for any use, up to pipelines to determine what are valuable, for example,  Common desc acronyms: lp30: low pass filtered at 30 Hz hp05: high-pass filtered at 0.5 Hz reref: re-references to another electrodemc: motion corrected sm: smoothed pvc: partial volume corrected McPvc: motion and partial volume corrected  Note: concatenation of the above is possible, preferable in the order in which they were applied when applicable: like McPvc, RerefLp30. PascalCase is recommended when concatenating descriptions |
-| space-<label>                                        | BEP003 (merged)                                                                          | Name of space file is aligned to (standard or non-standard)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| res-<label>                                          | BEP003 (merged)                                                                          | Identifier for spatial resolution (details in sidecar)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| den-<label>                                          | BEP003 (merged)                                                                          | Identifier for mesh density (details in sidecar)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| label-<label>                                        | BEP003 (merged)                                                                          | Label of ROI described by mask file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| hemi-{L\|R}                                          | BEP011                                                                                   | File describes left or right hemibrain                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| model-<label>                                        | BEP016, BEP039                                                                           | Name of model generating derivative file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| param-<label>                                        | BEP016, BEP039                                                                           | Name of parameter represented by file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| seg-<label> (equivalent of the current atlas entity) | Changing the current derivatives                                                         | As per current atlas definition a label the user MAY use to distinguish a different segmentations, like `atlas/atlas-DKT_space-FSaverage.nii` `sub-01/sub-01_space-T1_seg-DKT_dseg.nii` (are there current uses of the `atlas` key that would be broken changing to `seg`?)                                                                                                                                                                                                                                                                      |
-| atlas-<label> (as new entity)                        | BEP003, BEP038                                                                           | Atlas is defined as per Merrian-Webster, a bound collection of maps (i.e. labeled brain regions) and metadata (tables, or textual matter) like `atlas-x_space-MNI305_ext` or `atlas-DKT_ext`                                                                                                                                                                                                                                                                                                                                                     |
-| group-<label>                                        | BEP039                                                                                   | Name of group combining over subjects                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| node-<label>                                         | No BEP (BEP-002 working implementation)                                                  | Name of processing node generating derivative file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| stat-<label>                                         | BEP016 (contemplated but not currently present in proposal), also useful for atlas BEP38 | The theory was that one could like computing the mean value across all values in a time series, or within a DWI shell, or the like. The particular aggregate statistic may not be an adequate descriptor; you could also need eg. the axis along which the aggregate was applied, which elements were or were not included in the aggregate... So it might be too much complexity to hand to a single entity?                                                                                                                                    |
-| meas-<label>                                         | BEP017,BEP23                                                                             | Description of the quantity described by the file when the suffix is insufficient (eg. binding value, relaxation time)                                                                                                                                                                                                                                                                                                                                                                                                                           |
+#### Existing entities
+
+| Entity        | BEP(s)          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| desc-<label>  | BEP003 (merged) | Alphanumeric label, for any use, up to pipelines to determine what are valuable, for example,  Common desc acronyms: lp30: low pass filtered at 30 Hz hp05: high-pass filtered at 0.5 Hz reref: re-references to another electrodemc: motion corrected sm: smoothed pvc: partial volume corrected McPvc: motion and partial volume corrected  Note: concatenation of the above is possible, preferable in the order in which they were applied when applicable: like McPvc, RerefLp30. PascalCase is recommended when concatenating descriptions |
+| space-<label> | BEP003 (merged) | Name of space file is aligned to (standard or non-standard)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| res-<label>   | BEP003 (merged) | Identifier for spatial resolution (details in sidecar)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| den-<label>   | BEP003 (merged) | Identifier for mesh density (details in sidecar)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| label-<label> | BEP003 (merged) | Label of ROI described by mask file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| hemi-{L\|R}   | BEP011          | File describes left or right hemibrain                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| seg-<label>   |                 | As per current atlas definition a label the user MAY use to distinguish a different segmentations, like `atlas/atlas-DKT_space-FSaverage.nii` `sub-01/sub-01_space-T1_seg-DKT_dseg.nii` (are there current uses of the `atlas` key that would be broken changing to `seg`?)                                                                                                                                                                                                                                                                      |
+
+#### Proposed entities
+
+| Entity        | BEP(s)                                                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                   |
+|---------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| model-<label> | BEP016, BEP039                                                                           | Name of model generating derivative file                                                                                                                                                                                                                                                                                                                                                                      |
+| param-<label> | BEP016, BEP039                                                                           | Name of parameter represented by file                                                                                                                                                                                                                                                                                                                                                                         |
+| atlas-<label> | BEP003, BEP038                                                                           | Atlas is defined as per Merrian-Webster, a bound collection of maps (i.e. labeled brain regions) and metadata (tables, or textual matter) like `atlas-x_space-MNI305_ext` or `atlas-DKT_ext`                                                                                                                                                                                                                  |
+| group-<label> | BEP039                                                                                   | Name of group combining over subjects                                                                                                                                                                                                                                                                                                                                                                         |
+| node-<label>  | No BEP (BEP-002 working implementation)                                                  | Name of processing node generating derivative file                                                                                                                                                                                                                                                                                                                                                            |
+| stat-<label>  | BEP016 (contemplated but not currently present in proposal), also useful for atlas BEP38 | The theory was that one could like computing the mean value across all values in a time series, or within a DWI shell, or the like. The particular aggregate statistic may not be an adequate descriptor; you could also need eg. the axis along which the aggregate was applied, which elements were or were not included in the aggregate... So it might be too much complexity to hand to a single entity? |
+| meas-<label>  | BEP017,BEP23                                                                             | Description of the quantity described by the file when the suffix is insufficient (eg. binding value, relaxation time)                                                                                                                                                                                                                                                                                        |
 
 ### Derivatives BEP and provenance
 
@@ -174,25 +183,9 @@ the eventual output files and JSON configurations,
 it's instrumental in capturing provenance
 and identifying what files or information should be retained for optimal reuse in future studies.
 
-> What is provenance?
+!!! Note
 
-Provenance is information about how the dataset was processed.
-
-> What BIDS-Prov (BEP28) is about and which metadata can/should go in my BIDS-derivative BEP?
-
-The important question to ask for each metadata is whether this metadata is important to enable reusability (for consistent interpretation that is relevant for further processing). If so, this metadata must go into the BIDS-derivatives.
-
-> Should I worry that those are already covered by the BIDS-Prov BEP?
-
-No. This information is complementary.
-
-> How do I know if the metadata I want to store should be put in the BIDS-derivatives BEP or in a JSON-LD file?
-
-It will never go in JSON-LD. BIDS-derivatives and BIDS-Prov are superpositions, they are non-overlapping. You don't have to include BIDS-Prov.
-
-> If I don’t use BIDS-Prov how can I describe the data workflow?
-
-A lightweight version is to use a description.tsv file (see common [derivatives](https://bids-specification.readthedocs.io/en/stable/05-derivatives/02-common-data-types.html))
+    See the [FAQ on preovenance](../faq/bids-extensions.md#provenance)
 
 ### Avoid backward incompatible changes
 
@@ -267,14 +260,6 @@ Diversity in the team contributes to the quality of the extension proposal.
 We recommend that the core team has representatives from 3 different labs,
 preferably also with a mix of more junior and more senior contributors.
 You may also consider requesting explicit support letters from external labs.
-
-### How to turn on email notifications about suggestions and comments for Google Docs
-
-![notifications_1](../assets/img/notifications_1.png)
-
-![notifications_2](../assets/img/notifications_2.png)
-
-![notifications_3](../assets/img/notifications_3.png)
 
 [the bids specification repository]: https://github.com/bids-standard/bids-specification/
 [issues page]: https://github.com/bids-standard/bids-specification/issues

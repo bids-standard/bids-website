@@ -1,23 +1,10 @@
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
-[submodule "docs/getting_started/src"]
-	path = docs/getting_started/src
-	url = https://github.com/bids-standard/bids-starter-kit.git
-	datalad-url = https://github.com/bids-standard/bids-starter-kit.git
-[submodule "execution-spec"]
-	path = execution-spec
-	url = https://github.com/bids-standard/execution-spec
-	datalad-url = https://github.com/bids-standard/execution-spec
-[submodule "docs/standards/bids_stats_model/variable-transform"]
-	path = docs/standards/bids_stats_model/variable-transform
-	url = https://github.com/bids-standard/variable-transform.git
-	datalad-url = https://github.com/bids-standard/variable-transform.git
-[submodule "docs/standards/bids_stats_model/src"]
-	path = docs/standards/bids_stats_model/src
-	url = https://github.com/bids-standard/stats-models
-	datalad-url = https://github.com/bids-standard/stats-models
 [submodule "data/datasets/examples"]
 	path = data/datasets/examples
 	url = https://github.com/bids-standard/bids-examples
 	datalad-url = https://github.com/bids-standard/bids-examples
+[submodule "docs/collaboration/bids_github"]
+	path = docs/collaboration/bids_github
+	url = https://github.com/bids-standard/.github

@@ -1,6 +1,6 @@
 ---
 site_name: The Brain Imaging Data Structure (BIDS)
-repo_url: https://github.com/bids-standard/bids-website.git
+repo_url: https://github.com/bids-standard/bids-website/tree/main
 site_url: https://bids-website.readthedocs.io
 
 plugins:
@@ -79,12 +79,9 @@ docs_dir: docs
 use_directory_urls: false
 
 exclude_docs: |
-  extensions/src/
-  getting_started/src
-  standards/bids_stats_model/variable-transform
-  standards/bids_stats_model/src/README.md
-  standards/bids_stats_model/src/bsmschema/README.md
-  standards/bids_stats_model/src/specification/walkthrough-2.md
+  collaboration/bids_github/profile/README.md
+  collaboration/bids_github/README.md
+  collaboration/bids_github/SUPPORT.md
 
 nav:
 -   About: index.md
@@ -94,24 +91,6 @@ nav:
     -   standards/index.md
     -   BIDS Specification:
         -   standards/bids_specification/index.md
-    -   BIDS Stats Model:
-        -   standards/bids_stats_model/src/specification/index.md
-        -   motivations: standards/bids_stats_model/src/specification/motivation.md
-        -   walkthrough:
-            -   standards/bids_stats_model/src/specification/walkthrough-intro.md
-            -   part-1: standards/bids_stats_model/src/specification/walkthrough-1.md
-        -   integration: standards/bids_stats_model/src/specification/integration.md
-        -   legacy: standards/bids_stats_model/src/specification/legacy.md
-        -   specification:
-            -   standards/bids_stats_model/src/specification/spec.md
-            -   reference: standards/bids_stats_model/src/specification/reference.md
-        -   examples and resources:
-            -   standards/bids_stats_model/src/specification/model-zoo.md
-            -   default model: standards/bids_stats_model/src/specification/default_model.md
-        # -   variable transforms:
-        #     -   standards/bids_stats_model/variable-transform/README.md
-        #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
-        #     -   munge: standards/bids_stats_model/variable-transform/spec/munge.md
     -   BIDS Schema:
         -   standards/schema/index.md
         -   how it works:
@@ -119,17 +98,10 @@ nav:
             -   standards/schema/schema-meta.md
             -   standards/schema/schema-objects.md
             -   standards/schema/schema-rules.md
+    -   BIDS Stats Model:
+        -   standards/bids_stats_model/index.md
     -   BIDS Apps:
         -   standards/bids_app_specification/index.md
-        -   standards/bids_app_specification/scope.md
-        -   standards/bids_app_specification/contributors.md
-        -   Specification:
-            -   standards/bids_app_specification/specification/index.md
-            -   examples: standards/bids_app_specification/specification/examples.md
-            -   inputs: standards/bids_app_specification/specification/inputs.md
-            -   outputs: standards/bids_app_specification/specification/outputs.md
-            -   user interface: standards/bids_app_specification/specification/user-interface.md
-            -   release notes: standards/bids_app_specification/specification/release-notes.md
 -   Getting started:
     -   getting_started/index.md
     -   Folders and files:
@@ -157,17 +129,16 @@ nav:
             -   getting_started/tutorials/conversion/ieeg.md
             -   getting_started/tutorials/conversion/mri.md
             -   getting_started/tutorials/conversion/pet.md
+    -   How to:
+        -   getting_started/how_to/index.md
+    -   Templates:
+        -   getting_started/templates/index.md
 -   Tools:
     -   tools/index.md
     -   tools/validator.md
     -   tools/bids-apps.md
     -   tools/others.md
-    -   Converters:
-        - tools/converters/index.md
-        - tools/converters/mri-pet.md
-        - tools/converters/meeg.md
-        - tools/converters/physio.md
-        - tools/converters/others.md
+    -   tools/converters.md
 -   Datasets:
     -   datasets/index.md
     -   datasets/examples.md
@@ -181,19 +152,12 @@ nav:
     -   faq/bids-apps.md
 -   Collaboration:
     -   collaboration/index.md
-    -   specification/code_of_conduct.md
     -   collaboration/governance.md
+    -   collaboration/working-groups.md
     -   collaboration/contributors.md
+    -   collaboration/bids_github/CONTRIBUTING.md
+    -   collaboration/bids_github/CODE_OF_CONDUCT.md
     -   collaboration/acknowledgments.md
-    # TODO have a single code of conduct
-    # -   starter_kit: getting_started/src/src/CODE_OF_CONDUCT.md
-    # TODO remove those pages from the website
-    # until all the contributing pages have been refactored
-    # see https://github.com/bids-standard/.github/issues/7
-    # -   Contributing:
-    #     -   apps: apps/CONTRIBUTING.md
-    #     -   spec: specification/CONTRIBUTING.md
-    #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
 -   Extensions:
     -   extensions/index.md
     -   extensions/beps.md
@@ -216,6 +180,7 @@ theme:
   features:
     - announce.dismiss
     - content.action.edit
+    - content.code.copy
     - content.tooltips
     - footnotes
     - header.autohide
@@ -253,7 +218,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-edit_uri: https://github.com/bids-standard/bids-extensions/src/edit/main/docs/
+edit_uri: https://github.com/bids-standard/bids-website/edit/main/docs/
 
 markdown_extensions:
   - abbr

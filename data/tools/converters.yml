@@ -1,8 +1,8 @@
 ---
 # template
 #     - name:
-#       url: URL to repo
-#
+#       repo_url: URL to repo
+#       status: active
 #       data_types:
 #        - MRI, EEG, MEG, iEEG, events, physio
 #       expected_input:
@@ -18,369 +18,621 @@
 #       comment:
 #       GUI: false
 
--   group:
-    name: MRI and PET converters
-    members:
-    -   name: bidsify
-        url: https://github.com/NILAB-UvA/bidsify
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        -   PAR/REC
-        language:
-        -   Python
-        comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/bidsify
-        -   name: dockerhub
-            url: https://hub.docker.com/r/lukassnoek/bidsify
+-   name: AFNI BIDS-tools
+    repo_url: https://github.com/nih-fmrif/BIDS-tools
+    status: archived
+    data_types:
+    -   MRI
+    expected_input:
+    -   BIDS # not sure about that one
+    language:
+    -   shell
+    -   Python
+    comment: ARCHIVED - Scripts, tools, and documents on creating, parsing, and working with BIDS-structured data sets.
 
-    -   name: bidskit
-        url: https://github.com/jmtyszka/bidskit
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   Python
-        comment: Utility functions for working with DICOM and BIDS neuroimaging data.
-        documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/bidskit
-        -   name: dockerhub
-            url: https://hub.docker.com/r/jmtyszka/bidskit
-        license: MIT
+-   name: Autobids
+    repo_url: https://github.com/khanlab/autobids
+    status: archived
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   ???
+    comment: |
+        Automated Dicom to BIDS and pipelines using compute canada. From the
+        Center for Functional and Metabolic Mapping (CFMM) at Western’s Robarts
+        Research Institute.
 
-    -   name: BMAT
-        url: https://github.com/ColinVDB/BMAT
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        distribution:
-        -   name: dockerhub
-            url: https://hub.docker.com/r/colinvdb/bmat-dcm2niix
-        language:
-        -   Python
-        GUI: true
-        license: GPL-3.0
+-   name: BIDS2ISATab
+    repo_url: https://github.com/bids-standard/BIDS2ISATab
+    status: active
+    data_types:
+    -   BIDS
+    expected_input:
+    -   BIDS
+    language:
+    -   Python
+    comment: Extract ISA-Tab compatible metadata from BIDS
+    license: Apache-2.0
 
-    -   name: Data2Bids
-        url: https://github.com/SIMEXP/Data2Bids
-        data_types:
-        -   MRI
-        expected_input:
-        -   not DICOM
-        language:
-        -   Python
-        comment: |
-            Converts MRI files from extension supported by nibabel into NIfTI and
-            convert them to BIDS
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/data2bids
-        license: MIT
+-   name: BIDS2NDA
+    repo_url: https://github.com/bids-standard/BIDS2NDA
+    status: active
+    data_types:
+    -   BIDS
+    expected_input:
+    -   BIDS
+    language:
+    -   Python
+    comment: Extract NIHM Data Archive compatible metadata from BIDS
+    license: Apache-2.0
 
-    -   name: Dcm2Bids
-        url: https://github.com/cbedetti/Dcm2Bids
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   Python
-        comment: converts DICOM files using dcm2niix into BIDS
-        documentation: https://unfmontreal.github.io/Dcm2Bids/
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/Dcm2Bids
-        -   name: dockerhub
-            url: https://hub.docker.com/r/unfmontreal/dcm2bids
-        license: GPL-3.0
+-   name: BIDScoin
+    repo_url: https://github.com/Donders-Institute/bidscoin
+    status: active
+    data_types:
+    -   MRI
+    -   physiological
+    -   PET
+    expected_input:
+    -   DICOM
+    -   PAR/REC
+    -   physiological
+    -   PET
+    -   Nifti
+    language:
+    -   Python
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/bidscoin
+    documentation: https://bidscoin.readthedocs.io/en/stable/
+    comment: |
+        BIDScoin is a flexible tool to convert (“coin”) source-level (raw) neuroimaging
+        data sets to BIDS without needing to code anything. It features automatic
+        data discovery based on header as well as filesystem information, and comes with
+        a user-friendly GUI to add missing information and tweak the results. BIDScoin
+        supports multiple source data formats with plugins (e.g. employing dcm2niix,
+        spec2nii or nibabel) and allows customization of the prior knowledge about your
+        data (allowing for fully automatic CLI data conversion if you like).
+    GUI: yes
+    license: GPL-3.0
 
-    -   name: HeuDiConv
-        url: https://github.com/nipy/heudiconv
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   Python
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/heudiconv
-        -   name: dockerhub
-            url: https://hub.docker.com/r/nipy/heudiconv
-        documentation: https://heudiconv.readthedocs.io/
-        comment: |
-            A flexible DICOM converter for organizing brain imaging data into
-            structured directory layouts
-        license: Apache 2.0
+-   name: BIDSconvertR
+    repo_url: https://github.com/bidsconvertr/bidsconvertr
+    status: active
+    comment: |
+        The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
+        It consists of the following steps:
+        (i) convert DICOM data to NIfTI data using dcm2niix
+        (ii) structure this data according to the BIDS specification
+        (iii) provide the papayaWidget viewer for inspecting the images
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   R
+    documentation: https://bidsconvertr.github.io/
+    GUI: true
+    license: GPL-3.0
 
-    -   name: OpenfMRI2BIDS
-        url: https://github.com/bids-standard/openfmri2bids
-        data_types:
-        -   MRI # not sure
-        expected_input:
-        -   openfMRI datasets
-        language:
-        -   ???
-        comment: Convert OpenfMRI dataset to BIDS
+-   name: BIDSme
+    repo_url: https://github.com/nbeliy/bidsme
+    status: active
+    data_types:
+    -   MRI
+    -   EEG
+    expected_input:
+    -   DICOM
+    -   Nifti
+    -   Brain Vision
+    documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
+    language:
+    -   Python
+    comment:
+    license: GPL-2.0
 
-    -   name: ReproIn
-        url: https://github.com/ReproNim/reproin
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   Python
-        comment: 'HeuDiConv-based turnkey solution: a setup for automatic generation of shareable, version-controlled BIDS datasets from MR scanners.'
-        distribution:
-        -   name: dockerhub
-            url: https://hub.docker.com/r/repronim/reproin
-        license: MIT
+-   name: BIDSto3col
+    repo_url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
+    status: active
+    data_types:
+    -   TSV
+    expected_input:
+    -   BIDS
+    language:
+    -   shell
+    -   Python
+    comment: Reads BidsTSV and then creates 3 column event files, one per event type if a "trial_type" column is found.
 
-    -   name: XNAT2BIDS
-        url: https://github.com/kamillipi/2bids
-        data_types:
-        -   MRI # not sure
-        expected_input:
-        -   DICOM
-        language:
-        -   shell
-        comment: |
-            Simple xnat pipeline to convert DICOM scans to BIDS-compatible output
-            (nii+json).
+-   name: BMAT
+    repo_url: https://github.com/ColinVDB/BMAT
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    distribution:
+    -   name: dockerhub
+        url: https://hub.docker.com/r/colinvdb/bmat-dcm2niix
+    language:
+    -   Python
+    GUI: true
+    license: GPL-3.0
 
-    -   name: Horos (Osirix) export plugin
-        url: https://github.com/mslw/horos-bids-output
-        data_types:
-        expected_input:
-        -   ???
-        language:
-        -   objective C
-        comment: Horos plugin for BIDS output.
-        GUI: yes
-        license: GPL-3.0
+-   name: Biscuit
+    repo_url: https://github.com/Macquarie-MEG-Research/Biscuit
+    status: active
+    data_types:
+    -   MEG
+    expected_input:
+    -   ???
+    language:
+    -   Python
+    documentation: https://macquarie-meg-research.github.io/Biscuit/
+    comment: GUI for easy MEG to BIDS conversion
+    GUI: true
+    license: MIT
 
-    -   name: BIDScoin
-        url: https://github.com/Donders-Institute/bidscoin
-        data_types:
-        -   MRI
-        -   physiological
-        -   PET
-        expected_input:
-        -   DICOM
-        -   PAR/REC
-        -   physiological
-        -   PET
-        -   Nifti
-        language:
-        -   Python
-        distribution:
-        -   name: pypi
-            url: https://pypi.org/project/bidscoin
-        documentation: https://bidscoin.readthedocs.io/en/stable/
-        comment: |
-            BIDScoin is a flexible tool to convert (“coin”) source-level (raw) neuroimaging
-            data sets to BIDS without needing to code anything. It features automatic
-            data discovery based on header as well as filesystem information, and comes with
-            a user-friendly GUI to add missing information and tweak the results. BIDScoin
-            supports multiple source data formats with plugins (e.g. employing dcm2niix,
-            spec2nii or nibabel) and allows customization of the prior knowledge about your
-            data (allowing for fully automatic CLI data conversion if you like).
-        GUI: yes
-        license: GPL-3.0
+-   name: BrkRaw
+    repo_url: https://github.com/BrkRaw/brkraw
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   Bruker MRI scanner data
+    language:
+    -   Python
+    GUI: yes
+    comment: For a preclinical Bruker MRI scanner
+    license: GPL-3.0
 
-    -   name: BIDSme
-        url: https://github.com/nbeliy/bidsme
-        data_types:
-        -   MRI
-        -   EEG
-        expected_input:
-        -   DICOM
-        -   Nifti
-        -   Brain Vision
-        documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
-        language:
-        -   Python
-        comment:
-        license: GPL-2.0
+-   name: Clinica
+    repo_url: https://github.com/aramis-lab/clinica
+    status: active
+    data_types:
+    -   MRI # not sure
+    expected_input:
+    -   ADNI
+    -   AIBL
+    -   NIFD
+    -   OASIS
+    -   OASIS-3
+    language:
+    -   Python
+    comment:
+    documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
+    license: MIT
 
-    -   name: BrkRaw
-        url: https://github.com/BrkRaw/brkraw
-        data_types:
-        -   MRI
-        expected_input:
-        -   Bruker MRI scanner data
-        language:
-        -   Python
-        GUI: yes
-        comment: For a preclinical Bruker MRI scanner
-        license: GPL-3.0
+-   name: Data2Bids
+    repo_url: https://github.com/SIMEXP/Data2Bids
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   not DICOM
+    language:
+    -   Python
+    comment: |
+        Converts MRI files from extension supported by nibabel into NIfTI and
+        convert them to BIDS
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/data2bids
+    license: MIT
 
-    -   name: Clinica
-        url: https://github.com/aramis-lab/clinica
-        data_types:
-        expected_input:
-        -   ADNI
-        -   AIBL
-        -   NIFD
-        -   OASIS
-        -   OASIS-3
-        language:
-        -   Python
-        comment:
-        documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
-        license: MIT
+-   name: Dcm2Bids
+    repo_url: https://github.com/cbedetti/Dcm2Bids
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   Python
+    comment: converts DICOM files using dcm2niix into BIDS
+    documentation: https://unfmontreal.github.io/Dcm2Bids/
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/Dcm2Bids
+    -   name: dockerhub
+        url: https://hub.docker.com/r/unfmontreal/dcm2bids
+    license: GPL-3.0
 
-    -   name: niix2bids
-        url: https://github.com/benoitberanger/niix2bids
-        data_types:
-        expected_input:
-        -   Nifti converted from DICOM using dcm2niix
-        language:
-        -   Python
-        comment: Use this package as a command line to organize your Nifti dataset into BIDS.
-        license: GPL-3.0
+-   name: EEG2BIDS
+    repo_url: https://github.com/aces/EEG2BIDS
+    status: active
+    data_types:
+    -   EEG
+    expected_input:
+    -   EDF, Set: EEG or sEEG
+    language:
+    -   Javascript
+    -   Python
+    documentation: https://github.com/aces/EEG2BIDS
+    comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and Imaging
+        System).
 
-    -   name: dac2bids
-        url: https://github.com/dangom/dac2bids
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   Python
-        comment: Create a BIDS structure for a DICOM folder.
+-   name: EEGLAB
+    repo_url: https://github.com/sccn/eeglab
+    status: active
+    data_types:
+    -   MEG
+    -   EEG
+    expected_input:
+    -   EDF
+    -   BDF
+    -   Brain Vision Exchange Format
+    -   EEGLAB .set files
+    language:
+    -   MATLAB
+    documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
+    comment: <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
 
-    -   name: Autobids
-        url: https://github.com/khanlab/autobids
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   ???
-        comment: |
-            Automated Dicom to BIDS and pipelines using compute canada. From the
-            Center for Functional and Metabolic Mapping (CFMM) at Western’s Robarts
-            Research Institute.
+-   name: Explore ASL
+    repo_url: https://github.com/ExploreASL/ExploreASL
+    status: active
+    comment: |
+        Convert DICOM and NIFTI data to the ASL-BIDS format.
+    data_types:
+    -   MRI
+    -   ASL
+    expected_input:
+    -   DICOM
+    -   Nifti
+    documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
+    language:
+    -   MATLAB
 
-    -   name: PET2BIDS
-        url: https://github.com/openneuropet/PET2BIDS
-        comment: |
-            Helps you convert your PET data! raw PET scanner files (for example ecat, dicom)
-            and additional side file like excel sheets.
-        data_types:
-        -   PET
-        expected_input:
-        -   DICOM
-        -   ECAT
-        language:
-        -   MATLAB
-        -   Python
-        GUI: false
-        license: MIT
+-   name: FieldTrip - data2bids
+    repo_url: https://github.com/fieldtrip/fieldtrip
+    status: active
+    data_types:
+    -   EEG
+    -   MEG
+    -   iEEG
+    -   behavioral
+    -   MRI
+    expected_input:
+    -   any EEG or MEG file format
+    -   NBS Presentation logfiles
+    -   DICOM
+    -   nifti
+    language:
+    -   MATLAB
+    documentation: https://www.fieldtriptoolbox.org/example/bids/
+    license: GPL-3.0
 
-    -   name: Explore ASL
-        url: https://github.com/ExploreASL/ExploreASL
-        comment: |
-            Convert DICOM and NIFTI data to the ASL-BIDS format.
-        data_types:
-        -   ASL
-        expected_input:
-        -   DICOM
-        -   Nifti
-        documentation: https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/
-        language:
-        -   MATLAB
+-   name: HeuDiConv
+    repo_url: https://github.com/nipy/heudiconv
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   Python
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/heudiconv
+    -   name: dockerhub
+        url: https://hub.docker.com/r/nipy/heudiconv
+    documentation: https://heudiconv.readthedocs.io/
+    comment: |
+        A flexible DICOM converter for organizing brain imaging data into
+        structured directory layouts
+    license: Apache 2.0
 
-    -   name: SAMRI
-        url: https://github.com/IBT-FMI/SAMRI
-        comment: |
-            Full stack Small Animal MRI data analysis package, including the `bru2bids`
-            repositing pipeline, which can convert Bruker archives to the BIDS format.
-            From the ETH and University of Zurich, with collaboration from MIT and
-            Dartmouth College.
-        data_types:
-        -   small-animal MRI
-        expected_input:
-        -   Bruker ParaVision
-        -   NIfTI
-        language:
-        -   Python
-        -   shell
-        documentation: https://doi.org/10.3389/fninf.2020.00005
-        GUI: false
+-   name: Horos (Osirix) export plugin
+    repo_url: https://github.com/mslw/horos-bids-output
+    status: active
+    data_types:
+    -   MRI # not sure
+    expected_input:
+    -   ???
+    language:
+    -   objective C
+    comment: Horos plugin for BIDS output.
+    GUI: yes
+    license: GPL-3.0
 
-    -   name: BIDSconvertR
-        url: https://github.com/bidsconvertr/bidsconvertr
-        comment: |
-            The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
-            It consists of the following steps:
-            (i) convert DICOM data to NIfTI data using dcm2niix
-            (ii) structure this data according to the BIDS specification
-            (iii) provide the papayaWidget viewer for inspecting the images
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   R
-        documentation: https://bidsconvertr.github.io/
-        GUI: true
-        license: GPL-3.0
+-   name: MNE-BIDS
+    repo_url: https://github.com/mne-tools/mne-bids
+    status: active
+    data_types:
+    -   MEG
+    -   EEG
+    -   iEEG
+    -   NIRS
+    expected_input:
+    -   raw MEG for BIDS conversion
+    -   raw EEG for BIDS conversion
+    -   raw iEEG for BIDS conversion
+    -   raw NIRS for BIDS conversion
+    -   BIDS dataset for reading
+    language:
+    -   Python
+    documentation: https://mne.tools/mne-bids
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/mne-bids
+    -   name: conda-forge
+        url: https://anaconda.org/conda-forge/mne-bids/
+    comment: MNE-BIDS is a Python package that allows you to read and write BIDS-compatible datasets with the help of MNE-Python.
+    GUI: false
+    license: BSD-3-Clause
 
-    -   name: ezBIDS
-        url: https://github.com/brainlife/ezbids
-        data_types:
-        -   MRI
-        -   ASL
-        -   events
-        expected_input:
-        -   DICOM
-        -   NIfTI/JSON
-        -   events (tsv, csv, txt, out, xlsx)
-        language:
-        -   Vue
-        -   TypeScript
-        -   Javascript
-        -   Python
-        -   shell
-        documentation: https://brainlife.io/docs/using_ezBIDS/
-        comment: |
-            A web-based BIDS conversion tool with four unique features:
-            (1) No installation or programming requirements.
-            (2) Handling of both imaging and task events data and metadata.
-            (3) Semi-automated inference and guidance for adherence to BIDS.
-            (4) Multiple data management options, including download BIDS data
-            to local system, or transfer to OpenNeuro.org or to brainlife.io.
-        GUI: true
-        license: MIT
+-   name: OpenfMRI2BIDS
+    repo_url: https://github.com/bids-standard/openfmri2bids
+    status: active
+    data_types:
+    -   MRI # not sure
+    expected_input:
+    -   openfMRI datasets
+    language:
+    -   ???
+    comment: Convert OpenfMRI dataset to BIDS
 
-    -   name: mercure-dcm2bids
-        url: https://github.com/mercure-imaging/mercure-dcm2bids
-        data_types:
-        -   MRI
-        expected_input:
-        -   DICOM
-        language:
-        -   Python
-        documentation: https://github.com/mercure-imaging/mercure-dcm2bids
-        comment: |
-            A containerized app that can be used to perform BIDS conversion of
-            DICOM studies sent directly to mercure from a scanner or PACS. mercure
-            is an open-source DICOM orchestration platform that can integrate
-            containerized apps into clinical workflows. It has a graphical user
-            interface making it easy to setup and manage BIDS configurations for
-            multiple protocols. The Dcm2Bids tool is used for conversion.
-        distribution:
-        -   name: dockerhub
-            url: https://hub.docker.com/r/mercureimaging/mercure-dcm2bids
-        GUI: true
-        license: GPL-3.0
+-   name: PET2BIDS
+    repo_url: https://github.com/openneuropet/PET2BIDS
+    status: active
+    comment: |
+        Helps you convert your PET data! raw PET scanner files (for example ecat, dicom)
+        and additional side file like excel sheets.
+    data_types:
+    -   PET
+    expected_input:
+    -   DICOM
+    -   ECAT
+    language:
+    -   MATLAB
+    -   Python
+    GUI: false
+    license: MIT
+
+-   name: ReproIn
+    repo_url: https://github.com/ReproNim/reproin
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   Python
+    comment: 'HeuDiConv-based turnkey solution: a setup for automatic generation of shareable, version-controlled BIDS datasets from MR scanners.'
+    distribution:
+    -   name: dockerhub
+        url: https://hub.docker.com/r/repronim/reproin
+    license: MIT
+
+-   name: SAMRI
+    repo_url: https://github.com/IBT-FMI/SAMRI
+    status: active
+    comment: |
+        Full stack Small Animal MRI data analysis package, including the `bru2bids`
+        repositing pipeline, which can convert Bruker archives to the BIDS format.
+        From the ETH and University of Zurich, with collaboration from MIT and
+        Dartmouth College.
+    data_types:
+    -   MRI
+    expected_input:
+    -   Bruker ParaVision
+    -   NIfTI
+    language:
+    -   Python
+    -   shell
+    article: https://doi.org/10.3389/fninf.2020.00005
+    GUI: false
+
+-   name: XNAT2BIDS
+    repo_url: https://github.com/kamillipi/2bids
+    status: active
+    data_types:
+    -   MRI # not sure
+    expected_input:
+    -   DICOM
+    language:
+    -   shell
+    comment: |
+        Simple xnat pipeline to convert DICOM scans to BIDS-compatible output
+        (nii+json).
+
+-   name: bids2xar - for XNAT import
+    repo_url: https://github.com/lwallace23/bids2xar
+    status: active
+    data_types:
+    -   BIDS
+    expected_input:
+    -   BIDS
+    language:
+    -   Python
+    comment: Convert BIDS data set into XNAT XAR bundles
+
+-   name: bidsify
+    repo_url: https://github.com/NILAB-UvA/bidsify
+    status: archived
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    -   PAR/REC
+    language:
+    -   Python
+    comment: Tool to convert source MRI datasets to BIDS-compatible datasets.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/bidsify
+    -   name: dockerhub
+        url: https://hub.docker.com/r/lukassnoek/bidsify
+
+-   name: bidskit
+    repo_url: https://github.com/jmtyszka/bidskit
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   Python
+    comment: Utility functions for working with DICOM and BIDS neuroimaging data.
+    documentation: https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/bidskit
+    -   name: dockerhub
+        url: https://hub.docker.com/r/jmtyszka/bidskit
+    license: MIT
+
+-   name: bidsphysio
+    repo_url: https://github.com/cbinyu/bidsphysio
+    status: active
+    data_types:
+    -   physiological
+    expected_input:
+    -   CMRR
+    -   AcqKnowledge
+    -   Siemens PMU
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/bidsphysio/
+    -   name: dockerhub
+        url: https://hub.docker.com/r/cbinyu/bidsphysio/
+    language:
+    -   Python
+    documentation:
+    comment: Converts physio data to BIDS physiological recording
+    GUI: false
+
+-   name: convert-eprime
+    repo_url: https://github.com/tsalo/convert-eprime
+    status: active
+    data_types:
+    -   MISC
+    -   behavioral
+    expected_input:
+    -   E-Prime log files
+    language:
+    -   Python
+    comment: Python functions to convert E-Prime files to CSVs. Not currently being developed.
+    license: MIT
+
+-   name: dac2bids
+    repo_url: https://github.com/dangom/dac2bids
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   Python
+    comment: Create a BIDS structure for a DICOM folder.
+
+-   name: ezBIDS
+    repo_url: https://github.com/brainlife/ezbids
+    status: active
+    data_types:
+    -   MRI
+    -   ASL
+    -   events
+    expected_input:
+    -   DICOM
+    -   NIfTI/JSON
+    -   events (tsv, csv, txt, out, xlsx)
+    language:
+    -   Vue
+    -   TypeScript
+    -   Javascript
+    -   Python
+    -   shell
+    documentation: https://brainlife.io/docs/using_ezBIDS/
+    comment: |
+        A web-based BIDS conversion tool with four unique features:
+        (1) No installation or programming requirements.
+        (2) Handling of both imaging and task events data and metadata.
+        (3) Semi-automated inference and guidance for adherence to BIDS.
+        (4) Multiple data management options, including download BIDS data
+        to local system, or transfer to OpenNeuro.org or to brainlife.io.
+    GUI: true
+    license: MIT
+
+-   name: mercure-dcm2bids
+    repo_url: https://github.com/mercure-imaging/mercure-dcm2bids
+    status: active
+    data_types:
+    -   MRI
+    expected_input:
+    -   DICOM
+    language:
+    -   Python
+    documentation: https://github.com/mercure-imaging/mercure-dcm2bids
+    comment: |
+        A containerized app that can be used to perform BIDS conversion of
+        DICOM studies sent directly to mercure from a scanner or PACS. mercure
+        is an open-source DICOM orchestration platform that can integrate
+        containerized apps into clinical workflows. It has a graphical user
+        interface making it easy to setup and manage BIDS configurations for
+        multiple protocols. The Dcm2Bids tool is used for conversion.
+    distribution:
+    -   name: dockerhub
+        url: https://hub.docker.com/r/mercureimaging/mercure-dcm2bids
+    GUI: true
+    license: GPL-3.0
+
+-   name: niix2bids
+    repo_url: https://github.com/benoitberanger/niix2bids
+    status: active
+    data_types:
+    -   MRI # not sure
+    expected_input:
+    -   Nifti converted from DICOM using dcm2niix
+    language:
+    -   Python
+    comment: Use this package as a command line to organize your Nifti dataset into BIDS.
+    license: GPL-3.0
+
+-   name: phys2bids
+    repo_url: https://github.com/physiopy/phys2bids
+    status: active
+    data_types:
+    -   physiological
+    expected_input:
+    -   Acqknowledge
+    -   Labchart
+    -   GE physiological files
+    language:
+    -   Python
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/phys2bids
+    documentation: https://phys2bids.readthedocs.io/en/latest/
+    comment: Python3 library to format physiological files in BIDS.
+    license: Apache-2.0
+
+-   name: sim2bids
+    repo_url: https://github.com/dissagaliyeva/sim2bids
+    status: active
+    data_types:
+    -   MISC
+    -   computational model
+    expected_input:
+    -   CSV/TSV/DAT/Numpy
+    -   arrays/HDF5
+    -   zip folders
+    -   code files in MATLAB/Python/R
+    language:
+    -   Python
+    comment: GUI to easily convert simulation results to BIDS format, according to <a href="https://bids.neuroimaging.io/bep034" target="_blank"> BEP 34
+        </a>.
+    license: MIT
+
+-   name: sovabids
+    repo_url: https://github.com/yjmantilla/sovabids
+    status: active
+    data_types:
+    -   EEG
+    expected_input:
+    -   ???
+    language:
+    -   Python
+    documentation: https://sovabids.readthedocs.io/en/latest/
+    comment: A Python package for the automatic conversion of EEG datasets to the BIDS standard, with a focus on making the most out of metadata.

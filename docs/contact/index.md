@@ -51,8 +51,8 @@ Some example questions that have already been answered include:
 
     -   [:simple-bluesky: Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/)
     -   [:simple-mastodon: Mastodon](https://fosstodon.org/@bidsstandard/)
-    -   [:simple-x: Twitter/ X](https://x.com/BIDSstandard)
-    -   [:simple-youtube: YouTube](https://www.youtube.com/embed/-c4PUhTwmz4)
+    -   [:simple-x: Twitter / X](https://x.com/BIDSstandard)
+    -   [:simple-youtube: YouTube](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
     -   [:simple-instagram: Instagram](https://www.instagram.com/bidsstandard)
     -   Listen to our [podcast](https://anchor.fm/bids-maintenance)
 

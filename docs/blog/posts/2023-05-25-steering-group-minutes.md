@@ -135,8 +135,7 @@ Add a list of BIDS ignore files:
 Should we reach out to the new **Imaging Neuroscience** journal while
 they are still developing their platform?
 
-Potentially reach out to someone on their [[editorial
-board]](https://janeway.imaging-neuroscience.org/editorialteam/)
+Potentially reach out to someone on their [editorial board](https://direct.mit.edu/imag/pages/editorial-info)
 
 -   possible Thomas Yeo, Damian Fair
 

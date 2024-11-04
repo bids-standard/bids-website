@@ -1,7 +1,7 @@
 ## Converters
 
 If you are looking for tools to convert your data into BIDS, please see the
-[list of converters on the BIDS website](../../tools/converters/index.md)
+[list of converters on the BIDS website](../../tools/converters.md)
 
 ## Python tools
 

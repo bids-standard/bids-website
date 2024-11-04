@@ -1,7 +1,7 @@
 all: update
 
 serve: update
-	mkdocs serve
+	mkdocs serve -a localhost:8080
 
 update: update_from_spec update_contributors update_datasets_examples tmp_figures
 
@@ -12,12 +12,7 @@ update_from_spec:
 	@echo "  ----------------------------------  "
 	rm -fr docs/specification
 	mkdir -p docs/specification/
-	mkdir -p docs/specification/schema
-	cp -r specification/src/schema docs/specification/
-	cp specification/CODE_OF_CONDUCT.md docs/specification/code_of_conduct.md
-	cp specification/CONTRIBUTING.md docs/specification/CONTRIBUTING.md
 	cp specification/macros_doc.md docs/specification/macros_doc.md
-	cp -r specification/commenting_images docs/specification/
 
 update_contributors: package.json
 	@echo "  ----------------------------------  "
@@ -58,22 +53,7 @@ lint: remark
 
 remark: package.json
 	npx remark \
-		./docs/*.md \
-		./docs/blog \
-		./docs/collaboration \
-		./docs/contact \
-		./docs/datasets \
-		./docs/extensions/*md \
-		./docs/faq/ \
-		./docs/getting_started/*.md \
-		./docs/getting_started/bids_apps/**/*.md \
-		./docs/getting_started/folders_and_files/**/*.md \
-		./docs/getting_started/resources/**/*.md \
-		./docs/getting_started/tutorials/**/*.md \
-		./docs/impact \
-		./docs/standards/bids_app_specification \
-		./docs/standards/bids_specification \
-		./docs/standards/schema \
-		./docs/standards/index.md \
-		./docs/tools \
+		./docs \
+		./templates \
+		--frail \
 		--rc-path .remarkrc

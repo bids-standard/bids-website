@@ -1,6 +1,12 @@
 # Help make BIDS better!
 
-BIDS is informed, supported, and guided by its users. BIDS standards are intended to change and evolve as methods, resources, and the needs of the BIDS community changes. We encourage all researchers to contribute to the ongoing development of BIDS standards, be it through discussion on websites, the creation of new BIDS tools, or contributing to extending the BIDS specification through proposals. Below is a list of common resources where users can get involved in making the BIDS standard better! 
+BIDS is informed, supported, and guided by its users.
+BIDS standards are intended to change and evolve as methods, resources,
+and the needs of the BIDS community changes.
+We encourage all researchers to contribute to the ongoing development of BIDS standards,
+be it through discussion on websites, the creation of new BIDS tools,
+or contributing to extending the BIDS specification through proposals.
+Below is a list of common resources where users can get involved in making the BIDS standard better!
 
 <u>Neurostars Website</u>
 
@@ -33,7 +39,7 @@ BIDS is informed, supported, and guided by its users. BIDS standards are intende
 There are so many ways to help us build this community.
 
 -   You could help someone else learn the benefits of BIDS by giving a talk in your local organization
--   Or you could work on [building a BIDS App](https://bids-apps.neuroimaging.io/){:target="_blank"}!
+-   Or you could work on [building a BIDS App](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html){:target="_blank"}!
 
 <b>The only requirement is that everyone who contributes adheres to our
 [BIDS Code of Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).</b>

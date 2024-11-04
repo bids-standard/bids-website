@@ -68,6 +68,7 @@ Represents different types of data. Must be one of:
 -   `micr`: microscopy data
 -   `nirs`: near-infrared spectroscopy data
 -   `motion`: motion capture data
+-   `magnectic resonance spectroscopy`: motion capture data
 
 The name for the datatype depends on the recording modality.
 
@@ -87,12 +88,13 @@ The name for the datatype depends on the recording modality.
 .tg .tg-beh{border-color:#000000;color:var(--beh);font-size:18px; text-align:center;vertical-align:middle}
 .tg .tg-nirs{border-color:#000000;color:var(--nirs);font-size:18px; text-align:center;vertical-align:middle}
 .tg .tg-motion{border-color:#000000;color:var(--motion);font-size:18px; text-align:center;vertical-align:middle}
+.tg .tg-mrs{border-color:#000000;color:var(--mrs);font-size:18px; text-align:center;vertical-align:middle}
 </style>
 <table class="tg">
 <thead>
   <tr>
     <th class="tg-va6w"></th>
-    <th class="tg-xuqq" colspan="7"><span style="font-weight:bold"><b>modality</b></span></th>
+    <th class="tg-xuqq" colspan="8"><span style="font-weight:bold"><b>modality</b></span></th>
   </tr>
 </thead>
 <tbody>
@@ -105,6 +107,7 @@ The name for the datatype depends on the recording modality.
     <td class="tg-micr"><b>microscopy</b></td>
     <td class="tg-nirs"><b>NIRS</b></td>
     <td class="tg-motion"><b>motion</b></td>
+    <td class="tg-mrs"><b>MRS</b></td>
   </tr>
   <tr>
     <td class="tg-mri">anat</td>
@@ -114,6 +117,7 @@ The name for the datatype depends on the recording modality.
     <td class="tg-micr">micr</td>
     <td class="tg-nirs">nirs</td>
     <td class="tg-motion">motion</td>
+    <td class="tg-mrs">mrs</td>
   </tr>
   <tr>
     <td class="tg-mri">func<br></td>
@@ -123,6 +127,7 @@ The name for the datatype depends on the recording modality.
     <td class="tg-micr"></td>
     <td class="tg-micr"></td>
     <td class="tg-motion"></td>
+    <td class="tg-mrs"></td>
   </tr>
   <tr>
     <td class="tg-mri">dwi</td>
@@ -132,6 +137,7 @@ The name for the datatype depends on the recording modality.
     <td class="tg-micr"></td>
     <td class="tg-micr"></td>
     <td class="tg-motion"></td>
+    <td class="tg-mrs"></td>
   </tr>
   <tr>
     <td class="tg-mri">perf</td>
@@ -141,6 +147,7 @@ The name for the datatype depends on the recording modality.
     <td class="tg-micr"></td>
     <td class="tg-micr"></td>
     <td class="tg-motion"></td>
+    <td class="tg-mrs"></td>
   </tr>
 </tbody>
 </table>
