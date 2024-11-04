@@ -9,7 +9,7 @@ show_menu: true
 show_footer: true
 google_analytics: false
 
-election_banner: true
+election_banner: false
 
 excerpt_separator: <!--more-->
 
