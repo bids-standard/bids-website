@@ -124,7 +124,7 @@ def filename_template_for(schema_obj, datatype):
 
 
 def main():
-    print(generate_filename_templates())
+    print(generate_converter_table(file="converters.yml", data_type="MRI"))
 
 
 if __name__ == "__main__":

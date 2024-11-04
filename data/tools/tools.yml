@@ -223,6 +223,14 @@
     description: collection of tools for converting magnetoencephalography (MEG) data into BIDS format, as well as some helper functions for creating the
         folders and metadata needed for a BIDS dataset.
 
+-   name: mne-bids-pipeline
+    repo_url: https://github.com/mne-tools/mne-bids-pipeline
+    documentation: https://mne.tools/mne-bids-pipeline/stable/index.html
+    language:
+    -   Python
+    category: analysis
+    description: MNE-BIDS-Pipeline is a full-flegded processing pipeline for your MEG and EEG data. Under the hood, it uses MNE-Python.
+
 -   name: neurobagel annotate
     url: https://annotate.neurobagel.org/
     repo_url: https://github.com/neurobagel/annotation_tool

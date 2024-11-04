@@ -1,7 +1,8 @@
 ---
 # template
 #     - name:
-#       url: URL to repo
+#       repo_url: URL to repo
+#       status: active
 #       data_types:
 #        - MRI, EEG, MEG, iEEG, events, physio
 #       expected_input:
@@ -17,20 +18,21 @@
 #       comment:
 #       GUI: false
 
-
 -   name: AFNI BIDS-tools
-    url: https://github.com/nih-fmrif/BIDS-tools
+    repo_url: https://github.com/nih-fmrif/BIDS-tools
+    status: archived
     data_types:
     -   MRI
     expected_input:
-    -   BIDS     # not sure about that one
+    -   BIDS # not sure about that one
     language:
     -   shell
     -   Python
     comment: ARCHIVED - Scripts, tools, and documents on creating, parsing, and working with BIDS-structured data sets.
 
 -   name: Autobids
-    url: https://github.com/khanlab/autobids
+    repo_url: https://github.com/khanlab/autobids
+    status: archived
     data_types:
     -   MRI
     expected_input:
@@ -43,7 +45,8 @@
         Research Institute.
 
 -   name: BIDS2ISATab
-    url: https://github.com/bids-standard/BIDS2ISATab
+    repo_url: https://github.com/bids-standard/BIDS2ISATab
+    status: active
     data_types:
     -   BIDS
     expected_input:
@@ -54,7 +57,8 @@
     license: Apache-2.0
 
 -   name: BIDS2NDA
-    url: https://github.com/bids-standard/BIDS2NDA
+    repo_url: https://github.com/bids-standard/BIDS2NDA
+    status: active
     data_types:
     -   BIDS
     expected_input:
@@ -64,20 +68,9 @@
     comment: Extract NIHM Data Archive compatible metadata from BIDS
     license: Apache-2.0
 
--   name: BIDS2NIDM
-    url: https://github.com/incf-nidash/PyNIDM/blob/master/nidm/experiment/tools/nidm2bids.py
-    data_types:
-    -   BIDS
-    expected_input:
-    -   BIDS
-    language:
-    -   Python
-    comment: |
-        This program will convert a NIDM-Experiment RDF document to a BIDS
-        dataset.
-
 -   name: BIDScoin
-    url: https://github.com/Donders-Institute/bidscoin
+    repo_url: https://github.com/Donders-Institute/bidscoin
+    status: active
     data_types:
     -   MRI
     -   physiological
@@ -106,7 +99,8 @@
     license: GPL-3.0
 
 -   name: BIDSconvertR
-    url: https://github.com/bidsconvertr/bidsconvertr
+    repo_url: https://github.com/bidsconvertr/bidsconvertr
+    status: active
     comment: |
         The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces.
         It consists of the following steps:
@@ -124,7 +118,8 @@
     license: GPL-3.0
 
 -   name: BIDSme
-    url: https://github.com/nbeliy/bidsme
+    repo_url: https://github.com/nbeliy/bidsme
+    status: active
     data_types:
     -   MRI
     -   EEG
@@ -139,7 +134,8 @@
     license: GPL-2.0
 
 -   name: BIDSto3col
-    url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
+    repo_url: https://github.com/bids-standard/bidsutils/tree/master/BIDSto3col
+    status: active
     data_types:
     -   TSV
     expected_input:
@@ -150,7 +146,8 @@
     comment: Reads BidsTSV and then creates 3 column event files, one per event type if a "trial_type" column is found.
 
 -   name: BMAT
-    url: https://github.com/ColinVDB/BMAT
+    repo_url: https://github.com/ColinVDB/BMAT
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -164,7 +161,8 @@
     license: GPL-3.0
 
 -   name: Biscuit
-    url: https://github.com/Macquarie-MEG-Research/Biscuit
+    repo_url: https://github.com/Macquarie-MEG-Research/Biscuit
+    status: active
     data_types:
     -   MEG
     expected_input:
@@ -177,7 +175,8 @@
     license: MIT
 
 -   name: BrkRaw
-    url: https://github.com/BrkRaw/brkraw
+    repo_url: https://github.com/BrkRaw/brkraw
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -189,9 +188,10 @@
     license: GPL-3.0
 
 -   name: Clinica
-    url: https://github.com/aramis-lab/clinica
+    repo_url: https://github.com/aramis-lab/clinica
+    status: active
     data_types:
-    -   MRI     # not sure
+    -   MRI # not sure
     expected_input:
     -   ADNI
     -   AIBL
@@ -205,7 +205,8 @@
     license: MIT
 
 -   name: Data2Bids
-    url: https://github.com/SIMEXP/Data2Bids
+    repo_url: https://github.com/SIMEXP/Data2Bids
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -221,7 +222,8 @@
     license: MIT
 
 -   name: Dcm2Bids
-    url: https://github.com/cbedetti/Dcm2Bids
+    repo_url: https://github.com/cbedetti/Dcm2Bids
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -238,7 +240,8 @@
     license: GPL-3.0
 
 -   name: EEG2BIDS
-    url: https://github.com/aces/EEG2BIDS
+    repo_url: https://github.com/aces/EEG2BIDS
+    status: active
     data_types:
     -   EEG
     expected_input:
@@ -251,7 +254,8 @@
         System).
 
 -   name: EEGLAB
-    url: https://github.com/sccn/eeglab
+    repo_url: https://github.com/sccn/eeglab
+    status: active
     data_types:
     -   MEG
     -   EEG
@@ -266,7 +270,8 @@
     comment: <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
 
 -   name: Explore ASL
-    url: https://github.com/ExploreASL/ExploreASL
+    repo_url: https://github.com/ExploreASL/ExploreASL
+    status: active
     comment: |
         Convert DICOM and NIFTI data to the ASL-BIDS format.
     data_types:
@@ -280,13 +285,14 @@
     -   MATLAB
 
 -   name: FieldTrip - data2bids
-    url: https://github.com/fieldtrip/fieldtrip
+    repo_url: https://github.com/fieldtrip/fieldtrip
+    status: active
     data_types:
     -   EEG
     -   MEG
     -   iEEG
     -   behavioral
-    -   MRI (anat and func)
+    -   MRI
     expected_input:
     -   any EEG or MEG file format
     -   NBS Presentation logfiles
@@ -298,7 +304,8 @@
     license: GPL-3.0
 
 -   name: HeuDiConv
-    url: https://github.com/nipy/heudiconv
+    repo_url: https://github.com/nipy/heudiconv
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -317,9 +324,10 @@
     license: Apache 2.0
 
 -   name: Horos (Osirix) export plugin
-    url: https://github.com/mslw/horos-bids-output
+    repo_url: https://github.com/mslw/horos-bids-output
+    status: active
     data_types:
-    -   MRI     # not sure
+    -   MRI # not sure
     expected_input:
     -   ???
     language:
@@ -329,7 +337,8 @@
     license: GPL-3.0
 
 -   name: MNE-BIDS
-    url: https://github.com/mne-tools/mne-bids
+    repo_url: https://github.com/mne-tools/mne-bids
+    status: active
     data_types:
     -   MEG
     -   EEG
@@ -354,9 +363,10 @@
     license: BSD-3-Clause
 
 -   name: OpenfMRI2BIDS
-    url: https://github.com/bids-standard/openfmri2bids
+    repo_url: https://github.com/bids-standard/openfmri2bids
+    status: active
     data_types:
-    -   MRI     # not sure
+    -   MRI # not sure
     expected_input:
     -   openfMRI datasets
     language:
@@ -364,7 +374,8 @@
     comment: Convert OpenfMRI dataset to BIDS
 
 -   name: PET2BIDS
-    url: https://github.com/openneuropet/PET2BIDS
+    repo_url: https://github.com/openneuropet/PET2BIDS
+    status: active
     comment: |
         Helps you convert your PET data! raw PET scanner files (for example ecat, dicom)
         and additional side file like excel sheets.
@@ -380,7 +391,8 @@
     license: MIT
 
 -   name: ReproIn
-    url: https://github.com/ReproNim/reproin
+    repo_url: https://github.com/ReproNim/reproin
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -394,14 +406,14 @@
     license: MIT
 
 -   name: SAMRI
-    url: https://github.com/IBT-FMI/SAMRI
+    repo_url: https://github.com/IBT-FMI/SAMRI
+    status: active
     comment: |
         Full stack Small Animal MRI data analysis package, including the `bru2bids`
         repositing pipeline, which can convert Bruker archives to the BIDS format.
         From the ETH and University of Zurich, with collaboration from MIT and
         Dartmouth College.
     data_types:
-    -   small-animal MRI
     -   MRI
     expected_input:
     -   Bruker ParaVision
@@ -409,13 +421,14 @@
     language:
     -   Python
     -   shell
-    documentation: https://doi.org/10.3389/fninf.2020.00005
+    article: https://doi.org/10.3389/fninf.2020.00005
     GUI: false
 
 -   name: XNAT2BIDS
-    url: https://github.com/kamillipi/2bids
+    repo_url: https://github.com/kamillipi/2bids
+    status: active
     data_types:
-    -   MRI     # not sure
+    -   MRI # not sure
     expected_input:
     -   DICOM
     language:
@@ -425,9 +438,10 @@
         (nii+json).
 
 -   name: bids2xar - for XNAT import
-    url: https://github.com/lwallace23/bids2xar
+    repo_url: https://github.com/lwallace23/bids2xar
+    status: active
     data_types:
-    -   MRI     # not sure
+    -   BIDS
     expected_input:
     -   BIDS
     language:
@@ -435,7 +449,8 @@
     comment: Convert BIDS data set into XNAT XAR bundles
 
 -   name: bidsify
-    url: https://github.com/NILAB-UvA/bidsify
+    repo_url: https://github.com/NILAB-UvA/bidsify
+    status: archived
     data_types:
     -   MRI
     expected_input:
@@ -451,7 +466,8 @@
         url: https://hub.docker.com/r/lukassnoek/bidsify
 
 -   name: bidskit
-    url: https://github.com/jmtyszka/bidskit
+    repo_url: https://github.com/jmtyszka/bidskit
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -468,7 +484,8 @@
     license: MIT
 
 -   name: bidsphysio
-    url: https://github.com/cbinyu/bidsphysio
+    repo_url: https://github.com/cbinyu/bidsphysio
+    status: active
     data_types:
     -   physiological
     expected_input:
@@ -487,7 +504,8 @@
     GUI: false
 
 -   name: convert-eprime
-    url: https://github.com/tsalo/convert-eprime
+    repo_url: https://github.com/tsalo/convert-eprime
+    status: active
     data_types:
     -   MISC
     -   behavioral
@@ -499,7 +517,8 @@
     license: MIT
 
 -   name: dac2bids
-    url: https://github.com/dangom/dac2bids
+    repo_url: https://github.com/dangom/dac2bids
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -509,7 +528,8 @@
     comment: Create a BIDS structure for a DICOM folder.
 
 -   name: ezBIDS
-    url: https://github.com/brainlife/ezbids
+    repo_url: https://github.com/brainlife/ezbids
+    status: active
     data_types:
     -   MRI
     -   ASL
@@ -536,7 +556,8 @@
     license: MIT
 
 -   name: mercure-dcm2bids
-    url: https://github.com/mercure-imaging/mercure-dcm2bids
+    repo_url: https://github.com/mercure-imaging/mercure-dcm2bids
+    status: active
     data_types:
     -   MRI
     expected_input:
@@ -558,9 +579,10 @@
     license: GPL-3.0
 
 -   name: niix2bids
-    url: https://github.com/benoitberanger/niix2bids
+    repo_url: https://github.com/benoitberanger/niix2bids
+    status: active
     data_types:
-    -   MRI     # not sure
+    -   MRI # not sure
     expected_input:
     -   Nifti converted from DICOM using dcm2niix
     language:
@@ -569,9 +591,10 @@
     license: GPL-3.0
 
 -   name: phys2bids
-    url: https://github.com/physiopy/phys2bids
+    repo_url: https://github.com/physiopy/phys2bids
+    status: active
     data_types:
-    -   phsyiological
+    -   physiological
     expected_input:
     -   Acqknowledge
     -   Labchart
@@ -586,7 +609,8 @@
     license: Apache-2.0
 
 -   name: sim2bids
-    url: https://github.com/dissagaliyeva/sim2bids
+    repo_url: https://github.com/dissagaliyeva/sim2bids
+    status: active
     data_types:
     -   MISC
     -   computational model
@@ -600,8 +624,10 @@
     comment: GUI to easily convert simulation results to BIDS format, according to <a href="https://bids.neuroimaging.io/bep034" target="_blank"> BEP 34
         </a>.
     license: MIT
+
 -   name: sovabids
-    url: https://github.com/yjmantilla/sovabids
+    repo_url: https://github.com/yjmantilla/sovabids
+    status: active
     data_types:
     -   EEG
     expected_input:

@@ -137,7 +137,7 @@ It accepts markdown syntax and allows you to explain in detail what has changed.
 
 Here's an [example](https://github.com/bids-apps/example/releases).
 
-### Deplopying
+### Deploying
 
 #### How do I upload my BIDS App to the BIDS App Github org?
 
