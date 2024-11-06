@@ -191,17 +191,22 @@
     repo_url: https://github.com/aramis-lab/clinica
     status: active
     data_types:
-    -   MRI # not sure
+    -   MRI
+    -   PET
     expected_input:
     -   ADNI
     -   AIBL
+    -   GENFI
+    -   HABS
+    -   IXI
     -   NIFD
     -   OASIS
     -   OASIS-3
+    -   UKB
     language:
     -   Python
     comment:
-    documentation: https://aramislab.paris.inria.fr/clinica/docs/public/latest/
+    documentation: https://aramislab.paris.inria.fr/clinica/docs/public/dev/
     license: MIT
 
 -   name: Data2Bids
