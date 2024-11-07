@@ -9,8 +9,11 @@ the brain imaging community, we have shared several of our traffic metrics.
 ### Datasets
 
 Over the years, the number of shared datasets available to the public has 
-greatly increased. Adoption of the BIDS standard across datasets can aid in the 
-sharing of data and collaboration of research. 
+greatly increased. At its heart, adoption of the BIDS standard across datasets 
+aids in the sharing of data and collaboration of research through the standardization 
+of descriptive files names and the organization of data. BIDS organized datasets are 
+available through public repositories such as [Openneuro.org](https://openneuro.org/) 
+and the number of publicly available BIDS datasets continues to grow every year. 
 
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
@@ -20,10 +23,10 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 ### Citation Count
 
-As the adoption of the BIDS standard across datasets has grown, so have citations for 
-BIDS and BIDS apps. To aid in searching for publications relevant to the BIDS standard, 
-we have included some examples of BIDS references that are centralized in a 
-[zotero group](https://www.zotero.org/groups/5111637/bids)
+As the adoption of the BIDS standard across neuroimaging datasets has grown, so have 
+citations for work that uses BIDS data and BIDS apps. To aid in searching for publications 
+relevant to the BIDS standard, we have included some examples of BIDS references that are 
+centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
 
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
@@ -122,18 +125,18 @@ github-dependents-info --repo bids-standard/pybids --badgemarkdownfile ./dashboa
 Since its origin, the BIDS standard has revolutionized the way in which neuroimaging
 research is done. The origin of the BIDS standard is commonly traced back to 2014, 
 when a social media post ignited a deeper discussion about a new way of sharing 
-data that would ultimately lead to a set of standards that would improve scientific 
+data, that would ultimately lead to a set of standards that would improve scientific 
 collaboration efforts. 
 
-Following this initial discussion, and on the shoulders of many many volunteer hours 
-by maintainers and the community at large, the BIDS standard has seen significant adoption 
-in the neuroimaging research landscape and continues to expand. A more complete history 
-and discussion about the future of the BIDS landscape can be found in this 
+Following this initial discussion (and on the shoulders of many many volunteer hours 
+by maintainers and the community at large) the BIDS standard saw significant adoption 
+in the neuroimaging research landscape and continues to expand every day. A more complete 
+history and discussion about the future of the BIDS landscape can be found in this 
 [recent publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516110/).
 
 The BIDS standard continues to be adopted by a larger share of the community each year. 
 We have seen a large and growing number of visitors to the BIDS website. A large number of
-BIDS users continue to explore the BIDS Specification and contribute to the community every month. 
+BIDS users also continue to explore the BIDS Specification and contribute to the community every month. 
 
 We also document centers, institutes, and databases around the world that have implemented BIDS as
 their organizational structure. While the list continues to grow, an initial list of centers and the associated
