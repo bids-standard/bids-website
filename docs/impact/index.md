@@ -1,8 +1,34 @@
 # BIDS Impact
 
-BIDS document  intends to convey how the BIDS Steering and Maintainers Group can
-support your proposed BIDS grant. In an effort to express the impact of BIDS in
-the brain imaging community, we have shared several of our traffic metrics.
+The Brain Imaging Data Structure (BIDS) is an open global community driving the 
+standardization of neuroscience data across a broad and growing range of modalities 
+and health research disciplines. First released in June 2016, it is supported by a 
+worldwide research network and endorsed by organizations like the International 
+Neuroinformatics Coordinating Facility ([INCF](https://www.incf.org/)).
+
+BIDS encompasses:
+
+- Over 40 domain-specific and modality-specific technical specifications across
+scientific and technical domains.
+- 100+ sample data models for BIDS specifications in 
+[bids-examples](https://github.com/bids-standard/bids-examples). Read more about
+the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/).
+- 2000 open datasets across repositories including 
+[OpenNeuro](https://www.openneuro.org). Read more about [BIDS Datasets](/docs/datasets/index.md).
+- Open software conversion and analytics tools, and global infrastructure for
+collaborating on emerging standards in neuroscience 
+[Poldrack, et al, 2024](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00103/119672/The-past-present-and-future-of-the-brain-imaging).
+- ~30,000 annual website visits from a very large community of neuroscience researchers 
+actively consulting the BIDS specifications (April 2023-24).
+- Over 300 BIDS contributors currently supporting and maintaining BIDS community 
+resources and tools.
+- Open working processes through online collaborative tools including GitHub, 
+GitHub Pages, ReadTheDocs, Google Docs, and OSF.
+  
+The BIDS core steering and maintainers groups work with the community to optimize open 
+adherence to FAIR principles (Findable, Accessible, Interoperable, and Reusable, 
+[Wilkinson, et al, 2016](https://www.nature.com/articles/sdata201618)) and to actively 
+lower barriers to adoption.
 
 ## Measuring BIDS Impact
 
@@ -206,7 +232,7 @@ As of July 1, 2020, we have 183 people signed up for our
 
 If you are in the process of putting together a grant, **please email/message
 the pillar lead** that is most closely associated with your proposed grant or the 
-BIDS maintainters email ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) 
+BIDS maintainers email ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) 
 so we may help support this. Our organization is structured into 3 pillars: standard,
 tools, and collaboration.
 
@@ -216,7 +242,7 @@ writers or related initiatives to receiving a letter of support from the
 Steering Group.
 
 Regarding **requesting a letter of support** - please submit a drafted letter of
-support to the collaboration lead or the BIDS maintainters email 
+support to the collaboration lead or the BIDS maintainers email 
 ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) so we may review internally.
 
 Please include how you plan on giving back to the BIDS community. The primary
