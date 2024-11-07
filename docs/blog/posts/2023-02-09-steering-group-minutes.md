@@ -241,8 +241,8 @@ examples. See issues below:
 
 Outstanding, but WIP:
 
--   [https://github.com/bids-standard/bids-validator/pull/1578](https://github.com/bids-standard/bids-validator/pull/1578)
--   [https://github.com/bids-standard/bids-validator/issues/1564](https://github.com/bids-standard/bids-validator/issues/1564)
+-   <https://github.com/bids-standard/legacy-validator/pull/1578>
+-   <https://github.com/bids-standard/legacy-validator/issues/1564>
 
 BIDS derivatives meeting : next week the first round of invites will be
 extended, looking for more funding to support travel. Aiming for 20-30
