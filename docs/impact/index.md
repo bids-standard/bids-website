@@ -97,8 +97,8 @@ Our list of contributors are captured in our
 We update the contributor appendix every specification release. As of July 2023,
 we have over 300 credited contributors.
 
-A brief account of contributors per repository, estimated demographics and affiliations 
-of contributors, and Github dependent project counts are provided below:
+The table below provides a brief account of the number of contributors per repository. Estimated demographics and affiliations 
+of contributors is also provided below.
 
 | repository        | all-contributors                                                                                                                  | github                                                                                            |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
