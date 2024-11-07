@@ -91,7 +91,7 @@ A change now made to a BEP, the spec in general, is now a change made and update
 
 <!-- [state_of_the_schema_presentation]: https://docs.google.com/presentation/d/1ldEbElaFm__jtkLoEcn2PQ-LGj1dfmdjWxDvE11eiNk/edit?usp=sharing -->
 [start_of_schema]: https://github.com/bids-standard/bids-specification/issues/466
-[bids_schema_validation_for_datatypes]: https://github.com/bids-standard/bids-validator/pull/1325
+[bids_schema_validation_for_datatypes]: https://github.com/bids-standard/legacy-validator/pull/1325
 
 [bids sprint 1 discussion]: https://bit.ly/pdx-bids-sprint
 [bids sprint 2 discussion]: https://docs.google.com/document/d/1UmcNlv5Ly9Ko6UStJBPV4UGVARjdNtZWRx9OVTLsE7Q/edit?usp=sharing
