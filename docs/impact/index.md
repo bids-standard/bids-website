@@ -1,6 +1,6 @@
 # BIDS Impact
 
-This document intends to convey how the BIDS Steering and Maintainers Group can
+BIDS document  intends to convey how the BIDS Steering and Maintainers Group can
 support your proposed BIDS grant. In an effort to express the impact of BIDS in
 the brain imaging community, we have shared several of our traffic metrics.
 
