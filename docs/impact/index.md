@@ -157,7 +157,7 @@ For visualizing our metrics, we have put together 2 dashboards:
 The default time period is set to the past 6 months. This can be changed by
 adjusting the time period in the upper left corner. Please feel free to use any
 of these figures in your grant! If there are additional statistics not currently
-conveyed, please reach out to or the BIDS maintainters via a GitHub issue, or by email
+conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by email
  ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)).
 
 ### BIDS usage
