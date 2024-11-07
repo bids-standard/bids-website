@@ -61,18 +61,22 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 --8<-- "tmp/citation_per_year.html"
 
 ### GitHub stars
+GitHub stars quantify the number of users that have marked a repository as a favorite and have 
+chosen to follow the changes made to that repository. Below is a table of GitHub repos that are 
+associated with the BIDS standard and their star count. By tracking repo interest via GitHub stars, 
+we can quantify which BIDS-associated tools are of the highest interest to the research community. 
 
 | repository        | stars                                                                                      |
 | ----------------- | ------------------------------------------------------------------------------------------ |
-| bids-standard     | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-specification) |
-| bids-starter-kit  | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-starter-kit)   |
-| bids-validator    | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-validator)     |
-| pybids            | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/pybids)             |
-| bids-matlab       | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-matlab)        |
-| statistical model | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/stats-models)       |
 | fmriprep          | ![GitHub Repo stars](https://img.shields.io/github/stars/nipreps/fmriprep)                 |
 | mriqc             | ![GitHub Repo stars](https://img.shields.io/github/stars/nipreps/mriqc)                    |
+| bids-standard     | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-specification) |
+| bids-starter-kit  | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-starter-kit)   |
+| pybids            | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/pybids)             |
 | qsiprep           | ![GitHub Repo stars](https://img.shields.io/github/stars/PennLINC/qsiprep)                 |
+| bids-matlab       | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-matlab)        |
+| statistical model | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/stats-models)       |
+| bids-validator    | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-validator)     |
 
 ### Downloads
 
