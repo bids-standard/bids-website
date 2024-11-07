@@ -128,9 +128,9 @@ not been altered.
 
 Add a list of BIDS ignore files:
 
-> [[https://github.com/bids-standard/bids-validator/issues/1676]](https://github.com/bids-standard/bids-validator/issues/1676)
+> <https://github.com/bids-standard/legacy-validator/issues/1676>
 >
-> [[https://github.com/bids-standard/bids-validator/issues/1677]](https://github.com/bids-standard/bids-validator/issues/1677)
+> <https://github.com/bids-standard/legacy-validator/issues/1677>
 
 Should we reach out to the new **Imaging Neuroscience** journal while
 they are still developing their platform?
