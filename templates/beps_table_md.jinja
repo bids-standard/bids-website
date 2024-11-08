@@ -9,5 +9,5 @@
 | :--------: | :---- | :-----  | :-----  | :---------- | :------- |
 {% endif %}
 {% for bep in include %}
-| [BEP {{ bep.number }}]({{ bep.link }}) | {% if bep.display %} {{ bep.display }} {% else %} {{ bep.title }} {% endif %} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {% if person.email %} [{{ person.given-names }} {{ person.family-names }}](mailto:{{ person.email }}) {% else %} {{ person.given-names }} {{ person.family-names }} {% endif %}<br>{% endfor %}  | {% if bep.status %} {% for item in bep.status %} - {{ item }} <br>{% endfor %} {% endif %}  | {% if bep.blocking %}  {% for item in bep.blocking %} - {{ item }} <br>{% endfor %} {% endif %} |
+| [BEP {{ bep.number }}]({{ bep.link }}) | {% if bep.display %} {{ bep.display }} {% else %} {{ bep.title }} {% endif %} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {% if person.email %} [{{ person["given-names"] }} {{ person["family-names"] }}](mailto:{{ person.email }}) {% else %} {{ person["given-names"] }} {{ person["family-names"] }} {% endif %}<br>{% endfor %}  | {% if bep.status %} {% for item in bep.status %} - {{ item }} <br>{% endfor %} {% endif %}  | {% if bep.blocking %}  {% for item in bep.blocking %} - {{ item }} <br>{% endfor %} {% endif %} |
 {% endfor %}
