@@ -344,9 +344,9 @@ apps:
     status: active
     dh: khanlab/hippunfold
     ds_type:
--   raw
+    -   raw
     datatype:
--   anat
+    -   anat
     ci: none
     description: BIDS App for Hippunfold (automated hippocampal unfolding and subfield segmentation)
 
@@ -354,12 +354,12 @@ apps:
     status: active
     dh: micalab/micapipe
     ds_type:
--   raw
+    -   raw
     datatype:
--   anat
--   func
--   dwi
--   fmap
+    -   anat
+    -   func
+    -   dwi
+    -   fmap
     ci: none
     description: micapipe from the Multimodal imaging and connectome analysis lab (https://mica-mni.github.io) at the Montreal Neurological Institute. Read
         The Docs documentation below
