@@ -68,7 +68,7 @@ Represents different types of data. Must be one of:
 -   `micr`: microscopy data
 -   `nirs`: near-infrared spectroscopy data
 -   `motion`: motion capture data
--   `magnectic resonance spectroscopy`: motion capture data
+-   `mrs`: magnetic resonance spectroscopy data
 
 The name for the datatype depends on the recording modality.
 

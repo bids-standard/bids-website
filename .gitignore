@@ -5,7 +5,7 @@ output_gh_summary.png
 
 # ignore for now files that are copied from the bids examples and spe
 docs/examples/
-docs/specification/
+docs/extensions/macros_doc.md
 
 # folders
 *.DS_Store

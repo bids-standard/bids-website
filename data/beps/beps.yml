@@ -529,7 +529,7 @@
         - Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)
     content:
     -   raw
-    blocking: None
+    blocking:
     google_doc_created: 2023-09-12
     pull_request_created:
     pull_request_merged:

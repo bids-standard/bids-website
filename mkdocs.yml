@@ -18,6 +18,8 @@ plugins:
   - open-in-new-tab
   - macros:
       module_name: macros/main
+      # toggle to true if you are in CD/CI environment
+      on_error_fail: true
   - redirects:
       redirect_maps:
         # old links from the old wesbite
@@ -164,7 +166,7 @@ nav:
     -   extensions/general-guidelines.md
     -   extensions/specific-guidelines.md
     -   extensions/submission.md
-    # -   macros: specification/macros_doc.md
+    -   Using MkDocs macros: extensions/macros_doc.md
 -   Impact:
     -   impact/index.md
 -   Merch: https://www.teepublic.com/user/bids

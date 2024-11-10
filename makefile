@@ -12,7 +12,7 @@ update_from_spec:
 	@echo "  ----------------------------------  "
 	rm -fr docs/specification
 	mkdir -p docs/specification/
-	cp specification/macros_doc.md docs/specification/macros_doc.md
+	cp specification/macros_doc.md docs/extensions/macros_doc.md
 
 update_contributors: package.json
 	@echo "  ----------------------------------  "
