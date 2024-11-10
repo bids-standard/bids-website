@@ -85,7 +85,7 @@
         run: optional
     ```
 
-    ![image of template rendered in spec](../../assets/img/noncontinuous_beh_rendered_template.png)
+    ![image of template rendered in specification](../../assets/img/noncontinuous_beh_rendered_template.png)
 
 ---
 

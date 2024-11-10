@@ -137,10 +137,10 @@ nav:
         -   getting_started/templates/index.md
 -   Tools:
     -   tools/index.md
+    -   tools/converters.md
     -   tools/validator.md
     -   tools/bids-apps.md
     -   tools/others.md
-    -   tools/converters.md
 -   Datasets:
     -   datasets/index.md
 -   FAQ:

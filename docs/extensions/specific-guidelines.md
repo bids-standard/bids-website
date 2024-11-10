@@ -36,7 +36,7 @@ a repeated pattern in generating derivatives within several imaging modalities' 
 
 1.  A reference map that is used to encode spatial features and parameters is required.
     There is an antecedent of this in `BIDS` with BEP23 ([see below](#BEP-23-PET-Derivatives)).
-    In that `BEP`, the proposed naming takes the pattern `_<suffix>ref` (for example `_boldref`, `_dwiref`...), and that solution has been suggested as a possibility in [issue #1532](https://github.com/bids-standard/bids-specification/issues/1532) of the spec repository.
+    In that `BEP`, the proposed naming takes the pattern `_<suffix>ref` (for example `_boldref`, `_dwiref`...), and that solution has been suggested as a possibility in [issue #1532](https://github.com/bids-standard/bids-specification/issues/1532) of the specification repository.
 
 1.  We have derived data that are no longer of the same type as the original,
     but for which we would like to keep the notion of the modality from which this was derived
@@ -57,7 +57,7 @@ and MUST specify the extension and metadata that are required with the suffix.
 
 1.  The file descriptor does fall under one of the generic derivatives descriptors.
 
-1.  No other descriptor exists in the `BIDS` spec.
+1.  No other descriptor exists in the `BIDS` specification.
     For example, `statmap` cannot be used, because it is already being used, or soon to be,
     for a [different specification](https://bids-standard.github.io/stats-models/walkthrough-1.html#from-run-outputs-to-subject-inputs).
 
