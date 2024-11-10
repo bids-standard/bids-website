@@ -165,7 +165,7 @@ nav:
     -   extensions/general-guidelines.md
     -   extensions/specific-guidelines.md
     -   extensions/submission.md
-    -   Using MkDocs macros: specification/macros_doc.md
+    -   Using MkDocs macros: extensions/macros_doc.md
 -   Impact:
     -   impact/index.md
 -   Merch: https://www.teepublic.com/user/bids
