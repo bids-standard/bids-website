@@ -1,9 +1,8 @@
-# BIDS examples with empty raw data files
+# BIDS examples
 
-Below are some examples of BIDS datasets that contain empty (example) raw data files.
-These examples are separated by modality
-and can assist you in converting your own dataset into a BIDS compliant dataset.
-
+[BIDS examples datasets](./examples.md) contain empty (example) raw data files
+and can assist you in converting your own dataset into a BIDS compliant dataset,
+or to run some tests with your code...
 <!--lint ignore -->
 
 <!-- ADD EXAMPLE LISTING HERE -->
