@@ -42,14 +42,16 @@ a project to encode as much of the BIDS Standard as possible in declarative,
 machine-readable rules, and to rewrite the validator to use the schema to enforce the rules.
 This would have several advantages:
 
-1) A schema could be updated by BIDS contributors without knowledge of Javascript or an
-   understanding of the structure of the BIDS Validator code base.
-2) A language agnostic schema would enable validators to be written in other languages,
-   or for other tools to be written in a way where updates to BIDS could be automatically
-   incorporated by upgrading the schema.
-3) By using the schema as an authoritative source of definitions,
-   large portions of the *text* of the BIDS specification could be generated automatically,
-   and with less chance for inconsistency.
+1.  A schema could be updated by BIDS contributors without knowledge of Javascript or an
+    understanding of the structure of the BIDS Validator code base.
+
+1.  A language agnostic schema would enable validators to be written in other languages,
+    or for other tools to be written in a way where updates to BIDS could be automatically
+    incorporated by upgrading the schema.
+
+1.  By using the schema as an authoritative source of definitions,
+    large portions of the *text* of the BIDS specification could be generated automatically,
+    and with less chance for inconsistency.
 
 A description of the BIDS schema can be found in the [bidsschematools][bst desc] documentation,
 and the schema itself may be found at
@@ -80,20 +82,24 @@ Advanced users may need to update their tooling on either end.
 The schema validator includes features that were never implemented in the
 legacy validator:
 
-* BIDS Derivatives (introduced in BIDS 1.4.0), including opt-in recursive
-  validation of BIDS Derivatives datasets discovered in `derivatives/`
-  subdirectories.
-* Support for BIDS-MRS (Magnetic Resonance Spectroscopy), introduced in
-  BIDS 1.10.0.
+-   BIDS Derivatives (introduced in BIDS 1.4.0), including opt-in recursive
+    validation of BIDS Derivatives datasets discovered in `derivatives/`
+    subdirectories.
+
+-   Support for BIDS-MRS (Magnetic Resonance Spectroscopy), introduced in
+    BIDS 1.10.0.
 
 ### Behavior changes
 
-* The inheritance principle is consistently applied for all files.
-* Every JSON field or TSV column defined in BIDS is type-checked against the
-  same source that produces the tables in the specification.
-* Extra metadata is no longer prohibited in sidecar JSON files, which was
-  inconsistently applied across data types in the legacy validator.
-* All RECOMMENDED fields produce a warning if absent.
+-   The inheritance principle is consistently applied for all files.
+
+-   Every JSON field or TSV column defined in BIDS is type-checked against the
+    same source that produces the tables in the specification.
+
+-   Extra metadata is no longer prohibited in sidecar JSON files, which was
+    inconsistently applied across data types in the legacy validator.
+
+-   All RECOMMENDED fields produce a warning if absent.
 
 Some of these changes may not be to everyone's taste,
 but we believe that consistent application of the specification is critical
@@ -104,7 +110,7 @@ of the community.
 
 ## Questions
 
-#### Q1. My dataset was valid with the old validator but it is not anymore. Why? Which one should I trust?
+### Q1. My dataset was valid with the old validator but it is not anymore. Why? Which one should I trust?
 
 The validator has been completely reimplemented and shares no code with the
 original validator. A new failure could mean a bug in the new validator, but
@@ -114,7 +120,7 @@ code; in contrast, the schema validator systematically checks every sidecar
 field for applicability, and validates the types of the values according to the
 definitions in the schema.
 
-#### Q2. Can I continue using the legacy validator?
+### Q2. Can I continue using the legacy validator?
 
 Yes, but there are no plans to continue maintaining the legacy validator.
 Its behavior will inevitably diverge further from that of the schema validator,
@@ -125,7 +131,7 @@ The Docker images will continue to work for longer.
 We recommend migrating to the schema validator sooner than later,
 and report any bugs you find in the process.
 
-#### Q3. Where should I report bugs?
+### Q3. Where should I report bugs?
 
 The same place as ever: <https://github.com/bids-standard/bids-validator/issues>
 
@@ -133,7 +139,7 @@ Note that in some cases the fixes for the bugs will be in the specification
 itself, as the bug may be in the schema-defined rules that the validator is
 applying.
 
-#### Q4. What about the Docker image?
+### Q4. What about the Docker image?
 
 The [bids/validator](https://hub.docker.com/r/bids/validator/) image
 still contains the legacy validator, as of version 1.15.0.
@@ -158,7 +164,9 @@ In this section, we lay out some details that are probably not of general intere
 but could be useful for understanding the changes to validator behavior,
 the validation resources available, and the planned maintenance levels.
 
-#### In the beginning...
+### Evolution of the specification and validators
+
+#### In the beginning…
 
 <figure>
 
@@ -211,9 +219,6 @@ change-tracking and contribution to the specification more transparent.
 </caption>
 </figure>
 
-[py]: https://pypi.org/project/bids-validator/
-[Markdown]: https://en.wikipedia.org/wiki/Markdown
-
 #### v1.14.6
 
 <figure>
@@ -252,11 +257,9 @@ In the [bids-standard/bids-validator][] repository, the Python and Javascript va
 continued to coexist, along with a new validator that is written to apply the
 schema, and targeting the [Deno] Javascript runtime.
 
-
 #### v1.14.7
 
 <figure>
-
 
 ```mermaid
 graph LR;
@@ -370,14 +373,26 @@ foreseeable future, but it will not receive updates as the standard evolves.
 We hope that the vast majority of updates will take place in the schema itself,
 inside the [bids-standard/bids-specification] repository.
 
-
 [bids-standard/python-validator]: https://github.com/bids-standard/python-validator
+
 [bids-standard/bids-validator]: https://github.com/bids-standard/bids-validator
+
 [bids-standard/legacy-validator]: https://github.com/bids-standard/legacy-validator
+
 [bids-standard/bids-specification]: https://github.com/bids-standard/bids-specification
+
 [bidsschematools]: https://bidsschematools.readthedocs.io/en/latest/
+
 [bst desc]: https://bidsschematools.readthedocs.io/en/latest/description.html#organization-and-syntax
-[Steering Group]: https://bids.neuroimaging.io/governance.html#bids-steering-group
+
+[steering group]: https://bids.neuroimaging.io/governance.html#bids-steering-group
+
 [checks]: https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/checks/
-[Deno]: https://deno.com
+
+[deno]: https://deno.com
+
 [regular expressions]: https://en.wikipedia.org/wiki/Regular_expression
+
+[py]: https://pypi.org/project/bids-validator/
+
+[markdown]: https://en.wikipedia.org/wiki/Markdown
