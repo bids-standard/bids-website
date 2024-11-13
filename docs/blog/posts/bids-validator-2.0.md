@@ -443,3 +443,5 @@ inside the [bids-standard/bids-specification] repository.
 [validation model]: https://bids-validator.readthedocs.io/en/latest/validation-model/index.html
 
 [v1.10.0]: https://bids-specification.readthedocs.io/en/v1.10.0/
+
+[inheritance principle]: https://bids-specification.readthedocs.io/en/latest/common-principles.html#the-inheritance-principle
