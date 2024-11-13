@@ -1,6 +1,6 @@
 ---
 date: 2024-11-13
-slug: "BIDS Validator 2.0"
+slug: bids-validator-2
 author: Chris Markiewicz
 categories:
 -   validator
