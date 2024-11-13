@@ -432,7 +432,7 @@ inside the [bids-standard/bids-specification] repository.
 
 [bids derivatives]: https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html
 
-[BIDS-MRS]: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html
+[bids-mrs]: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html
 
 [npm:validator]: https://www.npmjs.com/package/bids-validator
 
