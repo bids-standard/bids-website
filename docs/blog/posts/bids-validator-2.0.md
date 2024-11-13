@@ -114,6 +114,31 @@ We hope that a consistent validator will help inform future changes to BIDS,
 so that the specification can get closer to the needs and preferences
 of the community.
 
+### Development validator
+
+The BIDS Validator tracks the latest release of the BIDS specification (currently [v1.10.0]).
+As the next release of BIDS is developed, changes to the schema or the validator may be
+tested at <https://bids-standard.github.io/bids-validator/dev/>.
+
+Note that any changes in this validator may be reverted prior to the next release of BIDS.
+Command-line use of the development validator is not currently supported.
+
+### Updated documentation
+
+The original BIDS validator had limited documentation,
+primarily a README that was replicated on GitHub and [NPM][npm:validator].
+For the 2.0 release of the validator, we've added documentation at
+<https://bids-validator.readthedocs.io/en/latest/>.
+
+In addition to user guides for the [web][web-validator] and [command-line] interfaces
+to the validator, we aim to include more detail on the operation of the validator,
+starting with the [validation model][].
+Our goal is to demystify the validator and the BIDS Schema and empower researchers and
+developers to adapt and reuse the tools we've built.
+
+This site is under active development, and will be updated frequently in the
+coming weeks. Please help us improve it by opening issues (or PRs)!
+
 ## Questions
 
 ### Q1. My dataset was valid with the old validator but it is not anymore. Why? Which one should I trust?
@@ -408,3 +433,13 @@ inside the [bids-standard/bids-specification] repository.
 [bids derivatives]: https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html
 
 [BIDS-MRS]: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html
+
+[npm:validator]: https://www.npmjs.com/package/bids-validator
+
+[web-validator]: https://bids-validator.readthedocs.io/en/latest/user_guide/web.html
+
+[command-line]: https://bids-validator.readthedocs.io/en/latest/user_guide/command-line.html
+
+[validation model]: https://bids-validator.readthedocs.io/en/latest/validation-model/index.html
+
+[v1.10.0]: https://bids-specification.readthedocs.io/en/v1.10.0/
