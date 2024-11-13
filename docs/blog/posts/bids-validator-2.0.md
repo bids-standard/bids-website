@@ -23,7 +23,7 @@ In this blog post, we'll explain what all this means and how to use the new vali
 ## Background
 
 One of the primary goals of the BIDS validator was to make it easy to validate a BIDS
-dataset, regardless of the users's operating system. By using Javascript and hosting a web
+dataset, regardless of the user's operating system. By using Javascript and hosting a web
 app that ran entirely in the user's browser, we were able to achieve this goal without
 requiring users to install anything. This decision was crucial to the success of the validator,
 which in turn was crucial to the success of BIDS.
@@ -82,19 +82,25 @@ Advanced users may need to update their tooling on either end.
 The schema validator includes features that were never implemented in the
 legacy validator:
 
--   BIDS Derivatives (introduced in BIDS 1.4.0), including opt-in recursive
-    validation of BIDS Derivatives datasets discovered in `derivatives/`
-    subdirectories.
+-   Validation of [BIDS Derivatives] (introduced in BIDS 1.4.0) datasets,
+    including opt-in recursive validation of BIDS Derivatives datasets discovered in
+    `derivatives/` subdirectories.
 
--   Support for BIDS-MRS (Magnetic Resonance Spectroscopy), introduced in
-    BIDS 1.10.0.
+-   Support for [BIDS-MRS] (Magnetic Resonance Spectroscopy),
+    introduced in BIDS 1.10.0.
 
 ### Behavior changes
 
--   The inheritance principle is consistently applied for all files.
+-   The [inheritance principle][] is consistently applied for all files.
+    For example, a top-level `bold.json` was previously singled out to be
+    invalid without a `task` entity.
 
 -   Every JSON field or TSV column defined in BIDS is type-checked against the
-    same source that produces the tables in the specification.
+    schema definitions used to produce the tables in the specification.
+    (For example, [`FlipAngle`][flipangle] is verified to be a number, rather
+    than a string with a degree symbol.)
+    Improved conformity reduces the scope for inconsistency for downstream tools
+    to accommodate.
 
 -   Extra metadata is no longer prohibited in sidecar JSON files, which was
     inconsistently applied across data types in the legacy validator.
@@ -105,7 +111,7 @@ Some of these changes may not be to everyone's taste,
 but we believe that consistent application of the specification is critical
 to the utility of BIDS and the maintainability of the validator.
 We hope that a consistent validator will help inform future changes to BIDS,
-so that the specification can become more true to the needs and preferences
+so that the specification can get closer to the needs and preferences
 of the community.
 
 ## Questions
@@ -314,7 +320,7 @@ graph LR;
     bidsschematools ----> python
 ```
 
-<caption>The Python validator was moved into its own repsitory.
+<caption>The Python validator was moved into its own repository.
 Its versioning and development are no longer tied to the Javascript
 validators.
 </caption>
@@ -396,3 +402,9 @@ inside the [bids-standard/bids-specification] repository.
 [py]: https://pypi.org/project/bids-validator/
 
 [markdown]: https://en.wikipedia.org/wiki/Markdown
+
+[flipangle]: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-imaging-data.html#rf-contrast
+
+[bids derivatives]: https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html
+
+[BIDS-MRS]: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html
