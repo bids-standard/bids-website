@@ -8,15 +8,17 @@ categories:
 -   news
 ---
 
-<!-- more -->
+# BIDS Validator 2.0
 
 We are pleased to announce the release of version 2.0 of the BIDS Validator.
 
 In the last few months, you may have noticed changes to the validator available at
-https://bids-standard.github.io/bids-validator/, including the look and feel of the
+<https://bids-standard.github.io/bids-validator/>, including the look and feel of the
 validator, the errors and warnings that are produced by the validator,
 and a link to a "legacy validator".
-In this blog post, we'll explain what all this means.
+In this blog post, we'll explain what all this means and how to use the new validator.
+
+<!-- more -->
 
 ## Background
 
@@ -51,7 +53,7 @@ This would have several advantages:
 
 A description of the BIDS schema can be found in the [bidsschematools][bst desc] documentation,
 and the schema itself may be found at
-https://bids-specification.readthedocs.io/en/latest/schema.json.
+<https://bids-specification.readthedocs.io/en/latest/schema.json>.
 (Replace `latest` with a particular version, for example,
 `v1.10.0`, to find a snapshot of the schema at the time of that release.)
 
@@ -61,7 +63,7 @@ The schema validator is now feature complete, validating file names,
 JSON file fields and values, TSV file column names and values,
 and various [checks] that have been written in the schema expression language.
 
-To use the schema validator, visit https://bids-standard.github.io/bids-validator/
+To use the schema validator, visit <https://bids-standard.github.io/bids-validator/>
 or download the [Deno] Javascript runtime and run:
 
 ```console
@@ -125,7 +127,7 @@ and report any bugs you find in the process.
 
 #### Q3. Where should I report bugs?
 
-The same place as ever: https://github.com/bids-standard/bids-validator/issues
+The same place as ever: <https://github.com/bids-standard/bids-validator/issues>
 
 Note that in some cases the fixes for the bugs will be in the specification
 itself, as the bug may be in the schema-defined rules that the validator is
@@ -322,7 +324,7 @@ Its development, if any takes place, will be independent of
 the Javascript validator(s).
 Its filename validation will be updated with new releases of [bidsschematools].
 
-The legacy validator was moved to https://bids-standard.github.io/bids-validator/legacy/.
+The legacy validator was moved to <https://bids-standard.github.io/bids-validator/legacy/>.
 
 #### v2.0
 
@@ -361,7 +363,7 @@ validators.
 
 The Node.js validator repository has been renamed to [bids-standard/legacy-validator].
 No further development is planned for this repository. The legacy validator will
-continue to be usable at https://bids-standard.github.io/legacy-validator/ for the
+continue to be usable at <https://bids-standard.github.io/legacy-validator/> for the
 foreseeable future, but it will not receive updates as the standard evolves.
 
 [bids-standard/bids-validator] will only host the schema-based validator from now on.
