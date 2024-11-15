@@ -3,7 +3,7 @@ all: update
 serve: update
 	mkdocs serve -a localhost:8080
 
-update: update_from_spec update_contributors update_datasets_examples tmp_figures
+update: update_from_spec update_contributors update_datasets_examples tmp_figures update_bep_pages
 
 package.json:
 	npm install `cat npm-requirements.txt`
@@ -23,6 +23,9 @@ update_datasets_examples:
 	@echo "  ----------------------------------  "
 	python data/datasets/examples/tools/print_dataset_listing.py docs/datasets/examples.md
 
+update_bep_pages:
+	@echo "  ----------------------------------  "
+	python tools/build/generate_bep_pages.py
 
 # Figures
 .PHONY: tmp/affiliations.html tmp/bids_timeline.html tmp/citation_per_year.html tmp/openneuro_data_growth.html

@@ -2,6 +2,8 @@
 
 You can contribute to ongoing BIDS Extension Proposals (BEPs).
 
+## Active BEPs
+
 Below is a table of currently-active BEPs.
 
 Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed on the
@@ -25,7 +27,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 {{ MACROS___generate_beps_table(file="beps_completed.yml", type="completed") }}
 
-<br>
+## Others
 
 Some proposals that set out to extend the BIDS specification have instead lead to other outcomes such as:
 
