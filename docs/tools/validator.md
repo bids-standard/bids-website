@@ -14,6 +14,11 @@ Instructions to install and use these versions can be found
 within the [quickstart guide](https://github.com/bids-standard/bids-validator)
 at the BIDS Validator repository.
 
+!!! note
+
+    For more information about the development of the validator,
+    check this [blog post about it](../blog/posts/bids-validator-2.0.md).
+
 ## Data Privacy and Confidentiality
 
 Please note that the web app is entirely browser (not server) based.
