@@ -997,7 +997,7 @@ and add the plasma series of data to it from our base text file:
 ![screenshot of unconverted sub-01_ses-testscan_recording-Manual_blood.tsv](https://i.imgur.com/VdFqh6H.png)
 
 Whoops, these numbers aren't in SI units, so we quickly convert time
-from minutes to seconds and Microcurie to Becquerel to conform to the spec.
+from minutes to seconds and Microcurie to Becquerel to conform to the specification.
 
 !!! note
 
