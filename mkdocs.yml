@@ -143,6 +143,7 @@ nav:
     -   tools/converters.md
 -   Datasets:
     -   datasets/index.md
+    -   datasets/examples.md
 -   FAQ:
     -   faq/index.md
     -   faq/general.md
@@ -205,7 +206,7 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      primary: light green
+      primary: teal
       accent: green
       scheme: default
       toggle:
