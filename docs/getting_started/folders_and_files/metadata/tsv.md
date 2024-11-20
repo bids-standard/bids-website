@@ -4,7 +4,7 @@ A Tab-Separate Values (TSV) file is a text file where tab characters (`\t`) sepa
 It is structured as a table, with each column representing a field of interest,
 and each row representing a single datapoint.
 
-### Reading a `.tsv` file
+## Reading a `.tsv` file
 
 === "python"
 
@@ -52,10 +52,8 @@ and each row representing a single datapoint.
 
 === "Excel / [LibreOffice Calc](https://www.libreoffice.org/)"
 
+## Writing a `.tsv` file
 
-
-
-### Writing a `.tsv` file
 ## Matlab
 
 ```matlab
@@ -74,7 +72,7 @@ writetable(t, fullfile(root_dir, bidsProject, bids_participants_name), ...
               'Delimiter', '\t');
 ```
 
-#### Octave
+## Octave
 
 The `writetable` function is not implemented in older version of Octave
 (e.g 4.2.2) and the `table` function differs from its matlab counterpart.
@@ -82,7 +80,6 @@ These are still in development for future
 [releases](https://github.com/apjanke/octave-tablicious) so some of the scripts
 provided in the BIDS starter-kit repository in the matlab code folder
 to create .tsv might not work with octave because of that reason.
-
 
 ## Excel
 
@@ -96,7 +93,6 @@ to create .tsv might not work with octave because of that reason.
 -   Save as tab separated `.txt` and change extension to `.tsv`
 
 ## R
-
 
 ### Writing a `.tsv` file
 
