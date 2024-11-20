@@ -12,12 +12,12 @@ BIDS encompasses:
     across scientific and technical domains.
 
 -   100+ sample data models for BIDS specifications
-    in [bids-examples](https://github.com/bids-standard/bids-examples).
+    in the [bids-examples](../datasets/examples.md).
     Read more about the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/).
 
 -   2000 open datasets across repositories
     including [OpenNeuro](https://www.openneuro.org).
-    Read more about [BIDS Datasets](/docs/datasets/index.md).
+    Read more about [BIDS Datasets](../datasets/index.md).
 
 -   Open software conversion and analytics tools,
     and global infrastructure for collaborating on emerging standards in neuroscience

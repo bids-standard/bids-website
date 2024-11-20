@@ -119,8 +119,7 @@ consecutive years as chair. BIDS Steering Group members may hold other
 BIDS roles at the same time, for example BEP Working Group chair.
 
 The BIDS Steering Group is the authority of last resort in addressing
-conflicts among groups and alleged violations of the [Code of
-Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).
+conflicts among groups and alleged violations of the [Code of Conduct](./bids_github/CODE_OF_CONDUCT.md).
 
 The Steering Group may delegate tasks as needed to fulfill its responsibilities.
 
@@ -141,8 +140,8 @@ aim of extending or modifying the BIDS standard into their domain of
 interest. This can be either an unspecified modality or derivative.
 The BEP Lead and Working Group will determine how they organize their
 work, following the BIDS governance standards laid out in section 4 of
-this document and the BIDS [Code of
-Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md). The BEP Working Group work is completed when their BEP has become a Merged BEP.
+this document and the BIDS [Code of Conduct](./bids_github/CODE_OF_CONDUCT.md).
+The BEP Working Group work is completed when their BEP has become a Merged BEP.
 
 ### BEP Leads Group
 
@@ -456,7 +455,7 @@ blog](http://reproducibility.stanford.edu/blog/) provides tutorials and
 community survey results.
 
 All BIDS community members are required to follow the
-[BIDS code of conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).
+[BIDS code of conduct](./bids_github/CODE_OF_CONDUCT.md).
 Please contact the BIDS maintainers at [bids.maintenance+coc@gmail.com](mailto:bids.maintenance+coc@gmail.com)
 if you have any concerns or would like to report a violation.
 
