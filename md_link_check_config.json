@@ -16,7 +16,16 @@
       "pattern": "^https://www.instagram.com/bidsstandard.*"
     },
     {
-      "pattern": "^https://direct.mit.edu/imag/pages/editorial-info"
+      "pattern": "^https://direct.mit.edu/imag/.*"
+    },
+    {
+      "pattern": "^https://anaconda.org/conda-forge/bids-validator.*"
+    },
+    {
+      "pattern": "^https://www.openneuro.org.*"
+    },
+    {
+      "pattern": "^https://human-organ-atlas.esrf.eu.*"
     }
   ],
   "timeout": "20s",

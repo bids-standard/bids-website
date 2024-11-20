@@ -73,7 +73,7 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 
     -   Genetic Information was in the BEP lead's fork of BIDS-examples (after the meeting a [PR was opened](https://github.com/bids-standard/bids-examples/pull/178)).
 
--   Regarding the [Zenodo authorship](https://github.com/bids-standard/bids-specification/issues/66) discussion, the Steering Group considered for the list to either be first/last+alphabetical order in the middle or a single authored “[BIDS Contributors Group](https://bids.neuroimaging.io/governance.html#bids-contributors-group)”.
+-   Regarding the [Zenodo authorship](https://github.com/bids-standard/bids-specification/issues/66) discussion, the Steering Group considered for the list to either be first/last+alphabetical order in the middle or a single authored “[BIDS Contributors Group](../../collaboration/governance.md)”.
 
 -   Decision toward “BIDS Contributors Group” similar to how ADNI does it.
 
