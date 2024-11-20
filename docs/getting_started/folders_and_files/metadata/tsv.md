@@ -1,26 +1,62 @@
-
 # TSV files
 
 A Tab-Separate Values (TSV) file is a text file where tab characters (`\t`) separate fields that are in the file.
 It is structured as a table, with each column representing a field of interest,
 and each row representing a single datapoint.
 
-Below are ways to read / write TSV files in common languages.
-
-## Matlab
-
 ### Reading a `.tsv` file
 
-```matlab
-table_content = readtable(filename, ...
-                            'FileType', 'text', ...
-                            'Delimiter', '\t', ...
-                            'TreatAsEmpty', {'N/A','n/a'});
-```
+=== "python"
+
+    In Python, the easiest way to work with TSV files is to use the Pandas library.
+    This provides a high-level structure to organize, manipulate, clean, and
+    visualize tabular data.
+    You can install `pandas` with the following command:
+
+    ```bash
+    pip install pandas
+    ```
+
+    ```python
+    import pandas as pd
+    data = pd.pd.read_csv("file.tsv", sep="\t", headers=True)
+    ```
+
+=== "MATLAB"
+
+    Since MATLAB R2013b, there is a [`readtable`](https://www.mathworks.com/help/matlab/ref/readtable.html) function
+    that can load TSV files.
+
+    ```matlab
+    table_content = readtable('file.tsv', ...
+                              'FileType', 'text', ...
+                              'Delimiter', '\t', ...
+                              'TreatAsEmpty', {'N/A','n/a'});
+    ```
+
+=== "octave"
+
+    ```matlab
+    ```
+
+=== "R"
+
+    Reading and writing tab separated files comes natively in R, no need for extra packages.
+
+    In this example, we assume the .tsv includes column names (headers),
+    and explicitly set column separator (delimiter) to tab (`'\t'`)
+
+    ```R
+    data = read.table('myFile.tsv', header=TRUE, sep='\t')
+    ```
+
+=== "Excel / [LibreOffice Calc](https://www.libreoffice.org/)"
+
+
+
 
 ### Writing a `.tsv` file
-
-#### Matlab
+## Matlab
 
 ```matlab
 root_dir = pwd;
@@ -47,51 +83,6 @@ These are still in development for future
 provided in the BIDS starter-kit repository in the matlab code folder
 to create .tsv might not work with octave because of that reason.
 
-## Python
-
-In Python, the easiest way to work with TSV files is to use the Pandas library.
-This provides a high-level structure to organize, manipulate, clean, and
-visualize tabular data.
-You can install `pandas` with the following command:
-
-`pip install pandas`
-
-### Reading a `.tsv` file
-
-There are many ways to read a `.tsv` file in Pandas.
-One option is the following:
-
-```python
-import pandas as pd
-pd.read_csv('./ds001/participants.tsv', delimiter='\t')
-```
-
-Note that this function will default to using `,` as a delimiter, so we explicitly give it the tab character.
-
-### Writing a `.tsv` file
-
-You can write to a `.tsv` file using the `to_csv` method of a pandas DataFrame:
-
-```python
-import pandas as pd
-df = pd.read_csv('./ds001/participants.tsv', delimiter='\t')
-
-# Add an extra column for demonstration
-df['subject_id'] = range(len(df))
-
-# Show contents of the dataframe
-df.head()
-    Out:
-          participant_id sex  age  subject_id
-    0         sub-01   F   26           0
-    1         sub-02   M   24           1
-    2         sub-03   F   27           2
-    3         sub-04   F   20           3
-    4         sub-05   M   22           4
-
-# Save as a .tsv file
-df.to_csv('my_new_file.tsv', sep='\t')
-```
 
 ## Excel
 
@@ -106,16 +97,6 @@ df.to_csv('my_new_file.tsv', sep='\t')
 
 ## R
 
-Reading and writing tab separated files comes natively in R, no need for extra packages.
-
-### Reading a `.tsv` file
-
-In this example, we assume the .tsv includes column names (headers),
-and explicitly set column separator (delimiter) to tab ('\t')
-
-```R
-data = read.table('myFile.tsv', header=TRUE, sep='\t')
-```
 
 ### Writing a `.tsv` file
 

@@ -18,7 +18,9 @@ JSON files are text files that take the following structure:
 Note that they can be nested (curly brackets within curly brackets).
 Here are some common ways to read / write these files.
 
-## Editing JSON file online
+## Editing JSON file
+
+### Online
 
 Working with JSON can be a headache if you do not have the proper tools.
 
@@ -33,7 +35,7 @@ And even fix mistakes for you.
 
 ![](../../../assets/img/autofix.png)
 
-## Editing JSON file on your computer
+### On your computer
 
 If you need to edit JSON files on your computer, it will make your life easier
 if you use a modern code editor like:
@@ -48,7 +50,7 @@ that can automatically indent your JSON like
 
 ### Python
 
-In Python, JSON support is built into the core library,
+In Python, JSON support is built [into the core library](https://docs.python.org/3/library/json.html),
 meaning you don't need to install anything to read/write JSON files.
 In addition, the structure of JSON is almost identical
 to that of Python dictionaries (assuming you are only storing text / numbers in the dictionary).
@@ -93,15 +95,15 @@ install.packages('jsonlite')
     ```python
     import json
     with open('myfile.json', 'r') as ff:
-        data = json.load(ff)
+        metadata = json.load(ff)
     ```
 
-=== "matlab"
+=== "MATLAB"
 
     For MATLAB >= R2016b
 
     ```matlab
-    data = jsonencode('myfile.json')
+    metadata = jsonencode('myfile.json')
     ```
 
 === "octave"
@@ -109,7 +111,7 @@ install.packages('jsonlite')
     The example below uses the [JSONio library](https://github.com/gllmflndn/JSONio).
 
     ```matlab
-    data = jsonread('myfile.json')
+    metadata = jsonread('myfile.json')
     ```
 
 === "R"
@@ -117,7 +119,7 @@ install.packages('jsonlite')
     ```R
     install.packages('jsonlite')
     library(jsonlite)
-    data = fromJSON('myfile.json', pretty=TRUE)
+    metadata = fromJSON('myfile.json', pretty=TRUE)
     ```
 
 ## Writing a `.json` file
@@ -126,16 +128,16 @@ install.packages('jsonlite')
 
     ```python
     import json
-    data = {'field1': 'value1', 'field2': 3, 'field3': 'field3'}
+    metadata = {'field1': 'value1', 'field2': 3, 'field3': 'field3'}
     with open('my_output_file.json', 'w') as ff:
-        json.dump(data, ff)
+        json.dump(metadata, ff)
     ```
 
-=== "matlab"
+=== "MATLAB"
 
     ```matlab
-    data = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
-    jsonencode('my_output_file.json', data);
+    metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
+    jsonencode('my_output_file.json', metadata);
     ```
 
 === "octave"
@@ -143,7 +145,7 @@ install.packages('jsonlite')
     The example below uses the [JSONio library](https://github.com/gllmflndn/JSONio).
 
     ```matlab
-    data = jsonwrite('my_output_file.json')
+    jsonwrite('my_output_file.json', metadata)
     ```
 
 === "R"
@@ -151,8 +153,8 @@ install.packages('jsonlite')
     ```R
     install.packages('jsonlite')
     library(jsonlite)
-    data = '{"field1": "value1", "field2": 3, "field3": "field3"}'
-    writeLines(data, file="my_output_file.json")
+    metadata = '{"field1": "value1", "field2": 3, "field3": "field3"}'
+    writeLines(metadata, file="my_output_file.json")
     ```
 
 ## Interoperability issues
@@ -272,7 +274,7 @@ getting the value for the key `1`.
        x1: '1'
 ```
 
-### Why and when does this matter for BIDS?
+### Why does this matter for BIDS?
 
 In most cases this will not be an issue,
 but this could be problem if in your `events.tsv`
