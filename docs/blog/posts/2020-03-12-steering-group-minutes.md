@@ -63,7 +63,8 @@ Regarding discussions on where to host our historical specification pdfs (please
 
 -   BEP leads in control of their repository
 
--   Follow our [code of conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md) and [governance document](https://docs.google.com/document/d/1R-J2lL9V_wIkYhye4zH-feyl4P4J8NyO40rIYyY141o/)
+-   Follow our [code of conduct](../../collaboration/bids_github/CODE_OF_CONDUCT.md)
+    and [governance document](../../collaboration/governance.md)
 
 -   Keeping it reasonable lenient
 
