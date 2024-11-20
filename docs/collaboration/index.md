@@ -41,8 +41,7 @@ There are so many ways to help us build this community.
 -   You could help someone else learn the benefits of BIDS by giving a talk in your local organization
 -   Or you could work on [building a BIDS App](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html){:target="_blank"}!
 
-<b>The only requirement is that everyone who contributes adheres to our
-[BIDS Code of Conduct](https://github.com/bids-standard/bids-specification/blob/master/CODE_OF_CONDUCT.md).</b>
+<b>The only requirement is that everyone who contributes adheres to our [BIDS Code of Conduct](./bids_github/CODE_OF_CONDUCT.md).</b>
 
 Thank you for your contributions!
 
