@@ -18,7 +18,7 @@ JSON files are text files that take the following structure:
 Note that they can be nested (curly brackets within curly brackets).
 Here are some common ways to read / write these files.
 
-- [Official documentation about JSON](https://www.json.org/json-en.html)
+-   [Official documentation about JSON](https://www.json.org/json-en.html)
 
 ## Editing JSON file
 
