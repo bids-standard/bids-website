@@ -20,8 +20,6 @@ It'll work for all the languages below!
 
 [**_Octave Information_**](https://www.gnu.org/software/octave/)
 
-Required JSON package [**JSONio**](https://github.com/gllmflndn/JSONio)
-
 ## Python
 
 [**_Information_**](https://www.python.org/) (Both Python 2 and 3 will work for BIDS)

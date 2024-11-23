@@ -18,6 +18,8 @@ JSON files are text files that take the following structure:
 Note that they can be nested (curly brackets within curly brackets).
 Here are some common ways to read / write these files.
 
+- [Official documentation about JSON](https://www.json.org/json-en.html)
+
 ## Editing JSON file
 
 ### Online
@@ -57,24 +59,28 @@ to that of Python dictionaries (assuming you are only storing text / numbers in 
 
 ### MATLAB / Octave
 
-There are many toolboxes in MATLAB or [Octave](https://octave.org/) (an open-source drop-in compatible with many Matlab scripts)
-for reading / writing JSON files.
+Since MATLAB R2016b
+and [Octave](https://octave.org/) >= 7.1 (an open-source drop-in compatible with many Matlab scripts),
+you can use the built-in functions
+[`jsonencode`](https://www.mathworks.com/help/matlab/ref/jsonencode.html)
+and [`jsondecode`](https://www.mathworks.com/help/matlab/ref/jsondecode.html)
+to help your read and write JSON files.
 
-<!-- TODO check is more recent Octave have JSON support. -->
-Since MATLAB R2016b, you can use the built-in functions `jsonencode` (to write) and `jsondecode` (to read) JSON files.
-They should be available in Octave 6.1.
+!!! note -- "bids-matlab and other libraries"
 
-The [JSONio library](https://github.com/gllmflndn/JSONio) will allow you to read
-and write JSON files with MATLAB and octave (see examples below to use `jsonwrite` and `jsonread`).
+    There are also several toolboxes in MATLAB or Octave
+    for reading / writing JSON files.
 
-SPM12 uses the JSONio library by calling `spm_jsonwrite` and `spm_jsonread` and
-it has [other interesting functions to help you with BIDS](https://en.wikibooks.org/wiki/SPM/BIDS).
+    [bids-matlab](https://github.com/bids-standard/bids-matlab) has functions
+    ([`bids.util.jsonencode`](https://bids-matlab.readthedocs.io/en/main/utility_functions.html#bids.util.jsonencode)
+    and [`bids.util.jsondecode`](https://bids-matlab.readthedocs.io/en/main/utility_functions.html#bids.util.jsonencode))
+    that act as wrappers and will use whatever implementation (MATLAB, Octave...) is available.
 
-!!! note -- "bids-matlab"
+    The [JSONio library](https://github.com/gllmflndn/JSONio) will allow you to read
+    and write JSON files with MATLAB and Octave with the `jsonread` and `jsonwrite` functions.
 
-    [bids-matlab](https://github.com/bids-standard/bids-matlab) has 2 functions
-    (`bids.util.jsonencode` and `bids.util.jsondecode`) that act as wrappers and
-    will use whatever implementation (SPM, JSONio, MATLAB) is available.
+    SPM12 uses the JSONio library by calling `spm_jsonwrite` and `spm_jsonread` and
+    it has [other interesting functions to help you with BIDS](https://en.wikibooks.org/wiki/SPM/BIDS).
 
 ### R
 
@@ -83,10 +89,6 @@ In the examples in this page, we will be using [jsonlite](https://github.com/jer
 Remember to install and call a package before using it.
 
 <!-- There is a new package to help intract with BIDS datasets: [bidser](https://github.com/bbuchsbaum/bidser) -->
-
-```R
-install.packages('jsonlite')
-```
 
 ## Reading a `.json` file
 
@@ -103,7 +105,10 @@ install.packages('jsonlite')
     For MATLAB >= R2016b
 
     ```matlab
-    metadata = jsonencode('myfile.json')
+    % Read JSON data from a file
+    jsonStr = fileread('myfile.json');
+    % Convert JSON string to MATLAB variables
+    jsonData = jsondecode(jsonStr);
     ```
 
 === "octave"
@@ -116,10 +121,13 @@ install.packages('jsonlite')
 
 === "R"
 
+    The example below uses the [jsonlite](https://github.com/jeroen/jsonlite) library.
+
     ```R
-    install.packages('jsonlite')
+    # install jsonlite in case you did not already do it
+    # install.packages('jsonlite')
     library(jsonlite)
-    metadata = fromJSON('myfile.json', pretty=TRUE)
+    metadata = fromJSON('myfile.json')
     ```
 
 ## Writing a `.json` file
@@ -145,16 +153,21 @@ install.packages('jsonlite')
     The example below uses the [JSONio library](https://github.com/gllmflndn/JSONio).
 
     ```matlab
+    metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
     jsonwrite('my_output_file.json', metadata)
     ```
 
 === "R"
 
+    The example below uses the [jsonlite](https://github.com/jeroen/jsonlite) library.
+
     ```R
-    install.packages('jsonlite')
+    # install jsonlite in case you did not already do it
+    # install.packages('jsonlite')
     library(jsonlite)
-    metadata = '{"field1": "value1", "field2": 3, "field3": "field3"}'
-    writeLines(metadata, file="my_output_file.json")
+    metadata <- list(field1 = "value1", field2 = 3, field3 = "field3")
+    metadata = toJSON(metadata, pretty=TRUE)
+    write(metadata, "my_output_file.json")
     ```
 
 ## Interoperability issues
@@ -191,7 +204,7 @@ json_content =
     key: 'value'
 ```
 
-There are however some strict rules for what makes a valid fieldname in MATLAB and octave.
+There are however some strict rules for what makes a valid fieldname in MATLAB and Octave.
 
 Fieldnames must:
 
