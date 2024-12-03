@@ -45,6 +45,10 @@ Some example questions that have already been answered include:
 
     If you have very specific questions you can email the BIDS maintainers.
 
+    [:fontawesome-solid-paper-plane: Email the steering group](mailto:bids.steering@gmail.com){ .md-button }
+
+    If you have questions related to BIDS governance you can email the BIDS steering.
+
 -   :handshake_tone1_tone5:{ .lg .middle } **Social media**
 
     ---
