@@ -1,6 +1,6 @@
 # Measuring BIDS Impact
 
-### Datasets
+## Datasets
 
 Over the years, the number of shared datasets available to the public has
 greatly increased. At its heart, adoption of the BIDS standard across datasets
@@ -15,7 +15,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 --8<-- "tmp/openneuro_data_growth.html"
 
-### Citation Count
+## Citation Count
 
 As the adoption of the BIDS standard across neuroimaging datasets has grown, so have
 citations for work that uses BIDS data and BIDS apps. To aid in searching for publications
@@ -28,7 +28,8 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 --8<-- "tmp/citation_per_year.html"
 
-### GitHub stars
+## GitHub stars
+
 GitHub stars quantify the number of users that have marked a repository as a favorite and have
 chosen to follow the changes made to that repository. Below is a table of GitHub repos that are
 associated with the BIDS standard and their star count. By tracking repo interest via GitHub stars,
@@ -46,7 +47,7 @@ we can quantify which BIDS-associated tools are of the highest interest to the r
 | statistical model | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/stats-models)       |
 | bids-validator    | ![GitHub Repo stars](https://img.shields.io/github/stars/bids-standard/bids-validator)     |
 
-### Downloads
+## Downloads
 
 | package           | downloads                                                                                                                |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -58,7 +59,7 @@ we can quantify which BIDS-associated tools are of the highest interest to the r
 For the number of docker pulls of specific BIDS apps, please check the
 [BIDS app dashboard](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html).
 
-### Contributors
+## Contributors
 
 Our list of contributors are captured in our
 [contributor appendix](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html).
@@ -72,12 +73,12 @@ of contributors is also provided below.
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | bids-standard     | ![GitHub contributors (via allcontributors.org)](https://img.shields.io/github/all-contributors/bids-standard/bids-specification) | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/bids-specification) |
 | bids-starter-kit  | ![GitHub contributors (via allcontributors.org)](https://img.shields.io/github/all-contributors/bids-standard/bids-starter-kit)   | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/bids-starter-kit)   |
-| bids-validator    |      | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/bids-validator)     |
+| bids-validator    |                                                                                                                                   | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/bids-validator)     |
 | pybids            |                                                                                                                                   | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/pybids)             |
 | bids-matlab       | ![GitHub contributors (via allcontributors.org)](https://img.shields.io/github/all-contributors/bids-standard/bids-matlab)        | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/bids-matlab)        |
 | statistical model |                                                                                                                                   | ![GitHub Repo stars](https://img.shields.io/github/contributors/bids-standard/stats-models)       |
 
-#### Gender of contributors
+### Gender of contributors
 
 Guessed with [gender-guesser](https://pypi.org/project/gender-guesser/)
 
@@ -87,7 +88,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 --8<-- "data/people/gender.md"
 
-#### Contributors affiliations
+### Contributors affiliations
 
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
