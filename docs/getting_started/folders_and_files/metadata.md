@@ -557,7 +557,7 @@ df.to_csv('my_new_file.tsv', sep='\t')
 
 -   Create a file with the following columns
     (at least, for other values see paragraph the
-    [BIDS spec](https://bids-specification.readthedocs.io/en/latest/03-modality-agnostic-files.html#participants-file))
+    [BIDS specification](https://bids-specification.readthedocs.io/en/latest/03-modality-agnostic-files.html#participants-file))
     -   participant_id
     -   age
     -   sex

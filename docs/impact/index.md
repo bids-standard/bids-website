@@ -1,56 +1,63 @@
 # BIDS Impact
 
-The Brain Imaging Data Structure (BIDS) is an open global community driving the 
-standardization of neuroscience data across a broad and growing range of modalities 
-and health research disciplines. First released in June 2016, it is supported by a 
-worldwide research network and endorsed by organizations like the International 
+The Brain Imaging Data Structure (BIDS) is an open global community driving the
+standardization of neuroscience data across a broad and growing range of modalities
+and health research disciplines. First released in June 2016, it is supported by a
+worldwide research network and endorsed by organizations like the International
 Neuroinformatics Coordinating Facility ([INCF](https://www.incf.org/)).
 
 BIDS encompasses:
 
-- Over 40 domain-specific and modality-specific technical specifications across
-scientific and technical domains.
-- 100+ sample data models for BIDS specifications in 
-[bids-examples](https://github.com/bids-standard/bids-examples). Read more about
-the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/).
-- 2000 open datasets across repositories including 
-[OpenNeuro](https://www.openneuro.org). Read more about [BIDS Datasets](/docs/datasets/index.md).
-- Open software conversion and analytics tools, and global infrastructure for
-collaborating on emerging standards in neuroscience 
-[Poldrack, et al, 2024](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00103/119672/The-past-present-and-future-of-the-brain-imaging).
-- ~30,000 annual website visits from a very large community of neuroscience researchers 
-actively consulting the BIDS specifications (April 2023-24).
-- Over 300 BIDS contributors currently supporting and maintaining BIDS community 
-resources and tools.
-- Open working processes through online collaborative tools including GitHub, 
-GitHub Pages, ReadTheDocs, Google Docs, and OSF.
-  
-The BIDS core steering and maintainers groups work with the community to optimize open 
-adherence to FAIR principles (Findable, Accessible, Interoperable, and Reusable, 
-[Wilkinson, et al, 2016](https://www.nature.com/articles/sdata201618)) and to actively 
+-   Over 40 domain-specific and modality-specific technical specifications
+    across scientific and technical domains.
+
+-   100+ sample data models for BIDS specifications
+    in the [bids-examples](../datasets/examples.md).
+    Read more about the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/).
+
+-   2000 open datasets across repositories
+    including [OpenNeuro](https://www.openneuro.org).
+    Read more about [BIDS Datasets](../datasets/index.md).
+
+-   Open software conversion and analytics tools,
+    and global infrastructure for collaborating on emerging standards in neuroscience
+    [Poldrack, et al, 2024](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00103/119672/The-past-present-and-future-of-the-brain-imaging).
+
+-   ~ 30,000 annual website visits from a very large community of neuroscience researchers
+    actively consulting the BIDS specifications (April 2023-24).
+
+-   Over 300 BIDS contributors currently supporting
+    and maintaining BIDS community resources and tools.
+
+-   Open working processes through online collaborative tools
+    including GitHub, GitHub Pages, ReadTheDocs, Google Docs, and OSF.
+
+The BIDS core steering and maintainers groups work with the community to optimize open
+adherence to FAIR principles (Findable, Accessible, Interoperable, and Reusable,
+[Wilkinson, et al, 2016](https://www.nature.com/articles/sdata201618)) and to actively
 lower barriers to adoption.
 
 ## BIDS History
 
 Since its origin, the BIDS standard has revolutionized the way in which neuroimaging
-research is done. The origin of the BIDS standard is commonly traced back to 2014, 
-when a social media post ignited a deeper discussion about a new way of sharing 
-data, that would ultimately lead to a set of standards that would improve scientific 
-collaboration efforts. 
+research is done. The origin of the BIDS standard is commonly traced back to 2014,
+when a social media post ignited a deeper discussion about a new way of sharing
+data, that would ultimately lead to a set of standards that would improve scientific
+collaboration efforts.
 
-Following this initial discussion (and on the shoulders of many many volunteer hours 
-by maintainers and the community at large) the BIDS standard saw significant adoption 
-in the neuroimaging research landscape and continues to expand every day. A more complete 
-history and discussion about the future of the BIDS landscape can be found in this 
+Following this initial discussion (and on the shoulders of many many volunteer hours
+by maintainers and the community at large) the BIDS standard saw significant adoption
+in the neuroimaging research landscape and continues to expand every day. A more complete
+history and discussion about the future of the BIDS landscape can be found in this
 [recent publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516110/).
 
-The BIDS standard continues to be adopted by a larger share of the community each year. 
+The BIDS standard continues to be adopted by a larger share of the community each year.
 We have seen a large and growing number of visitors to the BIDS website. A large number of
-BIDS users also continue to explore the BIDS Specification and contribute to the community every month. 
+BIDS users also continue to explore the BIDS Specification and contribute to the community every month.
 
 We also document centers, institutes, and databases around the world that have implemented BIDS as
 their organizational structure. While the list continues to grow, an initial list of centers and the associated
-BIDS initiatives or database can be found 
+BIDS initiatives or database can be found
 [here](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0).
 
 ### Website and Specification traffic dashboards
@@ -86,8 +93,8 @@ We also measured the general BIDS impact across multiple domains (datasets, cita
 
 ### Neurostars
 
-We also track the interest and usage of the BIDS standard via discussions on Neurostars 
-to help us estimate trends in usage. Below is a snapshot as of ??? (date).  
+We also track the interest and usage of the BIDS standard via discussions on Neurostars
+to help us estimate trends in usage. Below is a snapshot as of ??? (date).
 <!--
 TODO add automation to update every 6 months
 -->
@@ -113,12 +120,11 @@ As of July 1, 2020, we have 183 people signed up for our
 [BIDS email list](https://forms.gle/JFo2aEkYbKY4EbmE6) and 412 members on our
 [google group](https://groups.google.com/forum/#!forum/bids-discussion).
 
-
 ## How the BIDS team can help you
 
 If you are in the process of putting together a grant, **please email/message
-the pillar lead** that is most closely associated with your proposed grant or the 
-BIDS maintainers email ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) 
+the pillar lead** that is most closely associated with your proposed grant or the
+BIDS maintainers email ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com))
 so we may help support this. Our organization is structured into 3 pillars: standard,
 tools, and collaboration.
 
@@ -128,7 +134,7 @@ writers or related initiatives to receiving a letter of support from the
 Steering Group.
 
 Regarding **requesting a letter of support** - please submit a drafted letter of
-support to the collaboration lead or the BIDS maintainers email 
+support to the collaboration lead or the BIDS maintainers email
 ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)) so we may review internally.
 
 Please include how you plan on giving back to the BIDS community. The primary
@@ -146,9 +152,9 @@ For example, please find our [NIH-R24 Brain Initiative BIDS-Derivatives grant](h
 
 A listing of the previous grants can be found [here](../collaboration/acknowledgments.md)
 
-## Citing BIDS in your project 
-You can find information on citing BIDS standards for specific modalities and 
-citing BIDS in general 
+## Citing BIDS in your project
+You can find information on citing BIDS standards for specific modalities and
+citing BIDS in general
 [in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
 
 <!--

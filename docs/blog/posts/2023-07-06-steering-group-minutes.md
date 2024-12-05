@@ -108,7 +108,7 @@ categories:
 -   Do we need to introduce a new term? We could stick with p-seg (probabilistic) and d-seg (deterministic)
 -   Should we add this Derivatives output to the website?
 -   Where should it go? Create a PR or multiple PRs?
--   Suggestion: integrate the BIDS derivatives guidelines piecemeal into the BID general derivatives spec
+-   Suggestion: integrate the BIDS derivatives guidelines piecemeal into the BID general derivatives specification
 -   Maybe not the BEPs table info - table could go to the BIDs extensions
 
 ### Imaging Neuroscience Response regarding BIDS 'badge'
