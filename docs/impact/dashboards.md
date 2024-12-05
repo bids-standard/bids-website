@@ -3,12 +3,12 @@
 
 ### Datasets
 
-Over the years, the number of shared datasets available to the public has 
-greatly increased. At its heart, adoption of the BIDS standard across datasets 
-aids in the sharing of data and collaboration of research through the standardization 
-of descriptive files names and the organization of data. BIDS organized datasets are 
-available through public repositories such as [Openneuro.org](https://openneuro.org/) 
-and the number of publicly available BIDS datasets continues to grow every year. 
+Over the years, the number of shared datasets available to the public has
+greatly increased. At its heart, adoption of the BIDS standard across datasets
+aids in the sharing of data and collaboration of research through the standardization
+of descriptive files names and the organization of data. BIDS organized datasets are
+available through public repositories such as [Openneuro.org](https://openneuro.org/)
+and the number of publicly available BIDS datasets continues to grow every year.
 
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
@@ -18,9 +18,9 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 ### Citation Count
 
-As the adoption of the BIDS standard across neuroimaging datasets has grown, so have 
-citations for work that uses BIDS data and BIDS apps. To aid in searching for publications 
-relevant to the BIDS standard, we have included some examples of BIDS references that are 
+As the adoption of the BIDS standard across neuroimaging datasets has grown, so have
+citations for work that uses BIDS data and BIDS apps. To aid in searching for publications
+relevant to the BIDS standard, we have included some examples of BIDS references that are
 centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)
 
 <!-- use snippet to include a file
@@ -30,10 +30,10 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 --8<-- "tmp/citation_per_year.html"
 
 ### GitHub stars
-GitHub stars quantify the number of users that have marked a repository as a favorite and have 
-chosen to follow the changes made to that repository. Below is a table of GitHub repos that are 
-associated with the BIDS standard and their star count. By tracking repo interest via GitHub stars, 
-we can quantify which BIDS-associated tools are of the highest interest to the research community. 
+GitHub stars quantify the number of users that have marked a repository as a favorite and have
+chosen to follow the changes made to that repository. Below is a table of GitHub repos that are
+associated with the BIDS standard and their star count. By tracking repo interest via GitHub stars,
+we can quantify which BIDS-associated tools are of the highest interest to the research community.
 
 | repository        | stars                                                                                      |
 | ----------------- | ------------------------------------------------------------------------------------------ |
@@ -66,7 +66,7 @@ Our list of contributors are captured in our
 We update the contributor appendix every specification release. As of July 2023,
 we have over 300 credited contributors.
 
-The table below provides a brief account of the number of contributors per repository. Estimated demographics and affiliations 
+The table below provides a brief account of the number of contributors per repository. Estimated demographics and affiliations
 of contributors is also provided below.
 
 | repository        | all-contributors                                                                                                                  | github                                                                                            |
