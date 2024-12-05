@@ -1,5 +1,4 @@
-# Dashboards
-## Measuring BIDS Impact
+# Measuring BIDS Impact
 
 ### Datasets
 
