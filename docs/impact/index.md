@@ -89,7 +89,8 @@ We have a
 that is crowdsourcing imaging centers, institutes, databases around the world
 that have implemented BIDS as their organizational structure.
 
-We also measured the general BIDS impact across multiple domains (datasets, citations, etc). Read more on the [Impact Dashboards page](/docs/impact/dashboards.md).
+We also measured the general BIDS impact across multiple domains (datasets, citations...).
+Read more on the [Impact Dashboards page](./dashboards.md).
 
 ### Neurostars
 
