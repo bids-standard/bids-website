@@ -439,7 +439,7 @@ you can also use that schema to validate while editing
 by clicking `Options --> JSON schema --> URL`
 and give it the URL to the schema.
 
-See the example below using the [BIDS stats model schema](https://bids-standard.github.io/stats-models/BIDSStatsModel.json):
+See the example below using the [BIDS stats model schema](../../../standards/bids_stats_model/index.md):
 
 ![](../../../assets/img/schema_in_browser.png)
 
