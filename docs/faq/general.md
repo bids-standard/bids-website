@@ -87,7 +87,7 @@ sub-S003/
 
 ## How to import Excel files to TSV file?
 
-See [our sections on TSV files](../getting_started/folders_and_files/metadata.md#tsv-files) for more information.
+See [our sections on TSV files](../getting_started/folders_and_files/metadata/tsv.md) for more information.
 
 See also this bids tool to import and export a `participants.tsv` file:
 [bids-matlab-tools](https://github.com/sccn/bids-matlab-tools/blob/master/bids_spreadsheet2participants.m)
@@ -172,7 +172,7 @@ work with data in BIDS format. Check it out [here](../getting_started/resources/
 ## What is a `json` file?
 
 You can find more information about `json` (and `tsv`) files in the
-[Metadata-file-formats](../getting_started/folders_and_files/metadata.md#json) page.
+[Metadata-file-formats](../getting_started/folders_and_files/metadata/json.md) page.
 
 ## What liense should I choose for my dataset?
 

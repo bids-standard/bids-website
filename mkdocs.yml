@@ -110,7 +110,10 @@ nav:
         -   getting_started/folders_and_files/index.md
         -   getting_started/folders_and_files/folders.md
         -   getting_started/folders_and_files/files.md
-        -   getting_started/folders_and_files/metadata.md
+        -   Metadata:
+            - getting_started/folders_and_files/metadata/index.md
+            - JSON: getting_started/folders_and_files/metadata/json.md
+            - TSV: getting_started/folders_and_files/metadata/tsv.md
         -   getting_started/folders_and_files/derivatives.md
     -   Resources:
         -   getting_started/resources/index.md
@@ -184,6 +187,7 @@ theme:
     - announce.dismiss
     - content.action.edit
     - content.code.copy
+    - content.tabs.link
     - content.tooltips
     - footnotes
     - header.autohide
@@ -240,6 +244,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - tables
   - toc:
       anchorlink: true
