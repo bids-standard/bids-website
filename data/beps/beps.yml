@@ -539,7 +539,7 @@
     bids_maintainers:
     status:
     -   Approved on May 2024, inviting collaborators (please join)
-    -   BEP will follow EEG-BIDS with EMG-specific metadata, etc.
+    -   BEP will follow EEG-BIDS with EMG-specific metadata...
     -   Sensor placement schema being developed in collaboration with Motion-BIDS maintainers
     blocking:
     google_doc_created: 2023-01
