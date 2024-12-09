@@ -2,7 +2,8 @@
 
 import ruamel.yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from rich import print
+
+# from rich import print
 
 from bids_website.utils import root_dir
 
@@ -32,12 +33,12 @@ def generate_bep_page(bep: dict) -> str:
     )
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(content)
-    print(f" generated: {output_file}")
+    # print(f" generated: {output_file}")
 
 
 BEPS = yaml.load(WEBSITE_DATA_DIR / "beps" / "beps.yml")
 
 for bep in BEPS:
-    print(bep["number"])
+    # print(bep["number"])
     assert "google_doc" in bep or "pull_request" in bep
     generate_bep_page(bep)

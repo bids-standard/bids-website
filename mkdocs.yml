@@ -163,6 +163,11 @@ nav:
     -   collaboration/bids_github/CONTRIBUTING.md
     -   collaboration/bids_github/CODE_OF_CONDUCT.md
     -   collaboration/acknowledgments.md
+    -   Reports:
+        -   index.md
+        -   Google summer:
+            -   GSOC 2018: collaboration/reports/google_summer/2018-gsoc.md
+            -   GSOD 2024: collaboration/reports/google_summer/2024-gsod.md
 -   Extensions:
     -   extensions/index.md
     -   extensions/beps.md
