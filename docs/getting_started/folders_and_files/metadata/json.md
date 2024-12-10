@@ -181,7 +181,7 @@ Remember to install and call a package before using it.
     -   are no longer than 63 characters.
 
 Many parts of JSON files are often loaded as
-[`structures`](https://nl.mathworks.com/help/matlab/ref/struct.html) by MATLAB / Octave,
+[`structures`](https://www.mathworks.com/help/matlab/ref/struct.html) by MATLAB / Octave,
 where a `key` in a JSON file becomes `fieldname` in that structure.
 
 Here is an example with a simple `example.json`

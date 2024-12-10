@@ -26,6 +26,9 @@
     },
     {
       "pattern": "^https://human-organ-atlas.esrf.eu.*"
+    },
+    {
+      "pattern": "^https://www.mathworks.com.*"
     }
   ],
   "timeout": "20s",
