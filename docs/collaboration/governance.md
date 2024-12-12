@@ -62,7 +62,7 @@ Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
 libraries allow querying and manipulating BIDS-compliant datasets,
 [BIDS-Apps](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html) for running portable
 pipelines on validated BIDS datasets, and platforms like
-[OpenNeuro](https://openneuro.org/) store and serve BIDS datasets. Note
+[OpenNeuro][openneuro] store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance
 structure as BIDS, although the contributor and user base may largely
 overlap.

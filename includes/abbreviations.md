@@ -1,5 +1,14 @@
-<!-- *[EEG]:  -->
-<!-- *[MEG]:  -->
+[openneuro]: https://openneuro.org
+[bids_google_group]: https://groups.google.com/forum/#!forum/bids-discussion
+[brainhack_mattermost]: https://mattermost.brainhack.org
+[specification]: https://bids-specification.readthedocs.io
+[specification_gh]: https://github.com/bids-standard/bids-specification
+[bids_standard]: https://github.com/bids-standard
+[bids_examples_gh]: https://github.com/bids-standard/bids-examples)
+[bids_wesbite_gh]: https://github.com/bids-standard/bids-website
+
+
+<!-- tool tips  -->
 
 *[ASL]: Arterial Spin Labelling
 *[BEP]: BIDS Extension Proposal

@@ -126,7 +126,7 @@ Furthermore, I hope that we can extend BIDS with more raw data types, like eye-t
 
 I am a professor of psychology at Stanford.
 My main basic research interests are focused on the brain systems involved in decision making and executive function, primarily using fMRI.
-In the last decade I've become increasingly interested in meta-scientific topics focused on reproducibility and transparency, including involvement in a number of data sharing initiatives including [OpenNeuro](https://openneuro.org/), [NeuroVault](https://neurovault.org/), and [NeuroSynth](https://neurosynth.org/).
+In the last decade I've become increasingly interested in meta-scientific topics focused on reproducibility and transparency, including involvement in a number of data sharing initiatives including [OpenNeuro][openneuro], [NeuroVault](https://neurovault.org/), and [NeuroSynth](https://neurosynth.org/).
 
 #### How did you get involved in BIDS?
 

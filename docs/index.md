@@ -15,7 +15,7 @@ we describe a simple and easy to adopt way of organizing neuroimaging and behavi
 ![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-white_1000x477.png#only-dark)
 
 BIDS was heavily inspired by the format used internally by the OpenfMRI repository
-that is now known as [OpenNeuro](https://openneuro.org).
+that is now known as [OpenNeuro][openneuro].
 While working on BIDS we consulted many neuroscientists to make sure it covers most common experiments,
 but at the same time is intuitive and easy to adopt.
 The specification is intentionally based on simple file formats and folder structures
@@ -46,7 +46,7 @@ the [starter kit](./getting_started/index.md) with a simple explanation how to w
 <!-- markdown-link-check-enable -->
 the [BIDS validator](https://github.com/bids-standard/bids-validator) to automatically check datasets for adherence to the specification,
 [BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
-and [OpenNeuro](https://openneuro.org/) as a database for BIDS formatted datasets.
+and [OpenNeuro][openneuro] as a database for BIDS formatted datasets.
 
 A non-exhaustive list of further tools can be found in the [tools](./tools/index.md) section.
 
