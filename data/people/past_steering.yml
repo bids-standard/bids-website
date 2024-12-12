@@ -3,12 +3,6 @@
 #   members:
 #     - name:
 #       git:
-#       affiliation:
-#       twitter:
-#       researchgate:
-#       homepage:
-#       city:
-#       bio:
 
 -   group: past_steering
     members:
@@ -22,3 +16,5 @@
         git: guiomar
     -   name: Robert Oostenveld
         git: robertoostenveld
+    -   name: Ariel Rokem
+        git: arokem
