@@ -1,11 +1,11 @@
-[openneuro]: https://openneuro.org
+[bids_examples_gh]: https://github.com/bids-standard/bids-examples
 [bids_google_group]: https://groups.google.com/forum/#!forum/bids-discussion
+[bids_standard]: https://github.com/bids-standard
+[bids_wesbite_gh]: https://github.com/bids-standard/bids-website
 [brainhack_mattermost]: https://mattermost.brainhack.org
+[openneuro]: https://openneuro.org
 [specification]: https://bids-specification.readthedocs.io
 [specification_gh]: https://github.com/bids-standard/bids-specification
-[bids_standard]: https://github.com/bids-standard
-[bids_examples_gh]: https://github.com/bids-standard/bids-examples
-[bids_wesbite_gh]: https://github.com/bids-standard/bids-website
 
 
 <!-- tool tips  -->
