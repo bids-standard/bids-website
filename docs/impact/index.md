@@ -13,7 +13,7 @@ BIDS encompasses:
 
 -   100+ sample data models for BIDS specifications
     in the [bids-examples](../datasets/examples.md).
-    Read more about the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/).
+    Read more about the [BIDS specification][specification].
 
 -   2000 open datasets across repositories
     including [OpenNeuro](https://www.openneuro.org).
@@ -63,7 +63,7 @@ BIDS initiatives or database can be found
 ### Website and Specification traffic dashboards
 
 In order to measure the volume of traffic to our website and the
-[ReadTheDocs rendering of the specification](https://bids-specification.readthedocs.io/en/stable/),
+[ReadTheDocs rendering of the specification][specification],
 we utilize Google Analytics.
 
 For visualizing our metrics, we have put together 2 dashboards:

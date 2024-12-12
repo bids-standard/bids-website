@@ -17,11 +17,11 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neuroimaging data in a filesystem hierarchy and of the
 metadata associated with the imaging data.
 The current edition of the standard is available in
-[HTML](https://bids-specification.readthedocs.io/en/stable/) with all
+[HTML][specification] with all
 the previous editions available since October 2018 (listed in the
 [Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website) as PDFs.
 The development edition is available in
-[HTML](https://bids-specification.readthedocs.io/en/latest/).
+[HTML][specification].
 The specification is based in a [GitHub repository](https://github.com/bids-standard/bids-specification)
 and rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
 
@@ -323,7 +323,7 @@ The Steering Group evaluates:
 ### A. BEP Procedure: Key definitions
 
 **BIDS Specification** - This is the [BIDS
-specification](https://bids-specification.readthedocs.io/en/stable/).
+specification][specification].
 This covers the current raw data organization for brain MRI, MEG, EEG,
 and iEEG.
 

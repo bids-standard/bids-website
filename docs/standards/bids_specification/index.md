@@ -1,6 +1,6 @@
 # The BIDS specification
 
-The Brain Imaging Data Structure specification can be [browsed online](https://bids-specification.readthedocs.io/en/stable/).
+The Brain Imaging Data Structure specification can be [browsed online][specification].
 
 PDF versions of the specification
 can be found on zenodo at [https://doi.org/10.5281/zenodo.10175845](https://doi.org/10.5281/zenodo.10175845)
