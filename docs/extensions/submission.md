@@ -3,7 +3,7 @@ This document conveys the process for submitting a BEP to BIDS.
 This process assumes the BEP is ready to be opened as a pull
 request to the
 [`bids-specification` repository][specification_gh]
-under the [`bids-standard` organization](https://github.com/bids-standard).
+under the [`bids-standard` organization][bids_standard].
 Please reach out to
 [the BIDS maintainers](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group)
 to let them know you are reaching this step in the process. They will assist the

@@ -47,7 +47,7 @@ software tools,
 and general discussions.
 The relevant discussions are located in our
 [Google Group][bids_google_group],
-[GitHub organization](https://github.com/bids-standard),
+[GitHub organization][bids_standard],
 and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
@@ -435,7 +435,7 @@ contains links to all the BIDS informational and help materials.
 We encourage questions and discussion  on [NeuroStars, under the "bids"
 tag](https://neurostars.org/tags/bids), via the [BIDS mailing
 list][bids_google_group], or in
-[GitHub issues](https://github.com/bids-standard/) within the
+[GitHub issues][bids_standard] within the
 appropriate repository.
 
 We prefer questions to be asked via
