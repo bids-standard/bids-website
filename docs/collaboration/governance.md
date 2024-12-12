@@ -19,7 +19,7 @@ metadata associated with the imaging data.
 The current edition of the standard is available in
 [HTML][specification] with all
 the previous editions available since October 2018 (listed in the
-[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website) as PDFs.
+[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository][bids_wesbite_gh] as PDFs.
 The development edition is available in
 [HTML][specification].
 The specification is based in a [GitHub repository][specification_gh]
