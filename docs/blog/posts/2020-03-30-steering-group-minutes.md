@@ -12,7 +12,7 @@ categories:
 
 We discussed how to move forward with implementing the author lists on [Zenodo](https://zenodo.org/record/3686062) from our pdf specification.
 We want to provide guidance on how we landed on our decision: a single author “BIDS Contributing Group”.
-This will be opened as a proposal with a request for comments (RFC) on the [BIDS-Specification repository](https://github.com/bids-standard/bids-specification).
+This will be opened as a proposal with a request for comments (RFC) on the [BIDS-Specification repository][specification_gh].
 This is important to deploy with the community’s approval. This may give way for a stronger contributor tracking system.
 
 We clarified the format and points for the monthly Maintainers update.

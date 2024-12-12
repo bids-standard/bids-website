@@ -112,7 +112,7 @@ user@host:~/bids-examples$ bids-validator pet001
     As stated with the browser version above, one may elect to ignore warnings,
     but the information provided via the validator should help to pinpoint
     where and how to resolve some of these warnings.
-    When in doubt consult the [BIDS specification](https://bids-specification.readthedocs.io/en/latest/)
+    When in doubt consult the [BIDS specification][specification]
 
     ```bash
     [WARNING] JSON_KEY_RECOMMENDED A JSON file is missing a key listed as recommended.

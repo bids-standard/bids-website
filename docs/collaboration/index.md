@@ -27,12 +27,12 @@ Below is a list of common resources where users can get involved in making the B
     and proposing changes via
     [Pull Requests](https://github.com/bids-standard/bids-specification/pulls){:target="_blank"}
     on
-    [GitHub](https://github.com/bids-standard/bids-specification){:target="_blank"}.
+    [GitHub][specification_gh]{:target="_blank"}.
 
 -   To make improvements to the website that you are reading right now, you can also open an
     [Issue](https://github.com/bids-standard/bids-website/issues){:target="_blank"}
     and propose changes via Pull Requests at the
-    [BIDS website GitHub repository](https://github.com/bids-standard/bids-website){:target="_blank"}.
+    [BIDS website GitHub repository][bids_wesbite_gh]{:target="_blank"}.
 
 <u> Become a part of the BIDS Community </u>
 

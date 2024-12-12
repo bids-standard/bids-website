@@ -71,7 +71,7 @@ allowing more people to get involved.
     To obtain a number for your BEP, follow the previous steps
     and then [open a new issue](https://github.com/bids-standard/bids-website/issues)
     or [submit a pull request](https://github.com/bids-standard/bids-website/pulls) to the
-    [website GitHub repository](https://github.com/bids-standard/bids-website/),
+    [website GitHub repository][bids_wesbite_gh],
     cross-linking to any other already existing issues.
 
 1.  Create a draft of your extension by discussing among colleagues. The
@@ -83,7 +83,7 @@ allowing more people to get involved.
 1.  Share the draft (remember to
     [share a link that allows anyone to comment](https://support.google.com/docs/answer/2494822?co=GENIE.Platform%3DDesktop&hl=en))
     with the
-    [bids-discussion mailing list](https://groups.google.com/forum/#!forum/bids-discussion)
+    [bids-discussion mailing list][bids_google_group]
     and ask for comments.
 
 1.  Incorporate the feedback and strive for consensus.

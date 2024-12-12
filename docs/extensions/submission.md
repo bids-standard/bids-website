@@ -2,8 +2,8 @@ This document conveys the process for submitting a BEP to BIDS.
 
 This process assumes the BEP is ready to be opened as a pull
 request to the
-[`bids-specification` repository](https://github.com/bids-standard/bids-specification)
-under the [`bids-standard` organization](https://github.com/bids-standard).
+[`bids-specification` repository][specification_gh]
+under the [`bids-standard` organization][bids_standard].
 Please reach out to
 [the BIDS maintainers](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group)
 to let them know you are reaching this step in the process. They will assist the
@@ -18,7 +18,7 @@ merging of the BEP into the Specification.
     to support the BEP
 
 1.  Examples (to test the validator is working properly) added to
-    [`bids-examples`](https://github.com/bids-standard/bids-examples)
+    [`bids-examples`][bids_examples_gh]
 
 ## SUGGESTED deliverables
 
@@ -26,7 +26,7 @@ merging of the BEP into the Specification.
     writing suggestion below)
 
 1.  Press release for the
-    [`bids-website`](https://github.com/bids-standard/bids-website)
+    [`bids-website`][bids_wesbite_gh]
     [news section](https://github.com/bids-standard/bids-website/tree/gh-pages/_posts)
 
 ## Giving collaborators additional permissions within our `bids-standard` organization

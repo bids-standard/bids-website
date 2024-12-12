@@ -9,7 +9,7 @@ Many public repositories for neuroimaging data are accepting (and in some cases 
 data submitted in BIDS format. Below is a small sample of some main resources for finding
 BIDS datasets that may be used in your analyses.
 
-[OpenNeuro](https://openneuro.org/):
+[OpenNeuro][openneuro]:
 If you're looking for full data files to run the validator on or simply compare to your
 own _bidsified_ data try searching here. Datasets here are (by and large) publicly available and conform to BIDS.
 

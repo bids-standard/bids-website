@@ -17,12 +17,12 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neuroimaging data in a filesystem hierarchy and of the
 metadata associated with the imaging data.
 The current edition of the standard is available in
-[HTML](https://bids-specification.readthedocs.io/en/stable/) with all
+[HTML][specification] with all
 the previous editions available since October 2018 (listed in the
-[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website) as PDFs.
+[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository][bids_wesbite_gh] as PDFs.
 The development edition is available in
-[HTML](https://bids-specification.readthedocs.io/en/latest/).
-The specification is based in a [GitHub repository](https://github.com/bids-standard/bids-specification)
+[HTML][specification].
+The specification is based in a [GitHub repository][specification_gh]
 and rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
 
 We strive for community consensus in decision making.
@@ -43,11 +43,11 @@ specification development and maintenance,
 [BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
 [starter kits](https://bids-standard.github.io/bids-starter-kit/),
-[examples](https://github.com/bids-standard/bids-examples),
+[examples][bids_examples_gh],
 and general discussions.
 The relevant discussions are located in our
-[Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
-[GitHub organization](https://github.com/bids-standard),
+[Google Group][bids_google_group],
+[GitHub organization][bids_standard],
 and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
@@ -62,7 +62,7 @@ Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
 libraries allow querying and manipulating BIDS-compliant datasets,
 [BIDS-Apps](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html) for running portable
 pipelines on validated BIDS datasets, and platforms like
-[OpenNeuro](https://openneuro.org/) store and serve BIDS datasets. Note
+[OpenNeuro][openneuro] store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance
 structure as BIDS, although the contributor and user base may largely
 overlap.
@@ -153,7 +153,7 @@ standard.
 ### BIDS Maintainers Group
 
 This group is responsible for maintaining the [BIDS specification on
-GitHub](https://github.com/bids-standard/bids-specification). The Lead
+GitHub][specification_gh]. The Lead
 Maintainer and the Maintainers Group will determine how they organize
 their work, detailed in the [BIDS Maintainers guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIjbk4Pfo/edit) and in accordance with the BIDS Code of Conduct.
 The maintainers guide is subject to Steering Group approval and amendment.
@@ -179,7 +179,7 @@ However, you may receive a more timely response when pinging them on one of the 
 
 This group consists of individuals who have contributed to the BIDS
 community. Group members are identified on the [BIDS
-contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html) list,
+contributors](https://bids-specification.readthedocs.io/en/latest/appendices/contributors.html) list,
 a list that is intended to be inclusive of all forms of engagement with the BIDS community,
 and that contributors are encouraged to update via the
 [specification wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors).
@@ -234,8 +234,8 @@ The working/interest group formation is formalized
 through an open letter via a "read-only" Google Document addressed to the BIDS Steering Group.
 The open letter will be posted on:
 
--   the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
--   [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
+-   the [BIDS-Specification GitHub repository][specification_gh],
+-   [Google Group][bids_google_group],
 -   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
 
 This proposal will state what their group aims and goals are.
@@ -300,7 +300,7 @@ BEP to a Proposed BEP:
 
 Upon a successful Draft BEP review, the BEP will be converted from a
 Google document to a pull request for the
-[BIDS standard](https://github.com/bids-standard/bids-specification).
+[BIDS standard][specification_gh].
 This will enable further community feedback on the Proposed BEP. Tools
 may begin integrating the Proposed BEP specification.
 
@@ -323,7 +323,7 @@ The Steering Group evaluates:
 ### A. BEP Procedure: Key definitions
 
 **BIDS Specification** - This is the [BIDS
-specification](https://bids-specification.readthedocs.io/en/stable/).
+specification][specification].
 This covers the current raw data organization for brain MRI, MEG, EEG,
 and iEEG.
 
@@ -349,7 +349,7 @@ Proposed BEP.
 BEP, it becomes a specific addition and/or modification of BIDS, in the
 form of a Proposed BEP. At this time, the Proposed BEP will take the
 form of a pull request on the [BIDS GitHub
-repository](https://github.com/bids-standard/bids-specification).
+repository][specification_gh].
 
 **Proposed BEP review** - This review is performed by the BIDS Steering
 Group on the Proposed BEP. The review aims to ensure the community input
@@ -434,8 +434,8 @@ contains links to all the BIDS informational and help materials.
 
 We encourage questions and discussion  on [NeuroStars, under the "bids"
 tag](https://neurostars.org/tags/bids), via the [BIDS mailing
-list](https://groups.google.com/forum/#!forum/bids-discussion), or in
-[GitHub issues](https://github.com/bids-standard/) within the
+list][bids_google_group], or in
+[GitHub issues][bids_standard] within the
 appropriate repository.
 
 We prefer questions to be asked via

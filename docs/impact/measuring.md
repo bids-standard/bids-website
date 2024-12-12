@@ -6,7 +6,7 @@ Over the years, the number of shared datasets available to the public has
 greatly increased. At its heart, adoption of the BIDS standard across datasets
 aids in the sharing of data and collaboration of research through the standardization
 of descriptive files names and the organization of data. BIDS organized datasets are
-available through public repositories such as [Openneuro.org](https://openneuro.org/)
+available through public repositories such as [Openneuro.org][openneuro]
 and the number of publicly available BIDS datasets continues to grow every year.
 
 <!-- use snippet to include a file
@@ -62,7 +62,7 @@ For the number of docker pulls of specific BIDS apps, please check the
 ## Contributors
 
 Our list of contributors are captured in our
-[contributor appendix](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html).
+[contributor appendix](https://bids-specification.readthedocs.io/en/latest/appendices/contributors.html).
 We update the contributor appendix every specification release. As of July 2023,
 we have over 300 credited contributors.
 

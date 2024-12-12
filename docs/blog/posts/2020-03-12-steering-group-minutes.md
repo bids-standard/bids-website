@@ -21,7 +21,7 @@ We discussed generating an example slide deck that community members can use (or
 We discussed considerations for when to open a repository under the BIDS standard organization on GitHub.
 Previously, community members have opened repositories under the BIDS
 [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations)
-named [`bids-standard`](https://github.com/bids-standard).
+named [`bids-standard`][bids_standard].
 We want to codify guidelines to govern this.
 The plan is that there should be multiple people committed to the repository (otherwise it is better under the personal GitHub account), the maintainers should be clearly identifiable (for example, as a
 [CODEOWNERS file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#about-code-owners)
