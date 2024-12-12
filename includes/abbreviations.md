@@ -4,7 +4,7 @@
 [specification]: https://bids-specification.readthedocs.io
 [specification_gh]: https://github.com/bids-standard/bids-specification
 [bids_standard]: https://github.com/bids-standard
-[bids_examples_gh]: https://github.com/bids-standard/bids-examples)
+[bids_examples_gh]: https://github.com/bids-standard/bids-examples
 [bids_wesbite_gh]: https://github.com/bids-standard/bids-website
 
 

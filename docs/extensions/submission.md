@@ -18,7 +18,7 @@ merging of the BEP into the Specification.
     to support the BEP
 
 1.  Examples (to test the validator is working properly) added to
-    [`bids-examples`](https://github.com/bids-standard/bids-examples)
+    [`bids-examples`][bids_examples_gh]
 
 ## SUGGESTED deliverables
 

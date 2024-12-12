@@ -43,7 +43,7 @@ specification development and maintenance,
 [BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
 [starter kits](https://bids-standard.github.io/bids-starter-kit/),
-[examples](https://github.com/bids-standard/bids-examples),
+[examples][bids_examples_gh],
 and general discussions.
 The relevant discussions are located in our
 [Google Group][bids_google_group],
