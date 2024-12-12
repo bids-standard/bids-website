@@ -29,7 +29,7 @@ The process will be:
 
 1.  merging in the BEP constructed examples to [BIDS-examples](https://github.com/bids-standard/bids-examples)
 1.  merge the validator extension into [BIDS-validator](https://github.com/bids-standard/bids-validator), and
-1.  merge the BEP into [BIDS-specification](https://github.com/bids-standard/bids-specification)
+1.  merge the BEP into [BIDS-specification][specification_gh]
 
 The Steering Group gave direction on handling author lists on Zenodo - make it a single author:
 “BIDS Contributors Group” as defined in the [governance document](https://docs.google.com/document/d/1R-J2lL9V_wIkYhye4zH-feyl4P4J8NyO40rIYyY141o/edit).
@@ -68,7 +68,7 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 -   For future BEPs, they will submit their examples to [BIDS-examples](https://github.com/bids-standard/bids-examples)
     for review by the Steering Group and confirm the [validator](https://github.com/bids-standard/bids-validator) has been extended properly.
     The BEP leads can leave it as a draft PR.
-    It was determined that opening the PR from a branch of the [BIDS specification repository](https://github.com/bids-standard/bids-specification)
+    It was determined that opening the PR from a branch of the [BIDS specification repository][specification_gh]
     should be done allowing us to render the extension via ReadTheDocs.
 
     -   Genetic Information was in the BEP lead's fork of BIDS-examples (after the meeting a [PR was opened](https://github.com/bids-standard/bids-examples/pull/178)).

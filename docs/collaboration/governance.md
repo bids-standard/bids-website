@@ -22,7 +22,7 @@ the previous editions available since October 2018 (listed in the
 [Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository](https://github.com/bids-standard/bids-website) as PDFs.
 The development edition is available in
 [HTML][specification].
-The specification is based in a [GitHub repository](https://github.com/bids-standard/bids-specification)
+The specification is based in a [GitHub repository][specification_gh]
 and rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
 
 We strive for community consensus in decision making.
@@ -153,7 +153,7 @@ standard.
 ### BIDS Maintainers Group
 
 This group is responsible for maintaining the [BIDS specification on
-GitHub](https://github.com/bids-standard/bids-specification). The Lead
+GitHub][specification_gh]. The Lead
 Maintainer and the Maintainers Group will determine how they organize
 their work, detailed in the [BIDS Maintainers guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIjbk4Pfo/edit) and in accordance with the BIDS Code of Conduct.
 The maintainers guide is subject to Steering Group approval and amendment.
@@ -234,7 +234,7 @@ The working/interest group formation is formalized
 through an open letter via a "read-only" Google Document addressed to the BIDS Steering Group.
 The open letter will be posted on:
 
--   the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
+-   the [BIDS-Specification GitHub repository][specification_gh],
 -   [Google Group][bids_google_group],
 -   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
 
@@ -300,7 +300,7 @@ BEP to a Proposed BEP:
 
 Upon a successful Draft BEP review, the BEP will be converted from a
 Google document to a pull request for the
-[BIDS standard](https://github.com/bids-standard/bids-specification).
+[BIDS standard][specification_gh].
 This will enable further community feedback on the Proposed BEP. Tools
 may begin integrating the Proposed BEP specification.
 
@@ -349,7 +349,7 @@ Proposed BEP.
 BEP, it becomes a specific addition and/or modification of BIDS, in the
 form of a Proposed BEP. At this time, the Proposed BEP will take the
 form of a pull request on the [BIDS GitHub
-repository](https://github.com/bids-standard/bids-specification).
+repository][specification_gh].
 
 **Proposed BEP review** - This review is performed by the BIDS Steering
 Group on the Proposed BEP. The review aims to ensure the community input

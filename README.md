@@ -32,7 +32,7 @@ The specification is hosted on [https://bids-specification.readthedocs.io](https
 To contribute to the specification,
 please submit an [issue](https://github.com/bids-standard/bids-specification/issues)
 or send a [pull request](https://github.com/bids-standard/bids-specification/pulls)
-on the [bids-specification](https://github.com/bids-standard/bids-specification) repository.
+on the [bids-specification][specification_gh] repository.
 
 ## Asking questions about BIDS
 
