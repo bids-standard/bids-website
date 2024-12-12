@@ -26,7 +26,7 @@ Some example questions that have already been answered include:
 
     [:simple-mattermost: Chat on mattermost](https://mattermost.brainhack.org/brainhack/channels/bids_general){ .md-button }
 
-    You can also come chat on the [Brainhack mattermost](https://mattermost.brainhack.org/) on the `~bids_general` channel.
+    You can also come chat on the [Brainhack mattermost][brainhack_mattermost] on the `~bids_general` channel.
 
 -   :simple-google:{ .lg .middle } **Mailing list**
 
