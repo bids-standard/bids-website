@@ -83,7 +83,7 @@ allowing more people to get involved.
 1.  Share the draft (remember to
     [share a link that allows anyone to comment](https://support.google.com/docs/answer/2494822?co=GENIE.Platform%3DDesktop&hl=en))
     with the
-    [bids-discussion mailing list](https://groups.google.com/forum/#!forum/bids-discussion)
+    [bids-discussion mailing list][bids_google_group]
     and ask for comments.
 
 1.  Incorporate the feedback and strive for consensus.

@@ -119,7 +119,7 @@ TODO add automation to update every 6 months
 
 As of July 1, 2020, we have 183 people signed up for our
 [BIDS email list](https://forms.gle/JFo2aEkYbKY4EbmE6) and 412 members on our
-[google group](https://groups.google.com/forum/#!forum/bids-discussion).
+[google group][bids_google_group].
 
 ## How the BIDS team can help you
 

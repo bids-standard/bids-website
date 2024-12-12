@@ -19,7 +19,7 @@ to pilot at NRM and OHBM in June.
 
 We also have a [list of channels](https://docs.google.com/spreadsheets/d/16SAGK3zG93WM2EWuoZDcRIC7ygPc5b7PDNGpFyC3obA/edit#gid=0)
 to share BIDS related information on. The have a plan for handling non-BIDS related information on our channels
-is to share on our [google group](https://groups.google.com/forum/#!forum/bids-discussion).
+is to share on our [google group][bids_google_group].
 
 The attending members of the Steering Group gave approval for moving forward
 with completing the [Genetic Information BEP](https://github.com/bids-standard/bids-specification/pull/395).
@@ -79,7 +79,7 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 
 -   The Steering Group discussed where to share non-BIDS related information.
 
--   The consensus was to share on the [bids-discussion](https://groups.google.com/forum/#!forum/bids-discussion) Google group channel.
+-   The consensus was to share on the [bids-discussion][bids_google_group] Google group channel.
 
 -   We brainstormed what may be the related initiatives to keep aware of. FF contacted INCF to see if they have information regarding this. Please see the [INCF blog](https://www.incf.org/blogs-list).
 

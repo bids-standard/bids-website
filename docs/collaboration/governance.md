@@ -46,7 +46,7 @@ software tools,
 [examples](https://github.com/bids-standard/bids-examples),
 and general discussions.
 The relevant discussions are located in our
-[Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
+[Google Group][bids_google_group],
 [GitHub organization](https://github.com/bids-standard),
 and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
@@ -235,7 +235,7 @@ through an open letter via a "read-only" Google Document addressed to the BIDS S
 The open letter will be posted on:
 
 -   the [BIDS-Specification GitHub repository](https://github.com/bids-standard/bids-specification),
--   [Google Group](https://groups.google.com/forum/#!forum/bids-discussion),
+-   [Google Group][bids_google_group],
 -   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
 
 This proposal will state what their group aims and goals are.
@@ -434,7 +434,7 @@ contains links to all the BIDS informational and help materials.
 
 We encourage questions and discussion  on [NeuroStars, under the "bids"
 tag](https://neurostars.org/tags/bids), via the [BIDS mailing
-list](https://groups.google.com/forum/#!forum/bids-discussion), or in
+list][bids_google_group], or in
 [GitHub issues](https://github.com/bids-standard/) within the
 appropriate repository.
 
