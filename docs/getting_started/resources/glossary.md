@@ -3,7 +3,7 @@
 ## Simple definitions for any BIDS related terms
 
 Make sure to also check the
-[official glossary](https://bids-specification.readthedocs.io/en/latest/99-appendices/14-glossary.html)
+[official glossary](https://bids-specification.readthedocs.io/en/latest/glossary.html)
 that lists all the terms of the BIDS specification.
 
 We know that when you're getting started with something new there are often jargon-y words

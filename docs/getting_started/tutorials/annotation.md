@@ -127,7 +127,7 @@ without having meaningful information about the dataset events.
 
 #### Additional information
 See [Task events](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/05-task-events.html) and
-[Appendix III: Hierarchical Event Descriptors](https://bids-specification.readthedocs.io/en/stable/99-appendices/03-hed.html)
+[Appendix III: Hierarchical Event Descriptors](https://bids-specification.readthedocs.io/en/stable/appendices/hed.html)
 in the [BIDS specification][specification]
 for an overview of events before getting started with your own annotation.
 

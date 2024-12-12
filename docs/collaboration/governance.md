@@ -179,7 +179,7 @@ However, you may receive a more timely response when pinging them on one of the 
 
 This group consists of individuals who have contributed to the BIDS
 community. Group members are identified on the [BIDS
-contributors](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html) list,
+contributors](https://bids-specification.readthedocs.io/en/latest/appendices/contributors.html) list,
 a list that is intended to be inclusive of all forms of engagement with the BIDS community,
 and that contributors are encouraged to update via the
 [specification wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors).

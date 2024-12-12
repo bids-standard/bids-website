@@ -62,7 +62,7 @@ For the number of docker pulls of specific BIDS apps, please check the
 ## Contributors
 
 Our list of contributors are captured in our
-[contributor appendix](https://bids-specification.readthedocs.io/en/latest/99-appendices/01-contributors.html).
+[contributor appendix](https://bids-specification.readthedocs.io/en/latest/appendices/contributors.html).
 We update the contributor appendix every specification release. As of July 2023,
 we have over 300 credited contributors.
 
