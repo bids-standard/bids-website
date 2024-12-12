@@ -29,6 +29,9 @@
     },
     {
       "pattern": "^https://www.mathworks.com.*"
+    },
+    {
+      "pattern": "^https://www.seedsforchange.org.uk/consensus"
     }
   ],
   "timeout": "20s",
