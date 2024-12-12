@@ -21,17 +21,17 @@ A little bit about what Franco is bringing to the Steering Group:
 >
 > Moving forward, BIDS faces two main challenges:
 >
->1. Ensuring Comprehensive Data Representation: BIDS must evolve to encompass data types that are routinely published in scientific papers.
->Through my work on the [BIDS Connectivity Project](https://pestillilab.github.io/bids-connectivity/), we have advanced the development of six BIDS Extension Proposals (BEPs), contributing to crucial updates in BIDS governance principles.
->These efforts will help BIDS remain relevant and applicable as new methodologies and technologies emerge.
+> 1.  Ensuring Comprehensive Data Representation: BIDS must evolve to encompass data types that are routinely published in scientific papers.
+>     Through my work on the [BIDS Connectivity Project](https://pestillilab.github.io/bids-connectivity/), we have advanced the development of six BIDS Extension Proposals (BEPs), contributing to crucial updates in BIDS governance principles.
+>     These efforts will help BIDS remain relevant and applicable as new methodologies and technologies emerge.
 >
->1. Expanding Beyond Neuroimaging: BIDS has enormous potential to benefit other scientific communities beyond neuroimaging.
->My involvement in developing new data types for U.S.-based efforts has shown that BIDS could be adapted for broader scientific applications, especially as we move toward BIDS 2.0, incorporating automation and AI.
->By doing so, we can extend the BIDS framework to support an even more diverse range of data and foster interdisciplinary collaboration.
+> 1.  Expanding Beyond Neuroimaging: BIDS has enormous potential to benefit other scientific communities beyond neuroimaging.
+>     My involvement in developing new data types for U.S.-based efforts has shown that BIDS could be adapted for broader scientific applications, especially as we move toward BIDS 2.0, incorporating automation and AI.
+>     By doing so, we can extend the BIDS framework to support an even more diverse range of data and foster interdisciplinary collaboration.
 >
->I have also led efforts to secure funding to support BIDS initiatives and create tools, such as [ezBIDS on brainlife.io](https://brainlife.io/ezbids/) (widely used for data standardization across the U.S., Africa, and Europe).
+> I have also led efforts to secure funding to support BIDS initiatives and create tools, such as [ezBIDS on brainlife.io](https://brainlife.io/ezbids/) (widely used for data standardization across the U.S., Africa, and Europe).
 >
->I would look forward to contributing to the growth of BIDS, ensuring it remains adaptable and beneficial to a global scientific community.
->I am particularly excited about the opportunity to participate in shaping the future vision of BIDS, including BIDS 2.0 and its applications in automation and AI.
+> I would look forward to contributing to the growth of BIDS, ensuring it remains adaptable and beneficial to a global scientific community.
+> I am particularly excited about the opportunity to participate in shaping the future vision of BIDS, including BIDS 2.0 and its applications in automation and AI.
 
 Thanks to all contributors for your participation, and congratulations to Franco!
