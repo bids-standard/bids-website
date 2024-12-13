@@ -108,7 +108,7 @@ categories:
 
 -   NIH DCC - BIDS will need microsopy.
 
-## 1Additional Discussion
+## Additional Discussion
 
 -   we decided to move to mattermost a while ago but never adopted it, let's do it now.
 -   AR added steering group members, should all members be allowed to be in the group?
