@@ -35,7 +35,7 @@ categories:
 
 -   RO: This is a newer format that is potentially being added last minute, has not yet been community vetted.
 
--   YH: Should we establish requirement for adding a new file format? e.g. adoption
+-   YH: Should we establish requirement for adding a new file format? For example, adoption.
 
 -   RO: Wide adopt is a current criteria, and its not yet met.
     It should also add additional value, and that has not yet been established.
