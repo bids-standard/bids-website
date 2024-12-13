@@ -20,10 +20,15 @@ categories:
 
 -   should there be another in-person sprint for the maintainers group?
     -   support for making the meeting smaller than the previous meeting
+
 -   is there funding for this?
+
 -   suggestion:  select a few BEPs to work on to complete during the meeting
+
 -   suggestion: recap this discussion with the full steering group and also provide a proposal for the meeting.
+
 -   AG suggestion:  host meeting in Pitsburg, potentially more affordable location. AG will follow up with the other maintainers.
+
 -   there were only 10 responses to the survey about the new BIDS website, they would like more.
     -   DH: not as many people use X/twitter, could they use LinkedIn?
     -   AG: will create a text blurb for people to share on LinkedIn
