@@ -1,6 +1,9 @@
 [![Documentation Status](https://readthedocs.org/projects/bids-website/badge/?version=latest)](https://bids-website.readthedocs.io/en/latest/?badge=latest)
-[![Check Markdown links](https://github.com/bids-standard/bids-website/actions/workflows/check_md_links.yml/badge.svg?branch=main)](https://github.com/bids-standard/bids-website/actions/workflows/check_md_links.yml)
 [![Validation](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml/badge.svg?branch=main)](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml)
+[![Bluesky Follow](https://img.shields.io/badge/bluesky-Follow_bidsstandard-blue?logo=bluesky)](https://bsky.app/profile/bidsstandard.bsky.social)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCxZUcYfd_nvIVWAbzRB1tlw)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109520103085644521?domain=https%3A%2F%2Ffosstodon.org%2F)](https://fosstodon.org/@bidsstandard)
+[![@BIDSstandard](https://img.shields.io/twitter/follow/bidsstandard.svg?style=social)](https://x.com/BIDSstandard)
 
 <img
     src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_white_transparent_background_crop.png#gh-dark-mode-only"
