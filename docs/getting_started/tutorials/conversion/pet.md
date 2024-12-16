@@ -1092,7 +1092,7 @@ machine:NewBidsDataSet user$ tree
 The above structure is a valid BIDS dataset,
 however the bids-validator is a much more accurate and trustworthy method
 for making that determination.
-Follow the instructions [here](https://github.com/bids-standard/bids-validator)
+Follow the instructions [here][bids_validator_gh]
 to collect and install the validator.
 
 ### Validating your new dataset
@@ -1133,7 +1133,7 @@ with the specification and ensure that your data is properly formatted.
 Some useful tools and resources that have been used in this document are as
 follows:
 
--   [BIDS Validator](https://github.com/bids-standard/bids-validator), which fully supports PET
+-   [BIDS Validator][bids_validator_gh], which fully supports PET
 
 -   [PET2BIDS][pet2bids] is a MATLAB and Python utility
     for converting your data to PET BIDS format

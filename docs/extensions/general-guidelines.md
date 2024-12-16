@@ -71,7 +71,7 @@ allowing more people to get involved.
     To obtain a number for your BEP, follow the previous steps
     and then [open a new issue](https://github.com/bids-standard/bids-website/issues)
     or [submit a pull request](https://github.com/bids-standard/bids-website/pulls) to the
-    [website GitHub repository][bids_wesbite_gh],
+    [website GitHub repository][bids_website_gh],
     cross-linking to any other already existing issues.
 
 1.  Create a draft of your extension by discussing among colleagues. The
@@ -104,7 +104,7 @@ allowing more people to get involved.
     any step in the preparation of these datasets.
 
 1.  If necessary, contribute a pull request
-    to the [BIDS Validator repository](https://github.com/bids-standard/bids-validator)
+    to the [BIDS Validator repository][bids_validator_gh]
     as well to incorporate the extension.
 
 ![bep_process](../assets/img/bep_process.png)

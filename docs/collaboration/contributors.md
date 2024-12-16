@@ -13,6 +13,8 @@ check our [contributing guidelines about this](https://bids-website.readthedocs.
 
 ## List of contributors
 
+To see some statistics about our contributors, [check our impact section](../impact/measuring.md#contributors)
+
 Thanks goes to these wonderful people.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

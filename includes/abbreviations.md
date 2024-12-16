@@ -1,7 +1,9 @@
 [bids_examples_gh]: https://github.com/bids-standard/bids-examples
 [bids_google_group]: https://groups.google.com/forum/#!forum/bids-discussion
 [bids_standard]: https://github.com/bids-standard
-[bids_wesbite_gh]: https://github.com/bids-standard/bids-website
+[bids_validator]: http://bids-standard.github.io/bids-validator
+[bids_validator_gh]: https://github.com/bids-standard/bids-validator
+[bids_website_gh]: https://github.com/bids-standard/bids-website
 [brainhack_mattermost]: https://mattermost.brainhack.org
 [openneuro]: https://openneuro.org
 [specification]: https://bids-specification.readthedocs.io

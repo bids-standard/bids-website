@@ -1,6 +1,6 @@
 # BIDS validation
 
-The [BIDS Validator](https://github.com/bids-standard/bids-validator) is a tool
+The [BIDS Validator][bids_validator_gh] is a tool
 that checks if a dataset is compliant with the BIDS standard.
 The validator is available for use within several different environments
 to best suit individual user preferences and use cases, those versions are:
@@ -11,7 +11,7 @@ to best suit individual user preferences and use cases, those versions are:
 -   A [python library](https://github.com/bids-standard/python-validator) installable from [pypi](https://pypi.org/project/bids-validator/) or [conda-forge](https://anaconda.org/conda-forge/bids-validator)
 
 Instructions to install and use these versions can be found
-within the [quickstart guide](https://github.com/bids-standard/bids-validator)
+within the [quickstart guide][bids_validator_gh]
 at the BIDS Validator repository.
 
 !!! note

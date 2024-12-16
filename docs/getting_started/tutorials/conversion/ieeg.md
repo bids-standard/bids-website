@@ -170,7 +170,7 @@ iEEGProject
 
 In order to verify that a dataset adheres to the BIDS specification,
 we need to validate the structure, naming conventions, and information inside the dataset.
-The [BIDS validator](https://github.com/bids-standard/bids-validator)
+The [BIDS validator][bids_validator_gh]
 is a web- and command line-based tool that can validate whether a dataset is BIDS compliant.
 As a part of the iEEG extension to the BIDS specification,
 this validator has been updated to check for new conventions related to iEEG data.

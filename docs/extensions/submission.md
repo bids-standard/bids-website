@@ -26,7 +26,7 @@ merging of the BEP into the Specification.
     writing suggestion below)
 
 1.  Press release for the
-    [`bids-website`][bids_wesbite_gh]
+    [`bids-website`][bids_website_gh]
     [news section](https://github.com/bids-standard/bids-website/tree/gh-pages/_posts)
 
 ## Giving collaborators additional permissions within our `bids-standard` organization

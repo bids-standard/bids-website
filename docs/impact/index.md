@@ -26,7 +26,7 @@ BIDS encompasses:
 -   ~ 30,000 annual website visits from a very large community of neuroscience researchers
     actively consulting the BIDS specifications (April 2023-24).
 
--   Over 300 BIDS contributors currently supporting
+-   Over 300 [BIDS contributors](../collaboration/contributors.md) currently supporting
     and maintaining BIDS community resources and tools.
 
 -   Open working processes through online collaborative tools

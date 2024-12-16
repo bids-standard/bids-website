@@ -19,7 +19,7 @@ metadata associated with the imaging data.
 The current edition of the standard is available in
 [HTML][specification] with all
 the previous editions available since October 2018 (listed in the
-[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository][bids_wesbite_gh] as PDFs.
+[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository][bids_website_gh] as PDFs.
 The development edition is available in
 [HTML][specification].
 The specification is based in a [GitHub repository][specification_gh]
@@ -55,7 +55,7 @@ software tools and platforms that facilitate the validation and ease the
 use of BIDS-formatted datasets.
 BIDS converters (for example, [HeuDiConv](https://github.com/nipy/heudiconv)) enable the streamlined
 conversion of raw imaging files (for example, DICOMs) into a BIDS dataset, the
-[BIDS validator](http://bids-standard.github.io/bids-validator/) allows
+[BIDS validator][bids_validator] allows
 users to confirm that a given dataset complies with the current edition
 of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
 Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
