@@ -83,18 +83,18 @@ Here is a non-exhaustive list of imaging centers, institutes, databases
 around the world that have implemented BIDS as their organizational structure.
 
 | type       | place                                                                                          |
-| ---------- | ---------------------------------------------------------------------------------------------- |
-| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)	                              |
-| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)	              |
-| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)	      |
+| ---------- | -----------------------------------------------------------------------------------------------|
+| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)                               |
+| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)               |
+| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)         |
 | Database   | [ABCD](https://abcdstudy.org)                                                                  |
 | Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                     |
-| Database   | [FCP-INDI](https://fcp-indi.github.io/)	                                                      |
+| Database   | [FCP-INDI](https://fcp-indi.github.io/)                                                        |
 | Database   | [OpenNeuro][openneuro]                                                                         |
-| Database   | [OpenNeuroPET](https://openneuropet.github.io/)	                                              |
-| Database   | [Schizconnect](http://schizconnect.org/)	                                                      |
+| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                |
+| Database   | [Schizconnect](http://schizconnect.org/)                                                       |
 | Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/) |
-| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)	      |
+| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)       |
 
 We ran
 [a survey](https://reproducibility.stanford.edu/bids-usage-survey-results/) in
