@@ -6,7 +6,6 @@ BIDS was supported by the following grants.
 
 {{ MACROS___generate_grants_table() }}
 
-
 ## Prizes and applications
 
 <!-- TODO mention the open science prize from 2023 -->
