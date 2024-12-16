@@ -182,3 +182,13 @@ page dedicated to this topic.
 
 If you plan to put your dataset on [openneuro][openneuro],
 you should use a CC0 or a PDDL license as explained in their [FAQ](https://openneuro.org/faq).
+
+## What is the origin of BIDS?
+
+BIDS was heavily inspired by the format used internally by the OpenfMRI repository
+that is now known as [OpenNeuro][openneuro].
+While developing on BIDS many neuroscientists were consulted to make sure it covers most common experiments,
+but at the same time is intuitive and easy to adopt.
+
+For more information on the history of BIDS, you can check
+[Poldrack, et al, 2024](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00103/119672/The-past-present-and-future-of-the-brain-imaging)
