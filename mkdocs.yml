@@ -1,5 +1,5 @@
 ---
-site_name: The Brain Imaging Data Structure (BIDS)
+site_name: The Brain Imaging Data Structure
 repo_url: https://github.com/bids-standard/bids-website/tree/main
 site_url: https://bids-website.readthedocs.io
 
@@ -86,7 +86,7 @@ exclude_docs: |
   collaboration/bids_github/SUPPORT.md
 
 nav:
--   About: index.md
+-   About BIDS: index.md
 -   Blog:
     -   blog/index.md
 -   Standards:
@@ -157,11 +157,11 @@ nav:
     -   faq/bids-apps.md
 -   Collaboration:
     -   collaboration/index.md
-    -   collaboration/governance.md
+    -   Governance: collaboration/governance.md
     -   collaboration/working-groups.md
+    -   Contributing: collaboration/bids_github/CONTRIBUTING.md
     -   collaboration/contributors.md
-    -   collaboration/bids_github/CONTRIBUTING.md
-    -   collaboration/bids_github/CODE_OF_CONDUCT.md
+    -   Code of conduct: collaboration/bids_github/CODE_OF_CONDUCT.md
     -   collaboration/acknowledgments.md
     -   Reports:
         -   collaboration/reports/index.md
