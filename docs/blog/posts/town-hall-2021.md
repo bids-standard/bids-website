@@ -8,7 +8,7 @@ Are you interested in learning more about how the BIDS initiative is developing?
 
 <!-- more -->
 
-Post event edit: Please find the [Town Hall slidedeck](../../assets/BIDS-materials/BIDS_Town_Hall%20-OSR_2021.pdf) within the `BIDS_materials` folder.
+Post event edit: Please find the [Town Hall slidedeck](https://osf.io/e9s8a) on OSF.
 
 Come check out our BIDS Town Hall happening on Monday June 21 at 10pm CEST / 4pm ET / 1pm PT to hear more about our organizational updates, status updates from several of our BIDS extension proposal (BEP) leads, our community projects, and voice your thoughts about the organizational direction!
 
