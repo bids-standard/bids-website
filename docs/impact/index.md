@@ -79,15 +79,27 @@ conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by 
 
 ### BIDS usage
 
+Here is a non-exhaustive list of imaging centers, institutes, databases
+around the world that have implemented BIDS as their organizational structure.
+
+| type       | place                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------- |
+| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)	                              |
+| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)	              |
+| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)	      |
+| Database   | [ABCD](https://abcdstudy.org)                                                                  |
+| Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                     |
+| Database   | [FCP-INDI](https://fcp-indi.github.io/)	                                                      |
+| Database   | [OpenNeuro][openneuro]                                                                         |
+| Database   | [OpenNeuroPET](https://openneuropet.github.io/)	                                              |
+| Database   | [Schizconnect](http://schizconnect.org/)	                                                      |
+| Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/) |
+| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)	      |
+
 We ran
 [a survey](https://reproducibility.stanford.edu/bids-usage-survey-results/) in
 June 2019 to evaluate the uptake of BIDS in the community. We received feedback
 from 116 global researchers.
-
-We have a
-[google doc](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0)
-that is crowdsourcing imaging centers, institutes, databases around the world
-that have implemented BIDS as their organizational structure.
 
 We also measured the general BIDS impact across multiple domains (datasets, citations...).
 Read more on the [Impact Dashboards page](./measuring.md).
@@ -116,6 +128,8 @@ TODO add automation to update every 6 months
 | openneuro      |        95 |      479 |                   15 |                 28 |
 
 ### Mailing list volume
+
+<!-- TODO update -->
 
 As of July 1, 2020, we have 183 people signed up for our
 [BIDS email list](https://forms.gle/JFo2aEkYbKY4EbmE6) and 412 members on our
@@ -154,6 +168,7 @@ For example, please find our [NIH-R24 Brain Initiative BIDS-Derivatives grant](h
 A listing of the previous grants can be found [here](../collaboration/acknowledgments.md)
 
 ## Citing BIDS in your project
+
 You can find information on citing BIDS standards for specific modalities and
 citing BIDS in general
 [in the specification](https://bids-specification.readthedocs.io/en/latest/introduction.html#citing-bids)
