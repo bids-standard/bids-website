@@ -9,7 +9,7 @@ files in the BIDS dataset (dataset_description.json, events.tsv, ...).
 
 It can also be useful to also include information that might already be
 present in another file of the dataset but might be important for users to be aware of
-before preprocessing or analysing the data.
+before preprocessing or analyzing the data.
 
 If the README gets too long you have the possibility to create a `/doc` folder
 and add it to the `.bidsignore` file to make sure it is ignored by the BIDS validator.

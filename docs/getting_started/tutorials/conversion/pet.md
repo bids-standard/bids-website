@@ -503,7 +503,7 @@ we're going to make sure we have images to place in them.
 #### Collecting and installing TPCCLIB
 
 Since our raw imaging files are in ECAT format,
-we'll be using the `ecat2nii` tool it the Turku PET Centre C library (`TPCCLIIB`)
+we'll be using the `ecat2nii` tool it the Turku PET Center C library (`TPCCLIIB`)
 as it's very handy at converting PET ECAT images into the more BIDS friendly nifti format.
 If you're imaging files are in `.IMG` you can use \*\*<\insert converter>\*\*
 or if they're in DICOM `dcm2niix` is an excellent tool to transform `.dcm` files into `.nii`.
@@ -536,7 +536,7 @@ machine:Downloads user$ echo "export PATH=$PATH:/some/directory/you/are/fond/of/
 machine:Downloads user$ source ~/.bashrc
 
 machine:Downloads user$ ecat2nii
-  ecat2nii - tpcclib 0.7.6 (c) 2020 by Turku PET Centre
+  ecat2nii - tpcclib 0.7.6 (c) 2020 by Turku PET Center
 
   Converts PET images from ECAT 6.3 or 7 to NIfTI-1 format.
   Conversion can also be done using ImageConverter (.NET application).
@@ -1141,7 +1141,7 @@ follows:
 -   [TPCCLIIB](https://gitlab.utu.fi/vesoik/tpcclib) is a command line library
     containing (among many others) PET tools such as `ecat2nii`
     that will be used below to convert the imaging data from a PET dataset into nifti format.
-    The Turku PET Centre site can be found [here](https://turkupetcentre.fi/)
+    The Turku PET Center site can be found [here](https://turkupetcentre.fi/)
     for additional information on anything PET.
 
 -   a [BIDS PET Template](https://github.com/bids-standard/bids-starter-kit/tree/main/templates)

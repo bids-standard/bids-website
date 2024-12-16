@@ -33,7 +33,7 @@ One continuous block of a scan.
 
 #### BIDS
 
-Brain Imaging Data Structure - a standardised way to organise your neuroimaging data.
+Brain Imaging Data Structure - a standardized way to organize your neuroimaging data.
 
 ### C
 

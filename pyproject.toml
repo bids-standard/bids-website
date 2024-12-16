@@ -15,7 +15,7 @@ line-length = 79
 
 [tool.codespell]
 builtin = "clear,rare,en-GB_to_en-US"
-ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te"
+ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te,acknowledgements"
 skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/**.tsv,data/**.json,docs/collaboration/contributors.md"
 
 [tool.hatch.build.hooks.vcs]

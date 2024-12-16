@@ -12,7 +12,7 @@
 
 <!-- tool tips  -->
 
-*[ASL]: Arterial Spin Labelling
+*[ASL]: Arterial Spin Labeling
 *[BEP]: BIDS Extension Proposal
 *[BEPs]: BIDS Extension Proposals
 *[BIDS]: Brain Imaging Data Structure

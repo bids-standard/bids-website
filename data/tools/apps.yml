@@ -173,7 +173,7 @@ apps:
     -   derivative
     datatype:
     -   dwi
-    description: Generate subject connectomes from raw BIDS data & perform inter-subject connection density normalisation, using  the MRtrix3 software package.
+    description: Generate subject connectomes from raw BIDS data & perform inter-subject connection density normalization, using  the MRtrix3 software package.
 
 -   gh: bids-apps/ndmg
     status: active
