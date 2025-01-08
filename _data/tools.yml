@@ -211,7 +211,7 @@
   language:
   -   Python
   category: index and query
-  description: Python package to interact with BIDS datasets in a pythonic way. A BIDS dataset is read to hierarchical pydantic models (e.g. 
+  description: Python package to interact with BIDS datasets in a pythonic way. A BIDS dataset is read to hierarchical pydantic models (e.g.
       dataset->subjects->sessions->scans), variables are accesibles as model properties, tables, SimpleITK Images and numpy arrays. Also serves
       as python client for lazybids-ui server.
   distribution:
@@ -223,9 +223,9 @@
   documentation: https://lazybids.github.io/lazybids-ui/
   language:
   -   Python
-  -   HTML  
+  -   HTML
   category: data annotation
-  description: FastAPI web server providing a GUI to explore (imaging) BIDS datasets interactively, also provides (XNAT-like) REST-API to access 
+  description: FastAPI web server providing a GUI to explore (imaging) BIDS datasets interactively, also provides (XNAT-like) REST-API to access
       (parts of) datasets on a client machine. Uses NiiVue to view and navigate (3D) images in the browser.
   distribution:
   -   name: pypi
