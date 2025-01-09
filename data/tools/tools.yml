@@ -118,6 +118,32 @@
     -   name: pypi
         url: https://pypi.org/project/pybids/
 
+-   name: LazyBIDS
+    repo_url: https://github.com/lazybids/lazybids
+    documentation: https://lazybids.github.io/lazybids/
+    category: index and query
+    language:
+    -   Python
+    description: Python package to interact with BIDS datasets in a pythonic way. A BIDS dataset is read to hierarchical pydantic models (e.g.
+        dataset->subjects->sessions->scans), variables are accesibles as model properties, tables, SimpleITK Images and numpy arrays. Also serves
+        as python client for lazybids-ui server.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/lazybids/
+
+-   name: LazyBIDS-ui
+    repo_url: https://github.com/lazybids/lazybids-ui
+    documentation: https://lazybids.github.io/lazybids-ui/
+    category: data annotation
+    language:
+    -   Python
+    -   HTML
+    description: FastAPI web server providing a GUI to explore (imaging) BIDS datasets interactively, also provides (XNAT-like) REST-API to access
+        (parts of) datasets on a client machine. Uses NiiVue to view and navigate (3D) images in the browser.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/lazybids-ui/
+
 -   name: ancp-bids
     repo_url: https://github.com/ANCPLabOldenburg/ancp-bids
     documentation: https://ancpbids.readthedocs.io/en/latest/
