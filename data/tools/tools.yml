@@ -78,7 +78,7 @@
     url: https://hedtools.org/hed
     documentation: https://www.hed-resources.org
     language:
-    -   wesbite
+    -   website
     category: data annotation
     description: Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
 

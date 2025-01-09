@@ -20,7 +20,7 @@ repos:
     -   id: mixed-line-ending
 
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.3.0
     hooks:
     -   id: codespell
         args: [--toml, pyproject.toml]
@@ -38,13 +38,13 @@ repos:
             )$
 
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.13.0
+    rev: v2.14.0
     hooks:
     -   id: pretty-format-toml
         args: [--autofix, --indent, '4']
 
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 24.4.2
+    rev: 24.10.0
     hooks:
     -   id: black
 
@@ -54,7 +54,7 @@ repos:
     -   id: isort
 
 -   repo: https://github.com/PyCQA/flake8
-    rev: 7.0.0
+    rev: 7.1.1
     hooks:
     -   id: flake8
         args: [--config, .flake8, --verbose, tools]

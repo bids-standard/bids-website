@@ -41,7 +41,7 @@ categories:
     -   **AR** is happy to organize another BIDS meeting similar to the previous Seattle BIDS meeting
         (although it could be held elsewhere as needed).
 
-## Revisit Chris' Discusssion
+## Revisit Chris' Discussion
 
 -   View [previous meeting and discussion notes](./2024-09-19-steering-group-minutes.md)
 -   there were many options presented
@@ -85,7 +85,7 @@ categories:
 
 -   **DH**: having a steady presence would be good to continue awareness for new contributors
 
--   Maintainters (RB) : OS-SIG is looking to coordinate an event about the entire BEP process.
+-   Maintainers (RB) : OS-SIG is looking to coordinate an event about the entire BEP process.
     No plans made yet.
 
 -   **AR** thinks this is a great educational opportunity, seems more welcoming to people new to BIDS.
@@ -105,6 +105,6 @@ categories:
 -   repeat offenders should be recorded, who will keep the ongoing list of those that have violated the code of conduct?
     **AR** will update this in the documents.
 
--   This will effect the governance docments,
+-   This will effect the governance documents,
     and thus the changes to governance documents will need to be voted on
     (contacts for code of conduct violations, other minor changes in language)

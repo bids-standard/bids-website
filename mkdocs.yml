@@ -22,7 +22,7 @@ plugins:
       on_error_fail: true
   - redirects:
       redirect_maps:
-        # old links from the old wesbite
+        # old links from the old website
         "news.md": "blog/index.md"
         "specification.md": "standards/index.md"
         "get_started.md": "getting_started/index.md"

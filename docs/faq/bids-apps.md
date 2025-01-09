@@ -2,7 +2,7 @@
 
 !!! note
 
-    Make sure to check out the [nipreps wesbite](https://www.nipreps.org/)
+    Make sure to check out the [nipreps website](https://www.nipreps.org/)
     for more information on using and creating BIDS apps.
 
 !!! warning
