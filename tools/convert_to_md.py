@@ -10,6 +10,7 @@ This script does the following:
     - using the html version of the tables instead of the markdown version
       because the pandoc version of the markdown tables is not very good
 """
+
 import datetime
 from pathlib import Path
 
