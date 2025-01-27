@@ -2,6 +2,7 @@
 
 Also include a timeline of the main BIDS events.
 """
+
 from __future__ import annotations
 
 from datetime import datetime
