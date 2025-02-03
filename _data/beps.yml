@@ -123,6 +123,7 @@
   leads:
     - name: Arnaud Delorme
     - name: Dora Hermes
+    - name: Christine Rogers
     - name: Mainak Jas
     - name: Guiomar Niso
     - name: Robert Oostenveld
@@ -420,5 +421,26 @@
     - raw
   blocking: None
   google_doc_created: 2023-09-12
+  pull_request_created:
+  pull_request_merged:
+
+
+- number: "045"
+  title: Cardiac MRI (CMR)
+  leads:
+    - name: "[Edward Xu](mailto:zexu@ottawaheart.ca)"
+    - name: Christine Rogers @christinerogers
+    - name: Jefferson Casimir @jeffersoncasimir
+    - name: Ghislain Vaillant
+  update: |
+    - To support cardiac MRI (CMR) harmonization and standardization, capturing cardiac and respiratory motion correction with enhanced spatial and temporal resolution.
+    - Status (Feb. 1 2025) draft in preparation. Will shortly be opened to key contributors, community comments and feedback. All collaborators are welcome.
+    - Original issue: [#2011](https://github.com/bids-standard/bids-specification/issues/2011)
+    - [BIDS-discussion thread](https://groups.google.com/g/bids-discussion/c/YSJmf-VvFqc/m/c_AHfmKWCwAJ)
+    - related to: [old MIDS spec #1275](https://github.com/bids-standard/bids-specification/issues/1275)
+  content:
+    - raw
+  blocking: None
+  google_doc_created: 2024-12-10
   pull_request_created:
   pull_request_merged:
