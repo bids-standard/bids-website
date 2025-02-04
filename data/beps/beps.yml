@@ -597,3 +597,36 @@
     google_doc_created: 2023-09-12
     pull_request_created:
     pull_request_merged:
+
+
+-   number: '045'
+    title: Cardiac MRI (CMR)
+    leads:
+    -   given-names: Edward
+        family-names: Xu
+        # mailto:zexu@ottawaheart.ca
+    -   given-names: Jefferson
+        family-names: Casimir
+        # @jeffersoncasimir
+    -   given-names: Ghislain
+        family-names: Vaillant
+    -   given-names: Christine
+        family-names: Rogers
+    bids_maintainers:
+    -   given-names: Christine
+        family-names: Rogers
+    update: |
+        - To support cardiac MRI (CMR) harmonization and standardization,
+          capturing cardiac and respiratory motion correction with enhanced spatial and temporal resolution.
+        - Status (Feb. 1 2025) draft in preparation.
+          Will shortly be opened to key contributors, community comments and feedback.
+          All collaborators are welcome.
+        - Original issue: [#2011](https://github.com/bids-standard/bids-specification/issues/2011)
+        - [BIDS-discussion thread](https://groups.google.com/g/bids-discussion/c/YSJmf-VvFqc/m/c_AHfmKWCwAJ)
+        - related to: [old MIDS spec #1275](https://github.com/bids-standard/bids-specification/issues/1275)
+    content:
+    -   raw
+    blocking: None
+    google_doc_created: 2024-12-10
+    pull_request_created:
+    pull_request_merged:
