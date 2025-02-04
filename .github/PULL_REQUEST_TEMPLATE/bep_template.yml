@@ -18,8 +18,8 @@
     -   '  ' # add updates
     -   '  ' # with items
     blocking: # potential blockers for this BEP
-    -   # add blocker
-    -   # with items
+    -   ' ' # add blocker
+    -   ' ' # with items
     communication_channel: # mattermost, matrix, slack, discord...
     google_doc_created:
     pull_request_created:
