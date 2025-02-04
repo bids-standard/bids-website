@@ -1,10 +1,13 @@
 [submodule "specification"]
 	path = specification
 	url = https://github.com/bids-standard/bids-specification.git
+	branch = master
 [submodule "data/datasets/examples"]
 	path = data/datasets/examples
 	url = https://github.com/bids-standard/bids-examples
 	datalad-url = https://github.com/bids-standard/bids-examples
+	branch = master
 [submodule "docs/collaboration/bids_github"]
 	path = docs/collaboration/bids_github
 	url = https://github.com/bids-standard/.github
+	branch = main
