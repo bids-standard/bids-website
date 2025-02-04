@@ -8,7 +8,7 @@ We hope that these guidelines are designed to make it as easy as possible to get
 If you have any questions that aren't discussed below, please let us know
 by [opening an issue](https://github.com/bids-standard/bids-website/issues/new).
 
-If you are not familiar with Git ansd GitHub,
+If you are not familiar with Git and GitHub,
 check our [generic contributing guidelines](https://bids-website.readthedocs.io/en/latest/collaboration/bids_github/CONTRIBUTING.html).
 
 If you want to contribute to the BIDS website,
