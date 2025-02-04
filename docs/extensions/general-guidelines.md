@@ -42,6 +42,74 @@ Larger contributions that are expected
 to involve longer and more involved discussions
 may take the form of a BIDS extension proposal.
 
+### Overview of the BEP process
+
+```mermaid
+flowchart TD
+
+issue[github issue]
+examples[BEP examples]
+PR_examples[REQUIRED
+            Pull request to examples repository]
+draft_bep[Draft BEP - Google doc]
+proposed_bep[Proposed BEP
+             Pull request to specification repository]
+draft_bep_review([Draft BEP review])
+markdown[REQUIRED
+         BEP markdown]
+schema[REQUIRED
+       Update BIDS schema]
+validator[OPTIONAL
+          Update to BIDS validator]
+proposed_bep_review([Proposed BEP review])
+community_review([Community review])
+merged_bep[Merged BEP]
+
+issue --> draft_bep
+draft_bep --> examples
+PR_examples --> proposed_bep_review
+examples --> draft_bep_review
+draft_bep --> draft_bep_review
+draft_bep_review -- positive evaluation --> PR_examples
+draft_bep_review -- positive evaluation --> proposed_bep
+draft_bep_review -- negative evaluation --> draft_bep
+proposed_bep ---> markdown --> proposed_bep_review
+proposed_bep ---> schema --> proposed_bep_review
+schema --> validator
+validator --> proposed_bep_review
+proposed_bep_review -- positive evaluation --> community_review
+community_review -- positive evaluation --> merged_bep[Merged BEP]
+```
+
+### Starting your BEP
+
+```mermaid
+flowchart TD
+
+BEP_required["Is this a 'large' change ?"]
+PR["Open simple pull request."]
+BEP_exist["Does a similar BEP already exist?"]
+Contribute["Contribute to that BEP."]
+BEP_issue_exist["Is there an issue for such BEP?"]
+Join_discussion["Join the discussion on that BEP."]
+Open_BEP_issue["Open an issue to gather interest."]
+Post_mailing_list["Advertise the issue in the mailing list."]
+BEP_draft["Start a draft for your BEP."]
+Meet_the_team["Meet with the BIDS maintainers / steering group."]
+Official_BEP["Get an official number for your BEP."]
+
+BEP_required -- no --> PR
+BEP_required -- yes --> BEP_exist
+BEP_exist -- yes --> Contribute
+BEP_exist -- no --> BEP_issue_exist
+BEP_issue_exist -- no --> Open_BEP_issue
+BEP_issue_exist -- yes --> Join_discussion
+Open_BEP_issue --> Post_mailing_list
+Post_mailing_list --> BEP_draft
+BEP_draft --> Meet_the_team
+Meet_the_team --> Official_BEP
+```
+
 !!! warning "Before starting a new extension!"
 
     Developing a new BIDS extension a long process (think years not months)
@@ -70,13 +138,14 @@ may take the form of a BIDS extension proposal.
     -   read the [BIDS governance document](../collaboration/governance.md)
     -   the [BIDS code of conduct](../collaboration/bids_github/CODE_OF_CONDUCT.md)
 
-### Starting your BEP
 
 1.  Open an initial "issue" on
-    [the bids specification repository][specification_gh] issues page
-    to gauge interest in your potential BEP, and to collect
+    [the bids specification repository][specification_gh] issues page.
+
+    This will help gauge interest in your potential BEP, and to collect
     feedback by more community members and
     [BIDS maintainers](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group).
+
     **This is an important step before proceeding
     in order to make sure
     that more consensus arises and more contributors are aware what is happening.**
@@ -84,21 +153,26 @@ may take the form of a BIDS extension proposal.
 1.  Share a link to this issue on the [bids-discussion mailing list][bids_google_group]
     and ask for comments.
 
-2.  Create a draft of your extension by discussing among colleagues.
+1.  Create a draft of your extension by discussing among colleagues.
+
     Development on Google Docs is RECOMMENDED as this is a low barrier to entry
     for colleagues who do not use GitHub and/or Markdown,
     allowing more people to get involved.
     The [BIDS Extension Proposal template](https://docs.google.com/document/d/1W7--Mf3gCCb1mVfhsoRJCAKFhmf2umG1PFkyZ1jEgMw/edit#)
     provides some boilerplate and formatting conventions.
+
     **Make sure to update the issue from the previous step with a link to this document.**
 
-3.  Contact with the BIDS maintainers and the BIDS steering group
+1.  Contact the BIDS maintainers and steering group
     to evaluate if your BEP is ready to be made official.
-    We recommend doing all the following:
-    - tag the BIDS maintainers in uding `@bids-standard/maintainers` in the issue of your BEP
-    - send an email to the BIDS maintainers (bids.maintenance+question@gmail.com) and the steering group (bids.steering@gmail.com)
 
-4.  Register the BEP with a number on the BIDS website.
+    We recommend doing all the following:
+
+    -   tag the BIDS maintainers in using `@bids-standard/maintainers` in the issue of your BEP,
+    -   send an email to the BIDS maintainers (bids.maintenance+question@gmail.com) and steering group (bids.steering@gmail.com).
+
+1.  Register the BEP with a number on the BIDS website.
+
     To obtain a number for your BEP open [a pull request](https://github.com/bids-standard/bids-website/pulls)
     to the [website GitHub repository][bids_website_gh]
     where you provide information about your BEP
@@ -108,6 +182,11 @@ may take the form of a BIDS extension proposal.
     ```yaml
     --8<-- ".github/PULL_REQUEST_TEMPLATE/bep_template.yml"
     ```
+
+    !!! note
+
+        This will likely require to add (or update) information about the BEP leads
+        in the list of BIDS contributors via [the BIDS specification wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors#adding-yourself-as-a-contributor).
 
 ### Working on your BEP
 
@@ -119,30 +198,59 @@ While working on your extension, make sure to do the following:
 -   Incorporate the feedback and strive for consensus.
 
 -   Create example datasets.
+
     Complete source data (for example DICOM, EDF, Excel) and its corresponding target BIDS datasets,
     _must be_ supplied along with instructions on how to transform data from source to target.
+
     When possible, data from multiple vendors
     such as Siemens, Philips, or General Electric (in the case of MR) should be included.
+
     These datasets are vital for the development of resources
     that will, ultimately, increase the adoption of the BEP following its integration into the BIDS Specification;
     see [this discussion](https://github.com/bids-standard/bids-specification/issues/1350).
+
     BIDS maintainers **are available to assist**
     in the collection, organization, or at any step in the preparation of these datasets.
-    This may also happen later, once you have opened a pull
+
+    !!! note
+
+        Creating datasets may also happen later,
+        once you have opened a pull-request for your BEP (see below),
+        but we recommend doing this very early in the BEP creation process
+        as this may provide valuable information with regards
+        to the feasibility / complexity of the content of the BEP.
+
+### Transitioning your BEP to a pull-request
 
 Once you think your BEP is mature enough,
 you can transition your BEP from the google doc
 to the a markdown document and open a pull-request
-oin the [BIDS specification repository][specification_gh].
+in the [BIDS specification repository][specification_gh].
 
+To confirm your BEP is ready for this transition,
+contact the BIDS maintainers and steering group by:
 
+-   tagging the BIDS maintainers in using `@bids-standard/maintainers` in the issue of your BEP,
+-   sending an email to the BIDS maintainers (bids.maintenance+question@gmail.com) and steering group (bids.steering@gmail.com)
 
+Once this is done, the BIDS maintainers will:
 
-1.  If necessary, contribute a pull request
-    to the [BIDS Validator repository][bids_validator_gh]
-    as well to incorporate the extension.
+-   create a branch for your BEP on the BIDS specification repository
+-   create a github team for that BEP and add the BEP lead to that team
+-   grant write access to BEP branch to that BEP team
+
+We suggest first converting your entire google doc to markdown.
+Note there is a [google doc add-on](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607)
+to help you with this.
+You can then add this document to your BEP branch before opening a pull request.
+
+<!--
+
+TODO update figure about BEP process
+use a mermaid diagram ?
 
 ![bep_process](../assets/img/bep_process.png)
+-->
 
 ## Advice for extending BIDS
 

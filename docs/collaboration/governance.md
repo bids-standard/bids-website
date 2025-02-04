@@ -322,42 +322,48 @@ The Steering Group evaluates:
 
 ### A. BEP Procedure: Key definitions
 
-**BIDS Specification** - This is the [BIDS
-specification][specification].
-This covers the current raw data organization for brain MRI, MEG, EEG,
-and iEEG.
+-   **BIDS Specification**
 
-**BIDS Extension Proposal (BEP)** - A proposal that intends to extend
-BIDS into an unspecified modality or derivative.
-A BEP is typically led by 1-3 individuals with several contributors.
-The [list of BEPs](../extensions/beps.md)
-can be found elsewhere on this website.
+    This is the [BIDS specification][specification].
+    This covers the current raw data organization for brain MRI, MEG, EEG, and iEEG.
 
-**Draft BEP** - The in-progress document, typically in a Google Doc, of
-a BEP. This is dynamic and is grown and maintained at the discretion of
-a BEP Working Group.
+-   **BIDS Extension Proposal (BEP)**
 
-**Draft BEP review** - This review is performed by the BIDS Steering
-Group on a Draft BEP. The review at this stage aims to ensure the
-structure clearly defines a template and field names along with it
-integrating into the philosophy, principles, and accepted standards of
-BIDS. The BIDS Steering Group approval action will be a majority vote.
-Upon BIDS Steering Group approval, the Draft BEP will be elevated to a
-Proposed BEP.
+    A proposal that intends to extend BIDS into an unspecified modality or derivative.
+    A BEP is typically led by 1-3 individuals with several contributors.
+    The [list of BEPs](../extensions/beps.md)
+    can be found elsewhere on this website.
 
-**Proposed BEP** - Once the BIDS Steering Group has approved the Draft
-BEP, it becomes a specific addition and/or modification of BIDS, in the
-form of a Proposed BEP. At this time, the Proposed BEP will take the
-form of a pull request on the [BIDS GitHub
-repository][specification_gh].
+-   **Draft BEP**
 
-**Proposed BEP review** - This review is performed by the BIDS Steering
-Group on the Proposed BEP. The review aims to ensure the community input
-was incorporated and the final version integrates into the current
-edition of the BIDS standard specification.
+    The in-progress document, typically in a Google Doc, of
+    a BEP. This is dynamic and is grown and maintained at the discretion of
+    a BEP Working Group.
 
-**Merged BEP** - A Proposed BEP that has been reviewed and approved by
-the Steering Group and merged into the BIDS standard.
+-   **Draft BEP review**
+
+    This review is performed by the BIDS Steering Group on a Draft BEP.
+    The review at this stage aims to ensure the structure clearly defines a template
+    and field names along with it integrating into the philosophy, principles, and accepted standards of BIDS.
+    The BIDS Steering Group approval action will be a majority vote.
+    Upon BIDS Steering Group approval, the Draft BEP will be elevated to a Proposed BEP.
+
+-   **Proposed BEP**
+
+    Once the BIDS Steering Group has approved the Draft BEP,
+    it becomes a specific addition and/or modification of BIDS,
+    in the form of a Proposed BEP.
+    At this time, the Proposed BEP will take the form of a pull request on the [BIDS GitHub repository][specification_gh].
+
+-   **Proposed BEP review**
+
+    This review is performed by the BIDS Steering Group on the Proposed BEP.
+    The review aims to ensure the community input was incorporated
+    and the final version integrates into the current edition of the BIDS standard specification.
+
+-   **Merged BEP**
+
+    A Proposed BEP that has been reviewed and approved by the Steering Group and merged into the BIDS standard.
 
 ### B. Voting Procedure
 
