@@ -38,70 +38,105 @@ or by working on a BEP following [the submission process](submission.md).
 Small contributions (typos, rephrasing of a description, adding a single new metadata field)
 can be just added as a [Pull Request on GitHub](https://github.com/bids-standard/bids-specification/pulls)
 
-Larger contributions that are expected to involve longer and more involved
-discussions should be first described in a standalone document: a Google Docs BEP.
-Development on Google Docs is preferred as this is a low barrier to entry
-for colleagues who do not use GitHub and/or Markdown,
-allowing more people to get involved.
+Larger contributions that are expected
+to involve longer and more involved discussions
+may take the form of a BIDS extension proposal.
 
-1.  Explore [the specification][the bids specification repository]
-    and [the BEP lists](./beps.md)
-    to find existing or ongoing efforts
-    that may support what you are trying to add into the BIDS Specification.
-    Someone may have already done work for you.
+!!! warning "Before starting a new extension!"
 
-1.  Read the [BIDS governance document](../collaboration/governance.md).
+    Developing a new BIDS extension a long process (think years not months)
+    that requires a lot of work and coordination.
 
-1.  Familiarize yourself with the BIDS community by browsing current issues,
-    discussions, and proposed changes on
-    [the bids specification repository].
-    Search for issues relating to your feature or BEP idea
-    before creating a new issue.
+    Also take into account,
+    you may be consulted **years after BEP you workded on is merged into the BIDS specification**,
+    to advise regarding new update to this BEP.
 
-1.  Open an initial “issue” on
-    [the bids specification repository] issues page
+    So before you embark on this journey, make sure that you have:
+
+    -   explored [the specification][specification_gh]
+        and [the BEP lists](./beps.md)
+        to find existing or ongoing efforts
+        that may support what you are trying to add into the BIDS Specification.
+        Someone may have already done work for you.
+
+    -   familiarized yourself with the BIDS community by browsing current issues,
+        discussions, and proposed changes on
+        [the bids specification repository][specification_gh].
+        Search for issues relating to your feature or BEP idea
+        before creating a new issue.
+
+    If you are sure that you want to move forward, also make sure you have:
+
+    -   read the [BIDS governance document](../collaboration/governance.md)
+    -   the [BIDS code of conduct](../collaboration/bids_github/CODE_OF_CONDUCT.md)
+
+### Starting your BEP
+
+1.  Open an initial "issue" on
+    [the bids specification repository][specification_gh] issues page
     to gauge interest in your potential BEP, and to collect
     feedback by more community members and
     [BIDS maintainers](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group).
-    **This is an important step before proceeding in order to make sure that
-    more consensus arises and more contributors are aware what is happening**.
+    **This is an important step before proceeding
+    in order to make sure
+    that more consensus arises and more contributors are aware what is happening.**
 
-1.  Communicate with the BIDS maintainers to make your BEP official.
-    This entails registering the BEP with a number on the BIDS website.
-    To obtain a number for your BEP, follow the previous steps
-    and then [open a new issue](https://github.com/bids-standard/bids-website/issues)
-    or [submit a pull request](https://github.com/bids-standard/bids-website/pulls) to the
-    [website GitHub repository][bids_website_gh],
-    cross-linking to any other already existing issues.
-
-1.  Create a draft of your extension by discussing among colleagues. The
-    [BIDS Extension Proposal template](https://docs.google.com/document/d/1W7--Mf3gCCb1mVfhsoRJCAKFhmf2umG1PFkyZ1jEgMw/edit#)
-    provides some boilerplate and formatting conventions.
-
-1.  List on the draft the contributor(s) leading the effort.
-
-1.  Share the draft (remember to
-    [share a link that allows anyone to comment](https://support.google.com/docs/answer/2494822?co=GENIE.Platform%3DDesktop&hl=en))
-    with the
-    [bids-discussion mailing list][bids_google_group]
+1.  Share a link to this issue on the [bids-discussion mailing list][bids_google_group]
     and ask for comments.
 
-1.  Incorporate the feedback and strive for consensus.
+2.  Create a draft of your extension by discussing among colleagues.
+    Development on Google Docs is RECOMMENDED as this is a low barrier to entry
+    for colleagues who do not use GitHub and/or Markdown,
+    allowing more people to get involved.
+    The [BIDS Extension Proposal template](https://docs.google.com/document/d/1W7--Mf3gCCb1mVfhsoRJCAKFhmf2umG1PFkyZ1jEgMw/edit#)
+    provides some boilerplate and formatting conventions.
+    **Make sure to update the issue from the previous step with a link to this document.**
 
-1.  Help to merge the extension into the main specification
-    (this will require converting the proposal to Markdown
-    and submitting a Pull Request at [the bids specification repository])
+3.  Contact with the BIDS maintainers and the BIDS steering group
+    to evaluate if your BEP is ready to be made official.
+    We recommend doing all the following:
+    - tag the BIDS maintainers in uding `@bids-standard/maintainers` in the issue of your BEP
+    - send an email to the BIDS maintainers (bids.maintenance+question@gmail.com) and the steering group (bids.steering@gmail.com)
 
-1.  Create example datasets. Complete source data (for example DICOM, EDF, Excel) and its
-    corresponding target BIDS datasets,
+4.  Register the BEP with a number on the BIDS website.
+    To obtain a number for your BEP open [a pull request](https://github.com/bids-standard/bids-website/pulls)
+    to the [website GitHub repository][bids_website_gh]
+    where you provide information about your BEP
+    by updating the file [`data/beps/beps.yml`](https://github.com/bids-standard/bids-website/blob/main/data/beps/beps.yml)
+    using the following template:
+
+    ```yaml
+    --8<-- ".github/PULL_REQUEST_TEMPLATE/bep_template.yml"
+    ```
+
+### Working on your BEP
+
+While working on your extension, make sure to do the following:
+
+-   Keep track of the contributor(s) leading the effort:
+    name, affiliation, email...
+
+-   Incorporate the feedback and strive for consensus.
+
+-   Create example datasets.
+    Complete source data (for example DICOM, EDF, Excel) and its corresponding target BIDS datasets,
     _must be_ supplied along with instructions on how to transform data from source to target.
     When possible, data from multiple vendors
     such as Siemens, Philips, or General Electric (in the case of MR) should be included.
-    These datasets are vital for the development of resources that will, ultimately, increase the adoption of
-    the BEP following its integration into the BIDS Specification;
+    These datasets are vital for the development of resources
+    that will, ultimately, increase the adoption of the BEP following its integration into the BIDS Specification;
     see [this discussion](https://github.com/bids-standard/bids-specification/issues/1350).
-    BIDS maintainers **are available to assist** in the collection, organization, or at
-    any step in the preparation of these datasets.
+    BIDS maintainers **are available to assist**
+    in the collection, organization, or at any step in the preparation of these datasets.
+    This may also happen later, once you have opened a pull
+
+Once you think your BEP is mature enough,
+you can transition your BEP from the google doc
+to the a markdown document and open a pull-request
+oin the [BIDS specification repository][specification_gh].
+
+
+
 
 1.  If necessary, contribute a pull request
     to the [BIDS Validator repository][bids_validator_gh]
@@ -261,5 +296,4 @@ We recommend that the core team has representatives from 3 different labs,
 preferably also with a mix of more junior and more senior contributors.
 You may also consider requesting explicit support letters from external labs.
 
-[the bids specification repository]: https://github.com/bids-standard/bids-specification/
 [issues page]: https://github.com/bids-standard/bids-specification/issues

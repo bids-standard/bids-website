@@ -9,6 +9,7 @@
 [specification]: https://bids-specification.readthedocs.io
 [specification_gh]: https://github.com/bids-standard/bids-specification
 
+https://github.com/bids-standard/bids-specification
 
 <!-- tool tips  -->
 
