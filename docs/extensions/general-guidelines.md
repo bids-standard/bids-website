@@ -138,7 +138,6 @@ Meet_the_team --> Official_BEP
     -   read the [BIDS governance document](../collaboration/governance.md)
     -   the [BIDS code of conduct](../collaboration/bids_github/CODE_OF_CONDUCT.md)
 
-
 1.  Open an initial "issue" on
     [the bids specification repository][specification_gh] issues page.
 
@@ -169,7 +168,7 @@ Meet_the_team --> Official_BEP
     We recommend doing all the following:
 
     -   tag the BIDS maintainers in using `@bids-standard/maintainers` in the issue of your BEP,
-    -   send an email to the BIDS maintainers (bids.maintenance+question@gmail.com) and steering group (bids.steering@gmail.com).
+    -   send an email to the BIDS maintainers (`bids.maintenance+question@gmail.com`) and steering group (`bids.steering@gmail.com`).
 
 1.  Register the BEP with a number on the BIDS website.
 
@@ -231,7 +230,7 @@ To confirm your BEP is ready for this transition,
 contact the BIDS maintainers and steering group by:
 
 -   tagging the BIDS maintainers in using `@bids-standard/maintainers` in the issue of your BEP,
--   sending an email to the BIDS maintainers (bids.maintenance+question@gmail.com) and steering group (bids.steering@gmail.com)
+-   sending an email to the BIDS maintainers (`bids.maintenance+question@gmail.com`) and steering group (`bids.steering@gmail.com`)
 
 Once this is done, the BIDS maintainers will:
 
