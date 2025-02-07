@@ -177,8 +177,7 @@ In rare cases, it may be necessary to update the BIDS validator to properly vali
 #### SUGGESTED deliverables
 
 1.  Preprint of the new extension (if applicable).
-3.  Press release for the BIDS website [news section](https://github.com/bids-standard/bids-website/tree/gh-pages/_posts).
-
+1.  Press release for the BIDS website [news section](https://github.com/bids-standard/bids-website/tree/gh-pages/_posts).
 
 ### Starting your BEP
 
@@ -199,8 +198,8 @@ Meet_the_team -- approval --> Official_BEP
 
 To start a new BEP working group, the BIDS governance mentions that you need
 
->-   a statement of intent with defined scope, deliverables, and use cases
->-   a statement of intent accepted by the BIDS Steering Group
+> -   a statement of intent with defined scope, deliverables, and use cases
+> -   a statement of intent accepted by the BIDS Steering Group
 
 More details on how to proceed are described below.
 
@@ -209,9 +208,9 @@ More details on how to proceed are described below.
 
     The issue should describe:
 
-    - defined scope
-    - planned deliverables
-    - use cases
+    -   defined scope
+    -   planned deliverables
+    -   use cases
 
     This will help gauge interest in your potential BEP, and to collect
     feedback by more community members and
@@ -253,7 +252,7 @@ More details on how to proceed are described below.
 1.  During this evaluation,
     it should be determined which BIDS maintainer(s) will be in charge of following and advising this BEP.
 
-3.  Once you had approval from the BIDS Steering group,
+1.  Once you had approval from the BIDS Steering group,
     register the BEP with a number on the BIDS website.
 
     To obtain a number for your BEP open [a pull request](https://github.com/bids-standard/bids-website/pulls)
@@ -305,7 +304,6 @@ While working on your extension, make sure to do the following:
     BIDS maintainers **are available to assist**
     in the collection, organization, or at any step in the preparation of these datasets.
 
-
 ### Draft BEP review
 
 Once you think your `Draft BEP` is mature enough, you can transition to a `Proposed BEP`.
@@ -341,7 +339,7 @@ You can then convert working document to markdown and commit it to your BEP bran
     There is a [google doc add-on](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607)
     to help you with this.
 
--  Label your pull requests with your BEP tag
+-   Label your pull requests with your BEP tag
     (this will signal to the community which are for the specification or associated with a specific BEP)
 
 ### Proposed BEP review
