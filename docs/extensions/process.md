@@ -72,7 +72,6 @@ BEP_issue_exist -- yes --> Join_discussion
     -   read the [BIDS governance document](../collaboration/governance.md)
     -   the [BIDS code of conduct](../collaboration/bids_github/CODE_OF_CONDUCT.md)
 
-
 ### Overview of the BEP process
 
 Once a BEP has been opened (see the next [section](#starting-your-bep)),
@@ -342,7 +341,6 @@ You can then convert working document to markdown and commit it to your BEP bran
     There is a [google doc add-on](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607)
     to help you with this.
 
-
 -  Label your pull requests with your BEP tag
     (this will signal to the community which are for the specification or associated with a specific BEP)
 
@@ -351,10 +349,15 @@ You can then convert working document to markdown and commit it to your BEP bran
 Criteria:
 
 -   Consensus reached among the BEP Working Group.
+
 -   Integrates into the current edition of the standard and is consistent with the BIDS Mission Statement.
+
 -   Clearly defines a filename template and field names.
+
 -   Use cases and examples clearly illustrated
+
 -   At least 10 business days of community feedback publicly posted across the BIDS channels
+
 -   Proposal positively reviewed by representative community members.
     The definition of "representative" will differ
     depending on the scope of the extension
@@ -378,8 +381,6 @@ The community review period is scheduled _after_ the pull request has been opene
     maintainers know if you need assistance
     [squashing your commits](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges#squash-and-merge-your-pull-request-commits).
 
-
-
 This document conveys the process for submitting a BEP to BIDS.
 
 This process assumes the BEP is ready to be opened as a pull
@@ -390,7 +391,6 @@ Please reach out to
 [the BIDS maintainers](https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group)
 to let them know you are reaching this step in the process. They will assist the
 merging of the BEP into the Specification.
-
 
 ## Submitting the validator extension (deprecation warning)
 
