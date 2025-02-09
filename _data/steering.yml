@@ -11,8 +11,6 @@
 
 - group: steering
   members:
-    - name: "Ariel Rokem"
-      git: "arokem"
     - name: "Cyril Pernet"
       git: "CPernet"
     - name: "Yaroslav Halchenko"
@@ -21,3 +19,5 @@
       git: "cmaumet"
     - name: "Dora Hermes"
       git: "dorahermes"
+    - name: "Franco Pestilli"
+      git: francopestilli
