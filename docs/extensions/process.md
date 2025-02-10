@@ -220,7 +220,7 @@ More details on how to proceed are described below.
     in order to make sure
     that more consensus arises and more contributors are aware what is happening.**
 
-<!-- TODO - create an issue template for BEPs -->
+    <!-- TODO - create an issue template for BEPs -->
 
 1.  Share a link to this issue on the [bids-discussion mailing list][bids_google_group]
     and ask for comments.
