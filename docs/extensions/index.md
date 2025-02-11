@@ -15,5 +15,4 @@ visit [the BEP process page](./bep-process.md).
 
 ## BEP guidelines
 
-For more advices on working on a BEP,
-see our [guidelines](./guidelines.md).
+For further advice on working on a BEP, see our [guidelines](./guidelines.md).

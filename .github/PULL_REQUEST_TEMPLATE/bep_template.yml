@@ -1,11 +1,11 @@
 ---
 -   number:
     title: # full title
-    display: # short title for display
-    google_doc:
-    pull_request: # pull request for the BEP on the BIDS specification repo
-    html_preview: # link to the html render of the pull request
-                  #  for the BEP on the BIDS specification repo
+    display: ' ' # short title for display
+    google_doc: ' '
+    pull_request: ' ' # pull request for the BEP on the BIDS specification repo
+    html_preview: ' ' # link to the html render of the pull request
+                     #  for the BEP on the BIDS specification repo
     leads:
   # MUST match given-names and family-names
   #  from the bids specification citation.cff
