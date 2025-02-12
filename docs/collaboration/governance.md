@@ -308,7 +308,7 @@ The criteria for merging a Proposed BEP into the BIDS Standard:
 -   Proposal positively reviewed by representative community members.
     The definition of "representative" will differ
     depending on the scope of the extension
-    and will be reviewed as part of the steering group's final approval.
+    and will be reviewed as part of the Steering Group's final approval.
 
 -   BIDS Steering Group final approval.
 
