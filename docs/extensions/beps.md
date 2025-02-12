@@ -11,7 +11,7 @@ Note that all of the extension ideas that are not backwards compatible and thus 
 
 {{ MACROS___generate_beps_table(file="beps.yml") }}
 
-## Completed BEPs
+## Merged BEPs
 
 When an extension reaches maturity it is merged into the main body of the specification.
 Below is a table of BEPs that have been merged.

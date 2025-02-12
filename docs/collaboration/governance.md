@@ -280,17 +280,16 @@ OpenStand:
 
 ### B. Standard decision making process overview
 
-The foundation of BIDS decision making is listening to all members of
-the BIDS Community and striving to achieve consensus on each level of
-the BIDS standard process.
+The foundation of BIDS decision making is listening to all members of the BIDS Community
+and striving to achieve consensus on each level of the BIDS standard process.
 
 The criteria for forming a new BEP Working Group:
 
 -   Statement of intent with defined scope, deliverables, and use cases
 -   Statement of intent accepted by the BIDS Steering Group
 
-The criteria of the BIDS Steering Group evaluation for elevating a Draft
-BEP to a Proposed BEP:
+The criteria of the BIDS Steering Group evaluation
+for elevating a Draft BEP to a Proposed BEP:
 
 -   Integrates into the current edition of the standard and is consistent with the BIDS Mission Statement
 -   Clearly defines a filename template and field names
@@ -298,17 +297,18 @@ BEP to a Proposed BEP:
 -   Consensus reached among the Working Group
 -   Use cases and examples clearly illustrated
 
-Upon a successful Draft BEP review, the BEP will be converted from a
-Google document to a pull request for the
-[BIDS standard][specification_gh].
-This will enable further community feedback on the Proposed BEP. Tools
-may begin integrating the Proposed BEP specification.
+Upon a successful Draft BEP review,
+the BEP will be converted from a Google document
+to a pull request for the [BIDS standard][specification_gh].
+This will enable further community feedback on the Proposed BEP.
+Tools may begin integrating the Proposed BEP specification.
 
 The criteria for merging a Proposed BEP into the BIDS Standard:
 
 -   Proposal positively reviewed by representative community members.
-    The definition of "representative" will differ depending on the scope of
-    the extension and will be reviewed as part of the steering group's final approval.
+    The definition of "representative" will differ
+    depending on the scope of the extension
+    and will be reviewed as part of the Steering Group's final approval.
 
 -   BIDS Steering Group final approval.
 
@@ -322,47 +322,51 @@ The Steering Group evaluates:
 
 ### A. BEP Procedure: Key definitions
 
-**BIDS Specification** - This is the [BIDS
-specification][specification].
-This covers the current raw data organization for brain MRI, MEG, EEG,
-and iEEG.
+#### BIDS Specification
 
-**BIDS Extension Proposal (BEP)** - A proposal that intends to extend
-BIDS into an unspecified modality or derivative.
+This is the [BIDS specification][specification].
+This covers the current raw data organization for brain MRI, MEG, EEG, and iEEG.
+
+#### BIDS Extension Proposal (BEP)
+
+A proposal that intends to extend BIDS into an unspecified modality or derivative.
 A BEP is typically led by 1-3 individuals with several contributors.
 The [list of BEPs](../extensions/beps.md)
 can be found elsewhere on this website.
 
-**Draft BEP** - The in-progress document, typically in a Google Doc, of
-a BEP. This is dynamic and is grown and maintained at the discretion of
-a BEP Working Group.
+#### Draft BEP
 
-**Draft BEP review** - This review is performed by the BIDS Steering
-Group on a Draft BEP. The review at this stage aims to ensure the
-structure clearly defines a template and field names along with it
-integrating into the philosophy, principles, and accepted standards of
-BIDS. The BIDS Steering Group approval action will be a majority vote.
-Upon BIDS Steering Group approval, the Draft BEP will be elevated to a
-Proposed BEP.
+The in-progress document, typically in a Google Doc, of a BEP.
+This is dynamic and is grown and maintained at the discretion of a BEP Working Group.
 
-**Proposed BEP** - Once the BIDS Steering Group has approved the Draft
-BEP, it becomes a specific addition and/or modification of BIDS, in the
-form of a Proposed BEP. At this time, the Proposed BEP will take the
-form of a pull request on the [BIDS GitHub
-repository][specification_gh].
+#### Draft BEP review
 
-**Proposed BEP review** - This review is performed by the BIDS Steering
-Group on the Proposed BEP. The review aims to ensure the community input
-was incorporated and the final version integrates into the current
-edition of the BIDS standard specification.
+This review is performed by the BIDS Steering Group on a Draft BEP.
+The review at this stage aims to ensure the structure clearly defines a template
+and field names along with it integrating into the philosophy, principles, and accepted standards of BIDS.
+The BIDS Steering Group approval action will be a majority vote.
+Upon BIDS Steering Group approval, the Draft BEP will be elevated to a Proposed BEP.
 
-**Merged BEP** - A Proposed BEP that has been reviewed and approved by
-the Steering Group and merged into the BIDS standard.
+#### Proposed BEP
+
+Once the BIDS Steering Group has approved the Draft BEP,
+it becomes a specific addition and/or modification of BIDS,
+in the form of a Proposed BEP.
+At this time, the Proposed BEP will take the form of a pull request on the [BIDS GitHub repository][specification_gh].
+
+#### Proposed BEP review
+
+This review is performed by the BIDS Steering Group on the Proposed BEP.
+The review aims to ensure the community input was incorporated
+and the final version integrates into the current edition of the BIDS standard specification.
+
+#### Merged BEP
+
+A Proposed BEP that has been reviewed and approved by the Steering Group and merged into the BIDS standard.
 
 ### B. Voting Procedure
 
-The BIDS Steering Group is elected by a vote of the active BIDS Contributors
-Group.
+The BIDS Steering Group is elected by a vote of the active BIDS Contributors Group.
 At the discretion of the BIDS Steering Group,
 additional elections may be called and propositions may be put before
 the community in the course of a Steering Group election.
@@ -415,9 +419,9 @@ of the vote is called into question, then the email addresses will be
 used to hold a special election under the terms laid out in Appendix B,
 according to which,
 
-> Elections will be managed through a 3rd party platform that
-> allows restricting votes to a specific set of email addresses while
-> maintaining the anonymity of the votes.
+Elections will be managed through a 3rd party platform that
+allows restricting votes to a specific set of email addresses while
+maintaining the anonymity of the votes.
 
 ### D. License
 
