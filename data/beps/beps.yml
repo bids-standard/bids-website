@@ -603,21 +603,16 @@
     title: Cardiac MRI (CMR)
     google_doc: [[https://docs.google.com/document/d/1StWtkrQpJyBjPcPjAMrk07QJcoG2gGzih8LX0lhmGKI/edit]]
     leads:
-    -   given-names: Edward
-        family-names: Xu
-        # mailto:zexu@ottawaheart.ca
-    -   given-names: Jefferson
-        family-names: Casimir
+    -   Name: [Edward Xu](mailto:zexu@ottawaheart.ca)
+         # @Edward-ZX
+    -   Name: Jefferson Casimir
         # @jeffersoncasimir
-    -   given-names: Ghislain
-        family-names: Vaillant
+    -   Name: Ghislain Vaillant
         # @ghisvail
-    -   given-names: Christine
-        family-names: Rogers
+    -   Name: Christine Rogers
         # @christinerogers
     bids_maintainers:
-    -   given-names: Christine
-        family-names: Rogers
+    -   Name: Christine Rogers
         # @christinerogers
     update: |
         - To support cardiac MRI (CMR) harmonization and standardization,
