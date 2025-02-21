@@ -60,7 +60,7 @@ users to confirm that a given dataset complies with the current edition
 of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
 Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
 libraries allow querying and manipulating BIDS-compliant datasets,
-[BIDS-Apps](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html) for running portable
+[BIDS-Apps](https://bids.neuroimaging.io/tools/bids-apps.html) for running portable
 pipelines on validated BIDS datasets, and platforms like
 [OpenNeuro][openneuro] store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance

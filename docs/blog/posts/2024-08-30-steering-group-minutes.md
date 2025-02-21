@@ -96,13 +96,13 @@ categories:
 
 -   website has been consolidated
 
--   [main webite restructure](https://bids-website.readthedocs.io/) needs mentor review (goal September 15)
+-   main webite restructure needs mentor review (goal September 15)
 
 -   would like community feedback starting October 1
     -   [Steering group feedback right now](https://docs.google.com/document/d/1O3trMc2-9MdLwj-RhRnUyQYe8ciWbvBYTeHqm63PcBg/edit#heading=h.w8lni71xnxbp)
 
 -   TODO: Steering group to visit/review the website
-    -   in particular [impact page](https://bids-website.readthedocs.io/en/latest/impact/index.html )
+    -   in particular impact page
 
     -   Yarik:
         IMHO Grantsmanship better goes under "Collaboration",
