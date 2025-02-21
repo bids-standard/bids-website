@@ -1,5 +1,6 @@
 gender_guesser
 geopy
+jinja2>=3.1.5
 markdown-it-py
 mkdocs-material[imaging]
 mkdocs-macros-plugin
@@ -8,9 +9,10 @@ mkdocs-redirects
 mkdocs-rss-plugin
 plotly>=5.3.1
 pybids
+pyzotero
 rich
 ruamel.yaml
 tabulate
-pyzotero
+urllib3>=2.2.2
 bidsschematools[render]
 -e file:tools
