@@ -78,7 +78,7 @@ Once a BEP has been opened (see the next [section](#starting-your-bep)),
 it goes from `Draft BEP` to `Proposed BEP` to `Merged BEP`.
 
 A `Draft BEP` is usually a Google document (see [governance](../collaboration/governance.md#draft-bep)),
-where as `Proposed BEP` refert to pull request to BIDS specification repository
+where as `Proposed BEP` refers to pull request to BIDS specification repository
 (see [governance](../collaboration/governance.md#proposed-bep)).
 
 ```mermaid
