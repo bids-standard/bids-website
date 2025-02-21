@@ -24,6 +24,6 @@
     -   ' ' # add blocker
     -   ' ' # with items
     communication_channel: # mattermost, matrix, slack, discord...
-    google_doc_created:
-    pull_request_created:
-    pull_request_merged:
+    google_doc_created: # date when the BEP draft was started: format 'YYYY-MM'
+    pull_request_created: # date when the Proposed BEP was started: format 'YYYY-MM'
+    pull_request_merged: # date when the Proposed BEP was merged: format 'YYYY-MM'
