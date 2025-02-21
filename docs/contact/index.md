@@ -66,19 +66,3 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
-
-## Contact Us Directly
-
-<meta property="og:title" content="contact"/>
-<script src="javascripts/giscus.js"></script>
-
-<!--
-<div class="iframe-container">
-  <iframe
-    src="https://www.youtube.com/embed/-c4PUhTwmz4"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
--->
