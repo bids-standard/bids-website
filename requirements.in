@@ -1,3 +1,4 @@
+certifi>=2024.7.4
 gender_guesser
 geopy
 jinja2>=3.1.5

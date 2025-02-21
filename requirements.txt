@@ -24,8 +24,10 @@ cairocffi==1.7.0
     # via cairosvg
 cairosvg==2.7.1
     # via mkdocs-material
-certifi==2024.6.2
-    # via requests
+certifi==2025.1.31
+    # via
+    #   -r requirements.in
+    #   requests
 cffi==1.16.0
     # via cairocffi
 charset-normalizer==3.3.2
