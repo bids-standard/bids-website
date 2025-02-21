@@ -1,5 +1,3 @@
-[![Documentation Status](https://readthedocs.org/projects/bids-website/badge/?version=latest)](https://bids.neuroimaging.io/?badge=latest)
-[![Validation](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml/badge.svg?branch=main)](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml)
 [![Bluesky Follow](https://img.shields.io/badge/bluesky-Follow_bidsstandard-blue?logo=bluesky)](https://bsky.app/profile/bidsstandard.bsky.social)
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCxZUcYfd_nvIVWAbzRB1tlw)
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/109520103085644521?domain=https%3A%2F%2Ffosstodon.org%2F)](https://fosstodon.org/@bidsstandard)
