@@ -43,7 +43,7 @@ You can also provide feedback now with our [BIDS website survey](https://cryptpa
 Per BIDS governance, the steering group members have a term of 3 years.
 This year, Ariel Rokem's term ends. Keep an eye out for the upcoming election which BIDS contributors can vote upon. And on behalf of the community, thank you so much Ariel for your service\!
 
-You can find more [about BIDS governance](https://bids-website.readthedocs.io/en/latest/collaboration/governance.html) here.
+You can find more [about BIDS governance](https://bids.neuroimaging.io/collaboration/governance.html) here.
 
 ## Recent venues BIDS presented
 
@@ -58,7 +58,7 @@ The BEPs carry on to help us all update the standard with new and previously une
 -   [BEP043](https://bids.neuroimaging.io/bep043): Term mapping (Chris Markiewicz & Eric Earl)
 -   [BEP044](https://bids.neuroimaging.io/bep044): Stimuli (Seyed Yahya Shirazi)
 
-Other BEPs are listed on [the BIDS website](https://bids-website.readthedocs.io/en/latest/extensions/beps.html).
+Other BEPs are listed on [the BIDS website](https://bids.neuroimaging.io/extensions/beps.html).
 
 ## New working groups
 

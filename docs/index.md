@@ -128,9 +128,6 @@ By using this standard you will benefit in the following ways:
 
 **Leave comments about the site below:**
 
-<meta property="og:title" content="BIDS"/>
-<script src="javascripts/giscus.js"></script>
-
 ---
 
 <div style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap">

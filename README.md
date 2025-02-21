@@ -1,4 +1,4 @@
-[![Documentation Status](https://readthedocs.org/projects/bids-website/badge/?version=latest)](https://bids-website.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/bids-website/badge/?version=latest)](https://bids.neuroimaging.io/?badge=latest)
 [![Validation](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml/badge.svg?branch=main)](https://github.com/bids-standard/bids-website/actions/workflows/validation.yml)
 [![Bluesky Follow](https://img.shields.io/badge/bluesky-Follow_bidsstandard-blue?logo=bluesky)](https://bsky.app/profile/bidsstandard.bsky.social)
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCxZUcYfd_nvIVWAbzRB1tlw)
@@ -20,7 +20,7 @@
 
 <!-- This is the repository for the Brain Imaging Data Structure (BIDS) website that is hosted at <https://bids.neuroimaging.io>. -->
 
-View it here: https://bids-website.readthedocs.io/en/latest/?badge=latest
+View it here: https://bids.neuroimaging.io/?badge=latest
 
 ## Contributing to the BIDS website
 
@@ -42,5 +42,5 @@ on the [bids-specification][specification_gh] repository.
 If you have questions how to apply BIDS to your dataset,
 how to use a shared BIDS dataset,
 or about tools to convert and/or handle BIDS datasets,
-please see the [getting started section](https://bids-website.readthedocs.io/en/latest/getting_started/index.html) page,
-and our [FAQ](https://bids-website.readthedocs.io/en/latest/faq/index.html).
+please see the [getting started section](https://bids.neuroimaging.io/getting_started/index.html) page,
+and our [FAQ](https://bids.neuroimaging.io/faq/index.html).

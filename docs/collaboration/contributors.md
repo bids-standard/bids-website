@@ -9,7 +9,7 @@ hide:
 ## Adding yourself as a contributors
 
 To know more about if you can qualify as a BIDS contributor, how to add your name to the list of contributors, and why you should,
-check our [contributing guidelines about this](https://bids-website.readthedocs.io/en/latest/collaboration/bids_github/CONTRIBUTING.html#recognizing-contributions).
+check our [contributing guidelines about this](https://bids.neuroimaging.io/collaboration/bids_github/CONTRIBUTING.html#recognizing-contributions).
 
 ## List of contributors
 

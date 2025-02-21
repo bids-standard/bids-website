@@ -192,7 +192,7 @@
     status:
     -   'Focus on raw-ish data: channels by time: epoching, filtering, interpolation...'
     -   'All provenance tracking: outsourced to BEP028 (“provenance”)'
-    -   Re-using existing (raw) data formats where applicable
+    -   Reusing existing (raw) data formats where applicable
     -   'No additional entities or suffixes: focus on “desc” entity'
     -   Create new “descriptions.tsv” file to accompany and document the “desc” entity
     -   Working on examples on GitHub
