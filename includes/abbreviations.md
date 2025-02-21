@@ -9,7 +9,6 @@
 [specification]: https://bids-specification.readthedocs.io
 [specification_gh]: https://github.com/bids-standard/bids-specification
 
-
 <!-- tool tips  -->
 
 *[ASL]: Arterial Spin Labeling
