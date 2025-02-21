@@ -138,7 +138,7 @@ The BIDS schema is available in two machine readable formats:
 -   as a set of [YAML](https://en.wikipedia.org/wiki/YAML) files in the [BIDS specification repository](https://github.com/bids-standard/bids-specification/tree/master/src/schema)
 -   as a [single json file](https://bids-specification.readthedocs.io/en/stable/schema.json)
 
-A light-weight introduction to the schema can be found [here](https://bids-extensions.readthedocs.io/en/latest/schema/).
+A light-weight introduction to the schema can be found [here](https://bids.neuroimaging.io/standards/schema/index.html#what-is-the-schema).
 
 A full description of the schema can be found on this [website](https://bidsschematools.readthedocs.io/en/latest/?badge=latest)
 where you will also find the documentation for the python package

@@ -149,7 +149,7 @@ to have a repo created for you.
 If you base your code on <https://github.com/bids-apps/example> deployment
 on docker hub will happen automatically via Circle-ci.
 
-If you want your App to show on the [BIDS website](https://bids-website.readthedocs.io/en/latest/tools/bids-apps.html),
+If you want your App to show on the [BIDS website](https://bids.neuroimaging.io/tools/bids-apps.html),
 you will have to update the `data/tools/apps.yml` in the
 [BIDS website repository](https://github.com/bids-standard/bids-website/tree/main).
 

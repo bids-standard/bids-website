@@ -1,7 +1,7 @@
 ---
 site_name: The Brain Imaging Data Structure
 repo_url: https://github.com/bids-standard/bids-website/tree/main
-site_url: https://bids-website.readthedocs.io
+site_url: https://bids.neuroimaging.io/
 
 plugins:
   - search
