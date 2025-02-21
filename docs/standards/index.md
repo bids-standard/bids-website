@@ -51,8 +51,8 @@ graph LR;
         deno --> web["<a href=https://bids-standard.github.io/bids-validator/>web</a>"]
         deno --> cli
     end
-    subgraph "python-validator ≥ v1.14.7"; 
-        python 
+    subgraph "python-validator ≥ v1.14.7";
+        python
         python --> library
         python --> cli3[cli]
     end
@@ -63,7 +63,7 @@ graph LR;
     schema.json -.is interpreted by.-> deno
     schema.json --is instance of-->metaschema.json
     bidsschematools --is used by--> python
-    
+
     markdown@{label: "<a href="https://github.com/bids-standard/bids-specification/tree/v1.10.0/src">src/</a><br>markdown", shape: docs}
     schema@{label: "<a href="https://github.com/bids-standard/bids-specification/tree/v1.10.0/src/schema">src/schema/</a><br>YAMLs", shape: docs}
     mkdocs@{label: "<a href="">mkdocs</a>", shape: proc}
