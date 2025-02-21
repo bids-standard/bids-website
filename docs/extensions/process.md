@@ -10,7 +10,7 @@ A BEP is a method of expanding the BIDS Specification to encompass new features 
 They are called BEPs because they are modeled after
 [Python Extension Proposals](https://peps.python.org/pep-0001/#what-is-a-pep) (PEPs) as
 they have been an effective community tool to change (either by updating or supplementing)
-the Python programming language.
+the [Python programming language](https://www.python.org/).
 BIDS contributors adopting a similar structure has been useful to expand BIDS.
 
 BEPs have grown the specification beyond its original scope of MRI
