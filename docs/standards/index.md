@@ -16,64 +16,70 @@ You can find further information for:
 The following figure shows the relationship between the BIDS specification, validator implementations, and the BIDS schema:
 
 ```mermaid
-graph LR;
-    subgraph bids-specification-repo["<a href=https://github.com/bids-standard/bids-specification>bids-standard/bids-specification</a>"];
-        markdown
-        schema -.is interpreted by.-> bidsschematools
-    end
-
-    markdown --is interpreted by--> mkdocs
-    bidsschematools --provides MACROS for--> mkdocs
-    mkdocs --renders HTML--> specification
-
-    schema --is instance of-->bids-schema
-    bids-schema -.is implemented by.->deno & bidsschematools
-    bids-schema -.is reflected in.-> metaschema.json
-    schema.json --is instance of-->bids-schema
-
-    subgraph bids.neuroimaging.io["<a href=https://bids.neuroimaging.io>bids.neuroimaging.io</a>"]
-        subgraph bids-specification-website["<a href=https://bids-specification.readthedocs.io>bids-specification.readthedocs.io</a>"];
-            specification
-            bidsschematools --compiles YAMLs as--> schema.json
-        end
-        subgraph stats-models["<a href=https://bids-standard.github.io/stats-models/>stats-models standard</a>"]
-        end
-        subgraph bids-apps["<a href=https://bids-standard.github.io/execution-spec/>bids-apps standard</a>"]
-        end
-    end
-
-    subgraph "legacy-validator @ v1.15.1";
-        regex["filename patterns"] --> Node.js
-        Node.js --> web1["<a href=https://bids-standard.github.io/legacy-validator/>web</a>"]
-        Node.js --> cli1[cli]
-    end
-    subgraph "bids-validator ≥ v2.0";
-        deno --> web["<a href=https://bids-standard.github.io/bids-validator/>web</a>"]
-        deno --> cli
-    end
-    subgraph "python-validator ≥ v1.14.7";
-        python
-        python --> library
-        python --> cli3[cli]
-    end
-
-    bids-schema -.is implemented by.->python
-
+---
+config:
+  layout: dagre
+---
+flowchart TB
+ subgraph bids-specification-repo["<a href=https://github.com/bids-standard/bids-specification>bids-standard/bids-specification</a>"]
+        markdown@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/src'>src/</a><br>markdown" }
+        bidsschematools@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/tools/schemacode'>tools/schemacode/</a><br/>bidsschematools" }
+        schema@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/src/schema'>src/schema/</a><br>YAMLs" }
+  end
+ subgraph s2["<a href=https://bids-specification.readthedocs.io>bids-specification.readthedocs.io</a>"]
+        specification["specification html"]
+        schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.10.0/schema.json'>schema.json</a>" }
+  end
+ subgraph s3["<a href=https://bids-standard.github.io/stats-models/>stats-models standard</a>"]
+  end
+ subgraph s4["<a href=https://bids-standard.github.io/execution-spec/>bids-apps standard</a>"]
+  end
+ subgraph s5["<a href=https://bids.neuroimaging.io>bids.neuroimaging.io</a>"]
+        s2
+        s3
+        s4
+  end
+ subgraph subGraph5["legacy-validator @ v1.15.1"]
+        Node.js["Node.js"]
+        regex["filename patterns"]
+        web1@{ label: "<a href=\"https://bids-standard.github.io/legacy-validator/\">web</a>" }
+        cli1["cli"]
+  end
+ subgraph subGraph6["bids-validator ≥ v2.0"]
+        web@{ label: "<a href=\"https://bids-standard.github.io/bids-validator/\">web</a>" }
+        deno["deno"]
+        cli["cli"]
+  end
+ subgraph subGraph7["python-validator ≥ v1.14.7"]
+        python["python"]
+        library["library"]
+        cli3["cli"]
+  end
+    schema -. is interpreted by .-> bidsschematools
+    markdown -- is interpreted by --> mkdocs@{ label: "<a href=''>mkdocs</a>" }
+    bidsschematools -- provides MACROS for --> mkdocs
+    mkdocs -- renders HTML --> specification
+    schema -- is instance of --> bids-schema["<a href=https://bids-website.readthedocs.io/en/latest/standards/schema/index.html>BIDS Schema</a>"]
+    bids-schema -. is implemented by .-> deno & bidsschematools & python
+    bids-schema -. is reflected in .-> metaschema.json@{ label: "<a href='https://github.com/bids-standard/bids-specification/blob/master/src/metaschema.json'>metaschema.json</a><br/>JSON Schema" }
+    schema.json -- is instance of --> bids-schema & metaschema.json
+    bidsschematools -- compiles YAMLs as --> schema.json
+    regex --> Node.js
+    Node.js --> web1 & cli1
+    deno --> web & cli
+    python --> library & cli3
     specification -. is interpreted by .-> regex
-    schema.json -.is interpreted by.-> deno
-    schema.json --is instance of-->metaschema.json
-    bidsschematools --is used by--> python
-
-    markdown@{label: "<a href="https://github.com/bids-standard/bids-specification/tree/v1.10.0/src">src/</a><br>markdown", shape: docs}
-    schema@{label: "<a href="https://github.com/bids-standard/bids-specification/tree/v1.10.0/src/schema">src/schema/</a><br>YAMLs", shape: docs}
-    mkdocs@{label: "<a href="">mkdocs</a>", shape: proc}
-    bidsschematools@{label: "<a href="https://github.com/bids-standard/bids-specification/tree/v1.10.0/tools/schemacode">tools/schemacode/</a><br/>bidsschematools", shape: proc}
-    schema.json@{label: "<a href="https://bids-specification.readthedocs.io/en/v1.10.0/schema.json">schema.json</a>", shape: doc}
-    metaschema.json@{label: "<a href="https://github.com/bids-standard/bids-specification/blob/master/src/metaschema.json">metaschema.json</a><br/>JSON Schema", shape: doc}
-    bids-specification-repo@{label: "<a href='xxx'>bids-specification@github</a>"}
-    specification@{label: specification html}
-    bids-schema@{label: "<a href=https://bids-website.readthedocs.io/en/latest/standards/schema/index.html>BIDS Schema</a>"}
-    Node.js@{shape: subproc}
-    python@{shape: subproc}
-    deno@{shape: subproc}
+    schema.json -. is interpreted by .-> deno
+    bidsschematools -- is used by --> python
+    markdown@{ shape: docs}
+    schema@{ shape: docs}
+    bidsschematools@{ shape: proc}
+    mkdocs@{ shape: proc}
+    deno@{ shape: subproc}
+    metaschema.json@{ shape: doc}
+    schema.json@{ shape: doc}
+    Node.js@{ shape: subproc}
+    web1@{ shape: rect}
+    web@{ shape: rect}
+    python@{ shape: subproc}
 ```
