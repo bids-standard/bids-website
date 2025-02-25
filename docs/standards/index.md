@@ -21,40 +21,41 @@ config:
   layout: dagre
 ---
 flowchart TB
- subgraph bids-specification-repo["<a href=https://github.com/bids-standard/bids-specification>bids-standard/bids-specification</a>"]
+    subgraph bids-specification-repo["<a href=https://github.com/bids-standard/bids-specification>bids-standard/bids-specification</a>"]
         markdown@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/src'>src/</a><br>markdown" }
         bidsschematools@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/tools/schemacode'>tools/schemacode/</a><br/>bidsschematools" }
         schema@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/src/schema'>src/schema/</a><br>YAMLs" }
-  end
- subgraph s2["<a href=https://bids-specification.readthedocs.io>bids-specification.readthedocs.io</a>"]
+    end
+    subgraph s2["<a href=https://bids-specification.readthedocs.io>bids-specification.readthedocs.io</a>"]
         specification["specification html"]
         schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.10.0/schema.json'>schema.json</a>" }
-  end
- subgraph s3["<a href=https://bids-standard.github.io/stats-models/>stats-models standard</a>"]
-  end
- subgraph s4["<a href=https://bids-standard.github.io/execution-spec/>bids-apps standard</a>"]
-  end
- subgraph s5["<a href=https://bids.neuroimaging.io>bids.neuroimaging.io</a>"]
+    end
+    subgraph s3["<a href=https://bids-standard.github.io/stats-models/>stats-models standard</a>"]
+    end
+    subgraph s4["<a href=https://bids-standard.github.io/execution-spec/>bids-apps standard</a>"]
+    end
+    subgraph s5["<a href=https://bids.neuroimaging.io>bids.neuroimaging.io</a>"]
         s2
         s3
         s4
-  end
- subgraph subGraph5["legacy-validator @ v1.15.1"]
+    end
+    subgraph subGraph5["legacy-validator @ v1.15.1"]
         Node.js["Node.js"]
         regex["filename patterns"]
         web1@{ label: "<a href=\"https://bids-standard.github.io/legacy-validator/\">web</a>" }
         cli1["cli"]
-  end
- subgraph subGraph6["bids-validator ≥ v2.0"]
+    end
+    subgraph subGraph6["bids-validator ≥ v2.0"]
         web@{ label: "<a href=\"https://bids-standard.github.io/bids-validator/\">web</a>" }
         deno["deno"]
         cli["cli"]
-  end
- subgraph subGraph7["python-validator ≥ v1.14.7"]
+    end
+    subgraph subGraph7["python-validator ≥ v1.14.7"]
         python["python"]
         library["library"]
         cli3["cli"]
-  end
+    end
+
     schema -. is interpreted by .-> bidsschematools
     markdown -- is interpreted by --> mkdocs@{ label: "<a href=''>mkdocs</a>" }
     bidsschematools -- provides MACROS for --> mkdocs
@@ -71,6 +72,7 @@ flowchart TB
     specification -. is interpreted by .-> regex
     schema.json -. is interpreted by .-> deno
     bidsschematools -- is used by --> python
+
     markdown@{ shape: docs}
     schema@{ shape: docs}
     bidsschematools@{ shape: proc}
