@@ -30,14 +30,8 @@ flowchart TB
         specification["specification html"]
         schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.10.0/schema.json'>schema.json</a>" }
     end
-    subgraph s3["<a href=https://bids-standard.github.io/stats-models/>stats-models standard</a>"]
-    end
-    subgraph s4["<a href=https://bids-standard.github.io/execution-spec/>bids-apps standard</a>"]
-    end
     subgraph s5["<a href=https://bids.neuroimaging.io>bids.neuroimaging.io</a>"]
         s2
-        s3
-        s4
     end
     subgraph subGraph5["legacy-validator @ v1.15.1"]
         Node.js["Node.js"]
