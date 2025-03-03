@@ -48,12 +48,16 @@ def generate_members_table(file: str) -> str:
     return template.render(include=content[0])
 
 
-def generate_beps_table(file: str, type: str | None = None) -> str:
+def generate_beps_table(file: str, bep_type: str | None = None) -> str:
     input_file = WEBSITE_DATA_DIR / "beps" / file
     content = yaml.load(input_file)
+    if bep_type == "draft":
+        content = [x for x in content if x["pull_request_created"] is None]
+    elif bep_type == "proposed":
+        content = [x for x in content if x["pull_request_created"] is not None]
     env = return_jinja_env()
     template = env.get_template("beps_table_md.jinja")
-    return template.render(include=content, type=type)
+    return template.render(include=content, bep_type=bep_type)
 
 
 def generate_working_groups_table(file: str, status: str | None = None) -> str:
