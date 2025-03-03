@@ -233,8 +233,6 @@ def main():
                 ),
             )
 
-        fig.update_yaxes(visible=True, showticklabels=False)
-
         fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
 
         if bep_type == "merged BEPs":
@@ -242,7 +240,8 @@ def main():
 
         fig.update_layout(legend_font_size=15)
         fig.update_layout(title=dict(font=dict(size=30)))
-        fig.update_layout(yaxis=dict(tickfont=dict(size=15)))
+        fig.update_layout(xaxis=dict(tickfont=dict(size=20)))
+        fig.update_layout(yaxis=dict(tickfont=dict(size=20)))
 
         # save as html
         # NOTE: This file is ignored in git (see .gitignore)
