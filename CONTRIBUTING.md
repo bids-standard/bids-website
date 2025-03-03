@@ -19,9 +19,14 @@ make sure you also read the instructions below.
 ### Requirements
 
 - python >= 3.10
+- node.js >= ???
+- npm >= ???
 
-Even though this is not required, having `make` installed
-will make it easier to easily serve the website locally.
+<!-- TODO find minimal version of node and npm
+For some quality checks and rare operations, you will need node.js and npm. -->
+
+Even though this is not required,
+having `make` installed will make it easier to easily serve the website locally.
 
 ### Install and serve
 
@@ -39,7 +44,18 @@ Install all the dependencies.
 pip install -r requirements.txt
 ```
 
-Generate all the content required for the build.
+Generate all the content required for the build:
+
+-   copies some pages from the specification repo
+
+-   updates the list of contributors
+
+-   generates the page for each BEP based on its metadata
+
+-   updates the list of BIDS examples
+
+-   generates all the 'plotly' interactive plots as html files in the `tmp` folder
+    that will be 'injected' in the website as snippets (with `--8<--`)
 
 ```bash
 make update
@@ -60,8 +76,6 @@ Same as for the install but you will also need to install `tox`.
 ```bash
 pip install tox
 ```
-<!-- TODO find minimal version of node and npm -->
-For some quality checks and rare operations, you will need node.js and npm.
 
 ## Update all files
 
@@ -74,4 +88,13 @@ make update
 ```bash
 tox
 make remark
+```
+
+## Updating the `requirements.txt`
+
+Update the appropriate line `requirements.in` and run:
+
+```bash
+python -m pip install pip-tools
+pip-compile --strip-extras requirements.in
 ```

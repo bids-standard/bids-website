@@ -11,7 +11,7 @@ The nomination period will close on Friday, October 1st at 11:59pm (Pacific time
 
 <!-- more -->
 
-This new member will be taking the place of our outgoing member, [Kirstie Whitaker](https://bids.neuroimaging.io/2019/12/31/meet-the-bids-steering-group.html#kirstie-whitaker-).
+This new member will be taking the place of our outgoing member, [Kirstie Whitaker](https://bids.neuroimaging.io/blog/2019/12/31/Meet%20the%20BIDS%20Steering%20Group.html#kirstie-whitaker).
 While submitting your nomination, we please ask to prepare a brief description of what you would add to the Steering Group if elected and include it within [this form](https://forms.gle/JDryfJRLP2AiHVPg9).
 We are looking to maintain and enhance our range of diverse perspectives and experiences currently present on the Steering Group.
 To learn more about the Steering Group, please take a few minutes and watch a [recent video discussing this](https://www.youtube.com/watch?v=-c4PUhTwmz4).

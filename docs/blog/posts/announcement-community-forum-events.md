@@ -6,7 +6,7 @@ author: Kirstie Whitaker
 
 ## Join the first BIDS Community Forum events in January 2020
 
-The [BIDS Steering Group](https://bids.neuroimaging.io/2019/12/31/meet-the-bids-steering-group.html) are excited to announce two **Community Forums**!
+The [BIDS Steering Group](https://bids.neuroimaging.io/blog/2019/12/31/meet%20the%20bids%20steering%20group.html) are excited to announce two **Community Forums**!
 
 <!-- more -->
 
