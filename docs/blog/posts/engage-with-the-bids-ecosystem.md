@@ -1,6 +1,6 @@
 ---
 date: 2020-03-20
-slug: Engage with the BIDS ecosystem
+slug: "Engage with the BIDS ecosystem"
 author: Franklin Feingold
 ---
 
