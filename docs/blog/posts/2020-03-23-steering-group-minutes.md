@@ -49,9 +49,9 @@ The Steering Group gave direction on handling author lists on Zenodo - make it a
 
 ## Minutes
 
--   Reviewed [previous meeting action items](https://bids.neuroimaging.io/2020/03/12/Steering-Group-executive-summary,-action-items,-and-minutes.html#action-items)
+-   Reviewed [previous meeting action items](https://bids.neuroimaging.io/blog/2020/03/12/Steering%20Group%20minutes.html#action-items)
 
--   A [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGjTA-U_1LECRsbuBQ9X7kdi34aEdxTMoWCwwkEgou-qpb4A/viewform) with an accompanying [blog post](https://bids.neuroimaging.io/2020/03/20/engage-with-the-bids-ecosystem.html) was drafted to evaluate how the community would like to engage with each other, what barriers may exist that makes engaging more challenging, and ways that we can engage colleagues that do not know about BIDS.
+-   A [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGjTA-U_1LECRsbuBQ9X7kdi34aEdxTMoWCwwkEgou-qpb4A/viewform) with an accompanying [blog post](https://bids.neuroimaging.io/blog/2020/03/20/engage%20with%20the%20bids%20ecosystem.html) was drafted to evaluate how the community would like to engage with each other, what barriers may exist that makes engaging more challenging, and ways that we can engage colleagues that do not know about BIDS.
 
 -   Points to consider when designing the infrastructure to support BIDS slides
 
