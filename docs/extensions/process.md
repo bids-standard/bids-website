@@ -177,7 +177,7 @@ In rare cases, it may be necessary to update the BIDS validator to properly vali
 #### SUGGESTED deliverables
 
 1.  Preprint of the new extension (if applicable).
-2.  Press release for the BIDS website [news section](https://bids.neuroimaging.io/blog/category/release.html).
+1.  Press release for the BIDS website [news section](https://bids.neuroimaging.io/blog/category/release.html).
 
 ### Starting your BEP
 
