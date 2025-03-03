@@ -2,7 +2,7 @@
 
 You can contribute to ongoing BIDS Extension Proposals (BEPs).
 
-## Active BEPs
+## Draft and Proposed BEPs
 
 Below is a table of currently-active BEPs.
 
@@ -10,6 +10,14 @@ Note that all of the extension ideas that are not backwards compatible and thus 
 [Issues page of the bids-2-devel GitHub repository](https://github.com/bids-standard/bids-2-devel/issues).
 
 {{ MACROS___generate_beps_table(file="beps.yml") }}
+
+### Proposed BEPs
+
+--8<-- "tmp/proposed_BEPs_timeline.html"
+
+### Draft BEPs
+
+--8<-- "tmp/draft_BEPs_timeline.html"
 
 ## Merged BEPs
 
@@ -23,11 +31,11 @@ can be found in the BIDS [specification](https://bids-specification.readthedocs.
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
 -->
 
---8<-- "tmp/bids_timeline.html"
+--8<-- "tmp/merged_BEPs_timeline.html"
 
 {{ MACROS___generate_beps_table(file="beps_completed.yml", type="completed") }}
 
-## Others
+## Closed BEPs
 
 Some proposals that set out to extend the BIDS specification have instead lead to other outcomes such as:
 
