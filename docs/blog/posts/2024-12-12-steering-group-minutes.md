@@ -6,6 +6,13 @@ categories:
 -   steering group minutes
 ---
 
+Agenda:
+
+-   NSF POSE proposal
+-   BEP 28 : provenance
+-   Maintainers Updates
+-   BIDS email
+
 <!-- more -->
 
 ## Participants
@@ -16,7 +23,7 @@ categories:
 -   Ross Blair
 -   Camille Maumet
 
-## NSF POSE proposal1
+## NSF POSE proposal
 
 -   scraped:
 
