@@ -37,7 +37,13 @@
       "pattern": "^https://abcdstudy.org/.*"
     },
     {
+      "pattern": "^https://www.humanbrainmapping.org.*"
+    },
+    {
       "pattern": "^https://as.nyu.edu/research-centers/cbi/resources.html"
+    },
+    {
+      "pattern": "^https://opavote.com/results/5203129121898496"
     }
   ],
   "timeout": "20s",

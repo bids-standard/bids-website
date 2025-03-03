@@ -91,8 +91,7 @@ around the world that have implemented BIDS as their organizational structure.
 | Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                     |
 | Database   | [FCP-INDI](https://fcp-indi.github.io/)                                                        |
 | Database   | [OpenNeuro][openneuro]                                                                         |
-| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                |
-| Database   | [Schizconnect](http://schizconnect.org/)                                                       |
+| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                |                                                     |
 | Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/) |
 | Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)       |
 

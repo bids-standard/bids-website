@@ -11,7 +11,7 @@ You can see a list of all the BEPs on our [BIDS extension proposals page](./beps
 ## BEP process
 
 For more information about what is a BEP and how to get started working with a BEP,
-visit [the BEP process page](./bep-process.md).
+visit [the BEP process page](./process.md).
 
 ## BEP guidelines
 
