@@ -34,7 +34,7 @@
       "pattern": "^https://www.seedsforchange.org.uk/consensus"
     },
     {
-      "pattern": "^https://abcdstudy.org/.*"
+      "pattern": "^https://abcdstudy.org.*"
     },
     {
       "pattern": "^https://www.humanbrainmapping.org.*"
