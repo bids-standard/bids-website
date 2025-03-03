@@ -55,6 +55,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
                     Start=StartDoc,
                     Finish=StartPR,
                     Resource="Google Doc",
+                    Name=f"BEP{bep['number']}",
                 )
             )
 
@@ -68,6 +69,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
                         # in format "YYYY-MM"
                         Finish=datetime.now().strftime("%Y-%m"),
                         Resource="Google Doc",
+                        Name=f"BEP{bep['number']}",
                     )
                 )
             # Some very old merged BEPs never had a PR
@@ -78,6 +80,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
                         Start=StartDoc,
                         Finish=Finish,
                         Resource="Google Doc",
+                        Name=f"BEP{bep['number']}",
                     )
                 )
 
@@ -88,6 +91,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
                     Start=StartPR,
                     Finish=Finish,
                     Resource="Pull Request",
+                    Name="",
                 )
             )
 
@@ -99,6 +103,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
                     # use today as a placeholder for the PR creation date
                     Finish=datetime.now().strftime("%Y-%m"),
                     Resource="Pull Request",
+                    Name="",
                 )
             )
 
@@ -110,8 +115,10 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
         x_end="Finish",
         y="BEP",
         color="Resource",
-        title="BIDS timeline",
+        text="Name",
     )
+
+    fig.update_traces(textposition="inside", textfont_size=40)
 
     return fig
 
@@ -233,15 +240,13 @@ def main():
                 ),
             )
 
-        fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
-
         if bep_type == "merged BEPs":
             fig = add_publications_to_timeline(fig)
 
-        fig.update_layout(legend_font_size=15)
-        fig.update_layout(title=dict(font=dict(size=30)))
-        fig.update_layout(xaxis=dict(tickfont=dict(size=20)))
-        fig.update_layout(yaxis=dict(tickfont=dict(size=20)))
+        fig.update_yaxes(visible=True, showticklabels=False)
+        fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
+        fig.update_layout(legend_font_size=25)
+        fig.update_layout(xaxis=dict(tickfont=dict(size=30)))
 
         # save as html
         # NOTE: This file is ignored in git (see .gitignore)
