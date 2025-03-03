@@ -1,6 +1,6 @@
 ---
 date: 2019-12-31
-slug: Meet the BIDS Steering Group
+slug: "Meet the BIDS Steering Group"
 author: Kirstie Whitaker
 ---
 

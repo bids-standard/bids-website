@@ -53,10 +53,10 @@ BIDS continues to be featured in different venues. Our very own maintainer extra
 
 The BEPs carry on to help us all update the standard with new and previously unestablished data types and improvements. If there's a BEP here that affects you, consider getting involved by commenting on open Google Docs or GitHub pull requests or contacting the leads listed in the BEP. Here’s some of our newest BEPs.
 
--   [BEP041]("https://bids.neuroimaging.io/extensions/beps/bep_041.html"): Statistical Model (Taylor Salo)
--   [BEP042]("https://bids.neuroimaging.io/extensions/beps/bep_042.html"): Electromyography (Seyed Yahya Shirazi)
--   [BEP043]("https://bids.neuroimaging.io/extensions/beps/bep_043.html"): Term mapping (Chris Markiewicz & Eric Earl)
--   [BEP044]("https://bids.neuroimaging.io/extensions/beps/bep_044.html"): Stimuli (Seyed Yahya Shirazi)
+-   [BEP041](https://bids.neuroimaging.io/extensions/beps/bep_041.html): Statistical Model (Taylor Salo)
+-   [BEP042](https://bids.neuroimaging.io/extensions/beps/bep_042.html): Electromyography (Seyed Yahya Shirazi)
+-   [BEP043](https://bids.neuroimaging.io/extensions/beps/bep_043.html): Term mapping (Chris Markiewicz & Eric Earl)
+-   [BEP044](https://bids.neuroimaging.io/extensions/beps/bep_044.html): Stimuli (Seyed Yahya Shirazi)
 
 Other BEPs are listed on [the BIDS website](https://bids.neuroimaging.io/extensions/beps.html).
 
