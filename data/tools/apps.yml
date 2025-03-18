@@ -92,6 +92,18 @@ apps:
     -   func
     description: BIDS Application for the Configurable Pipeline for the Analysis of Connectomes (C-PAC)
 
+-   gh: ln2t/cvrmap
+    status: active
+    branch: main
+    dh: arovai/cvrmap
+    ds_type:
+    -   raw
+    -   derivatives
+    datatype:
+    -   anat
+    -   func
+    description: BIDS Application to compute Cerebrovascular Maps from fMRI data
+
 -   gh: bids-apps/DPARSF
     status: active
     dh: bids/dparsf
