@@ -598,6 +598,27 @@
     pull_request_created:
     pull_request_merged:
 
+-   number: '045'
+    title: Peripheral Physiological Recordings
+    display: Physio
+    google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit?usp=sharing
+    leads:
+    -   given-names: Mary
+        family-names: Miedema
+    -   given-names: Stefano
+        family-names: Moia
+    -   given-names: Sourav
+        family-names: Kulkarni
+    status: |
+        - To update standards for physiological data for improved clarity and a broader range of use cases.
+        - Now collecting community comments and feedback. All collaborators are welcome.
+        - Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675)
+    content:
+    -   raw
+    blocking:
+    google_doc_created: 2024-08-13
+    pull_request_created:
+    pull_request_merged:
 
 -   number: '046'
     title: Cardiac MRI (CMR)
