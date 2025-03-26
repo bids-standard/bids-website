@@ -76,10 +76,11 @@
     -   physiological
     -   PET
     expected_input:
-    -   DICOM
+    -   DICOM (MRI/PET/CT)
     -   PAR/REC
-    -   physiological
-    -   PET
+    -   Twix, SDAT/SPAR, P-file (MRS)
+    -   NeuroBS Presentation
+    -   PsychoPy
     -   Nifti
     language:
     -   Python
