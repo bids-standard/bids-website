@@ -609,7 +609,7 @@
         family-names: Moia
     -   given-names: Sourav
         family-names: Kulkarni
-    status: |
+    status:
         - To update standards for physiological data for improved clarity and a broader range of use cases.
         - Now collecting community comments and feedback. All collaborators are welcome.
         - Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675)
