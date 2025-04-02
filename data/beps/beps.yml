@@ -530,20 +530,22 @@
 
 -   number: '042'
     title: Electromyography
-    google_doc: https://docs.google.com/document/d/1G5_Eu2OemcZXS9xOGINPA6SUTaZOml7LBmZCMnUhTXA/
+    display: Electromyography (EMG)
+    pull_request: https://github.com/bids-standard/bids-specification/pull/1998
+    html_preview: https://bids-specification--1998.org.readthedocs.build/en/1998/modality-specific-files/electromyography.html
     content:
     -   raw
     leads:
-    -   given-names: Seyed
-        family-names: Yahya Shirazi
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
     bids_maintainers:
-    status:
-    -   Approved on May 2024, inviting collaborators (please join)
-    -   BEP will follow EEG-BIDS with EMG-specific metadata...
-    -   Sensor placement schema being developed in collaboration with Motion-BIDS maintainers
+    status: |
+        -   Community comments and feedback are being collected (April 2025)
+        -   Approved on May 2024, inviting collaborators (please join)
+        -   Original issue: https://github.com/bids-standard/bids-specification/issues/1371
     blocking:
     google_doc_created: 2023-01
-    pull_request_created:
+    pull_request_created: 2024-12
     pull_request_merged:
 
 -   number: '043'
