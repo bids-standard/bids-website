@@ -388,19 +388,19 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric A.
+    -   given-names: Eric
         family-names: Earl
     -   given-names: Samuel
         family-names: Guay
     -   given-names: Sebastian
         family-names: Urchs
     bids_maintainers:
-    -   given-names: Rémi
-        family-names: Gau
+    -   given-names: Eric
+        family-names: Earl
     status:
-    -   Dropping “Segregated” data format in favor of “Aggregated”
+    -   Met with BIDS maintainers team and going to integrate all concepts into the modality agnostic files section.
     blocking:
-    -   More reviews and discussions are necessary.
+    -   Limited time on the part of the BEP leads.
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
