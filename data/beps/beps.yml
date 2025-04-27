@@ -274,6 +274,8 @@
         family-names: Ghosh
     -   given-names: Camille
         family-names: Maumet
+    -   given-names: Yaroslav O.
+        family-names: Halchenko
     bids_maintainers:
     status:
     -   '[Specification](https://bids.neuroimaging.io/bep028)'
