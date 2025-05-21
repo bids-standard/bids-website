@@ -404,13 +404,15 @@
         family-names: Guay
     -   given-names: Sebastian
         family-names: Urchs
+    -   given-names: Arshitha
+        family-names: Basavaraj
     bids_maintainers:
     -   given-names: Eric
         family-names: Earl
     status:
-    -   Met with BIDS maintainers team and going to integrate all concepts into the modality agnostic files section.
+    -   PR nearly ready to integrate with modality agnostic files sections.
     blocking:
-    -   Limited time on the part of the BEP leads.
+    -   Finishing bids-examples PR.
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
