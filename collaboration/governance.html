@@ -1,0 +1,5373 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bids.neuroimaging.io/collaboration/governance.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="working-groups.html">
+      
+      
+      <link rel="icon" href="../assets/favicon/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>Governance - The Brain Imaging Data Structure</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6v2Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#governance-and-decision-making" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="The Brain Imaging Data Structure" class="md-header__button md-logo" aria-label="The Brain Imaging Data Structure" data-md-component="logo">
+      
+  <img src="../assets/img/logos/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Brain Imaging Data Structure
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Governance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bids-standard/bids-website/tree/main" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  About BIDS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../blog/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../standards/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Standards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../getting_started/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tools/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../datasets/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Datasets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../faq/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Collaboration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../extensions/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Extensions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../impact/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Impact
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.teepublic.com/user/bids" class="md-tabs__link">
+        
+  
+    
+  
+  Merch
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../contact/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Contact
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="The Brain Imaging Data Structure" class="md-nav__button md-logo" aria-label="The Brain Imaging Data Structure" data-md-component="logo">
+      
+  <img src="../assets/img/logos/logo.png" alt="logo">
+
+    </a>
+    The Brain Imaging Data Structure
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bids-standard/bids-website/tree/main" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../blog/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/archive/2024.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/archive/2023.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/archive/2022.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/archive/2021.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/archive/2020.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/archive/2019.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/community-review.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    community review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/election.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    election
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/news.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    news
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/release.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    release
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/schema.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    schema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/steering-group-minutes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    steering group minutes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/town-hall.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    town hall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/category/validator.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    validator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../standards/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Standards
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Standards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../standards/bids_specification/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIDS Specification
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            BIDS Specification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../standards/schema/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIDS Schema
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            BIDS Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    how it works
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            how it works
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/schema/how-the-schema-works.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How the schema works
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/schema/schema-meta.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/schema/schema-objects.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/schema/schema-rules.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../standards/bids_stats_model/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIDS Stats Model
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            BIDS Stats Model
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../standards/bids_app_specification/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIDS Apps
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            BIDS Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/folders_and_files/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Folders and files
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Folders and files
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/folders_and_files/folders.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Folders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/folders_and_files/files.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/folders_and_files/metadata/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Metadata
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2_4" id="__nav_4_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Metadata
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/folders_and_files/metadata/json.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/folders_and_files/metadata/tsv.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/folders_and_files/derivatives.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/resources/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/resources/links.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/resources/glossary.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/resources/dependencies.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/resources/publications.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Publications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/resources/talks.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talks and slides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/bids_apps/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIDS apps
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            BIDS apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/bids_apps/tutorial.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running a BIDS App
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/tutorials/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/tutorials/annotation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annotating a BIDS dataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/tutorials/conversion/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Conversion
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5_3" id="__nav_4_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Conversion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/tutorials/conversion/asl.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ASL data conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/tutorials/conversion/ieeg.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iEEG data conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/tutorials/conversion/mri.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MRI data conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/tutorials/conversion/pet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PET data conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/how_to/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    How to
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            How to
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/templates/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Templates
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Templates
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tools/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/converters.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Converters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/validator.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS validation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/bids-apps.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/others.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../datasets/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Datasets
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Datasets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/examples.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../faq/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/general.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/eeg.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/mri.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MRI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/phenotype.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phenotype
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/bids-extensions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/bids-apps.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Collaboration
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Governance
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="governance.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Governance
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Background
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-project-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Project Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-bids-mission-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. BIDS Mission Statement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-leadership-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Leadership structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Leadership structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bids-steering-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Steering Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-working-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP Working Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-leads-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP Leads Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-maintainers-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Maintainers Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-contributors-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Contributors Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-advisory-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Advisory Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-working-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other working groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Community
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-governance-of-the-standardization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Governance of the standardization process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Governance of the standardization process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-principles-for-open-standards-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Principles for open standards development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-standard-decision-making-process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Standard decision making process overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-appendix" class="md-nav__link">
+    <span class="md-ellipsis">
+      X. Appendix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="X. Appendix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-bep-procedure-key-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. BEP Procedure: Key definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-voting-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Voting Procedure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-governance-ratification-and-bids-steering-group-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. Governance ratification and BIDS Steering Group initialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-license" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. License
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      F. Acknowledgments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-election-data-and-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      G. Election data and code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-governance-amendment-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      H. Governance amendment procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="working-groups.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bids_github/CONTRIBUTING.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contributors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bids_github/CODE_OF_CONDUCT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="acknowledgments.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acknowledgments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="reports/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reports
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8_8" id="__nav_8_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reports
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_8_2" id="__nav_8_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Google summer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Google summer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reports/google_summer/2018-gsoc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GSOC 2018
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reports/google_summer/2024-gsod.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GSOD 2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../extensions/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Extensions
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Extensions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/beps.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS extension proposals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/process.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BEP process
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/guidelines.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BEP guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/macros_doc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using MkDocs macros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../impact/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Impact
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Impact
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../impact/measuring.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measuring BIDS Impact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.teepublic.com/user/bids" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Merch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../contact/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Contact
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Background
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-project-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Project Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-bids-mission-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. BIDS Mission Statement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-leadership-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Leadership structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Leadership structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bids-steering-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Steering Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-working-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP Working Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-leads-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP Leads Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-maintainers-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Maintainers Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-contributors-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Contributors Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-advisory-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Advisory Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-working-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other working groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bids-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIDS Community
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-governance-of-the-standardization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Governance of the standardization process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Governance of the standardization process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-principles-for-open-standards-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Principles for open standards development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-standard-decision-making-process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Standard decision making process overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-appendix" class="md-nav__link">
+    <span class="md-ellipsis">
+      X. Appendix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="X. Appendix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-bep-procedure-key-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. BEP Procedure: Key definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-voting-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Voting Procedure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-governance-ratification-and-bids-steering-group-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. Governance ratification and BIDS Steering Group initialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-license" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. License
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      F. Acknowledgments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-election-data-and-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      G. Election data and code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-governance-amendment-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      H. Governance amendment procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/bids-standard/bids-website/edit/main/docs/collaboration/governance.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="governance-and-decision-making"><a class="toclink" href="#governance-and-decision-making">Governance and Decision Making</a></h1>
+<h2 id="1-introduction"><a class="toclink" href="#1-introduction">1. Introduction</a></h2>
+<p>This document, <em>Brain Imaging Data Structure (<abbr title="Brain Imaging Data Structure">BIDS</abbr>): Governance and Decision Making</em>,
+intends to describe the <abbr title="Brain Imaging Data Structure">BIDS</abbr> mission, its principles,
+its scope, the leadership structure, governance over the standard development process,
+and to define the different groups and roles.
+<abbr title="Brain Imaging Data Structure">BIDS</abbr> is a community-built and maintained standard.
+The goal of this document is to clearly describe how <abbr title="Brain Imaging Data Structure">BIDS</abbr> is maintained and grown.</p>
+<h2 id="2-background"><a class="toclink" href="#2-background">2. Background</a></h2>
+<h3 id="a-project-summary"><a class="toclink" href="#a-project-summary">A. Project Summary</a></h3>
+<p>The Brain Imaging Data Structure (<abbr title="Brain Imaging Data Structure">BIDS</abbr>) is a standard specifying the
+description of neuroimaging data in a filesystem hierarchy and of the
+metadata associated with the imaging data.
+The current edition of the standard is available in
+<a href="https://bids-specification.readthedocs.io">HTML</a> with all
+the previous editions available since October 2018 (listed in the
+<a href="https://bids-specification.readthedocs.io/en/stable/CHANGES.html">Changelog</a>). The pre-October 2018 specification editions can be found in this <a href="https://github.com/bids-standard/bids-website">repository</a> as PDFs.
+The development edition is available in
+<a href="https://bids-specification.readthedocs.io">HTML</a>.
+The specification is based in a <a href="https://github.com/bids-standard/bids-specification">GitHub repository</a>
+and rendered with <a href="https://docs.readthedocs.io/en/stable/">ReadTheDocs</a>.</p>
+<p>We strive for community consensus in decision making.
+This governing model and decision making procedure was developed through
+the review of several governance models across the informatics and computing field.</p>
+<p>The project is a community-driven effort.
+<abbr title="Brain Imaging Data Structure">BIDS</abbr>, originally OBIDS, was initiated during an INCF sponsored data
+sharing working group meeting (January 2015) at Stanford University.
+It was subsequently spearheaded and maintained by Chris Gorgolewski.
+In the transitional period after Chris Gorgolewski's departure in early 2019
+and before the community's acceptance of the present governance in late 2019,
+the project was managed and maintained by Franklin Feingold, Stefan Appelhoff, and the Poldrack Lab at Stanford.
+<abbr title="Brain Imaging Data Structure">BIDS</abbr> has advanced under the direction and effort of its contributors,
+the community of researchers that appreciate the value of standardizing neuroimaging data to facilitate sharing and analysis.
+The project is multifaceted and depends on contributors for:
+specification development and maintenance,
+<a href="../extensions/beps.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposals (<abbr title="BIDS Extension Proposals">BEPs</abbr>)</a>,
+software tools,
+<a href="https://bids-standard.github.io/bids-starter-kit/">starter kits</a>,
+<a href="https://github.com/bids-standard/bids-examples">examples</a>,
+and general discussions.
+The relevant discussions are located in our
+<a href="https://groups.google.com/forum/#!forum/bids-discussion">Google Group</a>,
+<a href="https://github.com/bids-standard">GitHub organization</a>,
+and public Google Documents (typically associated with an <a href="../extensions/beps.html">extension proposal</a>).</p>
+<p>A key component of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> initiative is the collection of associated
+software tools and platforms that facilitate the validation and ease the
+use of <abbr title="Brain Imaging Data Structure">BIDS</abbr>-formatted datasets.
+<abbr title="Brain Imaging Data Structure">BIDS</abbr> converters (for example, <a href="https://github.com/nipy/heudiconv">HeuDiConv</a>) enable the streamlined
+conversion of raw imaging files (for example, DICOMs) into a <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset, the
+<a href="http://bids-standard.github.io/bids-validator"><abbr title="Brain Imaging Data Structure">BIDS</abbr> validator</a> allows
+users to confirm that a given dataset complies with the current edition
+of the standard, the <a href="https://github.com/bids-standard/pybids">PyBIDS</a>
+Python and <a href="https://github.com/bids-standard/bids-matlab">bids-matlab</a>
+libraries allow querying and manipulating <abbr title="Brain Imaging Data Structure">BIDS</abbr>-compliant datasets,
+<a href="https://bids.neuroimaging.io/tools/bids-apps.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr>-Apps</a> for running portable
+pipelines on validated <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets, and platforms like
+<a href="https://openneuro.org">OpenNeuro</a> store and serve <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets. Note
+that the associated software does not fall under the same governance
+structure as <abbr title="Brain Imaging Data Structure">BIDS</abbr>, although the contributor and user base may largely
+overlap.</p>
+<h3 id="b-bids-mission-statement"><a class="toclink" href="#b-bids-mission-statement">B. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Mission Statement</a></h3>
+<p>The goal of <abbr title="Brain Imaging Data Structure">BIDS</abbr> is to make neuroimaging data more accessible,
+shareable, and usable by researchers. To achieve this goal, <abbr title="Brain Imaging Data Structure">BIDS</abbr> seeks
+to develop a simple and intuitive way to organize and describe
+neuroimaging and associated data. <abbr title="Brain Imaging Data Structure">BIDS</abbr> has three foundational
+principles:</p>
+<ol>
+<li>
+<p>To minimize complexity and facilitate adoption, reuse existing
+    methods and technologies whenever possible.</p>
+</li>
+<li>
+<p>Tackle 80% of the most commonly used neuroimaging data, derivatives,
+    and models (inspired by the pareto principle).</p>
+</li>
+<li>
+<p>Adoption by the global neuroimaging community and their input during
+   the creation of the specification is critical for the success of the project.</p>
+</li>
+</ol>
+<h2 id="3-leadership-structure"><a class="toclink" href="#3-leadership-structure">3. Leadership structure</a></h2>
+<p>To achieve the goals of widespread adoption of the standard while
+growing to adapt to its community of members, <abbr title="Brain Imaging Data Structure">BIDS</abbr> is led by a series of groups.</p>
+<p>The following figure illustrates the structure of the groups described
+in this document. The specific organization and responsibilities of
+these groups are laid out in detail, below.</p>
+<p><img alt="leadership_figure" src="../assets/img/governance_figure.jpg" title="Leadership Structure" /></p>
+<h3 id="bids-steering-group"><a class="toclink" href="#bids-steering-group"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group</a></h3>
+<p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group is responsible for approving and advancing <abbr title="BIDS Extension Proposals">BEPs</abbr>
+through the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard process, as well as more general decisions
+regarding the standard. The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group aims to preserve the
+longevity and sustainability of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard. The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering
+Group consists of 5 members, including the chair.</p>
+<p>Membership on the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group is through elections by <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+Contributors. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group terms are 3 years.
+The existing <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group is responsible for filling open
+positions, ensuring that at least two nominees are named for each
+position, that multiple imaging modalities (for example, <abbr title="Magnetic Resonance Imaging">MRI</abbr>, MEG) are
+represented on the final committee, and the different needs for the
+specification (for example, users vs software developers). Given that the
+modalities included in <abbr title="Brain Imaging Data Structure">BIDS</abbr> will continue to evolve, we do not recommend
+a precise mechanism for this balance. It is therefore at the discretion
+of the Steering Group to ensure that modalities are appropriately
+represented. The chair is elected by a majority of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering
+Group (3 votes) to serve for a 1 year term. The chair cannot serve two
+consecutive years as chair. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group members may hold other
+<abbr title="Brain Imaging Data Structure">BIDS</abbr> roles at the same time, for example <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group chair.</p>
+<p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group is the authority of last resort in addressing
+conflicts among groups and alleged violations of the <a href="bids_github/CODE_OF_CONDUCT.html">Code of Conduct</a>.</p>
+<p>The Steering Group may delegate tasks as needed to fulfill its responsibilities.</p>
+<p>The current members of the Steering group are:</p>
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/francopestilli">
+      <img
+          src="https://github.com/francopestilli.png?size=150"
+        width="150px;"
+        alt="Franco Pestilli"
+      />
+      <br>
+      <sub><b>Franco Pestilli</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/CPernet">
+      <img
+          src="https://github.com/CPernet.png?size=150"
+        width="150px;"
+        alt="Cyril Pernet"
+      />
+      <br>
+      <sub><b>Cyril Pernet</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/yarikoptic">
+      <img
+          src="https://github.com/yarikoptic.png?size=150"
+        width="150px;"
+        alt="Yaroslav Halchenko"
+      />
+      <br>
+      <sub><b>Yaroslav Halchenko</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/cmaumet">
+      <img
+          src="https://github.com/cmaumet.png?size=150"
+        width="150px;"
+        alt="Camille Maumet"
+      />
+      <br>
+      <sub><b>Camille Maumet</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/dorahermes">
+      <img
+          src="https://github.com/dorahermes.png?size=150"
+        width="150px;"
+        alt="Dora Hermes"
+      />
+      <br>
+      <sub><b>Dora Hermes</b></sub>
+    </a>
+  </div>
+</div>
+
+<p>Past members of the Steering group are:</p>
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/KirstieJane">
+      <img
+          src="https://github.com/KirstieJane.png?size=150"
+        width="150px;"
+        alt="Kirstie Whitaker"
+      />
+      <br>
+      <sub><b>Kirstie Whitaker</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/melanieganz">
+      <img
+          src="https://github.com/melanieganz.png?size=150"
+        width="150px;"
+        alt="Melanie Ganz"
+      />
+      <br>
+      <sub><b>Melanie Ganz</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/poldrack">
+      <img
+          src="https://github.com/poldrack.png?size=150"
+        width="150px;"
+        alt="Russell Poldrack"
+      />
+      <br>
+      <sub><b>Russell Poldrack</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/guiomar">
+      <img
+          src="https://github.com/guiomar.png?size=150"
+        width="150px;"
+        alt="Guiomar Niso"
+      />
+      <br>
+      <sub><b>Guiomar Niso</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/robertoostenveld">
+      <img
+          src="https://github.com/robertoostenveld.png?size=150"
+        width="150px;"
+        alt="Robert Oostenveld"
+      />
+      <br>
+      <sub><b>Robert Oostenveld</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/arokem">
+      <img
+          src="https://github.com/arokem.png?size=150"
+        width="150px;"
+        alt="Ariel Rokem"
+      />
+      <br>
+      <sub><b>Ariel Rokem</b></sub>
+    </a>
+  </div>
+</div>
+
+<h3 id="bep-working-group"><a class="toclink" href="#bep-working-group"><abbr title="BIDS Extension Proposal">BEP</abbr> Working Group</a></h3>
+<p>A <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group is established for every <abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposal
+(<abbr title="BIDS Extension Proposal">BEP</abbr>). Each working group will have 1-3 group-appointed leader(s),
+referred to as <abbr title="BIDS Extension Proposal">BEP</abbr> Lead(s). Every <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group is formed with the
+aim of extending or modifying the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard into their domain of
+interest. This can be either an unspecified modality or derivative.
+The <abbr title="BIDS Extension Proposal">BEP</abbr> Lead and Working Group will determine how they organize their
+work, following the <abbr title="Brain Imaging Data Structure">BIDS</abbr> governance standards laid out in section 4 of
+this document and the <abbr title="Brain Imaging Data Structure">BIDS</abbr> <a href="bids_github/CODE_OF_CONDUCT.html">Code of Conduct</a>.
+The <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group work is completed when their <abbr title="BIDS Extension Proposal">BEP</abbr> has become a Merged <abbr title="BIDS Extension Proposal">BEP</abbr>.</p>
+<h3 id="bep-leads-group"><a class="toclink" href="#bep-leads-group"><abbr title="BIDS Extension Proposal">BEP</abbr> Leads Group</a></h3>
+<p>The <abbr title="BIDS Extension Proposal">BEP</abbr> Leads Group consists of the <abbr title="BIDS Extension Proposal">BEP</abbr> Leads of the <abbr title="BIDS Extension Proposal">BEP</abbr> Working Groups.
+This Working Group intends to ensure potential integrations and
+collaborations across <abbr title="BIDS Extension Proposals">BEPs</abbr> are realized and consistency across the <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+standard.</p>
+<h3 id="bids-maintainers-group"><a class="toclink" href="#bids-maintainers-group"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers Group</a></h3>
+<p>This group is responsible for maintaining the <a href="https://github.com/bids-standard/bids-specification"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification on
+GitHub</a>. The Lead
+Maintainer and the Maintainers Group will determine how they organize
+their work, detailed in the <a href="https://github.com/bids-standard/bids-specification/blob/master/Maintainers_Guide.md"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers Group Guide</a> and in accordance with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Code of Conduct.
+The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers Group Guide is subject to Steering Group approval and amendment.
+<abbr title="Brain Imaging Data Structure">BIDS</abbr> contributors may self-nominate to become maintainers,
+with approval by a majority vote of current maintainers.</p>
+<p>This group submits
+<a href="https://github.com/bids-standard/bids-specification/wiki/BIDS-Maintainers-Documents#bids-maintainers-reports">monthly status summaries</a>
+to the Steering Group.</p>
+<p>The current members of the Maintainers group are:</p>
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/sappelhoff">
+      <img
+          src="https://github.com/sappelhoff.png?size=150"
+        width="150px;"
+        alt="Stefan Appelhoff"
+      />
+      <br>
+      <sub><b>Stefan Appelhoff</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/effigies">
+      <img
+          src="https://github.com/effigies.png?size=150"
+        width="150px;"
+        alt="Chris Markiewicz"
+      />
+      <br>
+      <sub><b>Chris Markiewicz</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/tsalo">
+      <img
+          src="https://github.com/tsalo.png?size=150"
+        width="150px;"
+        alt="Taylor Salo"
+      />
+      <br>
+      <sub><b>Taylor Salo</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/Remi-Gau">
+      <img
+          src="https://github.com/Remi-Gau.png?size=150"
+        width="150px;"
+        alt="Rémi Gau"
+      />
+      <br>
+      <sub><b>Rémi Gau</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/rwblair">
+      <img
+          src="https://github.com/rwblair.png?size=150"
+        width="150px;"
+        alt="Ross Blair"
+      />
+      <br>
+      <sub><b>Ross Blair</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/bendhouseart">
+      <img
+          src="https://github.com/bendhouseart.png?size=150"
+        width="150px;"
+        alt="Anthony Galassi"
+      />
+      <br>
+      <sub><b>Anthony Galassi</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/ericearl">
+      <img
+          src="https://github.com/ericearl.png?size=150"
+        width="150px;"
+        alt="Eric Earl"
+      />
+      <br>
+      <sub><b>Eric Earl</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/christinerogers">
+      <img
+          src="https://christinerogers.github.io/bio/headshot_crogers_202010.jpg"
+        width="150px;"
+        alt="Christine Rogers"
+      />
+      <br>
+      <sub><b>Christine Rogers</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/nellh">
+      <img
+          src="https://github.com/nellh.png?size=150"
+        width="150px;"
+        alt="Nell Hardcastle"
+      />
+      <br>
+      <sub><b>Nell Hardcastle</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/KimberlyLRay">
+      <img
+          src="https://github.com/KimberlyLRay.png?size=150"
+        width="150px;"
+        alt="Kimberly Ray"
+      />
+      <br>
+      <sub><b>Kimberly Ray</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/julia-pfarr">
+      <img
+          src="https://github.com/julia-pfarr.png?size=150"
+        width="150px;"
+        alt="Julia-Katharina Pfarr"
+      />
+      <br>
+      <sub><b>Julia-Katharina Pfarr</b></sub>
+    </a>
+  </div>
+</div>
+
+<p>Past members of the Maintainers group are:</p>
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/franklin-feingold">
+      <img
+          src="https://github.com/franklin-feingold.png?size=150"
+        width="150px;"
+        alt="Franklin Feingold"
+      />
+      <br>
+      <sub><b>Franklin Feingold</b></sub>
+    </a>
+  </div>
+</div>
+
+<p>If you need to contact the maintainers on a specific topic you can use the following email: <code>bids.maintenance@gmail.com</code>.
+However, you may receive a more timely response when pinging them on one of the GitHub repositories using the tag <code>@bids-standard/maintainers</code>.</p>
+<h3 id="bids-contributors-group"><a class="toclink" href="#bids-contributors-group"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Contributors Group</a></h3>
+<p>This group consists of individuals who have contributed to the <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+community. Group members are identified on the <a href="https://bids-specification.readthedocs.io/en/latest/appendices/contributors.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr>
+contributors</a> list,
+a list that is intended to be inclusive of all forms of engagement with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community,
+and that contributors are encouraged to update via the
+<a href="https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors">specification wiki</a>.
+Engagement can range from writing copy text in the specification
+to providing feedback on projects such as the
+<a href="https://bids-standard.github.io/bids-starter-kit/"><abbr title="Brain Imaging Data Structure">BIDS</abbr> starter kit</a>.</p>
+<p>Members of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Contributors Group are encouraged to support the
+<abbr title="Brain Imaging Data Structure">BIDS</abbr> specification by supporting the members of the Maintainers Group in
+their responsibilities.</p>
+<p>An <em>Active Contributor</em> is defined as a contributor that is reachable via
+the email address they provided to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers team,
+and responds to correspondence by the <abbr title="Brain Imaging Data Structure">BIDS</abbr> group
+(for example, Maintainers/Steering Group or the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community at large).
+Contributors may explicitly opt in or out of activity at any time.
+The Maintainers Group is responsible for providing transparent procedures for
+contributors to opt in/out as well as providing procedures for
+removing non-responsive members from the list of active contributors.
+In case of no response,
+a grace period of two years is in place before a formerly active contributor
+loses their "active" status.</p>
+<h3 id="bids-advisory-group"><a class="toclink" href="#bids-advisory-group"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Advisory Group</a></h3>
+<p>The purpose of this group is to provide advice and guidance to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering
+Group and the <abbr title="BIDS Extension Proposal">BEP</abbr> Leads Group.
+When a <abbr title="BIDS Extension Proposal">BEP</abbr> is merged into the specification,
+the leads of this <abbr title="BIDS Extension Proposal">BEP</abbr> working group automatically join the advisory group.
+Members are encouraged to participate for at least 2 years following
+the merge of their <abbr title="BIDS Extension Proposal">BEP</abbr>.
+If an advisory group member decides to leave the advisory group,
+they should inform the steering group in advance and are responsible to help:</p>
+<ul>
+<li>
+<p>provide a list of possible replacement candidates from the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community
+    with a similar level of expertise to theirs, and</p>
+</li>
+<li>
+<p>assist the steering and maintainers in choosing a suitable replacement.</p>
+</li>
+</ul>
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/Gilles86">
+      <img
+          src="https://github.com/Gilles86.png?size=150"
+        width="150px;"
+        alt="Gilles de Hollander"
+      />
+      <br>
+      <sub><b>Gilles de Hollander</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/KirstieJane">
+      <img
+          src="https://github.com/KirstieJane.png?size=150"
+        width="150px;"
+        alt="Kirstie Whitaker"
+      />
+      <br>
+      <sub><b>Kirstie Whitaker</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/tyarkoni">
+      <img
+          src="https://github.com/tyarkoni.png?size=150"
+        width="150px;"
+        alt="Tal Yarkoni"
+      />
+      <br>
+      <sub><b>Tal Yarkoni</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/effigies">
+      <img
+          src="https://github.com/effigies.png?size=150"
+        width="150px;"
+        alt="Chris Markiewicz"
+      />
+      <br>
+      <sub><b>Chris Markiewicz</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/HenkMutsaerts">
+      <img
+          src="https://github.com/HenkMutsaerts.png?size=150"
+        width="150px;"
+        alt="Henk-Jan Mutsaerts"
+      />
+      <br>
+      <sub><b>Henk-Jan Mutsaerts</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/patsycle">
+      <img
+          src="https://github.com/patsycle.png?size=150"
+        width="150px;"
+        alt="Patricia Clement"
+      />
+      <br>
+      <sub><b>Patricia Clement</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/jan-petr">
+      <img
+          src="https://github.com/jan-petr.png?size=150"
+        width="150px;"
+        alt="Jan Petr"
+      />
+      <br>
+      <sub><b>Jan Petr</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/marcocastellaro">
+      <img
+          src="https://github.com/marcocastellaro.png?size=150"
+        width="150px;"
+        alt="Marco Castellaro"
+      />
+      <br>
+      <sub><b>Marco Castellaro</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/CPernet">
+      <img
+          src="https://github.com/CPernet.png?size=150"
+        width="150px;"
+        alt="Cyril Pernet"
+      />
+      <br>
+      <sub><b>Cyril Pernet</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/sappelhoff">
+      <img
+          src="https://github.com/sappelhoff.png?size=150"
+        width="150px;"
+        alt="Stefan Appelhoff"
+      />
+      <br>
+      <sub><b>Stefan Appelhoff</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/robertoostenveld">
+      <img
+          src="https://github.com/robertoostenveld.png?size=150"
+        width="150px;"
+        alt="Robert Oostenveld"
+      />
+      <br>
+      <sub><b>Robert Oostenveld</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/vislab">
+      <img
+          src="https://github.com/vislab.png?size=150"
+        width="150px;"
+        alt="Kay Robbins"
+      />
+      <br>
+      <sub><b>Kay Robbins</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/dungscout96">
+      <img
+          src="https://github.com/dungscout96.png?size=150"
+        width="150px;"
+        alt="Dung Truong"
+      />
+      <br>
+      <sub><b>Dung Truong</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/guiomar">
+      <img
+          src="https://github.com/guiomar.png?size=150"
+        width="150px;"
+        alt="Guiomar Niso"
+      />
+      <br>
+      <sub><b>Guiomar Niso</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/melanieganz">
+      <img
+          src="https://github.com/melanieganz.png?size=150"
+        width="150px;"
+        alt="Melanie Ganz"
+      />
+      <br>
+      <sub><b>Melanie Ganz</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/mnoergaard">
+      <img
+          src="https://github.com/mnoergaard.png?size=150"
+        width="150px;"
+        alt="Martin Nørgaard"
+      />
+      <br>
+      <sub><b>Martin Nørgaard</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/choldgraf">
+      <img
+          src="https://github.com/choldgraf.png?size=150"
+        width="150px;"
+        alt="Chris Holdgraf"
+      />
+      <br>
+      <sub><b>Chris Holdgraf</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/dorahermes">
+      <img
+          src="https://github.com/dorahermes.png?size=150"
+        width="150px;"
+        alt="Dora Hermes"
+      />
+      <br>
+      <sub><b>Dora Hermes</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/claramoreau9">
+      <img
+          src="https://github.com/claramoreau9.png?size=150"
+        width="150px;"
+        alt="Clara Moreau"
+      />
+      <br>
+      <sub><b>Clara Moreau</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/nicholst">
+      <img
+          src="https://github.com/nicholst.png?size=150"
+        width="150px;"
+        alt="Thomas Nichols"
+      />
+      <br>
+      <sub><b>Thomas Nichols</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/markmikkelsen">
+      <img
+          src="https://github.com/markmikkelsen.png?size=150"
+        width="150px;"
+        alt="Mark Mikkelsen"
+      />
+      <br>
+      <sub><b>Mark Mikkelsen</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/william_clarke">
+      <img
+          src="https://github.com/william_clarke.png?size=150"
+        width="150px;"
+        alt="William Clarke"
+      />
+      <br>
+      <sub><b>William Clarke</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/martin_wilson">
+      <img
+          src="https://github.com/martin_wilson.png?size=150"
+        width="150px;"
+        alt="Martin Wilson"
+      />
+      <br>
+      <sub><b>Martin Wilson</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/gkiar">
+      <img
+          src="https://github.com/gkiar.png?size=150"
+        width="150px;"
+        alt="Greg Kiar"
+      />
+      <br>
+      <sub><b>Greg Kiar</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/sjeung">
+      <img
+          src="https://github.com/sjeung.png?size=150"
+        width="150px;"
+        alt="Sein Jeung"
+      />
+      <br>
+      <sub><b>Sein Jeung</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/JuliusWelzel">
+      <img
+          src="https://github.com/JuliusWelzel.png?size=150"
+        width="150px;"
+        alt="Julius Welzel"
+      />
+      <br>
+      <sub><b>Julius Welzel</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/rob-luke">
+      <img
+          src="https://github.com/rob-luke.png?size=150"
+        width="150px;"
+        alt="Robert Luke"
+      />
+      <br>
+      <sub><b>Robert Luke</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/lpollonini">
+      <img
+          src="https://github.com/lpollonini.png?size=150"
+        width="150px;"
+        alt="Luca Pollonini"
+      />
+      <br>
+      <sub><b>Luca Pollonini</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/mariehbourget">
+      <img
+          src="https://github.com/mariehbourget.png?size=150"
+        width="150px;"
+        alt="Marie-Hélène Bourget"
+      />
+      <br>
+      <sub><b>Marie-Hélène Bourget</b></sub>
+    </a>
+  </div>
+  <div style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/jcohenadad">
+      <img
+          src="https://github.com/jcohenadad.png?size=150"
+        width="150px;"
+        alt="Julien Cohen-Adad"
+      />
+      <br>
+      <sub><b>Julien Cohen-Adad</b></sub>
+    </a>
+  </div>
+</div>
+
+<h3 id="other-working-groups"><a class="toclink" href="#other-working-groups">Other working groups</a></h3>
+<p>A working/interest group can be established under the approval of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group.
+This is typically but not limited to being formed for the purpose of advancing the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community, not the standard.</p>
+<p>Each group will appoint 1-2 chairs.
+Members of these groups can have cross appointments in other groups (for example, <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group).
+These groups do not necessarily dissolve after some duration or event, unless stated in their proposal.</p>
+<p>The working/interest group formation is formalized
+through an open letter via a "read-only" Google Document addressed to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group.
+The open letter will be posted on:</p>
+<ul>
+<li>the <a href="https://github.com/bids-standard/bids-specification"><abbr title="Brain Imaging Data Structure">BIDS</abbr>-Specification GitHub repository</a>,</li>
+<li><a href="https://groups.google.com/forum/#!forum/bids-discussion">Google Group</a>,</li>
+<li>and <a href="https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels">social media channels</a>.</li>
+</ul>
+<p>This proposal will state what their group aims and goals are.</p>
+<h3 id="bids-community"><a class="toclink" href="#bids-community"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Community</a></h3>
+<p>Along with members of the preceding groups, this group comprises broadly
+any individual who has used or has interest in using <abbr title="Brain Imaging Data Structure">BIDS</abbr>. All members
+are invited, and encouraged to join the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Contributor Group by
+supporting the project in one of the many ways listed in the <a href="https://allcontributors.org/docs/en/emoji-key">"All
+Contributors" emoji key</a>.
+All community members are welcome to join <abbr title="BIDS Extension Proposal">BEP</abbr> Working Groups and other
+working and interest groups.</p>
+<p>The current <abbr title="BIDS Extension Proposal">BEP</abbr> Working Groups and their leads can be found in the
+section on <a href="../extensions/beps.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposals</a>
+in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.</p>
+<h2 id="4-governance-of-the-standardization-process"><a class="toclink" href="#4-governance-of-the-standardization-process">4. Governance of the standardization process</a></h2>
+<h3 id="a-principles-for-open-standards-development"><a class="toclink" href="#a-principles-for-open-standards-development">A. Principles for open standards development</a></h3>
+<p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> approach to standards development follows the principles of the
+<a href="https://open-stand.org/about-us/principles/">Modern Paradigm for
+Standards</a> developed by
+OpenStand:</p>
+<ol>
+<li>
+<p>Respectful cooperation between standards organizations</p>
+</li>
+<li>
+<p>Adherence to fundamental principles of standards development:</p>
+<ul>
+<li>Due Process</li>
+<li>Broad Consensus</li>
+<li>Transparency</li>
+<li>Balance</li>
+<li>Openness</li>
+</ul>
+</li>
+<li>
+<p>Collective empowerment</p>
+</li>
+<li>
+<p>Availability</p>
+</li>
+<li>
+<p>Voluntary adoption</p>
+</li>
+</ol>
+<h3 id="b-standard-decision-making-process-overview"><a class="toclink" href="#b-standard-decision-making-process-overview">B. Standard decision making process overview</a></h3>
+<p>The foundation of <abbr title="Brain Imaging Data Structure">BIDS</abbr> decision making is listening to all members of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Community
+and striving to achieve consensus on each level of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard process.</p>
+<p>The criteria for forming a new <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group:</p>
+<ul>
+<li>Statement of intent with defined scope, deliverables, and use cases</li>
+<li>Statement of intent accepted by the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group</li>
+</ul>
+<p>The criteria of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group evaluation
+for elevating a Draft <abbr title="BIDS Extension Proposal">BEP</abbr> to a Proposed <abbr title="BIDS Extension Proposal">BEP</abbr>:</p>
+<ul>
+<li>Integrates into the current edition of the standard and is consistent with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Mission Statement</li>
+<li>Clearly defines a filename template and field names</li>
+<li>At least 10 business days of community feedback publicly posted across the <abbr title="Brain Imaging Data Structure">BIDS</abbr> channels</li>
+<li>Consensus reached among the Working Group</li>
+<li>Use cases and examples clearly illustrated</li>
+</ul>
+<p>Upon a successful Draft <abbr title="BIDS Extension Proposal">BEP</abbr> review,
+the <abbr title="BIDS Extension Proposal">BEP</abbr> will be converted from a Google document
+to a pull request for the <a href="https://github.com/bids-standard/bids-specification"><abbr title="Brain Imaging Data Structure">BIDS</abbr> standard</a>.
+This will enable further community feedback on the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr>.
+Tools may begin integrating the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> specification.</p>
+<p>The criteria for merging a Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Standard:</p>
+<ul>
+<li>
+<p>Proposal positively reviewed by representative community members.
+    The definition of "representative" will differ
+    depending on the scope of the extension
+    and will be reviewed as part of the Steering Group's final approval.</p>
+</li>
+<li>
+<p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group final approval.</p>
+</li>
+</ul>
+<p>The Steering Group evaluates:</p>
+<ul>
+<li>Sufficiency of community feedback for the scope of the extension</li>
+<li>Validator updated to include the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> specification</li>
+<li>Final review of the integration into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard</li>
+</ul>
+<h2 id="x-appendix"><a class="toclink" href="#x-appendix">X. Appendix</a></h2>
+<h3 id="a-bep-procedure-key-definitions"><a class="toclink" href="#a-bep-procedure-key-definitions">A. <abbr title="BIDS Extension Proposal">BEP</abbr> Procedure: Key definitions</a></h3>
+<h4 id="bids-specification"><a class="toclink" href="#bids-specification"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Specification</a></h4>
+<p>This is the <a href="https://bids-specification.readthedocs.io"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a>.
+This covers the current raw data organization for brain <abbr title="Magnetic Resonance Imaging">MRI</abbr>, MEG, EEG, and iEEG.</p>
+<h4 id="bids-extension-proposal-bep"><a class="toclink" href="#bids-extension-proposal-bep"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposal (<abbr title="BIDS Extension Proposal">BEP</abbr>)</a></h4>
+<p>A proposal that intends to extend <abbr title="Brain Imaging Data Structure">BIDS</abbr> into an unspecified modality or derivative.
+A <abbr title="BIDS Extension Proposal">BEP</abbr> is typically led by 1-3 individuals with several contributors.
+The <a href="../extensions/beps.html">list of <abbr title="BIDS Extension Proposals">BEPs</abbr></a>
+can be found elsewhere on this website.</p>
+<h4 id="draft-bep"><a class="toclink" href="#draft-bep">Draft <abbr title="BIDS Extension Proposal">BEP</abbr></a></h4>
+<p>The in-progress document, typically in a Google Doc, of a <abbr title="BIDS Extension Proposal">BEP</abbr>.
+This is dynamic and is grown and maintained at the discretion of a <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group.</p>
+<h4 id="draft-bep-review"><a class="toclink" href="#draft-bep-review">Draft <abbr title="BIDS Extension Proposal">BEP</abbr> review</a></h4>
+<p>This review is performed by the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group on a Draft <abbr title="BIDS Extension Proposal">BEP</abbr>.
+The review at this stage aims to ensure the structure clearly defines a template
+and field names along with it integrating into the philosophy, principles, and accepted standards of <abbr title="Brain Imaging Data Structure">BIDS</abbr>.
+The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group approval action will be a majority vote.
+Upon <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group approval, the Draft <abbr title="BIDS Extension Proposal">BEP</abbr> will be elevated to a Proposed <abbr title="BIDS Extension Proposal">BEP</abbr>.</p>
+<h4 id="proposed-bep"><a class="toclink" href="#proposed-bep">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr></a></h4>
+<p>Once the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group has approved the Draft <abbr title="BIDS Extension Proposal">BEP</abbr>,
+it becomes a specific addition and/or modification of <abbr title="Brain Imaging Data Structure">BIDS</abbr>,
+in the form of a Proposed <abbr title="BIDS Extension Proposal">BEP</abbr>.
+At this time, the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> will take the form of a pull request on the <a href="https://github.com/bids-standard/bids-specification"><abbr title="Brain Imaging Data Structure">BIDS</abbr> GitHub repository</a>.</p>
+<h4 id="proposed-bep-review"><a class="toclink" href="#proposed-bep-review">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> review</a></h4>
+<p>This review is performed by the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group on the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr>.
+The review aims to ensure the community input was incorporated
+and the final version integrates into the current edition of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard specification.</p>
+<h4 id="merged-bep"><a class="toclink" href="#merged-bep">Merged <abbr title="BIDS Extension Proposal">BEP</abbr></a></h4>
+<p>A Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> that has been reviewed and approved by the Steering Group and merged into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.</p>
+<h3 id="b-voting-procedure"><a class="toclink" href="#b-voting-procedure">B. Voting Procedure</a></h3>
+<p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group is elected by a vote of the active <abbr title="Brain Imaging Data Structure">BIDS</abbr> Contributors Group.
+At the discretion of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group,
+additional elections may be called and propositions may be put before
+the community in the course of a Steering Group election.</p>
+<p>Elections will be managed through a 3rd party platform that allows
+restricting votes to a specific set of email addresses while maintaining
+the anonymity of the votes. A list of email addresses from the
+Contributors Group will be maintained by the Steering Group for the
+purposes of announcing elections and will not be used for any other
+purpose and will never be analyzed together with voting data.</p>
+<p>Each Contributor will receive an email with information regarding the
+vote and the link to submit the vote. The information will contain a
+brief summary of what the vote is about with links to the relevant
+issues, as well as the deadline for the vote.</p>
+<p>For Steering Group members, a ranked choice/instant runoff voting scheme
+will be used. Propositions will be yes/no questions, with the outcome
+determined by a simple majority. Voters may abstain on any ballot item.</p>
+<p>A vote will be considered valid if at least 20% of the Contributors
+submit votes.</p>
+<h3 id="c-governance-ratification-and-bids-steering-group-initialization"><a class="toclink" href="#c-governance-ratification-and-bids-steering-group-initialization">C. Governance ratification and <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group initialization</a></h3>
+<p>In order to establish a governance procedure at the same time as a
+governing body, certain variations in the normal order are required.</p>
+<p>Initially, Steering Group members will be elected for staggered terms of
+2/3/4 years, to allow continuity and overlap across years. This will
+ensure institutional knowledge is preserved within the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering
+Group. In the initial <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group, there will be at least one
+non-<abbr title="Magnetic Resonance Imaging">MRI</abbr> modality represented.</p>
+<p>The Steering Group member nominations were put forth by the <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+Community from August 7-28, 2019. The nominees self-organized into
+slates of five candidates, with an identified Chairperson. Nominees were
+eligible to participate in multiple slates. The community will vote
+among these slates in a ranked choice/instant runoff voting scheme.</p>
+<p>Because there are no grounds to restrict the vote to the <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+Contributors Group prior to the ratification of this document, the
+electorate is to be the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community, construed broadly as anybody
+with an interest in voting. The votes will be cast with two Google
+Forms: one to capture the vote and the other to record email addresses.
+The email addresses will not be analyzed together with the voting data,
+except to identify a situation in which many more votes are collected
+than valid email addresses. If the situation arises that the legitimacy
+of the vote is called into question, then the email addresses will be
+used to hold a special election under the terms laid out in Appendix B,
+according to which,</p>
+<p>Elections will be managed through a 3rd party platform that
+allows restricting votes to a specific set of email addresses while
+maintaining the anonymity of the votes.</p>
+<h3 id="d-license"><a class="toclink" href="#d-license">D. License</a></h3>
+<p>To the extent possible under the law, the authors have waived all
+copyright and related or neighboring rights to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> project
+governance and decision-making document, as per the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 public domain
+dedication /
+license</a>.</p>
+<h3 id="e-help"><a class="toclink" href="#e-help">E. Help</a></h3>
+<p>The <a href="http://bids.neuroimaging.io/">bids.neuroimaging.io</a> website
+contains links to all the <abbr title="Brain Imaging Data Structure">BIDS</abbr> informational and help materials.</p>
+<p>We encourage questions and discussion  on <a href="https://neurostars.org/tags/bids">NeuroStars, under the "bids"
+tag</a>, via the <a href="https://groups.google.com/forum/#!forum/bids-discussion"><abbr title="Brain Imaging Data Structure">BIDS</abbr> mailing
+list</a>, or in
+<a href="https://github.com/bids-standard">GitHub issues</a> within the
+appropriate repository.</p>
+<p>We prefer questions to be asked via
+<a href="https://neurostars.org/tags/bids">NeuroStars</a> so that others can search
+them and benefit from the answers, but if you do not feel comfortable
+asking your question publicly please feel free to email the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers at
+<a href="mailto:bids.maintenance+question@gmail.com">bids.maintenance+question@gmail.com</a>. They will
+repost an anonymised/general version of your question on
+<a href="https://neurostars.org/tags/bids">NeuroStars</a> and answer it there.</p>
+<p>There are several resources that can help a new user get started.
+We have a <a href="https://bids-standard.github.io/bids-starter-kit/">starter kit GitHub
+repository</a> that has
+example <abbr title="Brain Imaging Data Structure">BIDS</abbr> file structures, wikis, and tutorials, and the <a href="http://reproducibility.stanford.edu/blog/">Stanford
+Center for Reproducible Neuroscience
+blog</a> provides tutorials and
+community survey results.</p>
+<p>All <abbr title="Brain Imaging Data Structure">BIDS</abbr> community members are required to follow the
+<a href="bids_github/CODE_OF_CONDUCT.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> code of conduct</a>.
+Please contact the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers at <a href="mailto:bids.maintenance+coc@gmail.com">bids.maintenance+coc@gmail.com</a>
+if you have any concerns or would like to report a violation.</p>
+<h3 id="f-acknowledgments"><a class="toclink" href="#f-acknowledgments">F. Acknowledgments</a></h3>
+<p>This document draws heavily from the
+<a href="https://open-stand.org/about-us/principles/">Modern Paradigm for Standards</a>
+and from other open-source governance documents including:</p>
+<ul>
+<li><a href="https://numpy.org/doc/stable/dev/governance/index.html">https://numpy.org/doc/stable/dev/governance/index.html</a></li>
+<li><a href="https://docs.scipy.org/doc/scipy/dev/governance.html">https://docs.scipy.org/doc/scipy/dev/governance.html</a></li>
+<li><a href="https://www.ieee.org/about/corporate/governance/index.html">https://www.ieee.org/about/corporate/governance/index.html</a></li>
+<li><a href="https://www.apache.org/foundation/governance/">https://www.apache.org/foundation/governance/</a></li>
+<li><a href="https://www.niso.org/what-we-do/creating-NISO-standards">https://www.niso.org/what-we-do/creating-NISO-standards</a></li>
+<li><a href="https://chrisholdgraf.com/blog/2018/rust-governance">https://chrisholdgraf.com/blog/2018/rust-governance</a></li>
+<li><a href="https://www.seedsforchange.org.uk/consensus">https://www.seedsforchange.org.uk/consensus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_governance">https://en.wikipedia.org/wiki/Internet_governance</a></li>
+<li><a href="https://www.icann.org/resources/pages/governance/guidelines-en">https://www.icann.org/resources/pages/governance/guidelines-en</a></li>
+<li><a href="https://github.com/bids-standard/bids-specification/pull/104">https://github.com/bids-standard/bids-specification/pull/104</a></li>
+<li><a href="https://randyfay.com/content/drupals-governance">Drupal's Governance</a></li>
+<li><a href="https://git.drupalcode.org/project/governance/-/blob/main/README.md">Drupal community's governance process</a></li>
+</ul>
+<h3 id="g-election-data-and-code"><a class="toclink" href="#g-election-data-and-code">G. Election data and code</a></h3>
+<p>Anonymous data from <abbr title="Brain Imaging Data Structure">BIDS</abbr> elections is stored in a dedicated repository on GitHub:
+<a href="https://github.com/bids-standard/bids-elections">https://github.com/bids-standard/bids-elections</a></p>
+<h3 id="h-governance-amendment-procedure"><a class="toclink" href="#h-governance-amendment-procedure">H. Governance amendment procedure</a></h3>
+<p>A group of <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributors may at any time form a <a href="#other-working-groups">working group</a> to propose amendments to the governance.
+These amendments will be first reviewed by the Steering Group before being
+submitted to a community review.
+At the end of the community review each amendment is submitted to a vote of <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+contributors.
+The voting procedure is similar to the one described for the election of
+Steering Group members in <a href="#b-voting-procedure">Appendix B</a>.
+Amendments are accepted if they gather more than two-thirds of the expressed votes.</p>
+<!-- tool tips  -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Help make BIDS better!">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Help make BIDS better!
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="working-groups.html" class="md-footer__link md-footer__link--next" aria-label="Next: Working groups">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Working groups
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; BIDS Contributors - <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://x.com/BIDSstandard/" target="_blank" rel="noopener" title="x.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9L389.2 48zm-24.8 373.8h39.1L151.1 88h-42l255.3 333.8z"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://fosstodon.org/@bidsstandard" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/bidsstandard.bsky.social/" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://groups.google.com/g/bids-discussion" target="_blank" rel="noopener" title="groups.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/bidsstandard/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+        <script src="../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>
