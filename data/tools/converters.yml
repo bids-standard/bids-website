@@ -245,6 +245,25 @@
         url: https://hub.docker.com/r/unfmontreal/dcm2bids
     license: GPL-3.0
 
+-   name: dcm2niix
+    repo_url: https://github.com/rordenlab/dcm2niix/
+    status: active
+    data_types:
+    -   MRI
+    -   PET
+    expected_input:
+    -   DICOM
+    language:
+    -   C++
+    comment: converts DICOM files to NIfTI and BIDS sidecar JSON files
+    documentation: https://github.com/rordenlab/dcm2niix/
+    distribution:
+    -   name: GitHub
+        url: https://github.com/rordenlab/dcm2niix/releases
+    -   name: pypi
+        url: https://pypi.org/project/dcm2niix
+    license: BSD-3-Clause
+
 -   name: EEG2BIDS
     repo_url: https://github.com/aces/EEG2BIDS
     status: active
