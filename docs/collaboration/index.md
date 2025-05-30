@@ -2,7 +2,7 @@
 
 !!! info "Call for joining the BIDS maintainers team"
 
-    We are currently actively looking for motivated people to join the BIDS maintainers team. 
+    We are currently actively looking for motivated people to join the BIDS maintainers team.
     Please see in the section below what being a BIDS maintainer means and reach out if you'd like to join!
 
 BIDS is informed, supported, and guided by its users.
