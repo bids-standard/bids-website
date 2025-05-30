@@ -274,6 +274,8 @@
         family-names: Ghosh
     -   given-names: Camille
         family-names: Maumet
+    -   given-names: Yaroslav O.
+        family-names: Halchenko
     bids_maintainers:
     status:
     -   '[Specification](https://bids.neuroimaging.io/bep028)'
@@ -286,7 +288,7 @@
     pull_request_merged:
 
 -   number: '032'
-    title: Animal electrophysiology
+    title: Microelectrode electrophysiology
     google_doc: https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/
     pull_request: https://github.com/bids-standard/bids-specification/pull/1705
     html_preview: https://bids-specification--1705.org.readthedocs.build/en/1705/modality-specific-files/microelectrode-electrophysiology.html
@@ -297,14 +299,22 @@
         family-names: Takerkart
     -   given-names: Benjamin
         family-names: Dichter
+    -   given-names: Yaroslav O.
+        family-names: Halchenko
+    -   given-names: Lyuba
+        family-names: Zehl
+    -   given-names: Andrew
+        family-names: Davison
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
     status:
-    -   Decided on the new name, modalities, datatypes
+    -   Decided on the new name (not just "Animal" but "Microelectrode"), modalities, datatypes
     -   Nearly finalized added metadata
-    -   'Target: finalize & merge PR into the BIDS specs in Fall 2024'
+    -   PR compiles green, preview is available
+    -   'Target: finalize & merge PR into the BIDS specs in 2025'
     blocking:
+    -   Need to prepare example datasets
     -   Need to start thinking about derived data (spike sorted)
     google_doc_created: 2020-12
     pull_request_created: 2022-11
@@ -388,19 +398,19 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric A.
+    -   given-names: Eric
         family-names: Earl
     -   given-names: Samuel
         family-names: Guay
     -   given-names: Sebastian
         family-names: Urchs
     bids_maintainers:
-    -   given-names: Rémi
-        family-names: Gau
+    -   given-names: Eric
+        family-names: Earl
     status:
-    -   Dropping “Segregated” data format in favor of “Aggregated”
+    -   Met with BIDS maintainers team and going to integrate all concepts into the modality agnostic files section.
     blocking:
-    -   More reviews and discussions are necessary.
+    -   Limited time on the part of the BEP leads.
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
