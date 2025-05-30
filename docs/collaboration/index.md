@@ -60,6 +60,8 @@ These are accomplished with BIDS Extension Proposals (BEPs), which are community
 Do you want to learn more about extending BIDS to a new modality or set of data types?
 Read the [Guide](https://bids-extensions.readthedocs.io/en/latest/guide/)
 and follow the [Submission Process](https://bids-extensions.readthedocs.io/en/latest/submission/).
+Read the [BEP Process](../extensions/process.md)
+and follow the [BEP Guidelines](../extensions/guidelines.md)
 
 ## Becoming a BIDS maintainer
 
