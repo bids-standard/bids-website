@@ -642,7 +642,9 @@
     -   given-names: Franco
         family-names: Pestilli
     status: |
-        -
+        - Porting comprehensive description of streamline tractography mechanisms into specification - 10.1016/B978-0-12-817057-1.00023-8
+        - Determine appropriate resolution with TRX development - https://tee-ar-ex.github.io/trx-python/
+        - Decide on scope of BEP; e.g. whether to include tractometry, complex tract delineation
     content:
     -   derivative
     blocking:
