@@ -404,13 +404,15 @@
         family-names: Guay
     -   given-names: Sebastian
         family-names: Urchs
+    -   given-names: Arshitha
+        family-names: Basavaraj
     bids_maintainers:
     -   given-names: Eric
         family-names: Earl
     status:
-    -   Met with BIDS maintainers team and going to integrate all concepts into the modality agnostic files section.
+    -   PR nearly ready to integrate with modality agnostic files sections.
     blocking:
-    -   Limited time on the part of the BEP leads.
+    -   Finishing bids-examples PR.
     google_doc_created: 2021-10
     pull_request_created:
     pull_request_merged:
@@ -597,10 +599,10 @@
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
-    update: |
-        - To harmonize and make more reusable stimuli content under stimuli/.
-        - Collecting community comments and feedback. All collaborators are welcome.
-        - Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)
+    status:
+    -   To harmonize and make more reusable stimuli content under stimuli/.
+    -   Collecting community comments and feedback. All collaborators are welcome.
+    -   'Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)'
     content:
     -   raw
     blocking:
@@ -611,7 +613,7 @@
 -   number: '045'
     title: Peripheral Physiological Recordings
     display: Physio
-    google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit?usp=sharing
+    google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit
     leads:
     -   given-names: Mary
         family-names: Miedema
@@ -619,14 +621,36 @@
         family-names: Moia
     -   given-names: Sourav
         family-names: Kulkarni
-    status: |
-        - To update standards for physiological data for improved clarity and a broader range of use cases.
-        - Now collecting community comments and feedback. All collaborators are welcome.
-        - Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675)
+    status:
+    -   To update standards for physiological data for improved clarity and a broader range of use cases.
+    -   Now collecting community comments and feedback. All collaborators are welcome.
+    -   'Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675)'
     content:
     -   raw
     blocking:
     google_doc_created: 2024-08-13
+    pull_request_created:
+    pull_request_merged:
+
+-   number: '046'
+    title: Diffusion Tractography
+    display: Tractography
+    google_doc: https://docs.google.com/document/d/1ubDQ2RhgjnfGqoeukzEkPV9YEHhfYMERrj7-3b0c2HI/edit
+    leads:
+    -   given-names: Robert
+        family-names: Smith
+    -   given-names: Ariel
+        family-names: Rokem
+    -   given-names: Franco
+        family-names: Pestilli
+    status:
+    -   Porting comprehensive description of streamline tractography mechanisms into specification - 10.1016/B978-0-12-817057-1.00023-8
+    -   Determine appropriate resolution with TRX development - https://tee-ar-ex.github.io/trx-python/
+    -   Decide on scope of BEP; e.g. whether to include tractometry, complex tract delineation
+    content:
+    -   derivative
+    blocking:
+    google_doc_created: 2022-02-09
     pull_request_created:
     pull_request_merged:
 
