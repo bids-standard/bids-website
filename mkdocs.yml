@@ -20,6 +20,8 @@ plugins:
       module_name: macros/main
       # toggle to true if you are in CD/CI environment
       on_error_fail: true
+  - panzoom:
+      full_screen: True # default False
   - redirects:
       redirect_maps:
         # old links from the old website
