@@ -181,6 +181,26 @@ We recommend that the core team has representatives from 3 different labs,
 preferably also with a mix of more junior and more senior contributors.
 You may also consider requesting explicit support letters from external labs.
 
+### Confusing operational definitions with ontological ones
+
+A common pitfall in BEP development is the attempt to define neuroimaging constructs—such as "participant", "atlas", or "template"—as if writing a comprehensive ontology or reference manual for the field.
+While this effort may be intellectually rigorous and well-intentioned, it does not align with the purpose of the BIDS specification.
+
+!!! warning "BIDS is not a general-purpose neuroimaging ontology."
+
+    BIDS is a pragmatic standard for organizing and describing data in a way that maximizes shareability, and supports automated tools, validation, and reproducible workflows.
+
+BEPs should focus on definitions that are strictly necessary to enable BIDS to function. Definitions should be:
+
+- **Operational**: they must serve a specific purpose in the file naming, metadata structure, or schema validation.
+- **Internally consistent**: they should align with existing BIDS conventions and avoid redefining core concepts already in use.
+- **Minimal and scoped**: they should avoid generalizing beyond what is needed for BIDS to interpret, validate, and process the data.
+
+For example, rather than attempting to define what an experimental "run" means in all of neuroscience, BIDS specifies qualifies as a `run-<index>` entity.
+BEPs should make clear that the definitions they include are specific to BIDS and not intended to settle broader disciplinary debates.
+
+Avoiding ontological overreach helps the community focus on implementation, adoption, and consensus-building, rather than epistemological disagreements that can delay or derail otherwise useful proposals.
+
 ## Specific guidelines
 
 If multiple BEPs need coordination, this document (section below)
