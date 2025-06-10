@@ -268,8 +268,10 @@
     status: active
     data_types:
     -   EEG
+    -   sEEG
     expected_input:
-    -   EDF, Set: EEG or sEEG
+    -   EDF
+    -   Set
     language:
     -   Javascript
     -   Python
