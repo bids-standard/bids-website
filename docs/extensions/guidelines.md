@@ -196,7 +196,7 @@ BEPs should focus on definitions that are strictly necessary to enable BIDS to f
 - **Internally consistent**: they should align with existing BIDS conventions and avoid redefining core concepts already in use.
 - **Minimal and scoped**: they should avoid generalizing beyond what is needed for BIDS to interpret, validate, and process the data.
 
-For example, rather than attempting to define what an experimental "run" means in all of neuroscience, BIDS specifies qualifies as a `run-<index>` entity.
+For example, rather than attempting to define what an experimental "run" means in all of neuroscience, BIDS specifies what qualifies as a `run-<index>` entity.
 BEPs should make clear that the definitions they include are specific to BIDS and not intended to settle broader disciplinary debates.
 
 Avoiding ontological overreach helps the community focus on implementation, adoption, and consensus-building, rather than epistemological disagreements that can delay or derail otherwise useful proposals.
