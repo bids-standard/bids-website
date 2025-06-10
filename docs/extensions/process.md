@@ -270,6 +270,58 @@ More details on how to proceed are described below.
         This will likely require to add (or update) information about the BEP leads
         in the list of BIDS contributors via [the BIDS specification wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors#adding-yourself-as-a-contributor).
 
+### Decision-making framework for introducing new data types, suffixes, and formats
+
+Before initiating work on a new BEP or progressing from a Draft to a Proposed BEP, BEP leads must assess whether the proposed addition introduces ***new*** *data types*, *modality suffixes*, or *file formats*.
+
+To guide this process and ensure community-wide consistency, the following decision framework must be followed:
+
+```mermaid
+flowchart TD
+
+A0["Start: Can BIDS already encode the data, even in a basic way?"]
+A0 -- No --> B1["Request dataset from BEP leads showing it cannot be represented"]
+A0 -- Yes --> A1["Identify missing elements (e.g., metadata or structure)"]
+
+A1 --> A2["Are the missing elements significant enough to justify a BEP?"]
+A2 -- No --> PR["Submit a Pull Request"]
+A2 -- Yes --> B1
+
+B1 --> B2["Consult with BIDS Maintainers and Steering Group"]
+B2 --> B3["Did the dataset demonstrate a fundamental gap in BIDS?"]
+B3 -- No --> A1
+B3 -- Yes --> C1["Evaluate need for new data type, suffix, or format"]
+
+C1 --> C2["Can the data fit into an existing folder like anat or func?"]
+C2 -- Yes --> C3["Would a new folder improve clarity or adoption?"]
+C2 -- No --> C4["Create new data type: update schema and examples"]
+
+C3 -- Yes --> C3a["Require strong rationale and 75% approval from 20 reviewers"]
+C3 -- No --> D1["Evaluate suffix needs"]
+C3a --> C4
+C4 --> D1
+
+D1 --> D2["Can an existing suffix cover this use case?"]
+D2 -- Yes --> D3["Would a new suffix improve clarity or adoption?"]
+D2 -- No --> D4["Create new suffix: update schema and examples"]
+
+D3 -- Yes --> D3a["Require rationale and 60% approval from 15 reviewers"]
+D3 -- No --> E1["Evaluate format needs"]
+D3a --> D4
+D4 --> E1
+
+E1 --> E2["Can an existing file format cover this?"]
+E2 -- Yes --> E3["Would a new format improve adoption or clarity?"]
+E2 -- No --> E4["Create new format: update schema and examples"]
+
+E3 -- Yes --> E3a["Require rationale and 51% approval from 15 reviewers"]
+E3 -- No --> F1["Proceed with BEP development"]
+E3a --> E4
+E4 --> F1
+PR --> END["End of process"]
+F1 --> END
+```
+
 ### Working on your BEP
 
 While working on your extension, make sure to do the following:
