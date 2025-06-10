@@ -26,59 +26,91 @@ Try not to deviate from BIDS conventions in your extension.
 
 ### Avoid backward incompatible changes
 
-BIDS is already incorporated in many tools -
-proposing a change that will render already released BIDS datasets not BIDS-compliant
-will cause a lot of confusion
-and will force developers to update their code.
-We should strive to avoid such situations.
+BIDS is already incorporated in many tools.
+Proposing a change that would render already released BIDS datasets non-compliant
+may cause confusion and force developers to update their code.
+Such situations should be avoided when possible.
 
-Having said that, one day we will have to break backwards compatibility.
-If you have an idea for a backwards-incompatible change
+That said, breaking changes may eventually be necessary.
+If you have an idea that introduces a backwards-incompatible change,
 please add it as an issue to the [BIDS 2.0 GitHub repository](https://github.com/bids-standard/bids-2-devel).
 
 ### Use existing and common practices/formats
 
-It’s likely that certain data types are commonly stored in a particular way in your sub-field.
-If this is the case try adopting this way
-unless it makes your extension too inconsistent with the main specification.
-A good example of such adoption is the
-[bvec/bval file format](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html#required-gradient-orientation-information)
-for storing diffusion metadata.
+It is likely that certain data types are already stored in particular formats within your sub-field.
+If so, adopting these formats may help with community uptake.
+However, consistency with the BIDS specification takes priority.
+
+In earlier versions of BIDS, some format choices—such as separate `.bvec` and `.bval` files for diffusion MRI—were made to accommodate legacy tools.
+These examples are **not necessarily recommended** for new BEPs.
+In fact, unified and structured formats like TSV or HDF5 would likely have been preferable.
+
+### Choosing file formats: *downstream-* vs *upstream-looking*
+
+When proposing formats for storing new data types or metadata, BEP authors must consider BIDS' dual mission: not only to **accurately represent acquired data**, but also to **enable scalable, transparent, and efficient reuse**.
+
+We distinguish between two broad types of file format orientation:
+
+**Downstream-looking formats (RECOMMENDED for both raw and derivative data)**
+
+These formats are designed with **processing and data reuse** in mind. They:
+
+- Support random access, chunking, and parallel I/O
+- Separate data and metadata clearly or use structured containers
+- Are widely supported in scientific computing and data science ecosystems (e.g., Python, R, Julia)
+- Facilitate validation, sharing, and cloud-based analysis
+- Are used across disciplines beyond neuroimaging, increasing accessibility
+
+Under these principles, BIDS currently supports TSV, and JSON and formats such as Parquet are under consideration.
+
+Even for *raw* BIDS data, such formats should be preferred—when appropriate—to make the generation of BIDS-Derivatives easier and more robust.
+By adopting these formats early, BIDS enables analysis tools that are modality-agnostic, interoperable, and future-proof.
+
+**Upstream-looking formats (USE WITH CAUTION)**
+
+These formats are optimized for the **device's internal representation** of data. They:
+
+- Frequently combine data and metadata into less transparent or binary containers
+- Require specialized, vendor-specific libraries
+- Reflect device-centric constraints (e.g., sampling order, encoding specifics)
+
+The paradigmatic example of this format is DICOM.
+While upstream-looking formats are often necessary at the acquisition stage and may serve well for archival purposes, **they are not ideal for BIDS representations**, especially when open science and cross-discipline reuse are priorities.
+
+If used at all in raw BIDS data, these formats should be accompanied by clear justifications, examples, and mappings to more general-purpose representations.
+
+In summary:
+
+- **Favor general-purpose, open formats** used across scientific disciplines
+- **Avoid redundant format options** for the same data type
+- **Do not assume legacy popularity justifies a format's inclusion**
+- **Plan for analysis and interoperability from the start**, not as an afterthought
+
+By orienting BIDS around downstream-compatible formats, we improve not only developer adoption, but also scientific reproducibility, modular pipeline construction, and accessibility for researchers outside niche modality communities.
 
 ### Try to link with other existing standards and ontologies
 
-There are many standardization attempts out there.
-When proposing your extension
-consider gathering inspiration and directly linking to other standards.
-A good example of this is linking metadata fields to corresponding DICOM tags.
+There are many other standardization efforts that may inform your BEP.
+When possible, adopt terms or definitions from existing standards, or explicitly link to them.
+A good example is mapping BIDS metadata fields to DICOM tags.
 
 ### Facilitate atomic changes
 
 See [issue #371](https://github.com/bids-standard/bids-specification/issues/371) for motivation and discussion.
-It is recommended to identify perspective entities and metadata fields to be added,
-and research if they, or their synonyms, are  already considered in submitted PRs or other BEPs.
-If those are new, propose a PR(s) introducing those to the BIDS schema so that:
+It is recommended to isolate small, reusable changes (e.g., new metadata fields or entities)
+as separate PRs early in BEP development.
 
--   they could be reviewed "independently" of the larger BEP
--   potentially be made aware of in other BEPs
-
-<!-- TODO link to example PR -->
+This allows review and reuse of terms across BEPs
+and can help streamline the review process by avoiding large, all-at-once PRs.
 
 ### Limit flexibility, consider tool developers
 
-One of the aims of BIDS is to make reusing data easier.
-This means that when proposing an extension you need to put yourself
-in the shoes of someone who will receive a BIDS dataset and attempt to analyze it.
-Additionally, consider developers that will try to write tools that take BIDS datasets as inputs.
-It is worth assessing how much additional code different ways of approaching your extension may cause.
+Flexibility in design often comes at the expense of tool developer effort and standard interpretability.
+For example, allowing multiple file formats for the same data type means
+tool authors must account for each of them—possibly duplicating testing and maintenance work.
 
-The most common situation where the trade-off between flexibility and ease of
-tool building comes up is in choosing file formats.
-For example, allowing multiple different file formats to be used to represent the same data type is flexible,
-but requires developers to provide support for all of them.
-As an example, iEEG-BIDS and EEG-BIDS
-surveyed the community <!--TODO find links  -->
-to find out about most common formats and selected only a few formats based on usage and their openness.
+When in doubt, **choose simplicity and clarity over configurability**.
+BIDS should be predictable, not permissive, when it comes to how data are stored.
 
 ## Make use of the the BIDS Schema
 
