@@ -422,7 +422,7 @@ The Steering Group evaluates:
 -   Final review of the integration into the BIDS standard
 
 The BEP lead(s) will work with the BIDS maintainers to coordinate the community review period.
-The community review period is scheduled _after_ the pull request has been opened.
+The community review period is scheduled *after* the pull request has been opened.
 
 1.  When the branch is ready to be merged, open a pull request against the
     `master` branch to signal the BEP is ready for final reviews. We ask your
