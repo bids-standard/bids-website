@@ -6,13 +6,16 @@
 
 -   group: steering
     members:
-    -   name: Franco Pestilli
-        git: francopestilli
-    -   name: Cyril Pernet
-        git: CPernet
     -   name: Yaroslav Halchenko
         git: yarikoptic
-    -   name: Camille Maumet
-        git: cmaumet
     -   name: Dora Hermes
         git: dorahermes
+    -   name: Camille Maumet
+        git: cmaumet
+    -   name: Cyril Pernet
+        git: CPernet
+    -   name: Franco Pestilli
+        git: francopestilli
+    
+    
+    
