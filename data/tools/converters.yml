@@ -645,8 +645,7 @@
     -   code files in MATLAB/Python/R
     language:
     -   Python
-    comment: GUI to easily convert simulation results to BIDS format, according to <a href="https://bids-standard.org/bep034" target="_blank"> BEP 34
-        </a>.
+    comment: GUI to easily convert simulation results to BIDS format, according to <a href="https://bids-standard.org/bep034" target="_blank"> BEP 34 </a>.
     license: MIT
 
 -   name: sovabids
