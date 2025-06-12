@@ -51,7 +51,7 @@ in the neuroimaging research landscape and continues to expand every day. A more
 history and discussion about the future of the BIDS landscape can be found in this
 [recent publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516110/).
 
-The BIDS standard continues to be adopted by a larger share of the community each year.
+The BIDS standard continues to be adopted by a larger share of the wider neuroscience community each year.
 We have seen a large and growing number of visitors to the BIDS website. A large number of
 BIDS users also continue to explore the BIDS Specification and contribute to the community every month.
 
