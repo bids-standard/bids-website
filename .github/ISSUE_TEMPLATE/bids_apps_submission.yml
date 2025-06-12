@@ -11,10 +11,10 @@ body:
 -   type: markdown
     attributes:
         value: |
-            - Have you checked our [contributing guide](https://bids.neuroimaging.io/collaboration/bids_github/CONTRIBUTING.html)?
+            - Have you checked our [contributing guide](https://bids-standard.org/collaboration/bids_github/CONTRIBUTING.html)?
               It's a helpful resource.
 
-            - Have you checked our [FAQ](https://bids.neuroimaging.io/faq/bids-apps.html)?
+            - Have you checked our [FAQ](https://bids-standard.org/faq/bids-apps.html)?
 
 -   type: textarea
     attributes:

@@ -46,7 +46,7 @@ Below is a list of common resources where users can get involved in making the B
 There are so many ways to help us build this community.
 
 -   You could help someone else learn the benefits of BIDS by giving a talk in your local organization
--   Or you could work on [building a BIDS App](https://bids.neuroimaging.io/tools/bids-apps.html){:target="_blank"}!
+-   Or you could work on [building a BIDS App](https://bids-standard.org/tools/bids-apps.html){:target="_blank"}!
 
 <b>The only requirement is that everyone who contributes adheres to our [BIDS Code of Conduct](./bids_github/CODE_OF_CONDUCT.md).</b>
 

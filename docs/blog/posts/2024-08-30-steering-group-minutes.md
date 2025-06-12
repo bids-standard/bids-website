@@ -27,12 +27,12 @@ categories:
 
 ## BIDS Website URL
 
-> Should "bids.neuroimaging.io" send you to the new website
+> Should "bids-standard.org" send you to the new website
 > or should `https://bids-website.readthedocs.io` send you to the new website
 > or should we use "bids.org" or "www.bids-standard.org"?
 
 -   we can't get bids.org because it will be prohibitively costly (>>$10,000+)
--   current decision to remain with bids.neuroimaging.io
+-   current decision to remain with bids-standard.org
 
 ## INCF Assembly Tabling by Yarik, Eric, Anthony, and ???
 

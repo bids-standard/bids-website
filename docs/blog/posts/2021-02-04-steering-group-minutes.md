@@ -12,7 +12,7 @@ categories:
 
 The Steering Group met to discuss the latest BEP updates.
 [ASL](https://github.com/bids-standard/bids-specification/pull/669) and [qMRI](https://github.com/bids-standard/bids-specification/pull/690) are close to being released with PET following soon after.
-We spent the majority of the meeting with the leads from [BEP20: Eye Tracking](https://bids.neuroimaging.io/bep020).
+We spent the majority of the meeting with the leads from [BEP20: Eye Tracking](https://bids-standard.org/bep020).
 They are progressing nicely and starting to finalize their specification.
 They are having their Eye Tracking community review prior to escalating up to the BIDS community.
 They are reaching a consensus within their community.
@@ -28,7 +28,7 @@ N/A
 -   [qMRI specification](https://github.com/bids-standard/bids-specification/pull/690) is merged. Working on examples and validator
 -   After ASL and qMRI are release, we will focus on getting PET incorporated
 
-The Steering Group was joined by [BEP20: Eye Tracking](https://bids.neuroimaging.io/bep020) leads
+The Steering Group was joined by [BEP20: Eye Tracking](https://bids-standard.org/bep020) leads
 
 -   The community is reviewing the BEP
 
@@ -82,7 +82,7 @@ The Steering Group was joined by [BEP20: Eye Tracking](https://bids.neuroimaging
 
 -   One potential issue is [time series representation conflicts](https://github.com/bids-standard/bids-specification/issues/713)
 
--   Coordinating with [BEP29: Virtual and physical motion](https://bids.neuroimaging.io/bep029)
+-   Coordinating with [BEP29: Virtual and physical motion](https://bids-standard.org/bep029)
 
 -   Meeting with relevant stakeholders
 

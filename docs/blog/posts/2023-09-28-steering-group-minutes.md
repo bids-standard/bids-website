@@ -227,7 +227,7 @@ take turns at the next three meetings. We won't meet on 21 Dec.
 
 -   Robert will invite the leads of the NIBS BEP (non invasive brain
     stimulation,
-    [[BEP037]](https://bids.neuroimaging.io/bep037)) to ask
+    [[BEP037]](https://bids-standard.org/bep037)) to ask
     whether they want to attend the next or next-next BIDS meeting.
 
 #### More generally: BIDS advisory group (i.e., BEP leads) engagement

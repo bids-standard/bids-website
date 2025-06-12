@@ -20,7 +20,7 @@ This should be less than 1 page and keep a high level view of BIDS. The executiv
 The update may also link to issues with a 1 sentence narrative.
 Keeping in mind the purpose of the update from the Steering Group’s perspective: knowing the hard parts or blockers and capture the work needed to maintain BIDS.
 
-We invited the [ASL BEP](https://bids.neuroimaging.io/bep005) leads to the next Steering Group meeting.
+We invited the [ASL BEP](https://bids-standard.org/bep005) leads to the next Steering Group meeting.
 
 ## Action Items
 

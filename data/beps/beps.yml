@@ -278,7 +278,7 @@
         family-names: Halchenko
     bids_maintainers:
     status:
-    -   '[Specification](https://bids.neuroimaging.io/bep028)'
+    -   '[Specification](https://bids-standard.org/bep028)'
     -   '[Set of examples](https://github.com/bids-standard/BEP028_BIDSprov)'
     -   'Perspectives: Opening up to BIDS community for feedback'
     -   'Perspectives: Engaging with software developers (in progress w/ SPM, AFNI)'

@@ -64,7 +64,7 @@ New meeting in Boston, not sure that there will be BIDS representation there.
         If not, how should the general inquiries be routed?"
 
     -   Could the contributing page help identify where to direct queries (e.g. a contact for interviews, press...)?
-        We currently have a contact page [on the new website](https://bids.neuroimaging.io/contact/index.html)
+        We currently have a contact page [on the new website](https://bids-standard.org/contact/index.html)
         (which might not be sufficient)
 
 ## BIDS Virtual Meeting?
