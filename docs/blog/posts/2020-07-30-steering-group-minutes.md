@@ -12,7 +12,7 @@ categories:
 
 We held a joint meeting between the Steering Group and Maintainers Group.
 We finished our discussion on how we can support and collaborate with external organizations.
-We approved [BEP031: Histology](https://bids.neuroimaging.io/bep031).
+We approved [BEP031: Histology](https://bids-standard.org/bep031).
 This BEP will be different from our currently supported modalities.
 We will need to think through how this will be ultimately validated.
 It will also be beneficial to think about natural merge points with other BEPs.
@@ -25,14 +25,14 @@ This can be used to inform how we can effectively work with other initiatives.
 
 | Action items                                                     |
 | ---------------------------------------------------------------- |
-| Add [BEP031](https://bids.neuroimaging.io/bep031) to the website |
+| Add [BEP031](https://bids-standard.org/bep031) to the website |
 
 ## Minutes
 
 Joint meeting between the Steering Group and Maintainers Group
 
 -   Discussed approaches to collaborating with other organizations (for example EBrains)
--   Approved Histology as [BEP031](https://bids.neuroimaging.io/bep031)
+-   Approved Histology as [BEP031](https://bids-standard.org/bep031)
 -   Think through how the validation may look because this modality is different than our currently supported ones
 -   Be clear what success looks like with the BEP team
 -   Think about merge points with other modalities

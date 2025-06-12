@@ -43,7 +43,7 @@ You can also provide feedback now with our [BIDS website survey](https://cryptpa
 Per BIDS governance, the steering group members have a term of 3 years.
 This year, Ariel Rokem's term ends. Keep an eye out for the upcoming election which BIDS contributors can vote upon. And on behalf of the community, thank you so much Ariel for your service\!
 
-You can find more [about BIDS governance](https://bids.neuroimaging.io/collaboration/governance.html) here.
+You can find more [about BIDS governance](https://bids-standard.org/collaboration/governance.html) here.
 
 ## Recent venues BIDS presented
 
@@ -53,12 +53,12 @@ BIDS continues to be featured in different venues. Our very own maintainer extra
 
 The BEPs carry on to help us all update the standard with new and previously unestablished data types and improvements. If there's a BEP here that affects you, consider getting involved by commenting on open Google Docs or GitHub pull requests or contacting the leads listed in the BEP. Here’s some of our newest BEPs.
 
--   [BEP041](https://bids.neuroimaging.io/extensions/beps/bep_041.html): Statistical Model (Taylor Salo)
--   [BEP042](https://bids.neuroimaging.io/extensions/beps/bep_042.html): Electromyography (Seyed Yahya Shirazi)
--   [BEP043](https://bids.neuroimaging.io/extensions/beps/bep_043.html): Term mapping (Chris Markiewicz & Eric Earl)
--   [BEP044](https://bids.neuroimaging.io/extensions/beps/bep_044.html): Stimuli (Seyed Yahya Shirazi)
+-   [BEP041](https://bids-standard.org/extensions/beps/bep_041.html): Statistical Model (Taylor Salo)
+-   [BEP042](https://bids-standard.org/extensions/beps/bep_042.html): Electromyography (Seyed Yahya Shirazi)
+-   [BEP043](https://bids-standard.org/extensions/beps/bep_043.html): Term mapping (Chris Markiewicz & Eric Earl)
+-   [BEP044](https://bids-standard.org/extensions/beps/bep_044.html): Stimuli (Seyed Yahya Shirazi)
 
-Other BEPs are listed on [the BIDS website](https://bids.neuroimaging.io/extensions/beps.html).
+Other BEPs are listed on [the BIDS website](https://bids-standard.org/extensions/beps.html).
 
 ## New working groups
 
