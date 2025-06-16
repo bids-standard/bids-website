@@ -183,10 +183,10 @@ You may also consider requesting explicit support letters from external labs.
 
 ### Confusing operational definitions with ontological ones
 
-A common pitfall in BEP development is the attempt to define neuroimaging constructs—such as "participant", "atlas", or "template"—as if writing a comprehensive ontology or reference manual for the field.
+A common pitfall in BEP development is the attempt to define neuroscientific constructs—such as "participant", "atlas", or "template"—as if writing a comprehensive ontology or reference manual for the field.
 While this effort may be intellectually rigorous and well-intentioned, it does not align with the purpose of the BIDS specification.
 
-!!! warning "BIDS is not a general-purpose neuroimaging ontology."
+!!! warning "BIDS is not a general-purpose neuroscientific ontology."
 
     BIDS is a pragmatic standard for organizing and describing data in a way that maximizes shareability, and supports automated tools, validation, and reproducible workflows.
 
