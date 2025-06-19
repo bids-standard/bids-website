@@ -75,9 +75,9 @@ author: anonymous
     </p>
    </td>
    <td>
-    <a href="https://bids.neuroimaging.io/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization">
+    <a href="https://bids-standard.org/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization">
      <span class="underline">
-      https://bids.neuroimaging.io/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization
+      https://bids-standard.org/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization
      </span>
     </a>
    </td>
@@ -121,9 +121,9 @@ author: anonymous
      MIDS - BEP25:
     </p>
     <p>
-     <a href="https://bids.neuroimaging.io/bep025">
+     <a href="https://bids-standard.org/bep025">
       <span class="underline">
-       https://bids.neuroimaging.io/bep025
+       https://bids-standard.org/bep025
       </span>
      </a>
     </p>
@@ -137,9 +137,9 @@ author: anonymous
     </p>
     <p>
      NIRS - BEP30:
-     <a href="https://bids.neuroimaging.io/bep030">
+     <a href="https://bids-standard.org/bep030">
       <span class="underline">
-       https://bids.neuroimaging.io/bep030
+       https://bids-standard.org/bep030
       </span>
      </a>
     </p>

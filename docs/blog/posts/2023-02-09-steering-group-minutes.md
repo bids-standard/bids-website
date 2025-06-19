@@ -176,9 +176,9 @@ author: anonymous
    </td>
    <td>
     <p>
-     <a href="https://bids.neuroimaging.io/governance.html">
+     <a href="https://bids-standard.org/governance.html">
       <span class="underline">
-       https://bids.neuroimaging.io/governance.html
+       https://bids-standard.org/governance.html
       </span>
      </a>
     </p>
