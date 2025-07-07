@@ -6,9 +6,10 @@ categories:
 - town hall
 ---
 
-Are you interested in learning more about how the BIDS project is developing?
+Come share your views and learn more about how the BIDS project is developing
 
-Come check out our virtual BIDS Town Hall happening on Wednesday, July 16 at 11:00 AM EDT ([check your time here](https://www.worldtimebuddy.com/event?lid=8,6,5,12&h=8&sts=29210820&sln=8-9&a=preview&c=1381)).
+The 2025 virtual BIDS Town Hall happening on Wednesday, July 16 at 11:00 AM EDT ([check your time here](https://www.worldtimebuddy.com/event?lid=8,6,5,12&h=8&sts=29210820&sln=8-9&a=preview&c=1381)).
+
 
 Hear more about our organizational updates, status updates from several of our BIDS extension proposals (BEPs), our community projects, and voice your thoughts about BIDS!
 
