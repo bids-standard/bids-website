@@ -3,7 +3,7 @@ date: 2025-07-03
 slug: "BIDS Virtual Town Hall 2025"
 author: anonymous
 categories:
-- town hall
+-   town hall
 ---
 
 Come share your views and learn more about how the BIDS project is developing
