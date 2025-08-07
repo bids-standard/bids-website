@@ -217,16 +217,4 @@ Note that the `sourcedata/` and `derivatives/` subdirectories constitute dataset
 Any contents of these directories may be validated independently,
 but their contents must not affect the interpretation of the nested or containing datasets.
 
-Unnested datasets are also possible. For example:
-
-```bash
-my_study/
-  raw_data/
-    sub-01/
-    ...
-  derivatives/
-    preprocessed/
-    analysis/
-```
-
 <!-- TODO derivatives JSON -->
