@@ -184,6 +184,8 @@ BIDS Derivatives datasets are intended to be interpretable and distributable
 with or without the datasets used to generate them.
 This is necessary for storage and bandwidth constraints,
 as well as to permit the distribution of derivatives when the source data are restricted.
+Similarly, BIDS Raw datasets should be interpretable and distributable without
+all possible derivatives produced from them.
 
 This independence affords flexibility in the relative organization of datasets.
 The following examples show three ways to organize, relative to each other,
@@ -199,22 +201,50 @@ my_dataset/
     analysis/
   sub-01/
   ...
+  dataset_description.json
 ```
 
-A BIDS Derivatives dataset may contain references to its input datasets
-in the `sourcedata/` subdirectory:
+Disadvantage is that such organization would complicate distribution of the raw BIDS dataset
+by itself as it would require explicit exclusion of datasets within its `derivatives/` folder.
+
+A BIDS Derivative dataset may contain references to its input datasets
+(could be BIDS Raw, non-BIDS or even other BIDS Derivatives) in the `sourcedata/` subdirectory:
 
 ```bash
 my_analysis/
   sourcedata/
     raw/
+      sub-01/
+      ...
+      dataset_description.json
     preprocessed/
   sub-01/
   ...
+  dataset_description.json
 ```
 
+Disadvantage here is similar -- distribution of such BIDS Derivative dataset alone would
+require explicit exclusion of the datasets within its `sourcedata/` folder.
+
 Note that the `sourcedata/` and `derivatives/` subdirectories constitute dataset boundaries.
-Any contents of these directories may be validated independently,
-but their contents must not affect the interpretation of the nested or containing datasets.
+Any subfolders of these directories may be validated independently, if they are BIDS datasets
+which would be indicated by presence of `dataset_description.json` in them with a
+REQUIRED `"BIDSVersion"` key.
+It is important to note that their contents must not affect the interpretation of the nested
+or containing datasets.
+
+It is also possible to completely avoid nesting of datasets by simply placing them in a folder
+containing both `sourcedata/` and `derivatives/` at the same time:
+
+```bash
+my_study/
+  sourcedata/
+    raw/
+      sub-01/
+      ...
+  derivatives/
+    preprocessed/
+    analysis/
+```
 
 <!-- TODO derivatives JSON -->
