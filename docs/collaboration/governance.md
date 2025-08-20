@@ -155,8 +155,8 @@ standard.
 This group is responsible for maintaining the [BIDS specification on
 GitHub][specification_gh]. The Lead
 Maintainer and the Maintainers Group will determine how they organize
-their work, detailed in the [BIDS Maintainers guide](https://docs.google.com/document/d/11U43QmYVZUVdCxpJeezmYpkHf4sbzWjjN2EIjbk4Pfo/edit) and in accordance with the BIDS Code of Conduct.
-The maintainers guide is subject to Steering Group approval and amendment.
+their work, detailed in the [BIDS Maintainers Group Guide](https://github.com/bids-standard/bids-specification/blob/master/Maintainers_Guide.md) and in accordance with the BIDS Code of Conduct.
+The BIDS Maintainers Group Guide is subject to Steering Group approval and amendment.
 BIDS contributors may self-nominate to become maintainers,
 with approval by a majority vote of current maintainers.
 

@@ -14,24 +14,24 @@
     members:
     -   name: Stefan Appelhoff
         git: sappelhoff
-    -   name: Chris Markiewicz
-        git: effigies
-    -   name: Taylor Salo
-        git: tsalo
-    -   name: Rémi Gau
-        git: Remi-Gau
     -   name: Ross Blair
         git: rwblair
-    -   name: Anthony Galassi
-        git: bendhouseart
     -   name: Eric Earl
         git: ericearl
+    -   name: Anthony Galassi
+        git: bendhouseart
+    -   name: Rémi Gau
+        git: Remi-Gau
+    -   name: Nell Hardcastle
+        git: nellh
+    -   name: Chris Markiewicz
+        git: effigies
+    -   name: Julia-Katharina Pfarr
+        git: julia-pfarr
+    -   name: Kimberly Ray
+        git: KimberlyLRay
     -   name: Christine Rogers
         git: christinerogers
         picture: https://christinerogers.github.io/bio/headshot_crogers_202010.jpg
-    -   name: Nell Hardcastle
-        git: nellh
-    -   name: Kimberly Ray
-        git: KimberlyLRay
-    -   name: Julia-Katharina Pfarr
-        git: julia-pfarr
+    -   name: Taylor Salo
+        git: tsalo
