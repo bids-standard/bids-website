@@ -45,6 +45,28 @@ A good example of such adoption is the
 [bvec/bval file format](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html#required-gradient-orientation-information)
 for storing diffusion metadata.
 
+Before proposing an extension to add a file format, consider these criteria.
+
+1.  The format must be free and open with open-access documentation
+    and an open-source implementation for reading and writing.
+
+1.  The format must be widely supported in external software.
+
+1.  The format must add value to the existing BIDS-supported formats
+    or be widely adopted in existing datasets.
+
+1.  An active community should develop the format or have established
+    and demonstrable procedures for proposal, review, and acceptance
+    of fixes and enhancements from the public.
+
+1.  The format must meet the technical requirements of
+    neuroscientific workflows, such as saving numerical
+    data with high precision.
+
+These criteria will be reviewed by people previously or currently
+involved in the relevant domain area
+(e.g., microscopy, electrophysiology) and other formats development.
+
 ### Try to link with other existing standards and ontologies
 
 There are many standardization attempts out there.
