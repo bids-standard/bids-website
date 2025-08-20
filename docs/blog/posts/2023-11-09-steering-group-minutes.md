@@ -164,7 +164,7 @@ consolidated.
 
 Here is a list to get started with:
 
--   bids.neuroimaging.io (to go under bids-standard.org)
+-   bids-standard.org (to go under bids-standard.org)
 -   apps.neuroimaging.io
 -   Starter kit
 -   Specification (now on RTD)

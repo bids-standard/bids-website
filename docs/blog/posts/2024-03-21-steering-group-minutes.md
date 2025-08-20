@@ -218,7 +218,7 @@ YOH
 
     -   Proposed: limit that values cannot be overloaded
 
-    -   Related: [[BEP036 - Phenotypic Data]](https://bids.neuroimaging.io/bep036)
+    -   Related: [[BEP036 - Phenotypic Data]](https://bids-standard.org/bep036)
 
     -   Does not conflict with Dora\'s use cases where EEG participants often each have different metadata
         (e.g. number of electrodes) and would not have many common metadata across subjects

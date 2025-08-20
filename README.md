@@ -16,7 +16,7 @@
 
 # BIDS website
 
-View it here: https://bids.neuroimaging.io
+View it here: https://bids-standard.org
 
 ## Contributing to the BIDS website
 
@@ -38,5 +38,5 @@ on the [bids-specification][specification_gh] repository.
 If you have questions how to apply BIDS to your dataset,
 how to use a shared BIDS dataset,
 or about tools to convert and/or handle BIDS datasets,
-please see the [getting started section](https://bids.neuroimaging.io/getting_started/index.html) page,
-and our [FAQ](https://bids.neuroimaging.io/faq/index.html).
+please see the [getting started section](https://bids-standard.org/getting_started/index.html) page,
+and our [FAQ](https://bids-standard.org/faq/index.html).
