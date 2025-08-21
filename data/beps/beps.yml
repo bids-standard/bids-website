@@ -584,10 +584,11 @@
 
 -   number: '044'
     title: Stimuli
-    google_doc: https://docs.google.com/document/d/1DoQghbJlQksCHEFs0boT816p3ejX2Hd9l-OWDTXFtV8/edit
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2022
+    html_preview: https://bids-specification--2022.org.readthedocs.build/en/2022/modality-specific-files/stimuli.html
     leads:
-    -   given-names: Seyed
-        family-names: Yahya Shirazi
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
     -   given-names: Dora
         family-names: Hermes
     -   given-names: Yaroslav O.
@@ -600,14 +601,15 @@
     -   given-names: Rémi
         family-names: Gau
     status:
-    -   To harmonize and make more reusable stimuli content under stimuli/.
+    -   Community comments and feedback are being collected (January 2025)
+    -   To harmonize and make more reusable stimuli content under stimuli/
     -   Collecting community comments and feedback. All collaborators are welcome.
     -   'Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)'
     content:
     -   raw
     blocking:
     google_doc_created: 2023-09-12
-    pull_request_created:
+    pull_request_created: 2024-12-21
     pull_request_merged:
 
 -   number: '045'
