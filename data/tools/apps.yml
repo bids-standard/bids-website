@@ -497,7 +497,7 @@ apps:
 
 -   gh: PennLINC/qsiprep
     status: active
-    dh: pennbbl/qsiprep
+    dh: pennlinc/qsiprep
     ds_type:
     -   raw
     datatype:
