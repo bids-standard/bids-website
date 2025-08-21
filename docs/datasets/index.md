@@ -39,3 +39,16 @@ A 204-subject multimodal (MEG, MRI, fMRI) [dataset](https://doi.org/10.34973/37n
 [BIDS examples datasets](./examples.md) contain empty (example) raw data files
 and can assist you in converting your own dataset into a BIDS compliant dataset,
 or to run some tests with your code...
+
+## Small or easily downloadable BIDS datasets
+
+If you’re looking for smaller, quicker-to-download BIDS datasets for testing or tutorials, the resources below might help. These examples are typically small, publicly available, and come in a clear BIDS format.
+
+| Dataset Name                                                | Description                                                                                     | Link                                                       | Size    | Source     |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------| ---------------------------------------------------------- | --------| ---------- |
+| **Rhyme Judgment (OpenNeuro ds000003)**                    | A 13-subject fMRI dataset for rhyme vs. pseudo-rhyme word judgment. Good for validator tests.   | [OpenNeuro ds000003](https://openneuro.org/datasets/ds000003)  | ~391MB  | OpenNeuro  |
+| **Brainstorm MEG sample (OpenNeuro ds000246)**             | A 1-subject MEG dataset (auditory oddball) with corresponding MRI. Excellent for MEG-BIDS tests.| [OpenNeuro ds000246](https://openneuro.org/datasets/ds000246)  | ~2.29GB  | OpenNeuro  |
+| **CIMBI [11C]DASB PET (OpenNeuro ds001420)**               | A PET dataset (2 subjects) measuring serotonin transporter. Demonstrates PET-BIDS format. | [OpenNeuro ds001420](https://openneuro.org/datasets/ds001420)  | ~579MB  | OpenNeuro  |
+| **ASL-BIDS sample**                                        | A collection of minimal ASL datasets (total ~31MB) demonstrating different ASL sequences.       | [OSF project](https://osf.io/3npsa/)                      | ~31MB   | OSF        |
+
+These datasets are publicly available under their respective licenses. Always consult each dataset’s documentation or README for details.
