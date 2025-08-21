@@ -15,11 +15,16 @@
 *[BEP]: BIDS Extension Proposal
 *[BEPs]: BIDS Extension Proposals
 *[BIDS]: Brain Imaging Data Structure
-*[DOI]: Digital Object Identifiers
+*[DOI]: Digital Object Identifier
+*[EEG]: Electroencephalography
+*[iEEG]: Intracranial Electroencephalography
 *[JSON]: JavaScript Object Notation
+*[MEG]: Magnetoencephalography
 *[MRI]: Magnetic Resonance Imaging
-*[NIRS]: Near-InfraRed Spectroscopy
+*[MRS]: Magnetic Resonance Spectroscopy
+*[NIRS]: Near-Infrared Spectroscopy
 *[PET]: Positron Imaging Tomography
 *[TSV]: Tab Separated Values
+*[qMRI]: Quantitative Magnetic Resonance Imaging
 *[URI]: Uniform Resource Identifier
 *[URL]: Uniform Resource Locator
