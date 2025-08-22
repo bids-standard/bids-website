@@ -48,7 +48,8 @@ Source: [Datalad RDM course](https://psychoinformatics-de.github.io/rdm-course/0
         <li>Entities are composed of <span style="color: var(--key)">key</span><span style="color: black">-</span><span style="color: var(--label)">value</span> pairs separated by <span style="color: var(--underscore)">underscores</span></li>
         <li>There is a limited set of <span style="color: var(--suffix)">suffixes</span> for each data type (anat, func, eeg, …)</li>
         <li>For a given <span style="color: var(--suffix)">suffix</span>, some entities are <b>required</b> and some others are <b>[optional]</b>.</li>
-        <li><span style="color: var(--key)">Keys</span>, <span style="color: var(--label)">value</span> and <span style="color: var(--suffix)">suffixes</span> can only contain letters and/or numbers.</li>
+        <li><span style="color: var(--key)">Entity keys</span> and <span style="color: var(--suffix)">suffixes</span> can only contain letters and/or numbers.</li>
+        <li><span style="color: var(--label)">Entity values</span> can only contain letters and/or numbers and/or the "+" character.</li>
         <li>Entity <span style="color: var(--key)">key</span><span style="color: black">-</span><span style="color: var(--label)">value</span> pairs have a specific order in which they must appear in filename.</li>
         <li>Some entities <span style="color: var(--key)">key</span><span style="color: black">-</span><span style="color: var(--label)">value</span> can only be used for
 derivative data.</li>
