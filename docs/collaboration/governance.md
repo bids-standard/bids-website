@@ -14,7 +14,7 @@ The goal of this document is to clearly describe how BIDS is maintained and grow
 ### A. Project Summary
 
 The Brain Imaging Data Structure (BIDS) is a standard specifying the
-description of neuroimaging data in a filesystem hierarchy and of the
+description of neural and associated data in a filesystem hierarchy and of the
 metadata associated with the imaging data.
 The current edition of the standard is available in
 [HTML][specification] with all
@@ -37,7 +37,7 @@ In the transitional period after Chris Gorgolewski's departure in early 2019
 and before the community's acceptance of the present governance in late 2019,
 the project was managed and maintained by Franklin Feingold, Stefan Appelhoff, and the Poldrack Lab at Stanford.
 BIDS has advanced under the direction and effort of its contributors,
-the community of researchers that appreciate the value of standardizing neuroimaging data to facilitate sharing and analysis.
+the community of researchers that appreciate the value of standardizing neural and associated data to facilitate sharing and analysis.
 The project is multifaceted and depends on contributors for:
 specification development and maintenance,
 [BIDS Extension Proposals (BEPs)](../extensions/beps.md),
@@ -69,19 +69,19 @@ overlap.
 
 ### B. BIDS Mission Statement
 
-The goal of BIDS is to make neuroimaging data more accessible,
+The goal of BIDS is to make neural and associated data more accessible,
 shareable, and usable by researchers. To achieve this goal, BIDS seeks
 to develop a simple and intuitive way to organize and describe
-neuroimaging and associated data. BIDS has three foundational
+neural and associated data. BIDS has three foundational
 principles:
 
 1.  To minimize complexity and facilitate adoption, reuse existing
     methods and technologies whenever possible.
 
-1.  Tackle 80% of the most commonly used neuroimaging data, derivatives,
+1.  Tackle 80% of the most commonly used neural data, derivatives,
     and models (inspired by the pareto principle).
 
-1.  Adoption by the global neuroimaging community and their input during
+1.  Adoption by the global neuroscience community and their input during
    the creation of the specification is critical for the success of the project.
 
 ## 3. Leadership structure
