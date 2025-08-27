@@ -56,7 +56,7 @@ jobs:
             run: python validate_people.py
             working-directory: tools/ci
 
-    # validate bep leads metadata
+    # validate apps metadata
     apps:
         runs-on: ubuntu-latest
         steps:
