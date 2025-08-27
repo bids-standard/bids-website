@@ -57,10 +57,10 @@ def main(files_to_check):
                 if status in ["not found", "skip"]:
                     continue
 
-                if email["in_bids_wesbite"]:
+                if email["in_bids_website"]:
                     return_code = 1
                     print(
-                        "      [red]email should be in specification/CITATION.cff not in bids-wesbite data."
+                        "      [red]email should be in specification/CITATION.cff not in bids-website data."
                     )
 
                 if not email["in_citation_cff"]:
@@ -72,7 +72,7 @@ def main(files_to_check):
                     print(
                         "      [red]conflicting emails found:\n",
                         f"      [red]  - '{email["in_citation_cff"]}' in specification/CITATION.cff\n"
-                        f"      [red]   - '{email["in_bids_wesbite"]}' bids-wesbite data.",
+                        f"      [red]   - '{email["in_bids_website"]}' bids-website data.",
                     )
 
     sys.exit(return_code)
@@ -83,7 +83,7 @@ def check_lead(citation, lead):
     status = "not found"
 
     email = {
-        "in_bids_wesbite": lead.get("email", False),
+        "in_bids_website": lead.get("email", False),
         "in_citation_cff": False,
         "conflicting": False,
     }
@@ -99,7 +99,7 @@ def check_lead(citation, lead):
             email["in_citation_cff"] = contributor.get("email", False)
 
             if (
-                email["in_bids_wesbite"]
+                email["in_bids_website"]
                 and email["in_citation_cff"]
                 and lead["email"] != contributor["email"]
             ):
