@@ -37,6 +37,8 @@ def main(files_to_check):
 
         for bep in data:
 
+            has_email = False
+
             print(f'[blue]{bep["number"]} {bep["title"]}')
             for lead in bep["leads"]:
 
@@ -63,9 +65,11 @@ def main(files_to_check):
                         "      [red]email should be in specification/CITATION.cff not in bids-website data."
                     )
 
-                if not email["in_citation_cff"]:
-                    return_code = 1
-                    print("      [red]no email in specification/CITATION.cff.")
+                if email["in_citation_cff"]:
+                    has_email = True
+                else:
+                    color = "yellow" if has_email else "red"
+                    print(f"      [{color}]no email in specification/CITATION.cff.")
 
                 if email["conflicting"]:
                     return_code = 1
@@ -74,6 +78,8 @@ def main(files_to_check):
                         f"      [red]  - '{email["in_citation_cff"]}' in specification/CITATION.cff\n"
                         f"      [red]   - '{email["in_bids_website"]}' bids-website data.",
                     )
+
+            return_code |= not has_email
 
     sys.exit(return_code)
 
