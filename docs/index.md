@@ -105,7 +105,7 @@ By using this standard you will benefit in the following ways:
 ## Further information
 
 -   Good introductions to the BIDS standard can be found in the initial
-   [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644),
+   [paper published in Scientific Data](https://www.nature.com/articles/sdata201644),
    as well as in the follow up papers on specific modalities:
    [MEG](https://www.nature.com/articles/sdata2018110),
    [EEG](https://www.nature.com/articles/s41597-019-0104-8),
@@ -113,7 +113,11 @@ By using this standard you will benefit in the following ways:
    [genetics](https://doi.org/10.1093/gigascience/giaa104),
    [PET](https://doi.org/10.1038/s41597-022-01164-1),
    [microscopy](https://doi.org/10.3389/fnins.2022.871228),
-   and [qMRI](https://doi.org/10.1038/s41597-022-01571-4).
+   [qMRI](https://doi.org/10.1038/s41597-022-01571-4),
+   [ASL](https://www.nature.com/articles/s41597-022-01615-9),
+   [NIRS](https://www.nature.com/articles/s41597-024-04136-9),
+   [motion](https://www.nature.com/articles/s41597-024-03559-8),
+   and [MRS](https://www.nature.com/articles/s41597-025-05543-2).
 
 -   Look through some of the community's [presentations on BIDS](https://osf.io/yn93h/).
 
