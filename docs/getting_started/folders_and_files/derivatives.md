@@ -233,8 +233,8 @@ REQUIRED `"BIDSVersion"` key.
 It is important to note that their contents must not affect the interpretation of the nested
 or containing datasets.
 
-It is also possible to completely avoid nesting of datasets by simply placing them in a folder
-containing both `sourcedata/` and `derivatives/` at the same time:
+It is also possible to completely avoid nesting of "raw" datasets into "derivative" datasets (or vice versa),
+by simply placing them in a folder containing both `sourcedata/` and `derivatives/`:
 
 ```bash
 my_study/
