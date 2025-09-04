@@ -551,7 +551,7 @@
     -   given-names: Seyed Yahya
         family-names: Shirazi
     bids_maintainers:
-    status: |
+    status:
         -   Community comments and feedback are being collected (April 2025)
         -   Approved on May 2024, inviting collaborators (please join)
         -   Original issue: https://github.com/bids-standard/bids-specification/issues/1371
