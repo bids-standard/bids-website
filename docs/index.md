@@ -2,14 +2,13 @@
 title: BIDS
 ---
 
-Neuroimaging experiments result in complex data that can be arranged in many different ways.
-For a long time, there was no consensus how to organize and share
-data obtained in neuroimaging experiments.
+Experiments in neuroscience result in complex data that can be arranged in many different ways.
+For a long time, there was no consensus how to organize and share experimental data.
 Even two researchers working in the same lab could opt to arrange their data in a different way.
 Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data
 or rewriting scripts expecting certain structure.
 With the Brain  Imaging Data Structure (BIDS),
-we describe a simple and easy to adopt way of organizing neuroimaging and behavioral data.
+we describe a simple and easy to adopt way of organizing neural and associated, such as behavioral, data.
 
 ![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-black_1000x477.png#only-light)
 ![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-white_1000x477.png#only-dark)
@@ -36,7 +35,7 @@ and still an adapting, growing tool, the greater the community, the better it wi
 
 ## Specification vs. Ecosystem
 
-Since the inception of the BIDS specification that documents how to organize neuroimaging data,
+Since the inception of the BIDS specification that documents how to organize neural and associated data,
 a large ecosystem of tools and resources has evolved around BIDS.
 
 A few of the key elements of this ecosystem are
@@ -45,7 +44,7 @@ the [BIDS specification](http://bids-specification.readthedocs.io/) with the nit
 the [starter kit](./getting_started/index.md) with a simple explanation how to work with it,
 <!-- markdown-link-check-enable -->
 the [BIDS validator](https://github.com/bids-standard/bids-validator) to automatically check datasets for adherence to the specification,
-[BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
+[BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable pipelines that understand BIDS datasets,
 and [OpenNeuro][openneuro] as a database for BIDS formatted datasets.
 
 A non-exhaustive list of further tools can be found in the [tools](./tools/index.md) section.
