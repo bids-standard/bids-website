@@ -69,7 +69,9 @@ def main(files_to_check):
                     has_email = True
                 else:
                     color = "yellow" if has_email else "red"
-                    print(f"      [{color}]no email in specification/CITATION.cff.")
+                    print(
+                        f"      [{color}]no email in specification/CITATION.cff."
+                    )
 
                 if email["conflicting"]:
                     return_code = 1
