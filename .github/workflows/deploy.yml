@@ -5,6 +5,7 @@ on:
     push:
         branches:
         -   main
+    pull_request:
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
@@ -39,6 +40,7 @@ jobs:
             run: make all
 
         -   name: Deploy docs
+            if: github.event_name == 'push'
             uses: mhausenblas/mkdocs-deploy-gh-pages@master
             env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
