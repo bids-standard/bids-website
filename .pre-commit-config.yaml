@@ -45,7 +45,7 @@ repos:
     rev: v2.15.0
     hooks:
     -   id: pretty-format-toml
-        args: [--autofix, --indent, '4']
+        args: [--autofix, --indent, '4', --no-sort, --trailing-commas]
 
 -   repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.1.0
