@@ -34,7 +34,7 @@ jobs:
         -   name: Set up node
             uses: actions/setup-node@v5
             with:
-                node-version: 22
+                node-version: 24
 
         -   name: Install dependencies and update content from submodules
             run: make all
