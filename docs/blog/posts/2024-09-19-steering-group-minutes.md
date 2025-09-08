@@ -52,9 +52,9 @@ There was a clear value in staffing specific roles that was not allocated otherw
 ### Q&A
 
 > Ariel: to move ahead with discussions we started about BIDS governance structure
-(that is around foundation, non-profit, 501(c)3...), I've asked Chris Holdgraf to come and chat with us at an upcoming meeting.
-Chris directs [2i2c](https://2i2c.org/), and has a unique perspective on these issues.
-He's also a BIDS contributor, having worked extensively on the iEEG BEP and related.
+> (that is around foundation, non-profit, 501(c)3...), I've asked Chris Holdgraf to come and chat with us at an upcoming meeting.
+> Chris directs [2i2c](https://2i2c.org/), and has a unique perspective on these issues.
+> He's also a BIDS contributor, having worked extensively on the iEEG BEP and related.
 
 -   **Q:** What was the funding model that worked best for 2i2c?
 

@@ -49,8 +49,8 @@ in the `participants.tsv` and its corresponding `participants.json` files.
 Any such information makes your data more valuable to users.
 
 > You can edit the [participants.tsv template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/participants.tsv) and the corresponding
-[participants.json template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/participants.json)
-to provide this information.
+> [participants.json template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/participants.json)
+> to provide this information.
 
 If the dataset includes multiple sets of participant level measurements see the BIDS guidelines
 for adding [phenotypic and assessment data](https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data).
