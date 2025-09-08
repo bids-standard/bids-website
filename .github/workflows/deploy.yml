@@ -1,5 +1,5 @@
 ---
-name: Publish docs via GitHub Pages
+name: Build for gh-pages
 
 on:
     push:
@@ -39,9 +39,14 @@ jobs:
         -   name: Install dependencies and update content from submodules
             run: make all
 
-        -   name: Deploy docs
+        -   name: Build site
+            run: uv run mkdocs build
+
+        -   name: Deploy pages
             if: github.event_name == 'push'
-            uses: mhausenblas/mkdocs-deploy-gh-pages@master
+            run: |
+                git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                uv run mkdocs gh-deploy --force
             env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                CONFIG_FILE: mkdocs.yml
+                GITHUB_REPOSITORY: bids-standard/bids-website
