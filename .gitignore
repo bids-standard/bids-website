@@ -31,4 +31,3 @@ vendor/
 
 # node
 node_modules
-package*json

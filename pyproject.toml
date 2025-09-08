@@ -1,31 +1,44 @@
-[build-system]
-build-backend = "hatchling.build"
-requires = ["hatchling", "hatch-vcs"]
-
 [project]
-dependencies = []
-description = "Utility package for bids website"
-dynamic = ["version"]
-name = "bids_website"
+name = "bids_website_meta"
+version = "0.1.0"
+description = "Sources for the BIDS standard website"
 readme = "README.md"
 requires-python = ">=3.12"
+dependencies = [
+    "certifi>=2024.7.4",
+    "gender_guesser",
+    "geopy",
+    "jinja2>=3.1.5",
+    "markdown-it-py",
+    "mkdocs-material[imaging]",
+    "mkdocs-macros-plugin",
+    "mkdocs-open-in-new-tab",
+    "mkdocs-redirects",
+    "mkdocs-rss-plugin",
+    "plotly>=5.3.1",
+    "pybids",
+    "pyzotero",
+    "rich",
+    "ruamel.yaml",
+    "tabulate",
+    "urllib3>=2.2.2",
+    "bidsschematools[render]",
+    "bids_website",
+]
 
-[tool.black]
-line-length = 79
+[tool.uv.sources]
+bids_website = {workspace = true}
+
+[tool.uv.workspace]
+members = ["tools"]
 
 [tool.codespell]
 builtin = "clear,rare,en-GB_to_en-US"
 ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te,acknowledgements,Varian"
-skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/**.tsv,data/**.json,docs/collaboration/contributors.md"
+skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/**.tsv,data/**.json,docs/collaboration/contributors.md,package-lock.json"
 
-[tool.hatch.build.hooks.vcs]
-version-file = "tools/utils/_version.py"
-
-[tool.hatch.build.targets.wheel]
-packages = ["tools/utils"]
-
-[tool.hatch.version]
-source = "vcs"
+[tool.black]
+line-length = 79
 
 [tool.isort]
 combine_as_imports = true
