@@ -68,8 +68,7 @@ Halchenko, Stefan Appelhoff, Kimberly Ray
 
 ## NOTES
 
-**Guest Guy Jones: discuss adding badges to the BIDS compliant datasets
-on Scientific Data Journal website.**
+### Guest Guy Jones: discuss adding badges to the BIDS compliant datasets on Scientific Data Journal website
 
 Guy's Feedback:
 

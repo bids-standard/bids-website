@@ -82,18 +82,18 @@ conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by 
 Here is a non-exhaustive list of imaging centers, institutes, databases
 around the world that have implemented BIDS as their organizational structure.
 
-| type       | place                                                                                          |
-| ---------- | -----------------------------------------------------------------------------------------------|
-| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)                               |
-| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)               |
-| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)         |
-| Database   | [ABCD](https://abcdstudy.org)                                                                  |
-| Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                     |
-| Database   | [FCP-INDI](https://fcp-indi.github.io/)                                                        |
-| Database   | [OpenNeuro][openneuro]                                                                         |
-| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                |                                                     |
-| Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/) |
-| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)       |
+| type       | place                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)                                |
+| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)                |
+| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)          |
+| Database   | [ABCD](https://abcdstudy.org)                                                                   |
+| Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                      |
+| Database   | [FCP-INDI](https://fcp-indi.github.io/)                                                         |
+| Database   | [OpenNeuro][openneuro]                                                                          |
+| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                 |
+| Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/)  |
+| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)        |
 
 We ran
 [a survey](https://reproducibility.stanford.edu/bids-usage-survey-results/) in
@@ -111,20 +111,20 @@ to help us estimate trends in usage. Below is a snapshot as of ??? (date).
 TODO add automation to update every 6 months
 -->
 
-| tag            | nb topics | nb posts | topics with no reply | topics with answer |
-|:---------------|----------:|---------:|---------------------:|-------------------:|
-| bids           |       716 |     3404 |                  114 |                211 |
-| bids-validator |        80 |      488 |                    1 |                 28 |
-| pybids         |        29 |      175 |                    3 |                 12 |
-| dcm2bids       |        92 |      529 |                    4 |                 53 |
-| heudiconv      |       102 |      454 |                   17 |                 23 |
-| mriqc          |       141 |      604 |                   32 |                 37 |
-| fmriprep       |      1286 |     7727 |                  145 |                445 |
-| qsiprep        |       170 |     1063 |                   12 |                 76 |
-| aslprep        |        21 |       74 |                    5 |                  8 |
-| nilearn        |       585 |     2454 |                   90 |                182 |
-| fitlins        |        19 |      129 |                    2 |                  5 |
-| openneuro      |        95 |      479 |                   15 |                 28 |
+| tag             | nb topics | nb posts  | topics with no reply  | topics with answer  |
+| --------------- | --------- | --------- | --------------------- | ------------------- |
+| bids            | 716       | 3404      | 114                   | 211                 |
+| bids-validator  | 80        | 488       | 1                     | 28                  |
+| pybids          | 29        | 175       | 3                     | 12                  |
+| dcm2bids        | 92        | 529       | 4                     | 53                  |
+| heudiconv       | 102       | 454       | 17                    | 23                  |
+| mriqc           | 141       | 604       | 32                    | 37                  |
+| fmriprep        | 1286      | 7727      | 145                   | 445                 |
+| qsiprep         | 170       | 1063      | 12                    | 76                  |
+| aslprep         | 21        | 74        | 5                     | 8                   |
+| nilearn         | 585       | 2454      | 90                    | 182                 |
+| fitlins         | 19        | 129       | 2                     | 5                   |
+| openneuro       | 95        | 479       | 15                    | 28                  |
 
 ### Mailing list volume
 
