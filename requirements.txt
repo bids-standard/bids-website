@@ -14,6 +14,8 @@ attrs==23.2.0
     #   referencing
 babel==2.15.0
     # via mkdocs-material
+beautifulsoup4==4.13.3
+    # via mkdocs-panzoom-plugin
 bibtexparser==1.4.1
     # via pyzotero
 bids-validator==1.14.6
@@ -113,17 +115,20 @@ mkdocs==1.6.0
     #   mkdocs-macros-plugin
     #   mkdocs-material
     #   mkdocs-open-in-new-tab
+    #   mkdocs-panzoom-plugin
     #   mkdocs-redirects
     #   mkdocs-rss-plugin
 mkdocs-get-deps==0.2.0
     # via mkdocs
 mkdocs-macros-plugin==1.0.5
     # via -r requirements.in
-mkdocs-material==9.5.26
+mkdocs-material==9.6.5
     # via -r requirements.in
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
 mkdocs-open-in-new-tab==1.0.3
+    # via -r requirements.in
+mkdocs-panzoom-plugin==0.1.3
     # via -r requirements.in
 mkdocs-redirects==1.2.1
     # via -r requirements.in
@@ -240,6 +245,8 @@ six==1.16.0
     # via python-dateutil
 smmap==5.0.1
     # via gitdb
+soupsieve==2.6
+    # via beautifulsoup4
 sqlalchemy==2.0.30
     # via pybids
 tabulate==0.9.0
@@ -256,6 +263,7 @@ tinycss2==1.3.0
     #   cssselect2
 typing-extensions==4.12.2
     # via
+    #   beautifulsoup4
     #   formulaic
     #   sqlalchemy
 tzdata==2024.1

@@ -3,9 +3,10 @@ gender_guesser
 geopy
 jinja2>=3.1.5
 markdown-it-py
-mkdocs-material[imaging]
+mkdocs-material[imaging]>=9.6.3
 mkdocs-macros-plugin
 mkdocs-open-in-new-tab
+mkdocs-panzoom-plugin
 mkdocs-redirects
 mkdocs-rss-plugin
 plotly>=5.3.1
