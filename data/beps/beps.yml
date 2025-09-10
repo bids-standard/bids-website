@@ -430,13 +430,23 @@
         family-names: Miniussi
     -   given-names: Marta
         family-names: Bortoletto
+    -   given-names: Nigel
+        family-names: Rogasch
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
     status:
-    -   Updated BEP structure that eliminates new `.json` or `.tsv`
-    -   Stimulation parameters and hardware will be integrated in the `events.tsv` and `events.json `
-    -   Details on the sequence of offline/online NIBS treatments will be described in the `scans.tsv/json` and `session.tsv/json`
+    -   v1.0 2020-11-09 Initial work on specification with vittorio.iacovella@unitn.it carlo.miniussi@unitn.it marta.bortoletto@cognitiveneuroscience.it
+    -   v1.0 2021-04 First example of a NIBS-BIDS dataset https://gin.g-node.org/CIMeC/TMS-EEG_brain_connectivity_BIDS
+    -   V1.0 2021-11 Brainhack @Donosti with eleonora.marcantoni@cognitiveneuroscience.it martinabulgari3@gmail.com and g.guidali@campus.unimib.it
+    -   V1.0 2022-02 First international NIBS-BIDS meeting
+    -   V1.0 2022-11 First update of the BEP
+    -   V2.0 2023-08 BEP 2.0 available with the new NIBS-BIDS logic for describing NIBS experiments
+    -   V3.0 2024-07 BEP 3.0 available with a draft of the final BIDS structure.
+    -   V4.0 2024-11 BEP 4.0 updated with a new, more comprehensive structure. Added int files for offline stimulation. Harmonized parameters with SimNIBS.
+        Use of events and scans files for online stimulation.
+    -   V4.1 2024-12 BEP 4.1 Comments form December 9th, 2024 5th general meeting implemented, added FAQ section. Met with the BIDS maintenance team in
+        January 2025. Agreed on closing the open discussions, lock the google doc and start the PR.
     blocking:
     google_doc_created: 2022-09
     pull_request_created:
