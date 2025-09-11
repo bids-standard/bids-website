@@ -42,11 +42,11 @@ categories:
 -   History
     -   Originated in 2018
 
-    -   Physiology, microscopy, etc.
+    -   Physiology, microscopy...
 
     -   NWB was not mature then
 
-    -   Found BIDS useful and thorough but not enough for physio, micro, etc data
+    -   Found BIDS useful and thorough but not enough for physio, micro... data
 
     -   raw, derived, and primary data
 
@@ -71,7 +71,7 @@ categories:
     -   conversion/renaming/moving process of data into SDS is often a source of error
         -   solution: validation during upload to SPARC database
 
-    -   allows to adding additional "standards" a particular dataset conforms to (e.g. RE-JOIN/HEAL) and providing additional jsonschemas for specific files.
+    -   allows to adding additional "standards" a particular dataset conforms to (for example RE-JOIN/HEAL) and providing additional jsonschemas for specific files.
         -   note (Yarik): somewhat relates to <https://github.com/bids-standard/bids-2-devel/issues/74> ("BIDS Extensions")
 
 -   SPARC was always meant to be multi-modal
@@ -100,7 +100,7 @@ categories:
 
 -   Yarik: I think we should aim to translate such presentations into specific *actionable* items on how to improve BIDS
 
--   e.g. here the idea from SDS to provide custom jsonschemas for extra validation of some .json files. that somewhat relates to an issue where I added a comment now: <https://github.com/bids-standard/bids-2-devel/issues/74#issuecomment-2813819345>
+-   for example here the idea from SDS to provide custom jsonschemas for extra validation of some .json files. that somewhat relates to an issue where I added a comment now: <https://github.com/bids-standard/bids-2-devel/issues/74#issuecomment-2813819345>
 
 ### Copenhagen Meeting
 

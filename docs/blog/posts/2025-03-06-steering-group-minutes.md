@@ -100,7 +100,7 @@ categories:
 
 ### Cardiac BEP
 
--   YH: gives :+1: Justification: MRI, supplemental to brain, we have already non-brain modalities (events, physio, working on prov etc)
+-   YH: gives :+1: Justification: MRI, supplemental to brain, we have already non-brain modalities (events, physio, working on prov and so on)
 -   FP: gives :+1:
 -   CP: gives :-1: Justification: not about brain
 -   CM: gives :-1: Concern about not knowing how the BEP would be validated.
@@ -109,14 +109,14 @@ categories:
 -   CM: views this as borderline, will it be supported by our community
 -   YH: if there is support behind it, which Christine has indicataed that there is
 -   YH: steering group might take responsibility to assist in identifying potential expert reviewers
--   CP: may be it should be "outside" of BIDS as e.g. we have `/stats-modes` and new BIDS apps 2.0. YH: I think it is more appropriate for BEP, being part of BIDS.
+-   CP: may be it should be "outside" of BIDS as, for example we have `/stats-modes` and new BIDS apps 2.0. YH: I think it is more appropriate for BEP, being part of BIDS.
 -   FP: what does the Governance say?  What do the governance docs say about conflicts/COIs between SC and Maintainer assigned to a BEP and the group developing the BEP.
 -   CR: given that steering committee is reluctant to approve, what are the next steps?
 -   CR: cardiac group is polling their own community to build the BEP to get as much support from cardiac group as possible.
 -   FP: this type of proposal that could be used as an edge case in future BEPs.
 -   CM: How do we move with this?
 -   CR: she will bring this back to the maintainers and comments on not knowing how to move forward with a missing BIDS committee meeting.
--   EA: Remi is trying to formalize BEP process, so the requirement for 3 SC approvals to progress is a new.  BIDS has done non-brain BEPS (e.g. tabular phenotypic data, eye-tracking, physio)
+-   EA: Remi is trying to formalize BEP process, so the requirement for 3 SC approvals to progress is a new.  BIDS has done non-brain BEPS (like tabular phenotypic data, eye-tracking, physio)
 -   CP: these examples support brain imaging, the Cardio BEP does not yet support brain imaging
 -   YH: the BEP should not have to specify how its brain related.
 -   CM: a more clear reasoning/clarification on how the cardiac BEP relates to brain (besides "brain-heart interconnectome")

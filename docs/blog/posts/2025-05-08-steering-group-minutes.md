@@ -66,7 +66,7 @@ Melissa Kline Struhl
 
 -   Discussion:
 
-    -   DH: BIDS has events files, does psych-DS plan to include something similar for data like reaction times, etc
+    -   DH: BIDS has events files, does psych-DS plan to include something similar for data like reaction times...
     -   MKS: It hasn't been built yet, but that is a very likely use case to work towards
     -   EA: what about data dictionary? it looks like anything is a data dictionary?
     -   MKS: in the current examples, users are given options of simple of variable names. But the documentation points users to be able to assemble more complex datasets (<https://psychds-docs.readthedocs.io/en/latest/guides/4_data_dictionary/>) they do not require pulling variables from established onotologies but they do require variables to be defined
@@ -122,7 +122,7 @@ Melissa Kline Struhl
     -   10 people are booked for hotels
     -   Cyril to give hotel a list of names, and the hotel will give you your room when you show up giving them your name
 
--   Q: Are meals, incidental expenses, and ground transportation reimbursements possible (per diem, etc.)?
+-   Q: Are meals, incidental expenses, and ground transportation reimbursements possible (per diem...)?
     -   Cyril checking with Ariel, that question had not come up to Cyril  before today
 
 -   Ground transportation off flight

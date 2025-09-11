@@ -62,14 +62,14 @@ Agenda:
 
 -   NIH applications (@Yaroslaw if you can fill in that would be great!)
 
--   No restrictions on how little the received money can be (e.g. awards).
+-   No restrictions on how little the received money can be (for example awards).
 
 -   NIH grant, sub-award for INCF?
 
 -   Help (paid) organize events?
 
     -   possibility to pay for flights or to reimburse individuals through expense claims, INCF takes the admin burden of the reimbursement.
-    -   provide extra services to organize meetings etc
+    -   provide extra services to organize meetings...
 
 -   "Sign off" on agreements on behalf of BIDS?  should be possible, needs to be checked specifically (Yarik would share docs on SHARAZA-IHE)
 
@@ -79,7 +79,7 @@ Agenda:
 
 -   Can pay money for developeers/contributors if they have their own company or if a company can play this role (typically takes around 25% in total). Within Europe can be done for the one used by INCF for consultants (down to 18%).
 
--   Researched into other similar companies and their models ... e.g. some NYC company named after Belgian king ;)
+-   Researched into other similar companies and their models... Like some NYC company named after Belgian king ;)
 
 ## BIDS meeting
 
