@@ -26,7 +26,7 @@ categories:
 ### Response to MEDD regarding new format
 
 - DH & CM would like to amend the email. we will continue the discussion on mattermost. https://github.com/bids-standard/bids-specification/issues/2055
-- Chris M would like further advice on how to move forward with their PR (Chris merged, should it be unmerged?) Chris suggested to pull it out and establish a separate process to put it back in 
+- Chris M would like further advice on how to move forward with their PR (Chris merged, should it be unmerged?) Chris suggested to pull it out and establish a separate process to put it back in
 
 ### Maintainers updates
 

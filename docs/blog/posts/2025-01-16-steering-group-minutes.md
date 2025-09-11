@@ -25,29 +25,29 @@ categories:
         - June 10-13
 2. Mathew Abrams - INCF Fiscal Sponsorship `30min`
     make a summary of INCF as official fiscal sponsor + subcontractor on grants -- to be discussed among maintainers and checked by Mathew then the community should vote on that proposal
-3. Maintainers Updates 
-    - Copenhagen BIDS Maintainers meeting: do we need a theme to justify this or can we have it as maintainers meeting only? 
+3. Maintainers Updates
+    - Copenhagen BIDS Maintainers meeting: do we need a theme to justify this or can we have it as maintainers meeting only?
     - New BEP PRs:
       - https://github.com/bids-standard/bids-specification/pull/2022 - BEP044 Stimuli
     - Maintainers to develop the BEP timeline with promotion/demotion and some criteria
 
 ## Mathew Abrams - INCF Fiscal Sponsorship
 
-- benefits: improved access to funding, 
+- benefits: improved access to funding,
 - community building services:  web development, conference servcies, financial management, coordinate working groups, management of training groups
 - dedicated Q&A forum for BIDS via Neurostars
-- resources for capacity building:  can leverage their training space for education on BIDS 
+- resources for capacity building:  can leverage their training space for education on BIDS
 - marketing packages via INCF community
 - Fees: 10% of annual budget, 15% of total budget funds recieved through grants
 - Discussed the links between the BIDS community and INCF
 - NIH applications (@Yaroslaw if you can fill in that would be great!)
-- No restrictions on how little the received money can be (e.g. awards). 
-- NIH grant, sub-award for INCF? 
+- No restrictions on how little the received money can be (e.g. awards).
+- NIH grant, sub-award for INCF?
 - Help (paid) organize events?
     - possibility to pay for flights or to reimburse individuals through expense claims, INCF takes the admin burden of the reimbursement.
     - provide extra services to organize meetings etc
 - "Sign off" on agreements on behalf of BIDS?  should be possible, needs to be checked specifically (Yarik would share docs on SHARAZA-IHE)
-- INCF is already doing fiscal sponsorship with multiple projects including: Scicrunch w/ grant from CZI, community coordination for the Mathworks neuroscience community, Repronim, bridge. 
+- INCF is already doing fiscal sponsorship with multiple projects including: Scicrunch w/ grant from CZI, community coordination for the Mathworks neuroscience community, Repronim, bridge.
 - Link: https://www.incf.org/services/fiscal-sponsorship
 - Can pay money for developeers/contributors if they have their own company or if a company can play this role (typically takes around 25% in total). Within Europe can be done for the one used by INCF for consultants (down to 18%).
 - Researched into other similar companies and their models ... e.g. some NYC company named after Belgian king ;)

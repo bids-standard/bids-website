@@ -29,9 +29,9 @@ categories:
 
 ### Move to bids-standard.org
 
-- YH: BIDS is now more than imaging, so the new web address aligns better with their presence. 
+- YH: BIDS is now more than imaging, so the new web address aligns better with their presence.
 - CM: BIDS neuroimaging has been out for a while, and so we need to be careful about implementing website re-directs, particularly since there are many resources that still use bids.neuroimaging.io
-- FP & YH:  BIDS has indeed expanded beyond neuroimaging, including behavioral experiments. 
+- FP & YH:  BIDS has indeed expanded beyond neuroimaging, including behavioral experiments.
 - SG: all in agreement to approve the move to bids-standard.org
 
 ### BIDS Townhalls
@@ -63,8 +63,8 @@ categories:
 
 ### Maintainers Updates
 
-- there are 3 new maintainers, the maintainers calls have been split into two calls now that work for US East/West coast and their closest non-US regions. 
-- Modality and datatypes discussion: Steering group please review and discuss feedback for merging. 
+- there are 3 new maintainers, the maintainers calls have been split into two calls now that work for US East/West coast and their closest non-US regions.
+- Modality and datatypes discussion: Steering group please review and discuss feedback for merging.
 
 ### BIDS in-person meeting before/after OHBM 2025
 

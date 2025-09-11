@@ -10,7 +10,7 @@ categories:
 
 - Yaroslav Halchenko
 - Dora Hermes
-- Kim Ray 
+- Kim Ray
 - Eric Earl (Maintainer rep)
 - Maryanne Martone (SPARC)
 - Tom Gillespie (SPARC)
@@ -19,7 +19,7 @@ categories:
 
 1. Guest: Maryanne Martone (SPARC)
 2. Copenhagen maintainer meeting
-3. Follow up on cardiac BEP 
+3. Follow up on cardiac BEP
 4. BEP045 (Physio)
     > email from BEP045 (Physio), is input needed from steering?
 5. Maintainers Updates [name= all maintainers]
@@ -28,18 +28,18 @@ categories:
 
 ### SPARC
 
-- originally noted and some pointers in https://github.com/bids-standard/bids-2-devel/issues/62 
+- originally noted and some pointers in https://github.com/bids-standard/bids-2-devel/issues/62
 - History
     - Originated in 2018
     - Physiology, microscopy, etc.
     - NWB was not mature then
     - Found BIDS useful and thorough but not enough for physio, micro, etc data
     - raw, derived, and primary data
-    - on population, specimen, subject, sample: https://github.com/SciCrunch/sparc-curation/blob/master/docs/participants.org 
+    - on population, specimen, subject, sample: https://github.com/SciCrunch/sparc-curation/blob/master/docs/participants.org
     - Tom Gillespie instrumental in implementing version 2 of SPARC
     - Just released SDS 3.0 (MIS = minimal information standard)
         - includes an SDS viewer to allow seeing the over structure of a dataset (graph based)
-        - allows for "flexible hierarchy"? 
+        - allows for "flexible hierarchy"?
             - reorders the heirarchy categories to subject level
         - Sample, Subject, and ___ manifests
     - Study > Subjects > Protocols > Subject Groups
@@ -47,18 +47,18 @@ categories:
     - conversion/renaming/moving process of data into SDS is often a source of error
         - solution: validation during upload to SPARC database
     - allows to adding additional "standards" a particular dataset conforms to (e.g. RE-JOIN/HEAL) and providing additional jsonschemas for specific files.
-        - note (Yarik): somewhat relates to https://github.com/bids-standard/bids-2-devel/issues/74 ("BIDS Extensions") 
+        - note (Yarik): somewhat relates to https://github.com/bids-standard/bids-2-devel/issues/74 ("BIDS Extensions")
 - SPARC was always meant to be multi-modal
 - Tries to be "Flexible" to accomodate different requirements of multiple "actors" in a consortia
 - EX: SDS allowing embedding of BIDS: /.dss (ad-hoc prescription of a dataset standard)
 - Have an extensive list of "modalities/data types", which also have strong accent on genetic data and also "computational models"
-    - then metadata records reflect "Ten simple rules" (TSR), googled into https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009917 
+    - then metadata records reflect "Ten simple rules" (TSR), googled into https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009917
 
 - Questions Yarik planned to ask but didn't
     * Any specific rules or "mapping" regex or alike for the file names?
     * Any software/libraries to deal with SDS formatted datasets?
     * If not NWB -- what file format for electrophys data?
-    * Given current state of NWB, BIDS and various BEPS -- would you consider just going after BIDS? 
+    * Given current state of NWB, BIDS and various BEPS -- would you consider just going after BIDS?
         - What aspects of SPARC to bring in?
     * There is a validator (and also mentioned in https://github.com/con/validation/issues/1), but how "detailed" validator is, what aspects does it validate?
 - Yarik: I think we should aim to translate such presentations into specific *actionable* items on how to improve BIDS
@@ -66,7 +66,7 @@ categories:
 
 ### Copenhagen Meeting
 
-maintainers need to get travel information to Cyril ASAP - goal is this week or next. 
+maintainers need to get travel information to Cyril ASAP - goal is this week or next.
 
 ### Follow up on cardiac BEP
 
@@ -79,11 +79,11 @@ maintainers need to get travel information to Cyril ASAP - goal is this week or 
 
 ## Tasks
 
-==Importance== (1 - 5) / Name 
+==Importance== (1 - 5) / Name
 
 ### Steering Group:
 
-- [ ] BIDS townhall 
+- [ ] BIDS townhall
 
 ### Maintainers:
 
