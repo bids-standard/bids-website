@@ -34,11 +34,11 @@ categories:
 ## Mathew Abrams - INCF Fiscal Sponsorship
 
 - benefits: improved access to funding,
-- community building services:  web development, conference servcies, financial management, coordinate working groups, management of training groups
+- community building services:  web development, conference services, financial management, coordinate working groups, management of training groups
 - dedicated Q&A forum for BIDS via Neurostars
 - resources for capacity building:  can leverage their training space for education on BIDS
 - marketing packages via INCF community
-- Fees: 10% of annual budget, 15% of total budget funds recieved through grants
+- Fees: 10% of annual budget, 15% of total budget funds received through grants
 - Discussed the links between the BIDS community and INCF
 - NIH applications (@Yaroslaw if you can fill in that would be great!)
 - No restrictions on how little the received money can be (e.g. awards).

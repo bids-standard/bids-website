@@ -51,7 +51,7 @@ categories:
     - Yarik had an idea of "BEP AI Agent", generalized overall into a request [where to file such ideas for projects?](https://github.com/bids-standard/bids-website/issues/620)
 
 4. Maintainers Updates
-    > Cyril raised issue on field mandatoriness consistancy in qMRI (field X must be present, but if one one does not know the value use filed Y, ok so why not allow field Y
+    > Cyril raised issue on field mandatoriness consistency in qMRI (field X must be present, but if one one does not know the value use filed Y, ok so why not allow field Y
 
 ## Meeting Minutes
 

@@ -74,7 +74,7 @@ categories:
 - FP request - to finalize the BIDS connectivity
 - Cyril Pernet - he needs to start with his funding needs , this will also hopefully engage more EU.
 - "scope" maintainers and to promote more EU engagement
-- reqeust for more diversity in invitees (women)
+- request for more diversity in invitees (women)
 - 2 people form BIDS2OpenMind
 - computation models experts in EU
 - Oscar, Lyuba Zehl, Guiomar Niso
@@ -108,16 +108,16 @@ categories:
 
 - See last meeting notes
 - this should be voted on by the committee
-    - Christine and Eric mention google season of DOC issues where new tax laws required that the person recieved elss than half of what they were expectings.  there was significant financial delays in dispercement (4 months).
+    - Christine and Eric mention google season of DOC issues where new tax laws required that the person received elss than half of what they were expectings.  there was significant financial delays in dispercement (4 months).
     - Will steering committee consider cover the remaining half of the compensation/stipend ($2600 USD). their work was developing the BIDS website which is now being used publicly
     - CM: leans to say yes but we dont know what funds BIDS has
-    - YH: rigth now we dont have much money but the idea is that we could get it (with INCF)
+    - YH: righT now we dont have much money but the idea is that we could get it (with INCF)
     - FP: what % of the BIDS purse is $2600?
     - We should also establish a governance procedure for this.
     - YH: if they are in the US, we could pay them from his.
     - FP: We need to establish a treasurer.
     - Steering agrees to pay (from YH)
-    - CR: maintainers' main concern was payment amount, payment timing, not timely comunication about payment & taxation issues where surprises came when individuals recieved less compensation than what was agreed upon.
+    - CR: maintainers' main concern was payment amount, payment timing, not timely communication about payment & taxation issues where surprises came when individuals received less compensation than what was agreed upon.
 
 ## Tasks
 

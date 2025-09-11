@@ -32,7 +32,7 @@ categories:
 
 Melissa Kline Struhl
 
-- comes from the SIPS community, they recognized there was a mis-match in skillset for researchers in psych to adhere to BIDS.
+- comes from the SIPS community, they recognized there was a mismatch in skillset for researchers in psych to adhere to BIDS.
      - Do everything in excel, most often small datasets
 - the replication crisis has motivated their community to build/adopt standards like BIDS
 - community is working towards making their research more FAIR
@@ -43,16 +43,16 @@ Melissa Kline Struhl
 - for researchers who do not use machine-redable workflows to provide a road into that
 - Psych-DS is currently developing a validator schema.org/Dataset https://psych-ds.github.io/validator
 - Example usecases of interaction with BIDS
-    - extracting behavioural data to be analyzed separatly
-    - or inject behavioural data into a BIDS dataset
+    - extracting behavioral data to be analyzed separately
+    - or inject behavioral data into a BIDS dataset
 - they are a data format for the BRAIN Initiative BBQS (data coordinating for behavioral data)
 - Discussion:
     - DH: BIDS has events files, does psych-DS plan to include something similar for data like reaction times, etc
-    - MKS: It hasnt been built yet, but that is a very likely use case to work towards
+    - MKS: It hasn't been built yet, but that is a very likely use case to work towards
     - EA: what about data dictionary? it looks like anything is a data dictionary?
     - MKS: in the current examples, users are given options of simple of variable names. But the documentation points users to be able to assemble more complex datasets (https://psychds-docs.readthedocs.io/en/latest/guides/4_data_dictionary/) they do not require pulling variables from established onotologies but they do require variables to be defined
     - DH: re data dictionary, are you considering heriarchical event descriptors?
-    - MKS: we are aware of the option, yes we would like ot use heirarchical event descriptors is the data support it.
+    - MKS: we are aware of the option, yes we would like of use hierarchical event descriptors is the data support it.
     - Psych-DS is also working on conversation tools to convert data BIDs-->Psych-DS and Psych-DS-->BIDS
     - EA:  are you considering to include additional file formats beyond csv.  csv only can become problematic if the data contains commas.
 -NEXT STEPS: BEP 36 can reach out to Eric Earl for moving it forward.
@@ -63,7 +63,7 @@ Melissa Kline Struhl
 - Dora felt that she has a COI, thus was not an appropriate person to respond on behalf of BIDS.
 - Camille:  it sounds like people are using MED, so perhaps we should revisit our response to include steps that would need to occur for MED to be involved with BIDS
 - Dora: instead of saying 'no', we should provide a path forward for MED that the developers of the format should be responsible for.
-- DH & CM would like to ammend the email. we will continue the discussion on mattermost. https://github.com/bids-standard/bids-specification/issues/2055
+- DH & CM would like to amend the email. we will continue the discussion on mattermost. https://github.com/bids-standard/bids-specification/issues/2055
 
 ### OHBM
 

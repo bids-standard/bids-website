@@ -49,7 +49,7 @@ categories:
 
 - GOAL: tag when journals have BIDS compliant datasets that are sharable.
 - YH: is there a github issue for this?
-- CP: Aperture Neuro was open to incorporating BIDS (has been incorporated: see https://apertureneuro.org/for-authors), Scientific Data sugested creating a collection/BIDS-tag, Imaging Neuroscience was not enthusiastic,HBM - not much enthusiasm
+- CP: Aperture Neuro was open to incorporating BIDS (has been incorporated: see https://apertureneuro.org/for-authors), Scientific Data suggested creating a collection/BIDS-tag, Imaging Neuroscience was not enthusiastic,HBM - not much enthusiasm
 - we could follow up with Renzo (Scientific data), then Simon Eickhoff (HBM)
 - what is the ask for these journals: create a BIDS-compliant keyword? a citation (ex: datacite, ) cite the BIDS release used on zenodo, provide the BIDS validation files/certificate
 - FP: ezBIDS could offer this service once it no longer requires data to be run through US servers

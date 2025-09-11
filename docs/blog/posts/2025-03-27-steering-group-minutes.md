@@ -62,7 +62,7 @@ categories:
 
 ### BEP045 (Physio)
 
-- bids steering recieved an email from them that needs a reply.
+- bids steering received an email from them that needs a reply.
 - YH: we should look at the BEP, see what they are doing, see if they need guidance
 - Chris M: Rémi has been working on this BEP, but he not able to continue supporting the BEP.
 - KR: suggests responding to Mary asking for a more formal email comparable to what we are asking for the Cardiac BEP that include more information so that Steering can vote on if it should move forward.

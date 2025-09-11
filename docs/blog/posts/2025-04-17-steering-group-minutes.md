@@ -37,10 +37,10 @@ categories:
     - raw, derived, and primary data
     - on population, specimen, subject, sample: https://github.com/SciCrunch/sparc-curation/blob/master/docs/participants.org
     - Tom Gillespie instrumental in implementing version 2 of SPARC
-    - Just released SDS 3.0 (MIS = minimal information standard)
+    - Just released SDS 3.0 (`MIS` = minimal information standard)
         - includes an SDS viewer to allow seeing the over structure of a dataset (graph based)
         - allows for "flexible hierarchy"?
-            - reorders the heirarchy categories to subject level
+            - reorders the hierarchy categories to subject level
         - Sample, Subject, and ___ manifests
     - Study > Subjects > Protocols > Subject Groups
     - SDS allows nesting of datasets to support interoperability, but they cannot have the same IDs/naming schema
@@ -49,7 +49,7 @@ categories:
     - allows to adding additional "standards" a particular dataset conforms to (e.g. RE-JOIN/HEAL) and providing additional jsonschemas for specific files.
         - note (Yarik): somewhat relates to https://github.com/bids-standard/bids-2-devel/issues/74 ("BIDS Extensions")
 - SPARC was always meant to be multi-modal
-- Tries to be "Flexible" to accomodate different requirements of multiple "actors" in a consortia
+- Tries to be "Flexible" to accommodate different requirements of multiple "actors" in a consortia
 - EX: SDS allowing embedding of BIDS: /.dss (ad-hoc prescription of a dataset standard)
 - Have an extensive list of "modalities/data types", which also have strong accent on genetic data and also "computational models"
     - then metadata records reflect "Ten simple rules" (TSR), googled into https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009917
