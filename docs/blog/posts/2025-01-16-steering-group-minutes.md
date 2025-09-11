@@ -28,7 +28,7 @@ Agenda:
 
     -   New BEP PRs:
 
-        -   <https://github.com/bids-standard/bids-specification/pull/2022> - BEP044 Stimuli
+        -   [BEP044 Stimuli](https://github.com/bids-standard/bids-specification/pull/2022)
 
     -   Maintainers to develop the BEP timeline with promotion/demotion and some criteria
 

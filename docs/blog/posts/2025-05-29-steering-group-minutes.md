@@ -13,17 +13,17 @@ categories:
 
 1.  OHBM Townhall `20 min`
     -   review plan and any slides for the townhall
-    -   Slides: <https://docs.google.com/presentation/d/1Z42otXqvvo0t061XGtgRaOo2eVQRMBkcF0L_ZjS8Vzw/edit?slide=id.g36092d28a9d_3_0#slide=id.g36092d28a9d_3_0>
     -   SG please complete: slide 8 (heading: BIDS 2024-25 Other Milestones)
-    -   comments on oragnization or content? slides to cut?
-    -   2024 slides FWIW: <https://docs.google.com/presentation/d/1yL46eZ7LB0eLE3hOMX6eWMlC3ZvRzeTCb-5xnNI_Qok/edit?slide=id.g2dd8eb5564c_6_0#slide=id.g2dd8eb5564c_6_0>
+    -   comments on orgnization or content? slides to cut?
 
-1.  Response to MED regarding new format `5 min`
+2.  Response to MED regarding new format `5 min`
 
-1.  Maintainers updates `10 min`
+3.  Maintainers updates `10 min`
     -   Maintainers need more members recruited
 
-1.  (after end) Copenhagen Maintainers Meeting updates `15 min`
+4.  (after end) Copenhagen Maintainers Meeting updates `15 min`
+
+<!-- more -->
 
 ## Meeting Minutes
 

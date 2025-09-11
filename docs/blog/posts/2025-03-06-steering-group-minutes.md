@@ -9,6 +9,8 @@ categories:
 
 ---
 
+<!-- more -->
+
 ## Participants
 
 -   Franco Pestilli

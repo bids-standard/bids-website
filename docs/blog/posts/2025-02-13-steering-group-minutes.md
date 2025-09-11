@@ -9,15 +9,6 @@ categories:
 
 ---
 
-## Participants
-
--   Dora Hermes
--   Kim Ray
--   Franco Pestilli
--   Cyril Pernet
--   Rémi Gau (BIDS maintainer)
--   Yaroslav Halchenko
-
 ## Agenda
 
 1.  BIDS meeting `10min`
@@ -62,6 +53,17 @@ categories:
 
 1.  Maintainers Updates
     > Cyril raised issue on field mandatoriness consistency in qMRI (field X must be present, but if one one does not know the value use filed Y, ok so why not allow field Y
+
+<!-- more -->
+
+## Participants
+
+-   Dora Hermes
+-   Kim Ray
+-   Franco Pestilli
+-   Cyril Pernet
+-   Rémi Gau (BIDS maintainer)
+-   Yaroslav Halchenko
 
 ## Meeting Minutes
 

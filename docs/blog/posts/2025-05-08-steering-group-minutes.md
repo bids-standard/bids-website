@@ -9,16 +9,6 @@ categories:
 
 ---
 
-## Participants
-
--   Yaroslav Halchenko
--   Camille Maumet
--   Dora Hermes
--   Eric Earl
--   Anthony Galassi
--   Melissa Kline Struhl
--   Brian Leonard
-
 ## Agenda
 
 1.  Melissa Kline Struhl - Psych-DS Guest
@@ -32,6 +22,18 @@ categories:
     -   Maintainers need more members recruited
 
 1.  (after end) Copenhagen Maintainers Meeting updates `15 min`
+
+<!-- more -->
+
+## Participants
+
+-   Yaroslav Halchenko
+-   Camille Maumet
+-   Dora Hermes
+-   Eric Earl
+-   Anthony Galassi
+-   Melissa Kline Struhl
+-   Brian Leonard
 
 ## Meeting Minutes
 

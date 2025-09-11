@@ -36,6 +36,8 @@ categories:
 
 1.  Steering meeting over zoom Camille won't be able to join as of Sept :(
 
+<!-- more -->
+
 ## Meeting Minutes
 
 ### Move to bids-standard.org

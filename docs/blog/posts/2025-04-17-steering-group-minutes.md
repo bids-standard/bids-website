@@ -11,15 +11,6 @@ categories:
 
 ## Agenda
 
--   Yaroslav Halchenko
--   Dora Hermes
--   Kim Ray
--   Eric Earl (Maintainer rep)
--   Maryanne Martone (SPARC)
--   Tom Gillespie (SPARC)
-
-## Agenda
-
 1.  Guest: Maryanne Martone (SPARC)
 
 1.  Copenhagen maintainer meeting
@@ -30,6 +21,17 @@ categories:
     > email from BEP045 (Physio), is input needed from steering?
 
 1.  Maintainers Updates \[name= all maintainers]
+
+<!-- more -->
+
+## Agenda
+
+-   Yaroslav Halchenko
+-   Dora Hermes
+-   Kim Ray
+-   Eric Earl (Maintainer rep)
+-   Maryanne Martone (SPARC)
+-   Tom Gillespie (SPARC)
 
 ## Meeting Minutes
 

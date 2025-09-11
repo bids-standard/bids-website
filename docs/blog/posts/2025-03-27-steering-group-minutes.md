@@ -9,15 +9,6 @@ categories:
 
 ---
 
-## Participants
-
--   Yaroslav Halchenko
--   Dora Hermes
--   Camille Maumet
--   Kim Ray
--   Chris Markiewicz
--   Franco Pestilli
-
 ## Agenda
 
 1.  Copenhagen maintainer meeting
@@ -34,6 +25,17 @@ categories:
     -   New maintainer: Julia-Katharina Pfarr
     -   Conflict of interest on BEPs
     -   Status updates for BEPs being solicited
+
+<!-- more -->
+
+## Participants
+
+-   Yaroslav Halchenko
+-   Dora Hermes
+-   Camille Maumet
+-   Kim Ray
+-   Chris Markiewicz
+-   Franco Pestilli
 
 ## Meeting Minutes
 
