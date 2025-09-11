@@ -6,17 +6,7 @@ categories:
 -   steering group minutes
 ---
 
-## Participants
-
-- Yaroslav O. Halchenko
-- Dora Hermes
-- Cyril Pernet
-- Camille Maumet
-- Anthony Galassi
-- Kimberly Ray
-- Guest: Mathew Abrams
-
-## Agenda
+Agenda:
 
 1. BIDS Meeting - Rennes `10 min`
 	- Possible meeting dates:
@@ -30,6 +20,18 @@ categories:
     - New BEP PRs:
       - https://github.com/bids-standard/bids-specification/pull/2022 - BEP044 Stimuli
     - Maintainers to develop the BEP timeline with promotion/demotion and some criteria
+
+<!-- more -->
+
+## Participants
+
+- Yaroslav O. Halchenko
+- Dora Hermes
+- Cyril Pernet
+- Camille Maumet
+- Anthony Galassi
+- Kimberly Ray
+- Guest: Mathew Abrams
 
 ## Mathew Abrams - INCF Fiscal Sponsorship
 
