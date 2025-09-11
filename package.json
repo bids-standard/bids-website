@@ -1,7 +1,7 @@
 {
   "scripts": {
     "remark": "remark ./docs ./templates --frail --rc-path ./.remarkrc",
-    "format": "remark ./docs ./templates --frail --rc-path ./.remarkrc --output",
+    "format": "remark --frail --rc-path ./.remarkrc",
     "all-contributors": "all-contributors generate"
   },
   "dependencies": {

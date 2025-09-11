@@ -13,16 +13,17 @@
     "preset-lint-markdown-style-guide",
     "preset-lint-recommended",
     "remark-gfm",
-    ["lint-no-duplicate-headings", false],
-    ["lint-list-item-indent", "tab"],
     ["lint-emphasis-marker", "consistent"],
+    ["lint-list-item-indent", "tab"],
     ["lint-maximum-line-length", 500],
     ["lint-maximum-heading-length", false],
+    ["lint-no-duplicate-headings", false],
     ["lint-no-shortcut-reference-link", false],
-    ["remark-lint-unordered-list-marker-style", "-"],
     ["lint-no-trailing-spaces"],
-    ["remark-lint-code-block-style", false],
     ["lint-no-undefined-references", false],
-    ["remark-lint-heading-style", false]
+    ["remark-lint-code-block-style", false],
+    ["remark-lint-heading-style", false],
+    ["remark-lint-list-item-spacing", 1],
+    ["remark-lint-unordered-list-marker-style", "-"]
   ]
 }
