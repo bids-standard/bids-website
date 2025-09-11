@@ -1,4 +1,7 @@
 {
+  "settings": {
+      "bullet": "-"
+  },
   "plugins": [
     "preset-lint-markdown-style-guide",
     "preset-lint-recommended",

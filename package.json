@@ -1,6 +1,7 @@
 {
   "scripts": {
     "remark": "remark ./docs ./templates --frail --rc-path ./.remarkrc",
+    "format": "remark . --frail --output --quiet",
     "all-contributors": "all-contributors generate"
   },
   "dependencies": {
