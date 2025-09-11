@@ -16,12 +16,12 @@ categories:
     -   SG please complete: slide 8 (heading: BIDS 2024-25 Other Milestones)
     -   comments on orgnization or content? slides to cut?
 
-2.  Response to MED regarding new format `5 min`
+1.  Response to MED regarding new format `5 min`
 
-3.  Maintainers updates `10 min`
+1.  Maintainers updates `10 min`
     -   Maintainers need more members recruited
 
-4.  (after end) Copenhagen Maintainers Meeting updates `15 min`
+1.  (after end) Copenhagen Maintainers Meeting updates `15 min`
 
 <!-- more -->
 
