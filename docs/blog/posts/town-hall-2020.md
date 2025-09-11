@@ -2,6 +2,9 @@
 date: 2020-06-19
 slug: BIDS at OHBM 2020
 author: Franklin Feingold
+categories:
+
+-   townhall
 ---
 
 Check out the wide range of ways BIDS is being implemented throughout the field!

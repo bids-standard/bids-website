@@ -88,6 +88,17 @@ tox
 make remark
 ```
 
+### Using remark to format a file
+
+If you have a completely new file that you want to lint,
+you can use the following to get most of the markdown formatting done.
+
+Some will still need some manual work.
+
+```bash
+npm run format -- path_to_file --ouput
+```
+
 ## Upgrading dependencies
 
 Rerun `uv sync`:
