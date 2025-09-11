@@ -1,13 +1,13 @@
 {
   "settings": {
     "bullet": "-",
-    "listItemIndent": "tab",
+    "commonmark": true,
     "emphasis": "*",
-    "strong": "*",
     "fences": true,
-    "rule": "-",
     "incrementListMarker": false,
-    "commonmark": true
+    "listItemIndent": "tab",
+    "rule": "-",
+    "strong": "*"
   },
   "plugins": [
     "preset-lint-markdown-style-guide",
