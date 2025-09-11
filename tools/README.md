@@ -31,7 +31,7 @@ Then, use one of the following two methods:
 ### Citation Count
 
 This script queries the [OpenCitations](https://opencitations.net/index/coci) API
-to get the number of papers that cited a list of papers related to the [BIDS](https://bids.neuroimaging.io/) data organization standard.
+to get the number of papers that cited a list of papers related to the [BIDS](https://bids-standard.org/) data organization standard.
 
 The resulting citation count is then visualized using [Plotly](https://plotly.com/python/).
 

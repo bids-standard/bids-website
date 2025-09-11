@@ -27,7 +27,7 @@ The plan is that there should be multiple people committed to the repository (ot
 [CODEOWNERS file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#about-code-owners)
 at the top level), there should be a code of conduct in the repository that is consistent with that of the BIDS specification, and (as a consequence of the code of conduct) the repository should welcome contributions from others.
 
-We want to host another [Community Forum](https://bids.neuroimaging.io/blog/2020/01/02/Announcing%20Community%20Forum%20Events.html) (but not too frequent) and potentially a starter kit/demo in the Open Science Room at [OHBM](https://www.humanbrainmapping.org).
+We want to host another [Community Forum](https://bids-standard.org/blog/2020/01/02/Announcing%20Community%20Forum%20Events.html) (but not too frequent) and potentially a starter kit/demo in the Open Science Room at [OHBM](https://www.humanbrainmapping.org).
 
 Regarding discussions on where to host our historical specification pdfs (please refer to issue [#407](https://github.com/bids-standard/bids-specification/pull/407)), we consider [Zenodo](https://zenodo.org/) to be a suitable location to store our specification pdfs.
 

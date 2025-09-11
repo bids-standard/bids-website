@@ -36,9 +36,9 @@ author: anonymous
     </p>
     <p>
      Updating
-     <a href="https://bids.neuroimaging.io/bep_guide.html">
+     <a href="https://bids-standard.org/bep_guide.html">
       <span class="underline">
-       https://bids.neuroimaging.io/bep_guide.html
+       https://bids-standard.org/bep_guide.html
       </span>
      </a>
      →
@@ -218,9 +218,9 @@ author: anonymous
    </td>
    <td>
     <p>
-     <a href="https://bids.neuroimaging.io/news.html">
+     <a href="https://bids-standard.org/news.html">
       <span class="underline">
-       https://bids.neuroimaging.io/news.html
+       https://bids-standard.org/news.html
       </span>
      </a>
     </p>
@@ -334,9 +334,9 @@ author: anonymous
     </ul>
    </td>
    <td>
-    <a href="https://bids.neuroimaging.io/governance.html">
+    <a href="https://bids-standard.org/governance.html">
      <span class="underline">
-      https://bids.neuroimaging.io/governance.html
+      https://bids-standard.org/governance.html
      </span>
     </a>
    </td>
