@@ -2,6 +2,9 @@
 date: 2024-03-01
 slug: "BIDS Community Survey 2024"
 author: BIDS Maintainers
+categories:
+
+-   announcement
 ---
 
 The BIDS [Maintainers](../../collaboration/governance.md#bids-maintainers-group)

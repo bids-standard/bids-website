@@ -2,6 +2,9 @@
 date: 2020-05-25
 slug: BIDS Derivatives final request for comments
 author: Franklin Feingold
+categories:
+
+-   announcement
 ---
 
 The BIDS community is preparing to merge the Common Derivatives extension.

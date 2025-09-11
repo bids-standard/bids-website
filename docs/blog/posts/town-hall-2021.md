@@ -2,6 +2,9 @@
 date: 2021-06-15
 slug: BIDS Town Hall 2021 (with slidedeck update)
 author: Franklin Feingold
+categories:
+
+-   townhall
 ---
 
 Are you interested in learning more about how the BIDS initiative is developing?
