@@ -105,7 +105,7 @@
 
 -   number: '016'
     title: Diffusion weighted imaging derivatives
-    pull_request: https://github.com/bids-standard/bids-bep016
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2211
     content:
     -   derivative
     leads:
@@ -283,7 +283,8 @@
     -   'Perspectives: Engaging with software developers (in progress w/ SPM, AFNI)'
     blocking:
     google_doc_created: 2018-08
-    pull_request_created:
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2099
+    pull_request_created: 2025-04
     pull_request_merged:
 
 -   number: '032'
