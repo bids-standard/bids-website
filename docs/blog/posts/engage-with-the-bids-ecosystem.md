@@ -2,6 +2,9 @@
 date: 2020-03-20
 slug: "Engage with the BIDS ecosystem"
 author: Franklin Feingold
+categories:
+
+-   announcement
 ---
 
 Tell us the best way for you to participate within our global community.

@@ -2,6 +2,9 @@
 date: 2019-12-31
 slug: "Meet the BIDS Steering Group"
 author: Kirstie Whitaker
+categories:
+
+-   announcement
 ---
 
 In October 2019, the BIDS community [voted](https://github.com/bids-standard/bids-specification/issues/355) to ratify a new governance structure and to [elect five members](https://drive.google.com/file/d/1mv_fOjeQbpAu6fVPKnTerXp-it6F59wi/view) to oversee the development and adoption of the standard.

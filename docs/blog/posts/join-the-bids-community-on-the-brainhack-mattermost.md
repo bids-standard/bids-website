@@ -2,6 +2,9 @@
 date: 2020-06-24
 slug: Join the BIDS community on the BrainHack Mattermost
 author: Franklin Feingold
+categories:
+
+-   announcement
 ---
 
 BIDS is joining the [BrainHack Mattermost][brainhack_mattermost]!
