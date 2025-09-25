@@ -34,8 +34,8 @@ Code of conduct may be ready, but governance will not be ready.
 -   this is somewhat reflective of the BIDS community (unfortunately)
 
 -   Possible Suggestions:
-    -   Adina Wagner
-    -   Lyuba Zehl
+    -   ******
+    -   ******
 
 ## Meeting with Chris Holdgraf
 
