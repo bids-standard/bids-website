@@ -289,7 +289,39 @@
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/01/16/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/02/13/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/03/06/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/03/27/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/04/17/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/05/08/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/05/29/Steering%20Group%20minutes.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
          <loc>https://bids.neuroimaging.io/blog/2025/07/03/BIDS%20Virtual%20Town%20Hall%202025.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/2025/07/31/Steering%20Group%20minutes.html</loc>
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
@@ -813,11 +845,11 @@
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
-         <loc>https://bids.neuroimaging.io/blog/category/town-hall.html</loc>
+         <loc>https://bids.neuroimaging.io/blog/category/steering-group-minutes.html</loc>
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
-         <loc>https://bids.neuroimaging.io/blog/category/steering-group-minutes.html</loc>
+         <loc>https://bids.neuroimaging.io/blog/category/town-hall.html</loc>
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
@@ -837,11 +869,19 @@
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
+         <loc>https://bids.neuroimaging.io/blog/category/announcement.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
          <loc>https://bids.neuroimaging.io/blog/category/release.html</loc>
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
          <loc>https://bids.neuroimaging.io/blog/category/community-review.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/category/townhall.html</loc>
          <lastmod>2025-09-25</lastmod>
     </url>
     <url>
@@ -926,6 +966,18 @@
     </url>
     <url>
          <loc>https://bids.neuroimaging.io/blog/category/steering-group-minutes/page/5.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/category/steering-group-minutes/page/6.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/category/steering-group-minutes/page/7.html</loc>
+         <lastmod>2025-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://bids.neuroimaging.io/blog/category/steering-group-minutes/page/8.html</loc>
          <lastmod>2025-09-25</lastmod>
     </url>
 </urlset>
