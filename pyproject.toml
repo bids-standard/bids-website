@@ -34,7 +34,7 @@ members = ["tools"]
 
 [tool.codespell]
 builtin = "clear,rare,en-GB_to_en-US"
-ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te,acknowledgements,Varian"
+ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te,acknowledgements,Varian,mis"
 skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/**.tsv,data/**.json,docs/collaboration/contributors.md,package-lock.json"
 
 [tool.black]
