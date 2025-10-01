@@ -32,9 +32,9 @@ categories:
     Giacomo Bertazolli lead of BEP037 will join
    </th>
    <th>
-    <a href="http://bids.neuroimaging.io/bep037">
+    <a href="http://bids-standard.org/bep037">
      <u>
-      http://bids.neuroimaging.io/bep037
+      http://bids-standard.org/bep037
      </u>
     </a>
     ,

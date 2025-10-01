@@ -30,9 +30,9 @@ categories:
     BEP37 brain stimulation
    </td>
    <td>
-    <a href="https://bids.neuroimaging.io/bep037">
+    <a href="https://bids-standard.org/bep037">
      <span class="underline">
-      https://bids.neuroimaging.io/bep037
+      https://bids-standard.org/bep037
      </span>
     </a>
    </td>
