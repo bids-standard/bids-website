@@ -96,21 +96,21 @@ p { text-align: justify; }
   .mdx-container {
     min-height: 300px !important;
   }
-  
+
   .mdx-hero {
     min-height: 280px !important;
   }
-  
+
   .mdx-hero__logo-bg {
     left: -50px !important;
     height: 100% !important;
   }
-  
+
   .mdx-hero__logo-bg img {
     height: 480px !important;
     opacity: 0.15 !important;
   }
-  
+
   .mdx-hero__content {
     max-width: 100% !important;
   }
@@ -121,15 +121,15 @@ p { text-align: justify; }
   .mdx-container {
     min-height: 400px !important;
   }
-  
+
   .mdx-hero {
     min-height: 350px !important;
   }
-  
+
   .mdx-hero__logo-bg {
     left: -150px !important;
   }
-  
+
   .mdx-hero__logo-bg img {
     height: 680px !important;
   }
@@ -140,7 +140,7 @@ p { text-align: justify; }
   .mdx-container {
     min-height: 625px !important;
   }
-  
+
   .mdx-hero {
     min-height: 575px !important;
   }
@@ -148,11 +148,11 @@ p { text-align: justify; }
   .mdx-hero__content {
     padding-top: 75px !important;  /* Add padding to push text back down */
   }
-  
+
   .mdx-hero__logo-bg {
     left: -100px !important;
   }
-  
+
   .mdx-hero__logo-bg img {
     height: 1500px !important;
     opacity: 0.1 !important;
@@ -241,15 +241,15 @@ p { text-align: justify; }
   .mdx-features-section {
     margin: 2rem 0;
   }
-  
+
   .mdx-features-headline {
     margin-bottom: 2rem;
   }
-  
+
   .mdx-features-headline h2 {
     font-size: 2rem;
   }
-  
+
   .mdx-features {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -345,11 +345,11 @@ p { text-align: justify; }
   .mdx-hero h1 {
     font-size: 2rem;
   }
-  
+
   .mdx-hero__actions {
     flex-direction: column;
   }
-  
+
   .mdx-hero__actions .md-button {
     width: 100%;
     margin-right: 0;
@@ -431,25 +431,25 @@ p { text-align: justify; }
   .mdx-sponsors {
     padding: 3rem 0 !important;
   }
-  
+
   .mdx-sponsors__content {
     padding: 0 1rem !important;
   }
-  
+
   .mdx-sponsors__content h2 {
     font-size: 1.5rem !important;
   }
-  
+
   .mdx-sponsors__grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.5rem !important;
   }
-  
+
   .mdx-sponsors__item {
     height: 100px !important;
     max-width: none !important;
   }
-  
+
   .mdx-sponsors__item img {
     max-width: 140px !important;
     max-height: 60px !important;
@@ -471,7 +471,7 @@ p { text-align: justify; }
   --bd24-blue-gray: #8a9ba8;
   --bd24-peach: #f4a572;
   --bd24-olive: #969b66;
-  --bd24-navbar: #6c704a; 
+  --bd24-navbar: #6c704a;
   --bd24-light-orange: #f7c794;
   --bd24-cream: #f8f6f0;
   --bd24-soft-white: #fefefe;
