@@ -42,10 +42,16 @@ p { text-align: justify; }
 /* Hero section styles - Complete rewrite */
 .mdx-container {
   padding-top: 1rem !important;
-  background: linear-gradient(to bottom, var(--bd24-olive), #f7c794 99%, #fff 99%) !important;
+  padding-bottom: 8rem !important;
+  background: transparent !important;
   position: relative !important;
   overflow: hidden !important;
   min-height: 300px !important;
+}
+
+/* Apply gradient only to first section */
+.mdx-container:first-of-type {
+  background: linear-gradient(to bottom, #984949, transparent 99%) !important;
 }
 
 .mdx-hero {
@@ -254,11 +260,15 @@ p { text-align: justify; }
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background: var(--md-default-bg-color);
+  background: #984949;
+  color: white;
   border-radius: 0.5rem;
   box-shadow: var(--md-shadow-z1);
   transition: transform 0.2s, box-shadow 0.2s;
   height: 280px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .mdx-feature__item:hover {
@@ -270,30 +280,31 @@ p { text-align: justify; }
   width: 3rem;
   height: 3rem;
   margin-bottom: 1rem;
-  color: var(--md-primary-fg-color);
+  color: white;
 }
 
 .mdx-feature__icon svg {
   width: 100%;
   height: 100%;
+  fill: white;
 }
 
 .mdx-feature__content h2 {
   margin: 0 0 1rem;
   font-weight: 700;
   font-size: 1.25rem;
+  color: white;
 }
 
 .mdx-feature__content {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .mdx-feature__content p {
   margin: 0;
-  color: var(--md-default-fg-color--light);
-  flex-grow: 1;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Stats section */
@@ -306,18 +317,27 @@ p { text-align: justify; }
 }
 
 .mdx-stats__item {
-  color: var(--md-primary-bg-color);
+  background: #743737;
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
 }
 
 .mdx-stats__number {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.2;
+  color: white;
 }
 
 .mdx-stats__label {
   font-size: 0.875rem;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive adjustments */
@@ -338,9 +358,8 @@ p { text-align: justify; }
 
 /* Sponsors section */
 .mdx-sponsors {
-  background: var(--md-default-bg-color) !important;
-  padding: 4rem 0 !important;
-  border-top: 1px solid var(--md-default-fg-color--lightest) !important;
+  background: #984949 !important;
+  padding: 1rem 0 3rem!important;
 }
 
 .mdx-sponsors__content {
@@ -351,7 +370,7 @@ p { text-align: justify; }
 }
 
 .mdx-sponsors__content h2 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
   font-weight: 700 !important;
   font-size: 2rem !important;
   color: var(--md-default-fg-color) !important;
@@ -460,31 +479,31 @@ p { text-align: justify; }
 
 /* Override Material Design color variables */
 :root {
-  --md-primary-fg-color: var(--bd24-navbar);
-  --md-primary-fg-color--light: var(--bd24-navbar);
-  --md-primary-fg-color--dark: var(--bd24-navbar);
-  --md-accent-fg-color: var(--bd24-raspberry);
+  --md-primary-fg-color: #984949;
+  --md-primary-fg-color--light: #984949;
+  --md-primary-fg-color--dark: #984949;
+  --md-accent-fg-color: #984949;
   --md-accent-fg-color--transparent: rgba(212, 123, 138, 0.1);
 }
 
 /* Custom button styling with pastel colors */
 .md-button--primary {
-  background-color: var(--bd24-navbar) !important;
-  border-color: var(--bd24-navbar) !important;
+  background-color: #984949 !important;
+  border-color: white !important;
   color: white !important;
   font-weight: 500 !important;
 }
 
 .md-button--primary:hover {
-  background-color: var(--bd24-dusty-pink) !important;
-  border-color: var(--bd24-dusty-pink) !important;
+  background-color: #984949 !important;
+  border-color: white !important;
   color: white !important;
   transform: translateY(-1px) !important;
 }
 
 .md-button--primary:focus {
-  background-color: var(--bd24-raspberry) !important;
-  border-color: var(--bd24-raspberry) !important;
+  background-color: #984949 !important;
+  border-color: #984949 !important;
   color: white !important;
 }
 
@@ -493,11 +512,11 @@ p { text-align: justify; }
   border: 2px solid white !important;
   color: white !important;
   font-weight: 500 !important;
-  background-color: var(--bd24-navbar) !important;
+  background-color: #743737 !important;
 }
 
 .md-button:hover {
-  background-color: var(--bd24-peach) !important;
+  background-color: #984949 !important;
   border: 2px solid white !important;
   color: white !important;
   transform: translateY(-1px) !important;
