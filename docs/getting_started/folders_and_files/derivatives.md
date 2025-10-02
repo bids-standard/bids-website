@@ -223,9 +223,6 @@ my_analysis/
   dataset_description.json
 ```
 
-Disadvantage here is similar -- distribution of such BIDS Derivative dataset alone would
-require explicit exclusion of the datasets within its `sourcedata/` folder.
-
 Note that the `sourcedata/` and `derivatives/` subdirectories constitute dataset boundaries.
 Any subfolders of these directories may be validated independently, if they are BIDS datasets
 which would be indicated by presence of `dataset_description.json` in them with a
@@ -234,7 +231,7 @@ It is important to note that their contents must not affect the interpretation o
 or containing datasets.
 
 It is also possible to completely avoid nesting of "raw" datasets into "derivative" datasets (or vice versa),
-by simply placing them in a folder containing both `sourcedata/` and `derivatives/`:
+by simply placing them in separate folders, namely `sourcedata/` and `derivatives/` at root level:
 
 ```bash
 my_study/
