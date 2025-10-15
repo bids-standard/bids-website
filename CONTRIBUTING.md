@@ -18,8 +18,8 @@ make sure you also read the instructions below.
 
 ### Requirements
 
-- python >= 3.10
-- node.js >= ???
+- [uv](https://docs.astral.sh/uv/)
+- node.js >= 14
 - npm >= ???
 
 <!-- TODO find minimal version of node and npm
@@ -36,12 +36,10 @@ Fork and clone the repository and its submodules
 git clone https://github.com/YOUR_USER_NAME/bids-website.git --recurse-submodules
 ```
 
-Create a virtual environment using `conda`, `venv` of what other environment management tool you prefer.
-
-Install all the dependencies.
+Run `uv` to create a virtual environment in `.venv/`.
 
 ```bash
-pip install -r requirements.txt
+uv sync --frozen
 ```
 
 Generate all the content required for the build:
@@ -64,7 +62,7 @@ make update
 Serve the website with the mkdocs.
 
 ```bash
-mkdocs serve
+uv run mkdocs serve
 ```
 
 ## Maintenance
@@ -74,7 +72,7 @@ mkdocs serve
 Same as for the install but you will also need to install `tox`.
 
 ```bash
-pip install tox
+uv run tox
 ```
 
 ## Update all files
@@ -90,11 +88,21 @@ tox
 make remark
 ```
 
-## Updating the `requirements.txt`
+### Using remark to format a file
 
-Update the appropriate line `requirements.in` and run:
+If you have a completely new file that you want to lint,
+you can use the following to get most of the markdown formatting done.
+
+Some will still need some manual work.
 
 ```bash
-python -m pip install pip-tools
-pip-compile --strip-extras requirements.in
+npm run format -- path_to_file --ouput
+```
+
+## Upgrading dependencies
+
+Rerun `uv sync`:
+
+```bash
+uv sync --upgrade
 ```

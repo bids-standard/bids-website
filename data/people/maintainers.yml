@@ -12,8 +12,6 @@
 
 -   group: maintainers
     members:
-    -   name: Stefan Appelhoff
-        git: sappelhoff
     -   name: Ross Blair
         git: rwblair
     -   name: Eric Earl

@@ -2,6 +2,9 @@
 date: 2024-01-11
 slug: Steering Group minutes
 author: anonymous
+categories:
+
+-   steering group minutes
 ---
 
 <!-- more -->

@@ -1,10 +1,11 @@
 ---
-name: Publish docs via GitHub Pages
+name: Build for gh-pages
 
 on:
     push:
         branches:
         -   main
+    pull_request:
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
@@ -20,27 +21,32 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         -   name: Checkout
-            uses: actions/checkout@v4
+            uses: actions/checkout@v5
             with:
                 submodules: recursive
                 fetch-depth: 0
 
         -   name: Set up Python
-            uses: actions/setup-python@v5
+            uses: astral-sh/setup-uv@v6
             with:
                 python-version: 3.12
 
         -   name: Set up node
-            uses: actions/setup-node@v4
+            uses: actions/setup-node@v5
             with:
-                node-version: 14
+                node-version: 24
 
         -   name: Install dependencies and update content from submodules
             run: make all
 
-        -   name: Deploy docs
-            uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        -   name: Build site
+            run: uv run mkdocs build
+
+        -   name: Deploy pages
+            if: github.event_name == 'push'
+            run: |
+                git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                uv run mkdocs gh-deploy --force
             env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                CONFIG_FILE: mkdocs.yml
-                REQUIREMENTS: requirements.txt
+                GITHUB_REPOSITORY: bids-standard/bids-website
