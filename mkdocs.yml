@@ -192,6 +192,7 @@ theme:
   logo: assets/img/logos/logo.png
   features:
     - announce.dismiss
+    - content.action.edit
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
@@ -201,7 +202,6 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.prune
     - navigation.sections
@@ -272,9 +272,6 @@ markdown_extensions:
       repo: bids-website
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
