@@ -268,8 +268,10 @@
     status: active
     data_types:
     -   EEG
+    -   sEEG
     expected_input:
-    -   EDF, Set: EEG or sEEG
+    -   EDF
+    -   Set
     language:
     -   Javascript
     -   Python
@@ -648,6 +650,26 @@
     comment: GUI to easily convert simulation results to BIDS format, according to <a href="https://bids.neuroimaging.io/bep034" target="_blank"> BEP 34
         </a>.
     license: MIT
+
+-   name: spec2nii
+    repo_url: https://github.com/wtclarke/spec2nii
+    status: active
+    data_types:
+    -   MRS
+    expected_input:
+    -   ASCII (.txt)
+    -   Bruker (2dseq, fid)
+    -   GE P-file
+    -   jMRUI (.mrui, .txt)
+    -   LCModel (.RAW)
+    -   Philips (.data/.list, DICOM, SDAT/SPAR)
+    -   Siemens (DICOM [.ima/.dcm], RDA, TWIX)
+    -   UIH DICOM
+    -   Varian
+    language:
+    -   Python
+    comment: This Python-based tool converts most proprietary and non-proprietary MRS data formats into the NIfTI-MRS format.
+    license: BSD-3-Clause
 
 -   name: sovabids
     repo_url: https://github.com/yjmantilla/sovabids

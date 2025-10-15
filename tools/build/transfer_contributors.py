@@ -19,9 +19,8 @@ def main():
 
     content = {
         "projectName": "bids-website",
-        "projectOwner": "bids",
+        "projectOwner": "bids-standard",
         "repoType": "github",
-        "repoHost": "https://github.com/bids-standard/bids-website.git",
         "files": ["docs/collaboration/contributors.md"],
         "imageSize": 150,
         "commit": True,

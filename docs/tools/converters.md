@@ -9,6 +9,12 @@ Converters for processing MRI data.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="MRI") }}
 
+## MRS Converters
+
+Converters for processing MRS data.
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="MRS") }}
+
 ## PET Converters
 
 Converters for processing PET data.

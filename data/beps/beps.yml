@@ -105,7 +105,7 @@
 
 -   number: '016'
     title: Diffusion weighted imaging derivatives
-    pull_request: https://github.com/bids-standard/bids-bep016
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2211
     content:
     -   derivative
     leads:
@@ -132,7 +132,6 @@
     leads:
     -   given-names: Eugene P.
         family-names: Duff
-        email: eugene.duff@paediatrics.ox.ac.uk
     bids_maintainers:
     status:
     -   specified different formats for dense and sparse matrices
@@ -181,8 +180,8 @@
         family-names: Hermes
     -   given-names: Mainak
         family-names: Jas
-    -   given-names: Julia
-        family-names: Guiomar Niso Galán
+    -   given-names: Guiomar
+        family-names: Niso
     -   given-names: Robert
         family-names: Oostenveld
     -   given-names: Cyril
@@ -284,7 +283,8 @@
     -   'Perspectives: Engaging with software developers (in progress w/ SPM, AFNI)'
     blocking:
     google_doc_created: 2018-08
-    pull_request_created:
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2099
+    pull_request_created: 2025-04
     pull_request_merged:
 
 -   number: '032'
@@ -398,7 +398,7 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric
+    -   given-names: Eric A.
         family-names: Earl
     -   given-names: Samuel
         family-names: Guay
@@ -407,7 +407,7 @@
     -   given-names: Arshitha
         family-names: Basavaraj
     bids_maintainers:
-    -   given-names: Eric
+    -   given-names: Eric A.
         family-names: Earl
     status:
     -   PR nearly ready to integrate with modality agnostic files sections.
@@ -431,13 +431,23 @@
         family-names: Miniussi
     -   given-names: Marta
         family-names: Bortoletto
+    -   given-names: Nigel
+        family-names: Rogasch
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
     status:
-    -   Updated BEP structure that eliminates new `.json` or `.tsv`
-    -   Stimulation parameters and hardware will be integrated in the `events.tsv` and `events.json `
-    -   Details on the sequence of offline/online NIBS treatments will be described in the `scans.tsv/json` and `session.tsv/json`
+    -   v1.0 2020-11-09 Initial work on specification with vittorio.iacovella@unitn.it carlo.miniussi@unitn.it marta.bortoletto@cognitiveneuroscience.it
+    -   v1.0 2021-04 First example of a NIBS-BIDS dataset https://gin.g-node.org/CIMeC/TMS-EEG_brain_connectivity_BIDS
+    -   V1.0 2021-11 Brainhack @Donosti with eleonora.marcantoni@cognitiveneuroscience.it martinabulgari3@gmail.com and g.guidali@campus.unimib.it
+    -   V1.0 2022-02 First international NIBS-BIDS meeting
+    -   V1.0 2022-11 First update of the BEP
+    -   V2.0 2023-08 BEP 2.0 available with the new NIBS-BIDS logic for describing NIBS experiments
+    -   V3.0 2024-07 BEP 3.0 available with a draft of the final BIDS structure.
+    -   V4.0 2024-11 BEP 4.0 updated with a new, more comprehensive structure. Added int files for offline stimulation. Harmonized parameters with SimNIBS.
+        Use of events and scans files for online stimulation.
+    -   V4.1 2024-12 BEP 4.1 Comments form December 9th, 2024 5th general meeting implemented, added FAQ section. Met with the BIDS maintenance team in
+        January 2025. Agreed on closing the open discussions, lock the google doc and start the PR.
     blocking:
     google_doc_created: 2022-09
     pull_request_created:
@@ -455,7 +465,6 @@
         family-names: Herholz
     -   given-names: Eugene P.
         family-names: Duff
-        email: eugene.duff@paediatrics.ox.ac.uk
     -   given-names: Anthony
         family-names: Galassi
     bids_maintainers:
@@ -503,7 +512,7 @@
     -   given-names: Jean-Charles
         family-names: Mariani
     -   given-names: Samuel
-        family-names: Diebolt
+        family-names: Le Meur-Diebolt
     -   given-names: Thomas
         family-names: Deffieux
     bids_maintainers:
@@ -551,10 +560,10 @@
     -   given-names: Seyed Yahya
         family-names: Shirazi
     bids_maintainers:
-    status: |
-        -   Community comments and feedback are being collected (April 2025)
-        -   Approved on May 2024, inviting collaborators (please join)
-        -   Original issue: https://github.com/bids-standard/bids-specification/issues/1371
+    status:
+    -   Community comments and feedback are being collected (April 2025)
+    -   Approved on May 2024, inviting collaborators (please join)
+    -   Original issue: https://github.com/bids-standard/bids-specification/issues/1371
     blocking:
     google_doc_created: 2023-01
     pull_request_created: 2024-12-06
@@ -641,7 +650,7 @@
     display: Tractography
     google_doc: https://docs.google.com/document/d/1ubDQ2RhgjnfGqoeukzEkPV9YEHhfYMERrj7-3b0c2HI/edit
     leads:
-    -   given-names: Robert
+    -   given-names: Robert E.
         family-names: Smith
     -   given-names: Ariel
         family-names: Rokem
