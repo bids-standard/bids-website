@@ -398,7 +398,7 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric A.
+    -   given-names: Eric
         family-names: Earl
     -   given-names: Samuel
         family-names: Guay
@@ -407,14 +407,18 @@
     -   given-names: Arshitha
         family-names: Basavaraj
     bids_maintainers:
-    -   given-names: Eric A.
-        family-names: Earl
+    -   given-names: Chris
+        family-names: Markiewicz
+    -   given-names: Ross
+        family-names: Blair
     status:
-    -   PR nearly ready to integrate with modality agnostic files sections.
+    -   BEP entering community review period shortly.
+    -   BIDS specification PR 2123.
+    -   BIDS examples PR 465.
     blocking:
-    -   Finishing bids-examples PR.
+    -   A successful community review.
     google_doc_created: 2021-10
-    pull_request_created:
+    pull_request_created: 2025-05
     pull_request_merged:
 
 -   number: '037'
