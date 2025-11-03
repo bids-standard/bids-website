@@ -433,6 +433,7 @@ apps:
     dh: nipreps/petprep
     ds_type:
     -   raw
+    -   derivative
     datatype:
     -   anat
     -   pet
