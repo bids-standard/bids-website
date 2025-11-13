@@ -39,10 +39,9 @@ p { text-align: justify; }
 
 .md-footer__inner.md-grid {  display: none; }
 
-/* Hero section styles - Complete rewrite */
+/* Hero section styles */
 .mdx-container {
   padding-top: 1rem !important;
-  padding-bottom: 8rem !important;
   background: transparent !important;
   position: relative !important;
   overflow: hidden !important;
@@ -51,7 +50,7 @@ p { text-align: justify; }
 
 /* Apply gradient only to first section */
 .mdx-container:first-of-type {
-  background: linear-gradient(to bottom, #984949, transparent 99%) !important;
+  background: linear-gradient(to bottom, #124559, transparent 99%) !important;
 }
 
 .mdx-hero {
@@ -260,7 +259,7 @@ p { text-align: justify; }
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background: #984949;
+  background: #124559;
   color: white;
   border-radius: 0.5rem;
   box-shadow: var(--md-shadow-z1);
@@ -317,7 +316,7 @@ p { text-align: justify; }
 }
 
 .mdx-stats__item {
-  background: #743737;
+  background: #598392;
   color: white;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -358,7 +357,7 @@ p { text-align: justify; }
 
 /* Sponsors section */
 .mdx-sponsors {
-  background: #984949 !important;
+  background: #124559 !important;
   padding: 1rem 0 3rem!important;
 }
 
@@ -373,7 +372,7 @@ p { text-align: justify; }
   margin-bottom: 2rem !important;
   font-weight: 700 !important;
   font-size: 2rem !important;
-  color: var(--md-default-fg-color) !important;
+  color: white !important;
 }
 
 .mdx-sponsors__content p {
@@ -479,31 +478,31 @@ p { text-align: justify; }
 
 /* Override Material Design color variables */
 :root {
-  --md-primary-fg-color: #984949;
-  --md-primary-fg-color--light: #984949;
-  --md-primary-fg-color--dark: #984949;
-  --md-accent-fg-color: #984949;
+  --md-primary-fg-color: #124559;
+  --md-primary-fg-color--light: #124559;
+  --md-primary-fg-color--dark: #124559;
+  --md-accent-fg-color: #124559;
   --md-accent-fg-color--transparent: rgba(212, 123, 138, 0.1);
 }
 
-/* Custom button styling with pastel colors */
+/* Custom button styling */
 .md-button--primary {
-  background-color: #984949 !important;
+  background-color: #124559 !important;
   border-color: white !important;
   color: white !important;
   font-weight: 500 !important;
 }
 
 .md-button--primary:hover {
-  background-color: #984949 !important;
+  background-color: #aec3b0 !important;
   border-color: white !important;
   color: white !important;
   transform: translateY(-1px) !important;
 }
 
 .md-button--primary:focus {
-  background-color: #984949 !important;
-  border-color: #984949 !important;
+  background-color: #aec3b0 !important;
+  border-color: #124559 !important;
   color: white !important;
 }
 
@@ -512,11 +511,11 @@ p { text-align: justify; }
   border: 2px solid white !important;
   color: white !important;
   font-weight: 500 !important;
-  background-color: #743737 !important;
+  background-color: #124559 !important;
 }
 
 .md-button:hover {
-  background-color: #984949 !important;
+  background-color: #aec3b0!important;
   border: 2px solid white !important;
   color: white !important;
   transform: translateY(-1px) !important;
