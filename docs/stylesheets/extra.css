@@ -258,14 +258,14 @@ p { text-align: justify; }
 .mdx-feature__item {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   background: #124559;
   color: white;
   border-radius: 0.5rem;
   box-shadow: var(--md-shadow-z1);
   transition: transform 0.2s, box-shadow 0.2s;
   height: 280px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
@@ -470,21 +470,6 @@ p { text-align: justify; }
   }
 }
 
-/* BrewDistrict24 inspired pastel color scheme */
-:root {
-  --bd24-raspberry: #d47b8a;
-  --bd24-sage-green: #a8b5a0;
-  --bd24-teal: #7db5b0;
-  --bd24-dusty-pink: #e8b4c0;
-  --bd24-blue-gray: #8a9ba8;
-  --bd24-peach: #f4a572;
-  --bd24-olive: #969b66;
-  --bd24-navbar: #6c704a;
-  --bd24-light-orange: #f7c794;
-  --bd24-cream: #f8f6f0;
-  --bd24-soft-white: #fefefe;
-}
-
 /* Override Material Design color variables */
 :root {
   --md-primary-fg-color: #124559;
@@ -503,14 +488,14 @@ p { text-align: justify; }
 }
 
 .md-button--primary:hover {
-  background-color: #aec3b0 !important;
+  background-color: #6b9aaa !important;
   border-color: white !important;
   color: white !important;
   transform: translateY(-1px) !important;
 }
 
 .md-button--primary:focus {
-  background-color: #aec3b0 !important;
+  background-color: #6b9aaa !important;
   border-color: #124559 !important;
   color: white !important;
 }
@@ -524,7 +509,7 @@ p { text-align: justify; }
 }
 
 .md-button:hover {
-  background-color: #aec3b0!important;
+  background-color: #6b9aaa!important;
   border: 2px solid white !important;
   color: white !important;
   transform: translateY(-1px) !important;
