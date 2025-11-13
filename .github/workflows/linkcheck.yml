@@ -27,14 +27,14 @@ jobs:
                 fetch-depth: 0
 
         -   name: Set up Python
-            uses: actions/setup-python@v6
+            uses: astral-sh/setup-uv@v6
             with:
                 python-version: 3.12
 
         -   name: Set up node
             uses: actions/setup-node@v5
             with:
-                node-version: 22
+                node-version: 24
 
         -   name: Install dependencies and update content from submodules
             run: make all
