@@ -42,7 +42,9 @@ Brain Imaging Data Structure - a standardized way to organize your neural and as
 The combination of the differential amplifier and the analog-to-digital converter
 that results in the potential different (for EEG and iEEG)
 or magnetic field or gradient (for MEG) to end up on disk.
-This should not be confused with [electrode](#electrode).
+This should not be confused with [electrode](#electrode), although they are often
+used interchangeably since each [electrode](#electrode) is often recorded as an
+individual channel.
 
 #### container
 
@@ -65,7 +67,9 @@ Collection of data that can include many subjects or sessions.
 
 The small metal disk that is in contact with the scalp (EEG)
 or directly touching the brain (iEEG).
-This should not be confused with the EEG or iEGG [channel](#channel).
+This should not be confused with the EEG or iEGG [channel](#channel), although
+they are often used interchangeably since each electrode is often recorded as
+an individual [channel](#channel).
 
 #### extensions
 
