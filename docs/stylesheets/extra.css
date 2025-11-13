@@ -45,7 +45,7 @@ p { text-align: justify; }
   background: transparent !important;
   position: relative !important;
   overflow: hidden !important;
-  min-height: 300px !important;
+  min-height: 150px !important;
 }
 
 /* Apply gradient only to first section */
@@ -54,11 +54,11 @@ p { text-align: justify; }
 }
 
 .mdx-hero {
-  margin: 1rem 0 !important;
+  margin: 1rem 0 0 0 !important;
   color: var(--md-primary-bg-color) !important;
   position: relative !important;
   z-index: 2 !important;
-  min-height: 280px !important;
+  min-height: 150px !important;
   display: flex !important;
   align-items: center !important;
 }
@@ -93,11 +93,11 @@ p { text-align: justify; }
 /* Mobile adjustments */
 @media screen and (max-width: 44.9375em) {
   .mdx-container {
-    min-height: 300px !important;
+    min-height: 150px !important;
   }
 
   .mdx-hero {
-    min-height: 280px !important;
+    min-height: 150px !important;
   }
 
   .mdx-hero__logo-bg {
@@ -118,11 +118,11 @@ p { text-align: justify; }
 /* Tablet adjustments */
 @media screen and (min-width: 60em) {
   .mdx-container {
-    min-height: 400px !important;
+    min-height: 220px !important;
   }
 
   .mdx-hero {
-    min-height: 350px !important;
+    min-height: 200px !important;
   }
 
   .mdx-hero__logo-bg {
@@ -137,15 +137,15 @@ p { text-align: justify; }
 /* Desktop adjustments */
 @media screen and (min-width: 76.25em) {
   .mdx-container {
-    min-height: 625px !important;
+    min-height: 300px !important;
   }
 
   .mdx-hero {
-    min-height: 575px !important;
+    min-height: 280px !important;
   }
 
   .mdx-hero__content {
-    padding-top: 75px !important;  /* Add padding to push text back down */
+    padding-top: 0 !important;
   }
 
   .mdx-hero__logo-bg {
@@ -190,8 +190,8 @@ p { text-align: justify; }
 
   .mdx-hero__content {
     max-width: 50rem;
-    margin-top: 3.5rem;
-    padding-bottom: 14vw;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -203,7 +203,7 @@ p { text-align: justify; }
 
 /* Features section with headline above and full-width grid */
 .mdx-features-section {
-  margin: 4rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .mdx-features-headline {
@@ -311,7 +311,7 @@ p { text-align: justify; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 2rem;
-  margin: 4rem 0 2rem;
+  margin: 8rem 0 2rem;
   text-align: center;
 }
 
@@ -325,6 +325,15 @@ p { text-align: justify; }
   justify-content: center;
   align-items: center;
   min-height: 150px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mdx-stats__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #6b9aaa;
 }
 
 .mdx-stats__number {
@@ -358,7 +367,7 @@ p { text-align: justify; }
 /* Sponsors section */
 .mdx-sponsors {
   background: #124559 !important;
-  padding: 1rem 0 3rem!important;
+  padding: 0.5rem 0 3rem!important;
 }
 
 .mdx-sponsors__content {
