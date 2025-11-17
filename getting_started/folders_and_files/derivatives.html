@@ -4093,27 +4093,14 @@ such that the data type is unchanged or changed, respectively, from that of the 
 <p>As with <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets, all conformant derivative datasets contain a <code>dataset_description.json</code>.</p>
 <p>New fields include <code>DatasetType</code>, which distinguishes <code>"derivative"</code> datasets from <code>"raw"</code>:</p>
 <ul>
-<li><code>GeneratedBy</code>, a list of processes that generated the data</li>
+<li><code>GeneratedBy</code>, identifies the activity (one or more) responsible for the creation of the dataset.</li>
 <li><code>SourceDatasets</code>, a list of datasets used to generate the derivative.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FMRIPREP Outputs&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;BIDSVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.4.0&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;DatasetType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;derivative&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;GeneratedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fmriprep&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;Version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.4.1&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;Container&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;docker&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Tag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;poldracklab/fmriprep:1.4.1&quot;</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manual&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Re-added RepetitionTime metadata to bold.json files&quot;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;GeneratedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bids::prov#preprocessing-xMpFqB5q&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;SourceDatasets&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="nt">&quot;DOI&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10.18112/openneuro.ds000114.v1.0.1&quot;</span><span class="p">,</span>
