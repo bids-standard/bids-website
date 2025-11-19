@@ -16,7 +16,7 @@ As with BIDS datasets, all conformant derivative datasets contain a `dataset_des
 
 New fields include `DatasetType`, which distinguishes `"derivative"` datasets from `"raw"`:
 
--   `GeneratedBy`, identifies the activity (one or more) responsible for the creation of the dataset.
+-   `GeneratedBy`, a list of processes that generated the data
 -   `SourceDatasets`, a list of datasets used to generate the derivative.
 
 ```json
@@ -24,7 +24,20 @@ New fields include `DatasetType`, which distinguishes `"derivative"` datasets fr
     "Name": "FMRIPREP Outputs",
     "BIDSVersion": "1.4.0",
     "DatasetType": "derivative",
-    "GeneratedBy": "bids::prov#preprocessing-xMpFqB5q",
+    "GeneratedBy": [
+        {
+            "Name": "fmriprep",
+            "Version": "1.4.1",
+            "Container": {
+                "Type": "docker",
+                "Tag": "poldracklab/fmriprep:1.4.1"
+            }
+        },
+        {
+            "Name": "Manual",
+            "Description": "Re-added RepetitionTime metadata to bold.json files"
+        }
+    ],
     "SourceDatasets": [
         {
             "DOI": "10.18112/openneuro.ds000114.v1.0.1",
