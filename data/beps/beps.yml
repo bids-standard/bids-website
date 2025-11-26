@@ -398,7 +398,7 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric A.
+    -   given-names: Eric
         family-names: Earl
     -   given-names: Samuel
         family-names: Guay
@@ -407,14 +407,18 @@
     -   given-names: Arshitha
         family-names: Basavaraj
     bids_maintainers:
-    -   given-names: Eric A.
-        family-names: Earl
+    -   given-names: Chris
+        family-names: Markiewicz
+    -   given-names: Ross
+        family-names: Blair
     status:
-    -   PR nearly ready to integrate with modality agnostic files sections.
+    -   BEP entering community review period shortly.
+    -   BIDS specification PR 2123.
+    -   BIDS examples PR 465.
     blocking:
-    -   Finishing bids-examples PR.
+    -   A successful community review.
     google_doc_created: 2021-10
-    pull_request_created:
+    pull_request_created: 2025-05
     pull_request_merged:
 
 -   number: '037'
@@ -626,6 +630,8 @@
 -   number: '045'
     title: Peripheral Physiological Recordings
     display: Physio
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2249
+    html_preview: https://bids-specification--2249.org.readthedocs.build/en/2249/modality-specific-files/physiological-recordings.html
     google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit
     leads:
     -   given-names: Mary
@@ -634,15 +640,19 @@
         family-names: Moia
     -   given-names: Sourav
         family-names: Kulkarni
+    bids_maintainers:
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
     status:
+    -   No longer developed in google doc, moved to <https://github.com/physiopy/bids-specification-physio>.
     -   To update standards for physiological data for improved clarity and a broader range of use cases.
     -   Now collecting community comments and feedback. All collaborators are welcome.
-    -   'Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675)'
+    -   'Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675).'
     content:
     -   raw
     blocking:
     google_doc_created: 2024-08-13
-    pull_request_created:
+    pull_request_created: 2025-11-07
     pull_request_merged:
 
 -   number: '046'
