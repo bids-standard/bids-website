@@ -59,7 +59,7 @@ Agenda:
 
     -   [discussion](https://github.com/bids-standard/BEP028_BIDSprov/issues/125) halted about a year ago
 
-    -   [spec](https://bids.neuroimaging.io/bep028)
+    -   [spec](https://bids-standard.org/bep028)
 
     -   a few ongoing issues:
         -   [issues/148](https://github.com/bids-standard/BEP028_BIDSprov/issues/148)

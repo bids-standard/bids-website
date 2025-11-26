@@ -149,7 +149,7 @@ further conversations with other journal editors. See
 !!! note
 
     For data documentation, it is advised to use the BIDS format
-    ([[https://bids.neuroimaging.io/]](https://bids.neuroimaging.io/)).
+    ([[https://bids-standard.org/]](https://bids-standard.org/)).
     It is recommended that the authors check the respective box in the
     submission form. It is recommended that authors use 'BIDS' as one of
     the key-words of the manuscript. And it is recommended that authors
