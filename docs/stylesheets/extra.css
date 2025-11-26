@@ -167,15 +167,13 @@ p { text-align: justify; }
 .md-header,
 .md-header__inner,
 .md-header-nav,
-.md-tabs,
-.md-nav {
+.md-tabs{
   background-color: var(--bids-brand) !important;
   color: var(--white) !important;
 }
 .md-header a,
 .md-tabs a,
-.md-header-nav a,
-.md-nav a {
+.md-header-nav a {
   color: var(--white) !important;
 }
 
