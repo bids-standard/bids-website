@@ -11,10 +11,10 @@ body:
 -   type: markdown
     attributes:
         value: |
-            - Have you checked our [contributing guide](https://github.com/bids-apps/bids-apps.github.io/blob/master/CONTRIBUTING.md)?
+            - Have you checked our [contributing guide](https://bids.neuroimaging.io/collaboration/bids_github/CONTRIBUTING.html)?
               It's a helpful resource.
 
-            - Have you checked our [FAQ](https://bids-apps.neuroimaging.io/dev_faq/)?
+            - Have you checked our [FAQ](https://bids.neuroimaging.io/faq/bids-apps.html)?
 
 -   type: textarea
     attributes:
@@ -30,7 +30,7 @@ body:
 
             More details here:
 
-            https://github.com/bids-apps/bids-apps.github.io/blob/761bcd927ddce83e80e9f898dce1864d9bcb9b04/_config.yml#L64
+            https://github.com/bids-standard/bids-website/blob/81c642691150e00c08ad4450dbdb05eb794f8f9a/data/tools/apps.yml#L3
 
             For example:
 

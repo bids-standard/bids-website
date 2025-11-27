@@ -3,7 +3,7 @@
 ## Simple definitions for any BIDS related terms
 
 Make sure to also check the
-[official glossary](https://bids-specification.readthedocs.io/en/latest/99-appendices/14-glossary.html)
+[official glossary](https://bids-specification.readthedocs.io/en/latest/glossary.html)
 that lists all the terms of the BIDS specification.
 
 We know that when you're getting started with something new there are often jargon-y words
@@ -33,7 +33,7 @@ One continuous block of a scan.
 
 #### BIDS
 
-Brain Imaging Data Structure - a standardised way to organise your neuroimaging data.
+Brain Imaging Data Structure - a standardized way to organize your neural and associated data.
 
 ### C
 
@@ -42,7 +42,9 @@ Brain Imaging Data Structure - a standardised way to organise your neuroimaging 
 The combination of the differential amplifier and the analog-to-digital converter
 that results in the potential different (for EEG and iEEG)
 or magnetic field or gradient (for MEG) to end up on disk.
-This should not be confused with [electrode](#electrode).
+This should not be confused with [electrode](#electrode), although they are often
+used interchangeably since each [electrode](#electrode) is often recorded as an
+individual channel.
 
 #### container
 
@@ -65,7 +67,9 @@ Collection of data that can include many subjects or sessions.
 
 The small metal disk that is in contact with the scalp (EEG)
 or directly touching the brain (iEEG).
-This should not be confused with the EEG or iEGG [channel](#channel).
+This should not be confused with the EEG or iEGG [channel](#channel), although
+they are often used interchangeably since each electrode is often recorded as
+an individual [channel](#channel).
 
 #### extensions
 
@@ -106,7 +110,7 @@ Example:
 ```
 
 -   You can find more information about `json` files
-    in the [Metadata file formats](../folders_and_files/metadata.md#json-files) page.
+    in the [Metadata file formats](../folders_and_files/metadata/json.md) page.
 
 ### M
 
@@ -180,7 +184,7 @@ A .tsv file contains a table (like a simple excel spreadsheet) containing text.
 Table values are separated by tabs.
 
 -   You can find more information about `TSV` files
-    in the [Metadata file formats](../folders_and_files/metadata.md#tsv-files) page.
+    in the [Metadata file formats](../folders_and_files/metadata/json.md) page.
 
 ### U
 

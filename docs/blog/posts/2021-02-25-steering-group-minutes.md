@@ -36,7 +36,7 @@ The Steering Group spent the rest of the meeting with the [BEP031: Microscopy](h
 -   Addressing in vivo and ex vivo
 -   There are other types of standards and data structures
 -   [Recent preprint on bioarxiv](https://www.biorxiv.org/content/10.1101/2021.02.10.430563v2) from the SPARC group
--   Detail level questions can be opened as issues in the [bids-specification repository](https://github.com/bids-standard/bids-specification) to get Maintainers thoughts
+-   Detail level questions can be opened as issues in the [bids-specification repository][specification_gh] to get Maintainers thoughts
 -   The [Neuroscience Data Structure](https://github.com/INCF/neuroscience-data-structure/issues) group is another team thinking about this
 -   Considering species, formats, and experiments
 -   Microscopy could be split into microscopy and mouse/animal

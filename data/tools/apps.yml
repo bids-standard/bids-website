@@ -92,6 +92,18 @@ apps:
     -   func
     description: BIDS Application for the Configurable Pipeline for the Analysis of Connectomes (C-PAC)
 
+-   gh: ln2t/CVRmap
+    status: active
+    branch: main
+    dh: arovai/cvrmap
+    ds_type:
+    -   raw
+    -   derivatives
+    datatype:
+    -   anat
+    -   func
+    description: BIDS Application to compute Cerebrovascular Maps from fMRI data
+
 -   gh: bids-apps/DPARSF
     status: active
     dh: bids/dparsf
@@ -173,7 +185,7 @@ apps:
     -   derivative
     datatype:
     -   dwi
-    description: Generate subject connectomes from raw BIDS data & perform inter-subject connection density normalisation, using  the MRtrix3 software package.
+    description: Generate subject connectomes from raw BIDS data & perform inter-subject connection density normalization, using  the MRtrix3 software package.
 
 -   gh: bids-apps/ndmg
     status: active
@@ -343,11 +355,23 @@ apps:
 -   gh: khanlab/hippunfold
     status: active
     dh: khanlab/hippunfold
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    ci: none
     description: BIDS App for Hippunfold (automated hippocampal unfolding and subfield segmentation)
 
 -   gh: MICA-MNI/micapipe
     status: active
     dh: micalab/micapipe
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    -   func
+    -   dwi
+    -   fmap
     ci: none
     description: micapipe from the Multimodal imaging and connectome analysis lab (https://mica-mni.github.io) at the Montreal Neurological Institute. Read
         The Docs documentation below
@@ -403,6 +427,18 @@ apps:
     -   anat
     -   func
     description:
+
+-   gh: nipreps/petprep
+    status: active
+    dh: nipreps/petprep
+    ds_type:
+    -   raw
+    -   derivative
+    datatype:
+    -   anat
+    -   pet
+    description: PETPrep is a robust and easy-to-use pipeline for preprocessing of diverse PET data. The transparent workflow dispenses of manual intervention,
+        thereby ensuring the reproducibility of the results.
 
 -   gh: nipreps/smriprep
     status: active
@@ -473,7 +509,7 @@ apps:
 
 -   gh: PennLINC/qsiprep
     status: active
-    dh: pennbbl/qsiprep
+    dh: pennlinc/qsiprep
     ds_type:
     -   raw
     datatype:

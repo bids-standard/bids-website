@@ -1,0 +1,48 @@
+---
+name: Checklinks
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+# Force to use color
+env:
+    FORCE_COLOR: true
+
+jobs:
+    # check links
+    link-check:
+        runs-on: ubuntu-latest
+        steps:
+
+        -   name: Checkout
+            uses: actions/checkout@v5
+            with:
+                submodules: recursive
+                fetch-depth: 0
+
+        -   name: Set up Python
+            uses: astral-sh/setup-uv@v7
+            with:
+                python-version: 3.12
+
+        -   name: Set up node
+            uses: actions/setup-node@v6
+            with:
+                node-version: 24
+
+        -   name: Install dependencies and update content from submodules
+            run: make all
+
+        -   uses: tcort/github-action-markdown-link-check@v1
+            with:
+                use-quiet-mode: yes
+                # use-verbose-mode: no
+                config-file: md_link_check_config.json
+                folder-path: docs
+                file-path: ./README.md

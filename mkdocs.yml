@@ -1,7 +1,7 @@
 ---
-site_name: The Brain Imaging Data Structure (BIDS)
-repo_url: https://github.com/bids-standard/bids-website.git
-site_url: https://bids-website.readthedocs.io
+site_name: The Brain Imaging Data Structure
+repo_url: https://github.com/bids-standard/bids-website/tree/main
+site_url: https://bids.neuroimaging.io/
 
 plugins:
   - search
@@ -18,9 +18,11 @@ plugins:
   - open-in-new-tab
   - macros:
       module_name: macros/main
+      # toggle to true if you are in CD/CI environment
+      on_error_fail: true
   - redirects:
       redirect_maps:
-        # old links from the old wesbite
+        # old links from the old website
         "news.md": "blog/index.md"
         "specification.md": "standards/index.md"
         "get_started.md": "getting_started/index.md"
@@ -30,31 +32,6 @@ plugins:
         "benefits.md": "tools/index.md"
         "merch.md": "https://www.teepublic.com/user/bids"
         # redirects to make sure old links to the BEP stay valid
-        "bep004.md" : "https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc/"
-        "bep011.md" : "https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y/"
-        "bep012.md" : "https://github.com/bids-standard/bids-specification/pull/519"
-        "bep014.md" : "https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE/"
-        "bep016.md" : "https://github.com/bids-standard/bids-bep016"
-        "bep017.md" : "https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA/"
-        "bep020.md" : "https://github.com/bids-standard/bids-specification/pull/1128"
-        "bep021.md" : "https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/"
-        "bep022.md" : "https://github.com/bids-standard/bids-specification/pull/1377"
-        "bep023.md" : "https://docs.google.com/document/d/1yzsd1J9GT-aA0DWhdlgNr5LCu6_gvbjLyfvYq2FuxlY/"
-        "bep024.md" : "https://docs.google.com/document/d/1fqnJZ18x5LJC8jiJ8yvPHUGFzNBZ6gW2kywYrUKWtuo/"
-        "bep026.md" : "https://docs.google.com/document/d/14KC1d5-Lx-7ZSMtwS7pVAAvz-2WR_uoo5FvsNirzqJw/"
-        "bep028.md" : "https://docs.google.com/document/d/1vw3VNDof5cecv2PkFp7Lw_pNUTUo8-m8V4SIdtGJVKs/"
-        "bep032.md" : "https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/"
-        "bep033.md" : "https://docs.google.com/document/d/1en4ByORlPqwDfZwNOOBTj0GwpYBcS0_2peqreTOvwDU/"
-        "bep034.md" : "https://github.com/bids-standard/bids-specification/pull/967"
-        "bep035.md" : "https://docs.google.com/document/d/1tFRNumQyIgjXBNC3brFDLO9FaikjL84noxK6Om-Ctik/"
-        "bep036.md" : "https://docs.google.com/document/d/1WTkfES8L0vItZVyyR68fc-9cO03jS-kCnMnw6602pbc/"
-        "bep037.md" : "https://docs.google.com/document/d/1drYd7kaNbHTcYPR3T_CRDsPcEbFSV7JbJUmhMPeWMqY/"
-        "bep038.md" : "https://docs.google.com/document/d/1RxW4cARr3-EiBEcXjLpSIVidvnUSHE7yJCUY91i5TfM/"
-        "bep039.md" : "https://docs.google.com/document/d/1GTWsj0MFQedXjOaNk6H0or6IDVFyMAysrJ9I4Zmpz2E/"
-        "bep040.md" : "https://docs.google.com/document/d/1W3z01mf1E8cfg_OY7ZGqeUeOKv659jCHQBXavtmT-T8/"
-        "bep041.md" : "https://docs.google.com/document/d/1KHzp-yk8KXvkUIhtN71WU0m4P4kKT9C1yvI-i9_kNeY/"
-        "bep042.md" : "https://docs.google.com/document/d/1G5_Eu2OemcZXS9xOGINPA6SUTaZOml7LBmZCMnUhTXA/"
-        "bep043.md" : "https://docs.google.com/document/d/1LACjc5hFXDpa2l_QddBPR41Vce_gglGv9WeuBB7LsBU/"
         "bep001.md" : "https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html"
         "bep002.md" : "https://bids-standard.github.io/stats-models/"
         "bep003.md" : "https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html"
@@ -65,53 +42,59 @@ plugins:
         "bep009.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/positron-emission-tomography.html"
         "bep010.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html"
         "bep018.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/genetic-descriptor.html"
+        "bep022.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html"
         "bep027.md" : "https://bids-standard.github.io/execution-spec/"
-        "bep029.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/motion.html"
-        "bep030.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/near-infrared-spectroscopy.html"
-        "bep031.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/microscopy.html"
-        "bep013.md" : "https://docs.google.com/document/d/1qBNQimDx6CuvHjbDvuFyBIrf2WRFUOJ-u50canWjjaw/"
-        "bep015.md" : "https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE/"
-        "bep019.md" : "https://docs.google.com/document/d/1FqJI791ycXr0bfRg2qyLqAf0RpVttJ2cInOgMWrKsNU/"
-        "bep025.md" : "https://docs.google.com/document/d/1xeiFACAnK_X64kL6XoXo8vpZ9Bn6B5Xd3j59Le1clRE/"
+        #
+        "bep004.md" : "https://bids.neuroimaging.io/extensions/beps/bep_004.html"
+        "bep011.md" : "https://bids.neuroimaging.io/extensions/beps/bep_011.html"
+        "bep012.md" : "https://bids.neuroimaging.io/extensions/beps/bep_012.html"
+        "bep013.md" : "https://bids.neuroimaging.io/extensions/beps/bep_013.html"
+        "bep014.md" : "https://bids.neuroimaging.io/extensions/beps/bep_014.html"
+        "bep015.md" : "https://bids.neuroimaging.io/extensions/beps/bep_015.html"
+        "bep016.md" : "https://bids.neuroimaging.io/extensions/beps/bep_016.html"
+        "bep017.md" : "https://bids.neuroimaging.io/extensions/beps/bep_017.html"
+        "bep019.md" : "https://bids.neuroimaging.io/extensions/beps/bep_019.html"
+        "bep020.md" : "https://bids.neuroimaging.io/extensions/beps/bep_020.html"
+        "bep021.md" : "https://bids.neuroimaging.io/extensions/beps/bep_021.html"
+        "bep023.md" : "https://bids.neuroimaging.io/extensions/beps/bep_023.html"
+        "bep024.md" : "https://bids.neuroimaging.io/extensions/beps/bep_024.html"
+        "bep025.md" : "https://bids.neuroimaging.io/extensions/beps/bep_025.html"
+        "bep026.md" : "https://bids.neuroimaging.io/extensions/beps/bep_026.html"
+        "bep028.md" : "https://bids.neuroimaging.io/extensions/beps/bep_028.html"
+        "bep029.md" : "https://bids.neuroimaging.io/extensions/beps/bep_029.html"
+        "bep030.md" : "https://bids.neuroimaging.io/extensions/beps/bep_030.html"
+        "bep031.md" : "https://bids.neuroimaging.io/extensions/beps/bep_031.html"
+        "bep032.md" : "https://bids.neuroimaging.io/extensions/beps/bep_032.html"
+        "bep033.md" : "https://bids.neuroimaging.io/extensions/beps/bep_033.html"
+        "bep034.md" : "https://bids.neuroimaging.io/extensions/beps/bep_034.html"
+        "bep035.md" : "https://bids.neuroimaging.io/extensions/beps/bep_035.html"
+        "bep036.md" : "https://bids.neuroimaging.io/extensions/beps/bep_036.html"
+        "bep037.md" : "https://bids.neuroimaging.io/extensions/beps/bep_037.html"
+        "bep038.md" : "https://bids.neuroimaging.io/extensions/beps/bep_038.html"
+        "bep039.md" : "https://bids.neuroimaging.io/extensions/beps/bep_039.html"
+        "bep040.md" : "https://bids.neuroimaging.io/extensions/beps/bep_040.html"
+        "bep041.md" : "https://bids.neuroimaging.io/extensions/beps/bep_041.html"
+        "bep042.md" : "https://bids.neuroimaging.io/extensions/beps/bep_042.html"
+        "bep043.md" : "https://bids.neuroimaging.io/extensions/beps/bep_043.html"
+        "bep044.md" : "https://bids.neuroimaging.io/extensions/beps/bep_044.html"
 
 docs_dir: docs
 
 use_directory_urls: false
 
 exclude_docs: |
-  extensions/src/
-  getting_started/src
-  standards/bids_stats_model/variable-transform
-  standards/bids_stats_model/src/README.md
-  standards/bids_stats_model/src/bsmschema/README.md
-  standards/bids_stats_model/src/specification/walkthrough-2.md
+  collaboration/bids_github/profile/README.md
+  collaboration/bids_github/README.md
+  collaboration/bids_github/SUPPORT.md
 
 nav:
--   About: index.md
+-   About BIDS: index.md
 -   Blog:
     -   blog/index.md
 -   Standards:
     -   standards/index.md
     -   BIDS Specification:
         -   standards/bids_specification/index.md
-    -   BIDS Stats Model:
-        -   standards/bids_stats_model/src/specification/index.md
-        -   motivations: standards/bids_stats_model/src/specification/motivation.md
-        -   walkthrough:
-            -   standards/bids_stats_model/src/specification/walkthrough-intro.md
-            -   part-1: standards/bids_stats_model/src/specification/walkthrough-1.md
-        -   integration: standards/bids_stats_model/src/specification/integration.md
-        -   legacy: standards/bids_stats_model/src/specification/legacy.md
-        -   specification:
-            -   standards/bids_stats_model/src/specification/spec.md
-            -   reference: standards/bids_stats_model/src/specification/reference.md
-        -   examples and resources:
-            -   standards/bids_stats_model/src/specification/model-zoo.md
-            -   default model: standards/bids_stats_model/src/specification/default_model.md
-        # -   variable transforms:
-        #     -   standards/bids_stats_model/variable-transform/README.md
-        #     -   compute: standards/bids_stats_model/variable-transform/spec/compute.md
-        #     -   munge: standards/bids_stats_model/variable-transform/spec/munge.md
     -   BIDS Schema:
         -   standards/schema/index.md
         -   how it works:
@@ -119,24 +102,20 @@ nav:
             -   standards/schema/schema-meta.md
             -   standards/schema/schema-objects.md
             -   standards/schema/schema-rules.md
+    -   BIDS Stats Model:
+        -   standards/bids_stats_model/index.md
     -   BIDS Apps:
         -   standards/bids_app_specification/index.md
-        -   standards/bids_app_specification/scope.md
-        -   standards/bids_app_specification/contributors.md
-        -   Specification:
-            -   standards/bids_app_specification/specification/index.md
-            -   examples: standards/bids_app_specification/specification/examples.md
-            -   inputs: standards/bids_app_specification/specification/inputs.md
-            -   outputs: standards/bids_app_specification/specification/outputs.md
-            -   user interface: standards/bids_app_specification/specification/user-interface.md
-            -   release notes: standards/bids_app_specification/specification/release-notes.md
 -   Getting started:
     -   getting_started/index.md
     -   Folders and files:
         -   getting_started/folders_and_files/index.md
         -   getting_started/folders_and_files/folders.md
         -   getting_started/folders_and_files/files.md
-        -   getting_started/folders_and_files/metadata.md
+        -   Metadata:
+            - getting_started/folders_and_files/metadata/index.md
+            - JSON: getting_started/folders_and_files/metadata/json.md
+            - TSV: getting_started/folders_and_files/metadata/tsv.md
         -   getting_started/folders_and_files/derivatives.md
     -   Resources:
         -   getting_started/resources/index.md
@@ -157,19 +136,19 @@ nav:
             -   getting_started/tutorials/conversion/ieeg.md
             -   getting_started/tutorials/conversion/mri.md
             -   getting_started/tutorials/conversion/pet.md
+    -   How to:
+        -   getting_started/how_to/index.md
+    -   Templates:
+        -   getting_started/templates/index.md
 -   Tools:
     -   tools/index.md
+    -   tools/converters.md
     -   tools/validator.md
     -   tools/bids-apps.md
     -   tools/others.md
-    -   Converters:
-        - tools/converters/index.md
-        - tools/converters/mri-pet.md
-        - tools/converters/meeg.md
-        - tools/converters/physio.md
-        - tools/converters/others.md
 -   Datasets:
     -   datasets/index.md
+    -   datasets/examples.md
 -   FAQ:
     -   faq/index.md
     -   faq/general.md
@@ -180,28 +159,26 @@ nav:
     -   faq/bids-apps.md
 -   Collaboration:
     -   collaboration/index.md
-    -   specification/code_of_conduct.md
-    -   collaboration/governance.md
+    -   Governance: collaboration/governance.md
+    -   collaboration/working-groups.md
+    -   Contributing: collaboration/bids_github/CONTRIBUTING.md
     -   collaboration/contributors.md
+    -   Code of conduct: collaboration/bids_github/CODE_OF_CONDUCT.md
     -   collaboration/acknowledgments.md
-    # TODO have a single code of conduct
-    # -   starter_kit: getting_started/src/src/CODE_OF_CONDUCT.md
-    # TODO remove those pages from the website
-    # until all the contributing pages have been refactored
-    # see https://github.com/bids-standard/.github/issues/7
-    # -   Contributing:
-    #     -   apps: apps/CONTRIBUTING.md
-    #     -   spec: specification/CONTRIBUTING.md
-    #     -   starter_kit: getting_started/src/src/CONTRIBUTING.md
+    -   Reports:
+        -   collaboration/reports/index.md
+        -   Google summer:
+            -   GSOC 2018: collaboration/reports/google_summer/2018-gsoc.md
+            -   GSOD 2024: collaboration/reports/google_summer/2024-gsod.md
 -   Extensions:
     -   extensions/index.md
     -   extensions/beps.md
-    -   extensions/general-guidelines.md
-    -   extensions/specific-guidelines.md
-    -   extensions/submission.md
-    # -   macros: specification/macros_doc.md
+    -   extensions/process.md
+    -   extensions/guidelines.md
+    -   Using MkDocs macros: extensions/macros_doc.md
 -   Impact:
     -   impact/index.md
+    -   impact/measuring.md
 -   Merch: https://www.teepublic.com/user/bids
 -   Contact:
     - contact/index.md
@@ -215,6 +192,8 @@ theme:
   features:
     - announce.dismiss
     - content.action.edit
+    - content.code.copy
+    - content.tabs.link
     - content.tooltips
     - footnotes
     - header.autohide
@@ -238,7 +217,7 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      primary: light green
+      primary: teal
       accent: green
       scheme: default
       toggle:
@@ -252,7 +231,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-edit_uri: https://github.com/bids-standard/bids-extensions/src/edit/main/docs/
+edit_uri: https://github.com/bids-standard/bids-website/edit/main/docs/
 
 markdown_extensions:
   - abbr
@@ -271,6 +250,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - tables
   - toc:
       anchorlink: true
@@ -279,7 +260,6 @@ markdown_extensions:
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
-  - javascripts/giscus.js
 
 extra_css:
   - stylesheets/extra.css

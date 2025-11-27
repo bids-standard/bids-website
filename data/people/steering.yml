@@ -3,22 +3,16 @@
 # members:
 #   - name:
 #     git:
-#     affiliation:
-#     twitter:
-#     researchgate:
-#     homepage:
-#     city:
-#     bio:
 
 -   group: steering
     members:
-    -   name: Ariel Rokem
-        git: arokem
-    -   name: Cyril Pernet
-        git: CPernet
     -   name: Yaroslav Halchenko
         git: yarikoptic
-    -   name: Camille Maumet
-        git: cmaumet
     -   name: Dora Hermes
         git: dorahermes
+    -   name: Camille Maumet
+        git: cmaumet
+    -   name: Cyril Pernet
+        git: CPernet
+    -   name: Franco Pestilli
+        git: francopestilli

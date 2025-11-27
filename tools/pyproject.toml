@@ -4,7 +4,9 @@ requires = ["hatchling"]
 
 [project]
 dependencies = [
-    "seaborn>0.13"
+    "seaborn>0.13",
+    "ruamel.yaml",
+    "rich",
 ]
 description = "Utility package for bids website"
 name = "bids_website"
@@ -13,7 +15,6 @@ version = "0.1.0"
 [project.optional-dependencies]
 ci = [
     "requests>=2.25.1",
-    "ruamel.yaml"
 ]
 # most of those are actually to run several of the scripts
 # but not for the utilities
@@ -22,10 +23,10 @@ dev = [
     "pygithub",
     "requests>=2.25.1",
     "requests_mock",
-    "tqdm"
+    "tqdm",
 ]
 test = [
-    "pytest>=6.0.0"
+    "pytest>=6.0.0",
 ]
 
 [tool.hatch.build.targets.wheel]

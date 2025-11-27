@@ -2,19 +2,19 @@
 title: BIDS
 ---
 
-Neuroimaging experiments result in complex data that can be arranged in many different ways.
-For a long time, there was no consensus how to organize and share
-data obtained in neuroimaging experiments.
+Experiments in neuroscience result in complex data that can be arranged in many different ways.
+For a long time, there was no consensus how to organize and share experimental data.
 Even two researchers working in the same lab could opt to arrange their data in a different way.
 Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data
 or rewriting scripts expecting certain structure.
 With the Brain  Imaging Data Structure (BIDS),
-we describe a simple and easy to adopt way of organizing neuroimaging and behavioral data.
+we describe a simple and easy to adopt way of organizing neural and associated, such as behavioral, data.
 
-![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-black_1000x477.png)
+![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-black_1000x477.png#only-light)
+![BIDS-folder-organization](./assets/img/dicom-reorganization-transparent-white_1000x477.png#only-dark)
 
 BIDS was heavily inspired by the format used internally by the OpenfMRI repository
-that is now known as [OpenNeuro](https://openneuro.org).
+that is now known as [OpenNeuro][openneuro].
 While working on BIDS we consulted many neuroscientists to make sure it covers most common experiments,
 but at the same time is intuitive and easy to adopt.
 The specification is intentionally based on simple file formats and folder structures
@@ -35,7 +35,7 @@ and still an adapting, growing tool, the greater the community, the better it wi
 
 ## Specification vs. Ecosystem
 
-Since the inception of the BIDS specification that documents how to organize neuroimaging data,
+Since the inception of the BIDS specification that documents how to organize neural and associated data,
 a large ecosystem of tools and resources has evolved around BIDS.
 
 A few of the key elements of this ecosystem are
@@ -44,8 +44,8 @@ the [BIDS specification](http://bids-specification.readthedocs.io/) with the nit
 the [starter kit](./getting_started/index.md) with a simple explanation how to work with it,
 <!-- markdown-link-check-enable -->
 the [BIDS validator](https://github.com/bids-standard/bids-validator) to automatically check datasets for adherence to the specification,
-[BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable neuroimaging pipelines that understand BIDS datasets,
-and [OpenNeuro](https://openneuro.org/) as a database for BIDS formatted datasets.
+[BIDS Apps](https://doi.org/10.1371/journal.pcbi.1005209), a collection of portable pipelines that understand BIDS datasets,
+and [OpenNeuro][openneuro] as a database for BIDS formatted datasets.
 
 A non-exhaustive list of further tools can be found in the [tools](./tools/index.md) section.
 
@@ -105,7 +105,7 @@ By using this standard you will benefit in the following ways:
 ## Further information
 
 -   Good introductions to the BIDS standard can be found in the initial
-   [paper published in Nature Scientific Data](https://www.nature.com/articles/sdata201644),
+   [paper published in Scientific Data](https://www.nature.com/articles/sdata201644),
    as well as in the follow up papers on specific modalities:
    [MEG](https://www.nature.com/articles/sdata2018110),
    [EEG](https://www.nature.com/articles/s41597-019-0104-8),
@@ -113,7 +113,11 @@ By using this standard you will benefit in the following ways:
    [genetics](https://doi.org/10.1093/gigascience/giaa104),
    [PET](https://doi.org/10.1038/s41597-022-01164-1),
    [microscopy](https://doi.org/10.3389/fnins.2022.871228),
-   and [qMRI](https://doi.org/10.1038/s41597-022-01571-4).
+   [qMRI](https://doi.org/10.1038/s41597-022-01571-4),
+   [ASL](https://www.nature.com/articles/s41597-022-01615-9),
+   [NIRS](https://www.nature.com/articles/s41597-024-04136-9),
+   [motion](https://www.nature.com/articles/s41597-024-03559-8),
+   and [MRS](https://www.nature.com/articles/s41597-025-05543-2).
 
 -   Look through some of the community's [presentations on BIDS](https://osf.io/yn93h/).
 
@@ -126,9 +130,6 @@ By using this standard you will benefit in the following ways:
     Please find our [associated application](./assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
 
 **Leave comments about the site below:**
-
-<meta property="og:title" content="BIDS"/>
-<script src="javascripts/giscus.js"></script>
 
 ---
 

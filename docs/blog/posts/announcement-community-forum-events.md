@@ -2,11 +2,14 @@
 date: 2020-01-02
 slug: Announcing Community Forum Events
 author: Kirstie Whitaker
+categories:
+
+-   announcement
 ---
 
 ## Join the first BIDS Community Forum events in January 2020
 
-The [BIDS Steering Group](https://bids.neuroimaging.io/2019/12/31/meet-the-bids-steering-group.html) are excited to announce two **Community Forums**!
+The [BIDS Steering Group](https://bids.neuroimaging.io/blog/2019/12/31/Meet%20the%20BIDS%20Steering%20Group.html) are excited to announce two **Community Forums**!
 
 <!-- more -->
 

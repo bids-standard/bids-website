@@ -2,6 +2,9 @@
 date: 2023-05-25
 slug: Steering Group minutes
 author: anonymous
+categories:
+
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -68,8 +71,7 @@ Halchenko, Stefan Appelhoff, Kimberly Ray
 
 ## NOTES
 
-**Guest Guy Jones: discuss adding badges to the BIDS compliant datasets
-on Scientific Data Journal website.**
+### Guest Guy Jones: discuss adding badges to the BIDS compliant datasets on Scientific Data Journal website
 
 Guy's Feedback:
 
@@ -128,15 +130,14 @@ not been altered.
 
 Add a list of BIDS ignore files:
 
-> [[https://github.com/bids-standard/bids-validator/issues/1676]](https://github.com/bids-standard/bids-validator/issues/1676)
+> <https://github.com/bids-standard/legacy-validator/issues/1676>
 >
-> [[https://github.com/bids-standard/bids-validator/issues/1677]](https://github.com/bids-standard/bids-validator/issues/1677)
+> <https://github.com/bids-standard/legacy-validator/issues/1677>
 
 Should we reach out to the new **Imaging Neuroscience** journal while
 they are still developing their platform?
 
-Potentially reach out to someone on their [[editorial
-board]](https://janeway.imaging-neuroscience.org/editorialteam/)
+Potentially reach out to someone on their [editorial board](https://direct.mit.edu/imag/pages/editorial-info)
 
 -   possible Thomas Yeo, Damian Fair
 

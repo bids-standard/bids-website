@@ -41,23 +41,17 @@ the docker image will be automatically downloaded from Docker Hub.
 
 ## Running a BIDS App on a cluster (HPC)
 
-Before a BIDS App can be run on a cluster,
-it first needs to be saved to an Apptainer-compatible image file.1
-This step needs to be performed outside of the cluster (for example on a laptop) and requires Docker:
+HPC clusters typically require Apptainer/Singularity rather than Docker.
+Apptainer (and later versions of Singularity) directly support [Docker/OCI images](https://apptainer.org/docs/user/latest/docker_and_oci.html).
 
 ```bash
-docker run --privileged -ti --rm  \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v /home/srycajal/apptainer_images:/output \
-    singularityware/docker2singularity \
-    bids/example:0.0.4
+apptainer build bids-example-0.0.7.sif docker://bids/example:0.0.7
 ```
 
-Where `/home/srycajal/apptainer_images` is a path where the image will be stored.
 After transferring the .img file to a cluster it can be run like any other executable:
 
 ```bash
-./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
+./bids_example-0.0.7.img /bids_dataset /outputs participant --participant_label 01
 ```
 
 ## Helpful links

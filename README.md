@@ -1,66 +1,42 @@
-[![Documentation Status](https://readthedocs.org/projects/bids-website/badge/?version=latest)](https://bids-website.readthedocs.io/en/latest/?badge=latest)
+[![Bluesky Follow](https://img.shields.io/badge/bluesky-Follow_bidsstandard-blue?logo=bluesky)](https://bsky.app/profile/bidsstandard.bsky.social)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCxZUcYfd_nvIVWAbzRB1tlw)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109520103085644521?domain=https%3A%2F%2Ffosstodon.org%2F)](https://fosstodon.org/@bidsstandard)
+[![@BIDSstandard](https://img.shields.io/twitter/follow/bidsstandard.svg?style=social)](https://x.com/BIDSstandard)
 
-# The one true BIDS website
+<img
+    src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_white_transparent_background_crop.png#gh-dark-mode-only"
+    alt="bids-logo"
+    width="600"
+/>
+<img
+    src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_black_transparent_background_crop.png#gh-light-mode-only"
+    alt="bids-logo"
+    width="600"
+/>
 
-View it here: https://bids-website.readthedocs.io/en/latest/?badge=latest
+# BIDS website
 
-## Serving locally
+View it here: https://bids.neuroimaging.io
 
-### Requirements
+## Contributing to the BIDS website
 
-<!-- TODO determines minimum python version -->
-- python 3.X
+To contribute to the website,
+see our [contributing guidelines](./CONTRIBUTING.md)
+and please submit an [issue](https://github.com/bids-standard/bids-website/issues)
+or send a [pull request](https://github.com/bids-standard/bids-website/pulls) to this repository.
 
-## Install
+## Contributing to the BIDS specification
 
-Clone the repo and its submodules
+The specification is hosted on [https://bids-specification.readthedocs.io](https://bids-specification.rtfd.io).
+To contribute to the specification,
+please submit an [issue](https://github.com/bids-standard/bids-specification/issues)
+or send a [pull request](https://github.com/bids-standard/bids-specification/pulls)
+on the [bids-specification][specification_gh] repository.
 
-```bash
-git clone https://github.com/bids-standard/bids-website.git --recurse-submodules
-```
+## Asking questions about BIDS
 
-Create a virtual environment using `conda`, `venv` of what other environment management tool you prefer.
-
-Install all the dependencies.
-
-```bash
-pip install -r requirements.txt
-```
-
-Generate all the content require for the build.
-
-```bash
-make update
-```
-
-Serve the website with the mkdocs.
-```bash
-mkdocs serve
-```
-
-## Maintenance
-
-### Requirements
-
-Same automation will work better if you are on unix system and have make.
-
-Same as for the install but you will also need to install `tox`.
-
-```bash
-pip install tox
-```
-<!-- TODO find minimal version of node and npm -->
-For some quality checks and rare operations, you will need node.js and npm.
-
-## Update all files
-
-```bash
-make update
-```
-
-## Run all formatting / linting tools
-
-```bash
-tox
-make remark
-```
+If you have questions how to apply BIDS to your dataset,
+how to use a shared BIDS dataset,
+or about tools to convert and/or handle BIDS datasets,
+please see the [getting started section](https://bids.neuroimaging.io/getting_started/index.html) page,
+and our [FAQ](https://bids.neuroimaging.io/faq/index.html).

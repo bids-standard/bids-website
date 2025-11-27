@@ -26,7 +26,7 @@ Some example questions that have already been answered include:
 
     [:simple-mattermost: Chat on mattermost](https://mattermost.brainhack.org/brainhack/channels/bids_general){ .md-button }
 
-    You can also come chat on the [Brainhack mattermost](https://mattermost.brainhack.org/) on the `~bids_general` channel.
+    You can also come chat on the [Brainhack mattermost][brainhack_mattermost] on the `~bids_general` channel.
 
 -   :simple-google:{ .lg .middle } **Mailing list**
 
@@ -43,7 +43,13 @@ Some example questions that have already been answered include:
 
     [:fontawesome-solid-paper-plane: Email the maintainers](mailto:bids.maintenance+question@gmail.com){ .md-button }
 
-    If you have very specific questions you can email the BIDS maintainers.
+    If you have very specific questions you can email
+    [the BIDS maintainers](../collaboration/governance.md#bids-maintainers-group).
+
+    [:fontawesome-solid-paper-plane: Email the steering group](mailto:bids.steering@gmail.com){ .md-button }
+
+    If you have questions related to BIDS governance you can email
+    [the BIDS steering group](../collaboration/governance.md#bids-steering-group).
 
 -   :handshake_tone1_tone5:{ .lg .middle } **Social media**
 
@@ -51,8 +57,8 @@ Some example questions that have already been answered include:
 
     -   [:simple-bluesky: Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/)
     -   [:simple-mastodon: Mastodon](https://fosstodon.org/@bidsstandard/)
-    -   [:simple-x: Twitter/ X](https://x.com/BIDSstandard)
-    -   [:simple-youtube: YouTube](https://www.youtube.com/embed/-c4PUhTwmz4)
+    -   [:simple-x: X](https://x.com/BIDSstandard)
+    -   [:simple-youtube: YouTube](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
     -   [:simple-instagram: Instagram](https://www.instagram.com/bidsstandard)
     -   Listen to our [podcast](https://anchor.fm/bids-maintenance)
 
@@ -60,19 +66,3 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
-
-## Contact Us Directly
-
-<meta property="og:title" content="contact"/>
-<script src="javascripts/giscus.js"></script>
-
-<!--
-<div class="iframe-container">
-  <iframe
-    src="https://www.youtube.com/embed/-c4PUhTwmz4"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
--->

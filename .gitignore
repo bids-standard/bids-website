@@ -2,10 +2,11 @@
 bep_leads.tsv
 output_gh_summary.png
 .all-contributorsrc
+docs/extensions/beps
 
 # ignore for now files that are copied from the bids examples and spe
 docs/examples/
-docs/specification/
+docs/extensions/macros_doc.md
 
 # folders
 *.DS_Store
@@ -30,4 +31,3 @@ vendor/
 
 # node
 node_modules
-package*json

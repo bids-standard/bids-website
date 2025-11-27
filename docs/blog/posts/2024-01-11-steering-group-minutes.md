@@ -2,6 +2,9 @@
 date: 2024-01-11
 slug: Steering Group minutes
 author: anonymous
+categories:
+
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -136,7 +139,7 @@ Github project is established with many ideas but there aren\'t many
 
 -   Revisiting how BIDS is defined beyond MRI may be a path to improving
     adoption within the neuroscience community. Meaning BIDS started with
-    MRI and some of the BIDS spec might be more complicated than could
+    MRI and some of the BIDS specification might be more complicated than could
     have been if we had focused on all modalities from the start.
 
 -   iEEG, MEG, ...

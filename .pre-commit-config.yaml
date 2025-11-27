@@ -1,10 +1,14 @@
 ---
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
-exclude: tools/schemacode/bidsschematools/tests/data/broken_dataset_description.json
+exclude: |
+    (?x)^(
+        tools/schemacode/bidsschematools/tests/data/broken_dataset_description.json
+        | CNAME
+    )$
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v6.0.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -20,7 +24,7 @@ repos:
     -   id: mixed-line-ending
 
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.4.1
     hooks:
     -   id: codespell
         args: [--toml, pyproject.toml]
@@ -38,23 +42,23 @@ repos:
             )$
 
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.13.0
+    rev: v2.15.0
     hooks:
     -   id: pretty-format-toml
-        args: [--autofix, --indent, '4']
+        args: [--autofix, --indent, '4', --no-sort, --trailing-commas]
 
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 24.4.2
+    rev: 25.11.0
     hooks:
     -   id: black
 
 -   repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 7.0.0
     hooks:
     -   id: isort
 
 -   repo: https://github.com/PyCQA/flake8
-    rev: 7.0.0
+    rev: 7.3.0
     hooks:
     -   id: flake8
         args: [--config, .flake8, --verbose, tools]

@@ -14,8 +14,37 @@
     },
     {
       "pattern": "^https://www.instagram.com/bidsstandard.*"
+    },
+    {
+      "pattern": "^https://direct.mit.edu/imag/.*"
+    },
+    {
+      "pattern": "^https://anaconda.org/conda-forge/bids-validator.*"
+    },
+    {
+      "pattern": "^https://www.openneuro.org.*"
+    },
+    {
+      "pattern": "^https://human-organ-atlas.esrf.eu.*"
+    },
+    {
+      "pattern": "^https://www.mathworks.com.*"
+    },
+    {
+      "pattern": "^https://www.seedsforchange.org.uk/consensus"
+    },
+    {
+      "pattern": "^https://abcdstudy.org.*"
+    },
+    {
+      "pattern": "^https://www.humanbrainmapping.org.*"
+    },
+    {
+      "pattern": "^https://as.nyu.edu/research-centers/cbi/resources.html"
+    },
+    {
+      "pattern": "^https://opavote.com/results/5203129121898496"
     }
-
   ],
   "timeout": "20s",
   "retryOn429": true

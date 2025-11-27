@@ -26,13 +26,13 @@ Annotations in BIDS can be done at several levels, including the dataset, subjec
 funding, and citation information.
 This file does not provide any actual description of the data.
 
-> You can fill in this blank [dataset description template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/dataset_description.json) or use it as a guide.
+> You can fill in this blank [dataset description template](../templates/index.md#dataset_descriptionjson) or use it as a guide.
 
 ### Dataset description (`README`)
 `README` file is a top-level text file that gives the actual overview of the dataset.
 A comprehensive `README` is essential for users of your data.
 
-> You can edit the [README template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/README.MD) with the vital information needed for others to analyze your dataset.
+> You can edit the [README template](../templates/index.md#readmemd) with the vital information needed for others to analyze your dataset.
 
 ## Subject annotations
 Annotations at the subject level can be done in the `participants.tsv` file,
@@ -49,8 +49,8 @@ in the `participants.tsv` and its corresponding `participants.json` files.
 Any such information makes your data more valuable to users.
 
 > You can edit the [participants.tsv template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/participants.tsv) and the corresponding
-[participants.json template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/participants.json)
-to provide this information.
+> [participants.json template](https://raw.githubusercontent.com/bids-standard/bids-starter-kit/main/templates/participants.json)
+> to provide this information.
 
 If the dataset includes multiple sets of participant level measurements see the BIDS guidelines
 for adding [phenotypic and assessment data](https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data).
@@ -127,8 +127,8 @@ without having meaningful information about the dataset events.
 
 #### Additional information
 See [Task events](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/05-task-events.html) and
-[Appendix III: Hierarchical Event Descriptors](https://bids-specification.readthedocs.io/en/stable/99-appendices/03-hed.html)
-in the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/)
+[Appendix III: Hierarchical Event Descriptors](https://bids-specification.readthedocs.io/en/stable/appendices/hed.html)
+in the [BIDS specification][specification]
 for an overview of events before getting started with your own annotation.
 
 The next section provides an overview of the event annotation process
@@ -184,7 +184,8 @@ The rules for HED schema vocabularies and HED-compliant tools can be found in th
 The HED standard schema contains basic terms that are common across most human neuroimaging, behavioral, and physiological experiments.
 The HED ecosystem schema libraries extend the standard HED schema with structured vocabularies, including terms unique to specific research fields.
 This allows the expansion of the HED vocabulary in a scalable manner to support specialized data annotations,
-for instance, electrophysiological events ([HED-SCORE](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score)) or language stimuli ([LISA](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang)).
+for instance, electrophysiological events ([HED-SCORE](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/score))
+or language stimuli ([LANG](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang)).
 
 Additional details about particular schemas can be found on the [HED schemas](https://hed-schemas.readthedocs.io/en/latest/index.html) documentation page.
 See [HED schema developer’s guide](https://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html)
