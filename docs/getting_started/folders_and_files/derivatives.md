@@ -171,49 +171,20 @@ BIDS Derivatives datasets are intended to be interpretable and distributable
 with or without the datasets used to generate them.
 This is necessary for storage and bandwidth constraints,
 as well as to permit the distribution of derivatives when the source data are restricted.
+Similarly, BIDS Raw datasets should be interpretable and distributable without
+all possible derivatives produced from them.
 
 This independence affords flexibility in the relative organization of datasets.
-The following examples show three ways to organize, relative to each other,
-a raw BIDS dataset, a preprocessed derivative dataset, and an analysis that uses both as inputs.
+The following examples show three ways to organize:
+
+#### 1. BIDS Raw with derivatives/
 
 A collection of derivative datasets may be stored in the `derivatives/` subdirectory
-of a BIDS (or BIDS Derivatives) dataset:
-
-```bash
-my_dataset/
-  derivatives/
-    preprocessed/
-    analysis/
-  sub-01/
-  ...
-```
-
-A BIDS Derivatives dataset may contain references to its input datasets
-in the `sourcedata/` subdirectory:
-
-```bash
-my_analysis/
-  sourcedata/
-    raw/
-    preprocessed/
-  sub-01/
-  ...
-```
-
-Note that the `sourcedata/` and `derivatives/` subdirectories constitute dataset boundaries.
-Any contents of these directories may be validated independently,
-but their contents must not affect the interpretation of the nested or containing datasets.
-
-Unnested datasets are also possible. For example:
-
-```bash
-my_study/
-  raw_data/
-    sub-01/
-    ...
-  derivatives/
-    preprocessed/
-    analysis/
+@@ -199,31 +201,46 @@
+analysis/
+sub-01/
+...
+  dataset_description.json
 ```
 
 <!-- TODO derivatives JSON -->
