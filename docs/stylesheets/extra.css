@@ -1,6 +1,9 @@
 :root {
 
-    /* colors used in several places in the getting started section to identify datatypes */
+    /* colors used in several places in the getting started section to identify datatypes
+       obtained from https://colorbrewer2.org/#type=qualitative&scheme=Paired&n=12
+    */
+
     --mri: #a6cee3;
     --pet: #1f78b4;
     --micr: #33a02c;
