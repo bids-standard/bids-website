@@ -107,7 +107,7 @@ p { text-align: justify; }
 .mdx-hero__logo-bg img {
   width: 100%;
   height: 100%;
-  opacity: 0.14;     /* subtle background watermark */
+  opacity: 0.2;     /* subtle background watermark */
   object-fit: contain;  /* keeps aspect ratio, fits within container */
   object-position: center left;
   pointer-events: none;
@@ -256,7 +256,7 @@ p { text-align: justify; }
 .mdx-stats__item { background: var(--bids-stats-bg); color: var(--white); padding:2rem; border-radius:.5rem; display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:150px; text-decoration:none; transition: all .3s ease; }
 .mdx-stats__item:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,.2); background: var(--bids-accent); }
 .mdx-stats__number { font-weight:700; font-size:2rem; line-height:1.2; color: var(--white) !important; }
-.mdx-stats__label { font-size:.875rem; color: rgba(255,255,255,.8); }
+.mdx-stats__label { font-size:.875rem; color: rgba(255,255,255,.9); }
 
 /* Sponsors */
 .mdx-sponsors { background: var(--bids-brand); padding: .5rem 0 3rem; }
