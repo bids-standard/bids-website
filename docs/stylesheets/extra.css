@@ -22,16 +22,16 @@
     --ext: #984ea3;
     --underscore: #ff7f00;
 
-  --bids-brand: #124559;
+  --bids-brand: #1F7293;
   --bids-accent: #6b9aaa;
-  --bids-stats-bg: #598392;
+  --bids-stats-bg: #1f8193fb;
   --white: #ffffff;
 
   /* Material Design variable overrides (keep so top tabs/header use brand) */
-  --md-primary-fg-color: #124559;
-  --md-primary-fg-color--light: #124559;
-  --md-primary-fg-color--dark: #124559;
-  --md-accent-fg-color: #124559;
+  --md-primary-fg-color: #1F7293;
+  --md-primary-fg-color--light: #1F7293;
+  --md-primary-fg-color--dark: #1F7293;
+  --md-accent-fg-color: #1F7293;
   --md-accent-fg-color--transparent: rgba(212, 123, 138, 0.1);
   --md-default-fg-color: #111;
   --content-max: 1200px;
