@@ -246,10 +246,6 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - toc:
-      permalink: true
-      anchorlink: true
-      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -259,6 +255,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -287,7 +286,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - tables
-
+  - toc:
+      permalink: true
+      anchorlink: true
+      toc_depth: 3
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
