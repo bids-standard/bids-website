@@ -217,15 +217,15 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      primary: teal
-      accent: green
+      primary: custom
+      accent: custom
       scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: teal
-      accent: green
+      primary: custom
+      accent: custom
       scheme: slate
       toggle:
         icon: material/brightness-4

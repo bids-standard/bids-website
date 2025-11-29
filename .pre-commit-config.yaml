@@ -47,6 +47,36 @@ repos:
     -   id: pretty-format-toml
         args: [--autofix, --indent, '4', --no-sort, --trailing-commas]
 
+-   repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+    -   id: djlint
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html
+            )$
+    -   id: djlint-reformat
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html
+            )$
+    -   id: djlint-jinja
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html|
+                templates/.*
+            )$
+    -   id: djlint-reformat-jinja
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html|
+                templates/.*
+            )$
+
 -   repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.11.0
     hooks:
