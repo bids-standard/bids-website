@@ -1,18 +1,4 @@
-/* Brand variables */
 :root {
-  --bids-brand: #124559;
-  --bids-accent: #6b9aaa;
-  --bids-stats-bg: #598392;
-  --white: #ffffff;
-
-  /* Material Design variable overrides (keep so top tabs/header use brand) */
-  --md-primary-fg-color: #124559;
-  --md-primary-fg-color--light: #124559;
-  --md-primary-fg-color--dark: #124559;
-  --md-accent-fg-color: #124559;
-  --md-accent-fg-color--transparent: rgba(212, 123, 138, 0.1);
-  --md-default-fg-color: #111;
-  --content-max: 1200px;
 
   /* colors used in several places in the getting started section to identify datatypes */
   --mri: #a6cee3;
@@ -32,6 +18,22 @@
   --suffix: #4daf4a;
   --ext: #984ea3;
   --underscore: #ff7f00;
+
+  --bids-brand: #124559;
+  --bids-accent: #6b9aaa;
+  --bids-stats-bg: #598392;
+  --white: #ffffff;
+
+  /* Material Design variable overrides (keep so top tabs/header use brand) */
+  --md-primary-fg-color: #124559;
+  --md-primary-fg-color--light: #124559;
+  --md-primary-fg-color--dark: #124559;
+  --md-accent-fg-color: #124559;
+  --md-accent-fg-color--transparent: rgba(212, 123, 138, 0.1);
+  --md-default-fg-color: #111;
+  --content-max: 1200px;
+
+
 }
 
 /* Basic */
