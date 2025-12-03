@@ -4119,7 +4119,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              8 min read
+                              10 min read
                             
                           </span>
                         </div>
@@ -4325,7 +4325,12 @@ the validation resources available, and the planned maintenance levels.</p>
         Node.js --&gt; web
     end
 
-    google -. interpreted .-&gt; regex</code></pre>
+    google -. interpreted .-&gt; regex
+
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }</code></pre>
 
 <caption>The original validator was an interpretation of a pure text specification.
 The filename patterns were shared between the full Node.JS validator
@@ -4351,7 +4356,14 @@ hosted at <a href="https://github.com/bids-standard/bids-specification">bids-sta
         Node.js --&gt; web
     end
 
-    specification -. interpreted .-&gt; regex</code></pre>
+    specification -. interpreted .-&gt; regex
+
+    markdown@{ shape: docs }
+    specification@{ label: "&lt;a href='https://bids-specification.readthedocs.io'&gt;specification&lt;/a&gt;", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }</code></pre>
 
 <caption>The transition to a git-managed Markdown document initially made
 change-tracking and contribution to the specification more transparent.
@@ -4374,7 +4386,18 @@ change-tracking and contribution to the specification more transparent.
     end
 
     specification -. interpreted .-&gt; regex
-    schema.json ---&gt; deno</code></pre>
+    schema.json ---&gt; deno
+
+    markdown@{ shape: docs }
+    schema@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/src/schema'&gt;src/schema/&lt;/a&gt;", shape: docs }
+    bidsschematools@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/tools/schemacode'&gt;tools/schemacode/&lt;/a&gt;", shape: proc }
+    specification@{ label: "&lt;a href='https://bids-specification.readthedocs.io'&gt;specification&lt;/a&gt;", shape: doc }
+    schema.json@{ label: "&lt;a href='https://bids-specification.readthedocs.io/en/v1.9.0/schema.json'&gt;schema.json&lt;/a&gt;", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }
+    deno@{ shape: subproc }</code></pre>
 
 <caption>The BIDS schema is used as an authoritative,
 machine-readable source for the specification text and tools wishing
@@ -4408,7 +4431,18 @@ schema, and targeting the <a href="https://deno.com">Deno</a> Javascript runtime
 
     specification -. interpreted .-&gt; regex
     schema.json ---&gt; deno
-    bidsschematools ----&gt; python</code></pre>
+    bidsschematools ----&gt; python
+
+    markdown@{ shape: docs }
+    schema@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/src/schema'&gt;src/schema/&lt;/a&gt;", shape: docs }
+    bidsschematools@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/tools/schemacode'&gt;tools/schemacode/&lt;/a&gt;", shape: proc }
+    specification@{ label: "&lt;a href='https://bids-specification.readthedocs.io'&gt;specification&lt;/a&gt;", shape: doc }
+    schema.json@{ label: "&lt;a href='https://bids-specification.readthedocs.io/en/v1.9.0/schema.json'&gt;schema.json&lt;/a&gt;", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }
+    deno@{ shape: subproc }</code></pre>
 
 <caption>
 To prepare for separation, the Python validator dependency on the
@@ -4439,7 +4473,18 @@ validator matches that of the Deno (schema) validator.</p>
 
     specification -. interpreted .-&gt; regex
     schema.json ---&gt; deno
-    bidsschematools ----&gt; python</code></pre>
+    bidsschematools ----&gt; python
+
+    markdown@{ shape: docs }
+    schema@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/src/schema'&gt;src/schema/&lt;/a&gt;", shape: docs }
+    bidsschematools@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/tools/schemacode'&gt;tools/schemacode/&lt;/a&gt;", shape: proc }
+    specification@{ label: "&lt;a href='https://bids-specification.readthedocs.io'&gt;specification&lt;/a&gt;", shape: doc }
+    schema.json@{ label: "&lt;a href='https://bids-specification.readthedocs.io/en/v1.9.0/schema.json'&gt;schema.json&lt;/a&gt;", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ label: "&lt;a href='https://github.com/bids-standard/python-validator'&gt;python&lt;/a&gt;", shape: subproc }
+    deno@{ shape: subproc }
+    web@{ label: "&lt;a href='https://bids-standard.github.io/bids-validator/'&gt;web&lt;/a&gt;", shape: rect }</code></pre>
 
 <caption>The Python validator was moved into its own repository.
 Its versioning and development are no longer tied to the Javascript
@@ -4476,7 +4521,19 @@ Its filename validation will be updated with new releases of <a href="https://bi
 
     specification -. interpreted .-&gt; regex
     schema.json ---&gt; deno
-    bidsschematools ----&gt; python</code></pre>
+    bidsschematools ----&gt; python
+
+    markdown@{ shape: docs }
+    schema@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/src/schema'&gt;src/schema/&lt;/a&gt;", shape: docs }
+    bidsschematools@{ label: "&lt;a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/tools/schemacode'&gt;tools/schemacode/&lt;/a&gt;", shape: proc }
+    specification@{ label: "&lt;a href='https://bids-specification.readthedocs.io'&gt;specification&lt;/a&gt;", shape: doc }
+    schema.json@{ label: "&lt;a href='https://bids-specification.readthedocs.io/en/v1.10.0/schema.json'&gt;schema.json&lt;/a&gt;", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ label: "&lt;a href='https://github.com/bids-standard/python-validator'&gt;python&lt;/a&gt;", shape: subproc }
+    deno@{ shape: subproc }
+    web@{ label: "&lt;a href='https://bids-standard.github.io/bids-validator/'&gt;web&lt;/a&gt;", shape: rect }
+    web1@{ label: "&lt;a href='https://bids-standard.github.io/legacy-validator/'&gt;web&lt;/a&gt;", shape: rect }</code></pre>
 
 <caption>In version 2.0, the Deno validator removed the Node.js
 validator from its source tree.
