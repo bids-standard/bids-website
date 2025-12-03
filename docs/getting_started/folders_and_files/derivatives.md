@@ -191,14 +191,14 @@ A BIDS Derivative dataset may contain references to its input datasets
 
 ```bash
 my_analysis/
-sourcedata/
-raw/
+  sourcedata/
+    raw/
       sub-01/
       ...
       dataset_description.json
-preprocessed/
-sub-01/
-...
+    preprocessed/
+  sub-01/
+  ...
   dataset_description.json
 ```
 
@@ -223,9 +223,9 @@ my_study/
     raw/
       sub-01/
       ...
-derivatives/
-preprocessed/
-analysis/
+  derivatives/
+    preprocessed/
+    analysis/
 ```
 
 <!-- TODO derivatives JSON -->
