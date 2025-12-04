@@ -79,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#bids-is-a-community-effort" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -138,7 +133,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -148,7 +143,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -496,8 +491,232 @@
     <div class="md-container" data-md-component="container">
       
       
+    
         
       
+    <style>
+        .md-header {
+            position: initial;
+        }
+
+        .md-main__inner {
+            margin: 0;
+        }
+
+        .md-content {
+            display: none;
+        }
+
+        @media screen and (min-width: 60em) {
+            .md-sidebar--secondary {
+                display: none !important;
+            }
+        }
+
+        @media screen and (min-width: 76.25em) {
+            .md-sidebar--primary {
+                display: none;
+            }
+        }
+    </style>
+    <!-- Hero section -->
+    <section class="mdx-container">
+        <div class="md-grid md-typeset">
+            <div class="mdx-hero__logo-bg">
+                <img src="assets/img/logos/BIDS_logo_black.svg"
+                     alt=""
+                     draggable="false">
+            </div>
+            <div class="mdx-hero">
+                <div class="mdx-hero__content">
+                    <h1>Data standardization that simply works.</h1>
+                    <p>
+                        With the Brain Imaging Data Structure (BIDS),
+                        we describe a simple way of organizing brain imaging and associated data.
+                    </p>
+                    <div class="mdx-hero__actions">
+                        <a href="getting_started/"
+                           title="Getting Started"
+                           class="md-button md-button--primary">
+                            Get started
+                        </a>
+                        <a href="standards/"
+                           title="FAQ"
+                           class="md-button md-button--primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features section -->
+    <section class="mdx-container" style="border-top: none;">
+        <div class="md-grid md-typeset">
+            <div class="mdx-features-section">
+                <!-- Left side headline -->
+                <div class="mdx-features-headline">
+                    <h2>BIDS in a nutshell</h2>
+                </div>
+                <!-- Right side features grid -->
+                <div class="mdx-features">
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg>
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Standardized Organization</h2>
+                                <p>
+                                    BIDS provides a consistent way to organize your neuroimaging data,
+                                    making it easy to understand and share across research groups and institutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Community Driven</h2>
+                                <p>
+                                    Developed by the neuroscience community for the community.
+                                    BIDS continues to evolve based on real-world research needs and feedback.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Rich Ecosystem</h2>
+                                <p>
+                                    A growing collection of BIDS Apps, validators,
+                                    and analysis tools that work seamlessly with BIDS-formatted datasets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg>
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Open Science</h2>
+                                <p>
+                                    Promotes reproducible research and data sharing
+                                    through standardized formats that are platform-independent and openly documented.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-13 5-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9z"/></svg>
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Validation Tools</h2>
+                                <p>
+                                    Built-in validation ensures your datasets comply with BIDS standards,
+                                    catching issues early and improving data quality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg>
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Multi-Modal Support</h2>
+                                <p>
+                                    Supports a wide range of neuroimaging modalities
+                                    including fMRI, EEG, MEG, iEEG, PET, and behavioral data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats/Social proof section -->
+    <section class="mdx-container" style="border-top: none;">
+        <div class="md-grid md-typeset">
+            <div class="mdx-stats">
+                <a href="https://openneuro.org/"
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">1,500+</div>
+                    <div class="mdx-stats__label">OpenNeuro Public Datasets</div>
+                </a>
+                <a href='https://scholar.google.com/scholar?q="brain+imaging+data+structure"'
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">3,000+</div>
+                    <div class="mdx-stats__label">BIDS Research Papers</div>
+                </a>
+                <a href="tools/bids-apps.html"
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">100+</div>
+                    <div class="mdx-stats__label">BIDS Apps and Tools</div>
+                </a>
+                <a href="collaboration/contributors.html#contributors"
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">300+</div>
+                    <div class="mdx-stats__label">Contributors</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Sponsors section -->
+    <section class="mdx-sponsors">
+        <div class="md-grid md-typeset">
+            <div class="mdx-sponsors__content">
+                <h2>Supported by</h2>
+                <div class="mdx-sponsors__grid">
+                    <!-- Add your sponsor logos here -->
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/INCF.png" alt="Sponsor 1" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/NIH.png" alt="Sponsor 2" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/GSoC_220px.png" alt="Sponsor 3" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/arnold_foundation.png" alt="Sponsor 4" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -550,19 +769,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    About BIDS
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="index.html" class="md-nav__link md-nav__link--active">
         
   
@@ -574,68 +780,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bids-is-a-community-effort" class="md-nav__link">
-    <span class="md-ellipsis">
-      BIDS is a community effort
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#specification-vs-ecosystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Specification vs. Ecosystem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#philosophy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Philosophy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Further information
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -3964,59 +4108,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bids-is-a-community-effort" class="md-nav__link">
-    <span class="md-ellipsis">
-      BIDS is a community effort
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#specification-vs-ecosystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Specification vs. Ecosystem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#philosophy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Philosophy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Further information
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4027,198 +4118,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-                  
 
-
-  
-    <a href="https://github.com/bids-standard/bids-website/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
-    </a>
-  
-  
-
-
-  <h1>About BIDS</h1>
-
-<p>Experiments in neuroscience result in complex data that can be arranged in many different ways.
-For a long time, there was no consensus how to organize and share experimental data.
-Even two researchers working in the same lab could opt to arrange their data in a different way.
-Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data
-or rewriting scripts expecting certain structure.
-With the Brain  Imaging Data Structure (<abbr title="Brain Imaging Data Structure">BIDS</abbr>),
-we describe a simple and easy to adopt way of organizing neural and associated, such as behavioral, data.</p>
-<p><img alt="BIDS-folder-organization" src="assets/img/dicom-reorganization-transparent-black_1000x477.png#only-light" />
-<img alt="BIDS-folder-organization" src="assets/img/dicom-reorganization-transparent-white_1000x477.png#only-dark" /></p>
-<p><abbr title="Brain Imaging Data Structure">BIDS</abbr> was heavily inspired by the format used internally by the OpenfMRI repository
-that is now known as <a href="https://openneuro.org">OpenNeuro</a>.
-While working on <abbr title="Brain Imaging Data Structure">BIDS</abbr> we consulted many neuroscientists to make sure it covers most common experiments,
-but at the same time is intuitive and easy to adopt.
-The specification is intentionally based on simple file formats and folder structures
-to reflect current lab practices and make it accessible to a wide range of scientists coming from different backgrounds.</p>
-<h2 id="bids-is-a-community-effort"><a class="toclink" href="#bids-is-a-community-effort"><abbr title="Brain Imaging Data Structure">BIDS</abbr> is a community effort</a></h2>
-<p><abbr title="Brain Imaging Data Structure">BIDS</abbr> is developed by the community for the community
-and everybody can <a href="extensions/index.html">become a part of the community</a>.</p>
-<p>The most important part of <abbr title="Brain Imaging Data Structure">BIDS</abbr> are the users:
-if more people use it, more data will be shared and the more powerful it will become.</p>
-<p><strong>We want to make it easy to learn</strong> and more adopted.</p>
-<p>Since <abbr title="Brain Imaging Data Structure">BIDS</abbr> is platform independent
-and still an adapting, growing tool, the greater the community, the better it will be.</p>
-<h2 id="specification-vs-ecosystem"><a class="toclink" href="#specification-vs-ecosystem">Specification vs. Ecosystem</a></h2>
-<p>Since the inception of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification that documents how to organize neural and associated data,
-a large ecosystem of tools and resources has evolved around <abbr title="Brain Imaging Data Structure">BIDS</abbr>.</p>
-<p>A few of the key elements of this ecosystem are
-the <a href="http://bids-specification.readthedocs.io/"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a> with the nitty-gritty details,</p>
-<!-- markdown-link-check-disable -->
-<p>the <a href="getting_started/index.html">starter kit</a> with a simple explanation how to work with it,</p>
-<!-- markdown-link-check-enable -->
-<p>the <a href="https://github.com/bids-standard/bids-validator"><abbr title="Brain Imaging Data Structure">BIDS</abbr> validator</a> to automatically check datasets for adherence to the specification,
-<a href="https://doi.org/10.1371/journal.pcbi.1005209"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps</a>, a collection of portable pipelines that understand <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets,
-and <a href="https://openneuro.org">OpenNeuro</a> as a database for <abbr title="Brain Imaging Data Structure">BIDS</abbr> formatted datasets.</p>
-<p>A non-exhaustive list of further tools can be found in the <a href="tools/index.html">tools</a> section.</p>
-<p>With the ongoing development of new tools and resources it is important to keep in mind
-that the <a href="http://bids-specification.readthedocs.io/"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a> remains
-the standard according to which the entire ecosystem must adhere.</p>
-<h2 id="philosophy"><a class="toclink" href="#philosophy">Philosophy</a></h2>
-<p>Another part is that <abbr title="Brain Imaging Data Structure">BIDS</abbr> is striving to not reinventing other standards and metadata ontologies but reuse them:</p>
-<p><img alt="BIDS-minder" src="assets/img/BIDS-minder.svg" /></p>
-<h2 id="benefits"><a class="toclink" href="#benefits">Benefits</a></h2>
-<div class="grid cards">
-<ul>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg></span> <strong>For the public good</strong></p>
-<hr />
-<ul>
-<li>Lowers scientific waste</li>
-<li>Gives opportunity to less-funded researchers</li>
-<li>Improves efficiency</li>
-<li>Spurs innovation</li>
-</ul>
-</li>
-<li>
-<p><img alt="♻" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/267b.svg" title=":recycle:" /> <strong>For yourself</strong></p>
-<hr />
-<ul>
-<li>
-<p>You are likely the future user of the data and data analysis pipelines you’ve developed</p>
-</li>
-<li>
-<p>Enables and simplifies collaboration</p>
-</li>
-<li>
-<p>Reviewers and funding agencies like to see reproducible results</p>
-</li>
-<li>
-<p>Open-science based funding opportunities and awards available
-    (for instance: OHBM Replication Award, Mozilla Open Science Fellowship,
-    Google Summer of Code, and so on.)</p>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<p>By using this standard you will benefit in the following ways:</p>
-<ul>
-<li>
-<p>It will be easy for another researcher to work on your data.
-    To understand the organization of the files and their format you will only need to refer them to this document.
-    This is especially important if you are running your own lab and anticipate more than one person working on the same data over time.
-    By using <abbr title="Brain Imaging Data Structure">BIDS</abbr> you will save time trying to understand and reuse data acquired by a graduate student or postdoc that has already left the lab.</p>
-</li>
-<li>
-<p>There is a growing number of <a href="tools/index.html">data analysis software packages</a> that can understand data organized according to <abbr title="Brain Imaging Data Structure">BIDS</abbr>.</p>
-</li>
-<li>
-<p>Databases such as <a href="http://openneuro.org">OpenNeuro.org</a>, <a href="http://www.loris.ca">LORIS</a>, <a href="https://coins.trendscenter.org">COINS</a>, <a href="https://central.xnat.org/">XNAT</a>, <a href="https://scitran.github.io/">SciTran</a>, and others will accept and export datasets organized according to <abbr title="Brain Imaging Data Structure">BIDS</abbr>.
-    If you ever plan to share your data publicly (nowadays some journals require this) you can speed up the curation process by using <abbr title="Brain Imaging Data Structure">BIDS</abbr>.</p>
-</li>
-<li>
-<p>There are <a href="https://github.com/bids-standard/bids-validator">validation tools</a> (also available <a href="http://bids-standard.github.io/bids-validator/">online</a>) that can check your dataset integrity and let you easily spot missing values.</p>
-</li>
-</ul>
-<h2 id="further-information"><a class="toclink" href="#further-information">Further information</a></h2>
-<ul>
-<li>
-<p>Good introductions to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard can be found in the initial
-   <a href="https://www.nature.com/articles/sdata201644">paper published in Scientific Data</a>,
-   as well as in the follow up papers on specific modalities:
-   <a href="https://www.nature.com/articles/sdata2018110"><abbr title="Magnetoencephalography">MEG</abbr></a>,
-   <a href="https://www.nature.com/articles/s41597-019-0104-8"><abbr title="Electroencephalography">EEG</abbr></a>,
-   <a href="https://www.nature.com/articles/s41597-019-0105-7"><abbr title="Intracranial Electroencephalography">iEEG</abbr></a>,
-   <a href="https://doi.org/10.1093/gigascience/giaa104">genetics</a>,
-   <a href="https://doi.org/10.1038/s41597-022-01164-1"><abbr title="Positron Imaging Tomography">PET</abbr></a>,
-   <a href="https://doi.org/10.3389/fnins.2022.871228">microscopy</a>,
-   <a href="https://doi.org/10.1038/s41597-022-01571-4"><abbr title="Quantitative Magnetic Resonance Imaging">qMRI</abbr></a>,
-   <a href="https://www.nature.com/articles/s41597-022-01615-9"><abbr title="Arterial Spin Labeling">ASL</abbr></a>,
-   <a href="https://www.nature.com/articles/s41597-024-04136-9"><abbr title="Near-Infrared Spectroscopy">NIRS</abbr></a>,
-   <a href="https://www.nature.com/articles/s41597-024-03559-8">motion</a>,
-   and <a href="https://www.nature.com/articles/s41597-025-05543-2"><abbr title="Magnetic Resonance Spectroscopy">MRS</abbr></a>.</p>
-</li>
-<li>
-<p>Look through some of the community's <a href="https://osf.io/yn93h/">presentations on <abbr title="Brain Imaging Data Structure">BIDS</abbr></a>.</p>
-</li>
-<li>
-<p>Take a look at how the community <a href="https://medium.com/stanford-center-for-reproducible-neuroscience/bids-usage-survey-results-72637ff039c4">uses <abbr title="Brain Imaging Data Structure">BIDS</abbr></a>.</p>
-</li>
-<li>
-<p>We have constructed a <a href="impact/index.html">grant writing kit</a>
-    to assist you in putting together <abbr title="Brain Imaging Data Structure">BIDS</abbr>-related grant proposals.</p>
-</li>
-<li>
-<p>We submitted an application to <a href="https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020">The Neuro Open Science in action prize 2020</a>.
-    Please find our <a href="assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf">associated application</a>.</p>
-</li>
-</ul>
-<p><strong>Leave comments about the site below:</strong></p>
-<hr />
-<div style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap">
-  <div>
-    <a href="https://www.incf.org/">
-      <img src="./assets/img/logos/INCF.png"
-           alt="INCF"
-           width=200px>
-    </a>
-  </div>
-  <div>
-    <a href="https://summerofcode.withgoogle.com/">
-      <img src="./assets/img/logos/GSoC_220px.png"
-           alt="GSOC"
-           width=200px>
-    </a>
-  </div>
-  <div>
-    <a href="http://grantome.com/grant/NIH/R24-MH114705-01">
-      <img src="./assets/img/logos/NIH.png"
-           alt="NIH"
-            width=200px>
-    </a>
-  </div>
-  <div>
-    <a href="https://www.arnoldventures.org/newsroom/laura-and-john-arnold-foundation-announces-3-8-million-grant-to-stanford-university-to-improve-the-quality-of-neuroscience-research">
-      <img src="./assets/img/logos/arnold_foundation.png"
-           alt="Arnold Ventures"
-           width=200px>
-    </a>
-  </div>
-</div>
-
-<!-- tool tips  -->
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-                
               </article>
             </div>
           
@@ -4236,120 +4136,7 @@ the standard according to which the entire ecosystem must adhere.</p>
         
       </main>
       
-        <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="blog/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: BIDS blog">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                BIDS blog
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; BIDS Contributors - <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-    </div>
-  
-  
-</div>
-      
-        
-<div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://x.com/BIDSstandard/" target="_blank" rel="noopener" title="x.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
-    </a>
-  
-    
-    
-      
-    
-    
-    
-      
-      
-    
-    <a href="https://fosstodon.org/@bidsstandard" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://bsky.app/profile/bidsstandard.bsky.social/" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364q.204-.03.415-.056-.207.033-.415.056c-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a9 9 0 0 1-.415-.056q.21.026.415.056c2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://groups.google.com/g/bids-discussion" target="_blank" rel="noopener" title="groups.google.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M500 261.8C500 403.3 403.1 504 260 504 122.8 504 12 393.2 12 256S122.8 8 260 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C270.5 52.6 106.3 116.6 106.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H260v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://www.instagram.com/bidsstandard/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>

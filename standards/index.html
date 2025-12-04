@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -150,7 +150,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -3925,8 +3925,14 @@
 
 
 <h1 id="bids-standards"><a class="toclink" href="#bids-standards"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Standards</a></h1>
+<p>Neuroimaging experiments result in complex data that can be arranged in many different ways.
+For a long time, there was no consensus how to organize and share
+data obtained in neuroimaging experiments.
+Even two researchers working in the same lab could opt to arrange their data in a different way.
+Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data
+or rewriting scripts expecting certain structure.</p>
 <p>The current set of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Standards provide outlines and guidance
-for file naming and organization, statistical modeling of neuroimaging data,
+for file and metaddata naming and organization, statistical modeling of neuroimaging data,
 and applications created to be used with <abbr title="Brain Imaging Data Structure">BIDS</abbr> data.
 These standards are intended to be updated and evolve as methods and data types change,
 but current documentation on <abbr title="Brain Imaging Data Structure">BIDS</abbr> standards can be found in the sections below.</p>
