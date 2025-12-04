@@ -15,6 +15,7 @@ update_from_spec:
 	rm -fr docs/specification
 	mkdir -p docs/specification/
 	cp specification/macros_doc.md docs/extensions/macros_doc.md
+	cp -f specification/BIDS_logo/BIDS_logo_black.svg docs/assets/img/logos/
 
 update_contributors: .venv node_modules
 	@echo "  ----------------------------------  "
