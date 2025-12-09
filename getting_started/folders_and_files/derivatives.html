@@ -4213,36 +4213,45 @@ but contents are determined by the generating application, in this case, FreeSur
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives datasets are intended to be interpretable and distributable
 with or without the datasets used to generate them.
 This is necessary for storage and bandwidth constraints,
-as well as to permit the distribution of derivatives when the source data are restricted.</p>
+as well as to permit the distribution of derivatives when the source data are restricted.
+Similarly, <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw datasets should be interpretable and distributable without
+all possible derivatives produced from them.</p>
 <p>This independence affords flexibility in the relative organization of datasets.
-The following examples show three ways to organize, relative to each other,
-a raw <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset, a preprocessed derivative dataset, and an analysis that uses both as inputs.</p>
-<p>A collection of derivative datasets may be stored in the <code>derivatives/</code> subdirectory
-of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> (or <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives) dataset:</p>
-<div class="highlight"><pre><span></span><code>my_dataset/
-<span class="w">  </span>derivatives/
-<span class="w">    </span>preprocessed/
-<span class="w">    </span>analysis/
-<span class="w">  </span>sub-01/
-<span class="w">  </span>...
-</code></pre></div>
-<p>A <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives dataset may contain references to its input datasets
-in the <code>sourcedata/</code> subdirectory:</p>
+The following examples show three ways to organize:</p>
+<p>The following examples show three ways to organize:</p>
+<h4 id="1-bids-raw-with-derivatives"><a class="toclink" href="#1-bids-raw-with-derivatives">1. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw with derivatives/</a></h4>
+<p>A collection of derivative datasets may be stored in the <code>derivatives/</code> subdirectory. Disadvantage is that such organization would complicate distribution of the raw <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset
+by itself as it would require explicit exclusion of datasets within its <code>derivatives/</code> folder.</p>
+<h4 id="2-bids-derivative-with-sourcedataraw"><a class="toclink" href="#2-bids-derivative-with-sourcedataraw">2. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative with sourcedata/raw</a></h4>
+<p>A <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative dataset may contain references to its input datasets
+(could be <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw, non-<abbr title="Brain Imaging Data Structure">BIDS</abbr> or even other <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives) in the <code>sourcedata/</code> subdirectory:</p>
 <div class="highlight"><pre><span></span><code>my_analysis/
 <span class="w">  </span>sourcedata/
 <span class="w">    </span>raw/
+<span class="w">      </span>sub-01/
+<span class="w">      </span>...
+<span class="w">      </span>dataset_description.json
 <span class="w">    </span>preprocessed/
 <span class="w">  </span>sub-01/
 <span class="w">  </span>...
+<span class="w">  </span>dataset_description.json
 </code></pre></div>
 <p>Note that the <code>sourcedata/</code> and <code>derivatives/</code> subdirectories constitute dataset boundaries.
-Any contents of these directories may be validated independently,
-but their contents must not affect the interpretation of the nested or containing datasets.</p>
-<p>Unnested datasets are also possible. For example:</p>
+Any subfolders of these directories may be validated independently, if they are <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets
+which would be indicated by presence of <code>dataset_description.json</code> file(s) in them with a
+REQUIRED <code>"BIDSVersion"</code> key.
+It is important to note that their contents must not affect the interpretation of the nested
+or containing datasets.</p>
+<p>One potential disadvantage to nesting a <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative dataset inside a <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw dataset, or vice versa,
+is that packaging them for independent sharing or publication can become more complicated.</p>
+<h4 id="3-bids-study-with-sourcedataraw-and-derivatives"><a class="toclink" href="#3-bids-study-with-sourcedataraw-and-derivatives">3. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Study with sourcedata/raw and derivatives/</a></h4>
+<p>It is also possible to completely avoid nesting of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw datasets into <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative datasets (or vice versa),
+by simply placing them in separate folders, namely <code>sourcedata/</code> and <code>derivatives/</code> at root level:</p>
 <div class="highlight"><pre><span></span><code>my_study/
-<span class="w">  </span>raw_data/
-<span class="w">    </span>sub-01/
-<span class="w">    </span>...
+<span class="w">  </span>sourcedata/
+<span class="w">    </span>raw/
+<span class="w">      </span>sub-01/
+<span class="w">      </span>...
 <span class="w">  </span>derivatives/
 <span class="w">    </span>preprocessed/
 <span class="w">    </span>analysis/
