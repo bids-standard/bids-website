@@ -177,11 +177,10 @@ all possible derivatives produced from them.
 This independence affords flexibility in the relative organization of datasets.
 The following examples show three ways to organize:
 
-The following examples show three ways to organize:
-
 #### 1. BIDS Raw with derivatives/
 
-A collection of derivative datasets may be stored in the `derivatives/` subdirectory. Disadvantage is that such organization would complicate distribution of the raw BIDS dataset
+A collection of derivative datasets may be stored in the `derivatives/` subdirectory.
+Disadvantage is that such organization would complicate distribution of the raw BIDS dataset
 by itself as it would require explicit exclusion of datasets within its `derivatives/` folder.
 
 #### 2. BIDS Derivative with sourcedata/raw
