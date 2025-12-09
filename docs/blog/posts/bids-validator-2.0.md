@@ -213,6 +213,11 @@ graph LR;
     end
 
     google -. interpreted .-> regex
+
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }
 ```
 
 <caption>The original validator was an interpretation of a pure text specification.
@@ -243,6 +248,13 @@ graph LR;
     end
 
     specification -. interpreted .-> regex
+
+    markdown@{ shape: docs }
+    specification@{ label: "<a href='https://bids-specification.readthedocs.io'>specification</a>", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }
 ```
 
 <caption>The transition to a git-managed Markdown document initially made
@@ -269,6 +281,17 @@ graph LR;
 
     specification -. interpreted .-> regex
     schema.json ---> deno
+
+    markdown@{ shape: docs }
+    schema@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/src/schema'>src/schema/</a>", shape: docs }
+    bidsschematools@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/tools/schemacode'>tools/schemacode/</a>", shape: proc }
+    specification@{ label: "<a href='https://bids-specification.readthedocs.io'>specification</a>", shape: doc }
+    schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.9.0/schema.json'>schema.json</a>", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }
+    deno@{ shape: subproc }
 ```
 
 <caption>The BIDS schema is used as an authoritative,
@@ -308,6 +331,17 @@ graph LR;
     specification -. interpreted .-> regex
     schema.json ---> deno
     bidsschematools ----> python
+
+    markdown@{ shape: docs }
+    schema@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/src/schema'>src/schema/</a>", shape: docs }
+    bidsschematools@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/tools/schemacode'>tools/schemacode/</a>", shape: proc }
+    specification@{ label: "<a href='https://bids-specification.readthedocs.io'>specification</a>", shape: doc }
+    schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.9.0/schema.json'>schema.json</a>", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ shape: subproc }
+    web@{ shape: rect }
+    deno@{ shape: subproc }
 ```
 
 <caption>
@@ -343,6 +377,17 @@ graph LR;
     specification -. interpreted .-> regex
     schema.json ---> deno
     bidsschematools ----> python
+
+    markdown@{ shape: docs }
+    schema@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/src/schema'>src/schema/</a>", shape: docs }
+    bidsschematools@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.9.0/tools/schemacode'>tools/schemacode/</a>", shape: proc }
+    specification@{ label: "<a href='https://bids-specification.readthedocs.io'>specification</a>", shape: doc }
+    schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.9.0/schema.json'>schema.json</a>", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ label: "<a href='https://github.com/bids-standard/python-validator'>python</a>", shape: subproc }
+    deno@{ shape: subproc }
+    web@{ label: "<a href='https://bids-standard.github.io/bids-validator/'>web</a>", shape: rect }
 ```
 
 <caption>The Python validator was moved into its own repository.
@@ -385,6 +430,18 @@ graph LR;
     specification -. interpreted .-> regex
     schema.json ---> deno
     bidsschematools ----> python
+
+    markdown@{ shape: docs }
+    schema@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/src/schema'>src/schema/</a>", shape: docs }
+    bidsschematools@{ label: "<a href='https://github.com/bids-standard/bids-specification/tree/v1.10.0/tools/schemacode'>tools/schemacode/</a>", shape: proc }
+    specification@{ label: "<a href='https://bids-specification.readthedocs.io'>specification</a>", shape: doc }
+    schema.json@{ label: "<a href='https://bids-specification.readthedocs.io/en/v1.10.0/schema.json'>schema.json</a>", shape: doc }
+    regex@{ shape: docs }
+    Node.js@{ shape: subproc }
+    python@{ label: "<a href='https://github.com/bids-standard/python-validator'>python</a>", shape: subproc }
+    deno@{ shape: subproc }
+    web@{ label: "<a href='https://bids-standard.github.io/bids-validator/'>web</a>", shape: rect }
+    web1@{ label: "<a href='https://bids-standard.github.io/legacy-validator/'>web</a>", shape: rect }
 ```
 
 <caption>In version 2.0, the Deno validator removed the Node.js
