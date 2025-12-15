@@ -688,6 +688,8 @@
     -   given-names: Benjamin
         family-names: Dichter
     bids_maintainers:
+        -   given-names: Seyed Yahya
+            family-names: Shirazi
     status:
     -   Adds support for storing audio and video behavioral recordings (new `_audio` and `_video` suffixes) in the `beh/` directory.
     blocking:
