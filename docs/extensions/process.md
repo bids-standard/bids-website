@@ -177,8 +177,8 @@ proposed_bep_review -- positive evaluation --> merged_bep
 
 In rare cases, it may be necessary to update:
 
-*   the BIDS validator to properly validate new content from a BEP;
-*   the BIDS website.
+-   the BIDS validator to properly validate new content from a BEP;
+-   the BIDS website.
 
 #### SUGGESTED deliverables
 
