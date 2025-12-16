@@ -64,3 +64,7 @@
     url: https://www.incf.org/
     contribution: '[Neuroimaging Data Sharing Task Force](https://web.archive.org/web/20170813183704/http://wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force)
         collated initial group of people to push pilot BIDS development and promotion.'
+
+-   source: NFDI4BIOIMAGE - 501864659 (DFG, German Research Foundation)
+    url: https://www.dfg.de/en/research-funding/funding-initiative/nfdi
+    contribution: National research data infrastrustructure initiative for biomedial imaging, contributed to specification and documentation especially of the microscopy BEP.
