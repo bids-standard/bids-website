@@ -152,6 +152,8 @@ markdown[REQUIRED
          BEP markdown]
 validator[OPTIONAL
           Update to BIDS validator]
+website[OPTIONAL
+          Update to BIDS website]
 proposed_bep_review([Proposed BEP review])
 merged_bep[Merged BEP]
 
@@ -161,6 +163,7 @@ proposed_bep --> markdown --> proposed_bep_review
 proposed_bep --> schema --> proposed_bep_review
 proposed_bep --> PR_examples --> proposed_bep_review
 proposed_bep --> validator --> proposed_bep_review
+proposed_bep --> website --> proposed_bep_review
 proposed_bep_review -- positive evaluation --> merged_bep
 ```
 
@@ -172,7 +175,10 @@ proposed_bep_review -- positive evaluation --> merged_bep
 
 #### OPTIONAL deliverables
 
-In rare cases, it may be necessary to update the BIDS validator to properly validate new content from a BEP.
+In rare cases, it may be necessary to update:
+
+*   the BIDS validator to properly validate new content from a BEP;
+*   the BIDS website.
 
 #### SUGGESTED deliverables
 
