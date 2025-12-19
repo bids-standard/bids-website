@@ -8,7 +8,7 @@ exclude: |
     )$
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -42,23 +42,53 @@ repos:
             )$
 
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.14.0
+    rev: v2.15.0
     hooks:
     -   id: pretty-format-toml
-        args: [--autofix, --indent, '4']
+        args: [--autofix, --indent, '4', --no-sort, --trailing-commas]
+
+-   repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+    -   id: djlint
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html
+            )$
+    -   id: djlint-reformat
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html
+            )$
+    -   id: djlint-jinja
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html|
+                templates/.*
+            )$
+    -   id: djlint-reformat-jinja
+        exclude: |
+            (?x)^(
+                docs/overrides/main.html|
+                docs/overrides/404.html|
+                templates/.*
+            )$
 
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.1.0
+    rev: 25.12.0
     hooks:
     -   id: black
 
 -   repo: https://github.com/pycqa/isort
-    rev: 6.0.1
+    rev: 7.0.0
     hooks:
     -   id: isort
 
 -   repo: https://github.com/PyCQA/flake8
-    rev: 7.2.0
+    rev: 7.3.0
     hooks:
     -   id: flake8
         args: [--config, .flake8, --verbose, tools]

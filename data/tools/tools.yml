@@ -288,6 +288,14 @@
     -   name: pypi
         url: https://pypi.org/project/cubids/
 
+-   name: libBIDS.sh
+    repo_url: https://github.com/CoBrALab/libBIDS.sh
+    documentation: https://github.com/CoBrALab/libBIDS.sh/
+    language:
+    -   bash
+    category: index and query
+    description: A bash library used to parse BIDS datasets into a data structure suitable for use in shell pipelines.
+
 -   name: mne-bids
     repo_url: https://github.com/mne-tools/mne-bids
     documentation: https://mne.tools/mne-bids/stable/index.html
