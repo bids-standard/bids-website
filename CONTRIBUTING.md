@@ -28,6 +28,17 @@ For some quality checks and rare operations, you will need node.js and npm. -->
 Even though this is not required,
 having `make` installed will make it easier to easily serve the website locally.
 
+### Quick setup with venv
+
+For a minimal setup using Python's venv:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+mkdocs serve
+```
+
 ### Install and serve
 
 Fork and clone the repository and its submodules
