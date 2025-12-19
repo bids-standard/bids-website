@@ -275,7 +275,8 @@
     -   MATLAB
     -   Compiled
     documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
-    comment: EEGLAB with <a href='https://eeglab.org/plugins/EEG-BIDS/'>EEG-BIDS plugin</a> for importing and exporting BIDS datasets. Supports export to NWB format for iEEG data. A compiled standalone version is also available.
+    comment: EEGLAB with <a href='https://eeglab.org/plugins/EEG-BIDS/'>EEG-BIDS plugin</a> for importing and exporting BIDS datasets. Supports export to
+        NWB format for iEEG data. A compiled standalone version is also available.
 
 -   name: Explore ASL
     repo_url: https://github.com/ExploreASL/ExploreASL

@@ -45,7 +45,8 @@
     language:
     -   MATLAB
     category: analysis
-    description: EEGLAB plugin for importing and exporting BIDS-formatted experiments. Handles conversion from multiple data formats including EEGLAB .set files, EDF, BDF, and Brain Vision Exchange Format. Supports EEG, iEEG, and MEG data with export to NWB format for iEEG data.
+    description: EEGLAB plugin for importing and exporting BIDS-formatted experiments. Handles conversion from multiple data formats including EEGLAB .set
+        files, EDF, BDF, and Brain Vision Exchange Format. Supports EEG, iEEG, and MEG data with export to NWB format for iEEG data.
 
 -   name: EEGBIDS standalone
     repo_url: https://github.com/sccn/EEG-BIDS
@@ -55,7 +56,9 @@
     -   MATLAB
     -   executable
     category: file handling
-    description: Standalone compiled MATLAB version of the EEG-BIDS plugin with a graphic interface wizard. Available as part of the compiled EEGLAB distribution (EEGBIDS executable on Mac, EEGBIDS.bat on Windows). Does not require a paid MATLAB license. Allows importing and exporting BIDS-formatted EEG/MEG/iEEG data and converting BIDS to NWB format for iEEG data.
+    description: Standalone compiled MATLAB version of the EEG-BIDS plugin with a graphic interface wizard. Available as part of the compiled EEGLAB distribution
+        (EEGBIDS executable on Mac, EEGBIDS.bat on Windows). Does not require a paid MATLAB license. Allows importing and exporting BIDS-formatted EEG/MEG/iEEG
+        data and converting BIDS to NWB format for iEEG data.
 
 -   name: EEGPrep
     repo_url: https://github.com/sccn/eegprep
@@ -64,7 +67,8 @@
     language:
     -   Python
     category: analysis
-    description: Python library to import and process BIDS datasets and output valid derivative BIDS. Implements the EEGLAB default pipeline in Python with Clean_rawdata and ICLabel for artifact removal, channel cleaning, and automated component classification. Made by the developers of EEGLAB.
+    description: Python library to import and process BIDS datasets and output valid derivative BIDS. Implements the EEGLAB default pipeline in Python with
+        Clean_rawdata and ICLabel for artifact removal, channel cleaning, and automated component classification. Made by the developers of EEGLAB.
     distribution:
     -   name: pypi
         url: https://pypi.org/project/eegprep/
@@ -76,7 +80,9 @@
     language:
     -   Python
     category: index and query
-    description: Data-sharing resource for MEEG (EEG, MEG, iEEG) data enabling large-scale computational advancements. Aggregates datasets from 25 laboratories with over 27,000 participants including healthy subjects and clinical populations. Provides dataset catalog, search capabilities, and comprehensive API for programmatic access. Returns PyTorch Datasets for machine learning applications with support for BIDS-formatted datasets.
+    description: Data-sharing resource for MEEG (EEG, MEG, iEEG) data enabling large-scale computational advancements. Aggregates datasets from 25 laboratories
+        with over 27,000 participants including healthy subjects and clinical populations. Provides dataset catalog, search capabilities, and comprehensive
+        API for programmatic access. Returns PyTorch Datasets for machine learning applications with support for BIDS-formatted datasets.
     distribution:
     -   name: pypi
         url: https://pypi.org/project/eegdash/
