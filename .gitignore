@@ -7,6 +7,7 @@ docs/extensions/beps
 # ignore for now files that are copied from the bids examples and spe
 docs/examples/
 docs/extensions/macros_doc.md
+docs/assets/img/logos/BIDS_logo_black.svg
 
 # folders
 *.DS_Store
@@ -31,4 +32,3 @@ vendor/
 
 # node
 node_modules
-package*json

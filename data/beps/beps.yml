@@ -105,7 +105,7 @@
 
 -   number: '016'
     title: Diffusion weighted imaging derivatives
-    pull_request: https://github.com/bids-standard/bids-bep016
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2211
     content:
     -   derivative
     leads:
@@ -132,7 +132,6 @@
     leads:
     -   given-names: Eugene P.
         family-names: Duff
-        email: eugene.duff@paediatrics.ox.ac.uk
     bids_maintainers:
     status:
     -   specified different formats for dense and sparse matrices
@@ -181,8 +180,8 @@
         family-names: Hermes
     -   given-names: Mainak
         family-names: Jas
-    -   given-names: Julia
-        family-names: Guiomar Niso Galán
+    -   given-names: Guiomar
+        family-names: Niso
     -   given-names: Robert
         family-names: Oostenveld
     -   given-names: Cyril
@@ -274,6 +273,8 @@
         family-names: Ghosh
     -   given-names: Camille
         family-names: Maumet
+    -   given-names: Yaroslav O.
+        family-names: Halchenko
     bids_maintainers:
     status:
     -   '[Specification](https://bids.neuroimaging.io/bep028)'
@@ -282,11 +283,12 @@
     -   'Perspectives: Engaging with software developers (in progress w/ SPM, AFNI)'
     blocking:
     google_doc_created: 2018-08
-    pull_request_created:
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2099
+    pull_request_created: 2025-04
     pull_request_merged:
 
 -   number: '032'
-    title: Animal electrophysiology
+    title: Microelectrode electrophysiology
     google_doc: https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/
     pull_request: https://github.com/bids-standard/bids-specification/pull/1705
     html_preview: https://bids-specification--1705.org.readthedocs.build/en/1705/modality-specific-files/microelectrode-electrophysiology.html
@@ -297,14 +299,22 @@
         family-names: Takerkart
     -   given-names: Benjamin
         family-names: Dichter
+    -   given-names: Yaroslav O.
+        family-names: Halchenko
+    -   given-names: Lyuba
+        family-names: Zehl
+    -   given-names: Andrew
+        family-names: Davison
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
     status:
-    -   Decided on the new name, modalities, datatypes
+    -   Decided on the new name (not just "Animal" but "Microelectrode"), modalities, datatypes
     -   Nearly finalized added metadata
-    -   'Target: finalize & merge PR into the BIDS specs in Fall 2024'
+    -   PR compiles green, preview is available
+    -   'Target: finalize & merge PR into the BIDS specs in 2025'
     blocking:
+    -   Need to prepare example datasets
     -   Need to start thinking about derived data (spike sorted)
     google_doc_created: 2020-12
     pull_request_created: 2022-11
@@ -388,21 +398,27 @@
     content:
     -   raw
     leads:
-    -   given-names: Eric A.
+    -   given-names: Eric
         family-names: Earl
     -   given-names: Samuel
         family-names: Guay
     -   given-names: Sebastian
         family-names: Urchs
+    -   given-names: Arshitha
+        family-names: Basavaraj
     bids_maintainers:
-    -   given-names: Rémi
-        family-names: Gau
+    -   given-names: Chris
+        family-names: Markiewicz
+    -   given-names: Ross
+        family-names: Blair
     status:
-    -   Dropping “Segregated” data format in favor of “Aggregated”
+    -   BEP entering community review period shortly.
+    -   BIDS specification PR 2123.
+    -   BIDS examples PR 465.
     blocking:
-    -   More reviews and discussions are necessary.
+    -   A successful community review.
     google_doc_created: 2021-10
-    pull_request_created:
+    pull_request_created: 2025-05
     pull_request_merged:
 
 -   number: '037'
@@ -419,13 +435,23 @@
         family-names: Miniussi
     -   given-names: Marta
         family-names: Bortoletto
+    -   given-names: Nigel
+        family-names: Rogasch
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
     status:
-    -   Updated BEP structure that eliminates new `.json` or `.tsv`
-    -   Stimulation parameters and hardware will be integrated in the `events.tsv` and `events.json `
-    -   Details on the sequence of offline/online NIBS treatments will be described in the `scans.tsv/json` and `session.tsv/json`
+    -   v1.0 2020-11-09 Initial work on specification with vittorio.iacovella@unitn.it carlo.miniussi@unitn.it marta.bortoletto@cognitiveneuroscience.it
+    -   v1.0 2021-04 First example of a NIBS-BIDS dataset https://gin.g-node.org/CIMeC/TMS-EEG_brain_connectivity_BIDS
+    -   V1.0 2021-11 Brainhack @Donosti with eleonora.marcantoni@cognitiveneuroscience.it martinabulgari3@gmail.com and g.guidali@campus.unimib.it
+    -   V1.0 2022-02 First international NIBS-BIDS meeting
+    -   V1.0 2022-11 First update of the BEP
+    -   V2.0 2023-08 BEP 2.0 available with the new NIBS-BIDS logic for describing NIBS experiments
+    -   V3.0 2024-07 BEP 3.0 available with a draft of the final BIDS structure.
+    -   V4.0 2024-11 BEP 4.0 updated with a new, more comprehensive structure. Added int files for offline stimulation. Harmonized parameters with SimNIBS.
+        Use of events and scans files for online stimulation.
+    -   V4.1 2024-12 BEP 4.1 Comments form December 9th, 2024 5th general meeting implemented, added FAQ section. Met with the BIDS maintenance team in
+        January 2025. Agreed on closing the open discussions, lock the google doc and start the PR.
     blocking:
     google_doc_created: 2022-09
     pull_request_created:
@@ -443,7 +469,6 @@
         family-names: Herholz
     -   given-names: Eugene P.
         family-names: Duff
-        email: eugene.duff@paediatrics.ox.ac.uk
     -   given-names: Anthony
         family-names: Galassi
     bids_maintainers:
@@ -491,7 +516,7 @@
     -   given-names: Jean-Charles
         family-names: Mariani
     -   given-names: Samuel
-        family-names: Diebolt
+        family-names: Le Meur-Diebolt
     -   given-names: Thomas
         family-names: Deffieux
     bids_maintainers:
@@ -530,20 +555,22 @@
 
 -   number: '042'
     title: Electromyography
-    google_doc: https://docs.google.com/document/d/1G5_Eu2OemcZXS9xOGINPA6SUTaZOml7LBmZCMnUhTXA/
+    display: Electromyography (EMG)
+    pull_request: https://github.com/bids-standard/bids-specification/pull/1998
+    html_preview: https://bids-specification--1998.org.readthedocs.build/en/1998/modality-specific-files/electromyography.html
     content:
     -   raw
     leads:
-    -   given-names: Seyed
-        family-names: Yahya Shirazi
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
     bids_maintainers:
     status:
+    -   Community comments and feedback are being collected (April 2025)
     -   Approved on May 2024, inviting collaborators (please join)
-    -   BEP will follow EEG-BIDS with EMG-specific metadata...
-    -   Sensor placement schema being developed in collaboration with Motion-BIDS maintainers
+    -   Original issue: https://github.com/bids-standard/bids-specification/issues/1371
     blocking:
     google_doc_created: 2023-01
-    pull_request_created:
+    pull_request_created: 2024-12-06
     pull_request_merged:
 
 -   number: '043'
@@ -572,10 +599,11 @@
 
 -   number: '044'
     title: Stimuli
-    google_doc: https://docs.google.com/document/d/1DoQghbJlQksCHEFs0boT816p3ejX2Hd9l-OWDTXFtV8/edit
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2022
+    html_preview: https://bids-specification--2022.org.readthedocs.build/en/2022/modality-specific-files/stimuli.html
     leads:
-    -   given-names: Seyed
-        family-names: Yahya Shirazi
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
     -   given-names: Dora
         family-names: Hermes
     -   given-names: Yaroslav O.
@@ -587,21 +615,24 @@
     bids_maintainers:
     -   given-names: Rémi
         family-names: Gau
-    update: |
-        - To harmonize and make more reusable stimuli content under stimuli/.
-        - Collecting community comments and feedback. All collaborators are welcome.
-        - Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)
+    status:
+    -   Community comments and feedback are being collected (January 2025)
+    -   To harmonize and make more reusable stimuli content under stimuli/
+    -   Collecting community comments and feedback. All collaborators are welcome.
+    -   'Original issue: [#153](https://github.com/bids-standard/bids-specification/issues/153)'
     content:
     -   raw
     blocking:
     google_doc_created: 2023-09-12
-    pull_request_created:
+    pull_request_created: 2024-12-21
     pull_request_merged:
 
 -   number: '045'
     title: Peripheral Physiological Recordings
     display: Physio
-    google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit?usp=sharing
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2249
+    html_preview: https://bids-specification--2249.org.readthedocs.build/en/2249/modality-specific-files/physiological-recordings.html
+    google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit
     leads:
     -   given-names: Mary
         family-names: Miedema
@@ -609,13 +640,39 @@
         family-names: Moia
     -   given-names: Sourav
         family-names: Kulkarni
-    status: |
-        - To update standards for physiological data for improved clarity and a broader range of use cases.
-        - Now collecting community comments and feedback. All collaborators are welcome.
-        - Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675)
+    bids_maintainers:
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
+    status:
+    -   No longer developed in google doc, moved to <https://github.com/physiopy/bids-specification-physio>.
+    -   To update standards for physiological data for improved clarity and a broader range of use cases.
+    -   Now collecting community comments and feedback. All collaborators are welcome.
+    -   'Original issue: [#1675](https://github.com/bids-standard/bids-specification/issues/1675).'
     content:
     -   raw
     blocking:
     google_doc_created: 2024-08-13
+    pull_request_created: 2025-11-07
+    pull_request_merged:
+
+-   number: '046'
+    title: Diffusion Tractography
+    display: Tractography
+    google_doc: https://docs.google.com/document/d/1ubDQ2RhgjnfGqoeukzEkPV9YEHhfYMERrj7-3b0c2HI/edit
+    leads:
+    -   given-names: Robert E.
+        family-names: Smith
+    -   given-names: Ariel
+        family-names: Rokem
+    -   given-names: Franco
+        family-names: Pestilli
+    status:
+    -   Porting comprehensive description of streamline tractography mechanisms into specification - 10.1016/B978-0-12-817057-1.00023-8
+    -   Determine appropriate resolution with TRX development - https://tee-ar-ex.github.io/trx-python/
+    -   Decide on scope of BEP; e.g. whether to include tractometry, complex tract delineation
+    content:
+    -   derivative
+    blocking:
+    google_doc_created: 2022-02-09
     pull_request_created:
     pull_request_merged:
