@@ -119,7 +119,7 @@
 
 -   name: Hierarchical Event Descriptors (HED) online tools
     url: https://hedtools.org/hed
-    documentation: https://www.hed-resources.org
+    documentation: https://www.hedtags.org
     language:
     -   website
     category: data annotation
