@@ -113,8 +113,8 @@
         url: https://hub.docker.com/r/halfpipe/halfpipe
 
 -   name: Hierarchical Event Descriptors (HED) Python tools
-    repo_url: https://github.com/hed-standard/hed-Python
-    documentation: https://www.hedtags.org/
+    repo_url: https://github.com/hed-standard/hed-python
+    documentation: https://www.hedtags.org/hed-python
     language:
     -   Python
     category: data annotation
@@ -130,6 +130,18 @@
     -   website
     category: data annotation
     description: Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
+
+-   name: Hierarchical Event Descriptors (HED) browser-based tools
+    repo_url: https://github.com/hed-standard/hed-javascript
+    documentation: https://www.hedtags.org/hed-javascript
+    language:
+    -   Javascript
+    category: data annotation
+    distribution:
+    -   name: npm
+        url: https://www.npmjs.com/package/hed-validator
+    description: Browser-based validation of HED in BIDS datasets (no data upload).
+
 
 -   name: Lead-DBS
     repo_url: https://github.com/netstim/leaddbs
