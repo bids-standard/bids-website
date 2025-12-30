@@ -80,7 +80,7 @@ categories:
      </a>
     </p>
     <p>
-     <a href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">
+     <a href="https://bids-standard.org/get_involved.html#extending-the-bids-specification">
       <span class="underline">
        Map bep number to name
       </span>
@@ -293,9 +293,9 @@ categories:
     </p>
     <p>
      BEP020 (eye-tracking):
-     <a href="https://bids.neuroimaging.io/bep020">
+     <a href="https://bids-standard.org/bep020">
       <span class="underline">
-       https://bids.neuroimaging.io/bep020
+       https://bids-standard.org/bep020
       </span>
      </a>
     </p>

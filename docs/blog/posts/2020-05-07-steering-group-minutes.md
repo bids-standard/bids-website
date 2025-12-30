@@ -25,7 +25,7 @@ The author section may include the potential for a paragraph (max) narrative of 
 This will be enhancing our current emoji representation of contributions.
 This will give the community more opportunity to capture their specific contributions to BIDS.
 
-We accepted three new BEPs: [Provenance](https://bids.neuroimaging.io/bep028), [Virtual and physical motion data](https://bids.neuroimaging.io/bep029), and [Near-Infrared Spectroscopy](https://bids.neuroimaging.io/bep030).
+We accepted three new BEPs: [Provenance](https://bids-standard.org/bep028), [Virtual and physical motion data](https://bids-standard.org/bep029), and [Near-Infrared Spectroscopy](https://bids-standard.org/bep030).
 These have been added to the website. We primarily evaluated the scope and if this is a duplicated effort.
 It is important for BEPs to signal community engagement and buy-in for their extension proposal from the respective modality community.
 
@@ -67,9 +67,9 @@ This was a joint meeting between the Steering Group and Maintainers Group to go 
 
 -   Accepted BEPs
 
-    -   [BEP028: Provenance](https://bids.neuroimaging.io/bep028)
-    -   [BEP029: Virtual and physical motion data](https://bids.neuroimaging.io/bep029)
-    -   [BEP030: Near-Infrared Spectroscopy](https://bids.neuroimaging.io/bep030)
+    -   [BEP028: Provenance](https://bids-standard.org/bep028)
+    -   [BEP029: Virtual and physical motion data](https://bids-standard.org/bep029)
+    -   [BEP030: Near-Infrared Spectroscopy](https://bids-standard.org/bep030)
 
 -   Steering Group review consists primarily of ensuring it is within scope and not duplicating efforts
 

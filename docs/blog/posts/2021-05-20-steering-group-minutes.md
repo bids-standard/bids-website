@@ -26,9 +26,9 @@ categories:
    </td>
    <td>
     Extension proposal:
-    <a href="https://bids.neuroimaging.io/bep030">
+    <a href="https://bids-standard.org/bep030">
      <span class="underline">
-      https://bids.neuroimaging.io/bep030
+      https://bids-standard.org/bep030
      </span>
     </a>
    </td>
@@ -82,9 +82,9 @@ categories:
    </td>
    <td>
     Extension proposal:
-    <a href="https://bids.neuroimaging.io/bep033">
+    <a href="https://bids-standard.org/bep033">
      <span class="underline">
-      https://bids.neuroimaging.io/bep033
+      https://bids-standard.org/bep033
      </span>
     </a>
    </td>
@@ -235,17 +235,17 @@ categories:
    <td>
     <p>
      aDWI - BEP33:
-     <a href="https://bids.neuroimaging.io/bep033">
+     <a href="https://bids-standard.org/bep033">
       <span class="underline">
-       https://bids.neuroimaging.io/bep033
+       https://bids-standard.org/bep033
       </span>
      </a>
     </p>
     <p>
      MIDS:
-     <a href="https://bids.neuroimaging.io/bep025">
+     <a href="https://bids-standard.org/bep025">
       <span class="underline">
-       https://bids.neuroimaging.io/bep025
+       https://bids-standard.org/bep025
       </span>
      </a>
     </p>

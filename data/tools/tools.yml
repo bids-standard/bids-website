@@ -374,4 +374,4 @@
     -   MATLAB
     -   Octave
     category: file handling
-    description: a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
+    description: a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids-standard.org/bep012))

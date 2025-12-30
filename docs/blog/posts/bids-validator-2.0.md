@@ -473,7 +473,7 @@ inside the [bids-standard/bids-specification] repository.
 
 [bst desc]: https://bidsschematools.readthedocs.io/en/latest/description.html#organization-and-syntax
 
-[steering group]: https://bids.neuroimaging.io/governance.html#bids-steering-group
+[steering group]: https://bids-standard.org/governance.html#bids-steering-group
 
 [checks]: https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/checks/
 

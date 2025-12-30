@@ -57,7 +57,7 @@ we can quantify which BIDS-associated tools are of the highest interest to the r
 | statistical model | ![PyPI - Downloads](https://img.shields.io/pypi/dm/bsmschema)                                                            |
 
 For the number of docker pulls of specific BIDS apps, please check the
-[BIDS app dashboard](https://bids.neuroimaging.io/tools/bids-apps.html).
+[BIDS app dashboard](https://bids-standard.org/tools/bids-apps.html).
 
 ## Contributors
 

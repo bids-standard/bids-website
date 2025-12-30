@@ -8,7 +8,7 @@ bids-root
     phenotype
 ```
 
-Please the see work on the [BIDS extension proposal for phenotypes](https://bids.neuroimaging.io/bep036)
+Please the see work on the [BIDS extension proposal for phenotypes](https://bids-standard.org/bep036)
 for more guidelines.
 
 ## Is there a standard for epilepsy phenotypes?

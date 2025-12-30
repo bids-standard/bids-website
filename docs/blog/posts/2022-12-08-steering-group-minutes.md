@@ -34,9 +34,9 @@ categories:
      <li>
       <blockquote>
        <p>
-        <a href="https://bids.neuroimaging.io/bep020">
+        <a href="https://bids-standard.org/bep020">
          <span class="underline">
-          https://bids.neuroimaging.io/bep020
+          https://bids-standard.org/bep020
          </span>
         </a>
        </p>

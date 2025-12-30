@@ -81,9 +81,9 @@ categories:
     </p>
    </td>
    <td>
-    <a href="https://bids.neuroimaging.io/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization">
+    <a href="https://bids-standard.org/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization">
      <span class="underline">
-      https://bids.neuroimaging.io/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization
+      https://bids-standard.org/governance.html#c-Governance-ratification-and-BIDS-Steering-Group-initialization
      </span>
     </a>
    </td>
@@ -186,9 +186,9 @@ categories:
      MIDS - BEP25:
     </p>
     <p>
-     <a href="https://bids.neuroimaging.io/bep025">
+     <a href="https://bids-standard.org/bep025">
       <span class="underline">
-       https://bids.neuroimaging.io/bep025
+       https://bids-standard.org/bep025
       </span>
      </a>
     </p>
