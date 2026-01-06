@@ -25,11 +25,11 @@ We keep an updated list of
 flowchart TD
 
 BEP_required["Is this a 'large' change ?"]
-PR["Open a simple pull request."]
+PR["Open a simple pull request"]
 BEP_exist["Does a similar BEP already exist?"]
-Contribute["Contribute to that BEP."]
+Contribute["Contribute to that BEP"]
 BEP_issue_exist["Is there an issue for such BEP?"]
-Join_discussion["Join the discussion on that BEP."]
+Join_discussion["Join the discussion on that BEP"]
 Open_BEP["Start a new BEP"]
 
 BEP_required -- no --> PR
@@ -184,11 +184,11 @@ In rare cases, it may be necessary to update the BIDS validator to properly vali
 ```mermaid
 flowchart TD
 
-Open_BEP_issue["Open an issue to gather interest."]
-Post_mailing_list["Advertise the issue in the mailing list."]
-BEP_draft["Start a draft for your BEP."]
-Meet_the_team["Meet with the BIDS maintainers / steering group."]
-Official_BEP["Get a number for your BEP."]
+Open_BEP_issue["Open an issue to gather interest"]
+Post_mailing_list["Advertise the issue in the mailing list"]
+BEP_draft["Start a draft for your BEP"]
+Meet_the_team["Meet with the BIDS maintainers / steering group"]
+Official_BEP["Get a number for your BEP"]
 
 Open_BEP_issue --> Post_mailing_list
 Post_mailing_list --> BEP_draft
