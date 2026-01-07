@@ -3,6 +3,10 @@
 #   url:
 #   contribution:
 
+-   source: NFDI4BIOIMAGE - 501864659 (DFG)
+    url: https://nfdi4bioimage.de
+    contribution: Documentation and specification (Microscopy BEP and multi-modal BIDS)
+
 -   source: NIMH R24MH114705
     url: https://reporter.nih.gov/project-details/9411944
     contribution: BIDS common derivatives BEP
