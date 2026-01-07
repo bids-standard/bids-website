@@ -4187,7 +4187,7 @@ the <a href="https://www.python.org/">Python programming language</a>.
 to new techniques, and file types and descriptors.
 We keep an updated list of
 <a href="beps.html#completed-beps">completed BEPS</a> and
-<a href="beps.html#bids-extension-proposals">draft/proposed <abbr title="BIDS Extension Proposals">BEPs</abbr></a></p>
+<a href="beps.html#bids-extension-proposals">draft/proposed <abbr title="BIDS Extension Proposals">BEPs</abbr></a>.</p>
 <h2 id="is-a-bep-even-required"><a class="toclink" href="#is-a-bep-even-required">Is a <abbr title="BIDS Extension Proposal">BEP</abbr> even required?</a></h2>
 <pre class="mermaid"><code>flowchart TD
 
@@ -4302,6 +4302,8 @@ markdown[REQUIRED
          BEP markdown]
 validator[OPTIONAL
           Update to BIDS validator]
+website[OPTIONAL
+          Update to BIDS website]
 proposed_bep_review([Proposed BEP review])
 merged_bep[Merged BEP]
 
@@ -4311,6 +4313,7 @@ proposed_bep --&gt; markdown --&gt; proposed_bep_review
 proposed_bep --&gt; schema --&gt; proposed_bep_review
 proposed_bep --&gt; PR_examples --&gt; proposed_bep_review
 proposed_bep --&gt; validator --&gt; proposed_bep_review
+proposed_bep --&gt; website --&gt; proposed_bep_review
 proposed_bep_review -- positive evaluation --&gt; merged_bep</code></pre>
 <h4 id="required-deliverables"><a class="toclink" href="#required-deliverables">REQUIRED deliverables</a></h4>
 <ol>
@@ -4319,7 +4322,11 @@ proposed_bep_review -- positive evaluation --&gt; merged_bep</code></pre>
 <li>Examples (to test the validator is working properly) added to <a href="https://github.com/bids-standard/bids-examples"><code>bids-examples</code></a>.</li>
 </ol>
 <h4 id="optional-deliverables"><a class="toclink" href="#optional-deliverables">OPTIONAL deliverables</a></h4>
-<p>In rare cases, it may be necessary to update the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator to properly validate new content from a <abbr title="BIDS Extension Proposal">BEP</abbr>.</p>
+<p>In rare cases, it may be necessary to update:</p>
+<ul>
+<li>the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator to properly validate new content from a <abbr title="BIDS Extension Proposal">BEP</abbr>;</li>
+<li>the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website.</li>
+</ul>
 <h4 id="suggested-deliverables"><a class="toclink" href="#suggested-deliverables">SUGGESTED deliverables</a></h4>
 <ol>
 <li>Preprint of the new extension (if applicable).</li>
@@ -4452,7 +4459,7 @@ in the list of <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributo
 <p>While working on your extension, make sure to do the following:</p>
 <ul>
 <li>
-<p>Follow the <a href="guidelines.html"><abbr title="BIDS Extension Proposal">BEP</abbr> guidelines</a></p>
+<p>Follow the <a href="guidelines.html"><abbr title="BIDS Extension Proposal">BEP</abbr> guidelines</a>.</p>
 </li>
 <li>
 <p>Keep track of the contributor(s) leading the effort:
@@ -4494,16 +4501,16 @@ in the collection, organization, or at any step in the preparation of these data
 ask for <code>Draft BEP review</code> by contacting the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers and steering group by:</p>
 <ul>
 <li>tagging the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers in using <code>@bids-standard/maintainers</code> in the issue of your <abbr title="BIDS Extension Proposal">BEP</abbr>,</li>
-<li>sending an email to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers (<code>bids.maintenance+question@gmail.com</code>) and steering group (<code>bids.steering@gmail.com</code>)</li>
+<li>sending an email to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers (<code>bids.maintenance+question@gmail.com</code>) and steering group (<code>bids.steering@gmail.com</code>).</li>
 </ul>
 <h3 id="proposed-bep"><a class="toclink" href="#proposed-bep">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr></a></h3>
 <p>Once your <code>Draft BEP</code> has been positively evaluated, the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers will:</p>
 <ul>
 <li>
-<p>Create a new branch off of the <code>bids-specification</code> repository</p>
+<p>Create a new branch off of the <code>bids-specification</code> repository.</p>
 </li>
 <li>
-<p>Name the branch following the <abbr title="BIDS Extension Proposal">BEP</abbr> tag convention: <code>bep###</code> (e.g. <code>bep003</code>)</p>
+<p>Name the branch following the <abbr title="BIDS Extension Proposal">BEP</abbr> tag convention: <code>bep###</code> (e.g. <code>bep003</code>).</p>
 </li>
 <li>
 <p>Create a github <a href="https://github.com/orgs/bids-standard/teams"><abbr title="BIDS Extension Proposal">BEP</abbr> team</a> for that <abbr title="BIDS Extension Proposal">BEP</abbr> and add the <abbr title="BIDS Extension Proposal">BEP</abbr> lead to that team.</p>
@@ -4518,7 +4525,7 @@ to help you with this.</p>
 </div>
 <ul>
 <li>Label your pull requests with your <abbr title="BIDS Extension Proposal">BEP</abbr> tag
-    (this will signal to the community which are for the specification or associated with a specific <abbr title="BIDS Extension Proposal">BEP</abbr>)</li>
+    (this will signal to the community which are for the specification or associated with a specific <abbr title="BIDS Extension Proposal">BEP</abbr>).</li>
 </ul>
 <h3 id="proposed-bep-review"><a class="toclink" href="#proposed-bep-review">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> review</a></h3>
 <p>Criteria:</p>
@@ -4533,10 +4540,10 @@ to help you with this.</p>
 <p>Clearly defines a filename template and field names.</p>
 </li>
 <li>
-<p>Use cases and examples clearly illustrated</p>
+<p>Use cases and examples clearly illustrated.</p>
 </li>
 <li>
-<p>At least 10 business days of community feedback publicly posted across the <abbr title="Brain Imaging Data Structure">BIDS</abbr> channels</p>
+<p>At least 10 business days of community feedback publicly posted across the <abbr title="Brain Imaging Data Structure">BIDS</abbr> channels.</p>
 </li>
 <li>
 <p>Proposal positively reviewed by representative community members.
@@ -4550,9 +4557,9 @@ to help you with this.</p>
 </ul>
 <p>The Steering Group evaluates:</p>
 <ul>
-<li>Sufficiency of community feedback for the scope of the extension</li>
-<li>Validator updated to include the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> specification</li>
-<li>Final review of the integration into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard</li>
+<li>Sufficiency of community feedback for the scope of the extension.</li>
+<li>Validator updated to include the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> specification.</li>
+<li>Final review of the integration into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.</li>
 </ul>
 <p>The <abbr title="BIDS Extension Proposal">BEP</abbr> lead(s) will work with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers to coordinate the community review period.
 The community review period is scheduled <em>after</em> the pull request has been opened.</p>
@@ -4581,10 +4588,10 @@ merging of the <abbr title="BIDS Extension Proposal">BEP</abbr> into the Specifi
     will cancel the need to complete the following steps.</p>
 </li>
 <li>
-<p>Create a new branch off of the <code>bids-validator</code> repository</p>
+<p>Create a new branch off of the <code>bids-validator</code> repository.</p>
 </li>
 <li>
-<p>Name the branch following the <abbr title="BIDS Extension Proposal">BEP</abbr> tag convention: <code>bep###</code> (e.g. <code>bep003</code>)</p>
+<p>Name the branch following the <abbr title="BIDS Extension Proposal">BEP</abbr> tag convention: <code>bep###</code> (e.g. <code>bep003</code>).</p>
 </li>
 <li>
 <p>Label your pull requests with your <abbr title="BIDS Extension Proposal">BEP</abbr> tag. This will clearly differentiate
@@ -4597,25 +4604,25 @@ merging of the <abbr title="BIDS Extension Proposal">BEP</abbr> into the Specifi
 <li>
 <p>When the validator is ready to be evaluated, please remove the <code>[WIP]</code> from
     the pull request title and tag
-    <a href="https://github.com/rwblair">Ross Blair (@rwblair)</a></p>
+    <a href="https://github.com/rwblair">Ross Blair (@rwblair)</a>.</p>
 </li>
 </ol>
 <h2 id="submitting-the-examples"><a class="toclink" href="#submitting-the-examples">Submitting the examples</a></h2>
 <ol>
 <li>
-<p>Create a new branch off of the <code>bids-examples</code> repository</p>
+<p>Create a new branch off of the <code>bids-examples</code> repository.</p>
 </li>
 <li>
-<p>Name the branch following the <abbr title="BIDS Extension Proposal">BEP</abbr> tag convention: <code>bep###</code> (e.g. <code>bep003</code>)</p>
+<p>Name the branch following the <abbr title="BIDS Extension Proposal">BEP</abbr> tag convention: <code>bep###</code> (e.g. <code>bep003</code>).</p>
 </li>
 <li>
 <p>Label your pull requests with your <abbr title="BIDS Extension Proposal">BEP</abbr> tag. This will clearly differentiate
-    your work from those of the master branch</p>
+    your work from those of the master branch.</p>
 </li>
 <li>
 <p>When the examples are ready to be merged, open a pull request
     against the master branch and tag
-    <a href="https://github.com/rwblair">Ross Blair (@rwblair)</a></p>
+    <a href="https://github.com/rwblair">Ross Blair (@rwblair)</a>.</p>
 </li>
 </ol>
 <h2 id="bep-paper-writing-suggestion"><a class="toclink" href="#bep-paper-writing-suggestion"><abbr title="BIDS Extension Proposal">BEP</abbr> paper writing suggestion</a></h2>
