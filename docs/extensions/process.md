@@ -17,7 +17,7 @@ BEPs have grown the specification beyond its original scope of MRI
 to new techniques, and file types and descriptors.
 We keep an updated list of
 [completed BEPS](./beps.md#completed-beps) and
-[draft/proposed BEPs](./beps.md#bids-extension-proposals)
+[draft/proposed BEPs](./beps.md#bids-extension-proposals).
 
 ## Is a BEP even required?
 
@@ -274,7 +274,7 @@ More details on how to proceed are described below.
 
 While working on your extension, make sure to do the following:
 
--   Follow the [BEP guidelines](./guidelines.md)
+-   Follow the [BEP guidelines](./guidelines.md).
 
 -   Keep track of the contributor(s) leading the effort:
     name, affiliation, email...
@@ -318,15 +318,15 @@ To confirm your BEP is ready for this transition,
 ask for `Draft BEP review` by contacting the BIDS maintainers and steering group by:
 
 -   tagging the BIDS maintainers in using `@bids-standard/maintainers` in the issue of your BEP,
--   sending an email to the BIDS maintainers (`bids.maintenance+question@gmail.com`) and steering group (`bids.steering@gmail.com`)
+-   sending an email to the BIDS maintainers (`bids.maintenance+question@gmail.com`) and steering group (`bids.steering@gmail.com`).
 
 ### Proposed BEP
 
 Once your `Draft BEP` has been positively evaluated, the BIDS maintainers will:
 
--   Create a new branch off of the `bids-specification` repository
+-   Create a new branch off of the `bids-specification` repository.
 
--   Name the branch following the BEP tag convention: `bep###` (e.g. `bep003`)
+-   Name the branch following the BEP tag convention: `bep###` (e.g. `bep003`).
 
 -   Create a github [BEP team](https://github.com/orgs/bids-standard/teams) for that BEP and add the BEP lead to that team.
 
@@ -340,7 +340,7 @@ You can then convert working document to markdown and commit it to your BEP bran
     to help you with this.
 
 -   Label your pull requests with your BEP tag
-    (this will signal to the community which are for the specification or associated with a specific BEP)
+    (this will signal to the community which are for the specification or associated with a specific BEP).
 
 ### Proposed BEP review
 
@@ -352,9 +352,9 @@ Criteria:
 
 -   Clearly defines a filename template and field names.
 
--   Use cases and examples clearly illustrated
+-   Use cases and examples clearly illustrated.
 
--   At least 10 business days of community feedback publicly posted across the BIDS channels
+-   At least 10 business days of community feedback publicly posted across the BIDS channels.
 
 -   Proposal positively reviewed by representative community members.
     The definition of "representative" will differ
@@ -365,9 +365,9 @@ Criteria:
 
 The Steering Group evaluates:
 
--   Sufficiency of community feedback for the scope of the extension
--   Validator updated to include the Proposed BEP specification
--   Final review of the integration into the BIDS standard
+-   Sufficiency of community feedback for the scope of the extension.
+-   Validator updated to include the Proposed BEP specification.
+-   Final review of the integration into the BIDS standard.
 
 The BEP lead(s) will work with the BIDS maintainers to coordinate the community review period.
 The community review period is scheduled _after_ the pull request has been opened.
@@ -396,9 +396,9 @@ merging of the BEP into the Specification.
     to the [schema](https://github.com/bids-standard/bids-specification/tree/master/src/schema)
     will cancel the need to complete the following steps.
 
-1.  Create a new branch off of the `bids-validator` repository
+1.  Create a new branch off of the `bids-validator` repository.
 
-1.  Name the branch following the BEP tag convention: `bep###` (e.g. `bep003`)
+1.  Name the branch following the BEP tag convention: `bep###` (e.g. `bep003`).
 
 1.  Label your pull requests with your BEP tag. This will clearly differentiate
     your work from those of the master branch. Consider opening the pull
@@ -409,20 +409,20 @@ merging of the BEP into the Specification.
 
 1.  When the validator is ready to be evaluated, please remove the `[WIP]` from
     the pull request title and tag
-    [Ross Blair (@rwblair)](https://github.com/rwblair)
+    [Ross Blair (@rwblair)](https://github.com/rwblair).
 
 ## Submitting the examples
 
-1.  Create a new branch off of the `bids-examples` repository
+1.  Create a new branch off of the `bids-examples` repository.
 
-1.  Name the branch following the BEP tag convention: `bep###` (e.g. `bep003`)
+1.  Name the branch following the BEP tag convention: `bep###` (e.g. `bep003`).
 
 1.  Label your pull requests with your BEP tag. This will clearly differentiate
-    your work from those of the master branch
+    your work from those of the master branch.
 
 1.  When the examples are ready to be merged, open a pull request
     against the master branch and tag
-    [Ross Blair (@rwblair)](https://github.com/rwblair)
+    [Ross Blair (@rwblair)](https://github.com/rwblair).
 
 ## BEP paper writing suggestion
 
