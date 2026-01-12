@@ -1,10 +1,33 @@
 {% if bep_type == "closed" %}
-| Extension  | Title | Content | Lead(s) | Outcome |
-| :--------: | :---- | :-----  | :-----  | :------ |
+    | Extension  | Title | Content | Lead(s) | Outcome |
+    | :--------: | :---- | :-----  | :-----  | :------ |
 {% else %}
-| Extension  | Title | Content | Lead(s) |
-| :--------: | :---- | :-----  | :-----  |
+    | Extension  | Title | Content | Lead(s) |
+    | :--------: | :---- | :-----  | :-----  |
 {% endif %}
 {% for bep in include %}
-| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | {% if bep.display %} {{ bep.display }} {% else %} {{ bep.title }} {% endif %} | {% for content in bep.content %} {{ content }} {% endfor %} | {% for person in bep.leads %} {% if person.email %} [{{ person["given-names"] }} {{ person["family-names"] }}](mailto:{{ person.email }}) {% else %} {{ person["given-names"] }} {{ person["family-names"] }} {% endif %}<br>{% endfor %} |
+    | [BEP {{ bep.number }}](
+    {% if bep.link %}
+        {{ bep.link }}
+    {% else %}
+        ./beps/bep_{{ bep.number }}.md
+    {% endif %}
+    ) |
+    {% if bep.display %}
+        {{ bep.display }}
+    {% else %}
+        {{ bep.title }}
+    {% endif %}
+    |
+    {% for content in bep.content %}{{ content }}{% endfor %}
+    |
+    {% for person in bep.leads %}
+        {% if person.email %}
+            [{{ person["given-names"] }} {{ person["family-names"] }}](mailto:{{ person.email }})
+        {% else %}
+            {{ person["given-names"] }} {{ person["family-names"] }}
+        {% endif %}
+        <br>
+    {% endfor %}
+    |
 {% endfor %}

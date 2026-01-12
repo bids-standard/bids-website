@@ -1,12 +1,27 @@
 {% if status == "dissolved" %}
-| Name  | Goal  | Lead(s) | Outcome |
-| :---: | :---- | :------ | :------ |
+    | Name  | Goal  | Lead(s) | Outcome |
+    | :---: | :---- | :------ | :------ |
 {% else %}
-| Name  | Goal  | Lead(s) | communication channel |
-| :---: | :---- | :----   | :-------------------- |
+    | Name  | Goal  | Lead(s) | communication channel |
+    | :---: | :---- | :----   | :-------------------- |
 {% endif %}
 {% for group in include %}
-{% if group.status == status %}
-| [{{ group.title }}]({{ group.url }}) | {{ group.goal }} | {% for person in group.chairs %} {% if person.email %} [{{ person.name }}](mailto:{{ person.email }}) {% else %} {{ person.name }} {% endif %}<br>{% endfor %}  | {% if status == "dissolved" %} {{ group.outcome }} {% else %} {{ group.communication_channel }} {% endif %} |
-{% endif %}
+    {% if group.status == status %}
+        | [{{ group.title }}]({{ group.url }}) | {{ group.goal }} |
+        {% for person in group.chairs %}
+            {% if person.email %}
+                [{{ person.name }}](mailto:{{ person.email }})
+            {% else %}
+                {{ person.name }}
+            {% endif %}
+            <br>
+        {% endfor %}
+        |
+        {% if status == "dissolved" %}
+            {{ group.outcome }}
+        {% else %}
+            {{ group.communication_channel }}
+        {% endif %}
+        |
+    {% endif %}
 {% endfor %}

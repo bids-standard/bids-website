@@ -55,3 +55,6 @@ format_css = true
 ignore = "H030,H031,H021,H006"
 max_line_length = 79
 use_gitignore = true
+
+[tool.djlint.css]
+indent_size = 4

@@ -51,31 +51,17 @@ repos:
     rev: v1.36.4
     hooks:
     -   id: djlint
-        exclude: |
-            (?x)^(
-                docs/overrides/main.html|
-                docs/overrides/404.html
-            )$
     -   id: djlint-reformat
-        exclude: |
-            (?x)^(
-                docs/overrides/main.html|
-                docs/overrides/404.html
-            )$
     -   id: djlint-jinja
-        exclude: |
-            (?x)^(
-                docs/overrides/main.html|
-                docs/overrides/404.html|
-                templates/.*
-            )$
     -   id: djlint-reformat-jinja
-        exclude: |
-            (?x)^(
-                docs/overrides/main.html|
-                docs/overrides/404.html|
-                templates/.*
-            )$
+
+    # Check formatting of CSS
+    # prettier: https://prettier.io/
+-   repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.7.4
+    hooks:
+    -   id: prettier
+        types_or: [css]
 
 -   repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.12.0
