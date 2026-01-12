@@ -6,6 +6,7 @@ site_url: https://bids.neuroimaging.io/
 plugins:
   - search
   - tags
+  - git-revision-date-localized
   - blog
   - open-in-new-tab
   - macros:
