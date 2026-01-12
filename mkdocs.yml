@@ -4,7 +4,7 @@ repo_url: https://github.com/bids-standard/bids-website/tree/main
 site_url: https://bids.neuroimaging.io/
 
 plugins:
-  - search:
+  - search
   - tags
   - blog
   - open-in-new-tab
