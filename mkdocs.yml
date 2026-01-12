@@ -243,14 +243,7 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
-  - def_list
-  - footnotes
   - md_in_html
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -258,19 +251,6 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: bids-standard
-      repo: bids-website
-  - pymdownx.mark
-  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -278,13 +258,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
   - tables
   - toc:
       permalink: true
