@@ -5,17 +5,8 @@ site_url: https://bids.neuroimaging.io/
 
 plugins:
   - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
-  # -   social
   - blog
-  # -   rss:
-  #         match_path: blog/posts/.*
-  #         date_from_meta:
-  #             as_creation: date
-  #         categories:
-  #         -   categories
-  #         -   tags
   - open-in-new-tab
   - macros:
       module_name: macros/main
@@ -193,7 +184,6 @@ theme:
   features:
     - announce.dismiss
     - content.action.edit
-    - content.code.annotate
     - content.code.copy
     - content.tabs.link
     - content.tooltips
@@ -202,8 +192,6 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - navigation.instant.progress
-    - navigation.prune
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -243,6 +231,7 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - footnotes
   - md_in_html
   - pymdownx.details
   - pymdownx.emoji:
