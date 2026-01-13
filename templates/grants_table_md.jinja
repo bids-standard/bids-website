@@ -1,13 +1,5 @@
 | Support source | Description of the contributions |
 | :------------  | :------------------------------- |
 {% for grant in include %}
-    |
-    {% if grant.url %}
-        [{{ grant.source }}]({{ grant.url }})
-    {% else %}
-        {{ grant.source }}
-    {% endif %}
-    |
-    {% if grant.contribution %}{{ grant.contribution }}{% endif %}
-    |
+| {% if grant.url %} [{{ grant.source }}]({{ grant.url }}) {% else %} {{ grant.source }} {% endif %} | {% if grant.contribution %} {{ grant.contribution }} {% endif %} |
 {% endfor %}

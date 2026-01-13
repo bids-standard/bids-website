@@ -1,40 +1,26 @@
+
 | Name  | Language | Description | Updated |
 | :---: | :------  | :---------- | :-----: |
 {% for tool in include %}
-    {# URL to link to #}
-    {% if tool.url %}
-
-        {% set url = tool.url %}
-
-    {% elif tool.documentation %}
-
-        {% set url = tool.documentation %}
-
-    {% elif tool.repo_url %}
-
-        {% set url = tool.repo_url %}
-
+{# URL to link to #}
+{% if tool.url %}
+    {% set url = tool.url %}
+{% elif tool.documentation %}
+    {% set url = tool.documentation %}
+{% elif tool.repo_url %}
+    {% set url = tool.repo_url %}
+{% endif %}
+{# variables for the last commit badge #}
+{% if tool.repo_url %}
+    {% if "github" in tool.repo_url %}
+        {%  set repo_url = tool.repo_url | replace("https://github.com/", "")  %}
+        {%  set domain = "github" %}
+    {% elif "gitlab" in tool.repo_url %}
+        {%  set repo_url = tool.repo_url | replace("https://gitlab.com/", "")  %}
+        {%  set domain = "gitlab" %}
     {% endif %}
-    {# variables for the last commit badge #}
-    {% if tool.repo_url %}
-        {% if "github" in tool.repo_url %}
-
-            {% set repo_url = tool.repo_url | replace("https://github.com/", "") %}
-            {% set domain = "github" %}
-
-        {% elif "gitlab" in tool.repo_url %}
-
-            {% set repo_url = tool.repo_url | replace("https://gitlab.com/", "") %}
-            {% set domain = "gitlab" %}
-
-        {% endif %}
-    {% endif %}
-    {% if tool.category == category %}
-        | [{{ tool.name }}]({{ url }}) |
-        {% for language in tool.language %}
-            {{ language }}
-            <br>
-        {% endfor %}
-        | {{ tool.description }} | ![Last commit](https://img.shields.io/{{ domain }}/last-commit/{{ repo_url }}?style=plastic) |
-    {% endif %}
+{% endif %}
+{% if tool.category == category %}
+| [{{ tool.name }}]({{ url }}) | {% for language in tool.language %} {{ language }} <br> {% endfor %} | {{ tool.description }} | ![Last commit](https://img.shields.io/{{ domain }}/last-commit/{{ repo_url }}?style=plastic) |
+{% endif %}
 {% endfor %}

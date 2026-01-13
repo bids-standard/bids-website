@@ -4,51 +4,72 @@ hide:
     - toc
 ---
 
-# BEP {{ bep.number }}:
-{% if bep.display %}
-    {{ bep.display }}
-{% else %}
-    {{ bep.title }}
-{% endif %}
+# BEP {{ bep.number }}: {% if bep.display %} {{ bep.display }} {% else %} {{ bep.title }} {% endif %}
+
 {% if bep.communication_channel %}
-    !!! note
+!!! note
+
     Get in touch with people working on this BIDS extension: [{{ bep.communication_channel }}]({{ bep.communication_channel }})
 {% endif %}
+
 {% if bep.pull_request %}
-    **Pull request**: [{{ bep.pull_request }}]({{ bep.pull_request }} )
+**Pull request**: [{{ bep.pull_request }}]({{ bep.pull_request }} )
 {% else %}
-    **Google doc**:  [{{ bep.google_doc }}]({{ bep.google_doc }} )
+**Google doc**:  [{{ bep.google_doc }}]({{ bep.google_doc }} )
 {% endif %}
+
 ## Content
-{% for content in bep.content %}- {{ content }}{% endfor %}
-## Lead(s)
-{% for person in bep.leads %}
-    {% if person.email %}
-        -   [{{ person["given-names"] }} {{ person["family-names"] }}](mailto:{{ person.email }})
-    {% else %}
-        -   {{ person["given-names"] }} {{ person["family-names"] }}
-    {% endif %}
+
+{% for content in bep.content %}
+- {{ content }}
 {% endfor %}
+
+## Lead(s)
+
+{% for person in bep.leads %}
+{% if person.email %}
+-   [{{ person["given-names"] }} {{ person["family-names"] }}](mailto:{{ person.email }})
+{% else %}
+-   {{ person["given-names"] }} {{ person["family-names"] }}
+{% endif %}
+{% endfor %}
+
 {% if bep.status %}
-    ## Status
-    {% for item in bep.status %}-   {{ item }}{% endfor %}
+## Status
+
+{% for item in bep.status %}
+-   {{ item }}
+{% endfor %}
 {% endif %}
+
 {% if bep.blocking %}
-    ## Blockers
-    {% for item in bep.blocking %}-   {{ item }}{% endfor %}
+## Blockers
+
+{% for item in bep.blocking %}
+-   {{ item }}
+{% endfor %}
 {% endif %}
+
 {% if bep.bids_maintainers %}
-    ## BIDS maintainers
-    {% for person in bep.bids_maintainers %}
-        -   {{ person["given-names"] }} {{ person["family-names"] }}
-    {% endfor %}
+## BIDS maintainers
+
+{% for person in bep.bids_maintainers %}
+-   {{ person["given-names"] }} {{ person["family-names"] }}
+{% endfor %}
 {% endif %}
+
 ## Preview
-<iframe src="{%- if bep.html_preview -%}{{ bep.html_preview }}{%- else -%}{{ bep.google_doc }}{%- endif -%}"
-        width="100%"
-        height="1024"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0">
-    Loading…
+
+<iframe
+{% if bep.html_preview %}
+    src="{{ bep.html_preview }}"
+{% else %}
+    src="{{ bep.google_doc }}"
+{% endif %}
+    width="100%"
+    height="1024"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0">
+Loading…
 </iframe>

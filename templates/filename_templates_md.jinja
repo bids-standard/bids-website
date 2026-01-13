@@ -1,8 +1,15 @@
 {% for modality in include %}
-    ### {{ modality["name"]|upper }}
-    {{ modality["description"] }}
-    {% for dt in modality["datatypes"] %}
-        #### {{ dt["name"] }}
-        {{ dt["filenames"] }}
-    {% endfor %}
+
+### {{ modality["name"]|upper }}
+
+{{ modality["description"] }}
+
+{% for dt in modality["datatypes"] %}
+
+#### {{ dt["name"] }}
+
+{{ dt["filenames"] }}
+
+{% endfor %}
+
 {% endfor %}

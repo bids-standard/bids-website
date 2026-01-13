@@ -51,9 +51,25 @@ repos:
     rev: v1.36.4
     hooks:
     -   id: djlint
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
     -   id: djlint-reformat
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
     -   id: djlint-jinja
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
     -   id: djlint-reformat-jinja
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
 
     # Check formatting of CSS
     # prettier: https://prettier.io/
