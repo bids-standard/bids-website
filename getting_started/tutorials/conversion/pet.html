@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4213,8 +4218,8 @@
   
 
 
-<h1 id="pet-data-conversion"><a class="toclink" href="#pet-data-conversion"><abbr title="Positron Imaging Tomography">PET</abbr> data conversion</a></h1>
-<h2 id="history"><a class="toclink" href="#history">History</a></h2>
+<h1 id="pet-data-conversion"><a class="toclink" href="#pet-data-conversion"><abbr title="Positron Imaging Tomography">PET</abbr> data conversion</a><a class="headerlink" href="#pet-data-conversion" title="Permanent link">&para;</a></h1>
+<h2 id="history"><a class="toclink" href="#history">History</a><a class="headerlink" href="#history" title="Permanent link">&para;</a></h2>
 <p>The <abbr title="Positron Imaging Tomography">PET</abbr> modality is an addition to <abbr title="Brain Imaging Data Structure">BIDS</abbr> with its introduction via <abbr title="BIDS Extension Proposal">BEP</abbr> 009.
 If you're interested in seeing exactly what and how something gets added to <abbr title="Brain Imaging Data Structure">BIDS</abbr>
 see the pull request for BEP009
@@ -4222,7 +4227,7 @@ see the pull request for BEP009
 The results of that extension proposal can be read
 <a href="https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/09-positron-emission-tomography.html#positron-emission-tomography">here</a>
 in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.</p>
-<h2 id="pet-image-data-file-formats"><a class="toclink" href="#pet-image-data-file-formats"><abbr title="Positron Imaging Tomography">PET</abbr> image data file formats</a></h2>
+<h2 id="pet-image-data-file-formats"><a class="toclink" href="#pet-image-data-file-formats"><abbr title="Positron Imaging Tomography">PET</abbr> image data file formats</a><a class="headerlink" href="#pet-image-data-file-formats" title="Permanent link">&para;</a></h2>
 <p>Before we start to convert data we need to quickly mention
 that <abbr title="Positron Imaging Tomography">PET</abbr> image data files come of the scanner in various different formats:
 some scanners provide DICOM files (.dcm)
@@ -4286,7 +4291,7 @@ and the <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain 
 or data from a scanner not tested,
 please reach out to <a href="https://openneuropet.github.io/">OpenNeuroPET project</a>
 in order to add a phantom scan in your format.</p>
-<h2 id="conversion"><a class="toclink" href="#conversion">Conversion</a></h2>
+<h2 id="conversion"><a class="toclink" href="#conversion">Conversion</a><a class="headerlink" href="#conversion" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://openneuropet.github.io/">OpenNeuroPET project</a> has tried to develop tools
 for facilitating easy data conversion for <abbr title="Positron Imaging Tomography">PET</abbr>.
 The main tool used for this is <a href="https://github.com/openneuropet/PET2BIDS">PET2BIDS</a>
@@ -4306,17 +4311,17 @@ In any case, for DICOM data format, one relies on
 <li>using <a href="https://github.com/openneuropet/PET2BIDS">PET2BIDS</a> and</li>
 <li>manually.</li>
 </ol>
-<h3 id="conversion-of-pet-data-using-pet2bids"><a class="toclink" href="#conversion-of-pet-data-using-pet2bids">Conversion of <abbr title="Positron Imaging Tomography">PET</abbr> data using PET2BIDS</a></h3>
+<h3 id="conversion-of-pet-data-using-pet2bids"><a class="toclink" href="#conversion-of-pet-data-using-pet2bids">Conversion of <abbr title="Positron Imaging Tomography">PET</abbr> data using PET2BIDS</a><a class="headerlink" href="#conversion-of-pet-data-using-pet2bids" title="Permanent link">&para;</a></h3>
 <p>Detailed documentation for PET2BIDS can be found
 <a href="https://pet2bids.readthedocs.io/en/latest/index.html#">here</a> or on the
 <a href="https://github.com/openneuropet/PET2BIDS/blob/main/README.md">Github repo</a>.</p>
-<h4 id="get-dcm2niix"><a class="toclink" href="#get-dcm2niix">get dcm2niix</a></h4>
+<h4 id="get-dcm2niix"><a class="toclink" href="#get-dcm2niix">get dcm2niix</a><a class="headerlink" href="#get-dcm2niix" title="Permanent link">&para;</a></h4>
 <p>Download <a href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">dcm2niix</a>,
 and for Mac and Linux users you can add it to your path,
 for instance it would could downloaded and unzipped into <code>/bin</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/home/</span><span class="nv">$USER</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </code></pre></div>
-<h4 id="for-python"><a class="toclink" href="#for-python">For Python</a></h4>
+<h4 id="for-python"><a class="toclink" href="#for-python">For Python</a><a class="headerlink" href="#for-python" title="Permanent link">&para;</a></h4>
 <p>Open your terminal, either regular or anaconda terminal and type.</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pypet2bids
 </code></pre></div>
@@ -4372,7 +4377,7 @@ and missing required fields that you need to add
 in order for the dataset to pass the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator as well (see below how that's done).
 You can always edit the <code>.json</code> file, by opening it in a text editor and manually fixing errors.
 Alternatively, adjust the meta structure you created above to correct the errors.</p>
-<h4 id="for-matlab"><a class="toclink" href="#for-matlab">For MATLAB</a></h4>
+<h4 id="for-matlab"><a class="toclink" href="#for-matlab">For MATLAB</a><a class="headerlink" href="#for-matlab" title="Permanent link">&para;</a></h4>
 <p>Download/Clone the <a href="https://github.com/openneuropet/PET2BIDS">PET2BIDS</a> GitHub repository.
 Windows users must, in addition, indicate the full path of where is the <code>dcm2niix.exe</code> in
 <a href="https://github.com/openneuropet/PET2BIDS/blob/main/matlab/dcm2niix4pet.m#L42">dcm2niix4pet.m</a>.</p>
@@ -4444,11 +4449,11 @@ and missing required fields that you need to add
 in order for the dataset to pass the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator as well (see below how that's done).</p>
 <p>You can always edit the <code>.json</code> file, by opening it in a text editor and manually fixing errors.</p>
 <p>Alternatively, adjust the meta structure you created above to correct the errors.</p>
-<h3 id="manual-conversion-of-pet-data-to-pet-bids"><a class="toclink" href="#manual-conversion-of-pet-data-to-pet-bids">Manual conversion of <abbr title="Positron Imaging Tomography">PET</abbr> data to <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr></a></h3>
+<h3 id="manual-conversion-of-pet-data-to-pet-bids"><a class="toclink" href="#manual-conversion-of-pet-data-to-pet-bids">Manual conversion of <abbr title="Positron Imaging Tomography">PET</abbr> data to <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr></a><a class="headerlink" href="#manual-conversion-of-pet-data-to-pet-bids" title="Permanent link">&para;</a></h3>
 <p>As stated above <abbr title="Positron Imaging Tomography">PET</abbr> files come of the scanner in various formats.
 In the following manual data conversion is shown for an ECAT (.v)
 as well as a DICOM (.dcm) <abbr title="Positron Imaging Tomography">PET</abbr> image dataset.</p>
-<h4 id="pet-image-data-in-ecat-format"><a class="toclink" href="#pet-image-data-in-ecat-format"><abbr title="Positron Imaging Tomography">PET</abbr> image data in ECAT format</a></h4>
+<h4 id="pet-image-data-in-ecat-format"><a class="toclink" href="#pet-image-data-in-ecat-format"><abbr title="Positron Imaging Tomography">PET</abbr> image data in ECAT format</a><a class="headerlink" href="#pet-image-data-in-ecat-format" title="Permanent link">&para;</a></h4>
 <p>Here is the structure of our starting dataset:</p>
 <div class="highlight"><pre><span></span><code>OldNotBidsPETDataSet/
 ├──<span class="w"> </span>MR_image
@@ -4467,7 +4472,7 @@ as well as a DICOM (.dcm) <abbr title="Positron Imaging Tomography">PET</abbr> i
 <p>By the end of this document our starting dataset will be fully <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant
 and similar to the dataset seen
 <a href="https://github.com/bids-standard/bids-examples/tree/master/pet001">here</a>.</p>
-<h4 id="setting-the-layout"><a class="toclink" href="#setting-the-layout">Setting the layout</a></h4>
+<h4 id="setting-the-layout"><a class="toclink" href="#setting-the-layout">Setting the layout</a><a class="headerlink" href="#setting-the-layout" title="Permanent link">&para;</a></h4>
 <p>This starter kit provides several template/example files
 that can be a great starting place to help get set up for the conversion process.
 <abbr title="Positron Imaging Tomography">PET</abbr> specific text data files can be viewed at
@@ -4628,7 +4633,7 @@ And what format should they be in?
 And there's at least 2 <code>.v</code> pet files shouldn't there be multiple sessions?</p>
 <p>Well yes, yes, and yes. but before we add more sessions/directories
 we're going to make sure we have images to place in them.</p>
-<h4 id="collecting-and-installing-tpcclib"><a class="toclink" href="#collecting-and-installing-tpcclib">Collecting and installing TPCCLIB</a></h4>
+<h4 id="collecting-and-installing-tpcclib"><a class="toclink" href="#collecting-and-installing-tpcclib">Collecting and installing TPCCLIB</a><a class="headerlink" href="#collecting-and-installing-tpcclib" title="Permanent link">&para;</a></h4>
 <p>Since our raw imaging files are in ECAT format,
 we'll be using the <code>ecat2nii</code> tool it the Turku <abbr title="Positron Imaging Tomography">PET</abbr> Center C library (<code>TPCCLIIB</code>)
 as it's very handy at converting <abbr title="Positron Imaging Tomography">PET</abbr> ECAT images into the more <abbr title="Brain Imaging Data Structure">BIDS</abbr> friendly nifti format.
@@ -5136,7 +5141,7 @@ The final results of our efforts leads us to having this final <code>*blood_.jso
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h4 id="last-pass"><a class="toclink" href="#last-pass">Last Pass</a></h4>
+<h4 id="last-pass"><a class="toclink" href="#last-pass">Last Pass</a><a class="headerlink" href="#last-pass" title="Permanent link">&para;</a></h4>
 <p>If you're thinking that we failed to document or include our T1 image
 from the start you would be correct.</p>
 <p>There are many resources documenting that process
@@ -5166,14 +5171,14 @@ your directory should look like the following:</p>
 <span class="w">            </span>├──<span class="w"> </span>sub-01_ses-testscan_recording-Manual_blood.tsv
 <span class="w">            </span>└──<span class="w"> </span>sub-01_ses-testscan_pet.nii
 </code></pre></div>
-<h2 id="validating-your-converted-pet-bids-data-set"><a class="toclink" href="#validating-your-converted-pet-bids-data-set">Validating your converted <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> data set</a></h2>
-<h3 id="installing-the-validator"><a class="toclink" href="#installing-the-validator">Installing the validator</a></h3>
+<h2 id="validating-your-converted-pet-bids-data-set"><a class="toclink" href="#validating-your-converted-pet-bids-data-set">Validating your converted <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> data set</a><a class="headerlink" href="#validating-your-converted-pet-bids-data-set" title="Permanent link">&para;</a></h2>
+<h3 id="installing-the-validator"><a class="toclink" href="#installing-the-validator">Installing the validator</a><a class="headerlink" href="#installing-the-validator" title="Permanent link">&para;</a></h3>
 <p>The above structure is a valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset,
 however the bids-validator is a much more accurate and trustworthy method
 for making that determination.
 Follow the instructions <a href="https://github.com/bids-standard/bids-validator">here</a>
 to collect and install the validator.</p>
-<h3 id="validating-your-new-dataset"><a class="toclink" href="#validating-your-new-dataset">Validating your new dataset</a></h3>
+<h3 id="validating-your-new-dataset"><a class="toclink" href="#validating-your-new-dataset">Validating your new dataset</a><a class="headerlink" href="#validating-your-new-dataset" title="Permanent link">&para;</a></h3>
 <p>Using the validator installed above in the previous step point it at your data
 and check to see if your conversion was successful:</p>
 <div class="highlight"><pre><span></span><code>machine:Projects<span class="w"> </span>user$<span class="w"> </span>bids-validator<span class="w"> </span>NewBidsDataSet/
@@ -5201,7 +5206,7 @@ from the bids-validator are <strong>invaluable</strong> during the conversion pr
 The error messages will guide you to the correct format; do not fear them.
 Running the validator during the conversion process will help to increase your familiarity
 with the specification and ensure that your data is properly formatted.</p>
-<h2 id="tools-and-resources-for-pet-conversion"><a class="toclink" href="#tools-and-resources-for-pet-conversion">Tools and resources for <abbr title="Positron Imaging Tomography">PET</abbr> conversion</a></h2>
+<h2 id="tools-and-resources-for-pet-conversion"><a class="toclink" href="#tools-and-resources-for-pet-conversion">Tools and resources for <abbr title="Positron Imaging Tomography">PET</abbr> conversion</a><a class="headerlink" href="#tools-and-resources-for-pet-conversion" title="Permanent link">&para;</a></h2>
 <p>Some useful tools and resources that have been used in this document are as
 follows:</p>
 <ul>
@@ -5233,7 +5238,7 @@ follows:</p>
     from the <a href="https://support.dcmtk.org/docs/">dcmtk</a> to help in your conversion.</p>
 </li>
 </ul>
-<h2 id="final-thoughts"><a class="toclink" href="#final-thoughts">Final thoughts</a></h2>
+<h2 id="final-thoughts"><a class="toclink" href="#final-thoughts">Final thoughts</a><a class="headerlink" href="#final-thoughts" title="Permanent link">&para;</a></h2>
 <p>As of now, <abbr title="Positron Imaging Tomography">PET</abbr> is still quite new to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard,
 but at this very moment there are people working on stream-lining data collection
 and conversion to help move <abbr title="Positron Imaging Tomography">PET</abbr> into this standard.</p>
@@ -5431,7 +5436,7 @@ Feel free to reach out to the <a href="https://openneuropet.github.io/">OpenNeur
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>

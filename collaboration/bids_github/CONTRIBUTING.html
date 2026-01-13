@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4434,7 +4439,7 @@
   
 
 
-<h1 id="contributing-to-bids"><a class="toclink" href="#contributing-to-bids">Contributing to <abbr title="Brain Imaging Data Structure">BIDS</abbr></a></h1>
+<h1 id="contributing-to-bids"><a class="toclink" href="#contributing-to-bids">Contributing to <abbr title="Brain Imaging Data Structure">BIDS</abbr></a><a class="headerlink" href="#contributing-to-bids" title="Permanent link">&para;</a></h1>
 <p>These contributing guidelines should apply
 to most, if not all, the repositories in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> github organization.</p>
 <p>Each repository may also have more specific guidelines.</p>
@@ -4443,7 +4448,7 @@ for you to get involved.
 If you have any questions that aren't discussed below,
 please let us know
 by <a href="#understanding-issues">opening an issue</a>.</p>
-<h2 id="joining-the-community"><a class="toclink" href="#joining-the-community">Joining the community</a></h2>
+<h2 id="joining-the-community"><a class="toclink" href="#joining-the-community">Joining the community</a><a class="headerlink" href="#joining-the-community" title="Permanent link">&para;</a></h2>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> - the <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure</a> -
 is a growing community of neuroimaging enthusiasts,
 and we want to make our resources accessible
@@ -4468,7 +4473,7 @@ please see this guide for setting
 your <a href="https://meta.discourse.org/t/discourse-new-user-guide/96331#heading--topic-notifications">topic notifications</a>.</p>
 <p>As a reminder,
 we expect that all contributions adhere to our <a href="CODE_OF_CONDUCT.html">Code of Conduct</a>.</p>
-<h2 id="contributing-through-github"><a class="toclink" href="#contributing-through-github">Contributing through GitHub</a></h2>
+<h2 id="contributing-through-github"><a class="toclink" href="#contributing-through-github">Contributing through GitHub</a><a class="headerlink" href="#contributing-through-github" title="Permanent link">&para;</a></h2>
 <p><a href="https://git-scm.com/">Git</a> is a really useful tool for version control.</p>
 <p><a href="https://github.com/">GitHub</a> sits on top of git and supports collaborative and
 distributed working.</p>
@@ -4482,7 +4487,7 @@ Here are some
 <a href="https://help.github.com/articles/signing-up-for-a-new-github-account/">instructions</a>
 to help you get going.
 Remember that you can ask us any questions you need to along the way.</p>
-<h2 id="understanding-issues"><a class="toclink" href="#understanding-issues">Understanding issues</a></h2>
+<h2 id="understanding-issues"><a class="toclink" href="#understanding-issues">Understanding issues</a><a class="headerlink" href="#understanding-issues" title="Permanent link">&para;</a></h2>
 <!-- TODO update link -->
 <p>Every project on GitHub uses issues slightly differently.</p>
 <p>The following outlines how <abbr title="Brain Imaging Data Structure">BIDS</abbr> developers think
@@ -4498,7 +4503,7 @@ please consider splitting it into two or more issues.</p>
 <p>Issues are assigned <a href="#issue-labels">labels</a>
 that explain how they relate to the overall project's goals
 and immediate next steps.</p>
-<h3 id="issue-labels"><a class="toclink" href="#issue-labels">Issue labels</a></h3>
+<h3 id="issue-labels"><a class="toclink" href="#issue-labels">Issue labels</a><a class="headerlink" href="#issue-labels" title="Permanent link">&para;</a></h3>
 <!-- TODO update links -->
 <p>We use issue labels in our repisotires.
 See for example those for the <a href="https://github.com/bids-standard/bids-specification/labels">bids-specification repository</a>.</p>
@@ -4528,7 +4533,7 @@ or discussions around how we can support our members
 and make it easier to contribute.</p>
 </li>
 </ul>
-<h2 id="using-pre-commit-hooks"><a class="toclink" href="#using-pre-commit-hooks">Using pre-commit hooks</a></h2>
+<h2 id="using-pre-commit-hooks"><a class="toclink" href="#using-pre-commit-hooks">Using pre-commit hooks</a><a class="headerlink" href="#using-pre-commit-hooks" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Git hook scripts are useful for identifying simple issues before submission to code review.</p>
 </blockquote>
@@ -4544,24 +4549,24 @@ pre-commit<span class="w"> </span>install
 </code></pre></div>
 <p>To uninstall the pre-commit hooks, run <code>pre-commit uninstall</code>.</p>
 <p>For more information on Git hooks and pre-commit, check the pre-commit <a href="https://pre-commit.com/">documentation</a>.</p>
-<h2 id="making-a-change-with-a-pull-request"><a class="toclink" href="#making-a-change-with-a-pull-request">Making a change with a pull request</a></h2>
-<h3 id="1-comment-on-an-existing-issue-or-open-a-new-issue-referencing-your-addition"><a class="toclink" href="#1-comment-on-an-existing-issue-or-open-a-new-issue-referencing-your-addition">1. Comment on an existing issue or open a new issue referencing your addition</a></h3>
+<h2 id="making-a-change-with-a-pull-request"><a class="toclink" href="#making-a-change-with-a-pull-request">Making a change with a pull request</a><a class="headerlink" href="#making-a-change-with-a-pull-request" title="Permanent link">&para;</a></h2>
+<h3 id="1-comment-on-an-existing-issue-or-open-a-new-issue-referencing-your-addition"><a class="toclink" href="#1-comment-on-an-existing-issue-or-open-a-new-issue-referencing-your-addition">1. Comment on an existing issue or open a new issue referencing your addition</a><a class="headerlink" href="#1-comment-on-an-existing-issue-or-open-a-new-issue-referencing-your-addition" title="Permanent link">&para;</a></h3>
 <p>This allows other members of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> team to confirm
 that you are not overlapping with work that's currently underway
 and that everyone is on the same page
 with the goal of the work you're going to carry out.</p>
-<h3 id="2-fork-this-repository-to-your-profile"><a class="toclink" href="#2-fork-this-repository-to-your-profile">2. <a href="https://help.github.com/articles/fork-a-repo/">Fork</a> <a href="https://github.com/bids-standard/bids-specification">this repository</a> to your profile</a></h3>
+<h3 id="2-fork-this-repository-to-your-profile"><a class="toclink" href="#2-fork-this-repository-to-your-profile">2. <a href="https://help.github.com/articles/fork-a-repo/">Fork</a> <a href="https://github.com/bids-standard/bids-specification">this repository</a> to your profile</a><a class="headerlink" href="#2-fork-this-repository-to-your-profile" title="Permanent link">&para;</a></h3>
 <p>This is now your own unique copy of a repository.
 Changes here won't affect anyone else's work,
 so it's a safe space to explore edits to the specification!</p>
 <p>Make sure to <a href="https://help.github.com/articles/syncing-a-fork/">keep your fork up to date</a> with the upstream repository,
 otherwise you can end up with lots of dreaded <a href="https://help.github.com/articles/about-merge-conflicts/">merge conflicts</a>.</p>
-<h3 id="3-make-the-changes-youve-discussed"><a class="toclink" href="#3-make-the-changes-youve-discussed">3. Make the changes you've discussed</a></h3>
+<h3 id="3-make-the-changes-youve-discussed"><a class="toclink" href="#3-make-the-changes-youve-discussed">3. Make the changes you've discussed</a><a class="headerlink" href="#3-make-the-changes-youve-discussed" title="Permanent link">&para;</a></h3>
 <p>Try to keep the changes focused.
 If you submit a large amount of work in all in one go,
 it will be much more work for whomever is reviewing your pull request.
 Please detail the changes you are attempting to make.</p>
-<h3 id="4-submit-a-pull-request"><a class="toclink" href="#4-submit-a-pull-request">4. Submit a <a href="https://help.github.com/articles/about-pull-requests/">pull request</a></a></h3>
+<h3 id="4-submit-a-pull-request"><a class="toclink" href="#4-submit-a-pull-request">4. Submit a <a href="https://help.github.com/articles/about-pull-requests/">pull request</a></a><a class="headerlink" href="#4-submit-a-pull-request" title="Permanent link">&para;</a></h3>
 <p>Please keep the title of your pull request short
 but informative in case it appears in a changelog.</p>
 <p>Use one of the following prefixes in the title of your pull request:</p>
@@ -4610,9 +4615,9 @@ when you make a change in response to a review.</p>
 <p>GitHub has a <a href="https://help.github.com/articles/github-flow/">nice introduction</a>
 to the pull request workflow,
 but please <a href="#get-in-touch">get in touch</a> if you have any questions.</p>
-<h2 id="example-pull-request"><a class="toclink" href="#example-pull-request">Example pull request</a></h2>
+<h2 id="example-pull-request"><a class="toclink" href="#example-pull-request">Example pull request</a><a class="headerlink" href="#example-pull-request" title="Permanent link">&para;</a></h2>
 <p><img align="center" src="https://i.imgur.com/s8yELfK.png" alt="Example-Contribution" width="800"/></p>
-<h2 id="commenting-on-a-pull-request"><a class="toclink" href="#commenting-on-a-pull-request">Commenting on a pull request</a></h2>
+<h2 id="commenting-on-a-pull-request"><a class="toclink" href="#commenting-on-a-pull-request">Commenting on a pull request</a><a class="headerlink" href="#commenting-on-a-pull-request" title="Permanent link">&para;</a></h2>
 <p>Our primary method of adding to or enhancing <abbr title="Brain Imaging Data Structure">BIDS</abbr> occurs in the form of
 <a href="https://help.github.com/articles/about-pull-requests/">pull requests</a>.</p>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposals
@@ -4620,26 +4625,26 @@ but please <a href="#get-in-touch">get in touch</a> if you have any questions.</
 are submitted as pull requests,
 and commenting on pull requests is an important way of participating in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community.</p>
 <p>This section outlines how to comment on a pull request.</p>
-<h3 id="navigating-to-open-pull-requests"><a class="toclink" href="#navigating-to-open-pull-requests">Navigating to open pull requests</a></h3>
+<h3 id="navigating-to-open-pull-requests"><a class="toclink" href="#navigating-to-open-pull-requests">Navigating to open pull requests</a><a class="headerlink" href="#navigating-to-open-pull-requests" title="Permanent link">&para;</a></h3>
 <!-- TODO update link -->
 <p>The list of pull requests can be found by clicking on the "Pull requests" tab of any repository.
 See those of the <a href="https://github.com/bids-standard/bids-specification"><abbr title="Brain Imaging Data Structure">BIDS</abbr>-Specification repository</a>.</p>
 <p><img alt="BIDS-mainpage" src="commenting_images/BIDS_GitHub_mainpage.png" title="BIDS_GitHub_mainpage" /></p>
-<h3 id="selecting-an-open-pull-request"><a class="toclink" href="#selecting-an-open-pull-request">Selecting an open pull request</a></h3>
+<h3 id="selecting-an-open-pull-request"><a class="toclink" href="#selecting-an-open-pull-request">Selecting an open pull request</a><a class="headerlink" href="#selecting-an-open-pull-request" title="Permanent link">&para;</a></h3>
 <p>In this example we will be navigating to the
 <a href="https://github.com/bids-standard/bids-specification/pull/265"><abbr title="Brain Imaging Data Structure">BIDS</abbr> common derivatives pull request</a>.</p>
 <p><img alt="BIDS-pr-list" src="commenting_images/BIDS_pr_list.png" title="BIDS_pr_list" /></p>
-<h3 id="pull-request-description"><a class="toclink" href="#pull-request-description">Pull request description</a></h3>
+<h3 id="pull-request-description"><a class="toclink" href="#pull-request-description">Pull request description</a><a class="headerlink" href="#pull-request-description" title="Permanent link">&para;</a></h3>
 <p>Upon opening the pull request we see a detailed description
 of what this pull request is seeking to address.
 Descriptions are important for reviewers and the community
 to gain context into what the pull request is achieving.</p>
 <p><img alt="BIDS-pr" src="commenting_images/BIDS_pr.png" title="BIDS_pr" /></p>
-<h3 id="generally-commenting-on-a-pull-request"><a class="toclink" href="#generally-commenting-on-a-pull-request">Generally commenting on a pull request</a></h3>
+<h3 id="generally-commenting-on-a-pull-request"><a class="toclink" href="#generally-commenting-on-a-pull-request">Generally commenting on a pull request</a><a class="headerlink" href="#generally-commenting-on-a-pull-request" title="Permanent link">&para;</a></h3>
 <p>At the bottom of the pull request page,
 a comment box is provided for general comments and questions.</p>
 <p><img alt="BIDS-comment" src="commenting_images/BIDS_comment.png" title="BIDS-comment" /></p>
-<h3 id="specific-comments-on-a-pull-request"><a class="toclink" href="#specific-comments-on-a-pull-request">Specific comments on a pull request</a></h3>
+<h3 id="specific-comments-on-a-pull-request"><a class="toclink" href="#specific-comments-on-a-pull-request">Specific comments on a pull request</a><a class="headerlink" href="#specific-comments-on-a-pull-request" title="Permanent link">&para;</a></h3>
 <p>The proposed changes to the text of the specification
 can be seen in the "Files changed" tab.
 Proposed additions are displayed on a green background with a <code>+</code>
@@ -4650,7 +4655,7 @@ To comment on a specific line,
 hover over it and click the blue plus sign (pictured below).
 Multiple lines can be selected by clicking and dragging the plus sign.</p>
 <p><img alt="BIDS-specific-comment" src="commenting_images/BIDS_file_comment.png" title="BIDS-specific-comment" /></p>
-<h4 id="suggesting-text"><a class="toclink" href="#suggesting-text">Suggesting text</a></h4>
+<h4 id="suggesting-text"><a class="toclink" href="#suggesting-text">Suggesting text</a><a class="headerlink" href="#suggesting-text" title="Permanent link">&para;</a></h4>
 <p>Comments on lines can contain "suggestions",
 which allow you to propose specific wording for consideration.
 To make a suggestion, click the plus/minus (±) icon
@@ -4669,7 +4674,7 @@ between the original text and your suggestion.</p>
 Several comments may be grouped by clicking "Start a review".
 As more comments are written, accept them with "Add review comment",
 and submit your review comments as a batch by clicking the "Finish your review" button.</p>
-<h2 id="accepting-suggestion-from-a-review"><a class="toclink" href="#accepting-suggestion-from-a-review">Accepting suggestion from a review</a></h2>
+<h2 id="accepting-suggestion-from-a-review"><a class="toclink" href="#accepting-suggestion-from-a-review">Accepting suggestion from a review</a><a class="headerlink" href="#accepting-suggestion-from-a-review" title="Permanent link">&para;</a></h2>
 <p>When others are making <a href="#suggesting-text">suggestions to your pull request</a>,
 you have the possibility to accept directly the changes
 suggested during the review through the github interface.
@@ -4693,7 +4698,7 @@ as a single commit.</p>
 <p>Once those suggestions are committed the commit information should mention the
 reviewer as a co-author.</p>
 <p><img alt="BIDS_pr_reviewer_credit" src="commenting_images/BIDS_pr_reviewer_credit.png" title="BIDS_pr_reviewer_credit" /></p>
-<h2 id="recognizing-contributions"><a class="toclink" href="#recognizing-contributions">Recognizing contributions</a></h2>
+<h2 id="recognizing-contributions"><a class="toclink" href="#recognizing-contributions">Recognizing contributions</a><a class="headerlink" href="#recognizing-contributions" title="Permanent link">&para;</a></h2>
 <p>We aim to follow the <a href="https://allcontributors.org/docs/en/specification">allContributors specification</a>,
 so we welcome and recognize a broad list of contributions types
 from documentation to testing to code development.</p>
@@ -4727,7 +4732,7 @@ from documentation to testing to code development.</p>
 <p>For more ideas of what constitute a contribution,
 see the <a href="https://allcontributors.org/docs/en/emoji-key">list of Emoji used by the allContributors project</a>
 to categorize contributions.</p>
-<h3 id="adding-yourself-as-a-bids-contributor"><a class="toclink" href="#adding-yourself-as-a-bids-contributor">Adding yourself as a <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributor</a></h3>
+<h3 id="adding-yourself-as-a-bids-contributor"><a class="toclink" href="#adding-yourself-as-a-bids-contributor">Adding yourself as a <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributor</a><a class="headerlink" href="#adding-yourself-as-a-bids-contributor" title="Permanent link">&para;</a></h3>
 <p>If you have made any type of contributions to <abbr title="Brain Imaging Data Structure">BIDS</abbr>,
 we encourage you to enter or update your information in the
 <a href="https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors">Contributors wiki page</a>
@@ -4739,11 +4744,11 @@ to elect new members of the <abbr title="Brain Imaging Data Structure">BIDS</abb
 So by contributing to <abbr title="Brain Imaging Data Structure">BIDS</abbr> and making sure your contribution is listed,
 you can also ensure your voice is heard with regards to where <abbr title="Brain Imaging Data Structure">BIDS</abbr> is going.</p>
 </div>
-<h3 id="list-of-bids-contributors"><a class="toclink" href="#list-of-bids-contributors">List of <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributors</a></h3>
+<h3 id="list-of-bids-contributors"><a class="toclink" href="#list-of-bids-contributors">List of <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributors</a><a class="headerlink" href="#list-of-bids-contributors" title="Permanent link">&para;</a></h3>
 <p>You can see a list of contributors in the
 <a href="https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html">contributors appendix</a>
 of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.</p>
-<h2 id="thank-you"><a class="toclink" href="#thank-you">Thank you!</a></h2>
+<h2 id="thank-you"><a class="toclink" href="#thank-you">Thank you!</a><a class="headerlink" href="#thank-you" title="Permanent link">&para;</a></h2>
 <p>You're awesome.</p>
 <!-- tool tips  -->
 
@@ -4935,7 +4940,7 @@ of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>

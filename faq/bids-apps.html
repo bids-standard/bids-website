@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4191,7 +4196,7 @@
   
 
 
-<h1 id="bids-apps"><a class="toclink" href="#bids-apps"><abbr title="Brain Imaging Data Structure">BIDS</abbr> apps</a></h1>
+<h1 id="bids-apps"><a class="toclink" href="#bids-apps"><abbr title="Brain Imaging Data Structure">BIDS</abbr> apps</a><a class="headerlink" href="#bids-apps" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Make sure to check out the <a href="https://www.nipreps.org/">nipreps website</a>
@@ -4202,38 +4207,38 @@ for more information on using and creating <abbr title="Brain Imaging Data Struc
 <p>If you are developing a <abbr title="Brain Imaging Data Structure">BIDS</abbr> app,
 make sure to check the <a href="https://bids-standard.github.io/execution-spec/"><abbr title="Brain Imaging Data Structure">BIDS</abbr> apps specification</a>.</p>
 </div>
-<h2 id="for-users"><a class="toclink" href="#for-users">For users</a></h2>
-<h3 id="how-can-i-check-a-version-of-a-container-i-have-available-locally"><a class="toclink" href="#how-can-i-check-a-version-of-a-container-i-have-available-locally">How can I check a version of a container I have available locally?</a></h3>
+<h2 id="for-users"><a class="toclink" href="#for-users">For users</a><a class="headerlink" href="#for-users" title="Permanent link">&para;</a></h2>
+<h3 id="how-can-i-check-a-version-of-a-container-i-have-available-locally"><a class="toclink" href="#how-can-i-check-a-version-of-a-container-i-have-available-locally">How can I check a version of a container I have available locally?</a><a class="headerlink" href="#how-can-i-check-a-version-of-a-container-i-have-available-locally" title="Permanent link">&para;</a></h3>
 <p>For many bids-app you should be able to run something like:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>bids/example<span class="w"> </span>--version
 </code></pre></div>
 <p>Inside each <abbr title="Brain Imaging Data Structure">BIDS</abbr> App there is a <code>/version</code> file with the version number.</p>
 <p>This file is automatically populated with tag used to trigger the build on the CI server.</p>
-<h2 id="how-can-i-download-a-particular-version-of-a-bids-app"><a class="toclink" href="#how-can-i-download-a-particular-version-of-a-bids-app">How can I download a particular version of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App?</a></h2>
+<h2 id="how-can-i-download-a-particular-version-of-a-bids-app"><a class="toclink" href="#how-can-i-download-a-particular-version-of-a-bids-app">How can I download a particular version of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App?</a><a class="headerlink" href="#how-can-i-download-a-particular-version-of-a-bids-app" title="Permanent link">&para;</a></h2>
 <p>All versions of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps are archived on Docker Hub. To access a particular
 version you should refer to a specific Docker Hub tag. For example:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>bids/example:v0.0.5
 </code></pre></div>
-<h2 id="what-do-the-analysis-levels-participant-and-group-mean"><a class="toclink" href="#what-do-the-analysis-levels-participant-and-group-mean">What do the analysis levels (<code>participant</code> and <code>group</code>) mean?</a></h2>
+<h2 id="what-do-the-analysis-levels-participant-and-group-mean"><a class="toclink" href="#what-do-the-analysis-levels-participant-and-group-mean">What do the analysis levels (<code>participant</code> and <code>group</code>) mean?</a><a class="headerlink" href="#what-do-the-analysis-levels-participant-and-group-mean" title="Permanent link">&para;</a></h2>
 <p>Generally, <code>participant</code> means individual level analysis (for instance: single subject).
 The <code>group</code> level analysis can be thought of as the second step,
 where the input becomes the output of the <code>participant</code> level analysis.</p>
 <p>For example, generating statistic maps of each subject's brain could be considered <code>participant</code>,
 while generating the average of these maps across the dataset could be considered <code>group</code>.</p>
-<h2 id="for-developers"><a class="toclink" href="#for-developers">For developers</a></h2>
-<h3 id="getting-started"><a class="toclink" href="#getting-started">Getting started</a></h3>
-<h4 id="is-there-a-bids-app-template"><a class="toclink" href="#is-there-a-bids-app-template">Is there a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App template?</a></h4>
+<h2 id="for-developers"><a class="toclink" href="#for-developers">For developers</a><a class="headerlink" href="#for-developers" title="Permanent link">&para;</a></h2>
+<h3 id="getting-started"><a class="toclink" href="#getting-started">Getting started</a><a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
+<h4 id="is-there-a-bids-app-template"><a class="toclink" href="#is-there-a-bids-app-template">Is there a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App template?</a><a class="headerlink" href="#is-there-a-bids-app-template" title="Permanent link">&para;</a></h4>
 <p>Have a look at the
 <a href="https://github.com/bids-apps/example">example <abbr title="Brain Imaging Data Structure">BIDS</abbr> App repository</a>.
 A minimalist example of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App consisting of a Dockerfile
 and a simple entry point script (written in this case in Python)
 accepting the standard <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps command line arguments.</p>
-<h4 id="which-container-should-i-use-to-start-building-my-app"><a class="toclink" href="#which-container-should-i-use-to-start-building-my-app">Which container should I use to start building my app?</a></h4>
+<h4 id="which-container-should-i-use-to-start-building-my-app"><a class="toclink" href="#which-container-should-i-use-to-start-building-my-app">Which container should I use to start building my app?</a><a class="headerlink" href="#which-container-should-i-use-to-start-building-my-app" title="Permanent link">&para;</a></h4>
 <p>The only minimum requirements of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App's container is its ability to run your pipeline.
 So for example, if your App is mostly Python based it should be sufficient
 to start with any image that has Python and include your environment dependencies.</p>
-<h3 id="api"><a class="toclink" href="#api">API</a></h3>
-<h4 id="what-should-the-api-of-my-bids-app-look-like"><a class="toclink" href="#what-should-the-api-of-my-bids-app-look-like">What should the API of my <abbr title="Brain Imaging Data Structure">BIDS</abbr> App look like?</a></h4>
+<h3 id="api"><a class="toclink" href="#api">API</a><a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<h4 id="what-should-the-api-of-my-bids-app-look-like"><a class="toclink" href="#what-should-the-api-of-my-bids-app-look-like">What should the API of my <abbr title="Brain Imaging Data Structure">BIDS</abbr> App look like?</a><a class="headerlink" href="#what-should-the-api-of-my-bids-app-look-like" title="Permanent link">&para;</a></h4>
 <p>The obligatory arguments of the API of any <abbr title="Brain Imaging Data Structure">BIDS</abbr> App are:</p>
 <ul>
 <li><code>bids_dir</code></li>
@@ -4243,46 +4248,46 @@ to start with any image that has Python and include your environment dependencie
 <p>with an API call that would look like this:</p>
 <div class="highlight"><pre><span></span><code>app_name<span class="w"> </span>bids_dir<span class="w"> </span>output_dir<span class="w"> </span>analysis_level
 </code></pre></div>
-<h4 id="what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis"><a class="toclink" href="#what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis">What do we do if my application does not have any use for the group level analysis?</a></h4>
+<h4 id="what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis"><a class="toclink" href="#what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis">What do we do if my application does not have any use for the group level analysis?</a><a class="headerlink" href="#what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis" title="Permanent link">&para;</a></h4>
 <p>If your pipeline has no need for group level analysis,
 it is fine if it is only valid for the analysis_level argument
 (see <a href="https://fmriprep.readthedocs.io/en/latest/usage.html">fmriprep</a>).</p>
-<h4 id="can-i-add-more-arguments-to-the-api-of-my-app"><a class="toclink" href="#can-i-add-more-arguments-to-the-api-of-my-app">Can I add more arguments to the API of my App?</a></h4>
+<h4 id="can-i-add-more-arguments-to-the-api-of-my-app"><a class="toclink" href="#can-i-add-more-arguments-to-the-api-of-my-app">Can I add more arguments to the API of my App?</a><a class="headerlink" href="#can-i-add-more-arguments-to-the-api-of-my-app" title="Permanent link">&para;</a></h4>
 <p>Every <abbr title="Brain Imaging Data Structure">BIDS</abbr> App must use the mandatory arguments mentioned above,
 but you are free to add more that are specific to the task your App will perform.</p>
 <p>We recommend you follow the guidelines mentioned in the <a href="https://bids-standard.github.io/execution-spec/"><abbr title="Brain Imaging Data Structure">BIDS</abbr> apps specification</a>
 for more information on specifying the API of your App.</p>
-<h3 id="testing"><a class="toclink" href="#testing">Testing</a></h3>
-<h4 id="where-can-i-can-get-data-to-test-my-app"><a class="toclink" href="#where-can-i-can-get-data-to-test-my-app">Where can I can get data to test my app?</a></h4>
+<h3 id="testing"><a class="toclink" href="#testing">Testing</a><a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
+<h4 id="where-can-i-can-get-data-to-test-my-app"><a class="toclink" href="#where-can-i-can-get-data-to-test-my-app">Where can I can get data to test my app?</a><a class="headerlink" href="#where-can-i-can-get-data-to-test-my-app" title="Permanent link">&para;</a></h4>
 <p>For both lightweight and full datasets to test your <abbr title="Brain Imaging Data Structure">BIDS</abbr> App, you can choose
 from one of these
 <a href="https://bids-standard.github.io/bids-starter-kit/dataset_examples.html">example datasets</a></p>
-<h4 id="is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator"><a class="toclink" href="#is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator">Is it mandatory to first check the dataset validity using the <abbr title="Brain Imaging Data Structure">BIDS</abbr>-validator?</a></h4>
+<h4 id="is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator"><a class="toclink" href="#is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator">Is it mandatory to first check the dataset validity using the <abbr title="Brain Imaging Data Structure">BIDS</abbr>-validator?</a><a class="headerlink" href="#is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator" title="Permanent link">&para;</a></h4>
 <p>It is an extremely helpful feature to have validation of the dataset as part of your tool.
 However, it's not considered mandatory.
 For instance: many Apps will simply fail with an error message if the dataset is not <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant.</p>
-<h3 id="version"><a class="toclink" href="#version">Version</a></h3>
-<h4 id="how-should-i-version-my-bids-app"><a class="toclink" href="#how-should-i-version-my-bids-app">How should I version my <abbr title="Brain Imaging Data Structure">BIDS</abbr> App?</a></h4>
+<h3 id="version"><a class="toclink" href="#version">Version</a><a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
+<h4 id="how-should-i-version-my-bids-app"><a class="toclink" href="#how-should-i-version-my-bids-app">How should I version my <abbr title="Brain Imaging Data Structure">BIDS</abbr> App?</a><a class="headerlink" href="#how-should-i-version-my-bids-app" title="Permanent link">&para;</a></h4>
 <p>Since most <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps are just thin wrappers around existing pipelines it would
 be most sensible to use the same version as the software they are wrapping.</p>
 <p>For example in case of HCP Pipelines this would be <code>v3.17.0</code>.</p>
-<h4 id="how-to-tag-a-new-release"><a class="toclink" href="#how-to-tag-a-new-release">How to tag a new release?</a></h4>
+<h4 id="how-to-tag-a-new-release"><a class="toclink" href="#how-to-tag-a-new-release">How to tag a new release?</a><a class="headerlink" href="#how-to-tag-a-new-release" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>v0.0.1
 git<span class="w"> </span>push
 </code></pre></div>
-<h4 id="i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same"><a class="toclink" href="#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same">I want to release a new version of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App, but the pipeline version is the same?</a></h4>
+<h4 id="i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same"><a class="toclink" href="#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same">I want to release a new version of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App, but the pipeline version is the same?</a><a class="headerlink" href="#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same" title="Permanent link">&para;</a></h4>
 <p>This can happen when only the runscript or the Dockerfile changed?
 According to semantic versioning we should use the <code>+</code> signed followed by the build number.
 Unfortunately Docker Hub does not support semantic versioning.
 The best option is to use the <code>-</code> sign followed by the build number.
 For example <code>v3.17.0-3</code>.</p>
-<h4 id="where-should-i-describe-changes-between-versions"><a class="toclink" href="#where-should-i-describe-changes-between-versions">Where should I describe changes between versions?</a></h4>
+<h4 id="where-should-i-describe-changes-between-versions"><a class="toclink" href="#where-should-i-describe-changes-between-versions">Where should I describe changes between versions?</a><a class="headerlink" href="#where-should-i-describe-changes-between-versions" title="Permanent link">&para;</a></h4>
 <p>After tagging a new release it is important to provide a list of changes
 on the GitHub Releases page.</p>
 <p>It accepts markdown syntax and allows you to explain in detail what has changed.</p>
 <p>Here's an <a href="https://github.com/bids-apps/example/releases">example</a>.</p>
-<h3 id="deploying"><a class="toclink" href="#deploying">Deploying</a></h3>
-<h4 id="how-do-i-upload-my-bids-app-to-the-bids-app-github-org"><a class="toclink" href="#how-do-i-upload-my-bids-app-to-the-bids-app-github-org">How do I upload my <abbr title="Brain Imaging Data Structure">BIDS</abbr> App to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> App Github org?</a></h4>
+<h3 id="deploying"><a class="toclink" href="#deploying">Deploying</a><a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h3>
+<h4 id="how-do-i-upload-my-bids-app-to-the-bids-app-github-org"><a class="toclink" href="#how-do-i-upload-my-bids-app-to-the-bids-app-github-org">How do I upload my <abbr title="Brain Imaging Data Structure">BIDS</abbr> App to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> App Github org?</a><a class="headerlink" href="#how-do-i-upload-my-bids-app-to-the-bids-app-github-org" title="Permanent link">&para;</a></h4>
 <p>You can release <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps using your own or your lab's account.
 However, if you want to be added to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> docker hub,
 please message the <a href="mailto:bids.maintenance+apps@gmail.com"><abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers</a>
@@ -4292,7 +4297,7 @@ on docker hub will happen automatically via Circle-ci.</p>
 <p>If you want your App to show on the <a href="https://bids.neuroimaging.io/tools/bids-apps.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> website</a>,
 you will have to update the <code>data/tools/apps.yml</code> in the
 <a href="https://github.com/bids-standard/bids-website/tree/main"><abbr title="Brain Imaging Data Structure">BIDS</abbr> website repository</a>.</p>
-<h4 id="when-is-a-new-image-deposited-to-docker-hub"><a class="toclink" href="#when-is-a-new-image-deposited-to-docker-hub">When is a new image deposited to Docker Hub?</a></h4>
+<h4 id="when-is-a-new-image-deposited-to-docker-hub"><a class="toclink" href="#when-is-a-new-image-deposited-to-docker-hub">When is a new image deposited to Docker Hub?</a><a class="headerlink" href="#when-is-a-new-image-deposited-to-docker-hub" title="Permanent link">&para;</a></h4>
 <p>Even though Docker image is being build on the CI server each time
 you push a commit to the repository it is not automatically being pushed to Docker Hub.
 Only if you tag a commit, push the tag to GitHub,
@@ -4487,7 +4492,7 @@ and the tests you configured pass a new image will be deposited in Docker Hub.</
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

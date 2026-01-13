@@ -186,6 +186,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4176,7 +4181,7 @@
   
 
 
-<h1 id="bids-validator-20"><a class="toclink" href="#bids-validator-20"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator 2.0</a></h1>
+<h1 id="bids-validator-20"><a class="toclink" href="#bids-validator-20"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator 2.0</a><a class="headerlink" href="#bids-validator-20" title="Permanent link">&para;</a></h1>
 <p>We are pleased to announce the release of version 2.0 of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator.</p>
 <p>In the last few months, you may have noticed changes to the validator available at
 <a href="https://bids-standard.github.io/bids-validator/">https://bids-standard.github.io/bids-validator/</a>, including the look and feel of the
@@ -4185,7 +4190,7 @@ and a link to a "legacy validator".
 In this blog post, we'll explain what all this means and how to use the new validator.</p>
 <!-- more -->
 
-<h2 id="background"><a class="toclink" href="#background">Background</a></h2>
+<h2 id="background"><a class="toclink" href="#background">Background</a><a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
 <p>One of the primary goals of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator was to make it easy to validate a <abbr title="Brain Imaging Data Structure">BIDS</abbr>
 dataset, regardless of the user's operating system. By using Javascript and hosting a web
 app that ran entirely in the user's browser, we were able to achieve this goal without
@@ -4197,7 +4202,7 @@ R and MATLAB (and to some extent C/C++), and relatively few researchers have muc
 with Javascript. As a result, as <abbr title="Brain Imaging Data Structure">BIDS</abbr> grew with <abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposals (<abbr title="BIDS Extension Proposals">BEPs</abbr>), updating the
 validator to support the new data types and enforce the new rules became a consistent
 bottleneck.</p>
-<h3 id="the-bids-schema"><a class="toclink" href="#the-bids-schema">The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema</a></h3>
+<h3 id="the-bids-schema"><a class="toclink" href="#the-bids-schema">The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema</a><a class="headerlink" href="#the-bids-schema" title="Permanent link">&para;</a></h3>
 <p>In the summer of 2021, the <abbr title="Brain Imaging Data Structure">BIDS</abbr> <a href="https://bids.neuroimaging.io/governance.html#bids-steering-group">Steering Group</a> approved the development of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema,
 a project to encode as much of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Standard as possible in declarative,
 machine-readable rules, and to rewrite the validator to use the schema to enforce the rules.
@@ -4223,7 +4228,7 @@ and the schema itself may be found at
 <a href="https://bids-specification.readthedocs.io/en/latest/schema.json">https://bids-specification.readthedocs.io/en/latest/schema.json</a>.
 (Replace <code>latest</code> with a particular version, for example,
 <code>v1.10.0</code>, to find a snapshot of the schema at the time of that release.)</p>
-<h2 id="the-schema-validator"><a class="toclink" href="#the-schema-validator">The Schema Validator</a></h2>
+<h2 id="the-schema-validator"><a class="toclink" href="#the-schema-validator">The Schema Validator</a><a class="headerlink" href="#the-schema-validator" title="Permanent link">&para;</a></h2>
 <p>The schema validator is now feature complete, validating file names,
 <abbr title="JavaScript Object Notation">JSON</abbr> file fields and values, <abbr title="Tab Separated Values">TSV</abbr> file column names and values,
 and various <a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/checks/">checks</a> that have been written in the schema expression language.</p>
@@ -4235,7 +4240,7 @@ or download the <a href="https://deno.com">Deno</a> Javascript runtime and run:<
 the structure of <abbr title="JavaScript Object Notation">JSON</abbr> configuration files and <abbr title="JavaScript Object Notation">JSON</abbr> outputs
 (triggered by the <code>--json</code> flag) have changed their formats.
 Advanced users may need to update their tooling on either end.</p>
-<h3 id="new-features"><a class="toclink" href="#new-features">New features</a></h3>
+<h3 id="new-features"><a class="toclink" href="#new-features">New features</a><a class="headerlink" href="#new-features" title="Permanent link">&para;</a></h3>
 <p>The schema validator includes features that were never implemented in the
 legacy validator:</p>
 <ul>
@@ -4249,7 +4254,7 @@ legacy validator:</p>
     introduced in <abbr title="Brain Imaging Data Structure">BIDS</abbr> 1.10.0.</p>
 </li>
 </ul>
-<h3 id="behavior-changes"><a class="toclink" href="#behavior-changes">Behavior changes</a></h3>
+<h3 id="behavior-changes"><a class="toclink" href="#behavior-changes">Behavior changes</a><a class="headerlink" href="#behavior-changes" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>The <a href="https://bids-specification.readthedocs.io/en/latest/common-principles.html#the-inheritance-principle">inheritance principle</a> is consistently applied for all files.
@@ -4278,13 +4283,13 @@ to the utility of <abbr title="Brain Imaging Data Structure">BIDS</abbr> and the
 We hope that a consistent validator will help inform future changes to <abbr title="Brain Imaging Data Structure">BIDS</abbr>,
 so that the specification can get closer to the needs and preferences
 of the community.</p>
-<h3 id="development-validator"><a class="toclink" href="#development-validator">Development validator</a></h3>
+<h3 id="development-validator"><a class="toclink" href="#development-validator">Development validator</a><a class="headerlink" href="#development-validator" title="Permanent link">&para;</a></h3>
 <p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator tracks the latest release of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification (currently <a href="https://bids-specification.readthedocs.io/en/v1.10.0/">v1.10.0</a>).
 As the next release of <abbr title="Brain Imaging Data Structure">BIDS</abbr> is developed, changes to the schema or the validator may be
 tested at <a href="https://bids-standard.github.io/bids-validator/dev/">https://bids-standard.github.io/bids-validator/dev/</a>.</p>
 <p>Note that any changes in this validator may be reverted prior to the next release of <abbr title="Brain Imaging Data Structure">BIDS</abbr>.
 Command-line use of the development validator is not currently supported.</p>
-<h3 id="updated-documentation"><a class="toclink" href="#updated-documentation">Updated documentation</a></h3>
+<h3 id="updated-documentation"><a class="toclink" href="#updated-documentation">Updated documentation</a><a class="headerlink" href="#updated-documentation" title="Permanent link">&para;</a></h3>
 <p>The original <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator had limited documentation,
 primarily a README that was replicated on GitHub and <a href="https://www.npmjs.com/package/bids-validator">NPM</a>.
 For the 2.0 release of the validator, we've added documentation at
@@ -4296,8 +4301,8 @@ Our goal is to demystify the validator and the <abbr title="Brain Imaging Data S
 developers to adapt and reuse the tools we've built.</p>
 <p>This site is under active development, and will be updated frequently in the
 coming weeks. Please help us improve it by opening issues (or PRs)!</p>
-<h2 id="questions"><a class="toclink" href="#questions">Questions</a></h2>
-<h3 id="q1-my-dataset-was-valid-with-the-old-validator-but-it-is-not-anymore-why-which-one-should-i-trust"><a class="toclink" href="#q1-my-dataset-was-valid-with-the-old-validator-but-it-is-not-anymore-why-which-one-should-i-trust">Q1. My dataset was valid with the old validator but it is not anymore. Why? Which one should I trust?</a></h3>
+<h2 id="questions"><a class="toclink" href="#questions">Questions</a><a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
+<h3 id="q1-my-dataset-was-valid-with-the-old-validator-but-it-is-not-anymore-why-which-one-should-i-trust"><a class="toclink" href="#q1-my-dataset-was-valid-with-the-old-validator-but-it-is-not-anymore-why-which-one-should-i-trust">Q1. My dataset was valid with the old validator but it is not anymore. Why? Which one should I trust?</a><a class="headerlink" href="#q1-my-dataset-was-valid-with-the-old-validator-but-it-is-not-anymore-why-which-one-should-i-trust" title="Permanent link">&para;</a></h3>
 <p>The validator has been completely reimplemented and shares no code with the
 original validator. A new failure could mean a bug in the new validator, but
 it is more likely to indicate a blind spot in the legacy validator. For
@@ -4305,7 +4310,7 @@ example, the legacy validator spot-checked many <abbr title="JavaScript Object N
 code; in contrast, the schema validator systematically checks every sidecar
 field for applicability, and validates the types of the values according to the
 definitions in the schema.</p>
-<h3 id="q2-can-i-continue-using-the-legacy-validator"><a class="toclink" href="#q2-can-i-continue-using-the-legacy-validator">Q2. Can I continue using the legacy validator?</a></h3>
+<h3 id="q2-can-i-continue-using-the-legacy-validator"><a class="toclink" href="#q2-can-i-continue-using-the-legacy-validator">Q2. Can I continue using the legacy validator?</a><a class="headerlink" href="#q2-can-i-continue-using-the-legacy-validator" title="Permanent link">&para;</a></h3>
 <p>Yes, but there are no plans to continue maintaining the legacy validator.
 Its behavior will inevitably diverge further from that of the schema validator,
 and eventually it will be difficult to get the validator to run,
@@ -4313,12 +4318,12 @@ as the Node.js ecosystem moves on.
 The Docker images will continue to work for longer.</p>
 <p>We recommend migrating to the schema validator sooner than later,
 and report any bugs you find in the process.</p>
-<h3 id="q3-where-should-i-report-bugs"><a class="toclink" href="#q3-where-should-i-report-bugs">Q3. Where should I report bugs?</a></h3>
+<h3 id="q3-where-should-i-report-bugs"><a class="toclink" href="#q3-where-should-i-report-bugs">Q3. Where should I report bugs?</a><a class="headerlink" href="#q3-where-should-i-report-bugs" title="Permanent link">&para;</a></h3>
 <p>The same place as ever: <a href="https://github.com/bids-standard/bids-validator/issues">https://github.com/bids-standard/bids-validator/issues</a></p>
 <p>Note that in some cases the fixes for the bugs will be in the specification
 itself, as the bug may be in the schema-defined rules that the validator is
 applying.</p>
-<h3 id="q4-what-about-the-docker-image"><a class="toclink" href="#q4-what-about-the-docker-image">Q4. What about the Docker image?</a></h3>
+<h3 id="q4-what-about-the-docker-image"><a class="toclink" href="#q4-what-about-the-docker-image">Q4. What about the Docker image?</a><a class="headerlink" href="#q4-what-about-the-docker-image" title="Permanent link">&para;</a></h3>
 <p>The <a href="https://hub.docker.com/r/bids/validator/">bids/validator</a> image
 still contains the legacy validator, as of version 1.15.0.
 Compared to Node.js, the Deno runtime removes most of the complicated parts
@@ -4332,12 +4337,12 @@ dataset, but can also be used with:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>--platform<span class="w"> </span>linux/amd64<span class="w"> </span>-v<span class="w"> </span><span class="nv">$DATASET</span>:/data<span class="w"> </span>bids/base_validator<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>bids-validator<span class="w"> </span>/data
 </code></pre></div>
-<h2 id="some-technical-details"><a class="toclink" href="#some-technical-details">Some technical details</a></h2>
+<h2 id="some-technical-details"><a class="toclink" href="#some-technical-details">Some technical details</a><a class="headerlink" href="#some-technical-details" title="Permanent link">&para;</a></h2>
 <p>In this section, we lay out some details that are probably not of general interest,
 but could be useful for understanding the changes to validator behavior,
 the validation resources available, and the planned maintenance levels.</p>
-<h3 id="evolution-of-the-specification-and-validators"><a class="toclink" href="#evolution-of-the-specification-and-validators">Evolution of the specification and validators</a></h3>
-<h4 id="in-the-beginning"><a class="toclink" href="#in-the-beginning">In the beginning…</a></h4>
+<h3 id="evolution-of-the-specification-and-validators"><a class="toclink" href="#evolution-of-the-specification-and-validators">Evolution of the specification and validators</a><a class="headerlink" href="#evolution-of-the-specification-and-validators" title="Permanent link">&para;</a></h3>
+<h4 id="in-the-beginning"><a class="toclink" href="#in-the-beginning">In the beginning…</a><a class="headerlink" href="#in-the-beginning" title="Permanent link">&para;</a></h4>
 <figure>
 
 <pre class="mermaid"><code>graph LR;
@@ -4395,7 +4400,7 @@ change-tracking and contribution to the specification more transparent.
 </caption>
 </figure>
 
-<h4 id="v1146"><a class="toclink" href="#v1146">v1.14.6</a></h4>
+<h4 id="v1146"><a class="toclink" href="#v1146">v1.14.6</a><a class="headerlink" href="#v1146" title="Permanent link">&para;</a></h4>
 <figure>
 
 <pre class="mermaid"><code>graph LR;
@@ -4439,7 +4444,7 @@ canonical <code>schema.json</code> file that can be reused.</p>
 <p>In the <a href="https://github.com/bids-standard/bids-validator">bids-standard/bids-validator</a> repository, the Python and Javascript validators have
 continued to coexist, along with a new validator that is written to apply the
 schema, and targeting the <a href="https://deno.com">Deno</a> Javascript runtime.</p>
-<h4 id="v1147"><a class="toclink" href="#v1147">v1.14.7</a></h4>
+<h4 id="v1147"><a class="toclink" href="#v1147">v1.14.7</a><a class="headerlink" href="#v1147" title="Permanent link">&para;</a></h4>
 <figure>
 
 <pre class="mermaid"><code>graph LR;
@@ -4479,7 +4484,7 @@ shared regular expressions was removed.
 on the <a href="https://bidsschematools.readthedocs.io/en/latest/">bidsschematools</a> package, and no longer uses the hand-written
 regular expressions. At this point, the filename validation of the Python
 validator matches that of the Deno (schema) validator.</p>
-<h4 id="v1148"><a class="toclink" href="#v1148">v1.14.8</a></h4>
+<h4 id="v1148"><a class="toclink" href="#v1148">v1.14.8</a><a class="headerlink" href="#v1148" title="Permanent link">&para;</a></h4>
 <figure>
 
 <pre class="mermaid"><code>graph LR;
@@ -4524,7 +4529,7 @@ Its development, if any takes place, will be independent of
 the Javascript validator(s).
 Its filename validation will be updated with new releases of <a href="https://bidsschematools.readthedocs.io/en/latest/">bidsschematools</a>.</p>
 <p>The legacy validator was moved to <a href="https://bids-standard.github.io/bids-validator/legacy/">https://bids-standard.github.io/bids-validator/legacy/</a>.</p>
-<h4 id="v20"><a class="toclink" href="#v20">v2.0</a></h4>
+<h4 id="v20"><a class="toclink" href="#v20">v2.0</a><a class="headerlink" href="#v20" title="Permanent link">&para;</a></h4>
 <figure>
 
 <pre class="mermaid"><code>graph LR;
@@ -4768,7 +4773,7 @@ inside the <a href="https://github.com/bids-standard/bids-specification">bids-st
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>

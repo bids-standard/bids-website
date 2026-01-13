@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4114,7 +4119,7 @@ to processed data enables higher level processing.</p>
 Broadly, a derivative can be considered to be preprocessed or processed,
 such that the data type is unchanged or changed, respectively, from that of the source data file(s).</p>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives was finalized in version 1.4.0 of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.</p>
-<h2 id="tour-of-a-bids-derivative"><a class="toclink" href="#tour-of-a-bids-derivative">Tour of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative</a></h2>
+<h2 id="tour-of-a-bids-derivative"><a class="toclink" href="#tour-of-a-bids-derivative">Tour of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative</a><a class="headerlink" href="#tour-of-a-bids-derivative" title="Permanent link">&para;</a></h2>
 <p>As with <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets, all conformant derivative datasets contain a <code>dataset_description.json</code>.</p>
 <p>New fields include <code>DatasetType</code>, which distinguishes <code>"derivative"</code> datasets from <code>"raw"</code>:</p>
 <ul>
@@ -4135,7 +4140,7 @@ such that the data type is unchanged or changed, respectively, from that of the 
 <span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="preprocessed-data"><a class="toclink" href="#preprocessed-data">Preprocessed data</a></h3>
+<h3 id="preprocessed-data"><a class="toclink" href="#preprocessed-data">Preprocessed data</a><a class="headerlink" href="#preprocessed-data" title="Permanent link">&para;</a></h3>
 <p>Data is considered to be <em>preprocessed</em> if it is fundamentally similar to the source data.
 Artifact removal, motion correction and resampling to a template space are examples of preprocessing.</p>
 <p>An example of a subject with simultaneous <abbr title="Electroencephalography">EEG</abbr>/fMRI resting state scan,
@@ -4158,7 +4163,7 @@ For custom templates (for example: individual or study-specific),
 additional <code>SpatialReference</code> metadata is required in the <abbr title="JavaScript Object Notation">JSON</abbr> sidecar files.</p>
 <p>The <code>desc</code> (description) entity allows for unrestricted alphanumeric labels,
 in the absence of a more appropriate entity to distinguish one file from another.</p>
-<h3 id="derivative-data-types"><a class="toclink" href="#derivative-data-types">Derivative data types</a></h3>
+<h3 id="derivative-data-types"><a class="toclink" href="#derivative-data-types">Derivative data types</a><a class="headerlink" href="#derivative-data-types" title="Permanent link">&para;</a></h3>
 <p>Data is considered to be <em>processed</em> if it is fundamentally different to the source data.
 Processed data may differ substantially in <abbr title="Brain Imaging Data Structure">BIDS</abbr> datatypes from the original input data.</p>
 <p>The initial offering of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives only specifies anatomical derivatives
@@ -4202,7 +4207,7 @@ and probabilistic (or partial volume) segmentations as follows:</p>
 </code></pre></div>
 <p>The <code>dseg.tsv</code> file is a lookup table for interpreting a discrete segmentation
 and <code>probseg.json</code> contains a list identifying the labels for each consecutive volume.</p>
-<h3 id="unspecified-data-types"><a class="toclink" href="#unspecified-data-types">Unspecified data types</a></h3>
+<h3 id="unspecified-data-types"><a class="toclink" href="#unspecified-data-types">Unspecified data types</a><a class="headerlink" href="#unspecified-data-types" title="Permanent link">&para;</a></h3>
 <p>Derivatives can never be fully specified, as new methods can always be developed,
 requiring new data representations.
 <abbr title="Brain Imaging Data Structure">BIDS</abbr> recognizes this and encourages adopting "<abbr title="Brain Imaging Data Structure">BIDS</abbr>-style naming conventions".</p>
@@ -4234,7 +4239,7 @@ and non-compliant derivatives.</p>
 </code></pre></div>
 <p>Note that subject directory names conform to <abbr title="Brain Imaging Data Structure">BIDS</abbr> conventions,
 but contents are determined by the generating application, in this case, FreeSurfer.</p>
-<h3 id="organizing-datasets-and-their-derivatives"><a class="toclink" href="#organizing-datasets-and-their-derivatives">Organizing datasets and their derivatives</a></h3>
+<h3 id="organizing-datasets-and-their-derivatives"><a class="toclink" href="#organizing-datasets-and-their-derivatives">Organizing datasets and their derivatives</a><a class="headerlink" href="#organizing-datasets-and-their-derivatives" title="Permanent link">&para;</a></h3>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives datasets are intended to be interpretable and distributable
 with or without the datasets used to generate them.
 This is necessary for storage and bandwidth constraints,
@@ -4243,11 +4248,11 @@ Similarly, <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw datasets s
 all possible derivatives produced from them.</p>
 <p>This independence affords flexibility in the relative organization of datasets.
 The following examples show three ways to organize:</p>
-<h4 id="1-bids-raw-with-derivatives"><a class="toclink" href="#1-bids-raw-with-derivatives">1. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw with derivatives/</a></h4>
+<h4 id="1-bids-raw-with-derivatives"><a class="toclink" href="#1-bids-raw-with-derivatives">1. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw with derivatives/</a><a class="headerlink" href="#1-bids-raw-with-derivatives" title="Permanent link">&para;</a></h4>
 <p>A collection of derivative datasets may be stored in the <code>derivatives/</code> subdirectory.
 Disadvantage is that such organization would complicate distribution of the raw <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset
 by itself as it would require explicit exclusion of datasets within its <code>derivatives/</code> folder.</p>
-<h4 id="2-bids-derivative-with-sourcedataraw"><a class="toclink" href="#2-bids-derivative-with-sourcedataraw">2. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative with sourcedata/raw</a></h4>
+<h4 id="2-bids-derivative-with-sourcedataraw"><a class="toclink" href="#2-bids-derivative-with-sourcedataraw">2. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative with sourcedata/raw</a><a class="headerlink" href="#2-bids-derivative-with-sourcedataraw" title="Permanent link">&para;</a></h4>
 <p>A <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative dataset may contain references to its input datasets
 (could be <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw, non-<abbr title="Brain Imaging Data Structure">BIDS</abbr> or even other <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives) in the <code>sourcedata/</code> subdirectory:</p>
 <div class="highlight"><pre><span></span><code>my_analysis/
@@ -4269,7 +4274,7 @@ It is important to note that their contents must not affect the interpretation o
 or containing datasets.</p>
 <p>One potential disadvantage to nesting a <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative dataset inside a <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw dataset, or vice versa,
 is that packaging them for independent sharing or publication can become more complicated.</p>
-<h4 id="3-bids-study-with-sourcedataraw-and-derivatives"><a class="toclink" href="#3-bids-study-with-sourcedataraw-and-derivatives">3. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Study with sourcedata/raw and derivatives/</a></h4>
+<h4 id="3-bids-study-with-sourcedataraw-and-derivatives"><a class="toclink" href="#3-bids-study-with-sourcedataraw-and-derivatives">3. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Study with sourcedata/raw and derivatives/</a><a class="headerlink" href="#3-bids-study-with-sourcedataraw-and-derivatives" title="Permanent link">&para;</a></h4>
 <p>It is also possible to completely avoid nesting of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw datasets into <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative datasets (or vice versa),
 by simply placing them in separate folders, namely <code>sourcedata/</code> and <code>derivatives/</code> at root level:</p>
 <div class="highlight"><pre><span></span><code>my_study/
@@ -4473,7 +4478,7 @@ by simply placing them in separate folders, namely <code>sourcedata/</code> and 
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>

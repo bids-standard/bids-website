@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4217,7 +4222,7 @@
 
   <h1>General</h1>
 
-<h2 id="can-i-combine-bids-and-neurodata-without-border-nwb"><a class="toclink" href="#can-i-combine-bids-and-neurodata-without-border-nwb">Can I combine <abbr title="Brain Imaging Data Structure">BIDS</abbr> and neurodata without border (NWB)?</a></h2>
+<h2 id="can-i-combine-bids-and-neurodata-without-border-nwb"><a class="toclink" href="#can-i-combine-bids-and-neurodata-without-border-nwb">Can I combine <abbr title="Brain Imaging Data Structure">BIDS</abbr> and neurodata without border (NWB)?</a><a class="headerlink" href="#can-i-combine-bids-and-neurodata-without-border-nwb" title="Permanent link">&para;</a></h2>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> and <a href="https://www.nwb.org/">NWB</a> are compatible.</p>
 <p>An NWB data file is an allowed format in the <abbr title="Intracranial Electroencephalography">iEEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr> data structure.
 This means that one subject (AAA) with a session (BBB)
@@ -4227,16 +4232,16 @@ can have a <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder with ra
 <p>The same subject can have another session (CCC) with raw fMRI data in <abbr title="Brain Imaging Data Structure">BIDS</abbr>:</p>
 <div class="highlight"><pre><span></span><code>/sub-AAA/ses-CCC/func/sub-AAA_ses-CCC_task-rest_bold.nii.gz
 </code></pre></div>
-<h2 id="how-can-i-cite-bids"><a class="toclink" href="#how-can-i-cite-bids">How can I cite <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a></h2>
+<h2 id="how-can-i-cite-bids"><a class="toclink" href="#how-can-i-cite-bids">How can I cite <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#how-can-i-cite-bids" title="Permanent link">&para;</a></h2>
 <p>See the specification website for the
 <a href="https://bids-specification.readthedocs.io/en/latest/01-introduction.html#citing-bids">main publications</a>
 related to <abbr title="Brain Imaging Data Structure">BIDS</abbr> and its extensions.</p>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> references are centralized in a <a href="https://www.zotero.org/groups/5111637/bids">zotero group</a>.</p>
-<h2 id="how-do-i-convert-my-data-to-bids"><a class="toclink" href="#how-do-i-convert-my-data-to-bids">How do I convert my data to <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a></h2>
+<h2 id="how-do-i-convert-my-data-to-bids"><a class="toclink" href="#how-do-i-convert-my-data-to-bids">How do I convert my data to <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#how-do-i-convert-my-data-to-bids" title="Permanent link">&para;</a></h2>
 <p>We strongly recommend you pick a <abbr title="Brain Imaging Data Structure">BIDS</abbr> converter to help you convert your data.</p>
 <p>A list of converters can be found <a href="../tools/converters.html">on the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website</a></p>
 <p>Also look at <a href="../getting_started/tutorials/conversion/index.html">the list of tutorials and information about conversions</a>.</p>
-<h2 id="how-should-i-organize-data-for-hyperscanning-data"><a class="toclink" href="#how-should-i-organize-data-for-hyperscanning-data">How should I organize data for hyperscanning data?</a></h2>
+<h2 id="how-should-i-organize-data-for-hyperscanning-data"><a class="toclink" href="#how-should-i-organize-data-for-hyperscanning-data">How should I organize data for hyperscanning data?</a><a class="headerlink" href="#how-should-i-organize-data-for-hyperscanning-data" title="Permanent link">&para;</a></h2>
 <p>Hyperscanning is simultaneous fMRI with multiple subjects (see this <a href="https://doi.org/10.1006/nimg.2002.1150">paper</a>).</p>
 <ul>
 <li>See this <a href="https://github.com/bids-standard/bids-specification/issues/402">issue</a>
@@ -4284,11 +4289,11 @@ sub-S003/
 <ul>
 <li>See this <a href="https://groups.google.com/g/bids-discussion/c/v660DuzOf3w/m/q-0PLHt5BgAJ">thread on the bids discussion forum</a></li>
 </ul>
-<h2 id="how-to-import-excel-files-to-tsv-file"><a class="toclink" href="#how-to-import-excel-files-to-tsv-file">How to import Excel files to <abbr title="Tab Separated Values">TSV</abbr> file?</a></h2>
+<h2 id="how-to-import-excel-files-to-tsv-file"><a class="toclink" href="#how-to-import-excel-files-to-tsv-file">How to import Excel files to <abbr title="Tab Separated Values">TSV</abbr> file?</a><a class="headerlink" href="#how-to-import-excel-files-to-tsv-file" title="Permanent link">&para;</a></h2>
 <p>See <a href="../getting_started/folders_and_files/metadata/tsv.html">our sections on <abbr title="Tab Separated Values">TSV</abbr> files</a> for more information.</p>
 <p>See also this bids tool to import and export a <code>participants.tsv</code> file:
 <a href="https://github.com/sccn/bids-matlab-tools/blob/master/bids_spreadsheet2participants.m">bids-matlab-tools</a></p>
-<h2 id="how-to-specify-the-micro-sign-in-matlab"><a class="toclink" href="#how-to-specify-the-micro-sign-in-matlab">How to specify the micro sign in MATLAB?</a></h2>
+<h2 id="how-to-specify-the-micro-sign-in-matlab"><a class="toclink" href="#how-to-specify-the-micro-sign-in-matlab">How to specify the micro sign in MATLAB?</a><a class="headerlink" href="#how-to-specify-the-micro-sign-in-matlab" title="Permanent link">&para;</a></h2>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> requires physical units to be specified according to the SI unit symbol and
 possibly prefix symbol (for example: mV, μV for milliVolt and microVolt).</p>
 <p>The symbol used to indicate <code>µ</code> has unicode U+00B5, which is in MATLAB:</p>
@@ -4297,7 +4302,7 @@ possibly prefix symbol (for example: mV, μV for milliVolt and microVolt).</p>
 <p>or</p>
 <div class="highlight"><pre><span></span><code><span class="nb">native2unicode</span><span class="p">(</span><span class="mi">181</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;latin1&#39;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant"><a class="toclink" href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a></h2>
+<h2 id="i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant"><a class="toclink" href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a><a class="headerlink" href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant" title="Permanent link">&para;</a></h2>
 <p>No. The <code>session</code> level in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder hierarchy can be used to group data
 that go "logically" together: this means that you can put in the same <code>session</code> folder
 data that were acquired on different days,
@@ -4310,7 +4315,7 @@ but that are "linked" to one another in a way that make sense to how you want to
 <a href="https://github.com/bids-standard/bids-starter-kit/issues/265#issuecomment-1082240834">comment in another issue</a>
 as well before considering combining recordings acquired on different occasions
 within the same <code>session</code> folder.</p>
-<h2 id="is-there-a-machine-readable-version-of-the-bids-specification"><a class="toclink" href="#is-there-a-machine-readable-version-of-the-bids-specification">Is there a machine readable version of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification?</a></h2>
+<h2 id="is-there-a-machine-readable-version-of-the-bids-specification"><a class="toclink" href="#is-there-a-machine-readable-version-of-the-bids-specification">Is there a machine readable version of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification?</a><a class="headerlink" href="#is-there-a-machine-readable-version-of-the-bids-specification" title="Permanent link">&para;</a></h2>
 <p>Yes. The <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification exist as a schema.
 The <abbr title="Brain Imaging Data Structure">BIDS</abbr> schema is a machine readable representation of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Standard.
 It is (by and large) the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Specification, but written in a declarative form.</p>
@@ -4323,7 +4328,7 @@ It is (by and large) the <abbr title="Brain Imaging Data Structure">BIDS</abbr> 
 <p>A full description of the schema can be found on this <a href="https://bidsschematools.readthedocs.io/en/latest/?badge=latest">website</a>
 where you will also find the documentation for the python package
 to interact with the schema, <a href="https://pypi.org/project/bidsschematools/">bidsschematools</a>.</p>
-<h2 id="is-your-data-type-not-covered-in-the-current-bids-specification"><a class="toclink" href="#is-your-data-type-not-covered-in-the-current-bids-specification">Is your data type not covered in the current <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification?</a></h2>
+<h2 id="is-your-data-type-not-covered-in-the-current-bids-specification"><a class="toclink" href="#is-your-data-type-not-covered-in-the-current-bids-specification">Is your data type not covered in the current <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification?</a><a class="headerlink" href="#is-your-data-type-not-covered-in-the-current-bids-specification" title="Permanent link">&para;</a></h2>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> extensions proposals <a href="../extensions/beps.html">(<abbr title="BIDS Extension Proposals">BEPs</abbr>)</a>
 aim to extend the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification to new data types.
 A list of extensions ongoing and completed proposals can be found <a href="../extensions/beps.html">here</a>.</p>
@@ -4339,19 +4344,19 @@ that are not <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant an
 Of course you should still try to adhere to upcoming <abbr title="BIDS Extension Proposals">BEPs</abbr>
 and the general <abbr title="Brain Imaging Data Structure">BIDS</abbr> philosophy for file names and metadata where possible,
 but this gives a little extra flexibility.</p>
-<h2 id="what-does-this-word-mean"><a class="toclink" href="#what-does-this-word-mean">What does [this word] mean?</a></h2>
+<h2 id="what-does-this-word-mean"><a class="toclink" href="#what-does-this-word-mean">What does [this word] mean?</a><a class="headerlink" href="#what-does-this-word-mean" title="Permanent link">&para;</a></h2>
 <p>We're building a glossary to de-jargonise some of the terms you need to know to
 work with data in <abbr title="Brain Imaging Data Structure">BIDS</abbr> format. Check it out <a href="../getting_started/resources/glossary.html">here</a>.</p>
-<h2 id="what-is-a-json-file"><a class="toclink" href="#what-is-a-json-file">What is a <code>json</code> file?</a></h2>
+<h2 id="what-is-a-json-file"><a class="toclink" href="#what-is-a-json-file">What is a <code>json</code> file?</a><a class="headerlink" href="#what-is-a-json-file" title="Permanent link">&para;</a></h2>
 <p>You can find more information about <code>json</code> (and <code>tsv</code>) files in the
 <a href="../getting_started/folders_and_files/metadata/json.html">Metadata-file-formats</a> page.</p>
-<h2 id="what-liense-should-i-choose-for-my-dataset"><a class="toclink" href="#what-liense-should-i-choose-for-my-dataset">What liense should I choose for my dataset?</a></h2>
+<h2 id="what-liense-should-i-choose-for-my-dataset"><a class="toclink" href="#what-liense-should-i-choose-for-my-dataset">What liense should I choose for my dataset?</a><a class="headerlink" href="#what-liense-should-i-choose-for-my-dataset" title="Permanent link">&para;</a></h2>
 <p>If you want to know more about what license to choose for your dataset,
 see the <a href="https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-data.html#data-licenses">turing way</a>
 page dedicated to this topic.</p>
 <p>If you plan to put your dataset on <a href="https://openneuro.org">openneuro</a>,
 you should use a CC0 or a PDDL license as explained in their <a href="https://openneuro.org/faq">FAQ</a>.</p>
-<h2 id="what-is-the-origin-of-bids"><a class="toclink" href="#what-is-the-origin-of-bids">What is the origin of <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a></h2>
+<h2 id="what-is-the-origin-of-bids"><a class="toclink" href="#what-is-the-origin-of-bids">What is the origin of <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#what-is-the-origin-of-bids" title="Permanent link">&para;</a></h2>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> was heavily inspired by the format used internally by the OpenfMRI repository
 that is now known as <a href="https://openneuro.org">OpenNeuro</a>.
 While developing on <abbr title="Brain Imaging Data Structure">BIDS</abbr> many neuroscientists were consulted to make sure it covers most common experiments,
@@ -4548,7 +4553,7 @@ but at the same time is intuitive and easy to adopt.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

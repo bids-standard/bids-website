@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4119,7 +4124,7 @@
   
 
 
-<h1 id="bids-validation"><a class="toclink" href="#bids-validation"><abbr title="Brain Imaging Data Structure">BIDS</abbr> validation</a></h1>
+<h1 id="bids-validation"><a class="toclink" href="#bids-validation"><abbr title="Brain Imaging Data Structure">BIDS</abbr> validation</a><a class="headerlink" href="#bids-validation" title="Permanent link">&para;</a></h1>
 <p>The <a href="https://github.com/bids-standard/bids-validator"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator</a> is a tool
 that checks if a dataset is compliant with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.
 The validator is available for use within several different environments
@@ -4138,10 +4143,10 @@ at the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator reposito
 <p>For more information about the development of the validator,
 check this <a href="../blog/2024/11/13/bids-validator-2.html">blog post about it</a>.</p>
 </div>
-<h2 id="data-privacy-and-confidentiality"><a class="toclink" href="#data-privacy-and-confidentiality">Data Privacy and Confidentiality</a></h2>
+<h2 id="data-privacy-and-confidentiality"><a class="toclink" href="#data-privacy-and-confidentiality">Data Privacy and Confidentiality</a><a class="headerlink" href="#data-privacy-and-confidentiality" title="Permanent link">&para;</a></h2>
 <p>Please note that the web app is entirely browser (not server) based.
 As such, there is no file uploading as part of the validation.</p>
-<h2 id="browser-version"><a class="toclink" href="#browser-version">Browser Version</a></h2>
+<h2 id="browser-version"><a class="toclink" href="#browser-version">Browser Version</a><a class="headerlink" href="#browser-version" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator can be found at <a href="http://bids-standard.github.io/bids-validator/">http://bids-standard.github.io/bids-validator/</a>.
@@ -4153,7 +4158,7 @@ As such, there is no file uploading as part of the validation.</p>
 <p>You can then choose the <strong>folder</strong> that you wish to validate</p>
 </li>
 </ol>
-<h3 id="types-of-feedback"><a class="toclink" href="#types-of-feedback">Types of Feedback</a></h3>
+<h3 id="types-of-feedback"><a class="toclink" href="#types-of-feedback">Types of Feedback</a><a class="headerlink" href="#types-of-feedback" title="Permanent link">&para;</a></h3>
 <div class="admonition failure">
 <p class="admonition-title">Error</p>
 <p>This response indicates that your dataset is not <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant.
@@ -4172,8 +4177,8 @@ but there are some non-critical problems
 <p>This response indicates that your folder contains a valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> Dataset!</p>
 <!-- <img alt="Valid" src="../assets/img/DPFVXOR.png" /> -->
 </div>
-<h2 id="command-line-version"><a class="toclink" href="#command-line-version">Command Line Version</a></h2>
-<h3 id="verifying-a-bids-compliant-data-set"><a class="toclink" href="#verifying-a-bids-compliant-data-set">Verifying a <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant data set</a></h3>
+<h2 id="command-line-version"><a class="toclink" href="#command-line-version">Command Line Version</a><a class="headerlink" href="#command-line-version" title="Permanent link">&para;</a></h2>
+<h3 id="verifying-a-bids-compliant-data-set"><a class="toclink" href="#verifying-a-bids-compliant-data-set">Verifying a <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant data set</a><a class="headerlink" href="#verifying-a-bids-compliant-data-set" title="Permanent link">&para;</a></h3>
 <p>After <a href="https://bids-validator.readthedocs.io/en/latest/user_guide/command-line.html#using-the-command-line">installation with deno</a>
 using the CLI is relatively simple.
 Locate a bids data set similar to the one below:</p>
@@ -4200,7 +4205,7 @@ sub001/
 <p>Now simply point the bids validator at the folder path of the subject(s) in question:</p>
 <div class="highlight"><pre><span></span><code>user@host:~/bids-examples$<span class="w"> </span>bids-validator<span class="w"> </span>pet001
 </code></pre></div>
-<h3 id="types-of-feedback_1"><a class="toclink" href="#types-of-feedback_1">Types of Feedback</a></h3>
+<h3 id="types-of-feedback_1"><a class="toclink" href="#types-of-feedback_1">Types of Feedback</a><a class="headerlink" href="#types-of-feedback_1" title="Permanent link">&para;</a></h3>
 <div class="admonition failure">
 <p class="admonition-title">Error</p>
 <p>As is the case with the browser or any version of the validator follow
@@ -4432,7 +4437,7 @@ When in doubt consult the <a href="https://bids-specification.readthedocs.io"><a
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4188,15 +4193,15 @@
   
 
 
-<h1 id="contributing-to-the-bids-website"><a class="toclink" href="#contributing-to-the-bids-website">Contributing to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website</a></h1>
+<h1 id="contributing-to-the-bids-website"><a class="toclink" href="#contributing-to-the-bids-website">Contributing to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website</a><a class="headerlink" href="#contributing-to-the-bids-website" title="Permanent link">&para;</a></h1>
 <p>We hope that these guidelines are designed
 to make it as easy as possible to make changes to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website.
 If you have any questions that aren't discussed below, please let us know
 by <a href="https://github.com/bids-standard/bids-website/issues/new">opening an issue</a>.</p>
 <p>If you are not familiar with Git and GitHub,
 check our <a href="https://bids.neuroimaging.io/collaboration/bids_github/CONTRIBUTING.html">generic contributing guidelines</a>.</p>
-<h2 id="serving-locally"><a class="toclink" href="#serving-locally">Serving locally</a></h2>
-<h3 id="requirements"><a class="toclink" href="#requirements">Requirements</a></h3>
+<h2 id="serving-locally"><a class="toclink" href="#serving-locally">Serving locally</a><a class="headerlink" href="#serving-locally" title="Permanent link">&para;</a></h2>
+<h3 id="requirements"><a class="toclink" href="#requirements">Requirements</a><a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://docs.astral.sh/uv/">uv</a></li>
 <li>node.js &gt;= 14</li>
@@ -4207,7 +4212,7 @@ For some quality checks and rare operations, you will need node.js and npm. -->
 
 <p>Even though this is not required,
 having <code>make</code> installed will make it easier to easily serve the website locally.</p>
-<h3 id="install-and-serve"><a class="toclink" href="#install-and-serve">Install and serve</a></h3>
+<h3 id="install-and-serve"><a class="toclink" href="#install-and-serve">Install and serve</a><a class="headerlink" href="#install-and-serve" title="Permanent link">&para;</a></h3>
 <p>Fork and clone the repository and its submodules</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/YOUR_USER_NAME/bids-website.git<span class="w"> </span>--recurse-submodules
 </code></pre></div>
@@ -4238,25 +4243,25 @@ having <code>make</code> installed will make it easier to easily serve the websi
 <p>Serve the website with the mkdocs.</p>
 <div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>mkdocs<span class="w"> </span>serve
 </code></pre></div>
-<h2 id="maintenance"><a class="toclink" href="#maintenance">Maintenance</a></h2>
-<h3 id="requirements_1"><a class="toclink" href="#requirements_1">Requirements</a></h3>
+<h2 id="maintenance"><a class="toclink" href="#maintenance">Maintenance</a><a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h2>
+<h3 id="requirements_1"><a class="toclink" href="#requirements_1">Requirements</a><a class="headerlink" href="#requirements_1" title="Permanent link">&para;</a></h3>
 <p>Same as for the install but you will also need to install <code>tox</code>.</p>
 <div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>tox
 </code></pre></div>
-<h2 id="update-all-files"><a class="toclink" href="#update-all-files">Update all files</a></h2>
+<h2 id="update-all-files"><a class="toclink" href="#update-all-files">Update all files</a><a class="headerlink" href="#update-all-files" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>make<span class="w"> </span>update
 </code></pre></div>
-<h2 id="run-all-formatting-linting-tools"><a class="toclink" href="#run-all-formatting-linting-tools">Run all formatting / linting tools</a></h2>
+<h2 id="run-all-formatting-linting-tools"><a class="toclink" href="#run-all-formatting-linting-tools">Run all formatting / linting tools</a><a class="headerlink" href="#run-all-formatting-linting-tools" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>tox
 make<span class="w"> </span>remark
 </code></pre></div>
-<h3 id="using-remark-to-format-a-file"><a class="toclink" href="#using-remark-to-format-a-file">Using remark to format a file</a></h3>
+<h3 id="using-remark-to-format-a-file"><a class="toclink" href="#using-remark-to-format-a-file">Using remark to format a file</a><a class="headerlink" href="#using-remark-to-format-a-file" title="Permanent link">&para;</a></h3>
 <p>If you have a completely new file that you want to lint,
 you can use the following to get most of the markdown formatting done.</p>
 <p>Some will still need some manual work.</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>format<span class="w"> </span>--<span class="w"> </span>path_to_file<span class="w"> </span>--ouput
 </code></pre></div>
-<h2 id="upgrading-dependencies"><a class="toclink" href="#upgrading-dependencies">Upgrading dependencies</a></h2>
+<h2 id="upgrading-dependencies"><a class="toclink" href="#upgrading-dependencies">Upgrading dependencies</a><a class="headerlink" href="#upgrading-dependencies" title="Permanent link">&para;</a></h2>
 <p>Rerun <code>uv sync</code>:</p>
 <div class="highlight"><pre><span></span><code>uv<span class="w"> </span>sync<span class="w"> </span>--upgrade
 </code></pre></div>
@@ -4450,7 +4455,7 @@ you can use the following to get most of the markdown formatting done.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

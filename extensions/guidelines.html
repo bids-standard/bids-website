@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4359,7 +4364,7 @@
   
 
 
-<h1 id="bep-guidelines"><a class="toclink" href="#bep-guidelines"><abbr title="BIDS Extension Proposal">BEP</abbr> guidelines</a></h1>
+<h1 id="bep-guidelines"><a class="toclink" href="#bep-guidelines"><abbr title="BIDS Extension Proposal">BEP</abbr> guidelines</a><a class="headerlink" href="#bep-guidelines" title="Permanent link">&para;</a></h1>
 <p>Based on the evergrowing set of <abbr title="BIDS Extension Proposals">BEPs</abbr> and the respective work and efforts conducted to develop them,
 the community has identified a set of general guidelines that can be used to guide the corresponding processes.</p>
 <p>These guidelines are not part of the <a href="https://bids-specification.readthedocs.io"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a>,
@@ -4367,15 +4372,15 @@ but rather are recommended to be followed when developing a <abbr title="BIDS Ex
 <p>These guidelines are not set in stone and can be modified as needed. These guidelines are RECOMMENDED.
 The goal is to establish a basis of consensus to ease agile approval of <abbr title="BIDS Extension Proposals">BEPs</abbr>
 that propose terms in line with these guidelines.</p>
-<h2 id="generic-guidelines"><a class="toclink" href="#generic-guidelines">Generic guidelines</a></h2>
-<h3 id="get-the-community-involved"><a class="toclink" href="#get-the-community-involved">Get the community involved</a></h3>
+<h2 id="generic-guidelines"><a class="toclink" href="#generic-guidelines">Generic guidelines</a><a class="headerlink" href="#generic-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="get-the-community-involved"><a class="toclink" href="#get-the-community-involved">Get the community involved</a><a class="headerlink" href="#get-the-community-involved" title="Permanent link">&para;</a></h3>
 <p>Try to reach out to colleagues working with the type of data you are trying to add support for.
 The more people looking at your extension the better it will become through discussions.</p>
-<h3 id="be-consistent-with-the-main-specification"><a class="toclink" href="#be-consistent-with-the-main-specification">Be consistent with the main specification</a></h3>
+<h3 id="be-consistent-with-the-main-specification"><a class="toclink" href="#be-consistent-with-the-main-specification">Be consistent with the main specification</a><a class="headerlink" href="#be-consistent-with-the-main-specification" title="Permanent link">&para;</a></h3>
 <p>The main specification follows some general rules.
 For example, see the <a href="https://bids-specification.readthedocs.io/en/stable/02-common-principles.html#participant-names-and-other-labels">rules on participant labels</a>.</p>
 <p>Try not to deviate from <abbr title="Brain Imaging Data Structure">BIDS</abbr> conventions in your extension.</p>
-<h3 id="avoid-backward-incompatible-changes"><a class="toclink" href="#avoid-backward-incompatible-changes">Avoid backward incompatible changes</a></h3>
+<h3 id="avoid-backward-incompatible-changes"><a class="toclink" href="#avoid-backward-incompatible-changes">Avoid backward incompatible changes</a><a class="headerlink" href="#avoid-backward-incompatible-changes" title="Permanent link">&para;</a></h3>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> is already incorporated in many tools -
 proposing a change that will render already released <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets not <abbr title="Brain Imaging Data Structure">BIDS</abbr>-compliant
 will cause a lot of confusion
@@ -4384,7 +4389,7 @@ We should strive to avoid such situations.</p>
 <p>Having said that, one day we will have to break backwards compatibility.
 If you have an idea for a backwards-incompatible change
 please add it as an issue to the <a href="https://github.com/bids-standard/bids-2-devel"><abbr title="Brain Imaging Data Structure">BIDS</abbr> 2.0 GitHub repository</a>.</p>
-<h3 id="use-existing-and-common-practicesformats"><a class="toclink" href="#use-existing-and-common-practicesformats">Use existing and common practices/formats</a></h3>
+<h3 id="use-existing-and-common-practicesformats"><a class="toclink" href="#use-existing-and-common-practicesformats">Use existing and common practices/formats</a><a class="headerlink" href="#use-existing-and-common-practicesformats" title="Permanent link">&para;</a></h3>
 <p>It’s likely that certain data types are commonly stored in a particular way in your sub-field.
 If this is the case try adopting this way
 unless it makes your extension too inconsistent with the main specification.
@@ -4418,12 +4423,12 @@ for storing diffusion metadata.</p>
 <p>These criteria will be reviewed by people previously or currently
 involved in the relevant domain area
 (e.g., microscopy, electrophysiology) and other formats development.</p>
-<h3 id="try-to-link-with-other-existing-standards-and-ontologies"><a class="toclink" href="#try-to-link-with-other-existing-standards-and-ontologies">Try to link with other existing standards and ontologies</a></h3>
+<h3 id="try-to-link-with-other-existing-standards-and-ontologies"><a class="toclink" href="#try-to-link-with-other-existing-standards-and-ontologies">Try to link with other existing standards and ontologies</a><a class="headerlink" href="#try-to-link-with-other-existing-standards-and-ontologies" title="Permanent link">&para;</a></h3>
 <p>There are many standardization attempts out there.
 When proposing your extension
 consider gathering inspiration and directly linking to other standards.
 A good example of this is linking metadata fields to corresponding DICOM tags.</p>
-<h3 id="facilitate-atomic-changes"><a class="toclink" href="#facilitate-atomic-changes">Facilitate atomic changes</a></h3>
+<h3 id="facilitate-atomic-changes"><a class="toclink" href="#facilitate-atomic-changes">Facilitate atomic changes</a><a class="headerlink" href="#facilitate-atomic-changes" title="Permanent link">&para;</a></h3>
 <p>See <a href="https://github.com/bids-standard/bids-specification/issues/371">issue #371</a> for motivation and discussion.
 It is recommended to identify perspective entities and metadata fields to be added,
 and research if they, or their synonyms, are  already considered in submitted PRs or other <abbr title="BIDS Extension Proposals">BEPs</abbr>.
@@ -4434,7 +4439,7 @@ If those are new, propose a PR(s) introducing those to the <abbr title="Brain Im
 </ul>
 <!-- TODO link to example PR -->
 
-<h3 id="limit-flexibility-consider-tool-developers"><a class="toclink" href="#limit-flexibility-consider-tool-developers">Limit flexibility, consider tool developers</a></h3>
+<h3 id="limit-flexibility-consider-tool-developers"><a class="toclink" href="#limit-flexibility-consider-tool-developers">Limit flexibility, consider tool developers</a><a class="headerlink" href="#limit-flexibility-consider-tool-developers" title="Permanent link">&para;</a></h3>
 <p>One of the aims of <abbr title="Brain Imaging Data Structure">BIDS</abbr> is to make reusing data easier.
 This means that when proposing an extension you need to put yourself
 in the shoes of someone who will receive a <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset and attempt to analyze it.
@@ -4447,15 +4452,15 @@ but requires developers to provide support for all of them.
 As an example, <abbr title="Intracranial Electroencephalography">iEEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr> and <abbr title="Electroencephalography">EEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr>
 surveyed the community <!--TODO find links  -->
 to find out about most common formats and selected only a few formats based on usage and their openness.</p>
-<h2 id="make-use-of-the-the-bids-schema"><a class="toclink" href="#make-use-of-the-the-bids-schema">Make use of the the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema</a></h2>
+<h2 id="make-use-of-the-the-bids-schema"><a class="toclink" href="#make-use-of-the-the-bids-schema">Make use of the the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema</a><a class="headerlink" href="#make-use-of-the-the-bids-schema" title="Permanent link">&para;</a></h2>
 <p>Working with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema will enable validation of your <abbr title="BIDS Extension Proposal">BEP</abbr>.
 For more information on translating your <abbr title="BIDS Extension Proposal">BEP</abbr> into the schema,
 visit <a href="../standards/schema/index.html">the schema guide</a> on this site.</p>
-<h3 id="be-consistent-with-other-beps"><a class="toclink" href="#be-consistent-with-other-beps">Be consistent with other <abbr title="BIDS Extension Proposals">BEPs</abbr></a></h3>
+<h3 id="be-consistent-with-other-beps"><a class="toclink" href="#be-consistent-with-other-beps">Be consistent with other <abbr title="BIDS Extension Proposals">BEPs</abbr></a><a class="headerlink" href="#be-consistent-with-other-beps" title="Permanent link">&para;</a></h3>
 <p>A common dictionary (<abbr title="Brain Imaging Data Structure">BIDS</abbr> keys) is what makes <abbr title="Brain Imaging Data Structure">BIDS</abbr> successful,
 it is thus essential to not create many new entities.
 Many of the current <abbr title="BIDS Extension Proposals">BEPs</abbr> have developed useful terms that we recommend here.</p>
-<h4 id="existing-entities"><a class="toclink" href="#existing-entities">Existing entities</a></h4>
+<h4 id="existing-entities"><a class="toclink" href="#existing-entities">Existing entities</a><a class="headerlink" href="#existing-entities" title="Permanent link">&para;</a></h4>
 <!-- TODO autogenerate this table -->
 <table>
 <thead>
@@ -4495,7 +4500,7 @@ Many of the current <abbr title="BIDS Extension Proposals">BEPs</abbr> have deve
 </tr>
 </tbody>
 </table>
-<h4 id="proposed-entities"><a class="toclink" href="#proposed-entities">Proposed entities</a></h4>
+<h4 id="proposed-entities"><a class="toclink" href="#proposed-entities">Proposed entities</a><a class="headerlink" href="#proposed-entities" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -4542,7 +4547,7 @@ Many of the current <abbr title="BIDS Extension Proposals">BEPs</abbr> have deve
 </tr>
 </tbody>
 </table>
-<h3 id="derivatives-bep-and-provenance"><a class="toclink" href="#derivatives-bep-and-provenance">Derivatives <abbr title="BIDS Extension Proposal">BEP</abbr> and provenance</a></h3>
+<h3 id="derivatives-bep-and-provenance"><a class="toclink" href="#derivatives-bep-and-provenance">Derivatives <abbr title="BIDS Extension Proposal">BEP</abbr> and provenance</a><a class="headerlink" href="#derivatives-bep-and-provenance" title="Permanent link">&para;</a></h3>
 <p>The objective of <abbr title="Brain Imaging Data Structure">BIDS</abbr> is to promote data sharing,
 ensuring that the information is easily accessible and reusable.
 For this purpose, it is highly recommended to provide comprehensive provenance information
@@ -4558,8 +4563,8 @@ and identifying what files or information should be retained for optimal reuse i
 <p class="admonition-title">Note</p>
 <p>See the <a href="../faq/bids-extensions.html#provenance">FAQ on provenance</a></p>
 </div>
-<h2 id="common-pitfalls"><a class="toclink" href="#common-pitfalls">Common pitfalls</a></h2>
-<h3 id="relying-on-merging-the-extension-on-a-set-timeline"><a class="toclink" href="#relying-on-merging-the-extension-on-a-set-timeline">Relying on merging the extension on a set timeline</a></h3>
+<h2 id="common-pitfalls"><a class="toclink" href="#common-pitfalls">Common pitfalls</a><a class="headerlink" href="#common-pitfalls" title="Permanent link">&para;</a></h2>
+<h3 id="relying-on-merging-the-extension-on-a-set-timeline"><a class="toclink" href="#relying-on-merging-the-extension-on-a-set-timeline">Relying on merging the extension on a set timeline</a><a class="headerlink" href="#relying-on-merging-the-extension-on-a-set-timeline" title="Permanent link">&para;</a></h3>
 <p>We have found it is very difficult to predict how long a <abbr title="BIDS Extension Proposal">BEP</abbr>
 will take to merge into the standard.
 One challenge that has occurred in the past is a doctoral student requiring acceptance of their work
@@ -4568,13 +4573,13 @@ We do not recommend yoking contributions to the <abbr title="Brain Imaging Data 
 (or any volunteer-led open source community) to strict timelines
 to avoid the uncertainty around domain-specific community engagement,
 feedback from other <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributors, and responding to reviews.</p>
-<h3 id="not-considering-domain-or-field-specific-guidelines"><a class="toclink" href="#not-considering-domain-or-field-specific-guidelines">Not considering domain- or field-specific guidelines</a></h3>
+<h3 id="not-considering-domain-or-field-specific-guidelines"><a class="toclink" href="#not-considering-domain-or-field-specific-guidelines">Not considering domain- or field-specific guidelines</a><a class="headerlink" href="#not-considering-domain-or-field-specific-guidelines" title="Permanent link">&para;</a></h3>
 <p>In many neuroscience fields there have been past developments and efforts to implement standards,
 either formally or informally.
 If possible, <abbr title="BIDS Extension Proposals">BEPs</abbr> should embrace these rather than trying to come up with alternative standards.
 The <abbr title="BIDS Extension Proposal">BEP</abbr> should therefore inventorize
 and review past and existing work that may be relevant to the <abbr title="BIDS Extension Proposal">BEP</abbr>.</p>
-<h3 id="not-considering-dicom-fields"><a class="toclink" href="#not-considering-dicom-fields">Not considering DICOM fields</a></h3>
+<h3 id="not-considering-dicom-fields"><a class="toclink" href="#not-considering-dicom-fields">Not considering DICOM fields</a><a class="headerlink" href="#not-considering-dicom-fields" title="Permanent link">&para;</a></h3>
 <p>Many of the modalities we use have an associated standard, like DICOM for instance.
 While <abbr title="Brain Imaging Data Structure">BIDS</abbr> is not specifically about data format, a lot of metadata information
 are stored in data files and there is rarely a good reason for using a different name
@@ -4587,7 +4592,7 @@ You can delete the data and keep the header,
 removing any <a href="https://www.datacenters.com/news/everything-you-need-to-know-about-pii-personal-identifiable-information">personally identifying information</a>,
 also known as PII or "Personal Data"
 under the <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">General Data Protection Regulation (GDPR)</a>.</p>
-<h3 id="not-building-up-a-user-community-to-support-the-bep"><a class="toclink" href="#not-building-up-a-user-community-to-support-the-bep">Not building up a user community to support the <abbr title="BIDS Extension Proposal">BEP</abbr></a></h3>
+<h3 id="not-building-up-a-user-community-to-support-the-bep"><a class="toclink" href="#not-building-up-a-user-community-to-support-the-bep">Not building up a user community to support the <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#not-building-up-a-user-community-to-support-the-bep" title="Permanent link">&para;</a></h3>
 <p>Merging <abbr title="BIDS Extension Proposals">BEPs</abbr> only happens following a community review.
 It is therefore helpful to get the stakeholders on board early
 (that is while writing the <abbr title="BIDS Extension Proposal">BEP</abbr>) rather than at the review stage.
@@ -4595,12 +4600,12 @@ Diversity in the team contributes to the quality of the extension proposal.
 We recommend that the core team has representatives from 3 different labs,
 preferably also with a mix of more junior and more senior contributors.
 You may also consider requesting explicit support letters from external labs.</p>
-<h2 id="specific-guidelines"><a class="toclink" href="#specific-guidelines">Specific guidelines</a></h2>
+<h2 id="specific-guidelines"><a class="toclink" href="#specific-guidelines">Specific guidelines</a><a class="headerlink" href="#specific-guidelines" title="Permanent link">&para;</a></h2>
 <p>If multiple <abbr title="BIDS Extension Proposals">BEPs</abbr> need coordination, this document (section below)
 could be used to formulate guidelines for specific aspects to be followed by multiple <abbr title="BIDS Extension Proposals">BEPs</abbr>.</p>
-<h3 id="guidelines-for-spatial-derivatives"><a class="toclink" href="#guidelines-for-spatial-derivatives">Guidelines for spatial derivatives</a></h3>
+<h3 id="guidelines-for-spatial-derivatives"><a class="toclink" href="#guidelines-for-spatial-derivatives">Guidelines for spatial derivatives</a><a class="headerlink" href="#guidelines-for-spatial-derivatives" title="Permanent link">&para;</a></h3>
 <p>Within this section, guidelines for developing <abbr title="BIDS Extension Proposals">BEPs</abbr> that include spatial derivatives are outlined and motivated.</p>
-<h4 id="problem-statement"><a class="toclink" href="#problem-statement">Problem statement</a></h4>
+<h4 id="problem-statement"><a class="toclink" href="#problem-statement">Problem statement</a><a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h4>
 <p>During the work on multiple <abbr title="BIDS Extension Proposals">BEPs</abbr> that include <code>spatial derivatives</code>,
 a repeated pattern in generating derivatives within several imaging modalities' workflows was identified where:</p>
 <ol>
@@ -4617,10 +4622,10 @@ a repeated pattern in generating derivatives within several imaging modalities' 
     while also signaling that it is derived (that is <code>non-raw</code>).</p>
 </li>
 </ol>
-<h4 id="motivation-for-guidelines"><a class="toclink" href="#motivation-for-guidelines">Motivation for guidelines</a></h4>
+<h4 id="motivation-for-guidelines"><a class="toclink" href="#motivation-for-guidelines">Motivation for guidelines</a><a class="headerlink" href="#motivation-for-guidelines" title="Permanent link">&para;</a></h4>
 <p>Many users are not equipped to understand fine distinctions between different classes of derivatives
 (for example, those that are produced by a <code>model fit and</code> a <code>direct computation</code>).</p>
-<h4 id="guidelines"><a class="toclink" href="#guidelines">Guidelines</a></h4>
+<h4 id="guidelines"><a class="toclink" href="#guidelines">Guidelines</a><a class="headerlink" href="#guidelines" title="Permanent link">&para;</a></h4>
 <p>A specific suffix <em>pattern</em> is used : <code>_&lt;suffix&gt;map</code>, where <code>&lt;suffix&gt;</code> is a <abbr title="Brain Imaging Data Structure">BIDS</abbr> suffix used in the <code>raw</code> data
 (for example, <code>dwi</code> or <code>bold</code>).
 For example, the proposed pattern produces the suffices <code>_dwimap</code> or <code>_boldmap</code>.
@@ -4656,13 +4661,13 @@ which implies that the file still contains spatially contiguous information
     for debugging purposes of the developer/modeler of the code.</p>
 </li>
 </ol>
-<h4 id="examples"><a class="toclink" href="#examples">Examples</a></h4>
-<h5 id="bep-23-pet-derivatives"><a class="toclink" href="#bep-23-pet-derivatives"><abbr title="BIDS Extension Proposal">BEP</abbr> 23: <abbr title="Positron Imaging Tomography">PET</abbr> Derivatives</a></h5>
+<h4 id="examples"><a class="toclink" href="#examples">Examples</a><a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<h5 id="bep-23-pet-derivatives"><a class="toclink" href="#bep-23-pet-derivatives"><abbr title="BIDS Extension Proposal">BEP</abbr> 23: <abbr title="Positron Imaging Tomography">PET</abbr> Derivatives</a><a class="headerlink" href="#bep-23-pet-derivatives" title="Permanent link">&para;</a></h5>
 <p><code>BEP 23</code> has introduced Molecular Imaging Maps "<code>mimap</code>s" that correspond
 to the conventions introduced by <code>BEP 001 (qMRI)</code>, such as <code>T1map</code>, <code>T2map</code>, and so on.</p>
 <p>These generally will be distributed as mean/standard-deviation pairs,
 for example: <code>sub-01_stat-mean_desc-5HT_mimap.nii.gz</code>/<code>sub-01_stat-std_desc-5HT_mimap.nii.gz</code>.</p>
-<h5 id="bep-12-functional-mri-derivatives"><a class="toclink" href="#bep-12-functional-mri-derivatives"><abbr title="BIDS Extension Proposal">BEP</abbr> 12: Functional <abbr title="Magnetic Resonance Imaging">MRI</abbr> derivatives</a></h5>
+<h5 id="bep-12-functional-mri-derivatives"><a class="toclink" href="#bep-12-functional-mri-derivatives"><abbr title="BIDS Extension Proposal">BEP</abbr> 12: Functional <abbr title="Magnetic Resonance Imaging">MRI</abbr> derivatives</a><a class="headerlink" href="#bep-12-functional-mri-derivatives" title="Permanent link">&para;</a></h5>
 <p><code>BEP 12</code> proposes a collection of summary statistics,
 including <code>mean</code>, <code>standard deviation</code>, <code>temporal SNR</code>, <code>regional homogeneity</code>, and so on.
 Following the example of <code>BEP 23</code>, it has adopted the proposal.</p>
@@ -4859,7 +4864,7 @@ Following the example of <code>BEP 23</code>, it has adopted the proposal.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

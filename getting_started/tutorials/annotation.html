@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4229,8 +4234,8 @@
   
 
 
-<h1 id="annotating-a-bids-dataset"><a class="toclink" href="#annotating-a-bids-dataset">Annotating a <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset</a></h1>
-<h2 id="what-is-an-annotation"><a class="toclink" href="#what-is-an-annotation">What is an annotation?</a></h2>
+<h1 id="annotating-a-bids-dataset"><a class="toclink" href="#annotating-a-bids-dataset">Annotating a <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset</a><a class="headerlink" href="#annotating-a-bids-dataset" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-an-annotation"><a class="toclink" href="#what-is-an-annotation">What is an annotation?</a><a class="headerlink" href="#what-is-an-annotation" title="Permanent link">&para;</a></h2>
 <p>Annotation refers to metadata that is directly associated with data.
 Without adequate annotation, your valuable shared data may be of limited
 use to other researchers and to you in the future.</p>
@@ -4243,21 +4248,21 @@ an infrastructure and controlled vocabulary for
 producing standardized machine-actionable annotations.</p>
 <p>This tutorial provides a step-by-step process for data annotation in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> framework.</p>
 <p>Annotations in <abbr title="Brain Imaging Data Structure">BIDS</abbr> can be done at several levels, including the dataset, subjects, sessions, scans, and events.</p>
-<h2 id="required-bids-annotation-files"><a class="toclink" href="#required-bids-annotation-files">Required <abbr title="Brain Imaging Data Structure">BIDS</abbr> annotation files</a></h2>
-<h3 id="dataset-sourcing-dataset_descriptionjson"><a class="toclink" href="#dataset-sourcing-dataset_descriptionjson">Dataset sourcing (<code>dataset_description.json</code>)</a></h3>
+<h2 id="required-bids-annotation-files"><a class="toclink" href="#required-bids-annotation-files">Required <abbr title="Brain Imaging Data Structure">BIDS</abbr> annotation files</a><a class="headerlink" href="#required-bids-annotation-files" title="Permanent link">&para;</a></h2>
+<h3 id="dataset-sourcing-dataset_descriptionjson"><a class="toclink" href="#dataset-sourcing-dataset_descriptionjson">Dataset sourcing (<code>dataset_description.json</code>)</a><a class="headerlink" href="#dataset-sourcing-dataset_descriptionjson" title="Permanent link">&para;</a></h3>
 <p><code>dataset_description.json</code> is a top-level file that gives details about the source of the dataset,
 funding, and citation information.
 This file does not provide any actual description of the data.</p>
 <blockquote>
 <p>You can fill in this blank <a href="../templates/index.html#dataset_descriptionjson">dataset description template</a> or use it as a guide.</p>
 </blockquote>
-<h3 id="dataset-description-readme"><a class="toclink" href="#dataset-description-readme">Dataset description (<code>README</code>)</a></h3>
+<h3 id="dataset-description-readme"><a class="toclink" href="#dataset-description-readme">Dataset description (<code>README</code>)</a><a class="headerlink" href="#dataset-description-readme" title="Permanent link">&para;</a></h3>
 <p><code>README</code> file is a top-level text file that gives the actual overview of the dataset.
 A comprehensive <code>README</code> is essential for users of your data.</p>
 <blockquote>
 <p>You can edit the <a href="../templates/index.html#readmemd">README template</a> with the vital information needed for others to analyze your dataset.</p>
 </blockquote>
-<h2 id="subject-annotations"><a class="toclink" href="#subject-annotations">Subject annotations</a></h2>
+<h2 id="subject-annotations"><a class="toclink" href="#subject-annotations">Subject annotations</a><a class="headerlink" href="#subject-annotations" title="Permanent link">&para;</a></h2>
 <p>Annotations at the subject level can be done in the <code>participants.tsv</code> file,
 which is a top-level tab-separated value file that provides
 subject information such as age, sex, and handedness.
@@ -4275,25 +4280,25 @@ to provide this information.</p>
 </blockquote>
 <p>If the dataset includes multiple sets of participant level measurements see the <abbr title="Brain Imaging Data Structure">BIDS</abbr> guidelines
 for adding <a href="https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data">phenotypic and assessment data</a>.</p>
-<h2 id="session-annotations"><a class="toclink" href="#session-annotations">Session annotations</a></h2>
+<h2 id="session-annotations"><a class="toclink" href="#session-annotations">Session annotations</a><a class="headerlink" href="#session-annotations" title="Permanent link">&para;</a></h2>
 <p>At the session level, the optional <code>sessions.tsv</code> and <code>sessions.json</code> files can be used to add
 annotations that apply to an entire session.</p>
-<h2 id="scansrun-annotations"><a class="toclink" href="#scansrun-annotations">Scans/run annotations</a></h2>
+<h2 id="scansrun-annotations"><a class="toclink" href="#scansrun-annotations">Scans/run annotations</a><a class="headerlink" href="#scansrun-annotations" title="Permanent link">&para;</a></h2>
 <p>At the scans or run level, the optional <code>scans.tsv</code> and <code>scans.json</code> files can be used to add
 annotations that apply to an entire run.</p>
-<h2 id="event-annotations"><a class="toclink" href="#event-annotations">Event annotations</a></h2>
-<h3 id="why-is-event-annotation-necessary"><a class="toclink" href="#why-is-event-annotation-necessary">Why is event annotation necessary?</a></h3>
+<h2 id="event-annotations"><a class="toclink" href="#event-annotations">Event annotations</a><a class="headerlink" href="#event-annotations" title="Permanent link">&para;</a></h2>
+<h3 id="why-is-event-annotation-necessary"><a class="toclink" href="#why-is-event-annotation-necessary">Why is event annotation necessary?</a><a class="headerlink" href="#why-is-event-annotation-necessary" title="Permanent link">&para;</a></h3>
 <p>Events provide the crucial linkage between what happens in the experiment
 and the data itself.
 Without the information provided by the dataset events,
 many types of datasets cannot be analyzed.</p>
 <p>Beyond marking experimental stimuli, participant responses, instructions,
 and feedback, events can also mark the initiation and termination of tasks and experimental conditions.</p>
-<h3 id="bids-event-infrastructure"><a class="toclink" href="#bids-event-infrastructure"><abbr title="Brain Imaging Data Structure">BIDS</abbr> event infrastructure</a></h3>
+<h3 id="bids-event-infrastructure"><a class="toclink" href="#bids-event-infrastructure"><abbr title="Brain Imaging Data Structure">BIDS</abbr> event infrastructure</a><a class="headerlink" href="#bids-event-infrastructure" title="Permanent link">&para;</a></h3>
 <p>Events in <abbr title="Brain Imaging Data Structure">BIDS</abbr> are marked by providing <code>events.tsv</code> files associated with data recordings.
 These tab-separated files have rows corresponding to the individual event markers and
 columns corresponding to information about the corresponding event.</p>
-<h4 id="bids-minimum-requirements"><a class="toclink" href="#bids-minimum-requirements"><abbr title="Brain Imaging Data Structure">BIDS</abbr> minimum requirements</a></h4>
+<h4 id="bids-minimum-requirements"><a class="toclink" href="#bids-minimum-requirements"><abbr title="Brain Imaging Data Structure">BIDS</abbr> minimum requirements</a><a class="headerlink" href="#bids-minimum-requirements" title="Permanent link">&para;</a></h4>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> requires that <code>events.tsv</code> files have an <code>onset</code> column marking the
 time of the time that the event occurred in seconds relative to the start
 of the correspondingly named data recording file.
@@ -4311,13 +4316,13 @@ without additional documentation.</p>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> <strong>allows</strong>, but <strong>does not require</strong> documentation about the meanings
 of the <code>events.tsv</code> file columns in similarly-named
 <code>events.json</code> files referred to as <abbr title="JavaScript Object Notation">JSON</abbr> sidecars.</p>
-<h4 id="text-descriptions-of-events"><a class="toclink" href="#text-descriptions-of-events">Text descriptions of events</a></h4>
+<h4 id="text-descriptions-of-events"><a class="toclink" href="#text-descriptions-of-events">Text descriptions of events</a><a class="headerlink" href="#text-descriptions-of-events" title="Permanent link">&para;</a></h4>
 <p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> <abbr title="JavaScript Object Notation">JSON</abbr> sidecar format accommodates text descriptions of the meanings
 and contents of event file columns in the
 <code>Description</code> and <code>Levels</code> keys.</p>
 <p>At a minimum, good text descriptions of the event file columns are needed in order
 for users to use the data correctly.</p>
-<h4 id="machine-actionable-annotation-with-hed"><a class="toclink" href="#machine-actionable-annotation-with-hed">Machine actionable annotation with HED</a></h4>
+<h4 id="machine-actionable-annotation-with-hed"><a class="toclink" href="#machine-actionable-annotation-with-hed">Machine actionable annotation with HED</a><a class="headerlink" href="#machine-actionable-annotation-with-hed" title="Permanent link">&para;</a></h4>
 <p>The difficulty with just providing text descriptions of the
 event file columns and their contents is that users will usually
 be required to write custom code to use your data.</p>
@@ -4326,14 +4331,14 @@ which is an infrastructure and a controlled vocabulary that allows you to
 annotate your events in a manner that can be used directly by tools.</p>
 <p><strong>Remember:</strong> Most users will not be able to work with your dataset
 without having meaningful information about the dataset events.</p>
-<h4 id="additional-information"><a class="toclink" href="#additional-information">Additional information</a></h4>
+<h4 id="additional-information"><a class="toclink" href="#additional-information">Additional information</a><a class="headerlink" href="#additional-information" title="Permanent link">&para;</a></h4>
 <p>See <a href="https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/05-task-events.html">Task events</a> and
 <a href="https://bids-specification.readthedocs.io/en/stable/appendices/hed.html">Appendix III: Hierarchical Event Descriptors</a>
 in the <a href="https://bids-specification.readthedocs.io"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a>
 for an overview of events before getting started with your own annotation.</p>
 <p>The next section provides an overview of the event annotation process
 and links to helpful guides and tutorials with the details.</p>
-<h3 id="the-event-annotation-process"><a class="toclink" href="#the-event-annotation-process">The event annotation process</a></h3>
+<h3 id="the-event-annotation-process"><a class="toclink" href="#the-event-annotation-process">The event annotation process</a><a class="headerlink" href="#the-event-annotation-process" title="Permanent link">&para;</a></h3>
 <p>The goal of event annotation is to provide information about
 events needed for effective and correct data analysis.</p>
 <p>Ideally, most of this information should be in a single <code>events.json</code> sidecar file
@@ -4364,7 +4369,7 @@ to help you during this process:</p>
 descriptions, as well as HED tags for your dataset events.</p>
 <p>A <a href="https://www.hed-resources.org/en/latest/HedAnnotationQuickstart.html">HED annotation quickstart</a>
 outlines a step-by-step process for selecting HED tags during the annotation process.</p>
-<h4 id="hed-schemas"><a class="toclink" href="#hed-schemas">HED schemas</a></h4>
+<h4 id="hed-schemas"><a class="toclink" href="#hed-schemas">HED schemas</a><a class="headerlink" href="#hed-schemas" title="Permanent link">&para;</a></h4>
 <p>The HED tags used to annotate data come from a controlled vocabulary called a HED schema.
 A HED schema is a structured vocabulary of terms consisting of top-level tags representing general categories in this vocabulary.
 Each top-level tag is the root of a tree containing tags falling into that category.
@@ -4372,7 +4377,7 @@ This structure allows detailed and accurate annotation of events,
 machine validation of the annotations,
 and event description-based search across data collected in various studies.</p>
 <p>The rules for HED schema vocabularies and HED-compliant tools can be found in the <a href="https://hed-specification.readthedocs.io/en/latest/">HED Specification</a>.</p>
-<h4 id="hed-library-schemas"><a class="toclink" href="#hed-library-schemas">HED library schemas</a></h4>
+<h4 id="hed-library-schemas"><a class="toclink" href="#hed-library-schemas">HED library schemas</a><a class="headerlink" href="#hed-library-schemas" title="Permanent link">&para;</a></h4>
 <p>The HED standard schema contains basic terms that are common across most human neuroimaging, behavioral, and physiological experiments.
 The HED ecosystem schema libraries extend the standard HED schema with structured vocabularies, including terms unique to specific research fields.
 This allows the expansion of the HED vocabulary in a scalable manner to support specialized data annotations,
@@ -4571,7 +4576,7 @@ to begin developing your own library schema or contribute to existing HED vocabu
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>

@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4315,7 +4320,7 @@
   
 
 
-<h1 id="json-files"><a class="toclink" href="#json-files"><abbr title="JavaScript Object Notation">JSON</abbr> Files</a></h1>
+<h1 id="json-files"><a class="toclink" href="#json-files"><abbr title="JavaScript Object Notation">JSON</abbr> Files</a><a class="headerlink" href="#json-files" title="Permanent link">&para;</a></h1>
 <p><abbr title="JavaScript Object Notation">JSON</abbr> stands for JavaScript Object Notation
 and as its name indicates takes its syntax from the JavaScript language.</p>
 <p><abbr title="JavaScript Object Notation">JSON</abbr> files are text files that take the following structure:</p>
@@ -4332,8 +4337,8 @@ Here are some common ways to read / write these files.</p>
 <ul>
 <li><a href="https://www.json.org/json-en.html">Official documentation about <abbr title="JavaScript Object Notation">JSON</abbr></a></li>
 </ul>
-<h2 id="editing-json-file"><a class="toclink" href="#editing-json-file">Editing <abbr title="JavaScript Object Notation">JSON</abbr> file</a></h2>
-<h3 id="online"><a class="toclink" href="#online">Online</a></h3>
+<h2 id="editing-json-file"><a class="toclink" href="#editing-json-file">Editing <abbr title="JavaScript Object Notation">JSON</abbr> file</a><a class="headerlink" href="#editing-json-file" title="Permanent link">&para;</a></h2>
+<h3 id="online"><a class="toclink" href="#online">Online</a><a class="headerlink" href="#online" title="Permanent link">&para;</a></h3>
 <p>Working with <abbr title="JavaScript Object Notation">JSON</abbr> can be a headache if you do not have the proper tools.</p>
 <p>To get started we suggest playing around with <abbr title="JavaScript Object Notation">JSON</abbr> in an online editor,
 to get a feeling for how <abbr title="JavaScript Object Notation">JSON</abbr> works.</p>
@@ -4342,7 +4347,7 @@ to get a feeling for how <abbr title="JavaScript Object Notation">JSON</abbr> wo
 forgot to close a bracket or something similar.
 And even fix mistakes for you.</p>
 <p><img alt="" src="../../../assets/img/autofix.png" /></p>
-<h3 id="on-your-computer"><a class="toclink" href="#on-your-computer">On your computer</a></h3>
+<h3 id="on-your-computer"><a class="toclink" href="#on-your-computer">On your computer</a><a class="headerlink" href="#on-your-computer" title="Permanent link">&para;</a></h3>
 <p>If you need to edit <abbr title="JavaScript Object Notation">JSON</abbr> files on your computer, it will make your life easier
 if you use a modern code editor like:</p>
 <ul>
@@ -4353,12 +4358,12 @@ and highlight the lines where you have errors.
 Most of them usually also have code formatting extensions
 that can automatically indent your <abbr title="JavaScript Object Notation">JSON</abbr> like
 <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier for vscode</a></p>
-<h3 id="python"><a class="toclink" href="#python">Python</a></h3>
+<h3 id="python"><a class="toclink" href="#python">Python</a><a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
 <p>In Python, <abbr title="JavaScript Object Notation">JSON</abbr> support is built <a href="https://docs.python.org/3/library/json.html">into the core library</a>,
 meaning you don't need to install anything to read/write <abbr title="JavaScript Object Notation">JSON</abbr> files.
 In addition, the structure of <abbr title="JavaScript Object Notation">JSON</abbr> is almost identical
 to that of Python dictionaries (assuming you are only storing text / numbers in the dictionary).</p>
-<h3 id="matlab-octave"><a class="toclink" href="#matlab-octave">MATLAB / Octave</a></h3>
+<h3 id="matlab-octave"><a class="toclink" href="#matlab-octave">MATLAB / Octave</a><a class="headerlink" href="#matlab-octave" title="Permanent link">&para;</a></h3>
 <p>Since MATLAB R2016b
 and <a href="https://octave.org/">Octave</a> &gt;= 7.1 (an open-source drop-in compatible with many Matlab scripts),
 you can use the built-in functions
@@ -4378,13 +4383,13 @@ and write <abbr title="JavaScript Object Notation">JSON</abbr> files with MATLAB
 <p>SPM12 uses the JSONio library by calling <code>spm_jsonwrite</code> and <code>spm_jsonread</code> and
 it has <a href="https://en.wikibooks.org/wiki/SPM/BIDS">other interesting functions to help you with <abbr title="Brain Imaging Data Structure">BIDS</abbr></a>.</p>
 </div>
-<h3 id="r"><a class="toclink" href="#r">R</a></h3>
+<h3 id="r"><a class="toclink" href="#r">R</a><a class="headerlink" href="#r" title="Permanent link">&para;</a></h3>
 <p>There are several packages for reading and writing <abbr title="JavaScript Object Notation">JSON</abbr> files from R.
 In the examples in this page, we will be using <a href="https://github.com/jeroen/jsonlite">jsonlite</a>.
 Remember to install and call a package before using it.</p>
 <!-- There is a new package to help intract with BIDS datasets: [bidser](https://github.com/bbuchsbaum/bidser) -->
 
-<h2 id="reading-a-json-file"><a class="toclink" href="#reading-a-json-file">Reading a <code>.json</code> file</a></h2>
+<h2 id="reading-a-json-file"><a class="toclink" href="#reading-a-json-file">Reading a <code>.json</code> file</a><a class="headerlink" href="#reading-a-json-file" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">python</label><label for="__tabbed_1_2">MATLAB</label><label for="__tabbed_1_3">octave</label><label for="__tabbed_1_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4416,7 +4421,7 @@ Remember to install and call a package before using it.</p>
 </div>
 </div>
 </div>
-<h2 id="writing-a-json-file"><a class="toclink" href="#writing-a-json-file">Writing a <code>.json</code> file</a></h2>
+<h2 id="writing-a-json-file"><a class="toclink" href="#writing-a-json-file">Writing a <code>.json</code> file</a><a class="headerlink" href="#writing-a-json-file" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">python</label><label for="__tabbed_2_2">MATLAB</label><label for="__tabbed_2_3">octave</label><label for="__tabbed_2_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4449,7 +4454,7 @@ Remember to install and call a package before using it.</p>
 </div>
 </div>
 </div>
-<h2 id="interoperability-issues"><a class="toclink" href="#interoperability-issues">Interoperability issues</a></h2>
+<h2 id="interoperability-issues"><a class="toclink" href="#interoperability-issues">Interoperability issues</a><a class="headerlink" href="#interoperability-issues" title="Permanent link">&para;</a></h2>
 <div class="admonition warning --">
 <p class="admonition-title">Summary of this section</p>
 <p>In general, use key names that:</p>
@@ -4545,7 +4550,7 @@ getting the value for the key <code>1</code>.</p>
 
 <span class="w">       </span><span class="n">x1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;1&#39;</span>
 </code></pre></div>
-<h3 id="why-does-this-matter-for-bids"><a class="toclink" href="#why-does-this-matter-for-bids">Why does this matter for <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a></h3>
+<h3 id="why-does-this-matter-for-bids"><a class="toclink" href="#why-does-this-matter-for-bids">Why does this matter for <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#why-does-this-matter-for-bids" title="Permanent link">&para;</a></h3>
 <p>In most cases this will not be an issue,
 but this could be problem if in your <code>events.tsv</code>
 you have named some of your trial_type things like <code>1_face</code>,
@@ -4571,11 +4576,11 @@ you have named some of your trial_type things like <code>1_face</code>,
 <li>make sure they are no longer than 63 characters</li>
 </ul>
 </div>
-<h2 id="more-about-json"><a class="toclink" href="#more-about-json">More about <abbr title="JavaScript Object Notation">JSON</abbr></a></h2>
+<h2 id="more-about-json"><a class="toclink" href="#more-about-json">More about <abbr title="JavaScript Object Notation">JSON</abbr></a><a class="headerlink" href="#more-about-json" title="Permanent link">&para;</a></h2>
 <p>This section below gives you more in depth details about using <abbr title="JavaScript Object Notation">JSON</abbr>.</p>
-<h3 id="json-terms"><a class="toclink" href="#json-terms"><abbr title="JavaScript Object Notation">JSON</abbr> terms</a></h3>
+<h3 id="json-terms"><a class="toclink" href="#json-terms"><abbr title="JavaScript Object Notation">JSON</abbr> terms</a><a class="headerlink" href="#json-terms" title="Permanent link">&para;</a></h3>
 <p>The main "building blocks" of <abbr title="JavaScript Object Notation">JSON</abbr> you must be familiar with are <code>Objects</code> and <code>Arrays</code>.</p>
-<h4 id="objects"><a class="toclink" href="#objects">Objects</a></h4>
+<h4 id="objects"><a class="toclink" href="#objects">Objects</a><a class="headerlink" href="#objects" title="Permanent link">&para;</a></h4>
 <p>In <abbr title="JavaScript Object Notation">JSON</abbr>, objects</p>
 <ul>
 <li>
@@ -4594,7 +4599,7 @@ you have named some of your trial_type things like <code>1_face</code>,
 </code></pre></div>
 <p>As you can see, in <abbr title="JavaScript Object Notation">JSON</abbr> strings start and end with double quotes <code>"</code>.
 Also note the comma between the key-value pairs but not after the last key-value pair.</p>
-<h4 id="arrays"><a class="toclink" href="#arrays">Arrays</a></h4>
+<h4 id="arrays"><a class="toclink" href="#arrays">Arrays</a><a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h4>
 <p>In <abbr title="JavaScript Object Notation">JSON</abbr>, arrays are:</p>
 <ul>
 <li>are opened and closes by square brackets <code>[ ]</code></li>
@@ -4603,13 +4608,13 @@ Also note the comma between the key-value pairs but not after the last key-value
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;this&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JSON&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">]</span>
 </code></pre></div>
-<h4 id="a-note-on-booleans"><a class="toclink" href="#a-note-on-booleans">A note on Booleans</a></h4>
+<h4 id="a-note-on-booleans"><a class="toclink" href="#a-note-on-booleans">A note on Booleans</a><a class="headerlink" href="#a-note-on-booleans" title="Permanent link">&para;</a></h4>
 <p>In <abbr title="JavaScript Object Notation">JSON</abbr> boolean values must be typed as lowercase with no quotes:</p>
 <ul>
 <li><code>true</code></li>
 <li><code>false</code></li>
 </ul>
-<h3 id="json-styling"><a class="toclink" href="#json-styling"><abbr title="JavaScript Object Notation">JSON</abbr> "styling"</a></h3>
+<h3 id="json-styling"><a class="toclink" href="#json-styling"><abbr title="JavaScript Object Notation">JSON</abbr> "styling"</a><a class="headerlink" href="#json-styling" title="Permanent link">&para;</a></h3>
 <p>In JavaScript it is custom to use CamelCase to write code,
 this is why most of keys you will see in <abbr title="JavaScript Object Notation">JSON</abbr> are also in CamelCase.</p>
 <!-- TODO Add link to camelcase wikipedia -->
@@ -4626,7 +4631,7 @@ this is why most of keys you will see in <abbr title="JavaScript Object Notation
 <p>Finally, you cannot add comments in <abbr title="JavaScript Object Notation">JSON</abbr> files,
 but the <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model allows you to add a <code>"Description"</code> key
 to most objects to give explanations to the reader.</p>
-<h3 id="nesting"><a class="toclink" href="#nesting">Nesting</a></h3>
+<h3 id="nesting"><a class="toclink" href="#nesting">Nesting</a><a class="headerlink" href="#nesting" title="Permanent link">&para;</a></h3>
 <p><abbr title="JavaScript Object Notation">JSON</abbr> allows to "nest" objects within objects, to create arrays of objects
 and combine all those elements however deep you want or need.</p>
 <p>Just remember to place commas:</p>
@@ -4650,7 +4655,7 @@ and combine all those elements however deep you want or need.</p>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="json-schema"><a class="toclink" href="#json-schema"><abbr title="JavaScript Object Notation">JSON</abbr> schema</a></h3>
+<h3 id="json-schema"><a class="toclink" href="#json-schema"><abbr title="JavaScript Object Notation">JSON</abbr> schema</a><a class="headerlink" href="#json-schema" title="Permanent link">&para;</a></h3>
 <p>If the content of your <abbr title="JavaScript Object Notation">JSON</abbr> must follow certain rules, like</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -4661,7 +4666,7 @@ and combine all those elements however deep you want or need.</p>
 </ul>
 </div>
 <p>Then you can specify those rules in what is called a <abbr title="JavaScript Object Notation">JSON</abbr> schema.</p>
-<h4 id="online_1"><a class="toclink" href="#online_1">Online</a></h4>
+<h4 id="online_1"><a class="toclink" href="#online_1">Online</a><a class="headerlink" href="#online_1" title="Permanent link">&para;</a></h4>
 <p>If you are working on a <abbr title="JavaScript Object Notation">JSON</abbr> file in the browser like with <a href="http://jsoneditoronline.org/">http://jsoneditoronline.org/</a>,
 and if there is a <abbr title="JavaScript Object Notation">JSON</abbr> schema for the <abbr title="JavaScript Object Notation">JSON</abbr> file you are working on
 you can also use that schema to validate while editing
@@ -4669,7 +4674,7 @@ by clicking <code>Options --&gt; JSON schema --&gt; URL</code>
 and give it the <abbr title="Uniform Resource Locator">URL</abbr> to the schema.</p>
 <p>See the example below using the <a href="../../../standards/bids_stats_model/index.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model schema</a>:</p>
 <p><img alt="" src="../../../assets/img/schema_in_browser.png" /></p>
-<h4 id="on-your-computer_1"><a class="toclink" href="#on-your-computer_1">On your computer</a></h4>
+<h4 id="on-your-computer_1"><a class="toclink" href="#on-your-computer_1">On your computer</a><a class="headerlink" href="#on-your-computer_1" title="Permanent link">&para;</a></h4>
 <p>If you want to validate a <abbr title="JavaScript Object Notation">JSON</abbr> file you are editing using a <abbr title="JavaScript Object Notation">JSON</abbr> schema
 you can do so by adding the following key-value pair in your <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model,
 (here using the <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model schema as an example)</p>
@@ -4877,7 +4882,7 @@ you can do so by adding the following key-value pair in your <abbr title="Brain 
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>

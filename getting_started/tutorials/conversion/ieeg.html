@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4117,7 +4122,7 @@
   
 
 
-<h1 id="ieeg-data-conversion"><a class="toclink" href="#ieeg-data-conversion"><abbr title="Intracranial Electroencephalography">iEEG</abbr> data conversion</a></h1>
+<h1 id="ieeg-data-conversion"><a class="toclink" href="#ieeg-data-conversion"><abbr title="Intracranial Electroencephalography">iEEG</abbr> data conversion</a><a class="headerlink" href="#ieeg-data-conversion" title="Permanent link">&para;</a></h1>
 <p>Here, we briefly describe the first steps in creating an <abbr title="Intracranial Electroencephalography">iEEG</abbr> dataset in <abbr title="Brain Imaging Data Structure">BIDS</abbr> format.
 The process can be summarized by the following main steps:</p>
 <ol>
@@ -4126,7 +4131,7 @@ The process can be summarized by the following main steps:</p>
 <li>extract the necessary metadata from your raw data and experimental notes</li>
 <li>add electrode-specific information needed for localization</li>
 </ol>
-<h2 id="folder-structure"><a class="toclink" href="#folder-structure">Folder structure</a></h2>
+<h2 id="folder-structure"><a class="toclink" href="#folder-structure">Folder structure</a><a class="headerlink" href="#folder-structure" title="Permanent link">&para;</a></h2>
 <p>At the highest level, <abbr title="Brain Imaging Data Structure">BIDS</abbr> is a specification for how to structure your files in folders,
 and how to name files such that one can easily infer their contents.
 Thus, the first step is to create the proper folder/file hierarchies,
@@ -4176,7 +4181,7 @@ for the subject, for example:</p>
 ...
 └── visualtask_ieeg.json
 </code></pre></div>
-<h2 id="add-raw-ieeg-data"><a class="toclink" href="#add-raw-ieeg-data">Add raw <abbr title="Intracranial Electroencephalography">iEEG</abbr> data</a></h2>
+<h2 id="add-raw-ieeg-data"><a class="toclink" href="#add-raw-ieeg-data">Add raw <abbr title="Intracranial Electroencephalography">iEEG</abbr> data</a><a class="headerlink" href="#add-raw-ieeg-data" title="Permanent link">&para;</a></h2>
 <p>Once a folder hierarchy is defined, the folders can be populated
 with the correct files.
 Here we focus on the files relevant for <abbr title="Intracranial Electroencephalography">iEEG</abbr> data.
@@ -4187,7 +4192,7 @@ For example:</p>
 </code></pre></div>
 <p>These data are unprocessed and can have one of several file formats
 (for example: BrainVision and EDF formats are supported, NWB, EEGLab and MEF3 formats are allowed).</p>
-<h2 id="add-ieeg-amplifier-metadata"><a class="toclink" href="#add-ieeg-amplifier-metadata">Add <abbr title="Intracranial Electroencephalography">iEEG</abbr> amplifier metadata</a></h2>
+<h2 id="add-ieeg-amplifier-metadata"><a class="toclink" href="#add-ieeg-amplifier-metadata">Add <abbr title="Intracranial Electroencephalography">iEEG</abbr> amplifier metadata</a><a class="headerlink" href="#add-ieeg-amplifier-metadata" title="Permanent link">&para;</a></h2>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets should specify all of the metadata needed to analyze and
 understand a dataset, and these are all contained within text-based
 JavaScript  Object Notation (<abbr title="JavaScript Object Notation">JSON</abbr>, field-value)
@@ -4216,7 +4221,7 @@ and a <abbr title="Tab Separated Values">TSV</abbr> file with amplifier metadata
     <a href="https://github.com/bids-standard/bids-starter-kit/tree/main/matlabCode/ieeg/createBIDS_channels_tsv.m">here</a>.</p>
 </li>
 </ul>
-<h2 id="add-electrode-specific-metadata"><a class="toclink" href="#add-electrode-specific-metadata">Add electrode-specific metadata</a></h2>
+<h2 id="add-electrode-specific-metadata"><a class="toclink" href="#add-electrode-specific-metadata">Add electrode-specific metadata</a><a class="headerlink" href="#add-electrode-specific-metadata" title="Permanent link">&para;</a></h2>
 <p>In <abbr title="Intracranial Electroencephalography">iEEG</abbr> recordings, each channel in the amplifier is sampled from a specific
 electrode implanted in the brain.
 The metadata on the type of electrodes and their coordinates is stored
@@ -4246,7 +4251,7 @@ This can contain files like structural volume data or electrode placement photos
     <a href="https://github.com/bids-standard/bids-starter-kit/tree/main/matlabCode/ieeg/createBIDS_coordsystem_json.m">here</a>.</p>
 </li>
 </ul>
-<h2 id="add-optional-metadata"><a class="toclink" href="#add-optional-metadata">Add optional metadata</a></h2>
+<h2 id="add-optional-metadata"><a class="toclink" href="#add-optional-metadata">Add optional metadata</a><a class="headerlink" href="#add-optional-metadata" title="Permanent link">&para;</a></h2>
 <p>There are several optional data types that can be stored in <abbr title="Brain Imaging Data Structure">BIDS</abbr>.
 The way in which events, stimuli, continuous physiology data, and participant information
 are stored is the same as for <abbr title="Brain Imaging Data Structure">BIDS</abbr> <abbr title="Magnetic Resonance Imaging">MRI</abbr> data.
@@ -4272,7 +4277,7 @@ Some examples are shown here:</p>
 │       ├── sub-01_task-visualtask_run-01_stim.json
 ...
 </code></pre></div>
-<h2 id="validate-the-ieeg-bids-data"><a class="toclink" href="#validate-the-ieeg-bids-data">Validate the <abbr title="Intracranial Electroencephalography">iEEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr> data</a></h2>
+<h2 id="validate-the-ieeg-bids-data"><a class="toclink" href="#validate-the-ieeg-bids-data">Validate the <abbr title="Intracranial Electroencephalography">iEEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr> data</a><a class="headerlink" href="#validate-the-ieeg-bids-data" title="Permanent link">&para;</a></h2>
 <p>In order to verify that a dataset adheres to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification,
 we need to validate the structure, naming conventions, and information inside the dataset.
 The <a href="https://github.com/bids-standard/bids-validator"><abbr title="Brain Imaging Data Structure">BIDS</abbr> validator</a>
@@ -4469,7 +4474,7 @@ this validator has been updated to check for new conventions related to <abbr ti
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>

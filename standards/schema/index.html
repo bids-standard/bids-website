@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4013,7 +4018,7 @@
 
   <h1>Index</h1>
 
-<h2 id="what-is-the-schema"><a class="toclink" href="#what-is-the-schema">What is the Schema?</a></h2>
+<h2 id="what-is-the-schema"><a class="toclink" href="#what-is-the-schema">What is the Schema?</a><a class="headerlink" href="#what-is-the-schema" title="Permanent link">&para;</a></h2>
 <p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> schema is a machine readable representation of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Standard
 written in <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>.
 It is (by and large) the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Specification, but written in a declarative form.
@@ -4052,15 +4057,15 @@ contained within the source code here on <a href="https://github.com/bids-standa
 │   └── suffixes.yaml
 └── SCHEMA_VERSION
 </code></pre></div>
-<h2 id="where-is-the-schema"><a class="toclink" href="#where-is-the-schema">Where is the Schema?</a></h2>
+<h2 id="where-is-the-schema"><a class="toclink" href="#where-is-the-schema">Where is the Schema?</a><a class="headerlink" href="#where-is-the-schema" title="Permanent link">&para;</a></h2>
 <p>The schema source code lives within the <a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Specification</a>;
 a deferenced <abbr title="JavaScript Object Notation">JSON</abbr>'ified version can be found at the following url -&gt;
 <a href="https://bids-specification.readthedocs.io/en/stable/schema.json">bids-specification.readthedocs.io/en/stable/schema.json</a>.</p>
-<h2 id="schema-documentation"><a class="toclink" href="#schema-documentation">Schema documentation</a></h2>
+<h2 id="schema-documentation"><a class="toclink" href="#schema-documentation">Schema documentation</a><a class="headerlink" href="#schema-documentation" title="Permanent link">&para;</a></h2>
 <p>A full description of the schema can be found in the <a href="https://bidsschematools.readthedocs.io/en/latest/?badge=latest">documentation</a>
 for <a href="https://pypi.org/project/bidsschematools/">bidsschematools</a>, the Python package developed to interact
 with the schema that is bundled with the specification.</p>
-<h2 id="history-of-the-schema"><a class="toclink" href="#history-of-the-schema">History of the Schema</a></h2>
+<h2 id="history-of-the-schema"><a class="toclink" href="#history-of-the-schema">History of the Schema</a><a class="headerlink" href="#history-of-the-schema" title="Permanent link">&para;</a></h2>
 <p>If you're just returning to <abbr title="Brain Imaging Data Structure">BIDS</abbr>, creating a new <abbr title="BIDS Extension Proposal">BEP</abbr>, or simply curious as to the timeline and history
 of the transition from markdown to a yaml schema to render and use the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Specification
 you are encouraged to browse the links below:</p>
@@ -4069,7 +4074,7 @@ into a machine readable format and then began to grow in scope.
 Additional work towards the schematization of the specification
 has proceeded steadily (and in sometimes in bursts during Schema Sprints
 <sup><a href="https://bit.ly/pdx-bids-sprint">1</a>, <a href="https://docs.google.com/document/d/1UmcNlv5Ly9Ko6UStJBPV4UGVARjdNtZWRx9OVTLsE7Q/edit?usp=sharing">2</a>, <a href="https://docs.google.com/presentation/d/1j7kWyRpk3VPY7r4tsEzuAQ-jmn83iZkmXYtdriCJptg/edit?usp=sharing">3</a></sup>) since.</p>
-<h2 id="motivations-and-goals"><a class="toclink" href="#motivations-and-goals">Motivations and Goals</a></h2>
+<h2 id="motivations-and-goals"><a class="toclink" href="#motivations-and-goals">Motivations and Goals</a><a class="headerlink" href="#motivations-and-goals" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>Machine readablity ensures interoperability with other tools and utilities</p>
@@ -4086,7 +4091,7 @@ has proceeded steadily (and in sometimes in bursts during Schema Sprints
 <p>Improve the process of writing <abbr title="BIDS Extension Proposals">BEPs</abbr></p>
 </li>
 </ul>
-<h2 id="extending-the-schema-and-validator"><a class="toclink" href="#extending-the-schema-and-validator">Extending the Schema and Validator</a></h2>
+<h2 id="extending-the-schema-and-validator"><a class="toclink" href="#extending-the-schema-and-validator">Extending the Schema and Validator</a><a class="headerlink" href="#extending-the-schema-and-validator" title="Permanent link">&para;</a></h2>
 <p>Past <abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposals (<abbr title="BIDS Extension Proposals">BEPs</abbr>) have required extending the specification itself as well as the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator.
 After rendering the <abbr title="BIDS Extension Proposal">BEP</abbr> into markdown it was incumbent on the <abbr title="BIDS Extension Proposal">BEP</abbr> leads or maintainers
 to then update the Validator with rules and logic to handle the new <abbr title="BIDS Extension Proposal">BEP</abbr>.
@@ -4289,7 +4294,7 @@ A change now made to a <abbr title="BIDS Extension Proposal">BEP</abbr>, the spe
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>

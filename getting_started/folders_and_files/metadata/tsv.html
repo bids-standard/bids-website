@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4099,17 +4104,17 @@
   
 
 
-<h1 id="tsv-files"><a class="toclink" href="#tsv-files"><abbr title="Tab Separated Values">TSV</abbr> files</a></h1>
+<h1 id="tsv-files"><a class="toclink" href="#tsv-files"><abbr title="Tab Separated Values">TSV</abbr> files</a><a class="headerlink" href="#tsv-files" title="Permanent link">&para;</a></h1>
 <p>A Tab-Separate Values (<abbr title="Tab Separated Values">TSV</abbr>) file is a text file where tab characters (<code>\t</code>) separate fields that are in the file.
 It is structured as a table, with each column representing a field of interest,
 and each row representing a single datapoint.</p>
-<h2 id="python"><a class="toclink" href="#python">Python</a></h2>
+<h2 id="python"><a class="toclink" href="#python">Python</a><a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
 <p>In Python, the easiest way to work with <abbr title="Tab Separated Values">TSV</abbr> files is to use the <a href="https://pandas.pydata.org/">Pandas library</a>.
 This provides a high-level structure to organize, manipulate, clean, and visualize tabular data.
 You can install <code>pandas</code> with the following command:</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pandas
 </code></pre></div>
-<h2 id="matlab-octave"><a class="toclink" href="#matlab-octave">MATLAB / Octave</a></h2>
+<h2 id="matlab-octave"><a class="toclink" href="#matlab-octave">MATLAB / Octave</a><a class="headerlink" href="#matlab-octave" title="Permanent link">&para;</a></h2>
 <p>Since MATLAB R2013b,
 there is a <a href="https://www.mathworks.com/help/matlab/ref/readtable.html"><code>readtable</code></a> function that can load <abbr title="Tab Separated Values">TSV</abbr> files,
 and a <a href="https://www.mathworks.com/help/matlab/ref/writetable.html"><code>writetable</code></a> function to write them.</p>
@@ -4119,9 +4124,9 @@ so it may be easier to rely on <a href="https://github.com/bids-standard/bids-ma
 (<a href="https://bids-matlab.readthedocs.io/en/main/utility_functions.html#bids.util.tsvwrite"><code>bids.util.tsvwrite</code></a> and
 <a href="https://bids-matlab.readthedocs.io/en/main/utility_functions.html#bids.util.tsvread"><code>bids.util.tsvread</code></a>)
 to help you work with those files.</p>
-<h2 id="r"><a class="toclink" href="#r">R</a></h2>
+<h2 id="r"><a class="toclink" href="#r">R</a><a class="headerlink" href="#r" title="Permanent link">&para;</a></h2>
 <p>Reading and writing tab separated files comes natively in R, no need for extra packages.</p>
-<h2 id="reading-a-tsv-file"><a class="toclink" href="#reading-a-tsv-file">Reading a <code>.tsv</code> file</a></h2>
+<h2 id="reading-a-tsv-file"><a class="toclink" href="#reading-a-tsv-file">Reading a <code>.tsv</code> file</a><a class="headerlink" href="#reading-a-tsv-file" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">python</label><label for="__tabbed_1_2">MATLAB</label><label for="__tabbed_1_3">octave</label><label for="__tabbed_1_4">R</label><label for="__tabbed_1_5">Excel / LibreOffice Calc</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4155,7 +4160,7 @@ should have no problem opening <abbr title="Tab Separated Values">TSV</abbr> fil
 </div>
 </div>
 </div>
-<h2 id="writing-a-tsv-file"><a class="toclink" href="#writing-a-tsv-file">Writing a <code>.tsv</code> file</a></h2>
+<h2 id="writing-a-tsv-file"><a class="toclink" href="#writing-a-tsv-file">Writing a <code>.tsv</code> file</a><a class="headerlink" href="#writing-a-tsv-file" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">python</label><label for="__tabbed_2_2">MATLAB</label><label for="__tabbed_2_3">Octave</label><label for="__tabbed_2_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4400,7 +4405,7 @@ we remove row names and quotes from the output explicitly by setting them to <co
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>

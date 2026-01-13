@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4197,7 +4202,7 @@
   
 
 
-<h1 id="using-mkdocs-macros-in-the-bids-specification"><a class="toclink" href="#using-mkdocs-macros-in-the-bids-specification">Using MkDocs macros in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a></h1>
+<h1 id="using-mkdocs-macros-in-the-bids-specification"><a class="toclink" href="#using-mkdocs-macros-in-the-bids-specification">Using MkDocs macros in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a><a class="headerlink" href="#using-mkdocs-macros-in-the-bids-specification" title="Permanent link">&para;</a></h1>
 <p>We use <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/">mkdocs-macros</a>
 to standardize how some aspects of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification are rendered in HTML.
 Macros make it easy to achieve a consistent style throughout the specification,
@@ -4205,7 +4210,7 @@ and changing a given macro will automatically change all appropriate paragraphs
 in the specification.</p>
 <p>Below you will find answers to frequently asked questions regarding using macros
 in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.</p>
-<h2 id="what-are-macros-and-why-use-them"><a class="toclink" href="#what-are-macros-and-why-use-them">What are macros and why use them?</a></h2>
+<h2 id="what-are-macros-and-why-use-them"><a class="toclink" href="#what-are-macros-and-why-use-them">What are macros and why use them?</a><a class="headerlink" href="#what-are-macros-and-why-use-them" title="Permanent link">&para;</a></h2>
 <p>A macro is a rule or pattern that specifies how an input should be mapped to
 output. Macros are very useful for standardizing the output format for items
 such as tables. You might already be familiar with using macros from other tools
@@ -4234,7 +4239,7 @@ markdown document:</p>
 <span class="w">   </span>└─<span class="w"> </span>func/
 <span class="w">      </span>└─<span class="w"> </span>sub-control01_task-nback_bold.json
 </code></pre></div>
-<h2 id="what-kind-of-input-information-are-required-by-macros"><a class="toclink" href="#what-kind-of-input-information-are-required-by-macros">What kind of input information are required by macros?</a></h2>
+<h2 id="what-kind-of-input-information-are-required-by-macros"><a class="toclink" href="#what-kind-of-input-information-are-required-by-macros">What kind of input information are required by macros?</a><a class="headerlink" href="#what-kind-of-input-information-are-required-by-macros" title="Permanent link">&para;</a></h2>
 <p>Some macros only use the arguments you directly supply in the macro call.</p>
 <p>Other macros use information (such as metadata terms) from external sources, and
 you will need to provide links to this information as part of the call. For
@@ -4242,7 +4247,7 @@ example, parts of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> spe
 requirements in the specification can be automatically checked by validators.
 Several of the macros incorporate information from this schema to assure
 consistency.</p>
-<h2 id="what-macros-are-available"><a class="toclink" href="#what-macros-are-available">What macros are available?</a></h2>
+<h2 id="what-macros-are-available"><a class="toclink" href="#what-macros-are-available">What macros are available?</a><a class="headerlink" href="#what-macros-are-available" title="Permanent link">&para;</a></h2>
 <p>All the macros we use are in listed in this
 <a href="https://github.com/bids-standard/bids-specification/blob/master/tools/mkdocs_macros_bids/macros.py">Python file</a>.</p>
 <table>
@@ -4323,7 +4328,7 @@ consistency.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="when-should-i-use-a-macro"><a class="toclink" href="#when-should-i-use-a-macro">When should I use a macro?</a></h2>
+<h2 id="when-should-i-use-a-macro"><a class="toclink" href="#when-should-i-use-a-macro">When should I use a macro?</a><a class="headerlink" href="#when-should-i-use-a-macro" title="Permanent link">&para;</a></h2>
 <p>Most typo corrections and minor changes to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification do not require
 you to use macros. Even adding a table may not require you to use macros unless
 the table falls into one of the categories listed in the macros table.</p>
@@ -4331,7 +4336,7 @@ the table falls into one of the categories listed in the macros table.</p>
 contact a member of the bids-maintainers for help. To do this, you can either
 mention an individual maintainer by their GitHub username or mention the whole
 team (<code>@bids-standard/maintainers</code>).</p>
-<h2 id="do-i-need-learn-how-to-program-to-use-those-macros"><a class="toclink" href="#do-i-need-learn-how-to-program-to-use-those-macros">Do I need learn how to program to use those macros?</a></h2>
+<h2 id="do-i-need-learn-how-to-program-to-use-those-macros"><a class="toclink" href="#do-i-need-learn-how-to-program-to-use-those-macros">Do I need learn how to program to use those macros?</a><a class="headerlink" href="#do-i-need-learn-how-to-program-to-use-those-macros" title="Permanent link">&para;</a></h2>
 <p>Macros don't require programming knowledge to use. You do need to know what
 arguments the macro expects. The examples linked in the above table provide
 useful guidance in this respect.</p>
@@ -4341,7 +4346,7 @@ correct terms in the schema. This process is illustrated in the next section.</p
 found in the
 <a href="https://github.com/bids-standard/bids-specification/tree/master/tools"><code>tools</code> directory</a>.
 If you are interested in creating a new macro for users, this would be useful.</p>
-<h2 id="anything-else-i-need-to-know-if-i-need-to-insert-a-new-macro-call"><a class="toclink" href="#anything-else-i-need-to-know-if-i-need-to-insert-a-new-macro-call">Anything else I need to know if I need to insert a new macro call?</a></h2>
+<h2 id="anything-else-i-need-to-know-if-i-need-to-insert-a-new-macro-call"><a class="toclink" href="#anything-else-i-need-to-know-if-i-need-to-insert-a-new-macro-call">Anything else I need to know if I need to insert a new macro call?</a><a class="headerlink" href="#anything-else-i-need-to-know-if-i-need-to-insert-a-new-macro-call" title="Permanent link">&para;</a></h2>
 <p>One nice thing for the people who will come after you (or yourself in 6 months
 when you get back to the document you just edited) is to leave a comment before
 the macro to quickly explain what it does and where to find more information
@@ -4361,8 +4366,8 @@ and a guide for editing at &lt;link&gt;.
 
 } ) }}
 </code></pre></div>
-<h2 id="how-to-and-examples"><a class="toclink" href="#how-to-and-examples">How-To and Examples</a></h2>
-<h3 id="writing-directory-content-examples"><a class="toclink" href="#writing-directory-content-examples">Writing directory content examples</a></h3>
+<h2 id="how-to-and-examples"><a class="toclink" href="#how-to-and-examples">How-To and Examples</a><a class="headerlink" href="#how-to-and-examples" title="Permanent link">&para;</a></h2>
+<h3 id="writing-directory-content-examples"><a class="toclink" href="#writing-directory-content-examples">Writing directory content examples</a><a class="headerlink" href="#writing-directory-content-examples" title="Permanent link">&para;</a></h3>
 <p>One of the simplest macro we use helps us create consistent "file tree" examples
 that would look like this in the final document:</p>
 <div class="highlight"><pre><span></span><code>└─ sub-01/
@@ -4385,7 +4390,7 @@ that would look like this in the final document:</p>
 <p>When you have complex files and directory structure, we suggest you use this
 <a href="https://github.com/bids-standard/bids-specification/blob/master/tools/filetree_example.ipynb">Jupyter notebook</a> for sandboxing your example
 before you insert the macro call into the markdown document.</p>
-<h3 id="generating-tables"><a class="toclink" href="#generating-tables">Generating tables</a></h3>
+<h3 id="generating-tables"><a class="toclink" href="#generating-tables">Generating tables</a><a class="headerlink" href="#generating-tables" title="Permanent link">&para;</a></h3>
 <p>Say you want to edit the content of table of the <code>Reconstruction</code> section for
 the <abbr title="Positron Imaging Tomography">PET</abbr> page.</p>
 <p>The HTML version of the this section is here:</p>
@@ -4470,7 +4475,7 @@ call above it would give a table that would look like this:</p>
 </tr>
 </tbody>
 </table>
-<h4 id="modifying-a-term-in-the-table"><a class="toclink" href="#modifying-a-term-in-the-table">Modifying a term in the table</a></h4>
+<h4 id="modifying-a-term-in-the-table"><a class="toclink" href="#modifying-a-term-in-the-table">Modifying a term in the table</a><a class="headerlink" href="#modifying-a-term-in-the-table" title="Permanent link">&para;</a></h4>
 <p>So if you want to change the content of what will appear in the HTML table, you
 need to edit this <code>metadata.yml</code> file.</p>
 <p>If you wanted to add some extra content to that table, but without modifying the
@@ -4484,7 +4489,7 @@ macro call.</p>
 
        <span class="o">...</span>
 </code></pre></div>
-<h4 id="why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly"><a class="toclink" href="#why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly">Why would you NOT want to modify the content of the yml file directly ?</a></h4>
+<h4 id="why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly"><a class="toclink" href="#why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly">Why would you NOT want to modify the content of the yml file directly ?</a><a class="headerlink" href="#why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly" title="Permanent link">&para;</a></h4>
 <p>Well the same term can be used in different parts of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification and
 some details that might apply to, say, <abbr title="Positron Imaging Tomography">PET</abbr> might not apply to how the term is
 used for <abbr title="Magnetic Resonance Imaging">MRI</abbr>. So we can use the schema for the common part and add extra content
@@ -4492,7 +4497,7 @@ where necessary in the macro call.</p>
 <p>So always better to check if that term is not used somewhere else before making
 a change in the yml file. When in doubt add the change directly in the macro
 call and ask the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers for help.</p>
-<h4 id="adding-a-new-term-to-the-table"><a class="toclink" href="#adding-a-new-term-to-the-table">Adding a new term to the table</a></h4>
+<h4 id="adding-a-new-term-to-the-table"><a class="toclink" href="#adding-a-new-term-to-the-table">Adding a new term to the table</a><a class="headerlink" href="#adding-a-new-term-to-the-table" title="Permanent link">&para;</a></h4>
 <p>Say you wanted to add a new term <code>MoonPhase</code> to the table, on the second row.
 You would do it like this. But this would only work if the <code>metadata.yml</code> file
 contains an entry for <code>MoonPhase</code>. If this is the case because the term already
@@ -4518,13 +4523,13 @@ files in the Turing way:
 https://the-turing-way.netlify.app/reproducible-research/renv/renv-yaml.html</p>
 <p>In practice, you should try to use a code editor that tells you when your syntax
 is wrong.</p>
-<h4 id="should-i-create-a-macro-if-i-need-a-new-kind-of-table"><a class="toclink" href="#should-i-create-a-macro-if-i-need-a-new-kind-of-table">Should I create a macro if I need a new kind of table?</a></h4>
+<h4 id="should-i-create-a-macro-if-i-need-a-new-kind-of-table"><a class="toclink" href="#should-i-create-a-macro-if-i-need-a-new-kind-of-table">Should I create a macro if I need a new kind of table?</a><a class="headerlink" href="#should-i-create-a-macro-if-i-need-a-new-kind-of-table" title="Permanent link">&para;</a></h4>
 <p>As a rule of thumb, no, unless it is clear that this kind of table will reappear
 many times in the future in the specification. But this is usually hard to
 predict so better start with a table in Markdown.</p>
 <p>If later we see that the same type of table keeps reoccuring the specification
 we could create a macro to generate them.</p>
-<h2 id="why-use-macros-at-all"><a class="toclink" href="#why-use-macros-at-all">Why use macros at all?</a></h2>
+<h2 id="why-use-macros-at-all"><a class="toclink" href="#why-use-macros-at-all">Why use macros at all?</a><a class="headerlink" href="#why-use-macros-at-all" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Seriously why did you have to make it so complicated just to have pretty
 tables? Are macros that necessary ? Couldn't we just have everything in
@@ -4553,7 +4558,7 @@ as it is meant to be a machine readable version of the specification.</p>
 <p>And so to avoid having to maintain the SAME definition in both the schema and
 specification, we started using macros to generate the specification from the
 schema.</p>
-<h2 id="links-and-references"><a class="toclink" href="#links-and-references">Links and references</a></h2>
+<h2 id="links-and-references"><a class="toclink" href="#links-and-references">Links and references</a><a class="headerlink" href="#links-and-references" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.mkdocs.org">documentation for MkDocs</a> and how to install it
   locally,</li>
@@ -4582,7 +4587,7 @@ schema.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 13, 2026 14:09:19 UTC">January 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 13, 2026 14:45:08 UTC">January 13, 2026</span>
   </span>
 
     
@@ -4751,7 +4756,7 @@ schema.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

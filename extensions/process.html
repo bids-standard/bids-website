@@ -184,6 +184,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -4197,7 +4202,7 @@
   
 
 
-<h1 id="bep-process"><a class="toclink" href="#bep-process"><abbr title="BIDS Extension Proposal">BEP</abbr> process</a></h1>
+<h1 id="bep-process"><a class="toclink" href="#bep-process"><abbr title="BIDS Extension Proposal">BEP</abbr> process</a><a class="headerlink" href="#bep-process" title="Permanent link">&para;</a></h1>
 <p>Small contributions (typos, rephrasing of a description, adding a single new metadata field)
 can be proposed as a <a href="https://github.com/bids-standard/bids-specification/pulls">Pull Request on GitHub</a>
 Larger contributions that are expected to involve longer and more involved discussions
@@ -4213,7 +4218,7 @@ to new techniques, and file types and descriptors.
 We keep an updated list of
 <a href="beps.html#completed-beps">completed BEPS</a> and
 <a href="beps.html#bids-extension-proposals">draft/proposed <abbr title="BIDS Extension Proposals">BEPs</abbr></a>.</p>
-<h2 id="is-a-bep-even-required"><a class="toclink" href="#is-a-bep-even-required">Is a <abbr title="BIDS Extension Proposal">BEP</abbr> even required?</a></h2>
+<h2 id="is-a-bep-even-required"><a class="toclink" href="#is-a-bep-even-required">Is a <abbr title="BIDS Extension Proposal">BEP</abbr> even required?</a><a class="headerlink" href="#is-a-bep-even-required" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart TD
 
 BEP_required["Is this a 'large' change ?"]
@@ -4264,7 +4269,7 @@ Someone may have already done work for you: so avoid duplicating efforts!</p>
 <li>the <a href="../collaboration/bids_github/CODE_OF_CONDUCT.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> code of conduct</a></li>
 </ul>
 </div>
-<h3 id="overview-of-the-bep-process"><a class="toclink" href="#overview-of-the-bep-process">Overview of the <abbr title="BIDS Extension Proposal">BEP</abbr> process</a></h3>
+<h3 id="overview-of-the-bep-process"><a class="toclink" href="#overview-of-the-bep-process">Overview of the <abbr title="BIDS Extension Proposal">BEP</abbr> process</a><a class="headerlink" href="#overview-of-the-bep-process" title="Permanent link">&para;</a></h3>
 <p>Once a <abbr title="BIDS Extension Proposal">BEP</abbr> has been opened (see the next <a href="#starting-your-bep">section</a>),
 it goes from <code>Draft BEP</code> to <code>Proposed BEP</code> to <code>Merged BEP</code>.</p>
 <p>A <code>Draft BEP</code> is usually a Google document (see <a href="../collaboration/governance.html#draft-bep">governance</a>),
@@ -4311,7 +4316,7 @@ draft_bep_review -- positive evaluation --&gt; proposed_bep
 proposed_bep --&gt; proposed_bep_review
 proposed_bep_review -- negative evaluation --&gt; proposed_bep
 proposed_bep_review -- positive evaluation --&gt; merged_bep</code></pre>
-<h3 id="deliverables"><a class="toclink" href="#deliverables">Deliverables</a></h3>
+<h3 id="deliverables"><a class="toclink" href="#deliverables">Deliverables</a><a class="headerlink" href="#deliverables" title="Permanent link">&para;</a></h3>
 <p>In the end a <abbr title="BIDS Extension Proposal">BEP</abbr> should produce several deliverables
 that will be evaluated during the <code>Proposed BEP review</code>.</p>
 <pre class="mermaid"><code>flowchart TD
@@ -4340,24 +4345,24 @@ proposed_bep --&gt; PR_examples --&gt; proposed_bep_review
 proposed_bep --&gt; validator --&gt; proposed_bep_review
 proposed_bep --&gt; website --&gt; proposed_bep_review
 proposed_bep_review -- positive evaluation --&gt; merged_bep</code></pre>
-<h4 id="required-deliverables"><a class="toclink" href="#required-deliverables">REQUIRED deliverables</a></h4>
+<h4 id="required-deliverables"><a class="toclink" href="#required-deliverables">REQUIRED deliverables</a><a class="headerlink" href="#required-deliverables" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Extension proposal as one or several markdown files added to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.</li>
 <li>Extension of the <a href="../standards/schema/index.html"><code>bids-schema</code></a> to support the <abbr title="BIDS Extension Proposal">BEP</abbr>.</li>
 <li>Examples (to test the validator is working properly) added to <a href="https://github.com/bids-standard/bids-examples"><code>bids-examples</code></a>.</li>
 </ol>
-<h4 id="optional-deliverables"><a class="toclink" href="#optional-deliverables">OPTIONAL deliverables</a></h4>
+<h4 id="optional-deliverables"><a class="toclink" href="#optional-deliverables">OPTIONAL deliverables</a><a class="headerlink" href="#optional-deliverables" title="Permanent link">&para;</a></h4>
 <p>In rare cases, it may be necessary to update:</p>
 <ul>
 <li>the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator to properly validate new content from a <abbr title="BIDS Extension Proposal">BEP</abbr>;</li>
 <li>the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website.</li>
 </ul>
-<h4 id="suggested-deliverables"><a class="toclink" href="#suggested-deliverables">SUGGESTED deliverables</a></h4>
+<h4 id="suggested-deliverables"><a class="toclink" href="#suggested-deliverables">SUGGESTED deliverables</a><a class="headerlink" href="#suggested-deliverables" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Preprint of the new extension (if applicable).</li>
 <li>Press release for the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website <a href="https://bids.neuroimaging.io/blog/category/release.html">news section</a>.</li>
 </ol>
-<h3 id="starting-your-bep"><a class="toclink" href="#starting-your-bep">Starting your <abbr title="BIDS Extension Proposal">BEP</abbr></a></h3>
+<h3 id="starting-your-bep"><a class="toclink" href="#starting-your-bep">Starting your <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#starting-your-bep" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>flowchart TD
 
 Open_BEP_issue["Open an issue to gather interest"]
@@ -4452,7 +4457,7 @@ in the list of <abbr title="Brain Imaging Data Structure">BIDS</abbr> contributo
 </div>
 </li>
 </ol>
-<h3 id="working-on-your-bep"><a class="toclink" href="#working-on-your-bep">Working on your <abbr title="BIDS Extension Proposal">BEP</abbr></a></h3>
+<h3 id="working-on-your-bep"><a class="toclink" href="#working-on-your-bep">Working on your <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#working-on-your-bep" title="Permanent link">&para;</a></h3>
 <p>While working on your extension, make sure to do the following:</p>
 <ul>
 <li>
@@ -4486,7 +4491,7 @@ see <a href="https://github.com/bids-standard/bids-specification/issues/1350">th
 in the collection, organization, or at any step in the preparation of these datasets.</p>
 </li>
 </ul>
-<h3 id="draft-bep-review"><a class="toclink" href="#draft-bep-review">Draft <abbr title="BIDS Extension Proposal">BEP</abbr> review</a></h3>
+<h3 id="draft-bep-review"><a class="toclink" href="#draft-bep-review">Draft <abbr title="BIDS Extension Proposal">BEP</abbr> review</a><a class="headerlink" href="#draft-bep-review" title="Permanent link">&para;</a></h3>
 <p>Once you think your <code>Draft BEP</code> is mature enough, you can transition to a <code>Proposed BEP</code>.</p>
 <p>Criteria:</p>
 <ul>
@@ -4500,7 +4505,7 @@ ask for <code>Draft BEP review</code> by contacting the <abbr title="Brain Imagi
 <li>tagging the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers in using <code>@bids-standard/maintainers</code> in the issue of your <abbr title="BIDS Extension Proposal">BEP</abbr>,</li>
 <li>sending an email to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers (<code>bids.maintenance+question@gmail.com</code>) and steering group (<code>bids.steering@gmail.com</code>).</li>
 </ul>
-<h3 id="proposed-bep"><a class="toclink" href="#proposed-bep">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr></a></h3>
+<h3 id="proposed-bep"><a class="toclink" href="#proposed-bep">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#proposed-bep" title="Permanent link">&para;</a></h3>
 <p>Once your <code>Draft BEP</code> has been positively evaluated, the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers will:</p>
 <ul>
 <li>
@@ -4524,7 +4529,7 @@ to help you with this.</p>
 <li>Label your pull requests with your <abbr title="BIDS Extension Proposal">BEP</abbr> tag
     (this will signal to the community which are for the specification or associated with a specific <abbr title="BIDS Extension Proposal">BEP</abbr>).</li>
 </ul>
-<h3 id="proposed-bep-review"><a class="toclink" href="#proposed-bep-review">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> review</a></h3>
+<h3 id="proposed-bep-review"><a class="toclink" href="#proposed-bep-review">Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> review</a><a class="headerlink" href="#proposed-bep-review" title="Permanent link">&para;</a></h3>
 <p>Criteria:</p>
 <ul>
 <li>
@@ -4577,7 +4582,7 @@ Please reach out to
 <a href="https://github.com/bids-standard/bids-specification/blob/master/DECISION-MAKING.md#maintainers-group">the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers</a>
 to let them know you are reaching this step in the process. They will assist the
 merging of the <abbr title="BIDS Extension Proposal">BEP</abbr> into the Specification.</p>
-<h2 id="submitting-the-validator-extension-deprecation-warning"><a class="toclink" href="#submitting-the-validator-extension-deprecation-warning">Submitting the validator extension (deprecation warning)</a></h2>
+<h2 id="submitting-the-validator-extension-deprecation-warning"><a class="toclink" href="#submitting-the-validator-extension-deprecation-warning">Submitting the validator extension (deprecation warning)</a><a class="headerlink" href="#submitting-the-validator-extension-deprecation-warning" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Determine if this is necessary as approved and merged changes to
@@ -4604,7 +4609,7 @@ merging of the <abbr title="BIDS Extension Proposal">BEP</abbr> into the Specifi
     <a href="https://github.com/rwblair">Ross Blair (@rwblair)</a>.</p>
 </li>
 </ol>
-<h2 id="submitting-the-examples"><a class="toclink" href="#submitting-the-examples">Submitting the examples</a></h2>
+<h2 id="submitting-the-examples"><a class="toclink" href="#submitting-the-examples">Submitting the examples</a><a class="headerlink" href="#submitting-the-examples" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Create a new branch off of the <code>bids-examples</code> repository.</p>
@@ -4622,7 +4627,7 @@ merging of the <abbr title="BIDS Extension Proposal">BEP</abbr> into the Specifi
     <a href="https://github.com/rwblair">Ross Blair (@rwblair)</a>.</p>
 </li>
 </ol>
-<h2 id="bep-paper-writing-suggestion"><a class="toclink" href="#bep-paper-writing-suggestion"><abbr title="BIDS Extension Proposal">BEP</abbr> paper writing suggestion</a></h2>
+<h2 id="bep-paper-writing-suggestion"><a class="toclink" href="#bep-paper-writing-suggestion"><abbr title="BIDS Extension Proposal">BEP</abbr> paper writing suggestion</a><a class="headerlink" href="#bep-paper-writing-suggestion" title="Permanent link">&para;</a></h2>
 <p>This suggestion is intended to help <abbr title="BIDS Extension Proposal">BEP</abbr> leads work more transparently while undergoing the <abbr title="BIDS Extension Proposal">BEP</abbr> paper writing process.
 These suggestions are not required for submitting the <abbr title="BIDS Extension Proposal">BEP</abbr> for incorporation into the <abbr title="Brain Imaging Data Structure">BIDS</abbr>-specification.</p>
 <ul>
@@ -4829,7 +4834,7 @@ These suggestions are not required for submitting the <abbr title="BIDS Extensio
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "footnotes", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
