@@ -7,15 +7,7 @@ plugins:
   - search
   - tags
   - git-revision-date-localized
-  # -   social
   - blog
-  # -   rss:
-  #         match_path: blog/posts/.*
-  #         date_from_meta:
-  #             as_creation: date
-  #         categories:
-  #         -   categories
-  #         -   tags
   - open-in-new-tab
   - macros:
       module_name: macros/main
@@ -197,7 +189,6 @@ theme:
     - content.code.copy
     - content.tabs.link
     - content.tooltips
-    - footnotes
     - header.autohide
     - navigation.footer
     - navigation.indexes
@@ -206,8 +197,9 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - search.suggest
     - search.highlight
+    - search.share
+    - search.suggest
     - toc.follow
   icon:
     repo: fontawesome/brands/github
@@ -239,6 +231,7 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - footnotes
   - md_in_html
   - pymdownx.details
   - pymdownx.emoji:
@@ -256,6 +249,7 @@ markdown_extensions:
       alternate_style: true
   - tables
   - toc:
+      permalink: true
       anchorlink: true
       toc_depth: 3
 
