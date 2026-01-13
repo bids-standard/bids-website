@@ -1,7 +1,7 @@
 # Contributing to the BIDS website
 
 We hope that these guidelines are designed
-to make it as easy as possible to mùake changes to the BIDS website.
+to make it as easy as possible to make changes to the BIDS website.
 If you have any questions that aren't discussed below, please let us know
 by [opening an issue](https://github.com/bids-standard/bids-website/issues/new).
 
