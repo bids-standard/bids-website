@@ -18,3 +18,7 @@
         git: robertoostenveld
     -   name: Ariel Rokem
         git: arokem
+    -   name: Yaroslav Halchenko
+        git: yarikoptic
+    -   name: Cyril Pernet
+        git: CPernet
