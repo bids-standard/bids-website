@@ -74,13 +74,13 @@ repos:
     # Check formatting of CSS
     # prettier: https://prettier.io/
 -   repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.7.4
+    rev: v3.8.0
     hooks:
     -   id: prettier
         types_or: [css]
 
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.12.0
+    rev: 26.1.0
     hooks:
     -   id: black
 
