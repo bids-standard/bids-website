@@ -56,12 +56,8 @@ p {
   height: 100%;
 }
 
-/* Hide material footer grid */
-.md-footer__inner.md-grid {
-  display: none;
-}
+/* ======= HERO - content + responsive logo ======= */
 
-/* Hero section container */
 .mdx-container {
   padding-top: 1rem;
   background: transparent;
@@ -75,9 +71,10 @@ p {
   overflow: hidden; /* clip logo to container bounds */
 }
 
-/* ======= HERO - content + responsive logo ======= */
 .mdx-hero {
   margin-top: 4rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   color: var(--white);
   position: relative;
   z-index: 3;
@@ -173,7 +170,7 @@ p {
 }
 
 /* Hero text - stable sizes to avoid 'stretched' look */
-.mdx-hero h1 {
+.mdx-hero__content h1 {
   margin-bottom: 1rem;
   font-weight: 700;
   font-size: 2.5rem;
@@ -208,16 +205,11 @@ p {
 }
 
 /* Ensure header/tabs use brand */
-.md-header,
-.md-header__inner,
-.md-header-nav,
-.md-tabs {
+.md-header {
   background-color: var(--bids-brand) !important;
   color: var(--white) !important;
 }
-.md-header a,
-.md-tabs a,
-.md-header-nav a {
+.md-header a {
   color: var(--white) !important;
 }
 
@@ -247,6 +239,8 @@ p {
 }
 .mdx-feature {
   display: flex;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .mdx-feature__item {
@@ -333,6 +327,8 @@ p {
   min-height: 150px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .mdx-stats__item:hover {
   transform: translateY(-4px);
@@ -344,10 +340,12 @@ p {
   font-size: 2rem;
   line-height: 1.2;
   color: var(--white) !important;
+  word-break: keep-all;
 }
 .mdx-stats__label {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.9);
+  word-break: keep-all;
 }
 
 /* Sponsors */
