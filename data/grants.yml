@@ -40,8 +40,8 @@
     contribution: NeuroScout
 
 -   source: Novo Nordisk Foundation NNF20OC0063277
-    url:
-    contribution:
+    url: https://openneuropet.github.io/
+    contribution: PET BIDS, PET2BIDS, Atlas, OpenNeuroPET
 
 -   source: NIH R01MH109682
     url:
