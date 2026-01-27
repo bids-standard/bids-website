@@ -74,7 +74,7 @@ repos:
     # Check formatting of CSS
     # prettier: https://prettier.io/
 -   repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.8.0
+    rev: v3.8.1
     hooks:
     -   id: prettier
         types_or: [css]
