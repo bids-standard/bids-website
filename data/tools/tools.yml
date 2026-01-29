@@ -344,7 +344,7 @@
     description: Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging
         parameters.
 
--   name: nipopy
+-   name: nipoppy
     repo_url: https://github.com/nipoppy/nipoppy
     documentation: https://nipoppy.readthedocs.io/en/latest/
     language:
