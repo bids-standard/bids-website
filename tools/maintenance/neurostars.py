@@ -104,7 +104,7 @@ def tags_combine():
 
 def print_note(month, year, nb_topics, nb_posts):
     """Print note."""
-    (mindate, maxdate) = return_min_max_date(month, year)
+    mindate, maxdate = return_min_max_date(month, year)
     monthname = datetime(year, month, 1).strftime("%B")
     print(f"Neurostats stats for {monthname} {year}")
     print(f"{nb_topics} new topics overall over the last 30 days")
@@ -290,7 +290,7 @@ def return_nb_posts_since_month(
     df: pd.DataFrame, month: int, year: int
 ) -> int:
     """Return number of posts since month."""
-    (mindate, maxdate) = return_min_max_date(month, year)
+    mindate, maxdate = return_min_max_date(month, year)
     created_at = pd.to_datetime(df["created_at"]).dt.date
     is_newly_created = (created_at > mindate.date()) & (
         created_at < maxdate.date()
@@ -300,7 +300,7 @@ def return_nb_posts_since_month(
 
 def return_topics_for_month(df: pd.DataFrame, month: int, year: int):
     """Return topics for month."""
-    (mindate, maxdate) = return_min_max_date(month, year)
+    mindate, maxdate = return_min_max_date(month, year)
     created_at = pd.to_datetime(df["created_at"]).dt.date
     return (created_at > mindate.date()) & (created_at < maxdate.date())
 
@@ -336,7 +336,7 @@ def main():
 
     for tag in tags(debug):
 
-        (df, nb_topics) = get_topics_for_tag(tag, debug=debug, verbose=verbose)
+        df, nb_topics = get_topics_for_tag(tag, debug=debug, verbose=verbose)
 
         if verbose:
             print(f"[underline]neurostars tag '{tag}'[underline]")
@@ -410,7 +410,7 @@ def main():
 
     summary.to_csv("neurostars_summary_stats.tsv", sep="\t", index=False)
 
-    (nb_topics, nb_posts) = retrun_nb_posts_and_topics_in_last_30_days()
+    nb_topics, nb_posts = retrun_nb_posts_and_topics_in_last_30_days()
 
     shorten_table("neurostars_summary_stats.tsv")
 

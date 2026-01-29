@@ -1,40 +1,448 @@
-/* https://colorbrewer2.org/#type=qualitative&scheme=Paired&n=12 */
 :root {
-    --mri: #a6cee3;
-    --pet: #1f78b4;
-    --micr: #33a02c;
-    --meeg: #6a3d9a;
-    --beh: #fb9a99;
-    --nirs: #b2df8a;
-    --motion: #e31a1c;
-    --mrs: #fdbf6f;
-    --unused2: #ff7f00;
-    --unused3: #cab2d6;
-    --unused4: #ffff99;
-    --unused5: #b15928;
-    --key: #e41a1c;
-    --label: #377eb8;
-    --suffix: #4daf4a;
-    --ext: #984ea3;
-    --underscore: #ff7f00;
+  /* colors used in several places in the getting started section to identify datatypes
+       obtained from https://colorbrewer2.org/#type=qualitative&scheme=Paired&n=12
+    */
+
+  --mri: #a6cee3;
+  --pet: #1f78b4;
+  --micr: #33a02c;
+  --meeg: #6a3d9a;
+  --beh: #fb9a99;
+  --nirs: #b2df8a;
+  --motion: #e31a1c;
+  --mrs: #fdbf6f;
+  --unused2: #ff7f00;
+  --unused3: #cab2d6;
+  --unused4: #ffff99;
+  --unused5: #b15928;
+  --key: #e41a1c;
+  --label: #377eb8;
+  --suffix: #4daf4a;
+  --ext: #984ea3;
+  --underscore: #ff7f00;
+
+  --bids-brand: #1f7293;
+  --bids-accent: #6b9aaa;
+  --bids-stats-bg: #1f8193fb;
+  --white: #ffffff;
+
+  /* Material Design variable overrides (keep so top tabs/header use brand) */
+  --md-primary-fg-color: #1f7293;
+  --md-primary-fg-color--light: #1f7293;
+  --md-primary-fg-color--dark: #1f7293;
+  --md-accent-fg-color: #1f7293;
+  --md-accent-fg-color--transparent: rgba(212, 123, 138, 0.1);
+  --md-default-fg-color: #111;
+  --content-max: 1200px;
 }
 
-p { text-align: justify; }
-
-.iframe-container{
-    position: relative;
-    width: 90%;
-    margin-left: 5%;
-    padding-bottom: 56.25%;
-    height: 0;
+/* Basic */
+p {
+  text-align: justify;
 }
 
-.iframe-container > iframe{
-    position: absolute;
-    top:0;
-    left: 0;
+/* iframe helper */
+.iframe-container {
+  position: relative;
+  width: 90%;
+  margin: 0 5%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container > iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ======= HERO - content + responsive logo ======= */
+
+.mdx-container {
+  padding-top: 1rem;
+  background: transparent;
+  position: relative;
+  overflow: visible;
+  min-height: 150px;
+}
+
+.mdx-container:first-of-type {
+  background: linear-gradient(to bottom, var(--bids-brand), transparent 99%);
+  overflow: hidden; /* clip logo to container bounds */
+}
+
+.mdx-hero {
+  margin-top: 4rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--white);
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+  padding-bottom: clamp(3rem, 6vw, 6rem); /* space to features */
+  overflow: hidden; /* keep logo clipped to hero */
+}
+
+.mdx-hero__logo-bg {
+  position: absolute;
+  top: 0;
+  height: 100%; /* always as tall as hero */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0; /* behind the hero content */
+  pointer-events: none;
+  width: min(100%, var(--content-max));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* SVG/logo image: fill the wrapper while maintaining aspect ratio */
+.mdx-hero__logo-bg img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2; /* subtle background watermark */
+  object-fit: contain; /* keeps aspect ratio, fits within container */
+  object-position: center left;
+  pointer-events: none;
+  display: block;
+  filter: saturate(0.95);
+}
+
+/* Small screens: keep the logo large relative to the content column but allow it to overflow a bit to the left
+   so it doesn't occlude the text while preserving the same width relationship with the features section. */
+@media (max-width: 44.9375em) {
+  .mdx-hero__logo-bg {
+    /* on small screens, content width is basically 100% - keep full width */
     width: 100%;
-    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    /* allow a little extra vertical breathing room */
+    height: 120%;
+  }
+  .mdx-hero__logo-bg img {
+    opacity: 0.12;
+    max-height: none;
+    object-position: left center;
+  }
 }
 
-.md-footer__inner.md-grid {  display: none; }
+/* Mid / tablet screens slight tweaks */
+@media (min-width: 60em) and (max-width: 76.24em) {
+  .mdx-hero__logo-bg {
+    /* match the same max content width, but allow it to exceed slightly to create the "off to the side" feel */
+    width: min(100%, var(--content-max));
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mdx-hero__logo-bg img {
+    opacity: 0.14;
+  }
+}
+
+/* Desktop: keep logo the same width as the content column but subtle and slightly shifted left/right by adjusting object-position */
+@media (min-width: 76.25em) {
+  .mdx-hero__logo-bg {
+    width: min(100%, var(--content-max));
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mdx-hero__logo-bg img {
+    opacity: 0.1;
+    max-height: none;
+    object-position: center left;
+  }
+}
+
+/* Hero content area */
+.mdx-hero__content {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Hero text - stable sizes to avoid 'stretched' look */
+.mdx-hero__content h1 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: inherit;
+}
+.mdx-hero__content p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  opacity: 0.95;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Buttons */
+.mdx-hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.mdx-hero__actions .md-button {
+  margin-bottom: 0.5rem;
+}
+.md-button--primary {
+  background-color: var(--bids-brand) !important;
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+  font-weight: 500;
+}
+.md-button--primary:hover {
+  background-color: var(--bids-accent) !important;
+  transform: translateY(-1px);
+}
+
+/* Ensure header/tabs use brand */
+.md-header {
+  background-color: var(--bids-brand) !important;
+  color: var(--white) !important;
+}
+.md-header a {
+  color: var(--white) !important;
+}
+
+/* Features & cards (kept equal-height) */
+.mdx-features-section {
+  margin-bottom: 2rem;
+}
+.mdx-features-headline {
+  text-align: center;
+  margin: 0 0 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mdx-features-headline h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  line-height: 1.2;
+}
+
+.mdx-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+.mdx-feature {
+  display: flex;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.mdx-feature__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1rem, 2vw, 2rem);
+  background: var(--bids-brand);
+  color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: var(--md-shadow-z1);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  flex: 1 1 auto;
+  min-height: 220px;
+  height: auto;
+  overflow: visible;
+}
+.mdx-feature__item:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: var(--md-shadow-z2);
+}
+
+.mdx-feature__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  flex: 0 0 auto;
+}
+.mdx-feature__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--white);
+}
+
+.mdx-feature__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1 1 auto;
+}
+.mdx-feature__content h2 {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.15;
+  color: var(--white);
+}
+.mdx-feature__content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Stats */
+.mdx-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 2rem;
+  margin: 8rem 0 2rem;
+  text-align: center;
+}
+.mdx-stats__item {
+  background: var(--bids-stats-bg);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.mdx-stats__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: var(--bids-accent);
+}
+.mdx-stats__number {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--white) !important;
+  word-break: keep-all;
+}
+.mdx-stats__label {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  word-break: keep-all;
+}
+
+/* Sponsors */
+.mdx-sponsors {
+  background: var(--bids-brand);
+  padding: 0.5rem 0 3rem;
+}
+.mdx-sponsors__content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.mdx-sponsors__content h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  color: var(--white);
+}
+.mdx-sponsors__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.mdx-sponsors__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 120px;
+  border: 1px solid #eee;
+}
+.mdx-sponsors__item img {
+  max-width: 180px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.7);
+  transition: filter 0.3s;
+}
+.mdx-sponsors__item:hover img {
+  filter: none;
+  opacity: 1;
+}
+.mdx-sponsors__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments grouped */
+@media (max-width: 44.9375em) {
+  .mdx-hero h1 {
+    font-size: 2rem;
+  }
+  .mdx-hero__actions .md-button {
+    width: 100%;
+  }
+  .mdx-features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .mdx-features-headline h2 {
+    font-size: 2rem;
+  }
+  .mdx-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 4rem 0 1rem;
+  }
+  .mdx-stats__item {
+    min-height: 120px;
+  }
+  .mdx-sponsors {
+    padding: 3rem 0;
+  }
+  .mdx-sponsors__grid {
+    gap: 1.5rem;
+  }
+  .mdx-sponsors__item {
+    height: 100px;
+    width: auto;
+  }
+  .mdx-sponsors__item img {
+    max-width: 140px;
+    max-height: 60px;
+  }
+}
+
+/* Minimal theme overrides left as !important where required */
+.md-button--primary {
+  background-color: var(--bids-brand) !important;
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+}

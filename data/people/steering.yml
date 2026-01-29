@@ -6,13 +6,14 @@
 
 -   group: steering
     members:
-    -   name: Yaroslav Halchenko
-        git: yarikoptic
     -   name: Dora Hermes
         git: dorahermes
     -   name: Camille Maumet
         git: cmaumet
-    -   name: Cyril Pernet
-        git: CPernet
     -   name: Franco Pestilli
         git: francopestilli
+    -   name: Martin Nørgaard
+        git: mnoergaard
+    -   name: Jean-Baptiste Poline
+        git: jbpoline
+        picture: https://www.mcgill.ca/neuro/files/neuro/styles/medium_focal__220_x_220_/public/poline_jean-baptiste.png

@@ -96,9 +96,7 @@ def get_openneuro_datasets(query=None):
                 }
             }
         }
-        """.replace(
-            "\n", ""
-        )
+        """.replace("\n", "")
 
     data = '{"query":"query testq{datasets ' + query + '}"}'
 

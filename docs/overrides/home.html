@@ -1,0 +1,236 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+    {{ super() }}
+    <style>
+        .md-header {
+            position: initial;
+        }
+
+        .md-main__inner {
+            margin: 0;
+        }
+
+        .md-content {
+            display: none;
+        }
+
+        @media screen and (min-width: 60em) {
+            .md-sidebar--secondary {
+                display: none !important;
+            }
+        }
+
+        @media screen and (min-width: 76.25em) {
+            .md-sidebar--primary {
+                display: none;
+            }
+        }
+    </style>
+    <!-- Hero section -->
+    <section class="mdx-container">
+        <div class="md-grid md-typeset">
+            <div class="mdx-hero__logo-bg">
+                <img src="{{ 'assets/img/logos/BIDS_logo_black.svg' | url }}"
+                     alt=""
+                     draggable="false">
+            </div>
+            <div class="mdx-hero">
+                <div class="mdx-hero__content">
+                    <h1>Data standardization that simply works.</h1>
+                    <p>
+                        With the Brain Imaging Data Structure (BIDS),
+                        we describe a simple way of organizing brain imaging and associated data.
+                    </p>
+                    <div class="mdx-hero__actions">
+                        <a href="{{ 'getting_started/' | url }}"
+                           title="Getting Started"
+                           class="md-button md-button--primary">
+                            Get started
+                        </a>
+                        <a href="{{ 'standards/' | url }}"
+                           title="FAQ"
+                           class="md-button md-button--primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features section -->
+    <section class="mdx-container" style="border-top: none;">
+        <div class="md-grid md-typeset">
+            <div class="mdx-features-section">
+                <!-- Left side headline -->
+                <div class="mdx-features-headline">
+                    <h2>BIDS in a nutshell</h2>
+                </div>
+                <!-- Right side features grid -->
+                <div class="mdx-features">
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                {% include ".icons/material/file-tree.svg" %}
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Standardized Organization</h2>
+                                <p>
+                                    BIDS provides a consistent way to organize your neuroimaging data,
+                                    making it easy to understand and share across research groups and institutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                {% include ".icons/material/account-group.svg" %}
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Community Driven</h2>
+                                <p>
+                                    Developed by the neuroscience community for the community.
+                                    BIDS continues to evolve based on real-world research needs and feedback.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                {% include ".icons/material/tools.svg" %}
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Rich Ecosystem</h2>
+                                <p>
+                                    A growing collection of BIDS Apps, validators,
+                                    and analysis tools that work seamlessly with BIDS-formatted datasets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                {% include ".icons/material/open-source-initiative.svg" %}
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Open Science</h2>
+                                <p>
+                                    Promotes reproducible research and data sharing
+                                    through standardized formats that are platform-independent and openly documented.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                {% include ".icons/material/check-decagram.svg" %}
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Validation Tools</h2>
+                                <p>
+                                    Built-in validation ensures your datasets comply with BIDS standards,
+                                    catching issues early and improving data quality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdx-feature">
+                        <div class="mdx-feature__item">
+                            <div class="mdx-feature__icon">
+
+                                {% include ".icons/material/brain.svg" %}
+
+                            </div>
+                            <div class="mdx-feature__content">
+                                <h2>Multi-Modal Support</h2>
+                                <p>
+                                    Supports a wide range of neuroimaging modalities
+                                    including fMRI, EEG, MEG, iEEG, PET, and behavioral data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats/Social proof section -->
+    <section class="mdx-container" style="border-top: none;">
+        <div class="md-grid md-typeset">
+            <div class="mdx-stats">
+                <a href="https://openneuro.org/"
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">1,500+</div>
+                    <div class="mdx-stats__label">OpenNeuro Public Datasets</div>
+                </a>
+                <a href='https://scholar.google.com/scholar?q="brain+imaging+data+structure"'
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">3,000+</div>
+                    <div class="mdx-stats__label">BIDS Research Papers</div>
+                </a>
+                <a href="{{ 'tools/bids-apps.html' | url }}"
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">100+</div>
+                    <div class="mdx-stats__label">BIDS Apps and Tools</div>
+                </a>
+                <a href="{{ 'collaboration/contributors.html#contributors' | url }}"
+                   class="mdx-stats__item"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="mdx-stats__number">300+</div>
+                    <div class="mdx-stats__label">Contributors</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Sponsors section -->
+    <section class="mdx-sponsors">
+        <div class="md-grid md-typeset">
+            <div class="mdx-sponsors__content">
+                <h2>Supported by</h2>
+                <div class="mdx-sponsors__grid">
+                    <!-- Add your sponsor logos here -->
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/INCF.png" alt="Sponsor 1" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/NIH.png" alt="Sponsor 2" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/GSoC_220px.png" alt="Sponsor 3" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/arnold_foundation.png" alt="Sponsor 4" />
+                    </div>
+                    <div class="mdx-sponsors__item">
+                        <img src="assets/img/logos/novo-nordisk.png" alt="Sponsor 5" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock tabs %}
+
+{% block content %}
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

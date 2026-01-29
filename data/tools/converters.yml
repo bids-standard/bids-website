@@ -279,21 +279,25 @@
     comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and Imaging
         System).
 
--   name: EEGLAB
+-   name: EEGLAB EEG-BIDS
     repo_url: https://github.com/sccn/eeglab
     status: active
     data_types:
     -   MEG
     -   EEG
+    -   iEEG
     expected_input:
     -   EDF
     -   BDF
     -   Brain Vision Exchange Format
     -   EEGLAB .set files
+    -   BIDS
     language:
     -   MATLAB
+    -   Compiled
     documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
-    comment: <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
+    comment: EEGLAB with <a href='https://eeglab.org/plugins/EEG-BIDS/'>EEG-BIDS plugin</a> for importing and exporting BIDS datasets. Supports export to
+        NWB format for iEEG data. A compiled standalone version is also available.
 
 -   name: Explore ASL
     repo_url: https://github.com/ExploreASL/ExploreASL

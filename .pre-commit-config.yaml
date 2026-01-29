@@ -42,13 +42,45 @@ repos:
             )$
 
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.15.0
+    rev: v2.16.0
     hooks:
     -   id: pretty-format-toml
         args: [--autofix, --indent, '4', --no-sort, --trailing-commas]
 
+-   repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+    -   id: djlint
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
+    -   id: djlint-reformat
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
+    -   id: djlint-jinja
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
+    -   id: djlint-reformat-jinja
+        exclude: |
+            (?x)^(
+                templates/.*md.jinja
+            )$
+
+    # Check formatting of CSS
+    # prettier: https://prettier.io/
+-   repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.8.1
+    hooks:
+    -   id: prettier
+        types_or: [css]
+
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.11.0
+    rev: 26.1.0
     hooks:
     -   id: black
 
