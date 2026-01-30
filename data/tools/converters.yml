@@ -698,8 +698,8 @@
     -   Python
     documentation: https://doc.ibs.tu-berlin.de/cedalion/doc/dev/index.html
     comment: |
-        Cedalion is a Python toolbox for advanced analysis of fNIRS and 
-        diffuse optical tomography (DOT) data, and includes snirf2bids 
-        utilities with a tutorial for semi-automatic conversion of 
+        Cedalion is a Python toolbox for advanced analysis of fNIRS and
+        diffuse optical tomography (DOT) data, and includes snirf2bids
+        utilities with a tutorial for semi-automatic conversion of
         SNIRF files into a BIDS-compliant structure. (see the <a href='https://doc.ibs.tu-berlin.de/cedalion/doc/dev/examples/getting_started_io/14_snirf2bids.html'>tutorial</a>)
     license: MIT
