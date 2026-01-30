@@ -375,3 +375,10 @@
     -   Octave
     category: file handling
     description: a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
+
+-   name: forBIDS
+    repo_url: https://github.com/UNFmontreal/forbids
+    language:
+    -   Python
+    category:
+    description: Aims to check that all planned sequences have been acquired and checks that a configured set of sequence parameters match expected values. Designed for multi-centric/multi-vendor studies. 
