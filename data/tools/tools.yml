@@ -381,4 +381,5 @@
     language:
     -   Python
     category:
-    description: Aims to check that all planned sequences have been acquired and checks that a configured set of sequence parameters match expected values. Designed for multi-centric/multi-vendor studies. 
+    description: Aims to check that all planned sequences have been acquired and checks that a configured set of sequence parameters match expected values.
+        Designed for multi-centric/multi-vendor studies.
