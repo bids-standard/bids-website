@@ -50,6 +50,19 @@ There are so many ways to help us build this community.
 
 <b>The only requirement is that everyone who contributes adheres to our [BIDS Code of Conduct](./bids_github/CODE_OF_CONDUCT.md).</b>
 
+## Potential BIDS-related Projects
+
+We welcome suggestions and exploration of new project ideas that could improve the BIDS ecosystem. These could include:
+
+- Tools for validating and uploading BIDS datasets to platforms like EBRAINS
+- Workflows that bridge BIDS with other metadata schemas (e.g., openMINDS)
+- Small utilities that simplify data conversion, visualization, or sharing
+
+You can find and contribute to such discussions in the
+[GitHub issue #620](https://github.com/bids-standard/bids-website/issues/620), where community members can propose ideas and students (e.g., GSoC applicants) can pick them up.
+
+If you have a suggestion, feel free to open an issue or submit a pull request to share your idea!
+
 Thank you for your contributions!
 
 ## Extending the BIDS specification
