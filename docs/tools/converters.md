@@ -27,6 +27,12 @@ Converters for processing EEG, MEEG, and/or iEEG data.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="EEG") }}
 
+## fNIRS Converters
+
+Converters for processing fNIRS data.
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="fNIRS") }}
+
 ## Physio Converters
 
 Physiological data converters.
