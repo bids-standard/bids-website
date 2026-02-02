@@ -676,3 +676,32 @@
     google_doc_created: 2022-02-09
     pull_request_created:
     pull_request_merged:
+
+-   number: '0XX'
+    title: Cardiac MRI (CMR)
+    google_doc: [[https://docs.google.com/document/d/1FmE1VcPtUIh4uuJWY0WFGvGWVjjnbNXc/edit]]
+    leads:
+    -   Name: [Edward Xu](mailto:zexu@ottawaheart.ca)
+         # @Edward-ZX
+    -   Name: Jefferson Casimir
+        # @jeffersoncasimir
+    -   Name: Ghislain Vaillant
+        # @ghisvail
+    -   Name: Christine Rogers
+        # @christinerogers
+    bids_maintainers:
+    -   Name: Christine Rogers
+        # @christinerogers
+    update: |
+        - To support cardiac MRI (CMR) harmonization and standardization,
+          capturing cardiac and respiratory motion correction with enhanced spatial and temporal resolution.
+        - Status: [GoogleDoc draft in preparation](https://docs.google.com/document/d/1StWtkrQpJyBjPcPjAMrk07QJcoG2gGzih8LX0lhmGKI/edit) open to key contributors, community comments and feedback - ll collaborators are welcome.
+        - Original issue: [#2011](https://github.com/bids-standard/bids-specification/issues/2011)
+        - [BIDS-discussion thread](https://groups.google.com/g/bids-discussion/c/YSJmf-VvFqc/m/c_AHfmKWCwAJ)
+        - related to: [old MIDS spec #1275](https://github.com/bids-standard/bids-specification/issues/1275)
+    content:
+    -   raw
+    blocking: None
+    google_doc_created: 2024-12-10
+    pull_request_created:
+    pull_request_merged:
