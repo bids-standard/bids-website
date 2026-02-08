@@ -676,3 +676,23 @@
     google_doc_created: 2022-02-09
     pull_request_created:
     pull_request_merged:
+
+-   number: '047'
+    title: Audio/video recordings for behavioral experiments
+    display: Behavioral audio/video recordings
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2231
+    html_preview: https://bids-specification--2231.org.readthedocs.build/en/2231/modality-specific-files/behavioral-experiments.html
+    content:
+    -   raw
+    leads:
+    -   given-names: Benjamin
+        family-names: Dichter
+    bids_maintainers:
+    -   given-names: Seyed Yahya
+        family-names: Shirazi
+    status:
+    -   Adds support for storing audio and video behavioral recordings (new `_audio` and `_video` suffixes) in the `beh/` directory.
+    blocking:
+    google_doc_created:
+    pull_request_created: 2025-10-25
+    pull_request_merged:
