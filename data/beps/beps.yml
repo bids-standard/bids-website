@@ -290,8 +290,8 @@
 -   number: '032'
     title: Microelectrode electrophysiology
     google_doc: https://docs.google.com/document/d/1oG-C8T-dWPqfVzL2W8HO3elWK8NIh2cOCPssRGv23n0/
-    pull_request: https://github.com/bids-standard/bids-specification/pull/1705
-    html_preview: https://bids-specification--1705.org.readthedocs.build/en/1705/modality-specific-files/microelectrode-electrophysiology.html
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2307
+    html_preview: https://bids-specification--2307.org.readthedocs.build/en/2307/modality-specific-files/microelectrode-electrophysiology.html
     content:
     -   raw
     leads:
@@ -630,8 +630,8 @@
 -   number: '045'
     title: Peripheral Physiological Recordings
     display: Physio
-    pull_request: https://github.com/bids-standard/bids-specification/pull/2249
-    html_preview: https://bids-specification--2249.org.readthedocs.build/en/2249/modality-specific-files/physiological-recordings.html
+    pull_request: https://github.com/bids-standard/bids-specification/pull/2267
+    html_preview: https://bids-specification--2267.org.readthedocs.build/en/2267/modality-specific-files/physiological-recordings.html
     google_doc: https://docs.google.com/document/d/1oTfjzY5ZnLIYd0kPPWhR81sBmMuy_jC5YYIaqj6OhSA/edit
     leads:
     -   given-names: Mary
