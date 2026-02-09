@@ -141,31 +141,6 @@
     pull_request_created:
     pull_request_merged:
 
--   number: '020'
-    title: Eye Tracking including Gaze Position and Pupil Size
-    display: Eye Tracking
-    pull_request: https://github.com/bids-standard/bids-specification/pull/1128
-    html_preview: https://bids-specification--1128.org.readthedocs.build/en/1128/modality-specific-files/physiological-recordings.html#eye-tracking
-    content:
-    -   raw
-    leads:
-    -   given-names: Dejan
-        family-names: Draschkow
-    -   given-names: Martin
-        family-names: Szinte
-    bids_maintainers:
-    -   given-names: Rémi
-        family-names: Gau
-    status:
-    -   'Revision of physiology and continuous recordings: clarification of current specs and `_stim` files moved into tasks specification'
-    -   Working on an eye tracking data converter
-    -   Generation of BIDS-examples
-    blocking:
-    communication_channel: https://matrix.to/#/#bids-bep020:matrix.org
-    google_doc_created: 2018-04
-    pull_request_created: 2022-06
-    pull_request_merged:
-
 -   number: '021'
     title: Common Electrophysiological Derivatives
     google_doc: https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/
@@ -457,30 +432,6 @@
     pull_request_created:
     pull_request_merged:
 
--   number: '038'
-    title: Atlases
-    google_doc: https://docs.google.com/document/d/1RxW4cARr3-EiBEcXjLpSIVidvnUSHE7yJCUY91i5TfM/
-    content:
-    -   raw
-    leads:
-    -   given-names: James
-        family-names: Kent
-    -   given-names: Peer
-        family-names: Herholz
-    -   given-names: Eugene P.
-        family-names: Duff
-    -   given-names: Anthony
-        family-names: Galassi
-    bids_maintainers:
-    status:
-    -   consolidation of different proposals
-    -   atlases defined by template/reference space and modalities
-    -   PR open with example datasets
-    blocking:
-    google_doc_created: 2022-09
-    pull_request_created:
-    pull_request_merged:
-
 -   number: '039'
     title: Dimensionality reduction-based networks
     google_doc: https://docs.google.com/document/d/1GTWsj0MFQedXjOaNk6H0or6IDVFyMAysrJ9I4Zmpz2E/
@@ -553,26 +504,6 @@
     pull_request_created:
     pull_request_merged:
 
--   number: '042'
-    title: Electromyography
-    display: Electromyography (EMG)
-    pull_request: https://github.com/bids-standard/bids-specification/pull/1998
-    html_preview: https://bids-specification--1998.org.readthedocs.build/en/1998/modality-specific-files/electromyography.html
-    content:
-    -   raw
-    leads:
-    -   given-names: Seyed Yahya
-        family-names: Shirazi
-    bids_maintainers:
-    status:
-    -   Community comments and feedback are being collected (April 2025)
-    -   Approved on May 2024, inviting collaborators (please join)
-    -   Original issue: https://github.com/bids-standard/bids-specification/issues/1371
-    blocking:
-    google_doc_created: 2023-01
-    pull_request_created: 2024-12-06
-    pull_request_merged:
-
 -   number: '043'
     title: BIDS Term Mapping
     google_doc: https://docs.google.com/document/d/1LACjc5hFXDpa2l_QddBPR41Vce_gglGv9WeuBB7LsBU/
@@ -623,8 +554,8 @@
     content:
     -   raw
     blocking:
-    google_doc_created: 2023-09-12
-    pull_request_created: 2024-12-21
+    google_doc_created: 2023-09
+    pull_request_created: 2024-12
     pull_request_merged:
 
 -   number: '045'
@@ -651,8 +582,8 @@
     content:
     -   raw
     blocking:
-    google_doc_created: 2024-08-13
-    pull_request_created: 2025-11-07
+    google_doc_created: 2024-08
+    pull_request_created: 2025-11
     pull_request_merged:
 
 -   number: '046'
@@ -673,7 +604,7 @@
     content:
     -   derivative
     blocking:
-    google_doc_created: 2022-02-09
+    google_doc_created: 2022-02
     pull_request_created:
     pull_request_merged:
 
@@ -694,5 +625,5 @@
     -   Adds support for storing audio and video behavioral recordings (new `_audio` and `_video` suffixes) in the `beh/` directory.
     blocking:
     google_doc_created:
-    pull_request_created: 2025-10-25
+    pull_request_created: 2025-10
     pull_request_merged:
