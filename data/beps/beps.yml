@@ -141,41 +141,6 @@
     pull_request_created:
     pull_request_merged:
 
--   number: '021'
-    title: Common Electrophysiological Derivatives
-    google_doc: https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/
-    pull_request: https://github.com/bids-standard/bids-specification/pull/1680
-    html_preview: https://bids-specification.readthedocs.io/en/bep021/derivatives/ephys.html
-    content:
-    -   derivative
-    leads:
-    -   given-names: Arnaud
-        family-names: Delorme
-    -   given-names: Dora
-        family-names: Hermes
-    -   given-names: Mainak
-        family-names: Jas
-    -   given-names: Guiomar
-        family-names: Niso
-    -   given-names: Robert
-        family-names: Oostenveld
-    -   given-names: Cyril
-        family-names: Pernet
-    -   given-names: Christine
-        family-names: Rogers
-    status:
-    -   'Focus on raw-ish data: channels by time: epoching, filtering, interpolation...'
-    -   'All provenance tracking: outsourced to BEP028 (“provenance”)'
-    -   Reusing existing (raw) data formats where applicable
-    -   'No additional entities or suffixes: focus on “desc” entity'
-    -   Create new “descriptions.tsv” file to accompany and document the “desc” entity
-    -   Working on examples on GitHub
-    -   'Perspectives: Derivatives beyond channels by time data will be discussed at a later point'
-    blocking:
-    google_doc_created: 2018-05
-    pull_request_created:
-    pull_request_merged:
-
 -   number: '023'
     title: PET Preprocessing derivatives
     google_doc: https://docs.google.com/document/d/1yzsd1J9GT-aA0DWhdlgNr5LCu6_gvbjLyfvYq2FuxlY/
