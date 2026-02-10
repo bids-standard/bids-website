@@ -51,33 +51,6 @@
     pull_request_created:
     pull_request_merged:
 
--   number: '021'
-    title: Common Electrophysiological Derivatives
-    google_doc: https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/
-    link: https://github.com/bids-standard/bids-specification/pull/1680
-    content:
-    -   derivative
-    leads:
-    -   given-names: Arnaud
-        family-names: Delorme
-    -   given-names: Dora
-        family-names: Hermes
-    -   given-names: Mainak
-        family-names: Jas
-    -   given-names: Guiomar
-        family-names: Niso
-    -   given-names: Robert
-        family-names: Oostenveld
-    -   given-names: Cyril
-        family-names: Pernet
-    -   given-names: Christine
-        family-names: Rogers
-    status:
-    -   inactive and superseded by other BEPs
-    google_doc_created: 2018-05
-    pull_request_created: 2024-01
-    pull_request_merged: 2024-12
-
 -   number: '025'
     title: Medical Imaging Data structure (MIDS)
     link: https://docs.google.com/document/d/1xeiFACAnK_X64kL6XoXo8vpZ9Bn6B5Xd3j59Le1clRE/
