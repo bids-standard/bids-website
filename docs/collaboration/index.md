@@ -5,7 +5,7 @@ BIDS standards are intended to change and evolve as methods, resources,
 and the needs of the BIDS community changes.
 We encourage all researchers to contribute to the ongoing development of BIDS standards,
 be it through discussion on websites, the creation of new BIDS tools,
-or contributing to extending the BIDS specification through proposals. 
+or contributing to extending the BIDS specification through proposals.
 
 BIDS is supported by a leadership team made up of [BIDS Maintainers Group](https://bids.neuroimaging.io/collaboration/governance.html#bids-maintainers-group) and [BIDS Steering group](https://bids.neuroimaging.io/collaboration/governance.html#bids-steering-group), see [this page](https://bids.neuroimaging.io/collaboration/governance.html) for more details on BIDS governance.
 
