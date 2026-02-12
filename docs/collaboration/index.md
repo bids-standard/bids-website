@@ -7,7 +7,10 @@ We encourage all researchers to contribute to the ongoing development of BIDS st
 be it through discussion on websites, the creation of new BIDS tools,
 or contributing to extending the BIDS specification through proposals.
 
-BIDS is supported by a leadership team made up of [BIDS Maintainers Group](https://bids.neuroimaging.io/collaboration/governance.html#bids-maintainers-group) and [BIDS Steering group](https://bids.neuroimaging.io/collaboration/governance.html#bids-steering-group), see [this page](https://bids.neuroimaging.io/collaboration/governance.html) for more details on BIDS governance.
+BIDS is supported by a leadership team made up of
+the [BIDS Steering group](governance.md#bids-steering-group)
+and the [BIDS Maintainers Group](governance.md#bids-maintainers-group).
+See [Governance and Decision Making](governance.md) for more details on BIDS governance.
 
 !!! info "Call for joining the BIDS maintainers team"
 
