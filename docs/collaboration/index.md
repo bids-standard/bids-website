@@ -17,8 +17,6 @@ See [Governance and Decision Making](governance.md) for more details on BIDS gov
     We are currently actively looking for motivated people to join the BIDS maintainers team.
     Please see in the section below what being a BIDS maintainer means and reach out if you'd like to join!
 
-
-
 Below is a list of common resources where users can get involved in making the BIDS standard better!
 
 ## Questions and issues
