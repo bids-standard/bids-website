@@ -27,6 +27,12 @@ Converters for processing EEG, MEEG, and/or iEEG data.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="EEG") }}
 
+## Microelectrode Electrophysiology Converters
+
+Converters for processing microelectrode electrophysiology data (ecephys/icephys).
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="microephys") }}
+
 ## fNIRS Converters
 
 Converters for processing fNIRS data.
