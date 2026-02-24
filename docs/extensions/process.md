@@ -264,12 +264,7 @@ More details on how to proceed are described below.
     To obtain a number for your BEP open [a pull request](https://github.com/bids-standard/bids-website/pulls)
     to the [website GitHub repository][bids_website_gh]
     where you provide information about your BEP
-    by updating the file [`data/beps/beps.yml`](https://github.com/bids-standard/bids-website/blob/main/data/beps/beps.yml)
-    using the following template:
-
-    ```yaml
-    --8<-- ".github/PULL_REQUEST_TEMPLATE/bep_template.yml"
-    ```
+    by updating the file [`data/beps/beps.yml`](https://github.com/bids-standard/bids-website/blob/main/data/beps/beps.yml).
 
     !!! note
 
