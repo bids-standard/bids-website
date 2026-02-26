@@ -41,7 +41,7 @@ bids-specification are checked."""
 
 
 def remove_comments(text_string):
-    """Function to omit  html comment identifiers in a text string using
+    """Omit html comment identifiers in a text string using
     regular expression matches.
 
     Arguments:
@@ -71,7 +71,7 @@ def get_lines(text_string, sub_string):
 
 
 def construct_error_message(files_dict):
-    """Function to construct an error message pointing out where bad latin
+    """Construct an error message pointing out where bad latin
     phrases appear in lines of text.
 
     Arguments:
@@ -93,7 +93,7 @@ def construct_error_message(files_dict):
 
 
 def read_and_check_files(files):
-    """Function to read in files, remove html comments and check for bad latin
+    """Read in files, remove html comments and check for bad latin
     phrases.
 
     Arguments:
@@ -172,7 +172,7 @@ def get_all_files(directory=None):
 
 
 def main():
-    """Main function."""
+    """Run main function."""
     args = parse_args()
 
     files = (

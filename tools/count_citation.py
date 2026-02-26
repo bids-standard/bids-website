@@ -83,7 +83,7 @@ def return_citation_count_per_year(citations_doi: str) -> dict[str, int]:
                 try:
                     if int(year) < MINIMUM_YEAR:
                         continue
-                except:  # noqa
+                except Exception:
                     print("skipping")
                     continue
                 if year in citation_count_per_year:
