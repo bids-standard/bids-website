@@ -131,7 +131,8 @@ def validate_bep_metadata(all_beps):
         ]:
             if required_key not in bep:
                 raise ValueError(
-                    f"Missing required key {required_key} in BEP {bep['number']}"
+                    f"Missing required key {required_key} "
+                    f"in BEP {bep['number']}"
                 )
 
 

@@ -1,4 +1,6 @@
-"""Adds a dashboard in README that shows the status of all bids apps default branch CI runs."""
+"""Adds a dashboard in README
+that shows the status of all bids apps default branch CI runs.
+"""
 
 from pathlib import Path
 

@@ -89,7 +89,8 @@ def main(repos):
                     )
 
                 for item in items:
-                    # if looking through issues, clean up: each PR is an issue as
+                    # if looking through issues, clean up:
+                    # each PR is an issue as
                     # well, but we don't want to count these, see:
                     # https://github.com/PyGithub/PyGithub/issues/1744
                     if (item_type == "Issues") and (

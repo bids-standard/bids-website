@@ -109,7 +109,8 @@ def print_note(month, year, nb_topics, nb_posts):
     print(f"{nb_topics} new topics overall over the last 30 days")
     print(f"{nb_posts} new posts overall over the last 30 days")
     print(
-        f"New topics for given tags counted between {mindate.date()} and {maxdate.date()}"
+        f"New topics for given tags counted between {mindate.date()} "
+        f"and {maxdate.date()}"
     )
     print(f"Included queried tags:{tags()}")
     print(
@@ -117,7 +118,8 @@ def print_note(month, year, nb_topics, nb_posts):
 Note:
 - some topics have several tags so they may be counted twice
 - some topics may not be tagged so numbers here may be an underestimation
-- tags with no new topics or posts are not included in the summary table below"""
+- tags with no new topics or posts are not included
+  in the summary table below"""
     )
 
 
@@ -180,7 +182,8 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
 
     :param tag: neurostars tag
     :type tag: string
-    :param debug: if ``True``, only gets topics of the first 2 pages. Defaults to False.
+    :param debug: if ``True``, only gets topics of the first 2 pages.
+                  Defaults to False.
     :type debug: bool, optional
     :param verbose: defaults to False
     :type verbose: bool, optional
@@ -231,7 +234,8 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
         for i, topic in enumerate(response.json()["topic_list"]["topics"]):
             if verbose:
                 print(
-                    f"{i}. {topic['created_at']} | {topic['posts_count']} | {topic['title']}"
+                    f"{i}. {topic['created_at']} | {topic['posts_count']} "
+                    f"| {topic['title']}"
                 )
 
             nb_new_posts = return_nb_new_posts_for_topic(topic)

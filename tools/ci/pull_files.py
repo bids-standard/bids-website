@@ -23,7 +23,10 @@ using a GET request to the GitHub API."""
         "--pull-request",
         type=str,
         default=None,
-        help="If the script is be run on files changed by a pull request, parse the PR number",
+        help=(
+            "If the script is be run on files changed "
+            "by a pull request, parse the PR number"
+        ),
     )
 
     return parser.parse_args()

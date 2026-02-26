@@ -24,7 +24,8 @@ def validate_compression_qualities(qualities):
     valid_qualities = {"L", "M", "Q", "H"}
     if not all(q in valid_qualities for q in qualities):
         raise ValueError(
-            f"Invalid compression qualities specified. Use any combination of: {', '.join(valid_qualities)}."
+            "Invalid compression qualities specified. "
+            f"Use any combination of: {', '.join(valid_qualities)}."
         )
     return qualities
 
@@ -64,24 +65,28 @@ def main(text, input_image, output_image, compression_qualities):
 
         if decoded_data.quality < 0.5:
             lgr.warning(
-                f"With error correction {q} got too low quality {decoded_data.quality}."
+                "With error correction {q} "
+                f"got too low quality {decoded_data.quality}."
             )
             continue
 
         text_decoded = decoded_data.data.decode()
         if text_decoded != text:
             lgr.warning(
-                f"With error correction {q} decoded text does not match: {text_decoded!r} instead of {text!r}"
+                f"With error correction {q} decoded text does not match: "
+                f"{text_decoded!r} instead of {text!r}"
             )
             continue
 
         lgr.info(
-            f"Successfully decoded text: {text_decoded!r} encoded with compress quality {q}. File {output_image}"
+            f"Successfully decoded text: {text_decoded!r} "
+            f"encoded with compress quality {q}. File {output_image}"
         )
         break
     else:
         lgr.error(
-            f"Neither of error correction levels was good enough. File {output_image} might be unreadable."
+            "Neither of error correction levels was good enough. "
+            f"File {output_image} might be unreadable."
         )
 
 
@@ -100,7 +105,10 @@ if __name__ == "__main__":
         "-c",
         "--compression-qualities",
         default="LMQH",
-        help="Compression qualities (default: LMQH). Choose any combination of L, M, Q, H.",
+        help=(
+            "Compression qualities (default: LMQH). "
+            "Choose any combination of L, M, Q, H."
+        ),
     )
     parser.add_argument(
         "-l",

@@ -100,7 +100,8 @@ def get_data(datafile):
                 problems += 1
 
     print(
-        f"found {len(results)} results in json, problems decoding {problems} records"
+        f"found {len(results)} results in json, "
+        f"problems decoding {problems} records"
     )
     return results, datatype
 

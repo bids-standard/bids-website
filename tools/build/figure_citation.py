@@ -13,14 +13,17 @@ TMP_DIR.mkdir(parents=True, exist_ok=True)
 def main():
     df = pd.read_csv(INPUT_FILE, sep="\t")
     df = df.replace(
-        "Guidelines for the content and format of PET brain data in publications and archives",
+        (
+            "Guidelines for the content and format of "
+            "PET brain data in publications and archives"
+        ),
         "PET Guidelines",
     )
     plot_citation_count(df)
 
 
 def plot_citation_count(df: pd.DataFrame):
-    """Use Plotly to create a bar chart of the citation count per year stacked by paper."""
+    """Create a bar chart of the citation count per year stacked by paper."""
     # taken from https://colorbrewer2.org/#type=qualitative&scheme=Paired&n=12
     cmap = [
         "#a6cee3",

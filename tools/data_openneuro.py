@@ -116,7 +116,8 @@ def get_openneuro_datasets(query=None):
 
         next_cur = y["cursor"]
         data = (
-            f'{{"query": "query testq{{datasets(after: \\"{next_cur}\\") {query}'
+            f'{{"query": "query testq{{datasets(after: \\"{next_cur}\\") '
+            + f"{query}"
             + '}"}'
         )
         response = requests.post(

@@ -34,7 +34,9 @@ bids-specification are checked."""
         "--pull-request",
         type=str,
         default=None,
-        help="If the script is being run on a Pull Request, parse the PR number",
+        help=(
+            "If the script is being run on a Pull Request, parse the PR number"
+        ),
     )
 
     return parser.parse_args()
@@ -149,7 +151,9 @@ def read_and_check_files(files):
 
 
 def get_all_files(directory=None):
-    """Get a list of files to be checked. Ignores images, javascript, css files.
+    """Get a list of files to be checked.
+
+    Ignores images, javascript, css files.
 
     Keyword Arguments:
         directory {string} -- The directory containing the files to check

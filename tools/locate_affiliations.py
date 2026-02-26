@@ -74,7 +74,8 @@ def main():
             "affiliation" not in author for author in cff["authors"]
         )
         f.write(
-            f"- Number of contributors without affiliation: {nb_without_affiliation}\n"
+            "- Number of contributors without affiliation: "
+            f"{nb_without_affiliation}\n"
         )
 
         unknown_affiliations = df["address"].isna().sum()
