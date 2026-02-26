@@ -137,7 +137,7 @@ def read_and_check_files(files):
                         if latin_type in text.lower():
                             lines = get_lines(text.lower(), latin_type)
                             for line in lines:
-                                failing_files[os.path.abspath(filename)] = {
+                                failing_files[Path(filename).resolve()] = {
                                     "latin_type": latin_type,
                                     "line": line,
                                 }
