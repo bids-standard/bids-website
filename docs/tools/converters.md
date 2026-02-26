@@ -27,12 +27,6 @@ Converters for processing EEG, MEEG, and/or iEEG data.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="EEG") }}
 
-## Microelectrode Electrophysiology Converters
-
-Converters for processing microelectrode electrophysiology data (ecephys/icephys).
-
-{{ MACROS___generate_converter_table(file="converters.yml", data_type="microephys") }}
-
 ## fNIRS Converters
 
 Converters for processing fNIRS data.
@@ -59,3 +53,14 @@ Not exactly BIDS converters but are common tools that can used by other BIDS
 converters.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="MISC") }}
+
+## Experimental Converters
+
+The converters listed below are considered 'experimental',
+usually because they relate to BIDS extensions that have not yet been approved.
+
+### Microelectrode Electrophysiology Converters
+
+Converters for processing microelectrode electrophysiology data (ecephys/icephys).
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="microephys") }}
