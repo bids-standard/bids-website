@@ -130,7 +130,9 @@ def validate_bep_metadata(all_beps):
             "pull_request_merged",
         ]:
             if required_key not in bep:
-                raise ValueError(f"Missing required key {required_key} in BEP {bep['number']}")
+                raise ValueError(
+                    f"Missing required key {required_key} in BEP {bep['number']}"
+                )
 
 
 def plot_time_line(fig: go.Figure) -> type[go.Figure]:
@@ -247,7 +249,9 @@ def main():
         # save as html
         # NOTE: This file is ignored in git (see .gitignore)
         OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
-        fig.write_html(OUTPUT_DIR / f"{bep_type.replace(' ', '_')}_timeline.html")
+        fig.write_html(
+            OUTPUT_DIR / f"{bep_type.replace(' ', '_')}_timeline.html"
+        )
 
 
 if __name__ == "__main__":

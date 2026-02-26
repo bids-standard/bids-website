@@ -39,4 +39,6 @@ if missing_dh:
     )
 
 if invalid_dh:
-    raise ValueError(f"The following BIDS apps have invalid Docker hub image URL.\n{invalid_dh}")
+    raise ValueError(
+        f"The following BIDS apps have invalid Docker hub image URL.\n{invalid_dh}"
+    )

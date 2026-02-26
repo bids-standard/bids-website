@@ -120,7 +120,9 @@ def read_and_check_files(files):
 
     for filename in files:
         print(filename)
-        if True in [fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST]:
+        if True in [
+            fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST
+        ]:
             pass
         else:
             try:
@@ -173,7 +175,11 @@ def main():
     """Main function."""
     args = parse_args()
 
-    files = filter_files(args.pull_request) if args.pull_request is not None else get_all_files()
+    files = (
+        filter_files(args.pull_request)
+        if args.pull_request is not None
+        else get_all_files()
+    )
 
     failing_files = read_and_check_files(files)
 

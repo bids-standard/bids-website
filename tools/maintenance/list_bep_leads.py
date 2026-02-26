@@ -26,7 +26,9 @@ for bep in data:
 
         if "email" in contributor:
             output["bep"].append(f"{bep['number']} - {bep['title']}")
-            output["lead"].append(f"{lead['given-names']} {lead['family-names']}")
+            output["lead"].append(
+                f"{lead['given-names']} {lead['family-names']}"
+            )
             output["email"].append(f"{contributor['email']}")
 
 df = pd.DataFrame(output)

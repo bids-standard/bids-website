@@ -39,7 +39,9 @@ for app in data["apps"]:
             link = None
 
         elif app["ci"] == "travis":
-            image = f"https://app.travis-ci.com/{app['gh']}.svg?branch={branch}"
+            image = (
+                f"https://app.travis-ci.com/{app['gh']}.svg?branch={branch}"
+            )
             link = f"https://app.travis-ci.com/{app['gh']}"
 
         elif app["ci"] == "gh":

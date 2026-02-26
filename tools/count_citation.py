@@ -37,7 +37,10 @@ def main():
     for item in items:
         if VERBOSE:
             print(item)
-        title = item["data"].get("shortTitle") or item["data"].get("title").split(",")[0]
+        title = (
+            item["data"].get("shortTitle")
+            or item["data"].get("title").split(",")[0]
+        )
 
         DOI = item["data"].get("DOI")
         if not DOI and (extra := item["data"].get("extra")):
@@ -113,7 +116,9 @@ def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
         if metadata := query_for_metadata(papers[paper_]):
             print(metadata)
             if citations := metadata[0]["citation"]:
-                citation_count_per_year = return_citation_count_per_year(citations)
+                citation_count_per_year = return_citation_count_per_year(
+                    citations
+                )
                 print(f" citation per year: {citation_count_per_year}")
                 for year in citation_count_per_year:
                     df["papers"].append(paper_)

@@ -44,8 +44,12 @@ def main():
             secondary_y=secondary_y,
         )
     fig.update_layout(title="Openneuro data growth", hovermode="x")
-    fig.update_yaxes(title_text="Cumulative datasets", secondary_y=False, nticks=10)
-    fig.update_yaxes(title_text="Cumulative subjects", secondary_y=True, nticks=10)
+    fig.update_yaxes(
+        title_text="Cumulative datasets", secondary_y=False, nticks=10
+    )
+    fig.update_yaxes(
+        title_text="Cumulative subjects", secondary_y=True, nticks=10
+    )
     fig.update_xaxes(title_text="date")
 
     fig.update_layout(margin={"l": 0, "r": 0, "t": 40, "b": 0})

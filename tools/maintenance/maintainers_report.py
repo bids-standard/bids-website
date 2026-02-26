@@ -79,28 +79,38 @@ def main(repos):
                 log[repo_name][item_type][state] = []
 
                 if item_type == "PRs":
-                    items = repo.get_pulls(state="open" if state == "opened" else state)
+                    items = repo.get_pulls(
+                        state="open" if state == "opened" else state
+                    )
                 else:
                     assert item_type == "Issues"
-                    items = repo.get_issues(state="open" if state == "opened" else state)
+                    items = repo.get_issues(
+                        state="open" if state == "opened" else state
+                    )
 
                 for item in items:
                     # if looking through issues, clean up: each PR is an issue as
                     # well, but we don't want to count these, see:
                     # https://github.com/PyGithub/PyGithub/issues/1744
-                    if (item_type == "Issues") and (item.pull_request is not None):
+                    if (item_type == "Issues") and (
+                        item.pull_request is not None
+                    ):
                         continue
 
                     added = False
                     if item.closed_at is not None:
-                        if (item.closed_at >= mindate) and (item.closed_at < maxdate):
+                        if (item.closed_at >= mindate) and (
+                            item.closed_at < maxdate
+                        ):
                             if item_type == "PRs":
                                 # ignore PRs that were closed but not merged
                                 if not item.is_merged():
                                     continue
                             data[item_type]["Closed"] += 1
                             added = True
-                    if (item.created_at >= mindate) and (item.created_at < maxdate):
+                    if (item.created_at >= mindate) and (
+                        item.created_at < maxdate
+                    ):
                         data[item_type]["Opened"] += 1
                         added = True
 

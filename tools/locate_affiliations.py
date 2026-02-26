@@ -25,7 +25,11 @@ def main():
     with open(bids_spec_dir() / "CITATION.cff") as f:
         cff = yaml.load(f)
 
-    affiliations = [author["affiliation"] for author in cff["authors"] if "affiliation" in author]
+    affiliations = [
+        author["affiliation"]
+        for author in cff["authors"]
+        if "affiliation" in author
+    ]
 
     columns = ["address", "city", "country", "longitude", "latitude"]
     df = {
@@ -66,8 +70,12 @@ def main():
         nb_countries = len(set(df["country"]))
         f.write(f"- Number of countries: {nb_countries}\n")
 
-        nb_without_affiliation = sum("affiliation" not in author for author in cff["authors"])
-        f.write(f"- Number of contributors without affiliation: {nb_without_affiliation}\n")
+        nb_without_affiliation = sum(
+            "affiliation" not in author for author in cff["authors"]
+        )
+        f.write(
+            f"- Number of contributors without affiliation: {nb_without_affiliation}\n"
+        )
 
         unknown_affiliations = df["address"].isna().sum()
         f.write(f"- Number of unknown affiliations: {unknown_affiliations}\n")
@@ -89,7 +97,11 @@ def get_location(geolocator, affiliation):
     # parse city and avoid zip code
     if len(affiliation.split(",")) >= 2:
         city = affiliation.split(",")[-2].strip()
-    if city and len(affiliation.split(",")) >= 3 and (city.isupper() or re.match("[0-9]", city)):
+    if (
+        city
+        and len(affiliation.split(",")) >= 3
+        and (city.isupper() or re.match("[0-9]", city))
+    ):
         city = affiliation.split(",")[-3].strip()
 
     address = f"{city}, {country}" if country else f"{city}"

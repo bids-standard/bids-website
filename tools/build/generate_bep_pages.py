@@ -27,7 +27,9 @@ def generate_bep_page(bep: dict) -> str:
     env = return_jinja_env()
     template = env.get_template("bep_page_md.jinja")
     content = template.render(bep=bep)
-    output_file = root_dir() / "docs" / "extensions" / "beps" / f"bep_{bep['number']}.md"
+    output_file = (
+        root_dir() / "docs" / "extensions" / "beps" / f"bep_{bep['number']}.md"
+    )
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(content)
     # print(f" generated: {output_file}")

@@ -58,10 +58,14 @@ def main(text, input_image, output_image, compression_qualities):
             continue
 
         decoded_data = decoded[0]
-        lgr.debug(f"DEBUG: error correction {q} - quality: {decoded_data.quality}")
+        lgr.debug(
+            f"DEBUG: error correction {q} - quality: {decoded_data.quality}"
+        )
 
         if decoded_data.quality < 0.5:
-            lgr.warning(f"With error correction {q} got too low quality {decoded_data.quality}.")
+            lgr.warning(
+                f"With error correction {q} got too low quality {decoded_data.quality}."
+            )
             continue
 
         text_decoded = decoded_data.data.decode()
@@ -82,10 +86,16 @@ def main(text, input_image, output_image, compression_qualities):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate and decode QR codes.")
+    parser = argparse.ArgumentParser(
+        description="Generate and decode QR codes."
+    )
     parser.add_argument("text", help="Text to encode in the QR code.")
-    parser.add_argument("-i", "--input-image", help="Path to the input image (optional).")
-    parser.add_argument("-o", "--output-image", help="Path to the output image (optional).")
+    parser.add_argument(
+        "-i", "--input-image", help="Path to the input image (optional)."
+    )
+    parser.add_argument(
+        "-o", "--output-image", help="Path to the output image (optional)."
+    )
     parser.add_argument(
         "-c",
         "--compression-qualities",
@@ -109,12 +119,16 @@ if __name__ == "__main__":
 
     # Validate compression qualities
     try:
-        compression_qualities = validate_compression_qualities(args.compression_qualities)
+        compression_qualities = validate_compression_qualities(
+            args.compression_qualities
+        )
     except ValueError as e:
         lgr.error(e)
         sys.exit(1)
 
     # Sanitize output filename
-    output_filename = args.output_image or f"{sanitize_filename(args.text)}.png"
+    output_filename = (
+        args.output_image or f"{sanitize_filename(args.text)}.png"
+    )
 
     main(args.text, args.input_image, output_filename, compression_qualities)
