@@ -7,10 +7,8 @@
 
 import pandas as pd
 import plotly.graph_objs as go
-
+from bids_website.utils import data_dir, root_dir
 from plotly.subplots import make_subplots
-
-from bids_website.utils import root_dir, data_dir
 
 TMP_DIR = root_dir() / "tmp"
 
@@ -46,15 +44,11 @@ def main():
             secondary_y=secondary_y,
         )
     fig.update_layout(title="Openneuro data growth", hovermode="x")
-    fig.update_yaxes(
-        title_text="Cumulative datasets", secondary_y=False, nticks=10
-    )
-    fig.update_yaxes(
-        title_text="Cumulative subjects", secondary_y=True, nticks=10
-    )
+    fig.update_yaxes(title_text="Cumulative datasets", secondary_y=False, nticks=10)
+    fig.update_yaxes(title_text="Cumulative subjects", secondary_y=True, nticks=10)
     fig.update_xaxes(title_text="date")
 
-    fig.update_layout(margin=dict(l=0, r=0, t=40, b=0))
+    fig.update_layout(margin={"l": 0, "r": 0, "t": 40, "b": 0})
 
     fig.write_html(TMP_DIR / "openneuro_data_growth.html")
 

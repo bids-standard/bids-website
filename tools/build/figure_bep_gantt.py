@@ -30,7 +30,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
     if bep_type == "merged BEPs":
         input_file = data_dir() / "beps" / "beps_completed.yml"
 
-    with open(input_file, "r") as f:
+    with open(input_file) as f:
         yaml = YAML(typ="safe", pure=True)
         data = yaml.load(f)
 
@@ -43,68 +43,66 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
         StartPR = bep.get("pull_request_created")
         Finish = bep["pull_request_merged"]
 
-        display_name = (
-            bep.get("display") if bep.get("display") else bep.get("title")
-        )
+        display_name = bep.get("display") or bep.get("title")
         BEP = f"{bep['number']}-{display_name}"
 
         if bep_type != "draft BEPs" and StartDoc and StartPR:
             df.append(
-                dict(
-                    BEP=BEP,
-                    Start=StartDoc,
-                    Finish=StartPR,
-                    Resource="Google Doc",
-                    Name=f"BEP{bep['number']}",
-                )
+                {
+                    "BEP": BEP,
+                    "Start": StartDoc,
+                    "Finish": StartPR,
+                    "Resource": "Google Doc",
+                    "Name": f"BEP{bep['number']}",
+                }
             )
 
         if StartDoc and not StartPR:
             if bep_type == "draft BEPs":
                 df.append(
-                    dict(
-                        BEP=BEP,
-                        Start=StartDoc,
+                    {
+                        "BEP": BEP,
+                        "Start": StartDoc,
                         # use today as a placeholder for the PR creation date
                         # in format "YYYY-MM"
-                        Finish=datetime.now().strftime("%Y-%m"),
-                        Resource="Google Doc",
-                        Name=f"BEP{bep['number']}",
-                    )
+                        "Finish": datetime.now().strftime("%Y-%m"),
+                        "Resource": "Google Doc",
+                        "Name": f"BEP{bep['number']}",
+                    }
                 )
             # Some very old merged BEPs never had a PR
             elif bep_type == "merged BEPs":
                 df.append(
-                    dict(
-                        BEP=BEP,
-                        Start=StartDoc,
-                        Finish=Finish,
-                        Resource="Google Doc",
-                        Name=f"BEP{bep['number']}",
-                    )
+                    {
+                        "BEP": BEP,
+                        "Start": StartDoc,
+                        "Finish": Finish,
+                        "Resource": "Google Doc",
+                        "Name": f"BEP{bep['number']}",
+                    }
                 )
 
         if bep_type == "merged BEPs" and StartPR and Finish:
             df.append(
-                dict(
-                    BEP=BEP,
-                    Start=StartPR,
-                    Finish=Finish,
-                    Resource="Pull Request",
-                    Name="",
-                )
+                {
+                    "BEP": BEP,
+                    "Start": StartPR,
+                    "Finish": Finish,
+                    "Resource": "Pull Request",
+                    "Name": "",
+                }
             )
 
         if bep_type == "proposed BEPs" and StartPR:
             df.append(
-                dict(
-                    BEP=BEP,
-                    Start=StartPR,
+                {
+                    "BEP": BEP,
+                    "Start": StartPR,
                     # use today as a placeholder for the PR creation date
-                    Finish=datetime.now().strftime("%Y-%m"),
-                    Resource="Pull Request",
-                    Name="",
-                )
+                    "Finish": datetime.now().strftime("%Y-%m"),
+                    "Resource": "Pull Request",
+                    "Name": "",
+                }
             )
 
     df = pd.DataFrame(df)
@@ -132,9 +130,7 @@ def validate_bep_metadata(all_beps):
             "pull_request_merged",
         ]:
             if required_key not in bep:
-                raise ValueError(
-                    f"Missing required key {required_key} in BEP {bep['number']}"
-                )
+                raise ValueError(f"Missing required key {required_key} in BEP {bep['number']}")
 
 
 def plot_time_line(fig: go.Figure) -> type[go.Figure]:
@@ -147,7 +143,7 @@ def plot_time_line(fig: go.Figure) -> type[go.Figure]:
             y=y,
             mode="lines",
             showlegend=False,
-            line=dict(color="black", width=2),
+            line={"color": "black", "width": 2},
             hoverinfo="skip",
         )
     )
@@ -175,7 +171,7 @@ def plot_releases(
             x=dates,
             y=y,
             mode="markers+text",
-            marker=dict(color="black", size=10),
+            marker={"color": "black", "size": 10},
             text=bids_releases,
             hoverinfo="x+text",
             textposition="bottom center",
@@ -204,7 +200,7 @@ def add_publications_to_timeline(fig: go.Figure) -> type[go.Figure]:
             x=dates,
             y=[Y_AXIS_VALUE for _ in dates],
             mode="markers",
-            marker=dict(color="blue", size=10),
+            marker={"color": "blue", "size": 10},
             hoverinfo="x+text",
             text=titles,
         ),
@@ -234,7 +230,7 @@ def main():
                     x=sub_df["date"],
                     y=[Y_AXIS_VALUE for _ in sub_df["date"]],
                     mode="markers",
-                    marker=dict(color="green", size=10),
+                    marker={"color": "green", "size": 10},
                     hoverinfo="x+text",
                     text=sub_df["name"],
                 ),
@@ -244,16 +240,14 @@ def main():
             fig = add_publications_to_timeline(fig)
 
         fig.update_yaxes(visible=True, showticklabels=False)
-        fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
+        fig.update_layout(margin={"l": 0, "r": 0, "t": 0, "b": 0})
         fig.update_layout(legend_font_size=25)
-        fig.update_layout(xaxis=dict(tickfont=dict(size=30)))
+        fig.update_layout(xaxis={"tickfont": {"size": 30}})
 
         # save as html
         # NOTE: This file is ignored in git (see .gitignore)
         OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
-        fig.write_html(
-            OUTPUT_DIR / f"{bep_type.replace(' ', '_')}_timeline.html"
-        )
+        fig.write_html(OUTPUT_DIR / f"{bep_type.replace(' ', '_')}_timeline.html")
 
 
 if __name__ == "__main__":

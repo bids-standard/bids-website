@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import calendar
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -34,13 +34,13 @@ def return_min_max_date(month, year=None):
     """Calculate min and maxdate for our time window of interest."""
     if year is None:
         year = datetime.now().year
-    mindate = datetime(year, month, 1, tzinfo=timezone.utc)
+    mindate = datetime(year, month, 1, tzinfo=UTC)
     if month < 12:
         assert month >= 1, "month must be an int between 1 and 12"
-        maxdate = datetime(year, month + 1, 1, tzinfo=timezone.utc)
+        maxdate = datetime(year, month + 1, 1, tzinfo=UTC)
     else:
         assert month == 12, "month must be an int between 1 and 12"
-        maxdate = datetime(year + 1, 1, 1, tzinfo=timezone.utc)
+        maxdate = datetime(year + 1, 1, 1, tzinfo=UTC)
 
     return mindate, maxdate
 
@@ -48,12 +48,9 @@ def return_min_max_date(month, year=None):
 def plot_information(df: pd.DataFrame, month: int, print_to_file=True):
     """Plot maintainers report fig."""
     with sns.plotting_context("talk"):
-        fig, axs = plt.subplots(
-            2, 1, figsize=(10, 12), gridspec_kw={"hspace": 0.75}
-        )
+        fig, axs = plt.subplots(2, 1, figsize=(10, 12), gridspec_kw={"hspace": 0.75})
         plt.tight_layout()
         for i, item_type in enumerate(["PRs", "Issues"]):
-
             ax = axs.flat[i]
 
             sns.barplot(
@@ -68,9 +65,7 @@ def plot_information(df: pd.DataFrame, month: int, print_to_file=True):
                 ax.get_legend().remove()
 
             ax.set(xlabel="", title=item_type)
-            ax.set_xticks(
-                ax.get_xticks(), ax.get_xticklabels(), rotation=45, ha="right"
-            )
+            ax.set_xticks(ax.get_xticks(), ax.get_xticklabels(), rotation=45, ha="right")
 
     sns.despine(fig)
     fig.suptitle(f"BIDS: GitHub summary for {calendar.month_name[month]}")
@@ -86,9 +81,7 @@ def plot_neurostars(file, print_to_file=True):
     df["year_month"] = pd.to_datetime(df.year_month)
 
     with sns.plotting_context("talk"):
-        fig, axs = plt.subplots(
-            1, 1, figsize=(20, 12), gridspec_kw={"hspace": 0.75}
-        )
+        fig, axs = plt.subplots(1, 1, figsize=(20, 12), gridspec_kw={"hspace": 0.75})
 
         sns.lineplot(data=df, x="year_month", y="value", hue="key", ax=axs)
 
@@ -109,15 +102,10 @@ def load_citation() -> dict:
         return yaml.load(input_file)
 
 
-def return_contributor_from_citation_cff(
-    citation: dict, person: dict[str, str]
-) -> None | dict:
+def return_contributor_from_citation_cff(citation: dict, person: dict[str, str]) -> None | dict:
     """Return a person from CITATION.cff based on name."""
     for contributor in citation["authors"]:
-        if (
-            "family-names" not in contributor
-            or "given-names" not in contributor
-        ):
+        if "family-names" not in contributor or "given-names" not in contributor:
             continue
         if (
             person["family-names"] == contributor["family-names"]

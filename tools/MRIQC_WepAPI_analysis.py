@@ -55,9 +55,7 @@ def round_date_to_nearest_year(ts: Timestamp) -> Timestamp:
 # %%
 def fixdate(timelong):
     return pd.to_datetime(
-        datetime.datetime.fromtimestamp(int(timelong) // 1e3).strftime(
-            "%m/%d/%Y, %H:%M:%S"
-        )
+        datetime.datetime.fromtimestamp(int(timelong) // 1e3).strftime("%m/%d/%Y, %H:%M:%S")
     )
 
 
@@ -87,22 +85,20 @@ def fix_scannername(model):
     return modelname
 
 
-def get_data(datafile, drop_duplicates=True):
+def get_data(datafile):
 
     datatype = "bold" if "bold" in datafile else "T1w"
     results = []
     problems = 0
 
     with open(datafile) as f:
-        for line in f.readlines():
+        for line in f:
             try:
                 results.append(json.loads(line.strip()))
             except JSONDecodeError:
                 problems += 1
 
-    print(
-        f"found {len(results)} results in json, problems decoding {problems} records"
-    )
+    print(f"found {len(results)} results in json, problems decoding {problems} records")
     return results, datatype
 
 
@@ -120,9 +116,7 @@ def clean_data(results, datatype, drop_duplicates=True):
         results_clean.append(r)
 
     results_df = pd.DataFrame(results_clean)
-    results_df["_created"] = pd.to_datetime(
-        [i["_created"]["$date"] for i in results_clean]
-    )
+    results_df["_created"] = pd.to_datetime([i["_created"]["$date"] for i in results_clean])
     if "MultibandAccelerationFactor" in results_df:
         results_df["MultibandAccelerationFactor"] = np.nan_to_num(
             results_df["MultibandAccelerationFactor"]
@@ -142,22 +136,16 @@ def clean_data(results, datatype, drop_duplicates=True):
     )
     fs = np.array(results_df["MagneticFieldStrength"].values.tolist())
 
-    results_df["MagneticFieldStrength"] = np.where(
-        fs > 100, fs / 10000, fs
-    ).tolist()
+    results_df["MagneticFieldStrength"] = np.where(fs > 100, fs / 10000, fs).tolist()
 
-    results_df["MagneticFieldStrength"] = np.around(
-        results_df.MagneticFieldStrength, 1
-    )
+    results_df["MagneticFieldStrength"] = np.around(results_df.MagneticFieldStrength, 1)
 
     if drop_duplicates:
         ds_size_orig = results_df.shape[0]
         results_df = results_df.drop_duplicates(subset="md5sum", keep="last")
         print(f"dropped {ds_size_orig - results_df.shape[0]} duplicates")
     print(f"final size: {results_df.shape}")
-    results_df = results_df.assign(
-        nresults=np.arange(1, results_df.shape[0] + 1)
-    )
+    results_df = results_df.assign(nresults=np.arange(1, results_df.shape[0] + 1))
     return results_df
 
 
@@ -173,13 +161,10 @@ t1w_results_df = clean_data(t1w_results, datatype)
 # %%
 all_results_df = pd.concat((bold_results_df, t1w_results_df))
 all_results_df = all_results_df.sort_values(by="month").reset_index()
-all_results_df.shape
 all_results_df.to_csv("mriqc_results_summary.csv")
 
 # %%
-sns.lineplot(
-    x="month", y="nresults", hue="datatype", data=all_results_df, linewidth=2
-)
+sns.lineplot(x="month", y="nresults", hue="datatype", data=all_results_df, linewidth=2)
 plt.xlabel("Date", fontsize=16)
 plt.ylabel("Number of results", fontsize=16)
 plt.tight_layout()

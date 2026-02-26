@@ -22,7 +22,7 @@ IGNORE_LIST = ["**/contributors.md"]
 
 
 def parse_args():
-    """Construct command line interface for parsing Pull Request number"""
+    """Construct command line interface for parsing Pull Request number."""
     DESCRIPTION = """Script to check for latin phrases in Markdown files.
 
 If no pull request number is provided, all relevant text files in the
@@ -42,12 +42,13 @@ bids-specification are checked."""
 
 def remove_comments(text_string):
     """Function to omit  html comment identifiers in a text string using
-    regular expression matches
+    regular expression matches.
 
     Arguments:
         text_string {string} -- The text to be matched
 
-    Returns:
+    Returns
+    -------
         {string} -- The input text string with html comments removed
     """
     p = re.sub("(?s)<!--(.*?)-->", "", text_string)
@@ -55,13 +56,14 @@ def remove_comments(text_string):
 
 
 def get_lines(text_string, sub_string):
-    """Get individual lines in a text file
+    """Get individual lines in a text file.
 
     Arguments:
         text_string {string} -- The text string to test
         sub_string {string} -- The conditional string to perform splitting on
 
-    Returns:
+    Returns
+    -------
         {list} -- A list of split strings
     """
     lines = [line for line in text_string.split("\n") if sub_string in line]
@@ -70,13 +72,14 @@ def get_lines(text_string, sub_string):
 
 def construct_error_message(files_dict):
     """Function to construct an error message pointing out where bad latin
-    phrases appear in lines of text
+    phrases appear in lines of text.
 
     Arguments:
         files_dict {dictionary} -- Dictionary of failing files containing the
                                    bad latin phrases and offending lines
 
-    Returns:
+    Returns
+    -------
         {string} -- The error message to be raised
     """
     error_message = ["Bad latin found in the following files:\n"]
@@ -91,12 +94,13 @@ def construct_error_message(files_dict):
 
 def read_and_check_files(files):
     """Function to read in files, remove html comments and check for bad latin
-    phrases
+    phrases.
 
     Arguments:
         files {list} -- List of filenames to be checked
 
-    Returns:
+    Returns
+    -------
         {dict} -- Dictionary: Top level keys are absolute filepaths to files
                   that failed the check. Each of these has two keys:
                   'latin_type' containing the unwanted latin phrase, and 'line'
@@ -116,9 +120,7 @@ def read_and_check_files(files):
 
     for filename in files:
         print(filename)
-        if True in [
-            fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST
-        ]:
+        if True in [fnmatch.fnmatch(filename, pattern) for pattern in IGNORE_LIST]:
             pass
         else:
             try:
@@ -151,7 +153,8 @@ def get_all_files(directory=None):
     Keyword Arguments:
         directory {string} -- The directory containing the files to check
 
-    Returns:
+    Returns
+    -------
         {list} -- List of files to check
     """
     if directory is None:
@@ -167,13 +170,10 @@ def get_all_files(directory=None):
 
 
 def main():
-    """Main function"""
+    """Main function."""
     args = parse_args()
 
-    if args.pull_request is not None:
-        files = filter_files(args.pull_request)
-    else:
-        files = get_all_files()
+    files = filter_files(args.pull_request) if args.pull_request is not None else get_all_files()
 
     failing_files = read_and_check_files(files)
 

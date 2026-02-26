@@ -11,7 +11,7 @@ import sys
 code_path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 sys.path.append(code_path)
 
-import macros  # noqa E402
+import macros  # noqa: E402
 
 
 def define_env(env):
@@ -29,9 +29,7 @@ def define_env(env):
 
     Macro aliases must start with "MACROS___"
     """
-    env.macro(
-        macros.generate_converter_table, "MACROS___generate_converter_table"
-    )
+    env.macro(macros.generate_converter_table, "MACROS___generate_converter_table")
     env.macro(macros.generate_tools_table, "MACROS___generate_tools_table")
     env.macro(macros.generate_members_table, "MACROS___generate_members_table")
     env.macro(macros.generate_beps_table, "MACROS___generate_beps_table")

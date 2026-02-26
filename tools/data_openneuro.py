@@ -100,29 +100,21 @@ def get_openneuro_datasets(query=None):
 
     data = '{"query":"query testq{datasets ' + query + '}"}'
 
-    response = requests.post(
-        "https://openneuro.org/crn/graphql", headers=headers, data=data
-    )
+    response = requests.post("https://openneuro.org/crn/graphql", headers=headers, data=data)
     response = response.json()
 
     datasets = {}
 
     while True:
         for y in response["data"]["datasets"]["edges"]:
-
             datasets[y["node"]["id"]] = y
 
         if len(response["data"]["datasets"]["edges"]) < 25:
             break
 
         next_cur = y["cursor"]
-        data = (
-            f'{{"query": "query testq{{datasets(after: \\"{next_cur}\\") {query}'
-            + '}"}'
-        )
-        response = requests.post(
-            "https://openneuro.org/crn/graphql", headers=headers, data=data
-        )
+        data = f'{{"query": "query testq{{datasets(after: \\"{next_cur}\\") {query}' + '}"}'
+        response = requests.post("https://openneuro.org/crn/graphql", headers=headers, data=data)
         response = response.json()
 
     return datasets
@@ -196,27 +188,19 @@ def main():
             y["node"]["latestSnapshot"]["tag"],
         )
         Dataset_name = y["node"]["latestSnapshot"]["dataset"]["name"]
-        Dataset_made_public = Dataset_made_public_datetime.strftime(
-            date_output_format
-        )
+        Dataset_made_public = Dataset_made_public_datetime.strftime(date_output_format)
         Most_recent_snapshot_date = datetime.strptime(
             y["node"]["latestSnapshot"]["dataset"]["publishDate"][:10],
             date_input_format,
         ).strftime(date_output_format)
         if y["node"]["latestSnapshot"]["summary"] is not None:
-            Number_of_subjects = len(
-                y["node"]["latestSnapshot"]["summary"]["subjects"]
-            )
+            Number_of_subjects = len(y["node"]["latestSnapshot"]["summary"]["subjects"])
             Modalities_available = format_modalities(
                 y["node"]["latestSnapshot"]["summary"]["secondaryModalities"]
                 + y["node"]["latestSnapshot"]["summary"]["modalities"]
             )
-            Ages = format_ages(
-                y["node"]["latestSnapshot"]["summary"]["subjectMetadata"]
-            )
-            Tasks_completed = ", ".join(
-                y["node"]["latestSnapshot"]["summary"]["tasks"]
-            )
+            Ages = format_ages(y["node"]["latestSnapshot"]["summary"]["subjectMetadata"])
+            Tasks_completed = ", ".join(y["node"]["latestSnapshot"]["summary"]["tasks"])
         else:
             Number_of_subjects = None
             Modalities_available = None
@@ -224,42 +208,28 @@ def main():
             Tasks_completed = None
 
         if y["node"]["latestSnapshot"]["dataset"]["metadata"] is not None:
-            DX_status = y["node"]["latestSnapshot"]["dataset"]["metadata"][
-                "dxStatus"
-            ]
-            Number_of_trials = y["node"]["latestSnapshot"]["dataset"][
-                "metadata"
-            ]["trialCount"]
-            Study_design = y["node"]["latestSnapshot"]["dataset"]["metadata"][
-                "studyDesign"
-            ]
-            Domain_studied = y["node"]["latestSnapshot"]["dataset"][
-                "metadata"
-            ]["studyDomain"]
+            DX_status = y["node"]["latestSnapshot"]["dataset"]["metadata"]["dxStatus"]
+            Number_of_trials = y["node"]["latestSnapshot"]["dataset"]["metadata"]["trialCount"]
+            Study_design = y["node"]["latestSnapshot"]["dataset"]["metadata"]["studyDesign"]
+            Domain_studied = y["node"]["latestSnapshot"]["dataset"]["metadata"]["studyDomain"]
             Longitudinal = (
                 "Yes"
-                if y["node"]["latestSnapshot"]["dataset"]["metadata"][
-                    "studyLongitudinal"
-                ]
+                if y["node"]["latestSnapshot"]["dataset"]["metadata"]["studyLongitudinal"]
                 == "Longitudinal"
                 else "No"
             )
             Processed_data = (
                 "Yes"
-                if y["node"]["latestSnapshot"]["dataset"]["metadata"][
-                    "dataProcessed"
-                ]
+                if y["node"]["latestSnapshot"]["dataset"]["metadata"]["dataProcessed"]
                 else "No"
             )
-            Species = y["node"]["latestSnapshot"]["dataset"]["metadata"][
-                "species"
+            Species = y["node"]["latestSnapshot"]["dataset"]["metadata"]["species"]
+            DOI_of_paper_associated_with_DS = y["node"]["latestSnapshot"]["dataset"]["metadata"][
+                "associatedPaperDOI"
             ]
-            DOI_of_paper_associated_with_DS = y["node"]["latestSnapshot"][
-                "dataset"
-            ]["metadata"]["associatedPaperDOI"]
-            DOI_of_paper_because_DS_on_OpenNeuro = y["node"]["latestSnapshot"][
-                "dataset"
-            ]["metadata"]["openneuroPaperDOI"]
+            DOI_of_paper_because_DS_on_OpenNeuro = y["node"]["latestSnapshot"]["dataset"][
+                "metadata"
+            ]["openneuroPaperDOI"]
         else:
             DX_status = ""
             Number_of_trials = ""
@@ -271,9 +241,7 @@ def main():
             DOI_of_paper_associated_with_DS = ""
             DOI_of_paper_because_DS_on_OpenNeuro = ""
 
-        Senior_Author = format_name(
-            y["node"]["latestSnapshot"]["description"]["SeniorAuthor"]
-        )
+        Senior_Author = format_name(y["node"]["latestSnapshot"]["description"]["SeniorAuthor"])
         line_raw = [
             accession_Number,
             Dataset_URL,
@@ -322,9 +290,7 @@ def main():
     ]
 
     metadata = pd.DataFrame(output, columns=colnames)
-    metadata["NSubjects"] = [
-        None if i == "" else int(i) for i in metadata["NSubjects"]
-    ]
+    metadata["NSubjects"] = [None if i == "" else int(i) for i in metadata["NSubjects"]]
     metadata["ReleaseDate"] = pd.to_datetime(metadata["ReleaseDate"])
 
     # Clean up data to create plots
@@ -349,24 +315,20 @@ def main():
         subjects[date.strftime("%Y-%m-%d")] += nsub
 
     datadict = defaultdict(list)
-    for k in datasets.keys():
+    for k in datasets:
         datadict["ReleaseDate"].append(k)
         datadict["n_datasets"].append(datasets[k])
         datadict["n_subjects"].append(subjects[k])
 
     df_plotting = pd.DataFrame(datadict)
     df_plotting["ReleaseDate"] = pd.to_datetime(df_plotting["ReleaseDate"])
-    df_plotting = df_plotting.set_index("ReleaseDate").sort_values(
-        by="ReleaseDate"
-    )
+    df_plotting = df_plotting.set_index("ReleaseDate").sort_values(by="ReleaseDate")
 
     release_dates = df_plotting.index.astype(int)
 
     df_plotting["release_dates"] = pd.to_datetime(release_dates)
 
-    df_plotting.to_csv(
-        data_dir() / "openneuro_datasets.tsv", sep="\t", index=False
-    )
+    df_plotting.to_csv(data_dir() / "openneuro_datasets.tsv", sep="\t", index=False)
 
 
 if __name__ == "__main__":

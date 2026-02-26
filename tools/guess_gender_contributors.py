@@ -35,8 +35,7 @@ def main():
     output_file = data_dir() / "people" / "gender.md"
 
     with open(output_file, "w") as f:
-        for key in results:
-            f.write(f"- {key}: {results[key]}\n")
+        f.writelines(f"- {key}: {results[key]}\n" for key in results)
 
 
 if __name__ == "__main__":

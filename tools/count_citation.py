@@ -37,15 +37,11 @@ def main():
     for item in items:
         if VERBOSE:
             print(item)
-        title = (
-            item["data"].get("shortTitle")
-            or item["data"].get("title").split(",")[0]
-        )
+        title = item["data"].get("shortTitle") or item["data"].get("title").split(",")[0]
 
         DOI = item["data"].get("DOI")
-        if not DOI:
-            if extra := item["data"].get("extra"):
-                DOI = extra.replace("DOI: ", "")
+        if not DOI and (extra := item["data"].get("extra")):
+            DOI = extra.replace("DOI: ", "")
 
         if DOI:
             papers[title] = DOI
@@ -107,9 +103,7 @@ def query_for_metadata(doi: str) -> dict[str, str]:
 
 
 def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
-    """
-    Use requests to query papers that cited each paper listed in dict.
-    """
+    """Use requests to query papers that cited each paper listed in dict."""
     df = {"papers": [], "years": [], "nb_citations": []}
 
     for i, paper_ in enumerate(papers):
@@ -119,9 +113,7 @@ def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
         if metadata := query_for_metadata(papers[paper_]):
             print(metadata)
             if citations := metadata[0]["citation"]:
-                citation_count_per_year = return_citation_count_per_year(
-                    citations
-                )
+                citation_count_per_year = return_citation_count_per_year(citations)
                 print(f" citation per year: {citation_count_per_year}")
                 for year in citation_count_per_year:
                     df["papers"].append(paper_)
@@ -133,7 +125,7 @@ def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
 
 
 def save_dataframe_to_file(df: pd.DataFrame, file_path: Path):
-    """Save DataFrame to TSV"""
+    """Save DataFrame to TSV."""
     if not df.empty:
         df.to_csv(file_path, sep="\t", index=False)
 

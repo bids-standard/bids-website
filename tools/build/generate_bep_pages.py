@@ -1,11 +1,10 @@
 """Generate a page for each BEP based on its metadata."""
 
 import ruamel.yaml
-from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 # from rich import print
-
 from bids_website.utils import root_dir
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 yaml = ruamel.yaml.YAML()
 yaml.indent(mapping=2, sequence=4, offset=2)
@@ -28,9 +27,7 @@ def generate_bep_page(bep: dict) -> str:
     env = return_jinja_env()
     template = env.get_template("bep_page_md.jinja")
     content = template.render(bep=bep)
-    output_file = (
-        root_dir() / "docs" / "extensions" / "beps" / f"bep_{bep['number']}.md"
-    )
+    output_file = root_dir() / "docs" / "extensions" / "beps" / f"bep_{bep['number']}.md"
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(content)
     # print(f" generated: {output_file}")

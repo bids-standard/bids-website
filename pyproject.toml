@@ -38,15 +38,6 @@ builtin = "clear,rare,en-GB_to_en-US"
 ignore-words-list = "Acknowledgements,als,ans,asai,nd,manuel,te,acknowledgements,Varian,mis"
 skip = ".git,env,specification,starter_kit,examples,apps,execution,pyproject.toml,data/**.tsv,data/**.json,docs/collaboration/contributors.md,package-lock.json"
 
-[tool.black]
-line-length = 79
-
-[tool.isort]
-combine_as_imports = true
-line_length = 79
-profile = "black"
-skip_gitignore = true
-
 [tool.djlint]
 profile = "django"
 blank_line_after_tag = "load,extends,include,endblock,set"
@@ -58,3 +49,112 @@ use_gitignore = true
 
 [tool.djlint.css]
 indent_size = 4
+
+[tool.ruff]
+extend-exclude = ["data/datasets/examples", "nilearn/_version.py"]
+include = [
+    "pyproject.toml",
+    "macros/**/*.py",
+    "tools/**/*.py",
+]
+indent-width = 4
+line-length = 100
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+fixable = ["ALL"]
+ignore = [
+    "ARG005",
+    "D100",
+    "D103",
+    "D104",
+    "D105",
+    "D205",
+    "D301",
+    "D401",
+    "D404",
+    "E501",
+    "E741",
+    "ERA001",
+    "N803",
+    "N806",
+    "PD011",
+    "PGH004",
+    "PTH123",
+    "PERF203",
+    "PERF203",
+    "PERF401",
+    "PLR2004",
+    "PTH100",
+    "PTH120",
+    "PTH207",
+    "PTH118",
+    "SIM102",
+    # Avoid linter rules conflicting with the formatter
+    # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+    "COM812",
+    "COM819",
+    "E111",
+    "E114",
+    "E117",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "W191",
+]
+# List of all the ruff rules (includes why the rule matters)
+# https://docs.astral.sh/ruff/rules/
+select = [
+    "ARG",
+    "B",
+    "C4",
+    "C90",
+    "D",
+    "E",
+    "ERA",
+    "F",
+    "FLY",
+    "FURB",
+    "I",
+    "N",
+    "NPY",
+    "PERF",
+    "PIE",
+    "PTH",
+    "PD",
+    "PGH",
+    "PLR",
+    "RUF",
+    "SIM",
+    "UP",
+    "W",
+]
+unfixable = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 23
+
+[tool.ruff.lint.per-file-ignores]
+"**/{doc}/*" = ["B018", "D103"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.pylint]
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-args
+max-args = 27
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-branches
+max-branches = 22
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-returns
+max-returns = 8
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-statements
+max-statements = 96
