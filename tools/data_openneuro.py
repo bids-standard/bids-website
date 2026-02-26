@@ -343,7 +343,7 @@ def main():
     datasets = defaultdict(int)
     subjects = defaultdict(int)
 
-    for date, nsub in metadata[["ReleaseDate", "NSubjects"]].values:
+    for date, nsub in metadata[["ReleaseDate", "NSubjects"]].to_numpy():
         datasets[date.strftime("%Y-%m-%d")] += 1
         subjects[date.strftime("%Y-%m-%d")] += nsub
 

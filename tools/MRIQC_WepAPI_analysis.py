@@ -140,7 +140,7 @@ def clean_data(results, datatype, drop_duplicates=True):
     results_df = results_df.assign(
         Scanner=[fix_scannername(i) for i in results_df.ManufacturersModelName]
     )
-    fs = np.array(results_df["MagneticFieldStrength"].values.tolist())
+    fs = np.array(results_df["MagneticFieldStrength"].to_numpy().tolist())
 
     results_df["MagneticFieldStrength"] = np.where(
         fs > 100, fs / 10000, fs

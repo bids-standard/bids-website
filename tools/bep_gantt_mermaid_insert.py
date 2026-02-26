@@ -82,8 +82,12 @@ gantt
 
     for bep in df.BEP.unique():
         bep_df = df[bep == df.BEP]
-        google_start = bep_df[bep_df.Resource == "Google Doc"].Start.values[0]
-        google_end = bep_df[bep_df.Resource == "Google Doc"].Finish.values[0]
+        google_start = bep_df[
+            bep_df.Resource == "Google Doc"
+        ].Start.to_numpy()[0]
+        google_end = bep_df[bep_df.Resource == "Google Doc"].Finish.to_numpy()[
+            0
+        ]
 
         text += f"""    section BEP{bep[:3]}
             Google doc    :{google_start}, {google_end}
@@ -91,8 +95,8 @@ gantt
 
         pr_df = bep_df[bep_df.Resource == "Pull Request"]
         if len(pr_df) > 0:
-            pr_start = pr_df.Start.values[0]
-            pr_end = pr_df.Finish.values[0]
+            pr_start = pr_df.Start.to_numpy()[0]
+            pr_end = pr_df.Finish.to_numpy()[0]
 
             text += f"""            Pull request  :{pr_start}, {pr_end}
 """
