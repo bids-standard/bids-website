@@ -22,7 +22,7 @@ def target_file() -> Path:
 def get_bep_timeline() -> pd.DataFrame:
     completd_beps = data_dir() / "beps" / "beps_completed.yml"
 
-    with open(completd_beps) as f:
+    with Path(completd_beps).open() as f:
         yaml = YAML(typ="safe", pure=True)
         data = yaml.load(f)
 
@@ -106,11 +106,11 @@ gantt
     print(text)
 
     # insert into target file
-    with open(target_file()) as f:
+    with Path(target_file()).open() as f:
         lines = f.readlines()
 
     inser_mermaid_here = False
-    with open(target_file(), "w") as f:
+    with Path(target_file()).open("w") as f:
         for line in lines:
             if line.startswith("<!-- MERMAID GANTT CHART STARTS -->"):
                 inser_mermaid_here = True

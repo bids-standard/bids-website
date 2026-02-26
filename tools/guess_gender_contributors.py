@@ -14,7 +14,7 @@ yaml = ruamel.yaml.YAML(typ="rt")
 
 def main():
 
-    with open(bids_spec_dir() / "CITATION.cff") as f:
+    with (bids_spec_dir() / "CITATION.cff").open() as f:
         cff = yaml.load(f)
 
     results = {
@@ -34,7 +34,7 @@ def main():
 
     output_file = data_dir() / "people" / "gender.md"
 
-    with open(output_file, "w") as f:
+    with output_file.open("w") as f:
         f.writelines(f"- {key}: {results[key]}\n" for key in results)
 
 

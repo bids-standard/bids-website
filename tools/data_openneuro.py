@@ -175,10 +175,10 @@ def main():
     if UPDATE or not (TMP_DIR / "datasets.json").exists():
         datasets = get_openneuro_datasets()
         if UPDATE:
-            with open(TMP_DIR / "datasets.json", "w") as f:
+            with (TMP_DIR / "datasets.json").open("w") as f:
                 json.dump(datasets, f, indent=4)
     else:
-        with open(TMP_DIR / "datasets.json") as f:
+        with (TMP_DIR / "datasets.json").open() as f:
             datasets = json.load(f)
 
     # get metadata into a format suitable to generate a dataframe

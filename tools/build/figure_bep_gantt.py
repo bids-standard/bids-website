@@ -30,7 +30,7 @@ def create_bep_timeline(bep_type: str) -> type[go.Figure]:
     if bep_type == "merged BEPs":
         input_file = data_dir() / "beps" / "beps_completed.yml"
 
-    with open(input_file) as f:
+    with input_file.open() as f:
         yaml = YAML(typ="safe", pure=True)
         data = yaml.load(f)
 

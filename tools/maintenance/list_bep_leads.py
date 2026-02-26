@@ -7,7 +7,7 @@ from utils import load_citation, return_contributor_from_citation_cff
 
 beps = data_dir() / "beps" / "beps.yml"
 
-with open(beps) as f:
+with beps.open() as f:
     yaml = YAML(typ="safe", pure=True)
     data = yaml.load(f)
 

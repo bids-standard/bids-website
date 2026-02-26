@@ -126,8 +126,7 @@ def read_and_check_files(files):
             pass
         else:
             try:
-                with open(
-                    os.path.join(ABSOLUTE_HERE, filename),
+                with (ABSOLUTE_HERE / filename).open(
                     encoding="utf8",
                     errors="ignore",
                 ) as f:

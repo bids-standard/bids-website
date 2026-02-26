@@ -73,10 +73,10 @@ df = pd.DataFrame(
 )
 
 # append to readme
-with open(root_dir / "README.md") as f:
+with (root_dir / "README.md").open() as f:
     readme = f.readlines()
 
-with open(root_dir / "README.md", "w") as f:
+with (root_dir / "README.md").open("w") as f:
     for line in readme:
         f.write(line)
         if line.startswith("<!-- INSERT DASHBOARD HERE -->"):

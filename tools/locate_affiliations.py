@@ -22,7 +22,7 @@ UPDATE = False
 
 
 def main():
-    with open(bids_spec_dir() / "CITATION.cff") as f:
+    with (bids_spec_dir() / "CITATION.cff").open() as f:
         cff = yaml.load(f)
 
     affiliations = [
@@ -64,7 +64,7 @@ def main():
 
     output_file = data_dir() / "people" / "affiliations.md"
 
-    with open(output_file, "w") as f:
+    with output_file.open("w") as f:
         f.write(f"- Number of affiliations: {len(affiliations)}\n")
 
         nb_countries = len(set(df["country"]))

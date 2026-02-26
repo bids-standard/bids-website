@@ -29,10 +29,9 @@
 # MRIQC web API doc: https://mriqc.nimh.nih.gov/docs/api
 
 import datetime
-
-# %%
 import json
 from json import JSONDecodeError
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -93,7 +92,7 @@ def get_data(datafile):
     results = []
     problems = 0
 
-    with open(datafile) as f:
+    with Path(datafile).open() as f:
         for line in f:
             try:
                 results.append(json.loads(line.strip()))
