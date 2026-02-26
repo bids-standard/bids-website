@@ -98,16 +98,16 @@ def main(repos):
                         continue
 
                     added = False
-                    if item.closed_at is not None:
-                        if (item.closed_at >= mindate) and (
-                            item.closed_at < maxdate
-                        ):
-                            if item_type == "PRs":
-                                # ignore PRs that were closed but not merged
-                                if not item.is_merged():
-                                    continue
-                            data[item_type]["Closed"] += 1
-                            added = True
+                    if item.closed_at is not None and (
+                        (item.closed_at >= mindate)
+                        and (item.closed_at < maxdate)
+                        and item_type == "PRs"
+                    ):
+                        # ignore PRs that were closed but not merged
+                        if not item.is_merged():
+                            continue
+                        data[item_type]["Closed"] += 1
+                        added = True
                     if (item.created_at >= mindate) and (
                         item.created_at < maxdate
                     ):
