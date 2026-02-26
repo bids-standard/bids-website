@@ -15,7 +15,6 @@ from ruamel.yaml import YAML
 yaml = YAML(typ="safe", pure=True)
 
 files_to_check = [
-    # data_dir() / "beps" / "beps_completed.yml",
     data_dir() / "beps" / "beps.yml",
 ]
 

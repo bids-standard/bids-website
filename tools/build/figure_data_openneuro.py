@@ -20,11 +20,6 @@ def main():
         sep="\t",
     )
 
-    # end_year = 24  # set to current year + 1
-    # # July 2 is the midpoint of year
-    # midyears = pd.to_datetime([f"20{yr}-07-02" for yr in range(18, end_year)]).astype(int)
-    # midyears
-
     df["cumsum_datasets"] = df["n_datasets"].cumsum()
     df["cumsum_subjects"] = df["n_subjects"].cumsum()
 

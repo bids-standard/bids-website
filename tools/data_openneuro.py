@@ -336,10 +336,6 @@ def main():
     print("Earliest dataset:", dates.min())
     print("Latest dataset:", dates.max())
 
-    # fix dates to reflect fact that early datasets were all from openneuro
-    # df_sorted.loc[df_sorted['ReleaseDate'] < pd.Timestamp(2018,8,1), 'ReleaseDate'] = '2018-08-01'
-    # df_sorted
-
     datasets = defaultdict(int)
     subjects = defaultdict(int)
 

@@ -134,8 +134,6 @@ def clean_data(results, datatype, drop_duplicates=True):
     )
 
     results_df = results_df.sort_values(by="month")
-    # clean up
-    # results_df = results_df.query('MagneticFieldStrength < 15')
 
     results_df = results_df.assign(
         Scanner=[fix_scannername(i) for i in results_df.ManufacturersModelName]
