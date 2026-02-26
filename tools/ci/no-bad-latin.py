@@ -159,13 +159,13 @@ def get_all_files(directory=None):
         {list} -- List of files to check
     """
     if directory is None:
-        directory = os.path.join(ABSOLUTE_HERE, "docs")
+        directory = str(Path(ABSOLUTE_HERE) / "docs")
     print(f"Looking for files in {directory}")
     files = []
     for rootdir, _, filenames in os.walk(directory):
         for filename in filenames:
             if filename.endswith(".md"):
-                files.append(os.path.join(rootdir, filename))
+                files.append(str(Path(rootdir) / filename))
 
     return files
 

@@ -7,9 +7,9 @@
 #
 
 import json
-import os
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -188,11 +188,11 @@ def main():
         Dataset_made_public_datetime = datetime.strptime(
             y["node"]["publishDate"][:10], date_input_format
         )
-        Dataset_URL = os.path.join(
-            "https://openneuro.org/datasets/",
-            accession_Number,
-            "versions",
-            y["node"]["latestSnapshot"]["tag"],
+        Dataset_URL = str(
+            Path("https://openneuro.org/datasets/")
+            / accession_Number
+            / "versions"
+            / y["node"]["latestSnapshot"]["tag"]
         )
         Dataset_name = y["node"]["latestSnapshot"]["dataset"]["name"]
         Dataset_made_public = Dataset_made_public_datetime.strftime(

@@ -82,9 +82,6 @@ ignore = [
     "N806",
     "PERF401",
     "PLR2004",
-    "PTH120",
-    "PTH207",
-    "PTH118",
     # Avoid linter rules conflicting with the formatter
     # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
     "COM812",
