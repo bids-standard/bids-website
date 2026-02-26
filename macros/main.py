@@ -1,4 +1,4 @@
-"""This package is used to build elements from data into
+"""Package used to build elements from data into
 MarkDown format for the specification text.
 
 Functions decorated in "define_env()" are callable throughout the
