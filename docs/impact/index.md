@@ -60,23 +60,6 @@ their organizational structure. While the list continues to grow, an initial lis
 BIDS initiatives or database can be found
 [here](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0).
 
-### Website and Specification traffic dashboards
-
-In order to measure the volume of traffic to our website and the
-[ReadTheDocs rendering of the specification][specification],
-we utilize Google Analytics.
-
-For visualizing our metrics, we have put together 2 dashboards:
-
-1.  [the website](https://datastudio.google.com/u/0/reporting/eab164ba-9f98-46e8-bee8-1f4f5328dc6e/page/V5leB)
-1.  [the specification](https://datastudio.google.com/u/0/reporting/57bf46f1-034c-4d8b-9fe2-3a2243e469c5/page/w1leB)
-
-The default time period is set to the past 6 months. This can be changed by
-adjusting the time period in the upper left corner. Please feel free to use any
-of these figures in your grant! If there are additional statistics not currently
-conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by email
- ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)).
-
 ### BIDS usage
 
 Here is a non-exhaustive list of imaging centers, institutes, databases
