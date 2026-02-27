@@ -1,4 +1,4 @@
-"""Creates a Gantt chart for the completed BEPs"""
+"""Creates a Gantt chart for the completed BEPs."""
 
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ def target_file() -> Path:
 def get_bep_timeline() -> pd.DataFrame:
     completd_beps = data_dir() / "beps" / "beps_completed.yml"
 
-    with open(completd_beps, "r") as f:
+    with Path(completd_beps).open() as f:
         yaml = YAML(typ="safe", pure=True)
         data = yaml.load(f)
 
@@ -38,30 +38,30 @@ def get_bep_timeline() -> pd.DataFrame:
 
         if StartDoc and StartPR:
             df.append(
-                dict(
-                    BEP=BEP,
-                    Start=StartDoc,
-                    Finish=StartPR,
-                    Resource="Google Doc",
-                )
+                {
+                    "BEP": BEP,
+                    "Start": StartDoc,
+                    "Finish": StartPR,
+                    "Resource": "Google Doc",
+                }
             )
         if StartPR and Finish:
             df.append(
-                dict(
-                    BEP=BEP,
-                    Start=StartPR,
-                    Finish=Finish,
-                    Resource="Pull Request",
-                )
+                {
+                    "BEP": BEP,
+                    "Start": StartPR,
+                    "Finish": Finish,
+                    "Resource": "Pull Request",
+                }
             )
         if not StartPR:
             df.append(
-                dict(
-                    BEP=BEP,
-                    Start=StartDoc,
-                    Finish=Finish,
-                    Resource="Google Doc",
-                )
+                {
+                    "BEP": BEP,
+                    "Start": StartDoc,
+                    "Finish": Finish,
+                    "Resource": "Google Doc",
+                }
             )
 
     df = pd.DataFrame(df)
@@ -81,9 +81,13 @@ gantt
 """
 
     for bep in df.BEP.unique():
-        bep_df = df[df.BEP == bep]
-        google_start = bep_df[bep_df.Resource == "Google Doc"].Start.values[0]
-        google_end = bep_df[bep_df.Resource == "Google Doc"].Finish.values[0]
+        bep_df = df[bep == df.BEP]
+        google_start = bep_df[
+            bep_df.Resource == "Google Doc"
+        ].Start.to_numpy()[0]
+        google_end = bep_df[bep_df.Resource == "Google Doc"].Finish.to_numpy()[
+            0
+        ]
 
         text += f"""    section BEP{bep[:3]}
             Google doc    :{google_start}, {google_end}
@@ -91,8 +95,8 @@ gantt
 
         pr_df = bep_df[bep_df.Resource == "Pull Request"]
         if len(pr_df) > 0:
-            pr_start = pr_df.Start.values[0]
-            pr_end = pr_df.Finish.values[0]
+            pr_start = pr_df.Start.to_numpy()[0]
+            pr_end = pr_df.Finish.to_numpy()[0]
 
             text += f"""            Pull request  :{pr_start}, {pr_end}
 """
@@ -102,11 +106,11 @@ gantt
     print(text)
 
     # insert into target file
-    with open(target_file(), "r") as f:
+    with Path(target_file()).open() as f:
         lines = f.readlines()
 
     inser_mermaid_here = False
-    with open(target_file(), "w") as f:
+    with Path(target_file()).open("w") as f:
         for line in lines:
             if line.startswith("<!-- MERMAID GANTT CHART STARTS -->"):
                 inser_mermaid_here = True

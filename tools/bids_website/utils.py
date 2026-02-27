@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import calendar
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -34,13 +34,13 @@ def return_min_max_date(month, year=None):
     """Calculate min and maxdate for our time window of interest."""
     if year is None:
         year = datetime.now().year
-    mindate = datetime(year, month, 1, tzinfo=timezone.utc)
+    mindate = datetime(year, month, 1, tzinfo=UTC)
     if month < 12:
         assert month >= 1, "month must be an int between 1 and 12"
-        maxdate = datetime(year, month + 1, 1, tzinfo=timezone.utc)
+        maxdate = datetime(year, month + 1, 1, tzinfo=UTC)
     else:
         assert month == 12, "month must be an int between 1 and 12"
-        maxdate = datetime(year + 1, 1, 1, tzinfo=timezone.utc)
+        maxdate = datetime(year + 1, 1, 1, tzinfo=UTC)
 
     return mindate, maxdate
 
@@ -53,7 +53,6 @@ def plot_information(df: pd.DataFrame, month: int, print_to_file=True):
         )
         plt.tight_layout()
         for i, item_type in enumerate(["PRs", "Issues"]):
-
             ax = axs.flat[i]
 
             sns.barplot(

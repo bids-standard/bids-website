@@ -7,7 +7,7 @@ from utils import load_citation, return_contributor_from_citation_cff
 
 beps = data_dir() / "beps" / "beps.yml"
 
-with open(beps, "r") as f:
+with beps.open() as f:
     yaml = YAML(typ="safe", pure=True)
     data = yaml.load(f)
 
@@ -25,11 +25,11 @@ for bep in data:
             continue
 
         if "email" in contributor:
-            output["bep"].append(f'{bep["number"]} - {bep["title"]}')
+            output["bep"].append(f"{bep['number']} - {bep['title']}")
             output["lead"].append(
-                f'{lead["given-names"]} {lead["family-names"]}'
+                f"{lead['given-names']} {lead['family-names']}"
             )
-            output["email"].append(f'{contributor["email"]}')
+            output["email"].append(f"{contributor['email']}")
 
 df = pd.DataFrame(output)
 

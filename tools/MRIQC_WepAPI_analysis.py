@@ -29,10 +29,9 @@
 # MRIQC web API doc: https://mriqc.nimh.nih.gov/docs/api
 
 import datetime
-
-# %%
 import json
 from json import JSONDecodeError
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -87,21 +86,22 @@ def fix_scannername(model):
     return modelname
 
 
-def get_data(datafile, drop_duplicates=True):
+def get_data(datafile):
 
     datatype = "bold" if "bold" in datafile else "T1w"
     results = []
     problems = 0
 
-    with open(datafile) as f:
-        for line in f.readlines():
+    with Path(datafile).open() as f:
+        for line in f:
             try:
                 results.append(json.loads(line.strip()))
             except JSONDecodeError:
                 problems += 1
 
     print(
-        f"found {len(results)} results in json, problems decoding {problems} records"
+        f"found {len(results)} results in json, "
+        f"problems decoding {problems} records"
     )
     return results, datatype
 
@@ -134,13 +134,11 @@ def clean_data(results, datatype, drop_duplicates=True):
     )
 
     results_df = results_df.sort_values(by="month")
-    # clean up
-    # results_df = results_df.query('MagneticFieldStrength < 15')
 
     results_df = results_df.assign(
         Scanner=[fix_scannername(i) for i in results_df.ManufacturersModelName]
     )
-    fs = np.array(results_df["MagneticFieldStrength"].values.tolist())
+    fs = np.array(results_df["MagneticFieldStrength"].to_numpy().tolist())
 
     results_df["MagneticFieldStrength"] = np.where(
         fs > 100, fs / 10000, fs
@@ -173,7 +171,6 @@ t1w_results_df = clean_data(t1w_results, datatype)
 # %%
 all_results_df = pd.concat((bold_results_df, t1w_results_df))
 all_results_df = all_results_df.sort_values(by="month").reset_index()
-all_results_df.shape
 all_results_df.to_csv("mriqc_results_summary.csv")
 
 # %%

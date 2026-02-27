@@ -76,7 +76,6 @@ def main(repos):
         for item_type in ["PRs", "Issues"]:
             log[repo_name][item_type] = {}
             for state in ["opened", "closed"]:
-
                 log[repo_name][item_type][state] = []
 
                 if item_type == "PRs":
@@ -90,8 +89,8 @@ def main(repos):
                     )
 
                 for item in items:
-
-                    # if looking through issues, clean up: each PR is an issue as
+                    # if looking through issues, clean up:
+                    # each PR is an issue as
                     # well, but we don't want to count these, see:
                     # https://github.com/PyGithub/PyGithub/issues/1744
                     if (item_type == "Issues") and (
@@ -100,16 +99,16 @@ def main(repos):
                         continue
 
                     added = False
-                    if item.closed_at is not None:
-                        if (item.closed_at >= mindate) and (
-                            item.closed_at < maxdate
-                        ):
-                            if item_type == "PRs":
-                                # ignore PRs that were closed but not merged
-                                if not item.is_merged():
-                                    continue
-                            data[item_type]["Closed"] += 1
-                            added = True
+                    if item.closed_at is not None and (
+                        (item.closed_at >= mindate)
+                        and (item.closed_at < maxdate)
+                        and item_type == "PRs"
+                    ):
+                        # ignore PRs that were closed but not merged
+                        if not item.is_merged():
+                            continue
+                        data[item_type]["Closed"] += 1
+                        added = True
                     if (item.created_at >= mindate) and (
                         item.created_at < maxdate
                     ):

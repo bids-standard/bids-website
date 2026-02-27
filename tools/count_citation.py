@@ -30,7 +30,7 @@ def main():
     # List dois for BIDS papers from zotero group
     zot = zotero.Zotero(library_id="5111637", library_type="group")
     items = zot.everything(zot.top())
-    with open(data_dir() / "papers.json", "w") as f:
+    with (data_dir() / "papers.json").open("w") as f:
         json.dump(items, f, indent=" ")
 
     papers = {}
@@ -43,9 +43,8 @@ def main():
         )
 
         DOI = item["data"].get("DOI")
-        if not DOI:
-            if extra := item["data"].get("extra"):
-                DOI = extra.replace("DOI: ", "")
+        if not DOI and (extra := item["data"].get("extra")):
+            DOI = extra.replace("DOI: ", "")
 
         if DOI:
             papers[title] = DOI
@@ -84,7 +83,7 @@ def return_citation_count_per_year(citations_doi: str) -> dict[str, int]:
                 try:
                     if int(year) < MINIMUM_YEAR:
                         continue
-                except:  # noqa
+                except Exception:
                     print("skipping")
                     continue
                 if year in citation_count_per_year:
@@ -95,7 +94,7 @@ def return_citation_count_per_year(citations_doi: str) -> dict[str, int]:
 
 
 def query_for_metadata(doi: str) -> dict[str, str]:
-    with open(TOKEN_FILE) as f:
+    with Path(TOKEN_FILE).open() as f:
         token = f.read().strip()
     headers = {"authorization": token}
     api_call = f"https://opencitations.net/index/coci/api/v1/metadata/{doi}"
@@ -107,9 +106,7 @@ def query_for_metadata(doi: str) -> dict[str, str]:
 
 
 def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
-    """
-    Use requests to query papers that cited each paper listed in dict.
-    """
+    """Use requests to query papers that cited each paper listed in dict."""
     df = {"papers": [], "years": [], "nb_citations": []}
 
     for i, paper_ in enumerate(papers):
@@ -133,7 +130,7 @@ def query_api(papers: dict[str, str]) -> dict[str, list[str] | list[int]]:
 
 
 def save_dataframe_to_file(df: pd.DataFrame, file_path: Path):
-    """Save DataFrame to TSV"""
+    """Save DataFrame to TSV."""
     if not df.empty:
         df.to_csv(file_path, sep="\t", index=False)
 

@@ -14,7 +14,7 @@ import requests
 
 
 def parse_args():
-    """Construct the command line interface for the script"""
+    """Construct the command line interface for the script."""
     DESCRIPTION = """Script to pull changed files in a Pull Request
 using a GET request to the GitHub API."""
     parser = argparse.ArgumentParser(description=DESCRIPTION)
@@ -23,19 +23,23 @@ using a GET request to the GitHub API."""
         "--pull-request",
         type=str,
         default=None,
-        help="If the script is be run on files changed by a pull request, parse the PR number",
+        help=(
+            "If the script is be run on files changed "
+            "by a pull request, parse the PR number"
+        ),
     )
 
     return parser.parse_args()
 
 
 def get_files_from_pr(pr_num):
-    """Return a list of changed files from a GitHub Pull Request
+    """Return a list of changed files from a GitHub Pull Request.
 
     Arguments:
         pr_num {str} -- Pull Request number to get modified files from
 
-    Returns:
+    Returns
+    -------
         {list} -- List of modified filenames
     """
     files = []
@@ -49,7 +53,7 @@ def get_files_from_pr(pr_num):
 
 
 def filter_files(pr_num, start_phrase="src"):
-    """Filter modified files from a Pull Request by a start phrase
+    """Filter modified files from a Pull Request by a start phrase.
 
     Arguments:
         pr_num {str} -- Number of the Pull Request to get modified files from
@@ -58,7 +62,8 @@ def filter_files(pr_num, start_phrase="src"):
         start_phrase {str} -- Start phrase to filter changed files by
                               (default: {"src"})
 
-    Returns:
+    Returns
+    -------
         {list} -- List of filenames that begin with the desired start phrase
     """
     files = get_files_from_pr(pr_num)

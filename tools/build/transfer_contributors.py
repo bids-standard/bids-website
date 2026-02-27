@@ -1,9 +1,9 @@
-"""Transfer content of all_contributors from specification to website"""
+"""Transfer content of all_contributors from specification to website."""
 
 import json
-from rich import print
 
 from bids_website.utils import root_dir
+from rich import print
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     input_file = root_dir() / "specification" / ".all-contributorsrc"
     output_file = root_dir() / ".all-contributorsrc"
 
-    with open(input_file, "r") as f:
+    with input_file.open() as f:
         content = json.load(f)
     contributors = content["contributors"]
 
@@ -30,7 +30,7 @@ def main():
         "linkToUsage": False,
     }
 
-    with open(output_file, "w") as f:
+    with output_file.open("w") as f:
         json.dump(content, f, indent="   ")
 
 

@@ -23,7 +23,7 @@ def main():
         projection="natural earth",
     )
 
-    fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
+    fig.update_layout(margin={"l": 0, "r": 0, "t": 0, "b": 0})
 
     # save as html
     # NOTE: This file is ignored in git (see .gitignore)

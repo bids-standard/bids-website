@@ -22,7 +22,7 @@ UPDATE = False
 
 
 def main():
-    with open(bids_spec_dir() / "CITATION.cff") as f:
+    with (bids_spec_dir() / "CITATION.cff").open() as f:
         cff = yaml.load(f)
 
     affiliations = [
@@ -33,7 +33,7 @@ def main():
 
     columns = ["address", "city", "country", "longitude", "latitude"]
     df = {
-        "affiliation": sorted(list(set(affiliations))),
+        "affiliation": sorted(set(affiliations)),
         "address": [],
         "city": [],
         "country": [],
@@ -64,7 +64,7 @@ def main():
 
     output_file = data_dir() / "people" / "affiliations.md"
 
-    with open(output_file, "w") as f:
+    with output_file.open("w") as f:
         f.write(f"- Number of affiliations: {len(affiliations)}\n")
 
         nb_countries = len(set(df["country"]))
@@ -74,7 +74,8 @@ def main():
             "affiliation" not in author for author in cff["authors"]
         )
         f.write(
-            f"- Number of contributors without affiliation: {nb_without_affiliation}\n"
+            "- Number of contributors without affiliation: "
+            f"{nb_without_affiliation}\n"
         )
 
         unknown_affiliations = df["address"].isna().sum()

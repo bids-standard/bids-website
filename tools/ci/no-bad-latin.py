@@ -22,7 +22,7 @@ IGNORE_LIST = ["**/contributors.md"]
 
 
 def parse_args():
-    """Construct command line interface for parsing Pull Request number"""
+    """Construct command line interface for parsing Pull Request number."""
     DESCRIPTION = """Script to check for latin phrases in Markdown files.
 
 If no pull request number is provided, all relevant text files in the
@@ -34,20 +34,23 @@ bids-specification are checked."""
         "--pull-request",
         type=str,
         default=None,
-        help="If the script is being run on a Pull Request, parse the PR number",
+        help=(
+            "If the script is being run on a Pull Request, parse the PR number"
+        ),
     )
 
     return parser.parse_args()
 
 
 def remove_comments(text_string):
-    """Function to omit  html comment identifiers in a text string using
-    regular expression matches
+    """Omit html comment identifiers in a text string using
+    regular expression matches.
 
     Arguments:
         text_string {string} -- The text to be matched
 
-    Returns:
+    Returns
+    -------
         {string} -- The input text string with html comments removed
     """
     p = re.sub("(?s)<!--(.*?)-->", "", text_string)
@@ -55,13 +58,14 @@ def remove_comments(text_string):
 
 
 def get_lines(text_string, sub_string):
-    """Get individual lines in a text file
+    """Get individual lines in a text file.
 
     Arguments:
         text_string {string} -- The text string to test
         sub_string {string} -- The conditional string to perform splitting on
 
-    Returns:
+    Returns
+    -------
         {list} -- A list of split strings
     """
     lines = [line for line in text_string.split("\n") if sub_string in line]
@@ -69,14 +73,15 @@ def get_lines(text_string, sub_string):
 
 
 def construct_error_message(files_dict):
-    """Function to construct an error message pointing out where bad latin
-    phrases appear in lines of text
+    """Construct an error message pointing out where bad latin
+    phrases appear in lines of text.
 
     Arguments:
         files_dict {dictionary} -- Dictionary of failing files containing the
                                    bad latin phrases and offending lines
 
-    Returns:
+    Returns
+    -------
         {string} -- The error message to be raised
     """
     error_message = ["Bad latin found in the following files:\n"]
@@ -90,13 +95,14 @@ def construct_error_message(files_dict):
 
 
 def read_and_check_files(files):
-    """Function to read in files, remove html comments and check for bad latin
-    phrases
+    """Read in files, remove html comments and check for bad latin
+    phrases.
 
     Arguments:
         files {list} -- List of filenames to be checked
 
-    Returns:
+    Returns
+    -------
         {dict} -- Dictionary: Top level keys are absolute filepaths to files
                   that failed the check. Each of these has two keys:
                   'latin_type' containing the unwanted latin phrase, and 'line'
@@ -122,8 +128,7 @@ def read_and_check_files(files):
             pass
         else:
             try:
-                with open(
-                    os.path.join(ABSOLUTE_HERE, filename),
+                with (ABSOLUTE_HERE / filename).open(
                     encoding="utf8",
                     errors="ignore",
                 ) as f:
@@ -134,7 +139,7 @@ def read_and_check_files(files):
                         if latin_type in text.lower():
                             lines = get_lines(text.lower(), latin_type)
                             for line in lines:
-                                failing_files[os.path.abspath(filename)] = {
+                                failing_files[Path(filename).resolve()] = {
                                     "latin_type": latin_type,
                                     "line": line,
                                 }
@@ -146,34 +151,38 @@ def read_and_check_files(files):
 
 
 def get_all_files(directory=None):
-    """Get a list of files to be checked. Ignores images, javascript, css files.
+    """Get a list of files to be checked.
+
+    Ignores images, javascript, css files.
 
     Keyword Arguments:
         directory {string} -- The directory containing the files to check
 
-    Returns:
+    Returns
+    -------
         {list} -- List of files to check
     """
     if directory is None:
-        directory = os.path.join(ABSOLUTE_HERE, "docs")
+        directory = str(Path(ABSOLUTE_HERE) / "docs")
     print(f"Looking for files in {directory}")
     files = []
     for rootdir, _, filenames in os.walk(directory):
         for filename in filenames:
             if filename.endswith(".md"):
-                files.append(os.path.join(rootdir, filename))
+                files.append(str(Path(rootdir) / filename))
 
     return files
 
 
 def main():
-    """Main function"""
+    """Run main function."""
     args = parse_args()
 
-    if args.pull_request is not None:
-        files = filter_files(args.pull_request)
-    else:
-        files = get_all_files()
+    files = (
+        filter_files(args.pull_request)
+        if args.pull_request is not None
+        else get_all_files()
+    )
 
     failing_files = read_and_check_files(files)
 
