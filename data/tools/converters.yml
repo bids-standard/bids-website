@@ -620,6 +620,25 @@
     comment: Use this package as a command line to organize your Nifti dataset into BIDS.
     license: GPL-3.0
 
+-   name: nwb2bids
+    repo_url: https://github.com/con/nwb2bids
+    status: active
+    data_types:
+    -   microephys
+    expected_input:
+    -   NWB
+    language:
+    -   Python
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/nwb2bids
+    documentation: https://nwb2bids.readthedocs.io/
+    comment: |
+        Reorganizes NWB (Neurodata Without Borders) files into a BIDS directory
+        layout, supporting microelectrode electrophysiology data (ecephys/icephys)
+        per BEP032.
+    license: MIT
+
 -   name: phys2bids
     repo_url: https://github.com/physiopy/phys2bids
     status: active
