@@ -1,11 +1,5 @@
 ---
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
-exclude: |
-    (?x)^(
-        tools/schemacode/bidsschematools/tests/data/broken_dataset_description.json
-        | CNAME
-    )$
+exclude: "(?x)^(\n    tools/schemacode/bidsschematools/tests/data/broken_dataset_description.json\n    | CNAME\n)$\n"
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
@@ -13,78 +7,70 @@ repos:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
-        exclude: |
-            (?x)^(
-                mkdocs.yml
-            )$
+        exclude: "(?x)^(\n    mkdocs.yml\n)$\n"
     -   id: check-json
     -   id: check-added-large-files
     -   id: check-case-conflict
     -   id: check-merge-conflict
     -   id: mixed-line-ending
-
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.2
     hooks:
     -   id: codespell
-        args: [--toml, pyproject.toml]
-        additional_dependencies: [tomli]
-
+        args:
+        -   --toml
+        -   pyproject.toml
+        additional_dependencies:
+        -   tomli
 -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: 0.2.3
     hooks:
     -   id: yamlfmt
-        args: [--mapping, '4', --sequence, '4', --offset, '0']
-        exclude: |
-            (?x)^(
-                docs/specification/.*
-                | mkdocs.yml
-            )$
-
+        args:
+        -   --mapping
+        -   '4'
+        -   --sequence
+        -   '4'
+        -   --offset
+        -   '0'
+        exclude: "(?x)^(\n    docs/specification/.*\n    | mkdocs.yml\n)$\n"
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
     rev: v2.16.0
     hooks:
     -   id: pretty-format-toml
-        args: [--autofix, --indent, '4', --no-sort, --trailing-commas]
-
+        args:
+        -   --autofix
+        -   --indent
+        -   '4'
+        -   --no-sort
+        -   --trailing-commas
 -   repo: https://github.com/djlint/djLint
     rev: v1.36.4
     hooks:
     -   id: djlint
-        exclude: |
-            (?x)^(
-                templates/.*md.jinja
-            )$
+        exclude: "(?x)^(\n    templates/.*md.jinja\n)$\n"
     -   id: djlint-reformat
-        exclude: |
-            (?x)^(
-                templates/.*md.jinja
-            )$
+        exclude: "(?x)^(\n    templates/.*md.jinja\n)$\n"
     -   id: djlint-jinja
-        exclude: |
-            (?x)^(
-                templates/.*md.jinja
-            )$
+        exclude: "(?x)^(\n    templates/.*md.jinja\n)$\n"
     -   id: djlint-reformat-jinja
-        exclude: |
-            (?x)^(
-                templates/.*md.jinja
-            )$
-
-    # Check formatting of CSS
-    # prettier: https://prettier.io/
+        exclude: "(?x)^(\n    templates/.*md.jinja\n)$\n"
 -   repo: https://github.com/rbubley/mirrors-prettier
     rev: v3.8.1
     hooks:
     -   id: prettier
-        types_or: [css]
-
-    # Lint and format Python code
+        types_or:
+        -   css
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.4
+    rev: v0.15.5
     hooks:
     -   id: ruff-check
-        # args: [--statistics]
-        args: [--fix, --show-fixes, --unsafe-fixes]
+        args:
+        -   --fix
+        -   --show-fixes
+        -   --unsafe-fixes
     -   id: ruff-format
-        # args: [--diff]
+ci:
+    autoupdate_commit_msg: 'chore: update pre-commit hooks'
+    autoupdate_schedule: monthly
+    autofix_commit_msg: 'style: pre-commit fixes'
