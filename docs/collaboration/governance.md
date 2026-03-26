@@ -42,7 +42,7 @@ The project is multifaceted and depends on contributors for:
 specification development and maintenance,
 [BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
-[starter kits](https://bids-standard.github.io/bids-starter-kit/),
+[starter kits](https://bids.neuroimaging.io/getting_started/),
 [examples][bids_examples_gh],
 and general discussions.
 The relevant discussions are located in our
