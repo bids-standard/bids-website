@@ -4210,15 +4210,15 @@ make sure to check the <a href="https://bids-standard.github.io/execution-spec/"
 <h2 id="for-users"><a class="toclink" href="#for-users">For users</a><a class="headerlink" href="#for-users" title="Permanent link">&para;</a></h2>
 <h3 id="how-can-i-check-a-version-of-a-container-i-have-available-locally"><a class="toclink" href="#how-can-i-check-a-version-of-a-container-i-have-available-locally">How can I check a version of a container I have available locally?</a><a class="headerlink" href="#how-can-i-check-a-version-of-a-container-i-have-available-locally" title="Permanent link">&para;</a></h3>
 <p>For many bids-app you should be able to run something like:</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>bids/example<span class="w"> </span>--version
-</code></pre></div>
+<p><code>bash
+docker run bids/example --version</code></p>
 <p>Inside each <abbr title="Brain Imaging Data Structure">BIDS</abbr> App there is a <code>/version</code> file with the version number.</p>
 <p>This file is automatically populated with tag used to trigger the build on the CI server.</p>
 <h2 id="how-can-i-download-a-particular-version-of-a-bids-app"><a class="toclink" href="#how-can-i-download-a-particular-version-of-a-bids-app">How can I download a particular version of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App?</a><a class="headerlink" href="#how-can-i-download-a-particular-version-of-a-bids-app" title="Permanent link">&para;</a></h2>
 <p>All versions of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps are archived on Docker Hub. To access a particular
 version you should refer to a specific Docker Hub tag. For example:</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>bids/example:v0.0.5
-</code></pre></div>
+<p><code>bash
+docker pull bids/example:v0.0.5</code></p>
 <h2 id="what-do-the-analysis-levels-participant-and-group-mean"><a class="toclink" href="#what-do-the-analysis-levels-participant-and-group-mean">What do the analysis levels (<code>participant</code> and <code>group</code>) mean?</a><a class="headerlink" href="#what-do-the-analysis-levels-participant-and-group-mean" title="Permanent link">&para;</a></h2>
 <p>Generally, <code>participant</code> means individual level analysis (for instance: single subject).
 The <code>group</code> level analysis can be thought of as the second step,
@@ -4246,8 +4246,8 @@ to start with any image that has Python and include your environment dependencie
 <li><code>analysis_level</code></li>
 </ul>
 <p>with an API call that would look like this:</p>
-<div class="highlight"><pre><span></span><code>app_name<span class="w"> </span>bids_dir<span class="w"> </span>output_dir<span class="w"> </span>analysis_level
-</code></pre></div>
+<p><code>bash
+app_name bids_dir output_dir analysis_level</code></p>
 <h4 id="what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis"><a class="toclink" href="#what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis">What do we do if my application does not have any use for the group level analysis?</a><a class="headerlink" href="#what-do-we-do-if-my-application-does-not-have-any-use-for-the-group-level-analysis" title="Permanent link">&para;</a></h4>
 <p>If your pipeline has no need for group level analysis,
 it is fine if it is only valid for the analysis_level argument
@@ -4272,9 +4272,9 @@ For instance: many Apps will simply fail with an error message if the dataset is
 be most sensible to use the same version as the software they are wrapping.</p>
 <p>For example in case of HCP Pipelines this would be <code>v3.17.0</code>.</p>
 <h4 id="how-to-tag-a-new-release"><a class="toclink" href="#how-to-tag-a-new-release">How to tag a new release?</a><a class="headerlink" href="#how-to-tag-a-new-release" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>v0.0.1
-git<span class="w"> </span>push
-</code></pre></div>
+<p><code>bash
+git tag v0.0.1
+git push</code></p>
 <h4 id="i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same"><a class="toclink" href="#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same">I want to release a new version of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App, but the pipeline version is the same?</a><a class="headerlink" href="#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same" title="Permanent link">&para;</a></h4>
 <p>This can happen when only the runscript or the Dockerfile changed?
 According to semantic versioning we should use the <code>+</code> signed followed by the build number.

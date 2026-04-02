@@ -4214,11 +4214,11 @@ For some quality checks and rare operations, you will need node.js and npm. -->
 having <code>make</code> installed will make it easier to easily serve the website locally.</p>
 <h3 id="install-and-serve"><a class="toclink" href="#install-and-serve">Install and serve</a><a class="headerlink" href="#install-and-serve" title="Permanent link">&para;</a></h3>
 <p>Fork and clone the repository and its submodules</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/YOUR_USER_NAME/bids-website.git<span class="w"> </span>--recurse-submodules
-</code></pre></div>
+<p><code>bash
+git clone https://github.com/YOUR_USER_NAME/bids-website.git --recurse-submodules</code></p>
 <p>Run <code>uv</code> to create a virtual environment in <code>.venv/</code>.</p>
-<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>sync<span class="w"> </span>--frozen
-</code></pre></div>
+<p><code>bash
+uv sync --frozen</code></p>
 <p>Generate all the content required for the build:</p>
 <ul>
 <li>
@@ -4238,33 +4238,33 @@ having <code>make</code> installed will make it easier to easily serve the websi
     that will be 'injected' in the website as snippets (with <code>--8&lt;--</code>)</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>make<span class="w"> </span>update
-</code></pre></div>
+<p><code>bash
+make update</code></p>
 <p>Serve the website with the mkdocs.</p>
-<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>mkdocs<span class="w"> </span>serve
-</code></pre></div>
+<p><code>bash
+uv run mkdocs serve</code></p>
 <h2 id="maintenance"><a class="toclink" href="#maintenance">Maintenance</a><a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h2>
 <h3 id="requirements_1"><a class="toclink" href="#requirements_1">Requirements</a><a class="headerlink" href="#requirements_1" title="Permanent link">&para;</a></h3>
 <p>Same as for the install but you will also need to install <code>tox</code>.</p>
-<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>tox
-</code></pre></div>
+<p><code>bash
+uv run tox</code></p>
 <h2 id="update-all-files"><a class="toclink" href="#update-all-files">Update all files</a><a class="headerlink" href="#update-all-files" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>make<span class="w"> </span>update
-</code></pre></div>
+<p><code>bash
+make update</code></p>
 <h2 id="run-all-formatting-linting-tools"><a class="toclink" href="#run-all-formatting-linting-tools">Run all formatting / linting tools</a><a class="headerlink" href="#run-all-formatting-linting-tools" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>tox
-make<span class="w"> </span>remark
-</code></pre></div>
+<p><code>bash
+tox
+make remark</code></p>
 <h3 id="using-remark-to-format-a-file"><a class="toclink" href="#using-remark-to-format-a-file">Using remark to format a file</a><a class="headerlink" href="#using-remark-to-format-a-file" title="Permanent link">&para;</a></h3>
 <p>If you have a completely new file that you want to lint,
 you can use the following to get most of the markdown formatting done.</p>
 <p>Some will still need some manual work.</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>format<span class="w"> </span>--<span class="w"> </span>path_to_file<span class="w"> </span>--ouput
-</code></pre></div>
+<p><code>bash
+npm run format -- path_to_file --ouput</code></p>
 <h2 id="upgrading-dependencies"><a class="toclink" href="#upgrading-dependencies">Upgrading dependencies</a><a class="headerlink" href="#upgrading-dependencies" title="Permanent link">&para;</a></h2>
 <p>Rerun <code>uv sync</code>:</p>
-<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>sync<span class="w"> </span>--upgrade
-</code></pre></div>
+<p><code>bash
+uv sync --upgrade</code></p>
 <!-- tool tips  -->
 
 

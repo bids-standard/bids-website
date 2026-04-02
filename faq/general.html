@@ -4227,11 +4227,11 @@
 <p>An NWB data file is an allowed format in the <abbr title="Intracranial Electroencephalography">iEEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr> data structure.
 This means that one subject (AAA) with a session (BBB)
 can have a <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder with raw <abbr title="Intracranial Electroencephalography">iEEG</abbr> data in NWB format:</p>
-<div class="highlight"><pre><span></span><code>/sub-AAA/ses-BBB/ieeg/sub-AAA_ses-BBB_task-rest_ieeg.nwb
-</code></pre></div>
+<p><code>text
+/sub-AAA/ses-BBB/ieeg/sub-AAA_ses-BBB_task-rest_ieeg.nwb</code></p>
 <p>The same subject can have another session (CCC) with raw fMRI data in <abbr title="Brain Imaging Data Structure">BIDS</abbr>:</p>
-<div class="highlight"><pre><span></span><code>/sub-AAA/ses-CCC/func/sub-AAA_ses-CCC_task-rest_bold.nii.gz
-</code></pre></div>
+<p><code>text
+/sub-AAA/ses-CCC/func/sub-AAA_ses-CCC_task-rest_bold.nii.gz</code></p>
 <h2 id="how-can-i-cite-bids"><a class="toclink" href="#how-can-i-cite-bids">How can I cite <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#how-can-i-cite-bids" title="Permanent link">&para;</a></h2>
 <p>See the specification website for the
 <a href="https://bids-specification.readthedocs.io/en/latest/01-introduction.html#citing-bids">main publications</a>
@@ -4248,7 +4248,8 @@ related to <abbr title="Brain Imaging Data Structure">BIDS</abbr> and its extens
   in the bids specification repository for typical hyperscanning data.</li>
 </ul>
 <p>See an example below with fMRI data:</p>
-<div class="highlight"><pre><span></span><code>sub-01/
+<p><code>text
+sub-01/
     ses-dyadic1/
         func/
             sub-01_ses-dyadic1_*
@@ -4263,14 +4264,14 @@ sub-03/
 sub-04/
     ses-dyadic2/
         func/
-            sub-04_ses-dyadic2_*
-</code></pre></div>
+            sub-04_ses-dyadic2_*</code></p>
 <ul>
 <li>See this <a href="https://neurostars.org/t/bids-structure-for-longitudinal-dyadic-data/26173">post on neurostars</a>
     for hyperscanning longitunal data.</li>
 </ul>
 <p>See an example below with fMRI data:</p>
-<div class="highlight"><pre><span></span><code>sub-S001/
+<p><code>text
+sub-S001/
     ses-1/
         func/
             sub-S001_ses-1_task-video_acq-dyad001_bold.nii.gz
@@ -4284,8 +4285,7 @@ sub-S003/
     ses-1/
         func/
             sub-S003_ses-1_task-video_acq-dyad002_bold.nii.gz
-    ses-2/
-</code></pre></div>
+    ses-2/</code></p>
 <ul>
 <li>See this <a href="https://groups.google.com/g/bids-discussion/c/v660DuzOf3w/m/q-0PLHt5BgAJ">thread on the bids discussion forum</a></li>
 </ul>
@@ -4297,11 +4297,11 @@ sub-S003/
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> requires physical units to be specified according to the SI unit symbol and
 possibly prefix symbol (for example: mV, μV for milliVolt and microVolt).</p>
 <p>The symbol used to indicate <code>µ</code> has unicode U+00B5, which is in MATLAB:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">char</span><span class="p">(</span><span class="mi">181</span><span class="p">)</span>
-</code></pre></div>
+<p><code>matlab
+char(181)</code></p>
 <p>or</p>
-<div class="highlight"><pre><span></span><code><span class="nb">native2unicode</span><span class="p">(</span><span class="mi">181</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;latin1&#39;</span><span class="p">)</span>
-</code></pre></div>
+<p><code>matlab
+native2unicode(181, 'latin1')</code></p>
 <h2 id="i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant"><a class="toclink" href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a><a class="headerlink" href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant" title="Permanent link">&para;</a></h2>
 <p>No. The <code>session</code> level in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder hierarchy can be used to group data
 that go "logically" together: this means that you can put in the same <code>session</code> folder

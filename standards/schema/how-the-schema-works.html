@@ -3962,7 +3962,8 @@
   <h1>How the schema works</h1>
 
 <p>The structure of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> schema as seen from a top-level file view:</p>
-<div class="highlight"><pre><span></span><code>schema
+<p><code>text
+schema
 ├── BIDS_VERSION
 ├── SCHEMA_VERSION
 ├── meta
@@ -3975,8 +3976,7 @@
 └── rules
     ├── checks
     ├── ...
-    └── tabular_data
-</code></pre></div>
+    └── tabular_data</code></p>
 <p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Schema can be be divided into three major components:</p>
 <ol>
 <li>
@@ -4019,10 +4019,10 @@ links to reach those parts of the schema.</p>
 <p>Specific examples from the schema can be expanded or hidden by clicking on blue <em>boxes</em> to show or hide them.</p>
 <details open="open">
 <summary>show or hide this example</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">this_example</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list item 1</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list item 2</span>
-</code></pre></div>
+<p><code>yaml
+this_example:
+    - list item 1
+    - list item 2</code></p>
 </details>
 <!-- tool tips  -->
 

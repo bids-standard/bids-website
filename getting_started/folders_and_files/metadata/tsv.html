@@ -4112,8 +4112,8 @@ and each row representing a single datapoint.</p>
 <p>In Python, the easiest way to work with <abbr title="Tab Separated Values">TSV</abbr> files is to use the <a href="https://pandas.pydata.org/">Pandas library</a>.
 This provides a high-level structure to organize, manipulate, clean, and visualize tabular data.
 You can install <code>pandas</code> with the following command:</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pandas
-</code></pre></div>
+<p><code>bash
+pip install pandas</code></p>
 <h2 id="matlab-octave"><a class="toclink" href="#matlab-octave">MATLAB / Octave</a><a class="headerlink" href="#matlab-octave" title="Permanent link">&para;</a></h2>
 <p>Since MATLAB R2013b,
 there is a <a href="https://www.mathworks.com/help/matlab/ref/readtable.html"><code>readtable</code></a> function that can load <abbr title="Tab Separated Values">TSV</abbr> files,
@@ -4132,27 +4132,27 @@ to help you work with those files.</p>
 <div class="tabbed-block">
 <p>In this example, we assume the .tsv includes column names (headers),
 and explicitly set column separator (delimiter) to tab (<code>'\t'</code>).</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;file.tsv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre></div>
+<p><code>python
+import pandas as pd
+data = pd.read_csv("file.tsv", sep="\t", headers=True)</code></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">table_content</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">readtable</span><span class="p">(</span><span class="s">&#39;file.tsv&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
-<span class="w">                          </span><span class="s">&#39;FileType&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;text&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
-<span class="w">                          </span><span class="s">&#39;Delimiter&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;\t&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
-<span class="w">                          </span><span class="s">&#39;TreatAsEmpty&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="s">&#39;N/A&#39;</span><span class="p">,</span><span class="s">&#39;n/a&#39;</span><span class="p">});</span>
-</code></pre></div>
+<p><code>matlab
+table_content = readtable('file.tsv', ...
+                          'FileType', 'text', ...
+                          'Delimiter', '\t', ...
+                          'TreatAsEmpty', {'N/A','n/a'});</code></p>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/bids-standard/bids-matlab">bids-matlab</a> library.</p>
-<div class="highlight"><pre><span></span><code><span class="n">table_content</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">bids</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">tsvread</span><span class="p">(</span><span class="s">&#39;file.tsv&#39;</span><span class="p">);</span>
-</code></pre></div>
+<p><code>matlab
+table_content = bids.util.tsvread('file.tsv');</code></p>
 </div>
 <div class="tabbed-block">
 <p>In this example, we assume the .tsv includes column names (headers),
 and explicitly set column separator (delimiter) to tab (<code>'\t'</code>)</p>
-<div class="highlight"><pre><span></span><code><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">read.table</span><span class="p">(</span><span class="s">&#39;file.tsv&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s">&#39;\t&#39;</span><span class="p">)</span>
-</code></pre></div>
+<p><code>R
+data = read.table('file.tsv', header=TRUE, sep='\t')</code></p>
 </div>
 <div class="tabbed-block">
 <p>Excel, <a href="https://www.libreoffice.org/">LibreOffice Calc</a> and similar software to work with tables
@@ -4164,54 +4164,54 @@ should have no problem opening <abbr title="Tab Separated Values">TSV</abbr> fil
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">python</label><label for="__tabbed_2_2">MATLAB</label><label for="__tabbed_2_3">Octave</label><label for="__tabbed_2_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="n">participants</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;participant_id&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sub-01&quot;</span><span class="p">,</span> <span class="s2">&quot;sub-02&quot;</span><span class="p">],</span>
-        <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
-        <span class="s2">&quot;sex&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="s2">&quot;f&quot;</span><span class="p">],</span>
-    <span class="p">}</span>
-<span class="p">)</span>
-<span class="n">participants</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;participants.tsv&quot;</span><span class="p">)</span>
-</code></pre></div>
+<p>```python
+import pandas as pd</p>
+<p>participants = pd.DataFrame(
+    {
+        "participant_id": ["sub-01", "sub-02"],
+        "age": [20, 30],
+        "sex": ["m", "f"],
+    }
+)
+participants.to_csv("participants.tsv")
+```</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">participant_id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="s">&#39;sub-01&#39;</span><span class="p">;</span><span class="w"> </span><span class="s">&#39;sub-02&#39;</span><span class="p">];</span>
-<span class="n">age</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="mi">30</span><span class="p">]</span><span class="o">&#39;</span><span class="p">;</span>
-<span class="n">sex</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="s">&#39;m&#39;</span><span class="p">;</span><span class="w"> </span><span class="s">&#39;f&#39;</span><span class="p">];</span>
-<span class="n">participants</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">table</span><span class="p">(</span><span class="n">participant_id</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">sex</span><span class="p">);</span>
-
-<span class="nb">writetable</span><span class="p">(</span><span class="n">participants</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
-<span class="w">           </span><span class="s">&#39;participants.tsv&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
-<span class="w">           </span><span class="s">&#39;FileType&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;text&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
-<span class="w">           </span><span class="s">&#39;Delimiter&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;\t&#39;</span><span class="p">);</span>
-</code></pre></div>
+<p>```matlab
+participant_id = ['sub-01'; 'sub-02'];
+age = [20; 30]';
+sex = ['m'; 'f'];
+participants = table(participant_id, age, sex);</p>
+<p>writetable(participants, ...
+           'participants.tsv', ...
+           'FileType', 'text', ...
+           'Delimiter', '\t');
+```</p>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/bids-standard/bids-matlab">bids-matlab</a> library.</p>
-<div class="highlight"><pre><span></span><code><span class="n">participants</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">struct</span><span class="p">(</span><span class="k">...</span>
-<span class="w">    </span><span class="s">&#39;participant_id&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s">&#39;sub-01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;sub-02&#39;</span><span class="p">];</span>
-<span class="w">    </span><span class="s">&#39;age&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">]</span><span class="o">&#39;</span><span class="p">;</span>
-<span class="w">    </span><span class="s">&#39;sex&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;f&#39;</span><span class="p">]</span>
-<span class="w">    </span><span class="p">);</span>
-
-<span class="n">bids</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">tsvwrite</span><span class="p">(</span><span class="s">&#39;participants.tsv&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">participants</span><span class="p">);</span>
-</code></pre></div>
+<p>```matlab
+participants = struct(...
+    'participant_id', ['sub-01', 'sub-02'];
+    'age', [20, 30]';
+    'sex', ['m', 'f']
+    );</p>
+<p>bids.util.tsvwrite('participants.tsv', participants);
+```</p>
 </div>
 <div class="tabbed-block">
 <p>When writing files, column and row names are always saved,
 we remove row names and quotes from the output explicitly by setting them to <code>FALSE</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">participant_id</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&#39;sub-01&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;sub-02&#39;</span><span class="p">);</span>
-<span class="n">age</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">);</span>
-<span class="n">sex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;f&#39;</span><span class="p">);</span>
-<span class="n">participants</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="n">participant_id</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">sex</span><span class="p">)</span>
-<span class="nf">write.table</span><span class="p">(</span><span class="n">participants</span><span class="p">,</span>
-<span class="w">            </span><span class="n">file</span><span class="o">=</span><span class="s">&#39;participants.tsv&#39;</span><span class="p">,</span>
-<span class="w">            </span><span class="n">sep</span><span class="o">=</span><span class="s">&#39;\t&#39;</span><span class="p">,</span>
-<span class="w">            </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span>
-<span class="w">            </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
-</code></pre></div>
+<p><code>R
+participant_id &lt;- c('sub-01', 'sub-02');
+age &lt;- c(20, 30);
+sex &lt;- c('m', 'f');
+participants &lt;- data.frame(participant_id, age, sex)
+write.table(participants,
+            file='participants.tsv',
+            sep='\t',
+            row.names = FALSE,
+            quote = FALSE)</code></p>
 </div>
 </div>
 </div>

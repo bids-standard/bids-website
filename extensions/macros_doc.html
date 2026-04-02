@@ -4222,23 +4222,22 @@ macros to standardize the format of items such as tables and examples.</p>
 layouts in the documentation. The macro takes a single parameter, the directory
 tree to be displayed in <abbr title="JavaScript Object Notation">JSON</abbr> format. If you insert the following in the <abbr title="Brain Imaging Data Structure">BIDS</abbr>
 markdown document:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{{</span> <span class="n">MACROS___make_filetree_example</span><span class="p">(</span>
-
-   <span class="p">{</span>
-   <span class="s2">&quot;sub-01&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;func&quot;</span><span class="p">:</span> <span class="p">{</span>
-         <span class="s2">&quot;sub-control01_task-nback_bold.json&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-         <span class="p">},</span>
-      <span class="p">}</span>
-   <span class="p">}</span>
-
-<span class="p">)</span> <span class="p">}}</span>
-</code></pre></div>
+<p>```python
+{{ MACROS___make_filetree_example(</p>
+<p>{
+   "sub-01": {
+      "func": {
+         "sub-control01_task-nback_bold.json": "",
+         },
+      }
+   }</p>
+<p>) }}
+```</p>
 <p>The result would be rendered in the specification document as:</p>
-<div class="highlight"><pre><span></span><code>└─<span class="w"> </span>sub-01/
-<span class="w">   </span>└─<span class="w"> </span>func/
-<span class="w">      </span>└─<span class="w"> </span>sub-control01_task-nback_bold.json
-</code></pre></div>
+<p><code>bash
+└─ sub-01/
+   └─ func/
+      └─ sub-control01_task-nback_bold.json</code></p>
 <h2 id="what-kind-of-input-information-are-required-by-macros"><a class="toclink" href="#what-kind-of-input-information-are-required-by-macros">What kind of input information are required by macros?</a><a class="headerlink" href="#what-kind-of-input-information-are-required-by-macros" title="Permanent link">&para;</a></h2>
 <p>Some macros only use the arguments you directly supply in the macro call.</p>
 <p>Other macros use information (such as metadata terms) from external sources, and
@@ -4352,41 +4351,40 @@ when you get back to the document you just edited) is to leave a comment before
 the macro to quickly explain what it does and where to find more information
 about it.</p>
 <p>It could for example look like this:</p>
-<div class="highlight"><pre><span></span><code>&lt;!--
+<p>```markdown</p>
+<!--
 This block generates a metadata table.
 The definitions of these fields can be found in src/schema/...
-and a guide for editing at &lt;link&gt;.
---&gt;
+and a guide for editing at <link>.
+-->
 
-{{ MACROS\_\_\_make_metadata_table( { &quot;AcquisitionMode&quot;: &quot;REQUIRED&quot;,
-&quot;MoonPhase&quot;: &quot;OPTIONAL&quot;, &quot;ImageDecayCorrected&quot;: &quot;REQUIRED&quot;,
-&quot;ImageDecayCorrectionTime&quot;: &quot;REQUIRED&quot;,
-
-      ...
-
-} ) }}
-</code></pre></div>
+<p>{{ MACROS___make_metadata_table( { "AcquisitionMode": "REQUIRED",
+"MoonPhase": "OPTIONAL", "ImageDecayCorrected": "REQUIRED",
+"ImageDecayCorrectionTime": "REQUIRED",</p>
+<pre><code>  ...
+</code></pre>
+<p>} ) }}
+```</p>
 <h2 id="how-to-and-examples"><a class="toclink" href="#how-to-and-examples">How-To and Examples</a><a class="headerlink" href="#how-to-and-examples" title="Permanent link">&para;</a></h2>
 <h3 id="writing-directory-content-examples"><a class="toclink" href="#writing-directory-content-examples">Writing directory content examples</a><a class="headerlink" href="#writing-directory-content-examples" title="Permanent link">&para;</a></h3>
 <p>One of the simplest macro we use helps us create consistent "file tree" examples
 that would look like this in the final document:</p>
-<div class="highlight"><pre><span></span><code>└─ sub-01/
+<p><code>Text
+└─ sub-01/
    └─ func/
-      └─ sub-control01_task-nback_bold.json
-</code></pre></div>
+      └─ sub-control01_task-nback_bold.json</code></p>
 <p>To do this get this output, your macro call would look like this:</p>
-<div class="highlight"><pre><span></span><code>{{ MACROS___make_filetree_example(
-
-   {
-   &quot;sub-01&quot;: {
-      &quot;func&quot;: {
-         &quot;sub-control01_task-nback_bold.json&quot;: &quot;&quot;,
+<p>```
+{{ MACROS___make_filetree_example(</p>
+<p>{
+   "sub-01": {
+      "func": {
+         "sub-control01_task-nback_bold.json": "",
          },
       }
-   }
-
-) }}
-</code></pre></div>
+   }</p>
+<p>) }}
+```</p>
 <p>When you have complex files and directory structure, we suggest you use this
 <a href="https://github.com/bids-standard/bids-specification/blob/master/tools/filetree_example.ipynb">Jupyter notebook</a> for sandboxing your example
 before you insert the macro call into the markdown document.</p>
@@ -4400,32 +4398,32 @@ the <abbr title="Positron Imaging Tomography">PET</abbr> page.</p>
 <p>GitHub's way of directly rendering markdown documents makes it a bit harder to
 read, so if you opened the markdown document in your code editor it would look
 like this.</p>
-<div class="highlight"><pre><span></span><code><span class="gu">#### Reconstruction</span>
-
-{{ MACROS___make_metadata_table(
+<p>```markdown</p>
+<h4 id="reconstruction"><a class="toclink" href="#reconstruction">Reconstruction</a><a class="headerlink" href="#reconstruction" title="Permanent link">&para;</a></h4>
+<p>{{ MACROS___make_metadata_table(
    {
-      &quot;AcquisitionMode&quot;: &quot;REQUIRED&quot;,
-      &quot;ImageDecayCorrected&quot;: &quot;REQUIRED&quot;,
-      &quot;ImageDecayCorrectionTime&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconMethodName&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconMethodParameterLabels&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconMethodParameterUnits&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconMethodParameterValues&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconFilterType&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconFilterSize&quot;: &quot;REQUIRED&quot;,
-      &quot;AttenuationCorrection&quot;: &quot;REQUIRED&quot;,
-      &quot;ReconMethodImplementationVersion&quot;: &quot;RECOMMENDED&quot;,
-      &quot;AttenuationCorrectionMethodReference&quot;: &quot;RECOMMENDED&quot;,
-      &quot;ScaleFactor&quot;: &quot;RECOMMENDED&quot;,
-      &quot;ScatterFraction&quot;: &quot;RECOMMENDED&quot;,
-      &quot;DecayCorrectionFactor&quot;: &quot;RECOMMENDED&quot;,
-      &quot;DoseCalibrationFactor&quot;: &quot;RECOMMENDED&quot;,
-      &quot;PromptRate&quot;: &quot;RECOMMENDED&quot;,
-      &quot;RandomRate&quot;: &quot;RECOMMENDED&quot;,
-      &quot;SinglesRate&quot;: &quot;RECOMMENDED&quot;,
+      "AcquisitionMode": "REQUIRED",
+      "ImageDecayCorrected": "REQUIRED",
+      "ImageDecayCorrectionTime": "REQUIRED",
+      "ReconMethodName": "REQUIRED",
+      "ReconMethodParameterLabels": "REQUIRED",
+      "ReconMethodParameterUnits": "REQUIRED",
+      "ReconMethodParameterValues": "REQUIRED",
+      "ReconFilterType": "REQUIRED",
+      "ReconFilterSize": "REQUIRED",
+      "AttenuationCorrection": "REQUIRED",
+      "ReconMethodImplementationVersion": "RECOMMENDED",
+      "AttenuationCorrectionMethodReference": "RECOMMENDED",
+      "ScaleFactor": "RECOMMENDED",
+      "ScatterFraction": "RECOMMENDED",
+      "DecayCorrectionFactor": "RECOMMENDED",
+      "DoseCalibrationFactor": "RECOMMENDED",
+      "PromptRate": "RECOMMENDED",
+      "RandomRate": "RECOMMENDED",
+      "SinglesRate": "RECOMMENDED",
    }
 ) }}
-</code></pre></div>
+```</p>
 <hr />
 <p><strong>HINT:</strong> if you want to see the "raw" content of a file on Github you can
 always press the <code>raw</code> button that is on the top right of the document you are
@@ -4441,12 +4439,12 @@ building the HTML version of that page.</p>
 <li>Description</li>
 </ul>
 <p>A general description of that macro call would look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{{</span> <span class="n">MACROS___make_metadata_table</span><span class="p">(</span>
-   <span class="p">{</span>
-      <span class="s2">&quot;TermToRender&quot;</span><span class="p">:</span> <span class="s2">&quot;REQUIREMENT_LEVEL plus anything else after&quot;</span><span class="p">,</span> <span class="s2">&quot;Extra content you want to append after the description of that term.&quot;</span>
-   <span class="p">}</span>
-<span class="p">)</span> <span class="p">}}</span>
-</code></pre></div>
+<p><code>python
+{{ MACROS___make_metadata_table(
+   {
+      "TermToRender": "REQUIREMENT_LEVEL plus anything else after", "Extra content you want to append after the description of that term."
+   }
+) }}</code></p>
 <p>To know what to put in the different columns, the macro will go and look into
 the
 <a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/metadata.yaml"><code>metadata.yaml</code></a>
@@ -4481,14 +4479,14 @@ need to edit this <code>metadata.yml</code> file.</p>
 <p>If you wanted to add some extra content to that table, but without modifying the
 definition in the schema, then you could just add some extra content into the
 macro call.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">#### Reconstruction</span>
-
-<span class="p">{{</span> <span class="n">MACROS___make_metadata_table</span><span class="p">(</span>
-   <span class="p">{</span>
-      <span class="s2">&quot;AcquisitionMode&quot;</span><span class="p">:</span> <span class="s2">&quot;REQUIRED&quot;</span><span class="p">,</span> <span class="s2">&quot;But only when the acquisition was done on a full moon.&quot;</span>
-
-       <span class="o">...</span>
-</code></pre></div>
+<p>```python</p>
+<h4 id="reconstruction_1"><a class="toclink" href="#reconstruction_1">Reconstruction</a><a class="headerlink" href="#reconstruction_1" title="Permanent link">&para;</a></h4>
+<p>{{ MACROS___make_metadata_table(
+   {
+      "AcquisitionMode": "REQUIRED", "But only when the acquisition was done on a full moon."</p>
+<pre><code>   ...
+</code></pre>
+<p>```</p>
 <h4 id="why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly"><a class="toclink" href="#why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly">Why would you NOT want to modify the content of the yml file directly ?</a><a class="headerlink" href="#why-would-you-not-want-to-modify-the-content-of-the-yml-file-directly" title="Permanent link">&para;</a></h4>
 <p>Well the same term can be used in different parts of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification and
 some details that might apply to, say, <abbr title="Positron Imaging Tomography">PET</abbr> might not apply to how the term is
@@ -4503,20 +4501,19 @@ You would do it like this. But this would only work if the <code>metadata.yml</c
 contains an entry for <code>MoonPhase</code>. If this is the case because the term already
 exists and is used somewhere in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification, you are in luck and you
 can just stop there.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">#### Reconstruction</span>
-
-<span class="p">{{</span> <span class="n">MACROS___make_metadata_table</span><span class="p">(</span>
-   <span class="p">{</span>
-      <span class="s2">&quot;AcquisitionMode&quot;</span><span class="p">:</span> <span class="s2">&quot;REQUIRED&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;MoonPhase&quot;</span><span class="p">:</span> <span class="s2">&quot;OPTIONAL&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;ImageDecayCorrected&quot;</span><span class="p">:</span> <span class="s2">&quot;REQUIRED&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;ImageDecayCorrectionTime&quot;</span><span class="p">:</span> <span class="s2">&quot;REQUIRED&quot;</span><span class="p">,</span>
-
-      <span class="o">...</span>
-
-   <span class="p">}</span>
-<span class="p">)</span> <span class="p">}}</span>
-</code></pre></div>
+<p>```python</p>
+<h4 id="reconstruction_2"><a class="toclink" href="#reconstruction_2">Reconstruction</a><a class="headerlink" href="#reconstruction_2" title="Permanent link">&para;</a></h4>
+<p>{{ MACROS___make_metadata_table(
+   {
+      "AcquisitionMode": "REQUIRED",
+      "MoonPhase": "OPTIONAL",
+      "ImageDecayCorrected": "REQUIRED",
+      "ImageDecayCorrectionTime": "REQUIRED",</p>
+<pre><code>  ...
+</code></pre>
+<p>}
+) }}
+```</p>
 <p>If the term does not exist, you need to add it. <code>YML</code> files have a fairly strict
 syntax where spaces and indentation matter a lot. You can a mini intro to YML
 files in the Turing way:
@@ -4587,7 +4584,7 @@ schema.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 30, 2026 15:49:53 UTC">March 30, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 2, 2026 13:51:07 UTC">April 2, 2026</span>
   </span>
 
     

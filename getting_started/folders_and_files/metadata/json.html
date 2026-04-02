@@ -2057,90 +2057,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#writing-a-json-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Writing a .json file
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interoperability-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interoperability issues
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interoperability issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#why-does-this-matter-for-bids" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why does this matter for BIDS?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#more-about-json" class="md-nav__link">
-    <span class="md-ellipsis">
-      More about JSON
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="More about JSON">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-terms" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON terms
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#json-styling" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON "styling"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nesting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nesting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#json-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON schema
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4212,90 +4128,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#writing-a-json-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Writing a .json file
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interoperability-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interoperability issues
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interoperability issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#why-does-this-matter-for-bids" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why does this matter for BIDS?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#more-about-json" class="md-nav__link">
-    <span class="md-ellipsis">
-      More about JSON
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="More about JSON">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-terms" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON terms
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#json-styling" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON "styling"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nesting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nesting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#json-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON schema
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4324,14 +4156,14 @@
 <p><abbr title="JavaScript Object Notation">JSON</abbr> stands for JavaScript Object Notation
 and as its name indicates takes its syntax from the JavaScript language.</p>
 <p><abbr title="JavaScript Object Notation">JSON</abbr> files are text files that take the following structure:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;key2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;key3&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;subkey1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subvalue1&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+    "key": "value",
+    "key2": "value2",
+    "key3": {
+        "subkey1": "subvalue1"
+    }
+}</code></p>
 <p>Note that they can be nested (curly brackets within curly brackets).
 Here are some common ways to read / write these files.</p>
 <ul>
@@ -4393,31 +4225,32 @@ Remember to install and call a package before using it.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">python</label><label for="__tabbed_1_2">MATLAB</label><label for="__tabbed_1_3">octave</label><label for="__tabbed_1_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ff</span><span class="p">:</span>
-    <span class="n">metadata</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">ff</span><span class="p">)</span>
-</code></pre></div>
+<p><code>python
+import json
+with open('myfile.json', 'r') as ff:
+    metadata = json.load(ff)</code></p>
 </div>
 <div class="tabbed-block">
 <p>For MATLAB &gt;= R2016b</p>
-<div class="highlight"><pre><span></span><code><span class="c">% Read JSON data from a file</span>
-<span class="n">jsonStr</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">fileread</span><span class="p">(</span><span class="s">&#39;myfile.json&#39;</span><span class="p">);</span>
-<span class="c">% Convert JSON string to MATLAB variables</span>
-<span class="n">jsonData</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">jsondecode</span><span class="p">(</span><span class="n">jsonStr</span><span class="p">);</span>
-</code></pre></div>
+<p><code>matlab
+% Read JSON data from a file
+jsonStr = fileread('myfile.json');
+% Convert JSON string to MATLAB variables
+jsonData = jsondecode(jsonStr);</code></p>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/gllmflndn/JSONio">JSONio library</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">metadata</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">jsonread</span><span class="p">(</span><span class="s">&#39;myfile.json&#39;</span><span class="p">)</span>
-</code></pre></div>
+<p><code>matlab
+metadata = jsonread('myfile.json')</code></p>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/jeroen/jsonlite">jsonlite</a> library.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># install jsonlite in case you did not already do it</span>
-<span class="c1"># install.packages(&#39;jsonlite&#39;)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
-<span class="n">metadata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">fromJSON</span><span class="p">(</span><span class="s">&#39;myfile.json&#39;</span><span class="p">)</span>
-</code></pre></div>
+<p>```R</p>
+<h1 id="install-jsonlite-in-case-you-did-not-already-do-it"><a class="toclink" href="#install-jsonlite-in-case-you-did-not-already-do-it">install jsonlite in case you did not already do it</a><a class="headerlink" href="#install-jsonlite-in-case-you-did-not-already-do-it" title="Permanent link">&para;</a></h1>
+<h1 id="installpackagesjsonlite"><a class="toclink" href="#installpackagesjsonlite">install.packages('jsonlite')</a><a class="headerlink" href="#installpackagesjsonlite" title="Permanent link">&para;</a></h1>
+<p>library(jsonlite)
+metadata = fromJSON('myfile.json')
+```</p>
 </div>
 </div>
 </div>
@@ -4425,32 +4258,33 @@ Remember to install and call a package before using it.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">python</label><label for="__tabbed_2_2">MATLAB</label><label for="__tabbed_2_3">octave</label><label for="__tabbed_2_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;field1&#39;</span><span class="p">:</span> <span class="s1">&#39;value1&#39;</span><span class="p">,</span> <span class="s1">&#39;field2&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;field3&#39;</span><span class="p">:</span> <span class="s1">&#39;field3&#39;</span><span class="p">}</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my_output_file.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ff</span><span class="p">:</span>
-    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">metadata</span><span class="p">,</span> <span class="n">ff</span><span class="p">)</span>
-</code></pre></div>
+<p><code>python
+import json
+metadata = {'field1': 'value1', 'field2': 3, 'field3': 'field3'}
+with open('my_output_file.json', 'w') as ff:
+    json.dump(metadata, ff)</code></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">metadata</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">struct</span><span class="p">(</span><span class="s">&#39;field1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;value1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;field2&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;field3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;field3&#39;</span><span class="p">)</span>
-<span class="nb">jsonencode</span><span class="p">(</span><span class="s">&#39;my_output_file.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">);</span>
-</code></pre></div>
+<p><code>matlab
+metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
+jsonencode('my_output_file.json', metadata);</code></p>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/gllmflndn/JSONio">JSONio library</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">metadata</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">struct</span><span class="p">(</span><span class="s">&#39;field1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;value1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;field2&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;field3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;field3&#39;</span><span class="p">)</span>
-<span class="n">jsonwrite</span><span class="p">(</span><span class="s">&#39;my_output_file.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">)</span>
-</code></pre></div>
+<p><code>matlab
+metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
+jsonwrite('my_output_file.json', metadata)</code></p>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/jeroen/jsonlite">jsonlite</a> library.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># install jsonlite in case you did not already do it</span>
-<span class="c1"># install.packages(&#39;jsonlite&#39;)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
-<span class="n">metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">field1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;value1&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">field2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">field3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;field3&quot;</span><span class="p">)</span>
-<span class="n">metadata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">toJSON</span><span class="p">(</span><span class="n">metadata</span><span class="p">,</span><span class="w"> </span><span class="n">pretty</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
-<span class="nf">write</span><span class="p">(</span><span class="n">metadata</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;my_output_file.json&quot;</span><span class="p">)</span>
-</code></pre></div>
+<p>```R</p>
+<h1 id="install-jsonlite-in-case-you-did-not-already-do-it_1"><a class="toclink" href="#install-jsonlite-in-case-you-did-not-already-do-it_1">install jsonlite in case you did not already do it</a><a class="headerlink" href="#install-jsonlite-in-case-you-did-not-already-do-it_1" title="Permanent link">&para;</a></h1>
+<h1 id="installpackagesjsonlite_1"><a class="toclink" href="#installpackagesjsonlite_1">install.packages('jsonlite')</a><a class="headerlink" href="#installpackagesjsonlite_1" title="Permanent link">&para;</a></h1>
+<p>library(jsonlite)
+metadata &lt;- list(field1 = "value1", field2 = 3, field3 = "field3")
+metadata = toJSON(metadata, pretty=TRUE)
+write(metadata, "my_output_file.json")
+```</p>
 </div>
 </div>
 </div>
@@ -4468,19 +4302,22 @@ Remember to install and call a package before using it.</p>
 <a href="https://www.mathworks.com/help/matlab/ref/struct.html"><code>structures</code></a> by MATLAB / Octave,
 where a <code>key</code> in a <abbr title="JavaScript Object Notation">JSON</abbr> file becomes <code>fieldname</code> in that structure.</p>
 <p>Here is an example with a simple <code>example.json</code></p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+    "key": "value"
+}</code></p>
 <p>loaded with bids-matlab</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">json_content</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">bids</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">jsondecode</span><span class="p">(</span><span class="s">&#39;example.json&#39;</span><span class="p">)</span>
-
-<span class="n">json_content</span><span class="w"> </span><span class="p">=</span>
-
-<span class="w">  </span><span class="nb">struct</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">fields</span><span class="p">:</span>
-
-<span class="w">    </span><span class="n">key</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;value&#39;</span>
-</code></pre></div>
+<p>```matlab</p>
+<blockquote>
+<blockquote>
+<p>json_content = bids.util.jsondecode('example.json')</p>
+</blockquote>
+</blockquote>
+<p>json_content =</p>
+<p>struct with fields:</p>
+<pre><code>key: 'value'
+</code></pre>
+<p>```</p>
 <p>There are however some strict rules for what makes a valid fieldname in MATLAB and Octave.</p>
 <p>Fieldnames must:</p>
 <ul>
@@ -4498,74 +4335,85 @@ where a <code>key</code> in a <abbr title="JavaScript Object Notation">JSON</abb
 <p>If there are keys in your <abbr title="JavaScript Object Notation">JSON</abbr> that do not comply to those rules,
 they keys will be renamed when loading which can lead to some headaches down the line.</p>
 <p>For example when loading the <code>bad_keys.json</code></p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@foo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@foo&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;x1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;x_1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x_1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;/t&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/t&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;%f&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;%f&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+    "@foo": "@foo",
+    "1": "1",
+    "x1": "x1",
+    "x_1": "x_1",
+    "/t": "/t",
+    "%f": "%f"
+}</code></p>
 <p>We get some quite different fieldnames when read with MATLAB:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span><span class="w"> </span><span class="nb">jsondecode</span><span class="p">(</span><span class="nb">fileread</span><span class="p">(</span><span class="s">&#39;bad_keys.json&#39;</span><span class="p">))</span>
-
-<span class="nb">ans</span><span class="w"> </span><span class="p">=</span>
-
-<span class="w">  </span><span class="nb">struct</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">fields</span><span class="p">:</span>
-
-<span class="w">    </span><span class="n">x_foo</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;@foo&#39;</span>
-<span class="w">       </span><span class="n">x1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;1&#39;</span>
-<span class="w">     </span><span class="n">x1_1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;x1&#39;</span>
-<span class="w">      </span><span class="n">x_1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;x_1&#39;</span>
-<span class="w">      </span><span class="n">x_t</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;/t&#39;</span>
-<span class="w">      </span><span class="n">x_f</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;%f&#39;</span>
-</code></pre></div>
+<p>```matlab</p>
+<blockquote>
+<blockquote>
+<p>jsondecode(fileread('bad_keys.json'))</p>
+</blockquote>
+</blockquote>
+<p>ans =</p>
+<p>struct with fields:</p>
+<pre><code>x_foo: '@foo'
+   x1: '1'
+ x1_1: 'x1'
+  x_1: 'x_1'
+  x_t: '/t'
+  x_f: '%f'
+</code></pre>
+<p>```</p>
 <p>or with JSONio for Octave (though at least here we get a warning):</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">jsonread</span><span class="p">(</span><span class="s">&#39;bad_keys.json&#39;</span><span class="p">)</span>
-<span class="n">Warning</span><span class="p">:</span><span class="w"> </span><span class="n">Duplicate</span><span class="w"> </span><span class="n">key</span><span class="p">.</span>
-
-<span class="nb">ans</span><span class="w"> </span><span class="p">=</span>
-
-<span class="w">  </span><span class="nb">struct</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">fields</span><span class="p">:</span>
-
-<span class="w">    </span><span class="n">x_foo</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;@foo&#39;</span>
-<span class="w">       </span><span class="n">x1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;x1&#39;</span>
-<span class="w">      </span><span class="n">x_1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;x_1&#39;</span>
-<span class="w">      </span><span class="n">x_t</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;/t&#39;</span>
-<span class="w">      </span><span class="n">x_f</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;%f&#39;</span>
-</code></pre></div>
+<p>```matlab</p>
+<blockquote>
+<blockquote>
+<p>jsonread('bad_keys.json')
+Warning: Duplicate key.</p>
+</blockquote>
+</blockquote>
+<p>ans =</p>
+<p>struct with fields:</p>
+<pre><code>x_foo: '@foo'
+   x1: 'x1'
+  x_1: 'x_1'
+  x_t: '/t'
+  x_f: '%f'
+</code></pre>
+<p>```</p>
 <p>This can lead to some unexpected behavior if you did not know about this.</p>
 <p>If you load this <code>collision.json</code></p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;x1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;x_1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x_1&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+    "1": "1",
+    "x1": "x1",
+    "x_1": "x_1"
+}</code></p>
 <p>and try to retrieve the value associated to the <code>key</code> <code>x1</code>, you will in fact be
 getting the value for the key <code>1</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">json_content</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">bids</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">jsondecode</span><span class="p">(</span><span class="s">&#39;collision.json&#39;</span><span class="p">);</span>
-<span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">json_content</span><span class="p">.</span><span class="n">x1</span>
-
-<span class="w">       </span><span class="n">x1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;1&#39;</span>
-</code></pre></div>
+<p>```matlab</p>
+<blockquote>
+<blockquote>
+<p>json_content = bids.util.jsondecode('collision.json');
+json_content.x1</p>
+</blockquote>
+</blockquote>
+<pre><code>   x1: '1'
+</code></pre>
+<p>```</p>
 <h3 id="why-does-this-matter-for-bids"><a class="toclink" href="#why-does-this-matter-for-bids">Why does this matter for <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#why-does-this-matter-for-bids" title="Permanent link">&para;</a></h3>
 <p>In most cases this will not be an issue,
 but this could be problem if in your <code>events.tsv</code>
 you have named some of your trial_type things like <code>1_face</code>,
 <code>2_sound</code> and then want to annotate those events in a side car <abbr title="JavaScript Object Notation">JSON</abbr> file like this.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;trial_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;LongName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;image type&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Levels&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;1_face&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A face is displayed&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;2_sound&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A sound is played&quot;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+    "trial_type": {
+        "LongName": "",
+        "Description": "image type",
+        "Levels": {
+            "1_face": "A face is displayed",
+            "2_sound": "A sound is played"
+        }
+    }
+}</code></p>
 <p>If you do this, it will be much harder to work with that <abbr title="JavaScript Object Notation">JSON</abbr> file for anyone who uses MATLAB or Octave.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -4595,8 +4443,8 @@ you have named some of your trial_type things like <code>1_face</code>,
 </li>
 </ul>
 <p>For example, this is an object.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;Key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;Key2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{ "Key": "value", "Key2": 1 }</code></p>
 <p>As you can see, in <abbr title="JavaScript Object Notation">JSON</abbr> strings start and end with double quotes <code>"</code>.
 Also note the comma between the key-value pairs but not after the last key-value pair.</p>
 <h4 id="arrays"><a class="toclink" href="#arrays">Arrays</a><a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h4>
@@ -4606,8 +4454,8 @@ Also note the comma between the key-value pairs but not after the last key-value
 <li>an ordered list of zero or more elements, each of which may be of any type (string, number..)</li>
 <li>elements must be separated by a comma</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;this&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;JSON&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">]</span>
-</code></pre></div>
+<p><code>json
+["this", "is", 1, "JSON", "array"]</code></p>
 <h4 id="a-note-on-booleans"><a class="toclink" href="#a-note-on-booleans">A note on Booleans</a><a class="headerlink" href="#a-note-on-booleans" title="Permanent link">&para;</a></h4>
 <p>In <abbr title="JavaScript Object Notation">JSON</abbr> boolean values must be typed as lowercase with no quotes:</p>
 <ul>
@@ -4620,14 +4468,14 @@ this is why most of keys you will see in <abbr title="JavaScript Object Notation
 <!-- TODO Add link to camelcase wikipedia -->
 
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nt">&quot;ThisIsTrue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;ThisIsTrue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{ "ThisIsTrue": true, "ThisIsTrue": false }</code></p>
 <p>It is common to indent <abbr title="JavaScript Object Notation">JSON</abbr> files to improve readability.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;ThisIsTrue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;ThisIsTrue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+  "ThisIsTrue": true,
+  "ThisIsTrue": false
+}</code></p>
 <p>Finally, you cannot add comments in <abbr title="JavaScript Object Notation">JSON</abbr> files,
 but the <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model allows you to add a <code>"Description"</code> key
 to most objects to give explanations to the reader.</p>
@@ -4640,21 +4488,21 @@ and combine all those elements however deep you want or need.</p>
 <li>between key-value pairs</li>
 <li>unless this is the last element (or key-value pair)</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;MixedArray&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;This&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;one&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;ArrayOfNumbers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;ArrayOfObjects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;NestedObject&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;Content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;NestedObject&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;Content&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+  "MixedArray": ["This", "is", "one", "array"],
+  "ArrayOfNumbers": [0, 0, 1, 0, 0],
+  "ArrayOfObjects": [
+    {
+      "NestedObject": true,
+      "Content": { "value": 0 }
+    },
+    {
+      "NestedObject": false,
+      "Content": 1
+    }
+  ]
+}</code></p>
 <h3 id="json-schema"><a class="toclink" href="#json-schema"><abbr title="JavaScript Object Notation">JSON</abbr> schema</a><a class="headerlink" href="#json-schema" title="Permanent link">&para;</a></h3>
 <p>If the content of your <abbr title="JavaScript Object Notation">JSON</abbr> must follow certain rules, like</p>
 <div class="admonition warning">
@@ -4678,17 +4526,17 @@ and give it the <abbr title="Uniform Resource Locator">URL</abbr> to the schema.
 <p>If you want to validate a <abbr title="JavaScript Object Notation">JSON</abbr> file you are editing using a <abbr title="JavaScript Object Notation">JSON</abbr> schema
 you can do so by adding the following key-value pair in your <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model,
 (here using the <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model schema as an example)</p>
-<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json&quot;</span><span class="p">,</span>
-</code></pre></div>
+<p><code>json
+  "$schema": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json",</code></p>
 <p>For vs-code you can also add this to your settings:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;json.schemas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">&quot;fileMatch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="s2">&quot;model-*_smdl.json&quot;</span>
-<span class="w">        </span><span class="p">],</span>
-<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div>
+<p><code>json
+"json.schemas": [
+    {"fileMatch": [
+            "model-*_smdl.json"
+        ],
+        "url": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json"
+    }
+]</code></p>
 <p><a href="https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings">Source</a></p>
 <p>Example of <abbr title="JavaScript Object Notation">JSON</abbr> syntax error and <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model schema error in VS code:</p>
 <p><img alt="" src="../../../assets/img/vs_code_validation.png" /></p>

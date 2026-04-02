@@ -3955,15 +3955,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#dataset_descriptionjson" class="md-nav__link">
-    <span class="md-ellipsis">
-      dataset_description.json
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3996,193 +3987,175 @@ so you can copy-paste-modify them into your own dataset.</p>
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
 -->
 
-<div class="highlight"><pre><span></span><code><span class="gh"># README</span>
-
-The README is usually the starting point for researchers using your data
+<p>```markdown</p>
+<h1 id="readme"><a class="toclink" href="#readme">README</a><a class="headerlink" href="#readme" title="Permanent link">&para;</a></h1>
+<p>The README is usually the starting point for researchers using your data
 and serves as a guidepost for users of your data. A clear and informative
-README makes your data much more usable.
-
-In general you can include information in the README that is not captured by some other
-files in the BIDS dataset (dataset_description.json, events.tsv, ...).
-
-It can also be useful to also include information that might already be
+README makes your data much more usable.</p>
+<p>In general you can include information in the README that is not captured by some other
+files in the <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset (dataset_description.json, events.tsv, ...).</p>
+<p>It can also be useful to also include information that might already be
 present in another file of the dataset but might be important for users to be aware of
-before preprocessing or analyzing the data.
-
-If the README gets too long you have the possibility to create a <span class="sb">`/doc`</span> folder
-and add it to the <span class="sb">`.bidsignore`</span> file to make sure it is ignored by the BIDS validator.
-
-<span class="gu">## Details related to access to the data</span>
-
-<span class="k">-</span><span class="w"> </span>  [ ] Data user agreement
-
-If the dataset requires a data user agreement, link to the relevant information.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Contact person
-
-Indicate the name and contact details (email and ORCID) of the person responsible for additional information.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Practical information to access the data
-
-If there is any special information related to access rights or
+before preprocessing or analyzing the data.</p>
+<p>If the README gets too long you have the possibility to create a <code>/doc</code> folder
+and add it to the <code>.bidsignore</code> file to make sure it is ignored by the <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator.</p>
+<h2 id="details-related-to-access-to-the-data"><a class="toclink" href="#details-related-to-access-to-the-data">Details related to access to the data</a><a class="headerlink" href="#details-related-to-access-to-the-data" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] Data user agreement</li>
+</ul>
+<p>If the dataset requires a data user agreement, link to the relevant information.</p>
+<ul>
+<li>[ ] Contact person</li>
+</ul>
+<p>Indicate the name and contact details (email and ORCID) of the person responsible for additional information.</p>
+<ul>
+<li>[ ] Practical information to access the data</li>
+</ul>
+<p>If there is any special information related to access rights or
 how to download the data make sure to include it.
 For example, if the dataset was curated using datalad,
 make sure to include the relevant section
-from the [<span class="nt">datalad handbook</span>](<span class="na">http://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#how-can-i-help-others-get-started-with-a-shared-dataset</span>)
-
-<span class="gu">## Overview</span>
-
-<span class="k">-</span><span class="w"> </span>  [ ] Project name (if relevant)
-<span class="k">-</span><span class="w"> </span>  [ ] Year(s) that the project ran
-
-If no <span class="sb">`scans.tsv`</span> is included, this could at least cover when the data acquisition
-starter and ended. Local time of day is particularly relevant to subject state.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Brief overview of the tasks in the experiment
-
-A paragraph giving an overview of the experiment. This should include the
+from the <a href="http://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#how-can-i-help-others-get-started-with-a-shared-dataset">datalad handbook</a></p>
+<h2 id="overview"><a class="toclink" href="#overview">Overview</a><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] Project name (if relevant)</li>
+<li>[ ] Year(s) that the project ran</li>
+</ul>
+<p>If no <code>scans.tsv</code> is included, this could at least cover when the data acquisition
+starter and ended. Local time of day is particularly relevant to subject state.</p>
+<ul>
+<li>[ ] Brief overview of the tasks in the experiment</li>
+</ul>
+<p>A paragraph giving an overview of the experiment. This should include the
 goals or purpose and a discussion about how the experiment tries to achieve
-these goals.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Description of the contents of the dataset
-
-An easy thing to add is the output of the bids-validator that describes what type of
-data and the number of subject one can expect to find in the dataset.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Independent variables
-
-A brief discussion of condition variables (sometimes called contrasts
-or independent variables) that were varied across the experiment.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Dependent variables
-
-A brief discussion of the response variables (sometimes called the
+these goals.</p>
+<ul>
+<li>[ ] Description of the contents of the dataset</li>
+</ul>
+<p>An easy thing to add is the output of the bids-validator that describes what type of
+data and the number of subject one can expect to find in the dataset.</p>
+<ul>
+<li>[ ] Independent variables</li>
+</ul>
+<p>A brief discussion of condition variables (sometimes called contrasts
+or independent variables) that were varied across the experiment.</p>
+<ul>
+<li>[ ] Dependent variables</li>
+</ul>
+<p>A brief discussion of the response variables (sometimes called the
 dependent variables) that were measured and or calculated to assess
 the effects of varying the condition variables. This might also include
-questionnaires administered to assess behavioral aspects of the experiment.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Control variables
-
-A brief discussion of the control variables --- that is what aspects
+questionnaires administered to assess behavioral aspects of the experiment.</p>
+<ul>
+<li>[ ] Control variables</li>
+</ul>
+<p>A brief discussion of the control variables --- that is what aspects
 were explicitly controlled in this experiment. The control variables might
 include subject pool, environmental conditions, set up, or other things
-that were explicitly controlled.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Quality assessment of the data
-
-Provide a short summary of the quality of the data ideally with descriptive statistics if relevant
-and with a link to more comprehensive description (like with MRIQC) if possible.
-
-<span class="gu">## Methods</span>
-
-<span class="gu">### Subjects</span>
-
-A brief sentence about the subject pool in this experiment.
-
-Remember that <span class="sb">`Control`</span> or <span class="sb">`Patient`</span> status should be defined in the <span class="sb">`participants.tsv`</span>
-using a group column.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Information about the recruitment procedure
-<span class="k">-</span><span class="w"> </span>  [ ] Subject inclusion criteria (if relevant)
-<span class="k">-</span><span class="w"> </span>  [ ] Subject exclusion criteria (if relevant)
-
-<span class="gu">### Apparatus</span>
-
-A summary of the equipment and environment setup for the
+that were explicitly controlled.</p>
+<ul>
+<li>[ ] Quality assessment of the data</li>
+</ul>
+<p>Provide a short summary of the quality of the data ideally with descriptive statistics if relevant
+and with a link to more comprehensive description (like with MRIQC) if possible.</p>
+<h2 id="methods"><a class="toclink" href="#methods">Methods</a><a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<h3 id="subjects"><a class="toclink" href="#subjects">Subjects</a><a class="headerlink" href="#subjects" title="Permanent link">&para;</a></h3>
+<p>A brief sentence about the subject pool in this experiment.</p>
+<p>Remember that <code>Control</code> or <code>Patient</code> status should be defined in the <code>participants.tsv</code>
+using a group column.</p>
+<ul>
+<li>[ ] Information about the recruitment procedure</li>
+<li>[ ] Subject inclusion criteria (if relevant)</li>
+<li>[ ] Subject exclusion criteria (if relevant)</li>
+</ul>
+<h3 id="apparatus"><a class="toclink" href="#apparatus">Apparatus</a><a class="headerlink" href="#apparatus" title="Permanent link">&para;</a></h3>
+<p>A summary of the equipment and environment setup for the
 experiment. For example, was the experiment performed in a shielded room
-with the subject seated in a fixed position.
-
-<span class="gu">### Initial setup</span>
-
-A summary of what setup was performed when a subject arrived.
-
-<span class="gu">### Task organization</span>
-
-How the tasks were organized for a session.
-This is particularly important because BIDS datasets usually have task data
-separated into different files.
-
-<span class="k">-</span><span class="w"> </span>  [ ] Was task order counter-balanced?
-<span class="k">-</span><span class="w"> </span>  [ ] What other activities were interspersed between tasks?
-<span class="k">-</span><span class="w"> </span>  [ ] In what order were the tasks and other activities performed?
-
-<span class="gu">### Task details</span>
-
-As much detail as possible about the task and the events that were recorded.
-
-<span class="gu">### Additional data acquired</span>
-
-A brief indication of data other than the
+with the subject seated in a fixed position.</p>
+<h3 id="initial-setup"><a class="toclink" href="#initial-setup">Initial setup</a><a class="headerlink" href="#initial-setup" title="Permanent link">&para;</a></h3>
+<p>A summary of what setup was performed when a subject arrived.</p>
+<h3 id="task-organization"><a class="toclink" href="#task-organization">Task organization</a><a class="headerlink" href="#task-organization" title="Permanent link">&para;</a></h3>
+<p>How the tasks were organized for a session.
+This is particularly important because <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets usually have task data
+separated into different files.</p>
+<ul>
+<li>[ ] Was task order counter-balanced?</li>
+<li>[ ] What other activities were interspersed between tasks?</li>
+<li>[ ] In what order were the tasks and other activities performed?</li>
+</ul>
+<h3 id="task-details"><a class="toclink" href="#task-details">Task details</a><a class="headerlink" href="#task-details" title="Permanent link">&para;</a></h3>
+<p>As much detail as possible about the task and the events that were recorded.</p>
+<h3 id="additional-data-acquired"><a class="toclink" href="#additional-data-acquired">Additional data acquired</a><a class="headerlink" href="#additional-data-acquired" title="Permanent link">&para;</a></h3>
+<p>A brief indication of data other than the
 imaging data that was acquired as part of this experiment. In addition
 to data from other modalities and behavioral data, this might include
 questionnaires and surveys, swabs, and clinical information. Indicate
-the availability of this data.
-
-This is especially relevant if the data are not included
-in a [<span class="sb">`phenotype`</span> folder](https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data).
-
-<span class="gu">### Experimental location</span>
-
-This should include any additional information regarding the
+the availability of this data.</p>
+<p>This is especially relevant if the data are not included
+in a <a href="https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data"><code>phenotype</code> folder</a>.</p>
+<h3 id="experimental-location"><a class="toclink" href="#experimental-location">Experimental location</a><a class="headerlink" href="#experimental-location" title="Permanent link">&para;</a></h3>
+<p>This should include any additional information regarding the
 the geographical location and facility that cannot be included
-in the relevant json files.
-
-<span class="gu">### Missing data</span>
-
-Mention something if some participants are missing some aspects of the data.
-This can take the form of a processing log and/or abnormalities about the dataset.
-
-Some examples:
-
-<span class="k">-</span><span class="w"> </span>  A brain lesion or defect only present in one participant
-
-<span class="k">-</span><span class="w"> </span>  Some experimental conditions missing on a given run for a participant because
-    of some technical issue.
-
-<span class="k">-</span><span class="w"> </span>  Any noticeable feature of the data for certain participants
-
-<span class="k">-</span><span class="w"> </span>  Differences (even slight) in protocol for certain participants.
-
-<span class="gu">### Notes</span>
-
-Any additional information or pointers to information that
+in the relevant json files.</p>
+<h3 id="missing-data"><a class="toclink" href="#missing-data">Missing data</a><a class="headerlink" href="#missing-data" title="Permanent link">&para;</a></h3>
+<p>Mention something if some participants are missing some aspects of the data.
+This can take the form of a processing log and/or abnormalities about the dataset.</p>
+<p>Some examples:</p>
+<ul>
+<li>
+<p>A brain lesion or defect only present in one participant</p>
+</li>
+<li>
+<p>Some experimental conditions missing on a given run for a participant because
+    of some technical issue.</p>
+</li>
+<li>
+<p>Any noticeable feature of the data for certain participants</p>
+</li>
+<li>
+<p>Differences (even slight) in protocol for certain participants.</p>
+</li>
+</ul>
+<h3 id="notes"><a class="toclink" href="#notes">Notes</a><a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<p>Any additional information or pointers to information that
 might be helpful to users of the dataset. Include qualitative information
-related to how the data acquisition went.
-</code></pre></div>
+related to how the data acquisition went.</p>
+<p>```</p>
 <h2 id="dataset_descriptionjson"><a class="toclink" href="#dataset_descriptionjson">dataset_description.json</a><a class="headerlink" href="#dataset_descriptionjson" title="Permanent link">&para;</a></h2>
 <!-- use snippet to include a file
 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
 -->
 
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;BIDSVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.10.0&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;HEDVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8.2.0&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;DatasetType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;raw&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;License&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;Authors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;Acknowledgements&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;HowToAcknowledge&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;Funding&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;EthicsApprovals&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;ReferencesAndLinks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;&quot;</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;DatasetDOI&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doi:&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
+<p>```json
+{
+    "Name": "",
+    "BIDSVersion": "1.10.0",
+    "HEDVersion": "8.2.0",
+    "DatasetType": "raw",
+    "License": "",
+    "Authors": [
+        "",
+        "",
+        ""
+    ],
+    "Acknowledgements": "",
+    "HowToAcknowledge": "",
+    "Funding": [
+        "",
+        "",
+        ""
+    ],
+    "EthicsApprovals": [
+        ""
+    ],
+    "ReferencesAndLinks": [
+        "",
+        "",
+        ""
+    ],
+    "DatasetDOI": "doi:"
+}</p>
+<p>```</p>
 <!-- tool tips  -->
 
 

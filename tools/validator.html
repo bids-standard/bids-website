@@ -4182,39 +4182,40 @@ but there are some non-critical problems
 <p>After <a href="https://bids-validator.readthedocs.io/en/latest/user_guide/command-line.html#using-the-command-line">installation with deno</a>
 using the CLI is relatively simple.
 Locate a bids data set similar to the one below:</p>
-<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$<span class="w"> </span>tree<span class="w"> </span>pet001
-
-sub001/
-├──<span class="w"> </span>dataset_description.json
-├──<span class="w"> </span>participants.json
-├──<span class="w"> </span>participants.tsv
-├──<span class="w"> </span>README
-└──<span class="w"> </span>sub-01
-<span class="w">    </span>└──<span class="w"> </span>ses-01
-<span class="w">        </span>├──<span class="w"> </span>anat
-<span class="w">        </span>│<span class="w">   </span>├──<span class="w"> </span>sub-01_ses-01_T1w.json
-<span class="w">        </span>│<span class="w">   </span>└──<span class="w"> </span>sub-01_ses-01_T1w.nii
-<span class="w">        </span>└──<span class="w"> </span>pet
-<span class="w">            </span>├──<span class="w"> </span>sub-01_ses-01_trc-CIMBI36_pet.json
-<span class="w">            </span>├──<span class="w"> </span>sub-01_ses-01_trc-CIMBI36_pet.nii.gz
-<span class="w">            </span>├──<span class="w"> </span>sub-01_ses-01_trc-CIMBI36_recording-autosampler_blood.json
-<span class="w">            </span>├──<span class="w"> </span>sub-01_ses-01_trc-CIMBI36_recording-autosampler_blood.tsv
-<span class="w">            </span>├──<span class="w"> </span>sub-01_ses-01_trc-CIMBI36_recording-manual_blood.json
-<span class="w">            </span>└──<span class="w"> </span>sub-01_ses-01_trc-CIMBI36_recording-manual_blood.tsv
-</code></pre></div>
+<p>```bash
+user@host:~/bids-examples$ tree pet001</p>
+<p>sub001/
+├── dataset_description.json
+├── participants.json
+├── participants.tsv
+├── README
+└── sub-01
+    └── ses-01
+        ├── anat
+        │   ├── sub-01_ses-01_T1w.json
+        │   └── sub-01_ses-01_T1w.nii
+        └── pet
+            ├── sub-01_ses-01_trc-CIMBI36_pet.json
+            ├── sub-01_ses-01_trc-CIMBI36_pet.nii.gz
+            ├── sub-01_ses-01_trc-CIMBI36_recording-autosampler_blood.json
+            ├── sub-01_ses-01_trc-CIMBI36_recording-autosampler_blood.tsv
+            ├── sub-01_ses-01_trc-CIMBI36_recording-manual_blood.json
+            └── sub-01_ses-01_trc-CIMBI36_recording-manual_blood.tsv
+```</p>
 <p>Now simply point the bids validator at the folder path of the subject(s) in question:</p>
-<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$<span class="w"> </span>bids-validator<span class="w"> </span>pet001
-</code></pre></div>
+<p><code>bash
+user@host:~/bids-examples$ bids-validator pet001</code></p>
 <h3 id="types-of-feedback_1"><a class="toclink" href="#types-of-feedback_1">Types of Feedback</a><a class="headerlink" href="#types-of-feedback_1" title="Permanent link">&para;</a></h3>
 <div class="admonition failure">
 <p class="admonition-title">Error</p>
 <p>As is the case with the browser or any version of the validator follow
 the <code>[ERROR]</code> messages and correct until bids-validator returns 0 errors after running.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>ERROR<span class="o">]</span><span class="w"> </span>NIFTI_HEADER_UNREADABLE<span class="w"> </span>We<span class="w"> </span>were<span class="w"> </span>unable<span class="w"> </span>to<span class="w"> </span>parse<span class="w"> </span>header<span class="w"> </span>data<span class="w"> </span>from<span class="w"> </span>this<span class="w"> </span>NIfTI<span class="w"> </span>file.<span class="w"> </span>Please<span class="w"> </span>ensure<span class="w"> </span>it<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>corrupted<span class="w"> </span>or<span class="w"> </span>mislabeled.
-<span class="w">            </span>/sub-01/ses-01/anat/sub-01_ses-01_T1w.nii
-
-<span class="w">    </span>Please<span class="w"> </span>visit<span class="w"> </span>https://neurostars.org/search?q<span class="o">=</span>NIFTI_HEADER_UNREADABLE<span class="w"> </span><span class="k">for</span><span class="w"> </span>existing<span class="w"> </span>conversations<span class="w"> </span>about<span class="w"> </span>this<span class="w"> </span>issue.
-</code></pre></div>
+<p>```bash
+[ERROR] NIFTI_HEADER_UNREADABLE We were unable to parse header data from this NIfTI file. Please ensure it is not corrupted or mislabeled.
+            /sub-01/ses-01/anat/sub-01_ses-01_T1w.nii</p>
+<pre><code>Please visit https://neurostars.org/search?q=NIFTI_HEADER_UNREADABLE for existing conversations about this issue.
+</code></pre>
+<p>```</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -4222,30 +4223,32 @@ the <code>[ERROR]</code> messages and correct until bids-validator returns 0 err
 but the information provided via the validator should help to pinpoint
 where and how to resolve some of these warnings.
 When in doubt consult the <a href="https://bids-specification.readthedocs.io"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a></p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>WARNING<span class="o">]</span><span class="w"> </span>JSON_KEY_RECOMMENDED<span class="w"> </span>A<span class="w"> </span>JSON<span class="w"> </span>file<span class="w"> </span>is<span class="w"> </span>missing<span class="w"> </span>a<span class="w"> </span>key<span class="w"> </span>listed<span class="w"> </span>as<span class="w"> </span>recommended.
-<span class="w">            </span>DatasetType
-<span class="w">            </span>/dataset_description.json
+<p>```bash
+[WARNING] JSON_KEY_RECOMMENDED A <abbr title="JavaScript Object Notation">JSON</abbr> file is missing a key listed as recommended.
+            DatasetType
+            /dataset_description.json</p>
+<pre><code>        GeneratedBy
+        /dataset_description.json
 
-<span class="w">            </span>GeneratedBy
-<span class="w">            </span>/dataset_description.json
+        SourceDatasets
+        /dataset_description.json
 
-<span class="w">            </span>SourceDatasets
-<span class="w">            </span>/dataset_description.json
-
-<span class="w">    </span>Please<span class="w"> </span>visit<span class="w"> </span>https://neurostars.org/search?q<span class="o">=</span>JSON_KEY_RECOMMENDED<span class="w"> </span><span class="k">for</span><span class="w"> </span>existing<span class="w"> </span>conversations<span class="w"> </span>about<span class="w"> </span>this<span class="w"> </span>issue.
-</code></pre></div>
+Please visit https://neurostars.org/search?q=JSON_KEY_RECOMMENDED for existing conversations about this issue.
+</code></pre>
+<p>```</p>
 </div>
 <div class="admonition success">
 <p class="admonition-title">Success <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /></p>
 <p>Pass go and collect 200 dollars, the data set in question passes validation.</p>
-<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$<span class="w"> </span>bids-validator<span class="w"> </span>sub001
+<p>```bash
+user@host:~/bids-examples$ bids-validator sub001</p>
+<pre><code>  Summary:                         Available Tasks:        Available Modalities:
+  12 Files, 224 kB                                         PET
+  1 - Subjects 1 - Sessions                                MRI
 
-<span class="w">      </span>Summary:<span class="w">                         </span>Available<span class="w"> </span>Tasks:<span class="w">        </span>Available<span class="w"> </span>Modalities:
-<span class="w">      </span><span class="m">12</span><span class="w"> </span>Files,<span class="w"> </span><span class="m">224</span><span class="w"> </span>kB<span class="w">                                         </span>PET
-<span class="w">      </span><span class="m">1</span><span class="w"> </span>-<span class="w"> </span>Subjects<span class="w"> </span><span class="m">1</span><span class="w"> </span>-<span class="w"> </span>Sessions<span class="w">                                </span>MRI
-
-<span class="w">    </span>If<span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span>any<span class="w"> </span>questions,<span class="w"> </span>please<span class="w"> </span>post<span class="w"> </span>on<span class="w"> </span>https://neurostars.org/tags/bids.
-</code></pre></div>
+If you have any questions, please post on https://neurostars.org/tags/bids.
+</code></pre>
+<p>```</p>
 </div>
 <!-- tool tips  -->
 

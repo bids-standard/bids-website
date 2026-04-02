@@ -4031,31 +4031,30 @@
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/meta/context.yaml"><code>meta.context</code></a> describes a context object that makes information available to rules</p>
 <details open="open">
 <summary>meta.context</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">context</span><span class="p">:</span>
-<span class="nt">schema</span><span class="p">:</span><span class="w">     </span><span class="l l-Scalar l-Scalar-Plain">The BIDS specification schema</span>
-<span class="nt">dataset</span><span class="p">:</span><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">Properties and contents of the entire dataset</span>
-<span class="nt">subject</span><span class="p">:</span><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">Properties and contents of the current subject</span>
-
-<span class="nt">path</span><span class="p">:</span><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">Path of the current file</span>
-<span class="nt">entities</span><span class="p">:</span><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">Entities parsed from the current filename</span>
-<span class="nt">datatype</span><span class="p">:</span><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">Datatype of current file, for example, anat</span>
-<span class="nt">suffix</span><span class="p">:</span><span class="w">     </span><span class="l l-Scalar l-Scalar-Plain">Suffix of current file</span>
-<span class="nt">extension</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Extension of current file</span>
-<span class="nt">modality</span><span class="p">:</span><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">Modality of current file, for example, MRI</span>
-
-<span class="nt">sidecar</span><span class="p">:</span><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">Sidecar metadata constructed via the inheritance principle</span>
-<span class="l l-Scalar l-Scalar-Plain">…</span>
-<span class="nt">associations</span><span class="p">:</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">Associated files, indexed by suffix, selected according to the inheritance principle</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">events</span><span class="p p-Indicator">:</span>
-<span class="w">    </span><span class="nt">aslcontext</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">bval</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">bvec</span><span class="p">:</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">…</span>
-<span class="nt">columns</span><span class="p">:</span><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">TSV columns, indexed by column header, values are arrays with column contents</span>
-<span class="nt">json</span><span class="p">:</span><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">Contents of the current JSON file</span>
-<span class="nt">gzip</span><span class="p">:</span><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">Parsed contents of gzip header</span>
-<span class="nt">nifti_header</span><span class="p">:</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">Parsed contents of NIfTI header</span>
-</code></pre></div>
+<p>```yaml
+context:
+schema:     The <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification schema
+dataset:        Properties and contents of the entire dataset
+subject:        Properties and contents of the current subject</p>
+<p>path:       Path of the current file
+entities:       Entities parsed from the current filename
+datatype:       Datatype of current file, for example, anat
+suffix:     Suffix of current file
+extension:  Extension of current file
+modality:       Modality of current file, for example, <abbr title="Magnetic Resonance Imaging">MRI</abbr></p>
+<p>sidecar:        Sidecar metadata constructed via the inheritance principle
+…
+associations:   Associated files, indexed by suffix, selected according to the inheritance principle
+    events:
+    aslcontext:
+    bval:
+    bvec:
+    …
+columns:        <abbr title="Tab Separated Values">TSV</abbr> columns, indexed by column header, values are arrays with column contents
+json:       Contents of the current <abbr title="JavaScript Object Notation">JSON</abbr> file
+gzip:       Parsed contents of gzip header
+nifti_header:   Parsed contents of NIfTI header
+```</p>
 </details>
 <!-- tool tips  -->
 

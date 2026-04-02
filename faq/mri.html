@@ -4118,11 +4118,11 @@ then this may become a problem.</p>
 <p>For <code>func</code> files you only need <code>TaskName</code> and <code>RepetitionTime</code>
 and the former you can decide what it is and the latter should be in the Nifti header.
 So you should be OKish there too.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;TaskName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name_of your task&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;RepetitionTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">your</span><span class="w"> </span><span class="err">repe</span><span class="kc">t</span><span class="err">i</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">ime</span><span class="w"> </span><span class="err">value</span>
-<span class="p">}</span>
-</code></pre></div>
+<p><code>json
+{
+  "TaskName": "name_of your task",
+  "RepetitionTime": your repetition time value
+}</code></p>
 <p>Obviously you will be missing some metadata that would be required
 for some type of preprocessing (like slice timing info).</p>
 <h3 id="tips"><a class="toclink" href="#tips">Tips</a><a class="headerlink" href="#tips" title="Permanent link">&para;</a></h3>

@@ -4100,7 +4100,8 @@
 
 <h1 id="objects"><a class="toclink" href="#objects">Objects</a><a class="headerlink" href="#objects" title="Permanent link">&para;</a></h1>
 <p>The Objects portion of the schema contains the following collection of schema files:</p>
-<div class="highlight"><pre><span></span><code>src/schema/objects
+<p><code>text
+src/schema/objects
 ├── columns.yaml
 ├── common_principles.yaml
 ├── datatypes.yaml
@@ -4110,8 +4111,7 @@
 ├── formats.yaml
 ├── metadata.yaml
 ├── modalities.yaml
-└── suffixes.yaml
-</code></pre></div>
+└── suffixes.yaml</code></p>
 <p>Objects contain selectors, issues and error messages to raise during validation, descriptors, messages, and units.
 Every property needed describe a an entity in <abbr title="Brain Imaging Data Structure">BIDS</abbr> contained within an object's contents.
 We'll take a closer look below at a few specific objects
@@ -4120,146 +4120,146 @@ to better introduce the structure that they represent and take on.</p>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/common_principles.yaml"><code>objects.common_principles</code></a>: Terms, such as "data acquisition" or "datatype", used throughout <abbr title="Brain Imaging Data Structure">BIDS</abbr></p>
 <details>
 <summary>data acquisition</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">data_acquisition</span><span class="p">:</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data acquisition</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">A continuous uninterrupted block of time during which a brain scanning instrument was acquiring data according to</span>
-<span class="w">    </span><span class="no">particular scanning sequence/protocol.</span>
-</code></pre></div>
+<p><code>yaml
+data_acquisition:
+display_name: Data acquisition
+description: |
+    A continuous uninterrupted block of time during which a brain scanning instrument was acquiring data according to
+    particular scanning sequence/protocol.</code></p>
 </details>
 <details>
 <summary>data type</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">data_type</span><span class="p">:</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data type</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">A functional group of different types of data.</span>
-<span class="w">    </span><span class="no">Data files are contained in a directory named for the data type.</span>
-<span class="w">    </span><span class="no">In raw datasets, the data type directory is nested inside subject and (optionally) session directories.</span>
-<span class="w">    </span><span class="no">BIDS defines the following data types:</span>
-<span class="w">        </span><span class="no">1.  `func` (task based and resting state functional MRI)</span>
-<span class="w">        </span><span class="no">2.  `dwi` (diffusion weighted imaging)</span>
-<span class="w">        </span><span class="no">3.  `fmap` (field inhomogeneity mapping data such as field maps)</span>
-<span class="w">        </span><span class="no">4.  `anat` (structural imaging such as T1, T2, PD, and so on)</span>
-<span class="w">        </span><span class="no">5.  `perf` (perfusion)</span>
-<span class="w">        </span><span class="no">6.  `meg` (magnetoencephalography)</span>
-<span class="w">        </span><span class="no">7.  `eeg` (electroencephalography)</span>
-<span class="w">        </span><span class="no">8.  `ieeg` (intracranial electroencephalography)</span>
-<span class="w">        </span><span class="no">9.  `beh` (behavioral)</span>
-<span class="w">        </span><span class="no">10. `pet` (positron emission tomography)</span>
-<span class="w">        </span><span class="no">11. `micr` (microscopy)</span>
-<span class="w">        </span><span class="no">12. `nirs` (near infrared spectroscopy)</span>
-</code></pre></div>
+<p><code>yaml
+data_type:
+display_name: Data type
+description: |
+    A functional group of different types of data.
+    Data files are contained in a directory named for the data type.
+    In raw datasets, the data type directory is nested inside subject and (optionally) session directories.
+    BIDS defines the following data types:
+        1.  `func` (task based and resting state functional MRI)
+        2.  `dwi` (diffusion weighted imaging)
+        3.  `fmap` (field inhomogeneity mapping data such as field maps)
+        4.  `anat` (structural imaging such as T1, T2, PD, and so on)
+        5.  `perf` (perfusion)
+        6.  `meg` (magnetoencephalography)
+        7.  `eeg` (electroencephalography)
+        8.  `ieeg` (intracranial electroencephalography)
+        9.  `beh` (behavioral)
+        10. `pet` (positron emission tomography)
+        11. `micr` (microscopy)
+        12. `nirs` (near infrared spectroscopy)</code></p>
 </details>
 <h2 id="namevalue-terms"><a class="toclink" href="#namevalue-terms">Name/value terms</a><a class="headerlink" href="#namevalue-terms" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/entities.yaml"><code>objects.entities</code></a>: Entities (sub-01)</p>
 <details class="subject" open="open">
 <summary>Subject</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">subject</span><span class="p">:</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sub</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Subject</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">A person or animal participating in the study.</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">label</span>
-</code></pre></div>
+<p><code>yaml
+subject:
+name: sub
+display_name: Subject
+description: |
+    A person or animal participating in the study.
+type: string
+format: label</code></p>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/metadata.yaml"><code>objects.metadata</code></a>: Sidecar fields ("PhaseEncodingDirection": "j")</p>
 <details>
 <summary>PhaseEncodingDirection</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">PhaseEncodingDirection</span><span class="p">:</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PhaseEncodingDirection</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Phase Encoding Direction</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">The letters `i`, `j`, `k` correspond to the first, second and third axis of</span>
-<span class="w">    </span><span class="no">the data in the NIFTI file.</span>
-<span class="w">    </span><span class="no">The polarity of the phase encoding is assumed to go from zero index to</span>
-<span class="w">    </span><span class="no">maximum index unless `-` sign is present</span>
-<span class="w">    </span><span class="no">(then the order is reversed - starting from the highest index instead of</span>
-<span class="w">    </span><span class="no">zero).</span>
-<span class="w">    </span><span class="no">`PhaseEncodingDirection` is defined as the direction along which phase is was</span>
-<span class="w">    </span><span class="no">modulated which may result in visible distortions.</span>
-<span class="w">    </span><span class="no">Note that this is not the same as the DICOM term</span>
-<span class="w">    </span><span class="no">`InPlanePhaseEncodingDirection` which can have `ROW` or `COL` values.</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="nt">enum</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">i</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">j</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">i-</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">j-</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">k-</span>
-</code></pre></div>
+<p><code>yaml
+PhaseEncodingDirection:
+name: PhaseEncodingDirection
+display_name: Phase Encoding Direction
+description: |
+    The letters `i`, `j`, `k` correspond to the first, second and third axis of
+    the data in the NIFTI file.
+    The polarity of the phase encoding is assumed to go from zero index to
+    maximum index unless `-` sign is present
+    (then the order is reversed - starting from the highest index instead of
+    zero).
+    `PhaseEncodingDirection` is defined as the direction along which phase is was
+    modulated which may result in visible distortions.
+    Note that this is not the same as the DICOM term
+    `InPlanePhaseEncodingDirection` which can have `ROW` or `COL` values.
+type: string
+enum:
+    - i
+    - j
+    - k
+    - i-
+    - j-
+    - k-</code></p>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/columns.yaml"><code>objects.columns</code></a>: <abbr title="Tab Separated Values">TSV</abbr> columns ("participant_id", ["sub-01", "sub-02", …])</p>
 <details>
 <summary>partcipant_id</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">participant_id</span><span class="p">:</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">participant_id</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Participant ID</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">A participant identifier of the form `sub-&lt;label&gt;`,</span>
-<span class="w">    </span><span class="no">matching a participant entity found in the dataset.</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="nt">pattern</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">^sub-[0-9a-zA-Z]+$</span>
-</code></pre></div>
+<p><code>yaml
+participant_id:
+name: participant_id
+display_name: Participant ID
+description: |
+    A participant identifier of the form `sub-&lt;label&gt;`,
+    matching a participant entity found in the dataset.
+type: string
+pattern: ^sub-[0-9a-zA-Z]+$</code></p>
 </details>
 <h2 id="value-terms"><a class="toclink" href="#value-terms">Value terms</a><a class="headerlink" href="#value-terms" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/datatypes.yaml"><code>objects.datatypes</code></a> (func)</p>
 <details open="open">
 <summary>func</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">func</span><span class="p">:</span>
-<span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">func</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Task-Based Magnetic Resonance Imaging</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">Task (including resting state) imaging data</span>
-</code></pre></div>
+<p><code>yaml
+func:
+value: func
+display_name: Task-Based Magnetic Resonance Imaging
+description: |
+    Task (including resting state) imaging data</code></p>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/suffixes.yaml"><code>objects.suffixes</code></a> (bold)</p>
 <details>
 <summary>object.suffixes.bold</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">bold</span><span class="p">:</span>
-<span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bold</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Blood-Oxygen-Level Dependent image</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">Blood-Oxygen-Level Dependent contrast (specialized T2\* weighting)</span>
-</code></pre></div>
+<p><code>yaml
+bold:
+value: bold
+display_name: Blood-Oxygen-Level Dependent image
+description: |
+    Blood-Oxygen-Level Dependent contrast (specialized T2\* weighting)</code></p>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/extensions.yaml"><code>objects.extensions</code></a> (.nii.gz)</p>
 <h2 id="formats"><a class="toclink" href="#formats">Formats</a><a class="headerlink" href="#formats" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/formats.yaml"><code>objects.formats</code></a>: Types of values objects referenced in the schema can take (label, index, boolean)</p>
 <details open="open">
 <summary>boolean</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">boolean</span><span class="p">:</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Boolean</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">A boolean.</span>
-<span class="w">    </span><span class="no">Must be either &quot;true&quot; or &quot;false&quot;.</span>
-<span class="nt">pattern</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;(true|false)&#39;</span>
-</code></pre></div>
+<p><code>yaml
+boolean:
+display_name: Boolean
+description: |
+    A boolean.
+    Must be either "true" or "false".
+pattern: '(true|false)'</code></p>
 </details>
 <h2 id="files"><a class="toclink" href="#files">Files</a><a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/files.yaml"><code>objects.files</code></a>: One-off files, not constructed from path components, like README</p>
 <details>
 <summary>README</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">README</span><span class="p">:</span>
-<span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">README</span>
-<span class="nt">file_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regular</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">A REQUIRED text file, `README`, SHOULD describe the dataset in more detail.</span>
-<span class="w">    </span><span class="no">The `README` file MUST be either in ASCII or UTF-8 encoding and MAY have one of the extensions:</span>
-<span class="w">    </span><span class="no">`.md` ([Markdown](https://www.markdownguide.org/)),</span>
-<span class="w">    </span><span class="no">`.rst` ([reStructuredText](https://docutils.sourceforge.io/rst.html)),</span>
-<span class="w">    </span><span class="no">or `.txt`.</span>
-<span class="w">    </span><span class="no">A BIDS dataset MUST NOT contain more than one `README` file (with or without extension)</span>
-<span class="w">    </span><span class="no">at its root directory.</span>
-<span class="w">    </span><span class="no">BIDS does not make any recommendations with regards to the</span>
-<span class="w">    </span><span class="no">[Markdown flavor](https://www.markdownguide.org/extended-syntax/#lightweight-markup-languages)</span>
-<span class="w">    </span><span class="no">and does not validate the syntax of Markdown and reStructuredText.</span>
-<span class="w">    </span><span class="no">The `README` file SHOULD be structured such that its contents can be easily understood</span>
-<span class="w">    </span><span class="no">even if the used format is not rendered.</span>
-<span class="w">    </span><span class="no">A guideline for creating a good `README` file can be found in the</span>
-<span class="w">    </span><span class="no">[bids-starter-kit](https://github.com/bids-standard/bids-starter-kit/blob/master/templates/README).</span>
-</code></pre></div>
+<p><code>yaml
+README:
+display_name: README
+file_type: regular
+description: |
+    A REQUIRED text file, `README`, SHOULD describe the dataset in more detail.
+    The `README` file MUST be either in ASCII or UTF-8 encoding and MAY have one of the extensions:
+    `.md` ([Markdown](https://www.markdownguide.org/)),
+    `.rst` ([reStructuredText](https://docutils.sourceforge.io/rst.html)),
+    or `.txt`.
+    A BIDS dataset MUST NOT contain more than one `README` file (with or without extension)
+    at its root directory.
+    BIDS does not make any recommendations with regards to the
+    [Markdown flavor](https://www.markdownguide.org/extended-syntax/#lightweight-markup-languages)
+    and does not validate the syntax of Markdown and reStructuredText.
+    The `README` file SHOULD be structured such that its contents can be easily understood
+    even if the used format is not rendered.
+    A guideline for creating a good `README` file can be found in the
+    [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit/blob/master/templates/README).</code></p>
 </details>
 <!-- tool tips  -->
 

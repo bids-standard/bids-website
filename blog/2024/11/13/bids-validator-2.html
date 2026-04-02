@@ -4234,8 +4234,8 @@ and the schema itself may be found at
 and various <a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/checks/">checks</a> that have been written in the schema expression language.</p>
 <p>To use the schema validator, visit <a href="https://bids-standard.github.io/bids-validator/">https://bids-standard.github.io/bids-validator/</a>
 or download the <a href="https://deno.com">Deno</a> Javascript runtime and run:</p>
-<div class="highlight"><pre><span></span><code><span class="go">deno run -A jsr:@bids/validator [PATH]</span>
-</code></pre></div>
+<p><code>console
+deno run -A jsr:@bids/validator [PATH]</code></p>
 <p>While many features of the original <abbr title="Brain Imaging Data Structure">BIDS</abbr> validator have been preserved,
 the structure of <abbr title="JavaScript Object Notation">JSON</abbr> configuration files and <abbr title="JavaScript Object Notation">JSON</abbr> outputs
 (triggered by the <code>--json</code> flag) have changed their formats.
@@ -4334,9 +4334,9 @@ However, if you see version 2.0 or higher, it will be the schema validator.</p>
 image contains the schema validator, as of version 1.15.0.
 This image is intended for building <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps that pre-validate the
 dataset, but can also be used with:</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>--platform<span class="w"> </span>linux/amd64<span class="w"> </span>-v<span class="w"> </span><span class="nv">$DATASET</span>:/data<span class="w"> </span>bids/base_validator<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>bids-validator<span class="w"> </span>/data
-</code></pre></div>
+<p><code>shell
+docker run --rm -it --platform linux/amd64 -v $DATASET:/data bids/base_validator \
+    bids-validator /data</code></p>
 <h2 id="some-technical-details"><a class="toclink" href="#some-technical-details">Some technical details</a><a class="headerlink" href="#some-technical-details" title="Permanent link">&para;</a></h2>
 <p>In this section, we lay out some details that are probably not of general interest,
 but could be useful for understanding the changes to validator behavior,
