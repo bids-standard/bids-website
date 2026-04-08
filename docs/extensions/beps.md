@@ -1,6 +1,6 @@
 # BIDS extension proposals
 
-You can contribute to ongoing BIDS Extension Proposals (BEPs).
+You can contribute to ongoing BIDS Extension Proposals (BEPs).   
 
 ## Draft and Proposed BEPs
 
