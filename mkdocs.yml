@@ -82,23 +82,6 @@ exclude_docs: |
 
 nav:
 -   About BIDS: index.md
--   Blog:
-    -   blog/index.md
--   Standards:
-    -   standards/index.md
-    -   BIDS Specification:
-        -   standards/bids_specification/index.md
-    -   BIDS Schema:
-        -   standards/schema/index.md
-        -   how it works:
-            -   standards/schema/how-the-schema-works.md
-            -   standards/schema/schema-meta.md
-            -   standards/schema/schema-objects.md
-            -   standards/schema/schema-rules.md
-    -   BIDS Stats Model:
-        -   standards/bids_stats_model/index.md
-    -   BIDS Apps:
-        -   standards/bids_app_specification/index.md
 -   Getting started:
     -   getting_started/index.md
     -   Folders and files:
@@ -133,24 +116,37 @@ nav:
         -   getting_started/how_to/index.md
     -   Templates:
         -   getting_started/templates/index.md
--   Tools:
-    -   tools/index.md
-    -   tools/converters.md
-    -   tools/validator.md
-    -   tools/bids-apps.md
-    -   tools/others.md
--   Datasets:
-    -   datasets/index.md
-    -   datasets/examples.md
--   FAQ:
-    -   faq/index.md
-    -   faq/general.md
-    -   faq/eeg.md
-    -   faq/mri.md
-    -   faq/phenotype.md
-    -   faq/bids-extensions.md
-    -   faq/bids-apps.md
--   Collaboration:
+-   Ecosystem:
+    -   standards/index.md
+    -   BIDS Specification:
+        -   standards/bids_specification/index.md
+    -   BIDS Schema:
+        -   standards/schema/index.md
+        -   how it works:
+            -   standards/schema/how-the-schema-works.md
+            -   standards/schema/schema-meta.md
+            -   standards/schema/schema-objects.md
+            -   standards/schema/schema-rules.md
+    -   BIDS Stats Model:
+        -   standards/bids_stats_model/index.md
+    -   BIDS Apps:
+        -   standards/bids_app_specification/index.md
+    -   Extensions:
+        -   extensions/index.md
+        -   extensions/beps.md
+        -   extensions/process.md
+        -   extensions/guidelines.md
+        -   Using MkDocs macros: extensions/macros_doc.md
+    -   Tools:
+        -   tools/index.md
+        -   tools/converters.md
+        -   tools/validator.md
+        -   tools/bids-apps.md
+        -   tools/others.md
+    -   Datasets:
+        -   datasets/index.md
+        -   datasets/examples.md
+-   Get involved:
     -   collaboration/index.md
     -   Governance: collaboration/governance.md
     -   collaboration/working-groups.md
@@ -164,18 +160,22 @@ nav:
         -   Google summer:
             -   GSOC 2018: collaboration/reports/google_summer/2018-gsoc.md
             -   GSOD 2024: collaboration/reports/google_summer/2024-gsod.md
--   Extensions:
-    -   extensions/index.md
-    -   extensions/beps.md
-    -   extensions/process.md
-    -   extensions/guidelines.md
-    -   Using MkDocs macros: extensions/macros_doc.md
 -   Impact:
     -   impact/index.md
     -   impact/measuring.md
--   Merch: https://www.teepublic.com/user/bids
+-   FAQ:
+    -   faq/index.md
+    -   faq/general.md
+    -   faq/eeg.md
+    -   faq/mri.md
+    -   faq/phenotype.md
+    -   faq/bids-extensions.md
+    -   faq/bids-apps.md
+-   Blog:
+    -   blog/index.md
 -   Contact:
     - contact/index.md
+
 
 
 theme:
