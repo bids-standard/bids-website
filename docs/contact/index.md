@@ -67,6 +67,6 @@ Some example questions that have already been answered include:
 
 </div>
 
-# Merch
+## Merch
 
 For buying BIDS merchandise, please follow [this link](https://www.teepublic.com/user/bids)
