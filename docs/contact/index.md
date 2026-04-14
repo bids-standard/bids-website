@@ -66,3 +66,7 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
+
+## Merch
+
+For buying BIDS merchandise, please follow [this link](https://www.teepublic.com/user/bids)
