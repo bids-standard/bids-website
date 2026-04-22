@@ -85,18 +85,6 @@ In a nutshell, a typical `Draft BEP` is in the format of Google document and is 
 In contrast, a `Proposed BEP` refers to pull request to BIDS specification repository
 (see [governance](../collaboration/governance.md#proposed-bep)), after a general level of community consensus has been achieved (via the Googledoc).
 
-<!--- hoping this comments out Remi's old version -CR
-```mermaid
-flowchart TD
-
-draft_bep[Draft BEP]
-proposed_bep[Proposed BEP]
-merged_bep[Merged BEP]
-
-draft_bep --> proposed_bep --> merged_bep
-```
-end comment -->
-
 ```mermaid
 flowchart TD
 
@@ -105,7 +93,7 @@ draft_bep[Draft BEP]
 proposed_bep[Proposed BEP]
 merged_bep[Merged BEP]
 
-bep_ideal --> draft_bep --> proposed_bep --> merged_bep
+bep_idea --> draft_bep --> proposed_bep --> merged_bep
 ```
 
 #### BEP Review Process between Phases
@@ -209,23 +197,6 @@ In rare cases, it may be necessary to update:
 ### Starting a BEP
 
 Follow the steps below this handy chart to start your BEP and move it to `Draft BEP` status.
-
-<!-- old version
-```mermaid
-flowchart TD
-
-Open_BEP_issue["Open an issue to gather interest"]
-Post_mailing_list["Advertise the issue in the mailing list"]
-BEP_draft["Start a draft for your BEP"]
-Meet_the_team["Meet with the BIDS maintainers / steering group"]
-Official_BEP["Get a number for your BEP"]
-
-Open_BEP_issue --> Post_mailing_list
-Post_mailing_list --> BEP_draft
-BEP_draft --> Meet_the_team
-Meet_the_team -- approval --> Official_BEP
-```
--->
 
 ```mermaid
 flowchart TD
