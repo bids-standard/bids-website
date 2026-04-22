@@ -74,7 +74,7 @@ BEP_issue_exist -- yes --> Join_discussion
 
 ### Overview of the BEP process
 
-This section gives an overview of the lifecycle of a new BEP creation towards to BIDS community approval and merge. 
+This section gives an overview of the lifecycle of a new BEP creation towards to BIDS community approval and merge.
 For the typical steps involved in each phase, see [Starting your BEP](#starting-your-bep)).
 
 #### BEP Phases
@@ -110,9 +110,9 @@ bep_ideal --> draft_bep --> proposed_bep --> merged_bep
 
 #### BEP Review Process between Phases
 
-A BEP transitions from one phase to another by passing a review process with the BIDS Maintainers. BEP contributors are welcome to join BIDS Maintainer meetings to schedule or discuss their BEP review status. 
+A BEP transitions from one phase to another by passing a review process with the BIDS Maintainers. BEP contributors are welcome to join BIDS Maintainer meetings to schedule or discuss their BEP review status.
 A BIDS Maintainer will actively guide each BEP team from the point of initial BEP idea review through the process outlined here, to provide feedback and guidance. Review discussions are typically followed with specific feedback on the relevant document (GitHub PR or Googledoc), or by email if preferred by the BEP leads.
-Please note the [community consultation requirements](link here) at each phase.  BEP leads are encouraged to connect with the BIDS maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community. 
+Please note the [community consultation requirements](link here) at each phase.  BEP leads are encouraged to connect with the BIDS maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community.
 
 ```mermaid
 flowchart TD
@@ -131,7 +131,7 @@ proposed_bep_review -- negative evaluation --> proposed_bep
 proposed_bep_review -- positive evaluation --> merged_bep
 ```
 
-#### Closing a BEP 
+#### Closing a BEP
 In consultation with the BEP leads, it is possible but rare that the BIDS Maintainers and/or Steering may determine that a draft BEP can be addressed under the scope of another BIDS Extension, or is beyond the scope of BIDS.
 
 ```mermaid
@@ -206,9 +206,9 @@ In rare cases, it may be necessary to update:
 1.  Preprint of the new extension (if applicable).
 1.  Press release for the BIDS website [news section](https://bids.neuroimaging.io/blog/category/release.html).
 
-### Starting a BEP 
+### Starting a BEP
 
-Follow the steps below this handy chart to start your BEP and move it to `Draft BEP` status.  
+Follow the steps below this handy chart to start your BEP and move it to `Draft BEP` status.
 
 <!-- old version
 ```mermaid
