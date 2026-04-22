@@ -74,13 +74,18 @@ BEP_issue_exist -- yes --> Join_discussion
 
 ### Overview of the BEP process
 
-Once a BEP has been opened (see the next [section](#starting-your-bep)),
-it goes from `Draft BEP` to `Proposed BEP` to `Merged BEP`.
+This section gives an overview of the lifecycle of a new BEP creation towards to BIDS community approval and merge. 
+For the typical steps involved in each phase, see [Starting your BEP](#starting-your-bep)).
 
-A `Draft BEP` is usually a Google document (see [governance](../collaboration/governance.md#draft-bep)),
-where as `Proposed BEP` refers to pull request to BIDS specification repository
-(see [governance](../collaboration/governance.md#proposed-bep)).
+#### BEP Phases
 
+A successful BEP moves through the lifecycle from `Draft BEP` to `Proposed BEP` to `Merged BEP`. Between each phase, BEP leaders bring the BEP to the BIDS Maintainers for guidance and review.
+
+In a nutshell, a typical `Draft BEP` is in the format of Google document and is actively undergoing development and/or community review.  (see [governance](../collaboration/governance.md#draft-bep)),
+In contrast, a `Proposed BEP` refers to pull request to BIDS specification repository
+(see [governance](../collaboration/governance.md#proposed-bep)), after a general level of community consensus has been achieved (via the Googledoc).
+
+<!--- hoping this comments out Remi's old version -CR
 ```mermaid
 flowchart TD
 
@@ -90,8 +95,24 @@ merged_bep[Merged BEP]
 
 draft_bep --> proposed_bep --> merged_bep
 ```
+end comment -->
 
-The transitions between those stages is decided by a review process.
+```mermaid
+flowchart TD
+
+bep_idea[BEP Idea]
+draft_bep[Draft BEP]
+proposed_bep[Proposed BEP]
+merged_bep[Merged BEP]
+
+bep_ideal --> draft_bep --> proposed_bep --> merged_bep
+```
+
+#### BEP Review Process between Phases
+
+A BEP transitions from one phase to another by passing a review process with the BIDS Maintainers. BEP contributors are welcome to join BIDS Maintainer meetings to schedule or discuss their BEP review status. 
+A BIDS Maintainer will actively guide each BEP team from the point of initial BEP idea review through the process outlined here, to provide feedback and guidance. Review discussions are typically followed with specific feedback on the relevant document (GitHub PR or Googledoc), or by email if preferred by the BEP leads.
+Please note the [community consultation requirements](link here) at each phase.  BEP leads are encouraged to connect with the BIDS maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community. 
 
 ```mermaid
 flowchart TD
@@ -110,8 +131,8 @@ proposed_bep_review -- negative evaluation --> proposed_bep
 proposed_bep_review -- positive evaluation --> merged_bep
 ```
 
-It may also be decided to close a BEP that is not actually necessary anymore
-or is in fact beyond the scope of BIDS.
+#### Closing a BEP 
+In consultation with the BEP leads, it is possible but rare that the BIDS Maintainers and/or Steering may determine that a draft BEP can be addressed under the scope of another BIDS Extension, or is beyond the scope of BIDS.
 
 ```mermaid
 flowchart TD
@@ -185,8 +206,11 @@ In rare cases, it may be necessary to update:
 1.  Preprint of the new extension (if applicable).
 1.  Press release for the BIDS website [news section](https://bids.neuroimaging.io/blog/category/release.html).
 
-### Starting your BEP
+### Starting a BEP 
 
+Follow the steps below this handy chart to start your BEP and move it to `Draft BEP` status.  
+
+<!-- old version
 ```mermaid
 flowchart TD
 
@@ -201,13 +225,30 @@ Post_mailing_list --> BEP_draft
 BEP_draft --> Meet_the_team
 Meet_the_team -- approval --> Official_BEP
 ```
+-->
 
-To start a new BEP working group, the BIDS governance mentions that you need
+```mermaid
+flowchart TD
+
+Open_BEP_issue["Open an issue to gather interest"]
+Post_mailing_list["Advertise the issue in the mailing list"]
+BEP_draft["Start a draft for your BEP"]
+Meet_the_team["Meet with the BIDS maintainers / steering group"]
+Official_BEP["Get a number for your BEP"]
+
+Open_BEP_issue --> Post_mailing_list
+Post_mailing_list --> BEP_draft
+BEP_draft --> Meet_the_team
+Meet_the_team -- approval : `BEP Draft` status --> Official_BEP
+```
+
+
+To start a new BEP working group, the BIDS governance mentions that you need:
 
 > -   a statement of intent with defined scope, deliverables, and use cases
 > -   a statement of intent accepted by the BIDS Steering Group
 
-More details on how to proceed are described below.
+#### How to Open a BEP
 
 1.  Open an initial "issue" on
     [the bids specification repository][specification_gh] issues page.
@@ -369,13 +410,15 @@ Criteria:
 
 -   BIDS Steering Group final approval.
 
-The Steering Group evaluates:
+The Steering Group evaluates, with inputs from BEP leads and the BIDS Maintainers:
 
 -   Sufficiency of community feedback for the scope of the extension.
 -   Validator updated to include the Proposed BEP specification.
 -   Final review of the integration into the BIDS standard.
 
 The BEP lead(s) will work with the BIDS maintainers to coordinate the community review period.
+If community consensus can't be reached through Googledoc/GitHub discussion or working group calls, the BEP leads can request the BIDS Maintainers to facilitate in consultation with BIDS Steering.
+
 The community review period is scheduled _after_ the pull request has been opened.
 
 1.  When the branch is ready to be merged, open a pull request against the
