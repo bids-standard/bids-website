@@ -233,6 +233,10 @@ markdown_extensions:
   - attr_list
   - footnotes
   - md_in_html
+  - pymdownx.highlight:
+      use_pygments: false
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
