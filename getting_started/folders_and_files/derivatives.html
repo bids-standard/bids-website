@@ -4614,8 +4614,7 @@ such that the data type is unchanged or changed, respectively, from that of the 
 <li><code>GeneratedBy</code>, identifies the activity (one or more) responsible for the creation of the dataset.</li>
 <li><code>SourceDatasets</code>, a list of datasets used to generate the derivative.</li>
 </ul>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "Name": "FMRIPREP Outputs",
     "BIDSVersion": "1.4.0",
     "DatasetType": "derivative",
@@ -4627,14 +4626,13 @@ such that the data type is unchanged or changed, respectively, from that of the 
             "Version": "1.0.1"
         }
     ]
-}</code></p>
+}</code></pre>
 <h3 id="preprocessed-data"><a class="toclink" href="#preprocessed-data">Preprocessed data</a><a class="headerlink" href="#preprocessed-data" title="Permanent link">&para;</a></h3>
 <p>Data is considered to be <em>preprocessed</em> if it is fundamentally similar to the source data.
 Artifact removal, motion correction and resampling to a template space are examples of preprocessing.</p>
 <p>An example of a subject with simultaneous <abbr title="Electroencephalography">EEG</abbr>/fMRI resting state scan,
 aligned along with a T1w image to the MNI305 template:</p>
-<p><code>bash
-pipeline1/
+<pre class="highlight"><code class="language-bash">pipeline1/
   sub-01/
     anat/
       sub-01_space-MNI305_T1w.nii.gz
@@ -4644,7 +4642,7 @@ pipeline1/
       sub-01_task-rest_desc-filtered_eeg.json
     func/
       sub-01_task-rest_space-MNI305_desc-preproc_bold.nii.gz
-      sub-01_task-rest_space-MNI305_desc-preproc_bold.json</code></p>
+      sub-01_task-rest_space-MNI305_desc-preproc_bold.json</code></pre>
 <p>The <code>space</code> entity indicates that a file is aligned to some reference space.
 For standard templates, this is sufficient.
 For custom templates (for example: individual or study-specific),
@@ -4659,19 +4657,17 @@ that are of general use: masks and segmentations.</p>
 <p>Mask images are binary images with 1 representing the region of interest
 and all other voxels containing 0.
 The following example shows a manually constructed lesion mask:</p>
-<p><code>bash
-manual_masks/
+<pre class="highlight"><code class="language-bash">manual_masks/
   sub-01/
     anat/
       sub-01_desc-lesion_mask.nii.gz
-      sub-01_desc-lesion_mask.json</code></p>
+      sub-01_desc-lesion_mask.json</code></pre>
 <p>A mask of the functionally-defined area fusiform face area could be encoded:</p>
-<p><code>bash
-localizer/
+<pre class="highlight"><code class="language-bash">localizer/
   sub-01/
     func/
       sub-01_task-loc_space-individual_label-FFA_mask.nii.gz
-      sub-01_task-loc_space-individual_label-FFA_mask.json</code></p>
+      sub-01_task-loc_space-individual_label-FFA_mask.json</code></pre>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives introduces "discrete segmentations" and "probabilistic segmentations".</p>
 <p>A <em>segmentation</em> is a labeling of regions of an image such that each location
 (for example, a voxel or a surface vertex) is identified with a label or a combination of labels.
@@ -4685,14 +4681,13 @@ may be concatenated in a single file.</p>
 <p>A <abbr title="Brain Imaging Data Structure">BIDS</abbr> App that calculates ROIs in BOLD space from the automated anatomical
 labeling (AAL, doi:[10.1006/nimg.2001.0978]) could store discrete
 and probabilistic (or partial volume) segmentations as follows:</p>
-<p><code>bash
-tissue_segmentation/
+<pre class="highlight"><code class="language-bash">tissue_segmentation/
   desc-AAL_dseg.tsv
   desc-AAL_probseg.json
   sub-01/
     func/
       sub-01_task-rest_desc-AAL_dseg.nii.gz
-      sub-01_task-rest_desc-AAL_probseg.nii.gz</code></p>
+      sub-01_task-rest_desc-AAL_probseg.nii.gz</code></pre>
 <p>The <code>dseg.tsv</code> file is a lookup table for interpreting a discrete segmentation
 and <code>probseg.json</code> contains a list identifying the labels for each consecutive volume.</p>
 <h3 id="unspecified-data-types"><a class="toclink" href="#unspecified-data-types">Unspecified data types</a><a class="headerlink" href="#unspecified-data-types" title="Permanent link">&para;</a></h3>
@@ -4712,8 +4707,7 @@ Therefore, if a <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset c
 the contents of that directory may be a heterogeneous mix of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives datasets
 and non-compliant derivatives.</p>
 <p>One example of such a non-compliant derivative dataset would be FreeSurfer reconstructions of subject surfaces:</p>
-<p><code>bash
-bids-root/
+<pre class="highlight"><code class="language-bash">bids-root/
   derivatives/
     freesurfer/
       sub-01/
@@ -4724,7 +4718,7 @@ bids-root/
   sub-01/
     anat/
       sub-01_T1w.nii.gz
-  ...</code></p>
+  ...</code></pre>
 <p>Note that subject directory names conform to <abbr title="Brain Imaging Data Structure">BIDS</abbr> conventions,
 but contents are determined by the generating application, in this case, FreeSurfer.</p>
 <h3 id="organizing-datasets-and-their-derivatives"><a class="toclink" href="#organizing-datasets-and-their-derivatives">Organizing datasets and their derivatives</a><a class="headerlink" href="#organizing-datasets-and-their-derivatives" title="Permanent link">&para;</a></h3>
@@ -4743,8 +4737,7 @@ by itself as it would require explicit exclusion of datasets within its <code>de
 <h4 id="2-bids-derivative-with-sourcedataraw"><a class="toclink" href="#2-bids-derivative-with-sourcedataraw">2. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative with sourcedata/raw</a><a class="headerlink" href="#2-bids-derivative-with-sourcedataraw" title="Permanent link">&para;</a></h4>
 <p>A <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative dataset may contain references to its input datasets
 (could be <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw, non-<abbr title="Brain Imaging Data Structure">BIDS</abbr> or even other <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivatives) in the <code>sourcedata/</code> subdirectory:</p>
-<p><code>bash
-my_analysis/
+<pre class="highlight"><code class="language-bash">my_analysis/
   sourcedata/
     raw/
       sub-01/
@@ -4753,7 +4746,7 @@ my_analysis/
     preprocessed/
   sub-01/
   ...
-  dataset_description.json</code></p>
+  dataset_description.json</code></pre>
 <p>Note that the <code>sourcedata/</code> and <code>derivatives/</code> subdirectories constitute dataset boundaries.
 Any subfolders of these directories may be validated independently, if they are <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets
 which would be indicated by presence of <code>dataset_description.json</code> file(s) in them with a
@@ -4765,15 +4758,14 @@ is that packaging them for independent sharing or publication can become more co
 <h4 id="3-bids-study-with-sourcedataraw-and-derivatives"><a class="toclink" href="#3-bids-study-with-sourcedataraw-and-derivatives">3. <abbr title="Brain Imaging Data Structure">BIDS</abbr> Study with sourcedata/raw and derivatives/</a><a class="headerlink" href="#3-bids-study-with-sourcedataraw-and-derivatives" title="Permanent link">&para;</a></h4>
 <p>It is also possible to completely avoid nesting of <abbr title="Brain Imaging Data Structure">BIDS</abbr> Raw datasets into <abbr title="Brain Imaging Data Structure">BIDS</abbr> Derivative datasets (or vice versa),
 by simply placing them in separate folders, namely <code>sourcedata/</code> and <code>derivatives/</code> at root level:</p>
-<p><code>bash
-my_study/
+<pre class="highlight"><code class="language-bash">my_study/
   sourcedata/
     raw/
       sub-01/
       ...
   derivatives/
     preprocessed/
-    analysis/</code></p>
+    analysis/</code></pre>
 <!-- TODO derivatives JSON -->
 
 <!-- tool tips  -->

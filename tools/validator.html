@@ -4697,9 +4697,9 @@ but there are some non-critical problems
 <p>After <a href="https://bids-validator.readthedocs.io/en/latest/user_guide/command-line.html#using-the-command-line">installation with deno</a>
 using the CLI is relatively simple.
 Locate a bids data set similar to the one below:</p>
-<p>```bash
-user@host:~/bids-examples$ tree pet001</p>
-<p>sub001/
+<pre class="highlight"><code class="language-bash">user@host:~/bids-examples$ tree pet001
+
+sub001/
 ├── dataset_description.json
 ├── participants.json
 ├── participants.tsv
@@ -4715,22 +4715,18 @@ user@host:~/bids-examples$ tree pet001</p>
             ├── sub-01_ses-01_trc-CIMBI36_recording-autosampler_blood.json
             ├── sub-01_ses-01_trc-CIMBI36_recording-autosampler_blood.tsv
             ├── sub-01_ses-01_trc-CIMBI36_recording-manual_blood.json
-            └── sub-01_ses-01_trc-CIMBI36_recording-manual_blood.tsv
-```</p>
+            └── sub-01_ses-01_trc-CIMBI36_recording-manual_blood.tsv</code></pre>
 <p>Now simply point the bids validator at the folder path of the subject(s) in question:</p>
-<p><code>bash
-user@host:~/bids-examples$ bids-validator pet001</code></p>
+<pre class="highlight"><code class="language-bash">user@host:~/bids-examples$ bids-validator pet001</code></pre>
 <h3 id="types-of-feedback_1"><a class="toclink" href="#types-of-feedback_1">Types of Feedback</a><a class="headerlink" href="#types-of-feedback_1" title="Permanent link">&para;</a></h3>
 <div class="admonition failure">
 <p class="admonition-title">Error</p>
 <p>As is the case with the browser or any version of the validator follow
 the <code>[ERROR]</code> messages and correct until bids-validator returns 0 errors after running.</p>
-<p>```bash
-[ERROR] NIFTI_HEADER_UNREADABLE We were unable to parse header data from this NIfTI file. Please ensure it is not corrupted or mislabeled.
-            /sub-01/ses-01/anat/sub-01_ses-01_T1w.nii</p>
-<pre><code>Please visit https://neurostars.org/search?q=NIFTI_HEADER_UNREADABLE for existing conversations about this issue.
-</code></pre>
-<p>```</p>
+<pre class="highlight"><code class="language-bash">[ERROR] NIFTI_HEADER_UNREADABLE We were unable to parse header data from this NIfTI file. Please ensure it is not corrupted or mislabeled.
+            /sub-01/ses-01/anat/sub-01_ses-01_T1w.nii
+
+    Please visit https://neurostars.org/search?q=NIFTI_HEADER_UNREADABLE for existing conversations about this issue.</code></pre>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -4738,32 +4734,28 @@ the <code>[ERROR]</code> messages and correct until bids-validator returns 0 err
 but the information provided via the validator should help to pinpoint
 where and how to resolve some of these warnings.
 When in doubt consult the <a href="https://bids-specification.readthedocs.io"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a></p>
-<p>```bash
-[WARNING] JSON_KEY_RECOMMENDED A <abbr title="JavaScript Object Notation">JSON</abbr> file is missing a key listed as recommended.
+<pre class="highlight"><code class="language-bash">[WARNING] JSON_KEY_RECOMMENDED A JSON file is missing a key listed as recommended.
             DatasetType
-            /dataset_description.json</p>
-<pre><code>        GeneratedBy
-        /dataset_description.json
+            /dataset_description.json
 
-        SourceDatasets
-        /dataset_description.json
+            GeneratedBy
+            /dataset_description.json
 
-Please visit https://neurostars.org/search?q=JSON_KEY_RECOMMENDED for existing conversations about this issue.
-</code></pre>
-<p>```</p>
+            SourceDatasets
+            /dataset_description.json
+
+    Please visit https://neurostars.org/search?q=JSON_KEY_RECOMMENDED for existing conversations about this issue.</code></pre>
 </div>
 <div class="admonition success">
 <p class="admonition-title">Success <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /></p>
 <p>Pass go and collect 200 dollars, the data set in question passes validation.</p>
-<p>```bash
-user@host:~/bids-examples$ bids-validator sub001</p>
-<pre><code>  Summary:                         Available Tasks:        Available Modalities:
-  12 Files, 224 kB                                         PET
-  1 - Subjects 1 - Sessions                                MRI
+<pre class="highlight"><code class="language-bash">user@host:~/bids-examples$ bids-validator sub001
 
-If you have any questions, please post on https://neurostars.org/tags/bids.
-</code></pre>
-<p>```</p>
+      Summary:                         Available Tasks:        Available Modalities:
+      12 Files, 224 kB                                         PET
+      1 - Subjects 1 - Sessions                                MRI
+
+    If you have any questions, please post on https://neurostars.org/tags/bids.</code></pre>
 </div>
 <!-- tool tips  -->
 

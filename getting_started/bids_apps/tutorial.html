@@ -4557,12 +4557,11 @@ and untar it in a directory.</p>
 Create an <code>outputs</code> directory as well.
 To run the first stage of the example <abbr title="Brain Imaging Data Structure">BIDS</abbr> App for participant number 01,
 open a console (terminal or cmd) and type:</p>
-<p><code>bash
-docker run -ti --rm \
+<pre class="highlight"><code class="language-bash">docker run -ti --rm \
     -v /Users/srycajal/data/ds005:/bids_dataset:ro \
     -v /Users/srycajal/outputs:/outputs \
     bids/example:0.0.4 \
-    /bids_dataset /outputs participant --participant_label 01</code></p>
+    /bids_dataset /outputs participant --participant_label 01</code></pre>
 <p>This command runs docker with some flags and then binds the input directory on our local machine,
 for example, <code>/Users/srycajal/data/ds005</code>,
 to a preset directory inside of the docker container (<code>/bids_dataset</code>).</p>
@@ -4581,11 +4580,9 @@ the docker image will be automatically downloaded from Docker Hub.</p>
 <h2 id="running-a-bids-app-on-a-cluster-hpc"><a class="toclink" href="#running-a-bids-app-on-a-cluster-hpc">Running a <abbr title="Brain Imaging Data Structure">BIDS</abbr> App on a cluster (HPC)</a><a class="headerlink" href="#running-a-bids-app-on-a-cluster-hpc" title="Permanent link">&para;</a></h2>
 <p>HPC clusters typically require Apptainer/Singularity rather than Docker.
 Apptainer (and later versions of Singularity) directly support <a href="https://apptainer.org/docs/user/latest/docker_and_oci.html">Docker/OCI images</a>.</p>
-<p><code>bash
-apptainer build bids-example-0.0.7.sif docker://bids/example:0.0.7</code></p>
+<pre class="highlight"><code class="language-bash">apptainer build bids-example-0.0.7.sif docker://bids/example:0.0.7</code></pre>
 <p>After transferring the .img file to a cluster it can be run like any other executable:</p>
-<p><code>bash
-./bids_example-0.0.7.img /bids_dataset /outputs participant --participant_label 01</code></p>
+<pre class="highlight"><code class="language-bash">./bids_example-0.0.7.img /bids_dataset /outputs participant --participant_label 01</code></pre>
 <h2 id="helpful-links"><a class="toclink" href="#helpful-links">Helpful links</a><a class="headerlink" href="#helpful-links" title="Permanent link">&para;</a></h2>
 <p>To learn more containers:</p>
 <ul>

@@ -1604,6 +1604,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#validating-your-converted-pet-bids-data-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validating your converted PET BIDS data set
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validating your converted PET BIDS data set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing the validator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validating-your-new-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validating your new dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-resources-for-pet-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools and resources for PET conversion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final thoughts
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4579,6 +4640,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#validating-your-converted-pet-bids-data-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validating your converted PET BIDS data set
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validating your converted PET BIDS data set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing the validator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validating-your-new-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validating your new dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-resources-for-pet-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools and resources for PET conversion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final thoughts
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4624,19 +4746,16 @@ from different scanner types and is distributing two examples
 <a href="https://drive.google.com/file/d/1O1hDmJwR1xm6LemIbhPrLf9YkSYHC6Mq/view?usp=sharing">here</a>.</p>
 <p>You can download them for testing purposes either manually
 or in the terminal by typing:</p>
-<p><code>bash
-gdown https://drive.google.com/file/d/1O1hDmJwR1xm6LemIbhPrLf9YkSYHC6Mq/view?usp=sharing --fuzzy</code></p>
+<pre class="highlight"><code class="language-bash">gdown https://drive.google.com/file/d/1O1hDmJwR1xm6LemIbhPrLf9YkSYHC6Mq/view?usp=sharing --fuzzy</code></pre>
 <p>You may need to install the python package <a href="https://github.com/wkentaro/gdown"><code>gdown</code></a>
 for this to work:</p>
-<p><code>bash
-pip install gdown</code></p>
+<pre class="highlight"><code class="language-bash">pip install gdown</code></pre>
 <p>And then unzipping the downloaded file:</p>
-<p><code>bash
-unzip OpenNeuroPET-Demo_raw.zip</code></p>
+<pre class="highlight"><code class="language-bash">unzip OpenNeuroPET-Demo_raw.zip</code></pre>
 <p>You can now look at the file tree:</p>
-<p>```bash
-tree OpenNeuroPET-Demo_raw.</p>
-<p>OpenNeuroPET-Demo_raw
+<pre class="highlight"><code class="language-bash">tree OpenNeuroPET-Demo_raw.
+
+OpenNeuroPET-Demo_raw
 │   .bidsignore
 │   dataset_description.json
 │   README
@@ -4668,8 +4787,7 @@ tree OpenNeuroPET-Demo_raw.</p>
 └───sub-SiemensHRRT
     └───pet
             sub-SiemensHRRT_pet.json
-            sub-SiemensHRRT_pet.nii.gz
-```</p>
+            sub-SiemensHRRT_pet.nii.gz</code></pre>
 <p>Now you have an example dataset where you have source data
 (both for ECAT and DICOM <abbr title="Positron Imaging Tomography">PET</abbr> image format)
 and the <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> data sets constructed for it.</p>
@@ -4705,12 +4823,10 @@ In any case, for DICOM data format, one relies on
 <p>Download <a href="https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage">dcm2niix</a>,
 and for Mac and Linux users you can add it to your path,
 for instance it would could downloaded and unzipped into <code>/bin</code>.</p>
-<p><code>bash
-export PATH="/home/$USER/bin:$PATH"</code></p>
+<pre class="highlight"><code class="language-bash">export PATH="/home/$USER/bin:$PATH"</code></pre>
 <h4 id="for-python"><a class="toclink" href="#for-python">For Python</a><a class="headerlink" href="#for-python" title="Permanent link">&para;</a></h4>
 <p>Open your terminal, either regular or anaconda terminal and type.</p>
-<p><code>bash
-pip install pypet2bids</code></p>
+<pre class="highlight"><code class="language-bash">pip install pypet2bids</code></pre>
 <p>Now you already have the converter installed and can go ahead
 and convert your first dataset!</p>
 <p>In this example, we are converting an image in DICOM format.
@@ -4722,8 +4838,7 @@ the specific tool we will be using for the following DICOM conversion is <code>d
 <li>the folder where your data resides, <code>dcmfolder</code>, and</li>
 <li>the folder where you want to output the <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> formatted dataset, <code>mynewfolder</code>.</li>
 </ul>
-<p><code>bash
-dcm2niix4pet dcmfolder -d mynewfolder</code></p>
+<pre class="highlight"><code class="language-bash">dcm2niix4pet dcmfolder -d mynewfolder</code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code>dcm2niix4pet</code> will do its best to extract as much information
@@ -4735,8 +4850,7 @@ to provide some missing information at the time of conversion.</p>
 <p>Additional information can be provided via the command line
 with the <code>--kwargs</code> argument in the form of key=pair values.
 For an idea of what this looks like see below:</p>
-<p><code>bash
-dcm2niix4pet /OpenNeuroPET-Demo_raw/source/SiemensBiographPETMR-NRU \
+<pre class="highlight"><code class="language-bash">dcm2niix4pet /OpenNeuroPET-Demo_raw/source/SiemensBiographPETMR-NRU \
             -d mynewfolder \
             --kwargs    TimeZero=ScanStart \
                         Manufacturer=Siemens \
@@ -4755,7 +4869,7 @@ dcm2niix4pet /OpenNeuroPET-Demo_raw/source/SiemensBiographPETMR-NRU \
                         ImageDecayCorrectionTime=0 \
                         AttenuationCorrection=MR-corrected \
                         FrameDuration=300 \
-                        FrameTimesStart=0</code></p>
+                        FrameTimesStart=0</code></pre>
 <p>Now you have a dataset in <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> format.
 You will probably have gotten some warnings relating to the <code>.json</code> sidecar file.
 Carefully look at them, since they will help you to catch inconsistencies
@@ -4788,8 +4902,7 @@ You can find templates of such parameter file under
 one creates a structure containing all the meta information (here passing on all arguments)
 and then point the function to the folder where your data resides <code>dcmfolder</code>
 and the folder where you want to output the <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> formatted dataset <code>mynewfolder</code>:</p>
-<p>```matlab
-meta = get_pet_metadata('Scanner', 'SiemensBiograph', ...
+<pre class="highlight"><code class="language-matlab">meta = get_pet_metadata('Scanner', 'SiemensBiograph', ...
                         'TimeZero', 'ScanStart', ...
                         'TracerName', 'CB36', ...
                         'TracerRadionuclide', 'C11', ...
@@ -4807,16 +4920,15 @@ meta = get_pet_metadata('Scanner', 'SiemensBiograph', ...
                         'ReconMethodParameterValues', [21 3], ...
                         'ReconFilterType', 'XYZGAUSSIAN', ...
                         'ReconFilterSize', 2, ...
-                        'AttenuationCorrection', 'CT-based attenuation correction');</p>
-<p>dcm2niix4pet(dcmfolder, meta, 'o', mynewfolder);
-```</p>
+                        'AttenuationCorrection', 'CT-based attenuation correction');
+
+dcm2niix4pet(dcmfolder, meta, 'o', mynewfolder);</code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code>get_pet_metadata</code> can be called in a much simpler way
 if you have a <code>\*parameters.txt</code> seating on disk next to this function.
 The call would then looks like:</p>
-<p>```matlab
-% your SiemensBiographparameters.txt file is stored next to get_pet_metadata.m
+<pre class="highlight"><code class="language-matlab">% your SiemensBiographparameters.txt file is stored next to get_pet_metadata.m
 meta = get_pet_metadata('Scanner', 'SiemensBiograph', ...
                         'TimeZero', 'ScanStart', ...
                         'TracerName', 'CB36', ...
@@ -4824,9 +4936,9 @@ meta = get_pet_metadata('Scanner', 'SiemensBiograph', ...
                         'ModeOfAdministration', 'infusion', ...
                         'SpecificRadioactivity', 605.3220, ...
                         'InjectedMass', 1.5934, ...
-                        'MolarActivity', 107.66);</p>
-<p>dcm2niix4pet(dcmfolder, meta, 'o', mynewfolder);
-```</p>
+                        'MolarActivity', 107.66);
+
+dcm2niix4pet(dcmfolder, meta, 'o', mynewfolder);</code></pre>
 </div>
 <p>Now you have a dataset in <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> format.
 You will probably have gotten some warnings relating to the <code>.json</code> sidecar file.
@@ -4841,8 +4953,7 @@ In the following manual data conversion is shown for an ECAT (.v)
 as well as a DICOM (.dcm) <abbr title="Positron Imaging Tomography">PET</abbr> image dataset.</p>
 <h4 id="pet-image-data-in-ecat-format"><a class="toclink" href="#pet-image-data-in-ecat-format"><abbr title="Positron Imaging Tomography">PET</abbr> image data in ECAT format</a><a class="headerlink" href="#pet-image-data-in-ecat-format" title="Permanent link">&para;</a></h4>
 <p>Here is the structure of our starting dataset:</p>
-<p>```bash
-OldNotBidsPETDataSet/
+<pre class="highlight"><code class="language-bash">OldNotBidsPETDataSet/
 ├── MR_image
 │   ├── 24310.cropped.hdr
 │   ├── 24310.cropped.img
@@ -4852,9 +4963,9 @@ OldNotBidsPETDataSet/
 │   └── sub01_8_anon.v
 └── test_scan_sub01
     ├── sub01_7_PLASMA.txt
-    └── sub01_7_anon.v</p>
-<p>3 directories, 7 files
-```</p>
+    └── sub01_7_anon.v
+
+3 directories, 7 files</code></pre>
 <p>By the end of this document our starting dataset will be fully <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant
 and similar to the dataset seen
 <a href="https://github.com/bids-standard/bids-examples/tree/master/pet001">here</a>.</p>
@@ -4866,16 +4977,14 @@ that can be a great starting place to help get set up for the conversion process
 and easily collected via this
 <a href="https://github.com/bids-standard/bids-starter-kit/archive/refs/heads/main.zip">link</a>
 or be cloned and extracted via git at the command line via:</p>
-<p><code>bash
-git clone git@github.com:bids-standard/bids-starter-kit.git</code></p>
+<pre class="highlight"><code class="language-bash">git clone git@github.com:bids-standard/bids-starter-kit.git</code></pre>
 <p>The <a href="https://github.com/bids-standard/bids-starter-kit/tree/main/templates/sub-01/ses-01/pet"><code>templates/</code></a>
 folder in <code>bids-starter-kit/</code> contains a single subject
 and examples of every <abbr title="Brain Imaging Data Structure">BIDS</abbr> modality text and <code>.json</code> file for that subject.
 Additionally, there exists a <code>Short</code> and a <code>Full</code> example for each text/json file.
 The <code>Short</code> files contain only the required <abbr title="Brain Imaging Data Structure">BIDS</abbr> fields for each modality
 and the <code>Full</code> example files contain <em>every</em> field included within the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.</p>
-<p>```bash
-templates/
+<pre class="highlight"><code class="language-bash">templates/
 ├── README
 ├── dataset_description.json
 ├── participants.json
@@ -4920,24 +5029,20 @@ templates/
             ├── sub-01_ses-01_recording-ManualShortExample_blood.json
             ├── sub-01_ses-01_recording-ManualShortExample_blood.tsv
             ├── sub-01_ses-01_task-FullExample_pet.json
-            └── sub-01_ses-01_task-ShortExample_pet.json</p>
-<p>10 directories, 35 files
-machine:bids-starter-kit user$
-```</p>
+            └── sub-01_ses-01_task-ShortExample_pet.json
+
+10 directories, 35 files
+machine:bids-starter-kit user$</code></pre>
 <p>For the purposes of this exercise we will only be focusing on obtaining the minimum required fields,
 thus we collect and copy the following to our own <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder.</p>
-<p>```bash</p>
-<h1 id="create-the-new-bids-folder"><a class="toclink" href="#create-the-new-bids-folder">create the new <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder</a><a class="headerlink" href="#create-the-new-bids-folder" title="Permanent link">&para;</a></h1>
-<p>mkdir -p /NewBidsDataSet/sub-01/ses-01/pet
-cp -r /path/to/bids-starter-kit/templates/sub-01/ses-01/pet/* /NewBidsDataSet/sub-01/pet/
-```</p>
+<pre class="highlight"><code class="language-bash"># create the new BIDS folder
+mkdir -p /NewBidsDataSet/sub-01/ses-01/pet
+cp -r /path/to/bids-starter-kit/templates/sub-01/ses-01/pet/* /NewBidsDataSet/sub-01/pet/</code></pre>
 <p>Oops, we forgot to include our dataset specific files.
 Let's make it easy on ourselves and include the templates for those too.</p>
-<p><code>bash
-cp /path/to/bids-starter-kit/templates/* /NewBidsDataSet/</code></p>
+<pre class="highlight"><code class="language-bash">cp /path/to/bids-starter-kit/templates/* /NewBidsDataSet/</code></pre>
 <p>Our skeleton of a data set should now look like this:</p>
-<p>```bash
-machine: Projects user$ tree NewBidsDataSet/
+<pre class="highlight"><code class="language-bash">machine: Projects user$ tree NewBidsDataSet/
 NewBidsDataSet/
 ├── README
 ├── dataset_description.json
@@ -4953,13 +5058,12 @@ NewBidsDataSet/
             ├── sub-01_ses-01_recording-ManualShortExample_blood.json
             ├── sub-01_ses-01_recording-ManualShortExample_blood.tsv
             ├── sub-01_ses-01_task-FullExample_pet.json
-            └── sub-01_ses-01_task-ShortExample_pet.json</p>
-<p>3 directories, 12 files
-machine:Projects user$
-```</p>
+            └── sub-01_ses-01_task-ShortExample_pet.json
+
+3 directories, 12 files
+machine:Projects user$</code></pre>
 <p>Now let's do the bare minimum and focus only on the short files:</p>
-<p>```bash
-machine:Projects user$ rm -rf NewBidsDataSet/sub-01/ses-01/pet/<em>Full</em>
+<pre class="highlight"><code class="language-bash">machine:Projects user$ rm -rf NewBidsDataSet/sub-01/ses-01/pet/*Full*
 machine:Projects user$ tree NewBidsDataSet
 NewBidsDataSet/
 ├── README
@@ -4973,10 +5077,10 @@ NewBidsDataSet/
             ├── sub-01_ses-01_recording-AutosamplerShortExample_blood.tsv
             ├── sub-01_ses-01_recording-ManualShortExample_blood.json
             ├── sub-01_ses-01_recording-ManualShortExample_blood.tsv
-            └── sub-01_ses-01_task-ShortExample_pet.json</p>
-<p>3 directories, 9 files
-machine:Projects user$
-```</p>
+            └── sub-01_ses-01_task-ShortExample_pet.json
+
+3 directories, 9 files
+machine:Projects user$</code></pre>
 <p>That certainly looks less daunting, now let's change the filenames of the templates
 so that they make more sense for our data set (by removing <code>ShortExample</code> from each filename).</p>
 <div class="admonition note">
@@ -4988,17 +5092,15 @@ If there's a single pet scan you may omit the additional folder
 and corresponding label(s) from the filename.
 For more information on labeling see <a href="https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/09-positron-emission-tomography.html#pet-recording-data">this link</a>.</p>
 </div>
-<p>```bash</p>
-<h1 id="for-those-of-you-in-bash-land"><a class="toclink" href="#for-those-of-you-in-bash-land">for those of you in bash land</a><a class="headerlink" href="#for-those-of-you-in-bash-land" title="Permanent link">&para;</a></h1>
-<p>machine:Projects user$ cd NewBidsDataSet/sub-01/ses-01/pet
-machine:pet user$ for i in <em>ShortExample</em>; do mv "$i" "<code>echo $i | sed 's/ShortExample//'</code>"; done</p>
-<h1 id="since-we-dont-know-if-there-are-multiple-pet-image-files"><a class="toclink" href="#since-we-dont-know-if-there-are-multiple-pet-image-files">Since we "don't" know if there are multiple <abbr title="Positron Imaging Tomography">PET</abbr> image files</a><a class="headerlink" href="#since-we-dont-know-if-there-are-multiple-pet-image-files" title="Permanent link">&para;</a></h1>
-<h1 id="we-will-omit-the-task-label-for-our-pet-json-file-for-now"><a class="toclink" href="#we-will-omit-the-task-label-for-our-pet-json-file-for-now">we will omit the task label for our <abbr title="Positron Imaging Tomography">PET</abbr> .json file for now.</a><a class="headerlink" href="#we-will-omit-the-task-label-for-our-pet-json-file-for-now" title="Permanent link">&para;</a></h1>
-<p>machine:pet user$ mv sub-01_ses-01_task-_pet.json sub-01-ses-01_pet.json
-```</p>
+<pre class="highlight"><code class="language-bash"># for those of you in bash land
+machine:Projects user$ cd NewBidsDataSet/sub-01/ses-01/pet
+machine:pet user$ for i in *ShortExample*; do mv "$i" "`echo $i | sed 's/ShortExample//'`"; done
+
+# Since we "don't" know if there are multiple PET image files
+# we will omit the task label for our PET .json file for now.
+machine:pet user$ mv sub-01_ses-01_task-_pet.json sub-01-ses-01_pet.json</code></pre>
 <p>After you've renamed your files your directory should look something like:</p>
-<p>```bash
-machine:Projects user$ tree NewBidsDataSet/
+<pre class="highlight"><code class="language-bash">machine:Projects user$ tree NewBidsDataSet/
 NewBidsDataSet/
 ├── README
 ├── dataset_description.json
@@ -5011,10 +5113,10 @@ NewBidsDataSet/
             ├── sub-01_ses-01_recording-Autosampler_blood.json
             ├── sub-01_ses-01_recording-Autosampler_blood.tsv
             ├── sub-01_ses-01_recording-Manual_blood.json
-            └── sub-01_ses-01_recording-Manual_blood.tsv</p>
-<p>3 directories, 9 files
-machine:Projects user$
-```</p>
+            └── sub-01_ses-01_recording-Manual_blood.tsv
+
+3 directories, 9 files
+machine:Projects user$</code></pre>
 <p>Ok great, but where do the imaging files go?
 And what format should they be in?
 And there's at least 2 <code>.v</code> pet files shouldn't there be multiple sessions?</p>
@@ -5042,29 +5144,33 @@ or a VM if you want to continue following along.</p>
 </li>
 </ol>
 <p>If you're using bash/posix step 3 will resemble something like the following:</p>
-<p><code>bash
-machine:Downloads user$ unzip tpcclib-master.zip
-machine:Downloads user$ mv tpcclib-master /some/directory/you/are/fond/of/ # could be /usr/bin if you so choose</code></p>
+<pre class="highlight"><code class="language-bash">machine:Downloads user$ unzip tpcclib-master.zip
+machine:Downloads user$ mv tpcclib-master /some/directory/you/are/fond/of/ # could be /usr/bin if you so choose</code></pre>
 <p>Now you can choose to add <code>tpcclib</code> to your path or not, in bash land we do the following:</p>
-<p>```bash
-machine:Downloads user$ echo "export PATH=$PATH:/some/directory/you/are/fond/of/tpcclib-master" &gt;&gt; ~/.bashrc</p>
-<h1 id="reload-bash-shell-and-verify-that-library-is-available"><a class="toclink" href="#reload-bash-shell-and-verify-that-library-is-available">reload bash shell and verify that library is available</a><a class="headerlink" href="#reload-bash-shell-and-verify-that-library-is-available" title="Permanent link">&para;</a></h1>
-<p>machine:Downloads user$ source ~/.bashrc</p>
-<p>machine:Downloads user$ ecat2nii
-  ecat2nii - tpcclib 0.7.6 (c) 2020 by Turku <abbr title="Positron Imaging Tomography">PET</abbr> Center</p>
-<p>Converts <abbr title="Positron Imaging Tomography">PET</abbr> images from ECAT 6.3 or 7 to NIfTI-1 format.
-  Conversion can also be done using ImageConverter (.NET application).</p>
-<p>Image byte order is determined by the computer where the program is run.
+<pre class="highlight"><code class="language-bash">machine:Downloads user$ echo "export PATH=$PATH:/some/directory/you/are/fond/of/tpcclib-master" &gt;&gt; ~/.bashrc
+
+# reload bash shell and verify that library is available
+machine:Downloads user$ source ~/.bashrc
+
+machine:Downloads user$ ecat2nii
+  ecat2nii - tpcclib 0.7.6 (c) 2020 by Turku PET Center
+
+  Converts PET images from ECAT 6.3 or 7 to NIfTI-1 format.
+  Conversion can also be done using ImageConverter (.NET application).
+
+  Image byte order is determined by the computer where the program is run.
   NIfTI image format does not contain information on the frame times.
   Frame times can be retrieved from SIF file, which can be created optionally.
-  SIF can also be created later using other software.</p>
-<p>Usage: ecat2nii [Options] ecatfile(s)</p>
-<p>Options:
-   -O=<output path>
+  SIF can also be created later using other software.
+
+  Usage: ecat2nii [Options] ecatfile(s)
+
+  Options:
+   -O=&lt;output path&gt;
        Data directory for NIfTI files, if other than the current working path.
    -dual
        Save the image in dual file format (the header and voxel data in
-       separate files <em>.hdr and </em>.img); single file format (*.nii)
+       separate files *.hdr and *.img); single file format (*.nii)
        is the default.
    -sif
        SIF is saved with NIfTI; note that existing SIF will be overwritten.
@@ -5077,31 +5183,35 @@ machine:Downloads user$ echo "export PATH=$PATH:/some/directory/you/are/fond/of/
    -q, --quiet
        Suppress displaying normal results on standard output.
    -s, --silent
-       Suppress displaying anything except errors.</p>
-<p>Example:
-    ecat2nii *.v</p>
-<p>See also: nii2ecat, nii_lhdr, ecat2ana, eframe, img2flat</p>
-<p>Keywords: image, format conversion, ECAT, NIfTI</p>
-<p>This program comes with ABSOLUTELY NO WARRANTY.
+       Suppress displaying anything except errors.
+
+  Example:
+    ecat2nii *.v
+
+  See also: nii2ecat, nii_lhdr, ecat2ana, eframe, img2flat
+
+  Keywords: image, format conversion, ECAT, NIfTI
+
+  This program comes with ABSOLUTELY NO WARRANTY.
   This is free software, and you are welcome to redistribute it under
   GNU General Public License. Source codes are available in
-  https://gitlab.utu.fi/vesoik/tpcclib.git
-```</p>
+  https://gitlab.utu.fi/vesoik/tpcclib.git</code></pre>
 <p>Congrats, you've installed <code>ecat2nii</code>, you're one step closer to bidsifying your dataset</p>
 <p>Now, let's convert one of our <abbr title="Positron Imaging Tomography">PET</abbr> ECAT images
 and move it to its final destination with <code>ecat2nii</code> that we just installed.</p>
-<p>```bash</p>
-<h1 id="first-create-niftis-from-the-ecat-images"><a class="toclink" href="#first-create-niftis-from-the-ecat-images">first create nifti's from the ecat images</a><a class="headerlink" href="#first-create-niftis-from-the-ecat-images" title="Permanent link">&para;</a></h1>
-<p>machine:OldNotBidsPETDataSet user$ ecat2nii retest_scan_sub01/sub01_8_anon.v
+<pre class="highlight"><code class="language-bash"># first create nifti's from the ecat images
+machine:OldNotBidsPETDataSet user$ ecat2nii retest_scan_sub01/sub01_8_anon.v
 retest_scan_sub01/sub01_8_anon.v :
   processing retest_scan_sub01/sub01_8_anon.v
-  45 frame(s) processed.</p>
-<p>machine:OldNotBidsPETDataSet user$ ecat2nii test_scan_sub01/sub01_7_anon.v
+  45 frame(s) processed.
+
+machine:OldNotBidsPETDataSet user$ ecat2nii test_scan_sub01/sub01_7_anon.v
 test_scan_sub01/sub01_7_anon.v :
   processing test_scan_sub01/sub01_7_anon.v
-  45 frame(s) processed.</p>
-<h1 id="great-success-lets-see-what-we-got"><a class="toclink" href="#great-success-lets-see-what-we-got">great success! let's see what we got</a><a class="headerlink" href="#great-success-lets-see-what-we-got" title="Permanent link">&para;</a></h1>
-<p>machine:OldNotBidsPETDataSet user$ tree
+  45 frame(s) processed.
+
+# great success! let's see what we got
+machine:OldNotBidsPETDataSet user$ tree
 .
 ├── MR_image
 │   ├── 24310.cropped.hdr
@@ -5114,11 +5224,14 @@ test_scan_sub01/sub01_7_anon.v :
 ├── sub01_8_anon.nii
 └── test_scan_sub01
     ├── sub01_7_PLASMA.txt
-    └── sub01_7_anon.v</p>
-<p>3 directories, 9 files</p>
-<h1 id="not-where-we-want-those-niftis-so-lets-move-them"><a class="toclink" href="#not-where-we-want-those-niftis-so-lets-move-them">not where we want those nifti's so let's move them</a><a class="headerlink" href="#not-where-we-want-those-niftis-so-lets-move-them" title="Permanent link">&para;</a></h1>
-<p>machine:OldNotBidsPETDataSet user$ mv *.nii ../NewBidsDataSet/sub-01/</p>
-<p>machine:NewBidsDataSet user$ tree
+    └── sub01_7_anon.v
+
+3 directories, 9 files
+
+# not where we want those nifti's so let's move them
+machine:OldNotBidsPETDataSet user$ mv *.nii ../NewBidsDataSet/sub-01/
+
+machine:NewBidsDataSet user$ tree
 .
 ├── README
 ├── dataset_description.json
@@ -5133,9 +5246,9 @@ test_scan_sub01/sub01_7_anon.v :
             ├── sub-01_ses-01_recording-Autosampler_blood.json
             ├── sub-01_ses-01_recording-Autosampler_blood.tsv
             ├── sub-01_ses-01_recording-Manual_blood.json
-            ├── sub-01_ses-01_recording-Manual_blood.tsv</p>
-<p>3 directories, 11 files
-```</p>
+            ├── sub-01_ses-01_recording-Manual_blood.tsv
+
+3 directories, 11 files</code></pre>
 <p>Before we get too carried away, lets use populate our <code>*_pet.json</code> files
 with the relevant information from our ECAT and dataset.</p>
 <p>This writer used a python tool specifically created to parse ECAT's
@@ -5143,12 +5256,13 @@ for header and subheader info <a href="https://github.com/bendhouseart/ecatdump"
 All it does is use Python libraries Nibabel and Argparse
 to collect and spit out the header information from an ECAT file.</p>
 <p>You can use and install it via pip and use it on your command line like below:</p>
-<p>```bash
-pip install ecatdump</p>
-<h1 id="use-the-json-argument-to-extract-all-metadata-contained-in-the-ecat-including-subheaders"><a class="toclink" href="#use-the-json-argument-to-extract-all-metadata-contained-in-the-ecat-including-subheaders">use the --json argument to extract all metadata contained in the ecat including subheaders</a><a class="headerlink" href="#use-the-json-argument-to-extract-all-metadata-contained-in-the-ecat-including-subheaders" title="Permanent link">&para;</a></h1>
-<p>ecatdump  anon_sub01_8.v --json &gt; sub01_8_anon.headerdata</p>
-<h1 id="using-it-without-the-json-argument-will-produce-this-output"><a class="toclink" href="#using-it-without-the-json-argument-will-produce-this-output">using it without the --json argument will produce this output</a><a class="headerlink" href="#using-it-without-the-json-argument-will-produce-this-output" title="Permanent link">&para;</a></h1>
-<p>ecat dump anon_sub01_8.v
+<pre class="highlight"><code class="language-bash">pip install ecatdump
+
+# use the --json argument to extract all metadata contained in the ecat including subheaders
+ecatdump  anon_sub01_8.v --json &gt; sub01_8_anon.headerdata
+
+# using it without the --json argument will produce this output
+ecat dump anon_sub01_8.v
 magic_number: MATRIX72v
 original_filename: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 sw_version: 72
@@ -5208,8 +5322,7 @@ dosage: 0.0
 well_counter_corr_factor: 1.0
 data_units:
 septa_state: 1
-fill:
-```</p>
+fill:</code></pre>
 <p>Using nibabel directly also works great:</p>
 <!--
 machine:retest_scan_anon_sub01_8 user$ python3
@@ -5218,22 +5331,15 @@ Python 3.7.3 (default, Mar 27 2019, 09:23:15)
 Type "help", "copyright", "credits" or "license" for more information.
 -->
 
-<p>```python</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import nibabel
-ecat_file = nibabel.ecat.load('anon_sub01_8_43e5_1b831_de2_anon.v')
-print(ecat_file.get_header())
-<strong>main</strong>:1: DeprecationWarning: get_header method is deprecated.
-Please use the <code>img.header</code> property instead.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<ul>
-<li>deprecated from version: 2.1</li>
-<li>Will raise <class 'nibabel.deprecator.ExpiredDeprecationError'> as of version: 4.0
-<class 'nibabel.ecat.EcatHeader'> object, endian='&gt;'
+<pre class="highlight"><code class="language-python">&gt;&gt;&gt; import nibabel
+&gt;&gt;&gt; ecat_file = nibabel.ecat.load('anon_sub01_8_43e5_1b831_de2_anon.v')
+&gt;&gt;&gt; print(ecat_file.get_header())
+__main__:1: DeprecationWarning: get_header method is deprecated.
+Please use the ``img.header`` property instead.
+
+* deprecated from version: 2.1
+* Will raise &lt;class 'nibabel.deprecator.ExpiredDeprecationError'&gt; as of version: 4.0
+&lt;class 'nibabel.ecat.EcatHeader'&gt; object, endian='&gt;'
 magic_number              : b'MATRIX72v'
 original_filename         : b'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 sw_version                : 72
@@ -5293,16 +5399,13 @@ dosage                    : 0.0
 well_counter_corr_factor  : 1.0
 data_units                : b''
 septa_state               : 1
-fill                      : b''
-```</li>
-</ul>
+fill                      : b''</code></pre>
 <p>Using your wits, the available tools, and data you should be able
 to produce a sidecar file like the following for your nifti image.
 Repeat this process for each image file/nifti you're including
 while reusing the filename for each image
 and while substituting the extension to <code>.json</code> instead of <code>.nii</code>.</p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "Manufacturer": "Siemens",
     "ManufacturersModelName": "HR+",
     "Units": "Bq/mL",
@@ -5377,19 +5480,20 @@ and while substituting the extension to <code>.json</code> instead of <code>.nii
     "ReconFilterType": ["Shepp 0.5", "All-pass 0.4"],
     "ReconFilterSize": [2.5, 2],
     "AttenuationCorrection": "transmission scan"
-}</code></p>
+}</code></pre>
 <p>Alright, now we're getting somewhere, let's rename these niftis
 so that it's easier to distinguish between them
 and so that they're both <abbr title="Brain Imaging Data Structure">BIDS</abbr> compliant.</p>
-<p>```bash</p>
-<h1 id="first-lets-divide-the-scans-into-their-own-sessions"><a class="toclink" href="#first-lets-divide-the-scans-into-their-own-sessions">first lets divide the scans into their own sessions</a><a class="headerlink" href="#first-lets-divide-the-scans-into-their-own-sessions" title="Permanent link">&para;</a></h1>
-<p>machine:NewBidsDataSet user$ mv sub-01/ses-01/ sub-01/ses-testscan/</p>
-<h1 id="and-make-a-second-session-folder-for-the-rescan"><a class="toclink" href="#and-make-a-second-session-folder-for-the-rescan">and make a second session folder for the rescan</a><a class="headerlink" href="#and-make-a-second-session-folder-for-the-rescan" title="Permanent link">&para;</a></h1>
-<p>machine:NewBidsDataSet user$ cp -r sub-01/ses-testscan/ sub-01/ses-retestscan/
+<pre class="highlight"><code class="language-bash"># first lets divide the scans into their own sessions
+machine:NewBidsDataSet user$ mv sub-01/ses-01/ sub-01/ses-testscan/
+
+# and make a second session folder for the rescan
+machine:NewBidsDataSet user$ cp -r sub-01/ses-testscan/ sub-01/ses-retestscan/
 machine:NewBidsDataSet user$ mv sub-01/sub01_7_anon.nii sub-01/ses-testscan/pet/sub-01_ses-testscan_pet.nii
-machine:NewBidsDataSet user$ mv sub-01/sub01_8_anon.nii sub-01/ses-retestscan/pet/sub-01_ses-retestscan_pet.nii</p>
-<h1 id="some-additional-bash-later-and"><a class="toclink" href="#some-additional-bash-later-and">some additional bash later and ......</a><a class="headerlink" href="#some-additional-bash-later-and" title="Permanent link">&para;</a></h1>
-<p>machine:NewBidsDataSet user$ tree
+machine:NewBidsDataSet user$ mv sub-01/sub01_8_anon.nii sub-01/ses-retestscan/pet/sub-01_ses-retestscan_pet.nii
+
+# some additional bash later and ......
+machine:NewBidsDataSet user$ tree
 .
 ├── README
 ├── dataset_description.json
@@ -5411,15 +5515,14 @@ machine:NewBidsDataSet user$ mv sub-01/sub01_8_anon.nii sub-01/ses-retestscan/pe
             ├── sub-01_ses-testscan_recording-Autosampler_blood.tsv
             ├── sub-01_ses-testscan_recording-Manual_blood.json
             ├── sub-01_ses-testscan_recording-Manual_blood.tsv
-            └── sub-01_ses-testscan_pet.nii</p>
-<p>5 directories, 16 files
-```</p>
+            └── sub-01_ses-testscan_pet.nii
+
+5 directories, 16 files</code></pre>
 <p>That looks better, but we need to do something about our tabular/text data.
 Since we're only dealing with manual blood samples we can omit the autosampler
 files from our data structure.</p>
-<p>```bash
-machine:NewBidsDataSet user$ rm -rf sub-01/ses-retestscan/pet/<em>Auto</em>
-machine:NewBidsDataSet user$ rm -rf sub-01/ses-testscan/pet/<em>Auto</em>
+<pre class="highlight"><code class="language-bash">machine:NewBidsDataSet user$ rm -rf sub-01/ses-retestscan/pet/*Auto*
+machine:NewBidsDataSet user$ rm -rf sub-01/ses-testscan/pet/*Auto*
 machine:NewBidsDataSet user$ tree
 .
 ├── README
@@ -5438,8 +5541,8 @@ machine:NewBidsDataSet user$ tree
             ├── sub-01_ses-testscan_pet.json
             ├── sub-01_ses-testscan_recording-Manual_blood.json
             ├── sub-01_ses-testscan_recording-Manual_blood.tsv
-            └── sub-01_ses-testscan_run-testscan_pet.nii</p>
-<p>```</p>
+            └── sub-01_ses-testscan_run-testscan_pet.nii
+</code></pre>
 <p>That looks better, now that we've got our nifti's sorted
 let's do something about filling out our <code>*_blood.tsv</code> files and our <code>*_blood.json</code> files.</p>
 <!-- TODO grab that image and add to the repo -->
@@ -5448,8 +5551,7 @@ let's do something about filling out our <code>*_blood.tsv</code> files and our 
 <img alt="sub01_7_PLASMA.txt screenshot of excel" src="https://i.imgur.com/xBgDZcI.png" /></p>
 <p>Since our plasma data is available we need to indicate as such
 in our <code>*_blood.json</code> files so we do so now:</p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "PlasmaAvail": "true",
     "MetaboliteAvail": "true",
     "WholeBloodAvail": "false",
@@ -5468,7 +5570,7 @@ in our <code>*_blood.json</code> files so we do so now:</p>
         "Description": "Parent fraction of the radiotracer.",
         "Units": "unitless"
     }
-}</code></p>
+}</code></pre>
 <p>Additionally, we can open our <code>*_blood.tsv</code>
 and add the plasma series of data to it from our base text file:</p>
 <!-- TODO grab that image and add to the repo -->
@@ -5497,8 +5599,7 @@ to be included):</p>
 and/or for each recommended field
 that you wish to include from your non-<abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset into this bidsified one.
 The final results of our efforts leads us to having this final <code>*blood_.json</code>:</p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "PlasmaAvail": true,
     "PlasmaFreeFraction": 15.062331,
     "PlasmaFreeFractionMethod": "Ultrafiltration",
@@ -5519,7 +5620,7 @@ The final results of our efforts leads us to having this final <code>*blood_.jso
         "Description": "Parent fraction of the radiotracer",
         "Units": "arbitrary"
     }
-}</code></p>
+}</code></pre>
 <h4 id="last-pass"><a class="toclink" href="#last-pass">Last Pass</a><a class="headerlink" href="#last-pass" title="Permanent link">&para;</a></h4>
 <p>If you're thinking that we failed to document or include our T1 image
 from the start you would be correct.</p>
@@ -5527,8 +5628,8 @@ from the start you would be correct.</p>
 <a href="https://bids.neuroimaging.io/getting_started/tutorials/conversion/mri.html">here</a>.</p>
 <p>Once you've handled converting your MR images into <abbr title="Brain Imaging Data Structure">BIDS</abbr>
 your directory should look like the following:</p>
-<p>```bash</p>
-<p>machine:NewBidsDataSet user$ tree
+<pre class="highlight"><code class="language-bash">
+machine:NewBidsDataSet user$ tree
 .
 ├── README
 ├── dataset_description.json
@@ -5549,8 +5650,7 @@ your directory should look like the following:</p>
             ├── sub-01_ses-testscan_pet.json
             ├── sub-01_ses-testscan_recording-Manual_blood.json
             ├── sub-01_ses-testscan_recording-Manual_blood.tsv
-            └── sub-01_ses-testscan_pet.nii
-```</p>
+            └── sub-01_ses-testscan_pet.nii</code></pre>
 <h2 id="validating-your-converted-pet-bids-data-set"><a class="toclink" href="#validating-your-converted-pet-bids-data-set">Validating your converted <abbr title="Positron Imaging Tomography">PET</abbr> <abbr title="Brain Imaging Data Structure">BIDS</abbr> data set</a><a class="headerlink" href="#validating-your-converted-pet-bids-data-set" title="Permanent link">&para;</a></h2>
 <h3 id="installing-the-validator"><a class="toclink" href="#installing-the-validator">Installing the validator</a><a class="headerlink" href="#installing-the-validator" title="Permanent link">&para;</a></h3>
 <p>The above structure is a valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset,
@@ -5561,22 +5661,25 @@ to collect and install the validator.</p>
 <h3 id="validating-your-new-dataset"><a class="toclink" href="#validating-your-new-dataset">Validating your new dataset</a><a class="headerlink" href="#validating-your-new-dataset" title="Permanent link">&para;</a></h3>
 <p>Using the validator installed above in the previous step point it at your data
 and check to see if your conversion was successful:</p>
-<p>```bash
-machine:Projects user$ bids-validator NewBidsDataSet/
-bids-validator@1.7.2</p>
-<p>1: [ERR] Invalid <abbr title="JavaScript Object Notation">JSON</abbr> file. The file is not formatted according the schema. (code: 55 - JSON_SCHEMA_VALIDATION_ERROR)
+<pre class="highlight"><code class="language-bash">machine:Projects user$ bids-validator NewBidsDataSet/
+bids-validator@1.7.2
+
+ 1: [ERR] Invalid JSON file. The file is not formatted according the schema. (code: 55 - JSON_SCHEMA_VALIDATION_ERROR)
   ./dataset_description.json
    Evidence: .DatasetType should be equal to one of the allowed values
   ./dataset_description.json
-   Evidence: .EthicsApprovals should be array</p>
-<p>Please visit https://neurostars.org/search?q=DATASET_DESCRIPTION_JSON_MISSING for existing conversations about this issue.</p>
-<pre><code>    Summary:               Available Tasks:        Available Modalities:
-    13 Files, 4.55GB                               pet
-    1 - Subject                                    blood
-    2 - Sessions                                   anat
-</code></pre>
-<p>If you have any questions, please post on https://neurostars.org/tags/bids.
-```</p>
+   Evidence: .EthicsApprovals should be array
+
+ Please visit https://neurostars.org/search?q=DATASET_DESCRIPTION_JSON_MISSING for existing conversations about this issue.
+
+
+        Summary:               Available Tasks:        Available Modalities:
+        13 Files, 4.55GB                               pet
+        1 - Subject                                    blood
+        2 - Sessions                                   anat
+
+
+ If you have any questions, please post on https://neurostars.org/tags/bids.</code></pre>
 <p>Good enough! But, in all seriousness the error messages and output
 from the bids-validator are <strong>invaluable</strong> during the conversion process.
 The error messages will guide you to the correct format; do not fear them.

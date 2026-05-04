@@ -2105,6 +2105,50 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rulessidecars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules.sidecars
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rulestabular_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules.tabular_data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ruleschecks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules.checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-off-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-off rules
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4482,6 +4526,50 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rulessidecars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules.sidecars
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rulestabular_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules.tabular_data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ruleschecks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules.checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-off-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-off rules
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4513,26 +4601,23 @@
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/files/common"><code>rules.files.common</code></a>: Top-level (dataset_description.json) and tables (participants.tsv)</p>
 <details open="open">
 <summary>dataset_description</summary>
-<p><code>yaml
-dataset_description:
+<pre class="highlight"><code class="language-yaml">dataset_description:
 level: required
-path: dataset_description.json</code></p>
+path: dataset_description.json</code></pre>
 </details>
 <details>
 <summary>participants</summary>
-<p><code>yaml
-participants:
+<pre class="highlight"><code class="language-yaml">participants:
 level: optional
 stem: participants
 extensions:
     - .tsv
-    - .json</code></p>
+    - .json</code></pre>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/files/raw"><code>rules.files.raw</code></a>: Data files defined in "<abbr title="Brain Imaging Data Structure">BIDS</abbr>-Raw"</p>
 <details>
 <summary>rules.files.raw.anat.nonparametric</summary>
-<p><code>yaml
-nonparametric:
+<pre class="highlight"><code class="language-yaml">nonparametric:
 suffixes:
     - T1w
     - T2w
@@ -4560,15 +4645,14 @@ entities:
     ceagent: optional
     reconstruction: optional
     run: optional
-    part: optional</code></p>
+    part: optional</code></pre>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/files/deriv"><code>rules.files.deriv</code></a>: Data files defined in "<abbr title="Brain Imaging Data Structure">BIDS</abbr>-Derivatives"</p>
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/files/raw/beh.yaml"><code>rules.files.raw.beh.noncontinuous</code></a>:</p>
 <details>
 <summary>beh_noncontinous</summary>
-<p>```yaml</p>
-<h1 id="non-continuous-data"><a class="toclink" href="#non-continuous-data">Non-continuous data</a><a class="headerlink" href="#non-continuous-data" title="Permanent link">&para;</a></h1>
-<p>noncontinuous:
+<pre class="highlight"><code class="language-yaml"># Non-continuous data
+noncontinuous:
 suffixes:
     - beh
 extensions:
@@ -4581,8 +4665,7 @@ entities:
     session: optional
     task: required
     acquisition: optional
-    run: optional
-```</p>
+    run: optional</code></pre>
 <p><img alt="image of template rendered in specification" src="../../assets/img/noncontinuous_beh_rendered_template.png" /></p>
 </details>
 <hr />
@@ -4591,15 +4674,14 @@ entities:
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/sidecars/anat.yaml"><code>rules.sidecars.anat.MRIAnatomyCommonMetadataFields</code></a></p>
 <details open="open">
 <summary>MRIAnatomyCommonMetadataFields</summary>
-<p><code>yaml
-MRIAnatomyCommonMetadataFields:
+<pre class="highlight"><code class="language-yaml">MRIAnatomyCommonMetadataFields:
 selectors:
     - modality == "mri"
     - datatype == "anat"
 fields:
     ContrastBolusIngredient: optional
     RepetitionTimeExcitation: optional
-    RepetitionTimePreparation: optional</code></p>
+    RepetitionTimePreparation: optional</code></pre>
 <p><img alt="rendered image of rules.sidecars.anat.MRIAnatomyCommonMetadataFields" src="../../assets/img/rules_sidecars_anat_MRIAnatomyCommonMetadataFields.png" /></p>
 </details>
 <hr />
@@ -4608,8 +4690,7 @@ fields:
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/tabular_data/task.yaml">`rules.tablular_data.task.TaskEvents</a></p>
 <details open="open">
 <summary>TaskEvents</summary>
-<p><code>yaml
-TaskEvents:
+<pre class="highlight"><code class="language-yaml">TaskEvents:
 selectors:
     - '"task" in entities'
     - suffix == "events"
@@ -4621,7 +4702,7 @@ columns:
 additional_columns: allowed
 initial_columns:
     - 'onset'
-    - 'duration'</code></p>
+    - 'duration'</code></pre>
 <p><img alt="rendered image of task events" src="../../assets/img/tasks_events_tablular_data_rendered.png" /></p>
 </details>
 <hr />
@@ -4631,8 +4712,7 @@ If all selectors are true, the rule applies to a file; if any check fails, the i
 <p><a href="https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/checks/dwi.yaml">`rules.checks.dwi.DWIVolumeCount</a></p>
 <details open="open">
 <summary>DWIVolumeCount</summary>
-<p><code>yaml
-DWIVolumeCount:
+<pre class="highlight"><code class="language-yaml">DWIVolumeCount:
 issue:
     code: VOLUME_COUNT_MISMATCH
     message: |
@@ -4645,7 +4725,7 @@ selectors:
     - '"bvec" in associations'
 checks:
     - associations.bval.n_cols == nifti_header.dim[4]
-    - associations.bvec.n_cols == nifti_header.dim[4]</code></p>
+    - associations.bvec.n_cols == nifti_header.dim[4]</code></pre>
 </details>
 <hr />
 <h2 id="one-off-rules"><a class="toclink" href="#one-off-rules">One-off rules</a><a class="headerlink" href="#one-off-rules" title="Permanent link">&para;</a></h2>

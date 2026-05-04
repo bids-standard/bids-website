@@ -4597,8 +4597,7 @@
 
 <h1 id="objects"><a class="toclink" href="#objects">Objects</a><a class="headerlink" href="#objects" title="Permanent link">&para;</a></h1>
 <p>The Objects portion of the schema contains the following collection of schema files:</p>
-<p><code>text
-src/schema/objects
+<pre class="highlight"><code class="language-text">src/schema/objects
 ├── columns.yaml
 ├── common_principles.yaml
 ├── datatypes.yaml
@@ -4608,7 +4607,7 @@ src/schema/objects
 ├── formats.yaml
 ├── metadata.yaml
 ├── modalities.yaml
-└── suffixes.yaml</code></p>
+└── suffixes.yaml</code></pre>
 <p>Objects contain selectors, issues and error messages to raise during validation, descriptors, messages, and units.
 Every property needed describe a an entity in <abbr title="Brain Imaging Data Structure">BIDS</abbr> contained within an object's contents.
 We'll take a closer look below at a few specific objects
@@ -4617,17 +4616,15 @@ to better introduce the structure that they represent and take on.</p>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/common_principles.yaml"><code>objects.common_principles</code></a>: Terms, such as "data acquisition" or "datatype", used throughout <abbr title="Brain Imaging Data Structure">BIDS</abbr></p>
 <details>
 <summary>data acquisition</summary>
-<p><code>yaml
-data_acquisition:
+<pre class="highlight"><code class="language-yaml">data_acquisition:
 display_name: Data acquisition
 description: |
     A continuous uninterrupted block of time during which a brain scanning instrument was acquiring data according to
-    particular scanning sequence/protocol.</code></p>
+    particular scanning sequence/protocol.</code></pre>
 </details>
 <details>
 <summary>data type</summary>
-<p><code>yaml
-data_type:
+<pre class="highlight"><code class="language-yaml">data_type:
 display_name: Data type
 description: |
     A functional group of different types of data.
@@ -4645,26 +4642,24 @@ description: |
         9.  `beh` (behavioral)
         10. `pet` (positron emission tomography)
         11. `micr` (microscopy)
-        12. `nirs` (near infrared spectroscopy)</code></p>
+        12. `nirs` (near infrared spectroscopy)</code></pre>
 </details>
 <h2 id="namevalue-terms"><a class="toclink" href="#namevalue-terms">Name/value terms</a><a class="headerlink" href="#namevalue-terms" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/entities.yaml"><code>objects.entities</code></a>: Entities (sub-01)</p>
 <details class="subject" open="open">
 <summary>Subject</summary>
-<p><code>yaml
-subject:
+<pre class="highlight"><code class="language-yaml">subject:
 name: sub
 display_name: Subject
 description: |
     A person or animal participating in the study.
 type: string
-format: label</code></p>
+format: label</code></pre>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/metadata.yaml"><code>objects.metadata</code></a>: Sidecar fields ("PhaseEncodingDirection": "j")</p>
 <details>
 <summary>PhaseEncodingDirection</summary>
-<p><code>yaml
-PhaseEncodingDirection:
+<pre class="highlight"><code class="language-yaml">PhaseEncodingDirection:
 name: PhaseEncodingDirection
 display_name: Phase Encoding Direction
 description: |
@@ -4685,61 +4680,56 @@ enum:
     - k
     - i-
     - j-
-    - k-</code></p>
+    - k-</code></pre>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/columns.yaml"><code>objects.columns</code></a>: <abbr title="Tab Separated Values">TSV</abbr> columns ("participant_id", ["sub-01", "sub-02", …])</p>
 <details>
 <summary>partcipant_id</summary>
-<p><code>yaml
-participant_id:
+<pre class="highlight"><code class="language-yaml">participant_id:
 name: participant_id
 display_name: Participant ID
 description: |
     A participant identifier of the form `sub-&lt;label&gt;`,
     matching a participant entity found in the dataset.
 type: string
-pattern: ^sub-[0-9a-zA-Z]+$</code></p>
+pattern: ^sub-[0-9a-zA-Z]+$</code></pre>
 </details>
 <h2 id="value-terms"><a class="toclink" href="#value-terms">Value terms</a><a class="headerlink" href="#value-terms" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/datatypes.yaml"><code>objects.datatypes</code></a> (func)</p>
 <details open="open">
 <summary>func</summary>
-<p><code>yaml
-func:
+<pre class="highlight"><code class="language-yaml">func:
 value: func
 display_name: Task-Based Magnetic Resonance Imaging
 description: |
-    Task (including resting state) imaging data</code></p>
+    Task (including resting state) imaging data</code></pre>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/suffixes.yaml"><code>objects.suffixes</code></a> (bold)</p>
 <details>
 <summary>object.suffixes.bold</summary>
-<p><code>yaml
-bold:
+<pre class="highlight"><code class="language-yaml">bold:
 value: bold
 display_name: Blood-Oxygen-Level Dependent image
 description: |
-    Blood-Oxygen-Level Dependent contrast (specialized T2\* weighting)</code></p>
+    Blood-Oxygen-Level Dependent contrast (specialized T2\* weighting)</code></pre>
 </details>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/extensions.yaml"><code>objects.extensions</code></a> (.nii.gz)</p>
 <h2 id="formats"><a class="toclink" href="#formats">Formats</a><a class="headerlink" href="#formats" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/formats.yaml"><code>objects.formats</code></a>: Types of values objects referenced in the schema can take (label, index, boolean)</p>
 <details open="open">
 <summary>boolean</summary>
-<p><code>yaml
-boolean:
+<pre class="highlight"><code class="language-yaml">boolean:
 display_name: Boolean
 description: |
     A boolean.
     Must be either "true" or "false".
-pattern: '(true|false)'</code></p>
+pattern: '(true|false)'</code></pre>
 </details>
 <h2 id="files"><a class="toclink" href="#files">Files</a><a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/objects/files.yaml"><code>objects.files</code></a>: One-off files, not constructed from path components, like README</p>
 <details>
 <summary>README</summary>
-<p><code>yaml
-README:
+<pre class="highlight"><code class="language-yaml">README:
 display_name: README
 file_type: regular
 description: |
@@ -4756,7 +4746,7 @@ description: |
     The `README` file SHOULD be structured such that its contents can be easily understood
     even if the used format is not rendered.
     A guideline for creating a good `README` file can be found in the
-    [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit/blob/master/templates/README).</code></p>
+    [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit/blob/master/templates/README).</code></pre>
 </details>
 <!-- tool tips  -->
 

@@ -4628,11 +4628,10 @@ The process can be summarized by the following main steps:</p>
 and how to name files such that one can easily infer their contents.
 Thus, the first step is to create the proper folder/file hierarchies,
 which looks like this:</p>
-<p><code>text
-project/
+<pre class="highlight"><code class="language-text">project/
 └── subject
     └── session
-        └── acquisition</code></p>
+        └── acquisition</code></pre>
 <p>The top level (project) of a <abbr title="Brain Imaging Data Structure">BIDS</abbr> folder must contain
 a dataset_description.json file, a README, and a CHANGES file.
 In addition, there are a set of sub-folders,
@@ -4645,8 +4644,7 @@ that correspond to datasets from different modalities
 that corresponds to this dataset.
 In our example, there is a folder called <code>ieeg</code> that stores all <abbr title="Intracranial Electroencephalography">iEEG</abbr> data
 for the subject, for example:</p>
-<p><code>text
-iEEGProject
+<pre class="highlight"><code class="language-text">iEEGProject
 ├── dataset_description.json
 ├── participants.tsv
 ├── README
@@ -4672,7 +4670,7 @@ iEEGProject
 │       ├── sub-02_electrodes.tsv
 │       └── sub-02_cooordsystem.tsv
 ...
-└── visualtask_ieeg.json</code></p>
+└── visualtask_ieeg.json</code></pre>
 <h2 id="add-raw-ieeg-data"><a class="toclink" href="#add-raw-ieeg-data">Add raw <abbr title="Intracranial Electroencephalography">iEEG</abbr> data</a><a class="headerlink" href="#add-raw-ieeg-data" title="Permanent link">&para;</a></h2>
 <p>Once a folder hierarchy is defined, the folders can be populated
 with the correct files.
@@ -4680,8 +4678,7 @@ Here we focus on the files relevant for <abbr title="Intracranial Electroencepha
 Within the <code>ieeg</code> folder, we first copy the raw <abbr title="Intracranial Electroencephalography">iEEG</abbr> data and renamed such
 that they adhere to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> file naming scheme.
 For example:</p>
-<p><code>text
-sub-&lt;subjectlabel&gt;_ses-&lt;sessionlabel&gt;_task-&lt;tasklabel&gt;_run-&lt;runlabel&gt;_ieeg.&lt;extension&gt;</code></p>
+<pre class="highlight"><code class="language-text">sub-&lt;subjectlabel&gt;_ses-&lt;sessionlabel&gt;_task-&lt;tasklabel&gt;_run-&lt;runlabel&gt;_ieeg.&lt;extension&gt;</code></pre>
 <p>These data are unprocessed and can have one of several file formats
 (for example: BrainVision and EDF formats are supported, NWB, EEGLab and MEF3 formats are allowed).</p>
 <h2 id="add-ieeg-amplifier-metadata"><a class="toclink" href="#add-ieeg-amplifier-metadata">Add <abbr title="Intracranial Electroencephalography">iEEG</abbr> amplifier metadata</a><a class="headerlink" href="#add-ieeg-amplifier-metadata" title="Permanent link">&para;</a></h2>
@@ -4752,8 +4749,7 @@ within <abbr title="Tab Separated Values">TSV</abbr> and <abbr title="JavaScript
 (for example: photos or sounds that were presented to the subject during the task,
 or videos of the subject and experimental setup).
 Some examples are shown here:</p>
-<p><code>text
-iEEGProject
+<pre class="highlight"><code class="language-text">iEEGProject
 ├── dataset_description.json
 ├── participants.tsv
 ├── README
@@ -4768,7 +4764,7 @@ iEEGProject
 │       ├── sub-01_task-visualtask_run-01_physio.json
 │       ├── sub-01_task-visualtask_run-01_stim.tsv.gz
 │       ├── sub-01_task-visualtask_run-01_stim.json
-...</code></p>
+...</code></pre>
 <h2 id="validate-the-ieeg-bids-data"><a class="toclink" href="#validate-the-ieeg-bids-data">Validate the <abbr title="Intracranial Electroencephalography">iEEG</abbr>-<abbr title="Brain Imaging Data Structure">BIDS</abbr> data</a><a class="headerlink" href="#validate-the-ieeg-bids-data" title="Permanent link">&para;</a></h2>
 <p>In order to verify that a dataset adheres to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification,
 we need to validate the structure, naming conventions, and information inside the dataset.

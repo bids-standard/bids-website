@@ -4512,18 +4512,19 @@
 <p><a href="https://github.com/bids-standard/bids-specification/blob/master/src/schema/meta/context.yaml"><code>meta.context</code></a> describes a context object that makes information available to rules</p>
 <details open="open">
 <summary>meta.context</summary>
-<p>```yaml
-context:
-schema:     The <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification schema
+<pre class="highlight"><code class="language-yaml">context:
+schema:     The BIDS specification schema
 dataset:        Properties and contents of the entire dataset
-subject:        Properties and contents of the current subject</p>
-<p>path:       Path of the current file
+subject:        Properties and contents of the current subject
+
+path:       Path of the current file
 entities:       Entities parsed from the current filename
 datatype:       Datatype of current file, for example, anat
 suffix:     Suffix of current file
 extension:  Extension of current file
-modality:       Modality of current file, for example, <abbr title="Magnetic Resonance Imaging">MRI</abbr></p>
-<p>sidecar:        Sidecar metadata constructed via the inheritance principle
+modality:       Modality of current file, for example, MRI
+
+sidecar:        Sidecar metadata constructed via the inheritance principle
 …
 associations:   Associated files, indexed by suffix, selected according to the inheritance principle
     events:
@@ -4531,11 +4532,10 @@ associations:   Associated files, indexed by suffix, selected according to the i
     bval:
     bvec:
     …
-columns:        <abbr title="Tab Separated Values">TSV</abbr> columns, indexed by column header, values are arrays with column contents
-json:       Contents of the current <abbr title="JavaScript Object Notation">JSON</abbr> file
+columns:        TSV columns, indexed by column header, values are arrays with column contents
+json:       Contents of the current JSON file
 gzip:       Parsed contents of gzip header
-nifti_header:   Parsed contents of NIfTI header
-```</p>
+nifti_header:   Parsed contents of NIfTI header</code></pre>
 </details>
 <!-- tool tips  -->
 

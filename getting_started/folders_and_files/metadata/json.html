@@ -929,6 +929,106 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#writing-a-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing a .json file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interoperability-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interoperability issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interoperability issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-does-this-matter-for-bids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why does this matter for BIDS?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-about-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More about JSON
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="More about JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-styling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON "styling"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nesting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nesting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4623,6 +4723,106 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#writing-a-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing a .json file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interoperability-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interoperability issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interoperability issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-does-this-matter-for-bids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why does this matter for BIDS?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-about-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More about JSON
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="More about JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-styling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON "styling"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nesting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nesting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4652,14 +4852,13 @@
 <p><abbr title="JavaScript Object Notation">JSON</abbr> stands for JavaScript Object Notation
 and as its name indicates takes its syntax from the JavaScript language.</p>
 <p><abbr title="JavaScript Object Notation">JSON</abbr> files are text files that take the following structure:</p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "key": "value",
     "key2": "value2",
     "key3": {
         "subkey1": "subvalue1"
     }
-}</code></p>
+}</code></pre>
 <p>Note that they can be nested (curly brackets within curly brackets).
 Here are some common ways to read / write these files.</p>
 <ul>
@@ -4721,32 +4920,27 @@ Remember to install and call a package before using it.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">python</label><label for="__tabbed_1_2">MATLAB</label><label for="__tabbed_1_3">octave</label><label for="__tabbed_1_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>python
-import json
+<pre class="highlight"><code class="language-python">import json
 with open('myfile.json', 'r') as ff:
-    metadata = json.load(ff)</code></p>
+    metadata = json.load(ff)</code></pre>
 </div>
 <div class="tabbed-block">
 <p>For MATLAB &gt;= R2016b</p>
-<p><code>matlab
-% Read JSON data from a file
+<pre class="highlight"><code class="language-matlab">% Read JSON data from a file
 jsonStr = fileread('myfile.json');
 % Convert JSON string to MATLAB variables
-jsonData = jsondecode(jsonStr);</code></p>
+jsonData = jsondecode(jsonStr);</code></pre>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/gllmflndn/JSONio">JSONio library</a>.</p>
-<p><code>matlab
-metadata = jsonread('myfile.json')</code></p>
+<pre class="highlight"><code class="language-matlab">metadata = jsonread('myfile.json')</code></pre>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/jeroen/jsonlite">jsonlite</a> library.</p>
-<p>```R</p>
-<h1 id="install-jsonlite-in-case-you-did-not-already-do-it"><a class="toclink" href="#install-jsonlite-in-case-you-did-not-already-do-it">install jsonlite in case you did not already do it</a><a class="headerlink" href="#install-jsonlite-in-case-you-did-not-already-do-it" title="Permanent link">&para;</a></h1>
-<h1 id="installpackagesjsonlite"><a class="toclink" href="#installpackagesjsonlite">install.packages('jsonlite')</a><a class="headerlink" href="#installpackagesjsonlite" title="Permanent link">&para;</a></h1>
-<p>library(jsonlite)
-metadata = fromJSON('myfile.json')
-```</p>
+<pre class="highlight"><code class="language-R"># install jsonlite in case you did not already do it
+# install.packages('jsonlite')
+library(jsonlite)
+metadata = fromJSON('myfile.json')</code></pre>
 </div>
 </div>
 </div>
@@ -4754,33 +4948,28 @@ metadata = fromJSON('myfile.json')
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">python</label><label for="__tabbed_2_2">MATLAB</label><label for="__tabbed_2_3">octave</label><label for="__tabbed_2_4">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>python
-import json
+<pre class="highlight"><code class="language-python">import json
 metadata = {'field1': 'value1', 'field2': 3, 'field3': 'field3'}
 with open('my_output_file.json', 'w') as ff:
-    json.dump(metadata, ff)</code></p>
+    json.dump(metadata, ff)</code></pre>
 </div>
 <div class="tabbed-block">
-<p><code>matlab
-metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
-jsonencode('my_output_file.json', metadata);</code></p>
+<pre class="highlight"><code class="language-matlab">metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
+jsonencode('my_output_file.json', metadata);</code></pre>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/gllmflndn/JSONio">JSONio library</a>.</p>
-<p><code>matlab
-metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
-jsonwrite('my_output_file.json', metadata)</code></p>
+<pre class="highlight"><code class="language-matlab">metadata = struct('field1', 'value1', 'field2', 3, 'field3', 'field3')
+jsonwrite('my_output_file.json', metadata)</code></pre>
 </div>
 <div class="tabbed-block">
 <p>The example below uses the <a href="https://github.com/jeroen/jsonlite">jsonlite</a> library.</p>
-<p>```R</p>
-<h1 id="install-jsonlite-in-case-you-did-not-already-do-it_1"><a class="toclink" href="#install-jsonlite-in-case-you-did-not-already-do-it_1">install jsonlite in case you did not already do it</a><a class="headerlink" href="#install-jsonlite-in-case-you-did-not-already-do-it_1" title="Permanent link">&para;</a></h1>
-<h1 id="installpackagesjsonlite_1"><a class="toclink" href="#installpackagesjsonlite_1">install.packages('jsonlite')</a><a class="headerlink" href="#installpackagesjsonlite_1" title="Permanent link">&para;</a></h1>
-<p>library(jsonlite)
+<pre class="highlight"><code class="language-R"># install jsonlite in case you did not already do it
+# install.packages('jsonlite')
+library(jsonlite)
 metadata &lt;- list(field1 = "value1", field2 = 3, field3 = "field3")
 metadata = toJSON(metadata, pretty=TRUE)
-write(metadata, "my_output_file.json")
-```</p>
+write(metadata, "my_output_file.json")</code></pre>
 </div>
 </div>
 </div>
@@ -4798,22 +4987,17 @@ write(metadata, "my_output_file.json")
 <a href="https://www.mathworks.com/help/matlab/ref/struct.html"><code>structures</code></a> by MATLAB / Octave,
 where a <code>key</code> in a <abbr title="JavaScript Object Notation">JSON</abbr> file becomes <code>fieldname</code> in that structure.</p>
 <p>Here is an example with a simple <code>example.json</code></p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "key": "value"
-}</code></p>
+}</code></pre>
 <p>loaded with bids-matlab</p>
-<p>```matlab</p>
-<blockquote>
-<blockquote>
-<p>json_content = bids.util.jsondecode('example.json')</p>
-</blockquote>
-</blockquote>
-<p>json_content =</p>
-<p>struct with fields:</p>
-<pre><code>key: 'value'
-</code></pre>
-<p>```</p>
+<pre class="highlight"><code class="language-matlab">&gt;&gt; json_content = bids.util.jsondecode('example.json')
+
+json_content =
+
+  struct with fields:
+
+    key: 'value'</code></pre>
 <p>There are however some strict rules for what makes a valid fieldname in MATLAB and Octave.</p>
 <p>Fieldnames must:</p>
 <ul>
@@ -4831,76 +5015,59 @@ where a <code>key</code> in a <abbr title="JavaScript Object Notation">JSON</abb
 <p>If there are keys in your <abbr title="JavaScript Object Notation">JSON</abbr> that do not comply to those rules,
 they keys will be renamed when loading which can lead to some headaches down the line.</p>
 <p>For example when loading the <code>bad_keys.json</code></p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "@foo": "@foo",
     "1": "1",
     "x1": "x1",
     "x_1": "x_1",
     "/t": "/t",
     "%f": "%f"
-}</code></p>
+}</code></pre>
 <p>We get some quite different fieldnames when read with MATLAB:</p>
-<p>```matlab</p>
-<blockquote>
-<blockquote>
-<p>jsondecode(fileread('bad_keys.json'))</p>
-</blockquote>
-</blockquote>
-<p>ans =</p>
-<p>struct with fields:</p>
-<pre><code>x_foo: '@foo'
-   x1: '1'
- x1_1: 'x1'
-  x_1: 'x_1'
-  x_t: '/t'
-  x_f: '%f'
-</code></pre>
-<p>```</p>
+<pre class="highlight"><code class="language-matlab">&gt;&gt; jsondecode(fileread('bad_keys.json'))
+
+ans =
+
+  struct with fields:
+
+    x_foo: '@foo'
+       x1: '1'
+     x1_1: 'x1'
+      x_1: 'x_1'
+      x_t: '/t'
+      x_f: '%f'</code></pre>
 <p>or with JSONio for Octave (though at least here we get a warning):</p>
-<p>```matlab</p>
-<blockquote>
-<blockquote>
-<p>jsonread('bad_keys.json')
-Warning: Duplicate key.</p>
-</blockquote>
-</blockquote>
-<p>ans =</p>
-<p>struct with fields:</p>
-<pre><code>x_foo: '@foo'
-   x1: 'x1'
-  x_1: 'x_1'
-  x_t: '/t'
-  x_f: '%f'
-</code></pre>
-<p>```</p>
+<pre class="highlight"><code class="language-matlab">&gt;&gt; jsonread('bad_keys.json')
+Warning: Duplicate key.
+
+ans =
+
+  struct with fields:
+
+    x_foo: '@foo'
+       x1: 'x1'
+      x_1: 'x_1'
+      x_t: '/t'
+      x_f: '%f'</code></pre>
 <p>This can lead to some unexpected behavior if you did not know about this.</p>
 <p>If you load this <code>collision.json</code></p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "1": "1",
     "x1": "x1",
     "x_1": "x_1"
-}</code></p>
+}</code></pre>
 <p>and try to retrieve the value associated to the <code>key</code> <code>x1</code>, you will in fact be
 getting the value for the key <code>1</code>.</p>
-<p>```matlab</p>
-<blockquote>
-<blockquote>
-<p>json_content = bids.util.jsondecode('collision.json');
-json_content.x1</p>
-</blockquote>
-</blockquote>
-<pre><code>   x1: '1'
-</code></pre>
-<p>```</p>
+<pre class="highlight"><code class="language-matlab">&gt;&gt; json_content = bids.util.jsondecode('collision.json');
+&gt;&gt; json_content.x1
+
+       x1: '1'</code></pre>
 <h3 id="why-does-this-matter-for-bids"><a class="toclink" href="#why-does-this-matter-for-bids">Why does this matter for <abbr title="Brain Imaging Data Structure">BIDS</abbr>?</a><a class="headerlink" href="#why-does-this-matter-for-bids" title="Permanent link">&para;</a></h3>
 <p>In most cases this will not be an issue,
 but this could be problem if in your <code>events.tsv</code>
 you have named some of your trial_type things like <code>1_face</code>,
 <code>2_sound</code> and then want to annotate those events in a side car <abbr title="JavaScript Object Notation">JSON</abbr> file like this.</p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
     "trial_type": {
         "LongName": "",
         "Description": "image type",
@@ -4909,7 +5076,7 @@ you have named some of your trial_type things like <code>1_face</code>,
             "2_sound": "A sound is played"
         }
     }
-}</code></p>
+}</code></pre>
 <p>If you do this, it will be much harder to work with that <abbr title="JavaScript Object Notation">JSON</abbr> file for anyone who uses MATLAB or Octave.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -4939,8 +5106,7 @@ you have named some of your trial_type things like <code>1_face</code>,
 </li>
 </ul>
 <p>For example, this is an object.</p>
-<p><code>json
-{ "Key": "value", "Key2": 1 }</code></p>
+<pre class="highlight"><code class="language-json">{ "Key": "value", "Key2": 1 }</code></pre>
 <p>As you can see, in <abbr title="JavaScript Object Notation">JSON</abbr> strings start and end with double quotes <code>"</code>.
 Also note the comma between the key-value pairs but not after the last key-value pair.</p>
 <h4 id="arrays"><a class="toclink" href="#arrays">Arrays</a><a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h4>
@@ -4950,8 +5116,7 @@ Also note the comma between the key-value pairs but not after the last key-value
 <li>an ordered list of zero or more elements, each of which may be of any type (string, number..)</li>
 <li>elements must be separated by a comma</li>
 </ul>
-<p><code>json
-["this", "is", 1, "JSON", "array"]</code></p>
+<pre class="highlight"><code class="language-json">["this", "is", 1, "JSON", "array"]</code></pre>
 <h4 id="a-note-on-booleans"><a class="toclink" href="#a-note-on-booleans">A note on Booleans</a><a class="headerlink" href="#a-note-on-booleans" title="Permanent link">&para;</a></h4>
 <p>In <abbr title="JavaScript Object Notation">JSON</abbr> boolean values must be typed as lowercase with no quotes:</p>
 <ul>
@@ -4964,14 +5129,12 @@ this is why most of keys you will see in <abbr title="JavaScript Object Notation
 <!-- TODO Add link to camelcase wikipedia -->
 
 <p>For example:</p>
-<p><code>json
-{ "ThisIsTrue": true, "ThisIsTrue": false }</code></p>
+<pre class="highlight"><code class="language-json">{ "ThisIsTrue": true, "ThisIsTrue": false }</code></pre>
 <p>It is common to indent <abbr title="JavaScript Object Notation">JSON</abbr> files to improve readability.</p>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
   "ThisIsTrue": true,
   "ThisIsTrue": false
-}</code></p>
+}</code></pre>
 <p>Finally, you cannot add comments in <abbr title="JavaScript Object Notation">JSON</abbr> files,
 but the <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model allows you to add a <code>"Description"</code> key
 to most objects to give explanations to the reader.</p>
@@ -4984,8 +5147,7 @@ and combine all those elements however deep you want or need.</p>
 <li>between key-value pairs</li>
 <li>unless this is the last element (or key-value pair)</li>
 </ul>
-<p><code>json
-{
+<pre class="highlight"><code class="language-json">{
   "MixedArray": ["This", "is", "one", "array"],
   "ArrayOfNumbers": [0, 0, 1, 0, 0],
   "ArrayOfObjects": [
@@ -4998,7 +5160,7 @@ and combine all those elements however deep you want or need.</p>
       "Content": 1
     }
   ]
-}</code></p>
+}</code></pre>
 <h3 id="json-schema"><a class="toclink" href="#json-schema"><abbr title="JavaScript Object Notation">JSON</abbr> schema</a><a class="headerlink" href="#json-schema" title="Permanent link">&para;</a></h3>
 <p>If the content of your <abbr title="JavaScript Object Notation">JSON</abbr> must follow certain rules, like</p>
 <div class="admonition warning">
@@ -5022,17 +5184,15 @@ and give it the <abbr title="Uniform Resource Locator">URL</abbr> to the schema.
 <p>If you want to validate a <abbr title="JavaScript Object Notation">JSON</abbr> file you are editing using a <abbr title="JavaScript Object Notation">JSON</abbr> schema
 you can do so by adding the following key-value pair in your <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model,
 (here using the <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model schema as an example)</p>
-<p><code>json
-  "$schema": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json",</code></p>
+<pre class="highlight"><code class="language-json">  "$schema": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json",</code></pre>
 <p>For vs-code you can also add this to your settings:</p>
-<p><code>json
-"json.schemas": [
+<pre class="highlight"><code class="language-json">"json.schemas": [
     {"fileMatch": [
             "model-*_smdl.json"
         ],
         "url": "https://raw.githubusercontent.com/bids-standard/stats-models/gh-pages/BIDSStatsModel.json"
     }
-]</code></p>
+]</code></pre>
 <p><a href="https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings">Source</a></p>
 <p>Example of <abbr title="JavaScript Object Notation">JSON</abbr> syntax error and <abbr title="Brain Imaging Data Structure">BIDS</abbr> stats model schema error in VS code:</p>
 <p><img alt="" src="../../../assets/img/vs_code_validation.png" /></p>

@@ -4615,19 +4615,17 @@ The <abbr title="Brain Imaging Data Structure">BIDS</abbr> structure makes minim
 <p>The rest of this page describes how these folders are structured.</p>
 <h2 id="overview"><a class="toclink" href="#overview">Overview</a><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>There are four main levels of the folder hierarchy, these are:</p>
-<p><code>text
-project/
+<pre class="highlight"><code class="language-text">project/
 └── subject
     └── session
-        └── datatype</code></p>
+        └── datatype</code></pre>
 <p>With the exception of the top-level <code>project</code> folder,
 all sub-folders have a specific structure to their name (described below).
 Here's an example of how this hierarchy looks:</p>
-<p><code>text
-myProject/
+<pre class="highlight"><code class="language-text">myProject/
 └── sub-01
     └── ses-01
-        └── anat</code></p>
+        └── anat</code></pre>
 <p>Here is the folder name structure of each level:</p>
 <h2 id="project"><a class="toclink" href="#project">project</a><a class="headerlink" href="#project" title="Permanent link">&para;</a></h2>
 <p>Can have any name, this should be descriptive for the dataset contained in the folder.</p>
@@ -4746,8 +4744,7 @@ If there is only a single session per subject, this level of the hierarchy may b
 subjects of data, and includes metadata files (<code>.tsv</code> and <code>.json</code>) both between-
 and within-subjects.</p>
 <p>Note that it has one session per subject, so this level is omitted.</p>
-<p><code>text
-ds001
+<pre class="highlight"><code class="language-text">ds001
 ├── dataset_description.json
 ├── participants.tsv
 ├── sub-01
@@ -4774,7 +4771,7 @@ ds001
 │       └── sub-02_task-balloonanalogrisktask_run-03_events.tsv
 ...
 ...
-└── task-balloonanalogrisktask_bold.json</code></p>
+└── task-balloonanalogrisktask_bold.json</code></pre>
 <!-- tool tips  -->
 
 
