@@ -21,7 +21,7 @@ dependencies = [
     "rich",
     "ruamel.yaml",
     "tabulate",
-    "urllib3>=2.2.2",
+    "urllib3>=2.7.0",
     "bidsschematools[render]",
     "bids_website",
     "mkdocs-git-revision-date-localized-plugin>=1.5.0",
