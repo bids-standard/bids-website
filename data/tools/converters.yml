@@ -119,7 +119,7 @@
     license: GPL-3.0
 
 -   name: BIDSme
-    repo_url: https://github.com/nbeliy/bidsme
+    repo_url: https://github.com/CyclotronResearchCentre/bidsme
     status: active
     data_types:
     -   MRI
@@ -128,7 +128,7 @@
     -   DICOM
     -   Nifti
     -   Brain Vision
-    documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
+    documentation: https://github.com/CyclotronResearchCentre/bidsme_tutorial
     language:
     -   Python
     comment:
