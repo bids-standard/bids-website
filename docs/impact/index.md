@@ -109,6 +109,23 @@ TODO add automation to update every 6 months
 | fitlins         | 19        | 129       | 2                     | 5                   |
 | openneuro       | 95        | 479       | 15                    | 28                  |
 
+### Website and Specification traffic dashboards
+
+In order to measure the volume of traffic to our website and the
+[ReadTheDocs rendering of the specification][specification],
+we utilize Google Analytics.
+
+For visualizing our metrics, we have put together 2 dashboards:
+
+1.  [the website](https://datastudio.google.com/reporting/e79043f9-c75e-42e0-8b07-c6ce64e6cd43)
+1.  [the specification](https://datastudio.google.com/reporting/d55915a2-4077-4bb3-85b8-191e5fbb06bf)
+
+The default time period is set to the past 6 months. This can be changed by
+adjusting the time period in the upper left corner. Please feel free to use any
+of these figures in your grant! If there are additional statistics not currently
+conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by email
+ ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)).
+
 ### Mailing list volume
 
 <!-- TODO update -->
