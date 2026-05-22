@@ -1,7 +1,7 @@
 # Templates
 
 This section contains templates of different files you can find in a BIDS dataset,
-so tou can copy-paste-modity them into your own dataset.
+so you can copy-paste-modify them into your own dataset.
 
 ## README.md
 

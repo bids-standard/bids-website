@@ -2,6 +2,9 @@
 date: 2023-05-25
 slug: Steering Group minutes
 author: anonymous
+categories:
+
+-   steering group minutes
 ---
 
 <!-- more -->
@@ -68,8 +71,7 @@ Halchenko, Stefan Appelhoff, Kimberly Ray
 
 ## NOTES
 
-**Guest Guy Jones: discuss adding badges to the BIDS compliant datasets
-on Scientific Data Journal website.**
+### Guest Guy Jones: discuss adding badges to the BIDS compliant datasets on Scientific Data Journal website
 
 Guy's Feedback:
 

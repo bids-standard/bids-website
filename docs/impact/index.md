@@ -51,7 +51,7 @@ in the neuroimaging research landscape and continues to expand every day. A more
 history and discussion about the future of the BIDS landscape can be found in this
 [recent publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516110/).
 
-The BIDS standard continues to be adopted by a larger share of the community each year.
+The BIDS standard continues to be adopted by a larger share of the wider neuroscience community each year.
 We have seen a large and growing number of visitors to the BIDS website. A large number of
 BIDS users also continue to explore the BIDS Specification and contribute to the community every month.
 
@@ -60,40 +60,23 @@ their organizational structure. While the list continues to grow, an initial lis
 BIDS initiatives or database can be found
 [here](https://docs.google.com/spreadsheets/d/1aySjPpEGGQwFcOavkQdcvk2t2UMXt_zoTzWLWUmq20M/edit#gid=0).
 
-### Website and Specification traffic dashboards
-
-In order to measure the volume of traffic to our website and the
-[ReadTheDocs rendering of the specification][specification],
-we utilize Google Analytics.
-
-For visualizing our metrics, we have put together 2 dashboards:
-
-1.  [the website](https://datastudio.google.com/u/0/reporting/eab164ba-9f98-46e8-bee8-1f4f5328dc6e/page/V5leB)
-1.  [the specification](https://datastudio.google.com/u/0/reporting/57bf46f1-034c-4d8b-9fe2-3a2243e469c5/page/w1leB)
-
-The default time period is set to the past 6 months. This can be changed by
-adjusting the time period in the upper left corner. Please feel free to use any
-of these figures in your grant! If there are additional statistics not currently
-conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by email
- ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)).
-
 ### BIDS usage
 
 Here is a non-exhaustive list of imaging centers, institutes, databases
 around the world that have implemented BIDS as their organizational structure.
 
-| type       | place                                                                                          |
-| ---------- | -----------------------------------------------------------------------------------------------|
-| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)                               |
-| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)               |
-| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)         |
-| Database   | [ABCD](https://abcdstudy.org)                                                                  |
-| Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                     |
-| Database   | [FCP-INDI](https://fcp-indi.github.io/)                                                        |
-| Database   | [OpenNeuro][openneuro]                                                                         |
-| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                |                                                     |
-| Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/) |
-| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)       |
+| type       | place                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| Center     | [Dartmouth Brain Imaging Center](https://www.dartmouth.edu/dbic)                                |
+| Center     | [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en/)                |
+| Center     | [NYU Center for Brain Imaging](https://as.nyu.edu/research-centers/cbi/resources.html)          |
+| Database   | [ABCD](https://abcdstudy.org)                                                                   |
+| Database   | [Developing Human Connectome Project](http://www.developingconnectome.org)                      |
+| Database   | [FCP-INDI](https://fcp-indi.github.io/)                                                         |
+| Database   | [OpenNeuro][openneuro]                                                                          |
+| Database   | [OpenNeuroPET](https://openneuropet.github.io/)                                                 |
+| Database   | [UMC Utrecht intracranial EEG data](https://research.umcutrecht.nl/brain-research-approaches/)  |
+| Initiative | [Ontario Neurodegenerative Disease Research Initiative](https://braininstitute.ca/ondri)        |
 
 We ran
 [a survey](https://reproducibility.stanford.edu/bids-usage-survey-results/) in
@@ -111,20 +94,37 @@ to help us estimate trends in usage. Below is a snapshot as of ??? (date).
 TODO add automation to update every 6 months
 -->
 
-| tag            | nb topics | nb posts | topics with no reply | topics with answer |
-|:---------------|----------:|---------:|---------------------:|-------------------:|
-| bids           |       716 |     3404 |                  114 |                211 |
-| bids-validator |        80 |      488 |                    1 |                 28 |
-| pybids         |        29 |      175 |                    3 |                 12 |
-| dcm2bids       |        92 |      529 |                    4 |                 53 |
-| heudiconv      |       102 |      454 |                   17 |                 23 |
-| mriqc          |       141 |      604 |                   32 |                 37 |
-| fmriprep       |      1286 |     7727 |                  145 |                445 |
-| qsiprep        |       170 |     1063 |                   12 |                 76 |
-| aslprep        |        21 |       74 |                    5 |                  8 |
-| nilearn        |       585 |     2454 |                   90 |                182 |
-| fitlins        |        19 |      129 |                    2 |                  5 |
-| openneuro      |        95 |      479 |                   15 |                 28 |
+| tag             | nb topics | nb posts  | topics with no reply  | topics with answer  |
+| --------------- | --------- | --------- | --------------------- | ------------------- |
+| bids            | 716       | 3404      | 114                   | 211                 |
+| bids-validator  | 80        | 488       | 1                     | 28                  |
+| pybids          | 29        | 175       | 3                     | 12                  |
+| dcm2bids        | 92        | 529       | 4                     | 53                  |
+| heudiconv       | 102       | 454       | 17                    | 23                  |
+| mriqc           | 141       | 604       | 32                    | 37                  |
+| fmriprep        | 1286      | 7727      | 145                   | 445                 |
+| qsiprep         | 170       | 1063      | 12                    | 76                  |
+| aslprep         | 21        | 74        | 5                     | 8                   |
+| nilearn         | 585       | 2454      | 90                    | 182                 |
+| fitlins         | 19        | 129       | 2                     | 5                   |
+| openneuro       | 95        | 479       | 15                    | 28                  |
+
+### Website and Specification traffic dashboards
+
+In order to measure the volume of traffic to our website and the
+[ReadTheDocs rendering of the specification][specification],
+we utilize Google Analytics.
+
+For visualizing our metrics, we have put together 2 dashboards:
+
+1.  [the website](https://datastudio.google.com/reporting/e79043f9-c75e-42e0-8b07-c6ce64e6cd43)
+1.  [the specification](https://datastudio.google.com/reporting/d55915a2-4077-4bb3-85b8-191e5fbb06bf)
+
+The default time period is set to the past 6 months. This can be changed by
+adjusting the time period in the upper left corner. Please feel free to use any
+of these figures in your grant! If there are additional statistics not currently
+conveyed, please reach out to or the BIDS maintainers via a GitHub issue, or by email
+ ([bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)).
 
 ### Mailing list volume
 

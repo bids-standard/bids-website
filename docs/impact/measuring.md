@@ -17,7 +17,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-
 
 ## Citation Count
 
-As the adoption of the BIDS standard across neuroimaging datasets has grown, so have
+As the adoption of the BIDS standard across neural datasets has grown, so have
 citations for work that uses BIDS data and BIDS apps. To aid in searching for publications
 relevant to the BIDS standard, we have included some examples of BIDS references that are
 centralized in a [zotero group](https://www.zotero.org/groups/5111637/bids)

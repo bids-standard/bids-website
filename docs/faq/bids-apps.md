@@ -96,7 +96,7 @@ for more information on specifying the API of your App.
 
 For both lightweight and full datasets to test your BIDS App, you can choose
 from one of these
-[example datasets](https://bids-standard.github.io/bids-starter-kit/dataset_examples.html)
+[example datasets](https://bids.neuroimaging.io/datasets/)
 
 #### Is it mandatory to first check the dataset validity using the BIDS-validator?
 

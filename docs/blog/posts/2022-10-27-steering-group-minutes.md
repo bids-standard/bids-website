@@ -2,6 +2,9 @@
 date: 2022-10-27
 slug: Steering Group minutes
 author: anonymous
+categories:
+
+-   steering group minutes
 ---
 
 <!-- more -->

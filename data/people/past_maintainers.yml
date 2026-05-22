@@ -14,3 +14,5 @@
     members:
     -   name: Franklin Feingold
         git: franklin-feingold
+    -   name: Stefan Appelhoff
+        git: sappelhoff

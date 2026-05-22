@@ -2,6 +2,9 @@
 date: 2022-07-28
 slug: Farewell to Franklin
 author: Stefan Appelhoff
+categories:
+
+-   announcement
 ---
 
 Franklin leaves the BIDS maintainers team to move on to new adventures.

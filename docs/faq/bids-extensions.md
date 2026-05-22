@@ -5,8 +5,7 @@
 ### Can we introduce new entities / metadata in a BEP?
 
 > We need to introduce an entity to distinguish on-device preprocessing methods
-> that lead to the raw data, and found entities `proc`
-and `rec` in the current specification.
+> that lead to the raw data, and found entities `proc` and `rec` in the current specification.
 > Can we extend one or the other,
 > or should we instead create a new entity with analogous description?
 

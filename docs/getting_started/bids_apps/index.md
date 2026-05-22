@@ -3,7 +3,7 @@ layout: post
 title: What is a BIDS App?
 ---
 
-A BIDS App is a container image capturing a neuroimaging pipeline that takes a BIDS formatted dataset as input.
+A BIDS App is a container image capturing a pipeline that takes a BIDS formatted dataset as input.
 
 Each BIDS App has the same core set of command line arguments,
 making them easy to run and integrate into automated platforms.

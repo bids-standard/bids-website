@@ -1,5 +1,5 @@
 # Datasets
-BIDS compliant data can be found under many of the common neuroimaging data sharing
+BIDS compliant data can be found under many of the common neural data sharing
 websites/databases. Below are some links to BIDS compliant data. Sourcedata (pre-BIDS)
 are sometimes also available and these data can be used to test (or to build tutorials)
 of how source data are converted to BIDS.
