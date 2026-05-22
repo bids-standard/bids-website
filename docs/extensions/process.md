@@ -74,16 +74,16 @@ BEP_issue_exist -- yes --> Join_discussion
 
 ### Overview of the BEP process
 
-This section gives an overview of the lifecycle of a new BEP creation towards to BIDS community approval and merge.
+This section gives an overview of the lifecycle of new BEP creation through to BIDS community approval and merge.
 For the typical steps involved in each phase, see [Starting your BEP](#starting-your-bep)).
 
 #### BEP Phases
 
 A successful BEP moves through the lifecycle from `Draft BEP` to `Proposed BEP` to `Merged BEP`. Between each phase, BEP leaders bring the BEP to the BIDS Maintainers for guidance and review.
 
-In a nutshell, a typical `Draft BEP` is in the format of Google document and is actively undergoing development and/or community review.  (see [governance](../collaboration/governance.md#draft-bep)),
-In contrast, a `Proposed BEP` refers to pull request to BIDS specification repository
-(see [governance](../collaboration/governance.md#proposed-bep)), after a general level of community consensus has been achieved (via the Googledoc).
+In a nutshell, a typical `Draft BEP` is in the format of Google Doc and is actively undergoing development and/or community review.  (see [governance](../collaboration/governance.md#draft-bep)),
+In contrast, a `Proposed BEP` refers to a GitHub pull request to the BIDS specification repository
+(see [governance](../collaboration/governance.md#proposed-bep)), after a general level of community consensus has been achieved (via the Google Doc).
 
 ```mermaid
 flowchart TD
@@ -99,8 +99,9 @@ bep_idea --> draft_bep --> proposed_bep --> merged_bep
 #### BEP Review Process between Phases
 
 A BEP transitions from one phase to another by passing a review process with the BIDS Maintainers. BEP contributors are welcome to join BIDS Maintainer meetings to schedule or discuss their BEP review status.
-A BIDS Maintainer will actively guide each BEP team from the point of initial BEP idea review through the process outlined here, to provide feedback and guidance. Review discussions are typically followed with specific feedback on the relevant document (GitHub PR or Googledoc), or by email if preferred by the BEP leads.
-Please note the [community consultation requirements](link here) at each phase.  BEP leads are encouraged to connect with the BIDS maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community.
+A BIDS Maintainer BEP steward, assigned during the BEP process, will actively guide each BEP team from the point of initial BEP idea review through the process outlined here, to provide feedback and guidance. Review discussions are typically followed with specific feedback on the relevant document (GitHub pull request or Google Doc), or by email if preferred by the BEP leads.
+
+Please note the [community consultation requirements](FILL IN THE BLANK LINK) at each phase.  BEP leads are encouraged to connect with the BIDS Maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community.
 
 ```mermaid
 flowchart TD
@@ -120,7 +121,8 @@ proposed_bep_review -- positive evaluation --> merged_bep
 ```
 
 #### Closing a BEP
-In consultation with the BEP leads, it is possible but rare that the BIDS Maintainers and/or Steering may determine that a draft BEP can be addressed under the scope of another BIDS Extension, or is beyond the scope of BIDS.
+
+In consultation with the BEP leads, it is possible, but rare, that the BIDS Maintainers and/or Steering may determine that a Draft BEP can be addressed under the scope of another BIDS Extension, or is beyond the scope of BIDS.
 
 ```mermaid
 flowchart TD
@@ -383,7 +385,8 @@ The Steering Group evaluates, with inputs from BEP leads and the BIDS Maintainer
 -   Final review of the integration into the BIDS standard.
 
 The BEP lead(s) will work with the BIDS maintainers to coordinate the community review period.
-If community consensus can't be reached through Googledoc/GitHub discussion or working group calls, the BEP leads can request the BIDS Maintainers to facilitate in consultation with BIDS Steering.
+If community consensus cannot be reached through Google Doc/GitHub discussion
+or Working Group calls, the BEP leads can request the BIDS Maintainers facilitate consulting with BIDS Steering.
 
 The community review period is scheduled _after_ the pull request has been opened.
 
