@@ -1,16 +1,22 @@
-# Help make BIDS better!
+# Collaborate, contribute and help make BIDS better!
+
+BIDS is informed, supported, and guided by its users.
+BIDS is intended to change and evolve as methods, resources,
+and the needs of the BIDS community changes.
+We encourage all researchers to contribute to the ongoing development of BIDS standards,
+be it through discussion on [websites](https://bids.neuroimaging.io/collaboration/index.html#questions-and-issues), the creation of new [BIDS tools](https://bids.neuroimaging.io/tools/others.html), creating [BIDS examples](https://github.com/bids-standard/bids-examples),
+or contributing to extending the BIDS specification through [extension proposals](https://bids.neuroimaging.io/extensions/index.html).
+
+BIDS is supported by a leadership team made up of
+the [BIDS Steering group](governance.md#bids-steering-group)
+and the [BIDS Maintainers Group](governance.md#bids-maintainers-group).
+See [Governance and Decision Making](governance.md) for more details on BIDS governance.
 
 !!! info "Call for joining the BIDS maintainers team"
 
     We are currently actively looking for motivated people to join the BIDS maintainers team.
     Please see in the section below what being a BIDS maintainer means and reach out if you'd like to join!
 
-BIDS is informed, supported, and guided by its users.
-BIDS standards are intended to change and evolve as methods, resources,
-and the needs of the BIDS community changes.
-We encourage all researchers to contribute to the ongoing development of BIDS standards,
-be it through discussion on websites, the creation of new BIDS tools,
-or contributing to extending the BIDS specification through proposals.
 Below is a list of common resources where users can get involved in making the BIDS standard better!
 
 ## Questions and issues
@@ -58,73 +64,83 @@ The BIDS specification can be extended in a backwards compatible way and will ev
 These are accomplished with BIDS Extension Proposals (BEPs), which are community-driven processes.
 
 Do you want to learn more about extending BIDS to a new modality or set of data types?
-Read the [Guide](https://bids-extensions.readthedocs.io/en/latest/guide/)
-and follow the [Submission Process](https://bids-extensions.readthedocs.io/en/latest/submission/).
-Read the [BEP Process](../extensions/process.md)
+Read about the [BEP Process](../extensions/process.md)
 and follow the [BEP Guidelines](../extensions/guidelines.md)
 
 ## Becoming a BIDS maintainer
 
-##### Why become a maintainer?
+### Why become a maintainer?
 
 As a BIDS maintainer you may get the chance to:
 
-* Learn to work as a team
-* Bring your expertise to the BIDS maintainers group and cover technical blind spots it may have
-* Improving your technical writing skills (for example documentation)
-* Learn to work with continuous integration and deployment
-* Advise and participate in the development of BIDS extensions that are most commonly associated with a publication
+-   Learn to work as a team
+-   Bring your expertise to the BIDS maintainers group and cover technical blind spots it may have
+-   Improving your technical writing skills (for example documentation)
+-   Learn to work with continuous integration and deployment
+-   Advise and participate in the development of BIDS extensions that are most commonly associated with a publication
 
-##### Responsibilities
+### Responsibilities
 
-* Maintainers need to be loosely aware of the entire project
-  and use their knowledge to facilitate and initiate interactions
-  between different nodes of the project
-  and determine a reasonable and timely order for features to be added and issues to be resolved.
-* Maintainers direct other BIDS contributors in reviewing PRs,
-  writing clarifications to the specification, or other contributions.
-* Maintainers ensure that all contributors maintain a friendly and welcoming tone
-  to encourage productive conversations.
-* If no work team is suitable or available,
-  the final responsibility of getting the work done lies with the maintainers.
-* The development of each BIDS extension proposal should be "followed"
-  by at least one maintainer who acts as a preferential point of contact
-  between the BIDS maintainers and the BEP leads.
+-   Maintainers need to be loosely aware of the entire project
+    and use their knowledge to facilitate and initiate interactions
+    between different nodes of the project
+    and determine a reasonable and timely order for features to be added and issues to be resolved.
+
+-   Maintainers direct other BIDS contributors in reviewing PRs,
+    writing clarifications to the specification, or other contributions.
+
+-   Maintainers ensure that all contributors maintain a friendly and welcoming tone
+    to encourage productive conversations.
+
+-   If no work team is suitable or available,
+    the final responsibility of getting the work done lies with the maintainers.
+
+-   The development of each BIDS extension proposal should be "followed"
+    by at least one maintainer who acts as a preferential point of contact
+    between the BIDS maintainers and the BEP leads.
 
 Apart from these abstract and general responsibilities,
 maintainers within the BIDS community also need to ensure that the following tasks get done:
 
-* Keeping the
-  [Contributors wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors)
-  up to date and assisting new contributors with adding their credits,
-  and performing community inquiries to ensure contributors are credited in the
-  [Contributors appendix](https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html)
-    * Deciding what constitutes a contribution worth adding to the "Contributors list"
-* Preparing a monthly report to the BIDS Steering Group.
-  The monthly report is in the form of milestones, issues addressed,
-  and open issues raised in the past month and goals/plans for the next month.
-  The BIDS Steering Group may ask for additional information or propose a meeting to further discuss report items.
-  The report format and meetings are at the discretion of the BIDS Steering Group.
+-   Keeping the
+    [Contributors wiki](https://github.com/bids-standard/bids-specification/wiki/Recent-Contributors)
+    up to date and assisting new contributors with adding their credits,
+    and performing community inquiries to ensure contributors are credited in the
+    [Contributors appendix](https://bids-specification.readthedocs.io/en/stable/appendices/contributors.html)
+
+    -   Deciding what constitutes a contribution worth adding to the "Contributors list"
+
+-   Preparing a monthly report to the BIDS Steering Group.
+    The monthly report is in the form of milestones, issues addressed,
+    and open issues raised in the past month and goals/plans for the next month.
+    The BIDS Steering Group may ask for additional information or propose a meeting to further discuss report items.
+    The report format and meetings are at the discretion of the BIDS Steering Group.
 
 Maintainers are not expected to individually be responsible for all the responsibilities listed.
 Rather, the responsibilities are distributed amongst the entire group.
 
-##### Organization
+### Organization
 
-* The group of maintainers are a group of people with the above mentioned responsibilities,
-  who commit to convene bi-weekly meetings to discuss the project.
-* One lead maintainer represents the group to other BIDS Groups, mediates disagreement among members,
-  and casts deciding votes when needed (tie break).
-  Note that the maintainers will always strive for consensus decision making, and will try to avoid resorting to voting.
-    * The lead maintainer may delegate any of their duties to another maintainer.
-    * The lead maintainer is appointed collectively by the group of maintainers, preferably through consensus.
-    * If no one else does, the lead maintainer sets the schedule for the maintainers meeting.
-* Additions to and departures from the group are negotiated collectively between the lead maintainer
-  and the new/departing members, as they involve the redistribution of duties.
-    * If a maintainer wishes to serve for a limited term, that can be arranged at the start. Otherwise, due notice is expected.
-    * See also "How to become a maintainer?" below
+-   The group of maintainers are a group of people with the above mentioned responsibilities,
+    who commit to convene bi-weekly meetings to discuss the project.
 
-##### How to become a maintainer?
+-   One lead maintainer represents the group to other BIDS Groups, mediates disagreement among members,
+    and casts deciding votes when needed (tie break).
+    Note that the maintainers will always strive for consensus decision making, and will try to avoid resorting to voting.
+
+    -   The lead maintainer may delegate any of their duties to another maintainer.
+    -   The lead maintainer is appointed collectively by the group of maintainers, preferably through consensus.
+    -   If no one else does, the lead maintainer sets the schedule for the maintainers meeting.
+
+-   Additions to and departures from the group are negotiated collectively between the lead maintainer
+    and the new/departing members, as they involve the redistribution of duties.
+
+    -   If a maintainer wishes to serve for a limited term, that can be arranged at the start.
+        Otherwise, due notice is expected.
+
+    -   See also "How to become a maintainer?" below
+
+### How to become a maintainer?
 
 If you are interested in becoming a BIDS maintainer,
 please get in contact with an active BIDS maintainer

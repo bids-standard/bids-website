@@ -9,6 +9,12 @@ Converters for processing MRI data.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="MRI") }}
 
+## MRS Converters
+
+Converters for processing MRS data.
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="MRS") }}
+
 ## PET Converters
 
 Converters for processing PET data.
@@ -20,6 +26,12 @@ Converters for processing PET data.
 Converters for processing EEG, MEEG, and/or iEEG data.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="EEG") }}
+
+## fNIRS Converters
+
+Converters for processing fNIRS data.
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="fNIRS") }}
 
 ## Physio Converters
 
@@ -41,3 +53,14 @@ Not exactly BIDS converters but are common tools that can used by other BIDS
 converters.
 
 {{ MACROS___generate_converter_table(file="converters.yml", data_type="MISC") }}
+
+## Experimental Converters
+
+The converters listed below are considered 'experimental',
+usually because they relate to BIDS extensions that have not yet been approved.
+
+### Microelectrode Electrophysiology Converters
+
+Converters for processing microelectrode electrophysiology data (ecephys/icephys).
+
+{{ MACROS___generate_converter_table(file="converters.yml", data_type="microephys") }}

@@ -16,7 +16,7 @@ As with BIDS datasets, all conformant derivative datasets contain a `dataset_des
 
 New fields include `DatasetType`, which distinguishes `"derivative"` datasets from `"raw"`:
 
--   `GeneratedBy`, a list of processes that generated the data
+-   `GeneratedBy`, identifies the activity (one or more) responsible for the creation of the dataset.
 -   `SourceDatasets`, a list of datasets used to generate the derivative.
 
 ```json
@@ -24,20 +24,7 @@ New fields include `DatasetType`, which distinguishes `"derivative"` datasets fr
     "Name": "FMRIPREP Outputs",
     "BIDSVersion": "1.4.0",
     "DatasetType": "derivative",
-    "GeneratedBy": [
-        {
-            "Name": "fmriprep",
-            "Version": "1.4.1",
-            "Container": {
-                "Type": "docker",
-                "Tag": "poldracklab/fmriprep:1.4.1"
-            }
-        },
-        {
-            "Name": "Manual",
-            "Description": "Re-added RepetitionTime metadata to bold.json files"
-        }
-    ],
+    "GeneratedBy": "bids::prov#preprocessing-xMpFqB5q",
     "SourceDatasets": [
         {
             "DOI": "10.18112/openneuro.ds000114.v1.0.1",
@@ -184,46 +171,57 @@ BIDS Derivatives datasets are intended to be interpretable and distributable
 with or without the datasets used to generate them.
 This is necessary for storage and bandwidth constraints,
 as well as to permit the distribution of derivatives when the source data are restricted.
+Similarly, BIDS Raw datasets should be interpretable and distributable without
+all possible derivatives produced from them.
 
 This independence affords flexibility in the relative organization of datasets.
-The following examples show three ways to organize, relative to each other,
-a raw BIDS dataset, a preprocessed derivative dataset, and an analysis that uses both as inputs.
+The following examples show three ways to organize:
 
-A collection of derivative datasets may be stored in the `derivatives/` subdirectory
-of a BIDS (or BIDS Derivatives) dataset:
+#### 1. BIDS Raw with derivatives/
 
-```bash
-my_dataset/
-  derivatives/
-    preprocessed/
-    analysis/
-  sub-01/
-  ...
-```
+A collection of derivative datasets may be stored in the `derivatives/` subdirectory.
+Disadvantage is that such organization would complicate distribution of the raw BIDS dataset
+by itself as it would require explicit exclusion of datasets within its `derivatives/` folder.
 
-A BIDS Derivatives dataset may contain references to its input datasets
-in the `sourcedata/` subdirectory:
+#### 2. BIDS Derivative with sourcedata/raw
+
+A BIDS Derivative dataset may contain references to its input datasets
+(could be BIDS Raw, non-BIDS or even other BIDS Derivatives) in the `sourcedata/` subdirectory:
 
 ```bash
 my_analysis/
   sourcedata/
     raw/
+      sub-01/
+      ...
+      dataset_description.json
     preprocessed/
   sub-01/
   ...
+  dataset_description.json
 ```
 
 Note that the `sourcedata/` and `derivatives/` subdirectories constitute dataset boundaries.
-Any contents of these directories may be validated independently,
-but their contents must not affect the interpretation of the nested or containing datasets.
+Any subfolders of these directories may be validated independently, if they are BIDS datasets
+which would be indicated by presence of `dataset_description.json` file(s) in them with a
+REQUIRED `"BIDSVersion"` key.
+It is important to note that their contents must not affect the interpretation of the nested
+or containing datasets.
 
-Unnested datasets are also possible. For example:
+One potential disadvantage to nesting a BIDS Derivative dataset inside a BIDS Raw dataset, or vice versa,
+is that packaging them for independent sharing or publication can become more complicated.
+
+#### 3. BIDS Study with sourcedata/raw and derivatives/
+
+It is also possible to completely avoid nesting of BIDS Raw datasets into BIDS Derivative datasets (or vice versa),
+by simply placing them in separate folders, namely `sourcedata/` and `derivatives/` at root level:
 
 ```bash
 my_study/
-  raw_data/
-    sub-01/
-    ...
+  sourcedata/
+    raw/
+      sub-01/
+      ...
   derivatives/
     preprocessed/
     analysis/

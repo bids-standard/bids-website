@@ -119,7 +119,7 @@
     license: GPL-3.0
 
 -   name: BIDSme
-    repo_url: https://github.com/nbeliy/bidsme
+    repo_url: https://github.com/CyclotronResearchCentre/bidsme
     status: active
     data_types:
     -   MRI
@@ -128,7 +128,7 @@
     -   DICOM
     -   Nifti
     -   Brain Vision
-    documentation: https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1
+    documentation: https://github.com/CyclotronResearchCentre/bidsme_tutorial
     language:
     -   Python
     comment:
@@ -245,13 +245,33 @@
         url: https://hub.docker.com/r/unfmontreal/dcm2bids
     license: GPL-3.0
 
+-   name: dcm2niix
+    repo_url: https://github.com/rordenlab/dcm2niix/
+    status: active
+    data_types:
+    -   MRI
+    -   PET
+    expected_input:
+    -   DICOM
+    language:
+    -   C++
+    comment: converts DICOM files to NIfTI and BIDS sidecar JSON files
+    documentation: https://github.com/rordenlab/dcm2niix/
+    distribution:
+    -   name: github-releases
+    -   name: pypi
+        url: https://pypi.org/project/dcm2niix
+    license: BSD-3-Clause
+
 -   name: EEG2BIDS
     repo_url: https://github.com/aces/EEG2BIDS
     status: active
     data_types:
     -   EEG
+    -   sEEG
     expected_input:
-    -   EDF, Set: EEG or sEEG
+    -   EDF
+    -   Set
     language:
     -   Javascript
     -   Python
@@ -259,21 +279,25 @@
     comment: A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and Imaging
         System).
 
--   name: EEGLAB
+-   name: EEGLAB EEG-BIDS
     repo_url: https://github.com/sccn/eeglab
     status: active
     data_types:
     -   MEG
     -   EEG
+    -   iEEG
     expected_input:
     -   EDF
     -   BDF
     -   Brain Vision Exchange Format
     -   EEGLAB .set files
+    -   BIDS
     language:
     -   MATLAB
+    -   Compiled
     documentation: https://eeglab.org/tutorials/04_Import/BIDS.html
-    comment: <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
+    comment: EEGLAB with <a href='https://eeglab.org/plugins/EEG-BIDS/'>EEG-BIDS plugin</a> for importing and exporting BIDS datasets. Supports export to
+        NWB format for iEEG data. A compiled standalone version is also available.
 
 -   name: Explore ASL
     repo_url: https://github.com/ExploreASL/ExploreASL
@@ -596,6 +620,25 @@
     comment: Use this package as a command line to organize your Nifti dataset into BIDS.
     license: GPL-3.0
 
+-   name: nwb2bids
+    repo_url: https://github.com/con/nwb2bids
+    status: active
+    data_types:
+    -   microephys
+    expected_input:
+    -   NWB
+    language:
+    -   Python
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/nwb2bids
+    documentation: https://nwb2bids.readthedocs.io/
+    comment: |
+        Reorganizes NWB (Neurodata Without Borders) files into a BIDS directory
+        layout, supporting microelectrode electrophysiology data (ecephys/icephys)
+        per BEP032.
+    license: MIT
+
 -   name: phys2bids
     repo_url: https://github.com/physiopy/phys2bids
     status: active
@@ -631,6 +674,26 @@
         </a>.
     license: MIT
 
+-   name: spec2nii
+    repo_url: https://github.com/wtclarke/spec2nii
+    status: active
+    data_types:
+    -   MRS
+    expected_input:
+    -   ASCII (.txt)
+    -   Bruker (2dseq, fid)
+    -   GE P-file
+    -   jMRUI (.mrui, .txt)
+    -   LCModel (.RAW)
+    -   Philips (.data/.list, DICOM, SDAT/SPAR)
+    -   Siemens (DICOM [.ima/.dcm], RDA, TWIX)
+    -   UIH DICOM
+    -   Varian
+    language:
+    -   Python
+    comment: This Python-based tool converts most proprietary and non-proprietary MRS data formats into the NIfTI-MRS format.
+    license: BSD-3-Clause
+
 -   name: sovabids
     repo_url: https://github.com/yjmantilla/sovabids
     status: active
@@ -642,3 +705,20 @@
     -   Python
     documentation: https://sovabids.readthedocs.io/en/latest/
     comment: A Python package for the automatic conversion of EEG datasets to the BIDS standard, with a focus on making the most out of metadata.
+
+-   name: Cedalion
+    repo_url: https://github.com/ibs-lab/cedalion
+    status: active
+    data_types:
+    -   fNIRS
+    expected_input:
+    -   SNIRF
+    language:
+    -   Python
+    documentation: https://doc.ibs.tu-berlin.de/cedalion/doc/dev/index.html
+    comment: |
+        Cedalion is a Python toolbox for advanced analysis of fNIRS and
+        diffuse optical tomography (DOT) data, and includes snirf2bids
+        utilities with a tutorial for semi-automatic conversion of
+        SNIRF files into a BIDS-compliant structure. (see the <a href='https://doc.ibs.tu-berlin.de/cedalion/doc/dev/examples/getting_started_io/14_snirf2bids.html'>tutorial</a>)
+    license: MIT

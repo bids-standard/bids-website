@@ -86,7 +86,6 @@ def generate_apps_table():
 
 def generate_filename_templates():
     """Create filename templates for all datatypes of all modalities."""
-
     schema_obj = schema.load_schema()
 
     modalities = schema_obj.rules.modalities

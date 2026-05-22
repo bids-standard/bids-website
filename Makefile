@@ -1,52 +1,55 @@
-all: install update
+all: update
 
-install:
-	pip install -r requirements.txt
+install: .venv node_modules
+
+.venv:
+	uv sync --frozen
 
 update: update_from_spec update_contributors update_datasets_examples tmp_figures update_bep_pages
 
-package.json:
-	npm install `cat npm-requirements.txt`
+node_modules:
+	npm install
 
 update_from_spec:
 	@echo "  ----------------------------------  "
 	rm -fr docs/specification
 	mkdir -p docs/specification/
 	cp specification/macros_doc.md docs/extensions/macros_doc.md
+	cp -f specification/BIDS_logo/BIDS_logo_black.svg docs/assets/img/logos/
 
-update_contributors: package.json
+update_contributors: .venv node_modules
 	@echo "  ----------------------------------  "
-	python tools/build/transfer_contributors.py
-	npx all-contributors generate
+	uv run tools/build/transfer_contributors.py
+	npm run all-contributors
 
-update_datasets_examples:
+update_datasets_examples: .venv
 	@echo "  ----------------------------------  "
-	python data/datasets/examples/tools/print_dataset_listing.py docs/datasets/examples.md
+	uv run data/datasets/examples/tools/print_dataset_listing.py docs/datasets/examples.md
 
-update_bep_pages:
+update_bep_pages: .venv
 	@echo "  ----------------------------------  "
-	python tools/build/generate_bep_pages.py
+	uv run tools/build/generate_bep_pages.py
 
 # Figures
 .PHONY: tmp/affiliations.html tmp/bids_timeline.html tmp/citation_per_year.html tmp/openneuro_data_growth.html
 
 tmp_figures: tmp/affiliations.html tmp/bids_timeline.html tmp/citation_per_year.html tmp/openneuro_data_growth.html
 
-tmp/affiliations.html:
+tmp/affiliations.html: .venv
 	@echo "  ----------------------------------  "
-	python tools/build/figure_affiliations.py
+	uv run tools/build/figure_affiliations.py
 
-tmp/bids_timeline.html:
+tmp/bids_timeline.html: .venv
 	@echo "  ----------------------------------  "
-	python tools/build/figure_bep_gantt.py
+	uv run tools/build/figure_bep_gantt.py
 
-tmp/citation_per_year.html:
+tmp/citation_per_year.html: .venv
 	@echo "  ----------------------------------  "
-	python tools/build/figure_citation.py
+	uv run tools/build/figure_citation.py
 
-tmp/openneuro_data_growth.html:
+tmp/openneuro_data_growth.html: .venv
 	@echo "  ----------------------------------  "
-	python tools/build/figure_data_openneuro.py
+	uv run tools/build/figure_data_openneuro.py
 
 
 # Linting
@@ -54,13 +57,8 @@ tmp/openneuro_data_growth.html:
 lint: remark
 	tox
 
-remark: package.json
-	npx remark \
-		./docs \
-		./templates \
-		--frail \
-		--rc-path .remarkrc
-
+remark: node_modules
+	npm run remark
 
 serve: update
-	mkdocs serve -a localhost:8080
+	uv run mkdocs serve -a localhost:8080

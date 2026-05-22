@@ -1054,7 +1054,7 @@ If you're thinking that we failed to document or include our T1 image
 from the start you would be correct.
 
 There are many resources documenting that process
-[here](https://bids-standard.github.io/bids-starter-kit/tutorials/mri.html).
+[here](https://bids.neuroimaging.io/getting_started/tutorials/conversion/mri.html).
 
 Once you've handled converting your MR images into BIDS
 your directory should look like the following:

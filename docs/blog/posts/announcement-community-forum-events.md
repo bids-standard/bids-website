@@ -2,6 +2,9 @@
 date: 2020-01-02
 slug: Announcing Community Forum Events
 author: Kirstie Whitaker
+categories:
+
+-   announcement
 ---
 
 ## Join the first BIDS Community Forum events in January 2020

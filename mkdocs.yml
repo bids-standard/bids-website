@@ -6,15 +6,8 @@ site_url: https://bids.neuroimaging.io/
 plugins:
   - search
   - tags
-  # -   social
+  - git-revision-date-localized
   - blog
-  # -   rss:
-  #         match_path: blog/posts/.*
-  #         date_from_meta:
-  #             as_creation: date
-  #         categories:
-  #         -   categories
-  #         -   tags
   - open-in-new-tab
   - macros:
       module_name: macros/main
@@ -89,23 +82,6 @@ exclude_docs: |
 
 nav:
 -   About BIDS: index.md
--   Blog:
-    -   blog/index.md
--   Standards:
-    -   standards/index.md
-    -   BIDS Specification:
-        -   standards/bids_specification/index.md
-    -   BIDS Schema:
-        -   standards/schema/index.md
-        -   how it works:
-            -   standards/schema/how-the-schema-works.md
-            -   standards/schema/schema-meta.md
-            -   standards/schema/schema-objects.md
-            -   standards/schema/schema-rules.md
-    -   BIDS Stats Model:
-        -   standards/bids_stats_model/index.md
-    -   BIDS Apps:
-        -   standards/bids_app_specification/index.md
 -   Getting started:
     -   getting_started/index.md
     -   Folders and files:
@@ -140,28 +116,42 @@ nav:
         -   getting_started/how_to/index.md
     -   Templates:
         -   getting_started/templates/index.md
--   Tools:
-    -   tools/index.md
-    -   tools/converters.md
-    -   tools/validator.md
-    -   tools/bids-apps.md
-    -   tools/others.md
--   Datasets:
-    -   datasets/index.md
-    -   datasets/examples.md
--   FAQ:
-    -   faq/index.md
-    -   faq/general.md
-    -   faq/eeg.md
-    -   faq/mri.md
-    -   faq/phenotype.md
-    -   faq/bids-extensions.md
-    -   faq/bids-apps.md
--   Collaboration:
+-   Ecosystem:
+    -   standards/index.md
+    -   BIDS Specification:
+        -   standards/bids_specification/index.md
+    -   BIDS Schema:
+        -   standards/schema/index.md
+        -   how it works:
+            -   standards/schema/how-the-schema-works.md
+            -   standards/schema/schema-meta.md
+            -   standards/schema/schema-objects.md
+            -   standards/schema/schema-rules.md
+    -   BIDS Stats Model:
+        -   standards/bids_stats_model/index.md
+    -   BIDS Apps:
+        -   standards/bids_app_specification/index.md
+    -   Extensions:
+        -   extensions/index.md
+        -   extensions/beps.md
+        -   extensions/process.md
+        -   extensions/guidelines.md
+        -   Using MkDocs macros: extensions/macros_doc.md
+    -   Tools:
+        -   tools/index.md
+        -   tools/converters.md
+        -   tools/validator.md
+        -   tools/bids-apps.md
+        -   tools/others.md
+    -   Datasets:
+        -   datasets/index.md
+        -   datasets/examples.md
+-   Get involved:
     -   collaboration/index.md
     -   Governance: collaboration/governance.md
     -   collaboration/working-groups.md
     -   Contributing: collaboration/bids_github/CONTRIBUTING.md
+    -   Contributing to the BIDS website: collaboration/CONTRIBUTING.md
     -   collaboration/contributors.md
     -   Code of conduct: collaboration/bids_github/CODE_OF_CONDUCT.md
     -   collaboration/acknowledgments.md
@@ -170,18 +160,22 @@ nav:
         -   Google summer:
             -   GSOC 2018: collaboration/reports/google_summer/2018-gsoc.md
             -   GSOD 2024: collaboration/reports/google_summer/2024-gsod.md
--   Extensions:
-    -   extensions/index.md
-    -   extensions/beps.md
-    -   extensions/process.md
-    -   extensions/guidelines.md
-    -   Using MkDocs macros: extensions/macros_doc.md
 -   Impact:
     -   impact/index.md
     -   impact/measuring.md
--   Merch: https://www.teepublic.com/user/bids
+-   FAQ:
+    -   faq/index.md
+    -   faq/general.md
+    -   faq/eeg.md
+    -   faq/mri.md
+    -   faq/phenotype.md
+    -   faq/bids-extensions.md
+    -   faq/bids-apps.md
+-   Blog:
+    -   blog/index.md
 -   Contact:
     - contact/index.md
+
 
 
 theme:
@@ -195,7 +189,6 @@ theme:
     - content.code.copy
     - content.tabs.link
     - content.tooltips
-    - footnotes
     - header.autohide
     - navigation.footer
     - navigation.indexes
@@ -204,8 +197,9 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - search.suggest
     - search.highlight
+    - search.share
+    - search.suggest
     - toc.follow
   icon:
     repo: fontawesome/brands/github
@@ -217,15 +211,15 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      primary: teal
-      accent: green
+      primary: custom
+      accent: custom
       scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: teal
-      accent: green
+      primary: custom
+      accent: custom
       scheme: slate
       toggle:
         icon: material/brightness-4
@@ -237,7 +231,12 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - footnotes
   - md_in_html
+  - pymdownx.highlight:
+      use_pygments: false
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -254,6 +253,7 @@ markdown_extensions:
       alternate_style: true
   - tables
   - toc:
+      permalink: true
       anchorlink: true
       toc_depth: 3
 
@@ -288,3 +288,7 @@ extra:
       link: https://www.instagram.com/bidsstandard/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw
+
+analytics:
+  provider: google
+  property: G-C43VJZD2XC
