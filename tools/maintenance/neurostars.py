@@ -30,7 +30,6 @@ API doc: https://docs.discourse.org/
 """
 
 from datetime import datetime
-from typing import Optional
 
 import pandas as pd
 import requests
@@ -119,7 +118,8 @@ def print_note(month, year, nb_topics, nb_posts):
 Note:
 - some topics have several tags so they may be counted twice
 - some topics may not be tagged so numbers here may be an underestimation
-- tags with no new topics or posts are not included in the summary table below"""
+- tags with no new topics or posts are not included
+  in the summary table below"""
     )
 
 
@@ -182,7 +182,8 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
 
     :param tag: neurostars tag
     :type tag: string
-    :param debug: if ``True``, only gets topics of the first 2 pages. Defaults to False.
+    :param debug: if ``True``, only gets topics of the first 2 pages.
+                  Defaults to False.
     :type debug: bool, optional
     :param verbose: defaults to False
     :type verbose: bool, optional
@@ -213,7 +214,6 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
         return
 
     while True:
-
         url = f"{base_url}?page={page}"
 
         response = requests.get(url)
@@ -234,8 +234,8 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
         for i, topic in enumerate(response.json()["topic_list"]["topics"]):
             if verbose:
                 print(
-                    f"{i}. {topic['created_at']} | "
-                    f"{topic['posts_count']} | {topic['title']}"
+                    f"{i}. {topic['created_at']} | {topic['posts_count']} "
+                    f"| {topic['title']}"
                 )
 
             nb_new_posts = return_nb_new_posts_for_topic(topic)
@@ -305,7 +305,7 @@ def return_topics_for_month(df: pd.DataFrame, month: int, year: int):
     return (created_at > mindate.date()) & (created_at < maxdate.date())
 
 
-def return_stats(df: pd.DataFrame, nb_topics: Optional[int] = None) -> dict:
+def return_stats(df: pd.DataFrame, nb_topics: int | None = None) -> dict:
     """Return stats."""
     if nb_topics is None:
         nb_topics = len(df)
@@ -335,7 +335,6 @@ def main():
     }
 
     for tag in tags(debug):
-
         df, nb_topics = get_topics_for_tag(tag, debug=debug, verbose=verbose)
 
         if verbose:
@@ -345,7 +344,6 @@ def main():
         summary["nb_topics"].append(nb_topics)
 
         if df is not None:
-
             df.to_csv(f"{tag}.tsv", index=False, sep="\t")
 
             stats = return_stats(df, nb_topics)
@@ -368,7 +366,6 @@ def main():
                 "value": [],
             }
             for _ in range(1, nb_months_backlog(debug)):
-
                 topic_in_that_month = return_topics_for_month(
                     df, tmp_month, tmp_year
                 )

@@ -446,3 +446,9 @@ p {
   border-color: var(--white) !important;
   color: var(--white) !important;
 }
+
+.md-button--announce {
+  background-color: var(--white) !important;
+  border-color: var(--bids-brand) !important;
+  color: var(--bids-brand) !important;
+}

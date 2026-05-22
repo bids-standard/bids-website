@@ -3,8 +3,8 @@
 from warnings import warn
 
 import requests
-import ruamel.yaml as yaml
 from bids_website.utils import data_dir
+from ruamel import yaml
 
 yaml = yaml.YAML()
 
@@ -16,7 +16,6 @@ invalid_dh = []
 
 
 for app in data["apps"]:
-
     if app["status"] == "unmaintained":
         continue
 
@@ -35,11 +34,13 @@ for app in data["apps"]:
 
 if missing_dh:
     warn(
-        f"The following BIDS apps are missing a Docker hub image.\n{missing_dh}",
+        "The following BIDS apps are missing "
+        f"a Docker hub image.\n{missing_dh}",
         stacklevel=2,
     )
 
 if invalid_dh:
     raise ValueError(
-        f"The following BIDS apps have invalid Docker hub image URL.\n{invalid_dh}"
+        "The following BIDS apps have "
+        f"invalid Docker hub image URL.\n{invalid_dh}"
     )

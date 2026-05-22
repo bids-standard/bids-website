@@ -1,36 +1,31 @@
 ---
-# Documentation
-# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 version: 2
 enable-beta-ecosystems: true
 updates:
 -   package-ecosystem: github-actions
     directory: /
     schedule:
-        interval: monthly
+        interval: semiannually
     groups:
         actions-infrastructure:
             patterns:
             -   actions/*
-
 -   package-ecosystem: gitsubmodule
     directory: /
     schedule:
-        interval: monthly
-
+        interval: semiannually
 -   package-ecosystem: uv
     directory: /
     schedule:
-        interval: monthly
+        interval: semiannually
     groups:
         python:
             patterns:
             -   '*'
-
 -   package-ecosystem: npm
     directory: /
     schedule:
-        interval: weekly
+        interval: semiannually
     groups:
         npm:
             patterns:

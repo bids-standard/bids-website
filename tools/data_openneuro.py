@@ -7,9 +7,9 @@
 #
 
 import json
-import os
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -109,7 +109,6 @@ def get_openneuro_datasets(query=None):
 
     while True:
         for y in response["data"]["datasets"]["edges"]:
-
             datasets[y["node"]["id"]] = y
 
         if len(response["data"]["datasets"]["edges"]) < 25:
@@ -117,7 +116,8 @@ def get_openneuro_datasets(query=None):
 
         next_cur = y["cursor"]
         data = (
-            f'{{"query": "query testq{{datasets(after: \\"{next_cur}\\") {query}'
+            f'{{"query": "query testq{{datasets(after: \\"{next_cur}\\") '
+            + f"{query}"
             + '}"}'
         )
         response = requests.post(
@@ -176,10 +176,10 @@ def main():
     if UPDATE or not (TMP_DIR / "datasets.json").exists():
         datasets = get_openneuro_datasets()
         if UPDATE:
-            with open(TMP_DIR / "datasets.json", "w") as f:
+            with (TMP_DIR / "datasets.json").open("w") as f:
                 json.dump(datasets, f, indent=4)
     else:
-        with open(TMP_DIR / "datasets.json") as f:
+        with (TMP_DIR / "datasets.json").open() as f:
             datasets = json.load(f)
 
     # get metadata into a format suitable to generate a dataframe
@@ -189,11 +189,11 @@ def main():
         Dataset_made_public_datetime = datetime.strptime(
             y["node"]["publishDate"][:10], date_input_format
         )
-        Dataset_URL = os.path.join(
-            "https://openneuro.org/datasets/",
-            accession_Number,
-            "versions",
-            y["node"]["latestSnapshot"]["tag"],
+        Dataset_URL = str(
+            Path("https://openneuro.org/datasets/")
+            / accession_Number
+            / "versions"
+            / y["node"]["latestSnapshot"]["tag"]
         )
         Dataset_name = y["node"]["latestSnapshot"]["dataset"]["name"]
         Dataset_made_public = Dataset_made_public_datetime.strftime(
@@ -337,19 +337,15 @@ def main():
     print("Earliest dataset:", dates.min())
     print("Latest dataset:", dates.max())
 
-    # fix dates to reflect fact that early datasets were all from openneuro
-    # df_sorted.loc[df_sorted['ReleaseDate'] < pd.Timestamp(2018,8,1), 'ReleaseDate'] = '2018-08-01'
-    # df_sorted
-
     datasets = defaultdict(int)
     subjects = defaultdict(int)
 
-    for date, nsub in metadata[["ReleaseDate", "NSubjects"]].values:
+    for date, nsub in metadata[["ReleaseDate", "NSubjects"]].to_numpy():
         datasets[date.strftime("%Y-%m-%d")] += 1
         subjects[date.strftime("%Y-%m-%d")] += nsub
 
     datadict = defaultdict(list)
-    for k in datasets.keys():
+    for k in datasets:
         datadict["ReleaseDate"].append(k)
         datadict["n_datasets"].append(datasets[k])
         datadict["n_subjects"].append(subjects[k])
