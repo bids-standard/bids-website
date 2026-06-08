@@ -71,7 +71,6 @@
 
 {% endblock %}
 #}
-
 {#
   Open Science Assistant (OSA) BIDS chat widget.
 
@@ -88,10 +87,9 @@
   Security-sensitive deployments may pin a tagged release with Subresource
   Integrity; see https://github.com/OpenScience-Collective/osa/releases
 #}
+
 {% block scripts %}
-  {{ super() }}
-  <script src="https://demo.osc.earth/osa-chat-widget.js"></script>
-  <script>
-    OSAChatWidget.setConfig({ communityId: 'bids' });
-  </script>
+    {{ super() }}
+    <script src="https://demo.osc.earth/osa-chat-widget.js"></script>
+    <script>OSAChatWidget.setConfig({ communityId: 'bids' });</script>
 {% endblock %}
