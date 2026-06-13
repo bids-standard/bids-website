@@ -45,7 +45,7 @@ parameters belong in *_<modality>.json.
 What participants did and the trial structure, plus how tasks were organized
 across a session (order, counter-balancing, activities between tasks). The
 canonical TaskName / TaskDescription live in task-<label>_*.json and events
-live in events.tsv
+live in *_events.tsv
 
 ### Stimuli (optional)
 
@@ -64,8 +64,7 @@ quality summary (with a link to e.g. an MRIQC report if available), then
 anything that affects analysis: missing/partial runs, excluded participants,
 bad channels, timing or trigger problems, equipment or protocol changes
 mid-study,  a lesion or anomaly in one participant, or data that look
-normal but are not.
-Write "None known." if the dataset is clean.
+normal but are not. Write "None known." if the dataset is clean.
 
 ## How to use these data (optional)
 
