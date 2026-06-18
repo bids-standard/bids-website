@@ -340,9 +340,26 @@
     documentation: https://neurobagel.org/public_nodes/
     language:
     -   website
-    category:
+    category: dataset discoverability
     description: Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging
         parameters.
+
+-   name: BIDS Eye
+    url: https://bidseye.xyz/
+    repo_url: https://github.com/paul188/BIDS-Eye
+    language:
+    -   website
+    category: dataset discoverability
+    description: Search Engine and database that automatically crawls large public neuroimaging data lakes, indexes the metadata and makes them easily searchable
+
+-   name: Datalad registry
+    url: https://registry.datalad.org/overview
+    repo_url: https://github.com/datalad/datalad-registry
+    language:
+    -   website
+    category: dataset discoverability
+    description: Can help you discover Public Datalad dataset including those that are BIDS datasets
+
 
 -   name: nipoppy
     repo_url: https://github.com/nipoppy/nipoppy
