@@ -131,7 +131,7 @@
     -   ???
     language:
     -   Python
-    documentation: URL to documentation
+    documentation: https://ancplaboldenburg.github.io/bids_manager_documentation/
     comment: GUI and CLI tool for raw-to-BIDS conversion, curation, metadata editing, and validation for MRI, EEG, MEG, and physiological recordings.
     GUI: true
 
