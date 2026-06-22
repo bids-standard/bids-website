@@ -358,7 +358,7 @@
     language:
     -   website
     category: dataset discoverability
-    description: Can help you discover Public Datalad dataset including those that are BIDS datasets
+    description: Can search among Public DataLad datasets on GitHub, GIN, etc including those that are BIDS datasets
 
 
 -   name: nipoppy
