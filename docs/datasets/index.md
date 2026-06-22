@@ -21,7 +21,7 @@ Below is a small sample of some main resources for finding BIDS datasets that ma
 If you're looking for full data files to run the validator on or simply compare to your
 own _bidsified_ data try searching here. Datasets here are (by and large) publicly available and conform to BIDS.
 
-[publicnEUro](https://publicneuro.eu/) is a data repository for BIDS dataset.
+[publicnEUro](https://publicneuro.eu/) is a data repository for BIDS datasets.
 The principle is similar to OpenNeuro, where each dataset is shared independently.
 Once shared, a DOI is available for citation, and the link allows users to access the data.
 The platform is GDPR compliant, allowing us to share brain imaging data in a way that is as FAIR as possible.
