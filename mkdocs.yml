@@ -288,3 +288,6 @@ extra:
       link: https://www.instagram.com/bidsstandard/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw
+  analytics:
+    provider: google
+    property: G-C43VJZD2XC
