@@ -8,7 +8,7 @@ categories:
 -   news
 ---
 
-# BIDS will be at the OHBM BrainHack in Bordeaux! 
+# BIDS will be at the OHBM BrainHack in Bordeaux!
 
 We are excited to announce that BIDS will be at this year's BrainHack in Bordeaux, June 11-13!
 
