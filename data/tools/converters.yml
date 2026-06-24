@@ -118,6 +118,23 @@
     GUI: true
     license: GPL-3.0
 
+-   name: BIDS manager
+    repo_url: https://github.com/ANCPLabOldenburg/BIDS-Manager
+    status: active
+    data_types:
+    -   MRI
+    -   EEG
+    -   MEG
+    -   physio
+    expected_input:
+    -   DICOM
+    -   ???
+    language:
+    -   Python
+    documentation: https://ancplaboldenburg.github.io/bids_manager_documentation/
+    comment: GUI and CLI tool for raw-to-BIDS conversion, curation, metadata editing, and validation for MRI, EEG, MEG, and physiological recordings.
+    GUI: true
+
 -   name: BIDSme
     repo_url: https://github.com/CyclotronResearchCentre/bidsme
     status: active
