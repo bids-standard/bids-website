@@ -60,5 +60,8 @@ lint: remark
 remark: node_modules
 	npm run remark
 
+remark-fix: node_modules
+	npm run format -- $(FILE) --output
+
 serve: update
 	uv run mkdocs serve -a localhost:8080

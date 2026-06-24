@@ -90,7 +90,7 @@ you can use the following to get most of the markdown formatting done.
 Some will still need some manual work.
 
 ```bash
-npm run format -- path_to_file --ouput
+make remark-fix FILE=path_to_file
 ```
 
 ## Upgrading dependencies
