@@ -606,6 +606,7 @@ apps:
     datatype:
     -   anat
     -   func
-    description: SpinePrep is a containerised BIDS-App for reproducible, QC-first preprocessing of human spinal-cord fMRI, automating the recommended cord-fMRI recipe (SCT, FSL, PAM50) with per-vertebral-level quality control.
+    description: SpinePrep is a containerised BIDS-App for reproducible, QC-first preprocessing of human spinal-cord fMRI, automating the recommended cord-fMRI
+        recipe (SCT, FSL, PAM50) with per-vertebral-level quality control.
     branch: main
     ci: gh
