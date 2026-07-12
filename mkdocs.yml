@@ -70,6 +70,9 @@ plugins:
         "bep042.md" : "https://bids.neuroimaging.io/extensions/beps/bep_042.html"
         "bep043.md" : "https://bids.neuroimaging.io/extensions/beps/bep_043.html"
         "bep044.md" : "https://bids.neuroimaging.io/extensions/beps/bep_044.html"
+        "bep045.md" : "https://bids.neuroimaging.io/extensions/beps/bep_045.html"
+        "bep046.md" : "https://bids.neuroimaging.io/extensions/beps/bep_046.html"
+        "bep047.md" : "https://bids.neuroimaging.io/extensions/beps/bep_047.html"
 
 docs_dir: docs
 
