@@ -46,10 +46,7 @@ def test_hook_injects_from_real_beps_yml() -> None:
     beps = yaml.load(hook._BEPS_YML)
     for bep in beps:
         key = f"bep{bep['number']}.md"
-        expected = (
-            "https://bids.neuroimaging.io/extensions/beps/"
-            f"bep_{bep['number']}.html"
-        )
+        expected = f"extensions/beps/bep_{bep['number']}.md"
         assert redirect_maps[key] == expected
 
 
@@ -93,10 +90,6 @@ def test_hook_uses_isolated_fixture(
 
     redirect_maps = config["plugins"]["redirects"].config["redirect_maps"]
     assert redirect_maps == {
-        "bep100.md": (
-            "https://bids.neuroimaging.io/extensions/beps/bep_100.html"
-        ),
-        "bep200.md": (
-            "https://bids.neuroimaging.io/extensions/beps/bep_200.html"
-        ),
+        "bep100.md": "extensions/beps/bep_100.md",
+        "bep200.md": "extensions/beps/bep_200.md",
     }
