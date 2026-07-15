@@ -8,7 +8,7 @@ The BIDS specification is intentionally silent on filesystem-specific implementa
 BIDS-aware software, however, has to run against real datasets that live on real filesystems and are frequently managed by tools such as [git-annex] and [DataLad], mounted from cloud object stores, or bind-mounted into containers.
 The recommendations below aim to keep tools interoperable across those realities.
 
-The keywords "MUST", "MUST NOT", "SHOULD", "SHOULD NOT", and "MAY" are used as defined in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+The keywords "MUST", "MUST NOT", "SHOULD", "SHOULD NOT", and "MAY" are used as defined in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to grade the urgency of each guideline.
 
 ## Do not resolve symbolic links
 
