@@ -35,7 +35,7 @@ def _make_config(redirect_maps: dict[str, str] | None) -> dict:
 
 
 def test_hook_injects_from_real_beps_yml() -> None:
-    """Every BEP in data/beps/beps.yml gets a bep{NNN}.md redirect."""
+    """Every BEP in data/beps/beps.yml gets bep{NNN}.md + bep{NNN}/index.md."""
     hook = _load_hook()
     config = _make_config({"foo.md": "bar.md"})
 
@@ -45,9 +45,10 @@ def test_hook_injects_from_real_beps_yml() -> None:
     yaml = ruamel.yaml.YAML(typ="safe")
     beps = yaml.load(hook._BEPS_YML)
     for bep in beps:
-        key = f"bep{bep['number']}.md"
-        expected = f"extensions/beps/bep_{bep['number']}.md"
-        assert redirect_maps[key] == expected
+        n = bep["number"]
+        expected = f"extensions/beps/bep_{n}.md"
+        assert redirect_maps[f"bep{n}.md"] == expected
+        assert redirect_maps[f"bep{n}/index.md"] == expected
 
 
 def test_hook_preserves_pre_existing_entries() -> None:
@@ -61,6 +62,31 @@ def test_hook_preserves_pre_existing_entries() -> None:
 
     redirect_maps = config["plugins"]["redirects"].config["redirect_maps"]
     assert redirect_maps["bep045.md"] == manual_target
+
+
+def test_hook_mirrors_manual_entries_with_index_md() -> None:
+    """Manual bepNNN.md entries also get a bepNNN/index.md mirror."""
+    hook = _load_hook()
+    external = "https://bids-specification.readthedocs.io/en/stable/x.html"
+    config = _make_config({"bep001.md": external})
+
+    hook.on_config(config)
+
+    redirect_maps = config["plugins"]["redirects"].config["redirect_maps"]
+    assert redirect_maps["bep001.md"] == external
+    assert redirect_maps["bep001/index.md"] == external
+
+
+def test_hook_leaves_non_bep_entries_alone() -> None:
+    """Non-BEP redirect keys are ignored — only bepNNN.md gets mirrored."""
+    hook = _load_hook()
+    config = _make_config(
+        {"news.md": "blog/index.md", "beyond-bep.md": "somewhere.md"}
+    )
+    hook.on_config(config)
+    redirect_maps = config["plugins"]["redirects"].config["redirect_maps"]
+    assert "news/index.md" not in redirect_maps
+    assert "beyond-bep/index.md" not in redirect_maps
 
 
 def test_hook_is_noop_without_redirects_plugin() -> None:
@@ -91,5 +117,7 @@ def test_hook_uses_isolated_fixture(
     redirect_maps = config["plugins"]["redirects"].config["redirect_maps"]
     assert redirect_maps == {
         "bep100.md": "extensions/beps/bep_100.md",
+        "bep100/index.md": "extensions/beps/bep_100.md",
         "bep200.md": "extensions/beps/bep_200.md",
+        "bep200/index.md": "extensions/beps/bep_200.md",
     }
