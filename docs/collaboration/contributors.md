@@ -8,6 +8,8 @@ hide:
 
 ## Adding yourself as a contributors
 
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 To know more about if you can qualify as a BIDS contributor, how to add your name to the list of contributors, and why you should,
 check our [contributing guidelines about this](https://bids.neuroimaging.io/collaboration/bids_github/CONTRIBUTING.html#recognizing-contributions).
 
@@ -15,7 +17,7 @@ check our [contributing guidelines about this](https://bids.neuroimaging.io/coll
 
 To see some statistics about our contributors, [check our impact section](../impact/measuring.md#contributors)
 
-Thanks goes to these wonderful people.
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/emoji-key/)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -531,16 +533,3 @@ Thanks goes to these wonderful people.
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

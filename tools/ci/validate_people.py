@@ -1,5 +1,5 @@
 """Check
-- leads of each BEP
+- leads of each BEP.
 """
 
 import sys
@@ -15,10 +15,7 @@ from ruamel.yaml import YAML
 yaml = YAML(typ="safe", pure=True)
 
 files_to_check = [
-    # data_dir() / "beps" / "beps_completed.yml",
-    data_dir()
-    / "beps"
-    / "beps.yml",
+    data_dir() / "beps" / "beps.yml",
 ]
 
 
@@ -29,19 +26,16 @@ def main(files_to_check):
     citation = load_citation()
 
     for file in files_to_check:
-
         print(f"\nchecking: {file}")
 
         with file.open("r") as f:
             data = yaml.load(f)
 
         for bep in data:
-
             has_email = False
 
-            print(f'[blue]{bep["number"]} {bep["title"]}')
+            print(f"[blue]{bep['number']} {bep['title']}")
             for lead in bep["leads"]:
-
                 status, email = check_lead(citation, lead)
 
                 if status == "not found":
@@ -53,7 +47,8 @@ def main(files_to_check):
                     color = "green"
 
                 print(
-                    f'    [{color}]{status.upper()} {lead["given-names"]} {lead["family-names"]}'
+                    f"    [{color}]{status.upper()} "
+                    f"{lead['given-names']} {lead['family-names']}"
                 )
 
                 if status in ["not found", "skip"]:
@@ -62,7 +57,8 @@ def main(files_to_check):
                 if email["in_bids_website"]:
                     return_code = 1
                     print(
-                        "      [red]email should be in specification/CITATION.cff not in bids-website data."
+                        "      [red]email should be in "
+                        "specification/CITATION.cff not in bids-website data."
                     )
 
                 if email["in_citation_cff"]:
@@ -70,15 +66,18 @@ def main(files_to_check):
                 else:
                     color = "yellow" if has_email else "red"
                     print(
-                        f"      [{color}]no email in specification/CITATION.cff."
+                        f"      [{color}]no email in "
+                        "specification/CITATION.cff."
                     )
 
                 if email["conflicting"]:
                     return_code = 1
                     print(
                         "      [red]conflicting emails found:\n",
-                        f"      [red]  - '{email["in_citation_cff"]}' in specification/CITATION.cff\n"
-                        f"      [red]   - '{email["in_bids_website"]}' bids-website data.",
+                        f"      [red]  - '{email['in_citation_cff']}' "
+                        "in specification/CITATION.cff\n"
+                        f"      [red]   - '{email['in_bids_website']}' "
+                        "bids-website data.",
                     )
 
             return_code |= not has_email

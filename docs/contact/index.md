@@ -57,7 +57,6 @@ Some example questions that have already been answered include:
 
     -   [:simple-bluesky: Bluesky](https://bsky.app/profile/bidsstandard.bsky.social/)
     -   [:simple-mastodon: Mastodon](https://fosstodon.org/@bidsstandard/)
-    -   [:simple-x: X](https://x.com/BIDSstandard)
     -   [:simple-youtube: YouTube](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
     -   [:simple-instagram: Instagram](https://www.instagram.com/bidsstandard)
     -   Listen to our [podcast](https://anchor.fm/bids-maintenance)
@@ -66,3 +65,7 @@ Some example questions that have already been answered include:
     feel free to join one of the communication channels that we use regularly.
 
 </div>
+
+## Merch
+
+For buying BIDS merchandise, please follow [this link](https://www.teepublic.com/user/bids)

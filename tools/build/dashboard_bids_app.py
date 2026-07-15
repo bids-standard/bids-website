@@ -1,8 +1,11 @@
-"""Adds a dashboard in README that shows the status of all bids apps default branch CI runs."""
+"""Adds a dashboard in README
+that shows the status of all bids apps default branch CI runs.
+"""
 
-import ruamel.yaml as yaml
 from pathlib import Path
+
 import pandas as pd
+from ruamel import yaml
 
 yaml = yaml.YAML()
 
@@ -29,7 +32,6 @@ for app in data["apps"]:
         )
 
     else:
-
         if not app.get("ci"):
             image = f"https://circleci.com/gh/{app['gh']}.svg?style=shield"
             link = f"https://circleci.com/gh/{app['gh']}/tree/{branch}"
@@ -73,10 +75,10 @@ df = pd.DataFrame(
 )
 
 # append to readme
-with open(root_dir / "README.md", "r") as f:
+with (root_dir / "README.md").open() as f:
     readme = f.readlines()
 
-with open(root_dir / "README.md", "w") as f:
+with (root_dir / "README.md").open("w") as f:
     for line in readme:
         f.write(line)
         if line.startswith("<!-- INSERT DASHBOARD HERE -->"):

@@ -1,17 +1,17 @@
-"""This package is used to build elements from data into
+"""Package used to build elements from data into
 MarkDown format for the specification text.
 
 Functions decorated in "define_env()" are callable throughout the
 specification and are run/rendered with the mkdocs plugin "macros".
 """
 
-import os
 import sys
+from pathlib import Path
 
-code_path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+code_path = str(Path(__file__).parent.resolve())
 sys.path.append(code_path)
 
-import macros  # noqa E402
+import macros  # noqa: E402
 
 
 def define_env(env):

@@ -7,10 +7,8 @@
 
 import pandas as pd
 import plotly.graph_objs as go
-
+from bids_website.utils import data_dir, root_dir
 from plotly.subplots import make_subplots
-
-from bids_website.utils import root_dir, data_dir
 
 TMP_DIR = root_dir() / "tmp"
 
@@ -21,11 +19,6 @@ def main():
         data_dir() / "openneuro_datasets.tsv",
         sep="\t",
     )
-
-    # end_year = 24  # set to current year + 1
-    # # July 2 is the midpoint of year
-    # midyears = pd.to_datetime([f"20{yr}-07-02" for yr in range(18, end_year)]).astype(int)
-    # midyears
 
     df["cumsum_datasets"] = df["n_datasets"].cumsum()
     df["cumsum_subjects"] = df["n_subjects"].cumsum()
@@ -54,7 +47,7 @@ def main():
     )
     fig.update_xaxes(title_text="date")
 
-    fig.update_layout(margin=dict(l=0, r=0, t=40, b=0))
+    fig.update_layout(margin={"l": 0, "r": 0, "t": 40, "b": 0})
 
     fig.write_html(TMP_DIR / "openneuro_data_growth.html")
 
