@@ -77,8 +77,8 @@ BEP_issue_exist -- yes --> Join_discussion
 
 *note: I think that it's nearly impossible to try to categorize these in the exact same format
 as the attached slide/diagram. However, for this first draft this is nearly 1 to 1 and slightly 
-edited for clarity for the above image. Addtional comments and discussions are also added at 
-were necessary, look for either note: or italicized text*
+edited for clarity for the above image. Addtional comments and discussions are also added where 
+necessary, look for either note: or italicized text*
 
 ### Idea Communication
 
@@ -158,17 +158,120 @@ As in the previous review step Steering and/or Maintainers will work with the BE
 Started < 3 months from BEP Idea Recognition & BEP Number assignment.
 
 *The ideal, much like the previous step, is to allow the working group is group to move forward to the next part of the 
-process as rapidly as possible. Following met deliverables BEP Leads are reviewed and advanced by X time. This window is not hard set, but 3 Steering and others felt that should the objectives to move onto the next step a review should be provided in no more than 3 months after the BEP Lead/Working group requests it.*
+process as rapidly as possible. Following met deliverables BEP Leads are reviewed and advanced by X time. This window 
+is not hard set. Steering and others felt that when the objectives to move onto the next step are met and a BEP Lead/Working
+group requests a review, then a that review must be provided in no more than 3 months. The 3 month window is to allow Steering
+and Maintainers to work within the 2 review periods per year structure that already exists.*
 
 ### Community Draft Review
 
+#### Deliverables
 
+- BIDS Mailing list announcement
+    - time frame for review clearly stated
+    - invitation for comments/community engagement solicited
+    - Other information included e.g. recap of what/why/who/how, links to existing work (PR, Docs, etc)
+- Reviewers collected from the Idea Communication step are contacted and invited for their final input
+- Completed BEP draft will all comments closed/resolved.
+
+#### Outcome
+
+- Draft is published to the wider community and they are actively engaged (emailed, messaged, invited etc)
+- Review period is **fixed** following the community review announcement. Once the community review period 
+has ended no additional changes or issues may be submitted to the Draft. 
+
+*Technical or implentation issues aside, the BEP will be considered final at the end of the review period. The objective of adhering to a hard deadline is to empower BEP Leads and communities to advance their contributions while providing active community contributors an ample window of time to partcipate in this process.*
+
+#### BEP Lead Actions
+
+- Facilitate Consensus
+- Request Review
+- Expand/finalize examples following community input and discussion
+- Document community discussions and resolutions to issues arising during community review.
+- Provide summary of community discussions and resolutions for Maintainers
+
+#### Reviews
+
+- Maintainers feasibilty review
+
+Following (or during) the community review maintainers will help to determine whether
+    
+    a) The community reviewed version of the BEP is still technically feasible.
+    b) All other deliverables have been met.
+
+For example, it's possible that the community input/review have altered the BEP such that new additions to the 
+draft are not able to be implemented via the schema expression language and/or are unable to be validated. Sometimes
+these issues are more easily fixed at this stage, but often have been resolved after via changes to the schema or
+other updates to the standard or tooling. The maintainers will make this determination and provide timely feedback
+or solutions to the BEP Lead & Working Group to help them move forward.
+
+
+#### Ideal Timeline
+
+The community review period should be no less than 3 months (but no more than ??????) in duration to account for community 
+members time and opportunity to provide input and feedback. 
+
+Announcements and review windows may coincide with BIDS/BEP regular community meetings (every 3 months?). 
 
 ### Technical Integration
 
+From this step forward the focus of BEP is purely technical, the goal of this phase is ensure that the final Merging Phase can pass. 
+
+#### Deliverables
+
+Github pull requests open and ready to merge for:
+
+- github.com/bids-standard/bids-specification
+- github.com/bids-standard/bids-examples
+
+#### BEP Lead Actions
+
+- propose changes to spec via PR
+- facilitate consensus between spec and examples
+- request feedback from tool developers, experts, etc collected at Phase 1 (Idea Communication) during 
+this semi-final phase. 
+
+#### Reviews
+
+Maintainers review and either request changes or approve pull requests for merging. 
 
 ### Merging
 
+Once this phase is reached a BEP Lead may merge their examples and BEP into their respective repositories. Following the merge the maintainers will publish a new release of the BIDS Specification.  
 
-## BEP paper writing suggestion
+#### Deliverables
+
+- GitHub pull requests from the Technical Integration phase are merged into their respective repositories at github.com/bids-standard
+
+
+#### Ideal Timeline
+
+Less than or equal to 1 month after final technical review is finished.
+
+
+### BIDS Community Meetings and the BEP Process
+
+Community meetings are scheduled to occur once per quarter (every 3 months) and BEP Leads or a BEP Working group member are required to attend. The goals of this meeting are to:
+
+- speed up and better track BEP development
+- facilitate communication between other BEP's and their BEP Leads (there's often overlap and co-dependencies between extension proposals) 
+- provide consistent support to BEP Leads & Working Groups
+
+During the first half of the meeting BEP Leads will have up to 5 minutes alloted provide updates on their BEP.
+BEP Leads should be prepared to use their alloted time to discuss the status of their BEP. Updates should include
+(but are not limited to) some of the following:
+
+- Quick updates on changes since the previous meeting; what phase they're presently on and which they expect to reach by the next meeting.
+- Any blockers that might be preventing or slowing them down from progressing to their next phase, these may include:
+    - A missing feature or breaking addition proposed by another BEP 
+    - Infrastructure/BIDS bugs (schema expression, validator, etc) that need addressing by maintainers/community
+    - contributor turnover in the working group
+    - delays stemming from lack of feedback/communication from BIDS maintainers/steering
+
+Following the BEP updates, the rest of the community meeting time is reserved for more general discussion. BEP leads may use this forum as an opportunity to raise new issues and communicate
+resolutions to previous ones arising from their BEP.
+
+Community members are encouraged to attend to find out more about active BEPS, request major changes, or to simply ask questions about how a BEP might address something they are concerned with.
+
+## BEP paper writing suggestions
 
