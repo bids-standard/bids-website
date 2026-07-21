@@ -75,6 +75,8 @@ BEP_issue_exist -- yes --> Join_discussion
 
 ### Overview of the BEP process
 
+![BEP Overiew Diagram](../assets/img/bep_process_new.png)
+
 *note: I think that it's nearly impossible to try to categorize these in the exact same format
 as the attached slide/diagram. However, for this first draft this is nearly 1 to 1 and slightly 
 edited for clarity for the above image. Addtional comments and discussions are also added where 
