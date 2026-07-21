@@ -80,7 +80,7 @@ If you are sure that you want to move forward, also make sure you have:
 
 *note: I think that it's nearly impossible to try to categorize these in the exact same format
 as the attached slide/diagram. However, for this first draft this is nearly 1 to 1 and slightly
-edited for clarity for the above image. Addtional comments and discussions are also added where
+edited for clarity for the above image. Additional comments and discussions are also added where
 necessary, look for either note: or italicized text*
 
 ### Idea Communication
@@ -115,7 +115,7 @@ a) The BEP Lead forms a working group consisting of
 \- appropriate parties for the community review step
 \- a collection of experts to help draft the initial BEP document and prepare it for community review. Experts are (but not limited to) those of with relevant technical, scientific, or software development skills.
 
-b) The idea is rejected by the Steering Group and the BEP lead is provided with an explaination as to why the BEP will not be moving forward.
+b) The idea is rejected by the Steering Group and the BEP lead is provided with an explanation as to why the BEP will not be moving forward.
 
 c) The BEP lead is asked to modify or address topics raised by the Steering Group for a subsequent review.
 
@@ -148,7 +148,7 @@ being that if a potential BEP lead has a viable BEP Idea that they are quickly a
 -   Maintainers Feasibility Review
 -   Steering Draft Review
 
-This part of the process requires an additional review by the BIDS Maintainers which serves to evaluate the technical feasibility of the Draft BEP. Ideally, issues that affect the techinical integration of the BEP are caught and corrected at this step.
+This part of the process requires an additional review by the BIDS Maintainers which serves to evaluate the technical feasibility of the Draft BEP. Ideally, issues that affect the technical integration of the BEP are caught and corrected at this step.
 
 As in the previous review step Steering and/or Maintainers will work with the BEP Working group to address next steps whether they are revisions or advancement to the Community Review step.
 
@@ -182,7 +182,7 @@ and Maintainers to work within the 2 review periods per year structure that alre
 -   Review period is **fixed** following the community review announcement. Once the community review period
     has ended no additional changes or issues may be submitted to the Draft.
 
-*Technical or implentation issues aside, the BEP will be considered final at the end of the review period. The objective of adhering to a hard deadline is to empower BEP Leads and communities to advance their contributions while providing active community contributors an ample window of time to partcipate in this process.*
+*Technical or implementation issues aside, the BEP will be considered final at the end of the review period. The objective of adhering to a hard deadline is to empower BEP Leads and communities to advance their contributions while providing active community contributors an ample window of time to participate in this process.*
 
 #### BEP Lead Actions
 
@@ -260,8 +260,8 @@ Community meetings are scheduled to occur once per quarter (every 3 months) and 
 -   facilitate communication between other BEP's and their BEP Leads (there's often overlap and co-dependencies between extension proposals)
 -   provide consistent support to BEP Leads & Working Groups
 
-During the first half of the meeting BEP Leads will have up to 5 minutes alloted provide updates on their BEP.
-BEP Leads should be prepared to use their alloted time to discuss the status of their BEP. Updates should include
+During the first half of the meeting BEP Leads will have up to 5 minutes allotted provide updates on their BEP.
+BEP Leads should be prepared to use their allotted time to discuss the status of their BEP. Updates should include
 (but are not limited to) some of the following:
 
 -   Quick updates on changes since the previous meeting; what phase they're presently on and which they expect to reach by the next meeting.
