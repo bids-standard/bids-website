@@ -23,6 +23,13 @@
     -   name: pypi
         url: https://pypi.org/project/BIDS-pydantic/
 
+-   name: BIDS-Flux
+    repo_url: https://bids-flux-docs.readthedocs.io
+    language:
+    -   N/A
+    category: data management
+    description: A scalable FAIR data management platform tailored for multi-site neuroimaging research
+
 -   name: BIDSHandler
     repo_url: https://github.com/Macquarie-MEG-Research/BIDSHandler
     language:
