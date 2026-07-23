@@ -469,6 +469,10 @@
          <lastmod>2026-07-23</lastmod>
     </url>
     <url>
+         <loc>https://bids.neuroimaging.io/collaboration/publications.html</loc>
+         <lastmod>2026-07-23</lastmod>
+    </url>
+    <url>
          <loc>https://bids.neuroimaging.io/collaboration/working-groups.html</loc>
          <lastmod>2026-07-23</lastmod>
     </url>
@@ -710,10 +714,6 @@
     </url>
     <url>
          <loc>https://bids.neuroimaging.io/getting_started/resources/links.html</loc>
-         <lastmod>2026-07-23</lastmod>
-    </url>
-    <url>
-         <loc>https://bids.neuroimaging.io/getting_started/resources/publications.html</loc>
          <lastmod>2026-07-23</lastmod>
     </url>
     <url>
