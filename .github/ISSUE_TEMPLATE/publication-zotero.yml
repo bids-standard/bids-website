@@ -1,0 +1,74 @@
+---
+name: 📚 Add paper to BIDS Zotero group
+description: Request to have a published paper related to BIDS added to the BIDS Zotero group.
+title: '[Zotero] '
+labels: [zotero, literature]
+body:
+-   type: markdown
+    attributes:
+        value: |
+            Thanks for helping us keep the BIDS Zotero group up to date! Please fill out the details below so we can add your paper to the correct subcategory.
+
+-   type: input
+    id: paper-title
+    attributes:
+        label: Paper title
+        description: The full title of the published paper.
+        placeholder: e.g. A standardized format for describing neuroimaging data...
+    validations:
+        required: true
+
+-   type: input
+    id: authors
+    attributes:
+        label: Authors
+        description: List the authors as they appear on the publication.
+        placeholder: e.g. Gorgolewski KJ, Auer T, Calhoun VD, et al.
+    validations:
+        required: true
+
+-   type: input
+    id: doi-link
+    attributes:
+        label: DOI or link
+        description: A DOI (preferred) or direct link to the paper.
+        placeholder: e.g. https://doi.org/10.1038/sdata.2016.44
+    validations:
+        required: true
+
+-   type: dropdown
+    id: category
+    attributes:
+        label: Zotero subcategory
+        description: Which subcategory should this paper be filed under?
+        options:
+        -   BIDS and BEPs
+        -   Related
+        -   Zenodo
+    validations:
+        required: true
+
+-   type: textarea
+    id: relevance
+    attributes:
+        label: How is this paper related to BIDS?
+        description: A sentence or two on the connection to BIDS (e.g. proposes a BEP, uses BIDS datasets, extends BIDS tooling, etc.).
+        placeholder: e.g. Introduces a BIDS extension proposal for eyetracking data.
+    validations:
+        required: true
+
+-   type: textarea
+    id: additional-context
+    attributes:
+        label: Additional context (optional)
+        description: Anything else we should know (e.g. related BEP number, preprint vs. published version, associated dataset).
+    validations:
+        required: false
+
+-   type: checkboxes
+    id: confirmation
+    attributes:
+        label: Confirmation
+        options:
+        -   label: I confirm this paper is publicly available (published or preprint) and not already in the BIDS Zotero group.
+            required: true

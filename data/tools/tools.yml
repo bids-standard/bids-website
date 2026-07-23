@@ -23,6 +23,13 @@
     -   name: pypi
         url: https://pypi.org/project/BIDS-pydantic/
 
+-   name: BIDS-Flux
+    repo_url: https://bids-flux-docs.readthedocs.io
+    language:
+    -   N/A
+    category: data management
+    description: A scalable FAIR data management platform tailored for multi-site neuroimaging research
+
 -   name: BIDSHandler
     repo_url: https://github.com/Macquarie-MEG-Research/BIDSHandler
     language:
@@ -340,9 +347,26 @@
     documentation: https://neurobagel.org/public_nodes/
     language:
     -   website
-    category:
+    category: dataset discoverability
     description: Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging
         parameters.
+
+-   name: BIDS Eye
+    url: https://bidseye.xyz/
+    repo_url: https://github.com/paul188/BIDS-Eye
+    language:
+    -   website
+    category: dataset discoverability
+    description: Search Engine and database that automatically crawls large public neuroimaging data lakes, indexes the metadata and makes them easily searchable
+
+-   name: Datalad registry
+    url: https://registry.datalad.org/overview
+    repo_url: https://github.com/datalad/datalad-registry
+    language:
+    -   website
+    category: dataset discoverability
+    description: Can search among Public DataLad datasets on GitHub, GIN, etc including those that are BIDS datasets
+
 
 -   name: nipoppy
     repo_url: https://github.com/nipoppy/nipoppy
