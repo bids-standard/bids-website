@@ -89,7 +89,7 @@ necessary, look for either note: or italicized text*
 
 -   Open BEP Idea on [Specification Repository](github.come/bids-standard/bids-specification) as Issue with BEP Idea Template
 
--   Provide an email address to be used for communication with the BEP lead; this address will **be made public** as a matter of 
+-   Provide an email address to be used for communication with the BEP lead; this address will **be made public** as a matter of
     record alongside the BEP.
 
 #### Outcome
