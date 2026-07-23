@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://bids.neuroimaging.io/extensions/beps/bep_004.html">
+        <link rel="canonical" href="https://bids.neuroimaging.io/software_development/index.html">
       
       
+        <link rel="prev" href="../tools/others.html">
+      
+      
+        <link rel="next" href="../datasets/index.html">
       
       
         
       
       
-      <link rel="icon" href="../../assets/favicon/favicon.ico">
+      <link rel="icon" href="../assets/favicon/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>BEP 004: Susceptibility Weighted Imaging - The Brain Imaging Data Structure</title>
+        <title>Developer guidelines - The Brain Imaging Data Structure</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +57,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -90,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bep-004-susceptibility-weighted-imaging" class="md-skip">
+        <a href="#developer-guidelines" class="md-skip">
           Skip to content
         </a>
       
@@ -106,9 +110,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="The Brain Imaging Data Structure" class="md-header__button md-logo" aria-label="The Brain Imaging Data Structure" data-md-component="logo">
+    <a href="../index.html" title="The Brain Imaging Data Structure" class="md-header__button md-logo" aria-label="The Brain Imaging Data Structure" data-md-component="logo">
       
-  <img src="../../assets/img/logos/logo.png" alt="logo">
+  <img src="../assets/img/logos/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -125,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BEP 004: Susceptibility Weighted Imaging
+              Developer guidelines
             
           </span>
         </div>
@@ -247,7 +251,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.html" class="md-tabs__link">
+      <a href="../index.html" class="md-tabs__link">
         
   
   
@@ -268,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting_started/index.html" class="md-tabs__link">
+        <a href="../getting_started/index.html" class="md-tabs__link">
           
   
   
@@ -286,11 +290,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../standards/index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../standards/index.html" class="md-tabs__link">
           
   
   
@@ -312,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../collaboration/index.html" class="md-tabs__link">
+        <a href="../collaboration/index.html" class="md-tabs__link">
           
   
   
@@ -334,7 +340,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../impact/index.html" class="md-tabs__link">
+        <a href="../impact/index.html" class="md-tabs__link">
           
   
   
@@ -356,7 +362,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../faq/index.html" class="md-tabs__link">
+        <a href="../faq/index.html" class="md-tabs__link">
           
   
   
@@ -378,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/index.html" class="md-tabs__link">
+        <a href="../blog/index.html" class="md-tabs__link">
           
   
   
@@ -400,7 +406,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../contact/index.html" class="md-tabs__link">
+        <a href="../contact/index.html" class="md-tabs__link">
           
   
   
@@ -431,9 +437,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -444,9 +448,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="The Brain Imaging Data Structure" class="md-nav__button md-logo" aria-label="The Brain Imaging Data Structure" data-md-component="logo">
+    <a href="../index.html" title="The Brain Imaging Data Structure" class="md-nav__button md-logo" aria-label="The Brain Imaging Data Structure" data-md-component="logo">
       
-  <img src="../../assets/img/logos/logo.png" alt="logo">
+  <img src="../assets/img/logos/logo.png" alt="logo">
 
     </a>
     The Brain Imaging Data Structure
@@ -473,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -535,7 +539,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/index.html" class="md-nav__link ">
+            <a href="../getting_started/index.html" class="md-nav__link ">
               
   
   
@@ -610,7 +614,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/folders_and_files/index.html" class="md-nav__link ">
+            <a href="../getting_started/folders_and_files/index.html" class="md-nav__link ">
               
   
   
@@ -654,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/folders_and_files/folders.html" class="md-nav__link">
+      <a href="../getting_started/folders_and_files/folders.html" class="md-nav__link">
         
   
   
@@ -682,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/folders_and_files/files.html" class="md-nav__link">
+      <a href="../getting_started/folders_and_files/files.html" class="md-nav__link">
         
   
   
@@ -737,7 +741,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/folders_and_files/metadata/index.html" class="md-nav__link ">
+            <a href="../getting_started/folders_and_files/metadata/index.html" class="md-nav__link ">
               
   
   
@@ -781,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/folders_and_files/metadata/json.html" class="md-nav__link">
+      <a href="../getting_started/folders_and_files/metadata/json.html" class="md-nav__link">
         
   
   
@@ -809,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/folders_and_files/metadata/tsv.html" class="md-nav__link">
+      <a href="../getting_started/folders_and_files/metadata/tsv.html" class="md-nav__link">
         
   
   
@@ -845,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/folders_and_files/derivatives.html" class="md-nav__link">
+      <a href="../getting_started/folders_and_files/derivatives.html" class="md-nav__link">
         
   
   
@@ -912,7 +916,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/resources/index.html" class="md-nav__link ">
+            <a href="../getting_started/resources/index.html" class="md-nav__link ">
               
   
   
@@ -956,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/resources/links.html" class="md-nav__link">
+      <a href="../getting_started/resources/links.html" class="md-nav__link">
         
   
   
@@ -984,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/resources/glossary.html" class="md-nav__link">
+      <a href="../getting_started/resources/glossary.html" class="md-nav__link">
         
   
   
@@ -1012,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/resources/dependencies.html" class="md-nav__link">
+      <a href="../getting_started/resources/dependencies.html" class="md-nav__link">
         
   
   
@@ -1040,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/resources/talks.html" class="md-nav__link">
+      <a href="../getting_started/resources/talks.html" class="md-nav__link">
         
   
   
@@ -1101,7 +1105,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/bids_apps/index.html" class="md-nav__link ">
+            <a href="../getting_started/bids_apps/index.html" class="md-nav__link ">
               
   
   
@@ -1145,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/bids_apps/tutorial.html" class="md-nav__link">
+      <a href="../getting_started/bids_apps/tutorial.html" class="md-nav__link">
         
   
   
@@ -1208,7 +1212,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/tutorials/index.html" class="md-nav__link ">
+            <a href="../getting_started/tutorials/index.html" class="md-nav__link ">
               
   
   
@@ -1252,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/tutorials/annotation.html" class="md-nav__link">
+      <a href="../getting_started/tutorials/annotation.html" class="md-nav__link">
         
   
   
@@ -1311,7 +1315,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/tutorials/conversion/index.html" class="md-nav__link ">
+            <a href="../getting_started/tutorials/conversion/index.html" class="md-nav__link ">
               
   
   
@@ -1355,7 +1359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/tutorials/conversion/asl.html" class="md-nav__link">
+      <a href="../getting_started/tutorials/conversion/asl.html" class="md-nav__link">
         
   
   
@@ -1383,7 +1387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/tutorials/conversion/ieeg.html" class="md-nav__link">
+      <a href="../getting_started/tutorials/conversion/ieeg.html" class="md-nav__link">
         
   
   
@@ -1411,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/tutorials/conversion/mri.html" class="md-nav__link">
+      <a href="../getting_started/tutorials/conversion/mri.html" class="md-nav__link">
         
   
   
@@ -1439,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/tutorials/conversion/pet.html" class="md-nav__link">
+      <a href="../getting_started/tutorials/conversion/pet.html" class="md-nav__link">
         
   
   
@@ -1506,7 +1510,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/how_to/index.html" class="md-nav__link ">
+            <a href="../getting_started/how_to/index.html" class="md-nav__link ">
               
   
   
@@ -1576,7 +1580,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting_started/templates/index.html" class="md-nav__link ">
+            <a href="../getting_started/templates/index.html" class="md-nav__link ">
               
   
   
@@ -1627,6 +1631,8 @@
       
   
   
+    
+  
   
   
     
@@ -1654,20 +1660,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../standards/index.html" class="md-nav__link ">
+            <a href="../standards/index.html" class="md-nav__link ">
               
   
   
@@ -1685,13 +1694,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1723,10 +1732,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1734,7 +1746,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../standards/bids_specification/index.html" class="md-nav__link ">
+            <a href="../standards/bids_specification/index.html" class="md-nav__link ">
               
   
   
@@ -1795,10 +1807,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1806,7 +1821,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../standards/schema/index.html" class="md-nav__link ">
+            <a href="../standards/schema/index.html" class="md-nav__link ">
               
   
   
@@ -1824,7 +1839,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1912,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../standards/schema/how-the-schema-works.html" class="md-nav__link">
+      <a href="../standards/schema/how-the-schema-works.html" class="md-nav__link">
         
   
   
@@ -1940,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../standards/schema/schema-meta.html" class="md-nav__link">
+      <a href="../standards/schema/schema-meta.html" class="md-nav__link">
         
   
   
@@ -1968,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../standards/schema/schema-objects.html" class="md-nav__link">
+      <a href="../standards/schema/schema-objects.html" class="md-nav__link">
         
   
   
@@ -1996,7 +2011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../standards/schema/schema-rules.html" class="md-nav__link">
+      <a href="../standards/schema/schema-rules.html" class="md-nav__link">
         
   
   
@@ -2052,10 +2067,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2063,7 +2081,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../standards/bids_stats_model/index.html" class="md-nav__link ">
+            <a href="../standards/bids_stats_model/index.html" class="md-nav__link ">
               
   
   
@@ -2122,10 +2140,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2133,7 +2154,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../standards/bids_app_specification/index.html" class="md-nav__link ">
+            <a href="../standards/bids_app_specification/index.html" class="md-nav__link ">
               
   
   
@@ -2200,10 +2221,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2211,7 +2235,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../index.html" class="md-nav__link ">
+            <a href="../extensions/index.html" class="md-nav__link ">
               
   
   
@@ -2229,7 +2253,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2255,7 +2279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../beps.html" class="md-nav__link">
+      <a href="../extensions/beps.html" class="md-nav__link">
         
   
   
@@ -2283,7 +2307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../process.html" class="md-nav__link">
+      <a href="../extensions/process.html" class="md-nav__link">
         
   
   
@@ -2311,7 +2335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guidelines.html" class="md-nav__link">
+      <a href="../extensions/guidelines.html" class="md-nav__link">
         
   
   
@@ -2339,7 +2363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../macros_doc.html" class="md-nav__link">
+      <a href="../extensions/macros_doc.html" class="md-nav__link">
         
   
   
@@ -2372,6 +2396,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2397,18 +2423,21 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tools/index.html" class="md-nav__link ">
+            <a href="../tools/index.html" class="md-nav__link ">
               
   
   
@@ -2426,13 +2455,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2452,7 +2481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/converters.html" class="md-nav__link">
+      <a href="../tools/converters.html" class="md-nav__link">
         
   
   
@@ -2480,7 +2509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/validator.html" class="md-nav__link">
+      <a href="../tools/validator.html" class="md-nav__link">
         
   
   
@@ -2508,7 +2537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/bids-apps.html" class="md-nav__link">
+      <a href="../tools/bids-apps.html" class="md-nav__link">
         
   
   
@@ -2536,7 +2565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/others.html" class="md-nav__link">
+      <a href="../tools/others.html" class="md-nav__link">
         
   
   
@@ -2561,10 +2590,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../software_development/index.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer guidelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2580,6 +2636,191 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#do-not-resolve-symbolic-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not resolve symbolic links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implement-the-inheritance-principle-correctly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implement the Inheritance Principle correctly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#treat-input-datasets-as-read-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Treat input datasets as read-only
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drive-parsing-from-the-bids-schema-dont-hardcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drive parsing from the BIDS schema, don't hardcode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respect-case-sensitivity-of-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respect case-sensitivity of labels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handle-lazily-materialized-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handle lazily-materialized content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honor-spec-defined-exclusions-and-bidsignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honor spec-defined exclusions and .bidsignore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-dataset_descriptionjson-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check dataset_description.json compatibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emit-outputs-as-valid-bids-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Emit outputs as valid BIDS derivatives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-the-bids-apps-20-execution-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Follow the BIDS Apps 2.0 execution specification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#record-provenance-in-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Record provenance in outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validate-inputs-before-doing-real-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validate inputs before doing real work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-platform-path-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-platform path handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prefer-existing-language-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prefer existing language bindings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-against-realistic-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test against realistic datasets
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2614,10 +2855,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2625,7 +2869,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../datasets/index.html" class="md-nav__link ">
+            <a href="../datasets/index.html" class="md-nav__link ">
               
   
   
@@ -2643,7 +2887,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_8" id="__nav_3_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2669,7 +2913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/examples.html" class="md-nav__link">
+      <a href="../datasets/examples.html" class="md-nav__link">
         
   
   
@@ -2753,7 +2997,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../collaboration/index.html" class="md-nav__link ">
+            <a href="../collaboration/index.html" class="md-nav__link ">
               
   
   
@@ -2797,7 +3041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/governance.html" class="md-nav__link">
+      <a href="../collaboration/governance.html" class="md-nav__link">
         
   
   
@@ -2825,7 +3069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/working-groups.html" class="md-nav__link">
+      <a href="../collaboration/working-groups.html" class="md-nav__link">
         
   
   
@@ -2853,7 +3097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/bids_github/CONTRIBUTING.html" class="md-nav__link">
+      <a href="../collaboration/bids_github/CONTRIBUTING.html" class="md-nav__link">
         
   
   
@@ -2881,7 +3125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/publications.html" class="md-nav__link">
+      <a href="../collaboration/publications.html" class="md-nav__link">
         
   
   
@@ -2909,7 +3153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/CONTRIBUTING.html" class="md-nav__link">
+      <a href="../collaboration/CONTRIBUTING.html" class="md-nav__link">
         
   
   
@@ -2937,7 +3181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/contributors.html" class="md-nav__link">
+      <a href="../collaboration/contributors.html" class="md-nav__link">
         
   
   
@@ -2965,7 +3209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/bids_github/CODE_OF_CONDUCT.html" class="md-nav__link">
+      <a href="../collaboration/bids_github/CODE_OF_CONDUCT.html" class="md-nav__link">
         
   
   
@@ -2993,7 +3237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/acknowledgments.html" class="md-nav__link">
+      <a href="../collaboration/acknowledgments.html" class="md-nav__link">
         
   
   
@@ -3046,7 +3290,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../collaboration/reports/index.html" class="md-nav__link ">
+            <a href="../collaboration/reports/index.html" class="md-nav__link ">
               
   
   
@@ -3148,7 +3392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/reports/google_summer/2018-gsoc.html" class="md-nav__link">
+      <a href="../collaboration/reports/google_summer/2018-gsoc.html" class="md-nav__link">
         
   
   
@@ -3176,7 +3420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../collaboration/reports/google_summer/2024-gsod.html" class="md-nav__link">
+      <a href="../collaboration/reports/google_summer/2024-gsod.html" class="md-nav__link">
         
   
   
@@ -3252,7 +3496,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../impact/index.html" class="md-nav__link ">
+            <a href="../impact/index.html" class="md-nav__link ">
               
   
   
@@ -3296,7 +3540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact/measuring.html" class="md-nav__link">
+      <a href="../impact/measuring.html" class="md-nav__link">
         
   
   
@@ -3366,7 +3610,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../faq/index.html" class="md-nav__link ">
+            <a href="../faq/index.html" class="md-nav__link ">
               
   
   
@@ -3410,7 +3654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/general.html" class="md-nav__link">
+      <a href="../faq/general.html" class="md-nav__link">
         
   
   
@@ -3438,7 +3682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/eeg.html" class="md-nav__link">
+      <a href="../faq/eeg.html" class="md-nav__link">
         
   
   
@@ -3466,7 +3710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/mri.html" class="md-nav__link">
+      <a href="../faq/mri.html" class="md-nav__link">
         
   
   
@@ -3494,7 +3738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/phenotype.html" class="md-nav__link">
+      <a href="../faq/phenotype.html" class="md-nav__link">
         
   
   
@@ -3522,7 +3766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/bids-extensions.html" class="md-nav__link">
+      <a href="../faq/bids-extensions.html" class="md-nav__link">
         
   
   
@@ -3550,7 +3794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/bids-apps.html" class="md-nav__link">
+      <a href="../faq/bids-apps.html" class="md-nav__link">
         
   
   
@@ -3612,7 +3856,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../blog/index.html" class="md-nav__link ">
+            <a href="../blog/index.html" class="md-nav__link ">
               
   
   
@@ -3728,7 +3972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2026.html" class="md-nav__link">
+      <a href="../blog/archive/2026.html" class="md-nav__link">
         
   
   
@@ -3758,7 +4002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2025.html" class="md-nav__link">
+      <a href="../blog/archive/2025.html" class="md-nav__link">
         
   
   
@@ -3788,7 +4032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2024.html" class="md-nav__link">
+      <a href="../blog/archive/2024.html" class="md-nav__link">
         
   
   
@@ -3818,7 +4062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2023.html" class="md-nav__link">
+      <a href="../blog/archive/2023.html" class="md-nav__link">
         
   
   
@@ -3848,7 +4092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2022.html" class="md-nav__link">
+      <a href="../blog/archive/2022.html" class="md-nav__link">
         
   
   
@@ -3878,7 +4122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2021.html" class="md-nav__link">
+      <a href="../blog/archive/2021.html" class="md-nav__link">
         
   
   
@@ -3908,7 +4152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2020.html" class="md-nav__link">
+      <a href="../blog/archive/2020.html" class="md-nav__link">
         
   
   
@@ -3938,7 +4182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2019.html" class="md-nav__link">
+      <a href="../blog/archive/2019.html" class="md-nav__link">
         
   
   
@@ -4050,7 +4294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/announcement.html" class="md-nav__link">
+      <a href="../blog/category/announcement.html" class="md-nav__link">
         
   
   
@@ -4080,7 +4324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/community-review.html" class="md-nav__link">
+      <a href="../blog/category/community-review.html" class="md-nav__link">
         
   
   
@@ -4110,7 +4354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/election.html" class="md-nav__link">
+      <a href="../blog/category/election.html" class="md-nav__link">
         
   
   
@@ -4140,7 +4384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/news.html" class="md-nav__link">
+      <a href="../blog/category/news.html" class="md-nav__link">
         
   
   
@@ -4170,7 +4414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/release.html" class="md-nav__link">
+      <a href="../blog/category/release.html" class="md-nav__link">
         
   
   
@@ -4200,7 +4444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/schema.html" class="md-nav__link">
+      <a href="../blog/category/schema.html" class="md-nav__link">
         
   
   
@@ -4230,7 +4474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/steering-group-minutes.html" class="md-nav__link">
+      <a href="../blog/category/steering-group-minutes.html" class="md-nav__link">
         
   
   
@@ -4260,7 +4504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/town-hall.html" class="md-nav__link">
+      <a href="../blog/category/town-hall.html" class="md-nav__link">
         
   
   
@@ -4290,7 +4534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/townhall.html" class="md-nav__link">
+      <a href="../blog/category/townhall.html" class="md-nav__link">
         
   
   
@@ -4320,7 +4564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/validator.html" class="md-nav__link">
+      <a href="../blog/category/validator.html" class="md-nav__link">
         
   
   
@@ -4386,7 +4630,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../contact/index.html" class="md-nav__link ">
+            <a href="../contact/index.html" class="md-nav__link ">
               
   
   
@@ -4433,9 +4677,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -4454,10 +4696,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+  <a href="#do-not-resolve-symbolic-links" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Content
+        Do not resolve symbolic links
       
     </span>
   </a>
@@ -4465,10 +4707,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#leads" class="md-nav__link">
+  <a href="#implement-the-inheritance-principle-correctly" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lead(s)
+        Implement the Inheritance Principle correctly
       
     </span>
   </a>
@@ -4476,10 +4718,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#blockers" class="md-nav__link">
+  <a href="#treat-input-datasets-as-read-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Blockers
+        Treat input datasets as read-only
       
     </span>
   </a>
@@ -4487,10 +4729,131 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#preview" class="md-nav__link">
+  <a href="#drive-parsing-from-the-bids-schema-dont-hardcode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Preview
+        Drive parsing from the BIDS schema, don't hardcode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respect-case-sensitivity-of-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respect case-sensitivity of labels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handle-lazily-materialized-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handle lazily-materialized content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honor-spec-defined-exclusions-and-bidsignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honor spec-defined exclusions and .bidsignore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-dataset_descriptionjson-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check dataset_description.json compatibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emit-outputs-as-valid-bids-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Emit outputs as valid BIDS derivatives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-the-bids-apps-20-execution-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Follow the BIDS Apps 2.0 execution specification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#record-provenance-in-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Record provenance in outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validate-inputs-before-doing-real-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validate inputs before doing real work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-platform-path-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-platform path handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prefer-existing-language-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prefer existing language bindings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-against-realistic-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test against realistic datasets
       
     </span>
   </a>
@@ -4511,12 +4874,10 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
-    <a href="https://github.com/bids-standard/bids-website/edit/main/docs/extensions/beps/bep_004.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/bids-standard/bids-website/edit/main/docs/software_development/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -4524,31 +4885,85 @@
   
 
 
-<h1 id="bep-004-susceptibility-weighted-imaging"><a class="toclink" href="#bep-004-susceptibility-weighted-imaging"><abbr title="BIDS Extension Proposal">BEP</abbr> 004:  Susceptibility Weighted Imaging</a><a class="headerlink" href="#bep-004-susceptibility-weighted-imaging" title="Permanent link">&para;</a></h1>
-<p><strong>Google doc</strong>:  <a href="https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc/">https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc/</a></p>
-<h2 id="content"><a class="toclink" href="#content">Content</a><a class="headerlink" href="#content" title="Permanent link">&para;</a></h2>
+<h1 id="developer-guidelines"><a class="toclink" href="#developer-guidelines">Developer guidelines</a><a class="headerlink" href="#developer-guidelines" title="Permanent link">&para;</a></h1>
+<p>These guidelines are for developers of software that consumes or produces <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets: converters, validators, curation tools, viewers, libraries, and <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps.
+They complement — but are not part of — the <a href="https://bids-specification.readthedocs.io"><abbr title="Brain Imaging Data Structure">BIDS</abbr> specification</a>.
+They are largely agnostic of any specific <abbr title="Brain Imaging Data Structure">BIDS</abbr> version and reflect common <abbr title="Brain Imaging Data Structure">BIDS</abbr> principles rather than the rules of a single release.</p>
+<p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification is intentionally silent on filesystem-specific implementations (symbolic links, case-sensitivity of the underlying filesystem, storage backend, and similar).
+<abbr title="Brain Imaging Data Structure">BIDS</abbr>-aware software, however, has to run against real datasets that live on real filesystems and are frequently managed by tools such as <a href="https://git-annex.branchable.com/">git-annex</a> and <a href="https://www.datalad.org/">DataLad</a>, mounted from cloud object stores, or bind-mounted into containers.
+The recommendations below aim to keep tools interoperable across those realities.</p>
+<p>The keywords "MUST", "MUST NOT", "SHOULD", "SHOULD NOT", and "MAY" are used as defined in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a> to grade the urgency of each guideline.</p>
+<h2 id="do-not-resolve-symbolic-links"><a class="toclink" href="#do-not-resolve-symbolic-links">Do not resolve symbolic links</a><a class="headerlink" href="#do-not-resolve-symbolic-links" title="Permanent link">&para;</a></h2>
+<p>Software MUST access files via the path at which they appear in the dataset, and MUST NOT canonicalize that path (via <code>realpath</code>, <code>readlink -f</code>, <code>pathlib.Path.resolve()</code>, <code>find -L</code>, or equivalent) before performing any path-based lookup such as sidecar discovery, entity parsing, or inheritance resolution.
+Software SHOULD open a file for I/O by its as-written path and let the OS follow the link transparently; it MUST NOT read or act on the link target as if it were the file's location in the dataset.</p>
+<p>Two independent reasons make this rule load-bearing.
+The <a href="https://bids-specification.readthedocs.io/en/stable/common-principles.html#the-inheritance-principle">Inheritance Principle</a> requires walking <em>up the dataset directory tree</em> from a data file to collect applicable metadata; following a symlink can redirect that walk out of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> hierarchy entirely, so sidecars that should apply are silently missed.
+Separately, <a href="https://git-annex.branchable.com/">git-annex</a> (and therefore <a href="https://www.datalad.org/">DataLad</a>) stores content in an object store under <code>.git/annex/objects/…</code> and exposes it via symlinks placed at dataset paths — resolving those symlinks moves the process into the object store, where none of <abbr title="Brain Imaging Data Structure">BIDS</abbr>' entity/sidecar/inheritance relationships hold.
+This is the most common way in which a "reasonable-looking" canonicalization silently breaks correctness on published, DataLad-managed datasets.</p>
+<p>Concretely: treat the input path as an opaque, lexical string, and use lexical parents (for example, <code>os.path.dirname</code>, <code>PurePath.parent</code>) to walk up the tree.</p>
+<h2 id="implement-the-inheritance-principle-correctly"><a class="toclink" href="#implement-the-inheritance-principle-correctly">Implement the Inheritance Principle correctly</a><a class="headerlink" href="#implement-the-inheritance-principle-correctly" title="Permanent link">&para;</a></h2>
+<p>When resolving metadata for a data file, software MUST walk <em>lexically</em> up the dataset tree and apply the <a href="https://bids-specification.readthedocs.io/en/stable/common-principles.html#the-inheritance-principle">Inheritance Principle</a> rules.</p>
 <ul>
-<li>raw</li>
+<li>Software MUST NOT skip directory levels, and MUST NOT resolve symbolic links while identifying parents (see <a href="#do-not-resolve-symbolic-links">previous section</a>).</li>
+<li>Where feasible, software SHOULD rely on an <a href="#prefer-existing-language-bindings">existing library</a> rather than re-implement inheritance from scratch — this is the class of rule most commonly implemented incorrectly.</li>
 </ul>
-<h2 id="leads"><a class="toclink" href="#leads">Lead(s)</a><a class="headerlink" href="#leads" title="Permanent link">&para;</a></h2>
+<p>The specific inheritance rules are part of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification and may evolve between <abbr title="Brain Imaging Data Structure">BIDS</abbr> releases (major or minor); software SHOULD revisit its implementation on each new release.</p>
+<h2 id="treat-input-datasets-as-read-only"><a class="toclink" href="#treat-input-datasets-as-read-only">Treat input datasets as read-only</a><a class="headerlink" href="#treat-input-datasets-as-read-only" title="Permanent link">&para;</a></h2>
+<p>Software MUST NOT modify files in the input dataset(s), MUST NOT update their mtimes, and SHOULD NOT create files inside them — including editor/OS junk (<code>.DS_Store</code>, <code>Thumbs.db</code>, <code>__pycache__</code>, <code>.pytest_cache</code>), lockfiles, or caches.
+Outputs belong in a distinct derivatives dataset (see <a href="#emit-outputs-as-valid-bids-derivatives">Emit outputs as valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> derivatives</a>).</p>
+<p>Input datasets are frequently version-controlled (git/git-annex), may be mounted read-only, and may be shared concurrently with other pipelines.
+In-place mutation breaks reproducibility, provenance, and multi-user use.</p>
+<h2 id="drive-parsing-from-the-bids-schema-dont-hardcode"><a class="toclink" href="#drive-parsing-from-the-bids-schema-dont-hardcode">Drive parsing from the <abbr title="Brain Imaging Data Structure">BIDS</abbr> schema, don't hardcode</a><a class="headerlink" href="#drive-parsing-from-the-bids-schema-dont-hardcode" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD consume the machine-readable <a href="../standards/schema/index.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> schema</a> (or a language binding around it, such as <a href="https://pypi.org/project/bidsschematools/">bidsschematools</a>) rather than embedding entity tables, suffix lists, or datatype rules in code.</p>
+<p>The set of valid entities, their ordering, valid suffixes, datatypes, and sidecar rules evolves with each release of the specification.
+Hardcoded tables silently drift as the specification evolves; schema-driven code stays correct across releases.</p>
+<h2 id="respect-case-sensitivity-of-labels"><a class="toclink" href="#respect-case-sensitivity-of-labels">Respect case-sensitivity of labels</a><a class="headerlink" href="#respect-case-sensitivity-of-labels" title="Permanent link">&para;</a></h2>
+<p>Software MUST preserve the case of all <abbr title="Brain Imaging Data Structure">BIDS</abbr> labels, entities, and filenames it reads or writes.
+Software SHOULD warn — or fail with an actionable message — when it detects two labels or filenames that differ only in case within a dataset.</p>
+<p>The <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification mandates <a href="https://bids-specification.readthedocs.io/en/stable/common-principles.html#case-collision-intolerance">case-collision intolerance</a> for labels and filenames <em>within a dataset</em> — this is a naming rule about dataset content, distinct from (and unrelated to) the case-sensitivity of the underlying host filesystem (which the specification is silent on).
+A case-insensitive host filesystem (default on macOS APFS/HFS+ and on Windows NTFS) can, however, silently corrupt an otherwise valid dataset by collapsing labels that differ only in case — hence the warning above.</p>
+<h2 id="handle-lazily-materialized-content"><a class="toclink" href="#handle-lazily-materialized-content">Handle lazily-materialized content</a><a class="headerlink" href="#handle-lazily-materialized-content" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD distinguish between "path missing" (dataset is malformed) and "file present but content not materialized" (dataset is fine, content needs to be fetched), and SHOULD produce an actionable message in the latter case (for example, suggesting <code>datalad get &lt;path&gt;</code>).</p>
+<p>Files in a <abbr title="Brain Imaging Data Structure">BIDS</abbr> dataset may point to content that is not currently present on the local filesystem — a <a href="https://git-annex.branchable.com/">git-annex</a> symlink whose object has not been fetched, a cloud FUSE mount, or a lazy-download layer.
+Crashing with an opaque I/O error on such datasets is the most common failure mode of <abbr title="Brain Imaging Data Structure">BIDS</abbr> software on real-world storage.</p>
+<h2 id="honor-spec-defined-exclusions-and-bidsignore"><a class="toclink" href="#honor-spec-defined-exclusions-and-bidsignore">Honor spec-defined exclusions and <code>.bidsignore</code></a><a class="headerlink" href="#honor-spec-defined-exclusions-and-bidsignore" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD NOT descend into <code>sourcedata/</code>, <code>code/</code>, <code>logs/</code>, <code>stimuli/</code>, or <code>derivatives/</code> directories when discovering <em>data</em> for the current pipeline, unless explicitly required or asked to.</p>
+<p><code>.bidsignore</code> is a mechanism established and used by the <a href="../tools/validator.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator</a> to mark additional files as intentionally out-of-spec; it is not itself part of the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification.
+Software MAY honor <code>.bidsignore</code> — but if it does, it SHOULD document that behavior and make the exclusion visible to the user (for example, by logging which files were skipped and why), so that unexpected omissions can be diagnosed.</p>
+<h2 id="check-dataset_descriptionjson-compatibility"><a class="toclink" href="#check-dataset_descriptionjson-compatibility">Check <code>dataset_description.json</code> compatibility</a><a class="headerlink" href="#check-dataset_descriptionjson-compatibility" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD read <code>BIDSVersion</code> from <code>dataset_description.json</code> and verify compatibility before running, SHOULD distinguish <code>raw</code>, <code>derivative</code>, and <code>study</code> <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets via <code>DatasetType</code> and adapt behavior accordingly, and SHOULD NOT silently assume a dataset conforms to a specific version.</p>
+<p>Failing loudly on version mismatch is preferable to running and producing subtly wrong output.</p>
+<h2 id="emit-outputs-as-valid-bids-derivatives"><a class="toclink" href="#emit-outputs-as-valid-bids-derivatives">Emit outputs as valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> derivatives</a><a class="headerlink" href="#emit-outputs-as-valid-bids-derivatives" title="Permanent link">&para;</a></h2>
+<p>Outputs SHOULD be written as a valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> <a href="https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html">derivatives dataset</a>, with their own <code>dataset_description.json</code> populated with <code>GeneratedBy</code> (name, version, container image + digest, code <abbr title="Uniform Resource Locator">URL</abbr>) and <code>SourceDatasets</code>.
+Software SHOULD NOT interleave outputs with raw input files unless explicitly requested by the user.</p>
+<p>A dedicated derivatives dataset lets downstream tools discover, validate, and chain outputs the same way they do for raw data.</p>
+<h2 id="follow-the-bids-apps-20-execution-specification"><a class="toclink" href="#follow-the-bids-apps-20-execution-specification">Follow the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps 2.0 execution specification</a><a class="headerlink" href="#follow-the-bids-apps-20-execution-specification" title="Permanent link">&para;</a></h2>
+<p>Command-line software for processing <abbr title="Brain Imaging Data Structure">BIDS</abbr> datasets SHOULD conform to the <a href="https://bids-standard.github.io/execution-spec/"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Apps execution specification</a> (positional <code>input_dataset</code>, <code>output_dataset</code>, <code>analysis_level</code>; standard <code>--participant-label</code>, <code>--session-label</code>; staged execution).</p>
+<p>Consistent CLI interfaces make apps composable with orchestrators, workflow engines, and CI systems.</p>
+<h2 id="record-provenance-in-outputs"><a class="toclink" href="#record-provenance-in-outputs">Record provenance in outputs</a><a class="headerlink" href="#record-provenance-in-outputs" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD log the exact inputs, parameters, container digest, and software versions used for each run, in a form that a downstream consumer can inspect, and SHOULD conform to <a href="https://bids.neuroimaging.io/bep028.html">BEP028 (<abbr title="Brain Imaging Data Structure">BIDS</abbr>-Prov)</a> for that provenance record.
+Software MUST NOT require the presence of prior provenance records for correctness — users may run tools out of order or on subsetted data.</p>
+<p>Provenance is for reporting and reproducibility, not for enforcing a workflow.</p>
+<h2 id="validate-inputs-before-doing-real-work"><a class="toclink" href="#validate-inputs-before-doing-real-work">Validate inputs before doing real work</a><a class="headerlink" href="#validate-inputs-before-doing-real-work" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD invoke the <a href="../tools/validator.html"><abbr title="Brain Imaging Data Structure">BIDS</abbr> Validator</a> (as a library where possible, otherwise as a CLI) at startup, and SHOULD fail early with a clear pointer to what was invalid.
+Software SHOULD offer an explicit opt-out flag (for example, <code>--skip-validation</code> or <code>--force</code>) that lets the user skip validation or proceed despite validation errors, and MUST emit a visible warning when that flag is used.
+Software SHOULD NOT silently paper over malformed inputs.</p>
+<h2 id="cross-platform-path-handling"><a class="toclink" href="#cross-platform-path-handling">Cross-platform path handling</a><a class="headerlink" href="#cross-platform-path-handling" title="Permanent link">&para;</a></h2>
+<p>Software MUST write dataset-relative paths embedded in metadata (<abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Tab Separated Values">TSV</abbr>) in POSIX form (forward slashes), since those paths are dataset-portable identifiers rather than host filesystem paths.
+When multiple related datasets (for example, raw and derivatives) are distributed together, they SHOULD be organized as a <abbr title="Brain Imaging Data Structure">BIDS</abbr> study dataset (<code>DatasetType: study</code>) so that cross-dataset references stay relative and portable.
+For local filesystem I/O, software MAY use the host's native path library.</p>
+<h2 id="prefer-existing-language-bindings"><a class="toclink" href="#prefer-existing-language-bindings">Prefer existing language bindings</a><a class="headerlink" href="#prefer-existing-language-bindings" title="Permanent link">&para;</a></h2>
+<p>Rather than re-implementing entity parsing, sidecar discovery, and inheritance from scratch, software SHOULD use one of the maintained <abbr title="Brain Imaging Data Structure">BIDS</abbr> libraries:</p>
 <ul>
-<li></li>
+<li>Python: <a href="https://github.com/bids-standard/pybids">PyBIDS</a>, <a href="https://github.com/ANCPLabOldenburg/ancp-bids">ancp-bids</a>, <a href="https://pypi.org/project/bidsschematools/">bidsschematools</a></li>
+<li>MATLAB / Octave: <a href="https://github.com/bids-standard/bids-matlab">bids-matlab</a></li>
+<li>R: <a href="https://github.com/bbuchsbaum/bidser">bidser</a></li>
+<li>JavaScript / TypeScript: <a href="../tools/validator.html">bids-validator</a></li>
 </ul>
-<h2 id="blockers"><a class="toclink" href="#blockers">Blockers</a><a class="headerlink" href="#blockers" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Looking for a new leader.</li>
-</ul>
-<h2 id="preview"><a class="toclink" href="#preview">Preview</a><a class="headerlink" href="#preview" title="Permanent link">&para;</a></h2>
-<p><iframe
-    src="https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc/"
-    width="100%"
-    height="1024"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0">
-Loading…
-</iframe>
-</p>
+<p>Bugs in shared libraries get fixed once, for everyone.</p>
+<h2 id="test-against-realistic-datasets"><a class="toclink" href="#test-against-realistic-datasets">Test against realistic datasets</a><a class="headerlink" href="#test-against-realistic-datasets" title="Permanent link">&para;</a></h2>
+<p>Software SHOULD include <a href="https://github.com/bids-standard/bids-examples">bids-examples</a> in its test matrix, and SHOULD additionally test expected behavior against a <a href="https://www.datalad.org/">DataLad</a>-managed variant of at least one example (files present as annex symlinks, some content dropped).</p>
+<p>The DataLad variant catches the classes of bug that the symbolic-link and lazy-materialization rules above are meant to prevent.</p>
 <!-- tool tips  -->
 
 
@@ -4570,7 +4985,7 @@ Loading…
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2026 13:00:22 UTC">July 23, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2026 12:59:00 UTC">July 23, 2026</span>
   </span>
 
     
@@ -4582,8 +4997,6 @@ Loading…
 
   
 
-
-  
 
 
 
@@ -4607,6 +5020,44 @@ Loading…
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../tools/others.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tools">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Tools
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../datasets/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Datasets">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Datasets
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -4706,16 +5157,16 @@ Loading…
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../../javascripts/tablesort.js"></script>
+        <script src="../javascripts/tablesort.js"></script>
       
-        <script src="../../js/open_in_new_tab.js"></script>
+        <script src="../js/open_in_new_tab.js"></script>
       
     
   </body>
