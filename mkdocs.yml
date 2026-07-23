@@ -84,7 +84,6 @@ nav:
         -   getting_started/resources/links.md
         -   getting_started/resources/glossary.md
         -   getting_started/resources/dependencies.md
-        -   getting_started/resources/publications.md
         -   getting_started/resources/talks.md
     -   BIDS apps:
         -   getting_started/bids_apps/index.md
@@ -129,6 +128,7 @@ nav:
         -   tools/validator.md
         -   tools/bids-apps.md
         -   tools/others.md
+        -   software_development/index.md
     -   Datasets:
         -   datasets/index.md
         -   datasets/examples.md
@@ -137,6 +137,7 @@ nav:
     -   Governance: collaboration/governance.md
     -   collaboration/working-groups.md
     -   Contributing: collaboration/bids_github/CONTRIBUTING.md
+    -   Publications: collaboration/publications.md
     -   Contributing to the BIDS website: collaboration/CONTRIBUTING.md
     -   collaboration/contributors.md
     -   Code of conduct: collaboration/bids_github/CODE_OF_CONDUCT.md
