@@ -1,152 +1,82 @@
-# README
+# Dataset name, same as in dataset_description.json
 
-The README is usually the starting point for researchers using your data
-and serves as a guidepost for users of your data. A clear and informative
-README makes your data much more usable.
-
-In general you can include information in the README that is not captured by some other
-files in the BIDS dataset (dataset_description.json, events.tsv, ...).
-
-It can also be useful to also include information that might already be
-present in another file of the dataset but might be important for users to be aware of
-before preprocessing or analyzing the data.
-
-If the README gets too long you have the possibility to create a `/doc` folder
-and add it to the `.bidsignore` file to make sure it is ignored by the BIDS validator.
-
-## Details related to access to the data
-
--   [ ] Data user agreement
-
-If the dataset requires a data user agreement, link to the relevant information.
-
--   [ ] Contact person
-
-Indicate the name and contact details (email and ORCID) of the person responsible for additional information.
-
--   [ ] Practical information to access the data
-
-If there is any special information related to access rights or
-how to download the data make sure to include it.
-For example, if the dataset was curated using datalad,
-make sure to include the relevant section
-from the [datalad handbook](http://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#how-can-i-help-others-get-started-with-a-shared-dataset)
+Write one or two sentences a newcomer can read in 10 seconds: what was recorded,
+in whom, and why.
 
 ## Overview
 
--   [ ] Project name (if relevant)
--   [ ] Year(s) that the project ran
+State the scientific question / purpose, then summarize the essentials — modality,
+number of participants and any groups, sessions/runs, task(s), approximate
+recording duration, the project name and years it ran, and the associated
+publication (if any).
 
-If no `scans.tsv` is included, this could at least cover when the data acquisition
-starter and ended. Local time of day is particularly relevant to subject state.
+### Experimental design (optional)
 
--   [ ] Brief overview of the tasks in the experiment
+State the variables that define the experiment — the independent (manipulated),
+dependent (measured), and control (held-fixed) variables. This does not apply to
+datasets without a designed manipulation (e.g. resting state).
 
-A paragraph giving an overview of the experiment. This should include the
-goals or purpose and a discussion about how the experiment tries to achieve
-these goals.
+## Dataset contents and structure
 
--   [ ] Description of the contents of the dataset
-
-An easy thing to add is the output of the bids-validator that describes what type of
-data and the number of subject one can expect to find in the dataset.
-
--   [ ] Independent variables
-
-A brief discussion of condition variables (sometimes called contrasts
-or independent variables) that were varied across the experiment.
-
--   [ ] Dependent variables
-
-A brief discussion of the response variables (sometimes called the
-dependent variables) that were measured and or calculated to assess
-the effects of varying the condition variables. This might also include
-questionnaires administered to assess behavioral aspects of the experiment.
-
--   [ ] Control variables
-
-A brief discussion of the control variables --- that is what aspects
-were explicitly controlled in this experiment. The control variables might
-include subject pool, environmental conditions, set up, or other things
-that were explicitly controlled.
-
--   [ ] Quality assessment of the data
-
-Provide a short summary of the quality of the data ideally with descriptive statistics if relevant
-and with a link to more comprehensive description (like with MRIQC) if possible.
+Orient the reader to what they cannot infer from the standard BIDS layout, for
+example contents of derivatives/ and sourcedata/, extra or non-standard files,
+and any intentional deviation from BIDS.
 
 ## Methods
 
-### Subjects
+If the dataset has an associated paper, you may copy or adapt its Methods
+section here, then trim it to what is relevant to the data as shared.
 
-A brief sentence about the subject pool in this experiment.
+### Participants and recruitment
 
-Remember that `Control` or `Patient` status should be defined in the `participants.tsv`
-using a group column.
+Recruitment, eligibility, grouping, and how many were excluded and why. Do
+NOT paste per-subject demographics — those belong in participants.tsv, and
+Control/Patient status belongs in its `group` column. Only summarize.
 
--   [ ] Information about the recruitment procedure
--   [ ] Subject inclusion criteria (if relevant)
--   [ ] Subject exclusion criteria (if relevant)
+### Acquisition
 
-### Apparatus
+Short description of the equipment and environment (e.g. shielded room,
+seated/supine for MEG, any setup done when the subject arrived), plus the
+few parameters needed to understand the signals. Full machine-readable
+parameters belong in *_<modality>.json.
 
-A summary of the equipment and environment setup for the
-experiment. For example, was the experiment performed in a shielded room
-with the subject seated in a fixed position.
+### Task and paradigm
 
-### Initial setup
+What participants did and the trial structure, plus how tasks were organized
+across a session (order, counter-balancing, activities between tasks). The
+canonical TaskName / TaskDescription live in task-<label>_*.json and events
+live in *_events.tsv
 
-A summary of what setup was performed when a subject arrived.
+### Stimuli (optional)
 
-### Task organization
+What was presented, and where stimulus files live (e.g. stimuli/).
 
-How the tasks were organized for a session.
-This is particularly important because BIDS datasets usually have task data
-separated into different files.
+### Additional data acquired (optional)
 
--   [ ] Was task order counter-balanced?
--   [ ] What other activities were interspersed between tasks?
--   [ ] In what order were the tasks and other activities performed?
+Non-imaging data collected as part of the study: questionnaires, surveys,
+clinical measures, swabs. Note availability and location; standardized
+phenotypic data belong in a phenotype/ folder.
 
-### Task details
+## Known issues, quality, and missing data
 
-As much detail as possible about the task and the events that were recorded.
+This is the highest-value section for data reuse. Give a short overall
+quality summary (with a link to e.g. an MRIQC report if available), then
+anything that affects analysis: missing/partial runs, excluded participants,
+bad channels, timing or trigger problems, equipment or protocol changes
+mid-study,  a lesion or anomaly in one participant, or data that look
+normal but are not. Write "None known." if the dataset is clean.
 
-### Additional data acquired
+## How to use these data (optional)
 
-A brief indication of data other than the
-imaging data that was acquired as part of this experiment. In addition
-to data from other modalities and behavioral data, this might include
-questionnaires and surveys, swabs, and clinical information. Indicate
-the availability of this data.
+Preprocessing already applied (and where it lives), recommended
+reference/montage, software + version, or analysis tips.
 
-This is especially relevant if the data are not included
-in a [`phenotype` folder](https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data).
+## References and citation
 
-### Experimental location
+A one-line "how to cite" and the key paper(s). The dataset DOI and
+machine-readable references also live in dataset_description.json
 
-This should include any additional information regarding the
-the geographical location and facility that cannot be included
-in the relevant json files.
+## Contact
 
-### Missing data
-
-Mention something if some participants are missing some aspects of the data.
-This can take the form of a processing log and/or abnormalities about the dataset.
-
-Some examples:
-
--   A brain lesion or defect only present in one participant
-
--   Some experimental conditions missing on a given run for a participant because
-    of some technical issue.
-
--   Any noticeable feature of the data for certain participants
-
--   Differences (even slight) in protocol for certain participants.
-
-### Notes
-
-Any additional information or pointers to information that
-might be helpful to users of the dataset. Include qualitative information
-related to how the data acquisition went.
+The person or team that can give additional information.
+A role + email + ORCID is more future-proof than a personal name alone.

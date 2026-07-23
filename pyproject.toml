@@ -5,7 +5,7 @@ description = "Sources for the BIDS standard website"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "certifi>=2024.7.4",
+    "certifi>=2026.6.17",
     "gender_guesser",
     "geopy",
     "jinja2>=3.1.5",
@@ -15,7 +15,7 @@ dependencies = [
     "mkdocs-open-in-new-tab",
     "mkdocs-redirects",
     "mkdocs-rss-plugin",
-    "plotly>=5.3.1",
+    "plotly>=6.8.0",
     "pybids",
     "pyzotero",
     "rich",
@@ -24,7 +24,7 @@ dependencies = [
     "urllib3>=2.7.0",
     "bidsschematools[render]",
     "bids_website",
-    "mkdocs-git-revision-date-localized-plugin>=1.5.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.5.3",
 ]
 
 [tool.uv.sources]

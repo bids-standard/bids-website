@@ -1,17 +1,32 @@
 # Datasets
+
 BIDS compliant data can be found under many of the common neural data sharing
 websites/databases. Below are some links to BIDS compliant data. Sourcedata (pre-BIDS)
 are sometimes also available and these data can be used to test (or to build tutorials)
 of how source data are converted to BIDS.
 
 ## Where to find BIDS datasets
-Many public repositories for neuroimaging data are accepting (and in some cases requiring)
-data submitted in BIDS format. Below is a small sample of some main resources for finding
-BIDS datasets that may be used in your analyses.
+
+Many public repositories for neuroimaging data are accepting (and in some cases requiring) data submitted in BIDS format.
+Below is a small sample of some main resources for finding BIDS datasets that may be used in your analyses.
+
+!!! note "Tools to help discover datasets"
+
+    - The [Neurobagel query tool](https://query.neurobagel.org/?node=All) is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging
+        parameters.
+    - [BIDS-eye](https://bidseye.xyz/) is search engine and database that automatically crawls large public neuroimaging data lakes, indexes the metadata and makes them easily searchable.
+    - the [Datalad registry](https://registry.datalad.org/overview/?query=metadata%5Bbids_dataset%5D%3A%22%22&sort=update-desc) can help you discover Public Datalad dataset including those that are BIDS datasets
 
 [OpenNeuro][openneuro]:
 If you're looking for full data files to run the validator on or simply compare to your
 own _bidsified_ data try searching here. Datasets here are (by and large) publicly available and conform to BIDS.
+
+[publicnEUro](https://publicneuro.eu/) is a data repository for BIDS datasets.
+The principle is similar to OpenNeuro, where each dataset is shared independently.
+Once shared, a DOI is available for citation, and the link allows users to access the data.
+The platform is GDPR compliant, allowing us to share brain imaging data in a way that is as FAIR as possible.
+The catalog keeps all metadata open and therefore findable.
+Because EU data have to be protected, publicnEUro provide the necessary privacy protections by controlling user access.
 
 [The NIMH Data Archive](https://nda.nih.gov/): The NIMH archive hosts many datasets and results
 that follow BIDS naming structure. There isn't an easy search feature for finding BIDS data as of
@@ -23,6 +38,7 @@ resource for finding BIDS compliant datasets. The Neuroimaging Data Repository s
 access to public datasets such as the Autism Brain Imaging Data Exchange (ABIDE) dataset.
 
 ## Brainhack Western 2018 dataset
+
 These data, compiled at the Brainhack Western 2018 event can be used to test or create BIDS
 apps. An example of sourcedata
 [ds001](https://drive.google.com/drive/folders/15GiGHqit0gFFblOUuL2hSoWEJVw6q1M5)
