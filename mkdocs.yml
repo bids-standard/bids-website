@@ -3,6 +3,11 @@ site_name: The Brain Imaging Data Structure
 repo_url: https://github.com/bids-standard/bids-website/tree/main
 site_url: https://bids.neuroimaging.io/
 
+hooks:
+  # Auto-populate bep{NNN}.md redirects for BEPs listed in data/beps/beps.yml.
+  # Manual entries in redirect_maps below always win.
+  - tools/build/bep_redirects_hook.py
+
 plugins:
   - search
   - tags
@@ -24,7 +29,11 @@ plugins:
         "acknowledgments.md": "collaboration/acknowledgments.md"
         "benefits.md": "tools/index.md"
         "merch.md": "https://www.teepublic.com/user/bids"
-        # redirects to make sure old links to the BEP stay valid
+        # BEP shortcut redirects. Draft/proposed BEPs listed in
+        # data/beps/beps.yml get their bep{NNN}.md redirect added
+        # automatically by tools/build/bep_redirects_hook.py; only the
+        # curated ones (merged into the specification or external sites,
+        # and completed/other BEPs not tracked in beps.yml) live here.
         "bep001.md" : "https://bids-specification.readthedocs.io/en/stable/appendices/qmri.html"
         "bep002.md" : "https://bids-standard.github.io/stats-models/"
         "bep003.md" : "https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html"
@@ -34,42 +43,19 @@ plugins:
         "bep008.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetoencephalography.html"
         "bep009.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/positron-emission-tomography.html"
         "bep010.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html"
-        "bep018.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/genetic-descriptor.html"
-        "bep022.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html"
-        "bep027.md" : "https://bids-standard.github.io/execution-spec/"
-        #
-        "bep004.md" : "https://bids.neuroimaging.io/extensions/beps/bep_004.html"
-        "bep011.md" : "https://bids.neuroimaging.io/extensions/beps/bep_011.html"
-        "bep012.md" : "https://bids.neuroimaging.io/extensions/beps/bep_012.html"
         "bep013.md" : "https://bids.neuroimaging.io/extensions/beps/bep_013.html"
-        "bep014.md" : "https://bids.neuroimaging.io/extensions/beps/bep_014.html"
         "bep015.md" : "https://bids.neuroimaging.io/extensions/beps/bep_015.html"
-        "bep016.md" : "https://bids.neuroimaging.io/extensions/beps/bep_016.html"
-        "bep017.md" : "https://bids.neuroimaging.io/extensions/beps/bep_017.html"
+        "bep018.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/genetic-descriptor.html"
         "bep019.md" : "https://bids.neuroimaging.io/extensions/beps/bep_019.html"
         "bep020.md" : "https://bids.neuroimaging.io/extensions/beps/bep_020.html"
-        "bep021.md" : "https://bids.neuroimaging.io/extensions/beps/bep_021.html"
-        "bep023.md" : "https://bids.neuroimaging.io/extensions/beps/bep_023.html"
-        "bep024.md" : "https://bids.neuroimaging.io/extensions/beps/bep_024.html"
+        "bep022.md" : "https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-spectroscopy.html"
         "bep025.md" : "https://bids.neuroimaging.io/extensions/beps/bep_025.html"
-        "bep026.md" : "https://bids.neuroimaging.io/extensions/beps/bep_026.html"
-        "bep028.md" : "https://bids.neuroimaging.io/extensions/beps/bep_028.html"
+        "bep027.md" : "https://bids-standard.github.io/execution-spec/"
         "bep029.md" : "https://bids.neuroimaging.io/extensions/beps/bep_029.html"
         "bep030.md" : "https://bids.neuroimaging.io/extensions/beps/bep_030.html"
         "bep031.md" : "https://bids.neuroimaging.io/extensions/beps/bep_031.html"
-        "bep032.md" : "https://bids.neuroimaging.io/extensions/beps/bep_032.html"
-        "bep033.md" : "https://bids.neuroimaging.io/extensions/beps/bep_033.html"
-        "bep034.md" : "https://bids.neuroimaging.io/extensions/beps/bep_034.html"
-        "bep035.md" : "https://bids.neuroimaging.io/extensions/beps/bep_035.html"
-        "bep036.md" : "https://bids.neuroimaging.io/extensions/beps/bep_036.html"
-        "bep037.md" : "https://bids.neuroimaging.io/extensions/beps/bep_037.html"
         "bep038.md" : "https://bids.neuroimaging.io/extensions/beps/bep_038.html"
-        "bep039.md" : "https://bids.neuroimaging.io/extensions/beps/bep_039.html"
-        "bep040.md" : "https://bids.neuroimaging.io/extensions/beps/bep_040.html"
-        "bep041.md" : "https://bids.neuroimaging.io/extensions/beps/bep_041.html"
         "bep042.md" : "https://bids.neuroimaging.io/extensions/beps/bep_042.html"
-        "bep043.md" : "https://bids.neuroimaging.io/extensions/beps/bep_043.html"
-        "bep044.md" : "https://bids.neuroimaging.io/extensions/beps/bep_044.html"
 
 docs_dir: docs
 
@@ -98,7 +84,6 @@ nav:
         -   getting_started/resources/links.md
         -   getting_started/resources/glossary.md
         -   getting_started/resources/dependencies.md
-        -   getting_started/resources/publications.md
         -   getting_started/resources/talks.md
     -   BIDS apps:
         -   getting_started/bids_apps/index.md
@@ -143,6 +128,7 @@ nav:
         -   tools/validator.md
         -   tools/bids-apps.md
         -   tools/others.md
+        -   software_development/index.md
     -   Datasets:
         -   datasets/index.md
         -   datasets/examples.md
@@ -151,6 +137,7 @@ nav:
     -   Governance: collaboration/governance.md
     -   collaboration/working-groups.md
     -   Contributing: collaboration/bids_github/CONTRIBUTING.md
+    -   Publications: collaboration/publications.md
     -   Contributing to the BIDS website: collaboration/CONTRIBUTING.md
     -   collaboration/contributors.md
     -   Code of conduct: collaboration/bids_github/CODE_OF_CONDUCT.md
