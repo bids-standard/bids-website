@@ -92,7 +92,7 @@ necessary, look for either note: or italicized text*
 #### Outcome
 
 -   BEP number and Maintainer assigned
-    -   Request idea review, call for contributors (reach out to tool makers, experts, etc)
+    -   Request idea review, call for contributors (reach out to tool makers, experts)
 
 #### BEP Lead Actions
 
@@ -169,7 +169,7 @@ and Maintainers to work within the 2 review periods per year structure that alre
 -   BIDS Mailing list announcement
     -   time frame for review clearly stated
     -   invitation for comments/community engagement solicited
-    -   Other information included for example recap of what/why/who/how, links to existing work (PR, Docs, etc)
+    -   Other information included for example recap of what/why/who/how, links to existing work (PR, Docs)
 
 -   Reviewers collected from the Idea Communication step are contacted and invited for their final input
 
@@ -177,7 +177,7 @@ and Maintainers to work within the 2 review periods per year structure that alre
 
 #### Outcome
 
--   Draft is published to the wider community and they are actively engaged (emailed, messaged, invited etc)
+-   Draft is published to the wider community and they are actively engaged (emailed, messaged, invited)
 
 -   Review period is **fixed** following the community review announcement. Once the community review period
     has ended no additional changes or issues may be submitted to the Draft.
@@ -233,7 +233,7 @@ Github pull requests open and ready to merge for:
 
 -   facilitate consensus between spec and examples
 
--   request feedback from tool developers, experts, etc collected at Phase 1 (Idea Communication) during
+-   request feedback from tool developers, experts, collected at Phase 1 (Idea Communication) during
     this semi-final phase.
 
 #### Reviews
@@ -268,7 +268,7 @@ BEP Leads should be prepared to use their allotted time to discuss the status of
 
 -   Any blockers that might be preventing or slowing them down from progressing to their next phase, these may include:
     -   A missing feature or breaking addition proposed by another BEP
-    -   Infrastructure/BIDS bugs (schema expression, validator, etc) that need addressing by maintainers/community
+    -   Infrastructure/BIDS bugs (schema expression, validator) that need addressing by maintainers/community
     -   contributor turnover in the working group
     -   delays stemming from lack of feedback/communication from BIDS maintainers/steering
 
