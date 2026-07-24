@@ -22,4 +22,4 @@ The Communications Maintainer's main areas of responsibility would be to:
 
 This is a collaborative coordination role, not a one-person communications team. The Communications Maintainer would work with current BIDS maintainers and help develop practical processes and tools for more consistent, timely, and transparent communication.
 
-Interested, curious, or know someone who may be a good fit? Please contact Eric Earl (eric.earl@nih.gov) or Martin Norgaard (martin.noergaard@di.ku.dk). We would also appreciate you sharing this call with your networks.
+Interested, curious, or know someone who may be a good fit? Please contact Eric Earl <mailto:eric.earl@nih.gov> or Martin Norgaard <mailto:martin.noergaard@di.ku.dk>. We would also appreciate you sharing this call with your networks.
