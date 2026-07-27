@@ -9,7 +9,7 @@ categories:
 
 ---
 
-**Agenda**
+## Agenda
 
 1.  Maintainers updates `10? min`
     > \[name=Chris]
@@ -44,12 +44,7 @@ Note from Camille: no member of steering replied to the poll (note 2 of the curr
 4.  more?
     > \[name=?]
 
--   **Host:** Kim Ray
--   **Contact:**  <kimray@utexas.edu>
-
-:::
-
-## :books: Meeting Minutes
+## Meeting Minutes
 
 **Maintainers updates**
 
@@ -82,10 +77,11 @@ Chris: its a larger list of BEPS than usual and the maintainers are working thro
 Chris:  is a 3 BEP cadence supported? If so, maintainers will reach out to leads. What happens if a community commenter raises an issue with fountaional design choices that could lead to major revisions?  its a concern that could throw off the planned schedule.
 
 YH: lends support for 3 BEPS and suggests inviting experts in the BEP fields to review. also suggests to promote the process wider, and incorporate the process concerns into the BEP Lead guidleines map yml file.
-\*Polish procedures for any step of diagram: inviting community, how to provide review, etc
-\*Ask BEP leads to keep bep.yaml file updated to distribute info for BEP process: status, what aspects left TODO
-\* establish a 3 person group to help with conflict resolution: 1 steering group member, 1 BEP lead, 1 maintainer; so if conflict - majority vote (so 2 must agree)
-\*ex: OME\_zarr community has a github review process that requires alternative documentation (a summary page) that potentially decreases the number of comments that get lost.  It is more like creating a "publication like review". See e.g. (randomly chosen) <https://github.com/ome/ngff/tree/main/rfc/5>  here is rendered: <https://ngff.openmicroscopy.org/rfc/5/index.html>
+
+-   Polish procedures for any step of diagram: inviting community, how to provide review, etc
+-   Ask BEP leads to keep bep.yaml file updated to distribute info for BEP process: status, what aspects left TODO
+-   establish a 3 person group to help with conflict resolution: 1 steering group member, 1 BEP lead, 1 maintainer; so if conflict - majority vote (so 2 must agree)
+-   ex: OME\_zarr community has a github review process that requires alternative documentation (a summary page) that potentially decreases the number of comments that get lost.  It is more like creating a "publication like review". See e.g. (randomly chosen) <https://github.com/ome/ngff/tree/main/rfc/5>  here is rendered: <https://ngff.openmicroscopy.org/rfc/5/index.html>
 
 ```
 Chris: how should maintainers we proceed?

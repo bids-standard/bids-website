@@ -9,7 +9,7 @@ categories:
 
 ---
 
-**Agenda**
+## Agenda
 
 1.  Maintainers Update (Christine)
 
@@ -18,15 +18,15 @@ categories:
 -   Re: Request for early/often Maintainer involvement in BEP meetings: Will assign shepherd earlier/at the start, will accommodate frequent meeting requests as much as possible with limited maintainer time, will also clarify/encourage meeting request/process.
 -   [BEP 2nd review period canceled](https://mattermost.brainhack.org/brainhack/pl/egmz4hqcaffmdbhmttm81szcqh); BEPs ready by Nov.10 can be part of 3rd review period
 -   Re-thinking processes: better on-boarding doc, where the docs/folders are (internal) vs website (external), furlough role coverage, BEP process mapping/comms, BEP tracking, for async scaling
-    -   (\*) Yarik has an automated dashboard: <https://github.com/bids-standard/bids-schema/tree/main/BEPs>
+    -   Yarik has an automated dashboard: <https://github.com/bids-standard/bids-schema/tree/main/BEPs>
     -   be clear what's in draft / what's publicly unchanging
     -   e.g. How to clearly flag Maintainer-internal requests for help/time, so we can identify role gaps, how efficiently they're filled with current resourcing
 -   BEP process working group: next timeline for \~Nov., drafting letter
-    -   (\*) Yarik joining the BEP Process WG
+    -   Yarik joining the BEP Process WG
 -   BEP updates
-    -   (\*) Dora: next steering please bring update on how the review period queue is going / what should change for 2026; was email working for that
--   (\*) next steps towards INCF/EBRAINS:
-    Christiine/Julia to [find a time with Yarik](https://bit.ly/reserve-yarik) because he has ideas on what to brush up for for the booth:
+    -   Dora: next steering please bring update on how the review period queue is going / what should change for 2026; was email working for that
+-   next steps towards INCF/EBRAINS:
+    Christine/Julia to [find a time with Yarik](https://bit.ly/reserve-yarik) because he has ideas on what to brush up for for the booth:
 -   e.g. microscopy (German)
 -   will need a display, keyboard and mouse (laptop or raspberry pi)
 -   will need to be up to date on BEPs
@@ -41,7 +41,7 @@ categories:
     suggested previously by Camille
 3.  BIDS at SfN 2025, San Diego Nov 15-19
 
-## :books: Meeting Minutes
+## Meeting Minutes
 
 **Maintainers updates**
 

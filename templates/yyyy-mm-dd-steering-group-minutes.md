@@ -6,9 +6,7 @@ categories:
 -   steering group minutes
 ---
 
-# Steering Group minutes
-
-Date:
+## Agenda
 
 <!--more-->
 
