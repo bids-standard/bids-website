@@ -140,8 +140,8 @@ aim of extending or modifying the BIDS standard into their domain of
 interest. This can be either an unspecified modality or derivative.
 The BEP Lead and Working Group will determine how they organize their
 work, following the [BEP process](../extensions/process.md) located at
-[bids.neuroimaging.io](https://bids.neuroimaging.io) and the BIDS 
-[Code of Conduct](./bids_github/CODE_OF_CONDUCT.md). The BEP Working 
+[bids.neuroimaging.io](https://bids.neuroimaging.io) and the BIDS
+[Code of Conduct](./bids_github/CODE_OF_CONDUCT.md). The BEP Working
 Group work is completed when their BEP has become a Merged BEP.
 
 ### BEP Leads Group
@@ -290,17 +290,17 @@ creating and integrating a BEP into the standard are defined outside of this gov
 [here](../extensions/process.md). That process is version controlled on the bids-standard github
 at [bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
-Defining the BEP process outside of this governance enables BIDS to be more reponsive 
-and dynamic. 
-Changes, improvements, or suggestion about the BEP process may be proposed by any 
+Defining the BEP process outside of this governance enables BIDS to be more reponsive
+and dynamic.
+Changes, improvements, or suggestion about the BEP process may be proposed by any
 member of the community via the submission of an issue and/or pull request to the process at
 [github.com/bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
-A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP 
-Working Group barring the BEP Lead(s) consent. Once a BEP is started the Git hash 
-associated with the BEP process is noted and linked to the BEP. Should BEP Lead(s) 
+A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP
+Working Group barring the BEP Lead(s) consent. Once a BEP is started the Git hash
+associated with the BEP process is noted and linked to the BEP. Should BEP Lead(s)
 choose to adopt a _newer_ version of the process the Git hash of that newer version
-will be recorded along with their starting process hash. 
+will be recorded along with their starting process hash.
 
 ## X. Appendix
 
