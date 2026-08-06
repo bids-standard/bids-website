@@ -296,6 +296,8 @@ Changes, improvements, or suggestion about the BEP process may be proposed by an
 member of the community via the submission of an issue and/or pull request to the process at
 [github.com/bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
+Pull requests will be merged following a yes/no vote by the BIDS Steering Group.
+
 A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP
 Working Group barring the BEP Lead(s) consent. Once a BEP is started the Git hash
 associated with the BEP process is noted and linked to the BEP. Should BEP Lead(s)
