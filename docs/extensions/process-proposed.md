@@ -1,7 +1,6 @@
 # BEP process
 
 Small contributions (typos, rephrasing of a description, adding a single new metadata field)
-euaou
 can be proposed as a [Pull Request on GitHub](https://github.com/bids-standard/bids-specification/pulls)
 Larger contributions that are expected to involve longer and more involved discussions
 may take the form of a BIDS extension proposal (BEP).
