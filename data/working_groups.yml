@@ -62,6 +62,18 @@
         email: rogers@bic.mni.mcgill.ca
     status: active
 
+-   title: BEP Process
+    goal: Refine the BEP process, including governance, workflows, and coordination across BEPs
+    open_letter: https://docs.google.com/document/d/1_G63J4QcWztwyEqx31LlXy0BgQ7ewzJI1IV1uHyQYUw/edit?usp=sharing
+    communication_channel: TBD
+    url:
+    chairs:
+    -   name: Eric Earl
+        email: eric.earl@nih.gov
+    -   name: Seyed Yahya Shirazi
+        email: shirazi@ieee.org
+    status: active
+
 # DISSOLVED
 
 -   title: Governance amendment
