@@ -17,12 +17,12 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neural and associated data in a filesystem hierarchy and of the
 metadata associated with the imaging data.
 The current edition of the standard is available in
-[HTML][specification] with all
+\[HTML]\[specification] with all
 the previous editions available since October 2018 (listed in the
-[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository][bids_website_gh] as PDFs.
+[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this \[repository]\[bids\_website\_gh] as PDFs.
 The development edition is available in
-[HTML][specification].
-The specification is based in a [GitHub repository][specification_gh]
+\[HTML]\[specification].
+The specification is based in a \[GitHub repository]\[specification\_gh]
 and rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
 
 We strive for community consensus in decision making.
@@ -43,11 +43,11 @@ specification development and maintenance,
 [BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
 [starter kits](https://bids.neuroimaging.io/getting_started/),
-[examples][bids_examples_gh],
+\[examples]\[bids\_examples\_gh],
 and general discussions.
 The relevant discussions are located in our
-[Google Group][bids_google_group],
-[GitHub organization][bids_standard],
+\[Google Group]\[bids\_google\_group],
+\[GitHub organization]\[bids\_standard],
 and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
@@ -55,14 +55,14 @@ software tools and platforms that facilitate the validation and ease the
 use of BIDS-formatted datasets.
 BIDS converters (for example, [HeuDiConv](https://github.com/nipy/heudiconv)) enable the streamlined
 conversion of raw imaging files (for example, DICOMs) into a BIDS dataset, the
-[BIDS validator][bids_validator] allows
+\[BIDS validator]\[bids\_validator] allows
 users to confirm that a given dataset complies with the current edition
 of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
 Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
 libraries allow querying and manipulating BIDS-compliant datasets,
 [BIDS-Apps](https://bids.neuroimaging.io/tools/bids-apps.html) for running portable
 pipelines on validated BIDS datasets, and platforms like
-[OpenNeuro][openneuro] store and serve BIDS datasets. Note
+\[OpenNeuro]\[openneuro] store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance
 structure as BIDS, although the contributor and user base may largely
 overlap.
@@ -82,7 +82,7 @@ principles:
     and models (inspired by the pareto principle).
 
 1.  Adoption by the global neuroscience community and their input during
-   the creation of the specification is critical for the success of the project.
+    the creation of the specification is critical for the success of the project.
 
 ## 3. Leadership structure
 
@@ -93,7 +93,7 @@ The following figure illustrates the structure of the groups described
 in this document. The specific organization and responsibilities of
 these groups are laid out in detail, below.
 
-![leadership_figure](../assets/img/governance_figure.jpg "Leadership Structure")
+![leadership\_figure](../assets/img/governance_figure.jpg "Leadership Structure")
 
 ### BIDS Steering Group
 
@@ -125,36 +125,16 @@ The Steering Group may delegate tasks as needed to fulfill its responsibilities.
 
 The current members of the Steering group are:
 
-{{ MACROS___generate_members_table(file="steering.yml") }}
+{{ MACROS\_\_\_generate\_members\_table(file="steering.yml") }}
 
 Past members of the Steering group are:
 
-{{ MACROS___generate_members_table(file="past_steering.yml") }}
-
-### BEP Working Group
-
-A BEP Working Group is established for every BIDS Extension Proposal
-(BEP). Each working group will have 1-3 group-appointed leader(s),
-referred to as BEP Lead(s). Every BEP Working Group is formed with the
-aim of extending or modifying the BIDS standard into their domain of
-interest. This can be either an unspecified modality or derivative.
-The BEP Lead and Working Group will determine how they organize their
-work, following the [BEP process](../extensions/process.md) located at
-[bids.neuroimaging.io](https://bids.neuroimaging.io) and the BIDS 
-[Code of Conduct](./bids_github/CODE_OF_CONDUCT.md). The BEP Working 
-Group work is completed when their BEP has become a Merged BEP.
-
-### BEP Leads Group
-
-The BEP Leads Group consists of the BEP Leads of the BEP Working Groups.
-This Working Group intends to ensure potential integrations and
-collaborations across BEPs are realized and consistency across the BIDS
-standard.
+{{ MACROS\_\_\_generate\_members\_table(file="past\_steering.yml") }}
 
 ### BIDS Maintainers Group
 
-This group is responsible for maintaining the [BIDS specification on
-GitHub][specification_gh]. The Lead
+This group is responsible for maintaining the \[BIDS specification on
+GitHub]\[specification\_gh]. The Lead
 Maintainer and the Maintainers Group will determine how they organize
 their work, detailed in the [BIDS Maintainers Group Guide](https://github.com/bids-standard/bids-specification/blob/master/Maintainers_Guide.md) and in accordance with the BIDS Code of Conduct.
 The BIDS Maintainers Group Guide is subject to Steering Group approval and amendment.
@@ -167,11 +147,11 @@ to the Steering Group.
 
 The current members of the Maintainers group are:
 
-{{ MACROS___generate_members_table(file="maintainers.yml") }}
+{{ MACROS\_\_\_generate\_members\_table(file="maintainers.yml") }}
 
 Past members of the Maintainers group are:
 
-{{ MACROS___generate_members_table(file="past_maintainers.yml") }}
+{{ MACROS\_\_\_generate\_members\_table(file="past\_maintainers.yml") }}
 
 If you need to contact the maintainers on a specific topic you can use the following email: `bids.maintenance@gmail.com`.
 However, you may receive a more timely response when pinging them on one of the GitHub repositories using the tag `@bids-standard/maintainers`.
@@ -209,7 +189,7 @@ loses their "active" status.
 The purpose of this group is to provide advice and guidance to the BIDS Steering
 Group and the BEP Leads Group.
 When a BEP is merged into the specification,
-the leads of this BEP working group automatically join the advisory group.
+the associated BEP Lead(s) automatically join the advisory group.
 Members are encouraged to participate for at least 2 years following
 the merge of their BEP.
 If an advisory group member decides to leave the advisory group,
@@ -220,7 +200,7 @@ they should inform the steering group in advance and are responsible to help:
 
 -   assist the steering and maintainers in choosing a suitable replacement.
 
-{{ MACROS___generate_members_table(file="advisory.yml") }}
+{{ MACROS\_\_\_generate\_members\_table(file="advisory.yml") }}
 
 ### Other working groups
 
@@ -228,16 +208,16 @@ A working/interest group can be established under the approval of the BIDS Steer
 This is typically but not limited to being formed for the purpose of advancing the BIDS community, not the standard.
 
 Each group will appoint 1-2 chairs.
-Members of these groups can have cross appointments in other groups (for example, BEP Working Group).
+Members of these groups can have cross appointments in other groups.
 These groups do not necessarily dissolve after some duration or event, unless stated in their proposal.
 
 The working/interest group formation is formalized
 through an open letter via a "read-only" Google Document addressed to the BIDS Steering Group.
 The open letter will be posted on:
 
--   the [BIDS-Specification GitHub repository][specification_gh],
--   [Google Group][bids_google_group],
--   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
+-   the \[BIDS-Specification GitHub repository]\[specification\_gh],
+-   \[Google Group]\[bids\_google\_group],
+-   and [social media channels](https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels).
 
 This proposal will state what their group aims and goals are.
 
@@ -290,17 +270,20 @@ creating and integrating a BEP into the standard are defined outside of this gov
 [here](../extensions/process.md). That process is version controlled on the bids-standard github
 at [bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
-Defining the BEP process outside of this governance enables BIDS to be more reponsive 
-and dynamic. 
-Changes, improvements, or suggestion about the BEP process may be proposed by any 
+Defining the BEP process outside of this governance enables BIDS to be more reponsive
+and dynamic.
+Changes, improvements, or suggestions regarding the BEP process may be proposed by any
 member of the community via the submission of an issue and/or pull request to the process at
-[github.com/bids-standard/bids-website](https://github.com/bids-standard/bids-website).
+[github.com/bids-standard/bids-website](https://github.com/bids-standard/bids-website). Following
+a final approval by a majority of the Steering Group amendments/changes may be applied to the
+BEP Process. All discusion and final approval/disapproval of BEP must be a part of the public
+record.
 
-A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP 
-Working Group barring the BEP Lead(s) consent. Once a BEP is started the Git hash 
-associated with the BEP process is noted and linked to the BEP. Should BEP Lead(s) 
-choose to adopt a _newer_ version of the process the Git hash of that newer version
-will be recorded along with their starting process hash. 
+A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP
+Working Group barring the BEP Lead(s) consent. Once a BEP is started the Git hash
+associated with the BEP process is noted and linked to the BEP. Should BEP Lead(s)
+choose to adopt a *newer* version of the process the Git hash of that newer version
+will be recorded along with their starting process hash.
 
 ## X. Appendix
 
@@ -308,7 +291,7 @@ will be recorded along with their starting process hash.
 
 #### BIDS Specification
 
-This is the [BIDS specification][specification].
+This is the \[BIDS specification]\[specification].
 This covers the current raw data organization for brain MRI, MEG, EEG, and iEEG.
 
 #### BIDS Extension Proposal (BEP)
@@ -391,16 +374,16 @@ The [bids.neuroimaging.io](http://bids.neuroimaging.io/) website
 contains links to all the BIDS informational and help materials.
 
 We encourage questions and discussion  on [NeuroStars, under the "bids"
-tag](https://neurostars.org/tags/bids), via the [BIDS mailing
-list][bids_google_group], or in
-[GitHub issues][bids_standard] within the
+tag](https://neurostars.org/tags/bids), via the \[BIDS mailing
+list]\[bids\_google\_group], or in
+\[GitHub issues]\[bids\_standard] within the
 appropriate repository.
 
 We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids) so that others can search
 them and benefit from the answers, but if you do not feel comfortable
 asking your question publicly please feel free to email the BIDS maintainers at
-[bids.maintenance+question@gmail.com](mailto:bids.maintenance+question@gmail.com). They will
+<bids.maintenance+question@gmail.com>. They will
 repost an anonymised/general version of your question on
 [NeuroStars](https://neurostars.org/tags/bids) and answer it there.
 
@@ -414,7 +397,7 @@ community survey results.
 
 All BIDS community members are required to follow the
 [BIDS code of conduct](./bids_github/CODE_OF_CONDUCT.md).
-Please contact the BIDS maintainers at [bids.maintenance+coc@gmail.com](mailto:bids.maintenance+coc@gmail.com)
+Please contact the BIDS maintainers at <bids.maintenance+coc@gmail.com>
 if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgments
@@ -423,23 +406,23 @@ This document draws heavily from the
 [Modern Paradigm for Standards](https://open-stand.org/about-us/principles/)
 and from other open-source governance documents including:
 
--   [https://numpy.org/doc/stable/dev/governance/index.html](https://numpy.org/doc/stable/dev/governance/index.html)
--   [https://docs.scipy.org/doc/scipy/dev/governance.html](https://docs.scipy.org/doc/scipy/dev/governance.html)
--   [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html)
--   [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/)
--   [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards)
+-   <https://numpy.org/doc/stable/dev/governance/index.html>
+-   <https://docs.scipy.org/doc/scipy/dev/governance.html>
+-   <https://www.ieee.org/about/corporate/governance/index.html>
+-   <https://www.apache.org/foundation/governance/>
+-   <https://www.niso.org/what-we-do/creating-NISO-standards>
 -   <https://chrisholdgraf.com/blog/2018/rust-governance>
--   [https://www.seedsforchange.org.uk/consensus](https://www.seedsforchange.org.uk/consensus)
--   [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance)
--   [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en)
--   [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104)
+-   <https://www.seedsforchange.org.uk/consensus>
+-   <https://en.wikipedia.org/wiki/Internet_governance>
+-   <https://www.icann.org/resources/pages/governance/guidelines-en>
+-   <https://github.com/bids-standard/bids-specification/pull/104>
 -   [Drupal's Governance](https://randyfay.com/content/drupals-governance)
 -   [Drupal community's governance process](https://git.drupalcode.org/project/governance/-/blob/main/README.md)
 
 ### G. Election data and code
 
 Anonymous data from BIDS elections is stored in a dedicated repository on GitHub:
-[https://github.com/bids-standard/bids-elections](https://github.com/bids-standard/bids-elections)
+<https://github.com/bids-standard/bids-elections>
 
 ### H. Governance amendment procedure
 
