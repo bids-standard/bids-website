@@ -270,13 +270,13 @@ creating and integrating a BEP into the standard are defined outside of this gov
 [here](../extensions/process.md). That process is version controlled on the bids-standard github
 at [bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
-Defining the BEP process outside of this governance enables BIDS to be more reponsive
+Defining the BEP process outside of this governance enables BIDS to be more responsive
 and dynamic.
 Changes, improvements, or suggestions regarding the BEP process may be proposed by any
 member of the community via the submission of an issue and/or pull request to the process at
 [github.com/bids-standard/bids-website](https://github.com/bids-standard/bids-website). Following
 a final approval by a majority of the Steering Group amendments/changes may be applied to the
-BEP Process. All discusion and final approval/disapproval of BEP must be a part of the public
+BEP Process. All discussion and final approval/disapproval of BEP must be a part of the public
 record.
 
 A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP
