@@ -18,15 +18,17 @@
 
 # ACTIVE
 
-# -   title: BIDS 2.0
-#     goal: Discussions and suggestions of backwards incompatible changes to BIDS
-#     open_letter: TBD
-#     communication_channel: TBD
-#     url: https://github.com/bids-standard/bids-2-devel
-#     chairs:
-#     -   name: Yaroslav Halchenko
-#         email: debian@onerussian.com
-#     status: active
+-   title: BIDS 2.0
+    goal: Prepare and propose the next major release of BIDS
+    open_letter: TBD
+    communication_channel: TBD
+    url: https://github.com/orgs/bids-standard/projects/10
+    chairs:
+    -   name: Yaroslav Halchenko
+        email: debian@onerussian.com
+    status: active
+    outcome:
+    -   [WiP PR#1775](https://github.com/bids-standard/bids-specification/pull/1775)
 
 # -   title: Governance amendments
 #     goal: Clarification of the BEP process
