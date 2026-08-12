@@ -17,12 +17,12 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the
 description of neural and associated data in a filesystem hierarchy and of the
 metadata associated with the imaging data.
 The current edition of the standard is available in
-\[HTML]\[specification] with all
+[HTML][specification] with all
 the previous editions available since October 2018 (listed in the
-[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this \[repository]\[bids\_website\_gh] as PDFs.
+[Changelog](https://bids-specification.readthedocs.io/en/stable/CHANGES.html)). The pre-October 2018 specification editions can be found in this [repository][bids_website_gh] as PDFs.
 The development edition is available in
-\[HTML]\[specification].
-The specification is based in a \[GitHub repository]\[specification\_gh]
+[HTML][specification].
+The specification is based in a [GitHub repository][specification_gh]
 and rendered with [ReadTheDocs](https://docs.readthedocs.io/en/stable/).
 
 We strive for community consensus in decision making.
@@ -43,11 +43,11 @@ specification development and maintenance,
 [BIDS Extension Proposals (BEPs)](../extensions/beps.md),
 software tools,
 [starter kits](https://bids.neuroimaging.io/getting_started/),
-\[examples]\[bids\_examples\_gh],
+[examples][bids_examples_gh],
 and general discussions.
 The relevant discussions are located in our
-\[Google Group]\[bids\_google\_group],
-\[GitHub organization]\[bids\_standard],
+[Google Group][bids_google_group],
+[GitHub organization][bids_standard],
 and public Google Documents (typically associated with an [extension proposal](../extensions/beps.md)).
 
 A key component of the BIDS initiative is the collection of associated
@@ -55,14 +55,14 @@ software tools and platforms that facilitate the validation and ease the
 use of BIDS-formatted datasets.
 BIDS converters (for example, [HeuDiConv](https://github.com/nipy/heudiconv)) enable the streamlined
 conversion of raw imaging files (for example, DICOMs) into a BIDS dataset, the
-\[BIDS validator]\[bids\_validator] allows
+[BIDS validator][bids_validator] allows
 users to confirm that a given dataset complies with the current edition
 of the standard, the [PyBIDS](https://github.com/bids-standard/pybids)
 Python and [bids-matlab](https://github.com/bids-standard/bids-matlab)
 libraries allow querying and manipulating BIDS-compliant datasets,
 [BIDS-Apps](https://bids.neuroimaging.io/tools/bids-apps.html) for running portable
 pipelines on validated BIDS datasets, and platforms like
-\[OpenNeuro]\[openneuro] store and serve BIDS datasets. Note
+[OpenNeuro][openneuro] store and serve BIDS datasets. Note
 that the associated software does not fall under the same governance
 structure as BIDS, although the contributor and user base may largely
 overlap.
@@ -93,7 +93,7 @@ The following figure illustrates the structure of the groups described
 in this document. The specific organization and responsibilities of
 these groups are laid out in detail, below.
 
-![leadership\_figure](../assets/img/governance_figure.jpg "Leadership Structure")
+![leadership_figure](../assets/img/governance_figure.jpg "Leadership Structure")
 
 ### BIDS Steering Group
 
@@ -125,16 +125,16 @@ The Steering Group may delegate tasks as needed to fulfill its responsibilities.
 
 The current members of the Steering group are:
 
-{{ MACROS\_\_\_generate\_members\_table(file="steering.yml") }}
+{{ MACROS___generate_members_table(file="steering.yml") }}
 
 Past members of the Steering group are:
 
-{{ MACROS\_\_\_generate\_members\_table(file="past\_steering.yml") }}
+{{ MACROS___generate_members_table(file="past_steering.yml") }}
 
 ### BIDS Maintainers Group
 
-This group is responsible for maintaining the \[BIDS specification on
-GitHub]\[specification\_gh]. The Lead
+This group is responsible for maintaining the [BIDS specification on
+GitHub][specification_gh]. The Lead
 Maintainer and the Maintainers Group will determine how they organize
 their work, detailed in the [BIDS Maintainers Group Guide](https://github.com/bids-standard/bids-specification/blob/master/Maintainers_Guide.md) and in accordance with the BIDS Code of Conduct.
 The BIDS Maintainers Group Guide is subject to Steering Group approval and amendment.
@@ -147,11 +147,11 @@ to the Steering Group.
 
 The current members of the Maintainers group are:
 
-{{ MACROS\_\_\_generate\_members\_table(file="maintainers.yml") }}
+{{ MACROS___generate_members_table(file="maintainers.yml") }}
 
 Past members of the Maintainers group are:
 
-{{ MACROS\_\_\_generate\_members\_table(file="past\_maintainers.yml") }}
+{{ MACROS___generate_members_table(file="past_maintainers.yml") }}
 
 If you need to contact the maintainers on a specific topic you can use the following email: `bids.maintenance@gmail.com`.
 However, you may receive a more timely response when pinging them on one of the GitHub repositories using the tag `@bids-standard/maintainers`.
@@ -200,7 +200,7 @@ they should inform the steering group in advance and are responsible to help:
 
 -   assist the steering and maintainers in choosing a suitable replacement.
 
-{{ MACROS\_\_\_generate\_members\_table(file="advisory.yml") }}
+{{ MACROS___generate_members_table(file="advisory.yml") }}
 
 ### Other working groups
 
@@ -215,8 +215,8 @@ The working/interest group formation is formalized
 through an open letter via a "read-only" Google Document addressed to the BIDS Steering Group.
 The open letter will be posted on:
 
--   the \[BIDS-Specification GitHub repository]\[specification\_gh],
--   \[Google Group]\[bids\_google\_group],
+-   the [BIDS-Specification GitHub repository][specification_gh],
+-   [Google Group][bids_google_group],
 -   and [social media channels](https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels).
 
 This proposal will state what their group aims and goals are.
@@ -291,7 +291,7 @@ will be recorded along with their starting process hash.
 
 #### BIDS Specification
 
-This is the \[BIDS specification]\[specification].
+This is the [BIDS specification][specification].
 This covers the current raw data organization for brain MRI, MEG, EEG, and iEEG.
 
 #### BIDS Extension Proposal (BEP)
@@ -374,9 +374,9 @@ The [bids.neuroimaging.io](http://bids.neuroimaging.io/) website
 contains links to all the BIDS informational and help materials.
 
 We encourage questions and discussion  on [NeuroStars, under the "bids"
-tag](https://neurostars.org/tags/bids), via the \[BIDS mailing
-list]\[bids\_google\_group], or in
-\[GitHub issues]\[bids\_standard] within the
+tag](https://neurostars.org/tags/bids), via the [BIDS mailing
+list][bids_google_group], or in
+[GitHub issues][bids_standard] within the
 appropriate repository.
 
 We prefer questions to be asked via
