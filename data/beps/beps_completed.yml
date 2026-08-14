@@ -164,7 +164,7 @@
 -   number: '020'
     title: Eye Tracking including Gaze Position and Pupil Size
     display: Eye Tracking
-    linkt: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking
+    link: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking
     content:
     -   raw
     leads:
