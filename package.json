@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "all-contributors-cli": "^6.26.1",
+    "markdown-link-check": "3.14.2",
     "remark-cli": "^12.0.1",
     "remark-gfm": "^4.0.1",
     "remark-lint-no-trailing-spaces": "^4.0.3",

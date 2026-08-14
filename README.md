@@ -3,6 +3,9 @@
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/109520103085644521?domain=https%3A%2F%2Ffosstodon.org%2F)](https://fosstodon.org/@bidsstandard)
 [![@BIDSstandard](https://img.shields.io/twitter/follow/bidsstandard.svg?style=social)](https://x.com/BIDSstandard)
 
+[![Monthly Link Check](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-scheduled.yaml/badge.svg)](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-scheduled.yaml)
+[![Current Link Check](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-push.yaml/badge.svg)](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-push.yaml)
+
 <img
     src="https://github.com/bids-standard/bids-specification/blob/master/BIDS_logo/BIDS_logo_white_transparent_background_crop.png#gh-dark-mode-only"
     alt="bids-logo"
