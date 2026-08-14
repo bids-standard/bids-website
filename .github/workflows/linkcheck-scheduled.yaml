@@ -1,0 +1,13 @@
+---
+name: Monthly Link Check
+
+on:
+    schedule:
+        - cron: "0 9 1 * *"
+    workflow_dispatch:
+
+jobs:
+    link-check:
+        uses: ./.github/workflows/linkcheck-setup.yaml
+        with:
+            check: scheduled
