@@ -44,6 +44,24 @@
     },
     {
       "pattern": "^https://opavote.com/results/5203129121898496"
+    },
+    {
+      "pattern": "^https://www.ieee.org/about/corporate/governance/index.html"
+    },
+    {
+      "pattern": "^https://bids-specification--518.org.readthedocs.build/en/518/05-derivatives/04-structural-derivatives.html"
+    },
+    {
+      "pattern": "^https://gin.g-node.org/CIMeC/TMS-EEG_brain_connectivity_BIDS"
+    },
+    {
+      "pattern": "^https://bids-specification--2022.org.readthedocs.build/en/2022/modality-specific-files/stimuli.html"
+    },
+    {
+      "pattern": "^https://www.datacenters.com/news/everything-you-need-to-know-about-pii-personal-identifiable-information"
+    },
+    {
+      "pattern": "^"
     }
   ],
   "timeout": "20s",

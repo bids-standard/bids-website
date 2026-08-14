@@ -118,7 +118,7 @@ The difficulty with just providing text descriptions of the
 event file columns and their contents is that users will usually
 be required to write custom code to use your data.
 
-BIDS supports [Hierarchical Event Descriptors (HED)](https://www.hed-resources.org),
+BIDS supports [Hierarchical Event Descriptors (HED)](),
 which is an infrastructure and a controlled vocabulary that allows you to
 annotate your events in a manner that can be used directly by tools.
 
@@ -145,7 +145,7 @@ where it is easy to find and update.
 
 An overview of how event annotation works in BIDS as well as tutorials
 about using available online tools to facilitate annotation can be found in the
-[BIDS annotation quickstart](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html).
+[BIDS annotation quickstart](https://www.hedtags.org/hed-resources/BidsAnnotationQuickstart.html).
 
 There are several online tools available at
 [HED Tools Online](https://hedtools.org)
@@ -154,18 +154,18 @@ to help you during this process:
 1.  You can extract a ready-to-fill-in JSON sidecar template
     from a representative `events.tsv` file in your BIDS dataset.
     A step-by-step tutorial for doing this can be found in the
-    [Create a JSON template tutorial](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html#create-a-json-template).
+    [Create a JSON template tutorial](https://www.hedtags.org/hed-resources/BidsAnnotationQuickstart.html#create-a-json-template).
 
 1.  Once you have a template, you can start editing the template directory,
     or you can convert the template to a spreadsheet and edit your
     annotations in Excel or another tool.
     Instructions for doing this are available in the
-    [Spreadsheet templates tutorial](https://www.hed-resources.org/en/latest/BidsAnnotationQuickstart.html#spreadsheet-templates).
+    [Spreadsheet templates tutorial](https://www.hedtags.org/hed-resources/BidsAnnotationQuickstart.html#spreadsheet-templates).
 
 This process and templates make it convenient to provide basic
 descriptions, as well as HED tags for your dataset events.
 
-A [HED annotation quickstart](https://www.hed-resources.org/en/latest/HedAnnotationQuickstart.html)
+A [HED annotation quickstart](https://www.hedtags.org/hed-resources/HedAnnotationQuickstart.html)
 outlines a step-by-step process for selecting HED tags during the annotation process.
 
 #### HED schemas
@@ -188,5 +188,5 @@ for instance, electrophysiological events ([HED-SCORE](https://github.com/hed-st
 or language stimuli ([LANG](https://github.com/hed-standard/hed-schemas/tree/main/library_schemas/lang)).
 
 Additional details about particular schemas can be found on the [HED schemas](https://hed-schemas.readthedocs.io/en/latest/index.html) documentation page.
-See [HED schema developer’s guide](https://www.hed-resources.org/en/latest/HedSchemaDevelopersGuide.html)
+See [HED schema developer’s guide](https://www.hedtags.org/hed-schemas/developer_guide.html)
 to begin developing your own library schema or contribute to existing HED vocabularies.
