@@ -18,9 +18,9 @@ defaults:
         shell: bash
 
 env:
-    FORCE_COLOR: "true"
-    MARKDOWN_LINK_EXCLUDE: "contributors.md,docs/blog/posts"
-    MARKDOWN_LINK_INCLUDE: "docs README.md"
+    FORCE_COLOR: 'true'
+    MARKDOWN_LINK_EXCLUDE: contributors.md,docs/blog/posts
+    MARKDOWN_LINK_INCLUDE: docs README.md
 
 jobs:
     link-check:
