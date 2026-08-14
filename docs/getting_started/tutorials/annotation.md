@@ -10,7 +10,7 @@ While the BIDS requirements for annotation are limited,
 BIDS supports a framework for inserting comprehensive
 data annotation at several levels in the dataset.
 For example, BIDS supports annotations of events and subject characteristics using
-[Hierarchical Event Descriptors (HED)](https://hed-examples.readthedocs.io/en/latest/index.html),
+[Hierarchical Event Descriptors (HED)](https://www.hedtags.org/hed-resources/#where-to-begin),
 an infrastructure and controlled vocabulary for
 producing standardized machine-actionable annotations.
 

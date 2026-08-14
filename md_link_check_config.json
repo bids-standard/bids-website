@@ -61,7 +61,13 @@
       "pattern": "^https://www.datacenters.com/news/everything-you-need-to-know-about-pii-personal-identifiable-information"
     },
     {
-      "pattern": "^"
+      "pattern": "^https://support.dcmtk.org/docs/dcmdump.html"
+    },
+    {
+      "pattern": "^https://support.dcmtk.org/docs/"
+    },
+    {
+      "pattern": ""
     }
   ],
   "timeout": "20s",
