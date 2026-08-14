@@ -1,3 +1,6 @@
+[![Build and Link Check](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-push.yaml/badge.svg?event=push)](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-push.yaml?query=event%3Apush)
+[![Scheduled Link Check](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-scheduled.yaml/badge.svg?event=schedule)](https://github.com/bids-standard/bids-website/actions/workflows/linkcheck-scheduled.yaml?query=event%3Aschedule)
+
 [![Bluesky Follow](https://img.shields.io/badge/bluesky-Follow_bidsstandard-blue?logo=bluesky)](https://bsky.app/profile/bidsstandard.bsky.social)
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCxZUcYfd_nvIVWAbzRB1tlw)
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/109520103085644521?domain=https%3A%2F%2Ffosstodon.org%2F)](https://fosstodon.org/@bidsstandard)
