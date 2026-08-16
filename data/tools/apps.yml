@@ -297,6 +297,18 @@ apps:
 
 # apps hosted somewhere else
 # sorted alphabetically by DockerHub (dh)
+-   gh: phindagijimana/AutoHS
+    status: active
+    dh: autohs/autohs
+    ci: gh
+    branch: main
+    workflow: CI
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: Automated hippocampal sclerosis workflow from T1w MRI: segmentation, hippocampal volumes, asymmetry index, and clinical reports.
+
 -   gh: cpp-lln-lab/bidsMReye
     status: active
     dh: cpplab/bidsmreye
