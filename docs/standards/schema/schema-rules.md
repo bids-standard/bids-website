@@ -138,8 +138,6 @@
     additional_columns: allowed
 ```
 
-
-
 ---
 
 ## rules.checks
