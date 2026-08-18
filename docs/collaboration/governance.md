@@ -227,7 +227,7 @@ Along with members of the preceding groups, this group comprises broadly
 any individual who has used or has interest in using BIDS. All members
 are invited, and encouraged to join the BIDS Contributor Group by
 supporting the project in one of the many ways listed in the ["All
-Contributors" emoji key](https://allcontributors.org/docs/en/emoji-key).
+Contributors" emoji key](https://allcontributors.org/en/reference/emoji-key/).
 All community members are welcome to join BEP Working Groups and other
 working and interest groups.
 

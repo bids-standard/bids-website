@@ -218,7 +218,7 @@ During the work on multiple BEPs that include `spatial derivatives`,
 a repeated pattern in generating derivatives within several imaging modalities' workflows was identified where:
 
 1.  A reference map that is used to encode spatial features and parameters is required.
-    There is an antecedent of this in `BIDS` with BEP23 ([see below](#BEP-23-PET-Derivatives)).
+    There is an antecedent of this in `BIDS` with BEP23 ([see below](#bep23petderivatives)).
     In that BEP, the proposed naming takes the pattern `_<suffix>ref` (for example `_boldref`, `_dwiref`...),
     and that solution has been suggested
     as a possibility in [issue #1532](https://github.com/bids-standard/bids-specification/issues/1532) of the specification repository.
@@ -266,7 +266,7 @@ This pattern is, in principle, generalizable across BEPs and derivatives in gene
 
 #### Examples
 
-##### BEP 23: PET Derivatives
+##### <a id="bep23petderivatives">BEP 23: PET Derivatives
 
 `BEP 23` has introduced Molecular Imaging Maps "`mimap`s" that correspond
 to the conventions introduced by `BEP 001 (qMRI)`, such as `T1map`, `T2map`, and so on.

@@ -114,29 +114,29 @@
 
 ## rules.tabular_data
 
-[`rules.tabular_data`](): TSV construction rules
+[`rules.tabular_data`](https://github.com/bids-standard/bids-specification/blob/master/src/schema/rules/tabular_data/modality_agnostic.yaml): TSV construction rules
 
-[`rules.tablular_data.task.TaskEvents](https://github.com/bids-standard/bids-specification/tree/master/src/schema/rules/tabular_data/task.yaml)
-
-???+ "TaskEvents"
-
-    ```yaml
-    TaskEvents:
+```yaml
+    Participants:
     selectors:
-        - '"task" in entities'
-        - suffix == "events"
-    columns:
-        onset: required
-        duration: required
-        trial_type: optional
-        ...
-    additional_columns: allowed
+        - path == "/participants.tsv"
     initial_columns:
-        - 'onset'
-        - 'duration'
-    ```
-
-    ![rendered image of task events](../../assets/img/tasks_events_tablular_data_rendered.png)
+        - participant_id
+    columns:
+        participant_id:
+        level: required
+        description_addendum: |
+            There MUST be exactly one row for each participant.
+        species: recommended
+        age: recommended
+        sex: recommended
+        handedness: recommended
+        strain: recommended
+        strain_rrid: recommended
+        HED: optional
+    index_columns: [participant_id]
+    additional_columns: allowed
+```
 
 ---
 
@@ -173,7 +173,7 @@ If all selectors are true, the rule applies to a file; if any check fails, the i
 -   [`rules.entities`](https://github.com/bids-standard/bids-specification/blob/master/src/schema/rules/entities.yaml):
     Global order of entities
 
--   [`rules.dataset_metadata`](https://github.com/bids-standard/bids-specification/blob/master/src/schema/rules/dataset_metadata.yaml):
+-   [`rules.files.common.core`](https://github.com/bids-standard/bids-specification/blob/master/src/schema/rules/files/common/core.yaml):
     Contents of dataset_description.json and genetic_info.json, constructed similarly to [rules.sidecars](#rulessidecars)
 
 -   [`rules.modalities`](https://github.com/bids-standard/bids-specification/blob/master/src/schema/rules/modalities.yaml):
