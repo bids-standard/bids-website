@@ -1,3 +1,7 @@
+## How do I give my BIDS-related paper more community visibility?
+
+If you published a BIDS paper or a paper closely related to BIDS (e.g., publications about tools that integrate BIDS), please open an issue on this [GitHub repository](https://github.com/bids-standard/bids-website) following the publications-issue template. BIDS maintainers will then add your paper to our BIDS-Zotero group and your publication will be findable [here](https://www.zotero.org/groups/5111637/bids).
+
 ## Can I combine BIDS and neurodata without border (NWB)?
 
 BIDS and [NWB](https://www.nwb.org/) are compatible.

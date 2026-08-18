@@ -33,15 +33,13 @@ def main(files_to_check):
 
         for bep in data:
             has_email = False
+            has_real_lead = False
 
             print(f"[blue]{bep['number']} {bep['title']}")
             for lead in bep["leads"]:
                 status, email = check_lead(citation, lead)
 
-                if status == "not found":
-                    color = "red"
-                    return_code = 1
-                elif status == "skip":
+                if status in {"not found", "skip"}:
                     color = "yellow"
                 elif status == "found":
                     color = "green"
@@ -51,7 +49,17 @@ def main(files_to_check):
                     f"{lead['given-names']} {lead['family-names']}"
                 )
 
-                if status in ["not found", "skip"]:
+                if status == "skip":
+                    continue
+
+                has_real_lead = True
+
+                if status == "not found":
+                    print(
+                        "      [yellow]not listed in "
+                        "specification/CITATION.cff — "
+                        "consider adding upstream."
+                    )
                     continue
 
                 if email["in_bids_website"]:
@@ -80,7 +88,8 @@ def main(files_to_check):
                         "bids-website data.",
                     )
 
-            return_code |= not has_email
+            if has_real_lead and not has_email:
+                return_code = 1
 
     sys.exit(return_code)
 

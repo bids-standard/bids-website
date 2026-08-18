@@ -1,0 +1,78 @@
+---
+name: Link Check Setup
+
+on:
+    workflow_call:
+        inputs:
+            check:
+                description: Link check to run after setup
+                required: true
+                type: string
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+defaults:
+    run:
+        shell: bash
+
+env:
+    FORCE_COLOR: 'true'
+    MARKDOWN_LINK_EXCLUDE: contributors.md,docs/blog/posts
+    MARKDOWN_LINK_INCLUDE: docs README.md
+
+jobs:
+    link-check:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Checkout
+            uses: actions/checkout@v7
+            with:
+                submodules: recursive
+                fetch-depth: 0
+
+        -   name: Set up Python
+            uses: astral-sh/setup-uv@v7
+            with:
+                python-version: 3.12
+
+        -   name: Set up Node
+            uses: actions/setup-node@v6
+            with:
+                node-version: 24
+
+        -   name: Install dependencies and update content from submodules
+            run: make all
+
+        -   name: Link Check (Pull Request)
+            if: inputs.check == 'pull-request'
+            run: |
+                for change in $(git diff --name-only --diff-filter=ACMR "origin/$GITHUB_BASE_REF" '*.md'); do
+                    npx markdown-link-check \
+                        --quiet \
+                        --config md_link_check_config.json \
+                        --ignore "$MARKDOWN_LINK_EXCLUDE" \
+                        "$change";
+                done
+
+        -   name: Link Check (Push)
+            if: inputs.check == 'push'
+            run: |
+                for change in $(git diff --name-only --diff-filter=ACMR "${{ github.event.before }}" '*.md'); do
+                    npx markdown-link-check \
+                        --quiet \
+                        --config md_link_check_config.json \
+                        --ignore "$MARKDOWN_LINK_EXCLUDE" \
+                        "$change";
+                done
+
+        -   name: Link Check (Scheduled)
+            if: inputs.check == 'scheduled'
+            run: |
+                for path in $MARKDOWN_LINK_INCLUDE; do
+                    npx markdown-link-check \
+                        --config md_link_check_config.json \
+                        --ignore "$MARKDOWN_LINK_EXCLUDE" \
+                        "$path";
+                done

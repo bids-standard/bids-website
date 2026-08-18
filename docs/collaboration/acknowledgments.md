@@ -8,7 +8,6 @@ BIDS was supported by the following grants.
 
 ## Prizes and applications
 
-<!-- TODO mention the open science prize from 2023 -->
-
--   We submitted an application to [The Neuro Open Science in action prize 2020](https://www.mcgill.ca/neuro/open-science/neuro-open-science-action-prize-2020).
-    Please find our [associated application](../assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf).
+In 2023 the Brain Imaging Data Structure (BIDS) Steering Committee won the
+[International $80,000 Neuro–Irv and Helga Cooper Foundation Open Science Prize](https://www.mcgill.ca/neuro/open-science/open-science-awards-and-prizes/neuro-irv-and-helga-cooper-foundation-open-science-prizes/awardees)
+(see [associated application](../assets/BIDS-materials/2020_TheNeuro_OpenScienceInAction_application.pdf)).
