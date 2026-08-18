@@ -265,9 +265,9 @@ The foundation of BIDS decision making is listening to all members of the BIDS C
 and striving to achieve consensus on each level of the BIDS standard process.
 
 The criteria for making changes to the standard via a BEP (or otherwise) are laid out
-[here](../extensions/guidelines.md) on the bids website while the formal process for
+[here](../extensions/guidelines.md) on the BIDS website while the formal process for
 creating and integrating a BEP into the standard are defined outside of this governance
-[here](../extensions/process.md). That process is version controlled on the bids-standard github
+[here](../extensions/process.md). That process is version-controlled on the BIDS standard GitHub repository
 at [bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
 Defining the BEP process outside of this governance enables BIDS to be more responsive
@@ -280,9 +280,9 @@ BEP Process. All discussion and final approval/disapproval of BEP must be a part
 record.
 
 A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP
-Working Group barring the BEP Lead(s) consent. Once a BEP is started the Git hash
-associated with the BEP process is noted and linked to the BEP. Should BEP Lead(s)
-choose to adopt a *newer* version of the process the Git hash of that newer version
+Working Group barring the BEP Lead(s) consent. Once a BEP is started, the Git hash
+associated with the BEP Process is noted and linked to the BEP. Should BEP Lead(s)
+choose to adopt a *newer* version of the process, the Git hash of that newer version
 will be recorded along with their starting process hash.
 
 ## X. Appendix
@@ -382,7 +382,7 @@ appropriate repository.
 We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids) so that others can search
 them and benefit from the answers, but if you do not feel comfortable
-asking your question publicly please feel free to email the BIDS maintainers at
+asking your question, please feel free to email the BIDS Maintainers at
 <bids.maintenance+question@gmail.com>. They will
 repost an anonymised/general version of your question on
 [NeuroStars](https://neurostars.org/tags/bids) and answer it there.
