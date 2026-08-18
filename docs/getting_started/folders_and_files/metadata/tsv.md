@@ -23,8 +23,8 @@ and a [`writetable`](https://www.mathworks.com/help/matlab/ref/writetable.html) 
 For Octave, the `writetable` function is not implemented in older version of Octave
 (e.g 4.2.2) and the `table` function differs from its MATLAB counterpart,
 so it may be easier to rely on [bids-matlab](https://github.com/bids-standard/bids-matlab) functions
-([`bids.util.tsvwrite`](https://bids-matlab.readthedocs.io/en/main/utility_functions.html#bids.util.tsvwrite) and
-[`bids.util.tsvread`](https://bids-matlab.readthedocs.io/en/main/utility_functions.html#bids.util.tsvread))
+([`bids.util.tsvwrite`](https://bids-matlab.readthedocs.io/en/main/api/utility_functions.html#bids.util.tsvwrite) and
+[`bids.util.tsvread`](https://bids-matlab.readthedocs.io/en/main/api/utility_functions.html#bids.util.tsvread))
 to help you work with those files.
 
 ## R
