@@ -1,7 +1,7 @@
 # BEP process
 
 Small contributions (typos, rephrasing of a description, adding a single new metadata field)
-can be proposed as a [Pull Request on GitHub](https://github.com/bids-standard/bids-specification/pulls)
+can be proposed as a [Pull Request on GitHub](https://github.com/bids-standard/bids-specification/pulls).
 Larger contributions that are expected to involve longer and more involved discussions
 may take the form of a BIDS extension proposal (BEP).
 
@@ -43,23 +43,23 @@ BEP_issue_exist -- yes --> Join_discussion
 
 !!! warning "Before starting a new extension!"
 
-Developing a new BIDS extension a long process (think years not months)
+Developing a new BIDS extension a long process (think years, not months)
 that requires a lot of work and coordination.
 
 Also take into account,
-you may be consulted **years after BEP you workded on is merged into the BIDS specification**,
+you may be consulted **years after the BEP you worked on is merged into the BIDS specification**,
 to advise regarding new updates to this BEP.
 
 So before you embark on this journey, make sure that you have:
 
--   explored :
+-   explored:
 
     -   [the lists of BEPs](./beps.md)
     -   [opened pull requests related to BEPs](https://github.com/bids-standard/bids-specification/pulls?q=is%3Apr+is%3Aopen+label%3ABEP)
     -   [opened issues related to BEPs](https://github.com/bids-standard/bids-specification/issues?q=is%3Aissue%20state%3Aopen%20label%3ABEP)
 
     to find existing or ongoing efforts
-    that may support what you are trying to add into the BIDS Specification.
+    that may support what you are trying to add into the BIDS specification.
     Someone may have already done work for you: so avoid duplicating efforts!
 
 -   familiarized yourself with the BIDS community by browsing current issues,
@@ -224,10 +224,10 @@ From this step forward the focus of BEP is purely technical, the goal of this ph
 
 #### Deliverables
 
-Github pull requests open and ready to merge for:
+GitHub pull requests open and ready to merge for:
 
--   github.com/bids-standard/bids-specification
--   github.com/bids-standard/bids-examples
+-   [bids-specification](https://github.com/bids-standard/bids-specification)
+-   [bids-examples](https://github.com/bids-standard/bids-examples)
 
 #### BEP Lead Actions
 
