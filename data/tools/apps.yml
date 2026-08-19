@@ -529,6 +529,20 @@ apps:
     ci: circleci
     branch: main
 
+-   gh: PennLINC/simbids
+    status: active
+    dh: pennlinc/simbids
+    ds_type:
+    -   raw
+    -   derivative
+    datatype:
+    -   anat
+    -   func
+    -   dwi
+    description: Simulate BIDS MRI data and BIDS Derivatives for CI testing
+    ci: gh
+    branch: main
+
 -   gh: poldracklab/fitlins
     status: active
     dh: poldracklab/fitlins
