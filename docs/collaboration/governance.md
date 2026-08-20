@@ -82,7 +82,7 @@ principles:
     and models (inspired by the pareto principle).
 
 1.  Adoption by the global neuroscience community and their input during
-   the creation of the specification is critical for the success of the project.
+    the creation of the specification is critical for the success of the project.
 
 ## 3. Leadership structure
 
@@ -130,25 +130,6 @@ The current members of the Steering group are:
 Past members of the Steering group are:
 
 {{ MACROS___generate_members_table(file="past_steering.yml") }}
-
-### BEP Working Group
-
-A BEP Working Group is established for every BIDS Extension Proposal
-(BEP). Each working group will have 1-3 group-appointed leader(s),
-referred to as BEP Lead(s). Every BEP Working Group is formed with the
-aim of extending or modifying the BIDS standard into their domain of
-interest. This can be either an unspecified modality or derivative.
-The BEP Lead and Working Group will determine how they organize their
-work, following the BIDS governance standards laid out in section 4 of
-this document and the BIDS [Code of Conduct](./bids_github/CODE_OF_CONDUCT.md).
-The BEP Working Group work is completed when their BEP has become a Merged BEP.
-
-### BEP Leads Group
-
-The BEP Leads Group consists of the BEP Leads of the BEP Working Groups.
-This Working Group intends to ensure potential integrations and
-collaborations across BEPs are realized and consistency across the BIDS
-standard.
 
 ### BIDS Maintainers Group
 
@@ -208,7 +189,7 @@ loses their "active" status.
 The purpose of this group is to provide advice and guidance to the BIDS Steering
 Group and the BEP Leads Group.
 When a BEP is merged into the specification,
-the leads of this BEP working group automatically join the advisory group.
+the associated BEP Lead(s) automatically join the advisory group.
 Members are encouraged to participate for at least 2 years following
 the merge of their BEP.
 If an advisory group member decides to leave the advisory group,
@@ -227,7 +208,7 @@ A working/interest group can be established under the approval of the BIDS Steer
 This is typically but not limited to being formed for the purpose of advancing the BIDS community, not the standard.
 
 Each group will appoint 1-2 chairs.
-Members of these groups can have cross appointments in other groups (for example, BEP Working Group).
+Members of these groups can have cross appointments in other groups.
 These groups do not necessarily dissolve after some duration or event, unless stated in their proposal.
 
 The working/interest group formation is formalized
@@ -236,7 +217,7 @@ The open letter will be posted on:
 
 -   the [BIDS-Specification GitHub repository][specification_gh],
 -   [Google Group][bids_google_group],
--   and [social media channels](<https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels>).
+-   and [social media channels](https://github.com/bids-standard/bids-specification?tab=readme-ov-file#BIDS-communication-channels).
 
 This proposal will state what their group aims and goals are.
 
@@ -283,40 +264,26 @@ OpenStand:
 The foundation of BIDS decision making is listening to all members of the BIDS Community
 and striving to achieve consensus on each level of the BIDS standard process.
 
-The criteria for forming a new BEP Working Group:
+The criteria for making changes to the standard via a BEP (or otherwise) are laid out
+[here](../extensions/guidelines.md) on the BIDS website while the formal process for
+creating and integrating a BEP into the standard are defined outside of this governance
+[here](../extensions/process.md). That process is version-controlled on the BIDS standard GitHub repository
+at [bids-standard/bids-website](https://github.com/bids-standard/bids-website).
 
--   Statement of intent with defined scope, deliverables, and use cases
--   Statement of intent accepted by the BIDS Steering Group
+Defining the BEP process outside of this governance enables BIDS to be more responsive
+and dynamic.
+Changes, improvements, or suggestions regarding the BEP process may be proposed by any
+member of the community via the submission of an issue and/or pull request to the process at
+[github.com/bids-standard/bids-website](https://github.com/bids-standard/bids-website). Following
+a final approval by a majority of the Steering Group amendments/changes may be applied to the
+BEP Process. All discussion and final approval/disapproval of BEP must be a part of the public
+record.
 
-The criteria of the BIDS Steering Group evaluation
-for elevating a Draft BEP to a Proposed BEP:
-
--   Integrates into the current edition of the standard and is consistent with the BIDS Mission Statement
--   Clearly defines a filename template and field names
--   At least 10 business days of community feedback publicly posted across the BIDS channels
--   Consensus reached among the Working Group
--   Use cases and examples clearly illustrated
-
-Upon a successful Draft BEP review,
-the BEP will be converted from a Google document
-to a pull request for the [BIDS standard][specification_gh].
-This will enable further community feedback on the Proposed BEP.
-Tools may begin integrating the Proposed BEP specification.
-
-The criteria for merging a Proposed BEP into the BIDS Standard:
-
--   Proposal positively reviewed by representative community members.
-    The definition of "representative" will differ
-    depending on the scope of the extension
-    and will be reviewed as part of the Steering Group's final approval.
-
--   BIDS Steering Group final approval.
-
-The Steering Group evaluates:
-
--   Sufficiency of community feedback for the scope of the extension
--   Validator updated to include the Proposed BEP specification
--   Final review of the integration into the BIDS standard
+A newer version of the BEP Process may not be applied retroactively to an approved BEP/BEP
+Working Group barring the BEP Lead(s) consent. Once a BEP is started, the Git hash
+associated with the BEP Process is noted and linked to the BEP. Should BEP Lead(s)
+choose to adopt a *newer* version of the process, the Git hash of that newer version
+will be recorded along with their starting process hash.
 
 ## X. Appendix
 
@@ -333,36 +300,6 @@ A proposal that intends to extend BIDS into an unspecified modality or derivativ
 A BEP is typically led by 1-3 individuals with several contributors.
 The [list of BEPs](../extensions/beps.md)
 can be found elsewhere on this website.
-
-#### Draft BEP
-
-The in-progress document, typically in a Google Doc, of a BEP.
-This is dynamic and is grown and maintained at the discretion of a BEP Working Group.
-
-#### Draft BEP review
-
-This review is performed by the BIDS Steering Group on a Draft BEP.
-The review at this stage aims to ensure the structure clearly defines a template
-and field names along with it integrating into the philosophy, principles, and accepted standards of BIDS.
-The BIDS Steering Group approval action will be a majority vote.
-Upon BIDS Steering Group approval, the Draft BEP will be elevated to a Proposed BEP.
-
-#### Proposed BEP
-
-Once the BIDS Steering Group has approved the Draft BEP,
-it becomes a specific addition and/or modification of BIDS,
-in the form of a Proposed BEP.
-At this time, the Proposed BEP will take the form of a pull request on the [BIDS GitHub repository][specification_gh].
-
-#### Proposed BEP review
-
-This review is performed by the BIDS Steering Group on the Proposed BEP.
-The review aims to ensure the community input was incorporated
-and the final version integrates into the current edition of the BIDS standard specification.
-
-#### Merged BEP
-
-A Proposed BEP that has been reviewed and approved by the Steering Group and merged into the BIDS standard.
 
 ### B. Voting Procedure
 
@@ -445,8 +382,8 @@ appropriate repository.
 We prefer questions to be asked via
 [NeuroStars](https://neurostars.org/tags/bids) so that others can search
 them and benefit from the answers, but if you do not feel comfortable
-asking your question publicly please feel free to email the BIDS maintainers at
-[bids.maintenance+question@gmail.com](mailto:bids.maintenance+question@gmail.com). They will
+asking your question, please feel free to email the BIDS Maintainers at
+<bids.maintenance+question@gmail.com>. They will
 repost an anonymised/general version of your question on
 [NeuroStars](https://neurostars.org/tags/bids) and answer it there.
 
@@ -460,7 +397,7 @@ community survey results.
 
 All BIDS community members are required to follow the
 [BIDS code of conduct](./bids_github/CODE_OF_CONDUCT.md).
-Please contact the BIDS maintainers at [bids.maintenance+coc@gmail.com](mailto:bids.maintenance+coc@gmail.com)
+Please contact the BIDS maintainers at <bids.maintenance+coc@gmail.com>
 if you have any concerns or would like to report a violation.
 
 ### F. Acknowledgments
@@ -469,23 +406,23 @@ This document draws heavily from the
 [Modern Paradigm for Standards](https://open-stand.org/about-us/principles/)
 and from other open-source governance documents including:
 
--   [https://numpy.org/doc/stable/dev/governance/index.html](https://numpy.org/doc/stable/dev/governance/index.html)
--   [https://docs.scipy.org/doc/scipy/dev/governance.html](https://docs.scipy.org/doc/scipy/dev/governance.html)
--   [https://www.ieee.org/about/corporate/governance/index.html](https://www.ieee.org/about/corporate/governance/index.html)
--   [https://www.apache.org/foundation/governance/](https://www.apache.org/foundation/governance/)
--   [https://www.niso.org/what-we-do/creating-NISO-standards](https://www.niso.org/what-we-do/creating-NISO-standards)
+-   <https://numpy.org/doc/stable/dev/governance/index.html>
+-   <https://docs.scipy.org/doc/scipy/dev/governance.html>
+-   <https://www.ieee.org/about/corporate/governance/index.html>
+-   <https://www.apache.org/foundation/governance/>
+-   <https://www.niso.org/what-we-do/creating-NISO-standards>
 -   <https://chrisholdgraf.com/blog/2018/rust-governance>
--   [https://www.seedsforchange.org.uk/consensus](https://www.seedsforchange.org.uk/consensus)
--   [https://en.wikipedia.org/wiki/Internet_governance](https://en.wikipedia.org/wiki/Internet_governance)
--   [https://www.icann.org/resources/pages/governance/guidelines-en](https://www.icann.org/resources/pages/governance/guidelines-en)
--   [https://github.com/bids-standard/bids-specification/pull/104](https://github.com/bids-standard/bids-specification/pull/104)
+-   <https://www.seedsforchange.org.uk/consensus>
+-   <https://en.wikipedia.org/wiki/Internet_governance>
+-   <https://www.icann.org/resources/pages/governance/guidelines-en>
+-   <https://github.com/bids-standard/bids-specification/pull/104>
 -   [Drupal's Governance](https://randyfay.com/content/drupals-governance)
 -   [Drupal community's governance process](https://git.drupalcode.org/project/governance/-/blob/main/README.md)
 
 ### G. Election data and code
 
 Anonymous data from BIDS elections is stored in a dedicated repository on GitHub:
-[https://github.com/bids-standard/bids-elections](https://github.com/bids-standard/bids-elections)
+<https://github.com/bids-standard/bids-elections>
 
 ### H. Governance amendment procedure
 
