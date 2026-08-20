@@ -1,10 +1,6 @@
 # BIDS Impact
 
-The Brain Imaging Data Structure (BIDS) is an open global community driving the
-standardization of neuroscience data across a broad and growing range of modalities
-and health research disciplines. First released in June 2016, it is supported by a
-worldwide research network and endorsed by organizations like the International
-Neuroinformatics Coordinating Facility ([INCF](https://www.incf.org/)).
+Since its 2016 release, BIDS has grown into a global standard spanning over 40 domain-specific specifications, thousands of open datasets, and hundreds of active contributors, a trajectory we back with dashboards tracking dataset counts, citations, GitHub stars, downloads, and contributor demographics. Beyond the numbers, this section also doubles as a pitch to funders and grant writers, offering steering-group letters of support and connections to the wider BIDS network for those looking to build on the standard.
 
 BIDS encompasses:
 
