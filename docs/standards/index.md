@@ -1,6 +1,11 @@
 # BIDS Standards
 
-The BIDS specification is backed by a growing set of companion standards that make it usable by software as well as researchers. A YAML-based schema renders the specification's rules in declarative form so tools like the BIDS Validator can check datasets for compliance automatically. Related standards extend that same machine-readable approach to statistical modeling and to running BIDS-compatible applications. These efforts let BIDS evolve without forcing every tool that depends on BIDS to reimplement its logic from scratch.
+The BIDS specification is backed by a growing set of companion standards that make it
+usable by software as well as researchers. A YAML-based schema renders the specification's
+rules in declarative form so tools like the BIDS Validator can check datasets for compliance automatically.
+Related standards extend that same machine-readable approach to statistical modeling and to
+running BIDS-compatible applications. These efforts let BIDS evolve without forcing every tool
+that depends on BIDS to reimplement its logic from scratch.
 
 You can find further information for:
 
