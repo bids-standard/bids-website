@@ -78,9 +78,13 @@ make update
 ## Run all formatting / linting tools
 
 ```bash
+make precommit
 tox
 make remark
 ```
+
+The pre-commit hooks may modify files to apply formatting fixes. Review and
+stage those changes, then rerun `make precommit` to confirm that all hooks pass.
 
 ### Using remark to format a file
 
