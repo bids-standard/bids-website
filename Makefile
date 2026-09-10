@@ -1,3 +1,5 @@
+# General
+
 all: update
 
 install: .venv node_modules
@@ -52,7 +54,8 @@ tmp/openneuro_data_growth.html: .venv
 	uv run tools/build/figure_data_openneuro.py
 
 
-# Linting
+# Linting & Others
+.PHONY: lint remark serve precommit
 
 lint: remark
 	tox
@@ -62,3 +65,6 @@ remark: node_modules
 
 serve: update
 	uv run mkdocs serve -a localhost:8080
+
+precommit: .venv
+	uv run pre-commit run --all-files
