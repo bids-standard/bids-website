@@ -390,15 +390,18 @@
         family-names: Urchs
     -   given-names: Arshitha
         family-names: Basavaraj
+    -   given-names: Dustin
+        family-names: Moraczewski
     bids_maintainers:
     -   given-names: Chris
         family-names: Markiewicz
     -   given-names: Ross
         family-names: Blair
     status:
-    -   BEP entering community review period shortly.
-    -   BIDS specification PR 2123.
-    -   BIDS examples PR 465.
+    -   Made major revisions in advance of the upcoming October 2026 community review period.
+    -   BIDS Specification PR 2123.
+    -   BIDS Examples PR 465.
+    -   BIDS Validator PR 438.
     blocking:
     -   A successful community review.
     google_doc_created: 2021-10
