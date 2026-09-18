@@ -1,17 +1,11 @@
 # BIDS Standards
 
-Neuroimaging experiments result in complex data that can be arranged in many different ways.
-For a long time, there was no consensus how to organize and share
-data obtained in neuroimaging experiments.
-Even two researchers working in the same lab could opt to arrange their data in a different way.
-Lack of consensus (or a standard) leads to misunderstandings and time wasted on rearranging data
-or rewriting scripts expecting certain structure.
-
-The current set of BIDS Standards provide outlines and guidance
-for file and metaddata naming and organization, statistical modeling of neuroimaging data,
-and applications created to be used with BIDS data.
-These standards are intended to be updated and evolve as methods and data types change,
-but current documentation on BIDS standards can be found in the sections below.
+The BIDS specification is backed by a growing set of companion standards that make it
+usable by software as well as researchers. A YAML-based schema renders the specification's
+rules in declarative form so tools like the BIDS Validator can check datasets for compliance automatically.
+Related standards extend that same machine-readable approach to statistical modeling and to
+running BIDS-compatible applications. These efforts let BIDS evolve without forcing every tool
+that depends on BIDS to reimplement its logic from scratch.
 
 You can find further information for:
 
