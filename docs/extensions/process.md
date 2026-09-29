@@ -101,7 +101,7 @@ bep_idea --> draft_bep --> proposed_bep --> merged_bep
 A BEP transitions from one phase to another by passing a review process with the BIDS Maintainers. BEP contributors are welcome to join BIDS Maintainer meetings to schedule or discuss their BEP review status.
 A BIDS Maintainer BEP steward, assigned during the BEP process, will actively guide each BEP team from the point of initial BEP idea review through the process outlined here, to provide feedback and guidance. Review discussions are typically followed with specific feedback on the relevant document (GitHub pull request or Google Doc), or by email if preferred by the BEP leads.
 
-Please note the [community consultation requirements](FILL IN THE BLANK LINK) at each phase.  BEP leads are encouraged to connect with the BIDS Maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community.
+Please note the community consultation requirements at each phase.  BEP leads are encouraged to connect with the BIDS Maintainers in case of questions or challenges. The BIDS Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the BIDS community.
 
 ```mermaid
 flowchart TD
