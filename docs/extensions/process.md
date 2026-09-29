@@ -215,7 +215,6 @@ BEP_draft --> Meet_the_team
 Meet_the_team -- approval : `BEP Draft` status --> Official_BEP
 ```
 
-
 To start a new BEP working group, the BIDS governance mentions that you need:
 
 > -   a statement of intent with defined scope, deliverables, and use cases
