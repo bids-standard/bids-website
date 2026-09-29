@@ -10,14 +10,16 @@ The BIDS community is preparing to merge the BIDS Extension Proposal 47 (BEP047)
 
 <!-- more -->
 
-Behavioral experiments increasingly rely on cameras and microphones — from freely-moving animal recordings to interviews and speech tasks — yet BIDS has had no standardized way to store these files. BEP047 fills that gap. It lets audio, video, combined audio-video, and image recordings live in the `beh/` directory using the `_audio`, `_video`, `_audiovideo`, and `_image` suffixes, with sidecar JSON metadata describing the recording (device, duration, codecs, frame rate, resolution, and more). Multiple simultaneous cameras or microphones are distinguished with the `recording` entity, and repeated captures with the `run` and `split` entities.
+Behavioral experiments increasingly rely on cameras and microphones — from freely-moving animal recordings to interviews and speech tasks — yet BIDS has had no standardized way to store these files. BEP047 fills that gap.
+It lets audio, video, combined audio-video, and image recordings live in the `beh/` directory using the `_audio`, `_video`, `_audiovideo`, and `_image` suffixes, with sidecar JSON metadata describing the recording (device, duration, codecs, frame rate, resolution, and more).
+Multiple simultaneous cameras or microphones are distinguished with the `recording` entity, and repeated captures with the `run` and `split` entities.
 
 BEP047 builds on a new, shared **media files appendix** that defines common file formats, codecs, and stream metadata. These definitions are intentionally general so they can be reused by other proposals that handle media (such as BEP044 for stimuli), keeping naming and metadata consistent across the standard.
 
 The updated draft is available for review at:
 
-- Behavioral audio/video recordings: [https://bids-specification--2231.org.readthedocs.build/en/2231/modality-specific-files/behavioral-experiments.html](https://bids-specification--2231.org.readthedocs.build/en/2231/modality-specific-files/behavioral-experiments.html)
-- Common media files appendix: [https://bids-specification--2231.org.readthedocs.build/en/2231/appendices/media-files.html](https://bids-specification--2231.org.readthedocs.build/en/2231/appendices/media-files.html)
+-   Behavioral audio/video recordings: [https://bids-specification--2231.org.readthedocs.build/en/2231/modality-specific-files/behavioral-experiments.html](https://bids-specification--2231.org.readthedocs.build/en/2231/modality-specific-files/behavioral-experiments.html)
+-   Common media files appendix: [https://bids-specification--2231.org.readthedocs.build/en/2231/appendices/media-files.html](https://bids-specification--2231.org.readthedocs.build/en/2231/appendices/media-files.html)
 
 Note that the content of those pages may change as suggestions are accepted during the review process.
 
