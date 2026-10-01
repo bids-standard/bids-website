@@ -77,6 +77,10 @@ BEP_issue_exist -- yes --> Join_discussion
 This section gives an overview of the lifecycle of new BEP creation through to BIDS community approval and merge.
 For the typical steps involved in each phase, see [Starting your BEP](#starting-your-bep)).
 
+![BEP Process Overview](../assets/img/bep_process_20260825.png)
+
+This diagram is a helpful outline of the BEP process, which are covered in further detail below. The diagram goes from beginning to end of the BEP process, from the initial idea on the left to the final merging on the right.
+
 #### BEP Phases
 
 A successful BEP moves through the lifecycle from `Draft BEP` to `Proposed BEP` to `Merged BEP`. Between each phase, BEP leaders bring the BEP to the BIDS Maintainers for guidance and review.
