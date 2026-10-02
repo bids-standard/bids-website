@@ -2403,10 +2403,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#starting-your-bep" class="md-nav__link">
+  <a href="#starting-a-bep" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Starting your BEP
+        Starting a BEP
       
     </span>
   </a>
@@ -4692,10 +4692,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#starting-your-bep" class="md-nav__link">
+  <a href="#starting-a-bep" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Starting your BEP
+        Starting a BEP
       
     </span>
   </a>
@@ -4877,19 +4877,27 @@ Someone may have already done work for you: so avoid duplicating efforts!</p>
 </ul>
 </div>
 <h3 id="overview-of-the-bep-process"><a class="toclink" href="#overview-of-the-bep-process">Overview of the <abbr title="BIDS Extension Proposal">BEP</abbr> process</a><a class="headerlink" href="#overview-of-the-bep-process" title="Permanent link">&para;</a></h3>
-<p>Once a <abbr title="BIDS Extension Proposal">BEP</abbr> has been opened (see the next <a href="#starting-your-bep">section</a>),
-it goes from <code>Draft BEP</code> to <code>Proposed BEP</code> to <code>Merged BEP</code>.</p>
-<p>A <code>Draft BEP</code> is usually a Google document (see <a href="../collaboration/governance.html#draft-bep">governance</a>),
-where as <code>Proposed BEP</code> refers to pull request to <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification repository
-(see <a href="../collaboration/governance.html#proposed-bep">governance</a>).</p>
+<p>This section gives an overview of the lifecycle of new <abbr title="BIDS Extension Proposal">BEP</abbr> creation through to <abbr title="Brain Imaging Data Structure">BIDS</abbr> community approval and merge.
+For the typical steps involved in each phase, see <a href="#starting-your-bep">Starting your <abbr title="BIDS Extension Proposal">BEP</abbr></a>).</p>
+<p><img alt="BEP Process Overview" src="../assets/img/bep_process_20260825.png" /></p>
+<p>This diagram is a helpful outline of the <abbr title="BIDS Extension Proposal">BEP</abbr> process, which are covered in further detail below. The diagram goes from beginning to end of the <abbr title="BIDS Extension Proposal">BEP</abbr> process, from the initial idea on the left to the final merging on the right.</p>
+<h4 id="bep-phases"><a class="toclink" href="#bep-phases"><abbr title="BIDS Extension Proposal">BEP</abbr> Phases</a><a class="headerlink" href="#bep-phases" title="Permanent link">&para;</a></h4>
+<p>A successful <abbr title="BIDS Extension Proposal">BEP</abbr> moves through the lifecycle from <code>Draft BEP</code> to <code>Proposed BEP</code> to <code>Merged BEP</code>. Between each phase, <abbr title="BIDS Extension Proposal">BEP</abbr> leaders bring the <abbr title="BIDS Extension Proposal">BEP</abbr> to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers for guidance and review.</p>
+<p>In a nutshell, a typical <code>Draft BEP</code> is in the format of a Google Doc and is actively undergoing development and/or community review (see <a href="../collaboration/governance.html#draft-bep">governance</a>).
+In contrast, a <code>Proposed BEP</code> refers to a GitHub pull request to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification repository
+(see <a href="../collaboration/governance.html#proposed-bep">governance</a>), after a general level of community consensus has been achieved (via the Google Doc).</p>
 <pre class="mermaid"><code>flowchart TD
 
+bep_idea[BEP Idea]
 draft_bep[Draft BEP]
 proposed_bep[Proposed BEP]
 merged_bep[Merged BEP]
 
-draft_bep --&gt; proposed_bep --&gt; merged_bep</code></pre>
-<p>The transitions between those stages is decided by a review process.</p>
+bep_idea --&gt; draft_bep --&gt; proposed_bep --&gt; merged_bep</code></pre>
+<h4 id="bep-review-process-between-phases"><a class="toclink" href="#bep-review-process-between-phases"><abbr title="BIDS Extension Proposal">BEP</abbr> Review Process between Phases</a><a class="headerlink" href="#bep-review-process-between-phases" title="Permanent link">&para;</a></h4>
+<p>A <abbr title="BIDS Extension Proposal">BEP</abbr> transitions from one phase to another by passing a review process with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers. <abbr title="BIDS Extension Proposal">BEP</abbr> contributors are welcome to join <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainer meetings to schedule or discuss their <abbr title="BIDS Extension Proposal">BEP</abbr> review status.
+A <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainer <abbr title="BIDS Extension Proposal">BEP</abbr> steward, assigned during the <abbr title="BIDS Extension Proposal">BEP</abbr> process, will actively guide each <abbr title="BIDS Extension Proposal">BEP</abbr> team from the point of initial <abbr title="BIDS Extension Proposal">BEP</abbr> idea review through the process outlined here, to provide feedback and guidance. Review discussions are typically followed with specific feedback on the relevant document (GitHub pull request or Google Doc), or by email if preferred by the <abbr title="BIDS Extension Proposal">BEP</abbr> leads.</p>
+<p>Please note the community consultation requirements at each phase.  <abbr title="BIDS Extension Proposal">BEP</abbr> leads are encouraged to connect with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers in case of questions or challenges. The <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers are available to support discussions and facilitate convergence towards inclusive solutions for the <abbr title="Brain Imaging Data Structure">BIDS</abbr> community.</p>
 <pre class="mermaid"><code>flowchart TD
 
 draft_bep[Draft BEP]
@@ -4904,8 +4912,8 @@ draft_bep_review -- positive evaluation --&gt; proposed_bep
 proposed_bep --&gt; proposed_bep_review
 proposed_bep_review -- negative evaluation --&gt; proposed_bep
 proposed_bep_review -- positive evaluation --&gt; merged_bep</code></pre>
-<p>It may also be decided to close a <abbr title="BIDS Extension Proposal">BEP</abbr> that is not actually necessary anymore
-or is in fact beyond the scope of <abbr title="Brain Imaging Data Structure">BIDS</abbr>.</p>
+<h4 id="rejected-beps"><a class="toclink" href="#rejected-beps">Rejected <abbr title="BIDS Extension Proposals">BEPs</abbr></a><a class="headerlink" href="#rejected-beps" title="Permanent link">&para;</a></h4>
+<p>In consultation with the <abbr title="BIDS Extension Proposal">BEP</abbr> leads, it is possible, but rare, that the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers and/or Steering may determine that a Draft <abbr title="BIDS Extension Proposal">BEP</abbr> can be addressed under the scope of another <abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension, or is beyond the scope of <abbr title="Brain Imaging Data Structure">BIDS</abbr>.</p>
 <pre class="mermaid"><code>flowchart TD
 
 draft_bep[Draft BEP]
@@ -4969,7 +4977,8 @@ proposed_bep_review -- positive evaluation --&gt; merged_bep</code></pre>
 <li>Preprint of the new extension (if applicable).</li>
 <li>Press release for the <abbr title="Brain Imaging Data Structure">BIDS</abbr> website <a href="https://bids.neuroimaging.io/blog/category/release.html">news section</a>.</li>
 </ol>
-<h3 id="starting-your-bep"><a class="toclink" href="#starting-your-bep">Starting your <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#starting-your-bep" title="Permanent link">&para;</a></h3>
+<h3 id="starting-a-bep"><a class="toclink" href="#starting-a-bep">Starting a <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#starting-a-bep" title="Permanent link">&para;</a></h3>
+<p>Follow the steps below this handy chart to start your <abbr title="BIDS Extension Proposal">BEP</abbr> and move it to <code>Draft BEP</code> status.</p>
 <pre class="mermaid"><code>flowchart TD
 
 Open_BEP_issue["Open an issue to gather interest"]
@@ -4981,15 +4990,15 @@ Official_BEP["Get a number for your BEP"]
 Open_BEP_issue --&gt; Post_mailing_list
 Post_mailing_list --&gt; BEP_draft
 BEP_draft --&gt; Meet_the_team
-Meet_the_team -- approval --&gt; Official_BEP</code></pre>
-<p>To start a new <abbr title="BIDS Extension Proposal">BEP</abbr> working group, the <abbr title="Brain Imaging Data Structure">BIDS</abbr> governance mentions that you need</p>
+Meet_the_team -- approval : `BEP Draft` status --&gt; Official_BEP</code></pre>
+<p>To start a new <abbr title="BIDS Extension Proposal">BEP</abbr> working group, the <abbr title="Brain Imaging Data Structure">BIDS</abbr> governance mentions that you need:</p>
 <blockquote>
 <ul>
 <li>a statement of intent with defined scope, deliverables, and use cases</li>
 <li>a statement of intent accepted by the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group</li>
 </ul>
 </blockquote>
-<p>More details on how to proceed are described below.</p>
+<h4 id="how-to-open-a-bep"><a class="toclink" href="#how-to-open-a-bep">How to Open a <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#how-to-open-a-bep" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>Open an initial "issue" on
@@ -5161,14 +5170,16 @@ to help you with this.</p>
 <p><abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering Group final approval.</p>
 </li>
 </ul>
-<p>The Steering Group evaluates:</p>
+<p>The Steering Group evaluates, with inputs from <abbr title="BIDS Extension Proposal">BEP</abbr> leads and the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers:</p>
 <ul>
 <li>Sufficiency of community feedback for the scope of the extension.</li>
 <li>Validator updated to include the Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> specification.</li>
 <li>Final review of the integration into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.</li>
 </ul>
 <p>The <abbr title="BIDS Extension Proposal">BEP</abbr> lead(s) will work with the <abbr title="Brain Imaging Data Structure">BIDS</abbr> maintainers to coordinate the community review period.
-The community review period is scheduled <em>after</em> the pull request has been opened.</p>
+If community consensus cannot be reached through the Google Doc/GitHub discussion
+or Working Group calls, the <abbr title="BIDS Extension Proposal">BEP</abbr> leads can request the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers facilitate consulting with <abbr title="Brain Imaging Data Structure">BIDS</abbr> Steering.</p>
+<p>The community review period is scheduled <em>after</em> the pull request has been opened.</p>
 <ol>
 <li>When the branch is ready to be merged, open a pull request against the
     <code>master</code> branch to signal the <abbr title="BIDS Extension Proposal">BEP</abbr> is ready for final reviews. We ask your
@@ -5269,7 +5280,7 @@ These suggestions are not required for submitting the <abbr title="BIDS Extensio
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 26, 2026 20:56:17 UTC">February 26, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 2, 2026 14:12:06 UTC">October 2, 2026</span>
   </span>
 
     
