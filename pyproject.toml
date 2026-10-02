@@ -141,3 +141,8 @@ max-branches = 15
 max-returns = 5
 # https://docs.astral.sh/ruff/settings/#lint_pylint_max-statements
 max-statements = 100
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.2",
+]
