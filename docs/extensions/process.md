@@ -77,9 +77,10 @@ BEP_issue_exist -- yes --> Join_discussion
 Once a BEP has been opened (see the next [section](#starting-your-bep)),
 it goes from `Draft BEP` to `Proposed BEP` to `Merged BEP`.
 
-A `Draft BEP` is usually a Google document (see [governance](../collaboration/governance.md#draft-bep)),
+A `Draft BEP` is usually an easily shareable and group editable text document, which
+has historically been a Google document but is by no means limited to.
 where as `Proposed BEP` refers to pull request to BIDS specification repository
-(see [governance](../collaboration/governance.md#proposed-bep)).
+(see [below](#proposed-bep)).
 
 ```mermaid
 flowchart TD
@@ -202,7 +203,7 @@ BEP_draft --> Meet_the_team
 Meet_the_team -- approval --> Official_BEP
 ```
 
-To start a new BEP working group, the BIDS governance mentions that you need
+To start a new BEP working group, you need
 
 > -   a statement of intent with defined scope, deliverables, and use cases
 > -   a statement of intent accepted by the BIDS Steering Group
@@ -439,3 +440,36 @@ These suggestions are not required for submitting the BEP for incorporation into
 -   The BEP paper draft can be shared directly on the BEP submission pull request.
     As the pull request is further looked over by the community, the paper can be
     enhanced during the review period.
+
+## Definitions
+
+### BEP Working Group
+
+A BEP Working Group is established for every BIDS Extension Proposal
+(BEP). Each working group will have 1-3 group-appointed leader(s),
+referred to as BEP Lead(s). Every BEP Working Group is formed with the
+aim of extending or modifying the BIDS standard into their domain of
+interest. This can be either an unspecified modality or derivative.
+The BEP Lead and Working Group will determine how they organize their
+work, following the BIDS governance standards laid out in section 4 of
+this document and the BIDS [Code of Conduct](../../docs/collaboration/bids_github/CODE_OF_CONDUCT.md).
+The BEP Working Group work is completed when their BEP has become a Merged BEP.
+
+### BEP Leads Group
+
+The BEP Leads Group consists of the BEP Leads of the BEP Working Groups.
+This Working Group intends to ensure potential integrations and
+collaborations across BEPs are realized and consistency across the BIDS
+standard.
+
+When a BEP is merged into the specification the BEP Lead(s) are automatically
+enrolled into a [BIDs Advisory Group](../../docs/collaboration/governance.md#bids-advisory-group)
+
+### Draft BEP
+
+The in-progress document, typically in a Google Doc, of a BEP.
+This is dynamic and is grown and maintained at the discretion of a BEP Working Group.
+
+### Merged BEP
+
+A Proposed BEP that has been reviewed and approved by the Steering Group and merged into the BIDS standard.
