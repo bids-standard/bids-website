@@ -28,7 +28,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-bids_website = {workspace = true}
+bids_website = { workspace = true }
 
 [tool.uv.workspace]
 members = ["tools"]
