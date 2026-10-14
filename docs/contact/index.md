@@ -1,6 +1,8 @@
 # Contact
 
-BIDS has lots of different ways of staying in touch! We prefer public-facing communications on the [INCF Neurostars](https://neurostars.org/tags/bids) community forum or GitHub repositories first. Though there are still several other direct methods of communication.
+BIDS has lots of different ways of staying in touch! We prefer public-facing communications
+on the [INCF Neurostars](https://neurostars.org/tags/bids) community forum or GitHub repositories first.
+Though there are still several other direct methods of communication.
 
 We understand that posting a question on a forum can seem a bit uncertain and intimidating.
 However, if _you_ have a question it's almost certain that somebody else will too,
