@@ -6,6 +6,7 @@ categories:
 
 -   announcement
 -   news
+- BEP community meetings
 ---
 
 # 📣 NEW: BEP Community Meetings
