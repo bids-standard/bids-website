@@ -110,7 +110,7 @@ def load_citation() -> dict:
 
 def return_contributor_from_citation_cff(
     citation: dict, person: dict[str, str]
-) -> None | dict:
+) -> dict | None:
     """Return a person from CITATION.cff based on name."""
     for contributor in citation["authors"]:
         if (
