@@ -1,0 +1,11 @@
+---
+name: Link Check (Pull Request)
+
+on:
+    pull_request:
+
+jobs:
+    link-check:
+        uses: ./.github/workflows/linkcheck-setup.yaml
+        with:
+            check: pull-request

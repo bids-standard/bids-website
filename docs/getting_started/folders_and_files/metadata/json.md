@@ -96,7 +96,8 @@ Remember to install and call a package before using it.
 
     ```python
     import json
-    with open('myfile.json', 'r') as ff:
+
+    with open("myfile.json", "r") as ff:
         metadata = json.load(ff)
     ```
 
@@ -136,8 +137,9 @@ Remember to install and call a package before using it.
 
     ```python
     import json
-    metadata = {'field1': 'value1', 'field2': 3, 'field3': 'field3'}
-    with open('my_output_file.json', 'w') as ff:
+
+    metadata = {"field1": "value1", "field2": 3, "field3": "field3"}
+    with open("my_output_file.json", "w") as ff:
         json.dump(metadata, ff)
     ```
 
