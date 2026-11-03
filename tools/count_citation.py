@@ -98,7 +98,7 @@ def query_for_metadata(doi: str) -> dict[str, str]:
         token = f.read().strip()
     headers = {"authorization": token}
     api_call = f"https://opencitations.net/index/coci/api/v1/metadata/{doi}"
-    r = requests.get(api_call, headers=headers)
+    r = requests.get(api_call, headers=headers, timeout=30)
     if r.status_code == 200:
         return r.json()
     print(f"[red]Error: {r.status_code}[/red]")

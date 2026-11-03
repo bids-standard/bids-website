@@ -44,7 +44,7 @@ def get_files_from_pr(pr_num):
     """
     files = []
     pr_url = f"https://api.github.com/repos/bids-standard/bids-website/pulls/{pr_num}/files"
-    resp = requests.get(pr_url)
+    resp = requests.get(pr_url, timeout=30)
 
     for item in resp.json():
         files.append(item["filename"])

@@ -170,7 +170,7 @@ def nb_months_backlog(debug):
 def retrun_nb_posts_and_topics_in_last_30_days():
     """Return number of posts and topics in last 30 days."""
     url = "https://neurostars.org/about.json"
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
     nb_topics = response.json()["about"]["stats"]["topics_30_days"]
     nb_posts = response.json()["about"]["stats"]["posts_30_days"]
 
@@ -203,7 +203,7 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
 
     url = f"{base_url}"
 
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
 
     nb_topics = 0
     if response.status_code == 200:
@@ -216,7 +216,7 @@ def get_topics_for_tag(tag: str, debug=False, verbose=False) -> pd.DataFrame:
     while True:
         url = f"{base_url}?page={page}"
 
-        response = requests.get(url)
+        response = requests.get(url, timeout=30)
 
         if response.status_code != 200:
             print(f"[red]request failed: {url}[/red]")
@@ -256,7 +256,7 @@ def get_posts_for_topic(topic_id: str) -> pd.DataFrame:
     """Get posts for topic."""
     url = f"https://neurostars.org/t/{topic_id}/posts.json"
 
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
 
     if response.status_code != 200:
         print(f"[red]request failed: {url}[/red]")

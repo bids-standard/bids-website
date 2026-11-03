@@ -27,7 +27,7 @@ for app in data["apps"]:
 
     url = f"https://registry.hub.docker.com/v2/repositories/{app['dh']}/"
 
-    response = requests.get(url, auth=None)
+    response = requests.get(url, auth=None, timeout=30)
 
     if response.status_code != 200:
         invalid_dh.append(app["gh"])
