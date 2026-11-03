@@ -4,7 +4,7 @@
     "format": "remark --frail --rc-path ./.remarkrc",
     "all-contributors": "all-contributors generate"
   },
-  "dependencies": {
+  "devDependencies": {
     "all-contributors-cli": "^6.26.1",
     "markdown-link-check": "3.14.2",
     "remark-cli": "^12.0.1",
