@@ -101,7 +101,9 @@ def get_openneuro_datasets(query=None):
     data = '{"query":"query testq{datasets ' + query + '}"}'
 
     response = requests.post(
-        "https://openneuro.org/crn/graphql", headers=headers, data=data,
+        "https://openneuro.org/crn/graphql",
+        headers=headers,
+        data=data,
         timeout=30,
     )
     response = response.json()
@@ -122,7 +124,9 @@ def get_openneuro_datasets(query=None):
             + '}"}'
         )
         response = requests.post(
-            "https://openneuro.org/crn/graphql", headers=headers, data=data,
+            "https://openneuro.org/crn/graphql",
+            headers=headers,
+            data=data,
             timeout=30,
         )
         response = response.json()
