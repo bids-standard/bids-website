@@ -7,6 +7,8 @@ build:
         python: '3.14'
         nodejs: '26'
     jobs:
+        install:
+        -   uv sync --frozen --cache-dir $READTHEDOCS_VIRTUALENV_PATH/../../uv_cache
         pre_build:
         -   make update
 
