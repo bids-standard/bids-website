@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import ruamel.yaml
@@ -48,14 +49,28 @@ def generate_members_table(file: str) -> str:
     return template.render(include=content[0])
 
 
+#: Activity feed rendered by `bids-schema render bep-dashboard`.
+#: Override with the BEP_DASHBOARD_URL environment variable (e.g. to test
+#: against a local copy or an unmerged bids-schema branch).
+BEP_DASHBOARD_URL = os.environ.get(
+    "BEP_DASHBOARD_URL",
+    "https://raw.githubusercontent.com/bids-standard/bids-schema/main/BEPs/dashboard.json",
+)
+
+
 def generate_beps_table(file: str, bep_type: str | None = None) -> str:
     input_file = WEBSITE_DATA_DIR / "beps" / file
     content = yaml.load(input_file)
     if bep_type == "draft":
         content = [x for x in content if x["pull_request_created"] is None]
-    elif bep_type == "proposed":
+    elif bep_type in ("proposed", "active"):
         content = [x for x in content if x["pull_request_created"] is not None]
     env = return_jinja_env()
+    if bep_type == "active":
+        template = env.get_template("beps_active_table_md.jinja")
+        return template.render(
+            include=content, dashboard_url=BEP_DASHBOARD_URL, fresh_days=30
+        )
     template = env.get_template("beps_table_md.jinja")
     return template.render(include=content, bep_type=bep_type)
 

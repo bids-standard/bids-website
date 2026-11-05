@@ -1,0 +1,19 @@
+{#
+  Active BEPs table. BEP, Title, Lead(s) and PR come from data/beps/beps.yml
+  at build time; the activity columns are placeholders that
+  docs/javascripts/bep_dashboard.js fills in the browser from the
+  bids-schema BEPs/dashboard.json feed, so they stay current without
+  redeploying the website.
+#}
+<p class="bep-dashboard-status" data-src="{{ dashboard_url }}">Activity columns are loaded from <a href="https://github.com/bids-standard/bids-schema/tree/main/BEPs">bids-schema</a> and need JavaScript.</p>
+
+| BEP | Title | Lead(s) | Doc activity | PR | # Authors | # Commenters | Build | Reviews | Unresolved | Comments | Last comment | Schema |
+| :-: | :---- | :------ | :----------- | :-: | :-------: | :----------: | :---: | :-----: | :--------: | :------: | :----------: | :----: |
+{% for bep in include %}
+{% set num = bep.number | int %}
+| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | {% if bep.display %}{{ bep.display }}{% else %}{{ bep.title }}{% endif %} | {% for person in bep.leads %}{% if person.email %}[{{ person["given-names"] }} {{ person["family-names"] }}](mailto:{{ person.email }}){% else %}{{ person["given-names"] }} {{ person["family-names"] }}{% endif %}{% if not loop.last %}<br>{% endif %}{% endfor %} | <span data-bep="{{ num }}" data-field="doc">…</span> | {% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }}){% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="authors">…</span> | <span data-bep="{{ num }}" data-field="commenters">…</span> | <span data-bep="{{ num }}" data-field="build">…</span> | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="unresolved">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> | <span data-bep="{{ num }}" data-field="last_comment">…</span> | <span data-bep="{{ num }}" data-field="schema">…</span> |
+{% endfor %}
+
+**Doc activity**: 🟢 edited in the last {{ fresh_days }} days · 🟡 in the last 6 months · 🔴 not edited in over 6 months · ⚪ unknown.
+**Reviews**: approved ✅ / changes requested ❌ / commented 💬.
+**Unresolved**: open inline review threads on the PR.

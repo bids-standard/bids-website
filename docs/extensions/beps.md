@@ -2,7 +2,7 @@
 
 You can contribute to ongoing BIDS Extension Proposals (BEPs).
 
-## Draft and Proposed BEPs
+## Draft and Active BEPs
 
 Below are tables of currently-active BEPs,
 and "timelines" figures of their development
@@ -11,12 +11,14 @@ to give an idea of how long each BEP has been in the works.
 Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed on the
 [Issues page of the bids-2-devel GitHub repository](https://github.com/bids-standard/bids-2-devel/issues).
 
-### Proposed BEPs
+### Active BEPs
 
-Proposed BEPs are more mature BEPs that usually take the form of a pull request
+Active BEPs are more mature BEPs that usually take the form of a pull request
 on the BIDS specification repository.
+The activity columns show how recently each BEP's Google Doc was edited
+and the state of review on its pull request.
 
-{{ MACROS___generate_beps_table(file="beps.yml", bep_type="proposed") }}
+{{ MACROS___generate_beps_table(file="beps.yml", bep_type="active") }}
 
 --8<-- "tmp/proposed_BEPs_timeline.html"
 
