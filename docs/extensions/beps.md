@@ -11,7 +11,7 @@ to give an idea of how long each BEP has been in the works.
 Note that all of the extension ideas that are not backwards compatible and thus will have to wait for BIDS 2.0 are listed on the
 [Issues page of the bids-2-devel GitHub repository](https://github.com/bids-standard/bids-2-devel/issues).
 
-### Active BEPs
+### Active
 
 Active BEPs are more mature BEPs that usually take the form of a pull request
 on the BIDS specification repository.
