@@ -1,5 +1,5 @@
 ---
-date: 2026-07-01
+date: 2026-11-02
 slug: "BIDS community review for BEP047: Audio and Video Behavioral Recordings"
 author: Ben Dichter
 categories:
@@ -31,7 +31,7 @@ Comments and suggestions may be submitted on GitHub at:
 
 [https://github.com/bids-standard/bids-specification/pull/2231](https://github.com/bids-standard/bids-specification/pull/2231)
 
-The community review will close on **[REVIEW CLOSE DATE]** at 23:59 UTC.
+The community review will close on **November 13** at 23:59 UTC.
 
 If no larger issues occur, all open comments and suggestions will be resolved in the following days and merged into the BEP. Afterwards, the BEP will be merged into the BIDS specification, followed by a 5-business-day long feature freeze and a new BIDS release (containing behavioral audio/video/image recordings, among other changes as documented in the BIDS changelog).
 
