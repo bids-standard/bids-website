@@ -8,8 +8,8 @@ Below are tables of currently active BEPs,
 and "timelines" figures of their development
 to give an idea of how long each BEP has been in the works.
 
-Note that not all of the extension ideas are backward-compatible
-and thus will have to wait for BIDS 2.0 to be listed on the
+Note that any extension ideas that are not backward-compatible,
+and thus will have to wait for BIDS 2.0, are listed on the
 [Issues page of the bids-2-devel GitHub repository](https://github.com/bids-standard/bids-2-devel/issues).
 
 ### Active
