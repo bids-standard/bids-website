@@ -71,10 +71,21 @@
     return { text: DASH, sort: "" };
   }
 
+  // Marker for BEPs whose PR has no data in the feed (no schema build),
+  // pointing at the footnote under the table.
+  function notReadyMarker() {
+    var sup = document.createElement("sup");
+    var a = link("#bep-not-schema-ready", "*");
+    a.title = "Not yet schema-ready: status uncertain";
+    sup.appendChild(a);
+    return sup;
+  }
+
   function cellsFor(e, thresholds, now) {
     var pr = e && e.pr;
     var comments = pr && pr.comments;
     return {
+      pr_note: pr ? { text: "" } : { node: notReadyMarker() },
       doc: e ? docCell(e, thresholds, now) : { text: DASH, sort: "" },
       authors: count(pr && pr.authors),
       commenters: count(pr && pr.commenters),
@@ -95,19 +106,25 @@
     span.textContent = "";
     if (cell.node) span.appendChild(cell.node);
     else span.textContent = cell.text;
+    // Cells that only decorate a static value (pr_note) leave sorting alone.
     var td = span.closest("td");
-    if (td) td.setAttribute("data-sort", cell.sort);
+    if (td && cell.sort !== undefined) td.setAttribute("data-sort", cell.sort);
   }
 
   function fill(status, data) {
     var thresholds = data.thresholds_days || { fresh: 30, active: 180 };
     var now = Date.now();
     var cache = {};
+    var notReady = false;
     document.querySelectorAll("span[data-bep][data-field]").forEach(function (span) {
       var bep = span.getAttribute("data-bep");
       if (!cache[bep]) cache[bep] = cellsFor(data.beps[bep], thresholds, now);
-      apply(span, cache[bep][span.getAttribute("data-field")] || { text: DASH, sort: "" });
+      var field = span.getAttribute("data-field");
+      if (field === "pr_note" && !(data.beps[bep] && data.beps[bep].pr)) notReady = true;
+      apply(span, cache[bep][field] || { text: DASH, sort: "" });
     });
+    var note = document.getElementById("bep-not-schema-ready");
+    if (note) note.hidden = !notReady;
     status.textContent = "Activity data from ";
     status.appendChild(link("https://github.com/bids-standard/bids-schema/tree/main/BEPs", "bids-schema"));
     status.appendChild(document.createTextNode(
@@ -116,7 +133,9 @@
 
   function fail(status) {
     document.querySelectorAll("span[data-bep][data-field]").forEach(function (span) {
-      apply(span, { text: DASH, sort: "" });
+      // Without the feed nothing is known to be not schema-ready: no marker.
+      apply(span, span.getAttribute("data-field") === "pr_note"
+        ? { text: "" } : { text: DASH, sort: "" });
     });
     status.textContent = "Activity data is temporarily unavailable.";
   }
