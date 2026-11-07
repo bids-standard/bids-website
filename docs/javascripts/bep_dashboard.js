@@ -73,8 +73,8 @@
     return sup;
   }
 
-  // Follows the static PR link: "/authors/commenters/build". The cell sorts
-  // by PR number (see apply).
+  // Follows the static "doc/PR" links: "/authors/commenters/build". The cell
+  // sorts by PR number (see apply).
   function prRestCell(pr) {
     if (!pr) return { node: notReadyMarker(), sort: "pr" };
     return {
@@ -132,8 +132,9 @@
     if (!td || cell.sort === undefined) return;
     var sort = cell.sort;
     if (sort === "pr") {
-      // Combined PR cell: sort by the PR number in its static link.
-      var a = td.querySelector("a");
+      // Combined Doc/PR cell: sort by the PR number in its static link
+      // (the 📄 Google Doc link comes first, so match the PR URL).
+      var a = td.querySelector('a[href*="/pull/"]');
       sort = a ? a.textContent.trim() : "";
     }
     td.setAttribute("data-sort", sort);

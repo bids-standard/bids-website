@@ -7,15 +7,16 @@
 #}
 <p class="bep-dashboard-status" data-src="{{ dashboard_url }}">Activity data is loaded from <a href="https://github.com/bids-standard/bids-schema/tree/main/BEPs">bids-schema</a> and needs JavaScript.</p>
 
-| Extension | Days since last activity | PR / #&nbsp;Authors / #&nbsp;Commenters / Build status | Reviews | Days since last PR comment / #&nbsp;Comments / #&nbsp;Unresolved |
+| Extension | Days since last activity | Doc / PR / #&nbsp;Authors / #&nbsp;Commenters / Build status | Reviews | Days since last PR comment / #&nbsp;Comments / #&nbsp;Unresolved |
 | :-------: | :----------------------- | :------------------------------------ | :------ | :----------------------------------------------------- |
 {% for bep in include %}
 {% set num = bep.number | int %}
-| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | <span data-bep="{{ num }}" data-field="activity">…</span> | {% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }})<span data-bep="{{ num }}" data-field="pr_rest">/…</span>{% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> |
+| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | <span data-bep="{{ num }}" data-field="activity">…</span> | {% if bep.google_doc %}[📄]({{ bep.google_doc }} "Google Doc"){% else %}—{% endif %}/{% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }})<span data-bep="{{ num }}" data-field="pr_rest">/…</span>{% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> |
 {% endfor %}
 
 **Days since last activity**: the most recent of a Google Doc edit, PR commit, or PR comment, with the source named
 (hover for all three dates) · 🟢 within the last {{ fresh_days }} days · 🟡 within the last 6 months · 🔴 longer ago.
+**Doc**: 📄 links to the BEP's Google Doc (— if it has none).
 **Reviews**: approved ✅ / changes requested ❌ / commented 💬.
 **#&nbsp;Unresolved**: open inline review threads on the PR.
 
