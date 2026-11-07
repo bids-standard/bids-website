@@ -8,6 +8,9 @@
   var DAY_MS = 86400000;
   var DASH = "—";
   var NONE = { text: DASH, sort: "" };
+  // " / " with narrow non-breaking spaces (U+202F), so a value never wraps at
+  // a separator and the table stays narrow enough to avoid sideways scrolling.
+  var SEP = "\u202F/\u202F";
 
   function daysSince(iso, now) {
     return Math.floor((now - new Date(iso).getTime()) / DAY_MS);
@@ -73,17 +76,17 @@
     return sup;
   }
 
-  // Follows the static "doc/PR" links: "/authors/commenters/build". The cell
+  // Follows the static "doc / PR" links: " / authors / commenters / build". The cell
   // sorts by PR number (see apply).
   function prRestCell(pr) {
     if (!pr) return { node: notReadyMarker(), sort: "pr" };
     return {
-      text: "/" + orDash(pr.authors) + "/" + orDash(pr.commenters) + "/" + buildIcon(pr),
+      text: SEP + orDash(pr.authors) + SEP + orDash(pr.commenters) + SEP + buildIcon(pr),
       sort: "pr",
     };
   }
 
-  // e.g. "2 ✅/29 💬", with a non-breaking space between each count and icon.
+  // e.g. "2 ✅ / 29 💬", with a non-breaking space between each count and icon.
   function reviewsCell(r) {
     if (!r) return NONE;
     var parts = [];
@@ -91,7 +94,7 @@
     if (r.changes_requested) parts.push(r.changes_requested + "\u00A0❌");
     if (r.commented) parts.push(r.commented + "\u00A0💬");
     var total = (r.approved || 0) + (r.changes_requested || 0) + (r.commented || 0);
-    return { text: parts.length ? parts.join("/") : "0", sort: String(total) };
+    return { text: parts.length ? parts.join(SEP) : "0", sort: String(total) };
   }
 
   // "days since last comment / # comments / # unresolved" (unresolved bolded
@@ -101,7 +104,7 @@
     var c = pr.comments || {};
     var days = c.last_at ? daysSince(c.last_at, now) : null;
     var frag = document.createDocumentFragment();
-    frag.appendChild(document.createTextNode(orDash(days) + "/" + orDash(c.total) + "/"));
+    frag.appendChild(document.createTextNode(orDash(days) + SEP + orDash(c.total) + SEP));
     var n = pr.unresolved_threads;
     if (n) {
       var b = document.createElement("strong");
