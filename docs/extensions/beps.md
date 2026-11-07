@@ -14,15 +14,15 @@ and thus will have to wait for BIDS 2.0, are listed on the
 
 ### Proposed
 
-Proposed BEPs are more mature BEPs that usually take the form of a pull request
+Proposed BEPs are more mature BEPs that usually take the form of a PR
 on the BIDS specification repository.
 
 {{ MACROS___generate_beps_table(file="beps.yml", bep_type="proposed") }}
 
 #### Activity
 
-How recently each proposed BEP's Google Doc and pull request have changed,
-and where review of the pull request stands.
+How recently each proposed BEP's Google Doc and PR have changed,
+and where review of the PR stands.
 
 {{ MACROS___generate_beps_table(file="beps.yml", bep_type="activity") }}
 
