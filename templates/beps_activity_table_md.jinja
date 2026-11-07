@@ -7,7 +7,7 @@
 #}
 <p class="bep-dashboard-status" data-src="{{ dashboard_url }}">Activity data is loaded from <a href="https://github.com/bids-standard/bids-schema/tree/main/BEPs">bids-schema</a> and needs JavaScript.</p>
 
-| Extension | Days since last activity | PR / #&nbsp;Authors / #&nbsp;Commenters / Build | Reviews | Days since last PR comment / #&nbsp;Comments / #&nbsp;Unresolved |
+| Extension | Days since last activity | PR / #&nbsp;Authors / #&nbsp;Commenters / Build status | Reviews | Days since last PR comment / #&nbsp;Comments / #&nbsp;Unresolved |
 | :-------: | :----------------------- | :------------------------------------ | :------ | :----------------------------------------------------- |
 {% for bep in include %}
 {% set num = bep.number | int %}
