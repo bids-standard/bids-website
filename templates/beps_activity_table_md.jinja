@@ -8,7 +8,7 @@
 <p class="bep-dashboard-status" data-src="{{ dashboard_url }}">Activity data is loaded from <a href="https://github.com/bids-standard/bids-schema/tree/main/BEPs">bids-schema</a> and needs JavaScript.</p>
 
 | Extension | Days since last activity | PR / # Authors / # Commenters / Build | Reviews | Days since last PR comment / # Comments / # Unresolved |
-| :-------: | :----------------------: | :-----------------------------------: | :-----: | :----------------------------------------------------: |
+| :-------: | :----------------------- | :-----------------------------------: | :-----: | :----------------------------------------------------: |
 {% for bep in include %}
 {% set num = bep.number | int %}
 | [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | <span data-bep="{{ num }}" data-field="activity">…</span> | {% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }})<span data-bep="{{ num }}" data-field="pr_rest">/…</span>{% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> |
