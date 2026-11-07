@@ -83,12 +83,13 @@
     };
   }
 
+  // e.g. "2 ✅/29 💬", with a non-breaking space between each count and icon.
   function reviewsCell(r) {
     if (!r) return NONE;
     var parts = [];
-    if (r.approved) parts.push(r.approved + "✅");
-    if (r.changes_requested) parts.push(r.changes_requested + "❌");
-    if (r.commented) parts.push(r.commented + "💬");
+    if (r.approved) parts.push(r.approved + "\u00A0✅");
+    if (r.changes_requested) parts.push(r.changes_requested + "\u00A0❌");
+    if (r.commented) parts.push(r.commented + "\u00A0💬");
     var total = (r.approved || 0) + (r.changes_requested || 0) + (r.commented || 0);
     return { text: parts.length ? parts.join("/") : "0", sort: String(total) };
   }
