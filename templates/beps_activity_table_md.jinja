@@ -1,0 +1,36 @@
+{#
+  Activity table, shown under the Proposed BEPs table. The Extension
+  column and PR number come from data/beps/beps.yml at build time; the other
+  cells are placeholders that docs/javascripts/bep_dashboard.js fills in the
+  browser from the bids-schema BEPs/dashboard.json feed, so they stay current
+  without redeploying the website.
+#}
+<p class="bep-dashboard-status" data-src="{{ dashboard_url }}">Activity data is loaded from <a href="https://github.com/bids-standard/bids-schema/tree/main/BEPs">bids-schema</a> and needs JavaScript.</p>
+
+| Extension | Days since last activity | PR / # Authors / # Commenters / Build | Reviews | Days since last PR comment / # Comments / # Unresolved |
+| :-------: | :----------------------: | :-----------------------------------: | :-----: | :----------------------------------------------------: |
+{% for bep in include %}
+{% set num = bep.number | int %}
+| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | <span data-bep="{{ num }}" data-field="activity">…</span> | {% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }})<span data-bep="{{ num }}" data-field="pr_rest">/…</span>{% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> |
+{% endfor %}
+
+**Days since last activity**: the most recent of a Google Doc edit, PR commit, or PR comment, with the source named
+(hover for all three dates) · 🟢 within the last {{ fresh_days }} days · 🟡 within the last 6 months · 🔴 longer ago.
+**Reviews**: approved ✅ / changes requested ❌ / commented 💬.
+**# Unresolved**: open inline review threads on the PR.
+
+Look [here](https://github.com/bids-standard/bids-schema/tree/main/BEPs)
+for the BEP `schema_pp.json` files and this table's source data.
+
+{# Hidden until bep_dashboard.js finds a PR to mark; md_in_html renders the admonition inside. #}
+<div id="bep-not-schema-ready" class="bep-dashboard-note" hidden markdown>
+
+!!! note
+
+    PRs marked with \* have no schema build in
+    [bids-schema](https://github.com/bids-standard/bids-schema/tree/main/BEPs),
+    either because they don't change the BIDS schema
+    or because they can't currently be merged into the specification.
+    Their activity isn't tracked, so their status is uncertain.
+
+</div>

@@ -63,11 +63,11 @@ def generate_beps_table(file: str, bep_type: str | None = None) -> str:
     content = yaml.load(input_file)
     if bep_type == "draft":
         content = [x for x in content if x["pull_request_created"] is None]
-    elif bep_type in ("proposed", "active"):
+    elif bep_type in ("proposed", "activity"):
         content = [x for x in content if x["pull_request_created"] is not None]
     env = return_jinja_env()
-    if bep_type == "active":
-        template = env.get_template("beps_active_table_md.jinja")
+    if bep_type == "activity":
+        template = env.get_template("beps_activity_table_md.jinja")
         return template.render(
             include=content, dashboard_url=BEP_DASHBOARD_URL, fresh_days=30
         )

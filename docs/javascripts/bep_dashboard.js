@@ -1,19 +1,16 @@
-// Fill the activity columns of the "Active BEPs" table from the
+// Fill the "Activity" table under "Proposed" BEPs from the
 // bids-schema BEPs/dashboard.json feed. All collection happens in
 // bids-schema; this file only formats the feed's raw values.
-// See templates/beps_active_table_md.jinja.
+// See templates/beps_activity_table_md.jinja.
 (function () {
   "use strict";
 
   var DAY_MS = 86400000;
   var DASH = "—";
+  var NONE = { text: DASH, sort: "" };
 
   function daysSince(iso, now) {
     return Math.floor((now - new Date(iso).getTime()) / DAY_MS);
-  }
-
-  function plural(n, word) {
-    return n + " " + word + (n === 1 ? "" : "s");
   }
 
   function link(href, text) {
@@ -23,56 +20,51 @@
     return a;
   }
 
-  // Each formatter returns {node|text, sort} for one cell.
-  function docCell(e, thresholds, now) {
-    if (!e.google_doc) return { text: DASH, sort: "" };
-    var act = e.doc_activity;
-    if (!act || !act.last_modified) {
-      return { node: link(e.google_doc, "⚪ Unknown"), sort: "99999" };
-    }
-    var days = daysSince(act.last_modified, now);
-    var icon = days <= thresholds.fresh ? "🟢"
-      : days <= thresholds.active ? "🟡" : "🔴";
-    var label = icon + " Edited " + plural(days, "day") + " ago";
-    if (act.edits_since_last_check) {
-      label += " (+" + plural(act.edits_since_last_check, "edit") + ")";
-    }
-    return { node: link(e.google_doc, label), sort: String(days) };
+  function orDash(n) {
+    return n === null || n === undefined ? DASH : String(n);
   }
 
-  function count(n) {
-    return n === null || n === undefined
-      ? { text: DASH, sort: "" }
-      : { text: String(n), sort: String(n) };
+  // Each formatter returns {node|text, sort} for one cell. A cell without
+  // `sort` leaves the <td>'s sort value alone.
+
+  // Most recent of Google Doc edit, PR commit, and PR comment: a
+  // traffic-light dot, the day count, and the source, linked to the doc or
+  // PR. The tooltip lists all three dates. Merging these keeps a BEP whose
+  // Google Doc has been superseded by its PR from looking stalled.
+  function activityCell(e, thresholds, now) {
+    var pr = e.pr || {};
+    var doc = e.doc_activity || {};
+    var sources = [
+      { at: doc.last_modified, label: "Doc edit", href: e.google_doc },
+      { at: pr.commits && pr.commits.last_at, label: "PR commit", href: e.pr_url },
+      { at: pr.comments && pr.comments.last_at, label: "PR comment", href: e.pr_url },
+    ];
+    var known = sources.filter(function (s) { return s.at; });
+    if (!known.length) return NONE;
+    known.sort(function (a, b) { return new Date(b.at) - new Date(a.at); });
+    var last = known[0];
+    var days = daysSince(last.at, now);
+    var icon = days <= thresholds.fresh ? "\uD83D\uDFE2"
+      : days <= thresholds.active ? "\uD83D\uDFE1" : "\uD83D\uDD34";
+    var span = document.createElement("span");
+    span.appendChild(document.createTextNode(icon + " " + days + " \u00B7 "));
+    // Non-breaking spaces keep "PR commit" etc. on one line in narrow cells.
+    var label = last.label.replace(/ /g, "\u00A0");
+    span.appendChild(last.href ? link(last.href, label) : document.createTextNode(label));
+    span.title = sources.map(function (s) {
+      return s.label + ": " + (s.at ? s.at.slice(0, 10) : DASH);
+    }).join("\n");
+    return { node: span, sort: String(days) };
   }
 
-  function reviewsCell(r) {
-    if (!r) return { text: DASH, sort: "" };
-    var parts = [];
-    if (r.approved) parts.push(r.approved + "✅");
-    if (r.changes_requested) parts.push(r.changes_requested + "❌");
-    if (r.commented) parts.push(r.commented + "💬");
-    var total = (r.approved || 0) + (r.changes_requested || 0) + (r.commented || 0);
-    return { text: parts.length ? parts.join("/") : "0", sort: String(total) };
-  }
-
-  function unresolvedCell(n) {
-    if (n === null || n === undefined) return { text: DASH, sort: "" };
-    if (n === 0) return { text: "0", sort: "0" };
-    var b = document.createElement("strong");
-    b.textContent = String(n);
-    return { node: b, sort: String(n) };
-  }
-
-  function buildCell(pr) {
-    var status = pr && pr.build_status;
-    if (status === "success") return { text: "✅", sort: "1" };
-    if (status === "failed") return { text: "❌", sort: "0" };
-    return { text: DASH, sort: "" };
+  function buildIcon(pr) {
+    if (pr.build_status === "success") return "✅";
+    if (pr.build_status === "failed") return "❌";
+    return DASH;
   }
 
   // Marker for BEPs whose PR has no data in the feed (no schema build),
-  // pointing at the footnote under the table.
+  // pointing at the note under the table.
   function notReadyMarker() {
     var sup = document.createElement("sup");
     var a = link("#bep-not-schema-ready", "*");
@@ -81,24 +73,54 @@
     return sup;
   }
 
-  function cellsFor(e, thresholds, now) {
-    var pr = e && e.pr;
-    var comments = pr && pr.comments;
+  // Follows the static PR link: "/authors/commenters/build". The cell sorts
+  // by PR number (see apply).
+  function prRestCell(pr) {
+    if (!pr) return { node: notReadyMarker(), sort: "pr" };
     return {
-      pr_note: pr ? { text: "" } : { node: notReadyMarker() },
-      doc: e ? docCell(e, thresholds, now) : { text: DASH, sort: "" },
-      authors: count(pr && pr.authors),
-      commenters: count(pr && pr.commenters),
-      build: buildCell(pr),
-      reviews: reviewsCell(pr && pr.reviews),
-      unresolved: unresolvedCell(pr && pr.unresolved_threads),
-      comments: count(comments && comments.total),
-      last_comment: comments && comments.last_at
-        ? { text: comments.last_at.slice(0, 10), sort: comments.last_at }
-        : { text: DASH, sort: "" },
-      schema: e && e.schema_url
-        ? { node: link(e.schema_url, "JSON"), sort: "1" }
-        : { text: DASH, sort: "" },
+      text: "/" + orDash(pr.authors) + "/" + orDash(pr.commenters) + "/" + buildIcon(pr),
+      sort: "pr",
+    };
+  }
+
+  function reviewsCell(r) {
+    if (!r) return NONE;
+    var parts = [];
+    if (r.approved) parts.push(r.approved + "✅");
+    if (r.changes_requested) parts.push(r.changes_requested + "❌");
+    if (r.commented) parts.push(r.commented + "💬");
+    var total = (r.approved || 0) + (r.changes_requested || 0) + (r.commented || 0);
+    return { text: parts.length ? parts.join("/") : "0", sort: String(total) };
+  }
+
+  // "days since last comment / # comments / # unresolved" (unresolved bolded
+  // when > 0). Sorts by days.
+  function commentsCell(pr, now) {
+    if (!pr) return NONE;
+    var c = pr.comments || {};
+    var days = c.last_at ? daysSince(c.last_at, now) : null;
+    var frag = document.createDocumentFragment();
+    frag.appendChild(document.createTextNode(orDash(days) + "/" + orDash(c.total) + "/"));
+    var n = pr.unresolved_threads;
+    if (n) {
+      var b = document.createElement("strong");
+      b.textContent = String(n);
+      frag.appendChild(b);
+    } else {
+      frag.appendChild(document.createTextNode(orDash(n)));
+    }
+    return { node: frag, sort: days === null ? "" : String(days) };
+  }
+
+  function cellsFor(e, thresholds, now) {
+    if (!e) {
+      return { activity: NONE, pr_rest: prRestCell(null), reviews: NONE, comments: NONE };
+    }
+    return {
+      activity: activityCell(e, thresholds, now),
+      pr_rest: prRestCell(e.pr),
+      reviews: reviewsCell(e.pr && e.pr.reviews),
+      comments: commentsCell(e.pr, now),
     };
   }
 
@@ -106,9 +128,15 @@
     span.textContent = "";
     if (cell.node) span.appendChild(cell.node);
     else span.textContent = cell.text;
-    // Cells that only decorate a static value (pr_note) leave sorting alone.
     var td = span.closest("td");
-    if (td && cell.sort !== undefined) td.setAttribute("data-sort", cell.sort);
+    if (!td || cell.sort === undefined) return;
+    var sort = cell.sort;
+    if (sort === "pr") {
+      // Combined PR cell: sort by the PR number in its static link.
+      var a = td.querySelector("a");
+      sort = a ? a.textContent.trim() : "";
+    }
+    td.setAttribute("data-sort", sort);
   }
 
   function fill(status, data) {
@@ -120,8 +148,8 @@
       var bep = span.getAttribute("data-bep");
       if (!cache[bep]) cache[bep] = cellsFor(data.beps[bep], thresholds, now);
       var field = span.getAttribute("data-field");
-      if (field === "pr_note" && !(data.beps[bep] && data.beps[bep].pr)) notReady = true;
-      apply(span, cache[bep][field] || { text: DASH, sort: "" });
+      if (field === "pr_rest" && !(data.beps[bep] && data.beps[bep].pr)) notReady = true;
+      apply(span, cache[bep][field] || NONE);
     });
     var note = document.getElementById("bep-not-schema-ready");
     if (note) note.hidden = !notReady;
@@ -134,8 +162,8 @@
   function fail(status) {
     document.querySelectorAll("span[data-bep][data-field]").forEach(function (span) {
       // Without the feed nothing is known to be not schema-ready: no marker.
-      apply(span, span.getAttribute("data-field") === "pr_note"
-        ? { text: "" } : { text: DASH, sort: "" });
+      apply(span, span.getAttribute("data-field") === "pr_rest"
+        ? { text: "", sort: "pr" } : NONE);
     });
     status.textContent = "Activity data is temporarily unavailable.";
   }
