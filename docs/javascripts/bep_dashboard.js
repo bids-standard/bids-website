@@ -12,6 +12,44 @@
   // a separator and the table stays narrow enough to avoid sideways scrolling.
   var SEP = "\u202F/\u202F";
 
+  // --- Sorting ------------------------------------------------------------
+  // The site's tablesort core compares values as text ("1362" < "2"), and
+  // treats missing values inconsistently. Register a numeric sort for the
+  // Activity table that always puts rows without data last, in both
+  // directions. Tablesort sorts ascending by sorting descending and then
+  // reversing, so the comparator reads the current direction from the
+  // header's aria-sort attribute (set before the rows are sorted).
+  var SORT_METHOD = "bep-number";
+
+  function sortValue(v) {
+    v = (v || "").trim();
+    return /^-?\d+(\.\d+)?$/.test(v) ? parseFloat(v) : null;
+  }
+
+  function registerSort() {
+    if (typeof Tablesort === "undefined" || registerSort.done) return;
+    registerSort.done = true;
+    Tablesort.extend(SORT_METHOD, function () { return false; }, function (a, b) {
+      var x = sortValue(a), y = sortValue(b);
+      var th = document.querySelector('th[data-sort-method="' + SORT_METHOD + '"][aria-sort]');
+      var ascending = !th || th.getAttribute("aria-sort") === "ascending";
+      if (x === null && y === null) return 0;
+      // Missing values go last in the final order; when ascending, tablesort
+      // reverses this comparator's order afterwards, so put them first here.
+      if (x === null) return ascending ? -1 : 1;
+      if (y === null) return ascending ? 1 : -1;
+      return y - x;
+    });
+  }
+
+  // Use the numeric sort for every column except Extension.
+  function markNumericColumns(table) {
+    var headers = table.tHead ? table.tHead.rows[0].cells : [];
+    for (var i = 1; i < headers.length; i++) {
+      headers[i].setAttribute("data-sort-method", SORT_METHOD);
+    }
+  }
+
   function daysSince(iso, now) {
     return Math.floor((now - new Date(iso).getTime()) / DAY_MS);
   }
@@ -176,6 +214,12 @@
   function init() {
     var status = document.querySelector(".bep-dashboard-status[data-src]");
     if (!status) return;
+    var first = document.querySelector("span[data-bep][data-field]");
+    var table = first && first.closest("table");
+    if (table) {
+      registerSort();
+      markNumericColumns(table);
+    }
     status.textContent = "Loading activity data…";
     fetch(status.getAttribute("data-src"), { cache: "no-cache" })
       .then(function (r) {
