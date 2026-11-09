@@ -135,23 +135,15 @@
     return { text: parts.length ? parts.join(SEP) : "0", sort: String(total) };
   }
 
-  // "days since last comment / # comments / # unresolved" (unresolved bolded
-  // when > 0). Sorts by days.
+  // "days since last comment / # comments / # unresolved". Sorts by days.
   function commentsCell(pr, now) {
     if (!pr) return NONE;
     var c = pr.comments || {};
     var days = c.last_at ? daysSince(c.last_at, now) : null;
-    var frag = document.createDocumentFragment();
-    frag.appendChild(document.createTextNode(orDash(days) + SEP + orDash(c.total) + SEP));
-    var n = pr.unresolved_threads;
-    if (n) {
-      var b = document.createElement("strong");
-      b.textContent = String(n);
-      frag.appendChild(b);
-    } else {
-      frag.appendChild(document.createTextNode(orDash(n)));
-    }
-    return { node: frag, sort: days === null ? "" : String(days) };
+    return {
+      text: orDash(days) + SEP + orDash(c.total) + SEP + orDash(pr.unresolved_threads),
+      sort: days === null ? "" : String(days),
+    };
   }
 
   function cellsFor(e, thresholds, now) {
