@@ -1,6 +1,7 @@
 {#
   Activity table, shown under the Proposed BEPs table. The Extension
-  column and PR number come from data/beps/beps.yml at build time; the other
+  column (with the BEP name as a hover tooltip) and PR number come from
+  data/beps/beps.yml at build time; the other
   cells are placeholders that docs/javascripts/bep_dashboard.js fills in the
   browser from the bids-schema BEPs/dashboard.json feed, so they stay current
   without redeploying the website.
@@ -11,7 +12,8 @@
 | :-------: | :----------------------- | :------------------------------------ | :------ | :----------------------------------------------------- |
 {% for bep in include %}
 {% set num = bep.number | int %}
-| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}) | <span data-bep="{{ num }}" data-field="activity">…</span> | {% if bep.google_doc %}[📄]({{ bep.google_doc }} "Google Doc"){% else %}—{% endif %}&#8239;/&#8239;{% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }})<span data-bep="{{ num }}" data-field="pr_rest">&#8239;/&#8239;…</span>{% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> |
+{% set name = (bep.display or bep.title or "") | replace('"', "&quot;") %}
+| [BEP {{ bep.number }}]({% if bep.link %}{{ bep.link }}{% else %}./beps/bep_{{ bep.number }}.md{% endif %}{% if name %} "{{ name }}"{% endif %}) | <span data-bep="{{ num }}" data-field="activity">…</span> | {% if bep.google_doc %}[📄]({{ bep.google_doc }} "Google Doc"){% else %}—{% endif %}&#8239;/&#8239;{% if bep.pull_request %}[{{ bep.pull_request.rstrip("/").split("/")[-1] }}]({{ bep.pull_request }})<span data-bep="{{ num }}" data-field="pr_rest">&#8239;/&#8239;…</span>{% else %}—{% endif %} | <span data-bep="{{ num }}" data-field="reviews">…</span> | <span data-bep="{{ num }}" data-field="comments">…</span> |
 {% endfor %}
 
 **Days since last activity**: the most recent of a Google Doc edit, PR commit, or PR comment, with the source named
