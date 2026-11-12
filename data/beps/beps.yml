@@ -650,5 +650,5 @@
     -   Adds support for storing audio and video behavioral recordings (new `_audio` and `_video` suffixes) in the `beh/` directory.
     blocking:
     google_doc_created:
-    pull_request_created: 2025-10
+    pull_request_created: 2025-10-25
     pull_request_merged:

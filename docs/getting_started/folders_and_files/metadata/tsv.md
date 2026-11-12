@@ -40,6 +40,7 @@ Reading and writing tab separated files comes natively in R, no need for extra p
 
     ```python
     import pandas as pd
+
     data = pd.read_csv("file.tsv", sep="\t", headers=True)
     ```
 
