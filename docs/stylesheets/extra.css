@@ -452,3 +452,13 @@ p {
   border-color: var(--bids-brand) !important;
   color: var(--bids-brand) !important;
 }
+
+/* BEP Activity table (templates/beps_activity_table_md.jinja): keep each
+   dashboard value on one line, so source labels, review emoji, and
+   " / "-separated values don't wrap away from each other. */
+.md-typeset span[data-bep][data-field="activity"],
+.md-typeset span[data-bep][data-field="pr_rest"],
+.md-typeset span[data-bep][data-field="reviews"],
+.md-typeset span[data-bep][data-field="comments"] {
+  white-space: nowrap;
+}
