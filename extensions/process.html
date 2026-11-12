@@ -2495,6 +2495,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bep-working-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BEP Working Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-leads-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BEP Leads Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draft-bep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Draft BEP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merged-bep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merged BEP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4816,6 +4877,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bep-working-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BEP Working Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-leads-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BEP Leads Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draft-bep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Draft BEP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merged-bep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merged BEP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4911,7 +5033,11 @@ Someone may have already done work for you: so avoid duplicating efforts!</p>
 <h3 id="overview-of-the-bep-process"><a class="toclink" href="#overview-of-the-bep-process">Overview of the <abbr title="BIDS Extension Proposal">BEP</abbr> process</a><a class="headerlink" href="#overview-of-the-bep-process" title="Permanent link">&para;</a></h3>
 <p>This section gives an overview of the lifecycle of new <abbr title="BIDS Extension Proposal">BEP</abbr> creation through to <abbr title="Brain Imaging Data Structure">BIDS</abbr> community approval and merge.
 For the typical steps involved in each phase, see <a href="#starting-your-bep">Starting your <abbr title="BIDS Extension Proposal">BEP</abbr></a>).</p>
-<p><img alt="BEP Process Overview" src="../assets/img/bep_process_20260825.png" /></p>
+<p>A <code>Draft BEP</code> is usually an easily shareable and group editable text document, which
+has historically been a Google document but is by no means limited to.
+where as <code>Proposed BEP</code> refers to pull request to <abbr title="Brain Imaging Data Structure">BIDS</abbr> specification repository
+(see <a href="#proposed-bep">below</a>).
+<img alt="BEP Process Overview" src="../assets/img/bep_process_20260825.png" /></p>
 <p>This diagram is a helpful outline of the <abbr title="BIDS Extension Proposal">BEP</abbr> process, which are covered in further detail below. The diagram goes from beginning to end of the <abbr title="BIDS Extension Proposal">BEP</abbr> process, from the initial idea on the left to the final merging on the right.</p>
 <h4 id="bep-phases"><a class="toclink" href="#bep-phases"><abbr title="BIDS Extension Proposal">BEP</abbr> Phases</a><a class="headerlink" href="#bep-phases" title="Permanent link">&para;</a></h4>
 <p>A successful <abbr title="BIDS Extension Proposal">BEP</abbr> moves through the lifecycle from <code>Draft BEP</code> to <code>Proposed BEP</code> to <code>Merged BEP</code>. Between each phase, <abbr title="BIDS Extension Proposal">BEP</abbr> leaders bring the <abbr title="BIDS Extension Proposal">BEP</abbr> to the <abbr title="Brain Imaging Data Structure">BIDS</abbr> Maintainers for guidance and review.</p>
@@ -5023,7 +5149,7 @@ Open_BEP_issue --&gt; Post_mailing_list
 Post_mailing_list --&gt; BEP_draft
 BEP_draft --&gt; Meet_the_team
 Meet_the_team -- approval : `BEP Draft` status --&gt; Official_BEP</code></pre>
-<p>To start a new <abbr title="BIDS Extension Proposal">BEP</abbr> working group, the <abbr title="Brain Imaging Data Structure">BIDS</abbr> governance mentions that you need:</p>
+<p>To start a new <abbr title="BIDS Extension Proposal">BEP</abbr> working group, you need</p>
 <blockquote>
 <ul>
 <li>a statement of intent with defined scope, deliverables, and use cases</li>
@@ -5291,6 +5417,29 @@ These suggestions are not required for submitting the <abbr title="BIDS Extensio
     enhanced during the review period.</p>
 </li>
 </ul>
+<h2 id="definitions"><a class="toclink" href="#definitions">Definitions</a><a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
+<h3 id="bep-working-group"><a class="toclink" href="#bep-working-group"><abbr title="BIDS Extension Proposal">BEP</abbr> Working Group</a><a class="headerlink" href="#bep-working-group" title="Permanent link">&para;</a></h3>
+<p>A <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group is established for every <abbr title="Brain Imaging Data Structure">BIDS</abbr> Extension Proposal
+(<abbr title="BIDS Extension Proposal">BEP</abbr>). Each working group will have 1-3 group-appointed leader(s),
+referred to as <abbr title="BIDS Extension Proposal">BEP</abbr> Lead(s). Every <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group is formed with the
+aim of extending or modifying the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard into their domain of
+interest. This can be either an unspecified modality or derivative.
+The <abbr title="BIDS Extension Proposal">BEP</abbr> Lead and Working Group will determine how they organize their
+work, following the <abbr title="Brain Imaging Data Structure">BIDS</abbr> governance standards laid out in section 4 of
+this document and the <abbr title="Brain Imaging Data Structure">BIDS</abbr> <a href="../../docs/collaboration/bids_github/CODE_OF_CONDUCT.md">Code of Conduct</a>.
+The <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group work is completed when their <abbr title="BIDS Extension Proposal">BEP</abbr> has become a Merged <abbr title="BIDS Extension Proposal">BEP</abbr>.</p>
+<h3 id="bep-leads-group"><a class="toclink" href="#bep-leads-group"><abbr title="BIDS Extension Proposal">BEP</abbr> Leads Group</a><a class="headerlink" href="#bep-leads-group" title="Permanent link">&para;</a></h3>
+<p>The <abbr title="BIDS Extension Proposal">BEP</abbr> Leads Group consists of the <abbr title="BIDS Extension Proposal">BEP</abbr> Leads of the <abbr title="BIDS Extension Proposal">BEP</abbr> Working Groups.
+This Working Group intends to ensure potential integrations and
+collaborations across <abbr title="BIDS Extension Proposals">BEPs</abbr> are realized and consistency across the <abbr title="Brain Imaging Data Structure">BIDS</abbr>
+standard.</p>
+<p>When a <abbr title="BIDS Extension Proposal">BEP</abbr> is merged into the specification the <abbr title="BIDS Extension Proposal">BEP</abbr> Lead(s) are automatically
+enrolled into a <a href="../../docs/collaboration/governance.md#bids-advisory-group">BIDs Advisory Group</a></p>
+<h3 id="draft-bep"><a class="toclink" href="#draft-bep">Draft <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#draft-bep" title="Permanent link">&para;</a></h3>
+<p>The in-progress document, typically in a Google Doc, of a <abbr title="BIDS Extension Proposal">BEP</abbr>.
+This is dynamic and is grown and maintained at the discretion of a <abbr title="BIDS Extension Proposal">BEP</abbr> Working Group.</p>
+<h3 id="merged-bep"><a class="toclink" href="#merged-bep">Merged <abbr title="BIDS Extension Proposal">BEP</abbr></a><a class="headerlink" href="#merged-bep" title="Permanent link">&para;</a></h3>
+<p>A Proposed <abbr title="BIDS Extension Proposal">BEP</abbr> that has been reviewed and approved by the Steering Group and merged into the <abbr title="Brain Imaging Data Structure">BIDS</abbr> standard.</p>
 <!-- tool tips  -->
 
 
@@ -5312,7 +5461,7 @@ These suggestions are not required for submitting the <abbr title="BIDS Extensio
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 2, 2026 14:12:06 UTC">October 2, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 12, 2026 18:20:43 UTC">November 12, 2026</span>
   </span>
 
     
