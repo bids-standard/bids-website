@@ -16,3 +16,7 @@ visit [the BEP process page](./process.md).
 ## BEP guidelines
 
 For further advice on working on a BEP, see our [guidelines](./guidelines.md).
+
+## BEP Process II (proposed)
+
+For a peek at the proposed changes to the BEP process see [proposed BEP Process](./process_proposed.md).
