@@ -16,6 +16,7 @@ Below is a small sample of some main resources for finding BIDS datasets that ma
         parameters.
     - [BIDS-eye](https://bidseye.xyz/) is search engine and database that automatically crawls large public neuroimaging data lakes, indexes the metadata and makes them easily searchable.
     - the [Datalad registry](https://registry.datalad.org/overview/?query=metadata%5Bbids_dataset%5D%3A%22%22&sort=update-desc) can help you discover Public Datalad dataset including those that are BIDS datasets
+    - [Scigantic](https://scigantic.com/explore?search=openneuro&utm_source=bids-website) is a catalog of public datasets that includes 1,900+ OpenNeuro datasets. Each one can be searched by text and opened in a hosted Jupyter notebook with the data mounted read-only.
 
 [OpenNeuro][openneuro]:
 If you're looking for full data files to run the validator on or simply compare to your

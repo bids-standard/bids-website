@@ -367,6 +367,14 @@
     category: dataset discoverability
     description: Can search among Public DataLad datasets on GitHub, GIN, etc including those that are BIDS datasets
 
+-   name: Scigantic
+    url: https://scigantic.com/explore?search=openneuro&utm_source=bids-website
+    language:
+    -   website
+    category: dataset discoverability
+    description: Catalog of public scientific datasets that includes 1,900+ OpenNeuro datasets. Search by text, read a summary of the files in each dataset,
+        and open it in a hosted Jupyter notebook with the data mounted read-only.
+
 
 -   name: nipoppy
     repo_url: https://github.com/nipoppy/nipoppy
