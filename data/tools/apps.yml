@@ -476,7 +476,8 @@ apps:
 
 -   gh: PeerHerholz/BIDSonym
     status: active
-    dh: peerherholz/bidsonym
+    # Gone from docker hub as of ~2026/11/13
+    # dh: peerherholz/bidsonym
     ci: travis
     branch: master
     ds_type:
