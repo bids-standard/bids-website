@@ -12,6 +12,8 @@
 #             url: https://pypi.org/project/???
 #           - name: dockerhub
 #             url: https://hub.docker.com/r/??
+#           - name: ghcr
+#             url: https://ghcr.io/??
 #       language:
 #        -  Python, MATLAB
 #       documentation: URL to documentation
@@ -649,6 +651,8 @@
     distribution:
     -   name: pypi
         url: https://pypi.org/project/nwb2bids
+    -   name: ghcr
+        url: https://ghcr.io/con/nwb2bids
     documentation: https://nwb2bids.readthedocs.io/
     comment: |
         Reorganizes NWB (Neurodata Without Borders) files into a BIDS directory
@@ -670,6 +674,8 @@
     distribution:
     -   name: pypi
         url: https://pypi.org/project/phys2bids
+    -   name: ghcr
+        url: https://ghcr.io/physiopy/phys2bids
     documentation: https://phys2bids.readthedocs.io/en/latest/
     comment: Python3 library to format physiological files in BIDS.
     license: Apache-2.0
