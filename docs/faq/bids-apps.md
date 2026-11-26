@@ -152,6 +152,8 @@ on docker hub will happen automatically via Circle-ci.
 If you want your App to show on the [BIDS website](https://bids.neuroimaging.io/tools/bids-apps.html),
 you will have to update the `data/tools/apps.yml` in the
 [BIDS website repository](https://github.com/bids-standard/bids-website/tree/main).
+Images are expected to be on Docker Hub (`dh`)
+or on GitHub Container Registry (`ghcr`).
 
 #### When is a new image deposited to Docker Hub?
 

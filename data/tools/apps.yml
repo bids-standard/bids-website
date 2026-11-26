@@ -3,6 +3,8 @@ apps:
   # template for adding an app
   # - gh: "github_usename/github_repo_name"
   #   dh: "dockerhub_usename/dockerhub_repo_name"
+  #   ghcr: "owner/image_name" on GitHub Container Registry (ghcr.io),
+  #         if the image is not on Docker Hub
   #   description: "short description of the app"
   #   status: unmaintained
   #   ds_type:
@@ -476,7 +478,7 @@ apps:
 
 -   gh: PeerHerholz/BIDSonym
     status: active
-    dh: peerherholz/bidsonym
+    ghcr: peerherholz/bidsonym
     ci: travis
     branch: master
     ds_type:
@@ -624,3 +626,15 @@ apps:
         recipe (SCT, FSL, PAM50) with per-vertebral-level quality control.
     branch: main
     ci: gh
+
+-   gh: UNFmontreal/skullduggery
+    status: active
+    ghcr: unfmontreal/skullduggery
+    ci: gh
+    branch: main
+    workflow: CI
+    ds_type:
+    -   raw
+    datatype:
+    -   anat
+    description: Automated defacing of anatomical MRI images using template-based registration, with age-specific templates for pediatric cohorts.

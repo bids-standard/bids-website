@@ -22,7 +22,9 @@ body:
         description: |
             Make sure you provide:
             - the github username and repository of your app
-            - the dockerhub username and repository of your app
+            - the dockerhub username and repository of your app (`dh`),
+              or, if the image is on GitHub Container Registry (ghcr.io) instead,
+              its owner and name there (`ghcr`)
             - specify if your app uses another CI provider than circlec-ci
               - if you use github action specify the workflow name and branch
             - specify if your app takes BIDS raw or/and derivatives as inputs
