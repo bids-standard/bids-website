@@ -34,19 +34,21 @@ for app in data["apps"]:
     if app["status"] == "unmaintained":
         continue
 
-    print(f"Checking {app['gh']}")
-
     if app.get("dh"):
-        url = f"https://registry.hub.docker.com/v2/repositories/{app['dh']}/"
+        image = app["dh"]
+        url = f"https://registry.hub.docker.com/v2/repositories/{image}/"
         valid = requests.get(url, auth=None).status_code == 200
     elif app.get("ghcr"):
+        image = f"ghcr.io/{app['ghcr']}"
         valid = ghcr_image_exists(app["ghcr"])
     else:
+        print(f"Checked {app['gh']}: no image")
         missing_image.append(app["gh"])
         continue
 
+    print(f"Checked {app['gh']}: {image} {'ok' if valid else 'NOT FOUND'}")
     if not valid:
-        invalid_image.append(app["gh"])
+        invalid_image.append(f"{app['gh']} ({image})")
 
 if missing_image:
     warn(
@@ -58,5 +60,5 @@ if missing_image:
 if invalid_image:
     raise ValueError(
         "The following BIDS apps have "
-        f"invalid Docker hub or ghcr.io image.\n{invalid_image}"
+        f"Docker hub or ghcr.io image which was not found.\n{invalid_image}"
     )

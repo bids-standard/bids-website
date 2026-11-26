@@ -478,7 +478,7 @@ apps:
 
 -   gh: PeerHerholz/BIDSonym
     status: active
-    dh: peerherholz/bidsonym
+    ghcr: peerherholz/bidsonym
     ci: travis
     branch: master
     ds_type:
